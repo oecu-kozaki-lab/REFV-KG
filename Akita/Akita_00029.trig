@@ -1,0 +1,207 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00029> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "工事中及び供用後の風力発電施設"@ja.
+kg:id_1 rdf:type cls:c_567.
+cls:c_567 rdfs:label "発電施設"@ja.
+kg:id_2 rdfs:label "人と自然との触れ合いの活動の場等や住居への影響"@ja.
+kg:id_2 rdf:type cls:c_5.
+cls:c_5 rdfs:label "生活環境影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "事業計画"@ja.
+kg:id_3 rdf:type cls:c_402.
+cls:c_402 rdfs:label "事業計画"@ja.
+kg:id_4 rdfs:label "人と自然との触れ合いの活動の場等や住居への影響を回避又は低減するよう配慮"@ja.
+kg:id_4 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_3 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "関係自治体や地域住民から情報収集し影響を受けるおそれのある環境要素を調査予測評価して位置・規模等に反映"@ja.
+kg:id_5 rdf:type cls:c_13778.
+cls:c_13778 rdfs:label "情報反映"@ja.
+kg:id_3 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "方法書"@ja.
+kg:id_6 rdf:type cls:c_13779.
+cls:c_13779 rdfs:label "計画文書"@ja.
+kg:id_7 rdfs:label "事業の位置・規模等を可能な限り明確化し環境保全配慮の検討内容や結果を記載"@ja.
+kg:id_7 rdf:type cls:c_13534.
+cls:c_13534 rdfs:label "計画明確化"@ja.
+kg:id_6 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "既設及び計画中の風力発電所"@ja.
+kg:id_8 rdf:type cls:c_567.
+kg:id_9 rdfs:label "複合的な環境影響"@ja.
+kg:id_9 rdf:type cls:c_317.
+cls:c_317 rdfs:label "複合影響"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "工事の実施"@ja.
+kg:id_10 rdf:type cls:c_106.
+cls:c_106 rdfs:label "工事"@ja.
+kg:id_11 rdfs:label "水の濁りによる利水への影響"@ja.
+kg:id_11 rdf:type cls:c_8263.
+cls:c_8263 rdfs:label "水環境影響"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "オオタカの繁殖地"@ja.
+kg:id_12 rdf:type cls:c_13780.
+cls:c_13780 rdfs:label "希少鳥類生息地"@ja.
+kg:id_13 rdfs:label "事業の実施に伴う影響"@ja.
+kg:id_13 rdf:type cls:c_222.
+cls:c_222 rdfs:label "事業影響"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "オオタカ繁殖地への影響を回避又は低減するよう検討"@ja.
+kg:id_14 rdf:type cls:c_13781.
+cls:c_13781 rdfs:label "生態影響低減"@ja.
+kg:id_3 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "事業の実施"@ja.
+kg:id_15 rdf:type cls:c_1.
+cls:c_1 rdfs:label "事業"@ja.
+kg:id_16 rdfs:label "植物や重要な自然環境のまとまりの場への影響"@ja.
+kg:id_16 rdf:type cls:c_223.
+cls:c_223 rdfs:label "自然環境影響"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "植物や重要な自然環境のまとまりの場への影響を極力回避"@ja.
+kg:id_17 rdf:type cls:c_13782.
+cls:c_13782 rdfs:label "自然影響回避"@ja.
+kg:id_3 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "風力発電機"@ja.
+kg:id_18 rdf:type cls:c_7409.
+cls:c_7409 rdfs:label "発電設備"@ja.
+kg:id_19 rdfs:label "景観への影響"@ja.
+kg:id_19 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "可視領域を考慮して適切な調査地点を選定"@ja.
+kg:id_20 rdf:type cls:c_13644.
+cls:c_13644 rdfs:label "調査地点選定"@ja.
+kg:id_3 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "風力発電機の配置計画"@ja.
+kg:id_21 rdf:type cls:c_10748.
+cls:c_10748 rdfs:label "設備配置"@ja.
+kg:id_22 rdfs:label "騒音及び超低周波音による影響の低減に配慮"@ja.
+kg:id_22 rdf:type cls:c_5.
+kg:id_21 prop:contermeasure kg:id_22.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "地域住民等に丁寧な説明を行い理解を得るべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地域住民等に丁寧な説明を行い理解を得るべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "関係自治体や地域住民の情報を踏まえて位置・規模等を決定すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "方法書で位置・規模等と環境保全配慮の内容を具体化すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "他事業の情報も収集し複合影響を適切に調査予測評価すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "湧水等の水道水源地への影響を含め適切に調査予測評価すべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "現地調査結果や専門家助言を踏まえて影響回避又は低減を検討すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "現地調査結果や専門家助言を踏まえて影響回避又は低減を検討すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "自然度の高い植生や保安林や自然環境保全地域への影響を極力回避すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "現地調査結果や専門家助言を踏まえて影響を極力回避すべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "関係自治体や地域住民から情報収集し可視領域を考慮して適切な調査地点を選定すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "関係自治体や地域住民から情報収集し可視領域を考慮して調査地点を選定すべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "由利本荘市長"@ja.
+kg:st_2 rdfs:type cls:st_11.
+kg:op_13 prop:content "人と自然との触れ合いの活動の場である観光地への影響低減に配慮した配置計画を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業実施想定区域内には、人と自然との触れ合いの活動の場や畜舎が存在するほか、周辺には住居が存在することから、工事中及び供用後において、人と自然との触れ合いの活動の場等や住居への影響を回避又は低減するよう配慮すること"@ja.
+<< kg:id_3 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "工事中及び供用後において、人と自然との触れ合いの活動の場等や住居への影響を回避又は低減するよう配慮するとともに、事業計画について地域住民等に丁寧な説明を行い、理解を得られるよう努めること"@ja.
+<< kg:id_3 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今後の事業計画の検討に当たっては、関係自治体や地域住民からの情報収集に努め、影響を受けるおそれのある環境要素について、影響の程度を必要に応じて調査及び予測し、その結果を総合的に評価した上で、事業の位置・規模及び配置・構造の決定に反映すること"@ja.
+<< kg:id_6 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "方法書においては事業の位置・規模等を可能な限り明確にするとともに、具体的な環境の保全の配慮に係る検討内容やその結果を記載すること"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "事業実施想定区域周辺の既設及び計画中の風力発電所との複合的な環境影響を勘案し、可能な限りこれら他事業の諸元等の情報入手に努め、適切に調査、予測及び評価すること"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "事業実施想定区域及びその周辺には、湧水等の水道水源地が複数存在することから、工事の実施に伴う水の濁りの影響について、利水への影響を含め適切に調査、予測及び評価すること"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "事業実施想定区域及びその周辺には、オオタカの繁殖地が確認されていることから、事業の位置・規模等の決定に当たっては、今後の現地調査の結果や専門家の助言、最新の知見・事例等を踏まえ、事業の実施に伴う影響を回避又は低減するよう検討すること"@ja.
+<< kg:id_3 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "事業実施想定区域及びその周辺には、オオタカの繁殖地が確認されていることから、事業の位置・規模等の決定に当たっては、今後の現地調査の結果や専門家の助言、最新の知見・事例等を踏まえ、事業の実施に伴う影響を回避又は低減するよう検討すること"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "事業実施想定区域内には、ブナクラス域等の自然度の高い植生や森林法に基づき指定された水源かん養保安林が広く分布している。また、区域の一部には、特定植物群落に選定されている竜馬山のケヤキ林や秋田県自然環境保全条例に基づき指定された笹森山自然環境保全地域が存在していることから、事業の実施に伴い、これらの植生や重要な自然環境のまとまりの場への影響が懸念される"@ja.
+<< kg:id_3 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "このため、事業の位置・規模等の決定に当たっては、今後の現地調査の結果や専門家の助言を踏まえ、事業の実施に伴う影響を極力回避するよう検討すること"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "主要な眺望点の予測地域は事業実施想定区域から9kmの範囲としているが、風力発電機を尾根上に配置する計画であることから、眺望点について関係自治体や地域住民からの情報収集に努め、風力発電機の可視領域を考慮して適切な調査地点を選定すること"@ja.
+<< kg:id_3 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "眺望点について関係自治体や地域住民からの情報収集に努め、風力発電機の可視領域を考慮して適切な調査地点を選定すること"@ja.
+<< kg:id_21 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "事業実施想定区域及びその周囲において、人と自然との触れ合いの活動の場（観光地）が複数存在するため、騒音、超低周波音による影響の低減に配慮した風力発電機の配置計画を行うこと"@ja.
+}

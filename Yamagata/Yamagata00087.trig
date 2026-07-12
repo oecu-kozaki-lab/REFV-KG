@@ -1,0 +1,641 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00087> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市の雇用情勢の低調"@ja.
+kg:id_1 rdf:type cls:c_4775.
+cls:c_4775 rdfs:label "雇用低迷"@ja.
+kg:id_2 rdfs:label "製造業の割合が低く建設業の割合が高い産業構造"@ja.
+kg:id_2 rdf:type cls:c_4776.
+cls:c_4776 rdfs:label "産業構造"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "建設業の比率が高いこと"@ja.
+kg:id_3 rdf:type cls:c_4777.
+cls:c_4777 rdfs:label "建設業偏重"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "大規模な雇用調整の影響"@ja.
+kg:id_4 rdf:type cls:c_4778.
+cls:c_4778 rdfs:label "雇用調整"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "米作単作地帯で米価低迷により農業が疲弊していること"@ja.
+kg:id_5 rdf:type cls:c_4779.
+cls:c_4779 rdfs:label "農業疲弊"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "公共事業の低下による建設業の不振"@ja.
+kg:id_6 rdf:type cls:c_4780.
+cls:c_4780 rdfs:label "建設業不振"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "大企業雇用依存の歴史により中小ものづくり企業の育成がおくれていること"@ja.
+kg:id_7 rdf:type cls:c_4781.
+cls:c_4781 rdfs:label "企業育成遅れ"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "観光への取り組みが先進地に比べ十分でなかったこと"@ja.
+kg:id_8 rdf:type cls:c_4782.
+cls:c_4782 rdfs:label "観光振興不足"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "介護保険施設の退所"@ja.
+kg:id_9 rdf:type cls:c_4783.
+cls:c_4783 rdfs:label "施設退所"@ja.
+kg:id_10 rdfs:label "食費と居住費の負担"@ja.
+kg:id_10 rdf:type cls:c_959.
+cls:c_959 rdfs:label "利用者負担"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "施設退所者数"@ja.
+kg:id_11 rdf:type cls:c_4784.
+cls:c_4784 rdfs:label "退所者数"@ja.
+kg:id_12 rdfs:label "酒田市では2人が退所"@ja.
+kg:id_12 rdf:type cls:c_4785.
+cls:c_4785 rdfs:label "退所者"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "石油価格の高騰"@ja.
+kg:id_13 rdf:type cls:c_4786.
+cls:c_4786 rdfs:label "資源価格高騰"@ja.
+kg:id_14 rdfs:label "庁舎管理費の増加"@ja.
+kg:id_14 rdf:type cls:c_4787.
+cls:c_4787 rdfs:label "管理費増加"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "小中学校暖房費の増加"@ja.
+kg:id_15 rdf:type cls:c_4788.
+cls:c_4788 rdfs:label "暖房費増加"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "公用車ガソリン支出の増加"@ja.
+kg:id_16 rdf:type cls:c_3383.
+cls:c_3383 rdfs:label "燃料費増加"@ja.
+kg:id_13 prop:effect kg:id_16.
+kg:id_17 rdfs:label "大雪"@ja.
+kg:id_17 rdf:type cls:c_1623.
+cls:c_1623 rdfs:label "大雪"@ja.
+kg:id_18 rdfs:label "学校給食の生鮮野菜価格高騰"@ja.
+kg:id_18 rdf:type cls:c_4789.
+cls:c_4789 rdfs:label "野菜価格高騰"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "学校給食食材調達経費の増加"@ja.
+kg:id_19 rdf:type cls:c_3840.
+cls:c_3840 rdfs:label "調達費増加"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "日照不足と長雨"@ja.
+kg:id_20 rdf:type cls:c_1143.
+cls:c_1143 rdfs:label "天候不順"@ja.
+kg:id_21 rdfs:label "キャベツやホウレンソウの生育不良"@ja.
+kg:id_21 rdf:type cls:c_4790.
+cls:c_4790 rdfs:label "生育不良"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "野菜不足と価格高騰"@ja.
+kg:id_22 rdf:type cls:c_4791.
+cls:c_4791 rdfs:label "野菜不足"@ja.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "収入未済額の累増"@ja.
+kg:id_23 rdf:type cls:c_4792.
+cls:c_4792 rdfs:label "未収金累増"@ja.
+kg:id_24 rdfs:label "市民の公平公正が損なわれる"@ja.
+kg:id_24 rdf:type cls:c_4793.
+cls:c_4793 rdfs:label "公平性低下"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "障害者自立支援法による1割負担"@ja.
+kg:id_25 rdf:type cls:c_959.
+kg:id_26 rdfs:label "利用控えへの懸念"@ja.
+kg:id_26 rdf:type cls:c_4794.
+cls:c_4794 rdfs:label "利用控え"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "所得の低いほど負担が重くなる問題"@ja.
+kg:id_27 rdf:type cls:c_4795.
+cls:c_4795 rdfs:label "低所得者負担"@ja.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "大幅な負担増"@ja.
+kg:id_28 rdf:type cls:c_3940.
+cls:c_3940 rdfs:label "負担増"@ja.
+kg:id_25 prop:effect kg:id_28.
+kg:id_29 rdfs:label "除雪機械の確保困難"@ja.
+kg:id_29 rdf:type cls:c_4796.
+cls:c_4796 rdfs:label "機械確保困難"@ja.
+kg:id_30 rdfs:label "公共工事減少で業者が機械購入できず老朽化が進んでいること"@ja.
+kg:id_30 rdf:type cls:c_4797.
+cls:c_4797 rdfs:label "機械老朽化"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "業務停止や廃業する会社が徐々に出てきたこと"@ja.
+kg:id_31 rdf:type cls:c_4798.
+cls:c_4798 rdfs:label "事業者減少"@ja.
+kg:id_29 prop:cause kg:id_31.
+kg:id_32 rdfs:label "除雪体制"@ja.
+kg:id_32 rdf:type cls:c_4799.
+cls:c_4799 rdfs:label "除雪体制"@ja.
+kg:id_33 rdfs:label "市の保有機械を有利な制度で増やす"@ja.
+kg:id_33 rdf:type cls:c_4800.
+cls:c_4800 rdfs:label "機械増強"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "市が直接リースする除雪機械を増やす"@ja.
+kg:id_34 rdf:type cls:c_4801.
+cls:c_4801 rdfs:label "機械リース"@ja.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "国県市で調整し一体的に除雪する"@ja.
+kg:id_35 rdf:type cls:c_827.
+cls:c_827 rdfs:label "広域連携"@ja.
+kg:id_32 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "収納率の低下"@ja.
+kg:id_36 rdf:type cls:c_4802.
+cls:c_4802 rdfs:label "収納率低下"@ja.
+kg:id_37 rdfs:label "市税等収納率向上特別対策本部の設置"@ja.
+kg:id_37 rdf:type cls:c_4803.
+cls:c_4803 rdfs:label "対策本部"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "夜間督励と納付窓口の開設"@ja.
+kg:id_38 rdf:type cls:c_4804.
+cls:c_4804 rdfs:label "納付促進"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "口座振り込みの拡充"@ja.
+kg:id_39 rdf:type cls:c_4805.
+cls:c_4805 rdfs:label "口座納付"@ja.
+kg:id_36 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "悪質滞納者への滞納処分"@ja.
+kg:id_40 rdf:type cls:c_4806.
+cls:c_4806 rdfs:label "滞納処分"@ja.
+kg:id_36 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "分納などの納税相談"@ja.
+kg:id_41 rdf:type cls:c_4807.
+cls:c_4807 rdfs:label "納税相談"@ja.
+kg:id_36 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "酒田市の財政運営"@ja.
+kg:id_42 rdf:type cls:c_2720.
+cls:c_2720 rdfs:label "財政運営"@ja.
+kg:id_43 rdfs:label "新市建設計画の着実な推進"@ja.
+kg:id_43 rdf:type cls:c_3616.
+cls:c_3616 rdfs:label "計画推進"@ja.
+kg:id_42 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "総合計画の策定の中で市民ニーズを吸い上げる"@ja.
+kg:id_44 rdf:type cls:c_4808.
+cls:c_4808 rdfs:label "需要反映"@ja.
+kg:id_42 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "繰越金を補正財源として確保する"@ja.
+kg:id_45 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_42 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "繰越金を積み立てや繰上償還に活用する"@ja.
+kg:id_46 rdf:type cls:c_4809.
+cls:c_4809 rdfs:label "債務圧縮"@ja.
+kg:id_42 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "石油価格高騰への対応"@ja.
+kg:id_47 rdf:type cls:c_4810.
+cls:c_4810 rdfs:label "価格高騰対応"@ja.
+kg:id_48 rdfs:label "クールビズとウォームビズの推進"@ja.
+kg:id_48 rdf:type cls:c_4811.
+cls:c_4811 rdfs:label "省エネ推進"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "環境パートナー会議による全市的省エネ推進"@ja.
+kg:id_49 rdf:type cls:c_4811.
+kg:id_47 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "木質ペレット使用の簡易ハウス暖房や石油ボイラー併用の実証研究"@ja.
+kg:id_50 rdf:type cls:c_4812.
+cls:c_4812 rdfs:label "代替燃料研究"@ja.
+kg:id_47 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "酒田市の工業振興"@ja.
+kg:id_51 rdf:type cls:c_4813.
+cls:c_4813 rdfs:label "工業振興"@ja.
+kg:id_52 rdfs:label "リサイクルポート構想の一層の推進"@ja.
+kg:id_52 rdf:type cls:c_1824.
+cls:c_1824 rdfs:label "港湾活用"@ja.
+kg:id_51 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "ものづくりに関する意識啓発と支援措置"@ja.
+kg:id_53 rdf:type cls:c_4814.
+cls:c_4814 rdfs:label "企業育成"@ja.
+kg:id_51 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "ものづくり関係企業を重点的に訪問し誘致する"@ja.
+kg:id_54 rdf:type cls:c_1392.
+cls:c_1392 rdfs:label "企業誘致"@ja.
+kg:id_51 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "農業振興"@ja.
+kg:id_55 rdf:type cls:c_4815.
+cls:c_4815 rdfs:label "農業振興"@ja.
+kg:id_56 rdfs:label "集落営農と法人化の推進"@ja.
+kg:id_56 rdf:type cls:c_3332.
+cls:c_3332 rdfs:label "法人化推進"@ja.
+kg:id_55 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "希少価値と地域限定品を売りにした有利販売"@ja.
+kg:id_57 rdf:type cls:c_4816.
+cls:c_4816 rdfs:label "販売強化"@ja.
+kg:id_55 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "無人ヘリ防除のルール整備と情報交換"@ja.
+kg:id_58 rdf:type cls:c_4817.
+cls:c_4817 rdfs:label "防除管理"@ja.
+kg:id_55 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "障害者自立支援法への対応"@ja.
+kg:id_59 rdf:type cls:c_756.
+cls:c_756 rdfs:label "制度対応"@ja.
+kg:id_60 rdfs:label "利用者実態と他市状況の調査研究"@ja.
+kg:id_60 rdf:type cls:c_4818.
+cls:c_4818 rdfs:label "調査研究"@ja.
+kg:id_59 prop:contermeasure kg:id_60.
+kg:st_1 rdfs:label "阿部寿一市長"@ja.
+kg:st_1 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_1 prop:content "雇用改善には地元のものづくり企業育成が重要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "高橋一泰議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_2 prop:content "産業構造の偏重は行政と経済界が一体で解決すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "建設業依存が景気回復と雇用確保の足を引っ張っている可能性がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "過去の雇用調整の影響が残っている可能性がある"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "農業の疲弊が商工業にも影響している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "公共事業減少が建設業を厳しい状況にしている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "大企業依存から脱し地元ものづくり企業を育てる必要がある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "観光振興の強化も地域経済改善に必要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "斎藤周議員"@ja.
+kg:st_3 rdfs:type cls:st_16.
+kg:op_9 prop:content "自己負担増で施設退所が起きている実態を重く見るべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "経済的理由による退所者は2人と把握している"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "橋本明宗議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_11 prop:content "石油価格高騰は財政を圧迫する大きな要因である"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_4.
+kg:op_12 prop:content "石油高騰が学校など公共施設の運営費を圧迫している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "燃料高騰は公用車運行経費にも影響している"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "兵田藤吉議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_14 prop:content "大雪で給食食材の調達に大きな影響が出たはずだ"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "石川翼久教育長"@ja.
+kg:st_6 rdfs:type cls:st_19.
+cls:st_19 rdfs:label "教育長"@ja.
+kg:op_15 prop:content "野菜価格は高騰したが献立変更なしで対応できた"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "生鮮野菜は高騰したが給食費内で対応した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:op_17 prop:content "市場調達で対応し大きな影響は避けた"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_6.
+kg:op_18 prop:content "今年7月の天候不順でも野菜不足と価格高騰が起きた"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "未済額解消は財源確保だけでなく公平公正の観点から重要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_5.
+kg:op_20 prop:content "納め損や逃げ得という不公平感を放置してはならない"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:st_7 rdfs:label "菅原良明議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_21 prop:content "1割負担は利用控えを招くおそれがある"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "佐藤幸一健康福祉部長"@ja.
+kg:st_8 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_22 prop:content "利用動向を今後見ていく必要がある"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_8.
+kg:op_23 prop:content "負担区分が少なく低所得者ほど重い制度になっている"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_7.
+kg:op_24 prop:content "従来負担との差額を市が補うべきだ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "業者依存の除雪体制は持続困難で市の機械保有も検討すべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "市保有機械や市直接リースを計画的に増やす必要がある"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "廃業増加で委託業者依存の除雪体制は限界に近い"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "市保有機械を増やして除雪体制を維持したい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "市直接リース機械を計画的に増やす必要がある"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "国県市の除雪体制を一本化して効率を上げるべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "県とも調整し不自然な除雪を減らしたい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:st_9 rdfs:label "渡会豊明総務部長"@ja.
+kg:st_9 rdfs:type cls:st_18.
+kg:op_32 prop:content "全庁的に収納率向上へ取り組む"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_9.
+kg:op_33 prop:content "監査意見を重く受けとめて強い決意で臨むべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "夜間督励や夜間窓口で納付しやすい環境を整えている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_9.
+kg:op_35 prop:content "納付手段の改善で収納率向上を図る"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_9.
+kg:op_36 prop:content "納税能力があるのに納めない者には積極的に処分が必要"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "公平な判定基準のもとで滞納処分を執行している"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_9.
+kg:op_38 prop:content "納付困難者には分納相談や減免紹介で対応すべき"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "合併直後は新市建設計画を着実に進めることが重要"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "総合計画の中で市民ニーズを的確に反映したい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "繰越金は今後の補正財源として活用したい"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "将来の財政不足への備えとして積立てや繰上償還に使うべき"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "市役所が率先して省エネに取り組むべき"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "市民と連携した省エネ体制づくりが重要"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "農業分野で地域エネルギー活用を研究している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:op_46 prop:content "港を活用した経済対策をさらに充実したい"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "進出企業へのアフターフォローが重要"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "ものづくり企業の育成強化が必要"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "ものづくり企業を核に地域工業を強化したい"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "産地間競争に勝つため法人化体制を早急につくるべき"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "地域差はあるが法人化への取り組みは進んでいる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "特色ある米の有利販売を伸ばすべき"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "平野部と中山間部で差別化した販売が必要"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_4.
+kg:op_54 prop:content "ポジティブリスト制度に対応した防除ルール運用が必要"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "独自軽減は予定していないが実態把握と研究は続ける"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "酒田の雇用情勢が低調である原因についての一つの識者のお話として、また各種統計調査の中からということになりますが、業況が上向いている製造業の割合が低くて、業況が停滞している建設業の割合が高いということが、そういう産業構造が大きな原因ではないかというふうに思います。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "一般的にというか、識者のお話としてあるのは、本地域は建設業の比率が高いので、これがどうしても景気回復、雇用確保の足を少し引っ張りつつあるんじゃないかとか"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "かつて大規模な雇用調整が本地域であったわけでありますが、その影響が残っているのではないかというような意見もあるわけであります。"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "この地域の経済的な基礎をなすべき農業が米作の単作地帯という色彩が非常に強いものですから、米価の低迷とともに農業自体が大変疲弊をし、そしてそれが商工業にも大きな影響が出ている。"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "公共事業の低下によって建設業が大変厳しい状況にある。"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "大浜工業地帯の時代から大企業による雇用に頼ってきたという歴史性から、中小の優秀な企業によるものづくり企業の育成といいますか、そういうものが少しおくれ加減ではないかということ。"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "観光ということについての取り組みも、今までは先進地などに比べて十分であったかというようなことなどから、さまざまな要因が相まって厳しい情勢になっているのではないか"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "昨年10月に介護保険の改定が行われ、施設入所者に対して食費、居住費の負担を求めました。こうした自己負担の影響によって施設退所者数が全国で1,326人いることが厚生労働省の調査で明らかになりました。"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "経済的な理由による介護保険施設の退所者数でありますが、酒田市では２人と承知をしております。"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "決算額でいいますと、重油を使用している庁舎管理で31.5％の経費増"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "小中学校の暖房費では44.3％の増になってございます。"@ja.
+<< kg:id_13 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "公用車などのガソリンですが18万5,000円ほどの増"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "昨年12月から今年２月にかけての寒波と大雪は市民生活すべての分野に大きな影響を与え、学校給食の食材にも大打撃を与えたようであります。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "確かに大雪で生鮮野菜は高騰しましたけれども、質や量を含め、献立の変更をしないで対応できたことは大変よかったと思っております。"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "この夏の雨や日照不足によりまして、キャベツやホウレンソウが生育不良だった"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "今年の７月も全国的な日照不足の上に長雨、台風と大変な気候であり、これもまた野菜不足、価格が高騰した"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "財源の確保もさることながら、市民の公平、公正の観点から、未済額解消にどのような対策を立てられ"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "今後１割負担という負担感から利用を控えることが大変心配されます"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "負担区分についても、応能負担というものが消え、４段階と少なくなっており、所得が低いほど負担が重くなるという問題があります。"@ja.
+<< kg:id_25 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "この法律が制定されたことで、大幅な負担増となり、これでは自立できないという批判の声が出て"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "公共工事に多くを依存してきた市内業者は、厳しい環境に対応するため、リストラに踏み切らざるを得なかったこと、仕事量が少なく、除雪以外に余り稼働する機会のないこうした機械の購入は難しく、老朽化も一段と進んで、その先の見通しがつかない"@ja.
+<< kg:id_29 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "業務を停止して廃業する会社が徐々に出てきたことなどを考え合わせますと、業者依存の今のやり方は持続できないこと必至だと思います。"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "市としてもそのような状況に対処していくために、市の保有機械を有利な制度を活用しながらふやしていくとか"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "市が直接リースするというような機械、こういうものをふやしていかなければならないだろうということで、これから計画的にふやしていきたい"@ja.
+<< kg:id_32 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "国・県・市との話し合いはいろいろ問題があって一挙には解決できないと思いますが、除雪の悩みは共通の課題であるはずです。もっと効率的な機械の配置、除雪時間の短縮、交通の不便解消、経費節減は考えること一緒なのであります。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_32;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "酒田市市税等の収納率向上特別対策本部を設置いたしまして"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "夜間督励とか、口座振り込みの拡充といいますか、そういったこととか"@ja.
+<< kg:id_36 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "口座振り込みの拡充といいますか、そういったこととか"@ja.
+<< kg:id_36 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "悪質滞納者に対する滞納処分などでございますが、不公平ということがあってはいけませんので、納税能力があるのに納めていないという方については、このような形で積極的な対応が必要かと思っております。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "機動的に制度的な減免措置を御紹介申し上げたり、分納などの納税相談などもきめ細かにやっていく"@ja.
+<< kg:id_42 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "合併直後でございますので、新市建設計画の着実な推進を図るほか"@ja.
+<< kg:id_42 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "総合計画の策定作業の中で市民ニーズを的確に吸い上げ、そしてまたそれに計画的に対応していきたい"@ja.
+<< kg:id_42 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "まずは今後の補正財源として貴重な財源になります。"@ja.
+<< kg:id_42 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "将来的な財政展望を見越した財源不足への対応として積み立てなり、繰上償還なりに活用をしたい"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "クールビズやウォームビズというようなことなどを含めて、積極的に取り組んでおります。"@ja.
+<< kg:id_47 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "環境基本計画を推進するための組織として、環境パートナー会議というものを設立して、お互い協力、連携を図りながら一体となって省エネを全市的に進めるような体制を構築しつつある"@ja.
+<< kg:id_47 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "今年度県と共同で地域エネルギーの検討協議会を立ち上げて、パイプハウス、ビニールハウスの燃料費の削減に向けた加温栽培システムの研究に着手をしてございます。現在は木質ペレットの使用の簡易なハウス暖房とか、石油ボイラーとの併用、地下水のくみ上げなどについて検討中"@ja.
+<< kg:id_51 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "立地する企業の皆さんと県と私たちや商工会議所とともに、情報交換をしながら、このリサイクルポート構想の一層の推進、これが本市のみでできることでありますので、港を活用した経済対策、さらに充実してまいりたい"@ja.
+<< kg:id_51 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "ものづくりに関する意識の啓発でありますとか、さまざまな支援措置を講ずるとともに"@ja.
+<< kg:id_51 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "企業誘致をする際にも、今、ものづくり関係の企業を少し重点的に訪問させていただいたり、交渉をさせていただいている"@ja.
+<< kg:id_55 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "集落営農、法人化への取り組み状況でありますが、８月末現在で地区一本化で頑張るというのが７地区、集落単位が５地区、認定農業者中心が１地区"@ja.
+<< kg:id_55 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "希少価値と地域限定品を売りにした有利販売と、それから規模、スケールメリットを生かした販売等両方組み合わせていくべき"@ja.
+<< kg:id_55 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "酒田管内の両農協でも無人ヘリで防除を行う際のルールを定めてございます。また、ＪＡみどりでは農畜産物安全安心実践本部を設置"@ja.
+<< kg:id_59 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "利用者の実態、それから他市の状況なども調査しながら、どのような制度が必要なのか、もしくはどのような形での理解を深めていくことが必要なのかというようなことについては、引き続き調査研究はしていかなければならない"@ja.
+}

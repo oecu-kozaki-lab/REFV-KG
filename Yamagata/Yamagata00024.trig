@@ -1,0 +1,689 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00024> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "周辺の生物の生育状況の把握不足"@ja.
+kg:id_1 rdf:type cls:c_284.
+cls:c_284 rdfs:label "生物把握不足"@ja.
+kg:id_2 rdfs:label "既往調査による情報の収集が不十分"@ja.
+kg:id_2 rdf:type cls:c_285.
+cls:c_285 rdfs:label "情報収集不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "引用文献が少ない"@ja.
+kg:id_3 rdf:type cls:c_286.
+cls:c_286 rdfs:label "文献不足"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "動植物が十分リストアップされていない"@ja.
+kg:id_4 rdf:type cls:c_287.
+cls:c_287 rdfs:label "動植物把握不足"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "風力発電など新たな改変"@ja.
+kg:id_5 rdf:type cls:c_127.
+cls:c_127 rdfs:label "地形改変"@ja.
+kg:id_6 rdfs:label "自然エネルギー開発の推進"@ja.
+kg:id_6 rdf:type cls:c_288.
+cls:c_288 rdfs:label "開発推進"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "動植物がいなくなるおそれ"@ja.
+kg:id_7 rdf:type cls:c_289.
+cls:c_289 rdfs:label "動植物減少"@ja.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "慎重な取り組み"@ja.
+kg:id_8 rdf:type cls:c_290.
+cls:c_290 rdfs:label "慎重対応"@ja.
+kg:id_5 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "方法書の動物リストの不備"@ja.
+kg:id_9 rdf:type cls:c_291.
+cls:c_291 rdfs:label "動物リスト不備"@ja.
+kg:id_10 rdfs:label "リスト内容の誤記や記載漏れ"@ja.
+kg:id_10 rdf:type cls:c_292.
+cls:c_292 rdfs:label "記載不備"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "重要種の記載が不十分"@ja.
+kg:id_11 rdf:type cls:c_293.
+cls:c_293 rdfs:label "重要種記載不足"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:id_12 rdfs:label "再チェック"@ja.
+kg:id_12 rdf:type cls:c_294.
+cls:c_294 rdfs:label "再確認"@ja.
+kg:id_9 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "渡り鳥への影響把握不足"@ja.
+kg:id_13 rdf:type cls:c_295.
+cls:c_295 rdfs:label "渡り鳥把握不足"@ja.
+kg:id_14 rdfs:label "沿岸部が渡り鳥のルートである"@ja.
+kg:id_14 rdf:type cls:c_296.
+cls:c_296 rdfs:label "渡り経路"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "どのような種類の鳥がいつどのように渡るか不明"@ja.
+kg:id_15 rdf:type cls:c_297.
+cls:c_297 rdfs:label "渡り実態不明"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "渡りルートと渡来時期の調査"@ja.
+kg:id_16 rdf:type cls:c_298.
+cls:c_298 rdfs:label "鳥類調査"@ja.
+kg:id_13 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "風力発電施設の自立構造への懸念"@ja.
+kg:id_17 rdf:type cls:c_299.
+cls:c_299 rdfs:label "構造安全性懸念"@ja.
+kg:id_18 rdfs:label "方法書に基盤や地下地質の情報がない"@ja.
+kg:id_18 rdf:type cls:c_300.
+cls:c_300 rdfs:label "地盤情報不足"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "地震時に液状化して砂が全部動く可能性"@ja.
+kg:id_19 rdf:type cls:c_301.
+cls:c_301 rdfs:label "液状化可能性"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "断面図や地下地質の強度がわかる資料の提示"@ja.
+kg:id_20 rdf:type cls:c_302.
+cls:c_302 rdfs:label "資料提示"@ja.
+kg:id_17 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "コアジサシへの影響"@ja.
+kg:id_21 rdf:type cls:c_6.
+cls:c_6 rdfs:label "鳥類影響"@ja.
+kg:id_22 rdfs:label "風力発電施設の設置"@ja.
+kg:id_22 rdf:type cls:c_303.
+cls:c_303 rdfs:label "施設設置"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "繁殖地がなくなってしまうおそれ"@ja.
+kg:id_23 rdf:type cls:c_304.
+cls:c_304 rdfs:label "繁殖地消失"@ja.
+kg:id_21 prop:effect kg:id_23.
+kg:id_24 rdfs:label "繁殖状況の継続調査"@ja.
+kg:id_24 rdf:type cls:c_305.
+cls:c_305 rdfs:label "継続調査"@ja.
+kg:id_21 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "景観への影響評価の不十分さ"@ja.
+kg:id_25 rdf:type cls:c_306.
+cls:c_306 rdfs:label "景観評価不足"@ja.
+kg:id_26 rdfs:label "景観調査内容の具体的記載が不足"@ja.
+kg:id_26 rdf:type cls:c_307.
+cls:c_307 rdfs:label "調査記載不足"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "フォトモンタージュの良し悪しの判断が人によって異なる"@ja.
+kg:id_27 rdf:type cls:c_308.
+cls:c_308 rdfs:label "主観差"@ja.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "詳細なモンタージュ作成や定量的調査"@ja.
+kg:id_28 rdf:type cls:c_309.
+cls:c_309 rdfs:label "景観調査"@ja.
+kg:id_25 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "庄内砂丘の地形改変"@ja.
+kg:id_29 rdf:type cls:c_127.
+kg:id_30 rdfs:label "風力発電施設の建設"@ja.
+kg:id_30 rdf:type cls:c_310.
+cls:c_310 rdfs:label "施設建設"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "砂浜侵食で風車の足元がすくわれる可能性"@ja.
+kg:id_31 rdf:type cls:c_311.
+cls:c_311 rdfs:label "砂浜侵食"@ja.
+kg:id_29 prop:effect kg:id_31.
+kg:id_32 rdfs:label "長いスパンでの地形改変の調査"@ja.
+kg:id_32 rdf:type cls:c_312.
+cls:c_312 rdfs:label "地形調査"@ja.
+kg:id_29 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "騒音・超低周波音の把握不足"@ja.
+kg:id_33 rdf:type cls:c_313.
+cls:c_313 rdfs:label "騒音把握不足"@ja.
+kg:id_34 rdfs:label "調査期間が1日または2日間と短い"@ja.
+kg:id_34 rdf:type cls:c_314.
+cls:c_314 rdfs:label "調査期間不足"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "庄内特有の気象条件による音の伝わり方を十分調べられない"@ja.
+kg:id_35 rdf:type cls:c_315.
+cls:c_315 rdfs:label "気象影響"@ja.
+kg:id_33 prop:effect kg:id_35.
+kg:id_36 rdfs:label "新しいガイドラインに基づく予測評価"@ja.
+kg:id_36 rdf:type cls:c_316.
+cls:c_316 rdfs:label "予測評価"@ja.
+kg:id_33 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "施工時の複合影響"@ja.
+kg:id_37 rdf:type cls:c_317.
+cls:c_317 rdfs:label "複合影響"@ja.
+kg:id_38 rdfs:label "県と酒田市で工事用資材の搬入ルートが同じ"@ja.
+kg:id_38 rdf:type cls:c_318.
+cls:c_318 rdfs:label "搬入路共有"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "最も影響が大きくなる場合の予測評価が必要"@ja.
+kg:id_39 rdf:type cls:c_268.
+cls:c_268 rdfs:label "影響予測"@ja.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "工事工程の調整"@ja.
+kg:id_40 rdf:type cls:c_319.
+cls:c_319 rdfs:label "工程調整"@ja.
+kg:id_37 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "海浜植物群落への影響"@ja.
+kg:id_41 rdf:type cls:c_320.
+cls:c_320 rdfs:label "植物影響"@ja.
+kg:id_42 rdfs:label "風力発電施設の影"@ja.
+kg:id_42 rdf:type cls:c_321.
+cls:c_321 rdfs:label "施設影"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "植物群落が十分な光を受けられなくなる可能性"@ja.
+kg:id_43 rdf:type cls:c_322.
+cls:c_322 rdfs:label "日照不足"@ja.
+kg:id_41 prop:effect kg:id_43.
+kg:id_44 rdfs:label "影の範囲と時間の予測評価"@ja.
+kg:id_44 rdf:type cls:c_268.
+kg:id_41 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "仮設工事用道路による海域等への影響"@ja.
+kg:id_45 rdf:type cls:c_323.
+cls:c_323 rdfs:label "海域影響"@ja.
+kg:id_46 rdfs:label "砂浜に鋼板を敷いて仮設道路を設置"@ja.
+kg:id_46 rdf:type cls:c_324.
+cls:c_324 rdfs:label "仮設道路設置"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "油脂類やコンクリートの流出のおそれ"@ja.
+kg:id_47 rdf:type cls:c_325.
+cls:c_325 rdfs:label "汚濁流出"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "油脂類が散らばらないよう保全対策を検討"@ja.
+kg:id_48 rdf:type cls:c_326.
+cls:c_326 rdfs:label "保全対策"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "台風時に仮設道路が水質等へ影響するおそれ"@ja.
+kg:id_49 rdf:type cls:c_327.
+cls:c_327 rdfs:label "水質影響"@ja.
+kg:id_45 prop:effect kg:id_49.
+kg:id_50 rdfs:label "文献整理の不備"@ja.
+kg:id_50 rdf:type cls:c_328.
+cls:c_328 rdfs:label "文献整理不備"@ja.
+kg:id_51 rdfs:label "最新の資料だけを用いて整理している"@ja.
+kg:id_51 rdf:type cls:c_329.
+cls:c_329 rdfs:label "文献偏重"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "できる限り多くの文献からデータ収集"@ja.
+kg:id_52 rdf:type cls:c_330.
+cls:c_330 rdfs:label "文献収集"@ja.
+kg:id_50 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "植物調査手法の不明確さ"@ja.
+kg:id_53 rdf:type cls:c_331.
+cls:c_331 rdfs:label "植物調査不明確"@ja.
+kg:id_54 rdfs:label "植物相調査や植生調査の手法が具体的に記載されていない"@ja.
+kg:id_54 rdf:type cls:c_332.
+cls:c_332 rdfs:label "手法不明"@ja.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "改変地域の細かな環境変化を把握しきれない"@ja.
+kg:id_55 rdf:type cls:c_333.
+cls:c_333 rdfs:label "環境変化把握不足"@ja.
+kg:id_53 prop:effect kg:id_55.
+kg:id_56 rdfs:label "調査手法の明確化と追加調査"@ja.
+kg:id_56 rdf:type cls:c_334.
+cls:c_334 rdfs:label "手法明確化"@ja.
+kg:id_53 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "生態系記載の不備"@ja.
+kg:id_57 rdf:type cls:c_335.
+cls:c_335 rdfs:label "生態系記載不備"@ja.
+kg:id_58 rdfs:label "図表の用語不整合と出典未記載"@ja.
+kg:id_58 rdf:type cls:c_336.
+cls:c_336 rdfs:label "用語不整合"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "用語統一と選定理由・出典の記載"@ja.
+kg:id_59 rdf:type cls:c_337.
+cls:c_337 rdfs:label "記載改善"@ja.
+kg:id_57 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "集団繁殖鳥類の把握不足"@ja.
+kg:id_60 rdf:type cls:c_338.
+cls:c_338 rdfs:label "鳥類把握不足"@ja.
+kg:id_61 rdfs:label "鳥類調査範囲が限定的"@ja.
+kg:id_61 rdf:type cls:c_339.
+cls:c_339 rdfs:label "調査範囲不足"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "繁殖範囲全体を把握できない"@ja.
+kg:id_62 rdf:type cls:c_340.
+cls:c_340 rdfs:label "繁殖範囲把握不足"@ja.
+kg:id_60 prop:effect kg:id_62.
+kg:id_63 rdfs:label "調査範囲の拡大"@ja.
+kg:id_63 rdf:type cls:c_341.
+cls:c_341 rdfs:label "範囲拡大"@ja.
+kg:id_60 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "海域への影響把握不足"@ja.
+kg:id_64 rdf:type cls:c_323.
+kg:id_65 rdfs:label "海域を調査しない方針"@ja.
+kg:id_65 rdf:type cls:c_342.
+cls:c_342 rdfs:label "海域未調査"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "魚類や鳥類の生態系への間接影響のおそれ"@ja.
+kg:id_66 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_64 prop:effect kg:id_66.
+kg:id_67 rdfs:label "海域への影響の把握と生態系の中での検討"@ja.
+kg:id_67 rdf:type cls:c_343.
+cls:c_343 rdfs:label "生態系検討"@ja.
+kg:id_64 prop:contermeasure kg:id_67.
+kg:st_1 rdfs:label "横山委員"@ja.
+kg:st_1 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_1 prop:content "生物の生育可能性や影響把握には既往調査情報が不十分である"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "事務局"@ja.
+kg:st_2 rdfs:type cls:st_10.
+cls:st_10 rdfs:label "事務局"@ja.
+kg:op_2 prop:content "指摘内容について事業者に指導する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "引用文献が少なく動植物の把握が不十分である"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "大山委員"@ja.
+kg:st_3 rdfs:type cls:st_3.
+kg:op_4 prop:content "使っている文献が少なく文献不備が大きな問題である"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "動植物の生育可能性が把握できず評価できない"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "後藤委員"@ja.
+kg:st_4 rdfs:type cls:st_3.
+kg:op_6 prop:content "自然エネルギー開発でも慎重な取り組みが必要である"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:op_7 prop:content "過去の改変のように動植物消失を繰り返すべきでない"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "以前の経験を生かし慎重に進めるべきである"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "リスト内容が誤っており信頼性に問題がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:op_10 prop:content "重要種の抽出が少なく実態を過小評価している"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_4.
+kg:op_11 prop:content "同じ文献でも記載が異なるため再確認が必要である"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "沿岸部の渡りルートを前提に広域的な把握が必要である"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "渡りの実態が不明では影響評価できない"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "渡り鳥のルートや時期をきちんと調査すべきである"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "柳澤委員"@ja.
+kg:st_5 rdfs:type cls:st_3.
+kg:op_15 prop:content "基盤情報がなく自立構造の妥当性を確認できない"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_5.
+kg:op_16 prop:content "液状化による支持力喪失が懸念される"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "断面図と地質強度の資料を示すべきである"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "貴重な繁殖地への施設設置は強い懸念がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "コアジサシへの影響は避けなければならない"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "事業により長年の繁殖地が失われてはならない"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "影響回避のため継続調査を事業者に要請する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "早野委員"@ja.
+kg:st_6 rdfs:type cls:st_3.
+kg:op_22 prop:content "景観調査の方法をより具体的に示す必要がある"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:op_23 prop:content "主観に左右されない客観的判断が必要である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:op_24 prop:content "詳細なモンタージュや定量的調査を行うべきである"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "東委員"@ja.
+kg:st_7 rdfs:type cls:st_3.
+kg:op_25 prop:content "砂丘上への建設は長期的な地形変化を伴う懸念がある"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_7.
+kg:op_26 prop:content "長いスパンで地形後退が進むおそれがある"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:op_27 prop:content "長期的な地形変化を調査すべきである"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "小杉委員"@ja.
+kg:st_8 rdfs:type cls:st_3.
+kg:op_28 prop:content "短期間調査では気象変動を反映できない"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_8.
+kg:op_29 prop:content "冬の強風や低温などの条件を踏まえた評価が必要である"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_8.
+kg:op_30 prop:content "住民が納得できるよう新ガイドラインで評価すべきである"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "小田原委員"@ja.
+kg:st_9 rdfs:type cls:st_3.
+kg:op_31 prop:content "同じルート利用なら施工時も複合影響を評価すべきである"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_9.
+kg:op_32 prop:content "重なる場合は騒音だけでなく動植物も含めて複合影響を見る必要がある"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:st_10 rdfs:label "企業局"@ja.
+kg:st_10 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_33 prop:content "重なることは避けたいと考えている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_10.
+kg:op_34 prop:content "施設の影が植物群落に与える影響を見落とすべきでない"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "日陰の範囲と時間を把握し影響を明確にすべきである"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:st_11 rdfs:label "玉野総合コンサルタント"@ja.
+kg:st_11 rdfs:type cls:st_1.
+kg:op_36 prop:content "時刻ごとの影の状況を調査し準備書に記載する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_11.
+kg:op_37 prop:content "砂浜上の仮設道路の強度や安定性に疑問がある"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+kg:op_38 prop:content "工事中の流出による海域や水質への影響が懸念される"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_6.
+kg:op_39 prop:content "保全対策を検討し工事仕様書に明記して遵守させる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_11.
+kg:op_40 prop:content "大型台風時の海浜や水質への影響も懸念される"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_6.
+kg:op_41 prop:content "最新資料だけでは不十分で多様な文献に基づくべきである"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "実施区域周辺の状況把握には多くの文献収集が基本である"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "手法が不明では調査地点の妥当性を判断できない"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "位置が少しずれただけで改変環境が大きく変わる"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "手法を明示し追加調査を行うべきである"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:st_12 rdfs:label "八千代エンジニヤリング"@ja.
+kg:st_12 rdfs:type cls:st_1.
+kg:op_46 prop:content "コドラート調査を行い地点数も明確に記載する"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_12.
+kg:op_47 prop:content "図表を対応させ生態系の説明を丁寧に記載すべきである"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_3.
+kg:op_48 prop:content "区分が粗く何を示したいのか分からない"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "表現を修正し選定理由と出典を記載する"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_12.
+kg:op_50 prop:content "集団繁殖種の全体像を把握できる範囲設定が必要である"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "コアジサシの広い範囲での繁殖活動を捉える必要がある"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_4.
+kg:op_52 prop:content "繁殖範囲をきちんと把握できる調査を求める"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_4.
+kg:op_53 prop:content "把握できるよう調べる"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_12.
+kg:op_54 prop:content "鳥類の餌場である海域との関係を無視すべきでない"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_4.
+kg:op_55 prop:content "風車による砂浜影響を介して海の魚や生物に影響する懸念がある"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_4.
+kg:op_56 prop:content "生態系の中でその考え方を含めて検討する"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_12.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "既往調査による情報の収集が不十分で、周辺でどういう生物が生育している可能性があり、それに対してどういう影響がありそうなのか十分把握できない内容となっています。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "方法書の39ページから51 ページの、たとえば生物種のリスト作成にあたり引用されている文献が少なく、ほかに生育している可能性のある動植物が十分リストアップされていない状況です。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "ほかに生育している可能性のある動植物が十分リストアップされていない状況です。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "やはり、風力をはじめとする自然エネルギーなど新たな改変を進めていくときには慎重な取り組み、あるいは以前の経験を生かすなど、同じ苦い思いをしないような対応が必要です。"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "以前、農薬により多くの動物がいなくなったり、また、いろいろな改変が行われて動植物がいなくなったということがあり"@ja.
+<< kg:id_5 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "風力をはじめとする自然エネルギーなど新たな改変を進めていくときには慎重な取り組み、あるいは以前の経験を生かすなど、同じ苦い思いをしないような対応が必要です。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "RDBの欄に記載されているものが、④のレッドデータブックやまがたの欄に入っていないのはおかしいと思います。それから、オオヨシキリの科名が間違って「ヒタキ」と記載されております。"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "鳥類ですと、ここでは重要な種として17種類いるとされていますが、一方で、以前に示された同じ庄内地域での事業の方法書では、同じRDBから80種類が選定されていて、この方法書では、かなりかいつまんで記載されている状況です。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "どちらかが間違っていると思うのですが、もう一度チェックしていただきたいと思います。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "風力発電ということで、どうしても沿岸部の渡り鳥のルートになっているわけですが、日本海側は風力発電施設が数多く設置されていて、秋田県でも砂丘地帯に多くの風力発電施設が連なっています。"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "渡りのルートがどのようになっていて、どのような種類の鳥がいつごろどのように渡ってくるのかという調査をきちんと行う必要があると思います。"@ja.
+<< kg:id_13 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "こういう機会に、渡りのルートがどのようになっていて、どのような種類の鳥がいつごろどのように渡ってくるのかという調査をきちんと行う必要があると思います。"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "ところが、方法書には表層地質しか書いていない。ボーリング調査はあったはずですが、基盤がどうなっているのかの情報がありません。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "地震があったときに液状化して砂が全部動いてしまうことも考えられます。"@ja.
+<< kg:id_17 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "断面図や地下の地質の強度がわかるものを示していただき、そこに杭を打って自立したものとなるということがわかる資料を示していただきたいと思います。"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "この周辺では、非常に貴重なコアジサシが広い範囲で集団繁殖していて、その全体像がどうなっているのかを見る必要があります。...風力発電施設の設置による影響が非常に心配です。"@ja.
+<< kg:id_21 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "ですから、この事業によりこのような場所がなくなってしまうことはあってはならないわけです。"@ja.
+<< kg:id_21 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "そのための調査は継続して行う必要があり、これについては事業者に要請していく必要があります。"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "方法書の135ページでは、景観についての調査の内容等について記載がありますが、もう少し具体的に記載していただきたいと思います。"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "フォトモンタージュを作成したときの良し悪しの判断にいついては、人によって異なります。"@ja.
+<< kg:id_25 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "詳細なモンタージュの作成あるいは定量的な調査については、事業者にお願いしたい項目の一つです。"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "庄内砂丘というのは、先人たちが飛砂を防ぐために約50年かけて作った砂丘で、今、その上に風力発電施設を建てようとしているわけです。"@ja.
+<< kg:id_29 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "場所によっては１年間に３メートル以上砂浜が後退しているというデータもあります。そうなると、風車を建てて稼動期間に少しずつ足元がすくわれるということも起こり得ると思う"@ja.
+<< kg:id_29 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "長いスパンでの地形の改変についてもどこかで調査していただく必要があると思います。"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "１日24時間調査すると記載されていて、これでは不十分ではないか...２日間でも十分なのかと感じています。"@ja.
+<< kg:id_33 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "庄内地方は冬の強風、低温など気象条件が変わるわけで、そうすると、音の伝わり方などが変わってきます。そのような条件の中で１日や２日で十分調べられるのかと思います。"@ja.
+<< kg:id_33 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "環境省が風力発電機から発生する騒音等に関するガイドラインを作成中とのことなので、新しいガイドラインに基づく予測、評価を行い、住民が納得できるようにすべきです。"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "工事用資材の搬入ルートが同じルートであることから、工事がほぼ同じ時期であるとすれば、施工時についても双方合わせた複合影響を見る必要があると思います。"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "重なる場合は、稼動時の騒音だけでなく、動植物等も含めて複合影響を見る必要があります。...最も影響が大きくなる場合を想定し予測、評価することが必要"@ja.
+<< kg:id_37 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "どちらが先行するかということは別として、重なることは避けたいと考えております。"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "風力発電施設の影により、通常十分な光が当たっているところがそうでなくなる可能性があり、その影響がどの程度なのかということです。"@ja.
+<< kg:id_41 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "通常十分な光が当たっているところがそうでなくなる可能性があります。"@ja.
+<< kg:id_41 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "１日に何時間くらい影ができるのか、太陽高度によって影の大きさも違ってきますし、それらを時刻ごとに調査しその結果は準備書で記載したいと思います。"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "仮設道路は砂浜の上に鉄板を敷いて設置すると説明を受けたのですが、砂浜に鉄板を敷いただけで重量のあるトラックの走行に耐えられるのか"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "工事中についてはトラック等に付着している油、あるいは、現地で打設するコンクリートなどが流れ出る可能性があると思います。"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "砂浜に油脂類が散らばらないよう保全対策を検討します。また、施工業者が決定した段階で、工事の仕様書にそのような対策を明記し遵守してもらうよう指導していくこととなります。"@ja.
+<< kg:id_45 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "先月のような大型の台風が日本海側に来た時は相当波をかぶって、その際に砂が持っていかれたときに仮設道路が水質等へ影響を与えるのではないか"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "「既存文献の中で最新の資料を用いて整理を行いました」とありますが、...最新の調査結果だけでなく、十分な文献をもとに調査をしていただきたいです。"@ja.
+<< kg:id_50 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "第３章につきましては、実施区域及びその周辺の状況を把握するため、できる限り多くの文献からデータを収集することが基本となります。"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "方法書124ページの植物に関する調査の基本的な手法として「植物相調査」、「植生調査」、「群落組成調査」と記載されていますが、具体的に何をするのかが記載されていません。"@ja.
+<< kg:id_53 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "少し位置がずれただけで改変される環境が大きく変わる可能性がありますので、こういったことが把握できるような調査を追加して行う必要がある"@ja.
+<< kg:id_53 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "先ず調査手法を明確にしていただき、手法との関連で調査地点を示していただきたいと思います。...コドラートによる調査を考えています。また、調査地点数としては、周辺で確認されている群落を考慮し12箇所程度で実施することを考えています。"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_47;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "方法書58ページの生態系の状況ですが、58ページに表が、59ページに図があります。表では「自然環境累計区分」という表現を使っていて、図では「環境累計区分」と少し名称が違っています。...ただ漠然と代表的な動植物種が載っていて、生態系がどうなっているのかがよくわかりません。"@ja.
+<< kg:id_57 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "まず、表現については修正して統一した記述とします。...そのような選定理由も記載します。また、出典についてもしっかり記載いたします。"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "集団繁殖を行う種類については、例えば赤川よりもっと南であるとか、全体を把握できるような調査をしていただきたい。"@ja.
+<< kg:id_60 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "コアジサシなどは集団繁殖しているので、１箇所に固まっているわけではなくて、かなり離れた広い範囲で繁殖活動をすると思う"@ja.
+<< kg:id_60 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_52;
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "繁殖範囲をきちんと把握できる調査を行うと理解してよろしいですか。...はい、把握できるよう調べてまいります。"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "海域については調査しないとのことですが、コアジサシ等の鳥類と海とは魚をとる餌場として切っても切れない関係である"@ja.
+<< kg:id_64 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "風車が魚に直接影響は与えないかも知れませんが間接的な影響はあると思います。風車による砂浜への影響を介して海の魚にどのような影響を与えるかという調査も重要だと思います。"@ja.
+<< kg:id_64 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "生態系という位置づけの中で重要な考えであることは認識しております。...生態系のなかでそういった考え方を含めて検討してまいりたいと思います。"@ja.
+}

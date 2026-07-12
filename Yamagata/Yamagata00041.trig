@@ -1,0 +1,1438 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00041> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "米の一等米比率の低下"@ja.
+kg:id_1 rdf:type cls:c_601.
+cls:c_601 rdfs:label "品質低下"@ja.
+kg:id_2 rdfs:label "猛暑"@ja.
+kg:id_2 rdf:type cls:c_602.
+cls:c_602 rdfs:label "高温"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "農家の収入への大きな打撃"@ja.
+kg:id_3 rdf:type cls:c_603.
+cls:c_603 rdfs:label "収入減少"@ja.
+kg:id_2 prop:effect kg:id_3.
+kg:id_4 rdfs:label "サクランボの被害"@ja.
+kg:id_4 rdf:type cls:c_604.
+cls:c_604 rdfs:label "農作物被害"@ja.
+kg:id_5 rdfs:label "高温"@ja.
+kg:id_5 rdf:type cls:c_602.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "サクランボ"@ja.
+kg:id_6 rdf:type cls:c_605.
+cls:c_605 rdfs:label "農作物"@ja.
+kg:id_7 rdfs:label "品質低下"@ja.
+kg:id_7 rdf:type cls:c_601.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "米の供給不足"@ja.
+kg:id_8 rdf:type cls:c_606.
+cls:c_606 rdfs:label "供給不足"@ja.
+kg:id_9 rdfs:label "昨年の猛暑の影響"@ja.
+kg:id_9 rdf:type cls:c_602.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "インバウンドによる需要の増加"@ja.
+kg:id_10 rdf:type cls:c_607.
+cls:c_607 rdfs:label "需要増加"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "店頭で米が手に入りづらくなる"@ja.
+kg:id_11 rdf:type cls:c_608.
+cls:c_608 rdfs:label "入手困難"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "価格の上昇"@ja.
+kg:id_12 rdf:type cls:c_609.
+cls:c_609 rdfs:label "価格上昇"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "農業"@ja.
+kg:id_13 rdf:type cls:c_610.
+cls:c_610 rdfs:label "農業"@ja.
+kg:id_14 rdfs:label "自然や社会情勢などの影響を受けやすい"@ja.
+kg:id_14 rdf:type cls:c_611.
+cls:c_611 rdfs:label "外的影響"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "米沢市農業"@ja.
+kg:id_15 rdf:type cls:c_612.
+cls:c_612 rdfs:label "地域農業"@ja.
+kg:id_16 rdfs:label "担い手の平均年齢が65歳以上という高齢化"@ja.
+kg:id_16 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "肥料や資材の高騰による採算の悪化"@ja.
+kg:id_17 rdf:type cls:c_614.
+cls:c_614 rdfs:label "採算悪化"@ja.
+kg:id_15 prop:cause kg:id_17.
+kg:id_18 rdfs:label "担い手の減少"@ja.
+kg:id_18 rdf:type cls:c_615.
+cls:c_615 rdfs:label "担い手減少"@ja.
+kg:id_15 prop:effect kg:id_18.
+kg:id_19 rdfs:label "耕作放棄地の増加"@ja.
+kg:id_19 rdf:type cls:c_616.
+cls:c_616 rdfs:label "耕作放棄地増加"@ja.
+kg:id_15 prop:effect kg:id_19.
+kg:id_20 rdfs:label "異常気象の影響"@ja.
+kg:id_20 rdf:type cls:c_617.
+cls:c_617 rdfs:label "異常気象影響"@ja.
+kg:id_21 rdfs:label "気候変動"@ja.
+kg:id_21 rdf:type cls:c_618.
+cls:c_618 rdfs:label "気候変動"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "政府の農業政策の転換"@ja.
+kg:id_22 rdf:type cls:c_619.
+cls:c_619 rdfs:label "農業政策転換"@ja.
+kg:id_23 rdfs:label "生産者の将来不安に拍車をかける"@ja.
+kg:id_23 rdf:type cls:c_620.
+cls:c_620 rdfs:label "将来不安"@ja.
+kg:id_22 prop:effect kg:id_23.
+kg:id_24 rdfs:label "水田５年水張り問題"@ja.
+kg:id_24 rdf:type cls:c_621.
+cls:c_621 rdfs:label "農業政策問題"@ja.
+kg:id_25 rdfs:label "農政への不信感が広がる"@ja.
+kg:id_25 rdf:type cls:c_622.
+cls:c_622 rdfs:label "不信感"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "市独自の担い手支援"@ja.
+kg:id_26 rdf:type cls:c_623.
+cls:c_623 rdfs:label "担い手支援"@ja.
+kg:id_27 rdfs:label "若者が希望を持てる農業の確立"@ja.
+kg:id_27 rdf:type cls:c_624.
+cls:c_624 rdfs:label "希望ある農業"@ja.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "小中学校の学校給食で地元農産物を使うこと"@ja.
+kg:id_28 rdf:type cls:c_625.
+cls:c_625 rdfs:label "地産地消"@ja.
+kg:id_29 rdfs:label "地産地消の拡大で農家の経営基盤の強化"@ja.
+kg:id_29 rdf:type cls:c_626.
+cls:c_626 rdfs:label "経営基盤強化"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "第２次米沢市農業振興計画策定"@ja.
+kg:id_30 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_31 rdfs:label "農家の声の反映"@ja.
+kg:id_31 rdf:type cls:c_628.
+cls:c_628 rdfs:label "意見反映"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "農業者の高齢化"@ja.
+kg:id_32 rdf:type cls:c_613.
+kg:id_33 rdfs:label "農業の担い手不足が懸念される"@ja.
+kg:id_33 rdf:type cls:c_629.
+cls:c_629 rdfs:label "担い手不足"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "高齢化や後継者不足による労働力不足"@ja.
+kg:id_34 rdf:type cls:c_630.
+cls:c_630 rdfs:label "労働力不足"@ja.
+kg:id_35 rdfs:label "スマート農業推進"@ja.
+kg:id_35 rdf:type cls:c_631.
+cls:c_631 rdfs:label "スマート農業"@ja.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "国や県と連携したスマート農業機械の導入支援"@ja.
+kg:id_36 rdf:type cls:c_632.
+cls:c_632 rdfs:label "導入支援"@ja.
+kg:id_37 rdfs:label "高齢者や女性農業者の省力化"@ja.
+kg:id_37 rdf:type cls:c_633.
+cls:c_633 rdfs:label "省力化"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "未来を拓く農業支援事業の先端技術活用支援"@ja.
+kg:id_38 rdf:type cls:c_634.
+cls:c_634 rdfs:label "技術活用支援"@ja.
+kg:id_39 rdfs:label "農業用ドローンやアシストスーツの導入"@ja.
+kg:id_39 rdf:type cls:c_635.
+cls:c_635 rdfs:label "機械導入"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "スマート農業"@ja.
+kg:id_40 rdf:type cls:c_631.
+kg:id_41 rdfs:label "労働力の軽減"@ja.
+kg:id_41 rdf:type cls:c_633.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "生産性の向上"@ja.
+kg:id_42 rdf:type cls:c_636.
+cls:c_636 rdfs:label "生産性向上"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "農作物の品質向上"@ja.
+kg:id_43 rdf:type cls:c_637.
+cls:c_637 rdfs:label "品質向上"@ja.
+kg:id_40 prop:effect kg:id_43.
+kg:id_44 rdfs:label "熟練者の技術・ノウハウのデータ化"@ja.
+kg:id_44 rdf:type cls:c_638.
+cls:c_638 rdfs:label "技術継承"@ja.
+kg:id_40 prop:effect kg:id_44.
+kg:id_45 rdfs:label "有機農業拡大"@ja.
+kg:id_45 rdf:type cls:c_639.
+cls:c_639 rdfs:label "有機農業拡大"@ja.
+kg:id_46 rdfs:label "先進地視察や商談会出展"@ja.
+kg:id_46 rdf:type cls:c_640.
+cls:c_640 rdfs:label "視察交流"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "市内小中学校や保育園給食への有機栽培米の提供"@ja.
+kg:id_47 rdf:type cls:c_641.
+cls:c_641 rdfs:label "給食活用"@ja.
+kg:id_45 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "有機栽培実証圃場の設置"@ja.
+kg:id_48 rdf:type cls:c_642.
+cls:c_642 rdfs:label "実証圃場"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "栽培技術や販路に関する研修会の開催"@ja.
+kg:id_49 rdf:type cls:c_643.
+cls:c_643 rdfs:label "研修開催"@ja.
+kg:id_45 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "栽培方法に関する生産面の課題"@ja.
+kg:id_50 rdf:type cls:c_644.
+cls:c_644 rdfs:label "生産課題"@ja.
+kg:id_45 prop:cause kg:id_50.
+kg:id_51 rdfs:label "販路面での課題"@ja.
+kg:id_51 rdf:type cls:c_645.
+cls:c_645 rdfs:label "販路課題"@ja.
+kg:id_45 prop:cause kg:id_51.
+kg:id_52 rdfs:label "収量向上が期待できる栽培方法の実証圃の設置"@ja.
+kg:id_52 rdf:type cls:c_646.
+cls:c_646 rdfs:label "収量向上"@ja.
+kg:id_45 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "有機農業者の経営規模に合った商談会の開催"@ja.
+kg:id_53 rdf:type cls:c_647.
+cls:c_647 rdfs:label "商談会開催"@ja.
+kg:id_45 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "学校給食関係者との意見交換"@ja.
+kg:id_54 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_45 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "市民が気軽にスポーツに親しめる機会の減少"@ja.
+kg:id_55 rdf:type cls:c_649.
+cls:c_649 rdfs:label "機会減少"@ja.
+kg:id_56 rdfs:label "チャレンジデーの終了"@ja.
+kg:id_56 rdf:type cls:c_650.
+cls:c_650 rdfs:label "イベント終了"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "米澤上杉城下町マラソンの休止"@ja.
+kg:id_57 rdf:type cls:c_651.
+cls:c_651 rdfs:label "イベント休止"@ja.
+kg:id_55 prop:cause kg:id_57.
+kg:id_58 rdfs:label "市民が参加できるスポーツイベントなどの減少"@ja.
+kg:id_58 rdf:type cls:c_652.
+cls:c_652 rdfs:label "イベント減少"@ja.
+kg:id_59 rdfs:label "市民の健康増進機会の減少が懸念される"@ja.
+kg:id_59 rdf:type cls:c_653.
+cls:c_653 rdfs:label "健康機会減少"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "歩いて！走って！知って米沢 ラン＆ウォークラリーの開催"@ja.
+kg:id_60 rdf:type cls:c_654.
+cls:c_654 rdfs:label "イベント開催"@ja.
+kg:id_58 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "米澤上杉城下町マラソン休止"@ja.
+kg:id_61 rdf:type cls:c_651.
+kg:id_62 rdfs:label "大会の在り方や運営方法の検証が必要"@ja.
+kg:id_62 rdf:type cls:c_655.
+cls:c_655 rdfs:label "運営検証"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "参加者数が募集定員に達したことがない"@ja.
+kg:id_63 rdf:type cls:c_656.
+cls:c_656 rdfs:label "参加不足"@ja.
+kg:id_61 prop:cause kg:id_63.
+kg:id_64 rdfs:label "米澤上杉城下町マラソン"@ja.
+kg:id_64 rdf:type cls:c_657.
+cls:c_657 rdfs:label "スポーツ大会"@ja.
+kg:id_65 rdfs:label "本市の財政負担に見合った事業規模とはなっていない"@ja.
+kg:id_65 rdf:type cls:c_658.
+cls:c_658 rdfs:label "規模不適正"@ja.
+kg:id_64 prop:effect kg:id_65.
+kg:id_66 rdfs:label "健康増進や競技力向上や地域経済活性化の効果が限定的"@ja.
+kg:id_66 rdf:type cls:c_659.
+cls:c_659 rdfs:label "効果限定"@ja.
+kg:id_64 prop:effect kg:id_66.
+kg:id_67 rdfs:label "アンケート実施と大会視察による検証"@ja.
+kg:id_67 rdf:type cls:c_655.
+kg:id_64 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "米坂線区間運休"@ja.
+kg:id_68 rdf:type cls:c_660.
+cls:c_660 rdfs:label "運休"@ja.
+kg:id_69 rdfs:label "令和４年８月の豪雨災害"@ja.
+kg:id_69 rdf:type cls:c_661.
+cls:c_661 rdfs:label "豪雨災害"@ja.
+kg:id_68 prop:cause kg:id_69.
+kg:id_70 rdfs:label "代行バス輸送が行われている"@ja.
+kg:id_70 rdf:type cls:c_662.
+cls:c_662 rdfs:label "代行輸送"@ja.
+kg:id_68 prop:effect kg:id_70.
+kg:id_71 rdfs:label "利用者の減少"@ja.
+kg:id_71 rdf:type cls:c_663.
+cls:c_663 rdfs:label "利用者減少"@ja.
+kg:id_68 prop:effect kg:id_71.
+kg:id_72 rdfs:label "米坂線利用者の減少"@ja.
+kg:id_72 rdf:type cls:c_663.
+kg:id_73 rdfs:label "今泉駅で乗換えが必要"@ja.
+kg:id_73 rdf:type cls:c_664.
+cls:c_664 rdfs:label "乗換不便"@ja.
+kg:id_72 prop:cause kg:id_73.
+kg:id_74 rdfs:label "鉄道車両のトイレが使用できなくなったこと"@ja.
+kg:id_74 rdf:type cls:c_665.
+cls:c_665 rdfs:label "設備不便"@ja.
+kg:id_72 prop:cause kg:id_74.
+kg:id_75 rdfs:label "代行バスの朝の出発時間が早いこと"@ja.
+kg:id_75 rdf:type cls:c_666.
+cls:c_666 rdfs:label "運行不便"@ja.
+kg:id_72 prop:cause kg:id_75.
+kg:id_76 rdfs:label "代行バスで車酔いすること"@ja.
+kg:id_76 rdf:type cls:c_667.
+cls:c_667 rdfs:label "乗車不快"@ja.
+kg:id_72 prop:cause kg:id_76.
+kg:id_77 rdfs:label "代行バスにトイレがないこと"@ja.
+kg:id_77 rdf:type cls:c_665.
+kg:id_72 prop:cause kg:id_77.
+kg:id_78 rdfs:label "高校生の通学への影響が大きい"@ja.
+kg:id_78 rdf:type cls:c_668.
+cls:c_668 rdfs:label "通学影響"@ja.
+kg:id_68 prop:effect kg:id_78.
+kg:id_79 rdfs:label "インバウンド需要への大きな影響"@ja.
+kg:id_79 rdf:type cls:c_669.
+cls:c_669 rdfs:label "観光影響"@ja.
+kg:id_68 prop:effect kg:id_79.
+kg:id_80 rdfs:label "米坂線復旧"@ja.
+kg:id_80 rdf:type cls:c_670.
+cls:c_670 rdfs:label "鉄道復旧"@ja.
+kg:id_81 rdfs:label "国や県やＪＲ東日本への要望"@ja.
+kg:id_81 rdf:type cls:c_671.
+cls:c_671 rdfs:label "要望活動"@ja.
+kg:id_80 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "要望活動やイベント時の署名活動による機運醸成"@ja.
+kg:id_82 rdf:type cls:c_672.
+cls:c_672 rdfs:label "機運醸成"@ja.
+kg:id_80 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "最上川流域の支障木繁茂"@ja.
+kg:id_83 rdf:type cls:c_673.
+cls:c_673 rdfs:label "河川支障木"@ja.
+kg:id_84 rdfs:label "大雨時に流れを阻害する"@ja.
+kg:id_84 rdf:type cls:c_674.
+cls:c_674 rdfs:label "流下阻害"@ja.
+kg:id_83 prop:effect kg:id_84.
+kg:id_85 rdfs:label "倒木が流れて橋梁破損や堤防決壊などの甚大な被害要因となる"@ja.
+kg:id_85 rdf:type cls:c_675.
+cls:c_675 rdfs:label "水害要因"@ja.
+kg:id_83 prop:effect kg:id_85.
+kg:id_86 rdfs:label "河川巡視時の視界を遮り監視を妨げる"@ja.
+kg:id_86 rdf:type cls:c_676.
+cls:c_676 rdfs:label "監視阻害"@ja.
+kg:id_83 prop:effect kg:id_86.
+kg:id_87 rdfs:label "支障木伐採業務の実施"@ja.
+kg:id_87 rdf:type cls:c_677.
+cls:c_677 rdfs:label "伐採実施"@ja.
+kg:id_83 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "公募型支障木伐採事業の実施"@ja.
+kg:id_88 rdf:type cls:c_678.
+cls:c_678 rdfs:label "公募伐採"@ja.
+kg:id_83 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "松が岬第２公園の噴水停止"@ja.
+kg:id_89 rdf:type cls:c_679.
+cls:c_679 rdfs:label "設備停止"@ja.
+kg:id_90 rdfs:label "給配水管の老朽化"@ja.
+kg:id_90 rdf:type cls:c_680.
+cls:c_680 rdfs:label "老朽化"@ja.
+kg:id_89 prop:cause kg:id_90.
+kg:id_91 rdfs:label "ポンプの故障"@ja.
+kg:id_91 rdf:type cls:c_681.
+cls:c_681 rdfs:label "設備故障"@ja.
+kg:id_89 prop:cause kg:id_91.
+kg:id_92 rdfs:label "修繕方法の検討"@ja.
+kg:id_92 rdf:type cls:c_682.
+cls:c_682 rdfs:label "修繕検討"@ja.
+kg:id_89 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "親水公園の水の流れの不良"@ja.
+kg:id_93 rdf:type cls:c_683.
+cls:c_683 rdfs:label "流水不良"@ja.
+kg:id_94 rdfs:label "堆積物が原因で流水断面が確保されていない"@ja.
+kg:id_94 rdf:type cls:c_684.
+cls:c_684 rdfs:label "堆積物"@ja.
+kg:id_93 prop:cause kg:id_94.
+kg:id_95 rdfs:label "堆積物などを除去する対策"@ja.
+kg:id_95 rdf:type cls:c_685.
+cls:c_685 rdfs:label "堆積物除去"@ja.
+kg:id_93 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "猫の多頭飼育や野良猫への餌やり問題"@ja.
+kg:id_96 rdf:type cls:c_686.
+cls:c_686 rdfs:label "猫問題"@ja.
+kg:id_97 rdfs:label "猫の避妊手術費補助事業の開始"@ja.
+kg:id_97 rdf:type cls:c_687.
+cls:c_687 rdfs:label "手術補助"@ja.
+kg:id_96 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "譲渡会の開催"@ja.
+kg:id_98 rdf:type cls:c_688.
+cls:c_688 rdfs:label "譲渡会開催"@ja.
+kg:id_96 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "猫の避妊手術費補助事業"@ja.
+kg:id_99 rdf:type cls:c_687.
+kg:id_100 rdfs:label "ガバメントクラウドファンディングによる財源確保"@ja.
+kg:id_100 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_99 prop:contermeasure kg:id_100.
+kg:id_101 rdfs:label "目標額達成後の申込み再開"@ja.
+kg:id_101 rdf:type cls:c_690.
+cls:c_690 rdfs:label "受付再開"@ja.
+kg:id_99 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "余剰寄附金を基金に積み立て次年度事業に充当"@ja.
+kg:id_102 rdf:type cls:c_691.
+cls:c_691 rdfs:label "基金積立"@ja.
+kg:id_99 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "保護猫シェルター設置の難しさ"@ja.
+kg:id_103 rdf:type cls:c_692.
+cls:c_692 rdfs:label "シェルター設置"@ja.
+kg:id_104 rdfs:label "場所の選定や設備投資費用や管理体制や維持管理費の課題"@ja.
+kg:id_104 rdf:type cls:c_693.
+cls:c_693 rdfs:label "設置課題"@ja.
+kg:id_103 prop:cause kg:id_104.
+kg:id_105 rdfs:label "動物愛護活動推進"@ja.
+kg:id_105 rdf:type cls:c_694.
+cls:c_694 rdfs:label "動物愛護推進"@ja.
+kg:id_106 rdfs:label "飼い主や愛護団体や動物病院や地域住民との連携"@ja.
+kg:id_106 rdf:type cls:c_695.
+cls:c_695 rdfs:label "関係者連携"@ja.
+kg:id_105 prop:contermeasure kg:id_106.
+kg:id_107 rdfs:label "愛護団体との情報交換と現況・課題の共有"@ja.
+kg:id_107 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_105 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "栗子山風力発電事業の影響"@ja.
+kg:id_108 rdf:type cls:c_696.
+cls:c_696 rdfs:label "風力発電影響"@ja.
+kg:id_109 rdfs:label "希少猛禽類や土砂災害等への懸念"@ja.
+kg:id_109 rdf:type cls:c_54.
+cls:c_54 rdfs:label "環境懸念"@ja.
+kg:id_108 prop:effect kg:id_109.
+kg:id_110 rdfs:label "適切な保全措置及び対策を講じるよう求める"@ja.
+kg:id_110 rdf:type cls:c_326.
+cls:c_326 rdfs:label "保全対策"@ja.
+kg:id_108 prop:contermeasure kg:id_110.
+kg:id_111 rdfs:label "地球温暖化"@ja.
+kg:id_111 rdf:type cls:c_697.
+cls:c_697 rdfs:label "地球温暖化"@ja.
+kg:id_112 rdfs:label "人類の生存基盤に関わる安全保障の問題"@ja.
+kg:id_112 rdf:type cls:c_698.
+cls:c_698 rdfs:label "安全保障問題"@ja.
+kg:id_111 prop:effect kg:id_112.
+kg:id_113 rdfs:label "地球温暖化対策"@ja.
+kg:id_113 rdf:type cls:c_699.
+cls:c_699 rdfs:label "温暖化対策"@ja.
+kg:id_114 rdfs:label "米沢市ゼロカーボンシティ宣言"@ja.
+kg:id_114 rdf:type cls:c_700.
+cls:c_700 rdfs:label "脱炭素宣言"@ja.
+kg:id_113 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "地球温暖化に対する危機意識の共有"@ja.
+kg:id_115 rdf:type cls:c_701.
+cls:c_701 rdfs:label "危機意識共有"@ja.
+kg:id_116 rdfs:label "環境・脱炭素教育の啓発啓蒙"@ja.
+kg:id_116 rdf:type cls:c_702.
+cls:c_702 rdfs:label "環境教育"@ja.
+kg:id_115 prop:contermeasure kg:id_116.
+kg:id_117 rdfs:label "山形大学等と連携した脱炭素人材の育成"@ja.
+kg:id_117 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_115 prop:contermeasure kg:id_117.
+kg:id_118 rdfs:label "地区単位での研修会開催や事業の周知啓発"@ja.
+kg:id_118 rdf:type cls:c_704.
+cls:c_704 rdfs:label "研修啓発"@ja.
+kg:id_115 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "人口流出・人口減少"@ja.
+kg:id_119 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_120 rdfs:label "冬期間の大雪などの厳しい自然環境"@ja.
+kg:id_120 rdf:type cls:c_706.
+cls:c_706 rdfs:label "厳冬環境"@ja.
+kg:id_119 prop:cause kg:id_120.
+kg:id_121 rdfs:label "太陽光パネル設置や住宅断熱化や高効率エアコン設置補助"@ja.
+kg:id_121 rdf:type cls:c_707.
+cls:c_707 rdfs:label "住環境改善"@ja.
+kg:id_119 prop:contermeasure kg:id_121.
+kg:id_122 rdfs:label "産業分野における付加価値の創造"@ja.
+kg:id_122 rdf:type cls:c_708.
+cls:c_708 rdfs:label "付加価値創造"@ja.
+kg:id_123 rdfs:label "食肉センターの脱炭素化による米沢牛へのサステーナブルな付加価値創造"@ja.
+kg:id_123 rdf:type cls:c_709.
+cls:c_709 rdfs:label "脱炭素価値"@ja.
+kg:id_122 prop:contermeasure kg:id_123.
+kg:id_124 rdfs:label "農林業の担い手不足"@ja.
+kg:id_124 rdf:type cls:c_629.
+kg:id_125 rdfs:label "従事者の高齢化"@ja.
+kg:id_125 rdf:type cls:c_613.
+kg:id_124 prop:cause kg:id_125.
+kg:id_126 rdfs:label "鳥獣被害"@ja.
+kg:id_126 rdf:type cls:c_710.
+cls:c_710 rdfs:label "鳥獣被害"@ja.
+kg:id_124 prop:cause kg:id_126.
+kg:id_127 rdfs:label "物価高"@ja.
+kg:id_127 rdf:type cls:c_711.
+cls:c_711 rdfs:label "物価高"@ja.
+kg:id_124 prop:cause kg:id_127.
+kg:id_128 rdfs:label "悪臭等"@ja.
+kg:id_128 rdf:type cls:c_712.
+cls:c_712 rdfs:label "悪臭"@ja.
+kg:id_124 prop:cause kg:id_128.
+kg:id_129 rdfs:label "バイオマス発電副産物の農地利用と未利用木材の燃料活用"@ja.
+kg:id_129 rdf:type cls:c_713.
+cls:c_713 rdfs:label "資源循環"@ja.
+kg:id_124 prop:contermeasure kg:id_129.
+kg:id_130 rdfs:label "太陽光パネル設置事業"@ja.
+kg:id_130 rdf:type cls:c_714.
+cls:c_714 rdfs:label "太陽光事業"@ja.
+kg:id_131 rdfs:label "地場施工業者の施工分とＰＰＡ契約者の電気代削減分を合わせ約１億円程度の裨益効果"@ja.
+kg:id_131 rdf:type cls:c_715.
+cls:c_715 rdfs:label "経済効果"@ja.
+kg:id_130 prop:effect kg:id_131.
+kg:id_132 rdfs:label "高効率エアコン及びエコキュート及び断熱改修"@ja.
+kg:id_132 rdf:type cls:c_716.
+cls:c_716 rdfs:label "省エネ設備"@ja.
+kg:id_133 rdfs:label "光熱費の削減"@ja.
+kg:id_133 rdf:type cls:c_717.
+cls:c_717 rdfs:label "光熱費削減"@ja.
+kg:id_132 prop:effect kg:id_133.
+kg:id_134 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_134 rdf:type cls:c_718.
+cls:c_718 rdfs:label "再エネ導入"@ja.
+kg:id_135 rdfs:label "域外へのエネルギー代金流出抑制額は９億円程度"@ja.
+kg:id_135 rdf:type cls:c_719.
+cls:c_719 rdfs:label "域外流出抑制"@ja.
+kg:id_134 prop:effect kg:id_135.
+kg:id_136 rdfs:label "脱炭素先行地域計画の風力発電"@ja.
+kg:id_136 rdf:type cls:c_720.
+cls:c_720 rdfs:label "風力発電導入"@ja.
+kg:id_137 rdfs:label "地元や市民との合意形成を前提に進める"@ja.
+kg:id_137 rdf:type cls:c_721.
+cls:c_721 rdfs:label "合意形成"@ja.
+kg:id_136 prop:contermeasure kg:id_137.
+kg:id_138 rdfs:label "太陽光パネルの最終処分問題"@ja.
+kg:id_138 rdf:type cls:c_722.
+cls:c_722 rdfs:label "廃棄物問題"@ja.
+kg:id_139 rdfs:label "リユースパネル活用と全国のリサイクル事業者との連携"@ja.
+kg:id_139 rdf:type cls:c_723.
+cls:c_723 rdfs:label "再利用循環"@ja.
+kg:id_138 prop:contermeasure kg:id_139.
+kg:id_140 rdfs:label "置賜全域でのリユース・リサイクルへの転換"@ja.
+kg:id_140 rdf:type cls:c_724.
+cls:c_724 rdfs:label "広域循環"@ja.
+kg:id_138 prop:contermeasure kg:id_140.
+kg:id_141 rdfs:label "木質マイクロバイオマス発電"@ja.
+kg:id_141 rdf:type cls:c_725.
+cls:c_725 rdfs:label "木質発電"@ja.
+kg:id_142 rdfs:label "副産物としてバイオ炭が発生する"@ja.
+kg:id_142 rdf:type cls:c_726.
+cls:c_726 rdfs:label "バイオ炭"@ja.
+kg:id_141 prop:effect kg:id_142.
+kg:id_143 rdfs:label "バイオガス発電"@ja.
+kg:id_143 rdf:type cls:c_727.
+cls:c_727 rdfs:label "バイオガス発電"@ja.
+kg:id_144 rdfs:label "副産物として堆肥と消化液が発生する"@ja.
+kg:id_144 rdf:type cls:c_728.
+cls:c_728 rdfs:label "肥料副産物"@ja.
+kg:id_143 prop:effect kg:id_144.
+kg:id_145 rdfs:label "バイオガス発電の液肥利用"@ja.
+kg:id_145 rdf:type cls:c_729.
+cls:c_729 rdfs:label "液肥利用"@ja.
+kg:id_146 rdfs:label "運搬や散布のコストが課題"@ja.
+kg:id_146 rdf:type cls:c_730.
+cls:c_730 rdfs:label "コスト課題"@ja.
+kg:id_145 prop:cause kg:id_146.
+kg:id_147 rdfs:label "散布車による実証と作物収量及び土壌分析"@ja.
+kg:id_147 rdf:type cls:c_731.
+cls:c_731 rdfs:label "実証分析"@ja.
+kg:id_145 prop:contermeasure kg:id_147.
+kg:id_148 rdfs:label "液肥利用拡大"@ja.
+kg:id_148 rdf:type cls:c_732.
+cls:c_732 rdfs:label "液肥利用拡大"@ja.
+kg:id_149 rdfs:label "液肥のペレット化"@ja.
+kg:id_149 rdf:type cls:c_733.
+cls:c_733 rdfs:label "ペレット化"@ja.
+kg:id_148 prop:contermeasure kg:id_149.
+kg:id_150 rdfs:label "有機農産物の学校給食活用"@ja.
+kg:id_150 rdf:type cls:c_641.
+kg:id_151 rdfs:label "有機農業振興や環境教育の観点から有意義"@ja.
+kg:id_151 rdf:type cls:c_734.
+cls:c_734 rdfs:label "有機農業振興"@ja.
+kg:id_150 prop:effect kg:id_151.
+kg:id_152 rdfs:label "木質バイオマス発電"@ja.
+kg:id_152 rdf:type cls:c_725.
+kg:id_153 rdfs:label "間伐材や廃材や支障木等の利活用"@ja.
+kg:id_153 rdf:type cls:c_735.
+cls:c_735 rdfs:label "木材活用"@ja.
+kg:id_152 prop:contermeasure kg:id_153.
+kg:id_154 rdfs:label "木質バイオマス発電の木質チップ供給"@ja.
+kg:id_154 rdf:type cls:c_736.
+cls:c_736 rdfs:label "木材供給"@ja.
+kg:id_155 rdfs:label "米沢地方森林組合や市内木材加工会社や市外リサイクル事業者との供給合意"@ja.
+kg:id_155 rdf:type cls:c_737.
+cls:c_737 rdfs:label "供給連携"@ja.
+kg:id_154 prop:contermeasure kg:id_155.
+kg:id_156 rdfs:label "余剰排熱をチップ乾燥に活用して市場価格の８割程度で調達"@ja.
+kg:id_156 rdf:type cls:c_738.
+cls:c_738 rdfs:label "調達効率化"@ja.
+kg:id_152 prop:contermeasure kg:id_156.
+kg:id_157 rdfs:label "木材供給者の安定的な収入確保"@ja.
+kg:id_157 rdf:type cls:c_739.
+cls:c_739 rdfs:label "収入確保"@ja.
+kg:id_152 prop:effect kg:id_157.
+kg:id_158 rdfs:label "バイオマス発電事業者の売熱収入による事業性向上"@ja.
+kg:id_158 rdf:type cls:c_740.
+cls:c_740 rdfs:label "事業性向上"@ja.
+kg:id_152 prop:effect kg:id_158.
+kg:id_159 rdfs:label "米沢市食肉センターの光熱費削減"@ja.
+kg:id_159 rdf:type cls:c_717.
+kg:id_152 prop:effect kg:id_159.
+kg:id_160 rdfs:label "有機農産物の学校給食導入"@ja.
+kg:id_160 rdf:type cls:c_741.
+cls:c_741 rdfs:label "給食導入"@ja.
+kg:id_161 rdfs:label "有機栽培米から始めタマネギや里芋へ品目拡大"@ja.
+kg:id_161 rdf:type cls:c_742.
+cls:c_742 rdfs:label "品目拡大"@ja.
+kg:id_160 prop:contermeasure kg:id_161.
+kg:id_162 rdfs:label "安定した供給量の確保が課題"@ja.
+kg:id_162 rdf:type cls:c_743.
+cls:c_743 rdfs:label "供給課題"@ja.
+kg:id_160 prop:cause kg:id_162.
+kg:id_163 rdfs:label "品ぞろえが課題"@ja.
+kg:id_163 rdf:type cls:c_744.
+cls:c_744 rdfs:label "品目課題"@ja.
+kg:id_160 prop:cause kg:id_163.
+kg:id_164 rdfs:label "慣行農産物との価格差"@ja.
+kg:id_164 rdf:type cls:c_745.
+cls:c_745 rdfs:label "価格課題"@ja.
+kg:id_160 prop:cause kg:id_164.
+kg:id_165 rdfs:label "循環型農業の推進"@ja.
+kg:id_165 rdf:type cls:c_746.
+cls:c_746 rdfs:label "循環型農業"@ja.
+kg:id_166 rdfs:label "バイオマス事業と有機農業は親和性がある"@ja.
+kg:id_166 rdf:type cls:c_747.
+cls:c_747 rdfs:label "親和性"@ja.
+kg:id_165 prop:effect kg:id_166.
+kg:st_1 rdfs:label "古山悠生議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "農業は自然や社会情勢の影響を受けやすく農政のかじ取りは難しい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "猛暑被害は農業経営に深刻な影響を及ぼす"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "高温による品質低下などの被害が出ている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "高温の影響で品質低下が発生している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "猛暑の影響が米の供給不安につながっている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "需要増も供給不足の要因になっている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "店頭での入手困難が起きている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "供給不足で価格も上昇している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "農業は外的要因に左右されやすい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "近藤洋介市長"@ja.
+kg:st_2 rdfs:type cls:st_17.
+cls:st_17 rdfs:label "市長"@ja.
+kg:op_10 prop:content "農業を取り巻く環境は極めて厳しい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "資材高騰が採算悪化を招いている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "採算悪化に伴い担い手減少の悪循環に陥っている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "担い手減少が耕作放棄地増加につながっている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "気候変動の影響が近年大きくなっている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "猫の目農政が将来不安を強めている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "現場では農政への不信感が広がっている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "若者が希望を持てる農業の確立が重要だ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "学校給食で地元農産物をより使い農家支援につなげる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "安部晃市産業部長"@ja.
+kg:st_3 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_19 prop:content "農家の声を反映させるため作業部会や意向調査を活用している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "高齢化で担い手不足が懸念される"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "労働力不足への対応としてスマート農業が必要だ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "省力化のためスマート農業機械導入を支援している"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "作業の省力化に寄与している"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "スマート農業には労働力軽減の効果がある"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "スマート農業は生産性向上につながる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "品質向上も期待できる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "技術継承にも役立つ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "情報収集と有機農業拡大につながる試験的取組を進めた"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "給食提供を通じて有機農業の拡大を図っている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "実証圃場設置で拡大を図っている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "新規栽培者数を増やすため研修会を開いている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "拡大には生産面の課題解決が必要だ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "販路確保が課題になっている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "収量向上に向けた実証に取り組んでいる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "販路拡大に向けた商談会を行っている"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "給食での活用定着に向け関係者と意見交換している"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "佐藤哲教育長"@ja.
+kg:st_4 rdfs:type cls:st_19.
+cls:st_19 rdfs:label "教育長"@ja.
+kg:op_37 prop:content "今年度は市民が参加できるスポーツイベントが減少している"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "マラソン休止で参加機会が減っている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "健康増進機会の確保が課題だ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "新たなイベントで健康増進と地域コミュニティー推進のきっかけをつくる"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "持続可能な大会にするため検証が必要だ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_4.
+kg:op_42 prop:content "参加者が定員に届かず事業規模が見合っていなかった"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "財政負担に対して事業効果が十分でなかった"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "大会効果が限定的だったため見直しが必要だ"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "参加者ニーズや運営側意見を調査し持続可能な在り方を検証している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "遠藤直樹企画調整部長"@ja.
+kg:st_5 rdfs:type cls:st_18.
+kg:op_46 prop:content "豪雨災害が不通の直接原因だ"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_5.
+kg:op_47 prop:content "鉄道の代わりにバス輸送が続いている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_5.
+kg:op_48 prop:content "被災前より利用者が大きく減少している"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_5.
+kg:op_49 prop:content "乗換えの不便さが利用減につながっている"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_5.
+kg:op_50 prop:content "車両トイレ使用不可も利用回避の要因だ"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:op_51 prop:content "代行バスの運行条件が使いにくい"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_5.
+kg:op_52 prop:content "車酔いの不安が利用減の要因だ"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_5.
+kg:op_53 prop:content "トイレがないことも利用を避ける要因だ"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_5.
+kg:op_54 prop:content "特に高校生の通学に大きな影響が出ている"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_5.
+kg:op_55 prop:content "観光面でも大きな影響が出ている"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_5.
+kg:op_56 prop:content "全面復旧を強く要望している"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_5.
+kg:op_57 prop:content "復旧に向けた機運醸成も図っている"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "吉田晋平建設部長"@ja.
+kg:st_6 rdfs:type cls:st_18.
+kg:op_58 prop:content "支障木は大雨時の流下阻害要因になる"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_6.
+kg:op_59 prop:content "橋梁破損や堤防決壊の要因になり得る"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_6.
+kg:op_60 prop:content "河川監視にも支障が出る"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_6.
+kg:op_61 prop:content "松川橋から住之江橋区間で支障木伐採を予定している"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_6.
+kg:op_62 prop:content "民間事業者の協力による伐採も進める"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_6.
+kg:op_63 prop:content "老朽化で再開の見通しが立っていない"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_6.
+kg:op_64 prop:content "設備故障で停止している"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_6.
+kg:op_65 prop:content "費用面の課題はあるが修繕を検討している施設もある"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_6.
+kg:op_66 prop:content "堆積物除去が必要だ"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_6.
+kg:op_67 prop:content "流水確保のため対策を講じたい"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "佐藤明彦市民環境部長"@ja.
+kg:st_7 rdfs:type cls:st_18.
+kg:op_68 prop:content "地域課題解決として補助事業を開始した"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_7.
+kg:op_69 prop:content "置賜保健所や動物愛護推進員と協力し譲渡会に取り組んでいる"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_7.
+kg:op_70 prop:content "寄附金で事業財源を確保している"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_7.
+kg:op_71 prop:content "繁殖期を踏まえ申込みを再開した"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_7.
+kg:op_72 prop:content "来年度も早期に事業実施できるようにする"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_7.
+kg:op_73 prop:content "シェルター設置には多くの課題がある"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_7.
+kg:op_74 prop:content "行政だけでなく関係者全体の理解と協力が不可欠だ"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_7.
+kg:op_75 prop:content "愛護団体と連携し課題解決につなげたい"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_7.
+kg:op_76 prop:content "山形県知事意見書は希少猛禽類や土砂災害等への影響を懸念している"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_7.
+kg:op_77 prop:content "環境保全と災害対策への適切な対応を求めていく"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_7.
+kg:op_78 prop:content "地球温暖化は最も重要な環境問題の一つだ"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_7.
+kg:op_79 prop:content "2050年までに二酸化炭素排出実質ゼロを目指す"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_7.
+kg:op_80 prop:content "地道な教育啓発が必要だ"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_7.
+kg:op_81 prop:content "学園都市の特色を生かした人材育成を進める"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_7.
+kg:op_82 prop:content "モデル地区の推進部会と連携して理解促進を図る"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_7.
+kg:op_83 prop:content "冬季も安心して暮らせるまちづくりが求められている"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_7.
+kg:op_84 prop:content "光熱費削減と快適な住環境で若者定着を目指す"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_7.
+kg:op_85 prop:content "米沢ブランドの付加価値を高め他産品にも広げたい"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_7.
+kg:op_86 prop:content "農林業は高齢化など多くの課題に直面している"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_7.
+kg:op_87 prop:content "鳥獣被害も課題だ"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_7.
+kg:op_88 prop:content "物価高も経営を圧迫している"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_7.
+kg:op_89 prop:content "悪臭なども農林業の課題だ"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_7.
+kg:op_90 prop:content "新たな収入源確保と資源循環モデル確立で新規就農者確保を目指す"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_7.
+kg:op_91 prop:content "地元への直接的な経済効果が見込まれる"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_7.
+kg:op_92 prop:content "一般家庭の光熱費削減効果が見込める"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_7.
+kg:op_93 prop:content "地域内経済循環の効果が期待できる"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_7.
+kg:op_94 prop:content "しっかり説明し合意形成を図ることが前提だ"@ja.
+kg:op_94 rdf:type cls:opinion.
+kg:op_94 prop:speaker kg:st_7.
+kg:op_95 prop:content "廃棄物実質ゼロを目標に取り組む"@ja.
+kg:op_95 rdf:type cls:opinion.
+kg:op_95 prop:speaker kg:st_7.
+kg:op_96 prop:content "循環型社会形成にも寄与したい"@ja.
+kg:op_96 rdf:type cls:opinion.
+kg:op_96 prop:speaker kg:st_7.
+kg:op_97 prop:content "バイオ炭は土壌改良材や炭素固定に活用できる"@ja.
+kg:op_97 rdf:type cls:opinion.
+kg:op_97 prop:speaker kg:st_7.
+kg:op_98 prop:content "農業分野での利用拡大を目指している"@ja.
+kg:op_98 rdf:type cls:opinion.
+kg:op_98 prop:speaker kg:st_7.
+kg:op_99 prop:content "液肥利用拡大にはコスト面の課題がある"@ja.
+kg:op_99 rdf:type cls:opinion.
+kg:op_99 prop:speaker kg:st_7.
+kg:op_100 prop:content "事業化に向けて検証を進める"@ja.
+kg:op_100 rdf:type cls:opinion.
+kg:op_100 prop:speaker kg:st_7.
+kg:op_101 prop:content "肥料効果向上と運搬保管性向上を図る"@ja.
+kg:op_101 rdf:type cls:opinion.
+kg:op_101 prop:speaker kg:st_7.
+kg:op_102 prop:content "給食活用は有機農業振興と環境教育に資する"@ja.
+kg:op_102 rdf:type cls:opinion.
+kg:op_102 prop:speaker kg:st_7.
+kg:op_103 prop:content "地域の未利用木材を余すことなく活用する"@ja.
+kg:op_103 rdf:type cls:opinion.
+kg:op_103 prop:speaker kg:st_7.
+kg:op_104 prop:content "市内外から供給体制を整えている"@ja.
+kg:op_104 rdf:type cls:opinion.
+kg:op_104 prop:speaker kg:st_7.
+kg:op_105 prop:content "調達コスト低減で事業性向上を図る"@ja.
+kg:op_105 rdf:type cls:opinion.
+kg:op_105 prop:speaker kg:st_7.
+kg:op_106 prop:content "未利用木材への付加価値で収入源になる"@ja.
+kg:op_106 rdf:type cls:opinion.
+kg:op_106 prop:speaker kg:st_7.
+kg:op_107 prop:content "売熱収入で事業性がさらに向上する"@ja.
+kg:op_107 rdf:type cls:opinion.
+kg:op_107 prop:speaker kg:st_7.
+kg:op_108 prop:content "食肉センターのコスト削減にもつながる"@ja.
+kg:op_108 rdf:type cls:opinion.
+kg:op_108 prop:speaker kg:st_7.
+kg:op_109 prop:content "学校給食での有機農産物活用を進めている"@ja.
+kg:op_109 rdf:type cls:opinion.
+kg:op_109 prop:speaker kg:st_3.
+kg:op_110 prop:content "供給量確保が課題だ"@ja.
+kg:op_110 rdf:type cls:opinion.
+kg:op_110 prop:speaker kg:st_3.
+kg:op_111 prop:content "必要な品目の確保が課題だ"@ja.
+kg:op_111 rdf:type cls:opinion.
+kg:op_111 prop:speaker kg:st_3.
+kg:op_112 prop:content "価格差が導入拡大の課題だ"@ja.
+kg:op_112 rdf:type cls:opinion.
+kg:op_112 prop:speaker kg:st_3.
+kg:op_113 prop:content "循環型農業推進で両者は相性が良い"@ja.
+kg:op_113 rdf:type cls:opinion.
+kg:op_113 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "昨年は、猛暑のため米の一等米比率が下がり、農家の収入にも大きな打撃を与えました"@ja.
+<< kg:id_2 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "昨年は、猛暑のため米の一等米比率が下がり、農家の収入にも大きな打撃を与えました"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今年も猛暑となり、サクランボでは高温による品質低下などの被害が見られました"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "今年も猛暑となり、サクランボでは高温による品質低下などの被害が見られました"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "ここ最近では、昨年の猛暑の影響やインバウンドによる需要の増加などにより、米の供給不足が発生し"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "ここ最近では、昨年の猛暑の影響やインバウンドによる需要の増加などにより、米の供給不足が発生し"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "店頭では米が手に入りづらくなり"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "価格も上昇するなど「令和の米騒動」と話題になっています"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "農業は自然や社会情勢などの影響を受けやすく"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "担い手の平均年齢が65歳以上という高齢化"@ja.
+<< kg:id_15 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "肥料や資材の高騰による採算の悪化"@ja.
+<< kg:id_15 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "それに伴う担い手の減少"@ja.
+<< kg:id_15 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "耕作放棄地の増加という悪循環に陥っております"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "高温障害など気候変動による異常気象の影響も最近とみに大きくなっております"@ja.
+<< kg:id_22 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "こうした猫の目農政とも言われる政府の農業政策の転換も、生産者の方々の将来不安に拍車をかけております"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "政府が打ち出している水田５年水張り問題では、現場の生産者の方々から農政への不信感が広がっており"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "まずは、若者が希望を持てる農業を確立すること"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "小中学校の学校給食にこれまで以上に地元の農産物を使うよう指示しております。地産地消の拡大で農家の経営基盤の強化につなげてまいります"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "農家の皆様の声を反映させることが重要であることから、農業振興計画の策定作業部会を設置しており"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "農家の高齢化は日本の農業において深刻な問題となっており、本市におきましても農業者に占める65歳以上の割合は年々増加し、農業の担い手不足が懸念されております"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "高齢化や後継者不足による労働力不足などに対応するため、近年、ロボットやＡＩ、ＩｏＴなどの先端技術を使った自動走行技術や遠隔操作などのスマート農業が全国的に推進されております"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "高齢者や女性農業者の省力化などを図るため、国や県と連携し、スマート農業機械の導入を支援しているところです"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "これまでの先端技術活用支援については、農業用ドローン８台、アシストスーツ６台の導入実績があり、作業の省力化に寄与しているところであります"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "スマート農業は、労働力の軽減や生産性の向上、農作物の品質向上、熟練者の技術・ノウハウのデータ化など、メリットがあります"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "スマート農業は、労働力の軽減や生産性の向上"@ja.
+<< kg:id_40 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "農作物の品質向上"@ja.
+<< kg:id_40 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "熟練者の技術・ノウハウのデータ化など、メリットがあります"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "令和４年度は、有機農業に取り組んでいる先進地への視察や商談会への出展"@ja.
+<< kg:id_45 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "市内小中学校や保育園給食への有機栽培米の提供"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "有機栽培実証圃場の設置など、情報収集と有機農業の拡大につながる試験的な取組を行ってまいりました"@ja.
+<< kg:id_45 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "有機農業の新規栽培者数を増やすための栽培技術や販路に関する研修会の開催"@ja.
+<< kg:id_45 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "本市有機農業を拡大していくためには、栽培方法に関する生産面や販路面での課題が見えてきた"@ja.
+<< kg:id_45 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "本市有機農業を拡大していくためには、栽培方法に関する生産面や販路面での課題が見えてきた"@ja.
+<< kg:id_45 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "収量向上が期待できる栽培方法の実証圃の設置"@ja.
+<< kg:id_45 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "有機農業者の経営規模に合った商談会の開催"@ja.
+<< kg:id_45 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "活用の定着に向けた学校給食関係者との意見交換などに取り組んでおります"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "チャレンジデーも、社会環境の変化などの理由により令和５年度をもって終了となり"@ja.
+<< kg:id_55 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "米澤上杉城下町マラソンについては、大会の在り方、運営方法などについて検証を行うため、令和６年度休止としたことから、今年度は例年と比較し、市民が参加できるスポーツイベントなどが減少している"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "このスポーツイベント等の減少により懸念される市民の健康増進機会を確保していくために"@ja.
+<< kg:id_58 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "今年度は新たなスポーツイベントとして、10月12日に「歩いて！走って！知って米沢 ラン＆ウォークラリー」を開催いたします"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "大会の在り方、運営方法などについて検証を行うため、令和６年度休止とした"@ja.
+<< kg:id_61 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "初回大会からこれまで参加者数が募集定員に達したことはなく"@ja.
+<< kg:id_64 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "本市の財政負担に見合った事業規模とはなっておりませんでした"@ja.
+<< kg:id_64 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "市民の健康増進や競技力向上、交流人口の増加による地域経済の活性化等の面からも効果が限定的である"@ja.
+<< kg:id_64 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "市民並びに過去に本大会に参加していただいた方及び県内22のマラソン大会事務局を対象としたアンケートの実施と、県内外のマラソン大会やウオークラリーの視察などに着手しているところです"@ja.
+<< kg:id_68 prop:cause kg:id_69 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "令和４年８月の豪雨災害により大きな被害を受け、今泉駅から坂町駅間が不通となり"@ja.
+<< kg:id_68 prop:effect kg:id_70 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "代行バス輸送が行われております"@ja.
+<< kg:id_68 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "被災前の令和３年度の290人に対して令和５年度は代行バスの輸送も含めて220人となっており、約４分の３に減少しております"@ja.
+<< kg:id_72 prop:cause kg:id_73 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "通学で小国－米沢間を利用する場合、今泉駅で乗換えが必要になること"@ja.
+<< kg:id_72 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "被災前は使えていた鉄道車両のトイレが維持管理の都合で使用できなくなったこと"@ja.
+<< kg:id_72 prop:cause kg:id_75 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "代行バスにおいては、朝の出発時間が早いこと"@ja.
+<< kg:id_72 prop:cause kg:id_76 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "車酔いすること"@ja.
+<< kg:id_72 prop:cause kg:id_77 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "トイレがないことなどから利用を避けているのではないかと考えられます"@ja.
+<< kg:id_68 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "特に高校生の通学に対する影響が大きいのではないかと思っているところであります"@ja.
+<< kg:id_68 prop:effect kg:id_79 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "鉄道を利用したツアーが組めないことから、インバウンド需要に大きな影響が出ているとお聞きしております"@ja.
+<< kg:id_80 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "本市の重要事業要望において米坂線の全面復旧を掲げ、国や県、ＪＲ東日本に対して強く要望しているほか"@ja.
+<< kg:id_80 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "イベント開催時には署名活動を行うなど、米坂線復旧に向けた機運醸成も図っております"@ja.
+<< kg:id_83 prop:effect kg:id_84 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "支障木などが流れを阻害したり"@ja.
+<< kg:id_83 prop:effect kg:id_85 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "倒木が流れることで橋梁破損や堤防決壊などの甚大な被害を及ぼす要因となる"@ja.
+<< kg:id_83 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "河川巡視時に視界を遮り、監視を妨げたりすることが問題となっている"@ja.
+<< kg:id_83 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "松川橋から住之江橋の区間（約430メートル）について、今年度、支障木伐採業務を実施する予定です"@ja.
+<< kg:id_83 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "民間事業者の協力で行う公募型支障木伐採事業においては、花沢大橋下流の実施を予定している"@ja.
+<< kg:id_89 prop:cause kg:id_90 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "給配水管の老朽化とポンプの故障により、平成25年頃から稼働できていない状況"@ja.
+<< kg:id_89 prop:cause kg:id_91 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "給配水管の老朽化とポンプの故障により"@ja.
+<< kg:id_89 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "漏水修繕の方法について検討しているところであります"@ja.
+<< kg:id_93 prop:cause kg:id_94 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "直江堤公園につきましては、水の流れを阻害する堆積物が原因で流水断面が確保されておりません"@ja.
+<< kg:id_93 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "堆積物などを除去するなどの対策を講じていきたい"@ja.
+<< kg:id_96 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "本市においても、動物愛護、地域課題の解決として、今年度から猫の避妊手術費補助事業を開始したところです"@ja.
+<< kg:id_96 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "置賜保健所や県から委嘱された動物愛護推進員の協力をいただきながら、譲渡会の開催にも取り組んでいるところでございます"@ja.
+<< kg:id_99 prop:contermeasure kg:id_100 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "本事業の財源は全額ガバメントクラウドファンディングによる寄附金を活用して進めており"@ja.
+<< kg:id_99 prop:contermeasure kg:id_101 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "クラウドファンディングによる目標額を達成したこともあり、８月25日から申込みの再開をしたところでございます"@ja.
+<< kg:id_99 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "寄附金の余剰分につきましては、基金に積立てを行い、次年度に取り崩して事業に充当することによって、来年度は４月当初から補助金の相談、申請受付事務を始められるようにし"@ja.
+<< kg:id_103 prop:cause kg:id_104 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "場所の選定や設備投資費用、管理体制や維持管理費等に多くの課題があると認識しているところでございます"@ja.
+<< kg:id_105 prop:contermeasure kg:id_106 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "行政だけで進めていくことは難しく、飼い主、愛護団体、動物病院、地域住民の皆様の理解と協力が不可欠である"@ja.
+<< kg:id_105 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "引き続き情報交換と現況・課題の共有を図り、課題解決につなげられるよう取り組んでまいりたい"@ja.
+<< kg:id_108 prop:effect kg:id_109 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "山形県知事の意見書については、希少猛禽類や土砂災害等に対する影響を懸念しており"@ja.
+<< kg:id_108 prop:contermeasure kg:id_110 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "適切な保全措置及び対策を講じるよう求めております"@ja.
+<< kg:id_111 prop:effect kg:id_112 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "地球温暖化は、予想される影響の大きさや深刻さから見て、人類の生存基盤に関わる安全保障の問題と認識しており"@ja.
+<< kg:id_113 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "2050年までに本市の二酸化炭素排出実質ゼロを目指す米沢市ゼロカーボンシティ宣言を行ったところです"@ja.
+<< kg:id_115 prop:contermeasure kg:id_116 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "危機意識の共有のためには、環境・脱炭素教育の啓発、啓蒙に地道に取り組む必要があります"@ja.
+<< kg:id_115 prop:contermeasure kg:id_117 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "学園都市という特色を生かし、山形大学等と連携した人材育成を行うなど、脱炭素人材の育成を図っていく"@ja.
+<< kg:id_115 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "４つのモデル地区の各推進部会と共に地区単位で研修会の開催や事業の周知・啓発を図っていく予定です"@ja.
+<< kg:id_119 prop:cause kg:id_120 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "本市が抱える人口流出の原因として、冬期間の大雪などの厳しい自然環境があり"@ja.
+<< kg:id_119 prop:contermeasure kg:id_121 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "太陽光パネルの設置や住宅の断熱化及び高効率エアコンなどの設置補助を通して、省エネによる光熱費の削減と快適な住環境を提供し、市民の暮らしやすさの向上を図り、人口の流出を減らし、若者の定着を目指していきたい"@ja.
+<< kg:id_122 prop:contermeasure kg:id_123 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "まずは、食肉センターの脱炭素化に取り組むことで、米沢牛にサステーナブルな付加価値を創造し、積極的にＰＲすることでその付加価値を他の産品にも広げていく"@ja.
+<< kg:id_124 prop:cause kg:id_125 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "農林業におきましては、国内消費の減少や従事者の高齢化"@ja.
+<< kg:id_124 prop:cause kg:id_126 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "鳥獣被害や物価高、悪臭等、多くの課題に直面しております"@ja.
+<< kg:id_124 prop:cause kg:id_127 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "鳥獣被害や物価高、悪臭等、多くの課題に直面しております"@ja.
+<< kg:id_124 prop:cause kg:id_128 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "鳥獣被害や物価高、悪臭等、多くの課題に直面しております"@ja.
+<< kg:id_124 prop:contermeasure kg:id_129 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "バイオマス発電による副産物である液肥やバイオ炭の農地利用のほか、間伐材等の未利用木材を木質バイオマス発電の燃料チップとして有効活用することで、新たな収入源の確保と地域循環型モデルの確立を図り"@ja.
+<< kg:id_130 prop:effect kg:id_131 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "直接効果として地場施工業者の施工分とＰＰＡ契約者の電気代削減分を合わせて約１億円程度の裨益効果がもたらされると試算しております"@ja.
+<< kg:id_132 prop:effect kg:id_133 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "高効率エアコンで年間5,200円、エコキュートで年間13万5,000円、断熱改修で年間14万8,000円の光熱費の削減が一般家庭において見込める試算"@ja.
+<< kg:id_134 prop:effect kg:id_135 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "本事業の再生可能エネルギーの導入により、先行地域４地域において域外へのエネルギー代金流出抑制額は９億円程度を見込んでおるところでございます"@ja.
+<< kg:id_136 prop:contermeasure kg:id_137 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_94;
+    prop:text-txt_contents "地元や市民との合意形成は今後進めていくこととしており、しっかりと事業内容を説明し、合意形成を図ることを前提として進めてまいります"@ja.
+<< kg:id_138 prop:contermeasure kg:id_139 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_95;
+    prop:text-txt_contents "ＮＴＴ－ＭＥが丸紅株式会社と連携し、リユースパネルの活用を行うほか、全国のリサイクル事業者と連携したリサイクル体制を構築し、廃棄物実質ゼロを実現することを目標に取り組む予定"@ja.
+<< kg:id_138 prop:contermeasure kg:id_140 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_96;
+    prop:text-txt_contents "本市のみならず置賜全域でのリユース・リサイクルへの転換を進め、持続可能な循環型社会形成にも寄与していきたい"@ja.
+<< kg:id_141 prop:effect kg:id_142 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_97;
+    prop:text-txt_contents "副産物としてバイオ炭が発生します。このバイオ炭は土壌改良材としての活用事例があるほか、土壌中に炭素が固定されることでＣＯ２削減にも寄与する"@ja.
+<< kg:id_143 prop:effect kg:id_144 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_98;
+    prop:text-txt_contents "副産物として堆肥と消化液が発生します"@ja.
+<< kg:id_145 prop:cause kg:id_146 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_99;
+    prop:text-txt_contents "液肥は運搬や散布のコストが課題となっています"@ja.
+<< kg:id_145 prop:contermeasure kg:id_147 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_100;
+    prop:text-txt_contents "散布車を用いて一定の基準で散布し、作物の収量及び土壌分析を行いながら事業化のめどを立てていく予定"@ja.
+<< kg:id_148 prop:contermeasure kg:id_149 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_101;
+    prop:text-txt_contents "液肥のペレット化も計画しており、ペレット化することにより、肥料効果をより高め、運搬・保管性が向上する"@ja.
+<< kg:id_150 prop:effect kg:id_151 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_102;
+    prop:text-txt_contents "有機農業から生産した農産物を学校給食に活用することは、有機農業振興や環境教育の観点からも有意義と考えております"@ja.
+<< kg:id_152 prop:contermeasure kg:id_153 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_103;
+    prop:text-txt_contents "この木質チップには、間伐材や廃材、支障木等を取り入れ、地域の未利用木材を余すことなく利活用することで、地産地消による資源循環モデルの構築を目指しております"@ja.
+<< kg:id_154 prop:contermeasure kg:id_155 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_104;
+    prop:text-txt_contents "米沢地方森林組合や市内の木材加工会社に声がけしており...市外のリサイクル事業を行っている会社からも供給の合意を取り付けている状況"@ja.
+<< kg:id_152 prop:contermeasure kg:id_156 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_105;
+    prop:text-txt_contents "上郷のバイオマス発電プラントの余剰排熱をチップ乾燥に活用することで、市場価格の８割程度でチップの調達が可能となります"@ja.
+<< kg:id_152 prop:effect kg:id_157 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_106;
+    prop:text-txt_contents "未利用木材をチップの材料として付加価値をつけることにより、木材供給者にとっても安定的な収入を得ることができます"@ja.
+<< kg:id_152 prop:effect kg:id_158 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_107;
+    prop:text-txt_contents "バイオマス発電事業者にとっては、売熱収入を得ることで事業性がさらに向上する"@ja.
+<< kg:id_152 prop:effect kg:id_159 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_108;
+    prop:text-txt_contents "本市にとっても米沢市食肉センターの光熱費削減に寄与する取組となっており"@ja.
+<< kg:id_160 prop:contermeasure kg:id_161 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_109;
+    prop:text-txt_contents "当初はお米から始め、現在はタマネギや里芋へと品目を拡大し、活用の検討を進めているところでございます"@ja.
+<< kg:id_160 prop:cause kg:id_162 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_110;
+    prop:text-txt_contents "安定した供給量の確保、品ぞろえ、慣行農産物との価格差などの課題がある"@ja.
+<< kg:id_160 prop:cause kg:id_163 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_111;
+    prop:text-txt_contents "安定した供給量の確保、品ぞろえ、慣行農産物との価格差などの課題がある"@ja.
+<< kg:id_160 prop:cause kg:id_164 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_112;
+    prop:text-txt_contents "安定した供給量の確保、品ぞろえ、慣行農産物との価格差などの課題がある"@ja.
+<< kg:id_165 prop:effect kg:id_166 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_113;
+    prop:text-txt_contents "バイオマス事業などと有機農業は今後ますます重要性が高まる循環型農業の推進においても親和性があり"@ja.
+}

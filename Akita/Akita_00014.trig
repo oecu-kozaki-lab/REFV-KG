@@ -1,0 +1,411 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00014> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "工事施工業者等への指導に努め環境保全措置の確実な履行を確保する"@ja.
+kg:id_2 rdf:type cls:c_13547.
+cls:c_13547 rdfs:label "履行確保"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "最新の知見や技術等を可能な範囲で導入し環境影響の低減に努める"@ja.
+kg:id_3 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "樹木帯の伐開"@ja.
+kg:id_4 rdf:type cls:c_11898.
+cls:c_11898 rdfs:label "樹木伐採"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "風の通り道ができること"@ja.
+kg:id_5 rdf:type cls:c_13669.
+cls:c_13669 rdfs:label "風路形成"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "林縁部の植生構造の変化"@ja.
+kg:id_6 rdf:type cls:c_537.
+cls:c_537 rdfs:label "植生変化"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "植生退行"@ja.
+kg:id_7 rdf:type cls:c_13670.
+cls:c_13670 rdfs:label "植生退行"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "樹木衰退"@ja.
+kg:id_8 rdf:type cls:c_10380.
+cls:c_10380 rdfs:label "樹木衰退"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "樹木減少"@ja.
+kg:id_9 rdf:type cls:c_13671.
+cls:c_13671 rdfs:label "樹木減少"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "保安林の機能が損なわれないよう配慮する"@ja.
+kg:id_10 rdf:type cls:c_13672.
+cls:c_13672 rdfs:label "機能保全"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "現段階で予測し得ない環境保全上の問題が工事中及び供用後に生じる"@ja.
+kg:id_11 rdf:type cls:c_533.
+cls:c_533 rdfs:label "環境問題"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "速やかに調査を行い関係機関と協議の上適切な措置を講じる"@ja.
+kg:id_12 rdf:type cls:c_13548.
+cls:c_13548 rdfs:label "調査対応"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "周辺の住民から苦情が発生する"@ja.
+kg:id_13 rdf:type cls:c_13549.
+cls:c_13549 rdfs:label "住民苦情"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "周辺住民から苦情が発生した場合は適切に対処する"@ja.
+kg:id_14 rdf:type cls:c_248.
+cls:c_248 rdfs:label "苦情対応"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "騒音及び超低周波音"@ja.
+kg:id_15 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_16 rdfs:label "住居学校病院その他環境保全についての配慮が特に必要な施設への影響"@ja.
+kg:id_16 rdf:type cls:c_13540.
+cls:c_13540 rdfs:label "生活施設"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "事業者が参考とした基準を超過する地点がある"@ja.
+kg:id_17 rdf:type cls:c_454.
+cls:c_454 rdfs:label "基準超過"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "騒音及び超低周波音による影響を可能な限り回避又は低減するよう追加的な環境保全措置を検討する"@ja.
+kg:id_18 rdf:type cls:c_13673.
+cls:c_13673 rdfs:label "追加措置"@ja.
+kg:id_15 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "騒音源の騒音放射特性"@ja.
+kg:id_19 rdf:type cls:c_13674.
+cls:c_13674 rdfs:label "音源特性"@ja.
+kg:id_15 prop:cause kg:id_19.
+kg:id_20 rdfs:label "伝搬過程における気象条件の影響"@ja.
+kg:id_20 rdf:type cls:c_767.
+cls:c_767 rdfs:label "気象条件"@ja.
+kg:id_15 prop:cause kg:id_20.
+kg:id_21 rdfs:label "伝搬過程における地形の影響"@ja.
+kg:id_21 rdf:type cls:c_1154.
+cls:c_1154 rdfs:label "地形条件"@ja.
+kg:id_15 prop:cause kg:id_21.
+kg:id_22 rdfs:label "事後調査を実施する"@ja.
+kg:id_22 rdf:type cls:c_17.
+cls:c_17 rdfs:label "事後調査"@ja.
+kg:id_15 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "風車の影"@ja.
+kg:id_23 rdf:type cls:c_379.
+cls:c_379 rdfs:label "風車影"@ja.
+kg:id_24 rdfs:label "年間30時間又は1日30分を超える住居が存在する"@ja.
+kg:id_24 rdf:type cls:c_13675.
+cls:c_13675 rdfs:label "長時間影響"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "風車の影による影響を可能な限り回避又は低減するよう追加的な環境保全措置を検討する"@ja.
+kg:id_25 rdf:type cls:c_13673.
+kg:id_23 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "地形の影響"@ja.
+kg:id_26 rdf:type cls:c_1154.
+kg:id_23 prop:cause kg:id_26.
+kg:id_27 rdfs:label "影響の程度を適切に把握するため事後調査を実施する"@ja.
+kg:id_27 rdf:type cls:c_17.
+kg:id_23 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "動物"@ja.
+kg:id_28 rdf:type cls:c_112.
+cls:c_112 rdfs:label "動物"@ja.
+kg:id_29 rdfs:label "渡り鳥の移動経路が遮断阻害されるおそれ"@ja.
+kg:id_29 rdf:type cls:c_19.
+cls:c_19 rdfs:label "移動阻害"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "ミサゴやオオタカの営巣が確認されている"@ja.
+kg:id_30 rdf:type cls:c_13676.
+cls:c_13676 rdfs:label "営巣確認"@ja.
+kg:id_28 prop:effect kg:id_30.
+kg:id_31 rdfs:label "鳥類への影響を可能な限り回避又は低減するよう追加的な環境保全措置を検討する"@ja.
+kg:id_31 rdf:type cls:c_13673.
+kg:id_28 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "専門家等の助言を得ながら調査精度を高める"@ja.
+kg:id_32 rdf:type cls:c_4609.
+cls:c_4609 rdfs:label "専門助言"@ja.
+kg:id_28 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "尾根やパートストライクの発生状況等を適切に把握する"@ja.
+kg:id_33 rdf:type cls:c_6021.
+cls:c_6021 rdfs:label "影響把握"@ja.
+kg:id_28 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "可能な限り南側に計画中の風力発電事業者と合同で行う"@ja.
+kg:id_34 rdf:type cls:c_13677.
+cls:c_13677 rdfs:label "合同調査"@ja.
+kg:id_28 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "植物"@ja.
+kg:id_35 rdf:type cls:c_113.
+cls:c_113 rdfs:label "植物"@ja.
+kg:id_36 rdfs:label "ミクリ等の重要な水生植物の生育環境が悪化する"@ja.
+kg:id_36 rdf:type cls:c_13678.
+cls:c_13678 rdfs:label "生育悪化"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "工事の実施に伴う濁水の流入"@ja.
+kg:id_37 rdf:type cls:c_564.
+cls:c_564 rdfs:label "濁水流入"@ja.
+kg:id_35 prop:cause kg:id_37.
+kg:id_38 rdfs:label "濁水処理に関する環境保全措置を適切に講じる"@ja.
+kg:id_38 rdf:type cls:c_580.
+cls:c_580 rdfs:label "濁水対策"@ja.
+kg:id_35 prop:contermeasure kg:id_38.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "工事施工業者等への指導と環境保全措置の確実な履行を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "最新の知見や技術の導入で環境影響の一層の低減を求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "樹木帯の伐開が保安林機能を損なうおそれを懸念"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "風の通り道の形成による植生への悪影響を懸念"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "保安林内の植生構造の変化を懸念"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "風の通り道により植生が退行する可能性を懸念"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "樹木の衰退発生を懸念"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "樹木の減少発生を懸念"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "保安林機能を損なわない配慮を求める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "予測不能な環境保全上の問題の発生に備えるべきと指摘"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "問題発生時は速やかな調査と関係機関協議の上で適切な措置を求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "工事中及び供用後の住民苦情発生を想定して対応を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "住民苦情には適切に対処すべきと求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "住居や学校や病院など配慮が必要な施設への影響を懸念"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "騒音予測で基準超過地点があることを問題視"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "騒音と超低周波音の影響回避低減のため追加措置を求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "騒音予測には騒音源特性に関する不確実性が大きいと指摘"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "気象条件が騒音予測の不確実性要因になると指摘"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "地形が騒音予測の不確実性要因になると指摘"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "騒音及び超低周波音は事後調査で確認すべきと求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "風車の影の予測で長時間影響を受ける住居の存在を問題視"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "風車の影の影響回避低減のため追加措置を求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "風車の影の予測には地形による不確実性があると指摘"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "風車の影の時間帯や範囲を把握するため事後調査を求める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "渡り鳥の移動経路が風力発電事業で遮断阻害されるおそれを懸念"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "事業区域内で希少猛禽類の営巣確認を重視"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "鳥類への影響回避低減のため追加措置を求める"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "専門家の助言を得て調査精度を高めるべきと求める"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "尾根やバードストライクの発生状況の把握を求める"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "鳥類調査は南側計画事業者と合同実施が望ましいと求める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "重要な水生植物の生育環境悪化を懸念"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "濁水流入が重要な水生植物に悪影響を与えると懸念"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "濁水処理の環境保全措置を適切に講じるべきと求める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業の実施に当たっては、工事施工業者等への指導に努め、環境保全措置の確実な履行を確保すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "また、最新の知見や技術等を可能な範囲で導入することにより、一層の環境影響の低減に努めること。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "対象事業実施区域の大部分が保安林であり、樹木帯の伐開による林縁部の植生構造の変化や、風の通り道ができることによる植生退行、樹木衰退・減少の可能性がある"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風の通り道ができることによる植生退行、樹木衰退・減少の可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "樹木帯の伐開による林縁部の植生構造の変化"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "風の通り道ができることによる植生退行"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "樹木衰退・減少の可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "樹木衰退・減少の可能性がある"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "事業の実施に当たっては、保安林の機能が損なわれないよう配慮すること。"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "現段階で予測し得ない環境保全上の問題が工事中及び供用後に生じた場合は"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "速やかに調査を行い、関係機関と協議の上、適切な措置を講じること。"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "工事中及び供用後に周辺の住民から苦情が発生した場合には"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "工事中及び供用後に周辺の住民から苦情が発生した場合には、適切に対処すること。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "対象事業実施区域の周辺には、住居、学校及び病院その他の環境の保全についての配慮が特に必要な施設が多数存在し"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "施設の稼働に伴う騒音の予測において、事業者が参考とした基準を超過する地点がある。"@ja.
+<< kg:id_15 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "このため、施設の稼働に伴う騒音及び超低周波音による影響を可能な限り回避又は低減するよう、追加的な環境保全措置を検討すること。"@ja.
+<< kg:id_15 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "騒音源の騒音放射特性、伝搬過程における気象条件や地形の影響など不確実性が大きい要因があることから"@ja.
+<< kg:id_15 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "騒音源の騒音放射特性、伝搬過程における気象条件や地形の影響など不確実性が大きい要因があることから"@ja.
+<< kg:id_15 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "騒音源の騒音放射特性、伝搬過程における気象条件や地形の影響など不確実性が大きい要因があることから"@ja.
+<< kg:id_15 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "施設の稼働に伴う騒音及び超低周波音の予測については、騒音源の騒音放射特性、伝搬過程における気象条件や地形の影響など不確実性が大きい要因があることから、事後調査を実施すること。"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "施設の稼働に伴う風車の影の予測において、事業者が参考とした指針値（年間３０時間かつ１日３０分を超えない）に対して、年間３０時間を大幅に上回る住居等が存在する。"@ja.
+<< kg:id_23 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "このため、施設の稼働に伴う風車の影による影響を可能な限り回避又は低減するよう、追加的な環境保全措置を検討すること。"@ja.
+<< kg:id_23 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "施設の稼働に伴う風車の影の予測については、地形の影響など不確実性が大きい要因があることから"@ja.
+<< kg:id_23 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "風車の影が及ぶ季節別の時間帯や範囲など、影響の程度を適切に把握するため、事後調査を実施すること。"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "本事業と北側及び南側に計画中の風力発電事業等との複合的な影響により、移動経路が遮断・阻害されるおそれがある。"@ja.
+<< kg:id_28 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "対象事業実施区域内ではミサゴやオオタカの営巣が確認されている。"@ja.
+<< kg:id_28 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "このため、施設の稼働に伴う鳥類への影響を可能な限り回避又は低減するよう、追加的な環境保全措置を検討すること。"@ja.
+<< kg:id_28 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "事後調査の実施に当たっては、専門家等の助言を得ながら調査精度を高めるなどして"@ja.
+<< kg:id_28 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "尾根やバードストライクの発生状況等を適切に把握するとともに"@ja.
+<< kg:id_28 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "可能な限り南側に計画中の風力発電事業者と合同で行うこと。"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "対象事業実施区域内には、ミクリ等の重要な水生植物の生育が確認されていることから、工事の実施に伴う濁水の流入により生育環境が悪化することがないよう"@ja.
+<< kg:id_35 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "工事の実施に伴う濁水の流入により生育環境が悪化することがないよう"@ja.
+<< kg:id_35 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "濁水処理に関する環境保全措置を適切に講じること。"@ja.
+}

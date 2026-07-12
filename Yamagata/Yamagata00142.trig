@@ -1,0 +1,807 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00142> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "遊佐町の発展"@ja.
+kg:id_1 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_2 rdfs:label "町独自に外部とのかかわりをふやす"@ja.
+kg:id_2 rdf:type cls:c_8184.
+cls:c_8184 rdfs:label "外部交流拡大"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "企業誘致と雇用確保の困難"@ja.
+kg:id_3 rdf:type cls:c_8185.
+cls:c_8185 rdfs:label "雇用確保困難"@ja.
+kg:id_4 rdfs:label "人手不足の時代の到来"@ja.
+kg:id_4 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "人工知能の導入が実用段階を迎えたこと"@ja.
+kg:id_5 rdf:type cls:c_8186.
+cls:c_8186 rdfs:label "技術導入"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "文化資源への注目の高まり"@ja.
+kg:id_6 rdf:type cls:c_8187.
+cls:c_8187 rdfs:label "文化資源評価"@ja.
+kg:id_7 rdfs:label "関係者の並々ならぬ努力"@ja.
+kg:id_7 rdf:type cls:c_8188.
+cls:c_8188 rdfs:label "関係者努力"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "調査技術の飛躍的な進展"@ja.
+kg:id_8 rdf:type cls:c_8189.
+cls:c_8189 rdfs:label "調査技術進展"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "文化資源の的確な活用の必要性"@ja.
+kg:id_9 rdf:type cls:c_8190.
+cls:c_8190 rdfs:label "資源活用必要"@ja.
+kg:id_10 rdfs:label "グローバルに考えローカルに行動する"@ja.
+kg:id_10 rdf:type cls:c_8191.
+cls:c_8191 rdfs:label "広域視点行動"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "国際交流の基盤形成"@ja.
+kg:id_11 rdf:type cls:c_8192.
+cls:c_8192 rdfs:label "国際交流基盤"@ja.
+kg:id_12 rdfs:label "遊佐ロータリークラブによる交換留学生受け入れや姉妹クラブ締結"@ja.
+kg:id_12 rdf:type cls:c_8193.
+cls:c_8193 rdfs:label "国際交流活動"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "風力発電の受け入れ"@ja.
+kg:id_13 rdf:type cls:c_8194.
+cls:c_8194 rdfs:label "再生可能エネルギー受容"@ja.
+kg:id_14 rdfs:label "地球にCO2を出さないで電気を得られるという考え"@ja.
+kg:id_14 rdf:type cls:c_103.
+cls:c_103 rdfs:label "環境配慮"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "設置基準とガイドラインを設けリスク管理の協定書を地元とつくる"@ja.
+kg:id_15 rdf:type cls:c_8195.
+cls:c_8195 rdfs:label "設置管理ルール"@ja.
+kg:id_13 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "人口減少と企業誘致の両立の困難"@ja.
+kg:id_16 rdf:type cls:c_8185.
+kg:id_17 rdfs:label "多くの業種における人手不足と求人未充足"@ja.
+kg:id_17 rdf:type cls:c_759.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "生産人口減と企業誘致の両立は非常に難しい課題になる"@ja.
+kg:id_18 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "町内と管内関係機関が連携し若者の定着と移住促進を図る"@ja.
+kg:id_19 rdf:type cls:c_8196.
+cls:c_8196 rdfs:label "定住移住促進"@ja.
+kg:id_16 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "複住への対応の必要性"@ja.
+kg:id_20 rdf:type cls:c_8197.
+cls:c_8197 rdfs:label "多拠点居住対応"@ja.
+kg:id_21 rdfs:label "都市と地方だけでなく海外と地方まで視野を広げることで交流人口が拡大する可能性がある"@ja.
+kg:id_21 rdf:type cls:c_2343.
+cls:c_2343 rdfs:label "交流人口拡大"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "観光分野と連携して今後の対応を検討する"@ja.
+kg:id_22 rdf:type cls:c_8198.
+cls:c_8198 rdfs:label "観光連携検討"@ja.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "CM大賞での好成績"@ja.
+kg:id_23 rdf:type cls:c_8199.
+cls:c_8199 rdfs:label "広報成果"@ja.
+kg:id_24 rdfs:label "地域おこし協力隊を初めとする若い力の発揮"@ja.
+kg:id_24 rdf:type cls:c_4633.
+cls:c_4633 rdfs:label "外部人材活用"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "遊佐町の人口構成の高齢化"@ja.
+kg:id_25 rdf:type cls:c_8200.
+cls:c_8200 rdfs:label "人口高齢化"@ja.
+kg:id_26 rdfs:label "進学や就職を機に遊佐町を離れる若者が多くその大半が戻っていないこと"@ja.
+kg:id_26 rdf:type cls:c_1876.
+cls:c_1876 rdfs:label "若者流出"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "50歳代より下の年代の厚みが全国に比べてかなり低い"@ja.
+kg:id_27 rdf:type cls:c_8201.
+cls:c_8201 rdfs:label "若年層減少"@ja.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "遊佐町の高齢者人口の多さ"@ja.
+kg:id_28 rdf:type cls:c_5688.
+cls:c_5688 rdfs:label "高齢者増加"@ja.
+kg:id_29 rdfs:label "75歳以上の年代は全国平均に比較して長寿であるという特徴がある"@ja.
+kg:id_29 rdf:type cls:c_8202.
+cls:c_8202 rdfs:label "長寿傾向"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "学齢期人口の増加"@ja.
+kg:id_30 rdf:type cls:c_8203.
+cls:c_8203 rdfs:label "学齢人口増加"@ja.
+kg:id_31 rdfs:label "転入者が転出者より多かったこと"@ja.
+kg:id_31 rdf:type cls:c_8204.
+cls:c_8204 rdfs:label "転入超過"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "出生数合計800名に対し小中学校在籍数が854名となっている"@ja.
+kg:id_32 rdf:type cls:c_8205.
+cls:c_8205 rdfs:label "児童生徒増加"@ja.
+kg:id_30 prop:effect kg:id_32.
+kg:id_33 rdfs:label "魅力ある企業の育成の必要性"@ja.
+kg:id_33 rdf:type cls:c_8206.
+cls:c_8206 rdfs:label "企業育成必要"@ja.
+kg:id_34 rdfs:label "労働条件と給料水準の引き上げ"@ja.
+kg:id_34 rdf:type cls:c_6477.
+cls:c_6477 rdfs:label "処遇改善"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "課税免除や用地取得支援や設備支援や人材確保研修経費支援"@ja.
+kg:id_35 rdf:type cls:c_1080.
+cls:c_1080 rdfs:label "企業支援"@ja.
+kg:id_33 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "地元就業促進"@ja.
+kg:id_36 rdf:type cls:c_8207.
+cls:c_8207 rdfs:label "地元就業促進"@ja.
+kg:id_37 rdfs:label "企業合同就職面接会や就職説明会の開催"@ja.
+kg:id_37 rdf:type cls:c_8208.
+cls:c_8208 rdfs:label "就職機会創出"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "UIJターン者支援と就職に伴う資格取得支援"@ja.
+kg:id_38 rdf:type cls:c_1828.
+cls:c_1828 rdfs:label "就業支援"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "元町エリアの空洞化"@ja.
+kg:id_39 rdf:type cls:c_8209.
+cls:c_8209 rdfs:label "中心市街地空洞化"@ja.
+kg:id_40 rdfs:label "空き家の積極的活用と空き店舗活用による起業促進"@ja.
+kg:id_40 rdf:type cls:c_1777.
+cls:c_1777 rdfs:label "空き家活用"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "交通手段の充実とスクールバスへの町民無料同乗施策の周知推進"@ja.
+kg:id_41 rdf:type cls:c_8210.
+cls:c_8210 rdfs:label "交通充実"@ja.
+kg:id_39 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "町なかユニバーサルデザインへの着手"@ja.
+kg:id_42 rdf:type cls:c_8211.
+cls:c_8211 rdfs:label "都市環境整備"@ja.
+kg:id_39 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "町なか回遊に向けた仕掛けづくりと統一された案内板の設置"@ja.
+kg:id_43 rdf:type cls:c_8212.
+cls:c_8212 rdfs:label "回遊促進"@ja.
+kg:id_39 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "各課を横断した統一コンセプトのグランドデザインで取り組む"@ja.
+kg:id_44 rdf:type cls:c_8213.
+cls:c_8213 rdfs:label "横断的計画"@ja.
+kg:id_39 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "元町活性化"@ja.
+kg:id_45 rdf:type cls:c_5677.
+cls:c_5677 rdfs:label "中心市街地活性化"@ja.
+kg:id_46 rdfs:label "空き家再生リノベーションプロジェクト"@ja.
+kg:id_46 rdf:type cls:c_8214.
+cls:c_8214 rdfs:label "空き家再生"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "老朽空き家問題"@ja.
+kg:id_47 rdf:type cls:c_8215.
+cls:c_8215 rdfs:label "老朽空き家問題"@ja.
+kg:id_48 rdfs:label "町が土地建物の寄附を受け県住宅供給公社が解体し跡地を活用する"@ja.
+kg:id_48 rdf:type cls:c_8216.
+cls:c_8216 rdfs:label "空き家解体活用"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "空き店舗問題"@ja.
+kg:id_49 rdf:type cls:c_8217.
+cls:c_8217 rdfs:label "空き店舗問題"@ja.
+kg:id_50 rdfs:label "創業者への店舗家賃補助"@ja.
+kg:id_50 rdf:type cls:c_1918.
+cls:c_1918 rdfs:label "創業支援"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "スクールバス利用のしづらさ"@ja.
+kg:id_51 rdf:type cls:c_8218.
+cls:c_8218 rdfs:label "公共交通利用困難"@ja.
+kg:id_52 rdfs:label "児童生徒に合わせた運行時間になっていること"@ja.
+kg:id_52 rdf:type cls:c_8219.
+cls:c_8219 rdfs:label "児童優先運行"@ja.
+kg:id_51 prop:cause kg:id_52.
+kg:id_53 rdfs:label "スクールバス利用促進"@ja.
+kg:id_53 rdf:type cls:c_8220.
+cls:c_8220 rdfs:label "公共交通利用促進"@ja.
+kg:id_54 rdfs:label "時刻表折り込みで一般の方も無料で乗車できることを周知する"@ja.
+kg:id_54 rdf:type cls:c_8221.
+cls:c_8221 rdfs:label "利用周知"@ja.
+kg:id_53 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "町なかユニバーサルデザイン推進"@ja.
+kg:id_55 rdf:type cls:c_8211.
+kg:id_56 rdfs:label "歩道幅員確保や休憩場所や案内板や段差のない歩道整備"@ja.
+kg:id_56 rdf:type cls:c_8222.
+cls:c_8222 rdfs:label "歩行環境整備"@ja.
+kg:id_55 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "利用者の意見を伺いながら計画する"@ja.
+kg:id_57 rdf:type cls:c_8223.
+cls:c_8223 rdfs:label "利用者意見反映"@ja.
+kg:id_55 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "木育の推進"@ja.
+kg:id_58 rdf:type cls:c_8224.
+cls:c_8224 rdfs:label "環境教育推進"@ja.
+kg:id_59 rdfs:label "子供のころから木を身近に使い木や森とのかかわりを考える取り組みを行う"@ja.
+kg:id_59 rdf:type cls:c_8225.
+cls:c_8225 rdfs:label "木材体験活動"@ja.
+kg:id_58 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "学校で砂防林保全学習や植栽作業や木工作品づくりを行う"@ja.
+kg:id_60 rdf:type cls:c_8226.
+cls:c_8226 rdfs:label "森林学習活動"@ja.
+kg:id_58 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "藻場の減少"@ja.
+kg:id_61 rdf:type cls:c_8227.
+cls:c_8227 rdfs:label "藻場減少"@ja.
+kg:id_62 rdfs:label "埋め立てなどの直接的な地形改変"@ja.
+kg:id_62 rdf:type cls:c_127.
+cls:c_127 rdfs:label "地形改変"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "磯焼け"@ja.
+kg:id_63 rdf:type cls:c_8228.
+cls:c_8228 rdfs:label "磯焼け"@ja.
+kg:id_61 prop:cause kg:id_63.
+kg:id_64 rdfs:label "海流"@ja.
+kg:id_64 rdf:type cls:c_8229.
+cls:c_8229 rdfs:label "海流変化"@ja.
+kg:id_61 prop:cause kg:id_64.
+kg:id_65 rdfs:label "海水温の上昇"@ja.
+kg:id_65 rdf:type cls:c_8230.
+cls:c_8230 rdfs:label "水温上昇"@ja.
+kg:id_61 prop:cause kg:id_65.
+kg:id_66 rdfs:label "水産資源や沿岸環境に大きく影響する"@ja.
+kg:id_66 rdf:type cls:c_8231.
+cls:c_8231 rdfs:label "沿岸環境悪化"@ja.
+kg:id_61 prop:effect kg:id_66.
+kg:id_67 rdfs:label "藻場造成を行う"@ja.
+kg:id_67 rdf:type cls:c_8232.
+cls:c_8232 rdfs:label "藻場造成"@ja.
+kg:id_61 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "岩ガキ資源の減少"@ja.
+kg:id_68 rdf:type cls:c_7434.
+cls:c_7434 rdfs:label "水産資源減少"@ja.
+kg:id_69 rdfs:label "需要増に伴う漁獲量の増加"@ja.
+kg:id_69 rdf:type cls:c_8233.
+cls:c_8233 rdfs:label "漁獲増加"@ja.
+kg:id_68 prop:cause kg:id_69.
+kg:id_70 rdfs:label "流砂堆積による漁場の消失"@ja.
+kg:id_70 rdf:type cls:c_8234.
+cls:c_8234 rdfs:label "漁場消失"@ja.
+kg:id_68 prop:cause kg:id_70.
+kg:id_71 rdfs:label "吹浦漁港の岩ガキ水揚げ金額が10年前の40パーセントまで減少した"@ja.
+kg:id_71 rdf:type cls:c_3586.
+cls:c_3586 rdfs:label "水揚げ減少"@ja.
+kg:id_68 prop:effect kg:id_71.
+kg:id_72 rdfs:label "流砂影響の少ない女鹿地区海域に増殖礁を設置する"@ja.
+kg:id_72 rdf:type cls:c_8235.
+cls:c_8235 rdfs:label "増殖礁設置"@ja.
+kg:id_68 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "藻場再生の困難"@ja.
+kg:id_73 rdf:type cls:c_8236.
+cls:c_8236 rdfs:label "藻場再生困難"@ja.
+kg:id_74 rdfs:label "ウニや巻き貝による食害"@ja.
+kg:id_74 rdf:type cls:c_4048.
+cls:c_4048 rdfs:label "食害"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "冬の波浪で流されること"@ja.
+kg:id_75 rdf:type cls:c_8237.
+cls:c_8237 rdfs:label "波浪影響"@ja.
+kg:id_73 prop:cause kg:id_75.
+kg:id_76 rdfs:label "藻場再生"@ja.
+kg:id_76 rdf:type cls:c_8238.
+cls:c_8238 rdfs:label "藻場再生"@ja.
+kg:id_77 rdfs:label "小型海藻では全部のコンクリートブロックに植生が見られるまでになった"@ja.
+kg:id_77 rdf:type cls:c_8239.
+cls:c_8239 rdfs:label "海藻植生回復"@ja.
+kg:id_76 prop:effect kg:id_77.
+kg:id_78 rdfs:label "自生した海藻に多くのハタハタの卵が産みつけられている"@ja.
+kg:id_78 rdf:type cls:c_8240.
+cls:c_8240 rdfs:label "産卵場回復"@ja.
+kg:id_76 prop:effect kg:id_78.
+kg:id_79 rdfs:label "母藻設置後にウニや巻き貝の除去と定期的モニタリングを行う"@ja.
+kg:id_79 rdf:type cls:c_8241.
+cls:c_8241 rdfs:label "食害除去監視"@ja.
+kg:id_76 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "洋上風力発電導入"@ja.
+kg:id_80 rdf:type cls:c_8242.
+cls:c_8242 rdfs:label "洋上風力発電導入"@ja.
+kg:id_81 rdfs:label "地球温暖化対策とエネルギー自給率向上"@ja.
+kg:id_81 rdf:type cls:c_1101.
+cls:c_1101 rdfs:label "エネルギー政策"@ja.
+kg:id_80 prop:cause kg:id_81.
+kg:id_82 rdfs:label "地域や漁業関係者に事業の周知を行い理解を図りながら検討する"@ja.
+kg:id_82 rdf:type cls:c_8243.
+cls:c_8243 rdfs:label "関係者理解形成"@ja.
+kg:id_80 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "騒音や景観や魚類鳥類や漁業関係などの課題がある"@ja.
+kg:id_83 rdf:type cls:c_8244.
+cls:c_8244 rdfs:label "環境漁業影響"@ja.
+kg:id_80 prop:effect kg:id_83.
+kg:id_84 rdfs:label "マイナンバーカードの普及が進まないこと"@ja.
+kg:id_84 rdf:type cls:c_8245.
+cls:c_8245 rdfs:label "行政カード普及停滞"@ja.
+kg:id_85 rdfs:label "必要性が感じられないこと"@ja.
+kg:id_85 rdf:type cls:c_8246.
+cls:c_8246 rdfs:label "必要性欠如"@ja.
+kg:id_84 prop:cause kg:id_85.
+kg:id_86 rdfs:label "身分証ならほかにもあること"@ja.
+kg:id_86 rdf:type cls:c_8247.
+cls:c_8247 rdfs:label "代替手段存在"@ja.
+kg:id_84 prop:cause kg:id_86.
+kg:id_87 rdfs:label "個人情報の漏えいが心配であること"@ja.
+kg:id_87 rdf:type cls:c_7029.
+cls:c_7029 rdfs:label "情報漏えい不安"@ja.
+kg:id_84 prop:cause kg:id_87.
+kg:id_88 rdfs:label "住民窓口で取得案内と申請手伝いを行う"@ja.
+kg:id_88 rdf:type cls:c_8248.
+cls:c_8248 rdfs:label "取得申請支援"@ja.
+kg:id_84 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "全国的にも普及が進んでいない状況にある"@ja.
+kg:id_89 rdf:type cls:c_8249.
+cls:c_8249 rdfs:label "全国的停滞"@ja.
+kg:id_84 prop:effect kg:id_89.
+kg:st_1 rdfs:label "齋藤武議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "町内だけの人材と発想に限らず町外の視点を取り入れるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "企業誘致だけで雇用確保できる時代ではない"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "人手不足を補う流れで従来型の企業誘致の発想は通用しにくい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "来訪神行事や縄文文化は世界的に認識される段階に来ている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "調査技術の進展で地域文化の価値が可視化された"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "変化する時代に対応するには世界的視野と地域行動の両立が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_7 prop:content "草の根の相互交流が国際交流の根っこを築いた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "地球に優しい町を遊佐町から発信してもよいとの考えで受け入れた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "町が基準や協定書を整えたことで地元の受け入れにつながった"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "企画課長"@ja.
+kg:st_3 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_10 prop:content "新たな企業が来ても働き手が集まりにくい現実がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "人口減少が進む中で企業誘致だけでは対応が難しい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "若者定着と移住促進が重要な対応策である"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "複住は交流人口拡大につながる可能性がある"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "複住への対応は観光分野と連携して検討すべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "外部人材が成果を生み出した代表例である"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "町民課長"@ja.
+kg:st_4 rdfs:type cls:st_32.
+kg:op_16 prop:content "若者流出が全国との人口構成の差を生んでいる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "若年層の割合が低いことが町の特徴として表れている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "高齢層の膨らみは町の長寿傾向を示している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "定住促進の取り組みが子どもの実数増に寄与した"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "出生数以上に子どもの在籍数があるのは転入の効果である"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "産業課長"@ja.
+kg:st_5 rdfs:type cls:st_32.
+kg:op_21 prop:content "企業の魅力向上には処遇改善が大きなポイントである"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "企業体力を高めるため各種支援を行ってきた"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "町内企業を知ってもらう機会づくりを始めた"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "若者の地元就業を支える支援を継続している"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "筒井義昭議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_25 prop:content "にぎわいと暮らしと町のリノベーションを進めるべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_6.
+kg:op_26 prop:content "町民が出かけて集まる機会を増やすべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "段差のない優しい空間と憩える町なかを目指すべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:op_28 prop:content "初めて訪れた人でも町を楽しめる仕掛けが必要"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_6.
+kg:op_29 prop:content "断片的でなく横断的な施策展開が求められる"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "県住宅供給公社が空き家を買収し改修後に移住者や子育て世代へ販売する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "老朽空き家解体促進のため再販支援事業を進める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "賃借店舗で創業する小規模事業者に家賃を補助している"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_5.
+kg:st_7 rdfs:label "教育課長"@ja.
+kg:st_7 rdfs:type cls:st_32.
+kg:op_33 prop:content "一般の方には利用しづらい時間帯になっている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_7.
+kg:op_34 prop:content "周知の見せ方には改善の余地がある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "地域生活課長"@ja.
+kg:st_8 rdfs:type cls:st_32.
+kg:op_35 prop:content "全ての人に優しい町づくりには利用者視点の整備が必要"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_8.
+kg:op_36 prop:content "環境整備だけでなく利用者の配慮と理解も必要"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_8.
+kg:op_37 prop:content "木育は豊かな心を育む取り組みである"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "木育関連の取り組みは既に学校現場で継続して行われている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_7.
+kg:st_9 rdfs:label "佐藤智則議員"@ja.
+kg:st_9 rdfs:type cls:st_16.
+kg:op_39 prop:content "藻場減少は沿岸環境に大きく影響する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_9.
+kg:op_40 prop:content "磯焼けは藻場消失の要因の一つである"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_9.
+kg:op_41 prop:content "海流の変化も藻場減少の要因とされる"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "海水温上昇も藻場減少の背景にある"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_9.
+kg:op_43 prop:content "藻場減少は生物の産卵場や保育場の機能低下につながる"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_9.
+kg:op_44 prop:content "藻場保全再生の継続的活動に期待する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_9.
+kg:op_45 prop:content "需要増による漁獲圧が資源減少の主因の一つである"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "流砂堆積で期待した漁礁効果が上がっていない"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "岩ガキ漁獲の減少は深刻な水揚げ低下として表れている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "十分な増殖効果が得られるよう県と連携して進める"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "母藻を設置しても食害で効果が出にくかった"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_5.
+kg:op_50 prop:content "波浪の影響で海藻の定着が妨げられていた"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:op_51 prop:content "自生藻場の再生に結びついたことは成功と評価できる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_5.
+kg:op_52 prop:content "藻場再生は産卵場機能の回復につながっている"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_5.
+kg:op_53 prop:content "継続的な除去と観測が藻場造成の成果につながった"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_5.
+kg:op_54 prop:content "県のエネルギー戦略と地域活性化の考えに基づく取り組みである"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "理解形成を図りつつ法定協議会設置に向けた準備を進めるべき"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "環境や漁業への影響を十分に研究検討する必要がある"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "カード取得のメリットが現状では感じられにくい"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "既存の身分証で足りるため取得動機が弱い"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "情報漏えいへの不安が取得を妨げている"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "地道な案内と申請支援で普及率向上に努める"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+kg:op_61 prop:content "遊佐町だけでなく全国的な課題である"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_2.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "私は、遊佐町の発展のためにはより一層町独自に外部とのかかわりをふやすべきだと考えます。遊佐町にはただの田舎町ではない、「ただならぬ田舎町」として鳥海山を核とした広い意味でのあまたの資源があります。これらを十分に活用するためには実質半径10キロそこそこの町内だけの人材と発想に限らず、町外のグローバルな視点をもより取り入れるべきと考えます。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "一方、団塊世代の大量引退後、業種にもよりますが、極端とも言えるような人手不足の時代が到来しました。"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "それに呼応するように人工知能の導入が実用段階を迎え、人手不足を補おうとしています。ほんの少し前の工場やコールセンターといった企業を誘致すれば雇用の場が確保できて安泰といった考え方は通用しなくなっていると考えます。"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "来訪神行事や縄文文化といったこれまで一部の関係者などに限り関心の対象とされていたものが関係者の並々ならぬご努力と調査技術の飛躍的な進展などにより、世界的にも広く認識されるようになりました。"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "来訪神行事や縄文文化といったこれまで一部の関係者などに限り関心の対象とされていたものが関係者の並々ならぬご努力と調査技術の飛躍的な進展などにより、世界的にも広く認識されるようになりました。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これらに今、そして今後的確に対応するためにはまさにグローバルに考え、ローカルに行動することが必要であると考えます。"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "遊佐ロータリークラブがロータリーインターナショナルの加盟したのが昭和47年10月７日に発足して、多くのロータリーの先人が交換留学生の受け入れ、また台湾のチクナンロータリークラブとの姉妹クラブの締結によりまして、まさに相互交流、まさに草の根の相互交流を営々として続けられてこられました。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "その当時何が町にとってメリットあるのでしょうかって私はよくマスコミ等に聞かれましたが、地球にＣＯ２を出さないで電気を得られるという、地球に優しい町が東北の遊佐町から発信してもいいのではないですかという形で風力発電の受け入れ"@ja.
+<< kg:id_13 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "町としてしっかりとした設置基準、ガイドラインを設けながら、そしてリスク管理の協定書のたたき台をしっかり地元と一緒につくってきたら地元の皆さんが、町がそんなに一生懸命ならば私たちも一緒に受け入れますよと。"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "管内の事業所においては多くの業種において人手不足、求人未充足の状況が続いており、深刻な問題となっております。産業面のみならず街の活性化のために企業誘致は非常に重要であると考えておりますが、新たな企業から来ていただいても働き手がなかなか集まらないという厳しい現実もございます。"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "人口の減少が進むことは避けられず、生産人口減と企業誘致の両立は非常に難しい課題と認識しております。"@ja.
+<< kg:id_16 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "引き続き町内はもとより管内関係機関が連携し、若者の定着、移住促進を図っていくことが大切であると考えます。"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "しかし、複住が都市と地方だけでなく、海外と地方と視野を広げることで交流人口が拡大することも考えられます。"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "今後の対応については観光分野と連携して検討が必要であると思われます。"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "これは、地域おこし協力隊を初めとする若い力が発揮された成果と見ており、まさに外部人材の代表格ではないでしょうか。"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "このことは、進学や就職を機に遊佐町を離れる若者が多く、その大半が遊佐町に戻っていないことがやはり最大の要因ではないかなというふうに考えられます。"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "一方、遊佐町のほうのグラフを見ますと全体的な形は似ているなというイメージはありますけれども、50歳代より下の年代の厚みがないといいますか、総人口に占める割合が全国に比べるとかなり低いことを示していると思います。"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "逆に75歳以上の年代には膨らみのような形が見てとれ、75歳以上の年代は全国平均に比較して長寿であるなということも遊佐町の特徴の一つかなと拝見したところでございます。"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "54名の増はご縁があって遊佐町に転入された方が出ていかれた方より多かったということであり、ご縁を後押しするような定住促進の取り組みが果たした役割が大きかったのではないかなというふうに思います。"@ja.
+<< kg:id_30 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "平成30年４月１日現在の在籍数が小学生543名、中学生311名、合わせると854名ということで、この854名の子供たちが生まれた年度の出生数を合計すると800名という数字がありました。54名ふえてございます。"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "魅力ある企業の育成と申し上げれば労働条件、給料水準の引き上げというところも大きなポイントであります。"@ja.
+<< kg:id_33 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "そういったところもやっぱり町内の企業さんにもいろんな体力を持ってもらうためにもいろんな今まで課税免除でありますとか、用地取得でありますとか、設備等支援、人材確保の研修経費の支援などを行ってきたという経過がございます。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "平成30年度からは遊佐町独自で町内の企業をよく知ってもらおうということで企業合同就職面接会でありますとか、就職説明会開催を始めたところでございます。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "ＵＩＪターン者の支援、就職に伴う資格取得の支援なども引き続き行っているということでございます。"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "求められている第１の取り組みは、空き家の積極的な活用策の推進と空き店舗活用による起業の促進とそれに対する支援策の充実によるにぎわいと暮らしと町のリノベーションであります。"@ja.
+<< kg:id_39 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "第２に元町に集まるための交通手段の充実であります。スクールバスへの町民無料同乗施策の周知の推進と福祉交通支援策のさらなる充実による町民が出かけて集まる機会の促進が求められていると思います。"@ja.
+<< kg:id_39 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "第３に集まり、暮らし、定住することに憩える優しい町づくりによる町なかユニバーサルデザインの着手です。段差のない優しい空間、車椅子でもチャイルドカーを押しながらでも不便でない町なか、ところどころに憩えるベンチや集まりを促すショップの配置を目指すべきです。"@ja.
+<< kg:id_39 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "第４に集まり、にぎわい、暮らしを楽しみにつなげることのできる町なか回遊に向けた仕掛けづくりとわかりやすい統一された案内板の設置により初めて訪れた方でもわかりやすく町を楽しむ仕掛けづくりが必要なのではないかと思います。"@ja.
+<< kg:id_39 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "これら４つの施策を断片的にではなく、統一したコンセプトのグランドデザインにより各課を横断した取り組みが求められているときであると考えます。"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "空き家再生リノベーションプロジェクトという事業名で県住宅供給公社が昨年の12月中に十日町市内の空き家を買収しまして、ことしの３月には実施設計、それから４月から７月までに工事を行いまして、８月ごろをめどに移住者や子育て世代を対象に販売を予定している事業でございます。"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "町が空き家の土地、建物を寄附を受けまして、県住宅供給公社が解体し、跡地を宅地分譲、広場等々として活用していくということで老朽空き家解体促進のための事業でありまして"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "町内において賃借によって店舗を開設して小売業、理容業、飲食業等創業する小規模事業者に対して店舗の家賃について補助金を交付するという事業でございます。"@ja.
+<< kg:id_51 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "スクールバスについては基本的に小中学校の児童生徒を優先して乗車をさせておりますし、現状の時刻表についても児童生徒に合わせた運行となっております。ですので、一般の方々にはなかなか利用しづらい時間帯になっているのではないかと思われます。"@ja.
+<< kg:id_53 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "周知については毎年３月と10月に時刻表、広報のほうに折り込みで全戸配布しておりますので、その一部にちょっと小さくなのですけれども、一般の方も無料で乗車できますということは周知はしているところであります。"@ja.
+<< kg:id_55 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "例えば傘を差した人がすれ違いのできる歩道の幅員を確保するとか、またはポケットパーク、休憩場所を設けるとか、または施設の現在地、駅やバス停の場所がわかる案内板を設置するとか、また段差のない、平たんな歩道にするなどさまざまなことが想定されようかと思います。"@ja.
+<< kg:id_55 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "ユニバーサルデザインの考え方を反映した整備を進めるためには利用者の視点に立って意見等を伺いながら計画することが重要ではないかなというふうに考えてございます。"@ja.
+<< kg:id_58 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "木育とは子供を初めとする全ての人が木と触れ合い、木に学び、木と生きる取り組みであります。子供のころから木を身近に使っていくことを通じて人と木や森のかかわりを主体的に考えられる豊かな心を育むことを狙いとしております。"@ja.
+<< kg:id_58 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "町内の小中学校で行っております木育関連の取り組み等について幾つか事例を紹介させていただきたいと思います。１つがクロマツ、特に砂防林の保全に関する講話として佐藤藤蔵親子の学習などがあります。また、松の植栽作業や枝打ち作業、児童と保護者による森林の下草刈り、松くい虫の防除学習、図工や技術での木材を使ったメッセージボード、オルゴール、花台、写真立て、本棚などの作品づくりなどがございます。"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "また、埋め立てなどの直接的な地形改変や、磯焼け、海流、海水温の上昇等も要因の一つとされている。"@ja.
+<< kg:id_61 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "また、埋め立てなどの直接的な地形改変や、磯焼け、海流、海水温の上昇等も要因の一つとされている。"@ja.
+<< kg:id_61 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "また、埋め立てなどの直接的な地形改変や、磯焼け、海流、海水温の上昇等も要因の一つとされている。"@ja.
+<< kg:id_61 prop:cause kg:id_65 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "また、埋め立てなどの直接的な地形改変や、磯焼け、海流、海水温の上昇等も要因の一つとされている。"@ja.
+<< kg:id_61 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "藻場は、アワビ、サザエ、ナマコなどの重要な生息漁場である。また、藻場は多くの生物の産卵場、隠れ場としての機能、稚魚の保育場としての機能等があり、藻場が減少することは水産資源はもとより沿岸環境にも大きく影響すると考えられている。"@ja.
+<< kg:id_61 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "各地で藻場の保全、再生を目的とした藻場造成が行われてきました。"@ja.
+<< kg:id_68 prop:cause kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "岩ガキ資源の減少の主な原因は、需要増に伴う漁獲量の増加や流砂堆積による漁場の消失とされているところであり"@ja.
+<< kg:id_68 prop:cause kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "岩ガキ資源の減少の主な原因は、需要増に伴う漁獲量の増加や流砂堆積による漁場の消失とされているところであり、過去においても県事業による漁礁設置事業が実施されてきた経過がありますが、流砂堆積の影響が殊のほか大きく、期待した効果が上がっていないのが現状のようであります。"@ja.
+<< kg:id_68 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "平成30年の吹浦漁港の岩ガキ水揚げ金額を10年前の平成21年と比較しますと、21年の4,100万円から30年の1,640万円と10年前の40％まで減少してきているところであります。"@ja.
+<< kg:id_68 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "今回の漁礁設置事業については、こうした経過を踏まえ調査測量を実施中ですが、現在のところ漁礁の設置箇所を流砂影響の少ない女鹿地区の海域を予定しているところであります。"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "最初はやはり成育しても食害生物と言われるウニですとか、巻き貝、そういったものが要は食べに来て、余りそういった冬の波浪にもまれまして、生えても食べられるか、流されるかという状況でなかなか効果があらわれなかった"@ja.
+<< kg:id_73 prop:cause kg:id_75 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "最初はやはり成育しても食害生物と言われるウニですとか、巻き貝、そういったものが要は食べに来て、余りそういった冬の波浪にもまれまして、生えても食べられるか、流されるかという状況でなかなか効果があらわれなかった"@ja.
+<< kg:id_76 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "小型海藻においては全部のコンクリートブロックに植生が見られるまでになってきているということでございます。"@ja.
+<< kg:id_76 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "また、自生した海藻には多くのハタハタの卵が産みつけられているということが確認をされております。"@ja.
+<< kg:id_76 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "これは、母藻設置後のウニでありますとか、巻き貝の食害生物除去、定期的なモニタリングの結果、定期的に行った成果であると考えております。"@ja.
+<< kg:id_80 prop:cause kg:id_81 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "山形県が進める洋上風力発電導入推進の取り組みの背景には再生可能エネルギーの導入による地球温暖化対策とエネルギー自給率の向上並びに県内産業の振興及び地域活性化を図る県のエネルギー戦略並びにそれを実現するためのエネルギー政策によるものと考えます。"@ja.
+<< kg:id_80 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "今後も引き続き、地域や漁業関係者に事業の周知を行い、理解を図りながら検討を行ってまいりたいと考えております。"@ja.
+<< kg:id_80 prop:effect kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "これまで開催された部会においては騒音、景観、魚類及び鳥類などの環境への影響並びに漁業関係などの研究、検討課題の洗い出しや対応策の検討などを行い"@ja.
+<< kg:id_84 prop:cause kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "カードを取得しない理由は複数回答で、必要性が感じられないが57.6％"@ja.
+<< kg:id_84 prop:cause kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "身分証ならほかにもあるが42.2％"@ja.
+<< kg:id_84 prop:cause kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "個人情報の漏えいが心配、26.9％でありました。"@ja.
+<< kg:id_84 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "今後の取り組みとしては、住民窓口で町民向けにマイナンバーカード取得のご案内を行いながら、取得を希望する方にはこれまで同様、申請のお手伝いをするなど、普及率の向上に努めてまいりたいと考えております。"@ja.
+<< kg:id_84 prop:effect kg:id_89 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "一方、マイナンバーカードについてはご指摘のとおり、本町の皆さんのみならず、全国的にも普及が進んでいない状況にあります。"@ja.
+}

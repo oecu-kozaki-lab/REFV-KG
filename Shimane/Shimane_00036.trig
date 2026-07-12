@@ -1,0 +1,625 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00036> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電"@ja.
+kg:id_1 rdf:type cls:c_567.
+cls:c_567 rdfs:label "発電施設"@ja.
+kg:id_2 rdfs:label "大規模な森林破壊"@ja.
+kg:id_2 rdf:type cls:c_14249.
+cls:c_14249 rdfs:label "森林破壊"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "水源地の汚染"@ja.
+kg:id_3 rdf:type cls:c_6292.
+cls:c_6292 rdfs:label "水質汚染"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "生態系への影響"@ja.
+kg:id_4 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "景観問題"@ja.
+kg:id_5 rdf:type cls:c_6287.
+cls:c_6287 rdfs:label "景観問題"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "騒音や低周波による地域住民への健康被害"@ja.
+kg:id_6 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "発電効率の低さ"@ja.
+kg:id_7 rdf:type cls:c_14295.
+cls:c_14295 rdfs:label "効率低下"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "全国各地で建設への反対運動"@ja.
+kg:id_8 rdf:type cls:c_13157.
+cls:c_13157 rdfs:label "反対運動"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "大規模風力発電の建設"@ja.
+kg:id_9 rdf:type cls:c_7706.
+cls:c_7706 rdfs:label "発電施設建設"@ja.
+kg:id_10 rdfs:label "想定外の問題が起きる可能性"@ja.
+kg:id_10 rdf:type cls:c_14024.
+cls:c_14024 rdfs:label "問題発生"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "風車音"@ja.
+kg:id_11 rdf:type cls:c_14296.
+cls:c_14296 rdfs:label "風車音"@ja.
+kg:id_12 rdfs:label "苦情の増加"@ja.
+kg:id_12 rdf:type cls:c_14297.
+cls:c_14297 rdfs:label "苦情増加"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "低周波音"@ja.
+kg:id_13 rdf:type cls:c_239.
+cls:c_239 rdfs:label "低周波音"@ja.
+kg:id_14 rdfs:label "健康被害"@ja.
+kg:id_14 rdf:type cls:c_1322.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "風力発電事業"@ja.
+kg:id_15 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_16 rdfs:label "住民説明会への参加"@ja.
+kg:id_16 rdf:type cls:c_14298.
+cls:c_14298 rdfs:label "説明会参加"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "方法書段階での中止判断"@ja.
+kg:id_17 rdf:type cls:c_14299.
+cls:c_14299 rdfs:label "中止判断"@ja.
+kg:id_15 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "騒音・低周波"@ja.
+kg:id_18 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_19 rdfs:label "肩や首コリ、痛み"@ja.
+kg:id_19 rdf:type cls:c_10170.
+cls:c_10170 rdfs:label "身体不調"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "イライラ・不眠・血圧上昇・不整脈"@ja.
+kg:id_20 rdf:type cls:c_12867.
+cls:c_12867 rdfs:label "睡眠障害"@ja.
+kg:id_18 prop:effect kg:id_20.
+kg:id_21 rdfs:label "目眩、頭痛、抑鬱、吐気、船酔い状態"@ja.
+kg:id_21 rdf:type cls:c_10170.
+kg:id_18 prop:effect kg:id_21.
+kg:id_22 rdfs:label "耳の圧迫感、耳鳴り、息苦しさ"@ja.
+kg:id_22 rdf:type cls:c_10170.
+kg:id_18 prop:effect kg:id_22.
+kg:id_23 rdfs:label "ハチやイノシシの狂暴化"@ja.
+kg:id_23 rdf:type cls:c_14300.
+cls:c_14300 rdfs:label "動物異常"@ja.
+kg:id_18 prop:effect kg:id_23.
+kg:id_24 rdfs:label "動物や家畜、ペット等の体調不良"@ja.
+kg:id_24 rdf:type cls:c_14301.
+cls:c_14301 rdfs:label "動物不調"@ja.
+kg:id_18 prop:effect kg:id_24.
+kg:id_25 rdfs:label "低周波音や超低周波音"@ja.
+kg:id_25 rdf:type cls:c_239.
+kg:id_26 rdfs:label "広範囲で健康被害を生じる可能性"@ja.
+kg:id_26 rdf:type cls:c_1322.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "心血管系の変化"@ja.
+kg:id_27 rdf:type cls:c_14302.
+cls:c_14302 rdfs:label "身体変化"@ja.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "集中力の欠如"@ja.
+kg:id_28 rdf:type cls:c_14303.
+cls:c_14303 rdfs:label "集中低下"@ja.
+kg:id_25 prop:effect kg:id_28.
+kg:id_29 rdfs:label "めまい"@ja.
+kg:id_29 rdf:type cls:c_10170.
+kg:id_25 prop:effect kg:id_29.
+kg:id_30 rdfs:label "倦怠感"@ja.
+kg:id_30 rdf:type cls:c_10170.
+kg:id_25 prop:effect kg:id_30.
+kg:id_31 rdfs:label "睡眠障害"@ja.
+kg:id_31 rdf:type cls:c_12867.
+kg:id_25 prop:effect kg:id_31.
+kg:id_32 rdfs:label "鼓膜の圧迫感"@ja.
+kg:id_32 rdf:type cls:c_67.
+cls:c_67 rdfs:label "圧迫感"@ja.
+kg:id_25 prop:effect kg:id_32.
+kg:id_33 rdfs:label "振動感"@ja.
+kg:id_33 rdf:type cls:c_14304.
+cls:c_14304 rdfs:label "振動感"@ja.
+kg:id_25 prop:effect kg:id_33.
+kg:id_34 rdfs:label "風力発電のそばのミンクの養殖農園"@ja.
+kg:id_34 rdf:type cls:c_14305.
+cls:c_14305 rdfs:label "畜産施設"@ja.
+kg:id_35 rdfs:label "女性従業員の体調悪化"@ja.
+kg:id_35 rdf:type cls:c_14306.
+cls:c_14306 rdfs:label "体調悪化"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "ミンク胎児の奇形や死産の頻発"@ja.
+kg:id_36 rdf:type cls:c_14307.
+cls:c_14307 rdfs:label "繁殖異常"@ja.
+kg:id_34 prop:effect kg:id_36.
+kg:id_37 rdfs:label "農園の廃止"@ja.
+kg:id_37 rdf:type cls:c_2696.
+cls:c_2696 rdfs:label "施設廃止"@ja.
+kg:id_34 prop:effect kg:id_37.
+kg:id_38 rdfs:label "風力会社と自治体への損害賠償請求"@ja.
+kg:id_38 rdf:type cls:c_14308.
+cls:c_14308 rdfs:label "賠償請求"@ja.
+kg:id_34 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "大1000キロワット以上の風力発電"@ja.
+kg:id_39 rdf:type cls:c_567.
+kg:id_40 rdfs:label "10キロ以上離す"@ja.
+kg:id_40 rdf:type cls:c_358.
+cls:c_358 rdfs:label "離隔確保"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "子宮の共鳴振動が起こる疑い"@ja.
+kg:id_41 rdf:type cls:c_14309.
+cls:c_14309 rdfs:label "共振疑い"@ja.
+kg:id_39 prop:cause kg:id_41.
+kg:id_42 rdfs:label "風車"@ja.
+kg:id_42 rdf:type cls:c_13896.
+cls:c_13896 rdfs:label "風車"@ja.
+kg:id_43 rdfs:label "町がゴーストタウンになる"@ja.
+kg:id_43 rdf:type cls:c_5779.
+cls:c_5779 rdfs:label "地域衰退"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "耳が痛む、不眠、吐き気など睡眠障害"@ja.
+kg:id_44 rdf:type cls:c_12867.
+kg:id_42 prop:effect kg:id_44.
+kg:id_45 rdfs:label "風車近くの農家"@ja.
+kg:id_45 rdf:type cls:c_14310.
+cls:c_14310 rdfs:label "農家"@ja.
+kg:id_46 rdfs:label "鶏が黄身がなく白身だけの卵を産む"@ja.
+kg:id_46 rdf:type cls:c_14311.
+cls:c_14311 rdfs:label "産卵異常"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "発電所の電気の土壌への放電"@ja.
+kg:id_47 rdf:type cls:c_14312.
+cls:c_14312 rdfs:label "放電"@ja.
+kg:id_48 rdfs:label "動物たちの死"@ja.
+kg:id_48 rdf:type cls:c_14313.
+cls:c_14313 rdfs:label "動物死"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "風力発電所周辺"@ja.
+kg:id_49 rdf:type cls:c_14314.
+cls:c_14314 rdfs:label "発電所周辺"@ja.
+kg:id_50 rdfs:label "牛たちの体重の急激な減少"@ja.
+kg:id_50 rdf:type cls:c_14315.
+cls:c_14315 rdfs:label "体重減少"@ja.
+kg:id_49 prop:effect kg:id_50.
+kg:id_51 rdfs:label "牛120頭の死亡"@ja.
+kg:id_51 rdf:type cls:c_14313.
+kg:id_49 prop:effect kg:id_51.
+kg:id_52 rdfs:label "何頭もの怪死"@ja.
+kg:id_52 rdf:type cls:c_14313.
+kg:id_49 prop:effect kg:id_52.
+kg:id_53 rdfs:label "37匹の怪死"@ja.
+kg:id_53 rdf:type cls:c_14313.
+kg:id_49 prop:effect kg:id_53.
+kg:id_54 rdfs:label "乳牛のミルクの採取量の激減"@ja.
+kg:id_54 rdf:type cls:c_14316.
+cls:c_14316 rdfs:label "生産低下"@ja.
+kg:id_49 prop:effect kg:id_54.
+kg:id_55 rdfs:label "工事や事業"@ja.
+kg:id_55 rdf:type cls:c_14317.
+cls:c_14317 rdfs:label "工事事業"@ja.
+kg:id_56 rdfs:label "土砂流出"@ja.
+kg:id_56 rdf:type cls:c_14015.
+cls:c_14015 rdfs:label "土砂流出"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "水質や水源汚濁"@ja.
+kg:id_57 rdf:type cls:c_6292.
+kg:id_55 prop:cause kg:id_57.
+kg:id_58 rdfs:label "森林伐採"@ja.
+kg:id_58 rdf:type cls:c_13215.
+cls:c_13215 rdfs:label "森林伐採"@ja.
+kg:id_59 rdfs:label "保水力の低下"@ja.
+kg:id_59 rdf:type cls:c_14318.
+cls:c_14318 rdfs:label "保水低下"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "水源の枯渇"@ja.
+kg:id_60 rdf:type cls:c_14319.
+cls:c_14319 rdfs:label "水源枯渇"@ja.
+kg:id_58 prop:cause kg:id_60.
+kg:id_61 rdfs:label "川海の汚染が下流域にも影響"@ja.
+kg:id_61 rdf:type cls:c_14320.
+cls:c_14320 rdfs:label "水域汚染"@ja.
+kg:id_55 prop:effect kg:id_61.
+kg:id_62 rdfs:label "鳥類の減少"@ja.
+kg:id_62 rdf:type cls:c_12249.
+cls:c_12249 rdfs:label "鳥類減少"@ja.
+kg:id_1 prop:effect kg:id_62.
+kg:id_63 rdfs:label "バードストライク"@ja.
+kg:id_63 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_64 rdfs:label "クマタカ、ヨタカなどが姿を消す"@ja.
+kg:id_64 rdf:type cls:c_12249.
+kg:id_63 prop:cause kg:id_64.
+kg:id_65 rdfs:label "低周波等"@ja.
+kg:id_65 rdf:type cls:c_239.
+kg:id_65 prop:cause kg:id_64.
+kg:id_66 rdfs:label "夜行性鳥類が3キロ以内で全く見られなくなる"@ja.
+kg:id_66 rdf:type cls:c_12249.
+kg:id_1 prop:effect kg:id_66.
+kg:id_67 rdfs:label "風力発電機症候群や振動音響病"@ja.
+kg:id_67 rdf:type cls:c_14321.
+cls:c_14321 rdfs:label "症候群"@ja.
+kg:id_68 rdfs:label "ハチやイノシシの凶暴化"@ja.
+kg:id_68 rdf:type cls:c_14300.
+kg:id_67 prop:cause kg:id_68.
+kg:id_69 rdfs:label "安来市の水源地を汚染する可能性"@ja.
+kg:id_69 rdf:type cls:c_6292.
+kg:id_1 prop:effect kg:id_69.
+kg:id_70 rdfs:label "巨大なギアボックスの油"@ja.
+kg:id_70 rdf:type cls:c_14322.
+cls:c_14322 rdfs:label "潤滑油"@ja.
+kg:id_71 rdfs:label "土壌汚染"@ja.
+kg:id_71 rdf:type cls:c_14323.
+cls:c_14323 rdfs:label "土壌汚染"@ja.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "クリーニング液体"@ja.
+kg:id_72 rdf:type cls:c_14324.
+cls:c_14324 rdfs:label "洗浄液"@ja.
+kg:id_73 rdfs:label "土壌の汚染"@ja.
+kg:id_73 rdf:type cls:c_14323.
+kg:id_72 prop:cause kg:id_73.
+kg:id_74 rdfs:label "油漏れ"@ja.
+kg:id_74 rdf:type cls:c_14325.
+cls:c_14325 rdfs:label "油漏れ"@ja.
+kg:id_75 rdfs:label "安来市上流の水源地の汚染"@ja.
+kg:id_75 rdf:type cls:c_6292.
+kg:id_74 prop:cause kg:id_75.
+kg:id_76 rdfs:label "事故の発生"@ja.
+kg:id_76 rdf:type cls:c_8305.
+cls:c_8305 rdfs:label "事故発生"@ja.
+kg:id_1 prop:effect kg:id_76.
+kg:id_77 rdfs:label "電力は賄えない"@ja.
+kg:id_77 rdf:type cls:c_606.
+cls:c_606 rdfs:label "供給不足"@ja.
+kg:id_1 prop:effect kg:id_77.
+kg:id_78 rdfs:label "CO2削減できない"@ja.
+kg:id_78 rdf:type cls:c_14326.
+cls:c_14326 rdfs:label "削減困難"@ja.
+kg:id_1 prop:effect kg:id_78.
+kg:id_79 rdfs:label "大風力の増減に合わせた火力調整"@ja.
+kg:id_79 rdf:type cls:c_13238.
+cls:c_13238 rdfs:label "出力変動"@ja.
+kg:id_80 rdfs:label "燃料が多くいる"@ja.
+kg:id_80 rdf:type cls:c_14327.
+cls:c_14327 rdfs:label "燃料増加"@ja.
+kg:id_79 prop:cause kg:id_80.
+kg:id_81 rdfs:label "不安定な風力や太陽光"@ja.
+kg:id_81 rdf:type cls:c_14328.
+cls:c_14328 rdfs:label "再エネ"@ja.
+kg:id_82 rdfs:label "火力発電所が蒸気を捨てながら待機する"@ja.
+kg:id_82 rdf:type cls:c_14329.
+cls:c_14329 rdfs:label "火力待機"@ja.
+kg:id_81 prop:cause kg:id_82.
+kg:id_83 rdfs:label "風力を併用した山"@ja.
+kg:id_83 rdf:type cls:c_14330.
+cls:c_14330 rdfs:label "発電併用"@ja.
+kg:id_84 rdfs:label "排気ガスが激増"@ja.
+kg:id_84 rdf:type cls:c_14331.
+cls:c_14331 rdfs:label "排ガス増加"@ja.
+kg:id_83 prop:effect kg:id_84.
+kg:id_85 rdfs:label "風力発電所"@ja.
+kg:id_85 rdf:type cls:c_1832.
+cls:c_1832 rdfs:label "発電所"@ja.
+kg:id_86 rdfs:label "資産価値の低下"@ja.
+kg:id_86 rdf:type cls:c_14332.
+cls:c_14332 rdfs:label "資産低下"@ja.
+kg:id_85 prop:effect kg:id_86.
+kg:id_87 rdfs:label "大規模風力発電施設の視覚的影響"@ja.
+kg:id_87 rdf:type cls:c_14333.
+cls:c_14333 rdfs:label "視覚影響"@ja.
+kg:id_88 rdfs:label "2キロ以内の不動産価格が最大12%下落"@ja.
+kg:id_88 rdf:type cls:c_14332.
+kg:id_87 prop:effect kg:id_88.
+kg:id_89 rdfs:label "家と土地を捨て転居する人が出る"@ja.
+kg:id_89 rdf:type cls:c_14334.
+cls:c_14334 rdfs:label "転居発生"@ja.
+kg:id_1 prop:effect kg:id_89.
+kg:id_90 rdfs:label "事業者への質問や意見の取り纏め"@ja.
+kg:id_90 rdf:type cls:c_954.
+cls:c_954 rdfs:label "意見集約"@ja.
+kg:id_15 prop:contermeasure kg:id_90.
+kg:st_1 rdfs:label "山向山・大出山山の風力発電を考える会"@ja.
+kg:st_1 rdfs:type cls:st_106.
+cls:st_106 rdfs:label "住民団体"@ja.
+kg:op_1 prop:content "再エネでも森林破壊などの問題があると懸念する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "安来市の水源地を汚染する可能性を懸念する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "生態系への影響を問題視する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "景観問題を懸念する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "ゲーテボルグ大学のエジャ・ペダーソン博士ら"@ja.
+kg:st_2 rdfs:type cls:st_105.
+cls:st_105 rdfs:label "研究者"@ja.
+kg:op_5 prop:content "山間地など地形が複雑な地域では風車音が気になると訴える率が高いと報告する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "フィンランド環境医学協会"@ja.
+kg:st_3 rdfs:type cls:st_187.
+cls:st_187 rdfs:label "専門団体"@ja.
+kg:op_6 prop:content "15km以内では低周波音に起因する健康被害の有意な低減は期待できないとする"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "風が安定して吹かなければ発電しないため効率が低いと指摘する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "各地で建設反対運動が起こっていると訴える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "出力規模が大きく想定外の問題が起きる可能性を懸念する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "山間地などでは風車音が気になると訴える率が有意に高いと報告する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "15km以内では健康被害の有意な低減は期待できないとする"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "より多くの方の参加を望む"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "計画が進むほど中止が困難になるため早期判断が必要とする"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "専門家"@ja.
+kg:st_4 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_14 prop:content "1000キロワット以上の風力発電は10キロ以上離す必要があると提唱する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "近すぎると子宮の共鳴振動が起こる疑いがあると提唱する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "牧場主"@ja.
+kg:st_5 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_16 prop:content "土壌に放電された電気に動物が耐えられず死んだと話す"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "計画地が源流域のため水源地汚染を懸念する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "北海道電力"@ja.
+kg:st_6 rdfs:type cls:st_188.
+cls:st_188 rdfs:label "電力会社"@ja.
+kg:op_18 prop:content "大風力の増減に合わせて火力を調整すると逆に燃料が多くいると答える"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_6.
+kg:op_19 prop:content "大風力の増減に合わせて火力を調整すると逆に燃料が多くいると答える"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "武田恵世"@ja.
+kg:st_7 rdfs:type cls:st_37.
+kg:op_20 prop:content "実際には風力によるCO2の削減はほとんどないと述べる"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_7.
+kg:op_21 prop:content "火力調整で逆に燃料が多くいると答える"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_6.
+kg:op_22 prop:content "安定供給のため火力発電所の待機が必要になると述べる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_7.
+kg:op_23 prop:content "火力だけの場合より風力併用で排気ガスが激増した例があると述べる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "イギリスの研究"@ja.
+kg:st_8 rdfs:type cls:st_68.
+cls:st_68 rdfs:label "研究機関"@ja.
+kg:op_24 prop:content "20基をこえる大規模風力発電では2キロ以内の不動産価格が最大12%下落するとする"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_8.
+kg:op_25 prop:content "事業者への質問や意見を取りまとめている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "環境に優しいはずの再エネが、実際は大規模な森林破壊"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "環境に優しいはずの再エネが、実際は大規模な森林破壊、水源地の汚染"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "環境に優しいはずの再エネが、実際は大規模な森林破壊、水源地の汚染、生態系への影響"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "環境に優しいはずの再エネが、実際は大規模な森林破壊、水源地の汚染、生態系への影響、景観問題"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "騒音や低周波による地域住民への健康被害"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "風が安定して吹かなければ発電しない発電効率の低さ"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今では全国各地で建設への反対運動が起こっています"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "風力発電基の出力規模が大きく、想定外の問題が起きる可能性もあります"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "平地よりも山間地など地形が複雑な地域では風車音が気になると訴える率が有意に高くなった"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "風車群から発生する低周波音に起因する健康被害"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "次回の事業者による 大大出山山風力発電事業住民明会会 は 4 月 23 山(土)10:00~、 大山向山風力発電事業住民明会会 は 4 月 23 山 14:00~安来市民文化ホールアルテピア展示室にて行われます。より多くの方の参加が望まれます"@ja.
+<< kg:id_15 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "風力発電事業実施までのステップ:現在は、方法書段階です。計画が進むほど、中止する事は困難になります"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:text-txt_contents "騒音・低周波による健康被害 肩や首コリ、痛み"@ja.
+<< kg:id_18 prop:effect kg:id_20 >>
+    prop:text-txt_contents "騒音・低周波による健康被害 イライラ・不眠・血圧上昇・不整脈"@ja.
+<< kg:id_18 prop:effect kg:id_21 >>
+    prop:text-txt_contents "騒音・低周波による健康被害 目眩、頭痛、抑鬱、吐気、船酔い状態"@ja.
+<< kg:id_18 prop:effect kg:id_22 >>
+    prop:text-txt_contents "騒音・低周波による健康被害 耳の圧迫感、耳鳴り、息苦しさ"@ja.
+<< kg:id_18 prop:effect kg:id_23 >>
+    prop:text-txt_contents "騒音・低周波による健康被害 ハチやイノシシの狂暴化"@ja.
+<< kg:id_18 prop:effect kg:id_24 >>
+    prop:text-txt_contents "動物や家畜、ペット等の体調不良"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:text-txt_contents "低周波音や超低周波音は波長が長いため、個人差はあるものの数キロメートル離れた場所でも確認でき、広範囲で健康被害を生じる可能性が指摘されています"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、心血管系(血圧、心拍数など)の変化"@ja.
+<< kg:id_25 prop:effect kg:id_28 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、集中力の欠如"@ja.
+<< kg:id_25 prop:effect kg:id_29 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、心血管系(血圧、心拍数など)の変化や、集中力の欠如、めまい"@ja.
+<< kg:id_25 prop:effect kg:id_30 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、心血管系(血圧、心拍数など)の変化や、集中力の欠如、めまい、倦怠感"@ja.
+<< kg:id_25 prop:effect kg:id_31 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、心血管系(血圧、心拍数など)の変化や、集中力の欠如、めまい、倦怠感、睡眠障害"@ja.
+<< kg:id_25 prop:effect kg:id_32 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、心血管系(血圧、心拍数など)の変化や、集中力の欠如、めまい、倦怠感、睡眠障害、鼓膜の圧迫感"@ja.
+<< kg:id_25 prop:effect kg:id_33 >>
+    prop:text-txt_contents "低周波音や超低周波音による人体への影響として、心血管系(血圧、心拍数など)の変化や、集中力の欠如、めまい、倦怠感、睡眠障害、鼓膜の圧迫感、振動感などが報告されています"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:text-txt_contents "デンマークでは、風力発電のそばのミンクの養殖農園の女性従業員の体調が悪化し"@ja.
+<< kg:id_34 prop:effect kg:id_36 >>
+    prop:text-txt_contents "ミンク胎児の奇形や死産が頻発し"@ja.
+<< kg:id_34 prop:effect kg:id_37 >>
+    prop:text-txt_contents "農園は廃止に"@ja.
+<< kg:id_34 prop:contermeasure kg:id_38 >>
+    prop:text-txt_contents "風力会社と自治体に損害賠償請求をしている"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "専門家は大1000 キロワット以上の風力発電は 10 キロ以上離す必要がある"@ja.
+<< kg:id_39 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "そうでないと子宮の共鳴振動が起こる疑いがある"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:text-txt_contents "その風車病のために家を捨て、町はゴーストタウンに"@ja.
+<< kg:id_42 prop:effect kg:id_44 >>
+    prop:text-txt_contents "3Km 以内に住む住民に耳が痛む、不眠、吐き気、など睡眠障害が発生"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:text-txt_contents "風車近くの農家では鶏が黄身がなく白身だけの卵を産むようになった"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "発電所の電気は土壌に放電され動物たちはそれに耐えられず死んでしまったのでしょう。 と、牧場主は話す"@ja.
+<< kg:id_49 prop:effect kg:id_50 >>
+    prop:text-txt_contents "牛たちの体重が急激に減り始め"@ja.
+<< kg:id_49 prop:effect kg:id_51 >>
+    prop:text-txt_contents "すでに 120 頭が亡くなった"@ja.
+<< kg:id_49 prop:effect kg:id_52 >>
+    prop:text-txt_contents "この牧場から 30 キロ離れた別の牧場でも、何頭も怪死している状態で見つかっている"@ja.
+<< kg:id_49 prop:effect kg:id_53 >>
+    prop:text-txt_contents "同様に、過去 6 ヶ月で 37 匹も怪死"@ja.
+<< kg:id_49 prop:effect kg:id_54 >>
+    prop:text-txt_contents "乳牛のミルクの採取量も激減している"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:text-txt_contents "工事や事業が原因で発生する土砂流出"@ja.
+<< kg:id_55 prop:cause kg:id_57 >>
+    prop:text-txt_contents "土壌剤などで水質や水源汚濁"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:text-txt_contents "森林伐採による保水力の低下"@ja.
+<< kg:id_58 prop:cause kg:id_60 >>
+    prop:text-txt_contents "森林伐採による保水力の低下、水源の枯渇"@ja.
+<< kg:id_55 prop:effect kg:id_61 >>
+    prop:text-txt_contents "川海の汚染が下流域にも影響を与えます"@ja.
+<< kg:id_1 prop:effect kg:id_62 >>
+    prop:text-txt_contents "鳥類の減少"@ja.
+<< kg:id_63 prop:cause kg:id_64 >>
+    prop:text-txt_contents "バードストライクや低周波等の影響か、クマタカ、ヨタカなどが姿を消す"@ja.
+<< kg:id_65 prop:cause kg:id_64 >>
+    prop:text-txt_contents "バードストライクや低周波等の影響か、クマタカ、ヨタカなどが姿を消す"@ja.
+<< kg:id_1 prop:effect kg:id_66 >>
+    prop:text-txt_contents "夜行性鳥類は 3 キロ以内では全く見られなくなった"@ja.
+<< kg:id_67 prop:cause kg:id_68 >>
+    prop:text-txt_contents "風力発電機症候群や振動音響病の症状の一つで、動物等にも影響が及んでいると考えられる"@ja.
+<< kg:id_1 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "安来市の水源地を汚染する可能性"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:text-txt_contents "風力は巨大なギアボックスの潤滑のために油が数百リットル入っています"@ja.
+<< kg:id_72 prop:cause kg:id_73 >>
+    prop:text-txt_contents "ブレードの昆虫の死骸を洗うのに使われるクリーニング液体も土壌の汚染源となります"@ja.
+<< kg:id_74 prop:cause kg:id_75 >>
+    prop:text-txt_contents "万一、山向山、大出山山で油が漏れたら、安来市上流の水源地は確実に汚染されることになります"@ja.
+<< kg:id_1 prop:effect kg:id_76 >>
+    prop:text-txt_contents "国内でも度々風力発電の事故は起きています"@ja.
+<< kg:id_1 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "風力発電で電力は賄えない"@ja.
+<< kg:id_1 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "風力発電で電力は賄えない、Co2 削減できない"@ja.
+<< kg:id_79 prop:cause kg:id_80 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "北海道電力に聞くと大風力の増減に合わせて火力を調整すると逆に燃料が多くいる と答えました"@ja.
+<< kg:id_81 prop:cause kg:id_82 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "不安定な風力や太陽光に備えて、火力発電所は蒸気を捨てながら待機しています"@ja.
+<< kg:id_83 prop:effect kg:id_84 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "アメリカの例では火力だけの山より、風力を併用した山に排気ガスが激増したのです"@ja.
+<< kg:id_85 prop:effect kg:id_86 >>
+    prop:text-txt_contents "資産価値の低下 風力発電所ができることで不動産価格の下落は起こります"@ja.
+<< kg:id_87 prop:effect kg:id_88 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "20 基をこえる大規模風力発電の場合、2 キロ以内の不動産価格は最大 12%下落"@ja.
+<< kg:id_1 prop:effect kg:id_89 >>
+    prop:text-txt_contents "健康被害により家と土地を捨て転居する人もいるのです"@ja.
+<< kg:id_15 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "事業者へ対する質問や意見の取り纏めを行っています"@ja.
+}

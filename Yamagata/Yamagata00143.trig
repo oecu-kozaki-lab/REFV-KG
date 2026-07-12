@@ -1,0 +1,351 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00143> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "日本のジェンダー平等順位の低さ"@ja.
+kg:id_1 rdf:type cls:c_8250.
+cls:c_8250 rdfs:label "男女平等"@ja.
+kg:id_2 rdfs:label "男性の世界一長い労働時間"@ja.
+kg:id_2 rdf:type cls:c_6694.
+cls:c_6694 rdfs:label "長時間労働"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "女性が活躍できる環境づくり"@ja.
+kg:id_3 rdf:type cls:c_8251.
+cls:c_8251 rdfs:label "活躍環境"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "高齢者の孤立"@ja.
+kg:id_4 rdf:type cls:c_8252.
+cls:c_8252 rdfs:label "高齢者孤立"@ja.
+kg:id_5 rdfs:label "独り暮らし高齢者の増加"@ja.
+kg:id_5 rdf:type cls:c_8253.
+cls:c_8253 rdfs:label "独居高齢者"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "病気を抱え体の不自由な高齢者の増加への対応が重要になる"@ja.
+kg:id_6 rdf:type cls:c_5335.
+cls:c_5335 rdfs:label "健康課題"@ja.
+kg:id_4 prop:effect kg:id_6.
+kg:id_7 rdfs:label "見守り寄り添い支え合い孤立させない取組"@ja.
+kg:id_7 rdf:type cls:c_3986.
+cls:c_3986 rdfs:label "見守り支援"@ja.
+kg:id_4 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "高齢者の健康低下"@ja.
+kg:id_8 rdf:type cls:c_8254.
+cls:c_8254 rdfs:label "健康低下"@ja.
+kg:id_9 rdfs:label "百歳体操"@ja.
+kg:id_9 rdf:type cls:c_8009.
+cls:c_8009 rdfs:label "介護予防"@ja.
+kg:id_8 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "高齢者の認知機能低下や伝達ミス"@ja.
+kg:id_10 rdf:type cls:c_3670.
+cls:c_3670 rdfs:label "認知機能低下"@ja.
+kg:id_11 rdfs:label "伝言ゲーム形式の町民力育成プログラム"@ja.
+kg:id_11 rdf:type cls:c_1286.
+cls:c_1286 rdfs:label "能力向上"@ja.
+kg:id_10 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "高齢運転者による交通事故"@ja.
+kg:id_12 rdf:type cls:c_479.
+cls:c_479 rdfs:label "交通事故"@ja.
+kg:id_13 rdfs:label "ハンドル操作やブレーキとアクセルの踏み間違いなどの操作不適"@ja.
+kg:id_13 rdf:type cls:c_8255.
+cls:c_8255 rdfs:label "操作不適"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "重大事故の発生"@ja.
+kg:id_14 rdf:type cls:c_8256.
+cls:c_8256 rdfs:label "重大事故"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "後づけの踏み間違い防止装置や安全運転サポートカーの普及検討"@ja.
+kg:id_15 rdf:type cls:c_8257.
+cls:c_8257 rdfs:label "安全装置"@ja.
+kg:id_12 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "免許返納後の移動困難"@ja.
+kg:id_16 rdf:type cls:c_2992.
+cls:c_2992 rdfs:label "移動困難"@ja.
+kg:id_17 rdfs:label "高齢者が暮らしにくくなる"@ja.
+kg:id_17 rdf:type cls:c_1153.
+cls:c_1153 rdfs:label "生活困難"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "デマンドタクシーや福祉タクシーを中心とした公共交通施策の見直し"@ja.
+kg:id_18 rdf:type cls:c_8258.
+cls:c_8258 rdfs:label "交通施策"@ja.
+kg:id_16 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "財政運営の厳しさ"@ja.
+kg:id_19 rdf:type cls:c_2052.
+cls:c_2052 rdfs:label "財政難"@ja.
+kg:id_20 rdfs:label "人口減少による徴税客体の減少と普通交付税算定基盤への影響"@ja.
+kg:id_20 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "町税収入の安定的確保と国県補助金や有利起債の最大限活用"@ja.
+kg:id_21 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_19 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "新規就農者の定着の難しさ"@ja.
+kg:id_22 rdf:type cls:c_8259.
+cls:c_8259 rdfs:label "就農定着難"@ja.
+kg:id_23 rdfs:label "町外から移住した非農家出身者が見知らぬ土地で新たに挑戦していること"@ja.
+kg:id_23 rdf:type cls:c_8260.
+cls:c_8260 rdfs:label "移住就農"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "新規就農者と支援農家や町内関係者の情報交換の機会を設ける"@ja.
+kg:id_24 rdf:type cls:c_1249.
+cls:c_1249 rdfs:label "交流機会"@ja.
+kg:id_22 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "消防団員の処遇の低さ"@ja.
+kg:id_25 rdf:type cls:c_8261.
+cls:c_8261 rdfs:label "待遇不足"@ja.
+kg:id_26 rdfs:label "地域防災力確保の議論が必要になる"@ja.
+kg:id_26 rdf:type cls:c_8262.
+cls:c_8262 rdfs:label "防災力確保"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "報酬や手当の見直しを幹部と議論し手続を踏んで対応する"@ja.
+kg:id_27 rdf:type cls:c_1608.
+cls:c_1608 rdfs:label "待遇改善"@ja.
+kg:id_25 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "鳥海山の岩石採取計画"@ja.
+kg:id_28 rdf:type cls:c_2431.
+cls:c_2431 rdfs:label "資源開発"@ja.
+kg:id_29 rdfs:label "大切な水環境への悪影響のおそれ"@ja.
+kg:id_29 rdf:type cls:c_8263.
+cls:c_8263 rdfs:label "水環境影響"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "総合的な水資源保全施策の推進と現行法改正の働きかけ"@ja.
+kg:id_30 rdf:type cls:c_8264.
+cls:c_8264 rdfs:label "資源保全"@ja.
+kg:id_28 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "登山者の遭難リスク"@ja.
+kg:id_31 rdf:type cls:c_8265.
+cls:c_8265 rdfs:label "遭難危険"@ja.
+kg:id_32 rdfs:label "天候急変に伴うガスの発生と雪渓での道迷い"@ja.
+kg:id_32 rdf:type cls:c_8266.
+cls:c_8266 rdfs:label "視界不良"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "河原宿への避難小屋整備"@ja.
+kg:id_33 rdf:type cls:c_6860.
+cls:c_6860 rdfs:label "避難施設"@ja.
+kg:id_31 prop:contermeasure kg:id_33.
+kg:st_1 rdfs:label "遊佐町長時田博機"@ja.
+kg:st_1 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "女性が活躍できるよう希望に応じたきめ細かな支援の充実が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "政策・方針決定過程への女性の参画推進が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "見守り寄り添い支え合い孤立させない取組が大切"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "高齢者の健康増進と介護予防は町の重要課題"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "独り暮らしでも独りではないと感じさせることが大切"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "前向きな取組として認識している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "遊佐町議会議員松永裕美"@ja.
+kg:st_2 rdfs:type cls:st_97.
+cls:st_97 rdfs:label "地方議員"@ja.
+kg:op_7 prop:content "情報を正しく聞き理解し伝える力の低下を自覚できる取組として提案"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "遊佐町健康福祉課長中川三彦"@ja.
+kg:st_3 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_8 prop:content "愉快なゲームで災害時対応にも役立つ良い取組"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "安全運転サポートカーは事故防止と被害軽減に有効"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "高齢化を前提に交通事故防止対策を進める必要がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "後づけ装置への町独自補助も検討すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "県や他市町の動向を見ながら有効な補助の在り方を検討したい"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "免許返納後も暮らしやすい町にするため新たな交通施策が必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "各課横断で見直しを行い必要に応じ新たな制度を設けてきた"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "中長期の視点で財源確保策を講じる必要がある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "単なる借入れや基金取崩しに頼らず計画的な基金造成と活用を進めたい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "地元農家との関係構築と助言指導が重要"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "遊佐町議会議員本間知広"@ja.
+kg:st_4 rdfs:type cls:st_97.
+kg:op_18 prop:content "情報交換の場が定住人口の増加にも寄与する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "移住者交流会の場も活用し情報交換の機会を設けたい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "遊佐町総務課長堀修"@ja.
+kg:st_5 rdfs:type cls:st_32.
+kg:op_20 prop:content "今後の消防力防災力の確保に向け待遇改善を議論する時期が来ている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "遊佐町議会議員佐藤俊太郎"@ja.
+kg:st_6 rdfs:type cls:st_97.
+kg:op_21 prop:content "命をかけた消火活動に対し町として誠意ある処遇が必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_6.
+kg:op_22 prop:content "近隣市町の状況も考慮し具体的な金額や対象を議論していく"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "鳥海山と大切な水環境を守る取組を引き続き主張する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "水循環基本法に基づく施策推進と国等への働きかけを続ける"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "湯ノ台ルートは特にガス発生リスクが高い"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "遊佐町議会議員阿部満吉"@ja.
+kg:st_7 rdfs:type cls:st_97.
+kg:op_26 prop:content "登山者保護と山岳遭難救助の二次災害防止のため早急な再建が必要"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:op_27 prop:content "安全管理の面から避難小屋整備の必要性を認識している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "ジェンダーフリーに関しては、なかなか日本のポジションがＧ７、先進７か国のうちでは最低という数字が示されております。だけれども、その主たる原因は何であるかと考えますときに、実は男性の世界一長い労働時間が考えされるという見方も示されている"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "あらゆる分野において女性が活躍できるために希望に応じたきめ細かな支援を充実させていく必要があると考えておりますが、そうした対応の中で政策・方針決定過程への女性の参画推進など、女性が能力を十分に発揮し、活躍できる環境づくりにつながるものと考えております"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "この65歳以上の中で独り暮らしの方が740名おりまして、前年に比較しまして35名増加をしております。５年前は585名でしたので、各この５年間で155名急激に増加している現実がありました"@ja.
+<< kg:id_4 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "もちろん独り暮らしの中でも元気な方はおりますが、中には病気を抱えて体の不自由な方も多くいらっしゃいます。こうした状況は今後も続くと予想され、高齢者の健康増進、介護予防は本町にとって大変重要な課題の一つであると認識ををしております"@ja.
+<< kg:id_4 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "たとえ独り暮らしでも独りではないと感じさせることが大切であり、誰かが見守り、寄り添い、支え合い、孤立させない取組を行ってまいりたいと考えています"@ja.
+<< kg:id_8 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "各集落において高齢者の方の体力づくりと会話を楽しみ、居場所づくりのための百歳体操がほぼほぼ定着しつつある当町では、前向きな取組がされていると私も認識しております"@ja.
+<< kg:id_10 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "このプログラムの効果は、楽しい愉快なゲーム感覚で次のことが自然と学べる特徴がございます。...日々の我々の何げない暮らしの中でも、実は情報や人から聞いたこと、教えてもらったことを正しく責任を持って次の町民の方に伝達する能力が加齢とともにどんどん衰えてきていることをまずは再認識、つまりは自覚していただくことがこのプログラムの狙いでございます"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "高齢者の事故原因は、ハンドル操作やブレーキとアクセルの踏み間違いなどの操作不適が多いと一般に言われております"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "昨今高齢運転者による重大事故が相次いだことから社会問題となっております"@ja.
+<< kg:id_12 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "ご質問にありました後づけの踏み間違い防止装置搭載車のほか、車線逸脱警告、衝突被害軽減ブレーキ、ハイビームの自動切替え等の機能を搭載している安全運転サポートカーは、高齢者運転を含めたドライバーの事故防止に、その被害を軽減するのにとても有効であると考えます"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "高齢者の方が免許返納後も暮らしやすい町にするために、交通弱者のためにもこれからはこの地域の特性に合った新たな交通施策が必要であると考えます"@ja.
+<< kg:id_16 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "町内における現行の各種公共交通施策については、民間バスの運行がない中、これまでもデマンドタクシー、福祉タクシー事業を中心に、総務課、産業課、健康福祉課、企画課、教育委員会と各課横断的に様々な見直しを行い、必要に応じて新たな制度を設けながら実施をしてきました"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "確かに人口減少は社会情勢の変化とともに、町の予算においても徴税客体が減少し、また普通交付税の算定基盤ともなっている関係から、歳入予算を取り巻く町の財政運営に影響を及ぼす要因ともなります"@ja.
+<< kg:id_19 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "基本的には１つに重要な自主財源である町税収入の安定的な確保に努めることを第一義としなければなりません。また、国の有利起債を含めて、国県補助金を最大限に活用することも肝要ではあります"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "とりわけ町外から移住される非農家出身の方については、見知らぬ土地で新たな挑戦でありますので、地元農家の皆様との関係を築き、様々な面で助言、指導いただくことが非常に重要であると考えております"@ja.
+<< kg:id_22 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "現在移住者を対象とした交流会について、企画課定住促進係が中心になり実施しているところですので、今後はそれらの場も活用しながら、新規就農者の方と支援いただく農家、町内の関係者の皆様を含め、情報交換の機会を設け、農業の担い手確保と町の移住人口の増につながるよう努めてまいりたいと考えております"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "今後の本町の消防力、防災力の確保に向け、消防団員の待遇改善については議論する時期が来ていると考えているところであります"@ja.
+<< kg:id_25 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "今後、財政状況や近隣市町の状況を考慮しながら、具体的な金額、手当についてはどこまで支給対象にするのかなど、幹部の皆さんと議論を進めまして、手続を踏みながら対応をしていきたいというふうに考えております"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "仙台高裁での二審においても第一審と同様に、原告の訴訟内容を精査した上で、鳥海山と大切な水環境を守る取組の主張をしてまいります"@ja.
+<< kg:id_28 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "裁判と並行して、平成26年７月に施行された水循環基本法に基づく総合的な水資源保全の施策を推進することや現行法の改正の提案など、国等に今後もしっかりと働きかけを続けてまいりたいと思います"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "近年の登山ブームにより登山者が増えると同時に、天候急変に伴うガスの発生で視界不良となり、道を迷うケースが多くなっております。湯ノ台ルートは、登山者が大きな雪渓を横切るため、とりわけガスの発生リスクが高く、遭難、救助事案も毎年のように発生しております"@ja.
+<< kg:id_31 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "そのため、安全管理の面からも河原宿への避難小屋の整備の必要性については認識しているところであります。町としては、総合発展計画、第４期実施計画において、河原宿避難小屋整備事業として、令和４年度に基本設計200万円を計上いたしております"@ja.
+}

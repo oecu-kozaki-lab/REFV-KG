@@ -1,0 +1,663 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00046> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市沖への洋上風力発電の導入及び基地港湾の指定"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "港湾整備や関連産業立地による地域経済の活性化"@ja.
+kg:id_2 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "酒田市沖への洋上風力発電の導入"@ja.
+kg:id_3 rdf:type cls:c_552.
+kg:id_4 rdfs:label "海域利用者や住民代表と課題抽出や対応策を議論する"@ja.
+kg:id_4 rdf:type cls:c_1288.
+cls:c_1288 rdfs:label "協議対応"@ja.
+kg:id_3 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "市民説明会の開催と機運醸成"@ja.
+kg:id_5 rdf:type cls:c_1289.
+cls:c_1289 rdfs:label "説明周知"@ja.
+kg:id_3 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "洋上風力発電事業の導入"@ja.
+kg:id_6 rdf:type cls:c_552.
+kg:id_7 rdfs:label "海域利用者の合意形成と環境景観への配慮"@ja.
+kg:id_7 rdf:type cls:c_721.
+cls:c_721 rdfs:label "合意形成"@ja.
+kg:id_6 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "大規模風力発電計画"@ja.
+kg:id_8 rdf:type cls:c_390.
+cls:c_390 rdfs:label "発電計画"@ja.
+kg:id_9 rdfs:label "県内外からの建設反対の声の高まり"@ja.
+kg:id_9 rdf:type cls:c_1290.
+cls:c_1290 rdfs:label "反対意見"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "事業の撤回"@ja.
+kg:id_10 rdf:type cls:c_1291.
+cls:c_1291 rdfs:label "計画撤回"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "非効率石炭火力のフェードアウト"@ja.
+kg:id_11 rdf:type cls:c_1101.
+cls:c_1101 rdfs:label "エネルギー政策"@ja.
+kg:id_12 rdfs:label "石炭火力発電事業者の今後の動向と雇用確保の深刻な状況"@ja.
+kg:id_12 rdf:type cls:c_1292.
+cls:c_1292 rdfs:label "雇用不安"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "エネルギー政策の不備"@ja.
+kg:id_13 rdf:type cls:c_1293.
+cls:c_1293 rdfs:label "政策不備"@ja.
+kg:id_14 rdfs:label "市民に必要性や将来像が分かりやすく示されていない"@ja.
+kg:id_14 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "酒田市のエネルギー政策"@ja.
+kg:id_15 rdf:type cls:c_1101.
+kg:id_16 rdfs:label "市独自のエネルギービジョンや個別計画の策定を検討する"@ja.
+kg:id_16 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "住みたい田舎ランキングの順位低下"@ja.
+kg:id_17 rdf:type cls:c_1147.
+cls:c_1147 rdfs:label "順位低下"@ja.
+kg:id_18 rdfs:label "コロナ禍でのイベント開催やオンライン対応や個別給付事業の設問で弱かったこと"@ja.
+kg:id_18 rdf:type cls:c_1294.
+cls:c_1294 rdfs:label "対応不足"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "シニア部門第3位 総合部門15位 東北エリア6位"@ja.
+kg:id_19 rdf:type cls:c_1295.
+cls:c_1295 rdfs:label "順位変動"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "移住相談で紹介できる空き家情報の不足"@ja.
+kg:id_20 rdf:type cls:c_1296.
+cls:c_1296 rdfs:label "空き家不足"@ja.
+kg:id_21 rdfs:label "移住希望者への空き家紹介に苦慮している"@ja.
+kg:id_21 rdf:type cls:c_1297.
+cls:c_1297 rdfs:label "紹介困難"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "空き家等情報サイトの掲載件数が増えないこと"@ja.
+kg:id_22 rdf:type cls:c_1298.
+cls:c_1298 rdfs:label "掲載停滞"@ja.
+kg:id_23 rdfs:label "立地が悪い物件や相続などの権利関係未整理のケースが多いこと"@ja.
+kg:id_23 rdf:type cls:c_1299.
+cls:c_1299 rdfs:label "物件不備"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "酒田の人は程度が良くても他人に貸したがらず賃貸物件に出さない傾向"@ja.
+kg:id_24 rdf:type cls:c_1300.
+cls:c_1300 rdfs:label "貸し渋り"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "移住者"@ja.
+kg:id_25 rdf:type cls:c_1301.
+cls:c_1301 rdfs:label "移住者"@ja.
+kg:id_26 rdfs:label "移住当初に居場所やネットワークづくりに苦慮する"@ja.
+kg:id_26 rdf:type cls:c_1302.
+cls:c_1302 rdfs:label "定着困難"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "年3回の移住者交流会など移住後サポートを行う"@ja.
+kg:id_27 rdf:type cls:c_1303.
+cls:c_1303 rdfs:label "定着支援"@ja.
+kg:id_25 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "本市のホームページから移住サイトへの誘導の弱さ"@ja.
+kg:id_28 rdf:type cls:c_1304.
+cls:c_1304 rdfs:label "誘導不足"@ja.
+kg:id_29 rdfs:label "あまり親切でなく最初のイメージ形成で不利"@ja.
+kg:id_29 rdf:type cls:c_1305.
+cls:c_1305 rdfs:label "印象悪化"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "消防団員数の減少"@ja.
+kg:id_30 rdf:type cls:c_1306.
+cls:c_1306 rdfs:label "団員減少"@ja.
+kg:id_31 rdfs:label "少子高齢化と人口減少"@ja.
+kg:id_31 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "20代から30代の新入団員の減少"@ja.
+kg:id_32 rdf:type cls:c_1307.
+cls:c_1307 rdfs:label "入団減少"@ja.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "団員数の減少と高齢化の進行"@ja.
+kg:id_33 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_30 prop:effect kg:id_33.
+kg:id_34 rdfs:label "消防団"@ja.
+kg:id_34 rdf:type cls:c_1308.
+cls:c_1308 rdfs:label "消防団"@ja.
+kg:id_35 rdfs:label "消防団協力事業所の拡大と現役団員による地道な声かけ"@ja.
+kg:id_35 rdf:type cls:c_1309.
+cls:c_1309 rdfs:label "団員確保"@ja.
+kg:id_34 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "機能別消防団や不在地域への幅広い声かけで平日日中対応と偏在解消を図る"@ja.
+kg:id_36 rdf:type cls:c_1310.
+cls:c_1310 rdfs:label "体制補完"@ja.
+kg:id_34 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "防災行政無線"@ja.
+kg:id_37 rdf:type cls:c_1311.
+cls:c_1311 rdfs:label "情報伝達手段"@ja.
+kg:id_38 rdfs:label "屋内で伝わりにくく気象条件や反響で聞き取りにくい"@ja.
+kg:id_38 rdf:type cls:c_1312.
+cls:c_1312 rdfs:label "伝達困難"@ja.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "防災ラジオや緊急速報メールやSNSなどプッシュ型情報伝達の多重化"@ja.
+kg:id_39 rdf:type cls:c_1313.
+cls:c_1313 rdfs:label "多重伝達"@ja.
+kg:id_37 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "危険ブロック塀"@ja.
+kg:id_40 rdf:type cls:c_1314.
+cls:c_1314 rdfs:label "危険設備"@ja.
+kg:id_41 rdfs:label "危険ブロック塀131件のうち50件が未撤去"@ja.
+kg:id_41 rdf:type cls:c_1315.
+cls:c_1315 rdfs:label "未撤去"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "補助上限を8万円から15万円に拡充し周知啓発を行う"@ja.
+kg:id_42 rdf:type cls:c_1316.
+cls:c_1316 rdfs:label "撤去促進"@ja.
+kg:id_40 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "投票済証の受取者増加"@ja.
+kg:id_43 rdf:type cls:c_1317.
+cls:c_1317 rdfs:label "受取増加"@ja.
+kg:id_44 rdfs:label "山形県知事選挙で全体3,700人超 約7.5％が受け取った"@ja.
+kg:id_44 rdf:type cls:c_1318.
+cls:c_1318 rdfs:label "受取状況"@ja.
+kg:id_43 prop:effect kg:id_44.
+kg:id_45 rdfs:label "ワクチン未接種者への差別的扱い"@ja.
+kg:id_45 rdf:type cls:c_1319.
+cls:c_1319 rdfs:label "差別行為"@ja.
+kg:id_46 rdfs:label "接種していない方が差別的な扱いを受けるおそれ"@ja.
+kg:id_46 rdf:type cls:c_1320.
+cls:c_1320 rdfs:label "差別懸念"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "受診券同封チラシやホームページ LINE ツイッター 広報等で周知する"@ja.
+kg:id_47 rdf:type cls:c_1321.
+cls:c_1321 rdfs:label "周知啓発"@ja.
+kg:id_45 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "ワクチン接種後の健康被害"@ja.
+kg:id_48 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_49 rdfs:label "予防接種法に基づく救済制度で医療費 医療手当 障害年金 介護加算等を給付する"@ja.
+kg:id_49 rdf:type cls:c_1323.
+cls:c_1323 rdfs:label "救済給付"@ja.
+kg:id_48 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "紙ベース商品券を実施しないこと"@ja.
+kg:id_50 rdf:type cls:c_1324.
+cls:c_1324 rdfs:label "商品券不実施"@ja.
+kg:id_51 rdfs:label "GoToEat食事券の継続 利用者満足度 経済効果 財源制約"@ja.
+kg:id_51 rdf:type cls:c_1325.
+cls:c_1325 rdfs:label "財源制約"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "キャッシュレス決済に不慣れな人"@ja.
+kg:id_52 rdf:type cls:c_1326.
+cls:c_1326 rdfs:label "利用不慣れ者"@ja.
+kg:id_53 rdfs:label "使い方相談会や携帯電話販売店での相談体制を整える"@ja.
+kg:id_53 rdf:type cls:c_1327.
+cls:c_1327 rdfs:label "利用支援"@ja.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "住宅リフォーム総合支援事業"@ja.
+kg:id_54 rdf:type cls:c_896.
+cls:c_896 rdfs:label "支援事業"@ja.
+kg:id_55 rdfs:label "県による人口減少対策世帯要件分の補助金減額と加算措置廃止"@ja.
+kg:id_55 rdf:type cls:c_1328.
+cls:c_1328 rdfs:label "補助縮小"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "酒田産の地域木材利用について市独自に最大10万円加算する"@ja.
+kg:id_56 rdf:type cls:c_1329.
+cls:c_1329 rdfs:label "独自加算"@ja.
+kg:id_54 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "公共施設の耐震化"@ja.
+kg:id_57 rdf:type cls:c_1330.
+cls:c_1330 rdfs:label "耐震化"@ja.
+kg:id_58 rdfs:label "2011年約73.3％から2020年約90.9％へ向上"@ja.
+kg:id_58 rdf:type cls:c_1331.
+cls:c_1331 rdfs:label "進捗向上"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "住宅の耐震化"@ja.
+kg:id_59 rdf:type cls:c_1330.
+kg:id_60 rdfs:label "2013年約71.7％から2018年約78.2％へ向上したが目標95％に未達"@ja.
+kg:id_60 rdf:type cls:c_1332.
+cls:c_1332 rdfs:label "未達成"@ja.
+kg:id_59 prop:effect kg:id_60.
+kg:id_61 rdfs:label "住宅の耐震化が進まないこと"@ja.
+kg:id_61 rdf:type cls:c_1333.
+cls:c_1333 rdfs:label "耐震化停滞"@ja.
+kg:id_62 rdfs:label "酒田大火後の昭和50年前後に旧耐震基準の住宅が多く建設されたこと"@ja.
+kg:id_62 rdf:type cls:c_1334.
+cls:c_1334 rdfs:label "旧耐震住宅"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "橋梁の損傷"@ja.
+kg:id_63 rdf:type cls:c_1335.
+cls:c_1335 rdfs:label "橋梁損傷"@ja.
+kg:id_64 rdfs:label "緊急 早期に措置が必要な橋梁34橋が確認された"@ja.
+kg:id_64 rdf:type cls:c_1336.
+cls:c_1336 rdfs:label "要措置"@ja.
+kg:id_63 prop:effect kg:id_64.
+kg:id_65 rdfs:label "緊急 早期措置対象34橋のうち令和3年度末で32橋の修繕等を完了する"@ja.
+kg:id_65 rdf:type cls:c_1337.
+cls:c_1337 rdfs:label "修繕対応"@ja.
+kg:id_63 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "避難所運営の不備"@ja.
+kg:id_66 rdf:type cls:c_1338.
+cls:c_1338 rdfs:label "運営不備"@ja.
+kg:id_67 rdfs:label "地域 学校 市の役割分担を明確化した避難所運営マニュアルを策定する"@ja.
+kg:id_67 rdf:type cls:c_1339.
+cls:c_1339 rdfs:label "運営整備"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "避難所運営"@ja.
+kg:id_68 rdf:type cls:c_1340.
+cls:c_1340 rdfs:label "避難所運営"@ja.
+kg:id_69 rdfs:label "女性防災講座やワークショップで女性の視点を取り入れる"@ja.
+kg:id_69 rdf:type cls:c_1341.
+cls:c_1341 rdfs:label "視点反映"@ja.
+kg:id_68 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "災害時の情報共有の不足"@ja.
+kg:id_70 rdf:type cls:c_1342.
+cls:c_1342 rdfs:label "情報共有不足"@ja.
+kg:id_71 rdfs:label "山形防災行政無線ネットワークがSIP4Dと連携していないこと"@ja.
+kg:id_71 rdf:type cls:c_824.
+cls:c_824 rdfs:label "連携不足"@ja.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "SIP4Dや先行自治体事例を研究し総合的防災パッケージシステムの具現化を進める"@ja.
+kg:id_72 rdf:type cls:c_1343.
+cls:c_1343 rdfs:label "システム導入"@ja.
+kg:id_70 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "災害応援協定を結ぶ業界団体との情報共有不足"@ja.
+kg:id_73 rdf:type cls:c_1342.
+kg:id_74 rdfs:label "スマートフォン等を活用した情報共有システム導入を研究する"@ja.
+kg:id_74 rdf:type cls:c_1344.
+cls:c_1344 rdfs:label "共有手段"@ja.
+kg:id_73 prop:contermeasure kg:id_74.
+kg:st_1 rdfs:label "酒田市長丸山至"@ja.
+kg:st_1 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "新しい産業基盤の創出と地域経済活性化につながると認識"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "後藤泉議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_2 prop:content "メリット偏重ではなく市民合意形成を慎重に進めるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "地域と協調した事業化に向け理解促進を進めるべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "山形県と連携し市民への周知を進めるべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "合意形成と環境景観配慮は当然重要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "景観や漁業鳥類魚類の問題も含め県民市民との合意形成を重視すべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "住民や広域の反対が計画撤回を招いた事例として重く見るべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "反対世論が計画を撤回させた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "雇用確保を含め実現可能な計画づくりが必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "市の新しいポリシーが示されていないのは残念"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "必要であれば市独自のビジョンや計画推進プログラムの策定を考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "酒田基準となるエネルギービジョンを策定すべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "地域創生部長大沼康浩"@ja.
+kg:st_3 rdfs:type cls:st_34.
+cls:st_34 rdfs:label "部局長"@ja.
+kg:op_13 prop:content "新設設問への対応不足が順位低下要因"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "順位低下は今後の移住政策の課題を示している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "紹介可能な空き家がほとんどなく移住支援の課題"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "新規登録が少ない主因は立地や権利関係の問題"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "貸し渋り傾向が空き家流通の障害"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "移住後のつながり支援が必要"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "移住後の定着支援も継続する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "トップページから移住サイトへすぐ入れる工夫が必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "齋藤直議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_21 prop:content "地域を守る消防団の存続が不安"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "総務部危機管理監那須欣男"@ja.
+kg:st_5 rdfs:type cls:st_35.
+cls:st_35 rdfs:label "危機管理職"@ja.
+kg:op_22 prop:content "若年層入団減少が団員減少と高齢化の主因"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "活動低下につながる課題"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "地域と事業所の協力を広げ団員確保に努める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "OB団員活用と偏在是正が必要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_5.
+kg:op_26 prop:content "屋外スピーカーは重要だが万能ではない"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_5.
+kg:op_27 prop:content "聞こえない 分からないとの改善要望がある"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "多様なツールで正確な情報をより早く伝えるべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "未実施案件への個別案内と周知継続が必要"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:op_30 prop:content "補助制度拡充と個別案内で撤去促進を図る"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "選挙管理委員会委員長高橋清貴"@ja.
+kg:st_6 rdfs:type cls:st_36.
+cls:st_36 rdfs:label "委員長"@ja.
+kg:op_31 prop:content "受取者は増えているが選管として積極支援はしない"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "健康福祉部長菊池裕基"@ja.
+kg:st_7 rdfs:type cls:st_34.
+kg:op_32 prop:content "接種強制や差別的扱いはあってはならない"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "市原栄子議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_33 prop:content "接種しない人への嫌がらせやハラスメントが心配"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_8.
+kg:op_34 prop:content "多様な広報手段で接種は本人意思によると周知する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_7.
+kg:op_35 prop:content "申請相談には丁寧に対応する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_7.
+kg:op_36 prop:content "限られた財源では経済効果の大きいキャッシュレス還元を優先"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "アプリ導入からチャージまで細かく支援する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:st_9 rdfs:label "建設部長藤井昌道"@ja.
+kg:st_9 rdfs:type cls:st_34.
+kg:op_38 prop:content "県制度変更により補助額が縮小した"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_9.
+kg:op_39 prop:content "林業振興の面から酒田産木材利用加算は維持する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_9.
+kg:op_40 prop:content "9年間で耐震化率は大きく向上した"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_9.
+kg:op_41 prop:content "耐震化は進んだが目標達成には至っていない"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "旧耐震時代に建てられた住宅の多さが一因"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_9.
+kg:op_43 prop:content "緊急度の高い橋から優先して対処している"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_9.
+kg:op_44 prop:content "優先順位をつけて着実に修繕を進めている"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_9.
+kg:op_45 prop:content "地域中心で学校と市が連携する体制を構築した"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_5.
+kg:op_46 prop:content "女性の視点に立った避難所運営マニュアル見直しを進める"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_5.
+kg:op_47 prop:content "県内共有はできるが他機関との共有は限定的"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_5.
+kg:op_48 prop:content "関係機関連携や住民向け迅速発信を備えた仕組みを早期に具現化したい"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_5.
+kg:st_10 rdfs:label "佐藤猛議員"@ja.
+kg:st_10 rdfs:type cls:st_16.
+kg:op_49 prop:content "DXを標榜する酒田市は積極的にSIP4D水準へ進むべき"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_10.
+kg:op_50 prop:content "応援協定団体との情報を一元化する仕組みを研究したい"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:op_51 prop:content "現場情報が正確で信頼性の高い団体情報を共有すべき"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_10.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "遊佐町沖及び酒田市沖への洋上風力発電事業の導入及びそれに伴う基地港湾の指定については、港湾整備、発電設備の施工、それから、施工後の運転・保守による直接的な経済効果のほかに、建設資材や原材料の取引の増加ですとか、関連産業の立地による第１次的な経済波及効果、それから、雇用者所得の増加あるいは消費需要喚起による第２次的な経済波及効果などが期待をされまして、この地域における新しい産業基盤の創出、それから、地域経済の活性化につながるものと考えているところでございます。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "この酒田沿岸域検討部会においては、遊佐部会と同様に、海域の利用者や住民の代表の方などとともに、地域と協調した事業化に向けて課題の抽出や対応策等の議論を行って、関係者間の理解促進に努めていくと伺っているところでございます。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "本市といたしましても、山形県と連携して説明会を開催するなど、市民に対して洋上風力発電事業の周知に努めまして、地域の機運醸成を図るとともに、国が早期に基地港湾の整備に着手するよう山形県とともに国に対して地道に要望してまいりたいと考えております。"@ja.
+<< kg:id_6 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "ただ、洋上風力発電事業の導入に当たっては、海域利用者の合意形成を図るとともに、環境、景観に配慮すること、これは当然重要だと考えております。"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "鶴岡市民のみならず、庄内一円、また、県内外からも建設反対の声が高まり、開発事業者はその意図を酌み、事業の撤回を余儀なくされたということがありました。"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "鶴岡市民のみならず、庄内一円、また、県内外からも建設反対の声が高まり、開発事業者はその意図を酌み、事業の撤回を余儀なくされたということがありました。"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "本市で言えば、何といっても国のエネルギー政策として進められております非効率石炭火力のフェードアウト、これを受けた本市に立地している石炭火力発電事業者の今後の動向、そして、雇用の確保といった深刻な状況、これを抱える中で、こうしたものを踏まえて、実現可能な目標として機能する計画になっていないと成果につなげられないと考えております。"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "本市には総合計画、環境基本計画という具合にエネルギーに関する基本の考え方は示されておりますが、ほんの数行程度の記述にとどまり、それを具体的に推進していく考え方や、どうしてそれを未来の酒田市に必要なのかといったことを分かりやすく市民に示すことや、本市としての新しいポリシーが示されていないのは非常に残念に思っています。"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "市独自のエネルギービジョン、個別計画あるいは計画推進プログラムなどが必要だということであれば、その策定については考えていきたいなと考えているところでございます。"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "新たに設定された質問項目は、コロナ禍でのイベント開催の状況やオンラインの取組のほか、個別の給付事業の有無などが多く、本市としてはその辺りが順位を下げた要因と分析をしております。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "昨年１位のシニア部門は第３位、総合部門では４位から15位に、東北エリアでは１位から、遊佐町にも抜かれ６位ということでありました。"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "移住を希望されている方から空き家を紹介してほしいと相談されるケースもありますが、実際のところ紹介できる空き家情報がほとんどなく、苦慮している状況でございます。"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "これは、協議会の構成メンバーが相談を受けた物件をサイトに掲載しておりますが、立地が悪いものや相続などの権利関係が整理されていないケースも多く、なかなか新規掲載の増加に結びつかないことが一因かと考えております。"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "また、酒田の人は、程度が良くても他人に貸したがらない、賃貸物件に出さないという傾向もございます。"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "一方で、移住当初、居場所やネットワークづくりに苦慮されている方もいらっしゃるようで、移住相談窓口では、年３回の移住者交流会にお誘いするなど、移住後のサポートも行っているところでございます。"@ja.
+<< kg:id_25 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "移住相談窓口では、年３回の移住者交流会にお誘いするなど、移住後のサポートも行っているところでございます。"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "本市のホームページからは移住サイトへの誘導が目立たなく、あまり親切ではないように思いました。"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "しかしながら、全国の消防団員数は少子高齢化、人口減少などの影響で減少傾向であり、今後、地域を守る消防団の存続が不安と感じています。"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "原因としまして、人口減少により、特に20代から30代の新入団員が減少していること、新入団員がいないことにより高齢になっても退団できないなどが団員数の減少、高齢化につながっているものと考えております。"@ja.
+<< kg:id_30 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "特に団員数の減少につきましては、団員数が平成22年度では2,139人でありましたが、令和２年度におきましては1,824人であり、その平均年齢も38.8歳から41.7歳になるなど、団員数の減少、高齢化が進んでおります。"@ja.
+<< kg:id_34 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "地域では現役消防団員より地道に声かけを行ってもらうとともに、消防団協力事業所の拡大を進め、事業所へ団員入団をお願いしながら、団員の確保に努めていきたいと考えているところでございます。"@ja.
+<< kg:id_34 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "消防団を退団したＯＢ団員が機能別消防団として災害に対応していく。また、市街地の団員の偏在化については、不在地域にも幅広く声かけ等を行いまして、偏在化の解消に努めたいと考えております。"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "防災行政無線の屋外スピーカーは、災害時の情報伝達において重要かつ有効な手段でございます。しかしながら、これは万能でなく、屋内にいる人にはなかなか伝わりにくい、気象条件に影響を受けるなどの課題があるのも事実でございます。"@ja.
+<< kg:id_37 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "そのため、緊急速報メールなどに加え、災害発生時に災害情報を自動起動し、お知らせする機能を持つ防災ラジオが有効な手段と考えており、その頒布の拡大を図っているところでございます。加えて、市ホームページや酒田市公式ＬＩＮＥ、フェイスブック、ツイッターなどの市公式ＳＮＳやヤフー防災アプリなど、様々なツールを駆使していき、プッシュ型の情報伝達の多重化を図り、正確な情報をより早く伝えることに努めていきたいと考えております。"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "調査の結果、危険ブロック塀が131件あり、そのうち撤去済みが81件、撤去未実施が50件でございます。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "令和元年度までは補助上限８万円だったものを、令和２年度以降は補助上限15万円まで制度拡充しております。利用案内を行うとともに、全市的には引き続きホームページや広報への掲載、固定資産税への納入通告書への資料の同封等を通じまして、さらなる周知・啓発を図っていきます。"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "本年１月の山形県知事選挙におきましては、全体で3,700人を超える方々が受け取っているという状況でございます。全体の投票者に占める割合としては約7.5％ということでございます。"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_32;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "職場や周りの方などから接種を強制されたり、接種をされていない方が差別的な扱いを受けることはあってはならないものと考えております。"@ja.
+<< kg:id_45 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "このことについては受診券送付の際にチラシを同封するなどして、御理解をいただくよう十分に配慮してまいりたいと考えております。 本市としては、接種しないことに伴うハラスメントの防止を図るため、市ホームページや酒田市のＬＩＮＥ公式アカウント、またツイッター、市広報など、その時点で最も有効な方法を活用し、分かりやすい広報により市民皆様に呼びかけてまいりたいと考えております。"@ja.
+<< kg:id_48 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "ワクチン接種による健康被害であると厚生労働大臣が認定した場合、保険診療の自己負担分に係る医療費や通院日数、あるいは入院日数等に応じた医療手当、また障がいの程度に応じた障害年金、介護の程度による介護加算等の給付が受けられることになります。"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "次の４点を理由に紙ベースの商品券の実施は考えていないところでございます。 １つ目に、国が実施しておりますＧｏｔｏＥａｔキャンペーン食事券について、販売期間が当初令和３年２月28日まででありましたが、現在、令和３年５月31日までに延長されております。 ２つ目に、消費者側の90.1％、事業者側の82.6％がキャッシュレス決済のほうがよかったと回答しております。 ３つ目に、本市が実施しているような還元キャンペーンと比較しますと、消費を増やすという意味では経済効果が少ないと考えております。 ４つ目に、限られた財源の中で、新型コロナウイルス感染症の拡大に伴い、多くの対策が必要であるため、優先順位をつけた上で、より経済効果が大きい事業を実施する必要があると考えております。"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "なお、デジタル弱者に対する対策としては、前回同様、個別相談によりアプリの入れ方からチャージの方法、実際の使い方までを細かくレクチャーする使い方相談会を市役所１階フリースペースで実施する予定でございます。また、市内の携帯電話販売店においても、契約している通信会社にかかわらず、土日祝日もキャッシュレス決済の使い方を相談できる体制を整えてまいります。"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "県による人口減少対策としての世帯要件分は最大50万円、内訳は県30万円、市20万円です。これから最大30万円、内訳は県15万円、市15万円に補助金が減額となり、地域産木材利用や空き家活用における加算措置については廃止となりました。"@ja.
+<< kg:id_54 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "廃止になった地域産木材利用や空き家活用の加算のうち、酒田産の地域木材利用につきましては、林業の振興の面から必要であると考えているため、これにつきましては、市独自に最大10万円の加算を行いたいと考えているところでございます。"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "酒田市建築物耐震改修促進計画における市有施設の耐震化率につきましては、東日本大震災のあった2011年には約73.3％でありましたけれども、2020年には約90.9％と、９年間で約17.6％向上しているところでございます。"@ja.
+<< kg:id_59 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "本市における住宅の耐震化率につきましては、2013年には約71.7％でありましたけれども、2018年には約78.2％、５年間で約6.5％向上しているところでございます。 しかしながら、目標値といたします令和２年度末まで95％には達しない状況でございます。"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "酒田市は酒田大火がございました。昭和51年です。その前後には、区画整理も始まってきたということで、昭和50年前後に、要するに住宅がいっぱい建つというような状況になったわけです。御存じのとおり、その耐震の関係、これは基準法、あの昭和56年前後で変わっております。昭和56年以前に、昭和50年前後にこうやって増えたものがあると、こういったことが一因にあるのではないかと考えているところでございます。"@ja.
+<< kg:id_63 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "平成26年度から平成27年度の２か年で実施しました法定１巡目点検に基づき、平成28年度に橋梁長寿命化修繕計画を更新しておりますが、点検結果の内容としましては、全497橋のうち、救急・早期に措置が必要と診断された橋梁は７％、34橋でありました。"@ja.
+<< kg:id_63 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "まずは第一義的に実施を進め、34橋のうち、令和３年度末で32橋の修繕等が完了する見込みとなっております。"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "平成29年に地域、学校、市による検討を重ねまして、平成30年に避難所運営マニュアル、これは共通編、個別編がございますが、これを策定しております。これにより地域の自主防災組織、学校、市の役割分担が明確化され、地域が中心となり、学校、市が連携した避難所運営体制が構築されました。"@ja.
+<< kg:id_68 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "令和３年度は自主防災組織を牽引していく存在となる女性防災リーダー育成のための女性防災講座やワークショップを行っていく所存でございます。このことにより女性の視点に立った避難所運営マニュアルの見直しを含め不断の見直しを図りながら、より機能的な避難所運営をしていく所存でございます。"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "現在、山形県全県での情報共有は、平成28年度に県が整備した山形防災行政無線ネットワークを使用しておりますが、このシステムはＳＩＰ４Ｄとは連携していないため、山形県と県内各市町村や消防、警察とは情報共有ができますが、その他の機関との情報共有は限定的であるというのが現状でございます。"@ja.
+<< kg:id_70 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_48;
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "ＳＩＰ４Ｄは、様々な情報をＧＩＳ、これは地理空間情報システムなどの可視化された情報で整理し、消防や警察、自衛隊などの関係防災機関、実働部隊との連携できる有効なシステムでございます。... 先行して実施している自治体の事例など取り入れながら深く研究をして、一日でも早く具現できるように研究を進めたいと考えているところでございます。"@ja.
+<< kg:id_73 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "まだ携帯による、口頭によるやり取りでございますが、この情報共有システムを入れることによって、防災パッケージシステムと併せて、一元化すればいいのか、それを別個で立てればいいのか、これについてはまた引き続き研究は必要ですが、研究を進めて具現化を図っていきたいと考えるところでございます。"@ja.
+}

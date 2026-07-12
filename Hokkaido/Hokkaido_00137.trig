@@ -1,0 +1,815 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00137> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "松前町の人口減少"@ja.
+kg:id_1 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "現状における国勢調査人口の減少"@ja.
+kg:id_2 rdf:type cls:c_705.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "2045年には人口が2,000人を切る"@ja.
+kg:id_3 rdf:type cls:c_705.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "スマート・シュリンクの考えを取り入れる"@ja.
+kg:id_4 rdf:type cls:c_4748.
+cls:c_4748 rdfs:label "地域運営"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "公共事業や公共サービスの供給を効率化する"@ja.
+kg:id_5 rdf:type cls:c_16165.
+cls:c_16165 rdfs:label "公共サービス効率化"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "脱炭素及びエネルギー政策への対応遅れ"@ja.
+kg:id_6 rdf:type cls:c_16166.
+cls:c_16166 rdfs:label "政策対応遅れ"@ja.
+kg:id_7 rdfs:label "更なる人口減少が進むことが懸念される"@ja.
+kg:id_7 rdf:type cls:c_705.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "企業連携による官民パートナーシップを構築する"@ja.
+kg:id_8 rdf:type cls:c_2967.
+cls:c_2967 rdfs:label "官民連携"@ja.
+kg:id_6 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "これからの社会環境の課題"@ja.
+kg:id_9 rdf:type cls:c_10402.
+cls:c_10402 rdfs:label "社会課題"@ja.
+kg:id_10 rdfs:label "人口減少社会"@ja.
+kg:id_10 rdf:type cls:c_705.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "気候変動影響"@ja.
+kg:id_11 rdf:type cls:c_618.
+cls:c_618 rdfs:label "気候変動"@ja.
+kg:id_9 prop:cause kg:id_11.
+kg:id_12 rdfs:label "複雑化する環境・経済・社会の課題"@ja.
+kg:id_12 rdf:type cls:c_10402.
+kg:id_13 rdfs:label "複数の課題の統合的な解決"@ja.
+kg:id_13 rdf:type cls:c_16167.
+cls:c_16167 rdfs:label "統合解決"@ja.
+kg:id_12 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "松前町の新たなチャレンジ機会"@ja.
+kg:id_14 rdf:type cls:c_14730.
+cls:c_14730 rdfs:label "地域機会"@ja.
+kg:id_15 rdfs:label "再生可能エネルギーやIT等の技術革新"@ja.
+kg:id_15 rdf:type cls:c_16168.
+cls:c_16168 rdfs:label "技術革新"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "都市と地方の関係の変化"@ja.
+kg:id_16 rdf:type cls:c_16169.
+cls:c_16169 rdfs:label "地域関係変化"@ja.
+kg:id_14 prop:cause kg:id_16.
+kg:id_17 rdfs:label "松前町人口の減少"@ja.
+kg:id_17 rdf:type cls:c_705.
+kg:id_18 rdfs:label "2000年の11,108人から2020年に6,260人へ44％減少"@ja.
+kg:id_18 rdf:type cls:c_705.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "第一次産業就業者の減少"@ja.
+kg:id_19 rdf:type cls:c_1716.
+cls:c_1716 rdfs:label "就業者減少"@ja.
+kg:id_20 rdfs:label "56％減となっており減少幅が最も大きい"@ja.
+kg:id_20 rdf:type cls:c_1716.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "地域の稼ぐ力が小さい状態"@ja.
+kg:id_21 rdf:type cls:c_6895.
+cls:c_6895 rdfs:label "地域経済力不足"@ja.
+kg:id_22 rdfs:label "財政移転は109億円が流入しておりその規模はGRPの約73％に相当する"@ja.
+kg:id_22 rdf:type cls:c_16170.
+cls:c_16170 rdfs:label "財政移転依存"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "地域の企業の生産拡大に貢献出来ていない状態"@ja.
+kg:id_23 rdf:type cls:c_16171.
+cls:c_16171 rdfs:label "生産拡大不足"@ja.
+kg:id_24 rdfs:label "投資、移入出で174億円が流出している"@ja.
+kg:id_24 rdf:type cls:c_10683.
+cls:c_10683 rdfs:label "資金流出"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "地域経済を好循環に向かわせること"@ja.
+kg:id_25 rdf:type cls:c_16172.
+cls:c_16172 rdfs:label "地域経済循環"@ja.
+kg:id_26 rdfs:label "買い物・観光等流入する消費額を増やす"@ja.
+kg:id_26 rdf:type cls:c_7302.
+cls:c_7302 rdfs:label "消費拡大"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "エネルギー代金等の経済流出を防ぐ"@ja.
+kg:id_27 rdf:type cls:c_12858.
+cls:c_12858 rdfs:label "流出抑制"@ja.
+kg:id_25 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "域外への所得流出"@ja.
+kg:id_28 rdf:type cls:c_16173.
+cls:c_16173 rdfs:label "所得流出"@ja.
+kg:id_29 rdfs:label "卸売業"@ja.
+kg:id_29 rdf:type cls:c_2244.
+cls:c_2244 rdfs:label "産業"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "建設業"@ja.
+kg:id_30 rdf:type cls:c_2244.
+kg:id_28 prop:cause kg:id_30.
+kg:id_31 rdfs:label "保健衛生・社会事業"@ja.
+kg:id_31 rdf:type cls:c_2244.
+kg:id_28 prop:cause kg:id_31.
+kg:id_32 rdfs:label "域外への所得獲得"@ja.
+kg:id_32 rdf:type cls:c_16174.
+cls:c_16174 rdfs:label "所得獲得"@ja.
+kg:id_33 rdfs:label "水産業"@ja.
+kg:id_33 rdf:type cls:c_16175.
+cls:c_16175 rdfs:label "一次産業"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "公務"@ja.
+kg:id_34 rdf:type cls:c_16176.
+cls:c_16176 rdfs:label "公的部門"@ja.
+kg:id_32 prop:cause kg:id_34.
+kg:id_35 rdfs:label "林業"@ja.
+kg:id_35 rdf:type cls:c_16175.
+kg:id_32 prop:cause kg:id_35.
+kg:id_36 rdfs:label "生産誘発額を高めること"@ja.
+kg:id_36 rdf:type cls:c_16177.
+cls:c_16177 rdfs:label "生産誘発"@ja.
+kg:id_37 rdfs:label "食品に投資する"@ja.
+kg:id_37 rdf:type cls:c_14815.
+cls:c_14815 rdfs:label "投資"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "宿泊・飲食サービスに投資する"@ja.
+kg:id_38 rdf:type cls:c_14815.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "松前町の将来人口減少"@ja.
+kg:id_39 rdf:type cls:c_705.
+kg:id_40 rdfs:label "2045年の人口は1,992人になると推定されている"@ja.
+kg:id_40 rdf:type cls:c_705.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "2055年で合計特殊出生率を2.10へと徐々に上昇させる"@ja.
+kg:id_41 rdf:type cls:c_16178.
+cls:c_16178 rdfs:label "出生率向上"@ja.
+kg:id_39 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "再エネ事業等の重点プロジェクトを推進する"@ja.
+kg:id_42 rdf:type cls:c_16179.
+cls:c_16179 rdfs:label "重点事業推進"@ja.
+kg:id_39 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "将来目標人口と現状のギャップ"@ja.
+kg:id_43 rdf:type cls:c_16180.
+cls:c_16180 rdfs:label "人口目標乖離"@ja.
+kg:id_44 rdfs:label "2020年から2045年までの25年間で835人のギャップを埋める必要がある"@ja.
+kg:id_44 rdf:type cls:c_16181.
+cls:c_16181 rdfs:label "人口確保"@ja.
+kg:id_43 prop:effect kg:id_44.
+kg:id_45 rdfs:label "確保が必要な収入は約35億円となる"@ja.
+kg:id_45 rdf:type cls:c_16182.
+cls:c_16182 rdfs:label "所得確保"@ja.
+kg:id_43 prop:effect kg:id_45.
+kg:id_46 rdfs:label "約1億4千万円の収入が必要となる"@ja.
+kg:id_46 rdf:type cls:c_16182.
+kg:id_43 prop:effect kg:id_46.
+kg:id_47 rdfs:label "人口減少の進行"@ja.
+kg:id_47 rdf:type cls:c_705.
+kg:id_48 rdfs:label "2045年には2,000人を切る人口になってしまう"@ja.
+kg:id_48 rdf:type cls:c_705.
+kg:id_47 prop:effect kg:id_48.
+kg:id_49 rdfs:label "毎年約1億4千万円の稼ぎを生み出していく"@ja.
+kg:id_49 rdf:type cls:c_16183.
+cls:c_16183 rdfs:label "所得創出"@ja.
+kg:id_47 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "外に出ているお金を中にとどめ地域の事業にしていく"@ja.
+kg:id_50 rdf:type cls:c_16184.
+cls:c_16184 rdfs:label "地域内循環"@ja.
+kg:id_47 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "第一次産業の就業人口の減少"@ja.
+kg:id_51 rdf:type cls:c_1716.
+kg:id_52 rdfs:label "喫緊の課題である"@ja.
+kg:id_52 rdf:type cls:c_4754.
+cls:c_4754 rdfs:label "重要課題"@ja.
+kg:id_51 prop:effect kg:id_52.
+kg:id_53 rdfs:label "地域の稼ぐ力の不足"@ja.
+kg:id_53 rdf:type cls:c_6895.
+kg:id_54 rdfs:label "水産業に力を入れていく"@ja.
+kg:id_54 rdf:type cls:c_2874.
+cls:c_2874 rdfs:label "一次産業強化"@ja.
+kg:id_53 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "宿泊・飲食業に力を入れていく"@ja.
+kg:id_55 rdf:type cls:c_16185.
+cls:c_16185 rdfs:label "観光業強化"@ja.
+kg:id_53 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "畜産業についても強化していく"@ja.
+kg:id_56 rdf:type cls:c_2874.
+kg:id_53 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "財政移転に頼っている状況"@ja.
+kg:id_57 rdf:type cls:c_16170.
+kg:id_58 rdfs:label "公的な力を生かしながら地域の稼ぐ力を向上させる"@ja.
+kg:id_58 rdf:type cls:c_16186.
+cls:c_16186 rdfs:label "地域経済力向上"@ja.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "地域外の流出を抑える"@ja.
+kg:id_59 rdf:type cls:c_12858.
+kg:id_57 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "地域外へのエネルギー代金流出"@ja.
+kg:id_60 rdf:type cls:c_10682.
+cls:c_10682 rdfs:label "エネルギー流出"@ja.
+kg:id_61 rdfs:label "再生可能エネルギーポテンシャルを生かして止める"@ja.
+kg:id_61 rdf:type cls:c_997.
+cls:c_997 rdfs:label "再エネ活用"@ja.
+kg:id_60 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "地域の産業創出不足"@ja.
+kg:id_62 rdf:type cls:c_16187.
+cls:c_16187 rdfs:label "産業創出不足"@ja.
+kg:id_63 rdfs:label "再生可能エネルギーを地域資源として新たな産業を誘発していく"@ja.
+kg:id_63 rdf:type cls:c_1107.
+cls:c_1107 rdfs:label "産業創出"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "住み続けるための課題"@ja.
+kg:id_64 rdf:type cls:c_16188.
+cls:c_16188 rdfs:label "定住課題"@ja.
+kg:id_65 rdfs:label "年間通じての稼ぎを創出していく"@ja.
+kg:id_65 rdf:type cls:c_16183.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "人口減少"@ja.
+kg:id_66 rdf:type cls:c_705.
+kg:id_67 rdfs:label "酒場、銀行、学習塾、一般病院、通所・短期入所介護事業の立地が困難となる可能性が高まる"@ja.
+kg:id_67 rdf:type cls:c_16189.
+cls:c_16189 rdfs:label "生活サービス縮小"@ja.
+kg:id_66 prop:effect kg:id_67.
+kg:id_68 rdfs:label "これまでの延長線上とは異なる手法でサービス提供を行う"@ja.
+kg:id_68 rdf:type cls:c_16190.
+cls:c_16190 rdfs:label "サービス転換"@ja.
+kg:id_66 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "人口減少を少しでも食い止め地域の稼ぐ力を強化していくこと"@ja.
+kg:id_69 rdf:type cls:c_705.
+kg:id_70 rdfs:label "所得等の町外への流出を減らし町内循環させる"@ja.
+kg:id_70 rdf:type cls:c_16184.
+kg:id_69 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "地域のGRP及び町外からの所得を維持・増やす"@ja.
+kg:id_71 rdf:type cls:c_16191.
+cls:c_16191 rdfs:label "所得維持拡大"@ja.
+kg:id_69 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "観光入込客の集中"@ja.
+kg:id_72 rdf:type cls:c_16192.
+cls:c_16192 rdfs:label "観光集中"@ja.
+kg:id_73 rdfs:label "入込客の4割が5月のさくらまつり期間に集中"@ja.
+kg:id_73 rdf:type cls:c_16192.
+kg:id_72 prop:cause kg:id_73.
+kg:id_74 rdfs:label "観光産業の課題"@ja.
+kg:id_74 rdf:type cls:c_4608.
+cls:c_4608 rdfs:label "観光課題"@ja.
+kg:id_75 rdfs:label "国内外観光客のターゲットが共有されておらず情報発信・顧客開拓等が単発・散発となっている"@ja.
+kg:id_75 rdf:type cls:c_824.
+cls:c_824 rdfs:label "連携不足"@ja.
+kg:id_74 prop:cause kg:id_75.
+kg:id_76 rdfs:label "推進人材が不足している"@ja.
+kg:id_76 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_74 prop:cause kg:id_76.
+kg:id_77 rdfs:label "マーケティング強化によるデータに基づいた観光産業拡大への支援"@ja.
+kg:id_77 rdf:type cls:c_8387.
+cls:c_8387 rdfs:label "観光支援"@ja.
+kg:id_74 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "既存の観光事業者のスキルアップ"@ja.
+kg:id_78 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_74 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "新たな人材の誘致による推進人材の確保"@ja.
+kg:id_79 rdf:type cls:c_829.
+cls:c_829 rdfs:label "人材確保"@ja.
+kg:id_74 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "国内外観光客誘客体制強化と多言語対応強化"@ja.
+kg:id_80 rdf:type cls:c_10229.
+cls:c_10229 rdfs:label "誘客強化"@ja.
+kg:id_74 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "漁業の課題"@ja.
+kg:id_81 rdf:type cls:c_6905.
+cls:c_6905 rdfs:label "漁業課題"@ja.
+kg:id_82 rdfs:label "気候変動等の影響を受け漁獲量は大きく減少し変動する現象が生じている"@ja.
+kg:id_82 rdf:type cls:c_618.
+kg:id_81 prop:cause kg:id_82.
+kg:id_83 rdfs:label "洋上風力発電の建設が予定される中で洋上風力発電と既存の漁業の共存が求められる"@ja.
+kg:id_83 rdf:type cls:c_16193.
+cls:c_16193 rdfs:label "産業共存"@ja.
+kg:id_81 prop:cause kg:id_83.
+kg:id_84 rdfs:label "関係者による勉強会の開催"@ja.
+kg:id_84 rdf:type cls:c_1870.
+cls:c_1870 rdfs:label "協議"@ja.
+kg:id_81 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "大学等と連携した既存事業のスマート化及び資源管理"@ja.
+kg:id_85 rdf:type cls:c_1973.
+cls:c_1973 rdfs:label "スマート化"@ja.
+kg:id_81 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "複業モデルを含む収入モデルの確立"@ja.
+kg:id_86 rdf:type cls:c_16194.
+cls:c_16194 rdfs:label "収入安定化"@ja.
+kg:id_81 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "松前町内でしか味わえない食の観光商品の開発"@ja.
+kg:id_87 rdf:type cls:c_11052.
+cls:c_11052 rdfs:label "観光商品開発"@ja.
+kg:id_81 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "松前町産魚の流通経路整備"@ja.
+kg:id_88 rdf:type cls:c_11323.
+cls:c_11323 rdfs:label "流通整備"@ja.
+kg:id_81 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "畜産業の課題"@ja.
+kg:id_89 rdf:type cls:c_10219.
+cls:c_10219 rdfs:label "畜産課題"@ja.
+kg:id_90 rdfs:label "高齢化に伴う離農"@ja.
+kg:id_90 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_89 prop:cause kg:id_90.
+kg:id_91 rdfs:label "畜産の就労環境が厳しいこと"@ja.
+kg:id_91 rdf:type cls:c_7178.
+cls:c_7178 rdfs:label "就労環境"@ja.
+kg:id_89 prop:cause kg:id_91.
+kg:id_92 rdfs:label "経営体の減少"@ja.
+kg:id_92 rdf:type cls:c_4798.
+cls:c_4798 rdfs:label "事業者減少"@ja.
+kg:id_89 prop:effect kg:id_92.
+kg:id_93 rdfs:label "飼養頭数の減少"@ja.
+kg:id_93 rdf:type cls:c_1353.
+cls:c_1353 rdfs:label "生産減少"@ja.
+kg:id_89 prop:effect kg:id_93.
+kg:id_94 rdfs:label "新規就農者拡大に向けた取組"@ja.
+kg:id_94 rdf:type cls:c_1269.
+cls:c_1269 rdfs:label "担い手確保"@ja.
+kg:id_89 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "勉強会の立ち上げとスマート化等新規プロジェクト組成"@ja.
+kg:id_95 rdf:type cls:c_1973.
+kg:id_89 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "肥育牛の生産開始に向けた体制構築"@ja.
+kg:id_96 rdf:type cls:c_16195.
+cls:c_16195 rdfs:label "生産体制整備"@ja.
+kg:id_89 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "肥育牛を地域の稼ぎとしていくための流通販路構築"@ja.
+kg:id_97 rdf:type cls:c_11323.
+kg:id_89 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "地域経済循環の課題"@ja.
+kg:id_98 rdf:type cls:c_16196.
+cls:c_16196 rdfs:label "地域経済循環課題"@ja.
+kg:id_99 rdfs:label "地域外への経済流出が大きく地域収支はマイナス174億円"@ja.
+kg:id_99 rdf:type cls:c_10683.
+kg:id_98 prop:cause kg:id_99.
+kg:id_100 rdfs:label "キャッシュレス化が普及しない課題"@ja.
+kg:id_100 rdf:type cls:c_16197.
+cls:c_16197 rdfs:label "決済課題"@ja.
+kg:id_101 rdfs:label "手数料の負担が足かせとなっている"@ja.
+kg:id_101 rdf:type cls:c_813.
+cls:c_813 rdfs:label "費用負担"@ja.
+kg:id_100 prop:cause kg:id_101.
+kg:id_102 rdfs:label "空家対策の課題"@ja.
+kg:id_102 rdf:type cls:c_16198.
+cls:c_16198 rdfs:label "空家課題"@ja.
+kg:id_103 rdfs:label "利活用の促進を図る方策が確立していない"@ja.
+kg:id_103 rdf:type cls:c_16199.
+cls:c_16199 rdfs:label "利活用不足"@ja.
+kg:id_102 prop:cause kg:id_103.
+kg:id_104 rdfs:label "特定空家相当の老朽危険空家は増加傾向にある"@ja.
+kg:id_104 rdf:type cls:c_12189.
+cls:c_12189 rdfs:label "危険空家増加"@ja.
+kg:id_102 prop:effect kg:id_104.
+kg:id_105 rdfs:label "不動産情報等を一元的に扱うサービスがない"@ja.
+kg:id_105 rdf:type cls:c_16200.
+cls:c_16200 rdfs:label "情報基盤不足"@ja.
+kg:id_102 prop:cause kg:id_105.
+kg:id_106 rdfs:label "空家等に関する相談体制が構築されていない"@ja.
+kg:id_106 rdf:type cls:c_7864.
+cls:c_7864 rdfs:label "相談体制不足"@ja.
+kg:id_102 prop:cause kg:id_106.
+kg:id_107 rdfs:label "高齢化・介護社会においても終身自宅居住希望者が多い"@ja.
+kg:id_107 rdf:type cls:c_613.
+kg:id_64 prop:cause kg:id_107.
+kg:id_108 rdfs:label "地域にお金・人が巡る住み続けたいまち"@ja.
+kg:id_108 rdf:type cls:c_16201.
+cls:c_16201 rdfs:label "定住まちづくり"@ja.
+kg:id_109 rdfs:label "松前マネープロジェクト協議会立ち上げ"@ja.
+kg:id_109 rdf:type cls:c_3315.
+cls:c_3315 rdfs:label "協議体設置"@ja.
+kg:id_108 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "事業継承支援"@ja.
+kg:id_110 rdf:type cls:c_16202.
+cls:c_16202 rdfs:label "事業承継支援"@ja.
+kg:id_108 prop:contermeasure kg:id_110.
+kg:id_111 rdfs:label "Uターン者募集・受け入れ"@ja.
+kg:id_111 rdf:type cls:c_16203.
+cls:c_16203 rdfs:label "人材受入"@ja.
+kg:id_108 prop:contermeasure kg:id_111.
+kg:id_112 rdfs:label "移住者募集・受け入れ"@ja.
+kg:id_112 rdf:type cls:c_16203.
+kg:id_108 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "起業家募集・受け入れ"@ja.
+kg:id_113 rdf:type cls:c_16203.
+kg:id_108 prop:contermeasure kg:id_113.
+kg:id_114 rdfs:label "持続可能な住宅整備に向けた官民連携体制立ち上げ"@ja.
+kg:id_114 rdf:type cls:c_2967.
+kg:id_108 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "エネルギーコストの町外流出"@ja.
+kg:id_115 rdf:type cls:c_10682.
+kg:id_116 rdfs:label "約15億円が町外に流出"@ja.
+kg:id_116 rdf:type cls:c_10683.
+kg:id_115 prop:cause kg:id_116.
+kg:id_117 rdfs:label "再エネ電力の町外流出"@ja.
+kg:id_117 rdf:type cls:c_16204.
+cls:c_16204 rdfs:label "再エネ流出"@ja.
+kg:id_118 rdfs:label "大型風力発電事業の電力は現状はFIT制度で町外へ流出"@ja.
+kg:id_118 rdf:type cls:c_16205.
+cls:c_16205 rdfs:label "制度流出"@ja.
+kg:id_117 prop:cause kg:id_118.
+kg:id_119 rdfs:label "今後予定される風力発電量は全て余剰電力となりFIT等で町外への流出が高い"@ja.
+kg:id_119 rdf:type cls:c_16206.
+cls:c_16206 rdfs:label "余剰電力流出"@ja.
+kg:id_117 prop:cause kg:id_119.
+kg:id_120 rdfs:label "再エネ地発地消転換"@ja.
+kg:id_120 rdf:type cls:c_16207.
+cls:c_16207 rdfs:label "再エネ転換"@ja.
+kg:id_121 rdfs:label "環境省の脱炭素先行地域の選定を受ける"@ja.
+kg:id_121 rdf:type cls:c_15058.
+cls:c_15058 rdfs:label "地域選定"@ja.
+kg:id_120 prop:contermeasure kg:id_121.
+kg:id_122 rdfs:label "公共施設の脱炭素化"@ja.
+kg:id_122 rdf:type cls:c_1395.
+cls:c_1395 rdfs:label "脱炭素化"@ja.
+kg:id_120 prop:contermeasure kg:id_122.
+kg:id_123 rdfs:label "公用車のEV化"@ja.
+kg:id_123 rdf:type cls:c_16208.
+cls:c_16208 rdfs:label "電動化"@ja.
+kg:id_120 prop:contermeasure kg:id_123.
+kg:id_124 rdfs:label "充電インフラ整備"@ja.
+kg:id_124 rdf:type cls:c_4366.
+cls:c_4366 rdfs:label "インフラ整備"@ja.
+kg:id_120 prop:contermeasure kg:id_124.
+kg:id_125 rdfs:label "洋上風力発電の促進"@ja.
+kg:id_125 rdf:type cls:c_999.
+cls:c_999 rdfs:label "風力発電"@ja.
+kg:id_120 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "地域エネルギー会社等の立ち上げ"@ja.
+kg:id_126 rdf:type cls:c_16209.
+cls:c_16209 rdfs:label "地域会社設立"@ja.
+kg:id_120 prop:contermeasure kg:id_126.
+kg:id_127 rdfs:label "RE100企業誘致"@ja.
+kg:id_127 rdf:type cls:c_1392.
+cls:c_1392 rdfs:label "企業誘致"@ja.
+kg:id_120 prop:contermeasure kg:id_127.
+kg:id_128 rdfs:label "再エネ関連事業の立ち上げ"@ja.
+kg:id_128 rdf:type cls:c_11053.
+cls:c_11053 rdfs:label "事業創出"@ja.
+kg:id_120 prop:contermeasure kg:id_128.
+kg:id_129 rdfs:label "人材育成"@ja.
+kg:id_129 rdf:type cls:c_703.
+kg:id_120 prop:contermeasure kg:id_129.
+kg:id_130 rdfs:label "Uターン促進"@ja.
+kg:id_130 rdf:type cls:c_16210.
+cls:c_16210 rdfs:label "人材回帰"@ja.
+kg:id_120 prop:contermeasure kg:id_130.
+kg:id_131 rdfs:label "町民と一緒にできる再エネ・脱炭素化推進活動の展開"@ja.
+kg:id_131 rdf:type cls:c_8980.
+cls:c_8980 rdfs:label "住民参加"@ja.
+kg:id_120 prop:contermeasure kg:id_131.
+kg:id_132 rdfs:label "リスキリング教育による複業、新規事業等支援"@ja.
+kg:id_132 rdf:type cls:c_16211.
+cls:c_16211 rdfs:label "リスキリング"@ja.
+kg:id_120 prop:contermeasure kg:id_132.
+kg:id_133 rdfs:label "町民が稼げる仕組みの検討"@ja.
+kg:id_133 rdf:type cls:c_16212.
+cls:c_16212 rdfs:label "所得機会創出"@ja.
+kg:id_120 prop:contermeasure kg:id_133.
+kg:id_134 rdfs:label "人口減少を食い止める可能性"@ja.
+kg:id_134 rdf:type cls:c_16213.
+cls:c_16213 rdfs:label "人口維持可能性"@ja.
+kg:id_135 rdfs:label "仕事が確保できれば"@ja.
+kg:id_135 rdf:type cls:c_16214.
+cls:c_16214 rdfs:label "仕事確保"@ja.
+kg:id_134 prop:cause kg:id_135.
+kg:id_136 rdfs:label "Uターン・Iターン人材確保の課題"@ja.
+kg:id_136 rdf:type cls:c_7771.
+cls:c_7771 rdfs:label "人材確保課題"@ja.
+kg:id_137 rdfs:label "町内出身の子どもたちの関係を継続していく仕掛けが求められる"@ja.
+kg:id_137 rdf:type cls:c_16215.
+cls:c_16215 rdfs:label "関係維持"@ja.
+kg:id_136 prop:cause kg:id_137.
+kg:id_138 rdfs:label "移住・定住者が増えた場合住環境の確保は課題となる可能性がある"@ja.
+kg:id_138 rdf:type cls:c_16216.
+cls:c_16216 rdfs:label "住環境確保"@ja.
+kg:id_136 prop:cause kg:id_138.
+kg:id_139 rdfs:label "人材の獲得、定着に向けては受け入れ体制も重要である"@ja.
+kg:id_139 rdf:type cls:c_3132.
+cls:c_3132 rdfs:label "受入体制"@ja.
+kg:id_136 prop:cause kg:id_139.
+kg:id_140 rdfs:label "Uターン・Iターン戦略による次代担い手確保"@ja.
+kg:id_140 rdf:type cls:c_1269.
+kg:id_141 rdfs:label "子ども向けのITスキル、地域資本で稼ぐを学ぶプログラムの創設"@ja.
+kg:id_141 rdf:type cls:c_703.
+kg:id_140 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "地域人材のリスキリング支援"@ja.
+kg:id_142 rdf:type cls:c_16211.
+kg:id_140 prop:contermeasure kg:id_142.
+kg:id_143 rdfs:label "戦略的な官民連携による移住者募集、育成支援"@ja.
+kg:id_143 rdf:type cls:c_1250.
+cls:c_1250 rdfs:label "人材募集"@ja.
+kg:id_140 prop:contermeasure kg:id_143.
+kg:id_144 rdfs:label "専門人材の確保に向けた技術、資格取得支援、町の担い手教育"@ja.
+kg:id_144 rdf:type cls:c_8555.
+cls:c_8555 rdfs:label "専門人材確保"@ja.
+kg:id_140 prop:contermeasure kg:id_144.
+kg:id_145 rdfs:label "子育て環境支援策のPR"@ja.
+kg:id_145 rdf:type cls:c_1936.
+cls:c_1936 rdfs:label "子育て支援"@ja.
+kg:id_140 prop:contermeasure kg:id_145.
+kg:id_146 rdfs:label "子育て環境支援策の拡充"@ja.
+kg:id_146 rdf:type cls:c_1936.
+kg:id_140 prop:contermeasure kg:id_146.
+kg:id_147 rdfs:label "本ビジョンの推進"@ja.
+kg:id_147 rdf:type cls:c_3616.
+cls:c_3616 rdfs:label "計画推進"@ja.
+kg:id_148 rdfs:label "松前スマート庁内会議を立ち上げる"@ja.
+kg:id_148 rdf:type cls:c_16217.
+cls:c_16217 rdfs:label "庁内会議"@ja.
+kg:id_147 prop:contermeasure kg:id_148.
+kg:id_149 rdfs:label "松前SX推進共創会議を立ち上げる"@ja.
+kg:id_149 rdf:type cls:c_16218.
+cls:c_16218 rdfs:label "共創会議"@ja.
+kg:id_147 prop:contermeasure kg:id_149.
+kg:st_1 rdfs:label "松前町長石山英雄"@ja.
+kg:st_1 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "人口減少に強い危機感を持つ"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "人口2,000人割れを危惧する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "人口減少下でも生活満足度の高いまちを目指すべきとする"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "地域が積極的に供給効率化を判断する必要がある"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "小さな自治体ほど影響が大きいと懸念する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "風力発電の強みを生かし官民で推進したい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "松前町"@ja.
+kg:st_2 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_7 prop:content "生産年齢人口を確保するよう政策誘導する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "減少する人口の割合を減らす方針を示す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "現状における国勢調査人口の減少等を考えると、その信ぴょう性は高く、とても危惧しております。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "2045年には人口が2,000人を切ると予測されました。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "人口は減っていくものの、そこに持続可能なまちづくりへの変革と力をためる「スマート・シュリンク（賢く縮む）」の考えを取り入れ"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "地域が積極的に公共事業や公共サービスの供給を効率化する英断も必要で"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "国が進める脱炭素及びエネルギー政策は乗り遅れるほど、そして小さな自治体ほど影響の波紋は大きく、更なる人口減少が進むことが懸念されます。"@ja.
+<< kg:id_6 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "その強みを企業連携による官民パートナーシップを構築することで、大胆かつ確実に推し進め"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "これからの社会環境は、人口減少社会、気候変動影響等、これまでの延長線では解決が困難である状況が想定される。"@ja.
+<< kg:id_9 prop:cause kg:id_11 >>
+    prop:text-txt_contents "これからの社会環境は、人口減少社会、気候変動影響等、これまでの延長線では解決が困難である状況が想定される。"@ja.
+<< kg:id_12 prop:contermeasure kg:id_13 >>
+    prop:text-txt_contents "複雑化する環境・経済・社会の課題を踏まえ、ＳＤＧｓでも謳われているように複数の課題の統合的な解決が求められている。"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "再生可能エネルギーやIT等の技術革新により、社会全体が新たなライフスタイルや事業スタイルに転換しており"@ja.
+<< kg:id_14 prop:cause kg:id_16 >>
+    prop:text-txt_contents "都市と地方の関係も変わりつつあることから、松前町にとって新たなチャレンジが可能な環境は、チャンスとしても捉えることが出来る。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:text-txt_contents "2000年からの松前町の国勢調査人口の推移を見ると、11,108人いた人口が、2020年には6,260人と、44％減少している。"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:text-txt_contents "特に、第一次産業は、56％減となっており、その減少幅が最も大きい。"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "財政移転は109億円が流入しており、その規模はGRPの約73％に相当することから、地域の稼ぐ力が小さい状態である。"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:text-txt_contents "投資、移入出で174億円が流出（⑩＋⑪）しており、地域の企業の生産拡大に貢献出来ていない。"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "地域経済を好循環に向かわせるためには、買い物・観光等流入する消費額を増やすとともに"@ja.
+<< kg:id_25 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "エネルギー代金等の経済流出を防ぎ、地域の稼ぐ力を高めていく必要がある。"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:text-txt_contents "域外へ流出している産業については、その流出額を抑える取組が必要である。"@ja.
+<< kg:id_28 prop:cause kg:id_30 >>
+    prop:text-txt_contents "域外へ流出している産業については、その流出額を抑える取組が必要である。"@ja.
+<< kg:id_28 prop:cause kg:id_31 >>
+    prop:text-txt_contents "域外へ流出している産業については、その流出額を抑える取組が必要である。"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:text-txt_contents "域外から所得を獲得している産業は水産業、公務、林業等である。"@ja.
+<< kg:id_32 prop:cause kg:id_34 >>
+    prop:text-txt_contents "域外から所得を獲得している産業は水産業、公務、林業等である。"@ja.
+<< kg:id_32 prop:cause kg:id_35 >>
+    prop:text-txt_contents "域外から所得を獲得している産業は水産業、公務、林業等である。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:text-txt_contents "食品、宿泊・飲食サービスに投資することで、域内の他産業への波及効果が高いことを示している。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:text-txt_contents "食品、宿泊・飲食サービスに投資することで、域内の他産業への波及効果が高いことを示している。"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:text-txt_contents "現状の数値がそのまま続くと、2045年の人口は,1,992人になると推定されている"@ja.
+<< kg:id_39 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "松前町では2055年で合計特殊出生率を2.10へと徐々に上昇させると仮定し、さらに生産年齢人口を確保するよう政策誘導し"@ja.
+<< kg:id_39 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "本ビジョンにより、再エネ事業等の重点プロジェクトを推進し、減少する人口の割合を減らし"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:text-txt_contents "2020年から2045年までの25年間で、835人のギャップを埋める必要があり"@ja.
+<< kg:id_43 prop:effect kg:id_45 >>
+    prop:text-txt_contents "そのために確保が必要な収入は約35億円となる。"@ja.
+<< kg:id_43 prop:effect kg:id_46 >>
+    prop:text-txt_contents "これを年単位で割ると、約1億4千万円の収入が必要となる。"@ja.
+<< kg:id_47 prop:effect kg:id_48 >>
+    prop:text-txt_contents "現状のままが続くと、2045年には、2,000人を切る人口になってしまう。"@ja.
+<< kg:id_47 prop:contermeasure kg:id_49 >>
+    prop:text-txt_contents "将来目標を実現していくためには、毎年約1億4千万円の稼ぎを生み出していく"@ja.
+<< kg:id_47 prop:contermeasure kg:id_50 >>
+    prop:text-txt_contents "外に出ているお金を中にとどめ、地域の事業にしていく必要がある。"@ja.
+<< kg:id_51 prop:effect kg:id_52 >>
+    prop:text-txt_contents "第一次産業の就業人口の減少は顕著であり、喫緊の課題である。"@ja.
+<< kg:id_53 prop:contermeasure kg:id_54 >>
+    prop:text-txt_contents "域外からの所得を稼いでいる水産業及び消費の域内流入を起因している宿泊・飲食業について、力を入れていく必要がある。"@ja.
+<< kg:id_53 prop:contermeasure kg:id_55 >>
+    prop:text-txt_contents "域外からの所得を稼いでいる水産業及び消費の域内流入を起因している宿泊・飲食業について、力を入れていく必要がある。"@ja.
+<< kg:id_53 prop:contermeasure kg:id_56 >>
+    prop:text-txt_contents "現在の移住者の受け皿となっている畜産業についても強化していく必要がある。"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:text-txt_contents "公的な力を生かしながら、地域の稼ぐ力を向上させる"@ja.
+<< kg:id_57 prop:contermeasure kg:id_59 >>
+    prop:text-txt_contents "地域外の流出を抑える必要がある。"@ja.
+<< kg:id_60 prop:contermeasure kg:id_61 >>
+    prop:text-txt_contents "地域外流出のうちのひとつである地域外へのエネルギー代金流出を止める必要がある。"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:text-txt_contents "再生可能エネルギーを地域資源として、新たな産業を誘発していくことが求められる。"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:text-txt_contents "住み続けるためには、年間通じての稼ぎを創出していく必要がある。"@ja.
+<< kg:id_66 prop:effect kg:id_67 >>
+    prop:text-txt_contents "人口が約5,000人以下となると、酒場、銀行、学習塾、一般病院、通所・短期入所介護事業の立地が困難となる可能性が高まり"@ja.
+<< kg:id_66 prop:contermeasure kg:id_68 >>
+    prop:text-txt_contents "これらのサービス提供にあたって、これまでの延長線上とは異なる手法での提供が必要となる。"@ja.
+<< kg:id_69 prop:contermeasure kg:id_70 >>
+    prop:text-txt_contents "①所得等の町外への流出を減らし、町内循環させる"@ja.
+<< kg:id_69 prop:contermeasure kg:id_71 >>
+    prop:text-txt_contents "②地域のGRP及び町外からの所得を維持・増やす"@ja.
+<< kg:id_72 prop:cause kg:id_73 >>
+    prop:text-txt_contents "入込客の4割が5月のさくらまつり期間に集中。"@ja.
+<< kg:id_74 prop:cause kg:id_75 >>
+    prop:text-txt_contents "国内外観光客のターゲットが共有されておらず、情報発信・顧客開拓等が単発・散発となっている。"@ja.
+<< kg:id_74 prop:cause kg:id_76 >>
+    prop:text-txt_contents "その推進を一事業者（民間のみ）で負担するのは難しく、推進人材が不足している。"@ja.
+<< kg:id_74 prop:contermeasure kg:id_77 >>
+    prop:text-txt_contents "マーケティング強化によるデータに基づいた観光産業拡大への支援"@ja.
+<< kg:id_74 prop:contermeasure kg:id_78 >>
+    prop:text-txt_contents "既存の観光事業者のスキルアップ、新たな人材の誘致等による推進人材の確保"@ja.
+<< kg:id_74 prop:contermeasure kg:id_79 >>
+    prop:text-txt_contents "既存の観光事業者のスキルアップ、新たな人材の誘致等による推進人材の確保"@ja.
+<< kg:id_74 prop:contermeasure kg:id_80 >>
+    prop:text-txt_contents "国内外観光客（特に伸びしろの大きい東アジアからのインバウンド）誘客体制強化、多言語対応強化"@ja.
+<< kg:id_81 prop:cause kg:id_82 >>
+    prop:text-txt_contents "気候変動等の影響を受け、漁獲量は大きく減少、また変動する現象が生じており"@ja.
+<< kg:id_81 prop:cause kg:id_83 >>
+    prop:text-txt_contents "洋上風力発電の建設が予定される中で、洋上風力発電と既存の漁業の共存が求められる。"@ja.
+<< kg:id_81 prop:contermeasure kg:id_84 >>
+    prop:text-txt_contents "関係者による勉強会の開催"@ja.
+<< kg:id_81 prop:contermeasure kg:id_85 >>
+    prop:text-txt_contents "大学等と連携した既存事業のスマート化及び資源管理"@ja.
+<< kg:id_81 prop:contermeasure kg:id_86 >>
+    prop:text-txt_contents "安定的な収入が得られるよう、複業モデルを含む収入モデル（周年）の確立"@ja.
+<< kg:id_81 prop:contermeasure kg:id_87 >>
+    prop:text-txt_contents "松前町内でしか味わえない食の観光商品の開発"@ja.
+<< kg:id_81 prop:contermeasure kg:id_88 >>
+    prop:text-txt_contents "松前町内での松前町産魚の流通経路整備（地域内直売実証）"@ja.
+<< kg:id_89 prop:cause kg:id_90 >>
+    prop:text-txt_contents "高齢化に伴う離農、畜産の就労環境が厳しいこと等により、経営体の減少、飼養頭数の減少が進んでおり"@ja.
+<< kg:id_89 prop:cause kg:id_91 >>
+    prop:text-txt_contents "高齢化に伴う離農、畜産の就労環境が厳しいこと等により、経営体の減少、飼養頭数の減少が進んでおり"@ja.
+<< kg:id_89 prop:effect kg:id_92 >>
+    prop:text-txt_contents "経営体の減少、飼養頭数の減少が進んでおり"@ja.
+<< kg:id_89 prop:effect kg:id_93 >>
+    prop:text-txt_contents "経営体の減少、飼養頭数の減少が進んでおり"@ja.
+<< kg:id_89 prop:contermeasure kg:id_94 >>
+    prop:text-txt_contents "畜産業として安定した経営環境を整えるための新規就農者拡大に向けた取組"@ja.
+<< kg:id_89 prop:contermeasure kg:id_95 >>
+    prop:text-txt_contents "労働環境改善に向けた松前畜産改良組合を中心とした勉強会の立ち上げ、スマート化等新規プロジェクト組成"@ja.
+<< kg:id_89 prop:contermeasure kg:id_96 >>
+    prop:text-txt_contents "肥育牛の生産開始に向けた体制構築"@ja.
+<< kg:id_89 prop:contermeasure kg:id_97 >>
+    prop:text-txt_contents "肥育牛を地域の稼ぎとしていくための流通販路構築"@ja.
+<< kg:id_98 prop:cause kg:id_99 >>
+    prop:text-txt_contents "地域外への経済流出が大きく、地域収支はマイナス174億円となっており"@ja.
+<< kg:id_100 prop:cause kg:id_101 >>
+    prop:text-txt_contents "キャッシュレス化が望まれるが、手数料の負担が足かせとなり普及していない。"@ja.
+<< kg:id_102 prop:cause kg:id_103 >>
+    prop:text-txt_contents "この空家の中には、利活用可能な空家もあるが、その利活用の促進を図る方策が確立していない。"@ja.
+<< kg:id_102 prop:effect kg:id_104 >>
+    prop:text-txt_contents "特定空家相当の老朽危険空家は増加傾向にあるため"@ja.
+<< kg:id_102 prop:cause kg:id_105 >>
+    prop:text-txt_contents "不動産情報等を一元的に扱うサービスがなく"@ja.
+<< kg:id_102 prop:cause kg:id_106 >>
+    prop:text-txt_contents "空家等に関する相談体制が構築されていない。"@ja.
+<< kg:id_64 prop:cause kg:id_107 >>
+    prop:text-txt_contents "高齢化・介護社会においても、これまでどおり終身自宅居住希望者も多く"@ja.
+<< kg:id_108 prop:contermeasure kg:id_109 >>
+    prop:text-txt_contents "松前マネープロジェクト協議会立ち上げ、国等予算獲得、仕組み構築"@ja.
+<< kg:id_108 prop:contermeasure kg:id_110 >>
+    prop:text-txt_contents "事業継承支援、Uターン者、移住者、起業家等募集・受け入れ"@ja.
+<< kg:id_108 prop:contermeasure kg:id_111 >>
+    prop:text-txt_contents "事業継承支援、Uターン者、移住者、起業家等募集・受け入れ"@ja.
+<< kg:id_108 prop:contermeasure kg:id_112 >>
+    prop:text-txt_contents "事業継承支援、Uターン者、移住者、起業家等募集・受け入れ"@ja.
+<< kg:id_108 prop:contermeasure kg:id_113 >>
+    prop:text-txt_contents "事業継承支援、Uターン者、移住者、起業家等募集・受け入れ"@ja.
+<< kg:id_108 prop:contermeasure kg:id_114 >>
+    prop:text-txt_contents "松前らしい、持続可能な住宅整備に向けた官民連携体制立ち上げ"@ja.
+<< kg:id_115 prop:cause kg:id_116 >>
+    prop:text-txt_contents "現在、エネルギーコストとして約15億円（GRPの約10％）が町外に流出。"@ja.
+<< kg:id_117 prop:cause kg:id_118 >>
+    prop:text-txt_contents "年間発電量約106,000MWhを産み出しているが現状はFIT制度で町外へ流出。"@ja.
+<< kg:id_117 prop:cause kg:id_119 >>
+    prop:text-txt_contents "今後の予定される風力発電（洋上含む）量は、全て余剰電力となり、FIT等で町外への流出が高い。"@ja.
+<< kg:id_120 prop:contermeasure kg:id_121 >>
+    prop:text-txt_contents "環境省の脱炭素先行地域の選定を受ける"@ja.
+<< kg:id_120 prop:contermeasure kg:id_122 >>
+    prop:text-txt_contents "公共施設の脱炭素化、公用車のEV化、充電インフラ等の着実な整備"@ja.
+<< kg:id_120 prop:contermeasure kg:id_123 >>
+    prop:text-txt_contents "公共施設の脱炭素化、公用車のEV化、充電インフラ等の着実な整備"@ja.
+<< kg:id_120 prop:contermeasure kg:id_124 >>
+    prop:text-txt_contents "公共施設の脱炭素化、公用車のEV化、充電インフラ等の着実な整備"@ja.
+<< kg:id_120 prop:contermeasure kg:id_125 >>
+    prop:text-txt_contents "洋上風力発電の促進"@ja.
+<< kg:id_120 prop:contermeasure kg:id_126 >>
+    prop:text-txt_contents "地域エネルギー会社等の立ち上げ"@ja.
+<< kg:id_120 prop:contermeasure kg:id_127 >>
+    prop:text-txt_contents "RE100企業誘致"@ja.
+<< kg:id_120 prop:contermeasure kg:id_128 >>
+    prop:text-txt_contents "再エネ関連事業の立ち上げ"@ja.
+<< kg:id_120 prop:contermeasure kg:id_129 >>
+    prop:text-txt_contents "再エネ関連事業の立ち上げ、人材育成、Uターン促進"@ja.
+<< kg:id_120 prop:contermeasure kg:id_130 >>
+    prop:text-txt_contents "再エネ関連事業の立ち上げ、人材育成、Uターン促進"@ja.
+<< kg:id_120 prop:contermeasure kg:id_131 >>
+    prop:text-txt_contents "町民と一緒にできる再エネ・脱炭素化推進活動の展開"@ja.
+<< kg:id_120 prop:contermeasure kg:id_132 >>
+    prop:text-txt_contents "リスキリング教育による複業、新規事業等支援"@ja.
+<< kg:id_120 prop:contermeasure kg:id_133 >>
+    prop:text-txt_contents "町民が稼げる仕組みの検討（再エネ供給・維持管理拠点づくりなど）"@ja.
+<< kg:id_134 prop:cause kg:id_135 >>
+    prop:text-txt_contents "仕事（稼ぎ）が確保できれば、人口減少を食い止める可能性がある。"@ja.
+<< kg:id_136 prop:cause kg:id_137 >>
+    prop:text-txt_contents "一度、町を出ても戻って来れるよう、町内出身の子どもたちの関係を継続していく仕掛けが求められる。"@ja.
+<< kg:id_136 prop:cause kg:id_138 >>
+    prop:text-txt_contents "移住・定住者が増えた場合、住環境の確保は課題となる可能性がある。"@ja.
+<< kg:id_136 prop:cause kg:id_139 >>
+    prop:text-txt_contents "人材の獲得、定着に向けては、一定期間地域に馴染んでもらうための受け入れ体制も重要である。"@ja.
+<< kg:id_140 prop:contermeasure kg:id_141 >>
+    prop:text-txt_contents "子ども向けのITスキル、地域資本で稼ぐを学ぶプログラムの創設"@ja.
+<< kg:id_140 prop:contermeasure kg:id_142 >>
+    prop:text-txt_contents "地域人材のリスキリング支援"@ja.
+<< kg:id_140 prop:contermeasure kg:id_143 >>
+    prop:text-txt_contents "戦略的な官民連携による移住者募集、育成支援（仕事と住まいのセットプロジェクト）"@ja.
+<< kg:id_140 prop:contermeasure kg:id_144 >>
+    prop:text-txt_contents "専門人材の確保に向けた技術、資格取得支援、町の担い手教育"@ja.
+<< kg:id_140 prop:contermeasure kg:id_145 >>
+    prop:text-txt_contents "子育て環境支援策のPR、支援策の拡充"@ja.
+<< kg:id_140 prop:contermeasure kg:id_146 >>
+    prop:text-txt_contents "子育て環境支援策のPR、支援策の拡充"@ja.
+<< kg:id_147 prop:contermeasure kg:id_148 >>
+    prop:text-txt_contents "本プロジェクトの進捗を確認し、適宜アップデートする松前スマート庁内会議"@ja.
+<< kg:id_147 prop:contermeasure kg:id_149 >>
+    prop:text-txt_contents "本プロジェクトを官民共創により実装化するためのプラットホーム（松前SX推進共創会議）を立ち上げ、本ビジョンを推進する。"@ja.
+}

@@ -1,0 +1,760 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00168> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "臂曲地区採石跡地"@ja.
+kg:id_1 rdf:type cls:c_9401.
+cls:c_9401 rdfs:label "採石跡地"@ja.
+kg:id_2 rdfs:label "速やかな緑化の実施"@ja.
+kg:id_2 rdf:type cls:c_9402.
+cls:c_9402 rdfs:label "緑化実施"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "臂曲地区採石跡地の緑化未実施"@ja.
+kg:id_3 rdf:type cls:c_9403.
+cls:c_9403 rdfs:label "緑化未実施"@ja.
+kg:id_4 rdfs:label "協定書第３条３号の未履行"@ja.
+kg:id_4 rdf:type cls:c_9404.
+cls:c_9404 rdfs:label "協定未履行"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "食料・農業・農村基本法の見直し"@ja.
+kg:id_5 rdf:type cls:c_9405.
+cls:c_9405 rdfs:label "法見直し"@ja.
+kg:id_6 rdfs:label "制定から20年以上経過"@ja.
+kg:id_6 rdf:type cls:c_9406.
+cls:c_9406 rdfs:label "経年変化"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "資材高騰などによる生産コストの変動"@ja.
+kg:id_7 rdf:type cls:c_9407.
+cls:c_9407 rdfs:label "生産費変動"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "農家の経営を安定させる施策"@ja.
+kg:id_8 rdf:type cls:c_9408.
+cls:c_9408 rdfs:label "経営安定策"@ja.
+kg:id_5 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "再生産可能な価格の適切な形成と仕組みの具体化"@ja.
+kg:id_9 rdf:type cls:c_9409.
+cls:c_9409 rdfs:label "価格形成"@ja.
+kg:id_5 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "人口減少"@ja.
+kg:id_10 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_11 rdfs:label "2040年に約8400人まで減少する推測"@ja.
+kg:id_11 rdf:type cls:c_9410.
+cls:c_9410 rdfs:label "人口減予測"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "町政運営への一定の影響"@ja.
+kg:id_12 rdf:type cls:c_9411.
+cls:c_9411 rdfs:label "行政運営影響"@ja.
+kg:id_10 prop:effect kg:id_12.
+kg:id_13 rdfs:label "個人町民税の横ばい"@ja.
+kg:id_13 rdf:type cls:c_9412.
+cls:c_9412 rdfs:label "税収横ばい"@ja.
+kg:id_14 rdfs:label "各個人所得の上昇"@ja.
+kg:id_14 rdf:type cls:c_9413.
+cls:c_9413 rdfs:label "所得上昇"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "給与所得者の定年延長"@ja.
+kg:id_15 rdf:type cls:c_3791.
+cls:c_3791 rdfs:label "定年延長"@ja.
+kg:id_13 prop:cause kg:id_15.
+kg:id_16 rdfs:label "最低賃金の引上げ等による総所得金額の増加"@ja.
+kg:id_16 rdf:type cls:c_7745.
+cls:c_7745 rdfs:label "所得増加"@ja.
+kg:id_13 prop:cause kg:id_16.
+kg:id_17 rdfs:label "生産年齢人口の減少"@ja.
+kg:id_17 rdf:type cls:c_9414.
+cls:c_9414 rdfs:label "生産年齢減少"@ja.
+kg:id_18 rdfs:label "2045年には個人町民税も影響を受ける"@ja.
+kg:id_18 rdf:type cls:c_9415.
+cls:c_9415 rdfs:label "税収影響"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "洋上風力発電設備"@ja.
+kg:id_19 rdf:type cls:c_7409.
+cls:c_7409 rdfs:label "発電設備"@ja.
+kg:id_20 rdfs:label "固定資産税の増収"@ja.
+kg:id_20 rdf:type cls:c_3558.
+cls:c_3558 rdfs:label "税収増加"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "固定資産税の増加"@ja.
+kg:id_21 rdf:type cls:c_3558.
+kg:id_22 rdfs:label "普通交付税が減る可能性"@ja.
+kg:id_22 rdf:type cls:c_2743.
+cls:c_2743 rdfs:label "交付税減少"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "遊佐パーキングエリアタウン整備事業"@ja.
+kg:id_23 rdf:type cls:c_9416.
+cls:c_9416 rdfs:label "地域整備事業"@ja.
+kg:id_24 rdfs:label "道の駅鳥海の移転整備"@ja.
+kg:id_24 rdf:type cls:c_9417.
+cls:c_9417 rdfs:label "施設移転整備"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "無料の高速道路インターチェンジを核としたにぎわいづくり"@ja.
+kg:id_25 rdf:type cls:c_928.
+cls:c_928 rdfs:label "にぎわい創出"@ja.
+kg:id_23 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "住宅政策の準備"@ja.
+kg:id_26 rdf:type cls:c_9288.
+cls:c_9288 rdfs:label "住宅政策"@ja.
+kg:id_10 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "実施設計と施工の分離発注"@ja.
+kg:id_27 rdf:type cls:c_9418.
+cls:c_9418 rdfs:label "分離発注"@ja.
+kg:id_23 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "町を流れる２級河川月光川"@ja.
+kg:id_28 rdf:type cls:c_5194.
+cls:c_5194 rdfs:label "河川"@ja.
+kg:id_29 rdfs:label "しゅんせつの実施"@ja.
+kg:id_29 rdf:type cls:c_9419.
+cls:c_9419 rdfs:label "しゅんせつ"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "月光川の土砂堆積"@ja.
+kg:id_30 rdf:type cls:c_9420.
+cls:c_9420 rdfs:label "土砂堆積"@ja.
+kg:id_31 rdfs:label "洪水被害の発生"@ja.
+kg:id_31 rdf:type cls:c_5197.
+cls:c_5197 rdfs:label "洪水被害"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "八ツ面川の河積減少"@ja.
+kg:id_32 rdf:type cls:c_9421.
+cls:c_9421 rdfs:label "河積減少"@ja.
+kg:id_33 rdfs:label "道路面まで水位が上がる"@ja.
+kg:id_33 rdf:type cls:c_4101.
+cls:c_4101 rdfs:label "水位上昇"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "八ツ面川"@ja.
+kg:id_34 rdf:type cls:c_5194.
+kg:id_35 rdfs:label "計画的な土砂のしゅんせつ作業"@ja.
+kg:id_35 rdf:type cls:c_9419.
+kg:id_34 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "旧朝日橋"@ja.
+kg:id_36 rdf:type cls:c_8390.
+cls:c_8390 rdfs:label "橋梁"@ja.
+kg:id_37 rdfs:label "氾濫を助長する要因"@ja.
+kg:id_37 rdf:type cls:c_9422.
+cls:c_9422 rdfs:label "氾濫助長"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "撤去の継続要望"@ja.
+kg:id_38 rdf:type cls:c_8151.
+cls:c_8151 rdfs:label "撤去要望"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "災害時の避難所運用"@ja.
+kg:id_39 rdf:type cls:c_9423.
+cls:c_9423 rdfs:label "避難所運用"@ja.
+kg:id_40 rdfs:label "行政区や地区を超えた安全な避難施設への避難"@ja.
+kg:id_40 rdf:type cls:c_9424.
+cls:c_9424 rdfs:label "安全避難"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "スクールバス利用児童生徒"@ja.
+kg:id_41 rdf:type cls:c_9425.
+cls:c_9425 rdfs:label "児童生徒"@ja.
+kg:id_42 rdfs:label "異常気象時の健康や安全への不安"@ja.
+kg:id_42 rdf:type cls:c_260.
+cls:c_260 rdfs:label "安全不安"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "バス待合所の設置"@ja.
+kg:id_43 rdf:type cls:c_9426.
+cls:c_9426 rdfs:label "待合所設置"@ja.
+kg:id_41 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "スクールバス運行"@ja.
+kg:id_44 rdf:type cls:c_1532.
+kg:id_45 rdfs:label "全路線117か所のバス停設置状況確認"@ja.
+kg:id_45 rdf:type cls:c_9427.
+cls:c_9427 rdfs:label "設置状況確認"@ja.
+kg:id_44 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "区長や保護者との意見交換を通じた待合所設置検討"@ja.
+kg:id_46 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_44 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "農家数の減少"@ja.
+kg:id_47 rdf:type cls:c_9428.
+cls:c_9428 rdfs:label "農家減少"@ja.
+kg:id_48 rdfs:label "農業収入の伸び悩み"@ja.
+kg:id_48 rdf:type cls:c_9429.
+cls:c_9429 rdfs:label "収入停滞"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "荒廃農地の増加"@ja.
+kg:id_49 rdf:type cls:c_9430.
+cls:c_9430 rdfs:label "荒廃農地増加"@ja.
+kg:id_50 rdfs:label "農家の高齢化"@ja.
+kg:id_50 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "後継者不足"@ja.
+kg:id_51 rdf:type cls:c_1717.
+cls:c_1717 rdfs:label "後継者不足"@ja.
+kg:id_49 prop:cause kg:id_51.
+kg:id_52 rdfs:label "新規就農者の減少"@ja.
+kg:id_52 rdf:type cls:c_9431.
+cls:c_9431 rdfs:label "就農者減少"@ja.
+kg:id_49 prop:cause kg:id_52.
+kg:id_53 rdfs:label "非農家相続による農地の管理不足"@ja.
+kg:id_53 rdf:type cls:c_4616.
+cls:c_4616 rdfs:label "農地管理不足"@ja.
+kg:id_49 prop:cause kg:id_53.
+kg:id_54 rdfs:label "遊佐町農業"@ja.
+kg:id_54 rdf:type cls:c_610.
+cls:c_610 rdfs:label "農業"@ja.
+kg:id_55 rdfs:label "地域計画の策定推進"@ja.
+kg:id_55 rdf:type cls:c_2111.
+cls:c_2111 rdfs:label "地域計画"@ja.
+kg:id_54 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "農地中間管理事業の活用による農地集積集約化"@ja.
+kg:id_56 rdf:type cls:c_3327.
+cls:c_3327 rdfs:label "農地集積"@ja.
+kg:id_54 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "農業の省力化のためのスマート農業農業ＤＸの導入"@ja.
+kg:id_57 rdf:type cls:c_633.
+cls:c_633 rdfs:label "省力化"@ja.
+kg:id_54 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "多様な人材の確保育成"@ja.
+kg:id_58 rdf:type cls:c_829.
+cls:c_829 rdfs:label "人材確保"@ja.
+kg:id_54 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "農業の労働力不足"@ja.
+kg:id_59 rdf:type cls:c_630.
+cls:c_630 rdfs:label "労働力不足"@ja.
+kg:id_60 rdfs:label "多様な人材を農業や地域につなぐ農作業受託モデル実証事業"@ja.
+kg:id_60 rdf:type cls:c_9432.
+cls:c_9432 rdfs:label "受託モデル"@ja.
+kg:id_59 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "若者を中心としたビジネス創出事業による一次就労支援"@ja.
+kg:id_61 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "就労支援"@ja.
+kg:id_59 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "ＪＡ庄内みどり無料職業紹介所によるマッチング"@ja.
+kg:id_62 rdf:type cls:c_9433.
+cls:c_9433 rdfs:label "人材マッチング"@ja.
+kg:id_59 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "一日農業バイトデイワークの活用"@ja.
+kg:id_63 rdf:type cls:c_9434.
+cls:c_9434 rdfs:label "短期就労"@ja.
+kg:id_59 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "集落機能の低下や生活交通手段の不足や空き家の増加"@ja.
+kg:id_64 rdf:type cls:c_9435.
+cls:c_9435 rdfs:label "集落機能低下"@ja.
+kg:id_10 prop:effect kg:id_64.
+kg:id_65 rdfs:label "人口減少に対応した集落対策"@ja.
+kg:id_65 rdf:type cls:c_9436.
+cls:c_9436 rdfs:label "集落対策"@ja.
+kg:id_66 rdfs:label "集落点検の実施"@ja.
+kg:id_66 rdf:type cls:c_9437.
+cls:c_9437 rdfs:label "集落点検"@ja.
+kg:id_65 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "集落の在り方に関する話合いの促進"@ja.
+kg:id_67 rdf:type cls:c_9438.
+cls:c_9438 rdfs:label "話合い促進"@ja.
+kg:id_65 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "地域の実情に応じた集落の維持活性化対策"@ja.
+kg:id_68 rdf:type cls:c_9439.
+cls:c_9439 rdfs:label "維持活性化"@ja.
+kg:id_65 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "高齢化社会"@ja.
+kg:id_69 rdf:type cls:c_613.
+kg:id_70 rdfs:label "多世代交流プログラムの情報収集と共有"@ja.
+kg:id_70 rdf:type cls:c_9440.
+cls:c_9440 rdfs:label "多世代交流"@ja.
+kg:id_69 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "介護予防"@ja.
+kg:id_71 rdf:type cls:c_8009.
+cls:c_8009 rdfs:label "介護予防"@ja.
+kg:id_72 rdfs:label "いきいき百歳体操を中心とした住民主体の通いの場"@ja.
+kg:id_72 rdf:type cls:c_9441.
+cls:c_9441 rdfs:label "通いの場"@ja.
+kg:id_71 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "遊佐高校の定員割れ"@ja.
+kg:id_73 rdf:type cls:c_9442.
+cls:c_9442 rdfs:label "定員割れ"@ja.
+kg:id_74 rdfs:label "高校存続への危機"@ja.
+kg:id_74 rdf:type cls:c_2486.
+cls:c_2486 rdfs:label "存続危機"@ja.
+kg:id_73 prop:effect kg:id_74.
+kg:id_75 rdfs:label "遊佐高校存続"@ja.
+kg:id_75 rdf:type cls:c_9443.
+cls:c_9443 rdfs:label "学校存続"@ja.
+kg:id_76 rdfs:label "遊佐町自然体験留学制度による県外生の募集受入れ"@ja.
+kg:id_76 rdf:type cls:c_9444.
+cls:c_9444 rdfs:label "県外生受入れ"@ja.
+kg:id_75 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "就学支援金の支給"@ja.
+kg:id_77 rdf:type cls:c_3647.
+cls:c_3647 rdfs:label "就学支援"@ja.
+kg:id_75 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "通学タクシー運行や通学定期券購入費助成"@ja.
+kg:id_78 rdf:type cls:c_1532.
+kg:id_75 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "資格取得支援"@ja.
+kg:id_79 rdf:type cls:c_9445.
+cls:c_9445 rdfs:label "資格取得支援"@ja.
+kg:id_75 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "小中高連携による海岸清掃活動など交流機会の創設"@ja.
+kg:id_80 rdf:type cls:c_2658.
+cls:c_2658 rdfs:label "学校連携"@ja.
+kg:id_75 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "蕨岡高瀬まちづくりセンター移転改築"@ja.
+kg:id_81 rdf:type cls:c_6876.
+cls:c_6876 rdfs:label "施設改築"@ja.
+kg:id_82 rdfs:label "今年度の実施設計と来年度の改築事業実施"@ja.
+kg:id_82 rdf:type cls:c_9446.
+cls:c_9446 rdfs:label "設計施工"@ja.
+kg:id_81 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "改築検討委員会による地域要望の集約"@ja.
+kg:id_83 rdf:type cls:c_9447.
+cls:c_9447 rdfs:label "要望集約"@ja.
+kg:id_81 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "空き校舎利活用"@ja.
+kg:id_84 rdf:type cls:c_9448.
+cls:c_9448 rdfs:label "施設利活用"@ja.
+kg:id_85 rdfs:label "空き校舎利活用調整会議による全体調整と情報共有"@ja.
+kg:id_85 rdf:type cls:c_9449.
+cls:c_9449 rdfs:label "調整会議"@ja.
+kg:id_84 prop:contermeasure kg:id_85.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "協定書に基づき速やかな緑化を履行すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "現時点でも協定書の緑化義務は履行されていない"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "法制定から時間が経過しており見直しは適切"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "農家経営安定のため生産コスト変動を踏まえた見直しが必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "見直し後の基本法では農家経営安定策が最重要論点"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "利益につながる価格形成の具体化が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "将来の大幅な人口減少は町政運営に大きな影響を及ぼす"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "人口減少が町政運営に影響していないか検証が必要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田博機町長"@ja.
+kg:st_2 rdfs:type cls:st_96.
+cls:st_96 rdfs:label "町長"@ja.
+kg:op_9 prop:content "納税義務者数減少でも所得上昇で税額は横ばい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "伊藤治樹町民課長"@ja.
+kg:st_3 rdfs:type cls:st_95.
+cls:st_95 rdfs:label "課長"@ja.
+kg:op_10 prop:content "給与所得者の定年延長が税額維持の要因"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "最低賃金引上げなど経済状況による所得増が背景"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "団塊ジュニア世代の高齢化後は個人町民税減少が見込まれる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "今後20年間は償却資産にかかる固定資産税の増収が見込まれる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "池田久総務課長"@ja.
+kg:st_4 rdfs:type cls:st_95.
+kg:op_14 prop:content "固定資産税が大きく増え需要額が同じなら地方交付税は減ることになる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "第一義的には道の駅移転整備を進める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "無料インターチェンジを核に大きなにぎわいをつくり出したい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "無料インターチェンジ周辺で住宅政策を進め人口減少を抑えたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "渡会和裕企画課長"@ja.
+kg:st_5 rdfs:type cls:st_95.
+kg:op_18 prop:content "事業者参入を見込みやすくするため発注手法を見直した"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "松永裕美議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_19 prop:content "洪水被害軽減のため月光川のしゅんせつを県に求めるべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:op_20 prop:content "川床の浅化や支障木により洪水被害が助長される"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "太田智光地域生活課長"@ja.
+kg:st_7 rdfs:type cls:st_95.
+kg:op_21 prop:content "短時間の強雨で八ツ面川が想定外に増水した"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_7.
+kg:op_22 prop:content "今後はしゅんせつやマコモ除去など計画的整備が必要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "倒木や濁流が橋に引っかかり氾濫を助長するおそれがある"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:op_24 prop:content "町として以前から撤去を要望しており今後も継続要望する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "災害時は対象区域にとらわれず近くの安全な避難所へ避難することが重要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "那須正幸議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_26 prop:content "猛暑や大雨や地吹雪の中で待合所のないバス停は危険"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_8.
+kg:op_27 prop:content "毎日利用する児童生徒の健康と安全のため待合所設置が必要"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_8.
+kg:op_28 prop:content "待合所設置可能性を検討するため全バス停を確認した"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "設置可能性や今後の利用見込みを踏まえ総合的に判断する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "価格低迷による収入伸び悩みが農業構造悪化の背景"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "高齢化が再生困難な荒廃農地増加の要因"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "後継者不足が荒廃農地増加を招いている"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "新規就農者減少が農地維持を難しくしている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "非農家相続で管理不足となる農地が増えている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "地域の話合いによる地域計画策定が必要"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "担い手への農地利用集積集約化を進める必要がある"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "持続的発展のためスマート農業と農業ＤＸ導入が必要"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "新規就農者や小規模農家や兼業農家や移住者など多様な担い手を位置づけるべき"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:st_9 rdfs:label "舘内ひろみ産業課長"@ja.
+kg:st_9 rdfs:type cls:st_95.
+kg:op_39 prop:content "県事業を活用し農業の労働力不足解消を図る"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_9.
+kg:op_40 prop:content "農家ニーズ調査と働き手確保の仕組みづくりを進める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_9.
+kg:op_41 prop:content "求人農家と求職者のマッチングで高齢化や規模拡大による労働力不足を補う"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "隙間時間や副業で働きたい人と農家を結ぶ仕組みが有効"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_9.
+kg:op_43 prop:content "過疎地域では人口減少と高齢化により集落問題が深刻化している"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "国が示す集落点検の実施を検討すべき"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "集落住民が自ら課題を捉える話合いが重要"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "地域の実情に応じた維持活性化対策が必要"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "他県成功事例を調べ関係団体と情報共有したい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "元気な高齢者も要介護高齢者も役割を持って生活できる地域を目指す"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "高校存続にはさらなる魅力化と町内外からの入学者確保が必要"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+kg:op_50 prop:content "県外生受入れは遊佐高校存続に有効"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "入学時支援で遊佐高校への進学ハードルを下げている"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "通学負担の軽減で生徒確保を図る"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "介護職員初任者研修や運転免許取得支援でキャリア形成を支える"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "町内児童生徒に遊佐高校の魅力を感じてもらう機会が必要"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "実施設計を進め来年度の改築実施を予定している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "地域要望を踏まえた設計を進めている"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "企画係が全体調整役となり進捗管理と情報共有を行う"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "景観の保全と災害防止を図るため、最終のり面を形成しながら掘削し、速やかに緑化を行うこと"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "現時点でも同協定書の第３条３号が履行されていることは確認できないと考えます"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "同法は、制定から20年以上経過していることもあり、政府は現在、来年の通常国会への法案提出を目指しており"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "農業だけではなく、畜産業などを含め、資材高騰などによる生産コストが変動している現状にあると理解しております"@ja.
+<< kg:id_5 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "見直し後の食料・農業・農村基本法では、農家の経営を安定させる施策が最も重要な論点になるものと認識します"@ja.
+<< kg:id_5 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "利益につながる再生産可能な価格の適切な形成、それから仕組みの具体化などがこの請願の願意の背景にあるものと認識します"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "平成27年10月に町が示したまち・ひと・しごと創生遊佐町総合戦略では、2040年には約8,400人まで減少すると推測しております"@ja.
+<< kg:id_10 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "人口減少が町政運営に一定の影響を生じさせていないのか、自分なりに検証してみました"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これは、各個人所得の上昇によるものが多いのかなという、そんな認識をいたしております"@ja.
+<< kg:id_13 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "納税義務者数が減少傾向にもあるにもかかわらず税額がほぼ横ばいになっているという要因としては、やはりその多くを占める給与所得者、先ほどの町長答弁にもありましたけれども、この給与所得者の定年延長"@ja.
+<< kg:id_13 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "最低賃金の引上げ等、経済状況による総所得金額、こちらの増加にあるのではないかというふうに考えられます"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "2045年にはさらに生産年齢人口が減少することが予測されますので、当然個人町民税もその影響を受けるというふうに予測されます"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今後20年間の期間についてはやっぱり償却資産にかかる固定資産税がかなり増収するものと理解します"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "固定資産税がかなり増えたからといって、それぞれ需要額、収入額、様々な項目で計算されていますので、一概に必ず増えるということでもないということになります"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "パーキングエリアタウン事業の第一義的な道の駅鳥海の移転ではありますが"@ja.
+<< kg:id_23 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "無料の高速道路のインターチェンジ、そしてそこを核として道の駅のまちとして、いわゆる定住施策を周辺に進めたいと。それらを想定しながら、大きなにぎわいをつくり出すような努力をしていきたい"@ja.
+<< kg:id_10 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "やっぱり住宅政策をしっかり準備するような形で進めていかないと、地域の人口減少は厳しい状況になる"@ja.
+<< kg:id_23 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "当初の整備計画では施設の実施設計と施工、こちらを一括で発注することとしたいということで計画のほうには載せておりましたけれども、その後のヒアリング等を踏まえまして、この実施設計と施工を分離して発注する手法を取りたいということで修正を加えさせていただいた"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "町を流れる２級河川月光川のしゅんせつが必要不可欠です。川底の土砂のしゅんせつを行うことによって、川の流れがスムーズになり、大雨が降った際にも川がいっぱいになり過ぎることを防ぎ"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "川床の深さが深く、支障木が生えていない昔の状態の美しい月光川であれば、洪水が起こることを防止することができます"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "八ツ面川、グリーンストアさんの裏の辺りですけれども、そこから、もうその辺は道路面まで水が上がったということで、非常に想定外だったかなというふうに個人的に思っていたところでした"@ja.
+<< kg:id_34 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "今後は計画的な土砂のしゅんせつ作業や繁殖したマコモの除去、老朽施設の整備や撤去が必要であると考えております"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "氾濫を助長する要因の一つが、さきの議会でも９番議員が取り上げていらっしゃいましたが、古い橋の朝日橋であることが指摘されております"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "町としては、以前から撤去を要望しております。今後は継続して要望していきたいと考えているところであります"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "災害時は対象区域の枠にとらわれることなく、安全な避難場所や避難施設へ安全に避難することが何よりも大切なことだと考えております"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "昨今の気象状況を見てみますと、今も続く異常気象での高温、突然の線状降水帯の発生による大雨、またこれから冬になると庄内特有の冬期間の地吹雪の発生など、特に注意が必要だと思われます"@ja.
+<< kg:id_41 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "毎日通う生徒や児童たちの健康や安全を守るためにも、バス待合所の設置は必要と考えます"@ja.
+<< kg:id_44 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "これまで教育委員会としては、６月から８月にかけて全路線117か所のバス停の設置状況を確認させていただきました"@ja.
+<< kg:id_44 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "今後、その設置状況の調査結果を基に、保護者の方も含め、区長を中心とした各地区の皆さんと意見交換の場を設けさせていただき、待合所の設置については設置可能な場所であるか、今後も児童生徒の利用が見込めるかといったことも総合的に判断しながら対応して、検討してまいりたい"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "米をはじめとする農産物の価格の低迷による農業収入の伸び悩みなどを背景として、農家数の減少と兼業化が進行してまいりました"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "増加の要因としては、農家の高齢化、後継者不足、新規就農者の減少、非農家相続による農地の管理不足などが挙げられます"@ja.
+<< kg:id_49 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "増加の要因としては、農家の高齢化、後継者不足、新規就農者の減少、非農家相続による農地の管理不足などが挙げられます"@ja.
+<< kg:id_49 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "増加の要因としては、農家の高齢化、後継者不足、新規就農者の減少、非農家相続による農地の管理不足などが挙げられます"@ja.
+<< kg:id_49 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "増加の要因としては、農家の高齢化、後継者不足、新規就農者の減少、非農家相続による農地の管理不足などが挙げられます"@ja.
+<< kg:id_54 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "このために地域における農業者の自発的な話合いによる地域計画の策定を推進し"@ja.
+<< kg:id_54 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "農地中間管理事業の活用等により、農地の有効利用の継続や農業経営の効率化を進める担い手への農地利用の集積、集約化を進める必要がある"@ja.
+<< kg:id_54 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "農地集約と法人化、農業の省力化のためのスマート農業、農業ＤＸの導入を行い"@ja.
+<< kg:id_54 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "新規就農者や小規模農家、そして兼業農家、移住者、Ｕターン者、さらには半農半Ｘなどを含めて農産物の生産活動に関わる多様な人材を農業を担う者に位置づけ"@ja.
+<< kg:id_59 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "県においては農業の労働力不足解消と関係人口の創出拡大のための多様な人材の呼び込みと農作業受託の仕組みの活用による多様な人材を農業や地域につなぐ農作業受託モデルの実証事業"@ja.
+<< kg:id_59 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "町のほうでも若者を中心としたビジネス創出事業ということで事業を始めております。この事業の中で、町の抱える課題の一つに１次産業就労支援というものを掲げて"@ja.
+<< kg:id_59 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "ＪＡ庄内みどり無料職業紹介所による農家の高齢化や規模拡大による労働力不足を補うための求人者と求職者のマッチングを行う施策"@ja.
+<< kg:id_59 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "スマートフォンアプリケーションを用いた農業で働きたい人と農業者をつなぐ１日農業バイトデイワークといったものの活用もございます"@ja.
+<< kg:id_10 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "過疎地域等に所在する集落の多くにおいて、人口減少と高齢化の進展に伴い、生活扶助機能の低下、身近な生活交通手段の不足、空き家の増加などが重大な問題となっている"@ja.
+<< kg:id_65 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "具体的な集落対策として、１つ目として集落点検の実施"@ja.
+<< kg:id_65 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "２つ目として集落の在り方に関する話合いの促進"@ja.
+<< kg:id_65 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "３つ目として地域の実績に応じた集落の維持・活性化対策"@ja.
+<< kg:id_69 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "他県で成功事例のある多世代交流プログラムについて、まずはその成功事例に関して事業内容や事業実施主体などの情報収集を行い、各まちづくり協議会や関係団体と情報共有したい"@ja.
+<< kg:id_71 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "介護予防事業では、元気な高齢者、要介護状態の高齢者も生きがいや役割を持って生活できる地域を目指し、いきいき百歳体操を中心とした住民主体の通いの場があります"@ja.
+<< kg:id_73 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "遊佐高等学校の志願者が定員を割る状況が続いており、高校存続のためにはさらなる学校の魅力化と中高連携による取組による町内や周辺市町村からの入学者が恒常的に確保できることが必要です"@ja.
+<< kg:id_75 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "地域連携協議会では、令和元年度から実施している遊佐町自然体験留学制度による県外生の募集、選考や地域みらい留学への参画、留学生の生活支援事業を実施しております"@ja.
+<< kg:id_75 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "遊佐高への入学、通学のハードルを下げるための就学支援金の支給"@ja.
+<< kg:id_75 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "通学支援としての登下校時のタクシー運行や通学定期券の購入費助成"@ja.
+<< kg:id_75 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "生徒のキャリアに関わる資格取得を支援するため、介護職員初任者研修、そして運転免許証取得の支援があります"@ja.
+<< kg:id_75 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "先般初めて小中高連携して海岸清掃活動を実施したところであります。町内の児童生徒に遊佐高校の魅力を感じてもらえるよう、今後も小中高校生が触れ合う機会を創設していくことが必要と考えております"@ja.
+<< kg:id_81 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "両地区の移転・改築事業では、今年度実施結果設計を行い、来年度改築事業を実施する予定となっております"@ja.
+<< kg:id_81 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "７月から８月にかけて両地区の改築検討委員の皆さんと各３回改築検討委員会が開催され、空き校舎の中を実際に確認しながら検討を重ねてきております"@ja.
+<< kg:id_84 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "企画係が全体調整役となり、各所管部分の進捗管理と情報共有を目的に、関係職員で構成する空き校舎利活用調整会議を設け"@ja.
+}

@@ -1,0 +1,615 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00132> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "公用車運転中の事故"@ja.
+kg:id_1 rdf:type cls:c_6752.
+cls:c_6752 rdfs:label "事故"@ja.
+kg:id_2 rdfs:label "酒田市みずほ二丁目地内での発生"@ja.
+kg:id_2 rdf:type cls:c_7729.
+cls:c_7729 rdfs:label "発生地点"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "大雨災害"@ja.
+kg:id_3 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "災害"@ja.
+kg:id_4 rdfs:label "８月５日から６日にかけての大雨"@ja.
+kg:id_4 rdf:type cls:c_7287.
+cls:c_7287 rdfs:label "大雨"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "農業用施設の被害"@ja.
+kg:id_5 rdf:type cls:c_4049.
+cls:c_4049 rdfs:label "施設被害"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "林業用施設の被害"@ja.
+kg:id_6 rdf:type cls:c_4049.
+kg:id_3 prop:effect kg:id_6.
+kg:id_7 rdfs:label "公共土木施設の被害"@ja.
+kg:id_7 rdf:type cls:c_4049.
+kg:id_3 prop:effect kg:id_7.
+kg:id_8 rdfs:label "緊急的な復旧経費の計上"@ja.
+kg:id_8 rdf:type cls:c_7730.
+cls:c_7730 rdfs:label "復旧措置"@ja.
+kg:id_3 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "冠水"@ja.
+kg:id_9 rdf:type cls:c_3366.
+cls:c_3366 rdfs:label "冠水"@ja.
+kg:id_10 rdfs:label "近年頻発するゲリラ豪雨等"@ja.
+kg:id_10 rdf:type cls:c_1842.
+cls:c_1842 rdfs:label "豪雨"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "大型排水ポンプ車の導入"@ja.
+kg:id_11 rdf:type cls:c_7731.
+cls:c_7731 rdfs:label "排水対策"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "緊急情報の伝達"@ja.
+kg:id_12 rdf:type cls:c_2039.
+cls:c_2039 rdfs:label "情報伝達"@ja.
+kg:id_13 rdfs:label "防災ラジオの頒布"@ja.
+kg:id_13 rdf:type cls:c_7732.
+cls:c_7732 rdfs:label "防災機器"@ja.
+kg:id_12 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "人口減少"@ja.
+kg:id_14 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_15 rdfs:label "立地適正化計画の策定"@ja.
+kg:id_15 rdf:type cls:c_6625.
+cls:c_6625 rdfs:label "都市計画"@ja.
+kg:id_14 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "少子高齢化"@ja.
+kg:id_16 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_16 prop:contermeasure kg:id_15.
+kg:id_17 rdfs:label "都市計画マスタープランの改定作業への着手"@ja.
+kg:id_17 rdf:type cls:c_6625.
+kg:id_14 prop:contermeasure kg:id_17.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "実質単年度収支の赤字"@ja.
+kg:id_18 rdf:type cls:c_7733.
+cls:c_7733 rdfs:label "財政赤字"@ja.
+kg:id_19 rdfs:label "財政調整基金を復元できない厳しい財政状況"@ja.
+kg:id_19 rdf:type cls:c_2052.
+cls:c_2052 rdfs:label "財政難"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "成果を重視した事業展開"@ja.
+kg:id_20 rdf:type cls:c_834.
+cls:c_834 rdfs:label "事業見直し"@ja.
+kg:id_18 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "役割を終えた事業の終了"@ja.
+kg:id_21 rdf:type cls:c_7734.
+cls:c_7734 rdfs:label "事業終了"@ja.
+kg:id_18 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "取り組むべき事業の質の選別"@ja.
+kg:id_22 rdf:type cls:c_1509.
+cls:c_1509 rdfs:label "事業選別"@ja.
+kg:id_18 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "児童扶養手当"@ja.
+kg:id_23 rdf:type cls:c_7735.
+cls:c_7735 rdfs:label "手当"@ja.
+kg:id_24 rdfs:label "制度改正"@ja.
+kg:id_24 rdf:type cls:c_3925.
+cls:c_3925 rdfs:label "制度改正"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "増額"@ja.
+kg:id_25 rdf:type cls:c_7344.
+cls:c_7344 rdfs:label "増額"@ja.
+kg:id_23 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "観光情報発信の不足"@ja.
+kg:id_26 rdf:type cls:c_2353.
+cls:c_2353 rdfs:label "情報発信不足"@ja.
+kg:id_27 rdfs:label "広域周遊ルートの作成機能と情報分析による観光戦略推進事業費の増額"@ja.
+kg:id_27 rdf:type cls:c_1423.
+cls:c_1423 rdfs:label "観光振興"@ja.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "田沢小学校"@ja.
+kg:id_28 rdf:type cls:c_986.
+cls:c_986 rdfs:label "学校施設"@ja.
+kg:id_29 rdfs:label "耐震改修方法の変更"@ja.
+kg:id_29 rdf:type cls:c_7736.
+cls:c_7736 rdfs:label "改修変更"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "改修事業費の増額"@ja.
+kg:id_30 rdf:type cls:c_6091.
+cls:c_6091 rdfs:label "予算増額"@ja.
+kg:id_28 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "埋蔵文化財調査経費の増額"@ja.
+kg:id_31 rdf:type cls:c_7737.
+cls:c_7737 rdfs:label "調査経費"@ja.
+kg:id_32 rdfs:label "文化財保護法による届け出の増加"@ja.
+kg:id_32 rdf:type cls:c_7738.
+cls:c_7738 rdfs:label "届出増加"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "建築基準法不適合の光ケ丘テニスコートのブロック塀"@ja.
+kg:id_33 rdf:type cls:c_7739.
+cls:c_7739 rdfs:label "法令不適合"@ja.
+kg:id_34 rdfs:label "解体等するための経費の計上"@ja.
+kg:id_34 rdf:type cls:c_7740.
+cls:c_7740 rdfs:label "解体措置"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "風力発電施設の建設"@ja.
+kg:id_35 rdf:type cls:c_567.
+cls:c_567 rdfs:label "発電施設"@ja.
+kg:id_36 rdfs:label "風力発電事業費の増額"@ja.
+kg:id_36 rdf:type cls:c_6091.
+kg:id_35 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "交通災害共済事業"@ja.
+kg:id_37 rdf:type cls:c_7741.
+cls:c_7741 rdfs:label "共済事業"@ja.
+kg:id_38 rdfs:label "廃止"@ja.
+kg:id_38 rdf:type cls:c_1660.
+cls:c_1660 rdfs:label "廃止"@ja.
+kg:id_37 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "酒田市升田児童館"@ja.
+kg:id_39 rdf:type cls:c_7742.
+cls:c_7742 rdfs:label "児童館"@ja.
+kg:id_40 rdfs:label "廃館"@ja.
+kg:id_40 rdf:type cls:c_1660.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "緊急情報の伝達体制"@ja.
+kg:id_41 rdf:type cls:c_2039.
+kg:id_42 rdfs:label "防災行政無線デジタル化整備工事"@ja.
+kg:id_42 rdf:type cls:c_7557.
+cls:c_7557 rdfs:label "無線整備"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "福祉乗合用小型バス"@ja.
+kg:id_43 rdf:type cls:c_7743.
+cls:c_7743 rdfs:label "福祉車両"@ja.
+kg:id_44 rdfs:label "更新"@ja.
+kg:id_44 rdf:type cls:c_7744.
+cls:c_7744 rdfs:label "更新"@ja.
+kg:id_43 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "個人市民税の増加"@ja.
+kg:id_45 rdf:type cls:c_3558.
+cls:c_3558 rdfs:label "税収増加"@ja.
+kg:id_46 rdfs:label "所得の伸び"@ja.
+kg:id_46 rdf:type cls:c_7745.
+cls:c_7745 rdfs:label "所得増加"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "固定資産税の増加"@ja.
+kg:id_47 rdf:type cls:c_3558.
+kg:id_48 rdfs:label "住宅着工数の増加"@ja.
+kg:id_48 rdf:type cls:c_7746.
+cls:c_7746 rdfs:label "住宅増加"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "企業の設備投資の増加"@ja.
+kg:id_49 rdf:type cls:c_6211.
+cls:c_6211 rdfs:label "投資増加"@ja.
+kg:id_47 prop:cause kg:id_49.
+kg:id_50 rdfs:label "軽自動車税の増加"@ja.
+kg:id_50 rdf:type cls:c_3558.
+kg:id_51 rdfs:label "税率の改正"@ja.
+kg:id_51 rdf:type cls:c_5664.
+cls:c_5664 rdfs:label "税制改正"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "交付金の増加"@ja.
+kg:id_52 rdf:type cls:c_5956.
+cls:c_5956 rdfs:label "交付金増加"@ja.
+kg:id_53 rdfs:label "地方消費税交付金の増額"@ja.
+kg:id_53 rdf:type cls:c_7747.
+cls:c_7747 rdfs:label "交付金増額"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "自動車取得税交付金の増額"@ja.
+kg:id_54 rdf:type cls:c_7747.
+kg:id_52 prop:cause kg:id_54.
+kg:id_55 rdfs:label "地方交付税の減少"@ja.
+kg:id_55 rdf:type cls:c_2743.
+cls:c_2743 rdfs:label "交付税減少"@ja.
+kg:id_56 rdfs:label "合併算定替の縮減"@ja.
+kg:id_56 rdf:type cls:c_7748.
+cls:c_7748 rdfs:label "算定縮減"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "市民税等の増額に伴う基準財政収入額の増額"@ja.
+kg:id_57 rdf:type cls:c_3558.
+kg:id_55 prop:cause kg:id_57.
+kg:id_58 rdfs:label "自主財源構成比率の上昇"@ja.
+kg:id_58 rdf:type cls:c_7749.
+cls:c_7749 rdfs:label "財源比率上昇"@ja.
+kg:id_59 rdfs:label "寄附金の増加"@ja.
+kg:id_59 rdf:type cls:c_1676.
+cls:c_1676 rdfs:label "寄附増加"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "総務費の増加"@ja.
+kg:id_60 rdf:type cls:c_7499.
+cls:c_7499 rdfs:label "歳出増加"@ja.
+kg:id_61 rdfs:label "市議会議員選挙等の皆増"@ja.
+kg:id_61 rdf:type cls:c_7750.
+cls:c_7750 rdfs:label "選挙費"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "ふるさと納税推進事業費の増額"@ja.
+kg:id_62 rdf:type cls:c_7751.
+cls:c_7751 rdfs:label "事業増額"@ja.
+kg:id_60 prop:cause kg:id_62.
+kg:id_63 rdfs:label "新庁舎整備事業費の増額"@ja.
+kg:id_63 rdf:type cls:c_7751.
+kg:id_60 prop:cause kg:id_63.
+kg:id_64 rdfs:label "民生費の減少"@ja.
+kg:id_64 rdf:type cls:c_7752.
+cls:c_7752 rdfs:label "歳出減少"@ja.
+kg:id_65 rdfs:label "年金生活者等支援臨時福祉給付金給付事業費の皆減"@ja.
+kg:id_65 rdf:type cls:c_7753.
+cls:c_7753 rdfs:label "給付終了"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "衛生費の減少"@ja.
+kg:id_66 rdf:type cls:c_7752.
+kg:id_67 rdfs:label "酒田地区広域行政組合分賦金の減額"@ja.
+kg:id_67 rdf:type cls:c_7754.
+cls:c_7754 rdfs:label "負担減額"@ja.
+kg:id_66 prop:cause kg:id_67.
+kg:id_68 rdfs:label "病院事業運営費負担事業費の減額"@ja.
+kg:id_68 rdf:type cls:c_7754.
+kg:id_66 prop:cause kg:id_68.
+kg:id_69 rdfs:label "労働費の増加"@ja.
+kg:id_69 rdf:type cls:c_7499.
+kg:id_70 rdfs:label "働く女性活躍促進事業費の皆増"@ja.
+kg:id_70 rdf:type cls:c_7755.
+cls:c_7755 rdfs:label "事業新設"@ja.
+kg:id_69 prop:cause kg:id_70.
+kg:id_71 rdfs:label "商工費の増加"@ja.
+kg:id_71 rdf:type cls:c_7499.
+kg:id_72 rdfs:label "地域総合整備資金貸付事業費の皆増"@ja.
+kg:id_72 rdf:type cls:c_7756.
+cls:c_7756 rdfs:label "貸付事業"@ja.
+kg:id_71 prop:cause kg:id_72.
+kg:id_73 rdfs:label "工場等設置助成事業費の増額"@ja.
+kg:id_73 rdf:type cls:c_7757.
+cls:c_7757 rdfs:label "助成増額"@ja.
+kg:id_71 prop:cause kg:id_73.
+kg:id_74 rdfs:label "土木費の増加"@ja.
+kg:id_74 rdf:type cls:c_7499.
+kg:id_75 rdfs:label "中町モール改修事業費の皆増"@ja.
+kg:id_75 rdf:type cls:c_7329.
+cls:c_7329 rdfs:label "改修事業"@ja.
+kg:id_74 prop:cause kg:id_75.
+kg:id_76 rdfs:label "都市計画マスタープラン及び立地適正化計画策定事業費の皆増"@ja.
+kg:id_76 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_74 prop:cause kg:id_76.
+kg:id_77 rdfs:label "消防費の減少"@ja.
+kg:id_77 rdf:type cls:c_7752.
+kg:id_77 prop:cause kg:id_67.
+kg:id_78 rdfs:label "消防庁舎及び総合防災センター整備事業費の減額"@ja.
+kg:id_78 rdf:type cls:c_7758.
+cls:c_7758 rdfs:label "整備減額"@ja.
+kg:id_77 prop:cause kg:id_78.
+kg:id_79 rdfs:label "教育費の増加"@ja.
+kg:id_79 rdf:type cls:c_7499.
+kg:id_80 rdfs:label "学校ＩＣＴ環境整備事業費の皆増"@ja.
+kg:id_80 rdf:type cls:c_1104.
+cls:c_1104 rdfs:label "環境整備"@ja.
+kg:id_79 prop:cause kg:id_80.
+kg:id_81 rdfs:label "光ケ丘球技場人工芝整備事業費の皆増"@ja.
+kg:id_81 rdf:type cls:c_1935.
+cls:c_1935 rdfs:label "施設整備"@ja.
+kg:id_79 prop:cause kg:id_81.
+kg:id_82 rdfs:label "災害復旧費の増加"@ja.
+kg:id_82 rdf:type cls:c_7499.
+kg:id_83 rdfs:label "公共土木施設災害復旧事業費の増額"@ja.
+kg:id_83 rdf:type cls:c_7759.
+cls:c_7759 rdfs:label "復旧事業"@ja.
+kg:id_82 prop:cause kg:id_83.
+kg:id_84 rdfs:label "諸支出金の増加"@ja.
+kg:id_84 rdf:type cls:c_7499.
+kg:id_85 rdfs:label "定期航路事業特別会計繰出金の増額"@ja.
+kg:id_85 rdf:type cls:c_7760.
+cls:c_7760 rdfs:label "繰出増額"@ja.
+kg:id_84 prop:cause kg:id_85.
+kg:id_86 rdfs:label "駐車場利用台数の減少"@ja.
+kg:id_86 rdf:type cls:c_1173.
+cls:c_1173 rdfs:label "利用減少"@ja.
+kg:id_87 rdfs:label "中央地下駐車場利用台数が前年度比14％減"@ja.
+kg:id_87 rdf:type cls:c_7761.
+cls:c_7761 rdfs:label "利用実績減"@ja.
+kg:id_86 prop:effect kg:id_87.
+kg:id_88 rdfs:label "定期航路利用の減少"@ja.
+kg:id_88 rdf:type cls:c_1173.
+kg:id_89 rdfs:label "年間の乗客数が前年度より4.2％減少"@ja.
+kg:id_89 rdf:type cls:c_7761.
+kg:id_88 prop:effect kg:id_89.
+kg:id_90 rdfs:label "下水道事業会計"@ja.
+kg:id_90 rdf:type cls:c_7762.
+cls:c_7762 rdfs:label "公営会計"@ja.
+kg:id_91 rdfs:label "当年度純損失"@ja.
+kg:id_91 rdf:type cls:c_7763.
+cls:c_7763 rdfs:label "純損失"@ja.
+kg:id_90 prop:effect kg:id_91.
+kg:id_92 rdfs:label "病院事業会計"@ja.
+kg:id_92 rdf:type cls:c_7762.
+kg:id_92 prop:effect kg:id_91.
+kg:id_93 rdfs:label "下水道事業会計決算"@ja.
+kg:id_93 rdf:type cls:c_7764.
+cls:c_7764 rdfs:label "決算"@ja.
+kg:id_94 rdfs:label "有形固定資産と減価償却費に誤り"@ja.
+kg:id_94 rdf:type cls:c_7765.
+cls:c_7765 rdfs:label "計数誤り"@ja.
+kg:id_93 prop:effect kg:id_94.
+kg:st_1 rdfs:label "丸山市長"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "農業用施設や公共土木施設の被害に対し緊急復旧費を計上した"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "冠水対策として大型排水ポンプ車を導入した"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "希望する市民へ防災ラジオを頒布し伝達体制を強化した"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "人口減少に対応したまちづくりのため立地適正化計画の策定に着手した"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "少子高齢化に対応したまちづくりのため立地適正化計画の策定に着手した"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "人口減少に対応したまちづくりのため都市計画マスタープラン改定に着手した"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "少子高齢化に対応したまちづくりのため都市計画マスタープラン改定に着手した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "基金を復元できない厳しい財政状況が続いている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "限られた財源と人材で成果重視の事業展開を進める考えを示した"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "役割を終えた事業を終了し財源配分を見直す考えを示した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "限られた財源と人材の中で事業を選択していく方針を示した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "制度改正に伴い児童扶養手当を増額した"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "情報発信の多様化のため観光戦略推進事業費を増額した"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "耐震改修方法の変更に対応して改修事業費を増額した"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "法令不適合のブロック塀を解体する経費を計上した"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "風力発電施設建設のため特別会計を増額した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "交通災害共済事業を廃止するため関係条例を整備する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "升田児童館を廃館するため条例を廃止する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "防災行政無線のデジタル化整備工事の契約締結を進める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "福祉乗合用小型バスを更新するため取得する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "阿部武会計管理者兼出納課長"@ja.
+kg:st_2 rdfs:type cls:st_2.
+kg:op_21 prop:content "自主財源構成比率上昇の主因は寄附金の増加である"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "中央地下駐車場利用は前年度より大きく減少した"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "定期航路の年間乗客数は前年度より減少した"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "須田聡上下水道事業管理者"@ja.
+kg:st_3 rdfs:type cls:st_2.
+kg:op_24 prop:content "下水道事業会計は当年度純損失を計上した"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "菊池裕基健康福祉部長"@ja.
+kg:st_4 rdfs:type cls:st_2.
+kg:op_25 prop:content "病院事業会計は当年度純損失を計上した"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "加藤裕監査委員"@ja.
+kg:st_5 rdfs:type cls:st_44.
+cls:st_44 rdfs:label "監査機関"@ja.
+kg:op_26 prop:content "下水道事業会計の計数に誤りが認められた"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "平成30年５月24日に酒田市みずほ二丁目地内で発生した公用車運転中の事故"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "８月５日から６日にかけての大雨災害"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:text-txt_contents "大雨災害による農業、林業用施設や公共土木施設の被害"@ja.
+<< kg:id_3 prop:effect kg:id_6 >>
+    prop:text-txt_contents "大雨災害による農業、林業用施設や公共土木施設の被害"@ja.
+<< kg:id_3 prop:effect kg:id_7 >>
+    prop:text-txt_contents "大雨災害による農業、林業用施設や公共土木施設の被害"@ja.
+<< kg:id_3 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "大雨災害による農業、林業用施設や公共土木施設の被害に対する緊急的な復旧経費を計上する"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "近年頻発するゲリラ豪雨等による冠水対策"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "近年頻発するゲリラ豪雨等による冠水対策のため、大型排水ポンプ車を導入しました"@ja.
+<< kg:id_12 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "希望する市民に防災ラジオを頒布し、緊急情報の伝達体制の強化を図りました"@ja.
+<< kg:id_14 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "人口減少及び少子高齢化に対応したまちづくりのため、立地適正化計画の策定、都市計画マスタープランの改定作業に着手いたしました"@ja.
+<< kg:id_16 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "人口減少及び少子高齢化に対応したまちづくりのため、立地適正化計画の策定、都市計画マスタープランの改定作業に着手いたしました"@ja.
+<< kg:id_14 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "人口減少及び少子高齢化に対応したまちづくりのため、立地適正化計画の策定、都市計画マスタープランの改定作業に着手いたしました"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "人口減少及び少子高齢化に対応したまちづくりのため、立地適正化計画の策定、都市計画マスタープランの改定作業に着手いたしました"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "実質単年度収支は２年連続で赤字となり、予算編成のため取り崩した財政調整基金を復元することができない厳しい財政状況が続いております"@ja.
+<< kg:id_18 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "職員全体で財政状況に対する意識を共有し、成果を重視した事業展開"@ja.
+<< kg:id_18 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "役割を終えた事業を終了するなど限られた財源と限られた人材で取り組むべき事業の質を選んでまいります"@ja.
+<< kg:id_18 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "限られた財源と限られた人材で取り組むべき事業の質を選んでまいります"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:text-txt_contents "制度改正により児童扶養手当を増額しております"@ja.
+<< kg:id_23 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "制度改正により児童扶養手当を増額しております"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "情報発信のバリエーションを広げるために国の補助事業を活用して広域周遊ルートの作成機能と情報の分析を行うこと等を主な内容として観光戦略推進事業費を増額するものです"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:text-txt_contents "田沢小学校の耐震改修方法の変更により田沢小学校改修事業費を増額"@ja.
+<< kg:id_28 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "田沢小学校の耐震改修方法の変更により田沢小学校改修事業費を増額"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:text-txt_contents "文化財保護法による届け出の増加により、埋蔵文化財の調査経費を増額"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "建築基準法に適合していない光ケ丘テニスコートのブロック塀を解体等するための経費を計上しております"@ja.
+<< kg:id_35 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "風力発電施設の建設費の計上に伴うもので、歳出では風力発電事業費を"@ja.
+<< kg:id_37 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "酒田市交通災害共済事業を廃止するため、関係条例を整備するものであります"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "酒田市升田児童館を廃館するため、条例を廃止するものであります"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "平成30年度酒田市防災行政無線デジタル化整備工事において、入札の結果、株式会社ハムシステム庄内と２億1,924万円で請負契約を締結するものであります"@ja.
+<< kg:id_43 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "福祉乗合用小型バスを更新するため取得するものであり"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:text-txt_contents "個人市民税が所得の伸びなどにより1.7％"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:text-txt_contents "固定資産税が住宅着工数の増加や企業の設備投資の増加等により1.0％"@ja.
+<< kg:id_47 prop:cause kg:id_49 >>
+    prop:text-txt_contents "固定資産税が住宅着工数の増加や企業の設備投資の増加等により1.0％"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:text-txt_contents "軽自動車税が税率の改正等により3.3％"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:text-txt_contents "交付金では、地方消費税交付金、自動車取得税交付金の増額等により8.3％の増加"@ja.
+<< kg:id_52 prop:cause kg:id_54 >>
+    prop:text-txt_contents "交付金では、地方消費税交付金、自動車取得税交付金の増額等により8.3％の増加"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:text-txt_contents "合併算定替の縮減等により2.5％の減"@ja.
+<< kg:id_55 prop:cause kg:id_57 >>
+    prop:text-txt_contents "市民税等の増額に伴う基準財政収入額の増額"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "自主財源の構成比率は前年度より1.3ポイント上昇しておりますが、その主な要因は、寄附金が増加したことによるものです"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:text-txt_contents "総務費は、市議会議員選挙等の皆増"@ja.
+<< kg:id_60 prop:cause kg:id_62 >>
+    prop:text-txt_contents "総務費は、ふるさと納税推進事業費、新庁舎整備事業費等の増額により19.7％の増加"@ja.
+<< kg:id_60 prop:cause kg:id_63 >>
+    prop:text-txt_contents "総務費は、ふるさと納税推進事業費、新庁舎整備事業費等の増額により19.7％の増加"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:text-txt_contents "民生費は、年金生活者等支援臨時福祉給付金給付事業費...の皆減"@ja.
+<< kg:id_66 prop:cause kg:id_67 >>
+    prop:text-txt_contents "酒田地区広域行政組合分賦金（衛生分）、病院事業運営費負担事業費等の減額により5.6％の減少"@ja.
+<< kg:id_66 prop:cause kg:id_68 >>
+    prop:text-txt_contents "酒田地区広域行政組合分賦金（衛生分）、病院事業運営費負担事業費等の減額により5.6％の減少"@ja.
+<< kg:id_69 prop:cause kg:id_70 >>
+    prop:text-txt_contents "働く女性活躍促進事業費...の皆増"@ja.
+<< kg:id_71 prop:cause kg:id_72 >>
+    prop:text-txt_contents "商工費は、地域総合整備資金貸付事業費...の皆増"@ja.
+<< kg:id_71 prop:cause kg:id_73 >>
+    prop:text-txt_contents "工場等設置助成事業費等の増額により50.0％の増加"@ja.
+<< kg:id_74 prop:cause kg:id_75 >>
+    prop:text-txt_contents "土木費は...中町モール改修事業費、都市計画マスタープラン及び立地適正化計画策定事業費等の皆増"@ja.
+<< kg:id_74 prop:cause kg:id_76 >>
+    prop:text-txt_contents "都市計画マスタープラン及び立地適正化計画策定事業費等の皆増"@ja.
+<< kg:id_77 prop:cause kg:id_67 >>
+    prop:text-txt_contents "酒田地区広域行政組合分賦金（消防分）、消防庁舎及び総合防災センター整備事業費等の減額により24.3％の減少"@ja.
+<< kg:id_77 prop:cause kg:id_78 >>
+    prop:text-txt_contents "酒田地区広域行政組合分賦金（消防分）、消防庁舎及び総合防災センター整備事業費等の減額により24.3％の減少"@ja.
+<< kg:id_79 prop:cause kg:id_80 >>
+    prop:text-txt_contents "教育費は...学校ＩＣＴ環境整備事業費、光ケ丘球技場人工芝整備事業費等の皆増"@ja.
+<< kg:id_79 prop:cause kg:id_81 >>
+    prop:text-txt_contents "教育費は...学校ＩＣＴ環境整備事業費、光ケ丘球技場人工芝整備事業費等の皆増"@ja.
+<< kg:id_82 prop:cause kg:id_83 >>
+    prop:text-txt_contents "災害復旧費は、公共土木施設災害復旧事業費の増額等により185.6％の増加"@ja.
+<< kg:id_84 prop:cause kg:id_85 >>
+    prop:text-txt_contents "諸支出金は、定期航路事業特別会計繰出金の増額により85.5％の増加"@ja.
+<< kg:id_86 prop:effect kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "中央地下駐車場利用台数は４万1,245台、前年度に比べて6,728台、14％の減"@ja.
+<< kg:id_88 prop:effect kg:id_89 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "年間の乗客数は、２万2,783人と、前年度より993.5人、4.2％減少しております"@ja.
+<< kg:id_90 prop:effect kg:id_91 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "消費税及び地方消費税を控除した当年度純損失は６億6,937万4,846円"@ja.
+<< kg:id_92 prop:effect kg:id_91 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "消費税及び地方消費税を控除した当年度純損失は２億6,404万6,553円"@ja.
+<< kg:id_93 prop:effect kg:id_94 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "下水道事業会計の審査に付された決算報告書及び財務諸表は...計数については、有形固定資産と減価償却費に誤りが認められました"@ja.
+}

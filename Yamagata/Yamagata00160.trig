@@ -1,0 +1,1040 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00160> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "燃料代の高騰"@ja.
+kg:id_1 rdf:type cls:c_609.
+cls:c_609 rdfs:label "価格上昇"@ja.
+kg:id_2 rdfs:label "補正予算の必要"@ja.
+kg:id_2 rdf:type cls:c_9024.
+cls:c_9024 rdfs:label "補正予算需要"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "資材高騰"@ja.
+kg:id_3 rdf:type cls:c_609.
+kg:id_4 rdfs:label "調達に絡む補正予算の必要"@ja.
+kg:id_4 rdf:type cls:c_9024.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "コンビニ交付サービス導入"@ja.
+kg:id_5 rdf:type cls:c_882.
+cls:c_882 rdfs:label "行政サービス導入"@ja.
+kg:id_6 rdfs:label "町民が全国のコンビニで住民票の写しを取得できる"@ja.
+kg:id_6 rdf:type cls:c_9025.
+cls:c_9025 rdfs:label "証明書取得"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "町民が全国のコンビニで印鑑登録証明書を取得できる"@ja.
+kg:id_7 rdf:type cls:c_9025.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "窓口閉庁後の夜間や休日でも証明書交付を利用できる"@ja.
+kg:id_8 rdf:type cls:c_9026.
+cls:c_9026 rdfs:label "証明書利用拡大"@ja.
+kg:id_5 prop:effect kg:id_8.
+kg:id_9 rdfs:label "窓口用申請書手続端末の導入"@ja.
+kg:id_9 rdf:type cls:c_9027.
+cls:c_9027 rdfs:label "行政端末導入"@ja.
+kg:id_10 rdfs:label "高齢者や申請書記載が困難な人の手続負担が軽減される"@ja.
+kg:id_10 rdf:type cls:c_9028.
+cls:c_9028 rdfs:label "手続負担軽減"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "本人確認や申請書記載を省略できる"@ja.
+kg:id_11 rdf:type cls:c_2169.
+cls:c_2169 rdfs:label "手続簡素化"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:id_12 rdfs:label "申請誤りが減る"@ja.
+kg:id_12 rdf:type cls:c_9029.
+cls:c_9029 rdfs:label "申請誤り減少"@ja.
+kg:id_9 prop:effect kg:id_12.
+kg:id_13 rdfs:label "マイナンバーカード"@ja.
+kg:id_13 rdf:type cls:c_9030.
+cls:c_9030 rdfs:label "本人確認手段"@ja.
+kg:id_14 rdfs:label "コンビニ交付端末の利用に必要"@ja.
+kg:id_14 rdf:type cls:c_9031.
+cls:c_9031 rdfs:label "端末利用条件"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "全国的なシステム上の時間設定"@ja.
+kg:id_15 rdf:type cls:c_9032.
+cls:c_9032 rdfs:label "システム制約"@ja.
+kg:id_16 rdfs:label "コンビニ交付サービスの24時間化ができない"@ja.
+kg:id_16 rdf:type cls:c_9033.
+cls:c_9033 rdfs:label "サービス時間制限"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "市町村独自整備ではなく共同利用システムの利用"@ja.
+kg:id_17 rdf:type cls:c_9034.
+cls:c_9034 rdfs:label "共同利用"@ja.
+kg:id_18 rdfs:label "コンビニ交付導入経費の抑制"@ja.
+kg:id_18 rdf:type cls:c_9035.
+cls:c_9035 rdfs:label "導入経費抑制"@ja.
+kg:id_17 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "特別交付税での算定"@ja.
+kg:id_19 rdf:type cls:c_1007.
+cls:c_1007 rdfs:label "財政支援"@ja.
+kg:id_20 rdfs:label "コンビニ交付導入の初期投資負担の軽減"@ja.
+kg:id_20 rdf:type cls:c_9036.
+cls:c_9036 rdfs:label "初期負担軽減"@ja.
+kg:id_19 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "重層的支援体制整備事業"@ja.
+kg:id_21 rdf:type cls:c_896.
+cls:c_896 rdfs:label "支援事業"@ja.
+kg:id_22 rdfs:label "多機関協働の取組の追加"@ja.
+kg:id_22 rdf:type cls:c_9037.
+cls:c_9037 rdfs:label "協働取組追加"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "参加支援の取組の追加"@ja.
+kg:id_23 rdf:type cls:c_9038.
+cls:c_9038 rdfs:label "参加支援追加"@ja.
+kg:id_21 prop:cause kg:id_23.
+kg:id_24 rdfs:label "庁内連携体制の構築"@ja.
+kg:id_24 rdf:type cls:c_1727.
+cls:c_1727 rdfs:label "連携体制構築"@ja.
+kg:id_21 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "多機関協働による相談受付と支援プラン作成"@ja.
+kg:id_25 rdf:type cls:c_9039.
+cls:c_9039 rdfs:label "相談支援実施"@ja.
+kg:id_21 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "参加支援として生活支援事業へ結びつける"@ja.
+kg:id_26 rdf:type cls:c_9040.
+cls:c_9040 rdfs:label "参加支援実施"@ja.
+kg:id_21 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "アウトリーチ等を通じた継続的支援"@ja.
+kg:id_27 rdf:type cls:c_9041.
+cls:c_9041 rdfs:label "継続支援実施"@ja.
+kg:id_21 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "事業内容が当初はっきりしていなかったこと"@ja.
+kg:id_28 rdf:type cls:c_9042.
+cls:c_9042 rdfs:label "事業不明確"@ja.
+kg:id_29 rdfs:label "重層的支援体制整備事業の補正追加"@ja.
+kg:id_29 rdf:type cls:c_9043.
+cls:c_9043 rdfs:label "補正予算追加"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "子育て世帯移住奨励金補正"@ja.
+kg:id_30 rdf:type cls:c_9044.
+cls:c_9044 rdfs:label "奨励事業"@ja.
+kg:id_31 rdfs:label "子育て世帯の移住者増加"@ja.
+kg:id_31 rdf:type cls:c_9045.
+cls:c_9045 rdfs:label "移住者増加"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "子育て世帯移住者増加"@ja.
+kg:id_32 rdf:type cls:c_9045.
+kg:id_33 rdfs:label "当初予定した子ども人数を超えて奨励金が不足する"@ja.
+kg:id_33 rdf:type cls:c_977.
+cls:c_977 rdfs:label "予算不足"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "定住促進担当との連携確認"@ja.
+kg:id_34 rdf:type cls:c_9046.
+cls:c_9046 rdfs:label "担当連携"@ja.
+kg:id_35 rdfs:label "移住理由の把握と今後の施策精査"@ja.
+kg:id_35 rdf:type cls:c_9047.
+cls:c_9047 rdfs:label "要因把握"@ja.
+kg:id_34 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "事業用地が道路より低いこと"@ja.
+kg:id_36 rdf:type cls:c_1154.
+cls:c_1154 rdfs:label "地形条件"@ja.
+kg:id_37 rdfs:label "パーキングエリアタウン整備で盛土造成が必要"@ja.
+kg:id_37 rdf:type cls:c_9048.
+cls:c_9048 rdfs:label "造成必要"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "山形県の道路改良工事"@ja.
+kg:id_38 rdf:type cls:c_9049.
+cls:c_9049 rdfs:label "関連工事"@ja.
+kg:id_39 rdfs:label "上下水道管とパイプラインを県工事に合わせて施工する必要"@ja.
+kg:id_39 rdf:type cls:c_9050.
+cls:c_9050 rdfs:label "同期施工必要"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "パーキングエリアタウン"@ja.
+kg:id_40 rdf:type cls:c_2707.
+cls:c_2707 rdfs:label "地域整備"@ja.
+kg:id_41 rdfs:label "防災拠点として整備を進める"@ja.
+kg:id_41 rdf:type cls:c_6937.
+cls:c_6937 rdfs:label "防災拠点整備"@ja.
+kg:id_40 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "十六羅漢公衆トイレ和式便器の不具合"@ja.
+kg:id_42 rdf:type cls:c_9051.
+cls:c_9051 rdfs:label "設備不具合"@ja.
+kg:id_43 rdfs:label "便器交換工事の実施"@ja.
+kg:id_43 rdf:type cls:c_9052.
+cls:c_9052 rdfs:label "交換工事実施"@ja.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "経年により修繕部品供給が見込めないこと"@ja.
+kg:id_44 rdf:type cls:c_9053.
+cls:c_9053 rdfs:label "部品供給不能"@ja.
+kg:id_45 rdfs:label "便器を修繕ではなく交換する判断"@ja.
+kg:id_45 rdf:type cls:c_9054.
+cls:c_9054 rdfs:label "交換判断"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "十六羅漢公衆トイレ"@ja.
+kg:id_46 rdf:type cls:c_9055.
+cls:c_9055 rdfs:label "公衆設備"@ja.
+kg:id_47 rdfs:label "男子トイレ大便器2基を洋式化する"@ja.
+kg:id_47 rdf:type cls:c_9056.
+cls:c_9056 rdfs:label "設備洋式化"@ja.
+kg:id_46 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "西浜コテージ周辺の支障木発生"@ja.
+kg:id_48 rdf:type cls:c_9057.
+cls:c_9057 rdfs:label "支障木発生"@ja.
+kg:id_49 rdfs:label "支障木撤去業務委託の必要"@ja.
+kg:id_49 rdf:type cls:c_9058.
+cls:c_9058 rdfs:label "撤去必要"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "申請率が伸びている自治体の先進事例"@ja.
+kg:id_50 rdf:type cls:c_9059.
+cls:c_9059 rdfs:label "先進事例"@ja.
+kg:id_51 rdfs:label "マイナンバーカード申請啓発グッズ作成"@ja.
+kg:id_51 rdf:type cls:c_9060.
+cls:c_9060 rdfs:label "啓発物作成"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "マイナンバーカード申請啓発"@ja.
+kg:id_52 rdf:type cls:c_9061.
+cls:c_9061 rdfs:label "申請啓発"@ja.
+kg:id_53 rdfs:label "のぼりやベストやテーブルクロスや公用車マグネット広告を作成する"@ja.
+kg:id_53 rdf:type cls:c_9060.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "高齢者のマイナポイント取得需要"@ja.
+kg:id_54 rdf:type cls:c_9062.
+cls:c_9062 rdfs:label "取得需要"@ja.
+kg:id_55 rdfs:label "高齢者の申込みサポート利用が多い"@ja.
+kg:id_55 rdf:type cls:c_9063.
+cls:c_9063 rdfs:label "支援利用増加"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_56 rdfs:label "オミクロン対応ワクチン接種"@ja.
+kg:id_56 rdf:type cls:c_1348.
+cls:c_1348 rdfs:label "予防接種"@ja.
+kg:id_57 rdfs:label "新型コロナウイルスワクチン予防接種委託料等の補正"@ja.
+kg:id_57 rdf:type cls:c_9024.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "2回接種済みの12歳以上が対象となる"@ja.
+kg:id_58 rdf:type cls:c_9064.
+cls:c_9064 rdfs:label "接種対象設定"@ja.
+kg:id_56 prop:effect kg:id_58.
+kg:id_59 rdfs:label "当町に権限がないこと"@ja.
+kg:id_59 rdf:type cls:c_9065.
+cls:c_9065 rdfs:label "権限制約"@ja.
+kg:id_60 rdfs:label "新型コロナ感染者の入院調整に町が対応できない"@ja.
+kg:id_60 rdf:type cls:c_9066.
+cls:c_9066 rdfs:label "行政対応不能"@ja.
+kg:id_59 prop:cause kg:id_60.
+kg:id_61 rdfs:label "建設資材価格上昇"@ja.
+kg:id_61 rdf:type cls:c_609.
+kg:id_62 rdfs:label "防火水槽設置費の不足"@ja.
+kg:id_62 rdf:type cls:c_9067.
+cls:c_9067 rdfs:label "設置費不足"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "人件費上昇"@ja.
+kg:id_63 rdf:type cls:c_9068.
+cls:c_9068 rdfs:label "人件費上昇"@ja.
+kg:id_63 prop:cause kg:id_62.
+kg:id_64 rdfs:label "諸経費上昇"@ja.
+kg:id_64 rdf:type cls:c_9069.
+cls:c_9069 rdfs:label "諸経費上昇"@ja.
+kg:id_65 rdfs:label "防火水槽設置費が約1.4倍の積算となる"@ja.
+kg:id_65 rdf:type cls:c_9070.
+cls:c_9070 rdfs:label "設置費増加"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "無蓋防火水槽"@ja.
+kg:id_66 rdf:type cls:c_1314.
+cls:c_1314 rdfs:label "危険設備"@ja.
+kg:id_67 rdfs:label "危険性や衛生上の問題がある"@ja.
+kg:id_67 rdf:type cls:c_9071.
+cls:c_9071 rdfs:label "危険衛生問題"@ja.
+kg:id_66 prop:effect kg:id_67.
+kg:id_68 rdfs:label "有蓋化を進める"@ja.
+kg:id_68 rdf:type cls:c_9072.
+cls:c_9072 rdfs:label "有蓋化推進"@ja.
+kg:id_66 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "新型コロナウイルス感染症拡大の影響"@ja.
+kg:id_69 rdf:type cls:c_9073.
+cls:c_9073 rdfs:label "感染拡大影響"@ja.
+kg:id_70 rdfs:label "テレワークを取り入れる事業者が増えている"@ja.
+kg:id_70 rdf:type cls:c_9074.
+cls:c_9074 rdfs:label "業務形態変化"@ja.
+kg:id_69 prop:cause kg:id_70.
+kg:id_71 rdfs:label "テレワーク移住体験支援事業"@ja.
+kg:id_71 rdf:type cls:c_9075.
+cls:c_9075 rdfs:label "移住支援事業"@ja.
+kg:id_72 rdfs:label "本町への移住促進"@ja.
+kg:id_72 rdf:type cls:c_1235.
+cls:c_1235 rdfs:label "移住促進"@ja.
+kg:id_71 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "ワーケーション体験支援事業"@ja.
+kg:id_73 rdf:type cls:c_9076.
+cls:c_9076 rdfs:label "体験支援事業"@ja.
+kg:id_74 rdfs:label "関係人口の増加"@ja.
+kg:id_74 rdf:type cls:c_9077.
+cls:c_9077 rdfs:label "関係人口増加"@ja.
+kg:id_73 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "空家解体撤去補助金"@ja.
+kg:id_75 rdf:type cls:c_8355.
+cls:c_8355 rdfs:label "補助事業"@ja.
+kg:id_76 rdfs:label "相談件数増加で既存予算を使い切る見込み"@ja.
+kg:id_76 rdf:type cls:c_977.
+kg:id_75 prop:cause kg:id_76.
+kg:id_77 rdfs:label "要綱見直し"@ja.
+kg:id_77 rdf:type cls:c_4001.
+cls:c_4001 rdfs:label "制度見直し"@ja.
+kg:id_78 rdfs:label "空家解体撤去補助金の利用促進"@ja.
+kg:id_78 rdf:type cls:c_1221.
+cls:c_1221 rdfs:label "利用促進"@ja.
+kg:id_77 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "遊楽里吸収冷温水機の故障"@ja.
+kg:id_79 rdf:type cls:c_681.
+cls:c_681 rdfs:label "設備故障"@ja.
+kg:id_80 rdfs:label "緊急修繕の実施"@ja.
+kg:id_80 rdf:type cls:c_9078.
+cls:c_9078 rdfs:label "緊急修繕"@ja.
+kg:id_79 prop:cause kg:id_80.
+kg:id_81 rdfs:label "湧水フォーラム"@ja.
+kg:id_81 rdf:type cls:c_9079.
+cls:c_9079 rdfs:label "意見交換会"@ja.
+kg:id_82 rdfs:label "臂曲地区岩石採取訴訟事件の経過説明"@ja.
+kg:id_82 rdf:type cls:c_9080.
+cls:c_9080 rdfs:label "経過説明"@ja.
+kg:id_81 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "今後の取組提案を受ける"@ja.
+kg:id_83 rdf:type cls:c_9081.
+cls:c_9081 rdfs:label "提案収集"@ja.
+kg:id_81 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "水循環保全事業"@ja.
+kg:id_84 rdf:type cls:c_9082.
+cls:c_9082 rdfs:label "保全事業"@ja.
+kg:id_85 rdfs:label "水量調査を行う"@ja.
+kg:id_85 rdf:type cls:c_9083.
+cls:c_9083 rdfs:label "水量調査"@ja.
+kg:id_84 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "水の成分分析を行う"@ja.
+kg:id_86 rdf:type cls:c_9084.
+cls:c_9084 rdfs:label "成分分析"@ja.
+kg:id_84 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "これまでの推移を記録し調査できる"@ja.
+kg:id_87 rdf:type cls:c_9085.
+cls:c_9085 rdfs:label "推移記録"@ja.
+kg:id_84 prop:effect kg:id_87.
+kg:id_88 rdfs:label "鳥海山・飛島ジオパークのPR不足"@ja.
+kg:id_88 rdf:type cls:c_1098.
+cls:c_1098 rdfs:label "周知不足"@ja.
+kg:id_89 rdfs:label "横断幕製作の必要"@ja.
+kg:id_89 rdf:type cls:c_9086.
+cls:c_9086 rdfs:label "掲示物必要"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "ジオパーク推進事業"@ja.
+kg:id_90 rdf:type cls:c_9087.
+cls:c_9087 rdfs:label "推進事業"@ja.
+kg:id_91 rdfs:label "防災センターに横断幕を設置する"@ja.
+kg:id_91 rdf:type cls:c_9088.
+cls:c_9088 rdfs:label "掲示物設置"@ja.
+kg:id_90 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "固定資産税の課税誤り等に係る処理"@ja.
+kg:id_92 rdf:type cls:c_9089.
+cls:c_9089 rdfs:label "事務処理"@ja.
+kg:id_93 rdfs:label "郵送料が想定よりかかる"@ja.
+kg:id_93 rdf:type cls:c_9090.
+cls:c_9090 rdfs:label "郵送費増加"@ja.
+kg:id_92 prop:cause kg:id_93.
+kg:id_94 rdfs:label "遊佐小学校の職員数増加"@ja.
+kg:id_94 rdf:type cls:c_9091.
+cls:c_9091 rdfs:label "職員増加"@ja.
+kg:id_95 rdfs:label "職員室の電話回線増設が必要"@ja.
+kg:id_95 rdf:type cls:c_9092.
+cls:c_9092 rdfs:label "回線増設必要"@ja.
+kg:id_94 prop:cause kg:id_95.
+kg:id_96 rdfs:label "緊急時対応や業務効率化の必要"@ja.
+kg:id_96 rdf:type cls:c_9093.
+cls:c_9093 rdfs:label "対応必要"@ja.
+kg:id_97 rdfs:label "電話をPHS形式に変更整備する"@ja.
+kg:id_97 rdf:type cls:c_9094.
+cls:c_9094 rdfs:label "通信設備整備"@ja.
+kg:id_96 prop:cause kg:id_97.
+kg:id_98 rdfs:label "図書館街路灯ポール根元の腐食"@ja.
+kg:id_98 rdf:type cls:c_9095.
+cls:c_9095 rdfs:label "設備腐食"@ja.
+kg:id_99 rdfs:label "街路灯交換工事の実施"@ja.
+kg:id_99 rdf:type cls:c_9052.
+kg:id_98 prop:cause kg:id_99.
+kg:id_100 rdfs:label "青塚海岸林が最前線で潮風等の影響が強いこと"@ja.
+kg:id_100 rdf:type cls:c_9096.
+cls:c_9096 rdfs:label "自然条件"@ja.
+kg:id_101 rdfs:label "松苗を保護する防風柵設置が必要"@ja.
+kg:id_101 rdf:type cls:c_9097.
+cls:c_9097 rdfs:label "防風柵必要"@ja.
+kg:id_100 prop:cause kg:id_101.
+kg:id_102 rdfs:label "地元青塚集落からの要望"@ja.
+kg:id_102 rdf:type cls:c_9098.
+cls:c_9098 rdfs:label "地域要望"@ja.
+kg:id_103 rdfs:label "青塚海岸林防風柵の追加設置"@ja.
+kg:id_103 rdf:type cls:c_9099.
+cls:c_9099 rdfs:label "防風柵追加"@ja.
+kg:id_102 prop:cause kg:id_103.
+kg:id_104 rdfs:label "全国洋上風力発電市町村連絡協議会への加入"@ja.
+kg:id_104 rdf:type cls:c_9100.
+cls:c_9100 rdfs:label "協議会加入"@ja.
+kg:id_105 rdfs:label "先進地の情報交換と学びを得る"@ja.
+kg:id_105 rdf:type cls:c_412.
+cls:c_412 rdfs:label "情報交換"@ja.
+kg:id_104 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "道路改良工事や側溝整備工事"@ja.
+kg:id_106 rdf:type cls:c_9101.
+cls:c_9101 rdfs:label "道路工事"@ja.
+kg:id_107 rdfs:label "道路台帳補正業務が必要"@ja.
+kg:id_107 rdf:type cls:c_9102.
+cls:c_9102 rdfs:label "台帳補正必要"@ja.
+kg:id_106 prop:cause kg:id_107.
+kg:id_108 rdfs:label "昨シーズンの大雪"@ja.
+kg:id_108 rdf:type cls:c_1623.
+cls:c_1623 rdfs:label "大雪"@ja.
+kg:id_109 rdfs:label "除雪管理システムのトライアル導入"@ja.
+kg:id_109 rdf:type cls:c_9103.
+cls:c_9103 rdfs:label "試行導入"@ja.
+kg:id_108 prop:cause kg:id_109.
+kg:id_110 rdfs:label "除雪管理システム"@ja.
+kg:id_110 rdf:type cls:c_781.
+cls:c_781 rdfs:label "管理システム"@ja.
+kg:id_111 rdfs:label "除雪車の現在位置を把握できる"@ja.
+kg:id_111 rdf:type cls:c_9104.
+cls:c_9104 rdfs:label "位置把握"@ja.
+kg:id_110 prop:effect kg:id_111.
+kg:id_112 rdfs:label "除雪日報作成が簡易になる"@ja.
+kg:id_112 rdf:type cls:c_9105.
+cls:c_9105 rdfs:label "報告簡易化"@ja.
+kg:id_110 prop:effect kg:id_112.
+kg:id_113 rdfs:label "高速道路工事に伴う周辺伐採"@ja.
+kg:id_113 rdf:type cls:c_9106.
+cls:c_9106 rdfs:label "周辺伐採"@ja.
+kg:id_114 rdfs:label "南山地区法面のひび割れが判明した"@ja.
+kg:id_114 rdf:type cls:c_9107.
+cls:c_9107 rdfs:label "損傷判明"@ja.
+kg:id_113 prop:cause kg:id_114.
+kg:id_115 rdfs:label "南山地区法面のひび割れ"@ja.
+kg:id_115 rdf:type cls:c_9108.
+cls:c_9108 rdfs:label "損傷"@ja.
+kg:id_116 rdfs:label "法面補修工事の設計を行う"@ja.
+kg:id_116 rdf:type cls:c_9109.
+cls:c_9109 rdfs:label "補修設計"@ja.
+kg:id_115 prop:contermeasure kg:id_116.
+kg:id_117 rdfs:label "栄橋の一部落橋"@ja.
+kg:id_117 rdf:type cls:c_9110.
+cls:c_9110 rdfs:label "落橋"@ja.
+kg:id_118 rdfs:label "落橋部分撤去工事費の補正"@ja.
+kg:id_118 rdf:type cls:c_9111.
+cls:c_9111 rdfs:label "撤去工事費補正"@ja.
+kg:id_117 prop:cause kg:id_118.
+kg:id_119 rdfs:label "栄橋落橋"@ja.
+kg:id_119 rdf:type cls:c_9110.
+kg:id_120 rdfs:label "白木側から仮桟橋を造り撤去する"@ja.
+kg:id_120 rdf:type cls:c_9112.
+cls:c_9112 rdfs:label "仮橋撤去"@ja.
+kg:id_119 prop:contermeasure kg:id_120.
+kg:id_121 rdfs:label "漂着ごみと砂の堆積増加"@ja.
+kg:id_121 rdf:type cls:c_9113.
+cls:c_9113 rdfs:label "堆積増加"@ja.
+kg:id_122 rdfs:label "十里塚海水浴場環境整備工事費の増加"@ja.
+kg:id_122 rdf:type cls:c_9114.
+cls:c_9114 rdfs:label "工事費増加"@ja.
+kg:id_121 prop:cause kg:id_122.
+kg:id_123 rdfs:label "既決予算で対応した分の補填が必要"@ja.
+kg:id_123 rdf:type cls:c_9115.
+cls:c_9115 rdfs:label "予算補填必要"@ja.
+kg:id_121 prop:effect kg:id_123.
+kg:id_124 rdfs:label "泊まってもらおう！ゆざの特産品事業"@ja.
+kg:id_124 rdf:type cls:c_9116.
+cls:c_9116 rdfs:label "誘客事業"@ja.
+kg:id_125 rdfs:label "宿泊客に特産品を送付して観光誘客を図る"@ja.
+kg:id_125 rdf:type cls:c_9117.
+cls:c_9117 rdfs:label "特産品送付"@ja.
+kg:id_124 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "やまがた冬割との相乗効果"@ja.
+kg:id_126 rdf:type cls:c_9118.
+cls:c_9118 rdfs:label "相乗効果"@ja.
+kg:id_127 rdfs:label "前年事業が予算上限前に早期終了した"@ja.
+kg:id_127 rdf:type cls:c_8585.
+cls:c_8585 rdfs:label "早期終了"@ja.
+kg:id_126 prop:effect kg:id_127.
+kg:id_128 rdfs:label "遊佐高校魅力化地域連携支援事業"@ja.
+kg:id_128 rdf:type cls:c_9119.
+cls:c_9119 rdfs:label "地域連携事業"@ja.
+kg:id_129 rdfs:label "県外から自然体験型留学生を受け入れている"@ja.
+kg:id_129 rdf:type cls:c_9120.
+cls:c_9120 rdfs:label "留学生受入れ"@ja.
+kg:id_128 prop:effect kg:id_129.
+kg:id_130 rdfs:label "留学生数の増加"@ja.
+kg:id_130 rdf:type cls:c_9121.
+cls:c_9121 rdfs:label "留学生増加"@ja.
+kg:id_131 rdfs:label "寮の数増加と運営費増額"@ja.
+kg:id_131 rdf:type cls:c_9122.
+cls:c_9122 rdfs:label "寮増設"@ja.
+kg:id_130 prop:cause kg:id_131.
+kg:id_132 rdfs:label "寮の増設"@ja.
+kg:id_132 rdf:type cls:c_9123.
+cls:c_9123 rdfs:label "施設増加"@ja.
+kg:id_133 rdfs:label "生活相談員謝礼や光熱水費が増える"@ja.
+kg:id_133 rdf:type cls:c_9124.
+cls:c_9124 rdfs:label "運営費増加"@ja.
+kg:id_132 prop:effect kg:id_133.
+kg:id_134 rdfs:label "空き家活用による留学生受入れ"@ja.
+kg:id_134 rdf:type cls:c_9125.
+cls:c_9125 rdfs:label "空家活用"@ja.
+kg:id_135 rdfs:label "地域と共にある生活環境をつくる"@ja.
+kg:id_135 rdf:type cls:c_9126.
+cls:c_9126 rdfs:label "地域生活環境"@ja.
+kg:id_134 prop:contermeasure kg:id_135.
+kg:id_136 rdfs:label "月光川水害予防組合の解散"@ja.
+kg:id_136 rdf:type cls:c_8028.
+cls:c_8028 rdfs:label "組織解散"@ja.
+kg:id_137 rdfs:label "遊佐町河川情報連絡会の立ち上げ"@ja.
+kg:id_137 rdf:type cls:c_9127.
+cls:c_9127 rdfs:label "連絡会設置"@ja.
+kg:id_136 prop:cause kg:id_137.
+kg:id_138 rdfs:label "遊佐町河川情報連絡会"@ja.
+kg:id_138 rdf:type cls:c_9128.
+cls:c_9128 rdfs:label "連絡会"@ja.
+kg:id_139 rdfs:label "河川巡回や情報提供体制を維持する"@ja.
+kg:id_139 rdf:type cls:c_9129.
+cls:c_9129 rdfs:label "情報体制維持"@ja.
+kg:id_138 prop:contermeasure kg:id_139.
+kg:id_140 rdfs:label "ゆざ元町賑わい再生事業"@ja.
+kg:id_140 rdf:type cls:c_9130.
+cls:c_9130 rdfs:label "再生事業"@ja.
+kg:id_141 rdfs:label "冷凍自動販売機を設置する"@ja.
+kg:id_141 rdf:type cls:c_9131.
+cls:c_9131 rdfs:label "自販機設置"@ja.
+kg:id_140 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "冷凍自動販売機の設置"@ja.
+kg:id_142 rdf:type cls:c_9131.
+kg:id_143 rdfs:label "24時間遊佐フードを販売できる"@ja.
+kg:id_143 rdf:type cls:c_9132.
+cls:c_9132 rdfs:label "販売拡大"@ja.
+kg:id_142 prop:effect kg:id_143.
+kg:id_144 rdfs:label "加藤総業の貸しオフィス入居"@ja.
+kg:id_144 rdf:type cls:c_9133.
+cls:c_9133 rdfs:label "入居増加"@ja.
+kg:id_145 rdfs:label "地域活性化拠点施設の光熱水費増加"@ja.
+kg:id_145 rdf:type cls:c_9134.
+cls:c_9134 rdfs:label "光熱費増加"@ja.
+kg:id_144 prop:cause kg:id_145.
+kg:id_146 rdfs:label "燃料高騰"@ja.
+kg:id_146 rdf:type cls:c_609.
+kg:id_146 prop:cause kg:id_145.
+kg:id_147 rdfs:label "加工場利用増加"@ja.
+kg:id_147 rdf:type cls:c_1979.
+cls:c_1979 rdfs:label "利用増加"@ja.
+kg:id_147 prop:cause kg:id_145.
+kg:id_148 rdfs:label "持家住宅リフォーム支援事業補助金"@ja.
+kg:id_148 rdf:type cls:c_8355.
+kg:id_149 rdfs:label "申請件数や工事費増で予算不足"@ja.
+kg:id_149 rdf:type cls:c_977.
+kg:id_148 prop:cause kg:id_149.
+kg:id_150 rdfs:label "資材単価の高騰"@ja.
+kg:id_150 rdf:type cls:c_609.
+kg:id_151 rdfs:label "リフォーム工事費が高くなる"@ja.
+kg:id_151 rdf:type cls:c_9114.
+kg:id_150 prop:cause kg:id_151.
+kg:id_152 rdfs:label "定住促進住宅建設取得支援事業"@ja.
+kg:id_152 rdf:type cls:c_5267.
+cls:c_5267 rdfs:label "住宅支援事業"@ja.
+kg:id_153 rdfs:label "新築住宅が想定以上に建っている"@ja.
+kg:id_153 rdf:type cls:c_7746.
+cls:c_7746 rdfs:label "住宅増加"@ja.
+kg:id_152 prop:effect kg:id_153.
+kg:st_1 rdfs:label "本間知広委員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "今後も続く可能性があり何とか乗り切る必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "今後も続く可能性があり何とか乗り切る必要がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "後藤町民課長"@ja.
+kg:st_2 rdfs:type cls:st_38.
+cls:st_38 rdfs:label "職員"@ja.
+kg:op_3 prop:content "住民票の写しの交付から始めたい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "印鑑登録証明書の交付から始めたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "住民にとって必要なときに利用できるメリットがある"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "高齢者や記載困難者のサポートになる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "本人確認や申請書を省くことができる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "誤りもなくなるため期待できる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "便利になるにはマイナンバーカードを作る必要がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "24時間化の情報は入っていない"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "佐藤総務課長"@ja.
+kg:st_3 rdfs:type cls:st_38.
+kg:op_11 prop:content "共同利用システムにより経費が相当安くなっている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "初期投資の一部は特別交付税で対応できる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "池田健康福祉課長"@ja.
+kg:st_4 rdfs:type cls:st_38.
+kg:op_13 prop:content "社会福祉協議会に委託して実施する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "社会福祉協議会に委託して実施する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "各分野が連携して相談を受け支援プランを作成する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "社会福祉協議会との打合せで残りの取組も進めることになった"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "当初見込みを超えて移住者が増えている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "不足分に加え今後の増加も見込んで補正している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "増加要因を精査して今後に生かすべきだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "定住促進担当とも確認しながら進めたい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "佐藤俊太郎委員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_21 prop:content "洪水時の安全面も考慮し高い場所としての活用も検討すべきだ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "渡会企画課長"@ja.
+kg:st_6 rdfs:type cls:st_38.
+kg:op_22 prop:content "防災拠点という位置づけで整備を進めたい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:op_23 prop:content "長く使え運用経費が少ない機種を選ぶべきだ"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "屋根上の葉の蓄積も含め管理を進めるべきだ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "統一感があり目立つ窓口づくりが必要だ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "統一感のあるサポート窓口を設置する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "70代を中心に高齢者の利用が多い"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "オミクロン対応ワクチン接種に関する委託料である"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "医療機関や保健所の判断になる"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "特にコンクリート単価が想定より上がっている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "建設資材上昇と諸経費上昇が重なっている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "危険度も高く衛生上も芳しくないため早期有蓋化を進めるべきだ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_5.
+kg:op_33 prop:content "できるだけ早い段階で全数有蓋化を進めるべきだ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_5.
+kg:op_34 prop:content "今年は実績が増え追加補正が必要になった"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "非課税世帯限定を外し加算方式にした"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "フォーラムを契機に次の取組につなげたい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_6.
+kg:op_37 prop:content "遊佐町のPRが不足しているとの声がある"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+kg:op_38 prop:content "文書費の増額要因は主に課税誤り処理に関する郵送料である"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:st_7 rdfs:label "菅原教育課長"@ja.
+kg:st_7 rdfs:type cls:st_38.
+kg:op_39 prop:content "教員への連絡や不測の事態対応のため必要である"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "菅原和幸委員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_40 prop:content "多様な意見を踏まえ情報交換が大切だ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "太田地域生活課長"@ja.
+kg:st_9 rdfs:type cls:st_38.
+kg:op_41 prop:content "先進地の情報交換や学ぶべき点の把握に役立つ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "道路の拡幅等が変わるため台帳補正が必要である"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_9.
+kg:op_43 prop:content "昨年の大雪を踏まえて試行導入する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_9.
+kg:op_44 prop:content "委託業者の日報作成負担の軽減が見込める"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_9.
+kg:op_45 prop:content "来年度計画を前倒しするような形で施工する"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_9.
+kg:op_46 prop:content "開設に必要な最低限の除砂等を既決予算で実施した"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_6.
+kg:op_47 prop:content "昨年度同様に1件当たり2500円の特産品送付を予定する"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_6.
+kg:op_48 prop:content "3年間で14名の生徒を受け入れている"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_6.
+kg:op_49 prop:content "今年度は7名となり男子寮2棟女子寮2棟が必要となった"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_6.
+kg:st_10 rdfs:label "時田町長"@ja.
+kg:st_10 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_50 prop:content "地域に入れていくと子供たちの学び方が変わる"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_10.
+kg:op_51 prop:content "町で河川全体を見て情報連絡体制をつくる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_9.
+kg:st_11 rdfs:label "舘内産業課長"@ja.
+kg:st_11 rdfs:type cls:st_38.
+kg:op_52 prop:content "駅前のにぎわい再生のため冷凍自販機設置を支援する"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_11.
+kg:op_53 prop:content "加工場利用が明らかに増えている"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_11.
+kg:op_54 prop:content "資材単価の高騰で件数が少なくても予算上限に早く達している"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_9.
+kg:op_55 prop:content "資材によっては1.5倍から2倍になっている"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_9.
+kg:op_56 prop:content "三隣亡でも新築住宅が軒並み建っている"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_9.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "特に今回の補正見ましても、特に燃料代の高騰による税金、その補正ですとか"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "資材が高騰、例えばその調達であったり、そういったことに絡むものであったりとか"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "コンビニ交付というのは、マイナンバーカードを使いまして、町が発行する証明書、これは全国のコンビニエンスストア、キオスク端末で取得できるサービスとなります。まずは住民票の写し"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "まずは住民票の写し、こちらと印鑑登録証明書の、この２点から始めたい"@ja.
+<< kg:id_5 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "毎日６時半から23時までの時間、限られますけれども、この時間帯に交付ができるようになります。窓口閉庁後の夜間、それから休日でも、いつでも必要なときにご利用いただける"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "高齢者の方ですとか、それから申請書のほうを記載することが困難な方、こちらのサポートになります"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本人確認や申請書を省くことができるということになります"@ja.
+<< kg:id_9 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "誤りもなくなるということになりますので、非常に期待できる端末であります"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "私も持っております、マイナンバーカード。これがないと端末が動かない"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "これは全国的にシステム上決まっている時間でございますので、今のところ24時間行うという情報は全く入っておりません"@ja.
+<< kg:id_17 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "Ｊ―ＬＩＳといって、地方公共団体情報システム機構というところで共同利用するシステムを開発というか、つくっております。それを利用することによって経費のほうが相当安くなっている"@ja.
+<< kg:id_19 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "初期投資の部分については特別交付税で算定してくれるという、一部ですけれども、そういうこともございます"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "この補正予算の内容としましては２番目の多機関協働の取組"@ja.
+<< kg:id_21 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "３番目の参加支援の取組について、これについても社会福祉協議会のほうに委託しまして事業を実施していくための補正予算"@ja.
+<< kg:id_21 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "この移行準備事業の中でしなければいけないというのが４項目ありまして、１つは庁内連携体制の構築"@ja.
+<< kg:id_21 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "２つ目が多機関協働の取組ということで、先ほど障がいとかいろいろ分野ありましたけれども、その分野それぞれ連携して相談を受け付けて、支援のプランを作成して実施する"@ja.
+<< kg:id_21 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "３番目として参加支援の取組ということで、今それぞれの地区で生活支援体制事業を、生活支援の事業を行っているわけですけれども、それに結びつけていくという参加支援"@ja.
+<< kg:id_21 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "４番目としまして、アウトリーチ等を通じた継続的支援の取組ということで、支援が必要なのだけれども、まだ支援が届いていない人に支援を届ける取組"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "当初につきましては、この事業自体がそんなにはっきりはしていなかった部分もあったのですけれども"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "子育て世帯の移住者が増えていることでありまして"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "当初予定しました８人分を既に超えていまして、ちょっと不足分が出ている"@ja.
+<< kg:id_34 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "定住促進のほうも関係していますので、そちらのほうともちょっと確認をしながら進めたい"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:text-txt_contents "事業用地でございますけれども、道路よりもまず低いといったところになっておりますので、埋立てが必要になってまいります"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:text-txt_contents "上下水道管、あとパイプライン布設については、県のこちらの工事に合わせて施工する必要がある"@ja.
+<< kg:id_40 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "当然パーキングエリアタウンは防災拠点という位置づけで整備を進めたい"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:text-txt_contents "現在和式の便器となっておりますけれども、この和式の便器に不具合が見られた"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:text-txt_contents "経年によって、修繕するための部品供給が見込めないことから、修繕ではなく交換というふうにこちらでは判断"@ja.
+<< kg:id_46 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今回の交換工事によりまして、２つとも洋式に換えたい"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "今後まだ撤去業務が発生することもあろうということも想定をさせていただきまして、50万円ほど計上"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "申請率が伸びている自治体の先進事例などを見ますと、ユニフォームですとかのぼり旗、そのほかのグッズが統一されて、遠くからでもすぐにマイナンバーカードの申請会場だなというふうに分かる"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "内容は、ただいま申し上げましたが、のぼり、それから出張申請用のベスト、それからテーブルクロス、それから公用車の両脇にマグネットで広告をつけて"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "70代の方が一番多く、43.8％の方がこのマイナポイントの申込みサポート会のほうにおいでいただいて"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "オミクロン対応ワクチン接種に関する委託料になります"@ja.
+<< kg:id_56 prop:effect kg:id_58 >>
+    prop:text-txt_contents "対象としましては１回目、２回目、２回打った方を対象としております。年齢としましては、12歳以上の方が対象"@ja.
+<< kg:id_59 prop:cause kg:id_60 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "残念ながら、当町ではそういった権限はありません。医療機関、あるいは保健所等の判断"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "建設資材の上昇、特にコンクリートを多く使いますので、コンクリート自体の単価が７月の調整で非常に想定より1.2倍ほど"@ja.
+<< kg:id_63 prop:cause kg:id_62 >>
+    prop:text-txt_contents "あるいは人件費も上がってきているということであります"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "建設資材が1.2倍、それに係って諸経費についても1.2倍ということになりますと、掛け合わせて1.44、約1.4倍"@ja.
+<< kg:id_66 prop:effect kg:id_67 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "生活環境上、無蓋の防火水槽に関しては、危険度も高いでしょうし、衛生上もあまり芳しくないように感じます"@ja.
+<< kg:id_66 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "できるだけ早い段階で、この199、全数有蓋化になるようにお願い"@ja.
+<< kg:id_69 prop:cause kg:id_70 >>
+    prop:text-txt_contents "現在の新型コロナウイルス感染症の拡大の影響、そういったものによりまして、テレワークによる業務形態を取り入れる事業者が増えている現状"@ja.
+<< kg:id_71 prop:contermeasure kg:id_72 >>
+    prop:text-txt_contents "テレワークを伴う移住を検討している方へ、本町への移住促進"@ja.
+<< kg:id_73 prop:contermeasure kg:id_74 >>
+    prop:text-txt_contents "ワーケーションを行う方とのつながりを創出することで関係人口の増加を図りたい"@ja.
+<< kg:id_75 prop:cause kg:id_76 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "今現在相談を受けているものが２件ございまして、１件についてはＤランクで...60万円を想定をしております。ですと、予算使い切ってしまいます"@ja.
+<< kg:id_77 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "昨年度から要綱を見直しまして、当初は非課税世帯のみの対象としていたものを、そこの部分外して、それにつきましては加算ということで対応"@ja.
+<< kg:id_79 prop:cause kg:id_80 >>
+    prop:text-txt_contents "当初予定しておりませんでした遊楽里の吸収冷温水機、集中エアコンでございます。エアコンの機器の故障による緊急修繕"@ja.
+<< kg:id_81 prop:contermeasure kg:id_82 >>
+    prop:text-txt_contents "こちらは臂曲地区の岩石採取に係る訴訟事件、係争ございましたけれども、そちらの経過の説明ですとか、そういったものが主になろうかと思います"@ja.
+<< kg:id_81 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "策定の際のお話ですとか今後に向けての取組に対しての提案等、そういったものがいただけるのかな"@ja.
+<< kg:id_84 prop:contermeasure kg:id_85 >>
+    prop:text-txt_contents "今やっておりますのが水量の調査ですとか"@ja.
+<< kg:id_84 prop:contermeasure kg:id_86 >>
+    prop:text-txt_contents "水の成分の分析ですとか、そういったところは業者さんに委託をして"@ja.
+<< kg:id_84 prop:effect kg:id_87 >>
+    prop:text-txt_contents "これまでの推移、そういったものをまず記録をする、調査をしていく"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "ほかの３市と比較した場合、当遊佐町の部分のＰＲが不足しているのではないかといった声がございまして"@ja.
+<< kg:id_90 prop:contermeasure kg:id_91 >>
+    prop:text-txt_contents "今考えておりますのが防災センターの１階と２階の間のスペースを活用して、そちらに横断幕タイプのものを検討しております"@ja.
+<< kg:id_92 prop:cause kg:id_93 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "固定資産税の課税誤り等に係る処理が今年も続いているということで、それに関する通信料というか、郵便の料金がかさんでいる"@ja.
+<< kg:id_94 prop:cause kg:id_95 >>
+    prop:text-txt_contents "統合後は職員数が増になるということはもちろんでございまして、電話の回線を増やす必要がある"@ja.
+<< kg:id_96 prop:cause kg:id_97 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "緊急を要するような事態、これにも対応するためには、通話手段ということで、やはり業務の効率化、不測の事態に対処できるよう体制を整えるために、ＰＨＳの設備のほうも付与する"@ja.
+<< kg:id_98 prop:cause kg:id_99 >>
+    prop:text-txt_contents "職員の駐車場の街路灯、これ１基の交換工事に係る経費を計上しております。図書館のほうの開館の平成３年以来の街路灯でございましたけれども、このたびポールの根元のほうが腐食"@ja.
+<< kg:id_100 prop:cause kg:id_101 >>
+    prop:text-txt_contents "当該地は、海外林の最前線で当たるため、潮風等による影響が強く、松苗を保護する必要があるため"@ja.
+<< kg:id_102 prop:cause kg:id_103 >>
+    prop:text-txt_contents "地元青塚集落からの要望もございまして、防風柵を設置したところでございます"@ja.
+<< kg:id_104 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "今後、本町も法定協議会が進めていく中で、いろいろ先進地の情報交換、情報を得たり、いろいろ学ぶべきところ"@ja.
+<< kg:id_106 prop:cause kg:id_107 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "新設のみならず、道路改良並びに側溝整備を行っても道路の拡幅等変わってきますので、そういうものも含めて全て"@ja.
+<< kg:id_108 prop:cause kg:id_109 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "昨シーズンの大雪を踏まえて、状況を踏まえてということで、今回あくまでも除雪管理システムのトライアル"@ja.
+<< kg:id_110 prop:effect kg:id_111 >>
+    prop:text-txt_contents "ＧＰＳがついている機器をいわゆる除雪車につけまして、要はＧＰＳつきですので、現在どこの辺を走っているとか、そういうところがまず分かる"@ja.
+<< kg:id_110 prop:effect kg:id_112 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "毎日各委託業者のほうに日報等のまとめをお願いしているのですが、なかなかこれも大変な作業になるのですが、そういうものがこのシステムを入れることによって簡易に済む"@ja.
+<< kg:id_113 prop:cause kg:id_114 >>
+    prop:text-txt_contents "これまでは竹林の中で全く状況が見えなかったということで、町のほうでも把握をしておりませんでした。今年の春、２月ぐらいでしょうか、高速道路工事が入るというところで周辺を伐採したところ、そのひび割れが分かった"@ja.
+<< kg:id_115 prop:contermeasure kg:id_116 >>
+    prop:text-txt_contents "南山地区ののり面補修工事に関わる設計委託料"@ja.
+<< kg:id_117 prop:cause kg:id_118 >>
+    prop:text-txt_contents "６月30日に一部落橋したというような状況になりまして"@ja.
+<< kg:id_119 prop:contermeasure kg:id_120 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "白木側のほうから仮桟橋を造って、今の木橋の脇に仮桟橋を造って撤去していく"@ja.
+<< kg:id_121 prop:cause kg:id_122 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "海水浴場、ビーチへの砂ですとか漂着ごみの堆積が非常に多かった"@ja.
+<< kg:id_121 prop:effect kg:id_123 >>
+    prop:text-txt_contents "既決予算の範囲内で利用に支障ない程度、海水浴場として開設できる最低限のところで工事をさせていただいたものとなります。そのため、今の補正で計上させていただいておりますのが、先に使わせていただいてしまったものですから、その補填"@ja.
+<< kg:id_124 prop:contermeasure kg:id_125 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "１件当たり2,500円の特産品をお送りするということを想定"@ja.
+<< kg:id_126 prop:effect kg:id_127 >>
+    prop:text-txt_contents "山形県のやまがた冬割、そちらの事業との相乗効果もございまして、１月の13日受付分で終了"@ja.
+<< kg:id_128 prop:effect kg:id_129 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "この３年間で14名、現状では14名の生徒さんが遊佐町に自然体験型留学生ということで来ていただいております"@ja.
+<< kg:id_130 prop:cause kg:id_131 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "４年度の留学生の人数が７名となりましたので、そちらに対応するためには男子寮２棟、女子寮２棟必要だということになって"@ja.
+<< kg:id_132 prop:effect kg:id_133 >>
+    prop:text-txt_contents "管理する寮の数が増えたことによりまして、夜間の子供たちの監護ですとか、食事の提供ですとか、そういったことをしていただく生活相談員さんへの謝礼がかなり増えている...施設が増えたことによりましての光熱水費の増"@ja.
+<< kg:id_134 prop:contermeasure kg:id_135 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "やっぱりリフォーム空き家を活用したほうが、ずっと地域と共にある、そして地域のよさも子供たち学べる"@ja.
+<< kg:id_136 prop:cause kg:id_137 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "組合がなくなるということで、新たに遊佐町の河川情報連絡会というものを10月１日付で今立ち上げたい"@ja.
+<< kg:id_138 prop:contermeasure kg:id_139 >>
+    prop:text-txt_contents "これまでの月光川水害予防組合議員の皆さんであれば年間６万円の議員報酬あったわけですけれども、これから新たに委員を組織する"@ja.
+<< kg:id_140 prop:contermeasure kg:id_141 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "町の玄関口である駅前のにぎわいを再生するために、遊佐フードを入れた冷凍自動販売機を設置する事業"@ja.
+<< kg:id_142 prop:effect kg:id_143 >>
+    prop:text-txt_contents "24時間対応の自販機となってございまして"@ja.
+<< kg:id_144 prop:cause kg:id_145 >>
+    prop:text-txt_contents "昨年度11月から貸しオフィスに加藤総業さんが加わっておりまして"@ja.
+<< kg:id_146 prop:cause kg:id_145 >>
+    prop:text-txt_contents "燃料高騰等の影響によりまして、金額が上がっている"@ja.
+<< kg:id_147 prop:cause kg:id_145 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "加工場の利用の状況を見ますと、令和３年度から令和４年度の利用状況を見比べますと、明らかにこの５か月間で利用の金額がかなりの増額"@ja.
+<< kg:id_148 prop:cause kg:id_149 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "件数は少なめなのですけれども、早めに予算がいっぱいいっぱいになっている"@ja.
+<< kg:id_150 prop:cause kg:id_151 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "単価がもう高いと、1.5倍以上、下手すると資材によっては２倍とか"@ja.
+<< kg:id_152 prop:effect kg:id_153 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "三隣亡ということで、新築というの少ないのかなというふうに踏んでいたところですが、ところがということで、庁舎前、新庁舎前の建築状況を見ていただいてもお分かりのとおり、新築住宅が軒並み建っている"@ja.
+}

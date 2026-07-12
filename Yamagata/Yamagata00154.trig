@@ -1,0 +1,639 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00154> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新型コロナウイルス感染者確認事例への対応"@ja.
+kg:id_1 rdf:type cls:c_1097.
+cls:c_1097 rdfs:label "感染症対応"@ja.
+kg:id_2 rdfs:label "遊佐中学校での新型コロナウイルス感染者の確認"@ja.
+kg:id_2 rdf:type cls:c_8610.
+cls:c_8610 rdfs:label "感染確認"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "遊佐中学校の休校措置"@ja.
+kg:id_3 rdf:type cls:c_1180.
+cls:c_1180 rdfs:label "休校措置"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "町長メッセージの全戸配布"@ja.
+kg:id_4 rdf:type cls:c_779.
+cls:c_779 rdfs:label "周知活動"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "新型コロナウイルス感染症対策本部への移行"@ja.
+kg:id_5 rdf:type cls:c_8354.
+cls:c_8354 rdfs:label "対策本部移行"@ja.
+kg:id_6 rdfs:label "政府の緊急事態宣言発表"@ja.
+kg:id_6 rdf:type cls:c_2145.
+cls:c_2145 rdfs:label "緊急事態宣言"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "庁外関係機関も参加する対策本部への移行"@ja.
+kg:id_7 rdf:type cls:c_4803.
+cls:c_4803 rdfs:label "対策本部"@ja.
+kg:id_5 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "泊まってお得キャンペーン！"@ja.
+kg:id_8 rdf:type cls:c_2286.
+cls:c_2286 rdfs:label "観光促進策"@ja.
+kg:id_9 rdfs:label "遠方からの集客が難しい状況"@ja.
+kg:id_9 rdf:type cls:c_8740.
+cls:c_8740 rdfs:label "集客困難"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "観光宿泊業の支援のための誘客対策の実施"@ja.
+kg:id_10 rdf:type cls:c_8387.
+cls:c_8387 rdfs:label "観光支援"@ja.
+kg:id_8 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "マイクロツーリズムの促進"@ja.
+kg:id_11 rdf:type cls:c_6739.
+cls:c_6739 rdfs:label "観光促進"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "町内の経済活性化"@ja.
+kg:id_12 rdf:type cls:c_7579.
+cls:c_7579 rdfs:label "経済活性化"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "地元の良さの再発見・再確認"@ja.
+kg:id_13 rdf:type cls:c_8741.
+cls:c_8741 rdfs:label "地域再評価"@ja.
+kg:id_8 prop:effect kg:id_13.
+kg:id_14 rdfs:label "暴風雪・豪雪による農業関連施設の災害"@ja.
+kg:id_14 rdf:type cls:c_8742.
+cls:c_8742 rdfs:label "農業施設災害"@ja.
+kg:id_15 rdfs:label "年末年始の暴風雪・豪雪"@ja.
+kg:id_15 rdf:type cls:c_8743.
+cls:c_8743 rdfs:label "豪雪災害"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "パイプハウス等の農業関連施設の被害"@ja.
+kg:id_16 rdf:type cls:c_4049.
+cls:c_4049 rdfs:label "施設被害"@ja.
+kg:id_14 prop:effect kg:id_16.
+kg:id_17 rdfs:label "国の持続的生産強化事業を活用した25棟の復旧と補強の支援"@ja.
+kg:id_17 rdf:type cls:c_2524.
+cls:c_2524 rdfs:label "復旧支援"@ja.
+kg:id_14 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "果樹の霜害"@ja.
+kg:id_18 rdf:type cls:c_8744.
+cls:c_8744 rdfs:label "霜害"@ja.
+kg:id_19 rdfs:label "４月10日から11日にかけての低温と霜"@ja.
+kg:id_19 rdf:type cls:c_8745.
+cls:c_8745 rdfs:label "低温と霜"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "柿等の果樹の芽の枯死"@ja.
+kg:id_20 rdf:type cls:c_8746.
+cls:c_8746 rdfs:label "生育被害"@ja.
+kg:id_18 prop:effect kg:id_20.
+kg:id_21 rdfs:label "被害範囲が４ｈａ以上に及ぶ"@ja.
+kg:id_21 rdf:type cls:c_847.
+cls:c_847 rdfs:label "被害拡大"@ja.
+kg:id_18 prop:effect kg:id_21.
+kg:id_22 rdfs:label "今年の収穫に深刻な影響を及ぼすことが予想される"@ja.
+kg:id_22 rdf:type cls:c_8747.
+cls:c_8747 rdfs:label "収穫減少"@ja.
+kg:id_18 prop:effect kg:id_22.
+kg:id_23 rdfs:label "山形県、ＪＡ等関係機関と連携した被害の詳細把握"@ja.
+kg:id_23 rdf:type cls:c_126.
+cls:c_126 rdfs:label "被害把握"@ja.
+kg:id_18 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "対応策の検討"@ja.
+kg:id_24 rdf:type cls:c_6558.
+cls:c_6558 rdfs:label "対応検討"@ja.
+kg:id_18 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "松くい虫被害"@ja.
+kg:id_25 rdf:type cls:c_8671.
+cls:c_8671 rdfs:label "森林害虫被害"@ja.
+kg:id_26 rdfs:label "被害木の発生"@ja.
+kg:id_26 rdf:type cls:c_8748.
+cls:c_8748 rdfs:label "被害木"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "県と共に全量駆除"@ja.
+kg:id_27 rdf:type cls:c_4519.
+cls:c_4519 rdfs:label "駆除"@ja.
+kg:id_25 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "１回目の薬剤散布の実施"@ja.
+kg:id_28 rdf:type cls:c_8673.
+cls:c_8673 rdfs:label "薬剤散布"@ja.
+kg:id_25 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "２回目の薬剤散布の予定"@ja.
+kg:id_29 rdf:type cls:c_8673.
+kg:id_25 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "伐倒・破砕処理等の作業への継続的取組"@ja.
+kg:id_30 rdf:type cls:c_4519.
+kg:id_25 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "30人学級の実現"@ja.
+kg:id_31 rdf:type cls:c_2756.
+cls:c_2756 rdfs:label "少人数学級"@ja.
+kg:id_32 rdfs:label "自治体任せの少人数学級では財政力の違いで格差が生まれること"@ja.
+kg:id_32 rdf:type cls:c_2875.
+cls:c_2875 rdfs:label "教育格差"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "学校統廃合を控え大きな学校となることへの不安"@ja.
+kg:id_33 rdf:type cls:c_5758.
+cls:c_5758 rdfs:label "保護者不安"@ja.
+kg:id_31 prop:cause kg:id_33.
+kg:id_34 rdfs:label "国の制度として30人学級を実現する意見書の提出"@ja.
+kg:id_34 rdf:type cls:c_1671.
+cls:c_1671 rdfs:label "意見書提出"@ja.
+kg:id_31 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "県の負担がなくなる"@ja.
+kg:id_35 rdf:type cls:c_8749.
+cls:c_8749 rdfs:label "財政負担減"@ja.
+kg:id_31 prop:effect kg:id_35.
+kg:id_36 rdfs:label "大規模校でも丁寧な指導が可能になる"@ja.
+kg:id_36 rdf:type cls:c_8750.
+cls:c_8750 rdfs:label "教育充実"@ja.
+kg:id_31 prop:effect kg:id_36.
+kg:id_37 rdfs:label "米価下落"@ja.
+kg:id_37 rdf:type cls:c_2394.
+cls:c_2394 rdfs:label "米価下落"@ja.
+kg:id_38 rdfs:label "新型コロナ禍"@ja.
+kg:id_38 rdf:type cls:c_1350.
+cls:c_1350 rdfs:label "感染症流行"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "稲作を取り巻く環境の厳しさ"@ja.
+kg:id_39 rdf:type cls:c_8751.
+cls:c_8751 rdfs:label "農業悪化"@ja.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "米の需給改善と米価下落対策を求める意見書の提出"@ja.
+kg:id_40 rdf:type cls:c_1671.
+kg:id_37 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "ゼロカーボンシティ宣言への取組"@ja.
+kg:id_41 rdf:type cls:c_8752.
+cls:c_8752 rdfs:label "脱炭素取組"@ja.
+kg:id_42 rdfs:label "全市町村が足並みをそろえて一丸となって取り組むことが不可欠という認識"@ja.
+kg:id_42 rdf:type cls:c_827.
+cls:c_827 rdfs:label "広域連携"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "ゼロカーボン"@ja.
+kg:id_43 rdf:type cls:c_4056.
+cls:c_4056 rdfs:label "脱炭素"@ja.
+kg:id_44 rdfs:label "自然由来の再生可能エネルギーの活用"@ja.
+kg:id_44 rdf:type cls:c_1977.
+cls:c_1977 rdfs:label "再生可能エネルギー"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "エコアクションプランに沿った省エネ活動による二酸化炭素の排出量削減"@ja.
+kg:id_45 rdf:type cls:c_8753.
+cls:c_8753 rdfs:label "省エネルギー"@ja.
+kg:id_43 prop:cause kg:id_45.
+kg:id_46 rdfs:label "森林の二酸化炭素吸収量"@ja.
+kg:id_46 rdf:type cls:c_8754.
+cls:c_8754 rdfs:label "森林吸収"@ja.
+kg:id_43 prop:cause kg:id_46.
+kg:id_47 rdfs:label "防災資機材整備"@ja.
+kg:id_47 rdf:type cls:c_8755.
+cls:c_8755 rdfs:label "防災整備"@ja.
+kg:id_48 rdfs:label "各地区のまちづくりセンターや小学校敷地内への防災倉庫建築"@ja.
+kg:id_48 rdf:type cls:c_8756.
+cls:c_8756 rdfs:label "防災倉庫"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "水、乾パン、炊き出し用非常食の整備"@ja.
+kg:id_49 rdf:type cls:c_8757.
+cls:c_8757 rdfs:label "非常食"@ja.
+kg:id_47 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "避難所用マット、毛布、簡易トイレ、テント、照明器具、発電機等の整備"@ja.
+kg:id_50 rdf:type cls:c_8758.
+cls:c_8758 rdfs:label "防災資機材"@ja.
+kg:id_47 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "新型コロナ禍の避難所対策"@ja.
+kg:id_51 rdf:type cls:c_2613.
+cls:c_2613 rdfs:label "避難所対策"@ja.
+kg:id_52 rdfs:label "新型コロナ対応"@ja.
+kg:id_52 rdf:type cls:c_1097.
+kg:id_51 prop:cause kg:id_52.
+kg:id_53 rdfs:label "消毒用アルコール、ウエットティッシュ、防護服、ゴーグル、マスク等の整備"@ja.
+kg:id_53 rdf:type cls:c_8759.
+cls:c_8759 rdfs:label "感染対策物資"@ja.
+kg:id_51 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "屋内用テントの整備検討"@ja.
+kg:id_54 rdf:type cls:c_6648.
+cls:c_6648 rdfs:label "整備検討"@ja.
+kg:id_51 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "空き家問題"@ja.
+kg:id_55 rdf:type cls:c_1739.
+cls:c_1739 rdfs:label "空き家問題"@ja.
+kg:id_56 rdfs:label "人口減少"@ja.
+kg:id_56 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "65歳以上の独り暮らしの増加"@ja.
+kg:id_57 rdf:type cls:c_8760.
+cls:c_8760 rdfs:label "高齢単身世帯"@ja.
+kg:id_55 prop:cause kg:id_57.
+kg:id_58 rdfs:label "老人夫婦のみの世帯の増加"@ja.
+kg:id_58 rdf:type cls:c_8761.
+cls:c_8761 rdfs:label "高齢夫婦世帯"@ja.
+kg:id_55 prop:cause kg:id_58.
+kg:id_59 rdfs:label "相続登記がされていないこと"@ja.
+kg:id_59 rdf:type cls:c_7587.
+cls:c_7587 rdfs:label "相続未登記"@ja.
+kg:id_55 prop:cause kg:id_59.
+kg:id_60 rdfs:label "相続人が増えて手が出せないこと"@ja.
+kg:id_60 rdf:type cls:c_8762.
+cls:c_8762 rdfs:label "相続人増加"@ja.
+kg:id_55 prop:cause kg:id_60.
+kg:id_61 rdfs:label "相続放棄されていること"@ja.
+kg:id_61 rdf:type cls:c_8763.
+cls:c_8763 rdfs:label "相続放棄"@ja.
+kg:id_55 prop:cause kg:id_61.
+kg:id_62 rdfs:label "所有者が意識確認のできない状況であること"@ja.
+kg:id_62 rdf:type cls:c_4659.
+cls:c_4659 rdfs:label "所有者不明"@ja.
+kg:id_55 prop:cause kg:id_62.
+kg:id_63 rdfs:label "危険空き家の増加"@ja.
+kg:id_63 rdf:type cls:c_3195.
+cls:c_3195 rdfs:label "危険空き家"@ja.
+kg:id_55 prop:effect kg:id_63.
+kg:id_64 rdfs:label "行政代執行による家屋の解体"@ja.
+kg:id_64 rdf:type cls:c_8764.
+cls:c_8764 rdfs:label "行政解体"@ja.
+kg:id_55 prop:effect kg:id_64.
+kg:id_65 rdfs:label "解体費の回収ができず財政にしわ寄せが来る"@ja.
+kg:id_65 rdf:type cls:c_8765.
+cls:c_8765 rdfs:label "財政負担増"@ja.
+kg:id_55 prop:effect kg:id_65.
+kg:id_66 rdfs:label "固定資産税納税通知書への空き家状況等の周知チラシ同封"@ja.
+kg:id_66 rdf:type cls:c_779.
+kg:id_55 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "税金が出ない方々への土地家屋名寄せ帳の送付"@ja.
+kg:id_67 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_55 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "空き家無料相談会の開催"@ja.
+kg:id_68 rdf:type cls:c_3093.
+cls:c_3093 rdfs:label "相談会"@ja.
+kg:id_55 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "高齢者が参加する健康づくり事業等の機会を利用した周知"@ja.
+kg:id_69 rdf:type cls:c_779.
+kg:id_55 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "司法書士等と連携した地区単位での相談会の開催"@ja.
+kg:id_70 rdf:type cls:c_3093.
+kg:id_55 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "栄橋の破損"@ja.
+kg:id_71 rdf:type cls:c_1335.
+cls:c_1335 rdfs:label "橋梁損傷"@ja.
+kg:id_72 rdfs:label "木橋部の桁、支承部の劣化"@ja.
+kg:id_72 rdf:type cls:c_8766.
+cls:c_8766 rdfs:label "部材劣化"@ja.
+kg:id_71 prop:cause kg:id_72.
+kg:id_73 rdfs:label "平成24年10月からの全面通行止め"@ja.
+kg:id_73 rdf:type cls:c_7419.
+cls:c_7419 rdfs:label "通行止め"@ja.
+kg:id_71 prop:effect kg:id_73.
+kg:id_74 rdfs:label "栄橋撤去についての集落説明会の実施"@ja.
+kg:id_74 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_71 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "できる限り早期の解体"@ja.
+kg:id_75 rdf:type cls:c_8767.
+cls:c_8767 rdfs:label "解体"@ja.
+kg:id_71 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "不法投棄"@ja.
+kg:id_76 rdf:type cls:c_8768.
+cls:c_8768 rdfs:label "不法投棄"@ja.
+kg:id_77 rdfs:label "良好な生活環境を著しく損なう"@ja.
+kg:id_77 rdf:type cls:c_1610.
+cls:c_1610 rdfs:label "生活環境悪化"@ja.
+kg:id_76 prop:effect kg:id_77.
+kg:id_78 rdfs:label "監視パトロールの実施"@ja.
+kg:id_78 rdf:type cls:c_8769.
+cls:c_8769 rdfs:label "監視活動"@ja.
+kg:id_76 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "警告看板の設置"@ja.
+kg:id_79 rdf:type cls:c_8770.
+cls:c_8770 rdfs:label "警告表示"@ja.
+kg:id_76 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "立入禁止ロープの設置"@ja.
+kg:id_80 rdf:type cls:c_8771.
+cls:c_8771 rdfs:label "進入防止"@ja.
+kg:id_76 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "庄内地区不法投棄防止対策協議会による協力と情報共有"@ja.
+kg:id_81 rdf:type cls:c_827.
+kg:id_76 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "遊佐駅正面への時計設置"@ja.
+kg:id_82 rdf:type cls:c_8772.
+cls:c_8772 rdfs:label "駅前設備整備"@ja.
+kg:id_83 rdfs:label "施設利用者の声を踏まえた必要性の検証"@ja.
+kg:id_83 rdf:type cls:c_8773.
+cls:c_8773 rdfs:label "必要性検証"@ja.
+kg:id_82 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "コストとリスクに配慮した慎重な判断"@ja.
+kg:id_84 rdf:type cls:c_8774.
+cls:c_8774 rdfs:label "慎重判断"@ja.
+kg:id_82 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "遊佐パーキングエリアタウン整備"@ja.
+kg:id_85 rdf:type cls:c_1241.
+cls:c_1241 rdfs:label "拠点整備"@ja.
+kg:id_86 rdfs:label "日沿道開通により国道７号線の道路交通量の多くがシフトされること"@ja.
+kg:id_86 rdf:type cls:c_8775.
+cls:c_8775 rdfs:label "交通転換"@ja.
+kg:id_85 prop:cause kg:id_86.
+kg:id_87 rdfs:label "遊佐鳥海インターチェンジ付近への新たな道の駅整備"@ja.
+kg:id_87 rdf:type cls:c_8776.
+cls:c_8776 rdfs:label "道の駅整備"@ja.
+kg:id_85 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "利便性を重視したアクセス道路の整備"@ja.
+kg:id_88 rdf:type cls:c_1485.
+cls:c_1485 rdfs:label "道路整備"@ja.
+kg:id_85 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "施設の採算性の整理や管理運営方法の検討"@ja.
+kg:id_89 rdf:type cls:c_7251.
+cls:c_7251 rdfs:label "運営検討"@ja.
+kg:id_85 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "遊佐パーキングエリアタウン計画推進委員会の設置"@ja.
+kg:id_90 rdf:type cls:c_2488.
+cls:c_2488 rdfs:label "推進組織"@ja.
+kg:id_85 prop:contermeasure kg:id_90.
+kg:st_1 rdfs:label "町長メッセージ"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "町民に感染予防対策の徹底と冷静な行動を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "町民に感染予防対策の徹底と感染者への配慮を求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "佐藤光保議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_3 prop:content "国の制度として30人学級を実現すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "保護者の多くの方々"@ja.
+kg:st_3 rdfs:type cls:st_69.
+cls:st_69 rdfs:label "保護者"@ja.
+kg:op_4 prop:content "多人数になり子供が埋没しないか不安"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "遊佐町の未来の教育にとって必要な課題"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "国の制度化は県と町の教育財政にプラス"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "少人数学級は大規模校にこそ必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "遊佐町の農業の持続可能性にとって意見書提出は必須"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "町の基幹産業である農業への影響は深刻"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "請願に基づく意見書提出は必要"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "時田町長"@ja.
+kg:st_4 rdfs:type cls:st_2.
+kg:op_11 prop:content "全市町村が一丸となることを条件に賛同"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "赤塚英一議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_12 prop:content "避難者のプライバシー確保のため整備が必要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "那須正幸議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_13 prop:content "今後５年から10年後に空き家がさらに加速して増える"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_6.
+kg:op_14 prop:content "相続登記の確認や相談の場が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_6.
+kg:op_15 prop:content "問題となる空き家が増える前の対策が必要"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "町民の税負担増につながりかねない"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "畠中地域生活課長"@ja.
+kg:st_7 rdfs:type cls:st_2.
+kg:op_17 prop:content "来年度の予算獲得を目指す"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "斎藤弥志夫議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_18 prop:content "環境保全のため役場が特別回収すべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_8.
+kg:op_19 prop:content "本当に必要かどうか慎重に判断する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "設置費用や倒壊リスクも含めて検討する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "地域に豊かさをもたらすツールとしての高速道路でなければならない"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "４月17日、県より、前日に続く本町４例目となる新型コロナウイルス感染者の遊佐中学校での確認事例が公表された"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:text-txt_contents "翌18日、第24回遊佐町新型コロナウイルス感染症対策本部会議を開催し、町の対応について協議しました。遊佐中学校の休校措置を決定"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "４月19日に町長メッセージを全戸配布し、町民に感染予防対策の徹底、感染された方への配慮と冷静な行動をお願いしました"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "４月23日の政府の緊急事態宣言発表を受けて"@ja.
+<< kg:id_5 prop:contermeasure kg:id_7 >>
+    prop:text-txt_contents "４月25日、従来の庁舎内新型コロナウイルス感染症対策本部を、庁外関係機関からも参加いただく新型インフルエンザ等対策特別措置法に基づく対策本部に移行しました"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "遠方からの集客が難しい状況の中"@ja.
+<< kg:id_8 prop:contermeasure kg:id_10 >>
+    prop:text-txt_contents "４月28日から観光宿泊業の支援のための誘客対策及び飛島・鳥海山ジオパークの日本ジオパーク再認定を記念した「泊まってお得キャンペーン！」を開始しました"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:text-txt_contents "近隣住民の利用による「マイクロツーリズム」の促進"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:text-txt_contents "町内の経済活性化をねらい"@ja.
+<< kg:id_8 prop:effect kg:id_13 >>
+    prop:text-txt_contents "地元の良さの再発見・再確認などの効果を期待するものです"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "年末年始の暴風雪・豪雪により、被害を受けたパイプハウス等の農業関連施設"@ja.
+<< kg:id_14 prop:effect kg:id_16 >>
+    prop:text-txt_contents "被害を受けたパイプハウス等の農業関連施設"@ja.
+<< kg:id_14 prop:contermeasure kg:id_17 >>
+    prop:text-txt_contents "国の持続的生産強化事業を活用して25棟の復旧と補強の支援を行いました"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "４月10日から11日にかけて低温となった影響で霜が降り"@ja.
+<< kg:id_18 prop:effect kg:id_20 >>
+    prop:text-txt_contents "柿等の果樹の芽が枯死する霜害が町内各地で発生しました"@ja.
+<< kg:id_18 prop:effect kg:id_21 >>
+    prop:text-txt_contents "被害の範囲は４ｈａ以上にも及ぶとみられ"@ja.
+<< kg:id_18 prop:effect kg:id_22 >>
+    prop:text-txt_contents "今年の収穫に深刻な影響を及ぼすことが予想されます"@ja.
+<< kg:id_18 prop:contermeasure kg:id_23 >>
+    prop:text-txt_contents "今後、山形県、ＪＡ等関係機関と連携しながら、被害の詳細把握に努める"@ja.
+<< kg:id_18 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "対応策について検討していきます"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:text-txt_contents "令和２年度に調査をした被害木については"@ja.
+<< kg:id_25 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "県と共に全量駆除を予定しており"@ja.
+<< kg:id_25 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "今後の被害縮小のため、１回目の薬剤散布を６月２日と３日に実施しました"@ja.
+<< kg:id_25 prop:contermeasure kg:id_29 >>
+    prop:text-txt_contents "２回目の薬剤散布は６月下旬から７月上旬に予定しており"@ja.
+<< kg:id_25 prop:contermeasure kg:id_30 >>
+    prop:text-txt_contents "引き続き伐倒・破砕処理等の作業に取り組んでいきます"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今のままの自治体任せの少人数学級では、財政力の違いで格差が生まれることにつながっていきます"@ja.
+<< kg:id_31 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "保護者の多くの方々が、今まで人数が少なく丁寧に指導してもらってきたのに、多人数になって我が子はその他大勢として埋没してしまわないだろうかと不安を持っています"@ja.
+<< kg:id_31 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "国の制度として責任として30人学級を実現してほしいとの意見書の提出を求める請願です"@ja.
+<< kg:id_31 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "国の制度として30人学級が実現すれば、県の負担はなくなっていきます。遊佐町の教育財政にとってもプラスになります"@ja.
+<< kg:id_31 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "子供の数は増えてもクラスサイズが小さくなって、今までと変わらず丁寧な指導を可能とする少人数学級は大規模校にこそ必要な制度です"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "新型コロナ禍による米の需給改善と米価下落対策を求める請願"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "我が町の基幹産業である農業、わけても稲作を取り巻く環境の厳しさはひとしおであります"@ja.
+<< kg:id_37 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "請願に基づきこの意見書を提出することは、遊佐町の農業の持続可能性にとって必須と考えるものであります"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "本町としてはこの趣旨に照らし、全市町村が足並みをそろえて一丸となって取り組むことが不可欠であるとの条件つきで賛同する旨回答したところであります"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:text-txt_contents "ゼロカーボンは導入される自然由来の再生可能エネルギーの活用"@ja.
+<< kg:id_43 prop:cause kg:id_45 >>
+    prop:text-txt_contents "エコアクションプランに沿った省エネ活動による二酸化炭素の排出量削減"@ja.
+<< kg:id_43 prop:cause kg:id_46 >>
+    prop:text-txt_contents "町の総面積の50％を超える森林の二酸化炭素吸収量により達成されるものと理解をしております"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:text-txt_contents "平成27年度以降、国の社会資本整備総合交付金事業によって各地区のまちづくりセンターや小学校の敷地内に防災倉庫の建築を行い"@ja.
+<< kg:id_47 prop:contermeasure kg:id_49 >>
+    prop:text-txt_contents "倉庫内には水、乾パンや炊き出し用の非常食のほか"@ja.
+<< kg:id_47 prop:contermeasure kg:id_50 >>
+    prop:text-txt_contents "避難所用マット、毛布、簡易トイレ、屋外用テント、照明器具、発電機、リヤカー、担架、救助用の工具などを町で整備"@ja.
+<< kg:id_51 prop:cause kg:id_52 >>
+    prop:text-txt_contents "昨年度はコロナ対策ということで国の新型コロナ対応臨時交付金を活用して"@ja.
+<< kg:id_51 prop:contermeasure kg:id_53 >>
+    prop:text-txt_contents "消毒用アルコール、ウエットティッシュ、防護服、ゴーグル、マスク、非接触型体温計、パーティション、段ボールベッドなどについても整備を図った"@ja.
+<< kg:id_51 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "今年度も訓練等で使用した分の非常食を補充を行うとともに、昨年度に引き続き避難所開設時における感染防止対策として、屋内用テントの整備についても検討しているところであります"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "全国的に問題となっております人口減少と空き家予備群"@ja.
+<< kg:id_55 prop:cause kg:id_57 >>
+    prop:text-txt_contents "65歳以上の独り暮らしは平成元年では155人でしたが、令和２年では753人"@ja.
+<< kg:id_55 prop:cause kg:id_58 >>
+    prop:text-txt_contents "老人夫婦のみの世帯も年々増加の傾向で、平成元年では193世帯でしたが、令和２年までに596世帯と増加"@ja.
+<< kg:id_55 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "相続登記がされていない"@ja.
+<< kg:id_55 prop:cause kg:id_60 >>
+    prop:text-txt_contents "相続人が増えて手が出せない"@ja.
+<< kg:id_55 prop:cause kg:id_61 >>
+    prop:text-txt_contents "相続放棄されている"@ja.
+<< kg:id_55 prop:cause kg:id_62 >>
+    prop:text-txt_contents "所有者が意識確認のできない状況である"@ja.
+<< kg:id_55 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "このような状態が続くと問題になる空き家となり、危険空き家となっていきます"@ja.
+<< kg:id_55 prop:effect kg:id_64 >>
+    prop:text-txt_contents "行く末には行政代執行による家屋の解体"@ja.
+<< kg:id_55 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "さらには解体費の回収ができなくなり、財政にしわ寄せが来て町民の税金の増額につながっていきます"@ja.
+<< kg:id_55 prop:contermeasure kg:id_66 >>
+    prop:text-txt_contents "固定資産税の納税通知書の発送時に町の空き家状況、空き家バンク制度や各種補助、相談窓口等をまとめた周知チラシを同封しております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_67 >>
+    prop:text-txt_contents "今年度初めて税金が出ない方々へ土地家屋名寄せ帳をお送りすることとし、去る５月末付で送付をさせていただいております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_68 >>
+    prop:text-txt_contents "県の宅建協会や県司法書士会等の協力を得ながら年１回空き家無料相談会を開催しております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_69 >>
+    prop:text-txt_contents "高齢者が参加する健康づくり事業等の機会を利用した周知"@ja.
+<< kg:id_55 prop:contermeasure kg:id_70 >>
+    prop:text-txt_contents "司法書士等と連携した地区単位での相談会の開催等により"@ja.
+<< kg:id_71 prop:cause kg:id_72 >>
+    prop:text-txt_contents "平成24年度に実施した橋梁長寿命化計画策定時に木橋部の桁、支承部に劣化が見つかった"@ja.
+<< kg:id_71 prop:effect kg:id_73 >>
+    prop:text-txt_contents "この年の10月より全面通行止めをしております"@ja.
+<< kg:id_71 prop:contermeasure kg:id_74 >>
+    prop:text-txt_contents "平成30年度に栄橋撤去について集落への説明会を実施し、地域と意見交換を行ってきた"@ja.
+<< kg:id_71 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "町の財政状況を踏まえ、できる限り早期に解体を進めてまいりたいと考えております"@ja.
+<< kg:id_76 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "不法投棄は、道路、河川、公園、広場などの公共用地や個人が所有する土地など区別なく行われ、良好な生活環境を著しく損なうものです"@ja.
+<< kg:id_76 prop:contermeasure kg:id_78 >>
+    prop:text-txt_contents "町内全域における不法投棄の抑制を目的として監視パトロールの実施"@ja.
+<< kg:id_76 prop:contermeasure kg:id_79 >>
+    prop:text-txt_contents "警告看板、立入禁止ロープの設置等を行い"@ja.
+<< kg:id_76 prop:contermeasure kg:id_80 >>
+    prop:text-txt_contents "警告看板、立入禁止ロープの設置等を行い"@ja.
+<< kg:id_76 prop:contermeasure kg:id_81 >>
+    prop:text-txt_contents "庄内の市町村、山形県、警察、各衛生組織連合会、産業資源循環協会等の関係団体から成る庄内地区不法投棄防止対策協議会を組織し、庄内一円で大型不法投棄の撤去等、一団体規模では対処が難しい事案について協力、情報共有しながら対処を行っております"@ja.
+<< kg:id_82 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "まずは、施設利用者の声に耳を傾けて、利便性について確認をし"@ja.
+<< kg:id_82 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "時計は設置費用と維持管理経費が必要となりますので、屋外時計であれば倒壊等で鉄道施設を破損する危険性がないのか、コスト、リスクも配慮しながら慎重に判断する必要がある"@ja.
+<< kg:id_85 prop:cause kg:id_86 >>
+    prop:text-txt_contents "国道７号線の道路交通量のほとんどが日沿道の交通にシフトされることが予想されております"@ja.
+<< kg:id_85 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "本町としては地域に豊かさをもたらすツールとしての高速道路でなければならないの思いで、日沿道開通に合わせて令和８年度の開業を目指し、遊佐鳥海インターチェンジ付近に新たな道の駅として遊佐パーキングエリアタウンを整備する計画としております"@ja.
+<< kg:id_85 prop:contermeasure kg:id_88 >>
+    prop:text-txt_contents "現在は利便性を重視したアクセス道路の整備について合意形成を図っているところであります"@ja.
+<< kg:id_85 prop:contermeasure kg:id_89 >>
+    prop:text-txt_contents "今年度は国の補助事業を活用しながら施設の採算性の整理や管理運営方法についての検討を進めることとしております"@ja.
+<< kg:id_85 prop:contermeasure kg:id_90 >>
+    prop:text-txt_contents "今年度より行政内部だけでなく、民間の外部委員を交えた遊佐パーキングエリアタウン計画推進委員会を設置し、先日６月２日には第１回目の会議を開催したところであります"@ja.
+}

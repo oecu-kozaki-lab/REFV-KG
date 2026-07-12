@@ -1,0 +1,304 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00130> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "生活保護総務管理事業"@ja.
+kg:id_1 rdf:type cls:c_7081.
+cls:c_7081 rdfs:label "福祉事業"@ja.
+kg:id_2 rdfs:label "保護基準の引き下げ"@ja.
+kg:id_2 rdf:type cls:c_7688.
+cls:c_7688 rdfs:label "基準引下げ"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "システム改修"@ja.
+kg:id_3 rdf:type cls:c_7689.
+cls:c_7689 rdfs:label "制度改修"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "生活保護基準の見直し"@ja.
+kg:id_4 rdf:type cls:c_6440.
+cls:c_6440 rdfs:label "基準見直し"@ja.
+kg:id_5 rdfs:label "段階的な増額または減額"@ja.
+kg:id_5 rdf:type cls:c_7690.
+cls:c_7690 rdfs:label "給付変動"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "個人住民税の非課税限度額への影響"@ja.
+kg:id_6 rdf:type cls:c_7691.
+cls:c_7691 rdfs:label "非課税制度"@ja.
+kg:id_4 prop:effect kg:id_6.
+kg:id_7 rdfs:label "児童・生徒の就学援助制度への影響"@ja.
+kg:id_7 rdf:type cls:c_5606.
+cls:c_5606 rdfs:label "就学援助"@ja.
+kg:id_4 prop:effect kg:id_7.
+kg:id_8 rdfs:label "介護保険料の段階区分への影響"@ja.
+kg:id_8 rdf:type cls:c_7692.
+cls:c_7692 rdfs:label "保険料区分"@ja.
+kg:id_4 prop:effect kg:id_8.
+kg:id_9 rdfs:label "飛島の焼却炉稼働停止"@ja.
+kg:id_9 rdf:type cls:c_7673.
+cls:c_7673 rdfs:label "施設停止"@ja.
+kg:id_10 rdfs:label "基準以上のダイオキシンの発生"@ja.
+kg:id_10 rdf:type cls:c_7693.
+cls:c_7693 rdfs:label "有害物発生"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "ごみを酒田地区広域行政組合の焼却炉で処理"@ja.
+kg:id_11 rdf:type cls:c_7694.
+cls:c_7694 rdfs:label "広域処理"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "燃やすごみの週２回収集と倉庫での一時保管"@ja.
+kg:id_12 rdf:type cls:c_7695.
+cls:c_7695 rdfs:label "収集保管"@ja.
+kg:id_9 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "一般廃棄物運搬船などで海上運搬"@ja.
+kg:id_13 rdf:type cls:c_7696.
+cls:c_7696 rdfs:label "海上運搬"@ja.
+kg:id_9 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "飛島地区の皆様と調整しながらごみ処理方法を検討"@ja.
+kg:id_14 rdf:type cls:c_7697.
+cls:c_7697 rdfs:label "処理検討"@ja.
+kg:id_9 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "飛島の焼却炉"@ja.
+kg:id_15 rdf:type cls:c_7698.
+cls:c_7698 rdfs:label "焼却施設"@ja.
+kg:id_16 rdfs:label "解体に一定の費用がかかる可能性"@ja.
+kg:id_16 rdf:type cls:c_7699.
+cls:c_7699 rdfs:label "解体費用"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "一般財源で解体対応を検討"@ja.
+kg:id_17 rdf:type cls:c_7700.
+cls:c_7700 rdfs:label "解体対応"@ja.
+kg:id_15 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "煙突の取り外しと建屋屋根を塞いで雨水侵入防止と施設内立入禁止"@ja.
+kg:id_18 rdf:type cls:c_271.
+cls:c_271 rdfs:label "安全対策"@ja.
+kg:id_15 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "島民説明会の開催と意見交換"@ja.
+kg:id_19 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_15 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "飛島地区のごみ処理"@ja.
+kg:id_20 rdf:type cls:c_6877.
+cls:c_6877 rdfs:label "ごみ処理"@ja.
+kg:id_21 rdfs:label "プラスチック系ごみを燃やすごみと一緒に出せるようにする要望"@ja.
+kg:id_21 rdf:type cls:c_7701.
+cls:c_7701 rdfs:label "分別緩和"@ja.
+kg:id_20 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "風力発電事業特別会計の設置"@ja.
+kg:id_22 rdf:type cls:c_7702.
+cls:c_7702 rdfs:label "特別会計設置"@ja.
+kg:id_23 rdfs:label "県立自然公園条例に基づく工作物の新築許可を受けたこと"@ja.
+kg:id_23 rdf:type cls:c_7703.
+cls:c_7703 rdfs:label "許可取得"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "３月定例会追加提案に必要な設計などの経費を精査する時間的余裕がなかったこと"@ja.
+kg:id_24 rdf:type cls:c_7704.
+cls:c_7704 rdfs:label "時間不足"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "一般会計当初予算時より事業規模が大きくなった"@ja.
+kg:id_25 rdf:type cls:c_7705.
+cls:c_7705 rdfs:label "事業拡大"@ja.
+kg:id_22 prop:effect kg:id_25.
+kg:id_26 rdfs:label "酒田市の風力発電施設建設"@ja.
+kg:id_26 rdf:type cls:c_7706.
+cls:c_7706 rdfs:label "発電施設建設"@ja.
+kg:id_27 rdfs:label "十里塚地区以外で市が事業主体となる新たな建設は考えていない"@ja.
+kg:id_27 rdf:type cls:c_7707.
+cls:c_7707 rdfs:label "建設抑制"@ja.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:st_1 rdfs:label "市原栄子議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "保護基準の引き下げは大きな国民問題であり具体的影響を示すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "10月支給に間に合うよう早急な改修対応が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "菊池裕基健康福祉部長"@ja.
+kg:st_2 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_3 prop:content "通知が来次第急いで改修に当たり対応する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "減額幅は現行よりマイナス５％以内にとどめる概要案である"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "低所得者への影響が及ばないよう国が対応を検討している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "低所得者への影響が及ばないよう国が対応を検討している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "低所得者への影響が及ばないよう国が対応を検討している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "島民の衛生面確保と今後のごみ処理の方向性を示すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "応急対応として必要である"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "桐澤聡市民部長"@ja.
+kg:st_3 rdfs:type cls:st_32.
+kg:op_10 prop:content "一般廃棄物運搬船で海上運搬し広域行政組合施設で処分する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "島民に迷惑をかけないよう従来どおり収集対応する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "保管状況を見ながら月２回から４回海上運搬する予定"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "飛島地区の各区長・観光協議会会長・漁業代表者・衛生組合長"@ja.
+kg:st_4 rdfs:type cls:st_92.
+cls:st_92 rdfs:label "地域代表"@ja.
+kg:op_13 prop:content "ごみの海上運搬に反対意見はなかった"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "島民と十分調整しながら処理方法を検討したい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "廃止炉解体費用や補助活用の可否を示すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "国の補助対象とならず一般財源での対応となるため費用を調査して検討する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "安全面に十分配慮しダイオキシン対策を講じて対応する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "今後も島民説明会を設けて意見交換していく"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "海上運搬するならプラスチック系ごみを燃やすごみと一緒に出せないか"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "丸山至市長"@ja.
+kg:st_5 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_20 prop:content "許可取得を踏まえて特別会計の設置と予算計上を行った"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "３月定例会への追加提案は物理的に不可能だった"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "設計発注から時間が経過し単価を直近のものに入れ替える費用を追加した結果である"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "現段階で十里塚地区以外の新たな市主体建設は想定していない"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "これは本年10月から３カ年かけて保護基準の引き下げが行われる、このためのシステム改修を行う"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "これは本年10月から３カ年かけて保護基準の引き下げが行われる、このためのシステム改修を行う"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "ことし10月から３年間かけて段階的に増額または減額をするとしており、減額となる場合、その減額幅は現行よりマイナス５％以内にとどめることとする概要案が示された"@ja.
+<< kg:id_4 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "生活保護基準の見直しに伴いまして影響が及ぶ制度としましては、例えば個人住民税の非課税限度額"@ja.
+<< kg:id_4 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "生活保護基準の見直しに伴いまして影響が及ぶ制度としましては、例えば個人住民税の非課税限度額、また児童・生徒の就学援助制度"@ja.
+<< kg:id_4 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "生活保護基準の見直しに伴いまして影響が及ぶ制度としましては、例えば個人住民税の非課税限度額、また児童・生徒の就学援助制度、それから介護保険料の段階区分"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "飛島のごみ焼却炉から基準以上のダイオキシンの発生、これによる稼働停止"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "応急対応としてごみを酒田地区広域行政組合の焼却炉で処理をするということは必要と考えます"@ja.
+<< kg:id_9 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "当面、燃やすごみの収集につきましてはこれまで同様に週２回行い、倉庫で一時保管をいたします"@ja.
+<< kg:id_9 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "保管状況を見ながら、月２回から４回、市の一般廃棄物運搬船などで海上運搬し、酒田地区広域行政組合ごみ処理施設で処分をする予定"@ja.
+<< kg:id_9 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "今後につきましては、飛島地区の皆様と十分な調整をしながら、ごみ処理の方法について検討していきたい"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "廃止炉解体にも一定の費用がかかるのではないかとも思います"@ja.
+<< kg:id_15 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "飛島の焼却炉は規模が小さく、廃棄物処理法の一般廃棄物焼却炉に該当しないため国の補助対象とはならないというようなことから、解体に当たっては一般財源での対応"@ja.
+<< kg:id_15 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "焼却炉がある間は煙突を取り外し、建屋の屋根を塞いで雨水の侵入を防ぎ、また施設内立入禁止とするなど、安全面に十分配慮をしてまいります"@ja.
+<< kg:id_15 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "５月31日に飛島地区の各区長、観光協議会会長、漁業代表者、衛生組合長から御出席をいただき、説明会を開催した"@ja.
+<< kg:id_20 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "海上運搬をするのであれば、飛島地区では現在プラスチック系のごみを燃やすごみの中でも分別をしているという状況でございますので、ほかの地区と同じように燃やすごみと一緒に出せないか"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "平成30年２月26日付で県知事から県立自然公園条例に基づく工作物の新築許可等を受けましたので、この許可を踏まえた特別会計の設置"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "この許可を踏まえた特別会計の設置と許可に伴う予算を３月定例会に追加することは、設計などの追加する経費を精査する時間的余裕がなくて、やはり物理的には不可能"@ja.
+<< kg:id_22 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "平成27年度に発注をいたしました風力発電本体施設の設計から、実は時間がかなり経過をしております。単価を直近のものに入れかえる費用などを追加して計上した結果、事業規模が大きくなった"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "現段階では、十里塚地区以外での酒田市が事業主体となる風力発電施設の建設は考えてはおりません"@ja.
+}

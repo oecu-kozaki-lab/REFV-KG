@@ -1,0 +1,758 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00146> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "最上川の氾濫"@ja.
+kg:id_1 rdf:type cls:c_2543.
+cls:c_2543 rdfs:label "水害"@ja.
+kg:id_2 rdfs:label "ゲリラ豪雨とも言える大雨"@ja.
+kg:id_2 rdf:type cls:c_7287.
+cls:c_7287 rdfs:label "大雨"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "800棟を超える家屋の浸水"@ja.
+kg:id_3 rdf:type cls:c_2571.
+cls:c_2571 rdfs:label "家屋浸水"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "道路の寸断"@ja.
+kg:id_4 rdf:type cls:c_8395.
+cls:c_8395 rdfs:label "交通障害"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "断水"@ja.
+kg:id_5 rdf:type cls:c_2096.
+cls:c_2096 rdfs:label "断水"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "農業被害"@ja.
+kg:id_6 rdf:type cls:c_2523.
+cls:c_2523 rdfs:label "農業被害"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "新型コロナウイルス感染症"@ja.
+kg:id_7 rdf:type cls:c_1345.
+cls:c_1345 rdfs:label "感染症"@ja.
+kg:id_8 rdfs:label "本町対応方針の改正"@ja.
+kg:id_8 rdf:type cls:c_8396.
+cls:c_8396 rdfs:label "対応方針改正"@ja.
+kg:id_7 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "イベント等の開催"@ja.
+kg:id_9 rdf:type cls:c_1248.
+cls:c_1248 rdfs:label "催事開催"@ja.
+kg:id_10 rdfs:label "開催制限期間の９月30日までの延長"@ja.
+kg:id_10 rdf:type cls:c_8397.
+cls:c_8397 rdfs:label "開催制限延長"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "新型コロナウイルスの感染拡大"@ja.
+kg:id_11 rdf:type cls:c_1168.
+cls:c_1168 rdfs:label "感染拡大"@ja.
+kg:id_12 rdfs:label "地域経済や住民生活への影響"@ja.
+kg:id_12 rdf:type cls:c_8398.
+cls:c_8398 rdfs:label "地域生活被害"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "地方創生臨時交付金実施計画の提出"@ja.
+kg:id_13 rdf:type cls:c_8399.
+cls:c_8399 rdfs:label "交付金計画提出"@ja.
+kg:id_7 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "派遣時期までの収束が見込めないこと"@ja.
+kg:id_14 rdf:type cls:c_8400.
+cls:c_8400 rdfs:label "収束困難"@ja.
+kg:id_7 prop:cause kg:id_14.
+kg:id_15 rdfs:label "ハンガリー・ソルノク市派遣事業の中止"@ja.
+kg:id_15 rdf:type cls:c_8401.
+cls:c_8401 rdfs:label "派遣事業中止"@ja.
+kg:id_16 rdfs:label "新型コロナウイルス感染症に係る現状と国の方針"@ja.
+kg:id_16 rdf:type cls:c_8402.
+cls:c_8402 rdfs:label "感染症情勢"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "事業の計画・実施が困難"@ja.
+kg:id_17 rdf:type cls:c_6443.
+cls:c_6443 rdfs:label "事業困難"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "お試し住宅の受入停止"@ja.
+kg:id_18 rdf:type cls:c_8403.
+cls:c_8403 rdfs:label "受入停止"@ja.
+kg:id_19 rdfs:label "県境を跨いだ移動の自粛"@ja.
+kg:id_19 rdf:type cls:c_2200.
+cls:c_2200 rdfs:label "移動自粛"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "定住促進施策"@ja.
+kg:id_20 rdf:type cls:c_2013.
+cls:c_2013 rdfs:label "定住促進"@ja.
+kg:id_21 rdfs:label "お試し住宅の利用再開"@ja.
+kg:id_21 rdf:type cls:c_8404.
+cls:c_8404 rdfs:label "利用再開"@ja.
+kg:id_20 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "オンライン移住相談の受付開始"@ja.
+kg:id_22 rdf:type cls:c_2327.
+cls:c_2327 rdfs:label "オンライン相談"@ja.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "公衆トイレの開設遅れ"@ja.
+kg:id_23 rdf:type cls:c_8405.
+cls:c_8405 rdfs:label "開設遅れ"@ja.
+kg:id_24 rdfs:label "長梅雨の影響でヘリによる管理物資の荷上げ作業が８月下旬にずれこんだこと"@ja.
+kg:id_24 rdf:type cls:c_1143.
+cls:c_1143 rdfs:label "天候不順"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "登山客への大きな迷惑"@ja.
+kg:id_25 rdf:type cls:c_8406.
+cls:c_8406 rdfs:label "利用者迷惑"@ja.
+kg:id_23 prop:effect kg:id_25.
+kg:id_26 rdfs:label "海水浴場の開設"@ja.
+kg:id_26 rdf:type cls:c_8407.
+cls:c_8407 rdfs:label "施設開設"@ja.
+kg:id_27 rdfs:label "感染症対策に配慮した運営"@ja.
+kg:id_27 rdf:type cls:c_2142.
+cls:c_2142 rdfs:label "感染対策"@ja.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "町内店舗等への影響"@ja.
+kg:id_28 rdf:type cls:c_8408.
+cls:c_8408 rdfs:label "店舗被害"@ja.
+kg:id_7 prop:cause kg:id_28.
+kg:id_29 rdfs:label "プレミアム付商品券事業"@ja.
+kg:id_29 rdf:type cls:c_2389.
+cls:c_2389 rdfs:label "商品券事業"@ja.
+kg:id_30 rdfs:label "１セット14,000円分を10,000円で販売"@ja.
+kg:id_30 rdf:type cls:c_8409.
+cls:c_8409 rdfs:label "割引販売"@ja.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "地域経済の維持"@ja.
+kg:id_31 rdf:type cls:c_8410.
+cls:c_8410 rdfs:label "地域経済維持"@ja.
+kg:id_32 rdfs:label "第二次緊急経済支援助成金の交付"@ja.
+kg:id_32 rdf:type cls:c_8411.
+cls:c_8411 rdfs:label "助成金交付"@ja.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "331件3,141万4,000円の交付"@ja.
+kg:id_33 rdf:type cls:c_8412.
+cls:c_8412 rdfs:label "助成交付"@ja.
+kg:id_31 prop:effect kg:id_33.
+kg:id_34 rdfs:label "授業時数確保"@ja.
+kg:id_34 rdf:type cls:c_8413.
+cls:c_8413 rdfs:label "授業確保"@ja.
+kg:id_35 rdfs:label "教育課程の大幅な見直し"@ja.
+kg:id_35 rdf:type cls:c_8357.
+cls:c_8357 rdfs:label "教育課程見直し"@ja.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "新型コロナウイルスの影響"@ja.
+kg:id_36 rdf:type cls:c_1487.
+cls:c_1487 rdfs:label "感染症影響"@ja.
+kg:id_37 rdfs:label "部会等の開催見合わせ"@ja.
+kg:id_37 rdf:type cls:c_8414.
+cls:c_8414 rdfs:label "会議見合わせ"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "コミュニティ・スクール推進会議の中止"@ja.
+kg:id_38 rdf:type cls:c_8415.
+cls:c_8415 rdfs:label "会議中止"@ja.
+kg:id_36 prop:effect kg:id_38.
+kg:id_39 rdfs:label "新型コロナウイルスへの対策"@ja.
+kg:id_39 rdf:type cls:c_2142.
+kg:id_40 rdfs:label "県外から訪れた見学希望者への個別相談会の実施"@ja.
+kg:id_40 rdf:type cls:c_8416.
+cls:c_8416 rdfs:label "個別相談会"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "避難所における感染拡大"@ja.
+kg:id_41 rdf:type cls:c_8365.
+cls:c_8365 rdfs:label "避難所感染"@ja.
+kg:id_42 rdfs:label "国県が示した対策を反映した地域防災計画と避難所開設運営マニュアルによる対応"@ja.
+kg:id_42 rdf:type cls:c_8417.
+cls:c_8417 rdfs:label "避難所対応"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "全町一斉の避難訓練の実施"@ja.
+kg:id_43 rdf:type cls:c_1261.
+cls:c_1261 rdfs:label "避難訓練"@ja.
+kg:id_41 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "感染予防に対応した個別の学校施設等の避難所開設マニュアルの策定"@ja.
+kg:id_44 rdf:type cls:c_5406.
+cls:c_5406 rdfs:label "運営マニュアル"@ja.
+kg:id_41 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "消費に与える影響の緩和と地域経済の維持"@ja.
+kg:id_45 rdf:type cls:c_8418.
+cls:c_8418 rdfs:label "経済維持"@ja.
+kg:id_29 prop:cause kg:id_45.
+kg:id_46 rdfs:label "１世帯２セット限定での販売"@ja.
+kg:id_46 rdf:type cls:c_8419.
+cls:c_8419 rdfs:label "販売制限"@ja.
+kg:id_29 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "１人２セットまでへの条件緩和による追加販売"@ja.
+kg:id_47 rdf:type cls:c_8420.
+cls:c_8420 rdfs:label "追加販売"@ja.
+kg:id_29 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "８月28日に残りの商品券が全て完売"@ja.
+kg:id_48 rdf:type cls:c_8421.
+cls:c_8421 rdfs:label "完売"@ja.
+kg:id_29 prop:effect kg:id_48.
+kg:id_49 rdfs:label "第二弾のプレミアム付商品券秋冬版の販売予定"@ja.
+kg:id_49 rdf:type cls:c_8420.
+kg:id_29 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "新型コロナウイルス感染症対応地方創生臨時交付金"@ja.
+kg:id_50 rdf:type cls:c_8422.
+cls:c_8422 rdfs:label "交付金"@ja.
+kg:id_51 rdfs:label "第一次実施計画として12事業を取りまとめ国へ提出"@ja.
+kg:id_51 rdf:type cls:c_8423.
+cls:c_8423 rdfs:label "実施計画提出"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "第二次実施計画の策定"@ja.
+kg:id_52 rdf:type cls:c_8424.
+cls:c_8424 rdfs:label "実施計画策定"@ja.
+kg:id_50 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "新型コロナウイルス感染症の影響"@ja.
+kg:id_53 rdf:type cls:c_1487.
+kg:id_54 rdfs:label "外食用需要の消滅による米価への大きな影響"@ja.
+kg:id_54 rdf:type cls:c_2394.
+cls:c_2394 rdfs:label "米価下落"@ja.
+kg:id_53 prop:effect kg:id_54.
+kg:id_55 rdfs:label "主食用米のＪＡ概算金額の下落"@ja.
+kg:id_55 rdf:type cls:c_2394.
+kg:id_53 prop:effect kg:id_55.
+kg:id_56 rdfs:label "野菜・牛肉・花卉等の需要の大幅な落ち込み"@ja.
+kg:id_56 rdf:type cls:c_8425.
+cls:c_8425 rdfs:label "農産物需要減"@ja.
+kg:id_53 prop:effect kg:id_56.
+kg:id_57 rdfs:label "ウルイと花卉全般の価格低迷"@ja.
+kg:id_57 rdf:type cls:c_3323.
+cls:c_3323 rdfs:label "価格低迷"@ja.
+kg:id_53 prop:effect kg:id_57.
+kg:id_58 rdfs:label "花卉の出荷調整"@ja.
+kg:id_58 rdf:type cls:c_8426.
+cls:c_8426 rdfs:label "出荷調整"@ja.
+kg:id_53 prop:effect kg:id_58.
+kg:id_59 rdfs:label "外食・昼食需要の冷え込みによる米の現物市場価格の低下"@ja.
+kg:id_59 rdf:type cls:c_2394.
+kg:id_53 prop:effect kg:id_59.
+kg:id_60 rdfs:label "今年度産米の価格水準への影響懸念"@ja.
+kg:id_60 rdf:type cls:c_2192.
+cls:c_2192 rdfs:label "価格下落懸念"@ja.
+kg:id_53 prop:effect kg:id_60.
+kg:id_61 rdfs:label "コロナ禍の影響を受けた農家"@ja.
+kg:id_61 rdf:type cls:c_8427.
+cls:c_8427 rdfs:label "被災農家"@ja.
+kg:id_62 rdfs:label "高収益作物次期作支援交付金"@ja.
+kg:id_62 rdf:type cls:c_3857.
+cls:c_3857 rdfs:label "営農支援"@ja.
+kg:id_61 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "経営継続補助金"@ja.
+kg:id_63 rdf:type cls:c_2320.
+cls:c_2320 rdfs:label "経営支援"@ja.
+kg:id_61 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "県産花卉次期作緊急支援事業"@ja.
+kg:id_64 rdf:type cls:c_3857.
+kg:id_61 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "肉用牛経営安定対策事業"@ja.
+kg:id_65 rdf:type cls:c_6832.
+cls:c_6832 rdfs:label "経営安定"@ja.
+kg:id_61 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "コロナに負けない主食用ブランド力強化に向けた土づくり支援"@ja.
+kg:id_66 rdf:type cls:c_4043.
+cls:c_4043 rdfs:label "土づくり支援"@ja.
+kg:id_61 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "花卉の需要喚起に係る公共施設への切り花の展示"@ja.
+kg:id_67 rdf:type cls:c_2285.
+cls:c_2285 rdfs:label "需要喚起"@ja.
+kg:id_61 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "新たに生活保護を申請した世帯の発生"@ja.
+kg:id_68 rdf:type cls:c_8428.
+cls:c_8428 rdfs:label "生活保護申請"@ja.
+kg:id_53 prop:effect kg:id_68.
+kg:id_69 rdfs:label "緊急小口資金等の貸付けの増加"@ja.
+kg:id_69 rdf:type cls:c_8429.
+cls:c_8429 rdfs:label "貸付増加"@ja.
+kg:id_53 prop:effect kg:id_69.
+kg:id_70 rdfs:label "緊急小口資金の貸付上限引上げ"@ja.
+kg:id_70 rdf:type cls:c_8430.
+cls:c_8430 rdfs:label "貸付拡充"@ja.
+kg:id_53 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "総合支援資金の貸付"@ja.
+kg:id_71 rdf:type cls:c_8431.
+cls:c_8431 rdfs:label "生活資金貸付"@ja.
+kg:id_53 prop:contermeasure kg:id_71.
+kg:id_53 prop:effect kg:id_38.
+kg:id_72 rdfs:label "新型コロナウイルス感染症の推移と近隣自治体等の動向"@ja.
+kg:id_72 rdf:type cls:c_8402.
+kg:id_26 prop:cause kg:id_72.
+kg:id_73 rdfs:label "多くの海水浴客の来場"@ja.
+kg:id_73 rdf:type cls:c_8432.
+cls:c_8432 rdfs:label "来場増加"@ja.
+kg:id_26 prop:effect kg:id_73.
+kg:id_74 rdfs:label "大きな事故なく終了"@ja.
+kg:id_74 rdf:type cls:c_8433.
+cls:c_8433 rdfs:label "無事故終了"@ja.
+kg:id_26 prop:effect kg:id_74.
+kg:id_75 rdfs:label "湯ノ台口の滝ノ小屋の営業"@ja.
+kg:id_75 rdf:type cls:c_8434.
+cls:c_8434 rdfs:label "宿泊営業"@ja.
+kg:id_76 rdfs:label "宿泊受入定数を半数にして営業"@ja.
+kg:id_76 rdf:type cls:c_8435.
+cls:c_8435 rdfs:label "定員削減"@ja.
+kg:id_75 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "自然豊富な地方暮らしへの関心の高まり"@ja.
+kg:id_77 rdf:type cls:c_8436.
+cls:c_8436 rdfs:label "地方移住関心"@ja.
+kg:id_7 prop:effect kg:id_77.
+kg:id_78 rdfs:label "登山への関心の高まり"@ja.
+kg:id_78 rdf:type cls:c_8437.
+cls:c_8437 rdfs:label "登山関心"@ja.
+kg:id_7 prop:effect kg:id_78.
+kg:st_1 rdfs:label "那須正幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "災害に備えた避難所開設や感染症対策のマニュアル整備が早急に必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "大きな災害だったが負傷者が少なかったのは不幸中の幸い"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "大きな災害だったが負傷者が少なかったのは不幸中の幸い"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "大きな災害だったが負傷者が少なかったのは不幸中の幸い"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "大きな災害だったが負傷者が少なかったのは不幸中の幸い"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "本宮副町長"@ja.
+kg:st_2 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_6 prop:content "新しい生活様式の推進を盛り込んで対応方針を改正した"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "国県の延長決定を受けて町も同様に制限延長を決定した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "感染拡大の影響を受けた地域経済や住民生活を支援する必要がある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "地域経済と住民生活支援のため12事業を盛り込んだ"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "収束が見込めず計画実施が困難なため中止を決定した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "感染症の現状と国方針を踏まえて中止判断に至った"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "派遣事業は正式に中止せざるを得なかった"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "移動自粛のため受入れ停止していたが再開後も慎重対応を続ける"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "７月１日から利用を再開したが慎重に対応している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "移住相談会ができないためオンライン相談を始めた"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "登山客に大きな迷惑をかけたが現在は通常使用可能になった"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "予定より大幅に遅れ登山客に迷惑をかけた"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "安全管理に加え感染症対策にも配慮して運営した"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "影響を受けた店舗等を応援し地域経済を維持する必要があった"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "町内店舗を応援し地域経済の維持を図るため実施した"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "観光宿泊業や飲食業など幅広い業種を支援した"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "助成金交付により地域経済の維持に努めた"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "那須教育長"@ja.
+kg:st_3 rdfs:type cls:st_57.
+cls:st_57 rdfs:label "教育行政"@ja.
+kg:op_23 prop:content "各校で見直しを行い短い夏休みでも２学期を順調に開始した"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "新校開校準備の協議再開に向けて部会開催を再開した"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "委員が一堂に会する会議は中止となった"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "感染対策を万全にしながら個別相談会を行った"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "時田町長"@ja.
+kg:st_4 rdfs:type cls:st_2.
+kg:op_27 prop:content "国県の対策を反映し避難時の感染予防に対応している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "参加者間の距離に配慮しながら訓練を実施する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "学校施設ごとの具体的な避難所対応をマニュアル化している"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "経済の立て直しを優先して計画した"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "町民全世帯に平等に行き渡るようにした"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "早急な経済回復を優先し追加販売を行った"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_4.
+kg:op_33 prop:content "商品券を早く使ってもらい経済効果につなげたい"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "次回も町民全世帯へ平等に行き渡るよう販売する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_4.
+kg:op_35 prop:content "地域経済や住民生活支援のため交付金を活用している"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "新しい生活様式や地域経済活性化への対応として取りまとめを進めている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "佐藤光保議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_37 prop:content "2020年度産米価に大きな影響が出ている"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_5.
+kg:op_38 prop:content "どの品種も昨年度産米を下回る水準になっている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "佐藤産業課長"@ja.
+kg:st_6 rdfs:type cls:st_2.
+kg:op_39 prop:content "町内農家に深刻な影響を与えている"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_6.
+kg:op_40 prop:content "３月から４月にかけて昨年度の６割程度まで単価が落ち込んだ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_6.
+kg:op_41 prop:content "一部出荷調整を行わざるを得ない状況になった"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_6.
+kg:op_42 prop:content "今年度産米の価格水準への影響が懸念される"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_6.
+kg:op_43 prop:content "民間在庫増により価格下落が懸念される"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_6.
+kg:op_44 prop:content "国の交付金を活用して農業経営継続を支援している"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_6.
+kg:op_45 prop:content "農業機械等導入への補助で経営継続を支援している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_6.
+kg:op_46 prop:content "県独自施策として花卉の種苗費を支援している"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_6.
+kg:op_47 prop:content "肉用牛の収入減少の一部を補填している"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_6.
+kg:op_48 prop:content "町独自支援として主食用米ブランド強化を進める"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_6.
+kg:op_49 prop:content "花卉需要喚起のため公共施設展示を実施しようとしている"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "中川健康福祉課長"@ja.
+kg:st_7 rdfs:type cls:st_2.
+kg:op_50 prop:content "感染症の影響で収入が途絶え生活保護申請したケースが２件ある"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_7.
+kg:op_51 prop:content "休業や失業による生活困窮世帯向けの貸付制度利用が増えている"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_7.
+kg:op_52 prop:content "貸付上限を10万円から20万円に引き上げた"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_7.
+kg:op_53 prop:content "失業等で生活維持が困難な世帯向けに支援制度がある"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_7.
+kg:op_54 prop:content "学校運営協議会委員が一堂に会する会議は中止となった"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_3.
+kg:op_55 prop:content "感染症の推移を注視しながら開設準備を進めた"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "遊泳禁止日も多かったが多くの来場者があった"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "安全管理と感染症対策により無事に終えることができた"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "感染症対策として定員を半数にして営業している"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "問い合わせには積極的に対応していく"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "三密回避の影響で登山者が多く賑わっている"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "そんな異常気象が続く中で、今年の７月28日、まさかと思う、そんな災害が最上川でも発生しました。ゲリラ豪雨とも言える大雨により最上川が氾濫し"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "ゲリラ豪雨とも言える大雨により最上川が氾濫し、災害地区では800棟を超える家屋が浸水"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "災害地区では800棟を超える家屋が浸水、道路の寸断、そして断水、農業被害が出ております"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "災害地区では800棟を超える家屋が浸水、道路の寸断、そして断水、農業被害が出ております"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "災害地区では800棟を超える家屋が浸水、道路の寸断、そして断水、農業被害が出ております"@ja.
+<< kg:id_7 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "７月28日に、第14回対策本部会議を開催し、新しい生活様式の推進等を盛り込み、新型コロナウイルス感染症への本町対応方針を改正しました"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本町でも、国・県と同様に８月31日までの開催制限期間を９月30日まで延長することを決定しました"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "町では、新型コロナウイルスの感染拡大の影響を受けた地域経済や住民生活を支援する事業として"@ja.
+<< kg:id_7 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "総額２億3,147万8,000円におよぶ12の事業を盛り込んだ、地方創生臨時交付金実施計画を国に提出しました"@ja.
+<< kg:id_7 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "派遣時期までの収束が見込めず、事業の計画・実施が困難な状況であることから正式に事業の中止を決定しました"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "新型コロナウイルス感染症に係る現状と国の方針を説明のうえ、状況によっては事業を中止させていただく旨の了承をいただいていましたが"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "派遣時期までの収束が見込めず、事業の計画・実施が困難な状況であることから正式に事業の中止を決定しました"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "県境を跨いだ移動の自粛などで、受入れを停止していた広野・布倉のお試し住宅について"@ja.
+<< kg:id_20 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "広野・布倉のお試し住宅について、７月１日より利用を再開しました"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "首都圏での移住相談会などは開催できない状況が続いていますので、ｗｅｂ会議システムＺＯＯＭを用いたオンライン移住相談の受付も始めました"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "御浜、山頂の公衆トイレについては、長梅雨の影響でヘリによる管理物資の荷上げ作業が８月下旬にずれこみ、予定より大幅に開設が遅れ"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "予定より大幅に開設が遅れ、登山客の皆様に大変ご迷惑をおかけしました"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "運営に関わった皆様からは、通常の安全管理だけでなく、感染症対策にも配慮いただきました"@ja.
+<< kg:id_7 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "新型コロナウイルス感染症により、影響を受けた町内の店舗等を応援し、地域経済の維持を図るため"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "１セット14,000円分の商品券を10,000円で販売するプレミアム付商品券事業を行いました"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "地域産業、地域経済の維持を図るため、５月15日から新型コロナウイルス感染症対策の第二次支援として観光宿泊業、飲食業、小売業のほか、製造業、生活関連サービス業等を追加し、第二次緊急経済支援助成金の申請を受け付けました"@ja.
+<< kg:id_31 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "７月31日までに331件3,141万4,000円の交付を行い、地域経済の維持に努めました"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "各校では、授業時数確保のために教育課程の大幅な見直しが図られ、例年よりも短い夏休みとなりましたが"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "新型コロナウイルスの影響により部会等の開催を見合わせておりましたが"@ja.
+<< kg:id_36 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "学校運営協議会の委員が一堂に会する第１回コミュニティ・スクール推進会議は、コロナウイルスの影響により中止となりました"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "新型コロナウイルスへの対策を万全にしながら、県外から訪れた遊佐高校の見学希望者８人に対する個別相談会を実施しました"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "本町でも避難時の新型コロナウイルス感染予防につきましては、国、県が示した対策を反映させながら、町の地域防災計画や平成25年度に策定した避難所開設運営マニュアルに基づいて対応いたしております"@ja.
+<< kg:id_41 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "避難訓練につきましても、今年も10月４日午前８時より全町一斉の避難訓練を実施いたします"@ja.
+<< kg:id_41 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "個別の学校、施設等の感染予防に対応した避難所開設マニュアルについては、現在策定中であります"@ja.
+<< kg:id_29 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "今回の我が町のプレミアム付き商品券事業は、消費に与える影響を緩和し、地域経済の維持を図るため"@ja.
+<< kg:id_29 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "町民全世帯に平等に行き渡るよう、１世帯２セットまでの限定とし"@ja.
+<< kg:id_29 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "１世帯２セット限定の条件を緩和し、１人２セットまでとして追加販売を行ったものであります"@ja.
+<< kg:id_29 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "８月28日には残りの商品券が全て完売したという状況になりました"@ja.
+<< kg:id_29 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "11月上旬から第二弾のプレミアム付き商品券秋冬版を販売する予定であります"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "町では、この交付金を活用するに当たり国から示された第一次交付限度額の１億63万1,000円を超える総事業費２億1,896万6,000円に及ぶ12の事業を取りまとめ、５月に第一次実施計画書を提出し"@ja.
+<< kg:id_50 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "現在９月末を期限とする第二次実施計画の策定に向け、取りまとめを行っている段階であります"@ja.
+<< kg:id_53 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "新型コロナウイルス感染症拡大の影響で、外食用需要が消滅し、米の過剰在庫によって2020年度産米価に大きな影響が出ています"@ja.
+<< kg:id_53 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "主食用米のＪＡ概算金額は、どの品種も昨年度産米を下回る水準です"@ja.
+<< kg:id_53 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "コロナ禍の影響によります外出自粛、催事の中止等によりまして、今年の２月以降、野菜、牛肉、花卉等の需要が全国的に大きく落ち込みまして、関係する農家の皆様方には深刻な影響を与えております"@ja.
+<< kg:id_53 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "当町におきましては、ウルイ、花卉全般への影響が大きく、２月下旬から販売価格が低迷しまして、３月から４月にかけて、昨年度の６割程度まで単価が落ち込み"@ja.
+<< kg:id_53 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "一部出荷調整を行わざるを得ない状況となっております"@ja.
+<< kg:id_53 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "外食、昼食需要の冷え込み等によりまして、米の現物市場のスポット取引価格については低下傾向が続いていることに加え"@ja.
+<< kg:id_53 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "６月の全国民間在庫量は昨年度と比べまして約23万トン上回っているという状況でありますので、今年度産米の価格水準への影響が大変懸念をされているという状況であります"@ja.
+<< kg:id_61 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "野菜、花卉などの次期作支援に係る高収益作物次期作支援交付金"@ja.
+<< kg:id_61 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "農業機械等導入に係る経営継続補助金等がございます"@ja.
+<< kg:id_61 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "県のほうでも花卉の種苗費を支援します県産花卉次期作緊急支援事業"@ja.
+<< kg:id_61 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "肉用牛の収入減少の一部を補填します肉用牛経営安定対策事業等、独自の施策を実施をしているという状況であります"@ja.
+<< kg:id_61 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "新型コロナウイルス関連農業打撃克服対策事業として、コロナに負けない主食用ブランド力の強化に向けた積極的な土づくりに対する支援"@ja.
+<< kg:id_61 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "花卉の需要喚起に係る公共施設への切り花の展示等を実施しようとして"@ja.
+<< kg:id_53 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "今年度に入って新たに生活保護を受給された世帯、新たに生活保護が始まったという世帯の中で、新型コロナウイルス感染症の影響で収入が途絶えたりして生活保護を申請したというケースは２件"@ja.
+<< kg:id_53 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "今般新型コロナウイルス感染症の影響による休業等で収入が減少し、緊急かつ一時的な生計維持のための貸付けを必要とする世帯のための特例として"@ja.
+<< kg:id_53 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "制度を拡充して貸付上限を10万円から20万円に引き上げて"@ja.
+<< kg:id_53 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "主に失業等によりまして生活に困窮して日常生活の維持が困難になっている世帯については、総合支援資金ということで、こちらのほうは上限20万円を３か月間にわたって貸し付けるという制度がございます"@ja.
+<< kg:id_53 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "学校運営協議会の委員が一堂に会する第１回コミュニティ・スクール推進会議は、コロナウイルスの影響により中止となりました"@ja.
+<< kg:id_26 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "海水浴場については、新型コロナウイルス感染症の推移、近隣自治体等の動向を注視しつつ開設準備を進め"@ja.
+<< kg:id_26 prop:effect kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "天候不順により遊泳禁止日も多かったものの、多くの海水浴客から来場いただき"@ja.
+<< kg:id_26 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "大きな事故も無く無事に終えることができました"@ja.
+<< kg:id_75 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "湯ノ台口の滝ノ小屋については、宿泊受入定数を半数にして営業しています"@ja.
+<< kg:id_7 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "コロナ禍により、自然豊富な地方暮らしへの関心が高まっていますので、問い合わせに対しては積極的に対応していきます"@ja.
+<< kg:id_7 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "コロナ禍の影響で三密を避けるためか、登山への関心が高くなっているようで多くの登山者で賑っています"@ja.
+}

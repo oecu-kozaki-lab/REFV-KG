@@ -1,0 +1,170 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00058> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "釧路湿原周辺の大規模太陽光発電所建設計画"@ja.
+kg:id_1 rdf:type cls:c_14772.
+cls:c_14772 rdfs:label "太陽光発電計画"@ja.
+kg:id_2 rdfs:label "大阪市の事業者による建設の進行"@ja.
+kg:id_2 rdf:type cls:c_2739.
+cls:c_2739 rdfs:label "事業推進"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "約4・2ヘクタールの民有地への約6600枚のソーラーパネル設置計画"@ja.
+kg:id_3 rdf:type cls:c_13559.
+cls:c_13559 rdfs:label "設備設置計画"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "天然記念物の保存に影響を及ぼす可能性"@ja.
+kg:id_4 rdf:type cls:c_14786.
+cls:c_14786 rdfs:label "保存影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "希少な野生生物の保護につながる可能性"@ja.
+kg:id_5 rdf:type cls:c_14651.
+cls:c_14651 rdfs:label "生物保護"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "タンチョウやオジロワシなど希少な猛禽類の生息への影響"@ja.
+kg:id_6 rdf:type cls:c_367.
+cls:c_367 rdfs:label "生息影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "工事関係者の困惑や不満"@ja.
+kg:id_7 rdf:type cls:c_14787.
+cls:c_14787 rdfs:label "関係者不満"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "文化庁長官の許可取得"@ja.
+kg:id_8 rdf:type cls:c_7703.
+cls:c_7703 rdfs:label "許可取得"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "釧路市教育委員会による文化庁への意見書提出"@ja.
+kg:id_9 rdf:type cls:c_1671.
+cls:c_1671 rdfs:label "意見書提出"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "事業者への再調査の要請"@ja.
+kg:id_10 rdf:type cls:c_14788.
+cls:c_14788 rdfs:label "再調査要請"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "騒音対策の実施"@ja.
+kg:id_11 rdf:type cls:c_8699.
+cls:c_8699 rdfs:label "騒音対策"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "自然環境との調和を図ること"@ja.
+kg:id_12 rdf:type cls:c_8849.
+cls:c_8849 rdfs:label "環境調和"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:st_1 rdfs:label "文化庁"@ja.
+kg:st_1 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_1 prop:content "保存に影響する行為なら原状回復命令の可能性を示す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "釧路市内の環境保護団体"@ja.
+kg:st_2 rdfs:type cls:st_158.
+cls:st_158 rdfs:label "環境団体"@ja.
+kg:op_2 prop:content "希少な野生生物の保護につながると歓迎"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "釧路自然保護協会の神田房行会長"@ja.
+kg:st_3 rdfs:type cls:st_158.
+kg:op_3 prop:content "タンチョウの生息域の保全につながると期待"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "釧路市教育委員会"@ja.
+kg:st_4 rdfs:type cls:st_6.
+kg:op_4 prop:content "事業者の環境調査だけでは保全影響が軽微か判断できない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "工事関係者"@ja.
+kg:st_5 rdfs:type cls:st_208.
+cls:st_208 rdfs:label "事業関係者"@ja.
+kg:op_5 prop:content "再生可能エネルギー普及を国が後押しする中で悪者扱いに不満"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "事業者"@ja.
+kg:st_6 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_6 prop:content "適正な手続きを踏んで工事を進めていると反論"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_6.
+kg:op_7 prop:content "文化庁への意見書提出は珍しく意義深いと評価"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:st_7 rdfs:label "釧路市立博物館の秋葉薫館長"@ja.
+kg:st_7 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_8 prop:content "事業者に速やかな再調査を求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "市幹部"@ja.
+kg:st_8 rdfs:type cls:st_209.
+cls:st_209 rdfs:label "行政関係者"@ja.
+kg:op_9 prop:content "太陽光発電自体ではなく自然環境との調和の在り方が問われる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "釧路湿原周辺で大阪市の事業者が進める大規模太陽光発電所（メガソーラー）の建設計画"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "計画では、釧路市北斗の約4・2ヘクタールの民有地に約6600枚のソーラーパネルを設置する"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "天然記念物の保存に影響を及ぼす行為が行われた場合、原状回復を命じる可能性もある"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "釧路市内の環境保護団体からは「希少な野生生物の保護につながる」と歓迎の声があがった。釧路自然保護協会の神田房行会長は「市教委が文化庁に意見書を出すことは珍しく、大変意義深い。タンチョウの生息域の保全につながれば」と期待する"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "建設現場では国の特別天然記念物タンチョウや国の天然記念物オジロワシなど、希少な猛禽（もうきん）類が生息する。市教委は事業者による環境調査だけでは、こうした野生生物の保全への影響が軽微なのかどうか判断できないとして"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "一方、国は太陽光発電など再生可能エネルギーの普及を後押ししているだけに、工事関係者からは困惑の声も漏れる。事業者は「きちんと手続きを踏んで工事を進めている」と反論。工事関係者も「なぜわれわれだけが悪者扱いされるのか」と不満を募らせる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:text-txt_contents "文化財保護法は、天然記念物の保存に影響を及ぼす行為をしようとする場合、文化庁長官の許可を得なければならないと定める"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "市教委は事業者による環境調査だけでは、こうした野生生物の保全への影響が軽微なのかどうか判断できないとして、天然記念物を所管する文化庁に意見書を提出"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "26日に文化庁からの見解書を受理し、事業者に再調査と騒音対策の実施を求めた要請書を送った。釧路市立博物館の秋葉薫館長は「事業者にはすみやかに再調査してほしい」と話す"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:text-txt_contents "26日に文化庁からの見解書を受理し、事業者に再調査と騒音対策の実施を求めた要請書を送った"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "市幹部は「太陽光発電自体が悪いわけではない。自然環境との調和を今後どう図っていくのか。事業者も行政も問われている」と話している"@ja.
+}

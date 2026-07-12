@@ -1,0 +1,779 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00139> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "ウッドショックの影響"@ja.
+kg:id_1 rdf:type cls:c_8021.
+cls:c_8021 rdfs:label "経済変動"@ja.
+kg:id_2 rdfs:label "木材価格の上昇"@ja.
+kg:id_2 rdf:type cls:c_609.
+cls:c_609 rdfs:label "価格上昇"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "きらきら遊佐マイタウン事業"@ja.
+kg:id_3 rdf:type cls:c_877.
+cls:c_877 rdfs:label "助成事業"@ja.
+kg:id_4 rdfs:label "集落公民館の改修申請の増加"@ja.
+kg:id_4 rdf:type cls:c_8022.
+cls:c_8022 rdfs:label "改修申請増加"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "集落公民館の改修申請増加"@ja.
+kg:id_5 rdf:type cls:c_8022.
+kg:id_6 rdfs:label "台風などの暴風"@ja.
+kg:id_6 rdf:type cls:c_3692.
+cls:c_3692 rdfs:label "暴風"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "大雪"@ja.
+kg:id_7 rdf:type cls:c_1623.
+cls:c_1623 rdfs:label "大雪"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "暴風雪"@ja.
+kg:id_8 rdf:type cls:c_2626.
+cls:c_2626 rdfs:label "暴風雪"@ja.
+kg:id_5 prop:cause kg:id_8.
+kg:id_9 rdfs:label "経年による内装の劣化"@ja.
+kg:id_9 rdf:type cls:c_8023.
+cls:c_8023 rdfs:label "施設劣化"@ja.
+kg:id_5 prop:cause kg:id_9.
+kg:id_10 rdfs:label "下水道への接続"@ja.
+kg:id_10 rdf:type cls:c_8024.
+cls:c_8024 rdfs:label "設備接続"@ja.
+kg:id_5 prop:cause kg:id_10.
+kg:id_11 rdfs:label "エアコンの設置"@ja.
+kg:id_11 rdf:type cls:c_480.
+cls:c_480 rdfs:label "設備設置"@ja.
+kg:id_5 prop:cause kg:id_11.
+kg:id_12 rdfs:label "予算超過"@ja.
+kg:id_12 rdf:type cls:c_8025.
+cls:c_8025 rdfs:label "予算超過"@ja.
+kg:id_3 prop:effect kg:id_12.
+kg:id_13 rdfs:label "次年度対応が可能な６集落を翌年度対応とする"@ja.
+kg:id_13 rdf:type cls:c_8026.
+cls:c_8026 rdfs:label "翌年度対応"@ja.
+kg:id_3 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "次年度対応が厳しい６集落に令和３年度助成を行う"@ja.
+kg:id_14 rdf:type cls:c_8027.
+cls:c_8027 rdfs:label "優先助成"@ja.
+kg:id_3 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "予算の確保と要綱の見直し"@ja.
+kg:id_15 rdf:type cls:c_4001.
+cls:c_4001 rdfs:label "制度見直し"@ja.
+kg:id_3 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "月光川水害予防組合の解散"@ja.
+kg:id_16 rdf:type cls:c_8028.
+cls:c_8028 rdfs:label "組織解散"@ja.
+kg:id_17 rdfs:label "遊佐町における水害予防組織としての役割を終えたこと"@ja.
+kg:id_17 rdf:type cls:c_8029.
+cls:c_8029 rdfs:label "役割終了"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "河川の草刈りなどの河川管理事業を町が引き継ぐ"@ja.
+kg:id_18 rdf:type cls:c_8030.
+cls:c_8030 rdfs:label "行政継承"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "町内を流下する河川の管理"@ja.
+kg:id_19 rdf:type cls:c_8031.
+cls:c_8031 rdfs:label "河川管理"@ja.
+kg:id_20 rdfs:label "令和４年度から町発注で河川敷の草刈りを実施する"@ja.
+kg:id_20 rdf:type cls:c_8032.
+cls:c_8032 rdfs:label "草刈実施"@ja.
+kg:id_19 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "水防区域を遊佐町が引き継ぐ"@ja.
+kg:id_21 rdf:type cls:c_8033.
+cls:c_8033 rdfs:label "管理継承"@ja.
+kg:id_19 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "河川流下能力の低下"@ja.
+kg:id_22 rdf:type cls:c_8034.
+cls:c_8034 rdfs:label "流下能力低下"@ja.
+kg:id_23 rdfs:label "河道の堆積土砂"@ja.
+kg:id_23 rdf:type cls:c_8035.
+cls:c_8035 rdfs:label "堆積土砂"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "河川支障木"@ja.
+kg:id_24 rdf:type cls:c_8036.
+cls:c_8036 rdfs:label "支障木"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "河川管理"@ja.
+kg:id_25 rdf:type cls:c_8031.
+kg:id_26 rdfs:label "県への要望活動を行う"@ja.
+kg:id_26 rdf:type cls:c_671.
+cls:c_671 rdfs:label "要望活動"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "支障木の処分費増大"@ja.
+kg:id_27 rdf:type cls:c_8037.
+cls:c_8037 rdfs:label "処分費増大"@ja.
+kg:id_28 rdfs:label "ストックヤード不足"@ja.
+kg:id_28 rdf:type cls:c_8038.
+cls:c_8038 rdfs:label "保管場所不足"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "河川支障木の処理"@ja.
+kg:id_29 rdf:type cls:c_8039.
+cls:c_8039 rdfs:label "支障木処理"@ja.
+kg:id_30 rdfs:label "破砕機の有効性を県へ情報提供し購入を要望する"@ja.
+kg:id_30 rdf:type cls:c_8040.
+cls:c_8040 rdfs:label "設備要望"@ja.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "統合新小学校の開校"@ja.
+kg:id_31 rdf:type cls:c_8041.
+cls:c_8041 rdfs:label "学校開設"@ja.
+kg:id_32 rdfs:label "スクールバスによる登下校をする子供が増える"@ja.
+kg:id_32 rdf:type cls:c_8042.
+cls:c_8042 rdfs:label "通学者増加"@ja.
+kg:id_31 prop:effect kg:id_32.
+kg:id_33 rdfs:label "見守り隊に関することを検討する"@ja.
+kg:id_33 rdf:type cls:c_8043.
+cls:c_8043 rdfs:label "見守り検討"@ja.
+kg:id_31 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "放課後児童クラブの在り方を検討する"@ja.
+kg:id_34 rdf:type cls:c_8044.
+cls:c_8044 rdfs:label "居場所検討"@ja.
+kg:id_31 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "放課後子ども教室の在り方を検討する"@ja.
+kg:id_35 rdf:type cls:c_8044.
+kg:id_31 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "通学路の安全確保"@ja.
+kg:id_36 rdf:type cls:c_3385.
+cls:c_3385 rdfs:label "通学路安全"@ja.
+kg:id_37 rdfs:label "遊佐町通学路安全推進会議を設置する"@ja.
+kg:id_37 rdf:type cls:c_3387.
+cls:c_3387 rdfs:label "推進会議"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "危険箇所の合同点検を実施する"@ja.
+kg:id_38 rdf:type cls:c_3388.
+cls:c_3388 rdfs:label "合同点検"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "放課後児童クラブの来所帰宅経路の危険"@ja.
+kg:id_39 rdf:type cls:c_8045.
+cls:c_8045 rdfs:label "経路危険"@ja.
+kg:id_40 rdfs:label "施設までの経路と帰宅経路の危険箇所を確認し合同点検を検討する"@ja.
+kg:id_40 rdf:type cls:c_3388.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "地域医療の維持発展"@ja.
+kg:id_41 rdf:type cls:c_5223.
+cls:c_5223 rdfs:label "地域医療"@ja.
+kg:id_42 rdfs:label "医師歯科医師薬剤師看護職員等の人材不足"@ja.
+kg:id_42 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "町内開業医の閉院"@ja.
+kg:id_43 rdf:type cls:c_8046.
+cls:c_8046 rdfs:label "医療機関閉鎖"@ja.
+kg:id_41 prop:cause kg:id_43.
+kg:id_44 rdfs:label "人口減少による患者数の減少"@ja.
+kg:id_44 rdf:type cls:c_5979.
+cls:c_5979 rdfs:label "患者減少"@ja.
+kg:id_41 prop:cause kg:id_44.
+kg:id_45 rdfs:label "看護師等奨学金貸付事業を実施する"@ja.
+kg:id_45 rdf:type cls:c_8047.
+cls:c_8047 rdfs:label "奨学金貸付"@ja.
+kg:id_41 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "地域医療安定化対策支援事業を実施する"@ja.
+kg:id_46 rdf:type cls:c_8048.
+cls:c_8048 rdfs:label "医療支援"@ja.
+kg:id_41 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "支援等を今後検討する"@ja.
+kg:id_47 rdf:type cls:c_8049.
+cls:c_8049 rdfs:label "支援検討"@ja.
+kg:id_41 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "ヤングケアラー"@ja.
+kg:id_48 rdf:type cls:c_8050.
+cls:c_8050 rdfs:label "家族介護児童"@ja.
+kg:id_49 rdfs:label "障がい者病気精神疾患のある保護者や家族の介護"@ja.
+kg:id_49 rdf:type cls:c_8051.
+cls:c_8051 rdfs:label "家族介護"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "年下の兄弟の世話"@ja.
+kg:id_50 rdf:type cls:c_8052.
+cls:c_8052 rdfs:label "兄弟世話"@ja.
+kg:id_48 prop:cause kg:id_50.
+kg:id_51 rdfs:label "自らの育ちや教育に影響が及ぶ"@ja.
+kg:id_51 rdf:type cls:c_8053.
+cls:c_8053 rdfs:label "教育影響"@ja.
+kg:id_48 prop:effect kg:id_51.
+kg:id_52 rdfs:label "要保護児童対策地域協議会で支援内容を協議する"@ja.
+kg:id_52 rdf:type cls:c_8054.
+cls:c_8054 rdfs:label "支援協議"@ja.
+kg:id_48 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "小中学校教職員向け資料で周知する"@ja.
+kg:id_53 rdf:type cls:c_779.
+cls:c_779 rdfs:label "周知活動"@ja.
+kg:id_48 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "家事援助サービスや介護サービスにつなげる"@ja.
+kg:id_54 rdf:type cls:c_2764.
+cls:c_2764 rdfs:label "サービス連携"@ja.
+kg:id_48 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "関係機関やスクールソーシャルワーカーが見守りと支援を行う"@ja.
+kg:id_55 rdf:type cls:c_3986.
+cls:c_3986 rdfs:label "見守り支援"@ja.
+kg:id_48 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "ひきこもり"@ja.
+kg:id_56 rdf:type cls:c_2121.
+cls:c_2121 rdfs:label "ひきこもり"@ja.
+kg:id_57 rdfs:label "様々な要因の結果として社会参加を回避すること"@ja.
+kg:id_57 rdf:type cls:c_8055.
+cls:c_8055 rdfs:label "社会参加回避"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "長期にわたる継続的な支援が必要になる"@ja.
+kg:id_58 rdf:type cls:c_1792.
+cls:c_1792 rdfs:label "継続支援"@ja.
+kg:id_56 prop:effect kg:id_58.
+kg:id_59 rdfs:label "ひきこもり相談会を実施する"@ja.
+kg:id_59 rdf:type cls:c_8056.
+cls:c_8056 rdfs:label "相談実施"@ja.
+kg:id_56 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "必要に応じて自宅訪問で支援する"@ja.
+kg:id_60 rdf:type cls:c_2535.
+cls:c_2535 rdfs:label "訪問支援"@ja.
+kg:id_56 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "若者居場所支援としてフリースペースひなたを開設する"@ja.
+kg:id_61 rdf:type cls:c_8057.
+cls:c_8057 rdfs:label "居場所開設"@ja.
+kg:id_56 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "民生児童委員向け研修会を毎年開催する"@ja.
+kg:id_62 rdf:type cls:c_870.
+cls:c_870 rdfs:label "研修実施"@ja.
+kg:id_56 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "ケアマネジャー向け研修の機会をつくる"@ja.
+kg:id_63 rdf:type cls:c_870.
+kg:id_56 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "関係機関と連携して継続的に支援する"@ja.
+kg:id_64 rdf:type cls:c_3634.
+cls:c_3634 rdfs:label "連携支援"@ja.
+kg:id_56 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "人工透析患者の増加"@ja.
+kg:id_65 rdf:type cls:c_8058.
+cls:c_8058 rdfs:label "通院支援"@ja.
+kg:id_66 rdfs:label "通院患者や家族の高齢化により自力で通院が困難になる"@ja.
+kg:id_66 rdf:type cls:c_8059.
+cls:c_8059 rdfs:label "通院困難"@ja.
+kg:id_65 prop:effect kg:id_66.
+kg:id_67 rdfs:label "町有バスで送迎を行う"@ja.
+kg:id_67 rdf:type cls:c_7463.
+cls:c_7463 rdfs:label "送迎支援"@ja.
+kg:id_65 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "非課税世帯に交通費助成を行う"@ja.
+kg:id_68 rdf:type cls:c_8060.
+cls:c_8060 rdfs:label "交通費助成"@ja.
+kg:id_65 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "冬期間の火木土曜日運行を民間タクシー会社へ委託する"@ja.
+kg:id_69 rdf:type cls:c_8061.
+cls:c_8061 rdfs:label "運行委託"@ja.
+kg:id_65 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "病院側と協議しながら来年度以降の運行を検討する"@ja.
+kg:id_70 rdf:type cls:c_8062.
+cls:c_8062 rdfs:label "運行検討"@ja.
+kg:id_65 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "遊佐町の定住促進"@ja.
+kg:id_71 rdf:type cls:c_2013.
+cls:c_2013 rdfs:label "定住促進"@ja.
+kg:id_72 rdfs:label "転出超過"@ja.
+kg:id_72 rdf:type cls:c_1166.
+cls:c_1166 rdfs:label "転出超過"@ja.
+kg:id_71 prop:cause kg:id_72.
+kg:id_73 rdfs:label "少子化による人口減少"@ja.
+kg:id_73 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_71 prop:cause kg:id_73.
+kg:id_74 rdfs:label "計画どおりに進まない"@ja.
+kg:id_74 rdf:type cls:c_8063.
+cls:c_8063 rdfs:label "計画停滞"@ja.
+kg:id_71 prop:effect kg:id_74.
+kg:id_75 rdfs:label "移住相談の増加"@ja.
+kg:id_75 rdf:type cls:c_8064.
+cls:c_8064 rdfs:label "移住相談増加"@ja.
+kg:id_76 rdfs:label "新型コロナウイルス感染症の落ち着き"@ja.
+kg:id_76 rdf:type cls:c_8065.
+cls:c_8065 rdfs:label "感染症緩和"@ja.
+kg:id_75 prop:cause kg:id_76.
+kg:id_77 rdfs:label "空き家バンク登録増加"@ja.
+kg:id_77 rdf:type cls:c_8066.
+cls:c_8066 rdfs:label "空き家登録増加"@ja.
+kg:id_78 rdfs:label "コロナ禍で帰郷して管理することが難しくなったこと"@ja.
+kg:id_78 rdf:type cls:c_8067.
+cls:c_8067 rdfs:label "管理困難"@ja.
+kg:id_77 prop:cause kg:id_78.
+kg:id_79 rdfs:label "若者定住住宅地の分譲販売を行う"@ja.
+kg:id_79 rdf:type cls:c_8068.
+cls:c_8068 rdfs:label "住宅分譲"@ja.
+kg:id_71 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "賃貸住宅建設運営事業への貸付募集を行う"@ja.
+kg:id_80 rdf:type cls:c_8069.
+cls:c_8069 rdfs:label "住宅貸付"@ja.
+kg:id_71 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "空き家活用事業を補助方式に見直す"@ja.
+kg:id_81 rdf:type cls:c_4001.
+kg:id_71 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "インターネットを使用した移住セミナーを開催する"@ja.
+kg:id_82 rdf:type cls:c_8070.
+cls:c_8070 rdfs:label "セミナー開催"@ja.
+kg:id_71 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "第３次遊佐町定住促進計画を策定する"@ja.
+kg:id_83 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_71 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "リモートなど新しい視点手法を取り入れる"@ja.
+kg:id_84 rdf:type cls:c_8071.
+cls:c_8071 rdfs:label "手法導入"@ja.
+kg:id_71 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "庁内各部署集落支援員応援団等が連携しマンパワー重視で対応する"@ja.
+kg:id_85 rdf:type cls:c_1099.
+cls:c_1099 rdfs:label "連携対応"@ja.
+kg:id_71 prop:contermeasure kg:id_85.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "移住定住の促進や町民参画連携の推進への影響を懸念"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_2 prop:content "建設事業への助成が増えており制度見直しが必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "申請額が予算を大きく上回った"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "予算枠の中で次年度対応可能な集落は翌年度に回した"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "破損の程度から翌年度対応が難しい集落を優先して支援"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "課題に対応できるよう制度設計を改善したい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "地域生活課長"@ja.
+kg:st_3 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_7 prop:content "法制度や合併の経過から組織としての役割を終えたと説明"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "解散後は町が河川管理事業を引き継ぐ方向で調整"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "河川敷の草刈りは町の発注で実施したい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "事業のほか水防区域も遊佐町が引き継ぐ方向で調整"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "流下能力の保持に向け重点的な除去が必要と指摘"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "流下能力の保持に向け支障木除去が必要と指摘"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "地元意見を踏まえて県へ要望活動を続ける"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "近くに処分地がないと運搬経費や処分費がかさむ"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "破砕機は効果的であり県に購入を働きかけたい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "開校に伴いスクールバス利用児童が増えるため安全確保が必要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "登下校時の見守り活動の在り方を検討している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "放課後の居場所づくりとして在り方を検討している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "放課後の居場所づくりとして在り方を検討している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "関係機関が連携して通学路の安全確保に取り組んでいる"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "関係機関が集まり危険箇所を把握し合同点検している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "通学路以外も含め危険箇所の確認が必要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "県の課題として医療人材不足がある"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "地域医療体制に不安要素が見られる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "健康福祉課長"@ja.
+kg:st_4 rdfs:type cls:st_32.
+kg:op_25 prop:content "患者数減少で医療機関の財政が厳しい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "医療従事者の人材確保育成を支援している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "地域医療の安定を図るため支援を実施している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "地域医療の安定に向け新たな支援を検討したい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "子どもの育ちや教育に影響が及ぶ状態と説明"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "関係機関で具体的な支援方法を協議する体制がある"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "教職員には独自資料で周知している"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "確認された場合は必要なサービスにつなげる"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "可能性のある児童生徒を継続的に見守る"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "長期化や高齢事例では本人の変化を促すことが難しい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "健康支援係を窓口に相談会を実施している"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "相談会休止時も訪問支援を行っている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "若者の居場所支援として開設した"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "地域を知る民生児童委員の存在が重要と考える"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "9060問題に対応するためケアマネ研修も必要"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "複数機関の連携による継続支援が必要"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "高齢化により通院支援の必要性が高まっている"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "自分で通院できない人や家族送迎ができない人を支援している"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "自力通院や家族送迎の非課税世帯に交通費助成を行っている"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "冬期間の通院困難者に対応するため運行日を補完する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "通院支援継続のため病院と調整し検討する"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "人口減少の背景に転出超過がある"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "少子化が急速な人口減少の要因"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "コロナ禍で出張や受入れが難しく計画どおりに進まなかった"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "企画課長"@ja.
+kg:st_5 rdfs:type cls:st_32.
+kg:op_49 prop:content "宣言緩和後に移住の動きが活発化した"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_5.
+kg:op_50 prop:content "空き家の管理見通しが立たず手放す決断が増えた"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:op_51 prop:content "舞鶴地内で分譲販売を進めている"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "民間による賃貸住宅整備を進めている"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "利用者が望む形でリフォームや起業準備を可能にした"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "コロナ禍でも移住情報を発信できるよう工夫している"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "職員ワーキンググループと若者移住者の意見を踏まえて策定している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "ウィズコロナアフターコロナを考慮した施策にしたい"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "町民の温かさを生かした対応を強めたい"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "経済産業省が公表しております資料には、コロナ禍での影響として木材、木製品の国内価格が今年９月時点で前年末比47％上昇しているとの記載がありました。本町の主要施策のうち移住、定住の促進、町民参画連携の推進などについてウッドショックの影響が懸念されるのではと考えるところであります"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "近年のきらきら遊佐マイタウン事業への申請状況を見ますと、台風などの暴風や大雪、暴風雪による集落公民館の屋根、外装の損傷や経年による内装の劣化、下水道への接続、エアコンの設置など、集落公民館の改修に関する申請が大変増えてきております"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "台風などの暴風や大雪、暴風雪による集落公民館の屋根、外装の損傷"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:text-txt_contents "台風などの暴風や大雪、暴風雪による集落公民館の屋根、外装の損傷"@ja.
+<< kg:id_5 prop:cause kg:id_8 >>
+    prop:text-txt_contents "台風などの暴風や大雪、暴風雪による集落公民館の屋根、外装の損傷"@ja.
+<< kg:id_5 prop:cause kg:id_9 >>
+    prop:text-txt_contents "経年による内装の劣化"@ja.
+<< kg:id_5 prop:cause kg:id_10 >>
+    prop:text-txt_contents "下水道への接続"@ja.
+<< kg:id_5 prop:cause kg:id_11 >>
+    prop:text-txt_contents "エアコンの設置"@ja.
+<< kg:id_3 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "令和３年度の申請は、全てきらきら遊佐マイタウン事業の申込み、集落公民館に関するもので、12件の申請があったところでありました。予算額200万円に対して、申請額合計が412万円で、212万円ほど予算を超過した状況となりました"@ja.
+<< kg:id_3 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "その結果、集落の区長さんに確認を行いながら、次年度に実施することが可能な６集落については次年度で対応することとし"@ja.
+<< kg:id_3 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "破損の程度の事情により次年度対応が厳しいという６集落については令和３年度で助成を行い、集落公民館の修繕等へ支援をしたところであります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "次年度の事業実施に当たっては、これらの課題に対応できるよう、予算の確保と要綱の見直しを行い、制度設計を改善していきたいと考えております"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "歴史的に見ましても、特に１町５か村が合併して現在の遊佐町が誕生したこと、それから土地改良法の制定、水防法の制定、改正及び河川法の制定、改正等の経過を見ますと、遊佐町における水害予防組織としての役割を終えたものとも言えるとも言えます"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "解散後は、水防区域と併せ、草刈りなどの河川管理事業についても町が引き継ぐことで調整を行ってございます"@ja.
+<< kg:id_19 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "毎年６月に実施しております河川敷の草刈りについては、月光川水害予防組合の発注でこれまで実施されてきましたが、令和４年度からは町の発注で実施したいと考えております"@ja.
+<< kg:id_19 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "また、事業のほか、水防区域も遊佐町が引き継ぐことで調整を行っております"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "河積阻害の大きな要因となる河道の堆積土砂や河川支障木の除去に重点を置いて取り組むなど、河川が有する流下能力を常に発揮できるようにする必要がある"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "河積阻害の大きな要因となる河道の堆積土砂や河川支障木の除去に重点を置いて取り組むなど、河川が有する流下能力を常に発揮できるようにする必要がある"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今後につきましても、地元の方々のご意見をいただきながら、県に要望活動を行っていきたいというふうに考えてございます"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "現場の近くにストックヤードがありますと、残土の運搬経費、そして支障木の処分費、大幅に軽減されまして"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "破砕機の購入につきましては、遊佐町のみならず他市町村でも使用可能の機械でございますので、県へ粉砕機の有効性について情報提供させていただき、ぜひ県のほうから購入していただくように、この有効性について十分ご理解いただくように県の担当者のほうに情報提供をさせていただきたいと思ってございます"@ja.
+<< kg:id_31 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "統合新小学校の開校に伴い、スクールバスによる登下校をする子供さんたちが増えることになります"@ja.
+<< kg:id_31 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "その中でも、登下校時の見守り活動である見守り隊に関することや、放課後の居場所づくりとして放課後児童クラブ、放課後子ども教室について新校開校に向けてその在り方が検討されているところであります"@ja.
+<< kg:id_31 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "放課後の居場所づくりとして放課後児童クラブ、放課後子ども教室について新校開校に向けてその在り方が検討されているところであります"@ja.
+<< kg:id_31 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "放課後の居場所づくりとして放課後児童クラブ、放課後子ども教室について新校開校に向けてその在り方が検討されているところであります"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "平成28年度に教育委員会、地域生活課及び総務課が事務局となり、遊佐町通学路安全推進会議が設置されております"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "その関係機関が集まり、町内の学校ごとの通学路の危険箇所を把握し、協議して、危険箇所である現地に赴いて合同点検を実施しております"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "これから統合新小学校の開校に向けて、通学路だけでなく、放課後児童クラブや放課後子ども教室、そのほかの塾や習い事なども含めてその施設までの経路及びそこから帰宅するまでの経路についても改めて危険箇所を確認し、関係機関による合同点検を検討していく必要があると考えております"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "県の課題といたしましては、急性期病床の過剰、回復期病床の不足、後期高齢者人口の増加に伴う在宅医療需要の増加に対し受入れ態勢の不十分であること、医師、歯科医師、薬剤師、看護職員等の人材の不足等が挙げられております"@ja.
+<< kg:id_41 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "令和元年度に開業医１か所が閉院するなど、地域の医療体制に不安の要素が見られるのも事実であります"@ja.
+<< kg:id_41 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "町の人口減少による患者数の減少等により、医療機関の財政が厳しい現状にある"@ja.
+<< kg:id_41 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "町では、地域医療を支援する上で医療従事者の人材確保、育成を重要課題として位置づけ、平成25年度より地域医療安定化対策支援事業、看護師等奨学金貸付事業を実施し、町内医療機関で働く看護師等を支援しております"@ja.
+<< kg:id_41 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "平成25年度より地域医療安定化対策支援事業、看護師等奨学金貸付事業を実施し、町内医療機関で働く看護師等を支援しております"@ja.
+<< kg:id_41 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "これらの地域医療の安定を図るため、支援等について今後検討していきたいと考えております"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:text-txt_contents "ヤングケアラーとは、年齢や成長の度合いに見合わない重い責任や負担を抱え、本来大人が担うような家族、いわゆる障がい者、病気、精神疾患のある保護者や家族の介護など"@ja.
+<< kg:id_48 prop:cause kg:id_50 >>
+    prop:text-txt_contents "年下の兄弟の世話をすることなど"@ja.
+<< kg:id_48 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "自らの育ちや教育に影響が及ぼされるであろう18歳未満の子供"@ja.
+<< kg:id_48 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "遊佐町では、平成18年度から要保護児童対策地域協議会を設置し、児童虐待など要保護児童等の支援内容について協議を行ってきております。構成機関は、教育、福祉、医療、警察、児童相談所などの多くの関係機関で構成されており、ヤングケアラーの概念について共通認識を図るとともに、遊佐町でそうした子供が確認された場合には、具体的な支援方法について協議を行う組織となっております"@ja.
+<< kg:id_48 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "遊佐町の小中学校の教職員向けには、令和３年５月に児童虐待の理解と対応についての資料を町教育委員会が独自で作成、配布し、その中でヤングケアラーについて周知しておりました"@ja.
+<< kg:id_48 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "ヤングケアラーに該当する子供が確認された場合は、子供の権利侵害や家庭の状況に関するアセスメントを行い、必要に応じて家事援助サービスや介護サービスにつなげるなど、多様な機関と連携しながら支援をしてまいります"@ja.
+<< kg:id_48 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "今後も、ヤングケアラーになる可能性がある児童生徒については、各関係機関やスクールソーシャルワーカーが家庭と学校に直接関わり合いながら、見守りと支援を行ってまいりたいと考えております"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:text-txt_contents "ひきこもりとは、様々な要因の結果として社会参加を回避し、原則的には６か月以上にわたっておおむね家庭にとどまり続けている状態をいい"@ja.
+<< kg:id_56 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "ひきこもりの原因や背景は多岐にわたり、多種多様な問題を抱えている場合が多く、特にひきこもりの期間が長い場合や高齢者の事例では、本人の変化を促すことが難しく、長期にわたる継続的な支援が重要となります"@ja.
+<< kg:id_56 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "平成29年度より健康福祉課健康支援係を窓口としてひきこもり相談会を実施しており、今年度は年10回を予定しています"@ja.
+<< kg:id_56 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "新型コロナ感染症の影響で、令和２年度は相談会を２回休止いたしましたが、必要に応じて自宅へ訪問して支援も行っております"@ja.
+<< kg:id_56 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "令和３年６月から若者居場所支援として総合福祉センターでフリースペースひなたを開設しております"@ja.
+<< kg:id_56 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "町ではひきこもりの問題に悩む人の早期の相談につなげるため、地域を知る民生児童委員の存在が重要であると考え、毎年定例会でひきこもりをテーマに研修会を開催しております"@ja.
+<< kg:id_56 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "また、90代の親と60代の子供による9060問題に対応するために、「ひきこもりの子どもと親の介護」ということで、今後ケアマネジャーにも研修の機会をつくっていきたいと考えております"@ja.
+<< kg:id_56 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "ひきこもり者、家族に対する支援は一機関で完結できるものではなく、複数の機関が連携を図りながら継続的に関わっていかなければなりません"@ja.
+<< kg:id_65 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "このように通院患者や家族の高齢化により自力で通院が困難になっていることが挙げられますので、これらを何とか支援していきたいと思っております"@ja.
+<< kg:id_65 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "町は、これまで透析患者の通院支援として、独り暮らしで自分の力で通院できない方や家族による送迎もできない方を対象に町有バスで送迎を行ったり"@ja.
+<< kg:id_65 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "自力で通院や家族の送迎により通院されている方で非課税世帯の方へ交通費助成を行ってまいりました"@ja.
+<< kg:id_65 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "冬期間の火、木、土曜日の運行について民間のタクシー会社へ町が委託し、町有バスと民間タクシーを利用した月曜日から土曜日の週６日の運行を行う予定としております"@ja.
+<< kg:id_65 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "来年度以降の運行については、引き続き病院側と協議をしながら、透析患者の通院について検討していきたいと考えております"@ja.
+<< kg:id_71 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "我が町では、転出の超過、そして特に少子化による人口減少が急速に進行する中で、何とかこれに歯止めをかけたいという思いで"@ja.
+<< kg:id_71 prop:cause kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "特に少子化による人口減少が急速に進行する中で"@ja.
+<< kg:id_71 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "何と何と昨年からコロナウイルス感染症の拡大という形で、まずは都会に出張できないと。会議はウェブが最低限、以外はできないという形の中、それからこっちにお試し住宅に来てもらえるにしても、なかなかそれについても感染症が怖いから受け入れ難いという形の状態が続いておりました。計画どおりには全く進まないという状況でありました"@ja.
+<< kg:id_75 prop:cause kg:id_76 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "宣言が緩和された10月以降、その移住の動きが活発化してきた、移住の相談、移動もできるようになりましたし、実際にいらしていただける"@ja.
+<< kg:id_77 prop:cause kg:id_78 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "コロナ禍で、実家を所有して年数回帰郷して管理するといった方がコロナ禍でなかなか帰郷が難しくなってきてきておりまして、どうしても今後の管理について見通しがだんだんつかなくなる状況でその空き家を手放す決断をされた方も多くなってきたのかなということで、実際にその空き家所有の方からの相談も多くなってきている状況にあります"@ja.
+<< kg:id_71 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "昨年度造成が完成した舞鶴地内の若者定住住宅につきましては、今年度９区画の若者世帯の分譲販売"@ja.
+<< kg:id_71 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "４区画の賃貸住宅建設運営事業への貸付募集を行い、６区画の分譲、２事業者に２区画、計４区画の貸付けが決定し"@ja.
+<< kg:id_71 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "事業を従来の町借り上げ方式から空き家を10年間賃貸住宅して活用する場合のリフォーム費用補助と空き家を活用した起業する場合のリフォーム費用の設備投資費用の補助を行う補助方式に変更し、利用者の望む形でのリフォームや起業準備を可能にすることで、さらに空き家を利活用いただけるよう事業の見直しを行っております"@ja.
+<< kg:id_71 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "独自にインターネットを使用した移住セミナーも行っていますが、８月に開催した第１回セミナーでは、移住者の体験談等を発信しながら、フリートークで移住施策や本町での生活について情報発信して、好評をいただきました"@ja.
+<< kg:id_71 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "現在、庁内関係各課の職員から成るワーキンググループにての第３次遊佐町定住促進計画の策定作業を進めておりますので、また地域で頑張っておられる若者の移住者の方からお集まりをいただき、それぞれの立場から移住、定住施策を含む町施策にご意見をいただきながら、計画策定の参考にさせていただいております"@ja.
+<< kg:id_71 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "第３次定住促進計画に基づく今後の移住、定住施策においては、移住、定住希望者のニーズを捉え、状況に対応しながらこれまでの施策をブラッシュアップしていくほか、ウィズコロナ、アフターコロナを考慮し、リモートの取組など新しい視点、手法を取り入れた従来の方法にとらわれない施策内容を検討していきたいと考えております"@ja.
+<< kg:id_71 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "庁舎内各部署、集落支援員、ＮＰＯ法人いなか暮らし遊佐応援団等の団体組織がさらに連携しながら、これまで以上にマンパワーを重視して移住、定住希望者に対応してまいりたいと考えております"@ja.
+}

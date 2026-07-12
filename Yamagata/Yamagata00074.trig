@@ -1,0 +1,692 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00074> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "８月の豪雨による河川氾濫"@ja.
+kg:id_1 rdf:type cls:c_2543.
+cls:c_2543 rdfs:label "水害"@ja.
+kg:id_2 rdfs:label "観測史上最大、想定外の降水量"@ja.
+kg:id_2 rdf:type cls:c_3873.
+cls:c_3873 rdfs:label "降水量増加"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "広域的に甚大な被害"@ja.
+kg:id_3 rdf:type cls:c_847.
+cls:c_847 rdfs:label "被害拡大"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "８月５日からの大雨"@ja.
+kg:id_4 rdf:type cls:c_661.
+cls:c_661 rdfs:label "豪雨災害"@ja.
+kg:id_5 rdfs:label "山形県における甚大な被害"@ja.
+kg:id_5 rdf:type cls:c_847.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "想定外の降水量による災害"@ja.
+kg:id_6 rdf:type cls:c_661.
+kg:id_7 rdfs:label "多くの貴い命や財産を奪う"@ja.
+kg:id_7 rdf:type cls:c_3874.
+cls:c_3874 rdfs:label "生命財産被害"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "令和３年度一般会計予算の厳しい状況"@ja.
+kg:id_8 rdf:type cls:c_3875.
+cls:c_3875 rdfs:label "財政状況"@ja.
+kg:id_9 rdfs:label "新型コロナウイルス感染症の影響による地方税の減収見込み"@ja.
+kg:id_9 rdf:type cls:c_2741.
+cls:c_2741 rdfs:label "税収減少"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "新型コロナウイルス感染症の拡大"@ja.
+kg:id_10 rdf:type cls:c_1089.
+cls:c_1089 rdfs:label "感染症拡大"@ja.
+kg:id_11 rdfs:label "行政のデジタル化の加速化"@ja.
+kg:id_11 rdf:type cls:c_2173.
+cls:c_2173 rdfs:label "行政デジタル化"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "キャッシュレス化の加速化"@ja.
+kg:id_12 rdf:type cls:c_3876.
+cls:c_3876 rdfs:label "キャッシュレス化"@ja.
+kg:id_10 prop:effect kg:id_12.
+kg:id_13 rdfs:label "日本一女性が働きやすいまちの実現"@ja.
+kg:id_13 rdf:type cls:c_3877.
+cls:c_3877 rdfs:label "女性就労環境"@ja.
+kg:id_14 rdfs:label "医療・介護・保育など女性就業者が多い分野の厳しい処遇や環境"@ja.
+kg:id_14 rdf:type cls:c_3878.
+cls:c_3878 rdfs:label "処遇環境不良"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "小中一貫教育の推進"@ja.
+kg:id_15 rdf:type cls:c_3879.
+cls:c_3879 rdfs:label "教育推進"@ja.
+kg:id_16 rdfs:label "社会の変化に対応できる確かな学力の向上と生徒指導の充実"@ja.
+kg:id_16 rdf:type cls:c_1943.
+cls:c_1943 rdfs:label "学力向上"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "スクール・コミュニティの推進"@ja.
+kg:id_17 rdf:type cls:c_3880.
+cls:c_3880 rdfs:label "地域学校連携"@ja.
+kg:id_18 rdfs:label "小中一貫教育の開始"@ja.
+kg:id_18 rdf:type cls:c_3881.
+cls:c_3881 rdfs:label "教育制度開始"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "中学校区単位で地域と協働、連携する"@ja.
+kg:id_19 rdf:type cls:c_2663.
+cls:c_2663 rdfs:label "地域連携"@ja.
+kg:id_17 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "コロナ禍が地域経済に与える影響"@ja.
+kg:id_20 rdf:type cls:c_2210.
+cls:c_2210 rdfs:label "地域経済影響"@ja.
+kg:id_21 rdfs:label "経済的な影響を受けた事業者の発生"@ja.
+kg:id_21 rdf:type cls:c_3882.
+cls:c_3882 rdfs:label "被影響事業者"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "各種の応援補助金の迅速な交付"@ja.
+kg:id_22 rdf:type cls:c_1226.
+cls:c_1226 rdfs:label "補助金交付"@ja.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "キャッシュレス決済導入促進キャンペーンの実施"@ja.
+kg:id_23 rdf:type cls:c_3883.
+cls:c_3883 rdfs:label "消費喚起事業"@ja.
+kg:id_20 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "いかのまち酒田の推進"@ja.
+kg:id_24 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_25 rdfs:label "イカ釣り漁船への支援"@ja.
+kg:id_25 rdf:type cls:c_3884.
+cls:c_3884 rdfs:label "漁業支援"@ja.
+kg:id_24 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "首都圏からバイヤーを招聘した産地見学会の開催"@ja.
+kg:id_26 rdf:type cls:c_1911.
+cls:c_1911 rdfs:label "販路拡大"@ja.
+kg:id_24 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "活イカの流通実証実験"@ja.
+kg:id_27 rdf:type cls:c_3885.
+cls:c_3885 rdfs:label "流通実証"@ja.
+kg:id_24 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "需要調査の実施"@ja.
+kg:id_28 rdf:type cls:c_3264.
+cls:c_3264 rdfs:label "需要調査"@ja.
+kg:id_24 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "いかのまち酒田の課題"@ja.
+kg:id_29 rdf:type cls:c_3886.
+cls:c_3886 rdfs:label "地域振興課題"@ja.
+kg:id_30 rdfs:label "中型イカ釣り船の減少"@ja.
+kg:id_30 rdf:type cls:c_3887.
+cls:c_3887 rdfs:label "漁船減少"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "酒田港の水揚げ量減少"@ja.
+kg:id_31 rdf:type cls:c_3586.
+cls:c_3586 rdfs:label "水揚げ減少"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "市民の認知度不足"@ja.
+kg:id_32 rdf:type cls:c_3888.
+cls:c_3888 rdfs:label "認知度不足"@ja.
+kg:id_29 prop:cause kg:id_32.
+kg:id_33 rdfs:label "持続可能な財政運営"@ja.
+kg:id_33 rdf:type cls:c_2720.
+cls:c_2720 rdfs:label "財政運営"@ja.
+kg:id_34 rdfs:label "コロナ禍による景気回復の厳しさ"@ja.
+kg:id_34 rdf:type cls:c_3889.
+cls:c_3889 rdfs:label "景気停滞"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "未利用財産の売却"@ja.
+kg:id_35 rdf:type cls:c_1515.
+cls:c_1515 rdfs:label "資産売却"@ja.
+kg:id_33 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "ふるさと納税等の活用"@ja.
+kg:id_36 rdf:type cls:c_3890.
+cls:c_3890 rdfs:label "納税活用"@ja.
+kg:id_33 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "事務事業や投資的経費の見直しによる歳出抑制"@ja.
+kg:id_37 rdf:type cls:c_3891.
+cls:c_3891 rdfs:label "歳出抑制"@ja.
+kg:id_33 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "ふるさと納税推進事業"@ja.
+kg:id_38 rdf:type cls:c_3892.
+cls:c_3892 rdfs:label "納税推進事業"@ja.
+kg:id_39 rdfs:label "ワンストップ特例申請受付業務の効率化"@ja.
+kg:id_39 rdf:type cls:c_3893.
+cls:c_3893 rdfs:label "申請業務効率化"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "オンライン申請受付機能の追加"@ja.
+kg:id_40 rdf:type cls:c_3894.
+cls:c_3894 rdfs:label "オンライン申請"@ja.
+kg:id_38 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "年末年始の繁忙期に向けた会計年度任用職員の増員"@ja.
+kg:id_41 rdf:type cls:c_2758.
+cls:c_2758 rdfs:label "人員増強"@ja.
+kg:id_38 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "職場における男女の不平等感"@ja.
+kg:id_42 rdf:type cls:c_3895.
+cls:c_3895 rdfs:label "男女不平等感"@ja.
+kg:id_43 rdfs:label "日本一女性が働きやすいまちの実現の妨げ"@ja.
+kg:id_43 rdf:type cls:c_3896.
+cls:c_3896 rdfs:label "女性就労阻害"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "若い女性の転出超過"@ja.
+kg:id_44 rdf:type cls:c_1518.
+cls:c_1518 rdfs:label "若年女性流出"@ja.
+kg:id_45 rdfs:label "人口減少の抑制の遅れ"@ja.
+kg:id_45 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "婚姻件数及び出生数の減少"@ja.
+kg:id_46 rdf:type cls:c_3897.
+cls:c_3897 rdfs:label "婚姻出生減少"@ja.
+kg:id_47 rdfs:label "人口の自然減"@ja.
+kg:id_47 rdf:type cls:c_3898.
+cls:c_3898 rdfs:label "自然減少"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "公共施設の整備資金確保"@ja.
+kg:id_48 rdf:type cls:c_3899.
+cls:c_3899 rdfs:label "施設整備資金"@ja.
+kg:id_49 rdfs:label "公共施設等整備基金の新設"@ja.
+kg:id_49 rdf:type cls:c_3900.
+cls:c_3900 rdfs:label "基金新設"@ja.
+kg:id_48 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "市債残高の縮減"@ja.
+kg:id_50 rdf:type cls:c_3901.
+cls:c_3901 rdfs:label "債務縮減"@ja.
+kg:id_51 rdfs:label "地方債の発行額を年間30億円以下に制限"@ja.
+kg:id_51 rdf:type cls:c_3902.
+cls:c_3902 rdfs:label "発行抑制"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "未利用財産の長期保有"@ja.
+kg:id_52 rdf:type cls:c_3903.
+cls:c_3903 rdfs:label "資産長期保有"@ja.
+kg:id_53 rdfs:label "維持管理費の増加"@ja.
+kg:id_53 rdf:type cls:c_3904.
+cls:c_3904 rdfs:label "維持費増加"@ja.
+kg:id_52 prop:effect kg:id_53.
+kg:id_54 rdfs:label "地域活性化の阻害"@ja.
+kg:id_54 rdf:type cls:c_3905.
+cls:c_3905 rdfs:label "地域活性阻害"@ja.
+kg:id_52 prop:effect kg:id_54.
+kg:id_55 rdfs:label "未利用財産"@ja.
+kg:id_55 rdf:type cls:c_3906.
+cls:c_3906 rdfs:label "未利用資産"@ja.
+kg:id_56 rdfs:label "売却や貸付けによる有効活用"@ja.
+kg:id_56 rdf:type cls:c_2728.
+cls:c_2728 rdfs:label "資産活用"@ja.
+kg:id_55 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "水道事業の広域化"@ja.
+kg:id_57 rdf:type cls:c_1636.
+cls:c_1636 rdfs:label "水道広域化"@ja.
+kg:id_58 rdfs:label "庄内広域水道用水供給事業と受水団体２市１町との垂直・水平統合の早期実現要望"@ja.
+kg:id_58 rdf:type cls:c_3538.
+cls:c_3538 rdfs:label "統合要望"@ja.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "コロナ禍"@ja.
+kg:id_59 rdf:type cls:c_1487.
+cls:c_1487 rdfs:label "感染症影響"@ja.
+kg:id_60 rdfs:label "イベントの中止や縮小"@ja.
+kg:id_60 rdf:type cls:c_3907.
+cls:c_3907 rdfs:label "イベント縮小"@ja.
+kg:id_59 prop:effect kg:id_60.
+kg:id_61 rdfs:label "ＧＩＧＡスクール端末の整備"@ja.
+kg:id_61 rdf:type cls:c_2180.
+cls:c_2180 rdfs:label "教育ICT整備"@ja.
+kg:id_62 rdfs:label "意欲的に授業に向かう児童生徒の増加"@ja.
+kg:id_62 rdf:type cls:c_3908.
+cls:c_3908 rdfs:label "学習意欲向上"@ja.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "不登校児童生徒へのオンライン学習支援"@ja.
+kg:id_63 rdf:type cls:c_3909.
+cls:c_3909 rdfs:label "オンライン学習支援"@ja.
+kg:id_61 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "働き方や暮らし方の変容"@ja.
+kg:id_64 rdf:type cls:c_3910.
+cls:c_3910 rdfs:label "生活変容"@ja.
+kg:id_59 prop:effect kg:id_64.
+kg:id_65 rdfs:label "移住者数の増加"@ja.
+kg:id_65 rdf:type cls:c_3911.
+cls:c_3911 rdfs:label "移住増加"@ja.
+kg:id_59 prop:effect kg:id_65.
+kg:id_66 rdfs:label "デジタル弱者への対応不足"@ja.
+kg:id_66 rdf:type cls:c_3912.
+cls:c_3912 rdfs:label "デジタル対応不足"@ja.
+kg:id_67 rdfs:label "スマホ教室の開催"@ja.
+kg:id_67 rdf:type cls:c_3913.
+cls:c_3913 rdfs:label "端末教室"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "ワクチン接種回数の増加"@ja.
+kg:id_68 rdf:type cls:c_3914.
+cls:c_3914 rdfs:label "接種増加"@ja.
+kg:id_69 rdfs:label "重症化する割合の低下"@ja.
+kg:id_69 rdf:type cls:c_3915.
+cls:c_3915 rdfs:label "重症化低下"@ja.
+kg:id_68 prop:effect kg:id_69.
+kg:id_70 rdfs:label "若い世代のワクチン接種率低下"@ja.
+kg:id_70 rdf:type cls:c_3916.
+cls:c_3916 rdfs:label "接種率低下"@ja.
+kg:id_71 rdfs:label "副反応への不安"@ja.
+kg:id_71 rdf:type cls:c_3917.
+cls:c_3917 rdfs:label "副反応不安"@ja.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "若い人は重症化しないのではないかという認識"@ja.
+kg:id_72 rdf:type cls:c_3918.
+cls:c_3918 rdfs:label "重症化誤認"@ja.
+kg:id_70 prop:cause kg:id_72.
+kg:id_73 rdfs:label "将来的なリスクへの心配"@ja.
+kg:id_73 rdf:type cls:c_620.
+cls:c_620 rdfs:label "将来不安"@ja.
+kg:id_70 prop:cause kg:id_73.
+kg:id_74 rdfs:label "ワクチン取扱い上の問題"@ja.
+kg:id_74 rdf:type cls:c_3919.
+cls:c_3919 rdfs:label "取扱問題"@ja.
+kg:id_75 rdfs:label "ワクチンの廃棄"@ja.
+kg:id_75 rdf:type cls:c_3920.
+cls:c_3920 rdfs:label "廃棄発生"@ja.
+kg:id_74 prop:effect kg:id_75.
+kg:id_76 rdfs:label "旅行・宿泊業の悪化"@ja.
+kg:id_76 rdf:type cls:c_3921.
+cls:c_3921 rdfs:label "観光宿泊悪化"@ja.
+kg:id_59 prop:effect kg:id_76.
+kg:id_77 rdfs:label "飲食店の回復傾向とその後の再悪化"@ja.
+kg:id_77 rdf:type cls:c_3922.
+cls:c_3922 rdfs:label "飲食業悪化"@ja.
+kg:id_59 prop:effect kg:id_77.
+kg:id_78 rdfs:label "エネルギー・食料品価格等の物価高騰"@ja.
+kg:id_78 rdf:type cls:c_757.
+cls:c_757 rdfs:label "物価高騰"@ja.
+kg:id_79 rdfs:label "市民生活や事業者への負担増"@ja.
+kg:id_79 rdf:type cls:c_3923.
+cls:c_3923 rdfs:label "生活事業負担増"@ja.
+kg:id_78 prop:effect kg:id_79.
+kg:st_1 rdfs:label "齋藤美昭議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "被災地の一日も早い復旧を願う"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "被災者への見舞いと早期復旧を願う"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "自然の恐ろしさを改めて認識した"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "丸山市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_4 prop:content "デジタル変革を地域課題解決の有効な手段として重視する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "キャッシュレス決済導入促進事業は消費喚起に効果があった"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "即効薬はなく地道な活動が必要だ"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "鈴木和仁教育長"@ja.
+kg:st_3 rdfs:type cls:st_19.
+cls:st_19 rdfs:label "教育長"@ja.
+kg:op_7 prop:content "酒田市の教育目標の実現を最上位に据えて進める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "地域と学校の連携協働を充実させるためのアプローチを見直した"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "今ある小学校区の結びつきを生かし中学校区の視点で活動する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "事業者アンケートや業況調査を踏まえ市独自支援を実施した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "申請手続の簡素化とスピーディーな支援を心がけた"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "消費喚起の観点で大変好評だった"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "県外船の入港支援を行い成果が表れ始めている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "船凍スルメイカの流通に結びつけた"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "新たなブランド化を見据えて進めている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "飲食店の需要調査を行った上で実証実験を進めている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "県外船の入港支援を強めている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "地元船もなくなり大きな要因となっている"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "久保賢太郎農林水産部長"@ja.
+kg:st_4 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_19 prop:content "市民にＰＲする取組が必要だ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "歳入確保策と歳出抑制が必須だ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "未利用財産の処分を積極的に進めたい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_5 rdfs:type cls:st_18.
+kg:op_22 prop:content "返礼品の充実などで前年度超えを目指す"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "ウイズコロナ・ポストコロナを前提に事業内容を転換する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "オンライン申請導入で寄附者の利便性向上と作業効率化を図る"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "スマホやパソコンで自宅から申請できるようになる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_5.
+kg:op_26 prop:content "寄附や申請件数の大幅増に備える"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_5.
+kg:op_27 prop:content "これが酒田の現実であり社会の変化を理解できるようなアピールが必要だ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_5.
+kg:op_28 prop:content "社会減を抑制する施策の展開が重要だ"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "自然減の主な要因と考えている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "毎年１億円を積み立てていく予定だ"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "令和10年度の歳入歳出均衡と令和15年度の公債費縮減を見込む"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "そのまま放置するのは望ましくない"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "一定程度市街地にあり土地の価値もあるため放置は望ましくない"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "ホームページ周知や先着順売払いで積極的に処分する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "須田聡上下水道事業管理者"@ja.
+kg:st_6 rdfs:type cls:st_63.
+cls:st_63 rdfs:label "事業管理者"@ja.
+kg:op_35 prop:content "県の広域化推進プランに工程が明確に示されるよう協議する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "齋藤直議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_36 prop:content "ウイズコロナ時代に向けて総括と展開が必要だ"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_7.
+kg:op_37 prop:content "主体的で対話的で深い学びの一助になっている"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:st_8 rdfs:label "佐藤元教育次長"@ja.
+kg:st_8 rdfs:type cls:st_48.
+cls:st_48 rdfs:label "教育次長"@ja.
+kg:op_38 prop:content "学びの保障と社会的自立に向け活用を進める"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_8.
+kg:op_39 prop:content "ウェブ媒体やＳＮＳを活用して移住先としてＰＲを強める"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "令和３年度移住者数111人は過去最多である"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:st_9 rdfs:label "本間義紀企画部デジタル変革調整監"@ja.
+kg:st_9 rdfs:type cls:st_41.
+cls:st_41 rdfs:label "調整監"@ja.
+kg:op_41 prop:content "携帯電話会社や事業連携先と協力しスマホ教室を展開している"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "ワクチン接種による重症化防止の効果が表れていると捉える"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "正確で分かりやすい情報発信で接種を推進したい"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "若い世代の感染増を踏まえ接種を推進したい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "将来不安を含めた懸念に対し丁寧な情報提供が必要だ"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "注意喚起を行い再発防止に取り組んだ"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "旅行・宿泊業での悪化が顕著だった"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "ワクチン接種進展で回復傾向が見られたが重点措置で大きな影響が出た"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "新たな重点支援地方交付金を活用し補正予算対応を検討する"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "ここ数年、毎年のように観測史上最大、想定外の降水量による災害が多くの貴い命や財産などを奪い"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "今年の夏も、８月の豪雨で、北海道から福岡県までの135以上の河川で氾濫が発生し、広域的に甚大な被害をもたらしました"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "山形県においても、８月５日からの大雨による被害は甚大なものでした"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "想定外の降水量による災害が多くの貴い命や財産などを奪い、自然の恐ろしさをまざまざと見せつけられてきました"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "令和３年度の一般会計予算は、新型コロナウイルス感染症の影響で、地方税の減収が見込まれ、厳しい状況下での予算編成"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "新型コロナウイルス感染症の拡大は、行政のデジタル化、キャッシュレス化など、デジタル技術を活用して新しい価値、便益をつくり出すデジタル変革の加速化につながる"@ja.
+<< kg:id_10 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "新型コロナウイルス感染症の拡大は、行政のデジタル化、キャッシュレス化など、デジタル技術を活用して新しい価値、便益をつくり出すデジタル変革の加速化につながる"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "女性就業者が多い医療・介護・保育などは厳しい処遇や環境下でありますが、このような状況下においても、本市が目指す日本一女性が働きやすいまちの視点を持つことが重要"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "社会の変化に対応できる確かな学力の向上と生徒指導の充実のため、本市の特色を生かした酒田市小中一貫教育ビジョンを策定し"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "小中一貫教育の開始に伴い、これまでの小学校区単位から中学校区単位で地域と協働、連携していくための方策を検討し"@ja.
+<< kg:id_17 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これまでの小学校区単位から中学校区単位で地域と協働、連携していくための方策を検討し、本市の実情に合わせ、子供を縁とする地域づくり、スクール・コミュニティを推進していくことにしました"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "コロナ禍が地域経済に与える影響を最小限に抑えるため、経済的な影響を受けた事業者に対し、各種の応援補助金を迅速に交付した"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "コロナ禍が地域経済に与える影響を最小限に抑えるため、経済的な影響を受けた事業者に対し、各種の応援補助金を迅速に交付した"@ja.
+<< kg:id_20 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "本市内での消費を喚起するキャッシュレス決済導入促進キャンペーンを実施しました"@ja.
+<< kg:id_24 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "いかのまち酒田として県外船を誘致するため、引き続きイカ釣り漁船への支援を行い"@ja.
+<< kg:id_24 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "販路を拡大するため、首都圏からバイヤーを招聘し、産地見学会を開催するとともに"@ja.
+<< kg:id_24 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "新たなブランド化を見据えた活イカの流通実証実験や需要調査を実施しました"@ja.
+<< kg:id_24 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "新たなブランド化を見据えた活イカの流通実証実験や需要調査を実施しました"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "このいかのまち酒田に向けた課題といたしましては、実は大きく２つございまして、１つは中型イカ釣り船の減少でございます"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "地元船もなくなりまして、酒田港の水揚げ量減少の大きな要因となっているところでございます"@ja.
+<< kg:id_29 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "２つ目の課題としては、やはりいかのまちということについて、市民の皆さんの認知度をもっともっと高める必要がある"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "コロナの影響で景気回復が厳しい中での財政運営は、未利用財産の売却やふるさと納税等の活用などの歳入確保策のほか、事務事業や投資的経費の見直しによる歳出抑制が必須"@ja.
+<< kg:id_33 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "未利用財産の売却やふるさと納税等の活用などの歳入確保策"@ja.
+<< kg:id_33 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "未利用財産の売却やふるさと納税等の活用などの歳入確保策"@ja.
+<< kg:id_33 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "事務事業や投資的経費の見直しによる歳出抑制が必須"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "ワンストップ特例申請受付業務の効率化を図るための経費について増額等するもの"@ja.
+<< kg:id_38 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "これにオンライン申請の受付機能が追加されました。この機能を利用するための経費を増額要求"@ja.
+<< kg:id_38 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "年末年始の繁忙期に向けた会計年度任用職員の増員に要する人件費"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "職場における男女の不平等を感じる割合という項目がございまして、それが59.3％という数値"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "若い女性、特に15歳から24歳までの若い女性の転出超過は依然として続いていることが大きな課題"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "人口の自然減についてでございますが、ここ数年、婚姻件数及び出生数が減少傾向にあることが主な要因"@ja.
+<< kg:id_48 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "昨年度は公共施設等整備基金を新設をして、将来の公共施設の整備資金として、これもしっかり保有をする必要がある"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "地方債の発行額に一定程度制限を設けて地方債残高を意図的に減少するような対策を取っていきたい。具体的には、年間の発行額を30億円以下"@ja.
+<< kg:id_52 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "利活用の見通しもないまま保有し続けるということは、草刈りも含めて、それから近隣への安全な配慮というものもございますし、様々な維持管理費がかかる"@ja.
+<< kg:id_52 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "地域活性化の面からも決して望ましいものではない"@ja.
+<< kg:id_55 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "酒田市未利用財産利活用基本方針に基づきまして、売却や貸付けといった有効活用を進めている"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "庄内広域水道用水供給事業と受水団体２市１町との垂直・水平統合の早期実現について知事に直接要望"@ja.
+<< kg:id_59 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "コロナ禍により、酒田まつりの縮小や花火ショーの中止などでイベントの中止または事業の見直しなど余儀なくされた"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "これまで以上に、全体的には意欲的に授業に向かう生徒が増えており、クラスメイトと関わりながら学ぶ姿も多く見られるようになってきた"@ja.
+<< kg:id_61 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "不登校の児童生徒に、例えば授業の様子をリアルタイムで配信することで共有したり、教員がオンラインによって１対１で学習支援を行ったりというようなことを行っている"@ja.
+<< kg:id_59 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "コロナ禍によりまして、働き方や暮らし方が変容している"@ja.
+<< kg:id_59 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "令和３年度移住者数は111人でありまして、これまでで最も多い数字となった"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "携帯電話会社と協力をして、１回スマホ教室をさせていただいた。現在で約20回ほどのスマートフォン教室を展開をさせていただいている"@ja.
+<< kg:id_68 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "ワクチン接種回数が増えると重症化する割合が低下しており、これについては全ての年代でも同様の傾向"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "原因としては、副反応が怖い"@ja.
+<< kg:id_70 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "若い人は重症化しないのではないかということ"@ja.
+<< kg:id_70 prop:cause kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "将来的なリスクが心配ですと、将来、どういう症状として何かが出てくるかもしれないということでのそういう心配がある"@ja.
+<< kg:id_74 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "令和３年度に廃棄したワクチンは、全て取扱い上問題が生じたもので"@ja.
+<< kg:id_59 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "旅行や宿泊業での悪化が顕著であった"@ja.
+<< kg:id_59 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "飲食店を筆頭に回復傾向が見られるなど二極化がうかがえる状況であった。まん延防止等重点措置が適用になったことから、回復傾向にあった飲食店においても営業時間短縮や酒類の提供制限などが実施され"@ja.
+<< kg:id_78 prop:effect kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "エネルギー・食料品価格等の物価高騰の影響を受けた生活者や事業者を支援するため"@ja.
+}

@@ -1,0 +1,375 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00045> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "鳥類に著しい影響"@ja.
+kg:id_2 rdf:type cls:c_6.
+cls:c_6 rdfs:label "鳥類影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "入念な現地調査に基づく適切な予測及び評価の実施"@ja.
+kg:id_3 rdf:type cls:c_316.
+cls:c_316 rdfs:label "予測評価"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "必要に応じた対象事業実施区域の位置等事業計画の見直し"@ja.
+kg:id_4 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "風力発電設備の稼働"@ja.
+kg:id_5 rdf:type cls:c_13899.
+cls:c_13899 rdfs:label "発電設備稼働"@ja.
+kg:id_6 rdfs:label "大気質への影響"@ja.
+kg:id_6 rdf:type cls:c_13900.
+cls:c_13900 rdfs:label "大気質影響"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "騒音の影響"@ja.
+kg:id_7 rdf:type cls:c_354.
+cls:c_354 rdfs:label "騒音影響"@ja.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "超低周波音の影響"@ja.
+kg:id_8 rdf:type cls:c_354.
+kg:id_5 prop:effect kg:id_8.
+kg:id_9 rdfs:label "振動の影響"@ja.
+kg:id_9 rdf:type cls:c_13707.
+cls:c_13707 rdfs:label "振動影響"@ja.
+kg:id_5 prop:effect kg:id_9.
+kg:id_10 rdfs:label "風車の影の影響"@ja.
+kg:id_10 rdf:type cls:c_190.
+cls:c_190 rdfs:label "影響発生"@ja.
+kg:id_5 prop:effect kg:id_10.
+kg:id_11 rdfs:label "騒音及び超低周波音の調査期間を季節ごとに1週間程度設定"@ja.
+kg:id_11 rdf:type cls:c_13362.
+cls:c_13362 rdfs:label "調査設定"@ja.
+kg:id_5 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "風車の影"@ja.
+kg:id_12 rdf:type cls:c_379.
+cls:c_379 rdfs:label "風車影"@ja.
+kg:id_13 rdfs:label "走行車両への影響"@ja.
+kg:id_13 rdf:type cls:c_13360.
+cls:c_13360 rdfs:label "交通影響"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "造成等の施工"@ja.
+kg:id_14 rdf:type cls:c_13901.
+cls:c_13901 rdfs:label "施工"@ja.
+kg:id_15 rdfs:label "動物、植物及び生態系への一時的な影響"@ja.
+kg:id_15 rdf:type cls:c_833.
+cls:c_833 rdfs:label "生態影響"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "対象事業実施区域の計画"@ja.
+kg:id_16 rdf:type cls:c_13902.
+cls:c_13902 rdfs:label "区域計画"@ja.
+kg:id_17 rdfs:label "多数の鳥類がねぐらと餌場を行き来する際の高頻度でのバードストライク発生懸念"@ja.
+kg:id_17 rdf:type cls:c_13572.
+cls:c_13572 rdfs:label "衝突懸念"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "高頻度でのバードストライク発生"@ja.
+kg:id_18 rdf:type cls:c_13735.
+cls:c_13735 rdfs:label "衝突発生"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "風力発電設備の配置等の見直しを含む慎重な検討"@ja.
+kg:id_19 rdf:type cls:c_351.
+cls:c_351 rdfs:label "配置見直し"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "事業の実施"@ja.
+kg:id_20 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_21 rdfs:label "ヨシ原の営巣環境の消失"@ja.
+kg:id_21 rdf:type cls:c_13903.
+cls:c_13903 rdfs:label "営巣地消失"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "バードストライクの発生"@ja.
+kg:id_22 rdf:type cls:c_13735.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "2営巣期を含む複数年にわたる現地調査の実施"@ja.
+kg:id_23 rdf:type cls:c_267.
+cls:c_267 rdfs:label "現地調査"@ja.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "鳥類の現地調査回数及び頻度の不足"@ja.
+kg:id_24 rdf:type cls:c_124.
+cls:c_124 rdfs:label "調査不足"@ja.
+kg:id_25 rdfs:label "渡りの時期の生息状況を不足なく把握できない"@ja.
+kg:id_25 rdf:type cls:c_13904.
+cls:c_13904 rdfs:label "生息把握不足"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "既存文献調査や専門家ヒアリングを踏まえた鳥類調査回数及び頻度の設定"@ja.
+kg:id_26 rdf:type cls:c_13362.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "建設予定地が大潟村を縦断"@ja.
+kg:id_27 rdf:type cls:c_13354.
+cls:c_13354 rdfs:label "建設予定地"@ja.
+kg:id_28 rdfs:label "渡り鳥の飛翔が広範囲に及ぶことが予想される"@ja.
+kg:id_28 rdf:type cls:c_13905.
+cls:c_13905 rdfs:label "広域飛翔"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "調査員を適切に配置して全体を把握"@ja.
+kg:id_29 rdf:type cls:c_269.
+cls:c_269 rdfs:label "調査実施"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "架空送電線設備"@ja.
+kg:id_30 rdf:type cls:c_13852.
+cls:c_13852 rdfs:label "送電設備"@ja.
+kg:id_31 rdfs:label "鳥類の飛翔行動への影響"@ja.
+kg:id_31 rdf:type cls:c_185.
+cls:c_185 rdfs:label "飛翔影響"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "送電線設備の存在についても予測及び評価の対象とする"@ja.
+kg:id_32 rdf:type cls:c_316.
+kg:id_1 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "工事に伴う濁水及び地下水に含まれるリン"@ja.
+kg:id_33 rdf:type cls:c_13541.
+cls:c_13541 rdfs:label "工事排水"@ja.
+kg:id_34 rdfs:label "水生植物への影響"@ja.
+kg:id_34 rdf:type cls:c_13906.
+cls:c_13906 rdfs:label "水生植物影響"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "水生植物について調査を行い現況を把握し予測及び評価"@ja.
+kg:id_35 rdf:type cls:c_316.
+kg:id_1 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "人と自然とのふれあい活動の場への影響"@ja.
+kg:id_36 rdf:type cls:c_376.
+cls:c_376 rdfs:label "活動場影響"@ja.
+kg:id_1 prop:effect kg:id_36.
+kg:id_37 rdfs:label "人と自然とのふれあい活動の場を環境影響評価項目として選定"@ja.
+kg:id_37 rdf:type cls:c_13626.
+cls:c_13626 rdfs:label "評価項目"@ja.
+kg:id_1 prop:contermeasure kg:id_37.
+kg:st_1 rdfs:label "秋田県生活環境部環境管理課環境審査班"@ja.
+kg:st_1 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_1 prop:content "鳥類への著しい影響のおそれを踏まえ入念な現地調査と適切な予測評価が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "鳥類への影響を踏まえ現地調査に基づく予測評価を徹底すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "環境保全措置の検討では事業計画の見直しも含めるべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "住居等への大気質の影響を調査予測評価すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "住居等や農作業者への騒音影響を評価すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "住居等や農作業者への超低周波音影響を評価すべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "住居等や農作業者への振動影響を評価すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "住居等や走行車両への風車の影の影響を評価すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "年間状況を正確に把握するため季節ごとの調査期間設定が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "周辺道路での走行車両への影響も予測評価すべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "施工による一時的影響も環境影響評価項目に選定すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "施工由来の生態系影響を評価対象に含めるべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "渡り鳥のねぐらと餌場を分断する計画はバードストライク懸念が高い"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "計画区域配置によりバードストライク発生が懸念される"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "バードストライク懸念を踏まえ設備配置の見直しを含め慎重に検討すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "チュウヒの重要な営巣環境の消失を避けるため複数年調査が必要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "チュウヒ生息地ではバードストライク発生も懸念される"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "猛禽類保護の観点から複数年の現地調査を行うべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "渡り時期は日による変化が大きく十分な調査回数設定が必要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "文献調査と専門家ヒアリングを踏まえて鳥類調査計画を設定すべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "建設予定地が村を縦断するため渡り鳥の飛翔範囲が広い"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "飛翔個体の見落としを避けるため調査員配置を適切にすべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "送電線設備も鳥類飛翔への影響評価対象に含めるべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "風車本体だけでなく送電線設備も評価対象に含めるべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "濁水や地下水中リンによる水生植物影響を懸念し現況把握が必要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "水生植物への影響を調査し予測評価すべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "水生植物への影響把握のため調査と予測評価を実施すべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "菜の花ロードやバードウォッチングなど自然とのふれあい活動の場への影響も評価すべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "自然とのふれあい活動の場も評価項目に含めるべき"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "本事業がこの地域を利用する鳥類に著しい影響を与えるおそれがあることを念頭に置いて、入念な現地調査に基づく適切な予測及び評価を実施するとともに"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "入念な現地調査に基づく適切な予測及び評価を実施するとともに"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "環境保全措置の検討に当たっては、必要に応じて対象事業実施区域の位置等事業計画の見直しを行うなど"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "住居等が存在しており、大気質、騒音及び超低周波音、振動、風車の影等の影響が生じるおそれがあることから、調査、予測及び評価すること"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "住居等が存在しており、大気質、騒音及び超低周波音、振動、風車の影等の影響が生じるおそれがあることから、調査、予測及び評価すること"@ja.
+<< kg:id_5 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "住居等が存在しており、大気質、騒音及び超低周波音、振動、風車の影等の影響が生じるおそれがあることから、調査、予測及び評価すること"@ja.
+<< kg:id_5 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "住居等が存在しており、大気質、騒音及び超低周波音、振動、風車の影等の影響が生じるおそれがあることから、調査、予測及び評価すること"@ja.
+<< kg:id_5 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "住居等が存在しており、大気質、騒音及び超低周波音、振動、風車の影等の影響が生じるおそれがあることから、調査、予測及び評価すること"@ja.
+<< kg:id_5 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "風力発電設備の稼働に伴う騒音及び超低周波音の調査期間について、年間の状況を正確に把握する必要があることから、季節ごとに1週間程度の調査期間を設定すること"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "対象事業実施区域周辺の道路においては、風車の影が走行車両に及ぼす影響について予測及び評価すること"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "造成等の施工による一時的な影響を要因とする動物、植物及び生態系への影響について、環境影響評価項目として選定すること"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "造成等の施工による一時的な影響を要因とする動物、植物及び生態系への影響について、環境影響評価項目として選定すること"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "対象事業実施区域は、渡り鳥のねぐらである八郎潟調整池と餌場として利用されている水田を分断する形で計画されており、多数の鳥類がねぐらと餌場を行き来する際に、高頻度でのバードストライクの発生が懸念されることから"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "対象事業実施区域は、渡り鳥のねぐらである八郎潟調整池と餌場として利用されている水田を分断する形で計画されており、多数の鳥類がねぐらと餌場を行き来する際に、高頻度でのバードストライクの発生が懸念されることから"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "事業計画の具体化に当たっては、風力発電設備の配置等の見直しを含めて、慎重な検討を行うこと"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "対象事業実施区域の位置する中央幹線排水路沿いのヨシ原は本種の重要な営巣環境であり、事業の実施により営巣環境の消失やバードストライクの発生が懸念されることから"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "対象事業実施区域の位置する中央幹線排水路沿いのヨシ原は本種の重要な営巣環境であり、事業の実施により営巣環境の消失やバードストライクの発生が懸念されることから"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "「猛禽類保護の進め方（改訂版）」（平成24年環境省）を参考に、2営巣期を含む複数年にわたる現地調査を実施すること"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "鳥類の現地調査の回数や頻度については、既存文献等の調査や専門家等へのヒアリングを十分に行い、日によって変化の大きい渡りの時期の生息状況等を不足なく把握できるように設定すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "既存文献等の調査や専門家等へのヒアリングを十分に行い、日によって変化の大きい渡りの時期の生息状況等を不足なく把握できるように設定すること"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "また、建設予定地が大潟村を縦断しており、渡り鳥の飛翔は広範囲に及ぶことが予想されるので"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "飛翔個体の見落としのないよう、調査員を適切に配置して全体を把握すること"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "風力発電設備の間を結ぶ送電線設備は、コンクリート柱による架空送電線が計画されており、鳥類の飛翔行動に影響を及ぼす可能性がある"@ja.
+<< kg:id_1 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "風力発電設備本体だけでなく送電線設備の存在についても、予測及び評価の対象とすること"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "工事に伴う濁水及び地下水に含まれるリンによる水生植物への影響が懸念されることから"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "工事に伴う濁水及び地下水に含まれるリンによる水生植物への影響が懸念されることから"@ja.
+<< kg:id_1 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "調査を行い、現況を把握し、予測及び評価すること"@ja.
+<< kg:id_1 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "菜の花ロードや、渡り鳥として飛来するガン類等を観察するバードウォッチング、承水路における魚釣りなど、様々な人と自然とのふれあいの活動の場が存在することから、環境影響評価項目として選定すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "様々な人と自然とのふれあいの活動の場が存在することから、環境影響評価項目として選定すること"@ja.
+}

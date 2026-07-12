@@ -1,0 +1,165 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00086> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "釧路湿原周辺のメガソーラー建設計画"@ja.
+kg:id_1 rdf:type cls:c_12240.
+cls:c_12240 rdfs:label "開発計画"@ja.
+kg:id_2 rdfs:label "土壌汚染対策法で定められた道への届け出を期限内に提出していなかったこと"@ja.
+kg:id_2 rdf:type cls:c_14976.
+cls:c_14976 rdfs:label "届出不備"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "道の許可を得ずに0.5ヘクタールを上回る森林を伐採し、森林法に違反していること"@ja.
+kg:id_3 rdf:type cls:c_979.
+cls:c_979 rdfs:label "法令違反"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "土壌調査が終了するまで工事を再開できない"@ja.
+kg:id_4 rdf:type cls:c_14918.
+cls:c_14918 rdfs:label "工事中断"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "中断期間が長期化する可能性がある"@ja.
+kg:id_5 rdf:type cls:c_14977.
+cls:c_14977 rdfs:label "長期中断"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "追加調査を求められる"@ja.
+kg:id_6 rdf:type cls:c_388.
+cls:c_388 rdfs:label "追加調査"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "土壌汚染のおそれがあると判断された場合にさらに詳しい調査を命じられる"@ja.
+kg:id_7 rdf:type cls:c_14978.
+cls:c_14978 rdfs:label "詳細調査"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "一部工事の中止勧告を受けた"@ja.
+kg:id_8 rdf:type cls:c_14818.
+cls:c_14818 rdfs:label "工事中止勧告"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "9月11日から工事全体を中断している"@ja.
+kg:id_9 rdf:type cls:c_14918.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "土壌汚染がないかを確認する調査が終了するまで工事を再開しない"@ja.
+kg:id_10 rdf:type cls:c_14918.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "土壌調査を実施する"@ja.
+kg:id_11 rdf:type cls:c_14979.
+cls:c_14979 rdfs:label "土壌調査"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "追加調査を実施する"@ja.
+kg:id_12 rdf:type cls:c_388.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "土壌汚染のおそれがある場合はさらに詳しい調査を行う"@ja.
+kg:id_13 rdf:type cls:c_14978.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "伐採した区域の植林を進める"@ja.
+kg:id_14 rdf:type cls:c_14819.
+cls:c_14819 rdfs:label "植林"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:st_1 rdfs:label "北海道"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "土壌調査終了まで工事再開を認めない"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "道環境保全局"@ja.
+kg:st_2 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_2 prop:content "提出内容が不十分として追加調査を求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "土壌汚染のおそれがあれば詳細調査を命じる方針"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "森林法違反として一部工事の中止を勧告"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "調査終了まで工事中断継続を指導"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "事業者に土壌調査を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "調査結果が不十分として追加調査を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "必要なら詳細調査を命じる方針"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "日本エコロジー"@ja.
+kg:st_3 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_9 prop:content "植林を進めた上で工事再開を目指す"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "3月に盛り土などの工事に着工したが、土壌汚染対策法で定められた道への届け出を期限内に提出していなかった。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "日本エコロジーは、道の許可を得ずに0.5ヘクタールを上回る森林を伐採し、森林法に違反しているとして9月2日に道から一部工事の中止勧告を受け"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "北海道は28日、釧路湿原周辺で大規模太陽光発電所（メガソーラー）の建設計画を進める事業者に対し、土壌汚染がないかを確認する調査が終了するまで工事を再開しないよう指導した"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "事業者の日本エコロジー（大阪市）は9月から工事を中断しているが、調査の進展次第で中断期間が長期化する可能性がある。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "日本エコロジーは今月上旬に道に調査結果を提出したが、内容が不十分だとして追加調査を求めた。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "道が土壌汚染のおそれがあると判断した場合にはさらに詳しい調査を命じる方針だ。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "森林法に違反しているとして9月2日に道から一部工事の中止勧告を受け"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:text-txt_contents "同11日から工事全体を中断している。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "北海道は28日、釧路湿原周辺で大規模太陽光発電所（メガソーラー）の建設計画を進める事業者に対し、土壌汚染がないかを確認する調査が終了するまで工事を再開しないよう指導した"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "道は9月5日に届け出を受理し、同社に対して土壌調査を求めていた。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "日本エコロジーは今月上旬に道に調査結果を提出したが、内容が不十分だとして追加調査を求めた。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "道が土壌汚染のおそれがあると判断した場合にはさらに詳しい調査を命じる方針だ。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "伐採した区域の植林などを進めた上で10月末～11月初旬に工事を再開する方針を示している。"@ja.
+}

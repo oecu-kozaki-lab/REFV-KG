@@ -1,0 +1,81 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00069> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "太陽光発電所建設計画"@ja.
+kg:id_1 rdf:type cls:c_390.
+cls:c_390 rdfs:label "発電計画"@ja.
+kg:id_2 rdfs:label "タンチョウが大自然を舞う景観の保全懸念"@ja.
+kg:id_2 rdf:type cls:c_14853.
+cls:c_14853 rdfs:label "景観保全の懸念"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "鶴居村"@ja.
+kg:id_3 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_4 rdfs:label "太陽光発電所建設計画が一時浮上した民有地の購入"@ja.
+kg:id_4 rdf:type cls:c_14851.
+cls:c_14851 rdfs:label "土地購入"@ja.
+kg:id_3 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "民有地購入のための寄付金受け付け開始"@ja.
+kg:id_5 rdf:type cls:c_14854.
+cls:c_14854 rdfs:label "寄付金募集"@ja.
+kg:id_3 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "購入費を上回る寄付額のタンチョウ保全への活用"@ja.
+kg:id_6 rdf:type cls:c_9605.
+cls:c_9605 rdfs:label "保全活動"@ja.
+kg:id_3 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "複数の寄付の申し出"@ja.
+kg:id_7 rdf:type cls:c_14855.
+cls:c_14855 rdfs:label "寄付申出"@ja.
+kg:id_8 rdfs:label "寄付金を広く受け付ける決定"@ja.
+kg:id_8 rdf:type cls:c_14856.
+cls:c_14856 rdfs:label "受け付け決定"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:st_1 rdfs:label "鶴居村企画財政課"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "タンチョウが大自然を舞う景観を守りたい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "太陽光発電所建設計画が一時浮上した村内の民有地を購入するための寄付金の受け付けを始めた。 村企画財政課は「タンチョウが大自然を舞う景観を守りたい」と協力を呼び掛ける。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_4 >>
+    prop:text-txt_contents "鶴居村は11日、太陽光発電所建設計画が一時浮上した村内の民有地を購入するための寄付金の受け付けを始めた。 景観保持のために民有地を購入する村の方針"@ja.
+<< kg:id_3 prop:contermeasure kg:id_5 >>
+    prop:text-txt_contents "鶴居村は11日、太陽光発電所建設計画が一時浮上した村内の民有地を購入するための寄付金の受け付けを始めた。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_6 >>
+    prop:text-txt_contents "購入費を上回る額が集まった場合、タンチョウ保全に活用する。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "複数の寄付の申し出が寄せられたため、広く受け付けることにした。"@ja.
+}

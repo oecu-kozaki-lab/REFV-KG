@@ -1,0 +1,401 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00012> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "ＪＲＥ酒田風力発電所更新計画"@ja.
+kg:id_1 rdf:type cls:c_88.
+cls:c_88 rdfs:label "風力発電計画"@ja.
+kg:id_2 rdfs:label "既存施設の更新時期到来"@ja.
+kg:id_2 rdf:type cls:c_179.
+cls:c_179 rdfs:label "更新時期"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "風車の老朽化"@ja.
+kg:id_3 rdf:type cls:c_180.
+cls:c_180 rdfs:label "設備老朽化"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "自然災害時に周辺環境や保安林へ影響を与える可能性"@ja.
+kg:id_4 rdf:type cls:c_181.
+cls:c_181 rdfs:label "災害影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "想定される自然災害への対応を方法書以降の図書に記載する"@ja.
+kg:id_5 rdf:type cls:c_182.
+cls:c_182 rdfs:label "災害対応"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "雷に対応できる機種を選定する"@ja.
+kg:id_6 rdf:type cls:c_183.
+cls:c_183 rdfs:label "耐雷機種"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "台風や地震に耐える余裕を持った設計を行う"@ja.
+kg:id_7 rdf:type cls:c_184.
+cls:c_184 rdfs:label "耐災設計"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "雷や台風接近時に風車を停止し負荷を逃がす運用を行う"@ja.
+kg:id_8 rdf:type cls:c_182.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "累積的な環境影響"@ja.
+kg:id_9 rdf:type cls:c_13.
+cls:c_13 rdfs:label "累積影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "二次的なバードストライク"@ja.
+kg:id_10 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "鳥類の飛翔高度への影響"@ja.
+kg:id_11 rdf:type cls:c_185.
+cls:c_185 rdfs:label "飛翔影響"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "既存風車で死骸調査を行う"@ja.
+kg:id_12 rdf:type cls:c_42.
+cls:c_42 rdfs:label "死骸調査"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "専門家の意見を踏まえて調査計画を策定する"@ja.
+kg:id_13 rdf:type cls:c_186.
+cls:c_186 rdfs:label "調査計画"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "宮海海水浴場への視覚的圧迫感の増大"@ja.
+kg:id_14 rdf:type cls:c_187.
+cls:c_187 rdfs:label "景観圧迫"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "宮海海水浴場付近への風車設置を想定しない"@ja.
+kg:id_15 rdf:type cls:c_188.
+cls:c_188 rdfs:label "立地回避"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "騒音や振動による影響"@ja.
+kg:id_16 rdf:type cls:c_189.
+cls:c_189 rdfs:label "騒音振動"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "騒音や振動を事前調査し予測して住民へ説明する"@ja.
+kg:id_17 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "風車の影による地元への影響"@ja.
+kg:id_18 rdf:type cls:c_190.
+cls:c_190 rdfs:label "影響発生"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "過去の経験を総括し更新計画と環境影響評価に活かす"@ja.
+kg:id_19 rdf:type cls:c_191.
+cls:c_191 rdfs:label "経験活用"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "今現在の環境を把握し工事中も含め丁寧に調査予測する"@ja.
+kg:id_20 rdf:type cls:c_192.
+cls:c_192 rdfs:label "環境調査"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "環境の累積的悪化"@ja.
+kg:id_21 rdf:type cls:c_193.
+cls:c_193 rdfs:label "累積悪化"@ja.
+kg:id_1 prop:effect kg:id_21.
+kg:id_22 rdfs:label "もともと何もなかった状態の環境を最大限維持する観点で評価する"@ja.
+kg:id_22 rdf:type cls:c_194.
+cls:c_194 rdfs:label "環境維持"@ja.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "過去の自主アセス報告書や騒音調査報告書を評価に活用する"@ja.
+kg:id_23 rdf:type cls:c_195.
+cls:c_195 rdfs:label "既存資料"@ja.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "情報が引き継げるような状態を検討する"@ja.
+kg:id_24 rdf:type cls:c_196.
+cls:c_196 rdfs:label "情報継承"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "撤去と新設の工事方法を環境影響や地元配慮を踏まえて検討する"@ja.
+kg:id_25 rdf:type cls:c_197.
+cls:c_197 rdfs:label "工事計画"@ja.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:st_1 rdfs:label "中島委員"@ja.
+kg:st_1 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_1 prop:content "更新時期が予定通りか確認したい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "事業者"@ja.
+kg:st_2 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_2 prop:content "2023年から2024年上旬の更新方針から逆算した想定通りの開始と説明"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "老朽化や性能低下が更新理由にあるのか気にしている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "法定の20年想定に加え機械部分で対応の必要性が増していると説明"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "池田委員"@ja.
+kg:st_3 rdfs:type cls:st_3.
+kg:op_5 prop:content "自然災害への配慮を配慮書や今後の図書に盛り込むべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "酒田市の環境審議会"@ja.
+kg:st_4 rdfs:type cls:st_9.
+cls:st_9 rdfs:label "審議会"@ja.
+kg:op_6 prop:content "ブレード落下などで周辺の保安林に影響を与えないよう求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "事務局"@ja.
+kg:st_5 rdfs:type cls:st_10.
+cls:st_10 rdfs:label "事務局"@ja.
+kg:op_7 prop:content "方法書以降の図書で自然災害への対応を記してもらうことは可能"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_5.
+kg:op_8 prop:content "住民が気にするため適切に配慮してほしい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "冬季雷に対応できる機種を選定予定と説明"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "最大瞬間風速や地震に耐える設計で進めると説明"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "災害時は停止や負荷軽減の運用で事故防止を図る"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "江成委員"@ja.
+kg:st_6 rdfs:type cls:st_3.
+kg:op_12 prop:content "周辺34基を含めた累積的影響の予測評価を要望"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_6.
+kg:op_13 prop:content "他事業者との協議を踏まえ可能な限り現状把握と対応を行いたい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "死骸に肉食性猛禽類が集まり二次的バードストライクが起こるため評価してほしい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_6.
+kg:op_15 prop:content "ブレード長が約2倍になるため鳥の飛ぶ高さに配慮した評価を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "高度も把握し最大規模を含め適切に調査すると説明"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "横山会長"@ja.
+kg:st_7 rdfs:type cls:st_3.
+kg:op_17 prop:content "小型生物は持ち去られ過小評価になり得る点を考慮すべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_7.
+kg:op_18 prop:content "環境省の手引きに基づき既存風車で死骸調査を行う方針"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "森委員"@ja.
+kg:st_8 rdfs:type cls:st_3.
+kg:op_19 prop:content "バードストライク問題に取り組む鳥類研究者へ聞くべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_8.
+kg:op_20 prop:content "専門家の意見を頂きながら調査計画を策定すると説明"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:st_9 rdfs:label "小杉委員"@ja.
+kg:st_9 rdfs:type cls:st_3.
+kg:op_21 prop:content "風車大型化や設置位置次第で海水浴場への圧迫感が大きくなると懸念"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_9.
+kg:op_22 prop:content "海水浴場付近への風車設置は現在想定していないと説明"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "民家への距離も近くなるため海水浴場付近への設置は想定していない"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "他の風力発電所では苦情があるため大型化を踏まえ事前評価をしっかり行うべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_9.
+kg:op_25 prop:content "大型化を想定してしっかり調査し住民に説明したい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "大型化を踏まえ騒音振動を調査し予測して説明する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "風車の影が問題になることがあるため苦情や聞き取りの有無を確認したい"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_9.
+kg:op_28 prop:content "影に関する苦情や聞き取り調査の実績はないと説明"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:st_10 rdfs:label "上木委員"@ja.
+kg:st_10 rdfs:type cls:st_3.
+kg:op_29 prop:content "20年弱の経験をきちんと検証総括し十分に活かしてほしい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_10.
+kg:op_30 prop:content "可能な限り過去の経験を総括して更新計画に反映したい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "工事期間が長くなるため特別な配慮と丁寧な検証が必要"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_10.
+kg:op_32 prop:content "現在の環境把握から始め更新計画と工事中の影響を適切に調査予測する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "既設風車がある状態との差だけで見続けると環境が累積的に悪化するおそれがある"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_10.
+kg:op_34 prop:content "既設前の環境を最大限維持する観点で見てほしい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_10.
+kg:op_35 prop:content "過去データがあれば今回事業の比較材料として参考にすべき"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "過去の自主アセス報告書や騒音調査報告書を調査手法策定や評価に使いたい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "事業者変更時でも責任や情報が曖昧にならないよう情報継承を検討すべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_7.
+kg:st_11 rdfs:label "東委員"@ja.
+kg:st_11 rdfs:type cls:st_3.
+kg:op_38 prop:content "既存設備を撤去してから建てるのか稼働しながらかを明確にしてほしい"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_11.
+kg:op_39 prop:content "期間やコストや地元への環境影響に配慮し最適な工事計画を検討する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "2004年１月から稼働を始めて、15年ほど経過し、だいたい20年くらいでの更新を想定されているものと思いますが 事業者からは、更新を20年程度として、工事期間も見越した上でアセス手続きを開始している 最初のご質問、スケジュールにつきましては、当初から2023年、2024年上旬位に更新するという方針としておりましたので、そこから逆算をして、環境影響評価にだいたい４年から５年、というスケジュール感を持って進めている"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "老朽化、例えばどこかが錆びてきて非常に脆くなっているとか、それとも発電能力が少し落ちてきているとか、あるいはメンテナンスの費用が高くなっているとか もともと風車は 色々な法令に則って運転をしておりますけれども、ここで想定されているのが20年という、法律上の問題が一点でございます 実際にこの風車は15年程度経過しておりますが ギアボックスという部品の交換頻度が上がってくるとか、機械的な部分については、当初よりも手間といいますか、対応が必要になってきている"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "今後は、配慮書の中でも、自然災害に対する配慮を盛り込んでいかなければいけないのではないか 酒田市の環境審議会からも、ブレードの落下などにより、周辺の保安林に影響を与えないように、という意見も出ています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "想定される自然災害への対応を、方法書以降の図書で記していただくように、お願いするということはできるのかな 参考項目にはないかもしれませんけれども、住民の方とか、関係者にとっては非常に気になる面もあると思いますので、適切な対応ができるように、配慮して頂きたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "雷、特に日本海側は冬季の雷は非常にエネルギーが大きいのですが、そういう雷に対応できる機種をまずは選定する予定です"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "台風や地震につきましては、建設段階で、非常に厳しい設計審査を経て、許可が下りる 地震で揺らすシュミレーションのようなものですとか、最大瞬間風速に耐えうるような設計などが求められますので、そういった意味ではかなり余裕を持った設計で、進める形になります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "例えば雷が近づいた際には風車を止めるとか、あるいは台風が近づいた際には、風を逃がすような、風車に負荷がかからないような態勢を取るとか、事故や災害が起こらないようにする対応を採っておりますし、今後も継続していく予定"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "現在この周辺で、本事業も含めて全部で34基の風力発電があって、それらの累積的な影響について適切な予測及び評価を行うこと、と環境省が要望している 配慮書の2-8（10）ページの図にある通り、この近辺で全部合わせて34基の風力発電があります 累積的な影響につきましては、現状の把握をする中で、可能な限り捉えていきたい"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "他の風力発電によるバードストライクによって、風車の下に死体が落ちることにより、更に肉食系の猛禽類が来る、二次的なバードストライクが起こる、と思いますので、その評価もしていただきたい"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "ブレードの長さがおそらく２倍程度になるので、鳥類が飛ぶ高さにも配慮して、影響を評価してほしい ブレードの長さが２倍になるということで、鳥の飛ぶ高さにも配慮して、評価して頂きたい 高度についても、当然、把握する予定でございます"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "今回の環境影響評価の中で、既存風車での死骸調査を行う方針である 基本的な調査の仕方としましては、環境省から出ている手引きに基づいた調査 小型の生物は死んですぐ、例えば他の生物に持ち去られてしまうこともあり得ます 調査結果が過小評価であるということは、よく御考慮頂いた上で、影響評価に盛り込んで頂きたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "専門家へのヒアリングが少ないので、バードストライクに関する問題に取り組んでいる鳥類研究者に聞くべきだ  調査計画の策定にあたっては、専門家のご意見も頂きながら、実施していきたい"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "高さが1.5倍から２倍になると、風車の位置が変わらなくとも、視覚的な圧迫感は相当増えるでしょうから、リプレースして、建てる位置が海水浴場に近づくともっと圧迫感が増して、かなりの影響を与えることになってしまうのではないか 実際に風車を海水浴場のあたりに建てるということは現在、想定しておりません"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "宮海海水浴場も事業実施想定区域には含めておりますが、民家への距離も近くなってしまいますので、実際に風車を海水浴場のあたりに建てるということは現在、想定しておりません"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_24;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "他の風力発電所による苦情はあったということですので、今回、規模が大きくなるわけですから、しっかりと事前の評価をして頂きたい 騒音や振動につきましては、今回の更新計画で大型化を想定しておりますので、ご指摘のとおりしっかりと調査をした上で予測をし、住民の皆様にご理解を頂けるような形で説明していきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "騒音や振動につきましては、今回の更新計画で大型化を想定しておりますので、ご指摘のとおりしっかりと調査をした上で予測をし、住民の皆様にご理解を頂けるような形で説明していきたい"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "風車の影というのも、大きい問題になると思っています 風車の影に関する苦情であったりとか、地元で聞き取りをしたとか 風車の影に関しましては、現地に弊社の管理事務所がございますけれども、そちらにそういったご意見とか苦情、そういったお話は頂いたことはございません ですので、聞き取り調査なども、行った実績はございません"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "その20年弱の経験を、きちんと検証、総括して頂き、それを十分に活かしてもらいたい 可能な限り、それまでの経験も総括する形で、新しく更新計画を立てさせて頂きたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "工事の期間も非常に長くなると思うのですが、そういう点についても特別な配慮、丁寧な検証が必要ではないか 今現在の環境をまず把握するところから始めまして、更新計画にあたっては、適切に調査、影響についての予測をしていきたい 工事中についても同様でございます"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "風力発電所がある状態からの差で、環境変化があるかどうか、ということを繰り返していくと、段々それが累積していって、環境はだんだん悪くなる一方、ということになる可能性があります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "もともと何もなかった状態での環境、それを最大限維持する、という観点での環境影響、そういう見方をして頂きたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "もしデータがあれば、今回の事業の比較材料にするなど、参考にすべきではないか 自主アセスの報告書を出しておられます そちらについても、報告書を入手しておりますので、今回の更新計画の環境影響評価の調査手法の策定であったり、調査結果を踏まえた評価の中で、できる限り使っていきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "業者が変わったり潰れたりした時に、誰が、どういう責任を、どのように取るのか、というところが、どうしても曖昧になってしまう面があると思います 情報が引き継げるような状態はもう少し、ご検討頂きたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_38;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "リプレースは、稼働しながら行うのでしょうか。同じ場所に建てるのであれば、撤去が先なのでしょうか 期間やコスト、そして地元への環境影響にも配慮しながら、最適な工事計画をこれから詰めてまいりたい"@ja.
+}

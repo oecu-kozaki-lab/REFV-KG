@@ -1,0 +1,171 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00022> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "秋田港洋上風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "既設及び計画中の風力発電所との複合的又は累積的な環境影響"@ja.
+kg:id_2 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "設置される風力発電所における単機出力等が大型化する可能性"@ja.
+kg:id_3 rdf:type cls:c_360.
+cls:c_360 rdfs:label "設備大型化"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "配慮が必要な学校、社会福祉施設等や住居への環境影響"@ja.
+kg:id_4 rdf:type cls:c_348.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "他事業の諸元等の情報入手に努めながら適切に調査・予測・評価する"@ja.
+kg:id_5 rdf:type cls:c_3010.
+cls:c_3010 rdfs:label "環境評価"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "学校、社会福祉施設等や住居への環境影響を回避又は低減する"@ja.
+kg:id_6 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "事業計画の具体化の過程において地域住民の理解を得られるよう努める"@ja.
+kg:id_7 rdf:type cls:c_5837.
+cls:c_5837 rdfs:label "住民理解"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "施設の規模・基数又は構造における複数案を明確にして検討内容や結果を方法書以降の図書に記載する"@ja.
+kg:id_8 rdf:type cls:c_13719.
+cls:c_13719 rdfs:label "複数案検討"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "海域の生態系への影響"@ja.
+kg:id_9 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "海域の生態系について調査や知見等の収集に可能な限り努め評価項目として選定することの可否を検討する"@ja.
+kg:id_10 rdf:type cls:c_13720.
+cls:c_13720 rdfs:label "知見収集"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "事業実施想定区域周辺に秋田マリーナや道の駅等のレジャー施設が存在し秋田港に大型客船が出入港すること"@ja.
+kg:id_11 rdf:type cls:c_13721.
+cls:c_13721 rdfs:label "周辺利用"@ja.
+kg:id_1 prop:cause kg:id_11.
+kg:id_12 rdfs:label "景観への影響"@ja.
+kg:id_12 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "景観に配慮した計画を検討する"@ja.
+kg:id_13 rdf:type cls:c_233.
+cls:c_233 rdfs:label "景観配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "他事業の諸元等の情報収集に努め適切に調査・予測・評価すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "大型化を踏まえ周辺施設や住民への影響回避・低減に努めるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "環境影響を回避又は低減し地域住民の理解を得るよう努めるべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "複合的・累積的環境影響を勘案した評価が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "周辺の配慮対象施設や住居への影響を抑えるべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "計画具体化の過程で地域住民の理解を得ることが重要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "複数案を明確化し検討内容と結果を文書化すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "知見が少ないため調査や知見収集を行い評価項目選定を検討すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "海域生態系は未解明な部分が多く調査と知見収集が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "周辺利用環境を踏まえ景観に配慮した計画を検討すべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "景観への配慮を重視した計画が必要"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "レジャー施設や大型客船の利用を踏まえ景観配慮が必要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業実施想定区域周辺の既設及び計画中の風力発電所との複合的又は累積的な環境影響を勘案し、これら他事業の諸元等の情報入手に努めながら、適切に調査、予測及び評価すること。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "設置される風力発電所における単機出力等が大型化する可能性があることから"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "事業実施想定区域周辺の配慮が必要な学校、社会福祉施設等や住居への環境影響を回避又は低減するとともに、事業計画の具体化の過程において、地域住民の理解を得られるよう努めること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "事業実施想定区域周辺の既設及び計画中の風力発電所との複合的又は累積的な環境影響を勘案し、これら他事業の諸元等の情報入手に努めながら、適切に調査、予測及び評価すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "事業実施想定区域周辺の配慮が必要な学校、社会福祉施設等や住居への環境影響を回避又は低減すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "事業計画の具体化の過程において、地域住民の理解を得られるよう努めること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "事業計画の具体化に当たっては、施設の規模・基数又は構造における複数案を明確にして、環境配慮事項の検討内容やその結果を方法書以降の図書に記載すること。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "海域の生態系については、科学的な知見が少なく未解明な部分が多いとされているが、今後の環境影響評価における調査や知見等の収集に可能な限り努め、それらを踏まえて評価項目として選定することの可否を検討すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "海域の生態系については、科学的な知見が少なく未解明な部分が多いとされているが、今後の環境影響評価における調査や知見等の収集に可能な限り努め、それらを踏まえて評価項目として選定することの可否を検討すること。"@ja.
+<< kg:id_1 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "事業実施想定区域周辺には、秋田マリーナや道の駅等のレジャー施設が存在するほか、秋田港には大型客船が出入港することから、景観に配慮した計画を検討すること。"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "事業実施想定区域周辺には、秋田マリーナや道の駅等のレジャー施設が存在するほか、秋田港には大型客船が出入港することから、景観に配慮した計画を検討すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "事業実施想定区域周辺には、秋田マリーナや道の駅等のレジャー施設が存在するほか、秋田港には大型客船が出入港することから、景観に配慮した計画を検討すること。"@ja.
+}

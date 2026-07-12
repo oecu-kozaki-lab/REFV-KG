@@ -1,0 +1,507 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00002> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "本事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "事業"@ja.
+kg:id_2 rdfs:label "安来市と自然環境の保全と森林の多面的機能の有効活用について協議"@ja.
+kg:id_2 rdf:type cls:c_1870.
+cls:c_1870 rdfs:label "協議"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "厳しい技術的基準を満たした場合のみ風力発電機を設置"@ja.
+kg:id_3 rdf:type cls:c_480.
+cls:c_480 rdfs:label "設備設置"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "保安林の解除"@ja.
+kg:id_4 rdf:type cls:c_14073.
+cls:c_14073 rdfs:label "森林解除"@ja.
+kg:id_5 rdfs:label "雨水の流出増加"@ja.
+kg:id_5 rdf:type cls:c_14074.
+cls:c_14074 rdfs:label "雨水流出"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "森林の崩壊や土砂の流出"@ja.
+kg:id_6 rdf:type cls:c_14015.
+cls:c_14015 rdfs:label "土砂流出"@ja.
+kg:id_4 prop:effect kg:id_6.
+kg:id_7 rdfs:label "調整池や排水施設等を設置"@ja.
+kg:id_7 rdf:type cls:c_3472.
+cls:c_3472 rdfs:label "防災施設"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "現地調査を実施し水質汚染が発生しないよう計画"@ja.
+kg:id_8 rdf:type cls:c_267.
+cls:c_267 rdfs:label "現地調査"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "継続的に皆様へ報告"@ja.
+kg:id_9 rdf:type cls:c_14075.
+cls:c_14075 rdfs:label "情報報告"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "保安林の指定解除事務等マニュアル及び島根県林地開発行為審査基準に基づいた設計"@ja.
+kg:id_10 rdf:type cls:c_14076.
+cls:c_14076 rdfs:label "基準設計"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "各種保険に加入"@ja.
+kg:id_11 rdf:type cls:c_10383.
+cls:c_10383 rdfs:label "保険加入"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "本事業に起因する災害"@ja.
+kg:id_12 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "災害"@ja.
+kg:id_13 rdfs:label "被害の発生"@ja.
+kg:id_13 rdf:type cls:c_1763.
+cls:c_1763 rdfs:label "被害発生"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "生じた被害を補償"@ja.
+kg:id_14 rdf:type cls:c_14077.
+cls:c_14077 rdfs:label "被害補償"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "歴史的な空間及び観光事業に配慮した計画"@ja.
+kg:id_15 rdf:type cls:c_233.
+cls:c_233 rdfs:label "景観配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "発電所の観光産業化や地元地域とのイベントの実施"@ja.
+kg:id_16 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "本事業の実施"@ja.
+kg:id_17 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_18 rdfs:label "比婆山から風車が可視となる可能性"@ja.
+kg:id_18 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "外部専門家の審査を受け影響を回避・低減する計画を検討"@ja.
+kg:id_19 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "文化財への直接改変を避ける"@ja.
+kg:id_20 rdf:type cls:c_14078.
+cls:c_14078 rdfs:label "文化財保全"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "文化財保全にも貢献していく計画を検討"@ja.
+kg:id_21 rdf:type cls:c_14078.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "希少な動植物に影響を与える可能性"@ja.
+kg:id_22 rdf:type cls:c_833.
+cls:c_833 rdfs:label "生態影響"@ja.
+kg:id_17 prop:effect kg:id_22.
+kg:id_23 rdfs:label "動物の生息状況及び植物の生育状況を把握"@ja.
+kg:id_23 rdf:type cls:c_267.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "影響を回避・低減するための保全措置を検討"@ja.
+kg:id_24 rdf:type cls:c_370.
+cls:c_370 rdfs:label "保全措置"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "人口減少"@ja.
+kg:id_25 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_26 rdfs:label "地方における課題"@ja.
+kg:id_26 rdf:type cls:c_1358.
+cls:c_1358 rdfs:label "地域課題"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "山林の管理や人材育成を可能にする効果"@ja.
+kg:id_27 rdf:type cls:c_12940.
+cls:c_12940 rdfs:label "地域管理"@ja.
+kg:id_1 prop:effect kg:id_27.
+kg:id_28 rdfs:label "教育の場の提供"@ja.
+kg:id_28 rdf:type cls:c_14079.
+cls:c_14079 rdfs:label "教育機会"@ja.
+kg:id_1 prop:effect kg:id_28.
+kg:id_29 rdfs:label "若手技術者の養成"@ja.
+kg:id_29 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_1 prop:effect kg:id_29.
+kg:id_30 rdfs:label "長期の雇用創出"@ja.
+kg:id_30 rdf:type cls:c_1113.
+cls:c_1113 rdfs:label "雇用創出"@ja.
+kg:id_1 prop:effect kg:id_30.
+kg:id_31 rdfs:label "UIターン者を引き付ける効果"@ja.
+kg:id_31 rdf:type cls:c_2013.
+cls:c_2013 rdfs:label "定住促進"@ja.
+kg:id_1 prop:effect kg:id_31.
+kg:id_32 rdfs:label "地元から離れない施策への寄与"@ja.
+kg:id_32 rdf:type cls:c_2013.
+kg:id_1 prop:effect kg:id_32.
+kg:id_33 rdfs:label "安来市と継続的に意見交換し地域の特性に応じた貢献策を検討"@ja.
+kg:id_33 rdf:type cls:c_1870.
+kg:id_1 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "観光や雇用創出などの経済面での効果"@ja.
+kg:id_34 rdf:type cls:c_715.
+cls:c_715 rdfs:label "経済効果"@ja.
+kg:id_1 prop:effect kg:id_34.
+kg:id_35 rdfs:label "魅力ある地域づくりに貢献"@ja.
+kg:id_35 rdf:type cls:c_3268.
+kg:id_1 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "お知らせの全戸配布や説明会を広く開催"@ja.
+kg:id_36 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_1 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "現地調査を実施"@ja.
+kg:id_37 rdf:type cls:c_267.
+kg:id_1 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "地域の皆さまの意見を踏まえ計画検討"@ja.
+kg:id_38 rdf:type cls:c_232.
+cls:c_232 rdfs:label "計画検討"@ja.
+kg:id_1 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "調査結果を準備書において住民へ説明"@ja.
+kg:id_39 rdf:type cls:c_87.
+kg:id_1 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "防衛省の所管部門へ照会"@ja.
+kg:id_40 rdf:type cls:c_14080.
+cls:c_14080 rdfs:label "行政照会"@ja.
+kg:id_1 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "防空レーダーへの影響"@ja.
+kg:id_41 rdf:type cls:c_14081.
+cls:c_14081 rdfs:label "設備影響"@ja.
+kg:id_1 prop:effect kg:id_41.
+kg:id_42 rdfs:label "防空レーダーに影響が予想される場合は影響のない位置へ風車を移設"@ja.
+kg:id_42 rdf:type cls:c_7254.
+cls:c_7254 rdfs:label "設備移設"@ja.
+kg:id_1 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "近隣住居への影響"@ja.
+kg:id_43 rdf:type cls:c_356.
+cls:c_356 rdfs:label "生活影響"@ja.
+kg:id_1 prop:effect kg:id_43.
+kg:id_44 rdfs:label "風車配置や機種選定を検討"@ja.
+kg:id_44 rdf:type cls:c_383.
+cls:c_383 rdfs:label "配置検討"@ja.
+kg:id_1 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "生活環境に配慮した計画を検討"@ja.
+kg:id_45 rdf:type cls:c_13859.
+cls:c_13859 rdfs:label "生活配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "風車撤去費用の積立を計画に盛り込む"@ja.
+kg:id_46 rdf:type cls:c_14082.
+cls:c_14082 rdfs:label "費用積立"@ja.
+kg:id_1 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "責任を持って管理および撤去"@ja.
+kg:id_47 rdf:type cls:c_14083.
+cls:c_14083 rdfs:label "設備撤去"@ja.
+kg:id_1 prop:contermeasure kg:id_47.
+kg:st_1 rdfs:label "ジャパン・リニューアブル・エナジー株式会社"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "自然環境保全と森林活用の両立を安来市と協議する方針"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "技術基準を満たすか調査と設計の進捗を踏まえて判断する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "雨水流出増加に対応する施設を設置する考え"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "崩壊や土砂流出を防ぐ施設を設ける方針"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "保安林機能を代替する施設を設けた上で調査と設計を進める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "水源への影響を調査し水質汚染を防ぐ計画を進める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "調査と設計の進捗に応じて継続報告したい考え"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "基準に基づく設計で土砂災害を防止する方針"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "不測の事態に備えて保険加入の上で事業化を進める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "責任がある場合は被害を補償する考え"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "事業起因で責任がある災害被害は補償する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "比婆山などの歴史空間や観光への配慮を重視する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "観光振興や地域イベントを通じて寄与したい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "可視具合を現地調査で把握し影響回避と低減を検討する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "環境影響評価法に則って専門家審査を受ける"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "教育委員会文化財課や県部署と協議し文化財保全に配慮する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "文化財保全に資する計画を目指す"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "生息生育状況を調査し予測評価のうえ保全措置を検討する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "現地調査で動植物の状況把握を進める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "希少な動植物への影響回避と低減策を講じる方針"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "人口減少は本事業の有無にかかわらず地方全体の課題とみている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "整備する林道を通じて山林管理と人材育成に役立つと考える"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "再生可能エネルギーを通じた教育機会を提供できると考える"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "若手技術者の育成につながるとみている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "長期雇用の創出効果を見込む"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "UIターン促進に寄与できると考える"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "若者定着にも寄与できると考える"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "地域創生と発展に向けて安来市と継続協議する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "風力発電所を通じて経済効果に寄与する計画とする"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "地域の魅力向上に継続して努める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "説明責任を果たすため広く周知と説明会開催を行っている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "机上調査ではなく現況を踏まえた説明のため現地調査が必要と考える"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "地域の意見を受けながら事業計画を検討する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "調査結果は準備書で住民に説明する方針"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "防空レーダー影響の有無を所管部門に確認済み"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "影響有無の回答が得られ次第報告する考え"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "レーダー影響が見込まれる場合は風車位置を変更する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "近隣住居への影響回避と低減が必要と認識している"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "近隣住居への影響を減らすため配置や機種を見直す"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "現地調査と予測評価を踏まえ生活環境に配慮する"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "ガイドラインに則り撤去費を積み立て責任を持って管理撤去する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "資本金規模に関係なく責任を持って管理撤去する方針"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "第 2 次安来市総合計画にも記載のある自然環境の保全と森林の多面的機能の有効活用については安来市と今後協議してまいります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "風力発電機につきましても、同様に厳しい技術的基準を満たさない限り風力発電機を設置することはできません。上記の技術的基準を満たせるか否かにつきましては、今後の調査及び設計の進捗に応じて判明してくる側面がございます。"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "保安林の解除に当たっては、調整池や排水施設等の森林の転用により増加する雨水の流出を安全に下流に流すための施設"@ja.
+<< kg:id_4 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "森林の崩壊や土砂の流出を防ぐ施設等、解除に伴って損なわれる保安林の機能を代替する施設の設置をいたします。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "調整池や排水施設等の森林の転用により増加する雨水の流出を安全に下流に流すための施設や、森林の崩壊や土砂の流出を防ぐ施設等、解除に伴って損なわれる保安林の機能を代替する施設の設置をいたします。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "水源への影響については、現地調査を実施のうえ、水質汚染が発生しないように事業を計画してまいります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "継続的に皆様にご報告できればと考えております。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "保安林の指定解除事務等マニュアル(風力編)及び島根県林地開発行為審査基準に基づいた設計を行うことにより土砂災害を発生させないよう本事業の設計を進めて参ります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "万が一の不測の事態に備え各種保険に加入し事業化を進めてまいります。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "不測の事態において事業に起因する災害で弊社に責任がある場合は、生じた被害に対し補償をさせていただく考えです。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "不測の事態において事業に起因する災害で弊社に責任がある場合は、生じた被害に対し補償をさせていただく考えです。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "比婆山を始めとした歴史的な空間及び観光事業に対しても配慮をした計画としてまいります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "特に観光事業に対しては、発電所の観光産業化や地元地域とのイベントの実施などを通し、寄与していきたいと考えております。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "比婆山においては、利用状況や現地から風車の可視具合を現地調査によって把握し"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "本事業の実施に伴い環境影響評価法に則り外部専門家の審査を受け、影響を回避・低減する計画となるよう検討してまいります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今後は文化財の所管である教育委員会文化財課や県部署とも協議を行った上で、文化財への直接改変は避ける"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "文化財への直接改変は避けるととも財保全にも貢献していくような計画を検討して参ります。"@ja.
+<< kg:id_17 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "希少な動植物に対して本事業の実施によりどのような影響を与える可能性があるか予測・評価を行い"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "今後の現地調査によって動物の生息状況及び植物の生育状況を把握し"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "影響を回避・低減するための保全措置を検討してまいります。"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "本事業にかかわらず人口減少は地方における課題であると考えております。"@ja.
+<< kg:id_1 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "本事業にて整備する林道を通じて、現在管理が行き届いていない山林の管理や人材育成を可能にする効果"@ja.
+<< kg:id_1 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "再生可能エネルギーを通じての教育の場の提供"@ja.
+<< kg:id_1 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "若手技術者の養成"@ja.
+<< kg:id_1 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "長期の雇用創出"@ja.
+<< kg:id_1 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "UI ターン者を引き付ける効果"@ja.
+<< kg:id_1 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "地元から離れない施策についても寄与できるものと考えております。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "地域創生、発展に向けては安来市と継続的に意見交換を行い、地域の特性に応じた貢献策の検討を行ってまいりたいと存じます。"@ja.
+<< kg:id_1 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "風力発電所を通して観光や雇用創出などの経済面での効果にも寄与する計画"@ja.
+<< kg:id_1 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "魅力ある地域づくりに貢献できるように引き続き努めて参ります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "弊社としましては説明責任を果たすべく、お知らせの全戸配布や説明会を広く開催している所でございます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "ご懸念に対し机上での調査結果ではなく、現況を踏まえた影響や予測評価を住民の皆さまにご説明するために現地調査が必要であると考えております。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "環境影響評価法に則り地域の皆さまのご意見を賜りながら計画検討し"@ja.
+<< kg:id_1 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "調査結果につきましては準備書において住民の皆さまへご説明をさせていただきます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "本事業による防空レーダーへの影響については、防衛省の所管部門へ照会を依頼済みです。"@ja.
+<< kg:id_1 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "本事業による防空レーダーへの影響については、防衛省の所管部門へ照会を依頼済みです。本事業による影響有無の回答が得られましたら、皆様へご報告できると考えております。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "防空レーダーへの影響が予想される場合は、影響のない位置へ風車を移設することを想定しております。"@ja.
+<< kg:id_1 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "近隣住居にお住いの方におかれましては、環境影響評価法に則り外部専門家の審査を受け、その影響が回避・低減されるよう"@ja.
+<< kg:id_1 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "必要に応じて風車配置や機種選定を検討してまいります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "今後、環境影響評価に基づく現地調査及び予測評価、風況観測に基づく事業性評価を踏まえて生活環境に配慮した計画を検討してまいります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "風車撤去費については、資源エネルギー庁の「事業計画策定ガイドライン(風力発電)」に則り撤去費用の積立を計画に盛り込んでおります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "資本金の規模とは関係なく責任を持って管理および撤去を行ってまいります。"@ja.
+}

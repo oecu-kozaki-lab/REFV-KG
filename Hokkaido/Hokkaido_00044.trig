@@ -1,0 +1,329 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00044> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "太陽光発電所の建設"@ja.
+kg:id_1 rdf:type cls:c_14564.
+cls:c_14564 rdfs:label "太陽光発電所建設"@ja.
+kg:id_2 rdfs:label "予定地でオジロワシの営巣が確認されたこと"@ja.
+kg:id_2 rdf:type cls:c_14666.
+cls:c_14666 rdfs:label "希少鳥類の営巣確認"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "太陽光発電所の建設中止意向"@ja.
+kg:id_3 rdf:type cls:c_14667.
+cls:c_14667 rdfs:label "建設中止判断"@ja.
+kg:id_4 rdfs:label "市教育委員会から文化財保護法に関する通告を受けたこと"@ja.
+kg:id_4 rdf:type cls:c_14668.
+cls:c_14668 rdfs:label "法令通告"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "オジロワシのヒナの餓死"@ja.
+kg:id_5 rdf:type cls:c_14669.
+cls:c_14669 rdfs:label "鳥類の餓死"@ja.
+kg:id_6 rdfs:label "ソーラーパネルの下にヒナが潜り込み親が上空から発見できないこと"@ja.
+kg:id_6 rdf:type cls:c_14670.
+cls:c_14670 rdfs:label "親鳥の発見困難"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "工事現場にヒナが近づき親が警戒してエサを運ばなくなること"@ja.
+kg:id_7 rdf:type cls:c_14671.
+cls:c_14671 rdfs:label "親鳥の給餌停止"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "土地が安価で少雪で日照時間も長く太陽光発電所に適していること"@ja.
+kg:id_8 rdf:type cls:c_1111.
+cls:c_1111 rdfs:label "立地適性"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "太陽光発電所の建設が進みやすいこと"@ja.
+kg:id_9 rdf:type cls:c_14672.
+cls:c_14672 rdfs:label "建設促進"@ja.
+kg:id_10 rdfs:label "太陽光パネルは許可が必要な特定工作物に該当せず許可申請などの手続きが不要なこと"@ja.
+kg:id_10 rdf:type cls:c_14673.
+cls:c_14673 rdfs:label "許可不要"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "野生動物の生息に及ぼす影響が計り知れないこと"@ja.
+kg:id_11 rdf:type cls:c_14654.
+cls:c_14654 rdfs:label "野生動物への影響"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "近接2区画での太陽光発電計画の継続"@ja.
+kg:id_12 rdf:type cls:c_14674.
+cls:c_14674 rdfs:label "発電計画継続"@ja.
+kg:id_13 rdfs:label "ヒナへの影響が生じる可能性"@ja.
+kg:id_13 rdf:type cls:c_14675.
+cls:c_14675 rdfs:label "ひなへの影響"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "このつがいが今後ここで繁殖しなくなる可能性"@ja.
+kg:id_14 rdf:type cls:c_14676.
+cls:c_14676 rdfs:label "繁殖放棄"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "営巣木の周囲の太陽光パネル設置"@ja.
+kg:id_15 rdf:type cls:c_14677.
+cls:c_14677 rdfs:label "太陽光パネル設置"@ja.
+kg:id_16 rdfs:label "オジロワシがこの場所を安心安全な繁殖環境と見なさず放棄する可能性"@ja.
+kg:id_16 rdf:type cls:c_132.
+cls:c_132 rdfs:label "繁殖地放棄"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "巣立った幼鳥が太陽光パネルの下に隠れること"@ja.
+kg:id_17 rdf:type cls:c_14678.
+cls:c_14678 rdfs:label "幼鳥の潜伏"@ja.
+kg:id_18 rdfs:label "親に発見されず給餌不足により餓死する懸念"@ja.
+kg:id_18 rdf:type cls:c_14669.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "釧路市"@ja.
+kg:id_19 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_20 rdfs:label "太陽光発電施設の設置に関するガイドラインを施行"@ja.
+kg:id_20 rdf:type cls:c_14679.
+cls:c_14679 rdfs:label "設置指針の施行"@ja.
+kg:id_19 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "太陽光発電施設の設置に関するガイドライン"@ja.
+kg:id_21 rdf:type cls:c_14167.
+cls:c_14167 rdfs:label "設置指針"@ja.
+kg:id_22 rdfs:label "地域の有識者や専門家へ助言・指導を求めること"@ja.
+kg:id_22 rdf:type cls:c_14680.
+cls:c_14680 rdfs:label "専門家への助言要請"@ja.
+kg:id_21 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "近隣住民への説明会の実施"@ja.
+kg:id_23 rdf:type cls:c_14681.
+cls:c_14681 rdfs:label "住民説明会"@ja.
+kg:id_21 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "ガイドラインの条例化許可制をめざす"@ja.
+kg:id_24 rdf:type cls:c_14682.
+cls:c_14682 rdfs:label "条例化"@ja.
+kg:id_19 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "市街化調整区域を特別保全区域に指定"@ja.
+kg:id_25 rdf:type cls:c_14683.
+cls:c_14683 rdfs:label "保全区域指定"@ja.
+kg:id_19 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "希少な野生動物に重大な影響を及ぼす場合は建設を許可しない"@ja.
+kg:id_26 rdf:type cls:c_14684.
+cls:c_14684 rdfs:label "建設不許可"@ja.
+kg:id_19 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "違反した場合は事業者名の公表を検討"@ja.
+kg:id_27 rdf:type cls:c_14685.
+cls:c_14685 rdfs:label "事業者名公表"@ja.
+kg:id_19 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "タンチョウやオジロワシを優先的に選定し希少種保護を強化"@ja.
+kg:id_28 rdf:type cls:c_14686.
+cls:c_14686 rdfs:label "希少種保護強化"@ja.
+kg:id_19 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "釧路自然保護協会や猛禽類医学研究所など6団体"@ja.
+kg:id_29 rdf:type cls:c_14687.
+cls:c_14687 rdfs:label "自然保護団体"@ja.
+kg:id_30 rdfs:label "大規模太陽光発電の建設中止を求めるオンライン署名を提出"@ja.
+kg:id_30 rdf:type cls:c_14688.
+cls:c_14688 rdfs:label "建設中止要請"@ja.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "太陽光発電施設の建設問題"@ja.
+kg:id_31 rdf:type cls:c_14689.
+cls:c_14689 rdfs:label "発電施設建設問題"@ja.
+kg:id_32 rdfs:label "営巣木の1キロ以内での建設をやめる"@ja.
+kg:id_32 rdf:type cls:c_14690.
+cls:c_14690 rdfs:label "近接建設中止"@ja.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "釧路湿原周辺の開発規制"@ja.
+kg:id_33 rdf:type cls:c_14691.
+cls:c_14691 rdfs:label "開発規制"@ja.
+kg:id_34 rdfs:label "周辺の自治体も条例をつくる"@ja.
+kg:id_34 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "希少種保護"@ja.
+kg:id_35 rdf:type cls:c_14692.
+cls:c_14692 rdfs:label "希少種保護"@ja.
+kg:id_36 rdfs:label "種の保存法に希少種の生息地保全を明文化する"@ja.
+kg:id_36 rdf:type cls:c_14693.
+cls:c_14693 rdfs:label "生息地保全明文化"@ja.
+kg:id_35 prop:contermeasure kg:id_36.
+kg:st_1 rdfs:label "釧路自然保護協会や猛禽類医学研究所など6団体"@ja.
+kg:st_1 rdfs:type cls:st_148.
+cls:st_148 rdfs:label "自然保護団体"@ja.
+kg:op_1 prop:content "大規模太陽光発電の建設中止を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "猛禽類医学研究所（釧路市）の斉藤慶輔代表（獣医師）"@ja.
+kg:st_2 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_2 prop:content "営巣木がある区画だけでなく近接2区画も中止すべきだと求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "太陽光パネル下で親がヒナを見失い給餌不足による餓死が懸念される"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "工事で親が警戒し給餌しなくなることも餓死につながると懸念する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "市町村単位の規制だけでは不十分で法制度の明文化が必要だとする"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "釧路市"@ja.
+kg:st_3 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_6 prop:content "野生動物への影響を踏まえガイドライン施行と条例化を進める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "近接2区画で計画を進めればヒナへの影響は避けられないとみる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "近接2区画で計画を進めると将来この場所で繁殖しなくなる可能性があると指摘する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "営巣木周囲にパネルがあれば繁殖地放棄の可能性が高いと指摘する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "実際の経験を踏まえ給餌不足による餓死を懸念する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "希少野生動物への保全のためガイドラインを施行した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "希少野生動物保全のため有識者や専門家の助言を求める仕組みを盛り込んだ"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "近隣住民への説明会実施を求める内容を盛り込んだ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "ガイドラインを発展させ条例化し許可制にする考えだ"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "市内の市街化調整区域を特別保全区域に指定する方針だ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "希少野生動物に重大な影響がある建設は許可しない方針だ"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "違反事業者名の公表も検討している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "地域の象徴種を優先し希少種保護を強化する考えだ"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "大規模太陽光発電の建設中止を求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "最低限営巣木の1キロ以内での建設はやめるべきだと主張する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "周辺自治体も条例をつくらなければ効果は薄いと指摘する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "種の保存法に希少種の生息地保全を明文化すべきだと提案する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "建設予定地で、国の天然記念物オジロワシの営巣が確認され"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "市教育委員会から文化財保護法に関する通告を受けて判断した"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "ソーラーパネルの下にヒナが潜り込むと親が上空から発見できず、ヒナが餓死する可能性が高い"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "ヒナは警戒心が薄いため、工事現場にも近づくが、親は警戒してエサを運ばなくなり、これも餓死につながる可能性がある"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:text-txt_contents "土地が安価なうえ、少雪で日照時間も長く、太陽光発電所には適している"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "太陽光パネルは許可が必要な特定工作物に該当しないため、許可申請などの手続きが不要だ"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "太陽光発電所の建設が野生動物の生息に及ぼす影響は計り知れず"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "近接の2区画で計画を進めればヒナへの影響はもとより"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今後、このつがいがここで繁殖しなくなる可能性がある"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "営巣木の周囲に太陽光パネルがあれば、この場所を安心安全な繁殖環境と見なさず、放棄する可能性が高い"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "巣立った幼鳥が太陽光パネルの下に隠れてしまい、餌を運んできた親からしばらく発見されなかった事例も経験しており、給餌不足により餓死することも懸念される"@ja.
+<< kg:id_19 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "市は2023年7月、太陽光発電施設の設置に関するガイドラインを施行した"@ja.
+<< kg:id_21 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "希少野生動物への保全に向け、地域の有識者や専門家へ助言・指導を求めること"@ja.
+<< kg:id_21 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "近隣住民への説明会の実施などを盛り込んだ"@ja.
+<< kg:id_19 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "市はさらにガイドラインを発展させ、条例化（許可制）をめざす"@ja.
+<< kg:id_19 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "市内の市街化調整区域（1万6908ヘクタール）を「特別保全区域」に指定する"@ja.
+<< kg:id_19 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "希少な野生動物に重大な影響を及ぼす場合、建設を許可しない"@ja.
+<< kg:id_19 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "違反した場合は事業者名の公表などを検討している"@ja.
+<< kg:id_19 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "タンチョウや、オジロワシといったこの地域の象徴的な種を優先的に選定し、「希少種保護」の強化も図る"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "6団体が大規模太陽光発電の建設中止を求めるオンライン署名6万7143筆を鶴間秀典市長に提出している"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "最低限、営巣木の1キロ以内での建設はやめるべきだ"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "周辺の自治体も条例をつくらなければ効果は薄い"@ja.
+<< kg:id_35 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "本来は種の保存法に「希少種の生息地保全」がしっかりと明文化されるべきだ"@ja.
+}

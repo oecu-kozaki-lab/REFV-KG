@@ -1,0 +1,511 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00118> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "低所得者世帯への生活支援"@ja.
+kg:id_1 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_2 rdfs:label "灯油等購入費助成に係る経費を計上する必要"@ja.
+kg:id_2 rdf:type cls:c_7080.
+cls:c_7080 rdfs:label "助成経費"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "福祉灯油事業"@ja.
+kg:id_3 rdf:type cls:c_7081.
+cls:c_7081 rdfs:label "福祉事業"@ja.
+kg:id_4 rdfs:label "原油価格の高騰"@ja.
+kg:id_4 rdf:type cls:c_4786.
+cls:c_4786 rdfs:label "資源価格高騰"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "急騰した灯油"@ja.
+kg:id_5 rdf:type cls:c_7082.
+cls:c_7082 rdfs:label "燃料価格高騰"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "一般会計補正予算"@ja.
+kg:id_6 rdf:type cls:c_1675.
+cls:c_1675 rdfs:label "補正予算"@ja.
+kg:id_7 rdfs:label "決算見込みによる事業費の調整"@ja.
+kg:id_7 rdf:type cls:c_1677.
+cls:c_1677 rdfs:label "事業費調整"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "国の補正予算に伴う補正"@ja.
+kg:id_8 rdf:type cls:c_7083.
+cls:c_7083 rdfs:label "国予算補正"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "人事院勧告等に伴う人件費の補正"@ja.
+kg:id_9 rdf:type cls:c_7084.
+cls:c_7084 rdfs:label "人件費補正"@ja.
+kg:id_6 prop:cause kg:id_9.
+kg:id_10 rdfs:label "基金積立金の増額"@ja.
+kg:id_10 rdf:type cls:c_7085.
+cls:c_7085 rdfs:label "積立金増額"@ja.
+kg:id_11 rdfs:label "歳入の増額等で生じた財源を後年度の財源不足に備える必要"@ja.
+kg:id_11 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "機構集積協力金交付事業費の増額"@ja.
+kg:id_12 rdf:type cls:c_7086.
+cls:c_7086 rdfs:label "交付事業費増額"@ja.
+kg:id_13 rdfs:label "交付対象地域等の増加"@ja.
+kg:id_13 rdf:type cls:c_7087.
+cls:c_7087 rdfs:label "対象増加"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "公共土木施設災害復旧事業費の減額"@ja.
+kg:id_14 rdf:type cls:c_7088.
+cls:c_7088 rdfs:label "復旧事業費減額"@ja.
+kg:id_15 rdfs:label "県施行急傾斜地崩壊対策事業負担金の確定"@ja.
+kg:id_15 rdf:type cls:c_3494.
+cls:c_3494 rdfs:label "負担金確定"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "公債費元金の増額"@ja.
+kg:id_16 rdf:type cls:c_6561.
+cls:c_6561 rdfs:label "公債費増額"@ja.
+kg:id_17 rdfs:label "後年度負担の軽減を目的に市債の繰上償還を実施するため"@ja.
+kg:id_17 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "市税の増額"@ja.
+kg:id_18 rdf:type cls:c_7089.
+cls:c_7089 rdfs:label "税収増額"@ja.
+kg:id_19 rdfs:label "市民税及び固定資産税の増収"@ja.
+kg:id_19 rdf:type cls:c_3013.
+cls:c_3013 rdfs:label "税収増"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "国庫支出金の増額"@ja.
+kg:id_20 rdf:type cls:c_7090.
+cls:c_7090 rdfs:label "支出金増額"@ja.
+kg:id_21 rdfs:label "国の補正予算"@ja.
+kg:id_21 rdf:type cls:c_7083.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "県支出金の増額"@ja.
+kg:id_22 rdf:type cls:c_7090.
+kg:id_23 rdfs:label "機構集積協力金の増"@ja.
+kg:id_23 rdf:type cls:c_7091.
+cls:c_7091 rdfs:label "交付金増"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "財産収入の増額"@ja.
+kg:id_24 rdf:type cls:c_7092.
+cls:c_7092 rdfs:label "財産収入増額"@ja.
+kg:id_25 rdfs:label "土地売払収入の増"@ja.
+kg:id_25 rdf:type cls:c_7093.
+cls:c_7093 rdfs:label "土地売却収入増"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "公共下水道事業特別会計補正予算の減額"@ja.
+kg:id_26 rdf:type cls:c_7094.
+cls:c_7094 rdfs:label "特別会計補正"@ja.
+kg:id_27 rdfs:label "決算見込みによる減額"@ja.
+kg:id_27 rdf:type cls:c_7095.
+cls:c_7095 rdfs:label "決算減額"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "分流式雨水幹線整備事業費の増額"@ja.
+kg:id_28 rdf:type cls:c_3493.
+cls:c_3493 rdfs:label "事業費増額"@ja.
+kg:id_28 prop:cause kg:id_21.
+kg:id_29 rdfs:label "病院事業会計予算収入の減額"@ja.
+kg:id_29 rdf:type cls:c_7096.
+cls:c_7096 rdfs:label "事業収入減額"@ja.
+kg:id_30 rdfs:label "入院収益の減"@ja.
+kg:id_30 rdf:type cls:c_6771.
+cls:c_6771 rdfs:label "収益減"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "病院事業会計予算支出の減額"@ja.
+kg:id_31 rdf:type cls:c_7097.
+cls:c_7097 rdfs:label "事業支出減額"@ja.
+kg:id_32 rdfs:label "給与費、材料費などの決算見込み"@ja.
+kg:id_32 rdf:type cls:c_7098.
+cls:c_7098 rdfs:label "決算見込"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "病院事業会計資本的収入の減額"@ja.
+kg:id_33 rdf:type cls:c_7099.
+cls:c_7099 rdfs:label "資本収入減額"@ja.
+kg:id_34 rdfs:label "企業債、補助金の減額"@ja.
+kg:id_34 rdf:type cls:c_7100.
+cls:c_7100 rdfs:label "起債補助減"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "病院事業会計資本的支出の減額"@ja.
+kg:id_35 rdf:type cls:c_7101.
+cls:c_7101 rdfs:label "資本支出減額"@ja.
+kg:id_36 rdfs:label "建設改良費の減額"@ja.
+kg:id_36 rdf:type cls:c_7102.
+cls:c_7102 rdfs:label "建設費減額"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "関係条例の制定"@ja.
+kg:id_37 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_38 rdfs:label "市の行政組織の改編"@ja.
+kg:id_38 rdf:type cls:c_2580.
+cls:c_2580 rdfs:label "組織改編"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "酒田市行政不服審査条例の制定"@ja.
+kg:id_39 rdf:type cls:c_1684.
+kg:id_40 rdfs:label "行政不服審査法の全部改正"@ja.
+kg:id_40 rdf:type cls:c_1031.
+cls:c_1031 rdfs:label "法改正"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "関係条例の整備に関する条例の制定"@ja.
+kg:id_41 rdf:type cls:c_1684.
+kg:id_41 prop:cause kg:id_40.
+kg:id_42 rdfs:label "給与条例等の一部改正"@ja.
+kg:id_42 rdf:type cls:c_1665.
+cls:c_1665 rdfs:label "条例改正"@ja.
+kg:id_43 rdfs:label "地方公務員法の一部改正"@ja.
+kg:id_43 rdf:type cls:c_1031.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "税条例等の一部改正"@ja.
+kg:id_44 rdf:type cls:c_1665.
+kg:id_45 rdfs:label "地方税法施行規則の一部改正"@ja.
+kg:id_45 rdf:type cls:c_7103.
+cls:c_7103 rdfs:label "規則改正"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "過疎地域固定資産税課税免除条例の一部改正"@ja.
+kg:id_46 rdf:type cls:c_1665.
+kg:id_47 rdfs:label "課税免除の対象となる固定資産の取得期限を延長する必要"@ja.
+kg:id_47 rdf:type cls:c_6093.
+cls:c_6093 rdfs:label "期限延長"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "地方活力向上地域における固定資産税の不均一課税に関する条例の制定"@ja.
+kg:id_48 rdf:type cls:c_1684.
+kg:id_49 rdfs:label "地方再生法の一部改正により固定資産税の不均一課税が制度化されたこと"@ja.
+kg:id_49 rdf:type cls:c_7104.
+cls:c_7104 rdfs:label "制度化"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "民間企業等の地方拠点化による本市の産業の活性化"@ja.
+kg:id_50 rdf:type cls:c_7105.
+cls:c_7105 rdfs:label "産業活性化"@ja.
+kg:id_48 prop:effect kg:id_50.
+kg:id_51 rdfs:label "下水道条例の一部改正"@ja.
+kg:id_51 rdf:type cls:c_1665.
+kg:id_52 rdfs:label "下水道法及び下水道法施行令の一部改正"@ja.
+kg:id_52 rdf:type cls:c_1031.
+kg:id_51 prop:cause kg:id_52.
+kg:id_53 rdfs:label "占用許可の基準を変更"@ja.
+kg:id_53 rdf:type cls:c_6776.
+cls:c_6776 rdfs:label "基準変更"@ja.
+kg:id_51 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "駐車場設置管理条例の一部改正"@ja.
+kg:id_54 rdf:type cls:c_1665.
+kg:id_55 rdfs:label "酒田市船場町月極駐車場の廃止"@ja.
+kg:id_55 rdf:type cls:c_2696.
+cls:c_2696 rdfs:label "施設廃止"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "字の区域及び名称の変更"@ja.
+kg:id_56 rdf:type cls:c_1669.
+cls:c_1669 rdfs:label "区域変更"@ja.
+kg:id_57 rdfs:label "開発予定地の一部を隣接する町の区域に編入する必要"@ja.
+kg:id_57 rdf:type cls:c_6668.
+cls:c_6668 rdfs:label "区域編入"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "新市建設計画の変更"@ja.
+kg:id_58 rdf:type cls:c_1663.
+cls:c_1663 rdfs:label "計画変更"@ja.
+kg:id_59 rdfs:label "合併特例債の発行期間が5年間延長されたこと"@ja.
+kg:id_59 rdf:type cls:c_7106.
+cls:c_7106 rdfs:label "期間延長"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "庄内北部定住自立圏形成協定の変更"@ja.
+kg:id_60 rdf:type cls:c_7107.
+cls:c_7107 rdfs:label "協定変更"@ja.
+kg:id_61 rdfs:label "庄内町と締結した協定の変更"@ja.
+kg:id_61 rdf:type cls:c_7107.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "酒田市過疎地域自立促進計画の策定"@ja.
+kg:id_62 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_63 rdfs:label "過疎地域自立促進計画を策定"@ja.
+kg:id_63 rdf:type cls:c_627.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "飛島辺地に係る公共的施設の総合整備計画"@ja.
+kg:id_64 rdf:type cls:c_2463.
+cls:c_2463 rdfs:label "整備計画"@ja.
+kg:id_65 rdfs:label "現計画期間の終了"@ja.
+kg:id_65 rdf:type cls:c_7108.
+cls:c_7108 rdfs:label "計画終了"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "総合整備計画を変更及び策定"@ja.
+kg:id_66 rdf:type cls:c_1663.
+kg:id_64 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "酒田市庁舎改築工事の機械設備工事請負契約の変更"@ja.
+kg:id_67 rdf:type cls:c_3471.
+cls:c_3471 rdfs:label "契約変更"@ja.
+kg:id_68 rdfs:label "賃金水準等の変動"@ja.
+kg:id_68 rdf:type cls:c_7109.
+cls:c_7109 rdfs:label "賃金変動"@ja.
+kg:id_67 prop:cause kg:id_68.
+kg:id_69 rdfs:label "酒田市公共下水道酒田市クリーンセンターの汚泥処理棟改築工事委託協定の変更"@ja.
+kg:id_69 rdf:type cls:c_7107.
+kg:id_70 rdfs:label "設計内容の変更等"@ja.
+kg:id_70 rdf:type cls:c_6099.
+cls:c_6099 rdfs:label "設計変更"@ja.
+kg:id_69 prop:cause kg:id_70.
+kg:id_71 rdfs:label "あらたに生じた土地の確認"@ja.
+kg:id_71 rdf:type cls:c_1667.
+cls:c_1667 rdfs:label "土地確認"@ja.
+kg:id_72 rdfs:label "酒田港外港地区における公有水面埋め立て工事の竣功"@ja.
+kg:id_72 rdf:type cls:c_7110.
+cls:c_7110 rdfs:label "埋立完了"@ja.
+kg:id_71 prop:cause kg:id_72.
+kg:id_73 rdfs:label "字の区域の変更"@ja.
+kg:id_73 rdf:type cls:c_1669.
+kg:id_74 rdfs:label "新たに生じた土地等"@ja.
+kg:id_74 rdf:type cls:c_7111.
+cls:c_7111 rdfs:label "新生土地"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "申請率83％に達した"@ja.
+kg:id_75 rdf:type cls:c_7112.
+cls:c_7112 rdfs:label "申請率向上"@ja.
+kg:id_3 prop:effect kg:id_75.
+kg:id_76 rdfs:label "行政不服審査法改正"@ja.
+kg:id_76 rdf:type cls:c_1031.
+kg:id_77 rdfs:label "裁決までに時間を要することが想定される"@ja.
+kg:id_77 rdf:type cls:c_7113.
+cls:c_7113 rdfs:label "審理長期化"@ja.
+kg:id_76 prop:effect kg:id_77.
+kg:id_78 rdfs:label "船場町駐車場廃止後の中央分署配置"@ja.
+kg:id_78 rdf:type cls:c_7114.
+cls:c_7114 rdfs:label "施設配置"@ja.
+kg:id_79 rdfs:label "設置場所は津波浸水想定範囲外"@ja.
+kg:id_79 rdf:type cls:c_7115.
+cls:c_7115 rdfs:label "浸水想定外"@ja.
+kg:id_78 prop:effect kg:id_79.
+kg:st_1 rdfs:label "斎藤周議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "福祉灯油事業は恒常的な財政支援を進めるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "健康福祉部長"@ja.
+kg:st_2 rdfs:type cls:st_12.
+cls:st_12 rdfs:label "行政部局"@ja.
+kg:op_2 prop:content "県補助を活用した臨時的な事業として実施した"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "原油価格が高騰した際に国の特別交付税措置による支援が行われた"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "急騰時だけでなく恒常的な取り組みが必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "今後の財政運営では基金に大きなウエートがかかる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "丸山市長"@ja.
+kg:st_3 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_6 prop:content "主要3基金の積み立てと活用方針を現実的な財政計画の中で示したい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "総合支所の位置づけが急激に低下したように見える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "市民部移管で地域コミュニティとの連携が強まり役割はむしろ強まる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "従来より審査に時間がかかり請求人に時間的不利益が生じないか懸念する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "総務部長"@ja.
+kg:st_4 rdfs:type cls:st_12.
+kg:op_10 prop:content "公正性を高めるための改正であり迅速な審理に努める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_4.
+kg:op_11 prop:content "審査手続の長期化で請求人が不利益を受けないか懸念する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "第三者機関諮問は公正性向上のためで希望により省略も可能"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "個人番号の記載不要化は国が自治体を振り回しているように見える"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "納税義務者の負担軽減を図るため個人番号の利用取り扱いが見直された"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "利用者の代替駐車場確保と津波被害想定を踏まえた中央分署配置を懸念する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "商工観光部長"@ja.
+kg:st_5 rdfs:type cls:st_12.
+kg:op_16 prop:content "近隣に空き駐車場が多く苦情もない"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "危機管理監"@ja.
+kg:st_6 rdfs:type cls:st_12.
+kg:op_17 prop:content "中央分署設置場所は津波浸水想定範囲外である"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_6.
+kg:op_18 prop:content "郵送申請や口座番号記入省略で申請率向上につながった"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "請求人に時間的不利益が生じないか懸念する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "公正性向上のため必要だが迅速な審理に努める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "複合的な断層の組み合わせも考慮した最大想定で範囲外としている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_6.
+kg:op_22 prop:content "複合的地震で想定外が想定内になる可能性を懸念する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "低所得者世帯への生活支援のため、灯油等購入費助成に係る経費を計上することについて、市議会を招集する時間的余裕がなく"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "平成19年度以降、原油価格が高騰した際に、計３回にわたって灯油購入費助成に支出した額の２分の１について特別交付税措置による支援が行われました"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "酒田市が最初に福祉灯油券事業を実施したのは平成19年で、急騰した灯油に対応するためでした"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:text-txt_contents "このたびの補正は、決算見込みによる事業費の調整、国の補正予算に伴う補正、人事院勧告等に伴う人件費の補正及び歳入の増額等で生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:text-txt_contents "このたびの補正は、決算見込みによる事業費の調整、国の補正予算に伴う補正、人事院勧告等に伴う人件費の補正及び歳入の増額等で生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります"@ja.
+<< kg:id_6 prop:cause kg:id_9 >>
+    prop:text-txt_contents "このたびの補正は、決算見込みによる事業費の調整、国の補正予算に伴う補正、人事院勧告等に伴う人件費の補正及び歳入の増額等で生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "歳入の増額等で生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:text-txt_contents "農林水産業費では、交付対象地域等の増加により機構集積協力金交付事業費を増額し"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "災害復旧費では、県施行急傾斜地崩壊対策事業負担金の確定に伴い公共土木施設災害復旧事業費を減額しております"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:text-txt_contents "公債費では、後年度負担の軽減を目的に、市債の繰上償還を実施するためなどにより公債費元金を増額しております"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "歳入では、市民税及び固定資産税の増収などによる市税"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "歳入では、国の補正予算に伴う国庫支出金"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:text-txt_contents "歳入では、機構集積協力金の増による県支出金"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:text-txt_contents "歳入では、土地売払収入の増による財産収入をそれぞれ増額しております"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "このたびの補正は、決算見込みによる減額及び国の補正予算に伴う分流式雨水幹線整備事業費の増額などであります"@ja.
+<< kg:id_28 prop:cause kg:id_21 >>
+    prop:text-txt_contents "このたびの補正は、決算見込みによる減額及び国の補正予算に伴う分流式雨水幹線整備事業費の増額などであります"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:text-txt_contents "議第11号については、病院事業会計予算の「収益的収入及び支出」の収入において、入院収益の減などにより"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:text-txt_contents "支出において、給与費、材料費などの決算見込みにより"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:text-txt_contents "「資本的収入及び支出」の収入において、企業債、補助金の減額により"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:text-txt_contents "支出において、建設改良費の減額により"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "議第12号については、市の行政組織の改編に伴い、関係条例を整理するため、条例を制定するものであります"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "議第13号については、行政不服審査法の全部改正に伴い、酒田市行政不服審査会の組織及び運営に関し必要な事項を定めるなど、新たに条例の制定をするものであります"@ja.
+<< kg:id_41 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "議第14号については、行政不服審査法の全部改正に伴い、関係条例を整備するため、条例を制定するものであります"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:text-txt_contents "議第15号については、一般職の給料表、初任給調整手当の限度額及び勤勉手当の支給月数の改定などを行うとともに、地方公務員法の一部改正に伴う人事評価制度に対応するなど、所要の改正を行うものであります"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "議第16号については、地方税法施行規則の一部改正に伴い、地方税関係の一部手続における個人番号の利用の取り扱いを見直すため、所要の改正を行うものであります"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:text-txt_contents "議第17号については、課税免除の対象となる固定資産の取得期限を延長するため、所要の改正を行うものであります"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:text-txt_contents "議第18号については、地方再生法の一部改正により固定資産税の不均一課税が制度化されたことに伴い"@ja.
+<< kg:id_48 prop:effect kg:id_50 >>
+    prop:text-txt_contents "民間企業等の地方拠点化による本市の産業の活性化を促進するため、新たに条例を制定するものであります"@ja.
+<< kg:id_51 prop:cause kg:id_52 >>
+    prop:text-txt_contents "議第19号については、下水道法及び下水道法施行令の一部改正に伴い"@ja.
+<< kg:id_51 prop:contermeasure kg:id_53 >>
+    prop:text-txt_contents "占用許可の基準を変更するため、所要の改正を行うものであります"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "議第20号については、酒田市船場町月極駐車場の廃止に伴い、所要の改正を行うものであります"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:text-txt_contents "議第21号については、開発予定地の一部を隣接する町の区域に編入するため、議会の議決を求めるものであります"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:text-txt_contents "議第22号については、合併特例債の発行期間が５年間延長されたことから、新市建設計画を変更することについて、議会の議決を求めるものであります"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:text-txt_contents "議第23号については、庄内町と締結した庄内北部定住自立圏形成協定を変更するため、議会の議決を求めるものであります"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:text-txt_contents "議第24号については、酒田市過疎地域自立促進計画を策定するため、議会の議決を求めるものであります"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:text-txt_contents "議第25号については、飛島辺地に係る公共的施設の総合整備計画を変更するとともに、現計画期間の終了により"@ja.
+<< kg:id_64 prop:contermeasure kg:id_66 >>
+    prop:text-txt_contents "飛島辺地に係る公共的施設の総合整備計画を変更するとともに、現計画期間の終了により飛島辺地に係る公共的施設の総合整備計画を策定するため"@ja.
+<< kg:id_67 prop:cause kg:id_68 >>
+    prop:text-txt_contents "議第26号については、新日本空調・新和設備・東北メンテナンス工業特定建設工事共同企業体と請負契約を締結した酒田市庁舎改築工事の機械設備工事について、賃金水準等の変動に伴い、請負金額を変更するため"@ja.
+<< kg:id_69 prop:cause kg:id_70 >>
+    prop:text-txt_contents "議第27号については、酒田市公共下水道酒田市クリーンセンターの汚泥処理棟改築工事について、設計内容の変更等により協定金額を減額するため"@ja.
+<< kg:id_71 prop:cause kg:id_72 >>
+    prop:text-txt_contents "議第28号については、酒田港外港地区における公有水面埋め立て工事の竣功により、新たに生じた土地を確認するため"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:text-txt_contents "議第29号については、新たに生じた土地等について、字の区域を変更するため"@ja.
+<< kg:id_3 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "２月23日現在で申請率は83％に達しており、昨年度同期と比較いたしまして1.5％上回っている状況にございます"@ja.
+<< kg:id_76 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "審理員による審理手続及び第三者機関への諮問を行うことにより、これまでよりも裁決までに時間を要することが想定されます"@ja.
+<< kg:id_78 prop:effect kg:id_79 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "県の津波浸水想定案によりますと、酒田港での津波最高水位は13.3ｍと想定されております。中央分署が設置される場所は津波浸水想定範囲外となっております"@ja.
+}

@@ -1,0 +1,619 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00156> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "カーボンニュートラル宣言"@ja.
+kg:id_1 rdf:type cls:c_8819.
+cls:c_8819 rdfs:label "宣言"@ja.
+kg:id_2 rdfs:label "国の2050年カーボンニュートラル宣言"@ja.
+kg:id_2 rdf:type cls:c_8820.
+cls:c_8820 rdfs:label "脱炭素目標"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "2030年度までに温室効果ガス削減46％を目指す国の中期目標"@ja.
+kg:id_3 rdf:type cls:c_8821.
+cls:c_8821 rdfs:label "排出削減目標"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "遊佐沖が促進区域として妥当であるという合意形成"@ja.
+kg:id_4 rdf:type cls:c_721.
+cls:c_721 rdfs:label "合意形成"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "地球温暖化"@ja.
+kg:id_5 rdf:type cls:c_618.
+cls:c_618 rdfs:label "気候変動"@ja.
+kg:id_6 rdfs:label "18世紀後半からの人間の生産活動"@ja.
+kg:id_6 rdf:type cls:c_8822.
+cls:c_8822 rdfs:label "人間活動"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "人為活動"@ja.
+kg:id_7 rdf:type cls:c_8822.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "洋上風力発電事業"@ja.
+kg:id_8 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_9 rdfs:label "国の海洋再生可能エネルギー発電設備整備促進法に基づく計画推進"@ja.
+kg:id_9 rdf:type cls:c_7956.
+cls:c_7956 rdfs:label "法制度"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "超低周波を含む騒音による身体的精神的影響"@ja.
+kg:id_10 rdf:type cls:c_3458.
+cls:c_3458 rdfs:label "健康影響"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "景観に与える影響"@ja.
+kg:id_11 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "地下湧水脈への影響"@ja.
+kg:id_12 rdf:type cls:c_7961.
+cls:c_7961 rdfs:label "地下水影響"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "2100年頃に2.6度から4.8度気温上昇の可能性"@ja.
+kg:id_13 rdf:type cls:c_8823.
+cls:c_8823 rdfs:label "気温上昇"@ja.
+kg:id_5 prop:effect kg:id_13.
+kg:id_14 rdfs:label "気象変動の影響拡大"@ja.
+kg:id_14 rdf:type cls:c_315.
+cls:c_315 rdfs:label "気象影響"@ja.
+kg:id_5 prop:effect kg:id_14.
+kg:id_15 rdfs:label "岩のりがつかないなど日本海沿岸の変化"@ja.
+kg:id_15 rdf:type cls:c_8824.
+cls:c_8824 rdfs:label "海洋変化"@ja.
+kg:id_5 prop:effect kg:id_15.
+kg:id_16 rdfs:label "鰆が本来の時期と異なる11月頃に来るなど魚の回遊変化"@ja.
+kg:id_16 rdf:type cls:c_4836.
+cls:c_4836 rdfs:label "生態変化"@ja.
+kg:id_5 prop:effect kg:id_16.
+kg:id_17 rdfs:label "ハタハタが来ない海水温変化"@ja.
+kg:id_17 rdf:type cls:c_8824.
+kg:id_5 prop:effect kg:id_17.
+kg:id_18 rdfs:label "遊佐町"@ja.
+kg:id_18 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_19 rdfs:label "ゼロカーボンに向けた数値の見える化の現況調査"@ja.
+kg:id_19 rdf:type cls:c_2469.
+cls:c_2469 rdfs:label "現況調査"@ja.
+kg:id_18 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "町内部門別の温室効果ガス排出量推計"@ja.
+kg:id_20 rdf:type cls:c_8825.
+cls:c_8825 rdfs:label "排出量推計"@ja.
+kg:id_18 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "町内の再生可能エネルギー生産量の把握"@ja.
+kg:id_21 rdf:type cls:c_8826.
+cls:c_8826 rdfs:label "発電量把握"@ja.
+kg:id_18 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "農業分野の二酸化炭素吸収効果の推計"@ja.
+kg:id_22 rdf:type cls:c_8827.
+cls:c_8827 rdfs:label "吸収量推計"@ja.
+kg:id_18 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "予防管理原則の徹底と協定の締結及び住民への丁寧な説明を求める基本方針"@ja.
+kg:id_23 rdf:type cls:c_6802.
+cls:c_6802 rdfs:label "基本方針"@ja.
+kg:id_18 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "学校統合に伴う複式学級"@ja.
+kg:id_24 rdf:type cls:c_4385.
+cls:c_4385 rdfs:label "複式学級"@ja.
+kg:id_25 rdfs:label "児童数減少により2年生と3年生の合計が基準以下になったこと"@ja.
+kg:id_25 rdf:type cls:c_8691.
+cls:c_8691 rdfs:label "児童減少"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "担任が1名となり異なる学年が同じ教室で授業を受けること"@ja.
+kg:id_26 rdf:type cls:c_8828.
+cls:c_8828 rdfs:label "合同授業"@ja.
+kg:id_24 prop:effect kg:id_26.
+kg:id_27 rdfs:label "一方の学年が直接指導中にもう一方が課題学習となること"@ja.
+kg:id_27 rdf:type cls:c_8829.
+cls:c_8829 rdfs:label "課題学習"@ja.
+kg:id_24 prop:effect kg:id_27.
+kg:id_28 rdfs:label "遊佐町教育委員会"@ja.
+kg:id_28 rdf:type cls:c_8830.
+cls:c_8830 rdfs:label "教育委員会"@ja.
+kg:id_29 rdfs:label "山形県教育委員会と協議しながら必要な支援策を講じること"@ja.
+kg:id_29 rdf:type cls:c_8831.
+cls:c_8831 rdfs:label "移行支援"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "教科担任制のような対応の検討"@ja.
+kg:id_30 rdf:type cls:c_8832.
+cls:c_8832 rdfs:label "指導体制"@ja.
+kg:id_28 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "小学校間の交流学習の実施"@ja.
+kg:id_31 rdf:type cls:c_6834.
+cls:c_6834 rdfs:label "交流学習"@ja.
+kg:id_28 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "コロナ禍による地域経済の悪化"@ja.
+kg:id_32 rdf:type cls:c_3231.
+cls:c_3231 rdfs:label "経済悪化"@ja.
+kg:id_33 rdfs:label "新型コロナウイルス感染症の長期化"@ja.
+kg:id_33 rdf:type cls:c_1350.
+cls:c_1350 rdfs:label "感染症流行"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "まん延防止等重点措置と再拡大防止特別対策期間の実施"@ja.
+kg:id_34 rdf:type cls:c_1349.
+cls:c_1349 rdfs:label "行動制限"@ja.
+kg:id_32 prop:cause kg:id_34.
+kg:id_35 rdfs:label "宿泊飲食観光に関わる小売店の売上大幅減少"@ja.
+kg:id_35 rdf:type cls:c_2188.
+cls:c_2188 rdfs:label "売上減少"@ja.
+kg:id_32 prop:effect kg:id_35.
+kg:id_36 rdfs:label "小売業で巣ごもり需要が落ち着き購入減少による売上減"@ja.
+kg:id_36 rdf:type cls:c_2188.
+kg:id_32 prop:effect kg:id_36.
+kg:id_37 rdfs:label "仕事量減少と収入減少で生活への影響"@ja.
+kg:id_37 rdf:type cls:c_8833.
+cls:c_8833 rdfs:label "生活悪化"@ja.
+kg:id_32 prop:effect kg:id_37.
+kg:id_38 rdfs:label "町独自の緊急経済支援策を計6回実施"@ja.
+kg:id_38 rdf:type cls:c_2944.
+cls:c_2944 rdfs:label "経済支援"@ja.
+kg:id_18 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "延べ731件1億2829万95円の助成金交付"@ja.
+kg:id_39 rdf:type cls:c_8411.
+cls:c_8411 rdfs:label "助成金交付"@ja.
+kg:id_18 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "保証料負担と利子補給による運転資金融資支援"@ja.
+kg:id_40 rdf:type cls:c_8834.
+cls:c_8834 rdfs:label "融資支援"@ja.
+kg:id_18 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "商工会や地元金融機関と連携した支援対象の洗い出し"@ja.
+kg:id_41 rdf:type cls:c_3634.
+cls:c_3634 rdfs:label "連携支援"@ja.
+kg:id_18 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "サンキューお嫁さん・サンキューお婿さん商品券案"@ja.
+kg:id_42 rdf:type cls:c_8835.
+cls:c_8835 rdfs:label "商品券案"@ja.
+kg:id_43 rdfs:label "町外県外国外から嫁や婿として来た人が町の人口増加と町の維持に貢献してきたこと"@ja.
+kg:id_43 rdf:type cls:c_8836.
+cls:c_8836 rdfs:label "人口維持"@ja.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "対象者に町内で使える3000円商品券を支給すること"@ja.
+kg:id_44 rdf:type cls:c_8837.
+cls:c_8837 rdfs:label "商品券支給"@ja.
+kg:id_42 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "共通券費用だけで1600万円となり事務負担も大きいこと"@ja.
+kg:id_45 rdf:type cls:c_813.
+cls:c_813 rdfs:label "費用負担"@ja.
+kg:id_42 prop:effect kg:id_45.
+kg:id_46 rdfs:label "未婚離別の単身者が対象外となる公平性の課題"@ja.
+kg:id_46 rdf:type cls:c_8838.
+cls:c_8838 rdfs:label "公平性課題"@ja.
+kg:id_42 prop:effect kg:id_46.
+kg:id_47 rdfs:label "中学3年生向け学習支援塾"@ja.
+kg:id_47 rdf:type cls:c_8839.
+cls:c_8839 rdfs:label "学習支援塾"@ja.
+kg:id_48 rdfs:label "高校受験対策に必要な学習支援塾の実施"@ja.
+kg:id_48 rdf:type cls:c_2366.
+cls:c_2366 rdfs:label "学習支援"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "参加生徒の理解向上と生活リズム改善と受験への心構え形成"@ja.
+kg:id_49 rdf:type cls:c_5811.
+cls:c_5811 rdfs:label "学習効果"@ja.
+kg:id_47 prop:effect kg:id_49.
+kg:id_50 rdfs:label "遊佐パーキングエリアタウン"@ja.
+kg:id_50 rdf:type cls:c_8840.
+cls:c_8840 rdfs:label "地域開発"@ja.
+kg:id_51 rdfs:label "令和8年度開業を目指した道の駅整備と運営手法検討"@ja.
+kg:id_51 rdf:type cls:c_1935.
+cls:c_1935 rdfs:label "施設整備"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "鳥海山の麓の町として庄内の食と文化を発信する地域の核となる道の駅整備"@ja.
+kg:id_52 rdf:type cls:c_1935.
+kg:id_50 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "鳥海山のある風景日常を感じられる道の駅"@ja.
+kg:id_53 rdf:type cls:c_8841.
+cls:c_8841 rdfs:label "施設機能"@ja.
+kg:id_50 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "ジオアウトドアフィールドへの出発基地となる道の駅"@ja.
+kg:id_54 rdf:type cls:c_8841.
+kg:id_50 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "豊かな食資源を様々な演出で楽しめる道の駅"@ja.
+kg:id_55 rdf:type cls:c_8841.
+kg:id_50 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "Society5.0最先端の道の駅"@ja.
+kg:id_56 rdf:type cls:c_8842.
+cls:c_8842 rdfs:label "先端機能"@ja.
+kg:id_50 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "防災の拠点となる道の駅"@ja.
+kg:id_57 rdf:type cls:c_8843.
+cls:c_8843 rdfs:label "防災機能"@ja.
+kg:id_50 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "公設での包括運営委託方式の検討"@ja.
+kg:id_58 rdf:type cls:c_8844.
+cls:c_8844 rdfs:label "運営方式"@ja.
+kg:id_50 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "民間参入意向を探るアンケートとサウンディング調査"@ja.
+kg:id_59 rdf:type cls:c_3264.
+cls:c_3264 rdfs:label "需要調査"@ja.
+kg:id_50 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "防災道の駅指定を目指した整備"@ja.
+kg:id_60 rdf:type cls:c_8755.
+cls:c_8755 rdfs:label "防災整備"@ja.
+kg:id_50 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "令和6年度までに詳細設計を終え令和7年度8年度に建設工事を行うこと"@ja.
+kg:id_61 rdf:type cls:c_8845.
+cls:c_8845 rdfs:label "建設計画"@ja.
+kg:id_50 prop:contermeasure kg:id_61.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "地球温暖化を立ち止まらせることが今の私たちに課されたことだと考える"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_2 prop:content "次期環境基本計画の期間を踏まえるとこの目標を目指すのは当然だと考える"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "事業を進めるなら持続可能な未来づくりと地球温暖化防止に向け宣言したい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "産業革命以降の人間活動が温暖化につながっているという認識を示す"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "人為活動で世界の平均気温が上昇していると説明する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "国の法律に基づく上位法として進められているとの認識を示す"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "環境審議会"@ja.
+kg:st_3 rdfs:type cls:st_9.
+cls:st_9 rdfs:label "審議会"@ja.
+kg:op_7 prop:content "騒音は低減ではなく影響回避を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "景観影響についても回避を求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "地下水脈図による可視化を求める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "何もしなければ取り返しのつかないことになり得ると危機感を示す"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "1.5度に抑えれば影響を大きく回避できると紹介する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "近隣の海でも温暖化の症状が現れていると指摘する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "魚の動きにも気候変化の影響が出ていると述べる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "地域の漁場環境にも変化が出ていると示す"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "排出量や吸収効果を把握して宣言と計画に役立てたい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "畠中地域生活課長"@ja.
+kg:st_4 rdfs:type cls:st_95.
+cls:st_95 rdfs:label "課長"@ja.
+kg:op_16 prop:content "排出状況の特徴を把握したい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "町全体でどの程度の再生可能エネルギーを生産しているか把握したい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "遊佐町独自のゼロカーボンシティーへの道筋につなげたい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "法定協議会で町の基本方針を示した"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "那須正幸議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_20 prop:content "保護者にとって複式学級への不安が大きいと考える"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "児童も先生もかなり戸惑うことが想定される"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "特別な対応や慣れが必要になる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "できるだけスムーズに複式学級へ移行できるよう支援したい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "制度上できる範囲で最も望ましい在り方を検討する必要がある"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "菅原教育課長"@ja.
+kg:st_6 rdfs:type cls:st_95.
+kg:op_25 prop:content "無理のない範囲で学校同士の交流を進めている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "赤塚英一議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_26 prop:content "予測以上に影響が広がり生活にも影響が出始めていると指摘する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:op_27 prop:content "経済的打撃は多岐に及んでいるとみる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:op_28 prop:content "地域経済の衰退が危惧されるため切れ目ない支援を行ってきた"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "長期化により小売業にも打撃が広がっていると指摘する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_7.
+kg:op_30 prop:content "支援対象から漏れた人にも手を差し伸べる必要があると考える"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_7.
+kg:op_31 prop:content "対象業種を広げながら手厚い支援が届くよう努めてきた"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "中小企業者が漏れなく該当するよう支援した"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "事業者の倒産を防ぐため県と町で支援している"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "支援を必要とする事業者に確実に届くよう努める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "松永裕美議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_35 prop:content "縁あって来た人たちへの感謝を形にしたい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_8.
+kg:op_36 prop:content "遊佐町らしい政策として提案する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_8.
+kg:op_37 prop:content "費用対効果の点で検証が必要で現時点での実施は困難と考える"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "同様に町の発展に尽力している人が対象外となるため課題がある"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "進路希望実現と学習意欲向上のための事業として継続する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:st_9 rdfs:label "参加生徒"@ja.
+kg:st_9 rdfs:type cls:st_74.
+cls:st_74 rdfs:label "参加者"@ja.
+kg:op_40 prop:content "講師の先生が分かりやすく苦手教科を理解でき充実した時間になった"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_9.
+kg:op_41 prop:content "地域に豊かさをもたらす施設整備を実現するため事業を進める"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "地域の核となる道の駅を目指す"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "事業候補者を先に決め設計も含め協議しながら進める方法を検討している"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "結果を踏まえ指定管理候補者の募集を行いたい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:st_10 rdfs:label "佐藤企画課長"@ja.
+kg:st_10 rdfs:type cls:st_95.
+kg:op_45 prop:content "重点的な支援が可能になるため防災道の駅を目指したい"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_10.
+kg:op_46 prop:content "令和8年度の開業を見据えて進める"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "令和２年、2020年10月26日に行われた第203回国会において、当時の菅内閣総理大臣は所信表明演説の中で、2050年までに温室効果ガスの排出を全体としてゼロにする、すなわち2050年カーボンニュートラル、脱炭素社会の位置づけを目指すことを宣言しております"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "翌年、令和３年４月には、政府の地球温暖化対策推進本部の会議で、中期目標として2030年度に2013年対比の温室効果ガス削減量を平成27年７月同会議決定の26％から46％を目指すと表明されました。このことから、次期の遊佐町の環境基本計画の計画期間が2031年度までの10年間であり、国が最終目標に掲げた2050年までに温室効果ガスの排出を全体としてゼロにする2050年カーボンニュートラルの実現の段階での中期目標である2030年度に、2013年度対比の温室効果ガス排出削減量46％を目指すこととなるというのは当然のことだと思っています"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "遊佐沖が促進区域として妥当であるという合意形成が整い、事業を進めるならば、遊佐町においても持続可能な未来づくりと地球温暖化防止に向け、カーボンニュートラル宣言をしていきたいと考えております"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "18世紀後半から始まった産業革命からの人間の生産活動が地球の温暖化にもつながっている"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "人為活動で世界の平均気温が１度上昇した"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "我が国では、現在、2040年度までに最大4,500万キロワットの導入を目指した洋上風力発電計画が海洋再生エネルギー開発設備の整備に係る海域の利用の促進に関する法律に基づき国内21海域で計画されており、有望な区域の７海域の一つとして遊佐沖でも計画が進められております"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "環境審議会からの意見については、環境が懸念される超低周波を含む騒音や景観に与える影響について、影響を低減させるのではなく、人それぞれに身体的、精神的な感じ方に差があるため、影響を回避することを求められています"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "環境審議会からの意見については、環境が懸念される超低周波を含む騒音や景観に与える影響について、影響を低減させるのではなく、人それぞれに身体的、精神的な感じ方に差があるため、影響を回避することを求められています"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "また、地下湧水脈に与える影響については、地下水脈図による可視化が求められております"@ja.
+<< kg:id_5 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "このままでは2100年頃には2.6度から4.8度上昇するのではないかということも述べられております"@ja.
+<< kg:id_5 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "気温上昇を1.5度に抑えることができれば、気象変動の影響を大きく回避される"@ja.
+<< kg:id_5 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "今年は岩のりがつかなかった"@ja.
+<< kg:id_5 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "魚に春と書いて鰆といいますが、本来春に来る魚が11月頃に来て北上するというか、ちょっと気候が変わっている"@ja.
+<< kg:id_5 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "毎年ハタハタが冬至になれば上がってくるということでしたが、これが一切ないと。ハタハタは12度以下でないと来ない"@ja.
+<< kg:id_18 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "来年度の事業にもなりますが、二酸化炭素の排出量や推計や農業分野の二酸化炭素吸収効果など、ゼロカーボンに向けた数値の見える化についての現況調査を実施したいと考えております"@ja.
+<< kg:id_18 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "町内の部門別ということで、産業部門、民生業務部門、民生家庭部門、運輸部門にどれくらいの温室効果ガス排出しているのか推計をいたします"@ja.
+<< kg:id_18 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "町全体でどの程度の再生可能エネルギーを生産しているのか、現状を把握してみたいというふうに考えてございます"@ja.
+<< kg:id_18 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "農地が吸収源として活用可能である見通しが立てば、遊佐町独自のゼロカーボンシティーへの道筋へつながるものでないのかなというふうに考えてございます"@ja.
+<< kg:id_18 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "町の方針としては、環境審議会において承認いただいた予防管理原則の徹底や協定の締結及び住民への丁寧な説明を求めるなど、５つの基本方針について述べさせていただきました"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "来年度、蕨岡小学校の普通学級が２年生と３年生で合わせて16名、高瀬小学校の普通学級の２年生と３年生で合わせて15名ということであり、いずれも合計児童数が16名以下ということになりますので、現状としては蕨岡小学校と高瀬小学校において複式学級が設置されることとなります"@ja.
+<< kg:id_24 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "複式学級は異なる学年を１つのクラスに編制し、担任の先生が１名であるため、異なる学年が同じ教室で授業を受けることになります"@ja.
+<< kg:id_24 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "一方の学年が先生から直接指導を受けている間、もう一つの学年は課題学習をすることとなります。このようなやり方にはメリット、デメリットがございますが、これまでと違うやり方に児童も先生もかなり戸惑うことが想定できるため、特別な対応や慣れが必要になると考えられます"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "人事配置に関する県の対応を見据えながら、町としてもできるだけスムーズに移行できるよう、教育委員会を通じて当該校からの要望に配慮し、山形県教育委員会と共に協議しながら、できる限りの支援策を講じていきたいと考えております"@ja.
+<< kg:id_28 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "そのときは、その当時の先生方のご尽力により教頭を含めて対応し、それぞれの学年で教科ごとに教える先生が替わるいわゆる教科担任制のような対応も取っておりました。このようなやり方についてもメリット、デメリットがございますが、制度上できる範囲で最も望ましい在り方について検討していく必要があると考えております"@ja.
+<< kg:id_28 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "今年度の主な取組の一つに小学校間の交流学習の開始を挙げております。やはりこれもできるだけ今から現在各学校で行っている学習、校外学習の中で可能な学校同士が無理のない範囲で行っているものでございまして、５月以降スタートしたところでございます"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "それでも２年を超えるコロナ禍の影響、特に経済的な影響はこれまで予測してきた以外にも広がっているのではないでしょうか"@ja.
+<< kg:id_32 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "このことにより庄内一円にまん延防止等重点措置が出され、その後今月６日までの期間で実施された再拡大（リバウンド）防止特別対策期間も延長となったことで、これによる経済的打撃は多岐に及んでいるようです"@ja.
+<< kg:id_32 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "新型コロナウイルス感染症の影響により、宿泊、飲食、観光に関わる小売店が営業自粛を余儀なくされ、町の事業所でも売上げが大幅に減少しました。心配しました。このままでは地域経済の衰退が非常に危惧されるため"@ja.
+<< kg:id_32 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "小売業などでもコロナ禍が広がり始めた頃は巣籠もり需要として保存が利く商品を中心に需要があったようですが、今ではそれが長期化したことでそういった需要も落ち着いてきたようです。逆に購入が減ってきたことにより売上げが落ちたとの声も聞かれます"@ja.
+<< kg:id_32 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "業種によっては、仕事量が減り、収入減少したことが支援対象までいかなかったため、生活にも影響が出始めているといった声もありました"@ja.
+<< kg:id_18 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "地域産業、地域経済の維持を図る対策として、令和２年３月から令和３年12月まで計６回、臨時交付金を主な財源として町独自の緊急経済支援策を切れ目なく行ってまいりました"@ja.
+<< kg:id_18 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "町内の中小企業者が漏れなく該当するよう、対象の業種を広げながら、かつ経営が特に厳しいと思われる事業には手厚い支援が届くように、これまで延べ731件、１億2,829万95円の助成金を交付しております"@ja.
+<< kg:id_18 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "また、県と町では、コロナ禍での経営危機に当たる事業者の倒産を防ぐため、金融機関が運転資金を融資する際の保証料を負担し、利子を補給する事業を実施しております"@ja.
+<< kg:id_18 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "支援が必要とされる事業者の洗い出しにつきましては、商工会や地元金融機関と連携して情報を確保し、国と県の施策と併せて支援を必要とする事業者に確実に届く支援事業の実施に努めてまいります"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "町内、町外、県外から、そして国外から、この町に縁あって遊佐町に嫁いできてくださったり、またはお婿さんに来てくださったお嫁さん、お婿さんのおかげで、その方たちが遊佐町の人口増加のための源となったり底力となって、家庭が町が順調に回ってそれぞれの様々な歴史を積み上げて今この現状がある"@ja.
+<< kg:id_42 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "町内で利用できる商品券をお一人につき3,000円支給できないものでしょうか"@ja.
+<< kg:id_42 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "共通券費用だけで1,600万円となります。対象者の選定、共通券の作成や送付、精算等の費用を考慮すると、さらなる事務負担と経営負担が想定されます"@ja.
+<< kg:id_42 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "20歳以上の未婚、離別による単身の方はおよそ2,600人おり、同様に町の発展のためにご尽力いただいていながら共通券支給対象にならないため、公平性の点で課題となることが想定されております"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "遊佐町の学習支援塾は、平成30年度よりスタートした中学校３年生向けの事業となります。狙いといたしましては、夢の実現、いわゆる進路の希望実現のため、また学習意欲を高め、学習習慣をつける一つの機会となるようにすること"@ja.
+<< kg:id_47 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "講師の先生からとても分かりやすく教えていただいた、苦手な教科を理解することができたといった感想や、友達と教え合う時間もあり、楽しく学習できた、土曜日の朝早く起きて生活リズムが整った、とても充実した時間になった、受験に向かう心構えができたという感想もあり"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "平成28年３月に遊佐パーキングエリアタウン基本計画を策定以来、地域に豊かさをもたらす施設整備を実現するため、遊佐パーキングエリアタウン建設に向けての事業を進めてまいりました"@ja.
+<< kg:id_50 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "新しい道の駅の整備に当たっては、そのテーマ、コンセプトについて整理をしております。鳥海山の麓の町として庄内の食と文化を発信し、来る人を鳥海山で魅了する地域の核となる道の駅を目指しております"@ja.
+<< kg:id_50 prop:contermeasure kg:id_53 >>
+    prop:text-txt_contents "１つ目として、鳥海山のある風景、日常を感じられる道の駅"@ja.
+<< kg:id_50 prop:contermeasure kg:id_54 >>
+    prop:text-txt_contents "２つ目として、ジオ、アウトドアフィールドへの出発基地となる道の駅"@ja.
+<< kg:id_50 prop:contermeasure kg:id_55 >>
+    prop:text-txt_contents "３つ目として、豊かな食資源を様々な演出で楽しめる道の駅"@ja.
+<< kg:id_50 prop:contermeasure kg:id_56 >>
+    prop:text-txt_contents "４つ目として、Society5.0、いわゆる最先端の道の駅"@ja.
+<< kg:id_50 prop:contermeasure kg:id_57 >>
+    prop:text-txt_contents "そして、５つ目として、防災の拠点となる道の駅であります"@ja.
+<< kg:id_50 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "新たな道の駅の運営手法として公設での包括運営委託方式、これは事業候補者を先に決め、設計も含めた運営等について協議しながら進める手法になりますが、こういった方法で進めることを検討しており"@ja.
+<< kg:id_50 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "現在民間の参入意向を探るための調査として、アンケート、サウンディング調査を行っております。この結果を取りまとめた上で、令和４年度には道の駅指定管理候補者の募集を行っていきたいと考えております"@ja.
+<< kg:id_50 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "国は、この防災道の駅に対しましてハード面、ソフト面で重点的な支援をするということで明言をしているようでありますので、ぜひこの防災道の駅を目指したい"@ja.
+<< kg:id_50 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "その後、指定管理候補者の意向を取り入れながら、令和６年度までに詳細設計を終え、令和７年度、８年度に建設工事を行い、令和８年度の遊佐パーキングエリアタウン開業を見据えております"@ja.
+}

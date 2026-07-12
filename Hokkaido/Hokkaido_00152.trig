@@ -1,0 +1,69 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00152> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "（仮称）古平・余市ウィンドファーム事業"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "説明会の実施"@ja.
+kg:id_2 rdf:type cls:c_3027.
+cls:c_3027 rdfs:label "説明会"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "配慮書の縦覧"@ja.
+kg:id_3 rdf:type cls:c_177.
+cls:c_177 rdfs:label "文書縦覧"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "方法書の縦覧"@ja.
+kg:id_4 rdf:type cls:c_177.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "一般意見の受付"@ja.
+kg:id_5 rdf:type cls:c_163.
+cls:c_163 rdfs:label "意見受付"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "-"@ja.
+kg:id_6 rdf:type cls:c_16342.
+cls:c_16342 rdfs:label "-"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_1 prop:effect kg:id_6.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:text-txt_contents "説明会 令和5年12月16日 10:00～13:00 仁木町民センター（多目的文化ホール） 令和5年12月16日 17:00～20:00 古平町複合施設かなえーる（地域交流センター 大ホール） 令和5年12月17日 13:00～16:00 余市町中央公民館（大講堂）"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:text-txt_contents "配慮書 縦覧期間 令和4年(2022年)6月1日～令和4年(2022年)6月30日"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:text-txt_contents "方法書 縦覧期間 令和5年(2023年)11月22日～令和6年(2024年)1月12日"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:text-txt_contents "一般意見提出期限 令和4年(2022年)6月30日 一般意見提出期限 令和6年(2024年)1月12日"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:text-txt_contents "-"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "-"@ja.
+}

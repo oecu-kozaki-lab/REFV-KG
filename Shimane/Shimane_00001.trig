@@ -1,0 +1,1041 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00001> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "日向山風力発電事業と大出日山風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "脱炭素社会を実現するために再生可能エネルギーに転換しようとしていること"@ja.
+kg:id_2 rdf:type cls:c_14009.
+cls:c_14009 rdfs:label "再生可能エネルギー転換"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "環境破壊"@ja.
+kg:id_3 rdf:type cls:c_13226.
+cls:c_13226 rdfs:label "環境破壊"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "住民とのトラブル"@ja.
+kg:id_4 rdf:type cls:c_14010.
+cls:c_14010 rdfs:label "住民トラブル"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "自然環境の破壊"@ja.
+kg:id_5 rdf:type cls:c_13226.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "周辺地域や河口の市街地への多大な影響"@ja.
+kg:id_6 rdf:type cls:c_2704.
+cls:c_2704 rdfs:label "地域影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "水源地の山を切り拓くこと"@ja.
+kg:id_7 rdf:type cls:c_14011.
+cls:c_14011 rdfs:label "森林開発"@ja.
+kg:id_8 rdfs:label "水の流れの変化"@ja.
+kg:id_8 rdf:type cls:c_14012.
+cls:c_14012 rdfs:label "水流変化"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "土砂が頻繁に流出して水質が汚染されること"@ja.
+kg:id_9 rdf:type cls:c_6292.
+cls:c_6292 rdfs:label "水質汚染"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "水質の汚染"@ja.
+kg:id_10 rdf:type cls:c_6292.
+kg:id_11 rdfs:label "農業への被害"@ja.
+kg:id_11 rdf:type cls:c_2523.
+cls:c_2523 rdfs:label "農業被害"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "農業従事者の生活に支障"@ja.
+kg:id_12 rdf:type cls:c_1773.
+cls:c_1773 rdfs:label "生活支障"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "安全な食が脅かされること"@ja.
+kg:id_13 rdf:type cls:c_14013.
+cls:c_14013 rdfs:label "食の安全低下"@ja.
+kg:id_10 prop:effect kg:id_13.
+kg:id_14 rdfs:label "山々の尾根を切り開くこと"@ja.
+kg:id_14 rdf:type cls:c_14011.
+kg:id_15 rdfs:label "山の保水力の低下"@ja.
+kg:id_15 rdf:type cls:c_14014.
+cls:c_14014 rdfs:label "保水力低下"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "大規模な森林伐採や搬入道の工事"@ja.
+kg:id_16 rdf:type cls:c_14011.
+kg:id_17 rdfs:label "土砂の流出"@ja.
+kg:id_17 rdf:type cls:c_14015.
+cls:c_14015 rdfs:label "土砂流出"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "水質汚染"@ja.
+kg:id_18 rdf:type cls:c_6292.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "建設に伴う除草剤の散布"@ja.
+kg:id_19 rdf:type cls:c_14016.
+cls:c_14016 rdfs:label "薬剤使用"@ja.
+kg:id_20 rdfs:label "水質への悪影響"@ja.
+kg:id_20 rdf:type cls:c_6292.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "建設に伴う洗浄剤の流出"@ja.
+kg:id_21 rdf:type cls:c_14017.
+cls:c_14017 rdfs:label "薬剤流出"@ja.
+kg:id_21 prop:effect kg:id_20.
+kg:id_22 rdfs:label "水源地への影響"@ja.
+kg:id_22 rdf:type cls:c_78.
+cls:c_78 rdfs:label "水源影響"@ja.
+kg:id_23 rdfs:label "水への拘りを持った生産者の製品への影響"@ja.
+kg:id_23 rdf:type cls:c_14018.
+cls:c_14018 rdfs:label "製品被害"@ja.
+kg:id_22 prop:effect kg:id_23.
+kg:id_24 rdfs:label "深層風化した花崗岩の地質"@ja.
+kg:id_24 rdf:type cls:c_13330.
+cls:c_13330 rdfs:label "脆弱地質"@ja.
+kg:id_25 rdfs:label "雨期の山腹崩壊"@ja.
+kg:id_25 rdf:type cls:c_14019.
+cls:c_14019 rdfs:label "山腹崩壊"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "人家への被害"@ja.
+kg:id_26 rdf:type cls:c_2042.
+cls:c_2042 rdfs:label "住宅被害"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "山々の土砂を支えている木々が失われること"@ja.
+kg:id_27 rdf:type cls:c_13255.
+cls:c_13255 rdfs:label "森林喪失"@ja.
+kg:id_28 rdfs:label "雨水浸透時に崩壊しやすくなること"@ja.
+kg:id_28 rdf:type cls:c_14020.
+cls:c_14020 rdfs:label "斜面脆弱化"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "雨水が浸透すると崩壊しやすいこと"@ja.
+kg:id_29 rdf:type cls:c_14020.
+kg:id_30 rdfs:label "土砂災害"@ja.
+kg:id_30 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "尾根沿いを切り開いて雨水に晒し巨大風車を建てること"@ja.
+kg:id_31 rdf:type cls:c_170.
+kg:id_32 rdfs:label "深層型崩落の危険性の増大"@ja.
+kg:id_32 rdf:type cls:c_14021.
+cls:c_14021 rdfs:label "崩落危険増大"@ja.
+kg:id_31 prop:effect kg:id_32.
+kg:id_33 rdfs:label "適地ではない場所への建設"@ja.
+kg:id_33 rdf:type cls:c_14022.
+cls:c_14022 rdfs:label "不適地建設"@ja.
+kg:id_34 rdfs:label "大規模な土壌改良や岩盤補強"@ja.
+kg:id_34 rdf:type cls:c_14023.
+cls:c_14023 rdfs:label "地盤改変"@ja.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "土壌改良や岩盤補強"@ja.
+kg:id_35 rdf:type cls:c_14023.
+kg:id_36 rdfs:label "思いもよらない別の問題"@ja.
+kg:id_36 rdf:type cls:c_14024.
+cls:c_14024 rdfs:label "問題発生"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "建設計画"@ja.
+kg:id_37 rdf:type cls:c_8845.
+cls:c_8845 rdfs:label "建設計画"@ja.
+kg:id_38 rdfs:label "歴史的空間の景観への深刻な影響"@ja.
+kg:id_38 rdf:type cls:c_14025.
+cls:c_14025 rdfs:label "景観破壊"@ja.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "比婆山の景観や騒音への影響"@ja.
+kg:id_39 rdf:type cls:c_1610.
+cls:c_1610 rdfs:label "生活環境悪化"@ja.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "町の観光事業全体への悪影響"@ja.
+kg:id_40 rdf:type cls:c_14026.
+cls:c_14026 rdfs:label "観光被害"@ja.
+kg:id_37 prop:effect kg:id_40.
+kg:id_41 rdfs:label "住民の合意"@ja.
+kg:id_41 rdf:type cls:c_11874.
+cls:c_11874 rdfs:label "住民合意"@ja.
+kg:id_37 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "相当な配慮と対策"@ja.
+kg:id_42 rdf:type cls:c_14027.
+cls:c_14027 rdfs:label "配慮対策"@ja.
+kg:id_37 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "今回の事業"@ja.
+kg:id_43 rdf:type cls:c_170.
+kg:id_44 rdfs:label "山岳信仰や修験道の聖地に対する大きな景観破壊"@ja.
+kg:id_44 rdf:type cls:c_14025.
+kg:id_43 prop:effect kg:id_44.
+kg:id_45 rdfs:label "山岳信仰や修験道の聖地に対する環境破壊"@ja.
+kg:id_45 rdf:type cls:c_13226.
+kg:id_43 prop:effect kg:id_45.
+kg:id_46 rdfs:label "今回の事業を推し進めること"@ja.
+kg:id_46 rdf:type cls:c_2739.
+cls:c_2739 rdfs:label "事業推進"@ja.
+kg:id_47 rdfs:label "人々の敬虔な想いと聖地に対する冒涜"@ja.
+kg:id_47 rdf:type cls:c_14028.
+cls:c_14028 rdfs:label "冒涜"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "今回の事業が先例となること"@ja.
+kg:id_48 rdf:type cls:c_14029.
+cls:c_14029 rdfs:label "先例化"@ja.
+kg:id_49 rdfs:label "日本各地の山岳信仰や修験道に関わる山でどこでも風力発電が可能となり歯止めが効かなくなること"@ja.
+kg:id_49 rdf:type cls:c_14030.
+cls:c_14030 rdfs:label "開発拡大"@ja.
+kg:id_48 prop:effect kg:id_49.
+kg:id_50 rdfs:label "景観破壊の加速度的な進行"@ja.
+kg:id_50 rdf:type cls:c_14025.
+kg:id_51 rdfs:label "ふるさとの風景の喪失"@ja.
+kg:id_51 rdf:type cls:c_14031.
+cls:c_14031 rdfs:label "風景喪失"@ja.
+kg:id_50 prop:effect kg:id_51.
+kg:id_52 rdfs:label "風力発電事業計画"@ja.
+kg:id_52 rdf:type cls:c_88.
+cls:c_88 rdfs:label "風力発電計画"@ja.
+kg:id_53 rdfs:label "撤回"@ja.
+kg:id_53 rdf:type cls:c_1291.
+cls:c_1291 rdfs:label "計画撤回"@ja.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "この事業による森林の開発"@ja.
+kg:id_54 rdf:type cls:c_14011.
+kg:id_55 rdfs:label "周辺の自然環境の変化"@ja.
+kg:id_55 rdf:type cls:c_14032.
+cls:c_14032 rdfs:label "自然環境変化"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_54 prop:effect kg:id_8.
+kg:id_56 rdfs:label "周辺の自然環境や水の流れの変化"@ja.
+kg:id_56 rdf:type cls:c_2655.
+cls:c_2655 rdfs:label "環境変化"@ja.
+kg:id_57 rdfs:label "希少生物やその他の野生動物の生態系への影響"@ja.
+kg:id_57 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_56 prop:effect kg:id_57.
+kg:id_58 rdfs:label "工事"@ja.
+kg:id_58 rdf:type cls:c_106.
+cls:c_106 rdfs:label "工事"@ja.
+kg:id_59 rdfs:label "貴重な植物の伐採"@ja.
+kg:id_59 rdf:type cls:c_14033.
+cls:c_14033 rdfs:label "植物伐採"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "計画地が植生自然度10、8、7に当たる場所に位置すること"@ja.
+kg:id_60 rdf:type cls:c_14034.
+cls:c_14034 rdfs:label "計画地"@ja.
+kg:id_61 rdfs:label "地域の豊かな植生の破壊"@ja.
+kg:id_61 rdf:type cls:c_14035.
+cls:c_14035 rdfs:label "植生破壊"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:id_62 rdfs:label "レッドリスト掲載植物への影響"@ja.
+kg:id_62 rdf:type cls:c_57.
+cls:c_57 rdfs:label "希少植物影響"@ja.
+kg:id_63 rdfs:label "保全"@ja.
+kg:id_63 rdf:type cls:c_14036.
+cls:c_14036 rdfs:label "保全"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "この計画が実現すること"@ja.
+kg:id_64 rdf:type cls:c_14037.
+cls:c_14037 rdfs:label "事業実現"@ja.
+kg:id_65 rdfs:label "地域の景観の大きな変化"@ja.
+kg:id_65 rdf:type cls:c_380.
+cls:c_380 rdfs:label "景観変化"@ja.
+kg:id_64 prop:effect kg:id_65.
+kg:id_66 rdfs:label "健康被害への懸念"@ja.
+kg:id_66 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_64 prop:effect kg:id_66.
+kg:id_67 rdfs:label "この事業が実現する場合"@ja.
+kg:id_67 rdf:type cls:c_14037.
+kg:id_68 rdfs:label "多くのUIターン者が安来市を離れること"@ja.
+kg:id_68 rdf:type cls:c_14038.
+cls:c_14038 rdfs:label "転出増加"@ja.
+kg:id_67 prop:effect kg:id_68.
+kg:id_69 rdfs:label "今後移住を考えている人たちが安来市を選ばないこと"@ja.
+kg:id_69 rdf:type cls:c_14039.
+cls:c_14039 rdfs:label "移住抑制"@ja.
+kg:id_67 prop:effect kg:id_69.
+kg:id_70 rdfs:label "このような事業計画が実現すること"@ja.
+kg:id_70 rdf:type cls:c_14037.
+kg:id_71 rdfs:label "移住者受け入れの努力が無駄になること"@ja.
+kg:id_71 rdf:type cls:c_14040.
+cls:c_14040 rdfs:label "定住支援損失"@ja.
+kg:id_70 prop:effect kg:id_71.
+kg:id_72 rdfs:label "地域住民と行政が移住政策で築き上げてきた地域の絆への大きな損害"@ja.
+kg:id_72 rdf:type cls:c_14041.
+cls:c_14041 rdfs:label "地域関係悪化"@ja.
+kg:id_70 prop:effect kg:id_72.
+kg:id_73 rdfs:label "この件"@ja.
+kg:id_73 rdf:type cls:c_14042.
+cls:c_14042 rdfs:label "事案"@ja.
+kg:id_74 rdfs:label "対策の検討"@ja.
+kg:id_74 rdf:type cls:c_6444.
+cls:c_6444 rdfs:label "対策検討"@ja.
+kg:id_73 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "風力発電施設の建設"@ja.
+kg:id_75 rdf:type cls:c_535.
+cls:c_535 rdfs:label "風力発電施設"@ja.
+kg:id_76 rdfs:label "周辺の景観の大幅な変化"@ja.
+kg:id_76 rdf:type cls:c_380.
+kg:id_75 prop:effect kg:id_76.
+kg:id_77 rdfs:label "風車の景観"@ja.
+kg:id_77 rdf:type cls:c_14043.
+cls:c_14043 rdfs:label "風車景観"@ja.
+kg:id_78 rdfs:label "不動産の景観価値の低下"@ja.
+kg:id_78 rdf:type cls:c_14044.
+cls:c_14044 rdfs:label "不動産価値低下"@ja.
+kg:id_77 prop:effect kg:id_78.
+kg:id_79 rdfs:label "風車の運転中に発生する騒音や振動"@ja.
+kg:id_79 rdf:type cls:c_189.
+cls:c_189 rdfs:label "騒音振動"@ja.
+kg:id_80 rdfs:label "周辺の不動産価値への影響"@ja.
+kg:id_80 rdf:type cls:c_14044.
+kg:id_79 prop:effect kg:id_80.
+kg:id_81 rdfs:label "騒音や振動の影響"@ja.
+kg:id_81 rdf:type cls:c_189.
+kg:id_82 rdfs:label "伝統的な日本家屋や古民家等の不動産の魅力低下"@ja.
+kg:id_82 rdf:type cls:c_14045.
+cls:c_14045 rdfs:label "不動産魅力低下"@ja.
+kg:id_81 prop:effect kg:id_82.
+kg:id_83 rdfs:label "不動産価値の低下"@ja.
+kg:id_83 rdf:type cls:c_14044.
+kg:id_81 prop:effect kg:id_83.
+kg:id_84 rdfs:label "騒音や低周波が届くことへの懸念"@ja.
+kg:id_84 rdf:type cls:c_14046.
+cls:c_14046 rdfs:label "低周波懸念"@ja.
+kg:id_85 rdfs:label "買い手がつかなくなること"@ja.
+kg:id_85 rdf:type cls:c_14047.
+cls:c_14047 rdfs:label "売買困難"@ja.
+kg:id_84 prop:effect kg:id_85.
+kg:id_86 rdfs:label "風力発電施設の建設が不動産価値に影響がある場合"@ja.
+kg:id_86 rdf:type cls:c_14048.
+cls:c_14048 rdfs:label "不動産価値影響"@ja.
+kg:id_87 rdfs:label "事前に適切な補償制度"@ja.
+kg:id_87 rdf:type cls:c_14049.
+cls:c_14049 rdfs:label "補償制度"@ja.
+kg:id_86 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "地域住民との事前の合意"@ja.
+kg:id_88 rdf:type cls:c_11874.
+kg:id_86 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "風力発電事業"@ja.
+kg:id_89 rdf:type cls:c_170.
+kg:id_90 rdfs:label "地域住民が納得するまで説明を継続すること"@ja.
+kg:id_90 rdf:type cls:c_14050.
+cls:c_14050 rdfs:label "説明継続"@ja.
+kg:id_89 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "地域住民からの意見要望に真摯に受け止め適切に対応すること"@ja.
+kg:id_91 rdf:type cls:c_14051.
+cls:c_14051 rdfs:label "意見対応"@ja.
+kg:id_89 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "地域住民へのデメリットの説明不足"@ja.
+kg:id_92 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_89 prop:effect kg:id_92.
+kg:id_93 rdfs:label "貴社からの説明不足"@ja.
+kg:id_93 rdf:type cls:c_84.
+kg:id_94 rdfs:label "東比田地区や赤屋地区の地域民が騒音低周波の影響可能性や風車の大きさを知らないこと"@ja.
+kg:id_94 rdf:type cls:c_155.
+cls:c_155 rdfs:label "情報不足"@ja.
+kg:id_93 prop:effect kg:id_94.
+kg:id_95 rdfs:label "影響の及ぶ地域住民に対して一軒ずつ訪問してデメリットも適切に説明すること"@ja.
+kg:id_95 rdf:type cls:c_14052.
+cls:c_14052 rdfs:label "戸別説明"@ja.
+kg:id_89 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "配慮書段階での説明会を再度開催すること"@ja.
+kg:id_96 rdf:type cls:c_14053.
+cls:c_14053 rdfs:label "説明会再開"@ja.
+kg:id_89 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "方法書の延期"@ja.
+kg:id_97 rdf:type cls:c_2158.
+cls:c_2158 rdfs:label "計画延期"@ja.
+kg:id_89 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "貴社が地域住民の声に耳を傾けないこと"@ja.
+kg:id_98 rdf:type cls:c_13313.
+cls:c_13313 rdfs:label "住民軽視"@ja.
+kg:id_99 rdfs:label "地域住民からの不信感"@ja.
+kg:id_99 rdf:type cls:c_622.
+cls:c_622 rdfs:label "不信感"@ja.
+kg:id_98 prop:effect kg:id_99.
+kg:id_100 rdfs:label "貴社が地域住民に対して適切な説明を果たさない場合"@ja.
+kg:id_100 rdf:type cls:c_14054.
+cls:c_14054 rdfs:label "説明不履行"@ja.
+kg:id_101 rdfs:label "事業を中断し撤退すること"@ja.
+kg:id_101 rdf:type cls:c_7911.
+cls:c_7911 rdfs:label "事業撤退"@ja.
+kg:id_100 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "風力発電所が防空レーダーサイトの約100Km圏内にあること"@ja.
+kg:id_102 rdf:type cls:c_410.
+cls:c_410 rdfs:label "風力発電所"@ja.
+kg:id_103 rdfs:label "敵機検知能力への影響の可能性"@ja.
+kg:id_103 rdf:type cls:c_14055.
+cls:c_14055 rdfs:label "防衛影響"@ja.
+kg:id_102 prop:effect kg:id_103.
+kg:id_104 rdfs:label "防空レーダーへの影響"@ja.
+kg:id_104 rdf:type cls:c_14055.
+kg:id_105 rdfs:label "防衛省や自衛隊への報告や相談"@ja.
+kg:id_105 rdf:type cls:c_14056.
+cls:c_14056 rdfs:label "行政相談"@ja.
+kg:id_104 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "住民が安心できるようにわかりやすくしっかりした説明"@ja.
+kg:id_106 rdf:type cls:c_1005.
+cls:c_1005 rdfs:label "説明要求"@ja.
+kg:id_104 prop:contermeasure kg:id_106.
+kg:id_107 rdfs:label "3000kW以下の風車でも2から3kmの隔離距離での風車騒音"@ja.
+kg:id_107 rdf:type cls:c_12458.
+cls:c_12458 rdfs:label "風車騒音"@ja.
+kg:id_108 rdfs:label "睡眠障害などの健康被害"@ja.
+kg:id_108 rdf:type cls:c_1322.
+kg:id_107 prop:effect kg:id_108.
+kg:id_109 rdfs:label "風車の低周波音の健康被害"@ja.
+kg:id_109 rdf:type cls:c_14057.
+cls:c_14057 rdfs:label "低周波健康被害"@ja.
+kg:id_110 rdfs:label "住民の選択肢が移転しかなくなること"@ja.
+kg:id_110 rdf:type cls:c_14058.
+cls:c_14058 rdfs:label "移転強制"@ja.
+kg:id_109 prop:effect kg:id_110.
+kg:id_111 rdfs:label "自治体行政にとって深刻な問題"@ja.
+kg:id_111 rdf:type cls:c_14059.
+cls:c_14059 rdfs:label "行政問題"@ja.
+kg:id_109 prop:effect kg:id_111.
+kg:id_112 rdfs:label "住居移転の補償条件について地域住民へ具体的に説明すること"@ja.
+kg:id_112 rdf:type cls:c_14060.
+cls:c_14060 rdfs:label "移転補償説明"@ja.
+kg:id_52 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "町有地貸付に締結した地上権設定契約の内容"@ja.
+kg:id_113 rdf:type cls:c_14061.
+cls:c_14061 rdfs:label "契約内容"@ja.
+kg:id_114 rdfs:label "宮城県加美町で地域住民との間で問題が起きていること"@ja.
+kg:id_114 rdf:type cls:c_14062.
+cls:c_14062 rdfs:label "住民問題"@ja.
+kg:id_113 prop:cause kg:id_114.
+kg:id_115 rdfs:label "契約に町が一定以上の債権を放棄する条項が含まれること"@ja.
+kg:id_115 rdf:type cls:c_14063.
+cls:c_14063 rdfs:label "権利放棄条項"@ja.
+kg:id_116 rdfs:label "地域住民が事業終了後の原状回復や事故への適切な対応が求められないと懸念すること"@ja.
+kg:id_116 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_115 prop:effect kg:id_116.
+kg:id_117 rdfs:label "豪雨地震地すべりなどで自然災害が起こること"@ja.
+kg:id_117 rdf:type cls:c_261.
+cls:c_261 rdfs:label "自然災害"@ja.
+kg:id_118 rdfs:label "町側が町の費用と責任で復旧修復をすること"@ja.
+kg:id_118 rdf:type cls:c_14064.
+cls:c_14064 rdfs:label "自治体負担"@ja.
+kg:id_117 prop:effect kg:id_118.
+kg:id_119 rdfs:label "隣地所有者や第三者との訴訟調停仲裁クレームなどの発生"@ja.
+kg:id_119 rdf:type cls:c_14065.
+cls:c_14065 rdfs:label "第三者紛争"@ja.
+kg:id_120 rdfs:label "町が責任と費用で解決すること"@ja.
+kg:id_120 rdf:type cls:c_14064.
+kg:id_119 prop:effect kg:id_120.
+kg:id_121 rdfs:label "事業者が倒産した場合に事業者負担が現金預金および財産に限定されること"@ja.
+kg:id_121 rdf:type cls:c_14066.
+cls:c_14066 rdfs:label "事業者倒産"@ja.
+kg:id_122 rdfs:label "財産の差押えなどができないこと"@ja.
+kg:id_122 rdf:type cls:c_14067.
+cls:c_14067 rdfs:label "差押不能"@ja.
+kg:id_121 prop:effect kg:id_122.
+kg:id_123 rdfs:label "JRE宮城加美という合同会社の資本金がわずか200万円であること"@ja.
+kg:id_123 rdf:type cls:c_14068.
+cls:c_14068 rdfs:label "事業者資力不足"@ja.
+kg:id_124 rdfs:label "20年後に風車をきちんと撤去できるかという不安"@ja.
+kg:id_124 rdf:type cls:c_14069.
+cls:c_14069 rdfs:label "撤去不安"@ja.
+kg:id_123 prop:effect kg:id_124.
+kg:id_125 rdfs:label "風車撤去費用が1基あたり1億円以上かかること"@ja.
+kg:id_125 rdf:type cls:c_14070.
+cls:c_14070 rdfs:label "撤去高コスト"@ja.
+kg:id_126 rdfs:label "町が負担することになる不安"@ja.
+kg:id_126 rdf:type cls:c_14071.
+cls:c_14071 rdfs:label "自治体負担不安"@ja.
+kg:id_125 prop:effect kg:id_126.
+kg:id_127 rdfs:label "20年後の風車撤去について問題がないようにすること"@ja.
+kg:id_127 rdf:type cls:c_14072.
+cls:c_14072 rdfs:label "撤去対策"@ja.
+kg:id_89 prop:contermeasure kg:id_127.
+kg:st_1 rdfs:label "日向山・大出日山の風力発電を考える会"@ja.
+kg:st_1 rdfs:type cls:st_106.
+cls:st_106 rdfs:label "住民団体"@ja.
+kg:op_1 prop:content "脱炭素を進めても進め方によっては環境破壊につながると懸念"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "風力発電は進め方によって環境破壊につながる可能性がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "既存の法令や規制では十分に対応できず住民トラブルが増えていると指摘"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "既存の法令や規制では十分に対応できず自然環境破壊の事例が増えていると指摘"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "保安林を切り拓くことで周辺地域だけでなく河口の市街地にも大きな影響が及ぶと懸念"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "水源地の山の開発で水の流れが変化すると懸念"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "土砂流出による水質汚染を懸念"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "水質汚染は地域の暮らしを支える農業に被害を及ぼすと懸念"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "農業被害は農業従事者の生活を脅かすと指摘"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "地域の魅力である安全な食が損なわれると懸念"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "尾根の開発で山の保水力が低下すると懸念"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "森林伐採や搬入道工事で土砂流出が起きると懸念"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "森林伐採や搬入道工事による水質汚染を懸念"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "除草剤散布による水への影響を懸念"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "洗浄剤流出による水への影響を懸念"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "水にこだわる生産者の製品にも影響が及ぶと懸念"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "国交省の都道府県土地分類基本調査"@ja.
+kg:st_2 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_17 prop:content "雲南まさ土は水で崩壊しやすく開発には十分な研究が必要と注意喚起"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "雨期の山腹崩壊は人家に被害を及ぼしてきたと注意喚起"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "森林喪失で斜面崩壊しやすくなると指摘"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地域はかつて度々土砂災害に見舞われていたと指摘"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "尾根の開発と巨大構造物設置で深層崩落の危険性が高まると不安視"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "不適地開発では余計な土壌改良や岩盤補強が大規模化すると懸念"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "土壌改良や岩盤補強が別の問題を引き起こす可能性を懸念"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "巨大で近代的な建造物が歴史空間の景観を損なうと指摘"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "比婆山の聖域に景観や騒音の影響が及ぶことは許容できないと主張"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "歴史的空間への影響に加え観光全体への悪影響を懸念"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "歴史的景観を守るため住民合意が必要不可欠と主張"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "歴史的景観保全のため十分な配慮と対策が必要と主張"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "山岳信仰と修験道の聖地に大きな景観破壊をもたらすと懸念"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "山岳信仰と修験道の聖地に環境破壊をもたらすと懸念"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "事業推進は信仰心と聖地への冒涜に当たると主張"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "先例化により全国の聖なる山で開発が進み歯止めが効かなくなると懸念"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "景観破壊が進めばふるさとの風景が失われると懸念"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "山岳信仰の観点から計画撤回が妥当と考える"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "森林開発で周辺自然環境が変わると懸念"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "森林開発で水の流れが変化すると懸念"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "希少生物や野生動物の生態系に影響が及ぶと懸念"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "工事で貴重な植物が伐採される恐れがあると指摘"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "豊かな植生の破壊に意を介さない計画ではないかと懸念"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "レッドリスト掲載植物をどのように保全するか説明を求める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "計画実現で地域景観が大きく変わると指摘"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "計画実現により健康被害が懸念されると指摘"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "多くのUIターン者"@ja.
+kg:st_3 rdfs:type cls:st_170.
+cls:st_170 rdfs:label "移住者"@ja.
+kg:op_43 prop:content "事業が実現するなら安来市を離れるつもりである"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_3.
+kg:op_44 prop:content "移住希望者にとって安来市を選ばない理由になると指摘"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "地元の方々"@ja.
+kg:st_4 rdfs:type cls:st_167.
+cls:st_167 rdfs:label "地域住民"@ja.
+kg:op_45 prop:content "移住者を歓迎し地域に溶け込めるようにした努力が無駄になると懸念"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "地域の絆に大きな損害が出る深刻な問題と指摘"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "定住支援への悪影響に対する具体的対策を求める"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "風車建設で周辺景観が大きく変化すると指摘"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "風車景観は不動産の景観価値を下げる可能性があると指摘"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "騒音や振動は周辺の不動産価値に影響を与える可能性が高いと指摘"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "騒音や振動で古民家などの魅力が低下すると指摘"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "騒音や振動で不動産価値が下がる可能性が高いと指摘"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "騒音や低周波への懸念で不動産に買い手がつかなくなる可能性があると指摘"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_1.
+kg:op_54 prop:content "不動産価値への影響があるなら事前に適切な補償制度が必要と主張"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "不動産価値への影響があるなら地域住民との事前合意が必要と主張"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "地域住民が納得するまで説明継続が重要と主張"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_1.
+kg:op_57 prop:content "住民意見を真摯に受け止め適切に対応すべきと主張"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_1.
+kg:op_58 prop:content "地域住民へのデメリット説明が十分でないと指摘"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "東比田地区や赤屋地区の地域民"@ja.
+kg:st_5 rdfs:type cls:st_167.
+kg:op_59 prop:content "十分な説明を受けておらず騒音低周波や風車規模をほとんど知らされていない"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_5.
+kg:op_60 prop:content "影響を受ける住民には戸別訪問でデメリットも説明する対応を求める"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "多くの地域住民"@ja.
+kg:st_6 rdfs:type cls:st_167.
+kg:op_61 prop:content "納得できないまま事業を進めず配慮書段階の説明会を再開催するよう求める"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_6.
+kg:op_62 prop:content "方法書の延期を求める"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_6.
+kg:op_63 prop:content "説明会で意見を聞くと言いながら逆の対応をしており住民の不信感を招いていると指摘"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_1.
+kg:op_64 prop:content "適切な説明を果たさない場合は事業中断と撤退が必要不可欠と主張"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_1.
+kg:op_65 prop:content "風力発電所は防空レーダーの敵機検知能力に影響する可能性があると指摘"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_1.
+kg:op_66 prop:content "防衛省や自衛隊への報告相談と配慮対策が取られているはずだと指摘"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_1.
+kg:op_67 prop:content "地域住民の安全に関わるため具体的対策の分かりやすい説明を求める"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_1.
+kg:op_68 prop:content "国内外で風車騒音による睡眠障害などの健康被害が報告されていると指摘"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_1.
+kg:op_69 prop:content "低周波音で健康被害が生じた場合住民は移転するしかないと指摘"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_1.
+kg:op_70 prop:content "低周波音の健康被害は自治体行政にとっても深刻な問題と指摘"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_1.
+kg:op_71 prop:content "住居移転補償を前提とするなら補償条件の具体的説明が必要と主張"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_1.
+kg:op_72 prop:content "加美町の問題の主因は地上権設定契約の内容にあると指摘"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "地域住民"@ja.
+kg:st_7 rdfs:type cls:st_167.
+kg:op_73 prop:content "原状回復や事故対応が求められない不平等な内容を懸念"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "日本環境保法律家連盟の弁護士ら"@ja.
+kg:st_8 rdfs:type cls:st_37.
+kg:op_74 prop:content "自然災害時の復旧を町負担とする不利益な契約内容を問題視"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_8.
+kg:op_75 prop:content "第三者との紛争解決を町負担とする契約内容を問題視"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_8.
+kg:op_76 prop:content "町が事業者の債権を放棄し差押えできない不利益な契約内容を指摘"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_8.
+kg:op_77 prop:content "資本金200万円の合同会社で将来の風車撤去が可能か不安が残ると指摘"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_1.
+kg:op_78 prop:content "撤去費用が高額で町負担になる不安が残ると指摘"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_8.
+kg:op_79 prop:content "本計画地でも将来の風車撤去に問題がないか明確な考えを示すよう求める"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "世界各国は、脱炭素社会を実現するために再生可能エネルギーに転換しようとしています。その中でも、風力発電は脱炭素を実現する手段として注目されています"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "風力発電は脱炭素を実現する手段として注目されていますが、進め方によっては環境破壊につながる可能性もございます"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "国内各地において、年々増加を続ける太陽光や風力発電施設に対し、既存の法令や規制では十分に対応できていないことが明らかになりつつあり、住民とのトラブルや自然環境の破壊などの事例が増えています"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "国内各地において、年々増加を続ける太陽光や風力発電施設に対し、既存の法令や規制では十分に対応できていないことが明らかになりつつあり、住民とのトラブルや自然環境の破壊などの事例が増えています"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "事業想定区域には、特に水源涵養林という看板が多くあり、ここを切り拓くことは、周辺地域だけでなく河口の市街地にも多大な影響を及ぼす可能性があります"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "水源地の山を切り拓くことによって水の流れが変化したり"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "土砂が頻繁に流出して水質が汚染されてしまう恐れがあります"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "水質の汚染が地域の暮らしを支える生活の根本である農業へ被害を及ぼすと"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "農業従事者の生活に支障が出ることはもちろん"@ja.
+<< kg:id_10 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地域全体としての大きな魅力のひとつである「安全な食」が脅かされます"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "「緑のダム」である山々の尾根を切り開く事は、山の保水力の低下にもつながります"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "大規模な森林伐採や搬入道の工事によって土砂が流出し"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "大規模な森林伐採や搬入道の工事によって土砂が流出し水質汚染が懸念されます"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "建設に伴う除草剤の散布や洗浄剤の流出等も懸念されます"@ja.
+<< kg:id_21 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "建設に伴う除草剤の散布や洗浄剤の流出等も懸念されます"@ja.
+<< kg:id_22 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "農業従事者だけでなく、水への拘りを持った生産者の製品にも影響が考えられます"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "この地域一帯の地質は花崗岩の風化した、いわゆる雲南まさ土であり、水によって崩壊しやすい特性は、カンナ流しによるタタラ製鉄を盛んにし、農地や宅地の造成を容易ならしめる等、開発に利点は多いが反面、雨期には、しばしば山腹崩壊を起し、人家に被害をおよぼしてきた"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "雨期には、しばしば山腹崩壊を起し、人家に被害をおよぼしてきた"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "山々の土砂を支えている木々が失われ、雨水が浸透すると崩壊しやすいため"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "かつては度々土砂災害に見舞われていたと史実に残されています"@ja.
+<< kg:id_31 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "尾根沿いを切り開いて雨水に晒し、数百トンものコンクリートや数十トンもの鋼線を掘削して埋め込み、その上にさらに数百トンの風車を建てれば、深層型崩落の危険性はさらに高くなるのではないかと不安に感じます"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "適地ではない場所へ建設を行おうとすれば、余計な土壌改良や岩盤補強なども大規模になると想定されます"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "そういった行いが思いもよらない別の問題も引き起こす可能性もあります"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "地上40階建てビル相当の巨大且つ近代的な建造物が何基も立ち並ぶ事は、歴史的空間の景観に対する深刻な影響を及ぼすことになります"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "その御神体である聖域に、景観や騒音の影響が及ぶことは古来よりこの山を守り続けてきたご先祖と多くの日本国民にとって到底許容できるものではありません"@ja.
+<< kg:id_37 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "これらの重要な歴史的空間への影響以外にも町の観光事業全体への悪影響を及ぼす懸念がある計画であることは明らかです"@ja.
+<< kg:id_37 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "歴史的な景観を守るためにも、建設計画には住民の合意と相当な配慮と対策が必要不可欠です"@ja.
+<< kg:id_37 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "歴史的な景観を守るためにも、建設計画には住民の合意と相当な配慮と対策が必要不可欠です"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "今回の事業が展開した場合,山岳信仰や修験道の聖地に対して大きな景観・環境の破壊が齎されます"@ja.
+<< kg:id_43 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "今回の事業が展開した場合,山岳信仰や修験道の聖地に対して大きな景観・環境の破壊が齎されます"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "今回の事業を推し進めることは人々の敬虔な想いと聖地に対する冒涜です"@ja.
+<< kg:id_48 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "今回の事業が先例となれば、日本各地に数多くある山岳信仰や修験道に関わる山では、どこでも風力発電が可能となり歯止めが効かなくなります"@ja.
+<< kg:id_50 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "慣れ親しんできた山川大河、美しい森、田園風景の景観破壊が加速度的に進み「ふるさとの風景」が失われていく可能性があります"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "以上山岳信仰の観点から風力発電事業計画の撤回が妥当と考えます"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "この事業による森林の開発によって周辺の自然環境や水の流れが変わり"@ja.
+<< kg:id_54 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "この事業による森林の開発によって周辺の自然環境や水の流れが変わり"@ja.
+<< kg:id_56 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "これらの希少生物やその他の野生動物の生態系に影響を及ぼすことが懸念されます"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "建設予定の山には貴重な植物が生育しており、工事の際に伐採される恐れがあります"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "建設予定地は植生自然度10、8、7に当たる場所に位置します。地域の豊かな植生の破壊に意を介さない計画ではないかと思われます"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "それらについてどのように保全していくのか、貴社のお考えについてお聞かせ下さい"@ja.
+<< kg:id_64 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "この計画が実現すれば、地域の景観が大きく変わり"@ja.
+<< kg:id_64 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "健康被害も懸念されます"@ja.
+<< kg:id_67 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "すでに多くのUIターン者が、この事業が実現する場合は安来市を離れるつもりであることを示しており"@ja.
+<< kg:id_67 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "今後移住を考えている人たちにとっても、安来市を選ばない理由となるでしょう"@ja.
+<< kg:id_70 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "このような事業計画が実現すれば、その努力が無駄になってしまいます"@ja.
+<< kg:id_70 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "地域住民と行政が移住政策で築き上げてきた地域の絆に大きな損害があることは、深刻な問題です"@ja.
+<< kg:id_73 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "この件についてどのような対策をお考えでしょうか"@ja.
+<< kg:id_75 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "風力発電施設の建設により、周辺の景観が大幅に変化することがあります"@ja.
+<< kg:id_77 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "このような風車の景観は、不動産の景観価値を下げる可能性があります"@ja.
+<< kg:id_79 prop:effect kg:id_80 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "風車の運転中に発生する騒音や振動は、周辺の不動産価値にも影響を与える可能性が高いと言えます"@ja.
+<< kg:id_81 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "騒音や振動の影響で、例え伝統的な日本家屋や古民家等であっても不動産の魅力を低下させ"@ja.
+<< kg:id_81 prop:effect kg:id_83 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "不動産価値を下げる可能性が高いと言えます"@ja.
+<< kg:id_84 prop:effect kg:id_85 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "騒音や低周波が届くのではないか?との理由で全く買い手がつかなくなる可能性も十分に起こりえます"@ja.
+<< kg:id_86 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "風力発電施設の建設が不動産価値に影響がある場合には、事前に適切な補償制度や地域住民との事前の合意が必要なはずです"@ja.
+<< kg:id_86 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "風力発電施設の建設が不動産価値に影響がある場合には、事前に適切な補償制度や地域住民との事前の合意が必要なはずです"@ja.
+<< kg:id_89 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "地域住民が納得するまで説明を継続することが重要と考えられます"@ja.
+<< kg:id_89 prop:contermeasure kg:id_91 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "地域住民からの意見・要望に対しても、真摯に受け止め、適切に対応することが求められています"@ja.
+<< kg:id_89 prop:effect kg:id_92 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "地域住民へのデメリットについても十分な説明を行っているとは言い難い状況が見受けられます"@ja.
+<< kg:id_93 prop:effect kg:id_94 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "貴社から十分な説明を受けている人は殆ど存在せず、騒音・低周波の影響が発生する可能性や風車の大きさについてすら無知に等しい状況でした"@ja.
+<< kg:id_89 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "影響の及ぶとされる地域住民に対しては一軒ずつ訪問し、デメリットについても適切に説明する対応を求めます"@ja.
+<< kg:id_89 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "多くの地域住民が納得できないままの状態で事業を押し進めず、配慮書段階での説明会を再度開催するよう求めました"@ja.
+<< kg:id_89 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "加えて方法書の延期を求めました"@ja.
+<< kg:id_98 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "貴社は説明会で市民の意見に耳を傾けると言いながら、実際には真逆の対応をしているため、地域住民から不信感を抱かれています"@ja.
+<< kg:id_100 prop:contermeasure kg:id_101 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "もし貴社が地域住民に対して適切な説明を果たさない場合、事業を中断し、撤退することは必要不可欠と考えられます"@ja.
+<< kg:id_102 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "レーダーサイトの約100Km圏内にある風力発電所が敵機検知能力に影響を与える可能性があることは、既に一般的に知れ渡っている事実です"@ja.
+<< kg:id_104 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "防衛省も風力発電建設時の報告を求めています。そのため、貴社も例外なく防衛省や自衛隊にすでに報告や相談を行い、配慮や対策が取られていることと思います"@ja.
+<< kg:id_104 prop:contermeasure kg:id_106 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "住民が安心できるようにわかりやすくしっかりした説明を求めます"@ja.
+<< kg:id_107 prop:effect kg:id_108 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "これまで国内外で、3000kW以下の風車でも2~3kmの隔離距離で風車騒音による睡眠障害などの健康被害が発生していることが報告されています"@ja.
+<< kg:id_109 prop:effect kg:id_110 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "風車の低周波音の健康被害が生じた場合、住民の選択肢は移転するしか方法はありません"@ja.
+<< kg:id_109 prop:effect kg:id_111 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "自治体行政にとっても深刻な問題です"@ja.
+<< kg:id_52 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "住居移転の補償を前提とした計画であれば、地域住民へ具体的な補償条件についての説明も行っていただく必要があります"@ja.
+<< kg:id_113 prop:cause kg:id_114 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "問題の主な原因は、町有地貸付に締結した地上権設定契約の内容にあります"@ja.
+<< kg:id_115 prop:effect kg:id_116 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "契約には、町が一定以上の債権を放棄する条項が含まれており、地域住民は事業終了後の原状回復や風力発電による事故に対する適切な対応が求められないと不平等な内容を懸念しています"@ja.
+<< kg:id_117 prop:effect kg:id_118 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "例えば、豪雨、地震、地すべりなどで自然災害が起こり、甲乙どちらの責に帰すべきものでない場合、その復旧については、土地貸主である町側(甲)が遅滞なく、町の費用と責任で、復旧・修復をすることと定めている"@ja.
+<< kg:id_119 prop:effect kg:id_120 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "隣地の所有者、または占有者その他第三者との間で訴訟、調停、仲裁、クレームなどが発生した場合は、町がその責任、費用により、遅滞なくこれを解決する"@ja.
+<< kg:id_121 prop:effect kg:id_122 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "町が事業者の債権を放棄することを約束し、財産の差押えなどは出来ないように設定している"@ja.
+<< kg:id_123 prop:effect kg:id_124 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "JRE宮城加美という合同会社で資本金はわずか200万円しかない。この会社が20年後に風車を撤去するとなったときに、果たしてきちんと撤去できるのか"@ja.
+<< kg:id_125 prop:effect kg:id_126 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "風車を撤去にかかる費用は1基あたり1億円以上かかるが、町が負担することになる不安も残る"@ja.
+<< kg:id_89 prop:contermeasure kg:id_127 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "耐用年数が20年の風車の撤去については問題ないと言えるのでしょうか"@ja.
+}

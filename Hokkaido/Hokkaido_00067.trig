@@ -1,0 +1,250 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00067> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電計画"@ja.
+kg:id_1 rdf:type cls:c_12240.
+cls:c_12240 rdfs:label "開発計画"@ja.
+kg:id_2 rdfs:label "非常に崩れやすい地質"@ja.
+kg:id_2 rdf:type cls:c_13330.
+cls:c_13330 rdfs:label "脆弱地質"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "尾根を崩す風車建設工事"@ja.
+kg:id_3 rdf:type cls:c_14542.
+cls:c_14542 rdfs:label "造成工事"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "国定公園内での大規模開発計画"@ja.
+kg:id_4 rdf:type cls:c_11982.
+cls:c_11982 rdfs:label "大規模開発"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "絶滅が危惧される猛禽類の生息地"@ja.
+kg:id_5 rdf:type cls:c_6291.
+cls:c_6291 rdfs:label "希少種生息地"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "土砂崩れ"@ja.
+kg:id_6 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "飲み水に使う水源地への影響"@ja.
+kg:id_7 rdf:type cls:c_78.
+cls:c_78 rdfs:label "水源影響"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "山が傷む"@ja.
+kg:id_8 rdf:type cls:c_13156.
+cls:c_13156 rdfs:label "自然破壊"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "住民の間の分断"@ja.
+kg:id_9 rdf:type cls:c_14843.
+cls:c_14843 rdfs:label "住民分断"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "脱炭素の取り組み"@ja.
+kg:id_10 rdf:type cls:c_8958.
+cls:c_8958 rdfs:label "環境施策"@ja.
+kg:id_11 rdfs:label "自然破壊"@ja.
+kg:id_11 rdf:type cls:c_13156.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "企業の自然配慮不足"@ja.
+kg:id_12 rdf:type cls:c_14844.
+cls:c_14844 rdfs:label "自然配慮不足"@ja.
+kg:id_13 rdfs:label "グリーンウォッシュと見なされる恐れ"@ja.
+kg:id_13 rdf:type cls:c_14845.
+cls:c_14845 rdfs:label "グリーンウォッシュ"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "反対署名を集めて松阪市長や三重県知事に提出"@ja.
+kg:id_14 rdf:type cls:c_14846.
+cls:c_14846 rdfs:label "反対署名"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "風力発電に反対を求める請願"@ja.
+kg:id_15 rdf:type cls:c_14847.
+cls:c_14847 rdfs:label "反対請願"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "事業者が説明を尽くす"@ja.
+kg:id_16 rdf:type cls:c_4068.
+cls:c_4068 rdfs:label "説明対応"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "関係者や地域住民の意見をふまえ再検討"@ja.
+kg:id_17 rdf:type cls:c_7005.
+cls:c_7005 rdfs:label "再検討"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "再エネ事業"@ja.
+kg:id_18 rdf:type cls:c_4057.
+cls:c_4057 rdfs:label "再エネ事業"@ja.
+kg:id_19 rdfs:label "自然環境への影響について情報を提供するプロジェクト"@ja.
+kg:id_19 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_18 prop:contermeasure kg:id_19.
+kg:st_1 rdfs:label "近くに住む農家の成岡篤史さん"@ja.
+kg:st_1 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_1 prop:content "大雨で土砂崩れになる不安がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "松阪市の米倉芳周市議"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_2 prop:content "工事で尾根を崩すと水源地に影響が出ると不安視する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "リニューアブル・ジャパン広報担当者"@ja.
+kg:st_3 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_3 prop:content "科学的な根拠が示されていないと反論する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "工事で尾根を崩すと水源地に影響が出ると不安視する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "環境NGOの日本自然保護協会"@ja.
+kg:st_4 rdfs:type cls:st_158.
+cls:st_158 rdfs:label "環境団体"@ja.
+kg:op_5 prop:content "国内の風力発電計画で最も懸念があると問題視する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_4.
+kg:op_6 prop:content "希少種の生息地を含む計画として強く懸念する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:op_7 prop:content "大雨で土砂崩れになる不安がある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "工事で尾根を崩すと水源地に影響が出ると不安視する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "江戸時代から林業を営む叶林業の堀内楓子さん"@ja.
+kg:st_5 rdfs:type cls:st_1.
+kg:op_9 prop:content "開発が進めば山が傷むと懸念する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "山が金もうけの道具としてめちゃくちゃにされるのは許せない"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "松阪市の竹上真人市長"@ja.
+kg:st_6 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_11 prop:content "住民の間の分断は避けたいと考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "MS＆ADホールディングスの原口真さん"@ja.
+kg:st_7 rdfs:type cls:st_53.
+cls:st_53 rdfs:label "企業"@ja.
+kg:op_12 prop:content "脱炭素の取り組みが自然を破壊していることに気づいていない日本企業は多いと指摘する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_7.
+kg:op_13 prop:content "TNFD開示義務化の際に見せかけの環境配慮と言われないよう考えるべきだと述べる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "成岡篤史さんら住民"@ja.
+kg:st_8 rdfs:type cls:st_5.
+kg:op_14 prop:content "反対の意思を署名提出で示した"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "松阪市議会"@ja.
+kg:st_9 rdfs:type cls:st_89.
+cls:st_89 rdfs:label "議会"@ja.
+kg:op_15 prop:content "反対を求める請願を賛成多数で採択した"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_9.
+kg:op_16 prop:content "住民に受け入れてもらえるよう事業者が説明を尽くすべきだと述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:op_17 prop:content "関係者や地域住民の意見を踏まえて再検討していると説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "企業が自然への影響を把握し開示できるようにする必要がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "この付近には日本列島を東西に横断する断層帯「中央構造線」が通り、「非常に崩れやすい地質」が目立つ"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風車を建てる工事で尾根を崩すと、飲み水に使う水源地に影響が出るのでは"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "この地域には国定公園があり"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "イヌワシやクマタカといった絶滅が危惧される猛禽類の生息が確認されている"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "大雨が降ったら、土砂崩れになるんじゃないかと不安です"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "飲み水に使う水源地に影響が出るのでは"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "開発が進めば山が傷む"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "住民の間の分断は避けたい"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "脱炭素の取り組みが自然を破壊していることに気づいていない日本企業は多い"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "やがてTNFDの開示が義務づけられたとき、グリーンウォッシュ(見せかけの環境配慮)と言われないように考えてほしい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "成岡さんらは3万6千人を超える反対署名を集め、松阪市長や三重県知事に提出"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "22年に風力発電に反対を求める請願が市議会で賛成多数で採択される"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "まずは事業者が受け入れてもらえるように説明を尽くすしかない"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "関係者や地域住民の意見をふまえ再検討している"@ja.
+<< kg:id_18 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "風力などの再エネ事業者に対して、企業活動が自然環境に与える影響について情報を提供するプロジェクトを始めた"@ja.
+}

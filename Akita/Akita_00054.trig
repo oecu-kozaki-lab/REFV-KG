@@ -1,0 +1,282 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00054> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "環境影響"@ja.
+kg:id_2 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "専門家の助言や国内外の最新知見・事例を踏まえ環境影響を回避又は低減すること"@ja.
+kg:id_3 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "地域住民や地元自治体等に丁寧な説明を行い理解を得ること"@ja.
+kg:id_4 rdf:type cls:c_5718.
+cls:c_5718 rdfs:label "説明実施"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "地域住民等から情報収集し影響の程度を調査及び予測して位置・規模等の決定に反映すること"@ja.
+kg:id_5 rdf:type cls:c_13778.
+cls:c_13778 rdfs:label "情報反映"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "方法書に事業の位置・規模等や環境保全配慮の検討内容と結果を記載すること"@ja.
+kg:id_6 rdf:type cls:c_13666.
+cls:c_13666 rdfs:label "文書記載"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "想定区域周辺に既設及び計画中の風力発電所が多数存在すること"@ja.
+kg:id_7 rdf:type cls:c_410.
+cls:c_410 rdfs:label "風力発電所"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "累積的な影響"@ja.
+kg:id_8 rdf:type cls:c_13.
+cls:c_13 rdfs:label "累積影響"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "他事業者との情報共有に努め累積的な影響を回避又は低減すること"@ja.
+kg:id_9 rdf:type cls:c_429.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "鳥類への影響"@ja.
+kg:id_10 rdf:type cls:c_6.
+cls:c_6 rdfs:label "鳥類影響"@ja.
+kg:id_11 rdfs:label "想定区域がガン・カモ・ハクチョウ類等の渡り鳥の主要な移動経路となっている可能性"@ja.
+kg:id_11 rdf:type cls:c_13633.
+cls:c_13633 rdfs:label "移動経路"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "想定区域及びその周辺で沿岸部を生活域とする魚食性鳥類の生息が確認されていること"@ja.
+kg:id_12 rdf:type cls:c_13634.
+cls:c_13634 rdfs:label "鳥類生息"@ja.
+kg:id_10 prop:cause kg:id_12.
+kg:id_13 rdfs:label "当該区域周辺に既設及び計画中の風力発電所が多数存在すること"@ja.
+kg:id_13 rdf:type cls:c_410.
+kg:id_10 prop:cause kg:id_13.
+kg:id_14 rdfs:label "鳥類の移動経路の遮断・阻害"@ja.
+kg:id_14 rdf:type cls:c_13961.
+cls:c_13961 rdfs:label "経路遮断"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "バードストライクの発生"@ja.
+kg:id_15 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "現地調査結果や専門家の助言を踏まえ鳥類への影響を回避又は低減すること"@ja.
+kg:id_16 rdf:type cls:c_429.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "海生生物への影響"@ja.
+kg:id_17 rdf:type cls:c_13635.
+cls:c_13635 rdfs:label "海生生物影響"@ja.
+kg:id_18 rdfs:label "想定区域及びその周辺の海域がハタハタ等の産卵場及び稚魚の生育場となっている可能性"@ja.
+kg:id_18 rdf:type cls:c_13958.
+cls:c_13958 rdfs:label "産卵生育場"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "想定区域及びその周辺の海域がサクラマス等の重要な回遊経路となっている可能性"@ja.
+kg:id_19 rdf:type cls:c_13921.
+cls:c_13921 rdfs:label "回遊経路"@ja.
+kg:id_17 prop:cause kg:id_19.
+kg:id_1 prop:effect kg:id_17.
+kg:id_20 rdfs:label "専門家の助言や最新知見・事例を踏まえ生息状況を適切に把握し海生生物への影響を回避又は低減すること"@ja.
+kg:id_20 rdf:type cls:c_429.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "景観への影響"@ja.
+kg:id_21 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_22 rdfs:label "想定区域周辺に主要な眺望点である本荘マリーナや西目海水浴場等が存在すること"@ja.
+kg:id_22 rdf:type cls:c_13544.
+cls:c_13544 rdfs:label "眺望点"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "眺望点からの眺望景観への影響"@ja.
+kg:id_23 rdf:type cls:c_224.
+kg:id_1 prop:effect kg:id_23.
+kg:id_24 rdfs:label "地域住民等の意見を踏まえ景観への影響を回避又は低減すること"@ja.
+kg:id_24 rdf:type cls:c_429.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "主要な眺望点の設定に当たり地域住民等から情報収集し日常的な生活環境の場からの景観にも十分配慮すること"@ja.
+kg:id_25 rdf:type cls:c_233.
+cls:c_233 rdfs:label "景観配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "専門家の助言や最新知見を踏まえ環境影響の回避又は低減を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "複数の専門家から意見聴取し環境影響評価の客観性及び妥当性の確保を求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "地域住民等への丁寧な説明と理解の取得を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "地域住民等の情報を収集し調査予測結果を事業計画に反映するよう求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "方法書で位置規模等を明確化し環境保全配慮の検討内容と結果の記載を求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "他事業者との情報共有により累積的影響の回避又は低減を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "他事業者との情報共有で累積的影響の回避又は低減を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "既設及び計画中の風力発電所との累積的影響に配慮するよう求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "現地調査結果と専門家助言を踏まえ鳥類影響の回避又は低減を求める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "魚食性鳥類の生息を踏まえ鳥類影響への配慮を求める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "既設及び計画中の風力発電所の存在を踏まえ鳥類影響への配慮を求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "鳥類の移動経路の遮断や阻害の回避又は低減を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "バードストライク発生の回避又は低減を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "位置規模等の決定に当たり鳥類影響の回避又は低減を求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "生息状況を適切に把握した上で海生生物影響の回避又は低減を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "重要な回遊経路を踏まえ海生生物影響の回避又は低減を求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "海生生物への影響が懸念されるため回避又は低減を求める"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "専門家助言と最新知見を踏まえ海生生物の生息状況把握と影響低減を求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "地域住民等の意見と情報収集を踏まえ景観影響への配慮を求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "主要な眺望点からの景観影響の回避又は低減を求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "位置規模等の決定に当たり地域住民等の意見を踏まえ景観影響の回避又は低減を求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "主要眺望点の設定では地域住民等から情報収集し生活環境の場からの景観にも配慮を求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業の実施による環境影響を可能な限り回避又は低減するよう配慮すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "専門家の助言や国内外における最新の知見・事例等を踏まえ、事業の実施による環境影響を可能な限り回避又は低減するよう配慮すること。なお、意見聴取は複数の専門家に対して行うなど、環境影響評価の客観性及び妥当性の確保に努めること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "本事業の実施に当たっては、地域住民や地元自治体等（以下「地域住民等」という。）に丁寧な説明を行い、理解を得るよう努めること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "地域住民等からの情報収集に努め、影響を受けるおそれのある環境要素について、影響の程度を必要に応じて調査及び予測し、その結果を総合的に評価して事業の「位置・規模」及び「配置・構造」の決定に反映すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "方法書においては、事業の位置・規模等を可能な限り明確にし、具体的な環境の保全の配慮に係る検討内容やその結果を記載すること"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "事業実施想定区域（以下「想定区域」という。）周辺には、既設及び計画中の風力発電所が多数存在することから"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本事業の実施による累積的な影響を回避又は低減するよう配慮すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "他事業者との情報共有に努め、本事業の実施による累積的な影響を回避又は低減するよう配慮すること"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "想定区域は、ガン・カモ・ハクチョウ類等の渡り鳥の主要な移動経路となっている可能性がある"@ja.
+<< kg:id_10 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "想定区域及びその周辺では沿岸部を生活域とする魚食性鳥類の生息が確認されている"@ja.
+<< kg:id_10 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "当該区域周辺には既設及び計画中の風力発電所が多数存在することから"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "本事業の実施によるこれら鳥類の移動経路の遮断・阻害やバードストライクの発生が懸念される"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "本事業の実施によるこれら鳥類の移動経路の遮断・阻害やバードストライクの発生が懸念される"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "事業の位置・規模等の決定に当たっては、今後の現地調査の結果や専門家の助言を踏まえ、本事業の実施による鳥類への影響を回避又は低減するよう配慮すること"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "想定区域及びその周辺の海域は、県の魚であるハタハタ等の産卵場及び稚魚の生育場"@ja.
+<< kg:id_17 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "並びに溯河性魚類であるサクラマス等の重要な回遊経路となっている可能性があることから"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "本事業の実施によるこれら海生生物への影響が懸念される"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "専門家の助言や国内外における最新の知見・事例等を踏まえ、可能な限り生息状況を適切に把握した上で、本事業の実施による海生生物への影響を回避又は低減するよう配慮すること"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "想定区域周辺には主要な眺望点である「本荘マリーナ」や「西目海水浴場」等が存在することから"@ja.
+<< kg:id_1 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "本事業の実施によるこれら眺望点からの眺望景観への影響が懸念される"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "事業の位置・規模等の決定に当たっては、地域住民等からの意見を踏まえ、本事業の実施に伴う景観への影響を回避又は低減するよう配慮すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "主要な眺望点の設定に当たっては、地域住民等からの情報収集に努め、日常的な生活環境の場からの景観についても十分に配慮すること"@ja.
+}

@@ -1,0 +1,206 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00015> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "発電所に係る環境影響評価"@ja.
+kg:id_1 rdf:type cls:c_161.
+cls:c_161 rdfs:label "環境影響評価"@ja.
+kg:id_2 rdfs:label "計画段階環境配慮書の作成"@ja.
+kg:id_2 rdf:type cls:c_201.
+cls:c_201 rdfs:label "評価書類作成"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "公告・縦覧"@ja.
+kg:id_3 rdf:type cls:c_90.
+cls:c_90 rdfs:label "公告縦覧"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "説明会の開催"@ja.
+kg:id_4 rdf:type cls:c_94.
+cls:c_94 rdfs:label "説明会開催"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "環境影響評価方法書の作成"@ja.
+kg:id_5 rdf:type cls:c_201.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "一般意見のとりまとめ"@ja.
+kg:id_6 rdf:type cls:c_95.
+cls:c_95 rdfs:label "意見整理"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "環境影響評価に係る調査、予測及び評価の実施"@ja.
+kg:id_7 rdf:type cls:c_202.
+cls:c_202 rdfs:label "調査評価"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "環境影響評価準備書の作成"@ja.
+kg:id_8 rdf:type cls:c_201.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "環境影響評価書の作成"@ja.
+kg:id_9 rdf:type cls:c_201.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "一般への周知"@ja.
+kg:id_10 rdf:type cls:c_102.
+cls:c_102 rdfs:label "周知"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "環境保全の適正な配慮"@ja.
+kg:id_11 rdf:type cls:c_103.
+cls:c_103 rdfs:label "環境配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "報告書の作成・公表"@ja.
+kg:id_12 rdf:type cls:c_203.
+cls:c_203 rdfs:label "報告公表"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:st_1 rdfs:label "一般（住民等）"@ja.
+kg:st_1 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_1 prop:content "配慮書に対する意見を提出する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "環境大臣"@ja.
+kg:st_2 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_2 prop:content "配慮書への意見を示す"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "都道府県知事"@ja.
+kg:st_3 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_3 prop:content "知事意見を示す"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "関係市町村長"@ja.
+kg:st_4 rdfs:type cls:st_11.
+kg:op_4 prop:content "意見を示す"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_4.
+kg:op_5 prop:content "縦覧後に意見を提出する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "説明会を踏まえて意見を提出する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "知事意見を示す"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "意見を示す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "経済産業省"@ja.
+kg:st_5 rdfs:type cls:st_6.
+kg:op_9 prop:content "知事意見や一般意見、事業者見解に配意して方法書を審査する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "事業者"@ja.
+kg:st_6 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_10 prop:content "一般意見をとりまとめ事業者見解を記載して届け出る"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_6.
+kg:op_11 prop:content "調査、予測及び評価を実施する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_6.
+kg:op_12 prop:content "知事意見を示す"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "意見を示す"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "意見を示す"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "知事意見、一般意見、事業者見解に配意し環境大臣の意見を聞いて準備書を審査する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_5.
+kg:op_16 prop:content "評価書を確認し必要に応じて変更命令を出す"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "評価書の遵守等を審査する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "事業実施後に報告書を作成し公表する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_6.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "計画段階環境配慮書 配慮書の作成 一般意見の提出 配慮書への意見 ・環境大臣意見を勘案 知事意見 <配慮書送付後60日程度> 都道府県知事 関係市町村長 意見"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "公告・縦覧 <縦覧期間30日程度> 一般意見の提出 <縦覧後2週間> 公告・縦覧 <縦覧期間1ヶ月> 一般意見の提出"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "説明会の開催 <縦覧後2週間> 一般意見の提出"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "環境影響評価方法書 方法書の作成 知事意見 <意見概要届出後90日以内> 方法書の審査 ・知事意見を勘案 ・一般意見、事業者見解に配意"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "一般意見のとりまとめ 事業者見解を記載して届出 意見概要の送付"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "環境影響評価に係る・調査、予測及び評価の実施"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "環境影響評価準備書 準備書の作成 準備書の審査 ・知事意見を勘案 ・一般意見、事業者見解に配意 ・環境大臣の意見を聞く 知事意見 <意見概要届出後120日以内>"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "環境影響評価書 評価書の作成 評価書の確定 届出 評価書の確認 <期間30日以内> 確定通知(変更命令)"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:text-txt_contents "一般への周知 公告・縦覧 <縦覧期間1ヶ月>"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "環境保全の適正な配慮 工事計画の認可申請・届出 工事計画の審査（評価書の遵守等）"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "事業の実施 報告書の作成・公表"@ja.
+}

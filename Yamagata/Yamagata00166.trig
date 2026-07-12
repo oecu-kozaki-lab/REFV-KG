@@ -1,0 +1,425 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00166> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "国民健康保険税"@ja.
+kg:id_1 rdf:type cls:c_9347.
+cls:c_9347 rdfs:label "公的保険料"@ja.
+kg:id_2 rdfs:label "所得割の税率と均等割額と世帯の平等割の引上げ"@ja.
+kg:id_2 rdf:type cls:c_9348.
+cls:c_9348 rdfs:label "保険料引上げ"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "1世帯当たり年額1万1,748円ほどの引上げ"@ja.
+kg:id_3 rdf:type cls:c_3940.
+cls:c_3940 rdfs:label "負担増"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "被保険者の負担分が年額2,237万2,032円増"@ja.
+kg:id_4 rdf:type cls:c_3940.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "国保事業の健全化"@ja.
+kg:id_5 rdf:type cls:c_9349.
+cls:c_9349 rdfs:label "事業健全化"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "遊佐町西浜コテージ村の条例改正"@ja.
+kg:id_6 rdf:type cls:c_1665.
+cls:c_1665 rdfs:label "条例改正"@ja.
+kg:id_7 rdfs:label "ゴールデンウイークを繁忙期に加えるため"@ja.
+kg:id_7 rdf:type cls:c_9350.
+cls:c_9350 rdfs:label "繁忙期追加"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "指定管理者が町長の承認を得て別に繁忙期を定められるようにするため"@ja.
+kg:id_8 rdf:type cls:c_1008.
+cls:c_1008 rdfs:label "運用変更"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "貸しテント使用料の改正"@ja.
+kg:id_9 rdf:type cls:c_2056.
+cls:c_2056 rdfs:label "使用料改定"@ja.
+kg:id_10 rdfs:label "他市町村の同規模キャンプ場と比べて現状の単価設定がかなり低いため"@ja.
+kg:id_10 rdf:type cls:c_9351.
+cls:c_9351 rdfs:label "料金水準"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "テントの設置撤去清掃などの労務費を賄えないため"@ja.
+kg:id_11 rdf:type cls:c_9352.
+cls:c_9352 rdfs:label "費用不足"@ja.
+kg:id_9 prop:cause kg:id_11.
+kg:id_12 rdfs:label "施設管理者によるサービス維持が不可能になるおそれ"@ja.
+kg:id_12 rdf:type cls:c_9353.
+cls:c_9353 rdfs:label "サービス維持困難"@ja.
+kg:id_9 prop:effect kg:id_12.
+kg:id_13 rdfs:label "利用者へのサービス低下につながるおそれ"@ja.
+kg:id_13 rdf:type cls:c_2060.
+cls:c_2060 rdfs:label "サービス低下"@ja.
+kg:id_9 prop:effect kg:id_13.
+kg:id_14 rdfs:label "使用料を1,650円から3,300円に改正"@ja.
+kg:id_14 rdf:type cls:c_8325.
+cls:c_8325 rdfs:label "料金改定"@ja.
+kg:id_9 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "広畑橋架替に伴う道路改良工事"@ja.
+kg:id_15 rdf:type cls:c_9101.
+cls:c_9101 rdfs:label "道路工事"@ja.
+kg:id_16 rdfs:label "追加予算が生じている"@ja.
+kg:id_16 rdf:type cls:c_9354.
+cls:c_9354 rdfs:label "追加予算"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "これまで約5億8,000万円の工事費がかかっている"@ja.
+kg:id_17 rdf:type cls:c_9355.
+cls:c_9355 rdfs:label "工事費増"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "ゼロカーボンシティ宣言"@ja.
+kg:id_18 rdf:type cls:c_8819.
+cls:c_8819 rdfs:label "宣言"@ja.
+kg:id_19 rdfs:label "地域脱炭素移行・再エネ推進交付金など国の補助金活用を視野に入れたため"@ja.
+kg:id_19 rdf:type cls:c_7544.
+cls:c_7544 rdfs:label "補助金活用"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "エネルギー基本計画改定や地産地消エネルギー協議会設立や洋上風力発電事業など脱炭素の取組が進行しているため"@ja.
+kg:id_20 rdf:type cls:c_8120.
+cls:c_8120 rdfs:label "脱炭素推進"@ja.
+kg:id_18 prop:cause kg:id_20.
+kg:id_21 rdfs:label "町民へ宣言を周知する"@ja.
+kg:id_21 rdf:type cls:c_102.
+cls:c_102 rdfs:label "周知"@ja.
+kg:id_18 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "エネルギー基本計画に再生可能エネルギー導入促進と省エネ推進と温室効果ガス吸収源対策を示す"@ja.
+kg:id_22 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_18 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "臂曲地区の採石事業"@ja.
+kg:id_23 rdf:type cls:c_9356.
+cls:c_9356 rdfs:label "採石事業"@ja.
+kg:id_24 rdfs:label "自然環境保全と水資源涵養機能への影響が懸念される"@ja.
+kg:id_24 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "健全な水循環の保全が住民生活や農業や漁業などの産業育成に関わる"@ja.
+kg:id_25 rdf:type cls:c_8879.
+cls:c_8879 rdfs:label "水循環保全"@ja.
+kg:id_23 prop:effect kg:id_25.
+kg:id_26 rdfs:label "継続的に科学的な調査を行う"@ja.
+kg:id_26 rdf:type cls:c_9357.
+cls:c_9357 rdfs:label "科学調査"@ja.
+kg:id_23 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "町はさらなる調査研究が確実に進むよう十分配慮する"@ja.
+kg:id_27 rdf:type cls:c_9358.
+cls:c_9358 rdfs:label "調査推進"@ja.
+kg:id_23 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "採石法等関係法令"@ja.
+kg:id_28 rdf:type cls:c_9359.
+cls:c_9359 rdfs:label "関係法令"@ja.
+kg:id_29 rdfs:label "健全な水循環の保全等を含む環境保全の視点を明確に取り入れ時代に即した改正を行う"@ja.
+kg:id_29 rdf:type cls:c_1031.
+cls:c_1031 rdfs:label "法改正"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "臂曲地区採石後の跡地"@ja.
+kg:id_30 rdf:type cls:c_9360.
+cls:c_9360 rdfs:label "跡地"@ja.
+kg:id_31 rdfs:label "望ましい景観の回復や災害防止の観点で緑化が重要"@ja.
+kg:id_31 rdf:type cls:c_9361.
+cls:c_9361 rdfs:label "緑化重要性"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "認可された採石計画に緑化は杉でとあるため杉が用いられている"@ja.
+kg:id_32 rdf:type cls:c_9362.
+cls:c_9362 rdfs:label "緑化計画"@ja.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "自然植生で雑草や灌木が生えだしているが県は通常緑化ととらえていない"@ja.
+kg:id_33 rdf:type cls:c_382.
+cls:c_382 rdfs:label "自然植生"@ja.
+kg:id_30 prop:effect kg:id_33.
+kg:id_34 rdfs:label "人工的な植栽等により緑化計画を履行する"@ja.
+kg:id_34 rdf:type cls:c_9363.
+cls:c_9363 rdfs:label "人工緑化"@ja.
+kg:id_30 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "県が事業者に今後も必要な指導を行う"@ja.
+kg:id_35 rdf:type cls:c_9364.
+cls:c_9364 rdfs:label "事業者指導"@ja.
+kg:id_30 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "遊佐町の健全な水循環を保全するための条例"@ja.
+kg:id_36 rdf:type cls:c_7134.
+cls:c_7134 rdfs:label "条例"@ja.
+kg:id_37 rdfs:label "憲法第22条第1項に反しないとされ町の実質的勝訴が確定"@ja.
+kg:id_37 rdf:type cls:c_9365.
+cls:c_9365 rdfs:label "合憲判断"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "公害等調整委員会裁定"@ja.
+kg:id_38 rdf:type cls:c_9366.
+cls:c_9366 rdfs:label "裁定"@ja.
+kg:id_39 rdfs:label "事業者の訴えが棄却され県の処分を適正とする判断が確定"@ja.
+kg:id_39 rdf:type cls:c_9367.
+cls:c_9367 rdfs:label "訴え棄却"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "遊佐町沖洋上風力発電事業"@ja.
+kg:id_40 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_41 rdfs:label "温室効果ガス削減の必要性と東日本大震災の教訓を踏まえた再生可能エネルギー利活用"@ja.
+kg:id_41 rdf:type cls:c_8947.
+cls:c_8947 rdfs:label "再エネ推進"@ja.
+kg:id_40 prop:cause kg:id_41.
+kg:id_42 rdfs:label "町民とくに漁業関係者等との合意事項の尊重と履行が重要"@ja.
+kg:id_42 rdf:type cls:c_9368.
+cls:c_9368 rdfs:label "合意履行"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "経済的効果への強い期待と町民にとって幅広いメリットが期待される"@ja.
+kg:id_43 rdf:type cls:c_715.
+cls:c_715 rdfs:label "経済効果"@ja.
+kg:id_40 prop:effect kg:id_43.
+kg:id_44 rdfs:label "離岸距離や景観への影響について関心が高い"@ja.
+kg:id_44 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_40 prop:effect kg:id_44.
+kg:id_45 rdfs:label "風車完成後は程度の差はあっても景観への影響は排除できない"@ja.
+kg:id_45 rdf:type cls:c_224.
+kg:id_40 prop:effect kg:id_45.
+kg:id_46 rdfs:label "町長が法定協議会で町民の思いを的確に伝える"@ja.
+kg:id_46 rdf:type cls:c_9369.
+cls:c_9369 rdfs:label "意見伝達"@ja.
+kg:id_40 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "議会として当該事業に係る議論の場を引き続き確保する"@ja.
+kg:id_47 rdf:type cls:c_9370.
+cls:c_9370 rdfs:label "議論確保"@ja.
+kg:id_40 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "調査等が不十分な事項は適宜追完する"@ja.
+kg:id_48 rdf:type cls:c_9371.
+cls:c_9371 rdfs:label "調査補完"@ja.
+kg:id_40 prop:contermeasure kg:id_48.
+kg:st_1 rdfs:label "遊佐町議会議員 佐藤光保"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "町民の負担増になるため引上げ案に反対"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "確実に町民の負担増となる内容だと指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "税率引上げで被保険者全体の支払額が増えると確認"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "遊佐町議会議員 齋藤武"@ja.
+kg:st_2 rdfs:type cls:st_16.
+kg:op_4 prop:content "ゴールデンウイークの定義や行政用語としての適切性を確認"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "利用者や受付スタッフが混乱しない運用を求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "遊佐町議会議員 佐藤俊太郎"@ja.
+kg:st_3 rdfs:type cls:st_16.
+kg:op_6 prop:content "1,650円を3,300円に改める根拠を質問"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "貸しテント料金であり持込みテントには発生しないことを確認"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "遊佐町議会議員 阿部満吉"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_8 prop:content "他市町では追加予算はなかなかあり得ないとして工事完了を求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "この日程と金額で完成することを期待"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "遊佐町議会議員 髙橋冠治"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_10 prop:content "もっと早く宣言できなかったのかと質問"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "宣言をどう町民に伝え実際の排出削減に生かすかが重要と指摘"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "遊佐町議会議員 菅原和幸"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_12 prop:content "宣言後は地域特性を生かした特色ある取組を迅速に進めるべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "鳥海山麓臂曲地区岩石採取に係る調査特別委員会"@ja.
+kg:st_7 rdfs:type cls:st_50.
+cls:st_50 rdfs:label "委員会"@ja.
+kg:op_13 prop:content "健全な水循環保全のため継続的な科学的調査研究を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_7.
+kg:op_14 prop:content "地下水と湧水を公共水として扱い予防原則を重視すべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_7.
+kg:op_15 prop:content "新たな知見の蓄積が予防原則の補強につながると提言"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_7.
+kg:op_16 prop:content "関係省庁へ法改正を求める意見書を提出"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_7.
+kg:op_17 prop:content "条例の合憲判断は画期的で予防原則を認めた意義が大きい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "遊佐町沖洋上風力発電事業計画に係る調査等特別委員会"@ja.
+kg:st_8 rdfs:type cls:st_50.
+kg:op_18 prop:content "再生可能エネルギー活用は進めるべきだが合意事項の尊重が不可欠"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_8.
+kg:op_19 prop:content "推進にあたり合意事項を守ることが重要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "酒田市議会建設経済常任委員会"@ja.
+kg:st_9 rdfs:type cls:st_50.
+kg:op_20 prop:content "基地港湾指定に伴う港湾整備と経済波及効果に強い期待を示す"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "遊佐沖洋上風力発電を考える会"@ja.
+kg:st_10 rdfs:type cls:st_106.
+cls:st_106 rdfs:label "住民団体"@ja.
+kg:op_21 prop:content "離岸距離や景観や超低周波や進め方に疑問を持つ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_10.
+kg:op_22 prop:content "景観影響を認めた上で双方の議論を始めるべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_8.
+kg:op_23 prop:content "町長に政策提言の趣旨に即した対応を強く求める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "今回国民健康保険税の所得割の税率、それから均等割額、世帯の平等割を引き上げたことによって"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "令和４年度が16万901円、それから５年度が17万2,649円ということで、年額で１万1,748円ほどの引上げ"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "令和４年度については２億6,471万4,434円、令和５年度については２億8,708万6,466円ということで、年額で2,237万2,032円の増"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:text-txt_contents "国保事業の健全化という観点で今回この引上げをした"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "現状の別表第１の備考中に「ゴールデンウイークの期間、」というのを加えて"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "指定管理者は町長の承認を得て別に定める期間を繁忙期として定めることができる"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "他市町村の同規模キャンプ場の同程度のテントの使用料と比較いたしますと、かなり現状では低い単価設定となっている"@ja.
+<< kg:id_9 prop:cause kg:id_11 >>
+    prop:text-txt_contents "テントの設置ですとか撤去ですとか清掃など、そういった労務に対する費用を賄える額ではなくなっている"@ja.
+<< kg:id_9 prop:effect kg:id_12 >>
+    prop:text-txt_contents "現在は、施設管理者によりますサービスによるところが大きくなっております。この状態を維持することは、施設管理者側でも不可能である"@ja.
+<< kg:id_9 prop:effect kg:id_13 >>
+    prop:text-txt_contents "これを維持した結果、利用者へのサービス低下にもつながるおそれがある"@ja.
+<< kg:id_9 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "現状では1,650円の規定ではございますが、3,300円という規定に変更させていただきたい"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "この広畑橋は大分工期も、予算も追加予算あったり、大変だったと思います"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これまで約５億8,000万円ほど工事費かけている"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "そういう補助金の活用も今視野に入れて検討している"@ja.
+<< kg:id_18 prop:cause kg:id_20 >>
+    prop:text-txt_contents "今年度のエネルギー基本計画の改定の中で地産地消、エネルギー協議会というものも今設立というところで動き出し始めているという状況。さらには先日の法定協議会で意見の取りまとめが終わりました遊佐町沖の洋上風力発電事業も進んでいる"@ja.
+<< kg:id_18 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "本議会で議決をいただいた後、町民の皆様にも宣言をしたという当然周知をさせていただきます"@ja.
+<< kg:id_18 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "今後再生可能エネルギーの設備の導入促進、例えばバイオ炭の話もございますし、そういうところも含めてですけれども、あと省エネの推進、また温室効果ガス吸収源対策というような大きなくくりの観点の中から、エネルギー基本計画の中にそれを示していきたい"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "自然環境の保全と水資源涵養機能を保全するために、採石事業が及ぼす影響についての調査研究"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "健全な水循環を保全することは、住民の生活、農業・漁業をはじめとする産業育成に欠かせない"@ja.
+<< kg:id_23 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "継続的に科学的な調査をすることにより新たな知見が得られれば、予防原則の補強にもつながる可能性がある"@ja.
+<< kg:id_23 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "さらなる調査研究が確実に進むよう、町は十分に配慮されたい"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "採石法・森林法等関係法令に、健全な水循環の保全等を含む環境保全の視点を明確に取り入れ、時代に即した改正を行うこと"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:text-txt_contents "採石後、跡地の緑化が確実に行われることが、望ましい景観の回復や災害防止などの観点から重要である"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:text-txt_contents "認可された採石計画に「緑化は杉で」とあるため、杉が用いられている"@ja.
+<< kg:id_30 prop:effect kg:id_33 >>
+    prop:text-txt_contents "現場はある程度自然植生により、雑草や灌木が生えだしているが、県としては自然植生を緑化ととらえることは通常ない"@ja.
+<< kg:id_30 prop:contermeasure kg:id_34 >>
+    prop:text-txt_contents "「緑化計画」なので人工的な植栽等により計画を履行すべきと考えている"@ja.
+<< kg:id_30 prop:contermeasure kg:id_35 >>
+    prop:text-txt_contents "当該事業者に対しては、今後も必要な指導を行っていく"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "最高裁は、昭和47年11月22日の大法廷判決の趣旨に照らし町の条例は憲法第22条第１項（営業の自由）に反しないため合憲と判示し、提訴から約５年に及ぶ裁判闘争は決着し、町の実質的勝訴が確定した"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:text-txt_contents "当該採石事業者の訴えは令和５年３月23日の東京高裁の判決で棄却されている。この判決に対する不服申し立て期日までに、当該採石事業者から不服申し立てはなく、判決内容が確定した"@ja.
+<< kg:id_40 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "温室効果ガスの削減の必要性は衆目のほぼ一致するところであり、東日本大震災の教訓を踏まえ、再生可能エネルギーの利活用は大いに図られるべき"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "当該事業の推進にあたっては、議論を積み重ね、町民、特に漁業関係者等との合意事項が尊重され、履行されることが重要"@ja.
+<< kg:id_40 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "経済界からは当該事業の経済的効果に強い期待が寄せられており、町民にとって幅広いメリットも期待されるところである"@ja.
+<< kg:id_40 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "当該事業の町民議論の中で、離岸距離や景観への影響について関心が高い"@ja.
+<< kg:id_40 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "確かに風車完成後、程度は別にせよ景観への影響は排除できない"@ja.
+<< kg:id_40 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "町長は法定協議会における町民を代表する唯一の構成員として、町民の思いを的確に伝えられたい"@ja.
+<< kg:id_40 prop:contermeasure kg:id_47 >>
+    prop:text-txt_contents "議会として当該事業に係る議論の場は引き続き確保すべきである"@ja.
+<< kg:id_40 prop:contermeasure kg:id_48 >>
+    prop:text-txt_contents "調査等が不十分な事項は適宜追完する必要もある"@ja.
+}

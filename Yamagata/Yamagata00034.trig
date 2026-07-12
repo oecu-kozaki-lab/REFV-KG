@@ -1,0 +1,368 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00034> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "県営風力発電事業（仮称）"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "環境影響評価の結果を事業計画に適切に反映させる"@ja.
+kg:id_2 rdf:type cls:c_529.
+cls:c_529 rdfs:label "評価結果の反映"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "事業の実施過程において評価結果の検証を行う"@ja.
+kg:id_3 rdf:type cls:c_530.
+cls:c_530 rdfs:label "評価結果の検証"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "環境影響評価の結果に基づく環境保全措置を丁寧に実施する"@ja.
+kg:id_4 rdf:type cls:c_9.
+cls:c_9 rdfs:label "環境保全措置"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "事後調査を丁寧に実施する"@ja.
+kg:id_5 rdf:type cls:c_17.
+cls:c_17 rdfs:label "事後調査"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "環境監視を稼働中は継続する"@ja.
+kg:id_6 rdf:type cls:c_8.
+cls:c_8 rdfs:label "環境監視"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "地域住民との適切なコミュニケーションを図る"@ja.
+kg:id_7 rdf:type cls:c_442.
+cls:c_442 rdfs:label "住民対話"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "事後調査結果を記載した報告書を作成し知事及び酒田市長に送付する"@ja.
+kg:id_8 rdf:type cls:c_531.
+cls:c_531 rdfs:label "調査結果の報告"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "事後調査の結果の効果的な公表方法を検討し環境影響評価書に記載する"@ja.
+kg:id_9 rdf:type cls:c_532.
+cls:c_532 rdfs:label "公表方法の検討"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "工事中及び供用後の環境保全上の問題"@ja.
+kg:id_10 rdf:type cls:c_533.
+cls:c_533 rdfs:label "環境問題"@ja.
+kg:id_11 rdfs:label "速やかに適切な措置を講じる"@ja.
+kg:id_11 rdf:type cls:c_534.
+cls:c_534 rdfs:label "対応措置"@ja.
+kg:id_10 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "風力発電施設の設置"@ja.
+kg:id_12 rdf:type cls:c_535.
+cls:c_535 rdfs:label "風力発電施設"@ja.
+kg:id_13 rdfs:label "風況の変化"@ja.
+kg:id_13 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風況変化"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "堆砂量の変化"@ja.
+kg:id_14 rdf:type cls:c_536.
+cls:c_536 rdfs:label "堆砂変化"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "砂丘の植生の変化等"@ja.
+kg:id_15 rdf:type cls:c_537.
+cls:c_537 rdfs:label "植生変化"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "風力発電施設周辺の堆砂量の事後調査を実施する"@ja.
+kg:id_16 rdf:type cls:c_17.
+kg:id_14 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "風力発電施設が6基存在すること"@ja.
+kg:id_17 rdf:type cls:c_535.
+kg:id_18 rdfs:label "バードストライクの累積的影響"@ja.
+kg:id_18 rdf:type cls:c_538.
+cls:c_538 rdfs:label "鳥類衝突影響"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "再評価を行いその結果を環境影響評価書に記載する"@ja.
+kg:id_19 rdf:type cls:c_539.
+cls:c_539 rdfs:label "影響再評価"@ja.
+kg:id_18 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "本事業の事業実施区域"@ja.
+kg:id_20 rdf:type cls:c_404.
+cls:c_404 rdfs:label "事業区域"@ja.
+kg:id_21 rdfs:label "我が国有数の渡り鳥の飛来地であり野生生物の保護上重要な地域"@ja.
+kg:id_21 rdf:type cls:c_540.
+cls:c_540 rdfs:label "重要生息地"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "バードストライク"@ja.
+kg:id_22 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_23 rdfs:label "学識経験者から助言を得ながら対策を講ずる"@ja.
+kg:id_23 rdf:type cls:c_541.
+cls:c_541 rdfs:label "対策実施"@ja.
+kg:id_22 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "他の事業のモデルとなるよう積極的な環境保全措置を実施する"@ja.
+kg:id_24 rdf:type cls:c_9.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "車両や人の侵入"@ja.
+kg:id_25 rdf:type cls:c_542.
+cls:c_542 rdfs:label "人の侵入"@ja.
+kg:id_26 rdfs:label "コアジサシの繁殖地への人為的な影響"@ja.
+kg:id_26 rdf:type cls:c_543.
+cls:c_543 rdfs:label "繁殖地影響"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "コアジサシの繁殖地への影響"@ja.
+kg:id_27 rdf:type cls:c_543.
+kg:id_28 rdfs:label "風力発電施設以外の様々な要因を整理し因果関係を明らかにした上で適切な保全措置を検討する"@ja.
+kg:id_28 rdf:type cls:c_544.
+cls:c_544 rdfs:label "保全措置の検討"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "コアジサシの保全"@ja.
+kg:id_29 rdf:type cls:c_157.
+cls:c_157 rdfs:label "鳥類保全"@ja.
+kg:id_30 rdfs:label "繁殖行動の時期にあたる5～8月は砂草地における工事を実施しない"@ja.
+kg:id_30 rdf:type cls:c_545.
+cls:c_545 rdfs:label "工事回避"@ja.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "実際の状況も踏まえながら保全措置が適切なものとなるよう柔軟に対応する"@ja.
+kg:id_31 rdf:type cls:c_546.
+cls:c_546 rdfs:label "柔軟対応"@ja.
+kg:id_29 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "事業実施"@ja.
+kg:id_32 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_33 rdfs:label "クロマツ海岸林のマツクイムシ被害"@ja.
+kg:id_33 rdf:type cls:c_547.
+cls:c_547 rdfs:label "森林被害"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "現状を把握しその内容を環境影響評価書に記載する"@ja.
+kg:id_34 rdf:type cls:c_548.
+cls:c_548 rdfs:label "現状把握"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "移植による植物の定着"@ja.
+kg:id_35 rdf:type cls:c_549.
+cls:c_549 rdfs:label "植物定着"@ja.
+kg:id_36 rdfs:label "不確実性が高い"@ja.
+kg:id_36 rdf:type cls:c_550.
+cls:c_550 rdfs:label "高不確実性"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "消失面積の大きい在来植物群落"@ja.
+kg:id_37 rdf:type cls:c_511.
+cls:c_511 rdfs:label "植物群落"@ja.
+kg:id_38 rdfs:label "移植及びその後の管理方法が重要"@ja.
+kg:id_38 rdf:type cls:c_551.
+cls:c_551 rdfs:label "移植管理"@ja.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "仮設ヤードの在来植物群落"@ja.
+kg:id_39 rdf:type cls:c_511.
+kg:id_40 rdfs:label "学識経験者等の意見を聞きながら具体的な移植の計画を環境影響評価書に記載する"@ja.
+kg:id_40 rdf:type cls:c_121.
+cls:c_121 rdfs:label "移植計画"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:st_1 rdfs:label "山形県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "評価結果を事業計画に適切に反映すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "実施過程で評価結果を検証すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "環境保全措置を丁寧に実施すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "事後調査を丁寧に実施すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "環境監視を稼働中継続すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "地域住民と適切にコミュニケーションを図るべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "事後調査結果を報告書にまとめ知事と酒田市長へ送付すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "事後調査結果の効果的な公表方法を検討し評価書に記載すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "予測し得ない問題が生じた場合は速やかに適切な措置を講ずべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "施設設置により風況が変化すると見込まれる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "風況の変化に伴い堆砂量が変化すると予測される"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "堆砂量の変化は砂丘の植生の変化等に影響するおそれがある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "施設周辺の堆砂量の事後調査を実施すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "6基存在を前提にバードストライクの累積的影響を評価すべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "累積的影響を再評価し結果を評価書に記載すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "事業区域は渡り鳥の飛来地で野生生物保護上重要な地域である"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "学識経験者の助言を得ながらバードストライク対策を講ずべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "他事業のモデルとなるよう積極的な環境保全措置を実施すべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "車両や人の侵入などによる人為的影響が想定される"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "施設以外の要因も整理し因果関係を明らかにして保全措置を検討すべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "繁殖期の5～8月は砂草地で工事を実施しない措置をとる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "実際の状況を踏まえて保全措置が適切となるよう柔軟に対応すべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "事業実施によるマツクイムシ被害への影響有無を評価できるようにすべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "現状を把握し評価書に記載すべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "移植による植物の定着は不確実性が高い"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "消失面積が大きい場合は移植とその後の管理方法が重要である"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "学識経験者等の意見を聞きながら具体的な移植計画を評価書に記載すべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "環境影響評価の結果を事業計画に適切に反映させる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "事業の実施過程において評価結果の検証を行うこと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "環境影響評価の結果に基づく環境保全措置及び事後調査について、丁寧に実施すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "環境影響評価の結果に基づく環境保全措置及び事後調査について、丁寧に実施すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "なお、環境監視については、稼働中は継続すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "今後の事業実施に向けた手続きを進めるにあたっては、地域住民との適切なコミュニケーションを図ること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "事後調査を行った結果については、その結果を記載した報告書を作成し、知事及び酒田市長に送付すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "事後調査の結果の効果的な公表の方法について検討し、その内容を環境影響評価書に記載すること"@ja.
+<< kg:id_10 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "工事中及び供用後に現段階で予測し得ない環境保全上の問題が生じた場合は、速やかに適切な措置を講じること"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "風力発電施設の設置による風況の変化"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "風況の変化に伴う堆砂量の変化が予測される"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "堆砂量の変化は、砂丘の植生の変化等に影響を及ぼすおそれがある"@ja.
+<< kg:id_14 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "風力発電施設周辺の堆砂量の事後調査を実施すること"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "風力発電施設が６基存在することを前提として、両事業で得られた鳥類の飛翔観察データ等を活用したバードストライクの累積的影響の再評価を行い"@ja.
+<< kg:id_18 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "バードストライクの累積的影響の再評価を行い、その結果を環境影響評価書に記載すること"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "本事業の事業実施区域は、我が国有数の渡り鳥の飛来地として国指定最上川河口鳥獣保護区に指定されており、野生生物の保護上重要な地域である"@ja.
+<< kg:id_22 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "例えば、学識経験者から助言を得ながら、バードストライクの対策を講ずる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "他の事業のモデルとなるよう積極的な環境保全措置を実施すること"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "コアジサシの繁殖地への影響については、車両や人の侵入などの人為的な影響も想定される"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "風力発電施設以外の様々な要因を整理し、因果関係を明らかにした上で、適切な保全措置を検討すること"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "コアジサシの保全措置として、繁殖行動の時期にあたる５～８月は砂草地における工事を実施しないこととしている"@ja.
+<< kg:id_29 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "実際の状況も踏まえながら、保全措置が適切なものとなるよう、柔軟に対応すること"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "事業実施区域の東側に生育するクロマツ海岸林のマツクイムシ被害について、事業実施による影響の有無を事後評価することができるよう"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "現状を把握し、その内容を環境影響評価書に記載すること"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "移植による植物の定着については、不確実性が高い"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "消失面積の大きいものについては、移植及びその後の管理方法が重要である"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "学識経験者等の意見を聞きながら、具体的な移植の計画を環境影響評価書に記載すること"@ja.
+}

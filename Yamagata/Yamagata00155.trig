@@ -1,0 +1,673 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00155> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新型コロナ感染症"@ja.
+kg:id_1 rdf:type cls:c_1345.
+cls:c_1345 rdfs:label "感染症"@ja.
+kg:id_2 rdfs:label "高齢者や介護施設従事者へのワクチン接種"@ja.
+kg:id_2 rdf:type cls:c_2371.
+cls:c_2371 rdfs:label "ワクチン接種"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "一般高齢者への集団接種"@ja.
+kg:id_3 rdf:type cls:c_2371.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "会場の広さや人の流れや分担を工夫した接種運営"@ja.
+kg:id_4 rdf:type cls:c_8777.
+cls:c_8777 rdfs:label "接種運営"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "副反応等で対応するケースは出ていない"@ja.
+kg:id_5 rdf:type cls:c_8778.
+cls:c_8778 rdfs:label "副反応なし"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "寝たきり等で接種会場に来ることができない高齢者の把握と対応検討"@ja.
+kg:id_6 rdf:type cls:c_3522.
+cls:c_3522 rdfs:label "接種対応"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "広報等を活用した情報提供と接種勧奨"@ja.
+kg:id_7 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "余ったワクチンを保育園の保育士等に接種して有効活用"@ja.
+kg:id_8 rdf:type cls:c_2371.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "65歳未満へのワクチン接種開始を目指す"@ja.
+kg:id_9 rdf:type cls:c_2371.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "情報が錯綜していること"@ja.
+kg:id_10 rdf:type cls:c_8779.
+cls:c_8779 rdfs:label "情報錯綜"@ja.
+kg:id_1 prop:cause kg:id_10.
+kg:id_11 rdfs:label "実施主体の市町村等が非常に戸惑う"@ja.
+kg:id_11 rdf:type cls:c_8780.
+cls:c_8780 rdfs:label "戸惑い"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "現役世代の接種が終わるまでは気を許せない状況"@ja.
+kg:id_12 rdf:type cls:c_8781.
+cls:c_8781 rdfs:label "警戒状態"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "変異株の感染拡大"@ja.
+kg:id_13 rdf:type cls:c_1168.
+cls:c_1168 rdfs:label "感染拡大"@ja.
+kg:id_14 rdfs:label "若い人や四、五十代の重症化率が高くなる"@ja.
+kg:id_14 rdf:type cls:c_8782.
+cls:c_8782 rdfs:label "重症化"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "企業への理解要請と平日接種の調整"@ja.
+kg:id_15 rdf:type cls:c_5407.
+cls:c_5407 rdfs:label "協力要請"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "日曜日も含めた接種の協議"@ja.
+kg:id_16 rdf:type cls:c_8783.
+cls:c_8783 rdfs:label "接種協議"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "コロナ禍"@ja.
+kg:id_17 rdf:type cls:c_1168.
+kg:id_18 rdfs:label "夕日祭り花火大会とコンサートの中止"@ja.
+kg:id_18 rdf:type cls:c_2149.
+cls:c_2149 rdfs:label "行事中止"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "ブルーラインマラソンの来年への延期"@ja.
+kg:id_19 rdf:type cls:c_4468.
+cls:c_4468 rdfs:label "行事延期"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "海開きを感染症対策と安全面を考慮して実施"@ja.
+kg:id_20 rdf:type cls:c_8784.
+cls:c_8784 rdfs:label "行事実施"@ja.
+kg:id_17 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "ツーデーマーチを1日限り参加者限定出発時間分散で実施"@ja.
+kg:id_21 rdf:type cls:c_8784.
+kg:id_17 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "イベント開催時の十分な間隔確保と参加者管理と感染防止対策の徹底"@ja.
+kg:id_22 rdf:type cls:c_2142.
+cls:c_2142 rdfs:label "感染対策"@ja.
+kg:id_17 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "多くの行事やイベントの縮小延期中止"@ja.
+kg:id_23 rdf:type cls:c_8785.
+cls:c_8785 rdfs:label "行事縮小"@ja.
+kg:id_17 prop:effect kg:id_23.
+kg:id_24 rdfs:label "町民が行わないことに慣れてきた"@ja.
+kg:id_24 rdf:type cls:c_8786.
+cls:c_8786 rdfs:label "意識変化"@ja.
+kg:id_17 prop:effect kg:id_24.
+kg:id_25 rdfs:label "少子高齢化"@ja.
+kg:id_25 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_17 prop:cause kg:id_25.
+kg:id_26 rdfs:label "地域行事を維持していくことが困難"@ja.
+kg:id_26 rdf:type cls:c_8787.
+cls:c_8787 rdfs:label "行事維持困難"@ja.
+kg:id_17 prop:effect kg:id_26.
+kg:id_27 rdfs:label "地域行事"@ja.
+kg:id_27 rdf:type cls:c_8788.
+cls:c_8788 rdfs:label "地域行事"@ja.
+kg:id_28 rdfs:label "コロナ感染状況に応じた見直しや再構築"@ja.
+kg:id_28 rdf:type cls:c_8789.
+cls:c_8789 rdfs:label "行事見直し"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "縮めて充実する見直し"@ja.
+kg:id_29 rdf:type cls:c_8789.
+kg:id_27 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "新遊佐小学校"@ja.
+kg:id_30 rdf:type cls:c_8790.
+cls:c_8790 rdfs:label "学校"@ja.
+kg:id_31 rdfs:label "教育課程に関わる地域行事の検討"@ja.
+kg:id_31 rdf:type cls:c_8791.
+cls:c_8791 rdfs:label "行事検討"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "読み聞かせや自然教室やジオパーク学習の実施"@ja.
+kg:id_32 rdf:type cls:c_8636.
+cls:c_8636 rdfs:label "学習活動"@ja.
+kg:id_30 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "四大祭について学んでいく"@ja.
+kg:id_33 rdf:type cls:c_8792.
+cls:c_8792 rdfs:label "地域学習"@ja.
+kg:id_30 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "シルバー人材センター登録者の減少"@ja.
+kg:id_34 rdf:type cls:c_8793.
+cls:c_8793 rdfs:label "登録者減少"@ja.
+kg:id_35 rdfs:label "定年延長や再雇用"@ja.
+kg:id_35 rdf:type cls:c_8794.
+cls:c_8794 rdfs:label "雇用延長"@ja.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "定期的な仕事場を求めており短期的な仕事を受け入れにくいこと"@ja.
+kg:id_36 rdf:type cls:c_8795.
+cls:c_8795 rdfs:label "就業志向"@ja.
+kg:id_34 prop:cause kg:id_36.
+kg:id_37 rdfs:label "春作業の派遣中止"@ja.
+kg:id_37 rdf:type cls:c_8796.
+cls:c_8796 rdfs:label "派遣中止"@ja.
+kg:id_34 prop:effect kg:id_37.
+kg:id_38 rdfs:label "播種作業や田植作業等への大きな影響"@ja.
+kg:id_38 rdf:type cls:c_8797.
+cls:c_8797 rdfs:label "農作業停滞"@ja.
+kg:id_34 prop:effect kg:id_38.
+kg:id_39 rdfs:label "農業労働力不足"@ja.
+kg:id_39 rdf:type cls:c_630.
+cls:c_630 rdfs:label "労働力不足"@ja.
+kg:id_40 rdfs:label "農地の集積により担い手1人当たりの経営規模が拡大していること"@ja.
+kg:id_40 rdf:type cls:c_8798.
+cls:c_8798 rdfs:label "経営規模拡大"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "大規模農家等の農繁期の影響が懸念される"@ja.
+kg:id_41 rdf:type cls:c_8799.
+cls:c_8799 rdfs:label "農繁期支障"@ja.
+kg:id_39 prop:effect kg:id_41.
+kg:id_42 rdfs:label "新規就農者の確保"@ja.
+kg:id_42 rdf:type cls:c_8800.
+cls:c_8800 rdfs:label "就農者確保"@ja.
+kg:id_39 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "意欲ある担い手の育成"@ja.
+kg:id_43 rdf:type cls:c_8110.
+cls:c_8110 rdfs:label "担い手育成"@ja.
+kg:id_39 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "農作業の省力化協業化機械化導入等への支援"@ja.
+kg:id_44 rdf:type cls:c_8801.
+cls:c_8801 rdfs:label "省力化支援"@ja.
+kg:id_39 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "やまがた農業ぷちワークとJA無料職業紹介制度の周知"@ja.
+kg:id_45 rdf:type cls:c_1062.
+cls:c_1062 rdfs:label "制度周知"@ja.
+kg:id_39 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "旧庁舎跡地利活用"@ja.
+kg:id_46 rdf:type cls:c_1481.
+cls:c_1481 rdfs:label "跡地活用"@ja.
+kg:id_47 rdfs:label "防災センター来庁者駐車場及び職員駐車場の確保"@ja.
+kg:id_47 rdf:type cls:c_1631.
+cls:c_1631 rdfs:label "駐車場整備"@ja.
+kg:id_46 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "バス待合所の再整備"@ja.
+kg:id_48 rdf:type cls:c_8802.
+cls:c_8802 rdfs:label "待合所整備"@ja.
+kg:id_46 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "樹木の移植や花壇を含めた植栽帯の設置"@ja.
+kg:id_49 rdf:type cls:c_8803.
+cls:c_8803 rdfs:label "植栽整備"@ja.
+kg:id_46 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "防犯灯や防犯カメラの設置要望"@ja.
+kg:id_50 rdf:type cls:c_8804.
+cls:c_8804 rdfs:label "防犯設備"@ja.
+kg:id_46 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "SDGsの推進"@ja.
+kg:id_51 rdf:type cls:c_8805.
+cls:c_8805 rdfs:label "SDGs推進"@ja.
+kg:id_52 rdfs:label "各事業にSDGsの17の目標アイコンを明示する"@ja.
+kg:id_52 rdf:type cls:c_8806.
+cls:c_8806 rdfs:label "目標明示"@ja.
+kg:id_51 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "自治体NPO民間企業自治会学生団体等との連携"@ja.
+kg:id_53 rdf:type cls:c_4834.
+cls:c_4834 rdfs:label "連携推進"@ja.
+kg:id_51 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "脱炭素社会"@ja.
+kg:id_54 rdf:type cls:c_4056.
+cls:c_4056 rdfs:label "脱炭素"@ja.
+kg:id_55 rdfs:label "緑のカーテンプロジェクト"@ja.
+kg:id_55 rdf:type cls:c_8807.
+cls:c_8807 rdfs:label "環境活動"@ja.
+kg:id_54 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "町民省エネ節電事業"@ja.
+kg:id_56 rdf:type cls:c_4811.
+cls:c_4811 rdfs:label "省エネ推進"@ja.
+kg:id_54 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_57 rdf:type cls:c_718.
+cls:c_718 rdfs:label "再エネ導入"@ja.
+kg:id_58 rdfs:label "町内電力消費量の171％相当の発電量"@ja.
+kg:id_58 rdf:type cls:c_4055.
+cls:c_4055 rdfs:label "発電拡大"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "町民との相互理解と合意形成を図りながら丁寧に進める"@ja.
+kg:id_59 rdf:type cls:c_721.
+cls:c_721 rdfs:label "合意形成"@ja.
+kg:id_57 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "集落の維持"@ja.
+kg:id_60 rdf:type cls:c_8808.
+cls:c_8808 rdfs:label "集落維持"@ja.
+kg:id_61 rdfs:label "人口減少と高齢化"@ja.
+kg:id_61 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "生活扶助機能の低下"@ja.
+kg:id_62 rdf:type cls:c_7998.
+cls:c_7998 rdfs:label "生活機能低下"@ja.
+kg:id_60 prop:effect kg:id_62.
+kg:id_63 rdfs:label "空き家の増加"@ja.
+kg:id_63 rdf:type cls:c_2556.
+cls:c_2556 rdfs:label "空き家増加"@ja.
+kg:id_60 prop:effect kg:id_63.
+kg:id_64 rdfs:label "役員選出や行事や共有地等の管理が困難になる"@ja.
+kg:id_64 rdf:type cls:c_8067.
+cls:c_8067 rdfs:label "管理困難"@ja.
+kg:id_60 prop:effect kg:id_64.
+kg:id_65 rdfs:label "空き家バンク制度の充実"@ja.
+kg:id_65 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "空き家対策"@ja.
+kg:id_60 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "集落支援員による区長紹介や近所への挨拶回り同行"@ja.
+kg:id_66 rdf:type cls:c_6814.
+cls:c_6814 rdfs:label "定住支援"@ja.
+kg:id_60 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "定住支援活動集落報奨金の交付"@ja.
+kg:id_67 rdf:type cls:c_8809.
+cls:c_8809 rdfs:label "報奨金交付"@ja.
+kg:id_60 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "エプロンサービス"@ja.
+kg:id_68 rdf:type cls:c_8810.
+cls:c_8810 rdfs:label "支え合い活動"@ja.
+kg:id_60 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "おたがいさま稲川"@ja.
+kg:id_69 rdf:type cls:c_8810.
+kg:id_60 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "きらきら遊佐マイタウン事業による集落活動助成"@ja.
+kg:id_70 rdf:type cls:c_4021.
+cls:c_4021 rdfs:label "活動助成"@ja.
+kg:id_60 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "地域支え合い体制づくり事業"@ja.
+kg:id_71 rdf:type cls:c_8811.
+cls:c_8811 rdfs:label "支え合い事業"@ja.
+kg:id_60 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "町政座談会での意見要望把握"@ja.
+kg:id_72 rdf:type cls:c_4018.
+cls:c_4018 rdfs:label "意見把握"@ja.
+kg:id_60 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "消防団員数の減少"@ja.
+kg:id_73 rdf:type cls:c_1306.
+cls:c_1306 rdfs:label "団員減少"@ja.
+kg:id_74 rdfs:label "地域防災力の低下や住民保護に支障を来すおそれ"@ja.
+kg:id_74 rdf:type cls:c_4386.
+cls:c_4386 rdfs:label "防災力低下"@ja.
+kg:id_73 prop:effect kg:id_74.
+kg:id_75 rdfs:label "全団員アンケートの実施"@ja.
+kg:id_75 rdf:type cls:c_895.
+cls:c_895 rdfs:label "実態把握"@ja.
+kg:id_73 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "令和4年度から報酬の個人支給"@ja.
+kg:id_76 rdf:type cls:c_8812.
+cls:c_8812 rdfs:label "報酬改善"@ja.
+kg:id_73 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "消防団員の待遇改善の議論"@ja.
+kg:id_77 rdf:type cls:c_1608.
+cls:c_1608 rdfs:label "待遇改善"@ja.
+kg:id_73 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "障害者雇用率未達成"@ja.
+kg:id_78 rdf:type cls:c_5805.
+cls:c_5805 rdfs:label "雇用率未達"@ja.
+kg:id_79 rdfs:label "重度障がい認定の職員1名の退職後に雇用できなかったこと"@ja.
+kg:id_79 rdf:type cls:c_8813.
+cls:c_8813 rdfs:label "採用不足"@ja.
+kg:id_78 prop:cause kg:id_79.
+kg:id_80 rdfs:label "法定雇用率2.6に達していない"@ja.
+kg:id_80 rdf:type cls:c_7924.
+cls:c_7924 rdfs:label "基準未達"@ja.
+kg:id_78 prop:effect kg:id_80.
+kg:id_81 rdfs:label "10月1日採用に向けた町独自の職員採用試験実施"@ja.
+kg:id_81 rdf:type cls:c_8814.
+cls:c_8814 rdfs:label "採用試験"@ja.
+kg:id_78 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "自衛官募集事務"@ja.
+kg:id_82 rdf:type cls:c_8815.
+cls:c_8815 rdfs:label "募集事務"@ja.
+kg:id_83 rdfs:label "住民基本台帳の一部の写しを閲覧で情報提供"@ja.
+kg:id_83 rdf:type cls:c_176.
+kg:id_82 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "今回の通知を受け再度情報公開個人情報保護審査会に諮る"@ja.
+kg:id_84 rdf:type cls:c_8816.
+cls:c_8816 rdfs:label "審査諮問"@ja.
+kg:id_82 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "学校給食費"@ja.
+kg:id_85 rdf:type cls:c_8323.
+cls:c_8323 rdfs:label "給食費"@ja.
+kg:id_86 rdfs:label "地産地消の推進"@ja.
+kg:id_86 rdf:type cls:c_625.
+cls:c_625 rdfs:label "地産地消"@ja.
+kg:id_85 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "遊佐町小中学校食育推進事業"@ja.
+kg:id_87 rdf:type cls:c_5418.
+cls:c_5418 rdfs:label "食育推進"@ja.
+kg:id_85 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "作物栽培と収穫祭等を通じた食の大切さを学ぶ取組"@ja.
+kg:id_88 rdf:type cls:c_8817.
+cls:c_8817 rdfs:label "食育活動"@ja.
+kg:id_85 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "要保護及び準要保護児童生徒就学援助費の支給"@ja.
+kg:id_89 rdf:type cls:c_5606.
+cls:c_5606 rdfs:label "就学援助"@ja.
+kg:id_85 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "給食費全額の援助"@ja.
+kg:id_90 rdf:type cls:c_8818.
+cls:c_8818 rdfs:label "給食援助"@ja.
+kg:id_85 prop:contermeasure kg:id_90.
+kg:st_1 rdfs:label "髙橋冠治議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "他市町村のような予約の煩わしさがなく接種者に好評だと評価する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "予約不要で大きな問題もなく順調に進んでいると評価する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "64歳以下の早めの接種が重要であり短期間で終えるべきだと求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "行動範囲の広い現役世代の早期接種が非常に大事だと指摘する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "変異株が蔓延する前に町民全ての接種を終えるべきだと求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "町が企業に協力を求め従業員が接種に行けるよう働きかけるべきだと主張する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "できるなら日曜日や祭日の接種も実施してほしいと要望する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "コロナ禍を機に町や地域行事の見直しをするよい機会ではないかと提起する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "やらないことにほっとしている気持ちがどこかにあると指摘する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "少子高齢化で地域行事維持が難しく負担も大きいと懸念する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "運動会や敬老会などの見直しを考えるべきだと述べる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_12 prop:content "ワクチン接種後の状況や国県の支援変更を見ながら対応していく考えを示す"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "池田副町長"@ja.
+kg:st_3 rdfs:type cls:st_99.
+cls:st_99 rdfs:label "副町長"@ja.
+kg:op_13 prop:content "縮充をキーワードにイベントや行事の見直しが迫られると考える"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "稲作農家は春先の繁忙期の人手が足りず非常に困っていると訴える"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "短期労働力不足が続くため制度の宣伝と活用促進が必要だと求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "駅前一区自治会"@ja.
+kg:st_4 rdfs:type cls:st_100.
+cls:st_100 rdfs:label "自治会"@ja.
+kg:op_16 prop:content "駐車場だけではなく町民が集える場にもしてほしいと要望する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "スクールバスの停留所や小さくても待合室があるとよいと提案する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "花壇や癒やしの空間を設け町民が集える場にしてほしいと要望する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "防犯面にも配慮した町民が集える場を望む"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "各ステークホルダーの活動をマッチングして地域課題解決につなげたいと述べる"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "松永裕美議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_21 prop:content "町民に定着しエコに関する感性が花開いている取組だと評価する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "畠中地域生活課長"@ja.
+kg:st_6 rdfs:type cls:st_95.
+cls:st_95 rdfs:label "課長"@ja.
+kg:op_22 prop:content "時間を要しても町民の要望を聞きながら丁寧に取り組むべきだと述べる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:op_23 prop:content "地域で支え合う好事例として評価する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "地域で支え合う好事例として評価する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "今後の消防力防災力確保に向け待遇改善を議論する時期が来ていると考える"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "情報公開・個人情報保護審査会"@ja.
+kg:st_7 rdfs:type cls:st_101.
+cls:st_101 rdfs:label "審査会"@ja.
+kg:op_26 prop:content "従来どおり閲覧という形で情報提供すべきと意見した"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:op_27 prop:content "審査会の意見を得てから判断したい考えを示す"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "５月13日から介護施設や障がい施設に入所している高齢者や介護施設の従事者へのワクチンが始まりました。我が町では、実は５月13日から既に始まったということでございまして、５月25日からは一般高齢者への集団接種を始めたところであります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "５月25日からは一般高齢者への集団接種を始めたところであります。現時点では大きな問題もなく、順調にワクチン接種が進んでおります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:text-txt_contents "会場の広さを考え、人の流れや分担を工夫し、できるだけスムーズに接種が行えるよう、また具合が悪くなったときに対応できるように行っているところであり"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "今のところ副反応等で対応するケースは出ておりません"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:text-txt_contents "今後ケアマネジャーや民生児童委員と連携し、寝たきり等で接種会場に来ることができない高齢者を把握し、対応して検討してまいります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:text-txt_contents "ワクチン未接種の高齢者については、予防接種自体が強制ではなく、努力義務として本人の意思により接種するものであるため、広報等を活用するなど機会を捉えて情報提供し、接種勧奨を行っていきたいと考えております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:text-txt_contents "ワクチンを余らせることなく使用するためには、吹浦まちづくりセンターにおいては、余ったワクチンを有効に使うために保育園の保育士さん等にワクチンの接種を既に始めた"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今後の国や県の動向を見通しながら、８月からの65歳未満へのワクチン接種開始を目指し、遊佐医会と協議をしながら企業での接種や個別接種、集団接種等、様々な接種の方法を考えていきたい"@ja.
+<< kg:id_1 prop:cause kg:id_10 >>
+    prop:text-txt_contents "全国的に見ますと情報が錯綜して、実施主体の市町村等が非常に戸惑いを隠せないところであります"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:text-txt_contents "全国的に見ますと情報が錯綜して、実施主体の市町村等が非常に戸惑いを隠せないところであります"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "医療、福祉関係の中には２回接種を終えた方もいますが、現役世代の接種が終わるまでは気を許せない状況ではないか"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "問題は変異株が入ってきて、酒田市の感染者もその一部が入ったという情報が流れております。なので、かなり感染能力が高い変異株です。それが蔓延しないうちにやはり町民全て２回接種が終われば"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "その旨やはり町が責任を持ってワクチン接種するのであれば、企業の方にお願いする。集団接種をしたいのですが、どうか従業員をその日に何とか休ませてくれませんかというようなお願いはできないのか"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "日曜日、お医者さんに休まないでやれというのも非常に大変なことなのですが、そこは何とかお願いして、できるものなら日曜日、祭日の接種もできればありがたいな"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:text-txt_contents "今年も残念ながら、夕日祭りの花火大会とコンサートは中止"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:text-txt_contents "６月19日に予定されていたブルーラインマラソンも来年の延期が決まっているなど、昨年に引き続きコロナの感染症の影響が出ております"@ja.
+<< kg:id_17 prop:contermeasure kg:id_20 >>
+    prop:text-txt_contents "海開きについては予定どおり行う予定でありますし、感染症対策を取りつつ、安全面も考慮し、開設の予定であります"@ja.
+<< kg:id_17 prop:contermeasure kg:id_21 >>
+    prop:text-txt_contents "ツーデーマーチも１日限りとし、参加者を限定、出発時間も分散するなど工夫を凝らして実施する予定であります"@ja.
+<< kg:id_17 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "十分な間隔を保つ、入場者、参加者の管理、制限、感染防止対策の徹底、入退場時の行動管理の徹底など"@ja.
+<< kg:id_17 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "昨年から続くコロナ禍において、多くの行事やイベントが縮小、延期、中止になっております"@ja.
+<< kg:id_17 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "町民は、行わないことに知らず知らずのうちに慣れてきた今日この頃"@ja.
+<< kg:id_17 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "皆さんもご存じのとおり、少子高齢化で地域行事を維持していくことが困難なところもある"@ja.
+<< kg:id_17 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "少子高齢化で地域行事を維持していくことが困難なところもある"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "変異株などの影響でワクチンの効果が一定程度しかなく、今後も十分な感染対策を取りながらの生活となれば、新しい事業への転換、イベントへの見直しも必要になってくる"@ja.
+<< kg:id_27 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "ある地区ではこういう言葉を使っておりました、縮充。縮めて充実するのだということで、秋の祭り、センター祭りなどで、それまで２日間開催していたものを１日開催にして、それが大変好評だった"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:text-txt_contents "新校開校準備委員会での学校部会では、主に教育課程に関わる地域行事について検討してきました"@ja.
+<< kg:id_30 prop:contermeasure kg:id_32 >>
+    prop:text-txt_contents "各校に共通しているもの、例えば読み聞かせや自然教室、ジオパーク学習は実施していく"@ja.
+<< kg:id_30 prop:contermeasure kg:id_33 >>
+    prop:text-txt_contents "四大祭について学んでいくことは、子供たちの学びに効果的である"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:text-txt_contents "時代の変化とともに定年延長や再雇用など"@ja.
+<< kg:id_34 prop:cause kg:id_36 >>
+    prop:text-txt_contents "定期的な仕事場を求めている、短期的な仕事をなかなか受け入れられないということもあり"@ja.
+<< kg:id_34 prop:effect kg:id_37 >>
+    prop:text-txt_contents "今年やむなく春作業の派遣は中止したところでありました"@ja.
+<< kg:id_34 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "春先の繁忙期の人手が足りない、播種作業や田植作業等の大きな影響を受けております"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:text-txt_contents "そのため担い手１人当たりの経営規模は拡大傾向にあり、現在本町では農地の約70％が担い手に集約されている状況です"@ja.
+<< kg:id_39 prop:effect kg:id_41 >>
+    prop:text-txt_contents "今後それらが望めないとすれば、大規模農家等の農繁期の影響は懸念されるところであります"@ja.
+<< kg:id_39 prop:contermeasure kg:id_42 >>
+    prop:text-txt_contents "町では、関係機関と連携しながら、次代を担う新規就農者の確保や"@ja.
+<< kg:id_39 prop:contermeasure kg:id_43 >>
+    prop:text-txt_contents "地域の農業を牽引する意欲ある担い手の育成に努めるとともに"@ja.
+<< kg:id_39 prop:contermeasure kg:id_44 >>
+    prop:text-txt_contents "農作業の省力化、協業化、そして機械化導入等への支援を継続的に実施し"@ja.
+<< kg:id_39 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "今後町としましてもこの２つの制度、ぷちワークのアプリの制度ですとか、農協さんで取り組む紹介の制度、こういったものの周知に努めまして"@ja.
+<< kg:id_46 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "跡地利用の方法としては、まずは防災センター来庁者の駐車場及び職員駐車場を確保したいと考えております"@ja.
+<< kg:id_46 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "いただいた要望の中から、バス待合所の再整備と"@ja.
+<< kg:id_46 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "旧庁舎敷地内の一部樹木の移植や花壇を含めた植栽帯の設置を反映したい"@ja.
+<< kg:id_46 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "要望の内容は、駐車場だけではなくスクールバスの停留所、休憩スペース、花壇、防犯灯、防犯カメラの設置など、町民が集える場にしてほしいというものでありました"@ja.
+<< kg:id_51 prop:contermeasure kg:id_52 >>
+    prop:text-txt_contents "各事業にＳＤＧｓの17の目標アイコンを明示することで、各事業とＳＤＧｓとの関連を見える化いたしております"@ja.
+<< kg:id_51 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "各ステークホルダー、いわゆる自治体、ＮＰＯ、民間企業、自治会、学生団体等の様々な事業主体との間の広い連携が必要とされております"@ja.
+<< kg:id_54 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "地域生活課におきましては緑のカーテンプロジェクトの取組を開始し、今年でちょうど10年目を迎えたところでございます"@ja.
+<< kg:id_54 prop:contermeasure kg:id_56 >>
+    prop:text-txt_contents "2015年度からは町民省エネ節電事業も始めておりまして、こちらのほうは今年度７年目になってございます"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:text-txt_contents "町内に導入されている風力、太陽光等の再生可能エネルギーによる発電量は町内の電力消費量の171％相当になっている"@ja.
+<< kg:id_57 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "町民の皆様との相互理解、そして合意形成がなくして事業を進めることは不可能である。今後たとえ時間を要したとしても、町民の皆様の要望を聞きながら、これからも丁寧に、丁寧に取り組んでいかなければいけない"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:text-txt_contents "過疎地域における人口減少と高齢化が全国的に話題となっておりますが、集落のこれまで果たしてきた機能の維持が困難になるということは、町でも大きな課題として捉えております"@ja.
+<< kg:id_60 prop:effect kg:id_62 >>
+    prop:text-txt_contents "生活扶助機能の低下、空き家の増加、担い手不足による役員選出や集落内の行事、共有地等の管理が困難になる"@ja.
+<< kg:id_60 prop:effect kg:id_63 >>
+    prop:text-txt_contents "生活扶助機能の低下、空き家の増加、担い手不足による役員選出や集落内の行事、共有地等の管理が困難になる"@ja.
+<< kg:id_60 prop:effect kg:id_64 >>
+    prop:text-txt_contents "担い手不足による役員選出や集落内の行事、共有地等の管理が困難になる"@ja.
+<< kg:id_60 prop:contermeasure kg:id_65 >>
+    prop:text-txt_contents "空き家バンク制度の充実による空き家の増加と世帯数の減少に歯止めをかける取組を行ってまいりました"@ja.
+<< kg:id_60 prop:contermeasure kg:id_66 >>
+    prop:text-txt_contents "集落支援員が区長さんへの紹介や近所への挨拶回りに同行するなど、アフターフォローも丁寧を行っている"@ja.
+<< kg:id_60 prop:contermeasure kg:id_67 >>
+    prop:text-txt_contents "令和２年４月からは移住者を受け入れていただいた集落に定住支援活動集落報奨金を交付し"@ja.
+<< kg:id_60 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "西遊佐まちづくり協会が主体となって取り組んでおりますエプロンサービス"@ja.
+<< kg:id_60 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "稲川地区で始まっているおたがいさま稲川などが非常に好事例のものだと思っています"@ja.
+<< kg:id_60 prop:contermeasure kg:id_70 >>
+    prop:text-txt_contents "町内の自主的な地域づくりを支援するきらきら遊佐マイタウン事業がありますが、その中で集落の活動にも助成を行っております"@ja.
+<< kg:id_60 prop:contermeasure kg:id_71 >>
+    prop:text-txt_contents "これまでも老人クラブ等の活動拠点整備として進めてきた遊佐町地域支え合い体制づくり事業と合わせて"@ja.
+<< kg:id_60 prop:contermeasure kg:id_72 >>
+    prop:text-txt_contents "今年も感染者対策に留意しながら、町内６地区の町政座談会を５月24日から６月４日まで実施いたしました。各地区の区長さんからも参加いただき、各集落の直面する課題について率直な町への意見、要望をいただいた"@ja.
+<< kg:id_73 prop:effect kg:id_74 >>
+    prop:text-txt_contents "消防団員数が全国的にも減少をたどり、団員減少に歯止めがかからないことにより地域防災力の低下や、ひいては地域住民の生命、身体、財産の保護に支障を来すおそれがある"@ja.
+<< kg:id_73 prop:contermeasure kg:id_75 >>
+    prop:text-txt_contents "待遇も現状把握と意見集約のために、昨年10月から11月にかけて、全団員を対象にアンケートを実施しました"@ja.
+<< kg:id_73 prop:contermeasure kg:id_76 >>
+    prop:text-txt_contents "改めて協議をしていただき、まずは令和４年度から報酬の個人支給を決定し、今現在その準備を進めているところであります"@ja.
+<< kg:id_73 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "今後の我が町の消防力、防災力の確保に向け、消防団員の待遇改善について議論をする時期が来ていると考えている"@ja.
+<< kg:id_78 prop:cause kg:id_79 >>
+    prop:text-txt_contents "昨年５月に重度の障がいと認定されていた若い１名の職員が退職されたということありましたので、それについて以後の募集について、なかなか雇用できなかった"@ja.
+<< kg:id_78 prop:effect kg:id_80 >>
+    prop:text-txt_contents "これを職員数で割り返してみますと、1.82％ということで、法定雇用率の2.6には達していないというのが現状であります"@ja.
+<< kg:id_78 prop:contermeasure kg:id_81 >>
+    prop:text-txt_contents "障がい者雇用に努め、法定雇用率の達成につながるためにも本年10月１日の採用に向け、町独自の職員採用試験を実施するため、準備を進めているところであります"@ja.
+<< kg:id_82 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "現在は閲覧という形で情報提供しております。令和元年９月５日に開催した情報公開・個人情報保護審査会において、自衛官募集に関する適齢者名簿の自衛隊への提供について協議をしていただいた結果、従来どおり閲覧という形での情報提供すべきとのご意見をいただき"@ja.
+<< kg:id_82 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "今回の通知を受け、これから町としてどう対応していくべきか、再度情報公開・個人情報保護審査会にお諮りし、ご意見をいただいてからの判断とさせていただきたい"@ja.
+<< kg:id_85 prop:contermeasure kg:id_86 >>
+    prop:text-txt_contents "遊佐町の学校給食は、食材の地産地消を推進しており"@ja.
+<< kg:id_85 prop:contermeasure kg:id_87 >>
+    prop:text-txt_contents "遊佐町の小中学校では遊佐町小中学校食育推進事業における学校、家庭、地域の連携による食育の推進に取り組んでおります"@ja.
+<< kg:id_85 prop:contermeasure kg:id_88 >>
+    prop:text-txt_contents "お米や野菜を子供たち自身が育てて、できるまでの様子を学習し、その育てたものを食することで食の背景に広がる命、人間の知恵、伝統、作物を育てる苦労や喜び、生産者の思いに触れる機会を養っております"@ja.
+<< kg:id_85 prop:contermeasure kg:id_89 >>
+    prop:text-txt_contents "遊佐町では遊佐町要保護及び準要保護児童生徒就学援助費支給要綱に基づき、経済的理由によって就学困難な児童生徒の保護者に対し、必要な費用の助成、援助を行っております"@ja.
+<< kg:id_85 prop:contermeasure kg:id_90 >>
+    prop:text-txt_contents "給食費の援助に関して認定された人数については、令和３年度で小学生34人、中学生19人、合計53人であり、全員が実費分である全額の援助を受ける予定であります"@ja.
+}

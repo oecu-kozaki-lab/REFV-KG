@@ -1,0 +1,740 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00054> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新型コロナウイルス感染症"@ja.
+kg:id_1 rdf:type cls:c_1345.
+cls:c_1345 rdfs:label "感染症"@ja.
+kg:id_2 rdfs:label "世界的な感染拡大"@ja.
+kg:id_2 rdf:type cls:c_1168.
+cls:c_1168 rdfs:label "感染拡大"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "2020東京オリンピック・パラリンピックの1年延期"@ja.
+kg:id_3 rdf:type cls:c_2144.
+cls:c_2144 rdfs:label "大会延期"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "緊急事態宣言の発令と全国拡大"@ja.
+kg:id_4 rdf:type cls:c_2145.
+cls:c_2145 rdfs:label "緊急事態宣言"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "学校の臨時休業"@ja.
+kg:id_5 rdf:type cls:c_2146.
+cls:c_2146 rdfs:label "学校休業"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "公共施設の休館"@ja.
+kg:id_6 rdf:type cls:c_2147.
+cls:c_2147 rdfs:label "施設休館"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "不要不急の外出自粛や休業の要請"@ja.
+kg:id_7 rdf:type cls:c_2148.
+cls:c_2148 rdfs:label "行動自粛要請"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "酒田まつりをはじめとする行事や催物等の開催制限や中止"@ja.
+kg:id_8 rdf:type cls:c_2149.
+cls:c_2149 rdfs:label "行事中止"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "スポーツ大会の中止"@ja.
+kg:id_9 rdf:type cls:c_2149.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "外国クルーズ船の酒田港寄港の中止"@ja.
+kg:id_10 rdf:type cls:c_2150.
+cls:c_2150 rdfs:label "寄港中止"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "社会生活や経済活動への大きな影響"@ja.
+kg:id_11 rdf:type cls:c_1346.
+cls:c_1346 rdfs:label "社会経済影響"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "新たな感染者数は減少しているが長期にわたる闘い"@ja.
+kg:id_12 rdf:type cls:c_2123.
+cls:c_2123 rdfs:label "長期化"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "令和２年度当初予算の前提条件の変化"@ja.
+kg:id_13 rdf:type cls:c_2151.
+cls:c_2151 rdfs:label "前提条件変化"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "身体的距離の確保"@ja.
+kg:id_14 rdf:type cls:c_2152.
+cls:c_2152 rdfs:label "距離確保"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "手洗いと咳エチケットの励行"@ja.
+kg:id_15 rdf:type cls:c_2153.
+cls:c_2153 rdfs:label "衛生対策"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "3つの密の回避"@ja.
+kg:id_16 rdf:type cls:c_2154.
+cls:c_2154 rdfs:label "密回避"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "新しい生活様式の実践"@ja.
+kg:id_17 rdf:type cls:c_2155.
+cls:c_2155 rdfs:label "生活様式実践"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "感染拡大の防止と地域経済や市民生活を支援する施策を最優先に取り組む"@ja.
+kg:id_18 rdf:type cls:c_2156.
+cls:c_2156 rdfs:label "感染生活支援"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "一部事業の次年度以降への延期"@ja.
+kg:id_19 rdf:type cls:c_2157.
+cls:c_2157 rdfs:label "事業延期"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "駅前広場の整備計画の延期"@ja.
+kg:id_20 rdf:type cls:c_2157.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "酒田商業高校跡地を活用する事業者募集の延期"@ja.
+kg:id_21 rdf:type cls:c_2157.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "拠点候補地開発事業者募集の延期"@ja.
+kg:id_22 rdf:type cls:c_2157.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "RPAトライアル事業の延期"@ja.
+kg:id_23 rdf:type cls:c_2157.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "パークゴルフ場整備事業の延期"@ja.
+kg:id_24 rdf:type cls:c_2157.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "屋内型児童遊戯施設整備の基本計画の次年度持ち越し"@ja.
+kg:id_25 rdf:type cls:c_2158.
+cls:c_2158 rdfs:label "計画延期"@ja.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "地域福祉計画の次年度持ち越し"@ja.
+kg:id_26 rdf:type cls:c_2158.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "まちづくり協働指針の次年度持ち越し"@ja.
+kg:id_27 rdf:type cls:c_2158.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "国内外との交流事業の中止"@ja.
+kg:id_28 rdf:type cls:c_2159.
+cls:c_2159 rdfs:label "交流中止"@ja.
+kg:id_1 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "各種イベントの中止"@ja.
+kg:id_29 rdf:type cls:c_2149.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "講演会の中止"@ja.
+kg:id_30 rdf:type cls:c_2149.
+kg:id_1 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "研修会の中止"@ja.
+kg:id_31 rdf:type cls:c_2149.
+kg:id_1 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "小中学校の臨時休業による教育課程の実施への支障"@ja.
+kg:id_32 rdf:type cls:c_2160.
+cls:c_2160 rdfs:label "教育支障"@ja.
+kg:id_1 prop:effect kg:id_32.
+kg:id_33 rdfs:label "ICT活用による遠隔教育の実践"@ja.
+kg:id_33 rdf:type cls:c_2161.
+cls:c_2161 rdfs:label "遠隔教育"@ja.
+kg:id_1 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "小中学校における1人1台パソコンの実現"@ja.
+kg:id_34 rdf:type cls:c_2162.
+cls:c_2162 rdfs:label "学習端末整備"@ja.
+kg:id_1 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "家庭でもオンラインで学習ができる通信環境の整備"@ja.
+kg:id_35 rdf:type cls:c_2163.
+cls:c_2163 rdfs:label "通信環境整備"@ja.
+kg:id_1 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "酒田市総合計画等の成果指標や施策の見直し"@ja.
+kg:id_36 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_1 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "酒田市中期財政計画の見直し"@ja.
+kg:id_37 rdf:type cls:c_353.
+kg:id_1 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "宿泊業への補助金による支援"@ja.
+kg:id_38 rdf:type cls:c_1206.
+cls:c_1206 rdfs:label "事業者支援"@ja.
+kg:id_1 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "飲食業への補助金による支援"@ja.
+kg:id_39 rdf:type cls:c_1206.
+kg:id_1 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "旅行業への補助金による支援"@ja.
+kg:id_40 rdf:type cls:c_1206.
+kg:id_1 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "タクシー業への補助金による支援"@ja.
+kg:id_41 rdf:type cls:c_1206.
+kg:id_1 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "貸切りバス業への補助金による支援"@ja.
+kg:id_42 rdf:type cls:c_1206.
+kg:id_1 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "もっけ玉の活用による地元店舗支援"@ja.
+kg:id_43 rdf:type cls:c_2164.
+cls:c_2164 rdfs:label "店舗支援"@ja.
+kg:id_1 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "バイさかたキャンペーンによる地元店舗支援"@ja.
+kg:id_44 rdf:type cls:c_2164.
+kg:id_1 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "東北公益文科大学の学生等の直接雇用"@ja.
+kg:id_45 rdf:type cls:c_1600.
+cls:c_1600 rdfs:label "学生支援"@ja.
+kg:id_1 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "畜産農家への支援"@ja.
+kg:id_46 rdf:type cls:c_2165.
+cls:c_2165 rdfs:label "生産者支援"@ja.
+kg:id_1 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "花卉農家への支援"@ja.
+kg:id_47 rdf:type cls:c_2165.
+kg:id_1 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "漁業者への支援"@ja.
+kg:id_48 rdf:type cls:c_2165.
+kg:id_1 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "募金を活用した地域産業支援事業"@ja.
+kg:id_49 rdf:type cls:c_2166.
+cls:c_2166 rdfs:label "地域産業支援"@ja.
+kg:id_1 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "特別児童扶養手当受給世帯への酒田市独自支援"@ja.
+kg:id_50 rdf:type cls:c_2167.
+cls:c_2167 rdfs:label "世帯支援"@ja.
+kg:id_1 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "独り親家庭等への酒田市独自支援"@ja.
+kg:id_51 rdf:type cls:c_2167.
+kg:id_1 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "住宅確保給付金の支給対象拡大"@ja.
+kg:id_52 rdf:type cls:c_2168.
+cls:c_2168 rdfs:label "住居支援"@ja.
+kg:id_1 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "酒田市社会福祉協議会との緊密な連携による生活支援対策"@ja.
+kg:id_53 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_1 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "市役所での各種手続の簡素化"@ja.
+kg:id_54 rdf:type cls:c_2169.
+cls:c_2169 rdfs:label "手続簡素化"@ja.
+kg:id_1 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "マイナンバーカードの取得促進"@ja.
+kg:id_55 rdf:type cls:c_2170.
+cls:c_2170 rdfs:label "取得促進"@ja.
+kg:id_1 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "テレワークの推進"@ja.
+kg:id_56 rdf:type cls:c_2171.
+cls:c_2171 rdfs:label "テレワーク"@ja.
+kg:id_1 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "重度心身障がい児者医療証の更新手続の郵送化"@ja.
+kg:id_57 rdf:type cls:c_2172.
+cls:c_2172 rdfs:label "手続郵送化"@ja.
+kg:id_1 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "ひとり親医療証の更新手続の郵送化"@ja.
+kg:id_58 rdf:type cls:c_2172.
+kg:id_1 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "児童手当の現況届の郵送化"@ja.
+kg:id_59 rdf:type cls:c_2172.
+kg:id_1 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "児童扶養手当の現況届の郵送化"@ja.
+kg:id_60 rdf:type cls:c_2172.
+kg:id_1 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "行政手続のデジタル化の検討"@ja.
+kg:id_61 rdf:type cls:c_2173.
+cls:c_2173 rdfs:label "行政デジタル化"@ja.
+kg:id_1 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "感染拡大防止や地元経済支援や生活支援や防災及び危機管理体制やまちづくりの在り方への大きなインパクト"@ja.
+kg:id_62 rdf:type cls:c_2174.
+cls:c_2174 rdfs:label "行政影響"@ja.
+kg:id_1 prop:effect kg:id_62.
+kg:id_63 rdfs:label "特別定額給付金事業費の計上と速やかな支給準備"@ja.
+kg:id_63 rdf:type cls:c_1216.
+cls:c_1216 rdfs:label "給付金支給"@ja.
+kg:id_1 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "子育て世帯への臨時特別給付金事業費の計上と速やかな支給準備"@ja.
+kg:id_64 rdf:type cls:c_1216.
+kg:id_1 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "新型コロナウイルス感染症関連経済対策事業費の増額または新規計上"@ja.
+kg:id_65 rdf:type cls:c_2175.
+cls:c_2175 rdfs:label "経済対策"@ja.
+kg:id_1 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "今年度予定していた事業の中止による減額"@ja.
+kg:id_66 rdf:type cls:c_2176.
+cls:c_2176 rdfs:label "事業中止"@ja.
+kg:id_1 prop:effect kg:id_66.
+kg:id_67 rdfs:label "売上げが減少する事業者等への支援の必要"@ja.
+kg:id_67 rdf:type cls:c_1206.
+kg:id_1 prop:effect kg:id_67.
+kg:id_68 rdfs:label "生活困窮者住居確保給付金事業費の増額"@ja.
+kg:id_68 rdf:type cls:c_2168.
+kg:id_1 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "児童福祉施設等による感染防止用品購入支援"@ja.
+kg:id_69 rdf:type cls:c_2177.
+cls:c_2177 rdfs:label "施設支援"@ja.
+kg:id_1 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "経営や販路確保に打撃を受けて生産者が苦しむ"@ja.
+kg:id_70 rdf:type cls:c_2178.
+cls:c_2178 rdfs:label "生産者打撃"@ja.
+kg:id_1 prop:effect kg:id_70.
+kg:id_71 rdfs:label "農業新型コロナウイルス関連打撃克服対策事業費の計上"@ja.
+kg:id_71 rdf:type cls:c_2165.
+kg:id_1 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "畜産業新型コロナウイルス関連打撃克服対策事業費の計上"@ja.
+kg:id_72 rdf:type cls:c_2165.
+kg:id_1 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "水産業新型コロナウイルス関連打撃克服対策事業費の計上"@ja.
+kg:id_73 rdf:type cls:c_2165.
+kg:id_1 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "新型コロナウイルス対策地元応援募金事業費の計上"@ja.
+kg:id_74 rdf:type cls:c_2179.
+cls:c_2179 rdfs:label "募金事業"@ja.
+kg:id_1 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "GIGAスクール推進事業費の計上"@ja.
+kg:id_75 rdf:type cls:c_2180.
+cls:c_2180 rdfs:label "教育ICT整備"@ja.
+kg:id_1 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "納税困難な事業者などに対する徴収の猶予制度の特例の創設"@ja.
+kg:id_76 rdf:type cls:c_2181.
+cls:c_2181 rdfs:label "徴収猶予"@ja.
+kg:id_1 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "都市計画税の軽減措置"@ja.
+kg:id_77 rdf:type cls:c_2182.
+cls:c_2182 rdfs:label "税軽減"@ja.
+kg:id_1 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "介護保険料の減免に係る申請書の提出期限の特例"@ja.
+kg:id_78 rdf:type cls:c_2183.
+cls:c_2183 rdfs:label "保険料減免"@ja.
+kg:id_1 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "感染等した被用者に対する傷病手当金支給申請の受付事務追加"@ja.
+kg:id_79 rdf:type cls:c_2184.
+cls:c_2184 rdfs:label "傷病手当"@ja.
+kg:id_1 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "国民健康保険税の減免に係る申請書の提出期限の特例"@ja.
+kg:id_80 rdf:type cls:c_2185.
+cls:c_2185 rdfs:label "保険税減免"@ja.
+kg:id_1 prop:contermeasure kg:id_80.
+kg:st_1 rdfs:label "丸山至市長"@ja.
+kg:st_1 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "施政方針や事業計画の見直しが必要と判断"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "市民生活を維持するには経済活動を速やかに正常化する必要がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "新しい生活様式の実践を一人一人が徹底する必要がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "感染拡大防止と地域経済・市民生活支援を最優先に取り組むべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "生命を守るため徹底が求められる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "生命を守るため徹底が求められる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "新しい生活様式の実践として継続が必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "市民一人一人が徹底することが求められる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "まず最優先に取り組むことが急務"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "今年度事業や予算執行、次年度以降の事業計画を見直す"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "遠隔教育の実践などの取組を加速させる必要がある"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "実現に向けた取組を加速させる必要がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "GIGAスクール構想を早急に実現したい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "GIGAスクール構想を早急に実現したい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "時期を捉えて改定する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "時期を捉えて改定する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "酒田市独自に地域経済を支えるため支援を行っている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "酒田市独自に地域経済を支えるため支援を行っている"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "酒田市独自に地域経済を支えるため支援を行っている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "酒田市独自に地域経済を支えるため支援を行っている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "酒田市独自に地域経済を支えるため支援を行っている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "公民連携で支援を行っている"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "公民連携で支援を行っている"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "学生等への支援も行っている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "関係者への支援を追加する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "関係者への支援を追加する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "関係者への支援を追加する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "新たに取り組む"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "市民生活を支えるため支援する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "市民生活を支えるため支援する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "生活支援対策にも取り組む"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "生活自立支援センターさかたを運営する社会福祉協議会と緊密に連携する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "新しい生活様式の定着に向けた課題として進める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "地域社会のスマート化・デジタル化を加速したい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "地域社会のスマート化・デジタル化を加速したい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "感染拡大防止のため郵送手続に変更する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "感染拡大防止のため郵送手続に変更する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "感染拡大防止のため郵送手続に変更する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "感染拡大防止のため郵送手続に変更する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "市の業務のやり方全般を点検し検討を進める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "今後も感染動向を注視し市民と意識共有を図って市政運営に臨む"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "速やかな支給に向けた準備が必要"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "速やかな支給に向けた準備が必要"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "困窮する市民への本市独自支援策として実施"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "自営業者や勤労学生に家賃支援を拡大"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:op_46 prop:content "国の補助事業を活用して支援する"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "生産者を支援するため新たに計上"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "生産者を支援するため新たに計上"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "生産者を支援するため新たに計上"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "返礼品に地元産品を活用する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "GIGAスクール構想の実現に向けて新たに計上"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "このたびの新型コロナウイルス感染拡大に伴い、３月定例会で申し述べました令和２年度市長施政方針に関して一定の見直しが必要であると判断"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:text-txt_contents "2020東京オリンピック・パラリンピックも、世界的な感染拡大を受け、１年の延期を余儀なくされました"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:text-txt_contents "４月７日には東京都など７都道府県を対象に国が緊急事態を宣言し、４月16日には対象が全国に拡大される事態となりました"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "学校の臨時休業、公共施設の休館に加え"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "学校の臨時休業、公共施設の休館に加え"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:text-txt_contents "不要不急の外出自粛や休業の要請"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:text-txt_contents "酒田まつりをはじめとする行事や催物等の開催制限や中止"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:text-txt_contents "スポーツ大会や外国クルーズ船の酒田港寄港も相次いで中止となる"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:text-txt_contents "スポーツ大会や外国クルーズ船の酒田港寄港も相次いで中止となる"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "私たちの社会生活や経済活動は大きな影響を受けております"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "新たな感染者数は着実に減少していますが、このウイルスとの闘いは長期にわたると言われています"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "今回の新型コロナウイルス感染拡大の影響により大きくさま変わりし、酒田市総合計画を推進するための令和２年度当初予算の前提条件も大きく変わった"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "生命を守るため、身体的距離の確保"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "手洗いと咳エチケットの励行"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "３つの密（密集、密接、密閉）の回避"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "引き続き感染拡大を予防する新しい生活様式の実践を私たち一人一人が徹底することが求められています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "まずは、感染拡大の防止、地域経済や市民生活を支援する施策について最優先に取り組むことが急務"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "今年度当初に予定していた事業のうち一部の事業については次年度以降に延期するなど、今年度の事業や予算の執行、次年度以降の事業計画の見直しを行います"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:text-txt_contents "駅周辺整備事業における駅前広場の整備計画...については、後年度に延期します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:text-txt_contents "まちづくりコンソーシアム事業における酒田商業高校跡地を活用する事業者の募集...については、後年度に延期します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "生涯活躍のまち構想推進事業における拠点候補地開発事業者の募集...については、後年度に延期します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:text-txt_contents "このＲＰＡトライアル事業...については、後年度に延期します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "パークゴルフ場整備事業については、後年度に延期します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:text-txt_contents "屋内型児童遊戯施設整備の基本計画...についても、ワークショップなどを実施することが難しい状況であることから、次年度に持ち越します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "地域福祉計画...についても、ワークショップなどを実施することが難しい状況であることから、次年度に持ち越します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "まちづくり協働指針の策定についても、ワークショップなどを実施することが難しい状況であることから、次年度に持ち越します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "国内外との交流事業、各種のイベント、講演会及び研修会などについても、事情が許すものについては中止といたします"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:text-txt_contents "各種のイベント、講演会及び研修会などについても、事情が許すものについては中止といたします"@ja.
+<< kg:id_1 prop:contermeasure kg:id_30 >>
+    prop:text-txt_contents "各種のイベント、講演会及び研修会などについても、事情が許すものについては中止といたします"@ja.
+<< kg:id_1 prop:contermeasure kg:id_31 >>
+    prop:text-txt_contents "各種のイベント、講演会及び研修会などについても、事情が許すものについては中止といたします"@ja.
+<< kg:id_1 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "小中学校の臨時休業などにより、教育課程の実施に支障が生じています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "このような事態にもＩＣＴ（情報通信技術）の活用により対応できる遠隔教育の実践などが求められており、その実現に向けた取組を加速させる必要があります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "小中学校における１人１台パソコンの実現"@ja.
+<< kg:id_1 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "家庭でもオンラインで学習ができる通信環境の整備など、いわゆるＧＩＧＡスクール構想を早急に実現したい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "酒田市総合計画や酒田市まち・ひと・しごと創生総合戦略等における成果指標や施策...は見直しが必要と考えられることから、時期を捉えて改定してまいります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "特に酒田市中期財政計画は見直しが必要と考えられることから、時期を捉えて改定してまいります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "酒田市独自に地域経済を支えるため、宿泊業、飲食業、旅行業、タクシー業、貸切りバス業等への補助金による支援を行っています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "酒田市独自に地域経済を支えるため、宿泊業、飲食業、旅行業、タクシー業、貸切りバス業等への補助金による支援を行っています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "酒田市独自に地域経済を支えるため、宿泊業、飲食業、旅行業、タクシー業、貸切りバス業等への補助金による支援を行っています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "酒田市独自に地域経済を支えるため、宿泊業、飲食業、旅行業、タクシー業、貸切りバス業等への補助金による支援を行っています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "酒田市独自に地域経済を支えるため、宿泊業、飲食業、旅行業、タクシー業、貸切りバス業等への補助金による支援を行っています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "公民連携によるもっけ玉の活用やバイさかたキャンペーンによる地元店舗支援"@ja.
+<< kg:id_1 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "公民連携によるもっけ玉の活用やバイさかたキャンペーンによる地元店舗支援"@ja.
+<< kg:id_1 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "東北公益文科大学の学生等を酒田市が直接雇用するなどの支援も行っています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "畜産農家、花卉農家及び漁業者をはじめとする関係の皆様に対する支援を追加"@ja.
+<< kg:id_1 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "畜産農家、花卉農家及び漁業者をはじめとする関係の皆様に対する支援を追加"@ja.
+<< kg:id_1 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "畜産農家、花卉農家及び漁業者をはじめとする関係の皆様に対する支援を追加"@ja.
+<< kg:id_1 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "市民の皆様からの募金を活用して地域産業を支援する事業に新たに取り組みます"@ja.
+<< kg:id_1 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "特別児童扶養手当受給世帯や独り親家庭等への酒田市独自の支援"@ja.
+<< kg:id_1 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "特別児童扶養手当受給世帯や独り親家庭等への酒田市独自の支援"@ja.
+<< kg:id_1 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "住宅確保給付金についても支給対象を拡大する"@ja.
+<< kg:id_1 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "生活自立支援センターさかたを運営する酒田市社会福祉協議会と緊密に連携をして、生活支援対策にも取り組んでまいります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "新しい生活様式の定着に向けては、市役所での各種手続の簡素化"@ja.
+<< kg:id_1 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "マイナンバーカードの取得促進"@ja.
+<< kg:id_1 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "テレワークの推進なども課題となっています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "重度心身障がい（児）者医療証やひとり親医療証の更新手続...今回は感染拡大防止のため郵送での手続に変更します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "重度心身障がい（児）者医療証やひとり親医療証の更新手続...今回は感染拡大防止のため郵送での手続に変更します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "児童手当や児童扶養手当の現況届を、今回は感染拡大防止のため郵送での手続に変更します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "児童手当や児童扶養手当の現況届を、今回は感染拡大防止のため郵送での手続に変更します"@ja.
+<< kg:id_1 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "今後は、市の業務のやり方全般を点検し、行政手続のデジタル化に向けた検討を進めます"@ja.
+<< kg:id_1 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "感染拡大防止、地元経済支援、生活支援、防災及び危機管理体制等に加え、まちづくりの在り方にも大きなインパクトを与えることになりました"@ja.
+<< kg:id_1 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "特別定額給付金事業費及び子育て世帯への臨時特別給付金事業費を計上し、速やかな支給に向けた準備をする必要がある"@ja.
+<< kg:id_1 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "特別定額給付金事業費及び子育て世帯への臨時特別給付金事業費を計上し、速やかな支給に向けた準備をする必要がある"@ja.
+<< kg:id_1 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "困窮する市民への本市独自支援策として、新型コロナウイルス感染症関連経済対策事業費など10事業費を増額または新たに計上"@ja.
+<< kg:id_1 prop:effect kg:id_66 >>
+    prop:text-txt_contents "新型コロナウイルスの全国的な拡大に伴い、今年度予定していた事業の中止による減額"@ja.
+<< kg:id_1 prop:effect kg:id_67 >>
+    prop:text-txt_contents "売上げが減少する事業者等への支援"@ja.
+<< kg:id_1 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "自営業者や勤労学生に家賃支援を拡大した生活困窮者住居確保給付金事業費を増額"@ja.
+<< kg:id_1 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "市内の児童福祉施設等による感染防止用品購入を支援する新型コロナウイルス感染症対策支援事業費を新たに計上"@ja.
+<< kg:id_1 prop:effect kg:id_70 >>
+    prop:text-txt_contents "経営や販路確保に打撃を受けて苦しむ生産者"@ja.
+<< kg:id_1 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "農業、畜産業及び水産業それぞれ新型コロナウイルス関連打撃克服対策事業費を新たに計上"@ja.
+<< kg:id_1 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "農業、畜産業及び水産業それぞれ新型コロナウイルス関連打撃克服対策事業費を新たに計上"@ja.
+<< kg:id_1 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "農業、畜産業及び水産業それぞれ新型コロナウイルス関連打撃克服対策事業費を新たに計上"@ja.
+<< kg:id_1 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "一般寄附型の募金活動を行い、返礼品に地元産品を活用する新型コロナウイルス対策地元応援募金事業費を新たに計上"@ja.
+<< kg:id_1 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "ＧＩＧＡスクール構想の実現に向けて、新たにＧＩＧＡスクール推進事業費を計上しております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_76 >>
+    prop:text-txt_contents "新型コロナウイルス感染症の影響により納税困難な事業者などに対する徴収の猶予制度の特例の創設"@ja.
+<< kg:id_1 prop:contermeasure kg:id_77 >>
+    prop:text-txt_contents "新型コロナウイルス感染症緊急経済対策に伴う地方税法の一部改正により、都市計画税の軽減措置に関する規定を追加"@ja.
+<< kg:id_1 prop:contermeasure kg:id_78 >>
+    prop:text-txt_contents "新型コロナウイルス感染症の影響により収入が減少した第１号被保険者の介護保険料の減免に係る申請書の提出期限の特例"@ja.
+<< kg:id_1 prop:contermeasure kg:id_79 >>
+    prop:text-txt_contents "新型コロナウイルス感染症に感染等した被用者に対する傷病手当金の支給に係る申請書の提出の受付を本市において行う事務として追加"@ja.
+<< kg:id_1 prop:contermeasure kg:id_80 >>
+    prop:text-txt_contents "新型コロナウイルス感染症に関する国民健康保険税の減免に係る申請書の提出期限の特例に関する規定を追加"@ja.
+}

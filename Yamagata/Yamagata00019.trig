@@ -1,0 +1,399 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00019> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地域住民の不安"@ja.
+kg:id_1 rdf:type cls:c_250.
+cls:c_250 rdfs:label "住民の不安"@ja.
+kg:id_2 rdfs:label "具体的な説明が薄いこと"@ja.
+kg:id_2 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "地域の理解が進まないこと"@ja.
+kg:id_3 rdf:type cls:c_251.
+cls:c_251 rdfs:label "住民理解の不足"@ja.
+kg:id_4 rdfs:label "イメージがつきにくい回答が多いこと"@ja.
+kg:id_4 rdf:type cls:c_84.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "風車の大型化"@ja.
+kg:id_5 rdf:type cls:c_252.
+cls:c_252 rdfs:label "風車大型化"@ja.
+kg:id_6 rdfs:label "風力発電機メーカーが少なくなり各社とも風車が大型化していること"@ja.
+kg:id_6 rdf:type cls:c_253.
+cls:c_253 rdfs:label "市場動向"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "影が大きくなること"@ja.
+kg:id_7 rdf:type cls:c_254.
+cls:c_254 rdfs:label "影響増大"@ja.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "騒音が大きくなること"@ja.
+kg:id_8 rdf:type cls:c_255.
+cls:c_255 rdfs:label "騒音増大"@ja.
+kg:id_5 prop:effect kg:id_8.
+kg:id_9 rdfs:label "景観への影響が大きくなること"@ja.
+kg:id_9 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_5 prop:effect kg:id_9.
+kg:id_10 rdfs:label "バードストライクが増えること"@ja.
+kg:id_10 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_5 prop:effect kg:id_10.
+kg:id_11 rdfs:label "コウモリの衝突確率が上がること"@ja.
+kg:id_11 rdf:type cls:c_256.
+cls:c_256 rdfs:label "動物衝突"@ja.
+kg:id_5 prop:effect kg:id_11.
+kg:id_12 rdfs:label "底質の巻き上がり"@ja.
+kg:id_12 rdf:type cls:c_257.
+cls:c_257 rdfs:label "底質巻上"@ja.
+kg:id_13 rdfs:label "プランクトンが一斉に増殖する危険性"@ja.
+kg:id_13 rdf:type cls:c_258.
+cls:c_258 rdfs:label "生物増殖"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "資材の輸送経路や工事用車両の走行"@ja.
+kg:id_14 rdf:type cls:c_259.
+cls:c_259 rdfs:label "車両通行"@ja.
+kg:id_15 rdfs:label "人と重なってしまうことへの不安"@ja.
+kg:id_15 rdf:type cls:c_260.
+cls:c_260 rdfs:label "安全不安"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "地震や津波"@ja.
+kg:id_16 rdf:type cls:c_261.
+cls:c_261 rdfs:label "自然災害"@ja.
+kg:id_17 rdfs:label "大変なことになる可能性"@ja.
+kg:id_17 rdf:type cls:c_262.
+cls:c_262 rdfs:label "危険発生"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "液状化現象"@ja.
+kg:id_18 rdf:type cls:c_49.
+cls:c_49 rdfs:label "地盤災害"@ja.
+kg:id_19 rdfs:label "人がいた場合に危険であること"@ja.
+kg:id_19 rdf:type cls:c_263.
+cls:c_263 rdfs:label "人的危険"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "津波"@ja.
+kg:id_20 rdf:type cls:c_264.
+cls:c_264 rdfs:label "津波"@ja.
+kg:id_21 rdfs:label "工事関係者や遊びに来た人たちが避難しなければならない状況"@ja.
+kg:id_21 rdf:type cls:c_265.
+cls:c_265 rdfs:label "避難必要"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "環境影響が懸念される材料の増加"@ja.
+kg:id_22 rdf:type cls:c_266.
+cls:c_266 rdfs:label "懸念材料"@ja.
+kg:id_23 rdfs:label "事後調査が有効な手段になること"@ja.
+kg:id_23 rdf:type cls:c_17.
+cls:c_17 rdfs:label "事後調査"@ja.
+kg:id_22 prop:effect kg:id_23.
+kg:id_24 rdfs:label "事業"@ja.
+kg:id_24 rdf:type cls:c_1.
+cls:c_1 rdfs:label "事業"@ja.
+kg:id_25 rdfs:label "影や騒音や景観の現地調査を行うこと"@ja.
+kg:id_25 rdf:type cls:c_267.
+cls:c_267 rdfs:label "現地調査"@ja.
+kg:id_24 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "累積的影響を他事業者の情報をもとに予測すること"@ja.
+kg:id_26 rdf:type cls:c_268.
+cls:c_268 rdfs:label "影響予測"@ja.
+kg:id_24 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "風車の稼働実績を踏まえて騒音調査時期を設定すること"@ja.
+kg:id_27 rdf:type cls:c_269.
+cls:c_269 rdfs:label "調査実施"@ja.
+kg:id_24 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "外港内における底質の状況を調査すること"@ja.
+kg:id_28 rdf:type cls:c_270.
+cls:c_270 rdfs:label "生物調査"@ja.
+kg:id_24 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "鳥類相把握のため音声データ取得の併用を検討すること"@ja.
+kg:id_29 rdf:type cls:c_228.
+cls:c_228 rdfs:label "影響評価"@ja.
+kg:id_24 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "コウモリについて衝突確率等の評価を行うこと"@ja.
+kg:id_30 rdf:type cls:c_271.
+cls:c_271 rdfs:label "安全対策"@ja.
+kg:id_24 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "夏季工事で警備員配置や看板設置を行うこと"@ja.
+kg:id_31 rdf:type cls:c_272.
+cls:c_272 rdfs:label "耐震設計"@ja.
+kg:id_24 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "地震時に破損しない倒壊しない設計を行うこと"@ja.
+kg:id_32 rdf:type cls:c_273.
+cls:c_273 rdfs:label "退避体制"@ja.
+kg:id_24 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "津波や災害時に情報把握と退避体制を整えること"@ja.
+kg:id_33 rdf:type cls:c_274.
+cls:c_274 rdfs:label "具体説明"@ja.
+kg:id_24 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "準備書で具体的な例をできるだけ示すこと"@ja.
+kg:id_24 prop:contermeasure kg:id_34.
+kg:st_1 rdfs:label "池田委員"@ja.
+kg:st_1 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_1 prop:content "具体例や規模感を丁寧に示さないと地域の理解を得にくい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "横山会長"@ja.
+kg:st_2 rdfs:type cls:st_3.
+kg:op_2 prop:content "住民も委員も不安でありその不安が方法書に反映されていないことが重要だ"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "変更の可能性があっても具体例や想定規模を示すべきだ"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "事業者"@ja.
+kg:st_3 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_4 prop:content "将来的に選択できる風車が大型化するためできるだけ小さい機種を計画している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "近隣への影響として影は大きくなる可能性があると想定している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "上木委員"@ja.
+kg:st_4 rdfs:type cls:st_3.
+kg:op_6 prop:content "大型化で騒音面の懸念があるならその点を注意して評価すべきだ"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:op_7 prop:content "近隣への影響として騒音は大きくなる可能性があると想定している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "近隣への影響として景観面の影響が大きくなる可能性がある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "大型化でバードストライクは大きくなる可能性があると想定している"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "事業者の考え方が騒音やバードストライクが増えるだろうという程度に留まっている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "江成委員"@ja.
+kg:st_5 rdfs:type cls:st_3.
+kg:op_11 prop:content "大型化によりコウモリの衝突確率上昇が想定されるため定量的予測を行うべきだ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "窒素やリン濃度が高い時期の巻き上がりに注意すべきだ"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "中島委員"@ja.
+kg:st_6 rdfs:type cls:st_3.
+kg:op_13 prop:content "人の出入りが多い場所なので具体的な安全配慮が見えないと不安だ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_6.
+kg:op_14 prop:content "工事中に地震や津波が起きた場合の避難経路まで配慮が必要だ"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_6.
+kg:op_15 prop:content "風車倒壊だけでなく周囲の人への危険も考慮すべきだ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "夏場の人が多い時期を想定して避難を含めた人の流れを考えるべきだ"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:op_17 prop:content "大型化リプレースが増えるなら実施前後データを伴う事後調査が重要だ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "近隣が感じやすい影響項目を準備書に向けて調査する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "他事業者のどの情報を使ってどう評価するかを具体化すべきだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_5.
+kg:op_20 prop:content "他事業者の諸元情報を得て予測地点での騒音レベルを予測したい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "的確に把握できる時期に信頼できるデータを取れるよう細かく配慮すべきだ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "既設風車の稼働実績から風が吹く時期を狙って調査する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "窒素やリンの高濃度による影響に注意して底質を把握すべきだ"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "具体化は未了だが基本的には調査する考えだ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "鳥類でもソングメーター等の機器併用が望ましい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_5.
+kg:op_26 prop:content "鳥類相を捉える手法として音声データ取得は有効なので検討する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "専門団体の知見も取り入れてコウモリの衝突確率を予測すべきだ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_5.
+kg:op_28 prop:content "最新知見を用いてできる限り評価する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "海水浴場利用者と工事車両の動線分離を具体化すべきだ"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "夏季工事では警備員配置や看板設置などを検討する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "国内実績のない大規模風車なので十分に注意すべきだ"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_6.
+kg:op_32 prop:content "基準を満たし万一の地震でも破損や倒壊を防ぐ設計を進める"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "津波到達が早い地域なので人の流れを含めた避難対応が必要だ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_6.
+kg:op_34 prop:content "津波を含む災害や天候変化を早く把握し安全に退避できる体制を検討する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "具体例や過去事例を示して住民の理解を得るべきだ"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "方法書で示せていない事項を準備書でできるだけ具体化する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "皆さんすごく不安なのではないかと思いました。その不安の原因は、具体的な説明が薄いからではないかと思います。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "これらに対する回答として、イメージがつきにくい回答が多いことから、具体例を挙げてもらうとか、変更になるかもしれないが、これぐらいの規模で考えているとか、もう少し、丁寧な回答をしていただかないと、地域の方の理解が進まないのではないでしょうか。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風力発電機メーカーがどんどん少なくなっていて、事業者として選択できるところが３社くらいしかなくなっているという現状があります。また、その３社とも、風車が大型化している傾向にあります"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "現段階では、影、騒音、景観、バードストライクが、定性的に大きくなるであろうと想定されます。"@ja.
+<< kg:id_5 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "現段階では、影、騒音、景観、バードストライクが、定性的に大きくなるであろうと想定されます。"@ja.
+<< kg:id_5 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "現段階では、影、騒音、景観、バードストライクが、定性的に大きくなるであろうと想定されます。"@ja.
+<< kg:id_5 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "現段階では、影、騒音、景観、バードストライクが、定性的に大きくなるであろうと想定されます。"@ja.
+<< kg:id_5 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "風力発電機が大型化することにより、コウモリが衝突する確率が上がることが想定されます"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "窒素とかリンの濃度が非常に高いようなので、巻き上がってしまうと肥料を撒くような感じになって、プランクトンが一斉に増殖する危険性があるのではないかと思うので注意していただきたいと思います。"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "資材の輸送経路とか、工事用車両の走行経路とか、どうしても人と重なってしまうところがあると思うので、事業者回答は十分留意して進めますということですが、もう少し具体的なところが、見えないと若干怖いかなと思います。"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "工事中で人が大勢いるときに、そのようなことが起きた場合に、避難経路とか少し配慮して、考えていただかないと大変なことになる可能性もあるのではないかと危惧しています。"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "風車が倒れても、周りに与える影響はほとんどないからいいというわけではなく、人がいた場合には危険だと思うので、少しは考えていただきたいと思います"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "万が一、人が多い夏場の土日の昼間に津波が来た時、工事関係者、遊びに来た人たちが、逃げなくてはいけない状況が考えられると思います"@ja.
+<< kg:id_22 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "そのことで、環境影響が懸念される材料が増えることから、事後調査が有効な手段になり、実施前後のデータが重要になってくるものと感じています。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "近隣の方が感じやすいのは、恐らく、風車の影、音、景観だと思うのですが、その項目について今後の調査項目として、全て方法書に入れておりますので、結果は準備書でお示しさせていただければと思います。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "これらの情報の提供をお願いしながら、今回の大型化する風車の諸元に加えて、他事業者から得られた情報をもとに、実際に予測する地点で、どういった騒音レベルになるのか予測していくことになろうかと思います。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "地域によって風に特徴があるため、既設風車の稼働実績等を踏まえて、風車が稼働している時期を狙って調査を行います。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "具体的なところまでは詰め切れていませんが、調査するということで基本的には考えています。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "鳥類相を捉える手法として、音声データを取得するのは有効だと思いますので、検討してまいりたいと思います。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "バードストライクと同様に、バットストライクも予測いたします。ただし、コウモリの定量的な評価につきましては、まだまだ知見不足ということがございますので、最新の知見を用いて、コウモリにつきましても、できる限り衝突確率等の評価を行ってまいりたいと思います。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "夏季の工事に関しては、いろいろな対策が考えられると思います。警備員を配置するとか、看板を立てるとかありますが、具体的な方法はこれから詳細を検討してまいります"@ja.
+<< kg:id_24 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "万が一地震が起こった時に、破損しない、倒壊しない設計を行っていきます。ですので、おっしゃるような懸念はありますが、基準を満たした設計を進めていくことになります。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "津波だけではなく、様々な災害や天候の変化などが予想されますので、いち早く、そのような情報を把握して、退避する体制ですとか検討して、安全に工事ができるように考えていきたいと思っています。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "今後、準備書に向けて、具体的な例を出来るだけ示せるよう作っていきたいと思っておりますので、また、準備書をご覧いただければと思っております。"@ja.
+}

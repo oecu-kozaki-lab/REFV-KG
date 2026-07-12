@@ -1,0 +1,259 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00066> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電開発"@ja.
+kg:id_1 rdf:type cls:c_6284.
+cls:c_6284 rdfs:label "開発事業"@ja.
+kg:id_2 rdfs:label "風況や送電線の条件がそろい民家から離れていること"@ja.
+kg:id_2 rdf:type cls:c_13092.
+cls:c_13092 rdfs:label "立地条件"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "尾根道の整備などに費用がかかり小規模では事業にならないこと"@ja.
+kg:id_3 rdf:type cls:c_6755.
+cls:c_6755 rdfs:label "事業費"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "山の保水力低下"@ja.
+kg:id_4 rdf:type cls:c_14014.
+cls:c_14014 rdfs:label "保水力低下"@ja.
+kg:id_5 rdfs:label "シカの食害で木が枯れたこと"@ja.
+kg:id_5 rdf:type cls:c_4048.
+cls:c_4048 rdfs:label "食害"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "ダムに流入する水の濁り"@ja.
+kg:id_6 rdf:type cls:c_2094.
+cls:c_2094 rdfs:label "水質悪化"@ja.
+kg:id_7 rdfs:label "山の保水力が落ちたこと"@ja.
+kg:id_7 rdf:type cls:c_14014.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "ブナ林への影響"@ja.
+kg:id_8 rdf:type cls:c_123.
+cls:c_123 rdfs:label "森林影響"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "生物多様性への影響"@ja.
+kg:id_9 rdf:type cls:c_833.
+cls:c_833 rdfs:label "生態影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "水源への影響"@ja.
+kg:id_10 rdf:type cls:c_78.
+cls:c_78 rdfs:label "水源影響"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "山が削られれば濁りがひどくなること"@ja.
+kg:id_11 rdf:type cls:c_2094.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "取り返しのつかないことになること"@ja.
+kg:id_12 rdf:type cls:c_14839.
+cls:c_14839 rdfs:label "深刻被害"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "住民と業者の間で対立が深まること"@ja.
+kg:id_13 rdf:type cls:c_14131.
+cls:c_14131 rdfs:label "地域対立"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "豊かな自然を犠牲にすること"@ja.
+kg:id_14 rdf:type cls:c_13156.
+cls:c_13156 rdfs:label "自然破壊"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "将来世代が享受できるものをなくしてしまうこと"@ja.
+kg:id_15 rdf:type cls:c_14840.
+cls:c_14840 rdfs:label "世代損失"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "甚大な自然災害が起きること"@ja.
+kg:id_16 rdf:type cls:c_261.
+cls:c_261 rdfs:label "自然災害"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "コミュニティ機能の破損"@ja.
+kg:id_17 rdf:type cls:c_6427.
+cls:c_6427 rdfs:label "地域機能低下"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "ブナ林を計画から外すこと"@ja.
+kg:id_18 rdf:type cls:c_370.
+cls:c_370 rdfs:label "保全措置"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "建設に反対すること"@ja.
+kg:id_19 rdf:type cls:c_14841.
+cls:c_14841 rdfs:label "反対決議"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "ゾーニングの議論を展開すること"@ja.
+kg:id_20 rdf:type cls:c_13159.
+cls:c_13159 rdfs:label "区域設定"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "規制の議論を展開すること"@ja.
+kg:id_21 rdf:type cls:c_14842.
+cls:c_14842 rdfs:label "規制議論"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:st_1 rdfs:label "再生可能エネルギー会社GFの陶久晴岳執行役員"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "風況や送電線の条件がそろい民家から離れているためこの場所を選んだ"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "大規模計画は整備費がかかり小規模では事業にならない"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "高知大の石川慎吾名誉教授"@ja.
+kg:st_2 rdfs:type cls:st_105.
+cls:st_105 rdfs:label "研究者"@ja.
+kg:op_3 prop:content "貴重なブナ林は生物多様性と水源を守るため計画から外すべきだ"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "高知大の比嘉基紀准教授"@ja.
+kg:st_3 rdfs:type cls:st_105.
+kg:op_4 prop:content "ブナは森の主で豊かな森の証しである"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "ブナ林は貴重な存在で生物多様性を守るため計画から外すべきだ"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "能條桃子（NOYOUTHNOJAPAN代表）"@ja.
+kg:st_4 rdfs:type cls:st_213.
+cls:st_213 rdfs:label "市民活動家"@ja.
+kg:op_6 prop:content "豊かな自然を犠牲にする再生可能エネルギー開発は本末転倒だ"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:op_7 prop:content "生物多様性と水源を守るため計画から外すべきだ"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "物部川漁協の松浦秀俊組合長"@ja.
+kg:st_5 rdfs:type cls:st_214.
+cls:st_214 rdfs:label "漁業関係者"@ja.
+kg:op_8 prop:content "山が削られると濁りがひどくなり取り返しがつかない"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_5.
+kg:op_9 prop:content "濁りがひどくなれば取り返しがつかない"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "香美市の依光晃一郎市長"@ja.
+kg:st_6 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_10 prop:content "国策として再エネは必要でも住民が反対しているので賛成できない"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_6.
+kg:op_11 prop:content "都市で利用する電力のために豊かな自然を犠牲にするのは本末転倒だ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_4.
+kg:op_12 prop:content "将来世代が享受できるものを失わせる開発は問題だ"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "CO2を排出しない発電でも甚大な自然災害が起きれば意味がない"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "CO2を排出しない発電でもコミュニティ機能の破損が起きれば意味がない"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "ブナ林は貴重で生物多様性と水源を守るため計画から外すべきだ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "物部川漁協"@ja.
+kg:st_7 rdfs:type cls:st_206.
+cls:st_206 rdfs:label "漁業団体"@ja.
+kg:op_16 prop:content "次世代にアユの川を残すため建設反対を決議した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_7.
+kg:op_17 prop:content "再生可能エネルギー推進の立場の人こそゾーニングの議論を進めるべきだ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "再生可能エネルギー推進の立場の人こそ規制の議論を進めるべきだ"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "陶久氏は学習会で、「運転開始まで10年程度かかる」と説明。風況や送電線の条件がそろい、民家から離れているため、この場所を選んだという。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "陶久氏は朝日新聞の取材に、大規模な計画は「尾根道の整備などに費用がかかり、小規模では事業にならない」と語った。"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:text-txt_contents "近年はシカの食害で木が枯れて山の保水力が落ち、流域に三つあるダムに流入する水は濁りがとれにくくなった。"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:text-txt_contents "近年はシカの食害で木が枯れて山の保水力が落ち、流域に三つあるダムに流入する水は濁りがとれにくくなった。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "ブナの楽園が広がるのは、高知県香美市と大豊町にまたがる奥神賀山の稜線（りょうせん）だ。高さ最大約180メートルの風車が最大36基建つ大きな陸上風力発電の計画が浮上している。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "ブナ林は水を蓄え、川を育む。その実はツキノワグマの好物だ。周辺は絶滅危惧種のクマタカも生息し、サシバの渡りのルートとされる。"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "石川さんは、事業が環境に与える影響を審査する県環境影響評価技術審査会の委員でもある。「ブナ林は貴重な存在。生物多様性と水源を守るため計画から外すべきだ」"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "出席した物部川漁協の松浦秀俊組合長(69)は「山が削られれば濁りはひどくなり、取り返しのつかないことになる。次世代にアユの川を残したい」と訴えた。"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "出席した物部川漁協の松浦秀俊組合長(69)は「山が削られれば濁りはひどくなり、取り返しのつかないことになる。次世代にアユの川を残したい」と訴えた。"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "住民と業者の間で深まる対立。香美市の依光晃一郎市長(48)は「国策として再エネが必要なのはわかる。でも、これだけ住民が反対しているのに賛成できない」と複雑な胸の内を明かす。"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "都市で利用する電力のために、豊かな自然を犠牲にしたり将来世代が享受できるはずのさまざまなものをなくしてしまうのは再生可能エネルギーだとしても本末転倒です。"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "都市で利用する電力のために、豊かな自然を犠牲にしたり将来世代が享受できるはずのさまざまなものをなくしてしまうのは再生可能エネルギーだとしても本末転倒です。"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "再生可能エネルギー開発は、地球環境を維持するために非常に重要です。しかし同時に、いくらCO2が排出されない発電であったとしても、そこに甚大な自然災害やコミュニティ機能の破損が起きてしまえば意味がありません。"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "再生可能エネルギー開発は、地球環境を維持するために非常に重要です。しかし同時に、いくらCO2が排出されない発電であったとしても、そこに甚大な自然災害やコミュニティ機能の破損が起きてしまえば意味がありません。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "「ブナ林は貴重な存在。生物多様性と水源を守るため計画から外すべきだ」"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "組合員約300人の物部川漁協は3月、総代会で建設反対を決議した。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "事業者や計画者には、その感覚が求められていますし、気候変動対策を進めるべきだと再生可能エネルギーを推進するべきという立場をとっている人こそ、このような問題には目をむけ、ゾーニングや規制の議論も展開するべきだと考えます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "事業者や計画者には、その感覚が求められていますし、気候変動対策を進めるべきだと再生可能エネルギーを推進するべきという立場をとっている人こそ、このような問題には目をむけ、ゾーニングや規制の議論も展開するべきだと考えます。"@ja.
+}

@@ -1,0 +1,806 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00017> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "宮城山形北部風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "4事業への分割予定"@ja.
+kg:id_2 rdf:type cls:c_206.
+cls:c_206 rdfs:label "事業分割"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "東北電力との系統連系の枠の問題"@ja.
+kg:id_3 rdf:type cls:c_207.
+cls:c_207 rdfs:label "系統連系条件"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "風の状況"@ja.
+kg:id_4 rdf:type cls:c_208.
+cls:c_208 rdfs:label "風況"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "地権者との関係"@ja.
+kg:id_5 rdf:type cls:c_209.
+cls:c_209 rdfs:label "地権者調整"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "国有林との協議"@ja.
+kg:id_6 rdf:type cls:c_210.
+cls:c_210 rdfs:label "関係機関協議"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "自然度の高い場所の存在"@ja.
+kg:id_7 rdf:type cls:c_211.
+cls:c_211 rdfs:label "自然環境"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "猛禽類への影響回避の必要性"@ja.
+kg:id_8 rdf:type cls:c_157.
+cls:c_157 rdfs:label "鳥類保全"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "植生への影響回避の必要性"@ja.
+kg:id_9 rdf:type cls:c_212.
+cls:c_212 rdfs:label "植生保全"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "急峻な地形"@ja.
+kg:id_10 rdf:type cls:c_213.
+cls:c_213 rdfs:label "急峻地形"@ja.
+kg:id_1 prop:cause kg:id_10.
+kg:id_11 rdfs:label "地層の軟弱さ"@ja.
+kg:id_11 rdf:type cls:c_214.
+cls:c_214 rdfs:label "軟弱地盤"@ja.
+kg:id_1 prop:cause kg:id_11.
+kg:id_12 rdfs:label "硫化鉄を含む地層"@ja.
+kg:id_12 rdf:type cls:c_215.
+cls:c_215 rdfs:label "酸性地質"@ja.
+kg:id_1 prop:cause kg:id_12.
+kg:id_13 rdfs:label "多雪地域であること"@ja.
+kg:id_13 rdf:type cls:c_216.
+cls:c_216 rdfs:label "積雪条件"@ja.
+kg:id_1 prop:cause kg:id_13.
+kg:id_14 rdfs:label "4事業に分割しても生態系が互いに関係しあう"@ja.
+kg:id_14 rdf:type cls:c_217.
+cls:c_217 rdfs:label "生態系連続性"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "一斉工事により環境影響が大きくなる"@ja.
+kg:id_15 rdf:type cls:c_218.
+cls:c_218 rdfs:label "累積的影響"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "同じルートを通る工事車両増加による騒音等の累積的影響"@ja.
+kg:id_16 rdf:type cls:c_218.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "土壌の風化が一気に進む可能性"@ja.
+kg:id_17 rdf:type cls:c_219.
+cls:c_219 rdfs:label "土壌風化"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "緑の回廊の分断"@ja.
+kg:id_18 rdf:type cls:c_220.
+cls:c_220 rdfs:label "生態系分断"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "今後同様の開発計画が次々と出てくる懸念"@ja.
+kg:id_19 rdf:type cls:c_221.
+cls:c_221 rdfs:label "開発拡大懸念"@ja.
+kg:id_1 prop:effect kg:id_19.
+kg:id_20 rdfs:label "積雪による発電や経営への影響"@ja.
+kg:id_20 rdf:type cls:c_222.
+cls:c_222 rdfs:label "事業影響"@ja.
+kg:id_1 prop:effect kg:id_20.
+kg:id_21 rdfs:label "雪に守られている環境への影響"@ja.
+kg:id_21 rdf:type cls:c_223.
+cls:c_223 rdfs:label "自然環境影響"@ja.
+kg:id_1 prop:effect kg:id_21.
+kg:id_22 rdfs:label "銀山温泉や鳴子峡など眺望景観への影響"@ja.
+kg:id_22 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_22.
+kg:id_23 rdfs:label "緑の回廊近傍への多数の風車設置による生態系への影響懸念"@ja.
+kg:id_23 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_1 prop:effect kg:id_23.
+kg:id_24 rdfs:label "4事業に分割しても山形県が環境影響評価に関わる"@ja.
+kg:id_24 rdf:type cls:c_226.
+cls:c_226 rdfs:label "評価関与"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "既設の林道作業道を活用し必要最小限のみ拡幅新設する"@ja.
+kg:id_25 rdf:type cls:c_227.
+cls:c_227 rdfs:label "道路活用"@ja.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "拡幅や新設道路を改変区域として予測評価する"@ja.
+kg:id_26 rdf:type cls:c_228.
+cls:c_228 rdfs:label "影響評価"@ja.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "複数事業同時並行時の累積的影響を予測評価する"@ja.
+kg:id_27 rdf:type cls:c_228.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "硫化鉄等が流出しないよう対策を講じる"@ja.
+kg:id_28 rdf:type cls:c_229.
+cls:c_229 rdfs:label "流出防止"@ja.
+kg:id_1 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "防災面を設計に考慮する"@ja.
+kg:id_29 rdf:type cls:c_230.
+cls:c_230 rdfs:label "防災設計"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "除雪しながら定期的なメンテナンスを行う"@ja.
+kg:id_30 rdf:type cls:c_231.
+cls:c_231 rdfs:label "維持管理"@ja.
+kg:id_1 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "積雪量や除雪費用やメンテナンス費用を踏まえて計画検討する"@ja.
+kg:id_31 rdf:type cls:c_232.
+cls:c_232 rdfs:label "計画検討"@ja.
+kg:id_1 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "銀山温泉や鳴子峡など眺望点への景観配慮を行う"@ja.
+kg:id_32 rdf:type cls:c_233.
+cls:c_233 rdfs:label "景観配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "当初予定より南側にセットバックする"@ja.
+kg:id_33 rdf:type cls:c_234.
+cls:c_234 rdfs:label "配置調整"@ja.
+kg:id_1 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "森林管理局森林管理署と緑の回廊について協議する"@ja.
+kg:id_34 rdf:type cls:c_210.
+kg:id_1 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "急峻な場所を今後計画地から除外することを検討する"@ja.
+kg:id_35 rdf:type cls:c_235.
+cls:c_235 rdfs:label "計画除外"@ja.
+kg:id_1 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "最新知見を収集し低周波音の予測評価手法に反映する"@ja.
+kg:id_36 rdf:type cls:c_236.
+cls:c_236 rdfs:label "評価改善"@ja.
+kg:id_1 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "栗子山風力発電事業"@ja.
+kg:id_37 rdf:type cls:c_170.
+kg:id_38 rdfs:label "火山性岩石の変質"@ja.
+kg:id_38 rdf:type cls:c_237.
+cls:c_237 rdfs:label "地質変質"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "硫化鉄を多く含む地質"@ja.
+kg:id_39 rdf:type cls:c_215.
+kg:id_37 prop:cause kg:id_39.
+kg:id_37 prop:cause kg:id_10.
+kg:id_40 rdfs:label "風車運搬時の旋回のため林道拡幅と森林伐採が必要になる可能性"@ja.
+kg:id_40 rdf:type cls:c_238.
+cls:c_238 rdfs:label "森林改変"@ja.
+kg:id_37 prop:effect kg:id_40.
+kg:id_41 rdfs:label "バードストライクの問題"@ja.
+kg:id_41 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_37 prop:effect kg:id_41.
+kg:id_42 rdfs:label "雨の影響で硫酸の変質が想定より進む可能性"@ja.
+kg:id_42 rdf:type cls:c_237.
+kg:id_37 prop:effect kg:id_42.
+kg:id_43 rdfs:label "緑の回廊内の道路拡幅による自然環境影響"@ja.
+kg:id_43 rdf:type cls:c_223.
+kg:id_37 prop:effect kg:id_43.
+kg:id_44 rdfs:label "低周波音への懸念"@ja.
+kg:id_44 rdf:type cls:c_239.
+cls:c_239 rdfs:label "低周波音"@ja.
+kg:id_37 prop:effect kg:id_44.
+kg:id_45 rdfs:label "尾根沿いに風車が立ち並ぶ景観への悪影響"@ja.
+kg:id_45 rdf:type cls:c_224.
+kg:id_37 prop:effect kg:id_45.
+kg:id_46 rdfs:label "送電線は既存道路を使って埋設あるいは電柱で敷設する"@ja.
+kg:id_46 rdf:type cls:c_240.
+cls:c_240 rdfs:label "送電線敷設"@ja.
+kg:id_37 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "送電線ルートはできるだけ既存道路を使う"@ja.
+kg:id_47 rdf:type cls:c_227.
+kg:id_37 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "既存道路利用が難しい場合は環境影響負荷を考えたうえで新規埋設する"@ja.
+kg:id_48 rdf:type cls:c_240.
+kg:id_37 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "機種選定は輸送可能性と環境影響を含めて検討する"@ja.
+kg:id_49 rdf:type cls:c_143.
+cls:c_143 rdfs:label "機種選定"@ja.
+kg:id_37 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "準備書段階で羽根の大きさと輸送計画を決めて技術評価を行う"@ja.
+kg:id_50 rdf:type cls:c_241.
+cls:c_241 rdfs:label "技術評価"@ja.
+kg:id_37 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "調査ボーリングで地質状況を把握する"@ja.
+kg:id_51 rdf:type cls:c_242.
+cls:c_242 rdfs:label "地質調査"@ja.
+kg:id_37 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "削った表面に簡易吹付等の対策を講じる"@ja.
+kg:id_52 rdf:type cls:c_243.
+cls:c_243 rdfs:label "法面対策"@ja.
+kg:id_37 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "切土盛土法面は早期に緑化し濁水流出防止に努める"@ja.
+kg:id_53 rdf:type cls:c_244.
+cls:c_244 rdfs:label "法面保全"@ja.
+kg:id_37 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "酸性の地質が確認された場合は土木工事で対応する"@ja.
+kg:id_54 rdf:type cls:c_245.
+cls:c_245 rdfs:label "土木対応"@ja.
+kg:id_37 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "風力発電施設を緑の回廊内に作らない"@ja.
+kg:id_55 rdf:type cls:c_246.
+cls:c_246 rdfs:label "区域回避"@ja.
+kg:id_37 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "北側搬入経路を使わないルートも検討する"@ja.
+kg:id_56 rdf:type cls:c_247.
+cls:c_247 rdfs:label "経路見直し"@ja.
+kg:id_37 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "低周波音を環境アセスメントで予測評価する"@ja.
+kg:id_57 rdf:type cls:c_228.
+kg:id_37 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "供用後に苦情が寄せられれば適切に対応する"@ja.
+kg:id_58 rdf:type cls:c_248.
+cls:c_248 rdfs:label "苦情対応"@ja.
+kg:id_37 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "方法書段階で広い範囲の眺望点を設定して景観予測評価する"@ja.
+kg:id_59 rdf:type cls:c_249.
+cls:c_249 rdfs:label "景観評価"@ja.
+kg:id_37 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "モンタージュ等を用いて景観を予測する"@ja.
+kg:id_60 rdf:type cls:c_249.
+kg:id_37 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "住民説明会などの意見を踏まえて景観評価手法を取り入れる"@ja.
+kg:id_61 rdf:type cls:c_249.
+kg:id_37 prop:contermeasure kg:id_61.
+kg:st_1 rdfs:label "上木委員"@ja.
+kg:st_1 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_1 prop:content "4事業に分割しても山形県として環境影響評価に関わるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "東委員"@ja.
+kg:st_2 rdfs:type cls:st_3.
+kg:op_2 prop:content "配慮書段階である程度の区分けを示すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "事業者株式会社グリーンパワーインベストメント"@ja.
+kg:st_3 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_3 prop:content "系統連系や風況や地権者や許認可や環境配慮の条件で分割方法は未定"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "系統連系の条件により分割や規模は等分にならない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "風況も踏まえて事業区域を絞り込む"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "地権者との調整も計画絞り込みの要因になる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "国有林との協議も踏まえて現実的な計画に絞り込む"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "横山会長"@ja.
+kg:st_4 rdfs:type cls:st_13.
+cls:st_13 rdfs:label "有識者"@ja.
+kg:op_8 prop:content "自然度の高いブナ林や貴重な着生植物に十分配慮すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "現地調査結果を踏まえて十分配慮したい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "猛禽類への影響回避の観点から縮小の可能性がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "植生への影響回避の観点から縮小の可能性がある"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "急峻な場所は計画地から除外を検討している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "中島委員"@ja.
+kg:st_5 rdfs:type cls:st_3.
+kg:op_13 prop:content "軟弱地層への認識を確認し十分配慮すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "硫化鉄が酸化して硫酸化しうるため十二分に考慮すべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:op_15 prop:content "地層が出てきた場合は流出しないよう対策を考える"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:st_6 rdfs:label "池田委員"@ja.
+kg:st_6 rdfs:type cls:st_3.
+kg:op_16 prop:content "雪や積雪に関してよく調査した方が良い"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:op_17 prop:content "積雪量を考慮して事業計画を検討する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "分割しても生態系上は相互に関係するため県が関わるべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "複数事業を一斉に建てればスケールが大きくなり影響が大きい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "複数事業の同時並行では累積的影響を予測評価する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "車両台数増加による累積的影響を予測評価する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "造成で土壌風化が進むため配慮すべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "緑の回廊を分断する計画は問題である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:op_24 prop:content "緑の回廊への開発規制がなければ同様の計画が続く懸念がある"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:op_25 prop:content "雪の影響で稼働できなくなる懸念がある"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_6.
+kg:op_26 prop:content "積雪で事業中断となることは避ける必要がある"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "雪に守られている環境への影響も考慮すべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "小杉委員"@ja.
+kg:st_7 rdfs:type cls:st_3.
+kg:op_28 prop:content "銀山温泉など景勝地から見えないよう景観検討を進めるべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "尾花沢市"@ja.
+kg:st_8 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_29 prop:content "銀山温泉から見えないようにしてほしい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "地元の役場や観光協会"@ja.
+kg:st_9 rdfs:type cls:st_14.
+cls:st_14 rdfs:label "地域団体"@ja.
+kg:op_30 prop:content "鳴子峡からの眺望に十分配慮してほしい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_9.
+kg:op_31 prop:content "緑の回廊近傍の多数の風車が生態系へ与える影響は未知で配慮が必要"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "分割後も県が環境影響評価に関わっていくのがよい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "既設道路を基本活用しやむを得ない箇所のみ拡幅新設する方針"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "道路拡幅や新設は環境影響評価の対象とする必要がある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "拡幅や新設道路は予測評価対象にする"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "複数事業を同時並行する場合は累積的影響を評価する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "硫化鉄による変質や流出を十分考慮すべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_5.
+kg:op_38 prop:content "問題地層が出た場合は流出防止対策を考える"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "防災面をきちんと設計に考慮し担当と共有する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "積雪地域での経験を生かし除雪しながら保守する"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:op_41 prop:content "積雪条件を踏まえて事業計画を検討する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "景観に関する具体的な検討を進めるべき"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_7.
+kg:op_43 prop:content "地元ヒアリングを進め影響が小さくなるよう設計で配慮する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_3.
+kg:op_44 prop:content "鳴子峡からの眺望に配慮し南側にセットバックした"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "緑の回廊について所管機関と協議を開始している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_3.
+kg:op_46 prop:content "急峻地での大規模改変を避ける方向で検討している"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_3.
+kg:op_47 prop:content "低周波音による生態系影響にも配慮が必要"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "最新知見を収集し予測評価手法に反映する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_3.
+kg:op_49 prop:content "変質した火山性岩石の地域特性を十分認識すべき"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_5.
+kg:op_50 prop:content "硫化鉄を含む岩くず処理に十分注意すべき"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:st_10 rdfs:label "事業者JR東日本エネルギー開発株式会社"@ja.
+kg:st_10 rdfs:type cls:st_1.
+kg:op_51 prop:content "調査ボーリングで把握し酸性地質が確認された場合は対応する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_10.
+kg:op_52 prop:content "急峻地形では風車運搬のための道路拡幅が大きな問題になる"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "風車運搬の旋回のためだけに林道拡幅し森林伐採する懸念がある"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "風力発電にはバードストライクの問題がある"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "裸地化した表面で硫酸化が進むため対応が必要"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_5.
+kg:op_56 prop:content "道路拡幅の可能性が緑の回廊に含まれるのか確認したい"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_6.
+kg:op_57 prop:content "緑の回廊の主旨を理解し北側搬入経路を使わないルートも検討してほしい"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_4.
+kg:op_58 prop:content "低周波音は大きな影響がないと思われるが懸念されるため配慮が必要"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_4.
+kg:op_59 prop:content "山岳景観上尾根沿いに風車が並ぶことは望ましくないと考える人が多い"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_4.
+kg:st_11 rdfs:label "米沢市長"@ja.
+kg:st_11 rdfs:type cls:st_11.
+kg:op_60 prop:content "景観への配慮を求める意見を寄せている"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_11.
+kg:op_61 prop:content "送電線は基本的に既存道路利用を想定している"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_10.
+kg:op_62 prop:content "送電線埋設も場合によっては環境影響評価を想定できる"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_1.
+kg:op_63 prop:content "できるだけ既存道路を使いたい"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_10.
+kg:op_64 prop:content "管理者調整が難しい場合は環境負荷を考慮して新規埋設する"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_10.
+kg:op_65 prop:content "自然環境への影響可能性があれば明記してほしい"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_4.
+kg:op_66 prop:content "背の低いものや羽根枚数を変える選択肢も検討すべき"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_2.
+kg:op_67 prop:content "輸送可能性と環境影響を含めて今後検討する"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_10.
+kg:op_68 prop:content "準備書段階で具体的な技術評価を行う"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_10.
+kg:op_69 prop:content "今後ボーリング調査で地質を把握する"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_10.
+kg:op_70 prop:content "裸地化した切土面に対策を講じる"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_10.
+kg:op_71 prop:content "法面緑化と濁水流出防止に努める"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_10.
+kg:op_72 prop:content "酸性地質確認時は必要な土木工事で対応する"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_10.
+kg:op_73 prop:content "緑の回廊内には風力発電施設を設けない計画である"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_10.
+kg:op_74 prop:content "緑の回廊の主旨を理解し北側搬入経路を使わないルートで検討してほしい"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_4.
+kg:op_75 prop:content "低周波音は予測評価を行い準備書評価書まで手続きを進める"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_10.
+kg:op_76 prop:content "供用後の住民苦情には適切に対応する"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_10.
+kg:op_77 prop:content "広域の眺望点設定で景観評価を進める"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_10.
+kg:op_78 prop:content "モンタージュなども用いて景観影響を示す"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_10.
+kg:op_79 prop:content "住民意見を踏まえて景観評価手法を工夫する"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_10.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今後、事業実施想定区域を4分割する予定だが、分割方法は、東北電力さんとの系統の連係等もあり、現在のところ未定である"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "東北電力さんとの系統連系の枠の問題もあり、等分ではない"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "東北電力との系統連係、風の状況、地権者との関係"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "東北電力との系統連係、風の状況、地権者との関係"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "ここの場合は国有林が7割程度なので、国有林との協議とか"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "事業実施想定区域内に、自然度の高いところも含まれている"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "猛禽類のことや植生のことなどの理由で、回避する場所も出てくると思っている"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "猛禽類のことや植生のことなどの理由で、回避する場所も出てくると思っている"@ja.
+<< kg:id_1 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "事業実施想定区域内はかなり急峻な場所がある。急峻な場所に風車を設置したり、道路をつけたりする場合は、かなりの面積が必要となることも想定される"@ja.
+<< kg:id_1 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "この地域は、小さな鉱山がいくつかあって、地層が軟弱であったり"@ja.
+<< kg:id_1 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "硫化鉄が、けっこう普通の地層に入っている。造成により、掘り返したときに、雨などに触れると、硫化鉄が酸化して硫酸になったりする場合がある"@ja.
+<< kg:id_1 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "この地域は、雪が多い地域であるので、この付近の平地でもかなりの積雪があるのに、さらに山間部の事業であるということで、相当の雪の量が予想される"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "直接、影響がないとしても生態系という意味では、互いに関係しあうということになる"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "一斉に建てれば、スケールの効果もあって大規模なものになり、影響が大きくなるのではないか"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "同じルートを工事車両が通り、複数事業で実施する場合、車両の台数も多くなるので、そういったことについては、累積的な影響についても、予測・評価していく"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "また、土壌の風化が一気に進むということも想定される"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "「緑の回廊」を分断する計画であることは問題であると考えている"@ja.
+<< kg:id_1 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "緑の回廊に対する開発規制がないのであれば、次々とこのような計画が出てくるのではないか"@ja.
+<< kg:id_1 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "発電への影響、周辺環境への影響など、雪に対する認識はどうか"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "この時期に雪に守られている環境というのもあると思うので、それらの影響を考えるとすれば、雪、積雪に関しては調査をよくされた方が良い"@ja.
+<< kg:id_1 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_28;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "山の稜線は景観的にも目立つところだと思うが、ここに風車が立つということは、見え方が変わってくると思う"@ja.
+<< kg:id_1 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "風車の低周波音の影響を考えると、「緑の回廊」のかなり近傍にたくさんの風車が建つということが、どれだけ生態系に影響を与えるかということは現段階では未知だと思う"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "4事業に分割したとしても、山形県として環境影響評価に関わっていくのがいいと思う"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "方針としては、今ある既設の林道・作業道を使う、幅員が狭いところについては一部拡幅する、どうしても無いところについては、新設の作業道をつくる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "もちろん、拡幅するところ、新設する道路は改変区域として扱うので、予測・評価する対象になる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "累積的な影響についても、予測・評価していく考えである"@ja.
+<< kg:id_1 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_37;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "それが流出しないように対策等は考えていきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "防災面もきちんと設計に考慮するようにする"@ja.
+<< kg:id_1 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "除雪をしながら定期的なメンテナンスを行っている"@ja.
+<< kg:id_1 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "除雪の費用、メンテナンスの費用を踏まえたうえで、計画を検討している"@ja.
+<< kg:id_1 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_42;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "今後、地元の方にさらにヒアリングを実施して、各眺望点の利用状況、配慮書に記載以外の眺望点がないかどうか確認して、設計の方で影響が小さくなるように配慮したい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "当初の予定より南側にセットバックし、配慮した"@ja.
+<< kg:id_1 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "これについては、所管する森林管理局、森林管理署様と、協議を開始している状況"@ja.
+<< kg:id_1 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "そのようなところは、今後計画地から除外することを検討している"@ja.
+<< kg:id_1 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "最新の知見を収集しながら、予測・評価の手法に反映していきたい"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "火山性の岩石が多く、それ自体も変質していて"@ja.
+<< kg:id_37 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "硫化鉄なんかも多くあります"@ja.
+<< kg:id_37 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "計画地が急峻な地形であることを考えると"@ja.
+<< kg:id_37 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "風車運搬の際の旋回のためだけに、林道などを拡幅することになれば、森林を伐採しなければならないということが起こる"@ja.
+<< kg:id_37 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "風力発電にはバードストライクの問題もある"@ja.
+<< kg:id_37 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "削った表面が裸になる場合、雨の影響で硫酸の変質が想定より進む"@ja.
+<< kg:id_37 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_56;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "資材搬入経路ルートして考えている道路拡幅のうち、上側のルートが半分ぐらい緑の回廊に係ることになる"@ja.
+<< kg:id_37 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "低周波ですけど、現在のところ大きな影響を及ぼすことは無いと思われるが、懸念される事象であるため、ご配慮をいただきたい"@ja.
+<< kg:id_37 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_59;
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "山形県は山岳の美しいところであり、尾根沿いに風車がたくさん立ち並ぶことは、景観的に望ましくないと思われる方がたくさんいると思われます。米沢市長からも意見が寄せられております"@ja.
+<< kg:id_37 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "電力会社の系統までつなぐ送電線についても、既存の道路を使って埋設あるいは電柱で敷設する"@ja.
+<< kg:id_37 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_62;
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "送電線を敷設するルートについては、出来るだけ既存の道路を使いたい"@ja.
+<< kg:id_37 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_64;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "難しい場合は環境影響負荷を考えたうえで新規で埋設したい"@ja.
+<< kg:id_37 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_66;
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "機種の選定は、今後、輸送の可能性と環境影響を含めて検討していく方針"@ja.
+<< kg:id_37 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "準備書の段階で羽根の大きさと輸送計画を決めて技術評価を行っていく予定"@ja.
+<< kg:id_37 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "地質については、今後、調査ボーリングを行い地質の状況を把握し"@ja.
+<< kg:id_37 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "削った表面は簡易吹付等の対策を講じます"@ja.
+<< kg:id_37 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "切土・盛土を行った法面は、早期に緑化を図り濁水の流出に努め"@ja.
+<< kg:id_37 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "酸性の地質が確認された場合は、何らかの土木工事を行い対応します"@ja.
+<< kg:id_37 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "緑の回廊の場所については、風力発電施設を作らないとの計画"@ja.
+<< kg:id_37 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "北側の搬入経路を使わないルートで検討いただけないかお願いしたい"@ja.
+<< kg:id_37 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "低周波音の項目が掲げられた予測評価を行ったうえで、準備書・評価書までの手続きをさせていただきたい"@ja.
+<< kg:id_37 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "周辺住民の方から供用後に苦情が寄せられれば適切に対応する"@ja.
+<< kg:id_37 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "次の方法書の段階で予測評価を行う眺望点を広い範囲で設定して考えて行きたい"@ja.
+<< kg:id_37 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "予測の結果はモンタージュを予定しており"@ja.
+<< kg:id_37 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "その他の方法についても住民説明会などの意見を踏まえ取り入れて行きたい"@ja.
+}

@@ -1,0 +1,602 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00086> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新市の一体感の促進"@ja.
+kg:id_1 rdf:type cls:c_4745.
+cls:c_4745 rdfs:label "地域一体化"@ja.
+kg:id_2 rdfs:label "旧酒田市と旧3町の施設や祭りやイベントへの不案内な状況"@ja.
+kg:id_2 rdf:type cls:c_4746.
+cls:c_4746 rdfs:label "地域情報不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "行政の統合が市民に与える大きなインパクト"@ja.
+kg:id_3 rdf:type cls:c_4747.
+cls:c_4747 rdfs:label "行政統合"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "市民の不安"@ja.
+kg:id_4 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "市報を活用した各地のイベントや祭りや自然資源や施設の情報提供"@ja.
+kg:id_5 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "総合支所の運営と地域協議会の運営"@ja.
+kg:id_6 rdf:type cls:c_4748.
+cls:c_4748 rdfs:label "地域運営"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "地域づくり懇談会を各地区で早期に実施"@ja.
+kg:id_7 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "るんるんバスの連携・強化"@ja.
+kg:id_8 rdf:type cls:c_1962.
+cls:c_1962 rdfs:label "交通連携"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "道路網の整備"@ja.
+kg:id_9 rdf:type cls:c_1485.
+cls:c_1485 rdfs:label "道路整備"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "スポーツ団体や芸術団体や市民団体の連携強化の話し合いの場の設置"@ja.
+kg:id_10 rdf:type cls:c_4749.
+cls:c_4749 rdfs:label "団体連携"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "新市建設計画の推進"@ja.
+kg:id_11 rdf:type cls:c_3616.
+cls:c_3616 rdfs:label "計画推進"@ja.
+kg:id_12 rdfs:label "旧市町の総合計画を最大限尊重してつくられた計画であること"@ja.
+kg:id_12 rdf:type cls:c_4750.
+cls:c_4750 rdfs:label "計画整合"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "地域のバランスのとれた発展"@ja.
+kg:id_13 rdf:type cls:c_2491.
+cls:c_2491 rdfs:label "地域発展"@ja.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "一体化の促進"@ja.
+kg:id_14 rdf:type cls:c_4745.
+kg:id_11 prop:effect kg:id_14.
+kg:id_15 rdfs:label "合併特例債など国の有効な財源措置の活用"@ja.
+kg:id_15 rdf:type cls:c_4751.
+cls:c_4751 rdfs:label "財源活用"@ja.
+kg:id_11 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "過疎計画の推進"@ja.
+kg:id_16 rdf:type cls:c_3616.
+kg:id_17 rdfs:label "地域のバランスのとれたまちづくりを計画的に進めるため"@ja.
+kg:id_17 rdf:type cls:c_2491.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "財政的にも相当のメリットがあること"@ja.
+kg:id_18 rdf:type cls:c_3236.
+cls:c_3236 rdfs:label "財政効果"@ja.
+kg:id_16 prop:cause kg:id_18.
+kg:id_19 rdfs:label "新市建設計画の重要な一部として取り組む"@ja.
+kg:id_19 rdf:type cls:c_4752.
+cls:c_4752 rdfs:label "計画統合"@ja.
+kg:id_16 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "新市財政計画の見直し"@ja.
+kg:id_20 rdf:type cls:c_4753.
+cls:c_4753 rdfs:label "財政見直し"@ja.
+kg:id_21 rdfs:label "財政計画に盛り込まれていない病院や高校や庁舎の問題の発生"@ja.
+kg:id_21 rdf:type cls:c_4754.
+cls:c_4754 rdfs:label "重要課題"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "新年度予算をベースに新市の財政計画を点検"@ja.
+kg:id_22 rdf:type cls:c_4755.
+cls:c_4755 rdfs:label "財政点検"@ja.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "新市の総合計画の策定作業の中で重要事業を位置づける"@ja.
+kg:id_23 rdf:type cls:c_4756.
+cls:c_4756 rdfs:label "事業位置づけ"@ja.
+kg:id_20 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "市庁舎建設問題"@ja.
+kg:id_24 rdf:type cls:c_4757.
+cls:c_4757 rdfs:label "庁舎整備"@ja.
+kg:id_25 rdfs:label "市役所本庁舎の老朽化"@ja.
+kg:id_25 rdf:type cls:c_860.
+cls:c_860 rdfs:label "施設老朽化"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "耐震への市民不安"@ja.
+kg:id_26 rdf:type cls:c_3320.
+cls:c_3320 rdfs:label "耐震不安"@ja.
+kg:id_24 prop:cause kg:id_26.
+kg:id_27 rdfs:label "市民の安全と安心の拠点機能への懸念"@ja.
+kg:id_27 rdf:type cls:c_4758.
+cls:c_4758 rdfs:label "拠点機能不安"@ja.
+kg:id_24 prop:effect kg:id_27.
+kg:id_28 rdfs:label "耐震調査や全体的点検を早急に実施"@ja.
+kg:id_28 rdf:type cls:c_4759.
+cls:c_4759 rdfs:label "耐震点検"@ja.
+kg:id_24 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "高校再編"@ja.
+kg:id_29 rdf:type cls:c_4165.
+cls:c_4165 rdfs:label "学校再編"@ja.
+kg:id_30 rdfs:label "他地域の高校への進学シフト"@ja.
+kg:id_30 rdf:type cls:c_3645.
+cls:c_3645 rdfs:label "進学流出"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "少子高齢化による子供数の減少"@ja.
+kg:id_31 rdf:type cls:c_4210.
+cls:c_4210 rdfs:label "少子化"@ja.
+kg:id_29 prop:cause kg:id_31.
+kg:id_32 rdfs:label "地域との話し合いを重ねた魅力的な高校づくり"@ja.
+kg:id_32 rdf:type cls:c_4760.
+cls:c_4760 rdfs:label "学校魅力化"@ja.
+kg:id_29 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "県教育委員会と協議を重ね地域の意見を反映する"@ja.
+kg:id_33 rdf:type cls:c_4761.
+cls:c_4761 rdfs:label "行政協議"@ja.
+kg:id_29 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "中学校再編"@ja.
+kg:id_34 rdf:type cls:c_4165.
+kg:id_35 rdfs:label "急激に進む少子化"@ja.
+kg:id_35 rdf:type cls:c_4210.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "八幡中学校松山中学校飛鳥中学校の生徒数減少と小規模化"@ja.
+kg:id_36 rdf:type cls:c_4762.
+cls:c_4762 rdfs:label "小規模化"@ja.
+kg:id_34 prop:cause kg:id_36.
+kg:id_37 rdfs:label "よりよい中学校教育環境の確保が課題となる"@ja.
+kg:id_37 rdf:type cls:c_3601.
+cls:c_3601 rdfs:label "教育環境"@ja.
+kg:id_34 prop:effect kg:id_37.
+kg:id_38 rdfs:label "新市における新たな学区改編審議会の早期設置"@ja.
+kg:id_38 rdf:type cls:c_4763.
+cls:c_4763 rdfs:label "審議会設置"@ja.
+kg:id_34 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "人口減少社会"@ja.
+kg:id_39 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_40 rdfs:label "少子高齢化"@ja.
+kg:id_40 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "酒田市の人口減少"@ja.
+kg:id_41 rdf:type cls:c_705.
+kg:id_39 prop:effect kg:id_41.
+kg:id_42 rdfs:label "各分野の施策を横につなぐ総合的な展開"@ja.
+kg:id_42 rdf:type cls:c_4764.
+cls:c_4764 rdfs:label "施策連携"@ja.
+kg:id_39 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "交流人口を増やす"@ja.
+kg:id_43 rdf:type cls:c_4318.
+cls:c_4318 rdfs:label "交流人口増加"@ja.
+kg:id_39 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "市民が生き生きと暮らせる町をつくる"@ja.
+kg:id_44 rdf:type cls:c_1949.
+cls:c_1949 rdfs:label "地域活性"@ja.
+kg:id_39 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "介護保険制度改正"@ja.
+kg:id_45 rdf:type cls:c_3925.
+cls:c_3925 rdfs:label "制度改正"@ja.
+kg:id_46 rdfs:label "居住費食費の負担増"@ja.
+kg:id_46 rdf:type cls:c_3940.
+cls:c_3940 rdfs:label "負担増"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "利用者負担がふえて大変という相談の発生"@ja.
+kg:id_47 rdf:type cls:c_892.
+cls:c_892 rdfs:label "相談増加"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "相談への適切で丁寧な対応"@ja.
+kg:id_48 rdf:type cls:c_1246.
+cls:c_1246 rdfs:label "相談対応"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "保育所民間移管"@ja.
+kg:id_49 rdf:type cls:c_4765.
+cls:c_4765 rdfs:label "民間移管"@ja.
+kg:id_50 rdfs:label "行財政改革大綱の提言"@ja.
+kg:id_50 rdf:type cls:c_4766.
+cls:c_4766 rdfs:label "行革方針"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "市内法人保育園が多くの児童保育を担ってきた実績"@ja.
+kg:id_51 rdf:type cls:c_4767.
+cls:c_4767 rdfs:label "運営実績"@ja.
+kg:id_49 prop:cause kg:id_51.
+kg:id_52 rdfs:label "約1600万円のコスト削減効果"@ja.
+kg:id_52 rdf:type cls:c_3552.
+cls:c_3552 rdfs:label "経費削減"@ja.
+kg:id_49 prop:effect kg:id_52.
+kg:id_53 rdfs:label "3カ月の引き継ぎ保育"@ja.
+kg:id_53 rdf:type cls:c_4768.
+cls:c_4768 rdfs:label "移管準備"@ja.
+kg:id_49 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "旧3町の保育園も含めた見直し検討"@ja.
+kg:id_54 rdf:type cls:c_4769.
+cls:c_4769 rdfs:label "対象見直し"@ja.
+kg:id_49 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "PFIによるコミュニティ防災センター整備"@ja.
+kg:id_55 rdf:type cls:c_4770.
+cls:c_4770 rdfs:label "防災施設整備"@ja.
+kg:id_56 rdfs:label "民間活力の活用によるコスト削減とサービス向上の期待"@ja.
+kg:id_56 rdf:type cls:c_4771.
+cls:c_4771 rdfs:label "民間活用"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "県営住宅とあわせた発注による共通経費削減"@ja.
+kg:id_57 rdf:type cls:c_4772.
+cls:c_4772 rdfs:label "共同発注"@ja.
+kg:id_55 prop:cause kg:id_57.
+kg:id_58 rdfs:label "安全管理や施工監理への懸念"@ja.
+kg:id_58 rdf:type cls:c_4773.
+cls:c_4773 rdfs:label "安全管理不安"@ja.
+kg:id_55 prop:effect kg:id_58.
+kg:id_59 rdfs:label "設計段階建築確認段階施工監理段階完成検査段階で県と共同歩調の検査"@ja.
+kg:id_59 rdf:type cls:c_4774.
+cls:c_4774 rdfs:label "検査体制"@ja.
+kg:id_55 prop:contermeasure kg:id_59.
+kg:st_1 rdfs:label "後藤仁議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "一体感形成には各地域を知り合うことが必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "阿部寿一市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_2 prop:content "行政統合による不安に迅速かつ的確に対応すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "旧町地域では不安を最小限に抑える配慮が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "丁寧できめ細かな情報提供を進めたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "小さな不安や不満に迅速対応できる運営が重要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "市長が地域を回り市民の意見を早く聞くべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "るんるんバス連携は合併効果を実感できる施策"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "県への重要事業要望として継続的に進めるべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "団体間の話し合いが分野ごとの一体化促進に有効"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "着実な推進が各地域の発展と一体化に資する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "着実な推進が地域の均衡ある発展につながる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "建設計画の推進は一体化の促進にも大きく貢献する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "合併特例債など有効財源を使い着実に進めるべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "過疎計画は旧町にとって重要な地域建設計画である"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "重要な一部として推進に取り組むべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "過疎計画の位置づけを十分認識して推進したい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "新たな重要課題を踏まえた新財政計画が必要"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "初めての通年予算を基に財政計画を見直すべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "総合計画の中で新たな重要事業を明確に位置づけるべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "市民サービス拠点として庁舎問題を財政計画に入れるべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "耐震について早急な調査と結論が必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "防災拠点としての機能確保が重要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "修繕継続か建て替えかを早急に判断すべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "全県から来られる魅力ある高校づくりが必要"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "少子化の中でも魅力ある高校づくりが必要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "県教育委員会と協議し魅力ある高校づくりに全力を挙げる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "地域の意見を聞きながら具体化を進めるべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "五十嵐龍一教育部長"@ja.
+kg:st_3 rdfs:type cls:st_47.
+cls:st_47 rdfs:label "行政職"@ja.
+kg:op_28 prop:content "少子化に対応した学区再編の検討が必要"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "飽海3町の中学校のあり方が大きなテーマになる"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "生徒にとってよりよい教育環境確保が必要"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "審議会を立ち上げて方向を見出すべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "少子高齢化への決定打は見出しにくく総合的施策が必要"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "新市の大きなテーマはにぎわいをつくること"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "最良の施策を有機的に連携させて展開すべき"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "定住人口が伸びなくても交流人口増加は可能"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "生き生きと暮らせる町づくりを志して市政運営すべき"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "市原栄子議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_37 prop:content "負担増で介護サービス内容を切り詰める声が多い"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "市は救済措置を講じるべき"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "相談には適切に丁寧に対応している"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "民間にできるものは民間にの方針で取り組んできた"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "法人保育園の実績が移管判断の背景にある"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "菅原良明議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_42 prop:content "縮減内容を明確にすべき"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_5.
+kg:op_43 prop:content "園児と保護者への配慮から引き継ぎ期間の考え方を明確にすべき"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_5.
+kg:op_44 prop:content "必要な見直しをしながら旧3町保育園も検討対象に加える"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "PFIは民間活力活用による効果がある"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "共同発注によるコスト面のメリットがある"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "防災センターである以上安全性の行政チェックを徹底すべき"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "各段階で万全のチェック態勢をとるべき"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "旧酒田市にある施設でありますとか、旧３町にあるさまざまな魅力的な施設とか、数々の祭りやイベント、こういうものについて案外不案内というような状況もある"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "やはり行政というものの統合となりますと、かなり大きなこれはインパクト、事件でございますので、市民の皆さんに多くの不安がある"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "住民の皆さんの不安を最小限に抑えることにつながる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "市報なども十分に活用しながらでありますが、丁寧にきめ細かく各地のイベントや祭りの情報、そしてまた魅力ある自然資源や施設の情報などを市民の皆さんに提供をしていきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "このような概念、考えを持って総合支所の運営でありますとか地域協議会の運営をしてまいりたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "地域づくり懇談会というようなことを各小学校区単位ぐらいで、なるべく早く、新年度になったら早々にでも、各地区を回るというようなことをやっていきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "るんるんバスの連携・強化、こういうことについてはできるところから早速に取りかかりたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "道路網の整備というのは、県に対する本地域の重要事業としてしっかり要望をさせていただいておりますし、これからも重要な事項として取り上げてまいります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "このような話し合いの場を積極的に設けるということが、その分野分野での市民の一体化の促進にとっても大変有効な手法だ"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "それぞれの旧市町の総合計画というものを最大限尊重してつくり上げた計画"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "この新市の建設計画の着実な推進こそがそれぞれの地域のバランスのとれた発展"@ja.
+<< kg:id_11 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "ひいては一体化の促進ということにも大きく貢献する"@ja.
+<< kg:id_11 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "この合併特例債などの国の有効な財源措置などを十分に活用しながら、着実な建設計画の推進に全力で当たってまいります"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "過疎計画に基づくさまざまな事業の展開、これはそのバランスのとれたまちづくりを計画的に進めるという意味でもこの過疎計画は大変大きな意味を持ちます"@ja.
+<< kg:id_16 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "財政的にも相当のメリットのある事業だというふうに思っております"@ja.
+<< kg:id_16 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "新市建設計画の重要な一部としてこの過疎計画の推進にも取り組んでまいりたい"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "この財政計画に盛り込まれていないさまざまな要素が出てまいっております。病院の問題や高校の問題、庁舎の問題"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "新年度予算編成の事務作業も進めてございますが、これをベースにもう一度新市の財政計画というものを点検をしてみたい"@ja.
+<< kg:id_20 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "新市の総合計画の策定作業に入り、そのような中でしっかり新たに発生した重要事業を明確に位置づけ、財政計画を精緻にまた点検、位置づけていきたい"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "市役所のこの本庁舎は昭和39年の建設ということであります。築後40年"@ja.
+<< kg:id_24 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "耐震についての市民の皆さんの不安というのも多く出ているのではないか"@ja.
+<< kg:id_24 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "災害時なども含めて、平常時もそうでありますが、市民の安全と安心の拠点がこの市庁舎でございます"@ja.
+<< kg:id_24 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "このような調査なり全体的な点検というようなものについては早急に行って"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "今は完全に鶴岡の方の高校にシフトした"@ja.
+<< kg:id_29 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "少子高齢化で子供たちは少なくなっていきます"@ja.
+<< kg:id_29 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "地域との話し合いを重ねて、中学生がぜひとも進学したいというふうに考えるような魅力的な立派な高校を地域とともにつくっていきます"@ja.
+<< kg:id_29 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "県教育委員会と協議を重ね、地域の意見もいただきながら"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "急激に進む少子化という中で"@ja.
+<< kg:id_34 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "八幡中学校、松山中学校、飛鳥中学校、いずれの３校においても同様に生徒数が減少し、小規模化が進む傾向にございます"@ja.
+<< kg:id_34 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "生徒にとってよりよい中学校教育の環境が確保できる学校のあり方"@ja.
+<< kg:id_34 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "新市における新たな学区改編審議会を早期に立ち上げて、検討を深める中でこれからの方向を見出してまいりたい"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "少子高齢化になかなか歯どめをかけることができないというのが実態"@ja.
+<< kg:id_39 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "酒田市の人口は11万7,576人、－4,038人"@ja.
+<< kg:id_39 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "施策を横につなぐといいますか、考えられる各分野分野で最良の施策と思われるものをしっかり総合的に有機的な連携をとりながら展開をしていく"@ja.
+<< kg:id_39 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "少なくとも交流人口だけは他に増してふやすことはできる"@ja.
+<< kg:id_39 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "それぞれ暮らしている市民が生き生きと暮らしているねという町だけはつくれるはずだ"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "10月から制度改悪され、居住費、食費の負担がふえ"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "相談を受けた件数は９件であります。その内容は、利用者負担がふえて大変だという相談"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "これらの相談についても適切に丁寧に対応をしてございます"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "平成13年３月策定の市行財政改革大綱の提言に基づくものでございまして、民間にできるものは民間に"@ja.
+<< kg:id_49 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "市内には15の法人保育園があり、この保育園が旧市立で言いますと、市立の保育園の倍近い児童の保育を担当してきたということなどの実績"@ja.
+<< kg:id_49 prop:effect kg:id_52 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "コスト削減効果でありますが、一定の試算でありますが、約1,600万円と考えてございます"@ja.
+<< kg:id_49 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "引き継ぎ保育の期間については全国の先進事例を参考に、また現場の意見も伺って、３カ月と決めた"@ja.
+<< kg:id_49 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "必要な見直しをしながら旧３町の保育園についても検討対象として加えていきたい"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "ＰＦＩ方式は、民間の活力を活用しながらコストを削減をしたり、サービスを向上したりというような形でいろいろな効果がある"@ja.
+<< kg:id_55 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "県営住宅とあわせて発注することによって、共通経費の削減が図られるというようなメリット"@ja.
+<< kg:id_55 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "建てられたものについて十分な安全管理といいますか、施工監理がなされてなければならない"@ja.
+<< kg:id_55 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "設計段階、建築確認段階、施工監理段階、完成検査段階など県と共同歩調をとりながら、しっかりとした検査態勢で望み"@ja.
+}

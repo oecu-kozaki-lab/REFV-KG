@@ -1,0 +1,80 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00020> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "騒音・低周波"@ja.
+kg:id_2 rdf:type cls:c_14176.
+cls:c_14176 rdfs:label "騒音・低周波"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "鳥取西部風力発電事業"@ja.
+kg:id_3 rdf:type cls:c_170.
+kg:id_4 rdfs:label "騒音・低周波の影響範囲"@ja.
+kg:id_4 rdf:type cls:c_14176.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "日向山・大出日山風力発電事業"@ja.
+kg:id_5 rdf:type cls:c_170.
+kg:id_5 prop:effect kg:id_4.
+kg:id_6 rdfs:label "土砂災害"@ja.
+kg:id_6 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "鳥取西部風力発電建設予定地"@ja.
+kg:id_7 rdf:type cls:c_13354.
+cls:c_13354 rdfs:label "建設予定地"@ja.
+kg:id_8 rdfs:label "土砂災害危険箇所との重なり"@ja.
+kg:id_8 rdf:type cls:c_14177.
+cls:c_14177 rdfs:label "土砂災害危険箇所"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "日向山風力発電建設予定地"@ja.
+kg:id_9 rdf:type cls:c_13354.
+kg:id_9 prop:effect kg:id_8.
+kg:id_10 rdfs:label "大出日山風力発電建設予定地"@ja.
+kg:id_10 rdf:type cls:c_13354.
+kg:id_10 prop:effect kg:id_8.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "H−RISK 騒音・低周波マップ"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "鳥取西部風力発電事業影響範囲"@ja.
+<< kg:id_5 prop:effect kg:id_4 >>
+    prop:text-txt_contents "日向山・大出日山風力発電事業影響範囲"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "土砂災害マップ"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:text-txt_contents "国土地理院-ハザードマップ 土石流危険渓流 土石流警戒区域 土石流特別警戒区域 急傾斜地崩壊警戒区域 急傾斜地崩壊特別警戒区域 雪崩危険箇所 鳥取西部風力発電建設予定地"@ja.
+<< kg:id_9 prop:effect kg:id_8 >>
+    prop:text-txt_contents "日向山風力発電建設予定地"@ja.
+<< kg:id_10 prop:effect kg:id_8 >>
+    prop:text-txt_contents "大出日山風力発電建設予定地"@ja.
+}

@@ -1,0 +1,889 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00141> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "町民の安全確保"@ja.
+kg:id_1 rdf:type cls:c_1225.
+cls:c_1225 rdfs:label "安全確保"@ja.
+kg:id_2 rdfs:label "自然豊かな反面災害が発生しやすいリスク"@ja.
+kg:id_2 rdf:type cls:c_6934.
+cls:c_6934 rdfs:label "災害リスク"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "洪水浸水"@ja.
+kg:id_3 rdf:type cls:c_1490.
+cls:c_1490 rdfs:label "浸水被害"@ja.
+kg:id_4 rdfs:label "月光川上流側からの溢流想定"@ja.
+kg:id_4 rdf:type cls:c_8126.
+cls:c_8126 rdfs:label "河川溢流"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "北海道胆振東部地震の山体崩壊"@ja.
+kg:id_5 rdf:type cls:c_6932.
+cls:c_6932 rdfs:label "複合災害"@ja.
+kg:id_6 rdfs:label "雨の影響と地震が重なった複合災害"@ja.
+kg:id_6 rdf:type cls:c_8127.
+cls:c_8127 rdfs:label "複合要因"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "当山地区の孤立リスク"@ja.
+kg:id_7 rdf:type cls:c_8128.
+cls:c_8128 rdfs:label "孤立リスク"@ja.
+kg:id_8 rdfs:label "断層被害の発生"@ja.
+kg:id_8 rdf:type cls:c_8129.
+cls:c_8129 rdfs:label "断層被害"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "大雨時の河川被害"@ja.
+kg:id_9 rdf:type cls:c_6933.
+cls:c_6933 rdfs:label "河川被害"@ja.
+kg:id_10 rdfs:label "流れを阻害する支障木"@ja.
+kg:id_10 rdf:type cls:c_8036.
+cls:c_8036 rdfs:label "支障木"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "堆積土砂"@ja.
+kg:id_11 rdf:type cls:c_8035.
+cls:c_8035 rdfs:label "堆積土砂"@ja.
+kg:id_9 prop:cause kg:id_11.
+kg:id_12 rdfs:label "障がいを理由とする差別"@ja.
+kg:id_12 rdf:type cls:c_2019.
+cls:c_2019 rdfs:label "差別"@ja.
+kg:id_13 rdfs:label "本人は言いづらく周りは聞きづらい状況"@ja.
+kg:id_13 rdf:type cls:c_8130.
+cls:c_8130 rdfs:label "意思疎通困難"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "平津配水池停止による断水"@ja.
+kg:id_14 rdf:type cls:c_2096.
+cls:c_2096 rdfs:label "断水"@ja.
+kg:id_15 rdfs:label "遊佐の中心市街地を初めほぼ町内全域に影響"@ja.
+kg:id_15 rdf:type cls:c_71.
+cls:c_71 rdfs:label "広域影響"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "4,993世帯のうち3,448世帯に影響"@ja.
+kg:id_16 rdf:type cls:c_8131.
+cls:c_8131 rdfs:label "世帯影響"@ja.
+kg:id_14 prop:effect kg:id_16.
+kg:id_17 rdfs:label "丸子橋周辺の洪水被害"@ja.
+kg:id_17 rdf:type cls:c_5197.
+cls:c_5197 rdfs:label "洪水被害"@ja.
+kg:id_18 rdfs:label "橋脚に流木がひっかかり大水時の危険が高まる"@ja.
+kg:id_18 rdf:type cls:c_8132.
+cls:c_8132 rdfs:label "危険増大"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "吉野川の橋梁流木被害"@ja.
+kg:id_19 rdf:type cls:c_8133.
+cls:c_8133 rdfs:label "流木被害"@ja.
+kg:id_20 rdfs:label "溢流して大きな被害"@ja.
+kg:id_20 rdf:type cls:c_8134.
+cls:c_8134 rdfs:label "溢流被害"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "旧朝日橋の存置"@ja.
+kg:id_21 rdf:type cls:c_8135.
+cls:c_8135 rdfs:label "橋梁存置"@ja.
+kg:id_22 rdfs:label "洪水時の流木等がひっかかり洪水災害が発生する危険性"@ja.
+kg:id_22 rdf:type cls:c_8136.
+cls:c_8136 rdfs:label "洪水危険"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "障がい者への配慮不足"@ja.
+kg:id_23 rdf:type cls:c_5217.
+cls:c_5217 rdfs:label "配慮不足"@ja.
+kg:id_24 rdfs:label "個人情報が周囲に知れ渡る"@ja.
+kg:id_24 rdf:type cls:c_8137.
+cls:c_8137 rdfs:label "個人情報漏えい"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "災害時の障がい者避難困難"@ja.
+kg:id_25 rdf:type cls:c_2991.
+cls:c_2991 rdfs:label "避難困難"@ja.
+kg:id_26 rdfs:label "サイレンが鳴っても聞こえないことがあり得る"@ja.
+kg:id_26 rdf:type cls:c_8138.
+cls:c_8138 rdfs:label "情報伝達不全"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "しゅんせつ要望箇所や支障木撤去要望箇所を県へリスト提出"@ja.
+kg:id_27 rdf:type cls:c_8139.
+cls:c_8139 rdfs:label "要望提出"@ja.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "月光川の流下能力不足"@ja.
+kg:id_28 rdf:type cls:c_8140.
+cls:c_8140 rdfs:label "流下能力不足"@ja.
+kg:id_29 rdfs:label "月光橋上流のしゅんせつ工事"@ja.
+kg:id_29 rdf:type cls:c_8141.
+cls:c_8141 rdfs:label "しゅんせつ工事"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "月光川水系の河川整備"@ja.
+kg:id_30 rdf:type cls:c_8142.
+cls:c_8142 rdfs:label "河川整備"@ja.
+kg:id_31 rdfs:label "流域委員会と公聴会を通じた整備計画策定"@ja.
+kg:id_31 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "旧江地橋付近の河川課題"@ja.
+kg:id_32 rdf:type cls:c_8143.
+cls:c_8143 rdfs:label "河川課題"@ja.
+kg:id_33 rdfs:label "埋め立てや上流部の河川整備への予算投入"@ja.
+kg:id_33 rdf:type cls:c_2706.
+cls:c_2706 rdfs:label "整備事業"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "県道菅里―直世―下野沢線の未整備"@ja.
+kg:id_34 rdf:type cls:c_1919.
+cls:c_1919 rdfs:label "道路未整備"@ja.
+kg:id_35 rdfs:label "期成同盟会の組織改編を含めた要望活動"@ja.
+kg:id_35 rdf:type cls:c_671.
+cls:c_671 rdfs:label "要望活動"@ja.
+kg:id_34 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "障がい者の意思疎通困難"@ja.
+kg:id_36 rdf:type cls:c_8130.
+kg:id_37 rdfs:label "手話通訳者の派遣"@ja.
+kg:id_37 rdf:type cls:c_8144.
+cls:c_8144 rdfs:label "通訳派遣"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "要約筆記の未整備"@ja.
+kg:id_38 rdf:type cls:c_8145.
+cls:c_8145 rdfs:label "支援未整備"@ja.
+kg:id_39 rdfs:label "需要の有無や必要性の検討"@ja.
+kg:id_39 rdf:type cls:c_8146.
+cls:c_8146 rdfs:label "必要性検討"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "新庁舎における障がい者配慮不足"@ja.
+kg:id_40 rdf:type cls:c_5217.
+kg:id_41 rdfs:label "駐車場や多目的トイレの設置"@ja.
+kg:id_41 rdf:type cls:c_480.
+cls:c_480 rdfs:label "設備設置"@ja.
+kg:id_40 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "窓口カウンターの高さや形式の検討"@ja.
+kg:id_42 rdf:type cls:c_6536.
+cls:c_6536 rdfs:label "窓口改善"@ja.
+kg:id_40 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "新庁舎における難聴者支援不足"@ja.
+kg:id_43 rdf:type cls:c_1148.
+cls:c_1148 rdfs:label "支援不足"@ja.
+kg:id_44 rdfs:label "磁気ループシステム等の導入検討"@ja.
+kg:id_44 rdf:type cls:c_2987.
+cls:c_2987 rdfs:label "設備導入"@ja.
+kg:id_43 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "支障木放置による河川危険"@ja.
+kg:id_45 rdf:type cls:c_8147.
+cls:c_8147 rdfs:label "河川危険"@ja.
+kg:id_46 rdfs:label "河川管理者である県による撤去"@ja.
+kg:id_46 rdf:type cls:c_8148.
+cls:c_8148 rdfs:label "支障木撤去"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "丸子橋の流木危険"@ja.
+kg:id_47 rdf:type cls:c_8149.
+cls:c_8149 rdfs:label "流木危険"@ja.
+kg:id_48 rdfs:label "月光川水害予防組合予算による緊急撤去"@ja.
+kg:id_48 rdf:type cls:c_8150.
+cls:c_8150 rdfs:label "緊急撤去"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "旧朝日橋の洪水危険"@ja.
+kg:id_49 rdf:type cls:c_8136.
+kg:id_50 rdfs:label "県への撤去要望継続"@ja.
+kg:id_50 rdf:type cls:c_8151.
+cls:c_8151 rdfs:label "撤去要望"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "河川の流下能力不足"@ja.
+kg:id_51 rdf:type cls:c_8140.
+kg:id_52 rdfs:label "河川流下能力向上緊急対策事業"@ja.
+kg:id_52 rdf:type cls:c_8152.
+cls:c_8152 rdfs:label "緊急対策事業"@ja.
+kg:id_51 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "河川愛護の不足"@ja.
+kg:id_53 rdf:type cls:c_8153.
+cls:c_8153 rdfs:label "河川愛護不足"@ja.
+kg:id_54 rdfs:label "山形県ふるさとの川愛護活動支援事業の活用"@ja.
+kg:id_54 rdf:type cls:c_3169.
+cls:c_3169 rdfs:label "活動支援"@ja.
+kg:id_53 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "洗沢川上流の支障木問題"@ja.
+kg:id_55 rdf:type cls:c_8154.
+cls:c_8154 rdfs:label "支障木問題"@ja.
+kg:id_56 rdfs:label "地域と民間活用を含めた支障木処理の調整"@ja.
+kg:id_56 rdf:type cls:c_8155.
+cls:c_8155 rdfs:label "処理調整"@ja.
+kg:id_55 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "県道菅里―直世―下野沢線の停滞"@ja.
+kg:id_57 rdf:type cls:c_8156.
+cls:c_8156 rdfs:label "道路停滞"@ja.
+kg:id_58 rdfs:label "庄内総合支庁等への具体的提案を伴う要望"@ja.
+kg:id_58 rdf:type cls:c_671.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "期成同盟会の再編強化"@ja.
+kg:id_59 rdf:type cls:c_2489.
+cls:c_2489 rdfs:label "組織再編"@ja.
+kg:id_57 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "ヘルプマーク未活用"@ja.
+kg:id_60 rdf:type cls:c_8157.
+cls:c_8157 rdfs:label "未活用"@ja.
+kg:id_61 rdfs:label "ヘルプマーク交付"@ja.
+kg:id_61 rdf:type cls:c_8158.
+cls:c_8158 rdfs:label "マーク交付"@ja.
+kg:id_60 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "手話言語への理解不足"@ja.
+kg:id_62 rdf:type cls:c_836.
+cls:c_836 rdfs:label "理解不足"@ja.
+kg:id_63 rdfs:label "庁内での手話サークル等の取り組み検討"@ja.
+kg:id_63 rdf:type cls:c_8159.
+cls:c_8159 rdfs:label "庁内活動"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "高齢化に伴う難聴者支援不足"@ja.
+kg:id_64 rdf:type cls:c_1148.
+kg:id_65 rdfs:label "高齢者にも優しい町づくりの施策検討"@ja.
+kg:id_65 rdf:type cls:c_7920.
+cls:c_7920 rdfs:label "施策検討"@ja.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "障がい者雇用率未達"@ja.
+kg:id_66 rdf:type cls:c_5805.
+cls:c_5805 rdfs:label "雇用率未達"@ja.
+kg:id_67 rdfs:label "職員の急病による長期休職と早期退職"@ja.
+kg:id_67 rdf:type cls:c_8160.
+cls:c_8160 rdfs:label "職員減少"@ja.
+kg:id_66 prop:cause kg:id_67.
+kg:id_68 rdfs:label "障がい者が働きにくい状況"@ja.
+kg:id_68 rdf:type cls:c_2089.
+cls:c_2089 rdfs:label "就労困難"@ja.
+kg:id_69 rdfs:label "能力を十分に発揮できず将来の見通しを持ちにくい"@ja.
+kg:id_69 rdf:type cls:c_8161.
+cls:c_8161 rdfs:label "能力不発揮"@ja.
+kg:id_68 prop:effect kg:id_69.
+kg:id_70 rdfs:label "高齢者のひとり暮らし増加"@ja.
+kg:id_70 rdf:type cls:c_8162.
+cls:c_8162 rdfs:label "独居増加"@ja.
+kg:id_71 rdfs:label "在宅高齢者が増える"@ja.
+kg:id_71 rdf:type cls:c_8163.
+cls:c_8163 rdfs:label "在宅増加"@ja.
+kg:id_70 prop:effect kg:id_71.
+kg:id_72 rdfs:label "65歳以上おひとり暮らし世帯が4年間で120世帯増加"@ja.
+kg:id_72 rdf:type cls:c_8164.
+cls:c_8164 rdfs:label "世帯増加"@ja.
+kg:id_70 prop:effect kg:id_72.
+kg:id_73 rdfs:label "街かどサロンの運営難"@ja.
+kg:id_73 rdf:type cls:c_7049.
+cls:c_7049 rdfs:label "運営難"@ja.
+kg:id_74 rdfs:label "運営者の高齢化"@ja.
+kg:id_74 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "収益が少なくボランティアに近い運営"@ja.
+kg:id_75 rdf:type cls:c_8165.
+cls:c_8165 rdfs:label "収益不足"@ja.
+kg:id_73 prop:cause kg:id_75.
+kg:id_76 rdfs:label "障がいを持つ就業希望者1名の新規勤務調整"@ja.
+kg:id_76 rdf:type cls:c_8166.
+cls:c_8166 rdfs:label "就業調整"@ja.
+kg:id_66 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "障がい者就労支援"@ja.
+kg:id_77 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "就労支援"@ja.
+kg:id_78 rdfs:label "障害者就業・生活支援センターによる相談や支援"@ja.
+kg:id_78 rdf:type cls:c_2126.
+cls:c_2126 rdfs:label "相談支援"@ja.
+kg:id_77 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "相談支援専門員による福祉就労支援"@ja.
+kg:id_79 rdf:type cls:c_8167.
+cls:c_8167 rdfs:label "福祉就労支援"@ja.
+kg:id_77 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "特別支援学校卒業後の進路不安"@ja.
+kg:id_80 rdf:type cls:c_8168.
+cls:c_8168 rdfs:label "進路不安"@ja.
+kg:id_81 rdfs:label "進路指導主事との情報共有と支援"@ja.
+kg:id_81 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_80 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "障がい者就労機会不足"@ja.
+kg:id_82 rdf:type cls:c_8169.
+cls:c_8169 rdfs:label "就労機会不足"@ja.
+kg:id_83 rdfs:label "庄内地域障がい者就労活動活性化協議会での連携"@ja.
+kg:id_83 rdf:type cls:c_3634.
+cls:c_3634 rdfs:label "連携支援"@ja.
+kg:id_82 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "いきいき百歳体操などの介護予防事業の拡大"@ja.
+kg:id_84 rdf:type cls:c_8009.
+cls:c_8009 rdfs:label "介護予防"@ja.
+kg:id_70 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "エプロンサービス等の住民同士の助け合い制度構築"@ja.
+kg:id_85 rdf:type cls:c_8170.
+cls:c_8170 rdfs:label "助け合い"@ja.
+kg:id_70 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "大人食堂的な居場所不足"@ja.
+kg:id_86 rdf:type cls:c_8171.
+cls:c_8171 rdfs:label "居場所不足"@ja.
+kg:id_87 rdfs:label "街かどサロン内ゆざや食堂の活用"@ja.
+kg:id_87 rdf:type cls:c_8172.
+cls:c_8172 rdfs:label "食堂活用"@ja.
+kg:id_86 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "商工会と連携した支援の検討協議"@ja.
+kg:id_88 rdf:type cls:c_3634.
+kg:id_86 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "洋上風力発電導入"@ja.
+kg:id_89 rdf:type cls:c_8173.
+cls:c_8173 rdfs:label "発電導入"@ja.
+kg:id_90 rdfs:label "研究・検討会議と遊佐沿岸域検討部会での協議継続"@ja.
+kg:id_90 rdf:type cls:c_8174.
+cls:c_8174 rdfs:label "協議継続"@ja.
+kg:id_89 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "海流調査等を実施し研究を継続"@ja.
+kg:id_91 rdf:type cls:c_4818.
+cls:c_4818 rdfs:label "調査研究"@ja.
+kg:id_89 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "地域や漁業関係者への周知と理解促進"@ja.
+kg:id_92 rdf:type cls:c_4449.
+cls:c_4449 rdfs:label "理解促進"@ja.
+kg:id_89 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "水道事業の基盤弱体化"@ja.
+kg:id_93 rdf:type cls:c_8175.
+cls:c_8175 rdfs:label "基盤弱体化"@ja.
+kg:id_94 rdfs:label "人口減少に伴う需要減少"@ja.
+kg:id_94 rdf:type cls:c_1179.
+cls:c_1179 rdfs:label "需要減少"@ja.
+kg:id_93 prop:cause kg:id_94.
+kg:id_95 rdfs:label "水道施設の老朽化"@ja.
+kg:id_95 rdf:type cls:c_860.
+cls:c_860 rdfs:label "施設老朽化"@ja.
+kg:id_93 prop:cause kg:id_95.
+kg:id_96 rdfs:label "深刻化する人材不足"@ja.
+kg:id_96 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_93 prop:cause kg:id_96.
+kg:id_97 rdfs:label "水道民営化の困難"@ja.
+kg:id_97 rdf:type cls:c_8176.
+cls:c_8176 rdfs:label "民営化困難"@ja.
+kg:id_98 rdfs:label "給水人口が少なく集落が点在し配水管延長が長い"@ja.
+kg:id_98 rdf:type cls:c_8177.
+cls:c_8177 rdfs:label "採算不利"@ja.
+kg:id_97 prop:cause kg:id_98.
+kg:id_99 rdfs:label "水道事業の将来的な厳しさ"@ja.
+kg:id_99 rdf:type cls:c_8178.
+cls:c_8178 rdfs:label "運営悪化"@ja.
+kg:id_100 rdfs:label "財政状況は大変厳しい状況に進んでいく見込み"@ja.
+kg:id_100 rdf:type cls:c_3505.
+cls:c_3505 rdfs:label "財政悪化"@ja.
+kg:id_99 prop:effect kg:id_100.
+kg:id_101 rdfs:label "水道事業の持続性確保"@ja.
+kg:id_101 rdf:type cls:c_8179.
+cls:c_8179 rdfs:label "持続性確保"@ja.
+kg:id_102 rdfs:label "経営方針と目標を定め計画的な運営を実現"@ja.
+kg:id_102 rdf:type cls:c_8180.
+cls:c_8180 rdfs:label "計画運営"@ja.
+kg:id_101 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "水道の民営化は現在考えない"@ja.
+kg:id_103 rdf:type cls:c_8181.
+cls:c_8181 rdfs:label "民営化否定"@ja.
+kg:id_101 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "2025年問題"@ja.
+kg:id_104 rdf:type cls:c_8182.
+cls:c_8182 rdfs:label "高齢化問題"@ja.
+kg:id_105 rdfs:label "後期高齢者増加により介護サービス利用者が増える"@ja.
+kg:id_105 rdf:type cls:c_1979.
+cls:c_1979 rdfs:label "利用増加"@ja.
+kg:id_104 prop:effect kg:id_105.
+kg:id_106 rdfs:label "次期以降の介護保険料が高くなり町民負担が大きくなる"@ja.
+kg:id_106 rdf:type cls:c_952.
+cls:c_952 rdfs:label "負担増加"@ja.
+kg:id_104 prop:effect kg:id_106.
+kg:id_107 rdfs:label "2025年問題への対応"@ja.
+kg:id_107 rdf:type cls:c_8183.
+cls:c_8183 rdfs:label "高齢化対応"@ja.
+kg:id_108 rdfs:label "医療介護予防住まい生活支援を切れ目なく提供する地域包括ケアシステム"@ja.
+kg:id_108 rdf:type cls:c_6945.
+cls:c_6945 rdfs:label "包括ケア"@ja.
+kg:id_107 prop:contermeasure kg:id_108.
+kg:id_109 rdfs:label "予防介護事業の推進"@ja.
+kg:id_109 rdf:type cls:c_8009.
+kg:id_107 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "高齢者同士が支え合って生活できる地域づくり"@ja.
+kg:id_110 rdf:type cls:c_1244.
+cls:c_1244 rdfs:label "地域支援"@ja.
+kg:id_107 prop:contermeasure kg:id_110.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "自然が豊かな一方で災害リスクを前提に備えるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "新庁舎予定地は浸水想定を重く受け止めるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "本町でも洪水時と地震の複合災害を想定すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "断層被害時に備え県道整備を急ぐべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "支障木は未然に計画的に除去すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "しゅんせつの要望を強めるべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "言い出しにくさを前提に行政が配慮を先回りすべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域生活課長"@ja.
+kg:st_2 rdfs:type cls:st_95.
+cls:st_95 rdfs:label "課長"@ja.
+kg:op_8 prop:content "平津配水池は最重要施設であり耐震化を進めてきた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "旧上水道区域全体に影響が及ぶ"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "丸子橋の事例は大きな水害につながるおそれがある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "流木放置は大きな被害につながるため未然防止が必要"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "旧朝日橋は危険性があり撤去要望を継続する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "手話だけでなく要約筆記も必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "障がい者支援は平時だけでなく災害時も想定すべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "町長"@ja.
+kg:st_3 rdfs:type cls:st_96.
+cls:st_96 rdfs:label "町長"@ja.
+kg:op_15 prop:content "町は位置図や写真を付けて県に実情を伝えている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "県のしゅんせつで中洲状の箇所が改善した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "地元意見が反映された整備計画になった"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "整備計画策定で事業進展を期待している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "災害時のいのちの道として整備予算確保を県に求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "本人希望と事前申請があれば派遣を実施している"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "要望や担い手不足を踏まえ今後検討する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "基本設計に障がい者配慮を盛り込んでいる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "実施設計で窓口の詳細を詰める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "難聴者の聞こえを支える設備導入を検討する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "支障木は占用物件の有無にかかわらず県責任で撤去すべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "県対応を待てず町側で緊急対応した"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "危険性があるため引き続き撤去を求める"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "ストックヤード確保と支障木処分方法の検討が必要"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "地域住民の河川愛護意識を原点に活動立ち上げを期待する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "災害防止と地域資源活用を両立させる事例にすべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "正面から県に当たり継続的に動かすべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "地元参画を広げた強固な期成同盟会で要望を強める"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "健康福祉課長"@ja.
+kg:st_4 rdfs:type cls:st_95.
+kg:op_33 prop:content "本町では13名に交付している"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "庁内の取り組みから始める必要がある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_4.
+kg:op_35 prop:content "耳の聞こえが悪い人が増えることを想定して施策を検討する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "急な退職が未達の大きな要因になった"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "松永裕美議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_37 prop:content "障がい者本人や家族が将来に希望を持てる仕組みが必要"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_5.
+kg:op_38 prop:content "介護サービス事業所が増えない中で在宅支援が重要になる"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "今後さらに増えることを前提に支え合い体制が必要"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "事業継続には支援のあり方検討が必要"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:op_41 prop:content "独立採算では継続が厳しい状況にある"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "31年度から新たな就業機会をつくる方向で調整した"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:op_43 prop:content "関係機関と連携し本人意向を尊重した支援を行う"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_3.
+kg:op_44 prop:content "町も同席しきめ細かな支援に努める"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "3年次春から実習や進路情報を共有している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_3.
+kg:op_46 prop:content "教育機関や事業所と連携し一般就労と福祉就労の充実を図る"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_3.
+kg:op_47 prop:content "介護予防を広げることが安心生活につながる"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_3.
+kg:op_48 prop:content "住民主体の支え合い体制整備が重要"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_3.
+kg:op_49 prop:content "ひとり暮らし高齢者の貴重な居場所になっている"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_3.
+kg:op_50 prop:content "事業者の考えを踏まえ支援可能性を探る"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_3.
+kg:op_51 prop:content "地域理解を図りながら課題抽出と対応策の議論を進める"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_3.
+kg:op_52 prop:content "議論を深めた上で法定協議会設置の準備に進む"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_3.
+kg:op_53 prop:content "関係者理解を前提に検討を進める"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_3.
+kg:op_54 prop:content "人口減少で財政状況は厳しくなる見込み"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_3.
+kg:op_55 prop:content "更新期を迎える施設への対応が必要"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_3.
+kg:op_56 prop:content "基盤強化が必要だが民営化は考えていない"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_3.
+kg:op_57 prop:content "本町は民間事業者にとってメリットが少ない"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_3.
+kg:op_58 prop:content "長期的視点で持続可能な運営計画が必要"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_3.
+kg:op_59 prop:content "安心安全な水道水の安定供給を継続する"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_3.
+kg:op_60 prop:content "現時点で民営化の方針はない"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_3.
+kg:op_61 prop:content "給付費増と保険料上昇が懸念される"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_3.
+kg:op_62 prop:content "給付増の幅を抑えることが重要"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_3.
+kg:op_63 prop:content "高齢者だけでなく全世代を含む地域共生社会の実現が必要"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_3.
+kg:op_64 prop:content "元気な高齢者を増やし給付増を抑える"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_3.
+kg:op_65 prop:content "支え手と受け手に分かれない地域共生が必要"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "しかし、自然豊かな反面、災害が発生しやすいリスクも潜んでいるとも言えます。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "計画予定地は、月光川の洪水浸水想定区域となっており、それに対応する計画とされております。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "北海道の厚真町では、雨の影響と地震が重なった複合災害であったとのことでございました。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "仮に当山地区が断層被害に遭った場合、同区間は「逃げの道」、「救援の道」となると考えます。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "本町の河川状況を見ますと、流れを阻害するような支障木などが目立ちます。"@ja.
+<< kg:id_9 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "県は、29年の３月に「河川流下能力向上計画」を策定し、新年度からは堆積土、支障木除去などの緊急対策を実施するようであります。"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "そのようなとき本人は言いづらい、周りの人は聞きづらいという状況になり得るのではないかと考えるところです。"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "もし仮にですけれども、平津配水池の機能がストップしてしまいますと、遊佐の中心市街地を初めほぼ町内全域に影響が出ることになります。"@ja.
+<< kg:id_14 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "町の4,993世帯のうち69％に当たります3,448世帯、旧上水道区域の全てに影響があることになります。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "昨年８月の丸子橋の橋脚にひっかかった流木についてでございますけれども、県のほうに報告はさせていただきました。"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "平成26年７月に南陽市の吉野川で、上流部の洪水で発生して流れてきたものがひっかかってしまって、溢流をして大きな被害があった"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "旧朝日橋は、径間数も多うございます。洪水時の流木等の支障がひっかかり、洪水災害が発生する危険性も考えられます"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "相手の方が大きい声で聞くと。それに対して、自分の情報を聞こえないので、大きい声で対応せざるを得ないという場面があったそうです。そうしますと、個人情報が全てほかに知れ渡るわけです"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "障がいになっている方は、例えば災害あったときにサイレン鳴っても聞こえないこともあり得るわけです"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "各市町村よりしゅんせつ要望箇所や支障木撤去の要望箇所を位置図や現況写真添付で「リスト」を提出させ、その情報をもとに、県で優先順位をつけて、工事等を実施していくもの"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "「河川流下能力向上計画」により、月光橋上流の深山神社周辺にありまして、中洲のようになっていったところが、昨年７月に県よりしゅんせつ工事をしていただき、現在はきれいになっております。"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "地元流域住民代表、土地改良区・漁業関係者等を交えた「二級河川月光川水系流域委員会」が組織され、３回の委員会と公聴会も１回開催されており、地元の意見も十分に反映された計画"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "この整備計画策定により、これまでなかなか進んでこなかった旧江地橋付近の埋め立てやその上流部の河川整備にも予算が投入されるものと期待"@ja.
+<< kg:id_34 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "今後、これまでの期成同盟会の組織改編を含めあり方の検討を進めるとともに、県に対して整備予算の確保と推進を図られるよう要望活動を実施していきたい"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "会議や医療機関の受診の際に、本人の希望により事前に申請をいただいた場合には、手話通訳者の派遣を既に実施しております。"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "要約筆記については、会議等開催に当たって要望がないこと、町内に要約筆記のグループ等がないことなどから、これまで余り実施したことがありませんので、需要の有無や必要について検討していきたい"@ja.
+<< kg:id_40 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "新庁舎における障がい者に配慮すべき機能については、駐車場や多目的トイレの設置などについて、基本設計に盛り込まれております。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今後、実施設計に当たって、窓口カウンターの高さや形式などの詳細について検討をされることとなります。"@ja.
+<< kg:id_43 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "難聴者の聞こえをサポートするための磁気ループシステムといった設備機器等の導入についても検討する予定"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "河川の支障木等につきましては、河川管理者の責任において対応するということでございました。よって、橋梁等の占用物件があるかないかはかかわらず、全て河川管理者の責任において撤去する"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "本来であれば県であったのですけれども、月光川水害予防組合の予算のほうで処理対応をさせていただいたところでございます。"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "今後も引き続き撤去に関しての要望を継続してまいりたいと思います。"@ja.
+<< kg:id_51 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "昨年８月の大雨を受けまして、河川流下能力向上対策事業から河川流下能力向上緊急対策事業に変更になってございます。"@ja.
+<< kg:id_53 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "山形県ふるさとの川愛護活動支援事業で取り組んではというご提案がございました。地元地域住民の皆様の河川愛護に対する意識がこの活動の原点でございます。"@ja.
+<< kg:id_55 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "切るのは地域で、逆にそれを町のそういう産業等に活用できるのであれば、一つの事例にもなるのではないか"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "今年度中何とかその県と庄内総合支庁にまず一緒に行きませんかという形で県議の先生からも了解をいただいている"@ja.
+<< kg:id_57 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "地元の期成同盟会、もう一度組織再編をして、また遊佐地区と高瀬地区、吹浦地区、２つから参画をいただいて期成同盟会等強固なものにして"@ja.
+<< kg:id_60 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "ヘルプマークのいわゆる本町における申請については、現在のところ13件というふうになってございます。13名の方に交付をしている"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "今現在は庁内でそういったサークルもないということでありますので、そういったところから少し取り組みが必要なのかな"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "今後町民の高齢化に伴いまして、特にその耳の聞こえが悪いという方もふえることが想定をされますので、そういった方にも優しい町づくりになるよう、今後施策について検討していきたい"@ja.
+<< kg:id_66 prop:cause kg:id_67 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "これまで役場職員として働かれた方が急病により長期の休職、そして退職年齢をかなり余しての早期退職せざるを得ない状況になってしまった"@ja.
+<< kg:id_68 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "遊佐町に住む障がいのある方々が自分の持っている力を十分に発揮でき、生き生きと暮らせているでしょうか。自分はもっと力があるのに働けない、仕方ないと諦めている方がいらっしゃるのではないでしょうか。"@ja.
+<< kg:id_70 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "現時点では事業所が新たにふえる予定はないため、在宅高齢者がふえることとなります"@ja.
+<< kg:id_70 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "平成26年４月１日時点で585世帯、平成30年４月１日現在では705世帯で、４年間で120世帯の増となっております。"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "現状としては、運営している方々も高齢化が進んでいる"@ja.
+<< kg:id_73 prop:cause kg:id_75 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "収益が少なく、ボランティアに近い形での運営となっているようで、継続そのものが厳しくなってきている"@ja.
+<< kg:id_66 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "平成31年度より障がいをお持ちの方の就業希望者の方お一人に新たに勤務についていただく予定で調整を行ってきております。"@ja.
+<< kg:id_77 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "主に山形県社会福祉事業団が酒田市内に開設しているサポートセンター「あおぞら」内の「障害者就業・生活支援センター」が窓口となって支援を行っております。"@ja.
+<< kg:id_77 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "福祉就労を希望する方への支援業務は、町が先ほど申し上げたサポートセンター「あおぞら」に委託しており、相談受け付け、障がい福祉サービスの相談支援専門員による支援が行われております。"@ja.
+<< kg:id_80 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "特別支援学校卒業予定者については、町は３年次の春から実習先の様子や進路について進路指導主事の先生と情報を共有し、支援を行っております。"@ja.
+<< kg:id_82 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "「庄内地域障がい者就労活動活性化協議会」において、労働関係機関、養護学校等教育機関、指定障がい福祉サービス事業所、行政等の関係機関が連携して支援に当たり、一般就労及び福祉就労の充実を図っている"@ja.
+<< kg:id_70 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "高齢者が安心して生活していくためには、例えばいきいき百歳体操のような、介護予防事業を広めていくこと"@ja.
+<< kg:id_70 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "現在西遊佐地区で実施しておりますエプロンサービス等、住民同士による助け合い事業の制度を構築していくことが大切"@ja.
+<< kg:id_86 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "「街かどサロン」内の「ゆざや食堂」では、日がわりで地元食材を使った「かあちゃんの味」を提供しており、最近は、ひとり暮らしの高齢者を中心とした常連客がふえているとのことで、議員ご指摘のとおり、そのような方たちの貴重な居場所となっている"@ja.
+<< kg:id_86 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "「大人食堂」の考え方や位置づけ、また「街かどサロン」の運営、事業の継続等については、事業者の方の考え方もございますので、町として支援できることがあれば、商工会と連携しながら検討、協議をしたい"@ja.
+<< kg:id_89 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "「山形県地域協調型洋上風力発電研究・検討会議」が、平成30年７月に設置されております。さらに具体的な検討を行うための地域部会として、「遊佐沿岸域検討部会」が同じく７月に設置"@ja.
+<< kg:id_89 prop:contermeasure kg:id_91 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "来年度の議論の進め方としては、今年度に引き続きさらなる議論の深化、また海流調査等を実施しながら、研究の継続をすることとしております。"@ja.
+<< kg:id_89 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "今後も引き続き、地域や漁業関係者に事業の周知を行い、理解を図りながら、検討を行ってまいりたい"@ja.
+<< kg:id_93 prop:cause kg:id_94 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "人口減少に伴う需要の減少、水道施設の老朽化、深刻化する人材不足等の水道事業が直面する課題"@ja.
+<< kg:id_93 prop:cause kg:id_95 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "人口減少に伴う需要の減少、水道施設の老朽化、深刻化する人材不足等の水道事業が直面する課題"@ja.
+<< kg:id_93 prop:cause kg:id_96 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "人口減少に伴う需要の減少、水道施設の老朽化、深刻化する人材不足等の水道事業が直面する課題"@ja.
+<< kg:id_97 prop:cause kg:id_98 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "本町のように給水人口が少なく集落が点在し、配水管の延長が長いようなところは民間事業者にとってのメリットは少ない"@ja.
+<< kg:id_99 prop:effect kg:id_100 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "人口減少に伴う水需要の減少は顕在化し、財政状況は大変厳しい状況に進んでいくことが見込まれます。"@ja.
+<< kg:id_101 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "水道事業のあり方について長期的な視点に立ち、持続可能な水道施設の計画的な運営を実現するため、水道事業の経営方針と目標を定め、継続して安心で安全な水道水の安定供給に努めていきたい"@ja.
+<< kg:id_101 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "水道の民営化については現在まだ考えておらないというのが現状であります。"@ja.
+<< kg:id_104 prop:effect kg:id_105 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "後期高齢者が増加し、介護サービスを利用する高齢者がふえることにより、給付費の増が予想され"@ja.
+<< kg:id_104 prop:effect kg:id_106 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "給付費がふえると、次期以降の介護保険事業計画の介護保険料が高くなり、町民の負担が大きくなることが危惧されております。"@ja.
+<< kg:id_107 prop:contermeasure kg:id_108 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "高齢者が地域で自立した生活ができるよう医療、介護、予防、住まい、生活支援サービスが切れ目なく提供できるシステム実現に取り組む"@ja.
+<< kg:id_107 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "できるだけ給付増の幅を少なくするため、予防介護事業を進め"@ja.
+<< kg:id_107 prop:contermeasure kg:id_110 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "元気な高齢者がふえることで、高齢者同士が支え合って生活できる地域づくりを進めていきたい"@ja.
+}

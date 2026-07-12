@@ -1,0 +1,247 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00107> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "希少な野生動植物の生育・生息"@ja.
+kg:id_1 rdf:type cls:c_15133.
+cls:c_15133 rdfs:label "野生生物"@ja.
+kg:id_2 rdfs:label "脅かされる懸念"@ja.
+kg:id_2 rdf:type cls:c_15134.
+cls:c_15134 rdfs:label "生態系脅威"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "太陽光発電施設の建設"@ja.
+kg:id_3 rdf:type cls:c_6284.
+cls:c_6284 rdfs:label "開発事業"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "釧路市"@ja.
+kg:id_4 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_5 rdfs:label "ノーモアメガソーラー宣言"@ja.
+kg:id_5 rdf:type cls:c_8819.
+cls:c_8819 rdfs:label "宣言"@ja.
+kg:id_4 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "釧路市自然と太陽光発電施設の調和に関する条例の施行"@ja.
+kg:id_6 rdf:type cls:c_2690.
+cls:c_2690 rdfs:label "条例施行"@ja.
+kg:id_4 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "釧路市生物多様性地域戦略の策定"@ja.
+kg:id_7 rdf:type cls:c_10404.
+cls:c_10404 rdfs:label "戦略策定"@ja.
+kg:id_4 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "自然環境保全"@ja.
+kg:id_8 rdf:type cls:c_12467.
+cls:c_12467 rdfs:label "自然保全"@ja.
+kg:id_4 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "野生動植物の保護"@ja.
+kg:id_9 rdf:type cls:c_14651.
+cls:c_14651 rdfs:label "生物保護"@ja.
+kg:id_4 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "環境教育の提供"@ja.
+kg:id_10 rdf:type cls:c_702.
+cls:c_702 rdfs:label "環境教育"@ja.
+kg:id_4 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "希少な野生動植物の保護"@ja.
+kg:id_11 rdf:type cls:c_14651.
+kg:id_4 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "釧路湿原や阿寒湖などの自然環境保全"@ja.
+kg:id_12 rdf:type cls:c_12467.
+kg:id_4 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "環境教育を実践している施設の充実や情報発信"@ja.
+kg:id_13 rdf:type cls:c_702.
+kg:id_4 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "希少な野生動植物やその生息生育地の保護活動・保護施設の整備"@ja.
+kg:id_14 rdf:type cls:c_14651.
+kg:id_4 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "保護を行うための調査研究活動"@ja.
+kg:id_15 rdf:type cls:c_4818.
+cls:c_4818 rdfs:label "調査研究"@ja.
+kg:id_4 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "清掃活動"@ja.
+kg:id_16 rdf:type cls:c_15135.
+cls:c_15135 rdfs:label "環境美化"@ja.
+kg:id_4 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "自然環境調査"@ja.
+kg:id_17 rdf:type cls:c_192.
+cls:c_192 rdfs:label "環境調査"@ja.
+kg:id_4 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "自然環境の再生活動"@ja.
+kg:id_18 rdf:type cls:c_15136.
+cls:c_15136 rdfs:label "自然再生"@ja.
+kg:id_4 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "環境教育活動"@ja.
+kg:id_19 rdf:type cls:c_702.
+kg:id_4 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "環境教育を提供している市有施設の展示の充実やリニューアルなどの施設整備"@ja.
+kg:id_20 rdf:type cls:c_1935.
+cls:c_1935 rdfs:label "施設整備"@ja.
+kg:id_4 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "自然環境や自然保護活動の国内外への情報発信"@ja.
+kg:id_21 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_4 prop:contermeasure kg:id_21.
+kg:st_1 rdfs:label "釧路市"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "希少な野生動植物の生育・生息が脅かされることを懸念"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "太陽光発電施設の建設進行が自然環境への脅威になるとみている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "市民生活の安全・安心と豊かな自然を次世代へ守り継ぐ必要がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "自然と太陽光発電施設の調和を図るため条例を施行"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "生物多様性保全のため地域戦略を策定予定"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "釧路湿原や阿寒湖などの自然環境保全活動を継続してきた"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "野生動植物の保護活動に取り組んできた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "市民や観光客が自然に触れられる環境教育を提供してきた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "寄附を希少な野生動植物の保護に活用する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "寄附を釧路湿原や阿寒湖などの自然環境保全に活用する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "寄附を環境教育施設の充実や情報発信に活用する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "希少な野生動植物と生息生育地の保護活動や施設整備を進める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "保護のための調査研究活動に活用する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "自然を将来世代に引き継ぐため清掃活動に活用する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "自然を将来世代に引き継ぐため自然環境調査に活用する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "自然を将来世代に引き継ぐため自然環境の再生活動に活用する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "環境に配慮した行動ができる人材育成のため環境教育活動を行う"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "市民や観光客向けの自然体験や環境教育施設を充実させる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "美しく豊かな自然環境や自然保護活動を国内外へ発信する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "しかし、この雄大で豊かな自然環境において、現在、太陽光発電施設の建設が進行し、希少な野生動植物の生育・生息が脅かされる懸念があります。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "しかし、この雄大で豊かな自然環境において、現在、太陽光発電施設の建設が進行し、希少な野生動植物の生育・生息が脅かされる懸念があります。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "私たちは、市民生活の安全・安心を守り、そして、野生動植物が命を育む類まれなる豊かな自然を地域の宝として、これからもずっと次世代へ守り継いでいかなければなりません。 そのため、釧路市は、2025年６月には「ノーモアメガソーラー宣言」を行い"@ja.
+<< kg:id_4 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "そのため、釧路市は、2025年６月には「ノーモアメガソーラー宣言」を行い、2025年10月には「釧路市自然と太陽光発電施設の調和に関する条例」を施行しました。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "また、2027年には「釧路市生物多様性地域戦略」の策定を予定しています。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これまでも、私たちは釧路湿原や阿寒湖などの自然環境保全や野生動植物の保護などの活動に取り組んできており"@ja.
+<< kg:id_4 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これまでも、私たちは釧路湿原や阿寒湖などの自然環境保全や野生動植物の保護などの活動に取り組んできており"@ja.
+<< kg:id_4 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "また市民や観光客が楽しみながら身近に自然環境に触れられる釧路市湿原展望台などで環境教育を提供してきました。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "皆様からいただいたご支援は、タンチョウやマリモ、キタサンショウウオ等の希少な野生動植物の保護"@ja.
+<< kg:id_4 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "皆様からいただいたご支援は、タンチョウやマリモ、キタサンショウウオ等の希少な野生動植物の保護、釧路湿原や阿寒湖などの自然環境保全"@ja.
+<< kg:id_4 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "環境教育を実践している釧路市湿原展望台や阿寒湖のマリモ展示観察センターなどの充実や情報発信に活用させていただきます。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "タンチョウやマリモ、キタサンショウウオ等の釧路市が重要な生息生育地である希少な野生動植物やその生息生育地の保護活動・保護施設の整備"@ja.
+<< kg:id_4 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "保護を行うための調査研究活動などに活用させていただきます。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "釧路市の多彩で雄大な自然を将来世代に引き継いでいくための清掃活動"@ja.
+<< kg:id_4 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "釧路市の多彩で雄大な自然を将来世代に引き継いでいくための清掃活動、自然環境調査"@ja.
+<< kg:id_4 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "釧路市の多彩で雄大な自然を将来世代に引き継いでいくための清掃活動、自然環境調査、自然環境の再生活動に活用させていただきます。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "日常生活や事業活動において環境に配慮した行動ができる人材の育成のための環境教育活動に活用させていただきます。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "釧路市民や観光客に対して、身近な自然体験や環境教育を提供している市有施設の展示の充実やリニューアルなどの施設整備に活用させていただきます。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "釧路市の美しく豊かな自然環境や自然保護活動の、国内外への発信に活用させていただきます。"@ja.
+}

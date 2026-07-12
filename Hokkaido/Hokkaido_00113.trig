@@ -1,0 +1,871 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00113> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "熱中症"@ja.
+kg:id_1 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_2 rdfs:label "町内で熱中症の疑いを含む救急搬送者が6名発生"@ja.
+kg:id_2 rdf:type cls:c_7488.
+cls:c_7488 rdfs:label "救急搬送"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "気候変動による記録的な猛暑"@ja.
+kg:id_3 rdf:type cls:c_11012.
+cls:c_11012 rdfs:label "猛暑"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "死亡事故の発生"@ja.
+kg:id_4 rdf:type cls:c_15240.
+cls:c_15240 rdfs:label "死亡事故"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "熱中症特別警戒情報の発表"@ja.
+kg:id_5 rdf:type cls:c_15241.
+cls:c_15241 rdfs:label "警戒情報"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "クーリングシェルターの確保"@ja.
+kg:id_6 rdf:type cls:c_6860.
+cls:c_6860 rdfs:label "避難施設"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "公共施設への冷房設置"@ja.
+kg:id_7 rdf:type cls:c_12071.
+cls:c_12071 rdfs:label "冷房設置"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "子育て支援拠点施設に全室冷房機能を完備"@ja.
+kg:id_8 rdf:type cls:c_4471.
+cls:c_4471 rdfs:label "冷房設備"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "小中学校の熱中症"@ja.
+kg:id_9 rdf:type cls:c_15242.
+cls:c_15242 rdfs:label "学校の健康被害"@ja.
+kg:id_10 rdfs:label "学校危機管理マニュアルに基づく対応"@ja.
+kg:id_10 rdf:type cls:c_15243.
+cls:c_15243 rdfs:label "管理対応"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "暑さ指数を目安に体育授業や屋外活動や部活動の可否を判断"@ja.
+kg:id_11 rdf:type cls:c_15244.
+cls:c_15244 rdfs:label "活動判断"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "業務用扇風機及び冷風機の活用"@ja.
+kg:id_12 rdf:type cls:c_2304.
+cls:c_2304 rdfs:label "冷却設備"@ja.
+kg:id_9 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "暑さ指数上昇予測日に午前授業後に下校させる措置"@ja.
+kg:id_13 rdf:type cls:c_15245.
+cls:c_15245 rdfs:label "授業短縮"@ja.
+kg:id_9 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "仁木中学校の各教室と職員室へのスポットクーラー配置"@ja.
+kg:id_14 rdf:type cls:c_4471.
+kg:id_9 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "児童生徒の水分補給でスポーツドリンクを可とする運用"@ja.
+kg:id_15 rdf:type cls:c_15246.
+cls:c_15246 rdfs:label "水分補給"@ja.
+kg:id_9 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "中学校のジャージ登校許可"@ja.
+kg:id_16 rdf:type cls:c_15247.
+cls:c_15247 rdfs:label "服装緩和"@ja.
+kg:id_9 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "学校の大規模改修等に合わせた冷房設置の検討"@ja.
+kg:id_17 rdf:type cls:c_12071.
+kg:id_9 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "児童生徒がびしょびしょになって帰宅するほどの負担"@ja.
+kg:id_18 rdf:type cls:c_15248.
+cls:c_15248 rdfs:label "通学負担"@ja.
+kg:id_9 prop:effect kg:id_18.
+kg:id_19 rdfs:label "地域コミュニティ活動"@ja.
+kg:id_19 rdf:type cls:c_2505.
+cls:c_2505 rdfs:label "地域活動"@ja.
+kg:id_20 rdfs:label "少子高齢化や人口減少"@ja.
+kg:id_20 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "銀山生活改善センターなど各施設の老朽化"@ja.
+kg:id_21 rdf:type cls:c_860.
+cls:c_860 rdfs:label "施設老朽化"@ja.
+kg:id_19 prop:cause kg:id_21.
+kg:id_22 rdfs:label "コミュニティ活動の維持発展に多くの課題が山積"@ja.
+kg:id_22 rdf:type cls:c_1967.
+cls:c_1967 rdfs:label "運営課題"@ja.
+kg:id_19 prop:effect kg:id_22.
+kg:id_23 rdfs:label "銀山地区のコミュニティ活動"@ja.
+kg:id_23 rdf:type cls:c_2505.
+kg:id_24 rdfs:label "タウンミーティングの開催"@ja.
+kg:id_24 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "地域と町職員の共働によるワーキングチーム設置"@ja.
+kg:id_25 rdf:type cls:c_13522.
+cls:c_13522 rdfs:label "協働検討"@ja.
+kg:id_23 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "ワークショップを通じたマスタープラン案の策定"@ja.
+kg:id_26 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_23 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "ワインイベント"@ja.
+kg:id_27 rdf:type cls:c_15249.
+cls:c_15249 rdfs:label "催事"@ja.
+kg:id_28 rdfs:label "次年度以降も継続してほしいとの意見が寄せられた"@ja.
+kg:id_28 rdf:type cls:c_15250.
+cls:c_15250 rdfs:label "継続要望"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "反省点を踏まえたより魅力的で特色あるイベント企画"@ja.
+kg:id_29 rdf:type cls:c_15251.
+cls:c_15251 rdfs:label "企画改善"@ja.
+kg:id_27 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "サクランボの収量減"@ja.
+kg:id_30 rdf:type cls:c_15196.
+cls:c_15196 rdfs:label "農産物減収"@ja.
+kg:id_31 rdfs:label "発芽後の低温"@ja.
+kg:id_31 rdf:type cls:c_7284.
+cls:c_7284 rdfs:label "低温"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "開花期間の強風"@ja.
+kg:id_32 rdf:type cls:c_3681.
+cls:c_3681 rdfs:label "強風"@ja.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "6月末から7月上旬の雨による裂果"@ja.
+kg:id_33 rdf:type cls:c_15252.
+cls:c_15252 rdfs:label "降雨"@ja.
+kg:id_30 prop:cause kg:id_33.
+kg:id_34 rdfs:label "収量が10.7％減"@ja.
+kg:id_34 rdf:type cls:c_4042.
+cls:c_4042 rdfs:label "収量減少"@ja.
+kg:id_30 prop:effect kg:id_34.
+kg:id_35 rdfs:label "生産額が5.7％減"@ja.
+kg:id_35 rdf:type cls:c_15253.
+cls:c_15253 rdfs:label "生産額減少"@ja.
+kg:id_30 prop:effect kg:id_35.
+kg:id_36 rdfs:label "銀山地区義務教育学校"@ja.
+kg:id_36 rdf:type cls:c_4963.
+cls:c_4963 rdfs:label "学校整備"@ja.
+kg:id_37 rdfs:label "学年段階を6-3制から4-3-2制に決定"@ja.
+kg:id_37 rdf:type cls:c_15254.
+cls:c_15254 rdfs:label "学年編成"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "教職員対象の校舎配置検討ワークショップ開催"@ja.
+kg:id_38 rdf:type cls:c_383.
+cls:c_383 rdfs:label "配置検討"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "住民意見交換会の開催"@ja.
+kg:id_39 rdf:type cls:c_648.
+kg:id_36 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "教職員や地域住民の意見を踏まえた基本設計策定"@ja.
+kg:id_40 rdf:type cls:c_15255.
+cls:c_15255 rdfs:label "設計策定"@ja.
+kg:id_36 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "小学校の学力"@ja.
+kg:id_41 rdf:type cls:c_15256.
+cls:c_15256 rdfs:label "学力"@ja.
+kg:id_42 rdfs:label "国語と算数が全国平均を下回る"@ja.
+kg:id_42 rdf:type cls:c_8100.
+cls:c_8100 rdfs:label "学力低下"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "国語の情報の扱い方に関する事項は全国平均を上回る"@ja.
+kg:id_43 rdf:type cls:c_15257.
+cls:c_15257 rdfs:label "学力優位"@ja.
+kg:id_41 prop:effect kg:id_43.
+kg:id_44 rdfs:label "中学校の学力"@ja.
+kg:id_44 rdf:type cls:c_15256.
+kg:id_45 rdfs:label "数学は全国平均を若干下回る"@ja.
+kg:id_45 rdf:type cls:c_8100.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "国語と英語は全国平均を上回る"@ja.
+kg:id_46 rdf:type cls:c_15257.
+kg:id_44 prop:effect kg:id_46.
+kg:id_47 rdfs:label "国語の読むことと英語の聞くこと書くことの分野が優秀"@ja.
+kg:id_47 rdf:type cls:c_15257.
+kg:id_44 prop:effect kg:id_47.
+kg:id_48 rdfs:label "仁木水泳プール利用"@ja.
+kg:id_48 rdf:type cls:c_2841.
+cls:c_2841 rdfs:label "施設利用"@ja.
+kg:id_49 rdfs:label "銀山水泳プール休止"@ja.
+kg:id_49 rdf:type cls:c_15258.
+cls:c_15258 rdfs:label "施設休止"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "銀山小学校の水泳授業を仁木水泳プールで実施"@ja.
+kg:id_50 rdf:type cls:c_15259.
+cls:c_15259 rdfs:label "授業利用"@ja.
+kg:id_48 prop:cause kg:id_50.
+kg:id_51 rdfs:label "保護者同伴の未就学児利用"@ja.
+kg:id_51 rdf:type cls:c_15260.
+cls:c_15260 rdfs:label "幼児利用"@ja.
+kg:id_48 prop:cause kg:id_51.
+kg:id_52 rdfs:label "利用者数が前年度より増加"@ja.
+kg:id_52 rdf:type cls:c_1979.
+cls:c_1979 rdfs:label "利用増加"@ja.
+kg:id_48 prop:effect kg:id_52.
+kg:id_53 rdfs:label "地方公共団体の財政健全化"@ja.
+kg:id_53 rdf:type cls:c_1970.
+cls:c_1970 rdfs:label "財政健全化"@ja.
+kg:id_54 rdfs:label "夕張市の財政破綻"@ja.
+kg:id_54 rdf:type cls:c_15261.
+cls:c_15261 rdfs:label "財政破綻"@ja.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "財政の健全性に関する比率の公表制度"@ja.
+kg:id_55 rdf:type cls:c_11.
+cls:c_11 rdfs:label "情報公開"@ja.
+kg:id_53 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "財政の早期健全化及び財政再生の計画策定制度"@ja.
+kg:id_56 rdf:type cls:c_627.
+kg:id_53 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "財政指標の説明不足"@ja.
+kg:id_57 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_58 rdfs:label "議員や町民にとって理解しづらい"@ja.
+kg:id_58 rdf:type cls:c_15262.
+cls:c_15262 rdfs:label "理解困難"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "広報などで分かりやすく説明する努力"@ja.
+kg:id_59 rdf:type cls:c_15263.
+cls:c_15263 rdfs:label "説明改善"@ja.
+kg:id_57 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "地域力創造アドバイザー制度"@ja.
+kg:id_60 rdf:type cls:c_15264.
+cls:c_15264 rdfs:label "助言制度"@ja.
+kg:id_61 rdfs:label "関係人口の創出に向けた現状や対策の助言"@ja.
+kg:id_61 rdf:type cls:c_9463.
+cls:c_9463 rdfs:label "関係人口創出"@ja.
+kg:id_60 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "観光振興に向けた助言"@ja.
+kg:id_62 rdf:type cls:c_1423.
+cls:c_1423 rdfs:label "観光振興"@ja.
+kg:id_60 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "SDGs対応に向けた助言"@ja.
+kg:id_63 rdf:type cls:c_15265.
+cls:c_15265 rdfs:label "環境対応"@ja.
+kg:id_60 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "民間企業との連携を通じた事業展開"@ja.
+kg:id_64 rdf:type cls:c_2967.
+cls:c_2967 rdfs:label "官民連携"@ja.
+kg:id_60 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "人材育成"@ja.
+kg:id_65 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_60 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "カーボンニュートラルへの取組"@ja.
+kg:id_66 rdf:type cls:c_4056.
+cls:c_4056 rdfs:label "脱炭素"@ja.
+kg:id_67 rdfs:label "知見を有する事業者とのマッチング"@ja.
+kg:id_67 rdf:type cls:c_4741.
+cls:c_4741 rdfs:label "事業者連携"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "環境対策に関するセミナー開催"@ja.
+kg:id_68 rdf:type cls:c_643.
+cls:c_643 rdfs:label "研修開催"@ja.
+kg:id_66 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "ワイン産業やワインツーリズムの振興"@ja.
+kg:id_69 rdf:type cls:c_1917.
+cls:c_1917 rdfs:label "産業振興"@ja.
+kg:id_70 rdfs:label "ワインセミナーの開催"@ja.
+kg:id_70 rdf:type cls:c_643.
+kg:id_69 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "グループワークやワインテイスティングなどの座学"@ja.
+kg:id_71 rdf:type cls:c_15266.
+cls:c_15266 rdfs:label "実習"@ja.
+kg:id_69 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "ワインぶどうほ場での土壌検査などの実地学習"@ja.
+kg:id_72 rdf:type cls:c_15267.
+cls:c_15267 rdfs:label "現地学習"@ja.
+kg:id_69 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "ICTを活用したスマート農業技術の紹介"@ja.
+kg:id_73 rdf:type cls:c_15268.
+cls:c_15268 rdfs:label "技術紹介"@ja.
+kg:id_69 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "立場や地域を越えた交流の促進"@ja.
+kg:id_74 rdf:type cls:c_1382.
+cls:c_1382 rdfs:label "交流促進"@ja.
+kg:id_69 prop:effect kg:id_74.
+kg:id_75 rdfs:label "知識の涵養にとどまらない有意義なセミナー"@ja.
+kg:id_75 rdf:type cls:c_15269.
+cls:c_15269 rdfs:label "知識向上"@ja.
+kg:id_69 prop:effect kg:id_75.
+kg:id_76 rdfs:label "職員の早期退職"@ja.
+kg:id_76 rdf:type cls:c_15270.
+cls:c_15270 rdfs:label "早期退職"@ja.
+kg:id_77 rdfs:label "副町長が農業委員会事務局長を代行するなど人事に影響"@ja.
+kg:id_77 rdf:type cls:c_15271.
+cls:c_15271 rdfs:label "人事影響"@ja.
+kg:id_76 prop:effect kg:id_77.
+kg:id_78 rdfs:label "仕事を創出する役割への適応困難"@ja.
+kg:id_78 rdf:type cls:c_15272.
+cls:c_15272 rdfs:label "適応困難"@ja.
+kg:id_76 prop:cause kg:id_78.
+kg:id_79 rdfs:label "外部アドバイザー導入による知見やノウハウを学ぶ機会の創出"@ja.
+kg:id_79 rdf:type cls:c_4635.
+cls:c_4635 rdfs:label "学習機会"@ja.
+kg:id_76 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "道の駅構想"@ja.
+kg:id_80 rdf:type cls:c_1241.
+cls:c_1241 rdfs:label "拠点整備"@ja.
+kg:id_81 rdfs:label "アドバイザー島田氏の辞退"@ja.
+kg:id_81 rdf:type cls:c_15273.
+cls:c_15273 rdfs:label "人材辞退"@ja.
+kg:id_80 prop:cause kg:id_81.
+kg:id_82 rdfs:label "新たな専門家の招集"@ja.
+kg:id_82 rdf:type cls:c_15274.
+cls:c_15274 rdfs:label "専門家招集"@ja.
+kg:id_80 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "広域周遊観光促進のための専門家派遣事業の活用"@ja.
+kg:id_83 rdf:type cls:c_8081.
+cls:c_8081 rdfs:label "専門家活用"@ja.
+kg:id_80 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "どういう目的でどういうものをどの程度作るかを定める基本構想策定"@ja.
+kg:id_84 rdf:type cls:c_822.
+cls:c_822 rdfs:label "構想策定"@ja.
+kg:id_80 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "道内8か所の道の駅やワイン関係機関団体の視察"@ja.
+kg:id_85 rdf:type cls:c_15275.
+cls:c_15275 rdfs:label "視察"@ja.
+kg:id_80 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "せっかく作ったが来ない事態への懸念"@ja.
+kg:id_86 rdf:type cls:c_15276.
+cls:c_15276 rdfs:label "集客懸念"@ja.
+kg:id_80 prop:effect kg:id_86.
+kg:id_87 rdfs:label "アドバイザー活用"@ja.
+kg:id_87 rdf:type cls:c_15277.
+cls:c_15277 rdfs:label "助言活用"@ja.
+kg:id_88 rdfs:label "道の駅や再生可能エネルギー分野で必要な専門知識の活用"@ja.
+kg:id_88 rdf:type cls:c_15278.
+cls:c_15278 rdfs:label "専門知識"@ja.
+kg:id_87 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "北海道の公立小中学校の熱中症対策"@ja.
+kg:id_89 rdf:type cls:c_15242.
+kg:id_90 rdfs:label "エアコン設置率が16.5％にとどまる"@ja.
+kg:id_90 rdf:type cls:c_15279.
+cls:c_15279 rdfs:label "冷房不足"@ja.
+kg:id_89 prop:effect kg:id_90.
+kg:id_91 rdfs:label "JＲ在来線の存続問題"@ja.
+kg:id_91 rdf:type cls:c_15280.
+cls:c_15280 rdfs:label "交通存続"@ja.
+kg:id_92 rdfs:label "北海道新幹線の着工条件としての経営分離"@ja.
+kg:id_92 rdf:type cls:c_15281.
+cls:c_15281 rdfs:label "経営分離"@ja.
+kg:id_91 prop:cause kg:id_92.
+kg:id_93 rdfs:label "バス転換の方向性決定"@ja.
+kg:id_93 rdf:type cls:c_15282.
+cls:c_15282 rdfs:label "バス転換"@ja.
+kg:id_91 prop:contermeasure kg:id_93.
+kg:id_94 rdfs:label "全国的な運転手不足"@ja.
+kg:id_94 rdf:type cls:c_4505.
+cls:c_4505 rdfs:label "運転手不足"@ja.
+kg:id_91 prop:cause kg:id_94.
+kg:id_95 rdfs:label "バス事業者に協力を求める"@ja.
+kg:id_95 rdf:type cls:c_15283.
+cls:c_15283 rdfs:label "事業者協力"@ja.
+kg:id_91 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "鉄路を残すには自治体負担増で住民サービス縮小や廃止の可能性"@ja.
+kg:id_96 rdf:type cls:c_2721.
+cls:c_2721 rdfs:label "財政負担"@ja.
+kg:id_91 prop:effect kg:id_96.
+kg:id_97 rdfs:label "最小限の公共的機能を残し収益性の高い部分を強化する交通体系検討"@ja.
+kg:id_97 rdf:type cls:c_1470.
+cls:c_1470 rdfs:label "交通再編"@ja.
+kg:id_91 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "従来の鉄道経営ではJR北海道の赤字解消が難しい"@ja.
+kg:id_98 rdf:type cls:c_11884.
+cls:c_11884 rdfs:label "経営赤字"@ja.
+kg:id_91 prop:effect kg:id_98.
+kg:id_99 rdfs:label "バスドライバーやダイヤやルート整理に時間を要する"@ja.
+kg:id_99 rdf:type cls:c_15284.
+cls:c_15284 rdfs:label "調整負担"@ja.
+kg:id_91 prop:effect kg:id_99.
+kg:id_100 rdfs:label "風力発電事業"@ja.
+kg:id_100 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_101 rdfs:label "土砂災害や水質悪化の懸念"@ja.
+kg:id_101 rdf:type cls:c_1001.
+cls:c_1001 rdfs:label "災害懸念"@ja.
+kg:id_100 prop:effect kg:id_101.
+kg:id_102 rdfs:label "自然生態系の破壊と鳥獣移動による人身危害や営農被害の懸念"@ja.
+kg:id_102 rdf:type cls:c_15140.
+cls:c_15140 rdfs:label "生態系破壊"@ja.
+kg:id_100 prop:effect kg:id_102.
+kg:id_103 rdfs:label "超低周波音などによる健康被害の懸念"@ja.
+kg:id_103 rdf:type cls:c_14282.
+cls:c_14282 rdfs:label "健康懸念"@ja.
+kg:id_100 prop:effect kg:id_103.
+kg:id_104 rdfs:label "建設計画地が社会福祉施設に近接する懸念"@ja.
+kg:id_104 rdf:type cls:c_15234.
+cls:c_15234 rdfs:label "施設近接"@ja.
+kg:id_100 prop:effect kg:id_104.
+kg:id_105 rdfs:label "風力発電が風で回転していない根本問題への懸念"@ja.
+kg:id_105 rdf:type cls:c_15285.
+cls:c_15285 rdfs:label "根本問題"@ja.
+kg:id_100 prop:effect kg:id_105.
+kg:id_106 rdfs:label "事業計画の白紙撤回要求"@ja.
+kg:id_106 rdf:type cls:c_838.
+cls:c_838 rdfs:label "撤回要求"@ja.
+kg:id_100 prop:contermeasure kg:id_106.
+kg:st_1 rdfs:label "上村智恵子議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "熱中症対策の一層の強化が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "道内でも記録的な猛暑が続き対策強化が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "子どもたちのいのちと健康を最優先にすべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "極端な高温時を見据えた対策強化が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "町民が涼める施設を指定し周知してほしい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "町民センターやいきいき88などを開放し涼める場所を周知してほしい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "岩井教育長"@ja.
+kg:st_2 rdfs:type cls:st_19.
+cls:st_19 rdfs:label "教育長"@ja.
+kg:op_7 prop:content "北海道教育庁通知に基づき各学校へ指示している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "環境省の暑さ指数を目安に活動実施を判断している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "既存設備を活用して暑さ対策をしている"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "暑さ指数上昇時は授業短縮で対応した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "大規模改修工事に伴い通常授業を実施できた"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "昨年度までの制限を緩和し熱中症予防を図っている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "登下校時の暑さ対策として涼しい服装を認めている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "町長の指示を受け冷房設置を検討していく"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "午前授業後の帰宅時も暑さが厳しく配慮が必要"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "佐藤聖一郎町長"@ja.
+kg:st_3 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_16 prop:content "地域と町の共働でコミュニティ拠点のあり方を検討する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "マスタープラン案の策定に向け取組を進める"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "多くの参加者"@ja.
+kg:st_4 rdfs:type cls:st_74.
+cls:st_74 rdfs:label "参加者"@ja.
+kg:op_18 prop:content "次年度以降も継続してほしい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "反省点を踏まえ本町ならではのイベントに成熟させたい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "岩井秋男教育長"@ja.
+kg:st_5 rdfs:type cls:st_19.
+kg:op_20 prop:content "教職員や地域住民の意見を検討し基本設計を策定する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "佐藤秀教議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_21 prop:content "夕張市の破綻を教訓に財政状況を住民に分かりやすく公表すべき"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_6.
+kg:op_22 prop:content "財政状況をガラス張りにして町民に公表すべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:op_23 prop:content "夕張市のように財政破綻しないよう健全な財政運営をすべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:op_24 prop:content "健全化判断比率をもっとかみ砕いて分かりやすく説明してほしい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:op_25 prop:content "今後、分かりやすく丁寧な説明を行政から提示していきたい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "人事評価の向上にもつながるよう取り組むべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "業務意欲や士気の低下が懸念される"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:op_28 prop:content "業務をこなすだけでなく自ら仕事を創出する職員が求められる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "職員のつながりと学びの機会を作りたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "今年度中の基本構想策定への影響が懸念される"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_6.
+kg:op_31 prop:content "島田氏に代わるアドバイザーが必要で新たな人材を招集している"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:st_7 rdfs:label "浜野崇産業課長"@ja.
+kg:st_7 rdfs:type cls:st_95.
+cls:st_95 rdfs:label "課長"@ja.
+kg:op_32 prop:content "道の駅構想に必要な知見を補完できる専門家派遣を期待している"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_7.
+kg:op_33 prop:content "道の駅設置の目的やコンセプトを明確にする必要がある"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_7.
+kg:op_34 prop:content "管理運営を含め日本一の道の駅を目指してほしい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_6.
+kg:op_35 prop:content "職員だけでは得られない専門知識をアドバイザーで補いたい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "学校の教育環境整備を計画的に進めるべき"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "赤字在来線を地域に押し付ける枠組み自体を見直すべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "苦渋の選択だがバス転換の中で最善の方策を見つけたい"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:st_8 rdfs:label "町村側出席者"@ja.
+kg:st_8 rdfs:type cls:st_225.
+cls:st_225 rdfs:label "出席者"@ja.
+kg:op_39 prop:content "バス転換に関して運転手不足を不安視している"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_8.
+kg:op_40 prop:content "北海道とバス事業者との協議結果を注視したい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:op_41 prop:content "鉄路維持よりバスや支線充実の方が地域住民にとって持続的"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "公共性と収益性の両立を図る必要がある"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:op_43 prop:content "旧来型の鉄道経営では維持が困難"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_3.
+kg:op_44 prop:content "早期決断は課題整理の時間確保のためだった"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:st_9 rdfs:label "仁木町の風力発電を考える会 代表 穂積豊仁"@ja.
+kg:st_9 rdfs:type cls:st_106.
+cls:st_106 rdfs:label "住民団体"@ja.
+kg:op_45 prop:content "事業計画に全面反対し白紙撤回を求める"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_9.
+kg:op_46 prop:content "自然や営農への被害が懸念されるため反対"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_9.
+kg:op_47 prop:content "健康被害の懸念から反対"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_9.
+kg:op_48 prop:content "社会福祉施設に近接するため反対"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_9.
+kg:op_49 prop:content "風力発電の根本的問題があるため反対"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_9.
+kg:op_50 prop:content "事業計画に全面反対し白紙撤回を求める"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_9.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "町内における熱中症の疑いを含む救急搬送者数は、５月から９月９日の期間において６名となっております。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "気候変動の影響により、国内の熱中症死亡者数は増加傾向にあり、近年では年間1000人を超え、自然災害による死亡者数をはるかに上回っています。 また、この夏は道内でも記録的な猛暑が続き"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "この夏は道内でも記録的な猛暑が続き、伊達市の小学校では熱中症が原因とみられる死亡事故が起きました。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "政府は法改正により、法律上の位置づけのなかった熱中症に関する計画を「熱中症対策実行計画」として法定の閣議決定計画に格上げしたほか、極端な高温時を見据えた熱中症対策の一層の強化策として、「熱中症特別警戒情報の発表」"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "極端な高温時を見据えた熱中症対策の一層の強化策として、「熱中症特別警戒情報の発表」「クーリングシェルターの確保」等を掲げています。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本町では、町民センター、農村公園フルーツパークにき簡易宿泊施設及び多目的滞在施設については全室又は全棟、役場庁舎、保健センター、銀山児童館、大江コミュニティセンター、にき保育園及び火葬場については一部の部屋に冷房機能を有している空調機器を設置しております。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:text-txt_contents "現在建設しております子育て支援拠点施設につきましても、全室冷房機能を完備しております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "学校における熱中症対策につきましては、本年5月12日付けで北海道教育庁から通知があり、学校の危機管理マニュアル（熱中症）例が示されていますので、それに基づき各学校に指示しているところであります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "環境省が公表している暑さ指数の実測値や推計値を目安に体育授業や屋外での活動、部活動実施の可否等に関する判断をしているところであります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "また、業務用扇風機及び冷風機を活用するほか"@ja.
+<< kg:id_9 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "本年8月23日から25日まで、及び31日は暑さ指数が上昇することが予測されたため、仁木・銀山の両小学校及び銀山中学校は午前中で授業を終え、給食後に下校させる措置をとったところであります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "仁木中学校につきましては、現在、大規模改修工事を実施しており、各教室、職員室等にスポットクーラーを配置していたため通常授業としております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "学校での児童生徒の水分補給を昨年度までは水かお茶に限定していましたが、本年度からはスポーツドリンクを可として運用を行っているところであります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "さらに、中学校の登下校につきましては、涼しい服装としてジャージ登校を許可しているところであります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "なお、今後は各学校の大規模改修等の整備に合わせ、冷房設置について検討するように町長から指示を受けているところでございます。"@ja.
+<< kg:id_9 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "家に帰っても暑くて、やはり１番暑いお昼に帰され、びしょびしょになって帰ってきて家に親がいなかったりして、本当に大変だった"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:text-txt_contents "一方で少子高齢化や人口減少の影響に伴い、本町においても各種団体の運営体制の維持が困難となっている事例も散見されており"@ja.
+<< kg:id_19 prop:cause kg:id_21 >>
+    prop:text-txt_contents "さらには、コミュニティ活動の拠点となっている「銀山生活改善センター」を始めとする各施設の老朽化も進んでいる"@ja.
+<< kg:id_19 prop:effect kg:id_22 >>
+    prop:text-txt_contents "地域のコミュニティ活動を維持・発展させていく上で、ハード・ソフトの両面にわたり、多くの課題が山積しております。"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "８月４日に銀山地区の皆さまを対象としたタウンミーティングを開催いたしました。"@ja.
+<< kg:id_23 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今後は、コミュニティ拠点のあり方及び活動の維持・発展に向けた意識の醸成を図るため、地域の皆さまと町の職員が共働で検討を行うワーキングチームを設置し"@ja.
+<< kg:id_23 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "ワークショップ等を通じて、マスタープラン（案）の策定に向けて取組を進めてまいります。"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "多くの参加者からは次年度以降も継続してほしいとの意見が寄せられました。"@ja.
+<< kg:id_27 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "今後につきましては、今回の反省点を踏まえ、より魅力的で、本町ならではの特色あるイベントを企画し、成熟させていきたいと考えております。"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:text-txt_contents "その要因については、発芽後の低温と開花期間の強風により、地域によって着果量が少なかったこと"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:text-txt_contents "その要因については、発芽後の低温と開花期間の強風により、地域によって着果量が少なかったこと"@ja.
+<< kg:id_30 prop:cause kg:id_33 >>
+    prop:text-txt_contents "６月末から７月上旬の雨で裂果したことによるものと推察しております。"@ja.
+<< kg:id_30 prop:effect kg:id_34 >>
+    prop:text-txt_contents "サクランボは、昨年に比べ収量が10.7％減となり"@ja.
+<< kg:id_30 prop:effect kg:id_35 >>
+    prop:text-txt_contents "生産額につきましても5.7％減となりました。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:text-txt_contents "学年段階の区切りについて教職員からのアンケートを参考に小学校と中学校間の接続を円滑にするため、現行の「６－３制」から「４－３－２制」に決定したところでございます。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:text-txt_contents "７月18日と８月１日には、銀山小中学校の教職員を対象とした校舎の配置に係る検討ワークショップを開催いたしました。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_39 >>
+    prop:text-txt_contents "８月31日には銀山生活改善センターでワークショップ形式の銀山地区住民意見交換会を開催したところでございます。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "今後におきましては、教職員や地域住民から出された意見を検討し、基本設計を策定してまいります。"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:text-txt_contents "小学校においては国語、算数とも全国平均を下回っておりました"@ja.
+<< kg:id_41 prop:effect kg:id_43 >>
+    prop:text-txt_contents "国語の「情報の扱い方に関する事項」については全国平均を上回る結果となっております。"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:text-txt_contents "中学校については数学は全国平均を若干下回る結果でしたが"@ja.
+<< kg:id_44 prop:effect kg:id_46 >>
+    prop:text-txt_contents "国語と英語は全国平均を上回る結果となり"@ja.
+<< kg:id_44 prop:effect kg:id_47 >>
+    prop:text-txt_contents "特に国語の「読むこと」、英語の「聞くこと」、「書くこと」の分野は優秀な結果となっております。"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:text-txt_contents "今年度は銀山水泳プールを休止しましたが"@ja.
+<< kg:id_48 prop:cause kg:id_50 >>
+    prop:text-txt_contents "銀山小学校の水泳授業が仁木水泳プールで行われたことや"@ja.
+<< kg:id_48 prop:cause kg:id_51 >>
+    prop:text-txt_contents "保護者同伴の未就学児が利用していたことなどにより"@ja.
+<< kg:id_48 prop:effect kg:id_52 >>
+    prop:text-txt_contents "仁木水泳プールの利用者数は延べ905人と前年度より増加し"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "背景についての質問ということで、夕張市で財政破綻して、あれ以来、また新しい法律に変わって、今に至るということであります。"@ja.
+<< kg:id_53 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "地方公共団体の財政の健全性に関する比率の公表の制度を設け"@ja.
+<< kg:id_53 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "当該比率に応じて、地方公共団体が財政の早期健全化及び財政の再生並びに公営企業の経営の健全化を図るための計画を策定する制度を定める"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "この資料、あるいは説明を聞いただけでは、私は分かりません。もう少しかみ砕いて分かりやすく、これを説明できないでしょうか。"@ja.
+<< kg:id_57 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "町としても広報で分かりやすく説明するような努力はしております。 ただ、広報においてもまだ分かりづらい部分は多々あります。 もっとかみ砕いて分かりやすく説明しなければいけない"@ja.
+<< kg:id_60 prop:contermeasure kg:id_61 >>
+    prop:text-txt_contents "本町においては関係人口の創出、観光振興、ＳＤＧｓへの対応などの地域課題の解決に向け、現状や対策などのアドバイスや助言をいただき"@ja.
+<< kg:id_60 prop:contermeasure kg:id_62 >>
+    prop:text-txt_contents "本町においては関係人口の創出、観光振興、ＳＤＧｓへの対応などの地域課題の解決に向け"@ja.
+<< kg:id_60 prop:contermeasure kg:id_63 >>
+    prop:text-txt_contents "本町においては関係人口の創出、観光振興、ＳＤＧｓへの対応などの地域課題の解決に向け"@ja.
+<< kg:id_60 prop:contermeasure kg:id_64 >>
+    prop:text-txt_contents "民間企業との連携を通じた事業展開や人材育成を目的として実施しております。"@ja.
+<< kg:id_60 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "民間企業との連携を通じた事業展開や人材育成を目的として実施しております。"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:text-txt_contents "２年目は、国が進めるカーボンニュートラルへの取組を中心に、知見を有する事業者とのマッチングや"@ja.
+<< kg:id_66 prop:contermeasure kg:id_68 >>
+    prop:text-txt_contents "環境対策に関するセミナーの開催など"@ja.
+<< kg:id_69 prop:contermeasure kg:id_70 >>
+    prop:text-txt_contents "これまでに計10回のワインセミナーを開催し"@ja.
+<< kg:id_69 prop:contermeasure kg:id_71 >>
+    prop:text-txt_contents "それらを参考にグループワークやワインテイスティングなどを行う座学のほか"@ja.
+<< kg:id_69 prop:contermeasure kg:id_72 >>
+    prop:text-txt_contents "実際にワインぶどうのほ場に赴き土壌検査を行うなどの実地学習"@ja.
+<< kg:id_69 prop:contermeasure kg:id_73 >>
+    prop:text-txt_contents "ＩＣＴを活用したスマート農業技術の紹介など"@ja.
+<< kg:id_69 prop:effect kg:id_74 >>
+    prop:text-txt_contents "参加いただいた皆さまの立場や地域を越えた交流を促すことで、ワインを中心とした人との繋がりを構築するなど"@ja.
+<< kg:id_69 prop:effect kg:id_75 >>
+    prop:text-txt_contents "知識の涵養にとどまらない、大変有意義なセミナーとなっております。"@ja.
+<< kg:id_76 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "このことで９月１日付の人事で事務方のトップである副町長が、農業委員会事務局長の職務を代行するなど、人事にも影響が出ているものと思います。"@ja.
+<< kg:id_76 prop:cause kg:id_78 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "今の役場職員に求められているものというのはですね、非常に多く、業務だけをこなす職員では通用しなくなり、仕事を創出することが求められております。 それに適応できない職員はですね、どうしても壁にぶち当たり、立ち往生してしまうのも事実であります。"@ja.
+<< kg:id_76 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "そういう意味合いも込めて、こういう地域力創造アドバイザーというのを活用し、今２年が経ちましたけれども"@ja.
+<< kg:id_80 prop:cause kg:id_81 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "そのアドバイザーの１人、島田氏が今年度自己都合により辞退されました。 その影響はないんでしょうか。"@ja.
+<< kg:id_80 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "島田氏が退任されたということで、それに代わるアドバイザーが必要であるという部分は、行政としても認識しているところでございまして、またそれを補うために、今新たに違う人材を招集をかけているところでございまして"@ja.
+<< kg:id_80 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "広域周遊観光促進のための専門家派遣事業というものがございまして、今これで募集をしてですね、道の駅に非常に長けている、又はこれまで実績のある方々をこれから公募して見定めて"@ja.
+<< kg:id_80 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "仁木の道の駅を設置するにあたってですね、どういう目的で、どういうものを、どの程度の形で作り上げていくかというところが基本構想だと考えております。"@ja.
+<< kg:id_80 prop:contermeasure kg:id_85 >>
+    prop:text-txt_contents "視察先は安平町、音更町、池田町、南富良野町、恵庭市、長沼町、富良野市、東川町８か所の道の駅やワイン関係機関・団体等になっております。"@ja.
+<< kg:id_80 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "せっかく作ったけど来ないではちょっと話が違いますので、その辺はしっかり精査してほしいと思います。"@ja.
+<< kg:id_87 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "例えば先ほどの道の駅を含めた町並みの問題ですとか、例えば脱炭素に係る再生可能エネルギーの分野の件ですとか、そういった部分で我々職員だけではとても専門的な知識を得ないという部分で、アドバイザーの力が必要"@ja.
+<< kg:id_89 prop:effect kg:id_90 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "北海道の公立小中学校のエアコン設置率は16.5％にとどまっています。"@ja.
+<< kg:id_91 prop:cause kg:id_92 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "北海道新幹線の着工条件としてのＪＲ北海道からの経営分離に本町を含む沿線各町村が同意し"@ja.
+<< kg:id_91 prop:contermeasure kg:id_93 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "昨年３月にバス転換の方向性が出されたものであります。"@ja.
+<< kg:id_91 prop:cause kg:id_94 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "ブロック会議の協議においては、議員仰せのように全国的に課題となっている運転手不足について、町村から不安視する意見も出されておりますが"@ja.
+<< kg:id_91 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "今後は後志地域でバス運行を担っているバス事業者に対し協力を求めていくことを決定したところであります。"@ja.
+<< kg:id_91 prop:effect kg:id_96 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "今の町の予算でそれだけの金額、大規模な予算を毎年鉄路やバスに対して予算を確保するということとなると、違う住民サービスを縮小又は廃止する可能性も出てきます。"@ja.
+<< kg:id_91 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "最小限の公共的機能は残してですね、収益性が高く見込める部分に関しては強化していかなければならない"@ja.
+<< kg:id_91 prop:effect kg:id_98 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "従来の鉄道の経営では、先般も新聞に出ておりましたけれども、ＪＲ北海道が二十数億円改善したとはいえ何百億円の赤字を抱えたままでいるんです。"@ja.
+<< kg:id_91 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "先ほど来ありましたバスドライバーの問題、ダイヤの問題、ルートの問題と様々に整理しなければいけない部分がありまして、それを早く解決策を見い出すには、やはり時間がかかります。"@ja.
+<< kg:id_100 prop:effect kg:id_101 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "反対理由１．土砂災害・水質悪化の懸念。"@ja.
+<< kg:id_100 prop:effect kg:id_102 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "反対理由２．自然生態系の破壊と鳥獣移動による人身危害や営農被害の懸念。"@ja.
+<< kg:id_100 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "反対理由３．超低周波音などによる健康被害の懸念。"@ja.
+<< kg:id_100 prop:effect kg:id_104 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "反対理由４．建設計画地が社会福祉施設に近接する懸念。"@ja.
+<< kg:id_100 prop:effect kg:id_105 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "反対理由５．風力発電が風で回転していない根本問題について。"@ja.
+<< kg:id_100 prop:contermeasure kg:id_106 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "事業主、関西電力株式会社による（仮称）古平・仁木・余市ウィンドファーム事業計画に全面反対し、ここに白紙撤回を求めます。"@ja.
+}

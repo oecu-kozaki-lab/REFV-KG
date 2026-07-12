@@ -1,0 +1,576 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00029> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "本事業による環境影響"@ja.
+kg:id_1 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_2 rdfs:label "風力発電設備、変電設備、工事用道路等の設置や土地の改変"@ja.
+kg:id_2 rdf:type cls:c_303.
+cls:c_303 rdfs:label "施設設置"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "対象事業実施区域が自然度の高い植生や保安林と重複していること"@ja.
+kg:id_3 rdf:type cls:c_459.
+cls:c_459 rdfs:label "重要植生"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "既設風力発電所との累積的影響"@ja.
+kg:id_4 rdf:type cls:c_13.
+cls:c_13 rdfs:label "累積影響"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "景観や生態系への影響"@ja.
+kg:id_5 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "騒音による健康被害"@ja.
+kg:id_6 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "本事業"@ja.
+kg:id_7 rdf:type cls:c_1.
+cls:c_1 rdfs:label "事業"@ja.
+kg:id_8 rdfs:label "環境に配慮すべき区域を除外し影響の回避を最優先に環境保全措置を検討すること"@ja.
+kg:id_8 rdf:type cls:c_9.
+cls:c_9 rdfs:label "環境保全措置"@ja.
+kg:id_7 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "最新の知見の収集や複数の専門家等の助言を得て適切に調査し科学的根拠に基づく予測及び評価を実施すること"@ja.
+kg:id_9 rdf:type cls:c_202.
+cls:c_202 rdfs:label "調査評価"@ja.
+kg:id_7 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "重大な環境影響を回避又は低減できない場合は事業規模の縮小など事業計画の見直しを行うこと"@ja.
+kg:id_10 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_7 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "対象事業実施区域の絞り込みや風車の配置について更なる検討を行うこと"@ja.
+kg:id_11 rdf:type cls:c_383.
+cls:c_383 rdfs:label "配置検討"@ja.
+kg:id_7 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "区域設定や風車配置の理由を含め検討の過程を具体的かつ分かりやすく記載すること"@ja.
+kg:id_12 rdf:type cls:c_56.
+cls:c_56 rdfs:label "説明記載"@ja.
+kg:id_7 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "他事業者から必要な情報を入手し累積的影響について適切に調査予測及び評価を実施すること"@ja.
+kg:id_13 rdf:type cls:c_202.
+kg:id_7 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "他事業者と相互に環境保全のための有用な情報の共有を図ること"@ja.
+kg:id_14 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_7 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "関係町関係機関住民等へのより積極的な情報提供や丁寧な説明に努めること"@ja.
+kg:id_15 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_7 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "環境影響評価図書の公表"@ja.
+kg:id_16 rdf:type cls:c_14574.
+cls:c_14574 rdfs:label "図書公表"@ja.
+kg:id_17 rdfs:label "印刷やダウンロードを可能とし縦覧期間終了後も継続して公表すること"@ja.
+kg:id_17 rdf:type cls:c_14575.
+cls:c_14575 rdfs:label "継続公開"@ja.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "工事の実施や施設の稼働"@ja.
+kg:id_18 rdf:type cls:c_563.
+cls:c_563 rdfs:label "施設稼働"@ja.
+kg:id_19 rdfs:label "騒音による重大な影響"@ja.
+kg:id_19 rdf:type cls:c_354.
+cls:c_354 rdfs:label "騒音影響"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "騒音による生活環境への影響"@ja.
+kg:id_20 rdf:type cls:c_356.
+cls:c_356 rdfs:label "生活影響"@ja.
+kg:id_21 rdfs:label "施設の稼働"@ja.
+kg:id_21 rdf:type cls:c_563.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "風車の配置の検討に当たってできる限り住宅等から離隔すること"@ja.
+kg:id_22 rdf:type cls:c_383.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "施設稼働後に影響が確認された場合の対策について検討すること"@ja.
+kg:id_23 rdf:type cls:c_14576.
+cls:c_14576 rdfs:label "事後対策"@ja.
+kg:id_20 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "土地改変に伴う濁水や土砂の流入"@ja.
+kg:id_24 rdf:type cls:c_564.
+cls:c_564 rdfs:label "濁水流入"@ja.
+kg:id_25 rdfs:label "水質への影響"@ja.
+kg:id_25 rdf:type cls:c_327.
+cls:c_327 rdfs:label "水質影響"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "関係機関と協議を行い水域利用の状況を踏まえ水質への影響を回避又は十分に低減できるよう環境保全措置を講ずること"@ja.
+kg:id_26 rdf:type cls:c_9.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "水の濁り"@ja.
+kg:id_27 rdf:type cls:c_13691.
+cls:c_13691 rdfs:label "水の濁り"@ja.
+kg:id_28 rdfs:label "工事の実施や地形の改変"@ja.
+kg:id_28 rdf:type cls:c_13216.
+cls:c_13216 rdfs:label "土地改変"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "近年増加している局所集中的な降雨の傾向を十分に踏まえた環境保全措置とすること"@ja.
+kg:id_29 rdf:type cls:c_9.
+kg:id_27 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "風車の影による重大な影響"@ja.
+kg:id_30 rdf:type cls:c_278.
+cls:c_278 rdfs:label "影響"@ja.
+kg:id_21 prop:effect kg:id_30.
+kg:id_31 rdfs:label "風車の影による影響"@ja.
+kg:id_31 rdf:type cls:c_278.
+kg:id_31 prop:contermeasure kg:id_22.
+kg:id_32 rdfs:label "風車の適正な配置や構造等の検討を含め影響が回避又は十分に低減されているかの観点から評価すること"@ja.
+kg:id_32 rdf:type cls:c_14577.
+cls:c_14577 rdfs:label "評価"@ja.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "バットストライク等の影響"@ja.
+kg:id_33 rdf:type cls:c_401.
+cls:c_401 rdfs:label "動物影響"@ja.
+kg:id_34 rdfs:label "専門家等から助言を得ながら風速と飛翔状況との関係を整理し適切に調査予測及び評価を実施すること"@ja.
+kg:id_34 rdf:type cls:c_202.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "希少な鳥類の生息やバードストライクや移動経路の阻害"@ja.
+kg:id_35 rdf:type cls:c_6.
+cls:c_6 rdfs:label "鳥類影響"@ja.
+kg:id_36 rdfs:label "鳥類への影響"@ja.
+kg:id_36 rdf:type cls:c_6.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "猛禽類の調査期間を複数年とするなど専門家等から助言を得ながら適切に調査予測及び評価を実施すること"@ja.
+kg:id_37 rdf:type cls:c_202.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "バードストライク"@ja.
+kg:id_38 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_39 rdfs:label "衝突リスクの分布と風車設置予定位置の関係を図示した上で評価し準備書に記載すること"@ja.
+kg:id_39 rdf:type cls:c_68.
+cls:c_68 rdfs:label "評価記載"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "鳥類への累積的影響"@ja.
+kg:id_40 rdf:type cls:c_13.
+kg:id_41 rdfs:label "他の風力発電事業に係る情報を収集した上で専門家等から助言を得ながら適切に調査予測及び評価を実施すること"@ja.
+kg:id_41 rdf:type cls:c_202.
+kg:id_40 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "重要な植物種や重要な植物群落への影響"@ja.
+kg:id_42 rdf:type cls:c_320.
+cls:c_320 rdfs:label "植物影響"@ja.
+kg:id_43 rdfs:label "これらの種の生育地及び群落並びにその周辺の土地改変を避けるなど影響の回避を最優先に環境保全措置を検討すること"@ja.
+kg:id_43 rdf:type cls:c_9.
+kg:id_42 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "エゾイタヤ－ミズナラ群落等への影響"@ja.
+kg:id_44 rdf:type cls:c_62.
+cls:c_62 rdfs:label "植生影響"@ja.
+kg:id_45 rdfs:label "当該群落への影響を回避するため現地調査によりその存在する区域を明らかにした上で改変区域から除外すること"@ja.
+kg:id_45 rdf:type cls:c_14395.
+cls:c_14395 rdfs:label "区域除外"@ja.
+kg:id_44 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "工事の実施による土地改変に伴う表土の移動や改変箇所の裸地化"@ja.
+kg:id_46 rdf:type cls:c_13216.
+kg:id_47 rdfs:label "侵略性の高い外来植物の生育域が拡大し周囲の植生等に影響を及ぼすおそれ"@ja.
+kg:id_47 rdf:type cls:c_14578.
+cls:c_14578 rdfs:label "外来植物拡大"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "外来植物の分布拡大"@ja.
+kg:id_48 rdf:type cls:c_14578.
+kg:id_49 rdfs:label "生育状況を予め把握し工事の実施によりその分布が拡大することのないよう施工方法を検討すること"@ja.
+kg:id_49 rdf:type cls:c_14579.
+cls:c_14579 rdfs:label "施工検討"@ja.
+kg:id_48 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "具体的な外来植物の拡散防止対策について準備書に記載すること"@ja.
+kg:id_50 rdf:type cls:c_56.
+kg:id_48 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "施設の存在及び稼働や工事"@ja.
+kg:id_51 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_52 rdfs:label "餌種や餌種の生息環境等に与える影響"@ja.
+kg:id_52 rdf:type cls:c_13097.
+cls:c_13097 rdfs:label "生息環境影響"@ja.
+kg:id_51 prop:effect kg:id_52.
+kg:id_53 rdfs:label "生態系への影響"@ja.
+kg:id_53 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_54 rdfs:label "注目種やその餌資源について現地調査結果を踏まえ必要に応じて見直し検討を続けその経緯を準備書に記載すること"@ja.
+kg:id_54 rdf:type cls:c_9457.
+cls:c_9457 rdfs:label "見直し検討"@ja.
+kg:id_53 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "猛禽類の調査期間は複数年とすること"@ja.
+kg:id_55 rdf:type cls:c_14484.
+cls:c_14484 rdfs:label "調査"@ja.
+kg:id_53 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "各栄養段階の種間関係を適切に踏まえ十分な調査を行うこと"@ja.
+kg:id_56 rdf:type cls:c_14484.
+kg:id_53 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "工事の実施による土地改変や樹木の伐採"@ja.
+kg:id_57 rdf:type cls:c_13216.
+kg:id_58 rdfs:label "その範囲を必要最小限とすること"@ja.
+kg:id_58 rdf:type cls:c_14580.
+cls:c_14580 rdfs:label "最小化"@ja.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "自然度の高い植生の区域及び大径木を含む樹林地への影響"@ja.
+kg:id_59 rdf:type cls:c_62.
+kg:id_60 rdfs:label "現地調査によりその存在を確認した上で改変の回避を最優先に環境保全措置を検討すること"@ja.
+kg:id_60 rdf:type cls:c_9.
+kg:id_59 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "風車の設置"@ja.
+kg:id_61 rdf:type cls:c_303.
+kg:id_62 rdfs:label "眺望点からの景観への影響"@ja.
+kg:id_62 rdf:type cls:c_224.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "景観への影響"@ja.
+kg:id_63 rdf:type cls:c_224.
+kg:id_64 rdfs:label "地域住民や観光客国定公園利用者などの個人や関係団体に対してフォトモンタージュを提示した聞き取り調査等を実施すること"@ja.
+kg:id_64 rdf:type cls:c_13845.
+cls:c_13845 rdfs:label "聞取調査"@ja.
+kg:id_63 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "主要な眺望景観への影響が回避又は十分に低減されているかの観点から客観的に評価すること"@ja.
+kg:id_65 rdf:type cls:c_14581.
+cls:c_14581 rdfs:label "客観評価"@ja.
+kg:id_63 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "フォトモンタージュの作成"@ja.
+kg:id_66 rdf:type cls:c_14582.
+cls:c_14582 rdfs:label "図像作成"@ja.
+kg:id_67 rdfs:label "四季を通じて風車と背景とのコントラストが強く出る晴天時の写真を用い風車の見えやすさや目立ちやすさが最大となる条件を想定すること"@ja.
+kg:id_67 rdf:type cls:c_14583.
+cls:c_14583 rdfs:label "作成条件"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "景観への累積的影響"@ja.
+kg:id_68 rdf:type cls:c_13.
+kg:id_69 rdfs:label "他の風力発電事業に係る情報を収集した上で適切に調査予測及び評価を実施すること"@ja.
+kg:id_69 rdf:type cls:c_202.
+kg:id_68 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "工事関係車両の主要な走行ルートとの隣接"@ja.
+kg:id_70 rdf:type cls:c_478.
+cls:c_478 rdfs:label "車両走行"@ja.
+kg:id_71 rdfs:label "活動やアクセス特性への影響"@ja.
+kg:id_71 rdf:type cls:c_76.
+cls:c_76 rdfs:label "利用影響"@ja.
+kg:id_70 prop:effect kg:id_71.
+kg:id_72 rdfs:label "人と自然との触れ合いの活動の場への影響"@ja.
+kg:id_72 rdf:type cls:c_76.
+kg:id_73 rdfs:label "利用状況等について十分調査した上で適切に予測及び評価を実施すること"@ja.
+kg:id_73 rdf:type cls:c_202.
+kg:id_72 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "工事の実施に伴う廃棄物及び残土"@ja.
+kg:id_74 rdf:type cls:c_14584.
+cls:c_14584 rdfs:label "廃棄物残土"@ja.
+kg:id_75 rdfs:label "その発生の抑制に努めること"@ja.
+kg:id_75 rdf:type cls:c_3196.
+cls:c_3196 rdfs:label "発生抑制"@ja.
+kg:id_74 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "発生量最終処分量再生利用量及び中間処理量等の把握を通じ適切に調査予測及び評価を実施すること"@ja.
+kg:id_76 rdf:type cls:c_202.
+kg:id_74 prop:contermeasure kg:id_76.
+kg:st_1 rdfs:label "地域住民等"@ja.
+kg:st_1 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_1 prop:content "景観や生態系への影響を懸念する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "騒音による健康被害を懸念する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "北海道知事"@ja.
+kg:st_2 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_3 prop:content "環境配慮区域の除外と影響回避を最優先に求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "専門家助言と科学的根拠に基づく調査評価を求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "重大な環境影響を避けられない場合は事業規模縮小を求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "区域の絞り込みと風車配置の再検討を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "区域設定と風車配置の検討過程の明確な記載を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "他事業者の情報を踏まえ累積的影響の調査評価を求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "他事業者との情報共有を求める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "関係町や住民等への積極的な情報提供と丁寧な説明を求める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "図書の利便性向上と継続公開を求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "住宅等から離した風車配置で騒音影響の回避低減を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "稼働後に騒音影響が出た場合の対策検討を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "関係機関協議の上で水質保全措置を講じるよう求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "局所的豪雨の傾向を踏まえた濁水対策を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "住宅等から離した配置で風車の影の回避低減を求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "配置や構造を含め風車の影の十分な低減評価を求める"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "専門家助言の下でコウモリへの影響調査評価を求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "複数年調査と専門家助言による鳥類影響評価を求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "衝突リスク分布と風車位置の関係を図示して評価記載を求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "他事業情報と専門家助言に基づく鳥類の累積影響評価を求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "重要植物の生育地や群落の改変回避を最優先に求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "重要群落の存在区域を確認し改変区域から除外するよう求める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "外来植物の事前把握と拡散しない施工方法の検討を求める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "外来植物の拡散防止対策の記載を求める"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "注目種と餌資源の見直し検討と経緯記載を求める"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "生態系把握のため猛禽類の複数年調査を求める"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "栄養段階ごとの種間関係を踏まえた十分な調査を求める"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "土地改変や伐採の範囲を必要最小限に抑えるよう求める"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "重要植生区域や大径木を含む樹林地の改変回避を最優先に求める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "住民や観光客等へのフォトモンタージュ提示による聞き取り調査を求める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "主要眺望景観への影響を客観的に評価するよう求める"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "風車が最も目立つ条件でフォトモンタージュを作成するよう求める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "他事業情報を踏まえた景観の累積影響評価を求める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "活動の場の利用状況を十分調査し影響評価を行うよう求める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "廃棄物と残土の発生抑制を求める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "廃棄物等の量を把握した上で適切な調査評価を求める"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "今後の風力発電設備、変電設備、工事用道路等の設置、事業の実施に伴う土地の改変箇所等の決定"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "同区域は依然として、重要な自然環境のまとまりの場である自然度の高い植生や保安林と重複している"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "対象事業実施区域及びその周辺では、既設風力発電所が複数あることから、これらとの累積的影響が懸念される"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地域住民等から、景観や生態系への影響、騒音による健康被害を懸念する意見などが認められている"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地域住民等から、景観や生態系への影響、騒音による健康被害を懸念する意見などが認められている"@ja.
+<< kg:id_7 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "環境に配慮すべき区域を除外するなど、影響の回避を最優先に環境保全措置を検討すること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "可能な限り評価項目及び分類群ごとに最新の知見の収集や地域の状況に精通した複数の専門家等の助言を得るなどしながら、各環境要素に係る環境影響について適切に調査を行い、科学的根拠に基づく予測及び評価を実施し、その結果を事業計画に反映させること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "重大な環境影響を回避又は十分に低減できない場合若しくは回避又は低減できることを裏付ける科学的根拠を示すことができない場合は、事業規模の縮小など事業計画の見直しを行うことにより、確実に環境影響を回避又は低減すること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "環境面に配慮した対象事業実施区域の絞り込みや風車の配置について更なる検討を行うこと"@ja.
+<< kg:id_7 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "区域設定や風車配置の理由を含め、検討の過程を具体的かつ分かりやすく記載すること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "他事業者から必要な情報を入手した上で、２の個別的事項に示すとおり、累積的影響について適切に調査、予測及び評価を実施すること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "本事業の環境影響評価に関する情報についても他事業者に提供するなど、相互に環境保全のための有用な情報の共有が図られるよう努めること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "関係町、関係機関、住民等へのより積極的な情報提供や丁寧な説明に努めること"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "印刷やダウンロードを可能とすることや、図書の内容の継続性を勘案し、縦覧期間終了後も継続して公表しておくこと"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:text-txt_contents "工事の実施や施設の稼働に伴い、騒音による重大な影響が懸念される"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "施設稼働後に影響が確認された場合"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "風車の配置の検討に当たっては、できる限り住宅等から離隔することなどにより、影響を回避又は十分低減すること"@ja.
+<< kg:id_20 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "施設稼働後に影響が確認された場合の対策について検討すること"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:text-txt_contents "土地改変に伴う濁水や土砂の流入などによる影響が懸念される"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "関係機関と協議を行い水域利用の状況を踏まえた上で、水質への影響を回避又は十分に低減できるよう環境保全措置を講ずること"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:text-txt_contents "工事の実施や地形の改変により発生するおそれのある水の濁り"@ja.
+<< kg:id_27 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "近年増加している局所集中的な降雨の傾向を十分に踏まえたものとすること"@ja.
+<< kg:id_21 prop:effect kg:id_30 >>
+    prop:text-txt_contents "施設の稼働に伴い、風車の影による重大な影響が懸念される"@ja.
+<< kg:id_31 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "風車の配置の検討に当たっては、できる限り住宅等から離隔することなどにより、影響を回避又は十分低減すること"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "風車の適正な配置や構造等の検討を含めて、影響が回避又は十分に低減されているかの観点から評価すること"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "専門家等から助言を得ながら風速と飛翔状況との関係を整理するなどし、バットストライク等の影響について適切に調査、予測及び評価を実施すること"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:text-txt_contents "希少な種をはじめとする鳥類の生息やバードストライク、移動経路の阻害等への影響"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "生息状況の適切な把握のため猛禽類の調査期間を複数年とするなど、希少な種をはじめとする鳥類の生息やバードストライク、移動経路の阻害等への影響について、専門家等から助言を得ながら適切に調査、予測及び評価を実施すること"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "対象事業実施区域及びその周辺における衝突リスクの分布と風車設置予定位置の関係を図示した上で、評価を実施し、準備書に記載すること"@ja.
+<< kg:id_40 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "他の風力発電事業に係る情報を収集した上で、専門家等から助言を得ながら鳥類への累積的影響について、適切に調査、予測及び評価を実施すること"@ja.
+<< kg:id_42 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "これらの種の生育地及び群落、並びにその周辺の土地改変を避けるなど、影響の回避を最優先に環境保全措置を検討すること"@ja.
+<< kg:id_44 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "当該群落への影響を回避するため、現地調査によりその存在する区域を明らかにした上で改変区域から除外すること"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:text-txt_contents "工事の実施による土地改変に伴う表土の移動や改変箇所の裸地化等により侵略性の高い外来植物の生育域が拡大し、周囲の植生等に影響を及ぼすおそれがある"@ja.
+<< kg:id_48 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "侵略性の高い外来植物の生育状況を予め把握し、工事の実施によりその分布が拡大することのないよう施工方法を検討すること"@ja.
+<< kg:id_48 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "具体的な外来植物の拡散防止対策について準備書に記載すること"@ja.
+<< kg:id_51 prop:effect kg:id_52 >>
+    prop:text-txt_contents "施設の存在及び稼働や工事が餌種や餌種の生息環境等に与える影響"@ja.
+<< kg:id_53 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "注目種やその餌資源については、現地調査の結果を踏まえ必要に応じて見直すことを含めて検討を続けるとともに、その経緯を準備書に記載すること"@ja.
+<< kg:id_53 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "生息状況の適切な把握のため、猛禽類の調査期間は複数年とすること"@ja.
+<< kg:id_53 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "注目種が地域の生態系において占める地位が分かるように、各栄養段階の種間関係を適切に踏まえ、十分な調査を行うこと"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "工事の実施による土地改変や樹木の伐採については、その範囲を必要最小限とすること"@ja.
+<< kg:id_59 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "現地調査によりその存在を確認した上で、改変の回避を最優先に環境保全措置を検討すること"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:text-txt_contents "風車の設置に伴い、これらの地点からの景観への影響が懸念される"@ja.
+<< kg:id_63 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "地域住民や観光客、国定公園利用者などの個人や関係団体に対してフォトモンタージュを提示した聞き取り調査等を実施し"@ja.
+<< kg:id_63 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "主要な眺望景観への影響が回避又は十分に低減されているかの観点から客観的に評価すること"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "四季を通じて風車と背景とのコントラストが強く出る晴天時の写真を用いて作成するとともに、色調、明度、解像度や大きさについては、風車の見えやすさや目立ちやすさが最大となる条件を想定したものとすること"@ja.
+<< kg:id_68 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "他の風力発電事業に係る情報を収集した上で、累積的影響についても適切に調査、予測及び評価を実施すること"@ja.
+<< kg:id_70 prop:effect kg:id_71 >>
+    prop:text-txt_contents "事業に係る工事関係車両の主要な走行ルートと隣接しており、その活動やアクセス特性への影響が懸念される"@ja.
+<< kg:id_72 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "これら活動の場の利用状況等について十分調査した上で、適切に予測及び評価を実施すること"@ja.
+<< kg:id_74 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "工事の実施に伴う廃棄物及び残土については、その発生の抑制に努めること"@ja.
+<< kg:id_74 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "発生量に加えて最終処分量、再生利用量及び中間処理量等の把握を通じ、適切に調査、予測及び評価を実施すること"@ja.
+}

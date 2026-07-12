@@ -1,0 +1,1529 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00055> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "ホテルや飲食店等での外食激減"@ja.
+kg:id_1 rdf:type cls:c_2186.
+cls:c_2186 rdfs:label "外食減少"@ja.
+kg:id_2 rdfs:label "コロナ禍の外出自粛や休業によるステイホーム"@ja.
+kg:id_2 rdf:type cls:c_2187.
+cls:c_2187 rdfs:label "外出自粛"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "観光業、飲食業、食材納入業者の大幅な売上げ減少"@ja.
+kg:id_3 rdf:type cls:c_2188.
+cls:c_2188 rdfs:label "売上減少"@ja.
+kg:id_3 prop:cause kg:id_1.
+kg:id_4 rdfs:label "事業継続が危うい状態"@ja.
+kg:id_4 rdf:type cls:c_2189.
+cls:c_2189 rdfs:label "事業継続困難"@ja.
+kg:id_5 rdfs:label "非接触型の新しい生活様式で席数を減らした縮小営業しかできず売上げ低迷が長引くこと"@ja.
+kg:id_5 rdf:type cls:c_2190.
+cls:c_2190 rdfs:label "売上低迷"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "米価下落"@ja.
+kg:id_6 rdf:type cls:c_1178.
+cls:c_1178 rdfs:label "価格下落"@ja.
+kg:id_7 rdfs:label "平成25年産米が大量の在庫を抱えたこと"@ja.
+kg:id_7 rdf:type cls:c_2191.
+cls:c_2191 rdfs:label "在庫増加"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "米の価格下落懸念"@ja.
+kg:id_8 rdf:type cls:c_2192.
+cls:c_2192 rdfs:label "価格下落懸念"@ja.
+kg:id_9 rdfs:label "新型コロナで消費動向がさま変わりしたこと"@ja.
+kg:id_9 rdf:type cls:c_2193.
+cls:c_2193 rdfs:label "消費変化"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "中食の在庫がさばけないこと"@ja.
+kg:id_10 rdf:type cls:c_2194.
+cls:c_2194 rdfs:label "在庫滞留"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "花卉販売の行き場喪失"@ja.
+kg:id_11 rdf:type cls:c_2195.
+cls:c_2195 rdfs:label "販路喪失"@ja.
+kg:id_12 rdfs:label "新型コロナの影響で春先からイベントや冠婚葬祭が激減したこと"@ja.
+kg:id_12 rdf:type cls:c_2196.
+cls:c_2196 rdfs:label "催事減少"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "中型イカ釣り船の操業不安がない状態"@ja.
+kg:id_13 rdf:type cls:c_2197.
+cls:c_2197 rdfs:label "操業安定"@ja.
+kg:id_14 rdfs:label "新型コロナで北朝鮮の船が出漁してこないこと"@ja.
+kg:id_14 rdf:type cls:c_2198.
+cls:c_2198 rdfs:label "出漁停止"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "沿岸漁業の需要激減"@ja.
+kg:id_15 rdf:type cls:c_1179.
+cls:c_1179 rdfs:label "需要減少"@ja.
+kg:id_16 rdfs:label "コロナ禍での休業、営業自粛等"@ja.
+kg:id_16 rdf:type cls:c_2199.
+cls:c_2199 rdfs:label "営業自粛"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "首都圏との移動自粛"@ja.
+kg:id_17 rdf:type cls:c_2200.
+cls:c_2200 rdfs:label "移動自粛"@ja.
+kg:id_15 prop:cause kg:id_17.
+kg:id_18 rdfs:label "高級魚の買手不足"@ja.
+kg:id_18 rdf:type cls:c_2201.
+cls:c_2201 rdfs:label "買手不足"@ja.
+kg:id_19 rdfs:label "全国的に需要が激減したこと"@ja.
+kg:id_19 rdf:type cls:c_1179.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "漁獲量が伸びない"@ja.
+kg:id_20 rdf:type cls:c_2202.
+cls:c_2202 rdfs:label "漁獲低迷"@ja.
+kg:id_21 rdfs:label "海域も雨量が多くて風も吹かないこと"@ja.
+kg:id_21 rdf:type cls:c_2203.
+cls:c_2203 rdfs:label "海況不良"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "サクランボ園の生産継続意欲喪失"@ja.
+kg:id_22 rdf:type cls:c_2204.
+cls:c_2204 rdfs:label "生産意欲喪失"@ja.
+kg:id_23 rdfs:label "記録的豪雨による被害"@ja.
+kg:id_23 rdf:type cls:c_2205.
+cls:c_2205 rdfs:label "豪雨被害"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "高齢であること"@ja.
+kg:id_24 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "後継者がいないこと"@ja.
+kg:id_25 rdf:type cls:c_1717.
+cls:c_1717 rdfs:label "後継者不足"@ja.
+kg:id_22 prop:cause kg:id_25.
+kg:id_26 rdfs:label "サクランボの人手不足"@ja.
+kg:id_26 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_27 rdfs:label "収穫と箱詰め作業の人手不足"@ja.
+kg:id_27 rdf:type cls:c_630.
+cls:c_630 rdfs:label "労働力不足"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "収穫と箱詰め作業の労力不足"@ja.
+kg:id_28 rdf:type cls:c_630.
+kg:id_26 prop:cause kg:id_28.
+kg:id_29 rdfs:label "コンテナ貨物量への新型コロナの大きな影響"@ja.
+kg:id_29 rdf:type cls:c_2206.
+cls:c_2206 rdfs:label "物流影響"@ja.
+kg:id_30 rdfs:label "国内外の移動禁止など"@ja.
+kg:id_30 rdf:type cls:c_2207.
+cls:c_2207 rdfs:label "移動禁止"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "酒田共同火力発電所の休廃止方針検討"@ja.
+kg:id_31 rdf:type cls:c_2208.
+cls:c_2208 rdfs:label "施設休廃止検討"@ja.
+kg:id_32 rdfs:label "1990年代以前の非効率な石炭火力発電所100基を2030年までに休廃止する方針"@ja.
+kg:id_32 rdf:type cls:c_2209.
+cls:c_2209 rdfs:label "休廃止方針"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "本市経済への大きな影響想定"@ja.
+kg:id_33 rdf:type cls:c_2210.
+cls:c_2210 rdfs:label "地域経済影響"@ja.
+kg:id_34 rdfs:label "酒田共同火力発電所が休廃止対象になること"@ja.
+kg:id_34 rdf:type cls:c_2211.
+cls:c_2211 rdfs:label "施設休廃止"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "全貨物量の半分喪失"@ja.
+kg:id_35 rdf:type cls:c_2212.
+cls:c_2212 rdfs:label "貨物量減少"@ja.
+kg:id_36 rdfs:label "酒田共同火力発電所が10年後に休廃止されること"@ja.
+kg:id_36 rdf:type cls:c_2211.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "雇用喪失"@ja.
+kg:id_37 rdf:type cls:c_2213.
+cls:c_2213 rdfs:label "雇用喪失"@ja.
+kg:id_38 rdfs:label "酒田共同火力発電所が休廃止の対象となること"@ja.
+kg:id_38 rdf:type cls:c_2211.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "観光入込数半減"@ja.
+kg:id_39 rdf:type cls:c_2214.
+cls:c_2214 rdfs:label "観光減少"@ja.
+kg:id_40 rdfs:label "新型コロナウイルス感染症による外出自粛等"@ja.
+kg:id_40 rdf:type cls:c_2187.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "観光産業全体への大きな影響"@ja.
+kg:id_41 rdf:type cls:c_2215.
+cls:c_2215 rdfs:label "産業影響"@ja.
+kg:id_42 rdfs:label "観光客の激減"@ja.
+kg:id_42 rdf:type cls:c_2214.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "観光誘客に直結する各種イベント中止"@ja.
+kg:id_43 rdf:type cls:c_2216.
+cls:c_2216 rdfs:label "イベント中止"@ja.
+kg:id_44 rdfs:label "３密を避け感染拡大を防止するため"@ja.
+kg:id_44 rdf:type cls:c_2217.
+cls:c_2217 rdfs:label "感染防止"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "インバウンド推進停滞"@ja.
+kg:id_45 rdf:type cls:c_2218.
+cls:c_2218 rdfs:label "観光停滞"@ja.
+kg:id_46 rdfs:label "外国クルーズ船の運航中止"@ja.
+kg:id_46 rdf:type cls:c_2219.
+cls:c_2219 rdfs:label "運航中止"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "団体旅行敬遠"@ja.
+kg:id_47 rdf:type cls:c_2220.
+cls:c_2220 rdfs:label "旅行敬遠"@ja.
+kg:id_48 rdfs:label "感染症下で飛行機や電車やバスの利用が控えられたこと"@ja.
+kg:id_48 rdf:type cls:c_2221.
+cls:c_2221 rdfs:label "移動回避"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "地方都市への暮らしや仕事の増加"@ja.
+kg:id_49 rdf:type cls:c_2222.
+cls:c_2222 rdfs:label "地方分散"@ja.
+kg:id_50 rdfs:label "東京圏での新型コロナウイルス感染症急増により一極集中のリスクが顕在化したこと"@ja.
+kg:id_50 rdf:type cls:c_2223.
+cls:c_2223 rdfs:label "集中リスク顕在化"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "テレワーク拡大とウェブ会議普及で場所を問わずに仕事ができるようになったこと"@ja.
+kg:id_51 rdf:type cls:c_2224.
+cls:c_2224 rdfs:label "遠隔勤務普及"@ja.
+kg:id_49 prop:cause kg:id_51.
+kg:id_52 rdfs:label "誹謗中傷や風評被害の発生"@ja.
+kg:id_52 rdf:type cls:c_2225.
+cls:c_2225 rdfs:label "風評被害"@ja.
+kg:id_53 rdfs:label "新型コロナウイルス感染"@ja.
+kg:id_53 rdf:type cls:c_1747.
+cls:c_1747 rdfs:label "感染発生"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "症状があっても相談や受診をちゅうちょすること"@ja.
+kg:id_54 rdf:type cls:c_2226.
+cls:c_2226 rdfs:label "受診抑制"@ja.
+kg:id_55 rdfs:label "感染者への誹謗中傷や差別"@ja.
+kg:id_55 rdf:type cls:c_2019.
+cls:c_2019 rdfs:label "差別"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "疫学調査への協力拒否"@ja.
+kg:id_56 rdf:type cls:c_2227.
+cls:c_2227 rdfs:label "調査協力拒否"@ja.
+kg:id_56 prop:cause kg:id_55.
+kg:id_57 rdfs:label "鳥海山・飛島ジオパーク認定"@ja.
+kg:id_57 rdf:type cls:c_2228.
+cls:c_2228 rdfs:label "認定"@ja.
+kg:id_58 rdfs:label "地形、地質学的遺産が適切に保護されていること"@ja.
+kg:id_58 rdf:type cls:c_2229.
+cls:c_2229 rdfs:label "保護体制"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "ジオパークとしての質を持続的に生かす上で必要となる推進体制を十分に有していること"@ja.
+kg:id_59 rdf:type cls:c_2230.
+cls:c_2230 rdfs:label "推進体制"@ja.
+kg:id_57 prop:cause kg:id_59.
+kg:id_60 rdfs:label "熱中症にかかりやすくなること"@ja.
+kg:id_60 rdf:type cls:c_2231.
+cls:c_2231 rdfs:label "熱中症リスク"@ja.
+kg:id_61 rdfs:label "湿度の高い場所では汗が蒸発しにくく体温調整機能が低下すること"@ja.
+kg:id_61 rdf:type cls:c_2232.
+cls:c_2232 rdfs:label "体温調整低下"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "医療機関の大幅減収"@ja.
+kg:id_62 rdf:type cls:c_2233.
+cls:c_2233 rdfs:label "減収"@ja.
+kg:id_63 rdfs:label "新型コロナウイルスの影響で診察や処置を自粛する傾向"@ja.
+kg:id_63 rdf:type cls:c_2234.
+cls:c_2234 rdfs:label "受診自粛"@ja.
+kg:id_62 prop:cause kg:id_63.
+kg:id_64 rdfs:label "日本海総合病院の経営面への大きな影響"@ja.
+kg:id_64 rdf:type cls:c_2235.
+cls:c_2235 rdfs:label "経営影響"@ja.
+kg:id_65 rdfs:label "感染を心配して受診を控える患者が多かったこと"@ja.
+kg:id_65 rdf:type cls:c_2236.
+cls:c_2236 rdfs:label "受診控え"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "緊急性が高くない手術等を延期したこと"@ja.
+kg:id_66 rdf:type cls:c_2237.
+cls:c_2237 rdfs:label "手術延期"@ja.
+kg:id_64 prop:cause kg:id_66.
+kg:id_67 rdfs:label "地方移住への関心の高まり"@ja.
+kg:id_67 rdf:type cls:c_2238.
+cls:c_2238 rdfs:label "移住関心増加"@ja.
+kg:id_68 rdfs:label "人口集中に伴うリスクを低減あるいは回避する認識の広がり"@ja.
+kg:id_68 rdf:type cls:c_2239.
+cls:c_2239 rdfs:label "集中回避認識"@ja.
+kg:id_67 prop:cause kg:id_68.
+kg:id_69 rdfs:label "テレワークやオンライン授業が積極的に行われていること"@ja.
+kg:id_69 rdf:type cls:c_2240.
+cls:c_2240 rdfs:label "遠隔教育普及"@ja.
+kg:id_67 prop:cause kg:id_69.
+kg:id_70 rdfs:label "除雪業者の人員確保困難"@ja.
+kg:id_70 rdf:type cls:c_2241.
+cls:c_2241 rdfs:label "人員確保困難"@ja.
+kg:id_71 rdfs:label "人手不足"@ja.
+kg:id_71 rdf:type cls:c_759.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "オペレーターの高齢化"@ja.
+kg:id_72 rdf:type cls:c_613.
+kg:id_70 prop:cause kg:id_72.
+kg:id_73 rdfs:label "除雪車両の維持更新困難"@ja.
+kg:id_73 rdf:type cls:c_2242.
+cls:c_2242 rdfs:label "車両維持困難"@ja.
+kg:id_74 rdfs:label "比較的降雪の少ない地域であること"@ja.
+kg:id_74 rdf:type cls:c_2243.
+cls:c_2243 rdfs:label "少雪地域"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "観光業、飲食業、食材納入業者"@ja.
+kg:id_75 rdf:type cls:c_2244.
+cls:c_2244 rdfs:label "産業"@ja.
+kg:id_76 rdfs:label "春先に大きな打撃を受けた"@ja.
+kg:id_76 rdf:type cls:c_2245.
+cls:c_2245 rdfs:label "打撃"@ja.
+kg:id_75 prop:effect kg:id_76.
+kg:id_77 rdfs:label "様々な業種"@ja.
+kg:id_77 rdf:type cls:c_2246.
+cls:c_2246 rdfs:label "事業者"@ja.
+kg:id_78 rdfs:label "事業継続が危うい状態が続いている"@ja.
+kg:id_78 rdf:type cls:c_2189.
+kg:id_77 prop:effect kg:id_78.
+kg:id_79 rdfs:label "花卉販売"@ja.
+kg:id_79 rdf:type cls:c_2247.
+cls:c_2247 rdfs:label "販売"@ja.
+kg:id_80 rdfs:label "行き場を失った"@ja.
+kg:id_80 rdf:type cls:c_2195.
+kg:id_79 prop:effect kg:id_80.
+kg:id_81 rdfs:label "酒田港の水揚げ量"@ja.
+kg:id_81 rdf:type cls:c_2248.
+cls:c_2248 rdfs:label "水揚げ量"@ja.
+kg:id_82 rdfs:label "令和２年４月から８月までの５か月で1,183トン前年比220％となった"@ja.
+kg:id_82 rdf:type cls:c_2249.
+cls:c_2249 rdfs:label "増加"@ja.
+kg:id_81 prop:effect kg:id_82.
+kg:id_83 rdfs:label "酒田港の水揚げ金額"@ja.
+kg:id_83 rdf:type cls:c_2250.
+cls:c_2250 rdfs:label "水揚げ額"@ja.
+kg:id_84 rdfs:label "５億8,589万円前年比188％となった"@ja.
+kg:id_84 rdf:type cls:c_2249.
+kg:id_83 prop:effect kg:id_84.
+kg:id_85 rdfs:label "生鮮スルメイカ価格"@ja.
+kg:id_85 rdf:type cls:c_2251.
+cls:c_2251 rdfs:label "価格"@ja.
+kg:id_86 rdfs:label "前年比で２割安となった"@ja.
+kg:id_86 rdf:type cls:c_2252.
+cls:c_2252 rdfs:label "下落"@ja.
+kg:id_85 prop:effect kg:id_86.
+kg:id_87 rdfs:label "沿岸漁業"@ja.
+kg:id_87 rdf:type cls:c_2253.
+cls:c_2253 rdfs:label "漁業"@ja.
+kg:id_88 rdfs:label "苦戦している"@ja.
+kg:id_88 rdf:type cls:c_2254.
+cls:c_2254 rdfs:label "苦戦"@ja.
+kg:id_87 prop:effect kg:id_88.
+kg:id_89 rdfs:label "サクランボ園"@ja.
+kg:id_89 rdf:type cls:c_2255.
+cls:c_2255 rdfs:label "果樹園"@ja.
+kg:id_90 rdfs:label "被災したままで放置することを決めた"@ja.
+kg:id_90 rdf:type cls:c_2256.
+cls:c_2256 rdfs:label "放置"@ja.
+kg:id_89 prop:effect kg:id_90.
+kg:id_91 rdfs:label "コンテナ貨物量"@ja.
+kg:id_91 rdf:type cls:c_2257.
+cls:c_2257 rdfs:label "貨物量"@ja.
+kg:id_92 rdfs:label "前年同期比0.8％増でおおむね前年と同程度で推移した"@ja.
+kg:id_92 rdf:type cls:c_2258.
+cls:c_2258 rdfs:label "横ばい"@ja.
+kg:id_91 prop:effect kg:id_92.
+kg:id_93 rdfs:label "新型コロナの影響は特段見受けられない"@ja.
+kg:id_93 rdf:type cls:c_2259.
+cls:c_2259 rdfs:label "影響軽微"@ja.
+kg:id_91 prop:effect kg:id_93.
+kg:id_94 rdfs:label "酒田共同火力発電所"@ja.
+kg:id_94 rdf:type cls:c_1832.
+cls:c_1832 rdfs:label "発電所"@ja.
+kg:id_95 rdfs:label "市や県に多大な納税をしている"@ja.
+kg:id_95 rdf:type cls:c_2260.
+cls:c_2260 rdfs:label "納税"@ja.
+kg:id_94 prop:effect kg:id_95.
+kg:id_96 rdfs:label "最大700名程度が従事している"@ja.
+kg:id_96 rdf:type cls:c_2261.
+cls:c_2261 rdfs:label "雇用"@ja.
+kg:id_94 prop:effect kg:id_96.
+kg:id_97 rdfs:label "山形県全体にとって非常に経済的影響力のある企業である"@ja.
+kg:id_97 rdf:type cls:c_2262.
+cls:c_2262 rdfs:label "経済影響力"@ja.
+kg:id_94 prop:effect kg:id_97.
+kg:id_98 rdfs:label "酒田共同火力発電所に関係する酒田港の取扱貨物量"@ja.
+kg:id_98 rdf:type cls:c_2263.
+cls:c_2263 rdfs:label "港湾貨物"@ja.
+kg:id_99 rdfs:label "全体の約６割が石炭や石炭灰で占められている"@ja.
+kg:id_99 rdf:type cls:c_2264.
+cls:c_2264 rdfs:label "石炭貨物"@ja.
+kg:id_98 prop:effect kg:id_99.
+kg:id_100 rdfs:label "送電インフラ議論"@ja.
+kg:id_100 rdf:type cls:c_2265.
+cls:c_2265 rdfs:label "政策議論"@ja.
+kg:id_101 rdfs:label "地域にとって不利になるような方向にはならないと考える"@ja.
+kg:id_101 rdf:type cls:c_2266.
+cls:c_2266 rdfs:label "不利益回避"@ja.
+kg:id_100 prop:effect kg:id_101.
+kg:id_102 rdfs:label "観光入込数"@ja.
+kg:id_102 rdf:type cls:c_2267.
+cls:c_2267 rdfs:label "観光入込"@ja.
+kg:id_103 rdfs:label "前年同期比で半分の50％となった"@ja.
+kg:id_103 rdf:type cls:c_2268.
+cls:c_2268 rdfs:label "半減"@ja.
+kg:id_102 prop:effect kg:id_103.
+kg:id_104 rdfs:label "山居倉庫への教育旅行立ち寄り件数"@ja.
+kg:id_104 rdf:type cls:c_2269.
+cls:c_2269 rdfs:label "教育旅行"@ja.
+kg:id_105 rdfs:label "昨年の６校から現在で70校に大幅増加した"@ja.
+kg:id_105 rdf:type cls:c_2249.
+kg:id_104 prop:effect kg:id_105.
+kg:id_106 rdfs:label "地方都市への人や仕事の移転"@ja.
+kg:id_106 rdf:type cls:c_2270.
+cls:c_2270 rdfs:label "人流移転"@ja.
+kg:id_107 rdfs:label "転換期になっていくものと考えている"@ja.
+kg:id_107 rdf:type cls:c_2271.
+cls:c_2271 rdfs:label "転換期"@ja.
+kg:id_106 prop:effect kg:id_107.
+kg:id_108 rdfs:label "感染者への誹謗中傷や風評被害"@ja.
+kg:id_108 rdf:type cls:c_2272.
+cls:c_2272 rdfs:label "誹謗中傷"@ja.
+kg:id_109 rdfs:label "人権を侵害する行為であり絶対に許されない"@ja.
+kg:id_109 rdf:type cls:c_2273.
+cls:c_2273 rdfs:label "人権侵害"@ja.
+kg:id_108 prop:effect kg:id_109.
+kg:id_110 rdfs:label "感染者への差別"@ja.
+kg:id_110 rdf:type cls:c_2019.
+kg:id_111 rdfs:label "感染者の潜在化や濃厚接触者把握及び感染経路特定に支障を来すおそれがある"@ja.
+kg:id_111 rdf:type cls:c_2274.
+cls:c_2274 rdfs:label "公衆衛生支障"@ja.
+kg:id_110 prop:effect kg:id_111.
+kg:id_112 rdfs:label "ジオパーク活動"@ja.
+kg:id_112 rdf:type cls:c_2275.
+cls:c_2275 rdfs:label "活動"@ja.
+kg:id_113 rdfs:label "ジオパークへの理解が市民の間に浸透しつつある"@ja.
+kg:id_113 rdf:type cls:c_2276.
+cls:c_2276 rdfs:label "理解浸透"@ja.
+kg:id_112 prop:effect kg:id_113.
+kg:id_114 rdfs:label "エアコン設置"@ja.
+kg:id_114 rdf:type cls:c_1229.
+cls:c_1229 rdfs:label "設備整備"@ja.
+kg:id_115 rdfs:label "授業の集中力が明確に高くなった"@ja.
+kg:id_115 rdf:type cls:c_2277.
+cls:c_2277 rdfs:label "集中力向上"@ja.
+kg:id_114 prop:effect kg:id_115.
+kg:id_116 rdfs:label "休み時間の子供の居場所の確保ができた"@ja.
+kg:id_116 rdf:type cls:c_2278.
+cls:c_2278 rdfs:label "居場所確保"@ja.
+kg:id_114 prop:effect kg:id_116.
+kg:id_117 rdfs:label "給食を完食するようになった"@ja.
+kg:id_117 rdf:type cls:c_2279.
+cls:c_2279 rdfs:label "食欲改善"@ja.
+kg:id_114 prop:effect kg:id_117.
+kg:id_118 rdfs:label "行事におけるクールダウンの場を設けることができた"@ja.
+kg:id_118 rdf:type cls:c_2280.
+cls:c_2280 rdfs:label "休息確保"@ja.
+kg:id_114 prop:effect kg:id_118.
+kg:id_119 rdfs:label "熱中症と診断された児童生徒数が明らかに減少した"@ja.
+kg:id_119 rdf:type cls:c_2281.
+cls:c_2281 rdfs:label "熱中症減少"@ja.
+kg:id_114 prop:effect kg:id_119.
+kg:id_120 rdfs:label "観光戦略"@ja.
+kg:id_120 rdf:type cls:c_2282.
+cls:c_2282 rdfs:label "観光戦略"@ja.
+kg:id_121 rdfs:label "マイクロツーリズムの推進"@ja.
+kg:id_121 rdf:type cls:c_2283.
+cls:c_2283 rdfs:label "近隣観光促進"@ja.
+kg:id_120 prop:contermeasure kg:id_121.
+kg:id_122 rdfs:label "県内の教育旅行の誘致"@ja.
+kg:id_122 rdf:type cls:c_1564.
+cls:c_1564 rdfs:label "教育旅行誘致"@ja.
+kg:id_120 prop:contermeasure kg:id_122.
+kg:id_123 rdfs:label "ワーケーションの環境整備"@ja.
+kg:id_123 rdf:type cls:c_2284.
+cls:c_2284 rdfs:label "受入環境整備"@ja.
+kg:id_120 prop:contermeasure kg:id_123.
+kg:id_124 rdfs:label "宿泊需要喚起"@ja.
+kg:id_124 rdf:type cls:c_2285.
+cls:c_2285 rdfs:label "需要喚起"@ja.
+kg:id_125 rdfs:label "おいでよ！酒田さんぽキャンペーンの実施"@ja.
+kg:id_125 rdf:type cls:c_2286.
+cls:c_2286 rdfs:label "観光促進策"@ja.
+kg:id_124 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "教育旅行誘致"@ja.
+kg:id_126 rdf:type cls:c_1564.
+kg:id_127 rdfs:label "県内旅行エージェント等へ修学旅行先として旅行プランや料金などを提案案内する営業活動"@ja.
+kg:id_127 rdf:type cls:c_2068.
+cls:c_2068 rdfs:label "営業活動"@ja.
+kg:id_126 prop:contermeasure kg:id_127.
+kg:id_128 rdfs:label "ワーケーション受入れ"@ja.
+kg:id_128 rdf:type cls:c_2287.
+cls:c_2287 rdfs:label "受入促進"@ja.
+kg:id_129 rdfs:label "鳥海山荘で仕事ができるようWi-Fi環境を整備する"@ja.
+kg:id_129 rdf:type cls:c_2163.
+cls:c_2163 rdfs:label "通信環境整備"@ja.
+kg:id_128 prop:contermeasure kg:id_129.
+kg:id_130 rdfs:label "人口減少対策"@ja.
+kg:id_130 rdf:type cls:c_1879.
+cls:c_1879 rdfs:label "人口減少対策"@ja.
+kg:id_131 rdfs:label "高校生を対象とした市内企業の見学ツアー"@ja.
+kg:id_131 rdf:type cls:c_1400.
+cls:c_1400 rdfs:label "企業見学"@ja.
+kg:id_130 prop:contermeasure kg:id_131.
+kg:id_132 rdfs:label "本社機能移転やサテライトオフィス立地のためのオーダーメード型の企業立地支援"@ja.
+kg:id_132 rdf:type cls:c_1391.
+cls:c_1391 rdfs:label "企業立地支援"@ja.
+kg:id_130 prop:contermeasure kg:id_132.
+kg:id_133 rdfs:label "総合的な移住支援の継続とターゲットに合わせた情報発信"@ja.
+kg:id_133 rdf:type cls:c_1420.
+cls:c_1420 rdfs:label "移住支援"@ja.
+kg:id_130 prop:contermeasure kg:id_133.
+kg:id_134 rdfs:label "誹謗中傷や差別の防止"@ja.
+kg:id_134 rdf:type cls:c_2288.
+cls:c_2288 rdfs:label "差別防止"@ja.
+kg:id_135 rdfs:label "市長メッセージで市民へ発信する"@ja.
+kg:id_135 rdf:type cls:c_2289.
+cls:c_2289 rdfs:label "広報発信"@ja.
+kg:id_134 prop:contermeasure kg:id_135.
+kg:id_136 rdfs:label "差別や偏見の防止を呼びかけるチラシの全戸配布"@ja.
+kg:id_136 rdf:type cls:c_2290.
+cls:c_2290 rdfs:label "啓発配布"@ja.
+kg:id_134 prop:contermeasure kg:id_136.
+kg:id_137 rdfs:label "県市町村及び専門機関が一体化した相談窓口の開設"@ja.
+kg:id_137 rdf:type cls:c_440.
+cls:c_440 rdfs:label "相談窓口"@ja.
+kg:id_134 prop:contermeasure kg:id_137.
+kg:id_138 rdfs:label "学校における差別防止"@ja.
+kg:id_138 rdf:type cls:c_2291.
+cls:c_2291 rdfs:label "学校差別防止"@ja.
+kg:id_139 rdfs:label "適切な知識に基づいた指導と生徒指導上の配慮の周知"@ja.
+kg:id_139 rdf:type cls:c_2292.
+cls:c_2292 rdfs:label "指導周知"@ja.
+kg:id_138 prop:contermeasure kg:id_139.
+kg:id_140 rdfs:label "学校再開対応"@ja.
+kg:id_140 rdf:type cls:c_2293.
+cls:c_2293 rdfs:label "学校再開対応"@ja.
+kg:id_141 rdfs:label "保健所の指導の下で学校教育委員会専門家会議対策本部会議と協議する"@ja.
+kg:id_141 rdf:type cls:c_2294.
+cls:c_2294 rdfs:label "協議体制"@ja.
+kg:id_140 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "学校の猛暑対策"@ja.
+kg:id_142 rdf:type cls:c_2295.
+cls:c_2295 rdfs:label "猛暑対策"@ja.
+kg:id_143 rdfs:label "全ての小中学校の普通教室へのエアコン設置"@ja.
+kg:id_143 rdf:type cls:c_1534.
+cls:c_1534 rdfs:label "空調整備"@ja.
+kg:id_142 prop:contermeasure kg:id_143.
+kg:id_144 rdfs:label "特別教室へのスポットクーラーや大型扇風機の設置"@ja.
+kg:id_144 rdf:type cls:c_2296.
+cls:c_2296 rdfs:label "冷房補助"@ja.
+kg:id_142 prop:contermeasure kg:id_144.
+kg:id_145 rdfs:label "登下校時の熱中症対策"@ja.
+kg:id_145 rdf:type cls:c_2297.
+cls:c_2297 rdfs:label "熱中症対策"@ja.
+kg:id_146 rdfs:label "下校前の水分補給指導"@ja.
+kg:id_146 rdf:type cls:c_2298.
+cls:c_2298 rdfs:label "水分補給指導"@ja.
+kg:id_145 prop:contermeasure kg:id_146.
+kg:id_147 rdfs:label "歩行中も必要であれば水分補給をしてもよいという指導"@ja.
+kg:id_147 rdf:type cls:c_2299.
+cls:c_2299 rdfs:label "水分補給許可"@ja.
+kg:id_145 prop:contermeasure kg:id_147.
+kg:id_148 rdfs:label "帽子の着用"@ja.
+kg:id_148 rdf:type cls:c_2300.
+cls:c_2300 rdfs:label "帽子着用"@ja.
+kg:id_145 prop:contermeasure kg:id_148.
+kg:id_149 rdfs:label "暑さ指数の高い日の教員の下校時見回り"@ja.
+kg:id_149 rdf:type cls:c_2301.
+cls:c_2301 rdfs:label "見守り"@ja.
+kg:id_145 prop:contermeasure kg:id_149.
+kg:id_150 rdfs:label "地区の見回り隊による付き添いと水分補給の促し"@ja.
+kg:id_150 rdf:type cls:c_2302.
+cls:c_2302 rdfs:label "付き添い"@ja.
+kg:id_145 prop:contermeasure kg:id_150.
+kg:id_151 rdfs:label "学校と学童の連携による見届け"@ja.
+kg:id_151 rdf:type cls:c_2303.
+cls:c_2303 rdfs:label "連携見守り"@ja.
+kg:id_145 prop:contermeasure kg:id_151.
+kg:id_152 rdfs:label "昇降口へのミストシャワー設置"@ja.
+kg:id_152 rdf:type cls:c_2304.
+cls:c_2304 rdfs:label "冷却設備"@ja.
+kg:id_145 prop:contermeasure kg:id_152.
+kg:id_153 rdfs:label "ソーシャルディスタンスが取れていればマスクを外してよいことの周知"@ja.
+kg:id_153 rdf:type cls:c_2305.
+cls:c_2305 rdfs:label "マスク緩和"@ja.
+kg:id_145 prop:contermeasure kg:id_153.
+kg:id_154 rdfs:label "新型コロナウイルス感染症支援"@ja.
+kg:id_154 rdf:type cls:c_2306.
+cls:c_2306 rdfs:label "感染症支援"@ja.
+kg:id_155 rdfs:label "地域経済変動対策資金に対する利子補給"@ja.
+kg:id_155 rdf:type cls:c_1855.
+cls:c_1855 rdfs:label "利子補給"@ja.
+kg:id_154 prop:contermeasure kg:id_155.
+kg:id_156 rdfs:label "セーフティーネット保証及び危機関連保証の認定"@ja.
+kg:id_156 rdf:type cls:c_2307.
+cls:c_2307 rdfs:label "信用保証"@ja.
+kg:id_154 prop:contermeasure kg:id_156.
+kg:id_157 rdfs:label "飲食店等応援補助金の交付"@ja.
+kg:id_157 rdf:type cls:c_2308.
+cls:c_2308 rdfs:label "事業者補助"@ja.
+kg:id_154 prop:contermeasure kg:id_157.
+kg:id_158 rdfs:label "旅行業等応援補助金の交付"@ja.
+kg:id_158 rdf:type cls:c_2308.
+kg:id_154 prop:contermeasure kg:id_158.
+kg:id_159 rdfs:label "大型連休中の電話相談窓口開設"@ja.
+kg:id_159 rdf:type cls:c_440.
+kg:id_154 prop:contermeasure kg:id_159.
+kg:id_160 rdfs:label "国や県の支援も含めた緊急相談窓口の開設"@ja.
+kg:id_160 rdf:type cls:c_440.
+kg:id_154 prop:contermeasure kg:id_160.
+kg:id_161 rdfs:label "もっけ玉活用支援事業の実施"@ja.
+kg:id_161 rdf:type cls:c_2309.
+cls:c_2309 rdfs:label "消費喚起"@ja.
+kg:id_154 prop:contermeasure kg:id_161.
+kg:id_162 rdfs:label "中小企業雇用継続応援補助金の交付"@ja.
+kg:id_162 rdf:type cls:c_2310.
+cls:c_2310 rdfs:label "雇用維持補助"@ja.
+kg:id_154 prop:contermeasure kg:id_162.
+kg:id_163 rdfs:label "新しい生活様式対応のための上限20万円補助制度"@ja.
+kg:id_163 rdf:type cls:c_2311.
+cls:c_2311 rdfs:label "感染対策補助"@ja.
+kg:id_154 prop:contermeasure kg:id_163.
+kg:id_164 rdfs:label "キャッシュレス決済導入促進事業"@ja.
+kg:id_164 rdf:type cls:c_2312.
+cls:c_2312 rdfs:label "決済促進"@ja.
+kg:id_154 prop:contermeasure kg:id_164.
+kg:id_165 rdfs:label "今後の新型コロナウイルス感染症支援"@ja.
+kg:id_165 rdf:type cls:c_2313.
+cls:c_2313 rdfs:label "支援継続"@ja.
+kg:id_166 rdfs:label "第３回目のアンケート調査の実施"@ja.
+kg:id_166 rdf:type cls:c_1618.
+cls:c_1618 rdfs:label "実態調査"@ja.
+kg:id_165 prop:contermeasure kg:id_166.
+kg:id_167 rdfs:label "市内約60事業者への業況調査"@ja.
+kg:id_167 rdf:type cls:c_2314.
+cls:c_2314 rdfs:label "業況調査"@ja.
+kg:id_165 prop:contermeasure kg:id_167.
+kg:id_168 rdfs:label "雇用の維持継続を念頭に置いた切れ目のない支援策の実施"@ja.
+kg:id_168 rdf:type cls:c_1792.
+cls:c_1792 rdfs:label "継続支援"@ja.
+kg:id_165 prop:contermeasure kg:id_168.
+kg:id_169 rdfs:label "地域医療機関"@ja.
+kg:id_169 rdf:type cls:c_2315.
+cls:c_2315 rdfs:label "医療機関支援"@ja.
+kg:id_170 rdfs:label "医療従事者等への慰労金支給"@ja.
+kg:id_170 rdf:type cls:c_2316.
+cls:c_2316 rdfs:label "慰労金"@ja.
+kg:id_169 prop:contermeasure kg:id_170.
+kg:id_171 rdfs:label "診療所の感染防止対策費用への最大100万円補助"@ja.
+kg:id_171 rdf:type cls:c_2311.
+kg:id_169 prop:contermeasure kg:id_171.
+kg:id_172 rdfs:label "山形県による民間病院50万円民間診療所30万円の支援金給付"@ja.
+kg:id_172 rdf:type cls:c_2317.
+cls:c_2317 rdfs:label "支援金"@ja.
+kg:id_169 prop:contermeasure kg:id_172.
+kg:id_173 rdfs:label "日本海総合病院"@ja.
+kg:id_173 rdf:type cls:c_2318.
+cls:c_2318 rdfs:label "病院支援"@ja.
+kg:id_174 rdfs:label "空床補償"@ja.
+kg:id_174 rdf:type cls:c_2319.
+cls:c_2319 rdfs:label "空床補償"@ja.
+kg:id_173 prop:contermeasure kg:id_174.
+kg:id_175 rdfs:label "県と連携した経営安定化支援"@ja.
+kg:id_175 rdf:type cls:c_2320.
+cls:c_2320 rdfs:label "経営支援"@ja.
+kg:id_173 prop:contermeasure kg:id_175.
+kg:id_176 rdfs:label "酒田共同火力発電所問題"@ja.
+kg:id_176 rdf:type cls:c_2321.
+cls:c_2321 rdfs:label "発電所問題対応"@ja.
+kg:id_177 rdfs:label "酒田共同火力発電所と情報収集し国の動向を注視する"@ja.
+kg:id_177 rdf:type cls:c_1109.
+cls:c_1109 rdfs:label "情報収集"@ja.
+kg:id_176 prop:contermeasure kg:id_177.
+kg:id_178 rdfs:label "県知事への緊急要望"@ja.
+kg:id_178 rdf:type cls:c_671.
+cls:c_671 rdfs:label "要望活動"@ja.
+kg:id_176 prop:contermeasure kg:id_178.
+kg:id_179 rdfs:label "酒田港振興"@ja.
+kg:id_179 rdf:type cls:c_2322.
+cls:c_2322 rdfs:label "港湾振興"@ja.
+kg:id_180 rdfs:label "ポートセールス活動"@ja.
+kg:id_180 rdf:type cls:c_2068.
+kg:id_179 prop:contermeasure kg:id_180.
+kg:id_181 rdfs:label "地方移住促進"@ja.
+kg:id_181 rdf:type cls:c_1235.
+cls:c_1235 rdfs:label "移住促進"@ja.
+kg:id_182 rdfs:label "移住体験ツアー参加者やお試し住宅利用者への情報発信"@ja.
+kg:id_182 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_181 prop:contermeasure kg:id_182.
+kg:id_183 rdfs:label "八幡地域へのWi-Fi環境整備"@ja.
+kg:id_183 rdf:type cls:c_2163.
+kg:id_181 prop:contermeasure kg:id_183.
+kg:id_184 rdfs:label "女性の多様な働き方支援"@ja.
+kg:id_184 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "就労支援"@ja.
+kg:id_185 rdfs:label "よろずIT女子育成セミナーの開催"@ja.
+kg:id_185 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_184 prop:contermeasure kg:id_185.
+kg:id_186 rdfs:label "企業誘致"@ja.
+kg:id_186 rdf:type cls:c_1392.
+cls:c_1392 rdfs:label "企業誘致"@ja.
+kg:id_187 rdfs:label "地方拠点強化税制を活用した本社機能移転の促進"@ja.
+kg:id_187 rdf:type cls:c_2323.
+cls:c_2323 rdfs:label "移転促進"@ja.
+kg:id_186 prop:contermeasure kg:id_187.
+kg:id_188 rdfs:label "立地可能性の高い企業への立地意向調査や訪問活動"@ja.
+kg:id_188 rdf:type cls:c_1267.
+cls:c_1267 rdfs:label "意向調査"@ja.
+kg:id_186 prop:contermeasure kg:id_188.
+kg:id_189 rdfs:label "道路整備促進"@ja.
+kg:id_189 rdf:type cls:c_2324.
+cls:c_2324 rdfs:label "道路整備促進"@ja.
+kg:id_190 rdfs:label "日本海沿岸東北自動車道の早期全線開通に向けた要望活動"@ja.
+kg:id_190 rdf:type cls:c_671.
+kg:id_189 prop:contermeasure kg:id_190.
+kg:id_191 rdfs:label "新庄酒田道路の早期全線開通に向けた要望活動"@ja.
+kg:id_191 rdf:type cls:c_671.
+kg:id_189 prop:contermeasure kg:id_191.
+kg:id_192 rdfs:label "空港整備促進"@ja.
+kg:id_192 rdf:type cls:c_2325.
+cls:c_2325 rdfs:label "空港整備促進"@ja.
+kg:id_193 rdfs:label "庄内空港滑走路2,500メートル化の国県要望継続"@ja.
+kg:id_193 rdf:type cls:c_671.
+kg:id_192 prop:contermeasure kg:id_193.
+kg:id_194 rdfs:label "庄内空港滑走路端安全区域整備"@ja.
+kg:id_194 rdf:type cls:c_2326.
+cls:c_2326 rdfs:label "安全整備"@ja.
+kg:id_192 prop:contermeasure kg:id_194.
+kg:id_195 rdfs:label "移住促進"@ja.
+kg:id_195 rdf:type cls:c_1235.
+kg:id_196 rdfs:label "コロナ禍のニーズを捉えた情報発信の強化"@ja.
+kg:id_196 rdf:type cls:c_82.
+kg:id_195 prop:contermeasure kg:id_196.
+kg:id_197 rdfs:label "オンラインでの移住相談会の実施"@ja.
+kg:id_197 rdf:type cls:c_2327.
+cls:c_2327 rdfs:label "オンライン相談"@ja.
+kg:id_195 prop:contermeasure kg:id_197.
+kg:id_198 rdfs:label "Uターン促進"@ja.
+kg:id_198 rdf:type cls:c_911.
+cls:c_911 rdfs:label "Uターン促進"@ja.
+kg:id_199 rdfs:label "本市出身者への積極的な情報発信"@ja.
+kg:id_199 rdf:type cls:c_82.
+kg:id_198 prop:contermeasure kg:id_199.
+kg:id_200 rdfs:label "働く場子育て医療環境を含めた酒田の総合力の底上げ"@ja.
+kg:id_200 rdf:type cls:c_2328.
+cls:c_2328 rdfs:label "地域力向上"@ja.
+kg:id_198 prop:contermeasure kg:id_200.
+kg:id_201 rdfs:label "除雪体制維持"@ja.
+kg:id_201 rdf:type cls:c_2329.
+cls:c_2329 rdfs:label "除雪体制維持"@ja.
+kg:id_202 rdfs:label "待機補償費の支給"@ja.
+kg:id_202 rdf:type cls:c_2330.
+cls:c_2330 rdfs:label "待機補償"@ja.
+kg:id_201 prop:contermeasure kg:id_202.
+kg:id_203 rdfs:label "補助人員分も待機補償費の対象に含める支援策の拡充検討"@ja.
+kg:id_203 rdf:type cls:c_2014.
+cls:c_2014 rdfs:label "支援拡充"@ja.
+kg:id_201 prop:contermeasure kg:id_203.
+kg:id_204 rdfs:label "大型特殊免許取得や講習会受講費用の補助検討"@ja.
+kg:id_204 rdf:type cls:c_2331.
+cls:c_2331 rdfs:label "資格取得補助"@ja.
+kg:id_201 prop:contermeasure kg:id_204.
+kg:st_1 rdfs:label "田中斉議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "春先に大きな打撃を受けたと指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "様々な業種で事業継続が危うい状態が続くと懸念"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "竹越攻征農林水産部長"@ja.
+kg:st_2 rdfs:type cls:st_47.
+cls:st_47 rdfs:label "行政職"@ja.
+kg:op_3 prop:content "在庫量増加で米価を注視すべき状況と認識"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "業務用米の切替が遅れ在庫積み上がりを懸念"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "沿岸漁業が苦戦していると指摘"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "首都圏との移動自粛の影響が大きいと指摘"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "被災したまま放置を決めた事例を紹介"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "新型コロナ対策による様々な影響があったとみる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "丸山至市長"@ja.
+kg:st_3 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_9 prop:content "2030年の具体的年限提示を大きな衝撃と受け止める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "本市経済への大きな影響を懸念"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "全貨物量の半分が消えると指摘"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "約500名の雇用が失われると懸念"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "佐々木好信交流推進調整監"@ja.
+kg:st_4 rdfs:type cls:st_47.
+kg:op_13 prop:content "観光客が激減していると認識"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "旅行業、宿泊業、交通事業者、観光施設、飲食業、物産販売事業者に幅広く影響"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "宮崎和幸企画部長"@ja.
+kg:st_5 rdfs:type cls:st_47.
+kg:op_15 prop:content "地方都市への人と仕事の移転につながる転換期と認識"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_5.
+kg:op_16 prop:content "働き方を見直す機運が高まっていると認識"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "松本国博議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_17 prop:content "病気の恐ろしさ以上に危惧される面があると問題提起"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "那須欣男危機管理監"@ja.
+kg:st_7 rdfs:type cls:st_47.
+kg:op_18 prop:content "差別は感染者の潜在化や疫学調査への支障を招くおそれがあると指摘"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_7.
+kg:op_19 prop:content "感染経路特定に支障を来すおそれがあると指摘"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "佐藤喜紀議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_20 prop:content "登下校時も暑さ指数の利用が必要と指摘"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "阿部秀徳議員"@ja.
+kg:st_9 rdfs:type cls:st_16.
+kg:op_21 prop:content "医療機関全般に大幅減収等の影響が出ていると指摘"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "菊池裕基健康福祉部長"@ja.
+kg:st_10 rdfs:type cls:st_47.
+kg:op_22 prop:content "経営面で大きな影響を受けていると認識"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_10.
+kg:op_23 prop:content "患者総数減少と収支減少をもたらしたと認識"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_10.
+kg:op_24 prop:content "地方に着目する人が非常に多くなっていると認識"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "地方で働くまたは地方に移住することへの関心が高まっていると認識"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:st_11 rdfs:label "藤井昌道建設部長"@ja.
+kg:st_11 rdfs:type cls:st_47.
+kg:op_26 prop:content "建設業を取り巻く環境が厳しく人員確保に苦慮していると認識"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_11.
+kg:op_27 prop:content "オペレーターの高齢化が進んでいると説明"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_11.
+kg:op_28 prop:content "費用面で困難との声があると説明"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_11.
+kg:op_29 prop:content "外食激減で大きな打撃を受けたと述べる"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "売上げ低迷長期化で事業継続が危ういと懸念"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "スルメイカの出だしがよく水揚げ量は増加したと説明"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "水揚げ金額も増加したと説明"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "単価面では厳しいと説明"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "高級魚の買手不足や漁獲量低迷で苦戦と述べる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "生産継続意欲を失った事例として紹介"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "新型コロナの影響は特段見受けられないと認識"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "特段影響は出ていないと説明"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "酒田市や山形県に対し大きな納税があると認識"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "地域雇用に大きく関わると認識"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "酒田市のみならず山形県全体に重要と認識"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:op_41 prop:content "今後の動向が港の貨物取扱量に大きく影響すると認識"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "地域実態を踏まえた検討が進むとみて推移を注視"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:op_43 prop:content "非常に観光客が激減していると説明"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "県内教育旅行誘致の成果が出ていると説明"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "一極集中是正のための大きなチャンスと認識"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_5.
+kg:op_46 prop:content "絶対に許されるものではないと明言"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_7.
+kg:op_47 prop:content "公衆衛生上も重大な支障を招くと指摘"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_7.
+kg:op_48 prop:content "活動参加機会や発表の場の増加を評価"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+kg:st_12 rdfs:label "齋藤一志教育次長"@ja.
+kg:st_12 rdfs:type cls:st_47.
+kg:op_49 prop:content "気温の高い時間帯でも落ち着いて授業に向かっていると説明"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_12.
+kg:op_50 prop:content "涼しい教室が子供たちの居場所になっていると説明"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_12.
+kg:op_51 prop:content "夏場の食欲低下が抑えられたと説明"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_12.
+kg:op_52 prop:content "運動会などで有効活用できていると説明"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_12.
+kg:op_53 prop:content "児童生徒の健康に明らかに貢献していると評価"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_12.
+kg:op_54 prop:content "地元や近隣への観光を推進する方針"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_4.
+kg:op_55 prop:content "県外修学旅行断念校の新たな旅行先として提案"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_4.
+kg:op_56 prop:content "鳥海山荘で仕事ができるようWi-Fi環境整備を進める"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_4.
+kg:op_57 prop:content "宿泊事業者支援の一助になっていると評価"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_4.
+kg:op_58 prop:content "こうした機会を逃さないよう営業活動を行った"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_4.
+kg:op_59 prop:content "滞在中に楽しめる体験メニュー造成も進める"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_4.
+kg:op_60 prop:content "地元定着や就職につなげる取組が必要と認識"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_5.
+kg:op_61 prop:content "良質な雇用創出のため強化が必要と認識"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_5.
+kg:op_62 prop:content "若い世代の女性の転出超過対策としても重要と認識"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_5.
+kg:op_63 prop:content "市として発信していると説明"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_7.
+kg:op_64 prop:content "市独自に全戸配布したと説明"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_7.
+kg:op_65 prop:content "連携協力したサポート体制が構築されたと説明"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_7.
+kg:op_66 prop:content "教育委員会から各学校に周知したと説明"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_7.
+kg:op_67 prop:content "子供たちは暑さを心配することなく快適に学校生活を送れたと評価"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_12.
+kg:op_68 prop:content "感染症対策と熱中症対策の両立を図っている"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_12.
+kg:st_13 rdfs:label "大沼康浩地域創生部長"@ja.
+kg:st_13 rdfs:type cls:st_47.
+kg:op_69 prop:content "最大２億円を無利子で融資が受けられる支援を実施"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_13.
+kg:op_70 prop:content "中小企業者の資金繰り支援措置として実施"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_13.
+kg:op_71 prop:content "申請の１週間後に交付できるよう簡素化して実施"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_13.
+kg:op_72 prop:content "延べ499人666件の相談に対応"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_13.
+kg:op_73 prop:content "事業者支援と消費喚起のため実施"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_13.
+kg:op_74 prop:content "雇い止めや解雇防止のため従業員１人当たり５万円を交付"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_13.
+kg:op_75 prop:content "利用金額の30％ポイント還元で市内中小規模店舗の売上げ向上を図る"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_13.
+kg:op_76 prop:content "各種業界団体や業種ごとの現状分析のため実施する"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_13.
+kg:op_77 prop:content "今後は雇用維持を重視すると説明"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_13.
+kg:op_78 prop:content "国が最大20万円または5万円を支給すると説明"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_10.
+kg:op_79 prop:content "受入病床確保医療機関への国の支援として説明"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_10.
+kg:op_80 prop:content "設立団体として経営基盤を支える必要があると判断"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_10.
+kg:op_81 prop:content "副市長と社長の面談で確認したと説明"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_13.
+kg:op_82 prop:content "酒田共同火力発電の存続や基地港湾指定に向け意見交換した"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_13.
+kg:op_83 prop:content "新たな航路誘致にも引き続き取り組む方針"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_13.
+kg:op_84 prop:content "リモートワーク可能環境をPRしている"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_3.
+kg:op_85 prop:content "ワーケーション候補地として酒田の魅力をアピールしたい"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_3.
+kg:op_86 prop:content "酒田にいながら全国の企業の仕事に就ける人材育成を進める"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_3.
+kg:op_87 prop:content "第２期総合戦略に掲げて取り組む"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_3.
+kg:op_88 prop:content "情報収集しながら訪問活動を行っている"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_3.
+kg:op_89 prop:content "沿線自治体や関係団体と連携して力を注ぐ方針"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_3.
+kg:op_90 prop:content "沿線自治体や関係団体と連携して取り組む"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_3.
+kg:op_91 prop:content "地方創生実現のため必要な整備と認識"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_3.
+kg:op_92 prop:content "リモートワーク可能環境なども掲載して発信する方針"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_3.
+kg:op_93 prop:content "新しい暮らしをPRし移住定住を推進する方針"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_3.
+kg:op_94 prop:content "まずは本市出身者から地元に帰ってきてもらいたい"@ja.
+kg:op_94 rdf:type cls:opinion.
+kg:op_94 prop:speaker kg:st_3.
+kg:op_95 prop:content "総合力向上と積極的なPRが重要と認識"@ja.
+kg:op_95 rdf:type cls:opinion.
+kg:op_95 prop:speaker kg:st_3.
+kg:op_96 prop:content "少雪でも作業員人件費を一定程度補償する必要な制度と認識"@ja.
+kg:op_96 rdf:type cls:opinion.
+kg:op_96 prop:speaker kg:st_11.
+kg:op_97 prop:content "現在検討していると説明"@ja.
+kg:op_97 rdf:type cls:opinion.
+kg:op_97 prop:speaker kg:st_11.
+kg:op_98 prop:content "他自治体の取組を調査しながら検討中"@ja.
+kg:op_98 rdf:type cls:opinion.
+kg:op_98 prop:speaker kg:st_11.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "コロナ禍の外出自粛や休業によるステイホームでホテルや飲食店等での外食が激減し"@ja.
+<< kg:id_3 prop:cause kg:id_1 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "ホテルや飲食店等での外食が激減し、観光業、飲食業、そして食材納入業者も大幅な売上げ減少で、春先は大きな打撃を受けております"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "非接触型の新しい生活様式で席数を減らした縮小営業しかできず、売上げ低迷が長引けば、様々な業種で事業継続も危うい状態が続いております"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:text-txt_contents "平成25年産米が大量の在庫を抱えたため、平成26年産米が大幅に下落し"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今年は、消費動向が新型コロナでさま変わりしているのに加えて"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "中食の在庫がさばけず、米穀卸では倉庫が足りないとの情報も聞こえてまいります"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "新型コロナの影響で、春先からイベントや冠婚葬祭が激減し、花卉販売も行き場を失って"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:text-txt_contents "新型コロナで北朝鮮の船が出漁してこないため操業不安もなく"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "沿岸漁業はコロナ禍での休業、営業自粛等、首都圏との移動自粛も大きく、全国的に需要が激減して"@ja.
+<< kg:id_15 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "沿岸漁業はコロナ禍での休業、営業自粛等、首都圏との移動自粛も大きく、全国的に需要が激減して"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "全国的に需要が激減して、高級魚の買手がなく"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "海域も雨量が多くて風も吹かないため、漁獲量が伸びず"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今年７月末の記録的豪雨で最上川中流の４か所が氾濫し...サクランボ園に流木が押し寄せた被害もあり"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:text-txt_contents "その方は、高齢に加えて"@ja.
+<< kg:id_22 prop:cause kg:id_25 >>
+    prop:text-txt_contents "高齢に加えて後継者もいないため、今後の見通しが立たず、長年手をかけたサクランボ園を復旧して生産を続ける意欲を失い"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "収穫と箱詰め作業の人手不足"@ja.
+<< kg:id_26 prop:cause kg:id_28 >>
+    prop:text-txt_contents "労力不足も年々深刻になっております"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今年に入って、新型コロナ対策で国内外の移動禁止など、様々な影響があったと思われます"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "梶山経済産業大臣が1990年代以前の非効率な石炭火力発電所100基を2030年までに休廃止する方針との報道"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "万一、休廃止対象になれば、本市経済にも大きな影響が想定されます"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "10年後に休廃止されると、全貨物量の半分が消えてなくなります"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "万一、休廃止の対象となれば、約500名の雇用が失われるとも言われております"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "新型コロナウイルス感染症による外出自粛等の影響を受けまして、本市の観光入込数、前年同期比で半分、50％となっております"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "観光産業、観光事業は、産業としての裾野がとても広いことから、旅行業や宿泊業、交通事業者、観光施設、飲食業、物産販売事業者など、幅広く大きな影響を受けております"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:text-txt_contents "３密を避け、感染拡大を防止するため、酒田まつりや花火ショーなど、観光誘客に直結する各種イベントを中止せざるを得なかった"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:text-txt_contents "外国クルーズ船の運航中止も含め、インバウンドの推進に向けたプロモーションなどもなかなか進めることができない"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:text-txt_contents "飛行機や電車、バスの利用が控えられ、団体旅行も敬遠され"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "人口密度の高い東京圏での新型コロナウイルス感染症が急増しまして、一極集中のリスクが顕在化した"@ja.
+<< kg:id_49 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "感染防止のため自宅などで働くテレワークが広がりまして、取引先などとのウェブ会議が普及するなど、場所を問わずに仕事ができるとして"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "コロナウイルス感染による誹謗中傷や風評被害が挙げられるのではないか"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "このような差別は、症状があるにもかかわらず、周囲への相談がしづらくなり、医療関係機関受診へのちゅうちょ"@ja.
+<< kg:id_56 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "疫学調査への協力拒否へ発展し、ひいては感染者の潜在化、濃厚接触者の把握及び感染経路の特定に支障を来すおそれ"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:text-txt_contents "地形、地質学的遺産が適切に保護されていることが評価され、2016年９月に鳥海山・飛島ジオパークが認定されております"@ja.
+<< kg:id_57 prop:cause kg:id_59 >>
+    prop:text-txt_contents "ジオパークとしての質を持続的に生かす上で必要となる推進体制を十分に有していること"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "湿度の高い場所では汗は蒸発しにくく、体温調整機能が低下するため、熱中症にかかりやすくなる"@ja.
+<< kg:id_62 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "新型コロナウイルスの影響で医療機関全般に大幅な減収等の影響が出ています"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "新型コロナウイルスへの感染を心配することで受診を控える患者が多かったこと"@ja.
+<< kg:id_64 prop:cause kg:id_66 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "緊急性が高くない手術等を延期したことなどから、４月と５月については、患者総数で18.5％の減、収支全体では16.8％の減"@ja.
+<< kg:id_67 prop:cause kg:id_68 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "人口集中に伴うリスク、例えば通勤や通学における交通機関が混雑をしていることなどを低減あるいは回避することが重要であるとの認識が広がってきている"@ja.
+<< kg:id_67 prop:cause kg:id_69 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "情報通信技術の活用によりまして、テレワークやオンライン授業などが積極的に行われている状況にありまして、地方で働く、または地方に移住するということについて関心が高まってきている"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "人手不足など、建設業を取り巻く環境が厳しく"@ja.
+<< kg:id_70 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "オペレーターの高齢化も進み"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "本市は比較的降雪の少ない地域であることから、自社で保有する除雪車両の維持、更新が費用面で困難である"@ja.
+<< kg:id_75 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "観光業、飲食業、そして食材納入業者も大幅な売上げ減少で、春先は大きな打撃を受けております"@ja.
+<< kg:id_77 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "売上げ低迷が長引けば、様々な業種で事業継続も危うい状態が続いております"@ja.
+<< kg:id_79 prop:effect kg:id_80 >>
+    prop:text-txt_contents "花卉販売も行き場を失って"@ja.
+<< kg:id_81 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "酒田港の水揚げ量は、令和２年４月から８月までの５か月で1,183トン、前年比で220％"@ja.
+<< kg:id_83 prop:effect kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "水揚げ金額ベースで５億8,589万円、前年比188％"@ja.
+<< kg:id_85 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "生の生鮮スルメイカが５キログラム入り１箱の価格が2,400円で、前年比で２割安"@ja.
+<< kg:id_87 prop:effect kg:id_88 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "高級魚の買手がなく、海域も雨量が多くて風も吹かないため、漁獲量が伸びず、苦戦している"@ja.
+<< kg:id_89 prop:effect kg:id_90 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "被災したままで放置することを決めたとのお話であります"@ja.
+<< kg:id_91 prop:effect kg:id_92 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "前年同期と比較して100ＴＥＵ、比率にして0.8％の増という結果になっております。おおむね前年と同程度で推移しておりまして"@ja.
+<< kg:id_91 prop:effect kg:id_93 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "新型コロナの影響は特段見受けられない"@ja.
+<< kg:id_94 prop:effect kg:id_95 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "酒田共同火力発電は市内でも有数の施設、設備等を有する企業でございまして、それに応じた多大な納税をいただいております"@ja.
+<< kg:id_94 prop:effect kg:id_96 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "構内作業には通常時で380名程度、メンテナンス時にはさらに320名程度が追加され、最大700名程度が従事している"@ja.
+<< kg:id_94 prop:effect kg:id_97 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "酒田市はもとよりでありますが、山形県全体にとって非常に経済的影響力のある企業である"@ja.
+<< kg:id_98 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "酒田共同火力発電に関係する酒田港の取扱貨物量の中で、全体の中で約６割が石炭や石炭灰が占めている"@ja.
+<< kg:id_100 prop:effect kg:id_101 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "地域にとって不利になるような方向にはならないと考えておりますけれども、なお今後もこの議論の推移を注視していきたい"@ja.
+<< kg:id_102 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "本市の観光入込数、前年同期比で半分、50％となっております"@ja.
+<< kg:id_104 prop:effect kg:id_105 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "修学旅行を含めた山居倉庫への立ち寄り件数ですけれども、昨年の６校から現在で70校ということで、大幅に増加している"@ja.
+<< kg:id_106 prop:effect kg:id_107 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "地方都市への人ですとか仕事、こちらのほうの移転につながる転換期になっていくものと考えている"@ja.
+<< kg:id_108 prop:effect kg:id_109 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "感染者への誹謗中傷、風評被害につきましては、人権を侵害する行為であり、絶対に許されるものではない"@ja.
+<< kg:id_110 prop:effect kg:id_111 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "ひいては感染者の潜在化、濃厚接触者の把握及び感染経路の特定に支障を来すおそれもございます"@ja.
+<< kg:id_112 prop:effect kg:id_113 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "ジオパーク活動に参加する機会や発表の場が増加しておりまして、ジオパークへの理解は確実に市民の間に浸透しつつある"@ja.
+<< kg:id_114 prop:effect kg:id_115 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "授業の集中力が明確に高くなったという声が聞こえております"@ja.
+<< kg:id_114 prop:effect kg:id_116 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "休み時間の子供の居場所の確保ができている"@ja.
+<< kg:id_114 prop:effect kg:id_117 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "今年度はそのような声もなくなり、完食するようになった"@ja.
+<< kg:id_114 prop:effect kg:id_118 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "行事におけるクールダウンの場を設けることができた"@ja.
+<< kg:id_114 prop:effect kg:id_119 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "学校生活において熱中症と診断された児童・生徒の人数は明らかに減少している"@ja.
+<< kg:id_120 prop:contermeasure kg:id_121 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "コロナ禍における本市の観光戦略といたしましては、まず１つは、自宅から１時間から２時間圏内の地元や近隣への観光である、これをマイクロツーリズムというようなことで呼んでおりますけれども、そちらの推進"@ja.
+<< kg:id_120 prop:contermeasure kg:id_122 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "県内の教育旅行、こういったものの誘致"@ja.
+<< kg:id_120 prop:contermeasure kg:id_123 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "ワーク、仕事とバケーション、休暇を一緒に楽しむワーケーションの環境整備を進めている"@ja.
+<< kg:id_124 prop:contermeasure kg:id_125 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "８月５日から実施しております「おいでよ！酒田さんぽキャンペーン」"@ja.
+<< kg:id_126 prop:contermeasure kg:id_127 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "県内旅行エージェント等へ、修学旅行先として旅行プランや料金などを提案、案内するなど、営業活動を行った"@ja.
+<< kg:id_128 prop:contermeasure kg:id_129 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "ワーケーションの受皿としまして、鳥海山荘で仕事ができるようＷｉ－Ｆｉ環境の整備を進める"@ja.
+<< kg:id_130 prop:contermeasure kg:id_131 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "高校生を対象とした市内の企業の見学ツアー、こういったものによって地元定着、就職等につながる取組"@ja.
+<< kg:id_130 prop:contermeasure kg:id_132 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "本社機能の移転ですとか、サテライトオフィス立地のためのオーダーメード型の企業立地の支援"@ja.
+<< kg:id_130 prop:contermeasure kg:id_133 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "総合的な移住支援の継続とターゲットに合わせた情報発信など、こういったものを強化していく必要"@ja.
+<< kg:id_134 prop:contermeasure kg:id_135 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "市としても市長メッセージで市民へ発信するとともに"@ja.
+<< kg:id_134 prop:contermeasure kg:id_136 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "市独自に差別や偏見の防止を呼びかけるチラシ、これは７月１日の広報に入れてますが、を作成し、全戸配布しております"@ja.
+<< kg:id_134 prop:contermeasure kg:id_137 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "偏見や差別に関して相談する県、市町村及び専門機関が一体化した相談窓口が昨日開設されまして"@ja.
+<< kg:id_138 prop:contermeasure kg:id_139 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "新型コロナウイルス感染症に関する適切な知識を基にした指導、生徒指導上の配慮を十分に行うよう明示されており、教育委員会から各学校に周知した"@ja.
+<< kg:id_140 prop:contermeasure kg:id_141 >>
+    prop:text-txt_contents "対応や再開時期等については、保健所の指導の下、学校、教育委員会、専門家会議、対策本部会議と協議することにしております"@ja.
+<< kg:id_142 prop:contermeasure kg:id_143 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "本市では全ての小中学校の普通教室にエアコンが設置されたことで、子供たちは暑さを心配することなく快適に学校生活を送ることができました"@ja.
+<< kg:id_142 prop:contermeasure kg:id_144 >>
+    prop:text-txt_contents "特別教室にもスポットクーラーであるとか大型扇風機などを設置して"@ja.
+<< kg:id_145 prop:contermeasure kg:id_146 >>
+    prop:text-txt_contents "ほとんどの小学校で下校前の水分補給"@ja.
+<< kg:id_145 prop:contermeasure kg:id_147 >>
+    prop:text-txt_contents "歩いているときも必要であれば水分補給をしてもよいというふうな指導"@ja.
+<< kg:id_145 prop:contermeasure kg:id_148 >>
+    prop:text-txt_contents "さらに帽子の着用というふうな対策"@ja.
+<< kg:id_145 prop:contermeasure kg:id_149 >>
+    prop:text-txt_contents "特に暑さ指数の高い日には教員の下校時の見回り"@ja.
+<< kg:id_145 prop:contermeasure kg:id_150 >>
+    prop:text-txt_contents "地区の見回り隊が児童に付き添い、水分補給を促しながら安全に下校できるようにする"@ja.
+<< kg:id_145 prop:contermeasure kg:id_151 >>
+    prop:text-txt_contents "学校から学童まで児童の様子を教員と学童の職員で見届ける"@ja.
+<< kg:id_145 prop:contermeasure kg:id_152 >>
+    prop:text-txt_contents "学校によっては昇降口にミストシャワー、霧状の水を実際にシャワーとして設置する"@ja.
+<< kg:id_145 prop:contermeasure kg:id_153 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "熱中症対策上、ソーシャルディスタンスが取れていれば、本市としては外してもよいこと、こういったことにつきましては各学校に周知しております"@ja.
+<< kg:id_154 prop:contermeasure kg:id_155 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "地域経済変動対策資金に対する利子補給を予算化し"@ja.
+<< kg:id_154 prop:contermeasure kg:id_156 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "セーフティーネット保証の４号、５号、危機関連保証を合わせまして、これは８月31日現在で725件を認定"@ja.
+<< kg:id_154 prop:contermeasure kg:id_157 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "令和２年３月分の上下水道料相当額を交付する飲食店等応援補助金を予算化し、これは、申請の１週間後には事業者に補助金が交付できるように、事務手続を簡素化することで実施"@ja.
+<< kg:id_154 prop:contermeasure kg:id_158 >>
+    prop:text-txt_contents "旅行業、貸切バス業の事業者に対する旅行業等応援補助金を予算化"@ja.
+<< kg:id_154 prop:contermeasure kg:id_159 >>
+    prop:text-txt_contents "大型連休中に電話相談窓口を開設し"@ja.
+<< kg:id_154 prop:contermeasure kg:id_160 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "５月11日から22日には国や県の支援も含めた緊急相談窓口を開設し、延べ499人、666件の相談に対応"@ja.
+<< kg:id_154 prop:contermeasure kg:id_161 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "事業者支援及び消費喚起のために行った「もっけ玉」活用支援事業"@ja.
+<< kg:id_154 prop:contermeasure kg:id_162 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "中小企業雇用継続応援補助金を予算化し"@ja.
+<< kg:id_154 prop:contermeasure kg:id_163 >>
+    prop:text-txt_contents "貸切バス業、タクシー業、貨物運送業等を対象に、新しい生活様式への対応のため、３密に係る消耗品や設備を対象とした上限20万円の補助制度"@ja.
+<< kg:id_154 prop:contermeasure kg:id_164 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "利用金額の30％がポイント還元されるキャッシュレス決済導入促進事業を予算化"@ja.
+<< kg:id_165 prop:contermeasure kg:id_166 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "酒田商工会議所、酒田ふれあい商工会と連名による第３回目のアンケート調査を、10月から11月にかけまして実施することとしております"@ja.
+<< kg:id_165 prop:contermeasure kg:id_167 >>
+    prop:text-txt_contents "８月に行いました、市内の約60事業者への業況調査"@ja.
+<< kg:id_165 prop:contermeasure kg:id_168 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "今後はこの感染症の状況が長引く中で、雇用の維持、継続をしてもらうということが大切と考えまして、その部分を念頭に置き、引き続き切れ目のない支援策の実施に努めたい"@ja.
+<< kg:id_169 prop:contermeasure kg:id_170 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "新型コロナウイルス患者を入院させた病院に勤務する医療従事者等には最大で20万円、その他の医療機関に勤務する医療従事者等には５万円の慰労金を支給"@ja.
+<< kg:id_169 prop:contermeasure kg:id_171 >>
+    prop:text-txt_contents "診療所が感染防止対策に要する費用に対し、最大100万円を補助する"@ja.
+<< kg:id_169 prop:contermeasure kg:id_172 >>
+    prop:text-txt_contents "山形県でも、経営に大きな影響が生じている民間病院につきましては50万円、民間診療所につきましては30万円の支援金を給付する"@ja.
+<< kg:id_173 prop:contermeasure kg:id_174 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "患者を受け入れていない病床を空床補償、空のベッドの補償として"@ja.
+<< kg:id_173 prop:contermeasure kg:id_175 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "本市といたしましても、病院機構と協議の上、設立団体として日本海総合病院の経営基盤を支える必要があると判断し、県と連携して支援をしていく"@ja.
+<< kg:id_176 prop:contermeasure kg:id_177 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "まずはお互いに情報収集しながら国の動向を注視していくということを確認した"@ja.
+<< kg:id_176 prop:contermeasure kg:id_178 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "県知事に対しまして、山形県の産業振興と酒田港の将来展望を見据えた緊急要望を行いました"@ja.
+<< kg:id_179 prop:contermeasure kg:id_180 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "港湾振興のために、今後もポートセールス活動や新たな航路の誘致にも引き続き取り組んでまいります"@ja.
+<< kg:id_181 prop:contermeasure kg:id_182 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "リモートワークが可能な環境があることを、本市の移住体験ツアー参加者やお試し住宅利用者をはじめ、各種ＰＲ媒体を通じて情報発信をしている"@ja.
+<< kg:id_181 prop:contermeasure kg:id_183 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "鳥海山荘や鳥海高原家族旅行村など、八幡地域にＷｉ－Ｆｉ環境を整備する予定"@ja.
+<< kg:id_184 prop:contermeasure kg:id_185 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "よろずＩＴ女子育成セミナーという、こういうセミナーを受講しておりまして"@ja.
+<< kg:id_186 prop:contermeasure kg:id_187 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "地方拠点強化税制を活用した本社機能移転の促進、これを項目として掲げております"@ja.
+<< kg:id_186 prop:contermeasure kg:id_188 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "立地可能性の高い企業への立地意向調査や訪問活動などを行っております"@ja.
+<< kg:id_189 prop:contermeasure kg:id_190 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "日本海沿岸東北自動車道並びに新庄酒田道路の早期全線開通に向けて、要望活動に力を注いでまいりたい"@ja.
+<< kg:id_189 prop:contermeasure kg:id_191 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "新庄酒田道路の早期全線開通に向けて、要望活動に力を注いでまいりたい"@ja.
+<< kg:id_192 prop:contermeasure kg:id_193 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "滑走路の2,500メートル化について、国・県にしっかりと要望をし続けている"@ja.
+<< kg:id_192 prop:contermeasure kg:id_194 >>
+    prop:text-txt_contents "庄内空港の滑走路端安全区域、ＲＥＳＡの整備については順調に進捗しておりまして"@ja.
+<< kg:id_195 prop:contermeasure kg:id_196 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "今後は、本市でのリモートワークが可能な環境等の情報も掲載するなど、コロナ禍でのニーズを捉えた情報発信を行っていきたい"@ja.
+<< kg:id_195 prop:contermeasure kg:id_197 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "今後はオンラインでの移住相談会等も実施する予定"@ja.
+<< kg:id_198 prop:contermeasure kg:id_199 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_94;
+    prop:text-txt_contents "まずはこの本市出身者からぜひ地元に帰ってきてもらいたい"@ja.
+<< kg:id_198 prop:contermeasure kg:id_200 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_95;
+    prop:text-txt_contents "働く場の環境ですとか子育て、医療環境も含めた酒田の総合力の底上げを図ることがまずは重要"@ja.
+<< kg:id_201 prop:contermeasure kg:id_202 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_96;
+    prop:text-txt_contents "平均的な稼働時間の半分を待機補償費"@ja.
+<< kg:id_201 prop:contermeasure kg:id_203 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_97;
+    prop:text-txt_contents "補助人員分につきましても、待機補償費の対象として含めていくなどの支援策の拡充について、現在検討をしている"@ja.
+<< kg:id_201 prop:contermeasure kg:id_204 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_98;
+    prop:text-txt_contents "大型特殊免許の取得や講習会受講等に要する費用の補助についても、他の自治体の取組状況を調査しながら、これも現在検討を進めている"@ja.
+}

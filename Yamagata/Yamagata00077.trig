@@ -1,0 +1,778 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00077> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "国民健康保険税"@ja.
+kg:id_1 rdf:type cls:c_4069.
+cls:c_4069 rdfs:label "保険税"@ja.
+kg:id_2 rdfs:label "国民健康保険財政調整基金の残高が条例で定める額を一定程度上回っていたこと"@ja.
+kg:id_2 rdf:type cls:c_4070.
+cls:c_4070 rdfs:label "基金残高超過"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "国民健康保険税率据置き"@ja.
+kg:id_3 rdf:type cls:c_4071.
+cls:c_4071 rdfs:label "保険税率据置き"@ja.
+kg:id_4 rdfs:label "4年連続の税率引下げにより令和3年度から単年度収支が赤字に転じていること"@ja.
+kg:id_4 rdf:type cls:c_4072.
+cls:c_4072 rdfs:label "収支赤字"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "令和5年度末の基金残高見込みが17億1,000万円で条例で定める基金残高約10億円を踏まえること"@ja.
+kg:id_5 rdf:type cls:c_4073.
+cls:c_4073 rdfs:label "基金残高"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "18歳までの被保険者の均等割減免をしないこと"@ja.
+kg:id_6 rdf:type cls:c_4074.
+cls:c_4074 rdfs:label "均等割減免不実施"@ja.
+kg:id_7 rdfs:label "財源の確保が必要であること"@ja.
+kg:id_7 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "軽減対象者が限定的でその他の国民健康保険加入者との不公平感が生まれること"@ja.
+kg:id_8 rdf:type cls:c_4075.
+cls:c_4075 rdfs:label "不公平感"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "市民との対話の必要性"@ja.
+kg:id_9 rdf:type cls:c_1651.
+cls:c_1651 rdfs:label "市民対話"@ja.
+kg:id_10 rdfs:label "急激な人口減少により担い手不足など様々な分野で課題が生じていること"@ja.
+kg:id_10 rdf:type cls:c_4076.
+cls:c_4076 rdfs:label "人口減少課題"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "ライフスタイルや価値観の多様化が進展していること"@ja.
+kg:id_11 rdf:type cls:c_4077.
+cls:c_4077 rdfs:label "価値観多様化"@ja.
+kg:id_9 prop:cause kg:id_11.
+kg:id_12 rdfs:label "若者の意見反映"@ja.
+kg:id_12 rdf:type cls:c_628.
+cls:c_628 rdfs:label "意見反映"@ja.
+kg:id_13 rdfs:label "自治会やコミュニティ振興会の活動には女性や若者の参加が少ないこと"@ja.
+kg:id_13 rdf:type cls:c_2975.
+cls:c_2975 rdfs:label "若者参加不足"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "若者の意見を聞く場がないこと"@ja.
+kg:id_14 rdf:type cls:c_4016.
+cls:c_4016 rdfs:label "意見聴取不足"@ja.
+kg:id_12 prop:cause kg:id_14.
+kg:id_15 rdfs:label "ごみ袋の再資源化が進んでいないこと"@ja.
+kg:id_15 rdf:type cls:c_4078.
+cls:c_4078 rdfs:label "再資源化停滞"@ja.
+kg:id_16 rdfs:label "ごみの収集や分別の過程で多くのごみ袋に汚れや破損が生じること"@ja.
+kg:id_16 rdf:type cls:c_4079.
+cls:c_4079 rdfs:label "袋の汚損"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "指定ごみ袋のバージン材の性質上新たな指定ごみ袋として再生することは技術的に不可能であること"@ja.
+kg:id_17 rdf:type cls:c_4080.
+cls:c_4080 rdfs:label "技術的不可能"@ja.
+kg:id_15 prop:cause kg:id_17.
+kg:id_18 rdfs:label "県内に再資源化を行える技術を有する民間事業者がないこと"@ja.
+kg:id_18 rdf:type cls:c_4081.
+cls:c_4081 rdfs:label "事業者不在"@ja.
+kg:id_15 prop:cause kg:id_18.
+kg:id_19 rdfs:label "酒田地区広域行政組合の直営で実施するには設備導入費用が懸念されること"@ja.
+kg:id_19 rdf:type cls:c_4082.
+cls:c_4082 rdfs:label "設備費懸念"@ja.
+kg:id_15 prop:cause kg:id_19.
+kg:id_20 rdfs:label "食品ロス削減の必要性"@ja.
+kg:id_20 rdf:type cls:c_4083.
+cls:c_4083 rdfs:label "食品ロス削減"@ja.
+kg:id_21 rdfs:label "食品ロスは食べ物を無駄にするだけでなく生産や運搬や焼却時の二酸化炭素排出に大きく関わること"@ja.
+kg:id_21 rdf:type cls:c_4084.
+cls:c_4084 rdfs:label "環境負荷"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "世界の温室効果ガス排出量のうち8から10％は食品ロスに関連があると推定されていること"@ja.
+kg:id_22 rdf:type cls:c_4085.
+cls:c_4085 rdfs:label "温室効果ガス"@ja.
+kg:id_20 prop:cause kg:id_22.
+kg:id_23 rdfs:label "食品ロスの現状把握が不十分であること"@ja.
+kg:id_23 rdf:type cls:c_4086.
+cls:c_4086 rdfs:label "現状把握不足"@ja.
+kg:id_24 rdfs:label "詳細な実態調査を行っていないこと"@ja.
+kg:id_24 rdf:type cls:c_4087.
+cls:c_4087 rdfs:label "実態調査不足"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "国民健康保険税率引下げ"@ja.
+kg:id_25 rdf:type cls:c_4088.
+cls:c_4088 rdfs:label "保険税率引下げ"@ja.
+kg:id_26 rdfs:label "収納状況の改善"@ja.
+kg:id_26 rdf:type cls:c_4089.
+cls:c_4089 rdfs:label "収納改善"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "基金繰入金を除いた各年度の収支が赤字に転じたこと"@ja.
+kg:id_27 rdf:type cls:c_4072.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "18歳までの被保険者の均等割軽減拡大"@ja.
+kg:id_28 rdf:type cls:c_4090.
+cls:c_4090 rdfs:label "均等割軽減拡大"@ja.
+kg:id_29 rdfs:label "さらに約676万円が軽減されること"@ja.
+kg:id_29 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "18歳までの被保険者の均等割免除"@ja.
+kg:id_30 rdf:type cls:c_4091.
+cls:c_4091 rdfs:label "均等割免除"@ja.
+kg:id_31 rdfs:label "子どもの加入がない世帯からの負担増につながること"@ja.
+kg:id_31 rdf:type cls:c_4092.
+cls:c_4092 rdfs:label "世帯負担増"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "市民との対話"@ja.
+kg:id_32 rdf:type cls:c_1651.
+kg:id_33 rdfs:label "市民と行政との互いの信頼関係を築くこと"@ja.
+kg:id_33 rdf:type cls:c_4093.
+cls:c_4093 rdfs:label "信頼関係"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "若者カフェミーティング"@ja.
+kg:id_34 rdf:type cls:c_4094.
+cls:c_4094 rdfs:label "若者対話"@ja.
+kg:id_35 rdfs:label "本市における課題を明確化し市の政策に反映すること"@ja.
+kg:id_35 rdf:type cls:c_4095.
+cls:c_4095 rdfs:label "政策反映"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "使用済み不燃ごみ袋の処理"@ja.
+kg:id_36 rdf:type cls:c_4096.
+cls:c_4096 rdfs:label "ごみ袋処理"@ja.
+kg:id_37 rdfs:label "焼却または埋立処分されていること"@ja.
+kg:id_37 rdf:type cls:c_4097.
+cls:c_4097 rdfs:label "焼却処分"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "箱わなセンサーの導入"@ja.
+kg:id_38 rdf:type cls:c_4098.
+cls:c_4098 rdfs:label "箱わなセンサー導入"@ja.
+kg:id_39 rdfs:label "見回り時の実施隊員の安全確保"@ja.
+kg:id_39 rdf:type cls:c_1225.
+cls:c_1225 rdfs:label "安全確保"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "見回りの労力削減"@ja.
+kg:id_40 rdf:type cls:c_4099.
+cls:c_4099 rdfs:label "労力削減"@ja.
+kg:id_38 prop:effect kg:id_40.
+kg:id_41 rdfs:label "強い降雨"@ja.
+kg:id_41 rdf:type cls:c_4100.
+cls:c_4100 rdfs:label "強雨"@ja.
+kg:id_42 rdfs:label "道路冠水の発生"@ja.
+kg:id_42 rdf:type cls:c_2570.
+cls:c_2570 rdfs:label "道路冠水"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "排水路の水位上昇"@ja.
+kg:id_43 rdf:type cls:c_4101.
+cls:c_4101 rdfs:label "水位上昇"@ja.
+kg:id_41 prop:effect kg:id_43.
+kg:id_44 rdfs:label "水位監視システム"@ja.
+kg:id_44 rdf:type cls:c_4102.
+cls:c_4102 rdfs:label "水位監視"@ja.
+kg:id_45 rdfs:label "浸水センサーが検知すると同時に職員へメール通知され現場確認につながること"@ja.
+kg:id_45 rdf:type cls:c_4103.
+cls:c_4103 rdfs:label "職員通知"@ja.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "日本ご当地ラーメン総選挙での日本一"@ja.
+kg:id_46 rdf:type cls:c_4104.
+cls:c_4104 rdfs:label "観光評価向上"@ja.
+kg:id_47 rdfs:label "本市に観光客を呼ぶことができる重要な観光資源として再認識されたこと"@ja.
+kg:id_47 rdf:type cls:c_4105.
+cls:c_4105 rdfs:label "観光資源認識"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "酒田のラーメン日本一"@ja.
+kg:id_48 rdf:type cls:c_4104.
+kg:id_49 rdfs:label "市外から多くの観光客がラーメン目当てで来訪していること"@ja.
+kg:id_49 rdf:type cls:c_4106.
+cls:c_4106 rdfs:label "観光客増加"@ja.
+kg:id_48 prop:effect kg:id_49.
+kg:id_50 rdfs:label "食品ロス削減"@ja.
+kg:id_50 rdf:type cls:c_4083.
+kg:id_51 rdfs:label "市広報やホームページでの周知"@ja.
+kg:id_51 rdf:type cls:c_1087.
+cls:c_1087 rdfs:label "広報周知"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "外食時の食べ残しの持ち帰りを促すポスター作成と設置"@ja.
+kg:id_52 rdf:type cls:c_4107.
+cls:c_4107 rdfs:label "持帰り促進"@ja.
+kg:id_50 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "10月の食品ロス削減月間や年末年始のおいしい食べ切り運動の啓発"@ja.
+kg:id_53 rdf:type cls:c_2541.
+cls:c_2541 rdfs:label "啓発活動"@ja.
+kg:id_50 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "食品ロス削減講習会の実施"@ja.
+kg:id_54 rdf:type cls:c_4108.
+cls:c_4108 rdfs:label "講習会実施"@ja.
+kg:id_50 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "エコクッキング教室の実施"@ja.
+kg:id_55 rdf:type cls:c_4109.
+cls:c_4109 rdfs:label "料理教室"@ja.
+kg:id_50 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "フードドライブの実施"@ja.
+kg:id_56 rdf:type cls:c_4110.
+cls:c_4110 rdfs:label "フードドライブ"@ja.
+kg:id_50 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "保育園小学校への食品ロス削減の出前講座"@ja.
+kg:id_57 rdf:type cls:c_1253.
+cls:c_1253 rdfs:label "出前講座"@ja.
+kg:id_50 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "酒田市環境基本計画や酒田市ごみ処理基本計画に盛り込む方法の検討"@ja.
+kg:id_58 rdf:type cls:c_232.
+cls:c_232 rdfs:label "計画検討"@ja.
+kg:id_50 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "当事者や利害関係者との対話"@ja.
+kg:id_59 rdf:type cls:c_4111.
+cls:c_4111 rdfs:label "当事者対話"@ja.
+kg:id_32 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "外部委員会や市民とのワークショップ"@ja.
+kg:id_60 rdf:type cls:c_4112.
+cls:c_4112 rdfs:label "委員会対話"@ja.
+kg:id_32 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "パブリックコメントや市民アンケート"@ja.
+kg:id_61 rdf:type cls:c_99.
+cls:c_99 rdfs:label "意見聴取"@ja.
+kg:id_32 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "若者カフェミーティングの実施"@ja.
+kg:id_62 rdf:type cls:c_4094.
+kg:id_12 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "ウェブアンケートやデジタル技術を活用した意見把握"@ja.
+kg:id_63 rdf:type cls:c_4113.
+cls:c_4113 rdfs:label "デジタル把握"@ja.
+kg:id_12 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "指定ごみ袋を含めたプラスチックごみ"@ja.
+kg:id_64 rdf:type cls:c_4114.
+cls:c_4114 rdfs:label "プラスチックごみ"@ja.
+kg:id_65 rdfs:label "全国的な取組事例を研究し酒田地区広域行政組合と連携して再資源化を見極めること"@ja.
+kg:id_65 rdf:type cls:c_4115.
+cls:c_4115 rdfs:label "再資源化検討"@ja.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "遊佐町庄内町と協議しながら分別収集方法や施設整備計画を検討すること"@ja.
+kg:id_66 rdf:type cls:c_4116.
+cls:c_4116 rdfs:label "広域協議"@ja.
+kg:id_64 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "18歳までの被保険者に係る国民健康保険税均等割"@ja.
+kg:id_67 rdf:type cls:c_4117.
+cls:c_4117 rdfs:label "均等割"@ja.
+kg:id_68 rdfs:label "全国市長会を通じて国に制度拡充を要望すること"@ja.
+kg:id_68 rdf:type cls:c_950.
+cls:c_950 rdfs:label "制度拡充要望"@ja.
+kg:id_67 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "国民健康保険税率"@ja.
+kg:id_69 rdf:type cls:c_4118.
+cls:c_4118 rdfs:label "保険税率"@ja.
+kg:id_70 rdfs:label "令和6年度は据置きの方向で考えること"@ja.
+kg:id_70 rdf:type cls:c_4119.
+cls:c_4119 rdfs:label "据置き方針"@ja.
+kg:id_69 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "鳥獣被害対策"@ja.
+kg:id_71 rdf:type cls:c_4120.
+cls:c_4120 rdfs:label "鳥獣被害対策"@ja.
+kg:id_72 rdfs:label "電気柵設置への県と市の協調補助"@ja.
+kg:id_72 rdf:type cls:c_4121.
+cls:c_4121 rdfs:label "電気柵補助"@ja.
+kg:id_71 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "箱わなセンサーの設置"@ja.
+kg:id_73 rdf:type cls:c_4122.
+cls:c_4122 rdfs:label "センサー設置"@ja.
+kg:id_71 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "ドローン活用の導入可能性の研究"@ja.
+kg:id_74 rdf:type cls:c_4123.
+cls:c_4123 rdfs:label "導入研究"@ja.
+kg:id_71 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "浸水被害軽減"@ja.
+kg:id_75 rdf:type cls:c_4124.
+cls:c_4124 rdfs:label "浸水被害軽減"@ja.
+kg:id_76 rdfs:label "水位監視システムから得られるデータの取得分析を継続すること"@ja.
+kg:id_76 rdf:type cls:c_4125.
+cls:c_4125 rdfs:label "データ分析"@ja.
+kg:id_75 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "県道周辺の雨水を直接新井田川へ導く新たな排水ルートの検討"@ja.
+kg:id_77 rdf:type cls:c_4126.
+cls:c_4126 rdfs:label "排水路検討"@ja.
+kg:id_75 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "令和6年度中に道路冠水情報を市民へメール配信することの検討"@ja.
+kg:id_78 rdf:type cls:c_4127.
+cls:c_4127 rdfs:label "市民通知"@ja.
+kg:id_75 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "酒田のラーメン日本一の活用"@ja.
+kg:id_79 rdf:type cls:c_4128.
+cls:c_4128 rdfs:label "観光活用"@ja.
+kg:id_80 rdfs:label "酒田のラーメンEXPOなど市内関連イベント開催への支援と協力"@ja.
+kg:id_80 rdf:type cls:c_4129.
+cls:c_4129 rdfs:label "イベント支援"@ja.
+kg:id_79 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "首都圏など食の見本市イベントへの出店促進"@ja.
+kg:id_81 rdf:type cls:c_4130.
+cls:c_4130 rdfs:label "出店促進"@ja.
+kg:id_79 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "ラーメン店マップの更新"@ja.
+kg:id_82 rdf:type cls:c_4131.
+cls:c_4131 rdfs:label "地図更新"@ja.
+kg:id_79 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "ラーメンPRチラシの配布とウェブ展開"@ja.
+kg:id_83 rdf:type cls:c_1198.
+cls:c_1198 rdfs:label "広報配布"@ja.
+kg:id_79 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "山居倉庫での酒田のワンタンメン販売を情報発信拠点として活用すること"@ja.
+kg:id_84 rdf:type cls:c_4132.
+cls:c_4132 rdfs:label "拠点発信"@ja.
+kg:id_79 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "ふるさと納税で酒田のラーメン関連商品を紹介すること"@ja.
+kg:id_85 rdf:type cls:c_4133.
+cls:c_4133 rdfs:label "返礼品紹介"@ja.
+kg:id_79 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "100年フード認定やラーメン県そば王国やまがたのキャッチフレーズを活用したPR"@ja.
+kg:id_86 rdf:type cls:c_4134.
+cls:c_4134 rdfs:label "認定活用"@ja.
+kg:id_79 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "もしぇのんあののんをラーメン関連イベントや印刷物に活用すること"@ja.
+kg:id_87 rdf:type cls:c_4135.
+cls:c_4135 rdfs:label "キャラ活用"@ja.
+kg:id_79 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "酒田のうまいもの巡り"@ja.
+kg:id_88 rdf:type cls:c_4136.
+cls:c_4136 rdfs:label "食観光"@ja.
+kg:id_89 rdfs:label "食さんぽや夜さんぽマップの活用"@ja.
+kg:id_89 rdf:type cls:c_4137.
+cls:c_4137 rdfs:label "地図活用"@ja.
+kg:id_88 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "酒田さんぽサイトのSEO対策によるウェブ上の情報発信強化"@ja.
+kg:id_90 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_88 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "観光客の周遊利便性向上"@ja.
+kg:id_91 rdf:type cls:c_4138.
+cls:c_4138 rdfs:label "周遊利便性"@ja.
+kg:id_92 rdfs:label "るんるんバスまち歩きマップの作成検討"@ja.
+kg:id_92 rdf:type cls:c_4139.
+cls:c_4139 rdfs:label "案内図作成"@ja.
+kg:id_91 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "酒田のラーメン日本一を継続的な誘客につなげること"@ja.
+kg:id_93 rdf:type cls:c_4140.
+cls:c_4140 rdfs:label "誘客継続"@ja.
+kg:id_94 rdfs:label "10月9日を酒田のラーメンの日としその日を中心とした1週間をラーメンウィークとすること"@ja.
+kg:id_94 rdf:type cls:c_4141.
+cls:c_4141 rdfs:label "記念週間"@ja.
+kg:id_93 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "酒田のラーメンの付加価値向上"@ja.
+kg:id_95 rdf:type cls:c_4142.
+cls:c_4142 rdfs:label "付加価値向上"@ja.
+kg:id_96 rdfs:label "地元孟宗竹を使ったメンマなど地元食材使用の推進と供給マッチングへの行政協力"@ja.
+kg:id_96 rdf:type cls:c_4143.
+cls:c_4143 rdfs:label "地元食材活用"@ja.
+kg:id_95 prop:contermeasure kg:id_96.
+kg:st_1 rdfs:label "斎藤周議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "令和６年度も引き下げを実施する必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "最低限据え置くべきだ"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "最低限据え置くべきだ"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "基金や一般財源を活用してでも実施できないか"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "国の拡充を待つだけでなく市独自減免も検討すべきだ"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "矢口明子市長"@ja.
+kg:st_2 rdfs:type cls:st_17.
+cls:st_17 rdfs:label "市長"@ja.
+kg:op_6 prop:content "背景や検討プロセスも含めて丁寧に広報したい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "市民と行政が課題を共有し優先順位を話し合う風土をつくりたい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "子ども議会や青年委員会なども設けるべきだ"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "若者の声を施策に反映する具体策をもっと広げるべきだ"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "資源回収用の袋を焼却しているのは矛盾があり再資源化を検討すべきだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "村上祐美市民部長"@ja.
+kg:st_3 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_11 prop:content "別製品としての再資源化の可能性を見極めたい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "遊佐町や庄内町と広域で議論を始めるべきだ"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "全国事例を研究し広域行政組合と連携して検討したい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "真摯に取り組むべき課題と認識している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "一人一人が取り組むべき課題だ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "実態調査や削減目標を含む推進計画を策定すべきだ"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "引下げにより収納率が改善されたのではないか"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "松田俊一健康福祉部地域医療調整監"@ja.
+kg:st_4 rdfs:type cls:st_41.
+cls:st_41 rdfs:label "調整監"@ja.
+kg:op_18 prop:content "一定程度収支均衡が取れる税率を目指す必要がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "結果的に子どもの加入がない世帯の負担増につながる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "均等割免除は難しい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "安川智之副市長"@ja.
+kg:st_5 rdfs:type cls:st_40.
+cls:st_40 rdfs:label "副市長"@ja.
+kg:op_21 prop:content "多様な声や耳の痛い情報も含め広く聞いていきたい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "まずは若者カフェミーティングから始めたい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "資源回収用の袋が焼却されるのは問題である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "後藤啓議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_24 prop:content "将来的に箱わなの数だけ設置できるようにしてほしい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:op_25 prop:content "追加の可能性を今後検討したい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:st_7 rdfs:label "市原栄子議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_26 prop:content "市民への通知を早く実現してほしい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "中村良一建設部長"@ja.
+kg:st_8 rdfs:type cls:st_18.
+kg:op_27 prop:content "データを基に道路冠水の低減解消対策を検討している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_8.
+kg:op_28 prop:content "夜間の不安軽減のため市民通知にもつなげてほしい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_7.
+kg:op_29 prop:content "知名度向上と観光誘客をさらに進めたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:st_9 rdfs:label "佐藤伸二議員"@ja.
+kg:st_9 rdfs:type cls:st_16.
+kg:op_30 prop:content "一過性で終わらせず第二第三の仕掛けが必要だ"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_9.
+kg:op_31 prop:content "単独の推進計画として総合的に位置づけるべきだ"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "面と向かったざっくばらんな対話の場も必要だ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "これだけでなく子ども議会や青年委員会も検討すべきだ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "遊佐町庄内町とも協議しながら検討を進めたい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "広域で膝を交えた議論から始めるべきだ"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:op_36 prop:content "最低限据え置いてほしい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "大規模施設にも支援が必要だ"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+kg:op_38 prop:content "将来的な増設やくくりわなへの活用も必要だ"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_6.
+kg:op_39 prop:content "追い払いなどへの活用も検討すべきだ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_6.
+kg:op_40 prop:content "精査しながら市民通知を進めてほしい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_7.
+kg:op_41 prop:content "市民通知は重要なので早く進めてほしい"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_7.
+kg:op_42 prop:content "もしぇのんやあののんも活用して盛り上げるべきだ"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_9.
+kg:op_43 prop:content "観光客に分かりやすく伝わる仕掛けを強めてほしい"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_9.
+kg:op_44 prop:content "再デビューのように積極活用して知名度向上につなげてほしい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_9.
+kg:op_45 prop:content "魚介やラーメンやご飯物など来訪者に伝わりやすい整理が必要だ"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_9.
+kg:op_46 prop:content "観光スポットと食事どころを結ぶ分かりやすい仕組みが必要だ"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_9.
+kg:op_47 prop:content "1週間に限らず感謝月間のような広がりも検討してほしい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_9.
+kg:op_48 prop:content "地元産食材をより使ったメニュー開発を進めてほしい"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_9.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "これは、国民健康保険財政調整基金の残高が、条例で定められている額約10億円を一定程度上回っていたことから、これまで税を納付いただいた被保険者に対してお返しをするという意味で実施をしているものでございます。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "４年連続で税率の引下げを行いました結果、基金繰入金を除いた各年度の収支が、実は令和３年度から赤字に転じておりまして、令和３年度は4,500万円の赤字、令和４年度は約３億1,000万円、今年度も赤字ございます"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "その結果、令和５年度末の基金残高は17億1,000万円を見込んでおり、条例で定める基金残高約10億円を踏まえて、現時点では、令和６年度の税率は据置きの方向で考えております。"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "仮に、未就学児と同様の均等割の軽減を18歳までの被保険者に拡大した場合は、さらに約676万円が軽減されることになりますけれども、その財源の確保や"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "軽減対象者がその他の国民健康保険加入者の中から見ると、限定的であることから、一定程度の不公平感が生まれることにつながると考えているため、現時点では、本市独自に18歳までの被保険者の均等割を減免することは考えていないところであります。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "急激な人口減少により、担い手不足など様々な分野で生じている課題、ライフスタイルや価値観の多様化が進展していく中、豊かに安心して暮らせる酒田を実現するためには、協力して働く協働の力を高めていかなければならないと考えております。"@ja.
+<< kg:id_9 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "急激な人口減少により、担い手不足など様々な分野で生じている課題、ライフスタイルや価値観の多様化が進展していく中、豊かに安心して暮らせる酒田を実現するためには、協力して働く協働の力を高めていかなければならないと考えております。"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "自治会やコミュニティ振興会の意見を聞くことが多いですが、その活動には女性や若者の参加が少ないのが現状です。"@ja.
+<< kg:id_12 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "若者の意見を聞く場がないため、広く若者の意見を聞く場を設け、施策等に若者の意見を反映します"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "ごみの収集や分別の過程で、多くのごみ袋に汚れや破損が生じるため、現状ではリサイクルが困難な搬入物と一緒に"@ja.
+<< kg:id_15 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "このバージン材の性質上、新たな指定ごみ袋として再生することは技術的には不可能でございますが、ペレット化などにより、別の製品として再資源化することは可能でございます。"@ja.
+<< kg:id_15 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "県内におきまして、このような再資源化を行える技術を有する民間事業者がなく"@ja.
+<< kg:id_15 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "仮に酒田地区広域行政組合の直営により実施するにしても、設備導入にかかる費用の面が懸念されます。"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "この食品ロス問題は、食べ物を無駄にするだけでなく、最終的に破棄する食品の生産に使用されるエネルギーや運搬するときに大量に発生する二酸化炭素の排出、あるいは廃棄された食べ物を焼却するときに発生する二酸化炭素の排出にも大きく関わっています。"@ja.
+<< kg:id_20 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "世界の温室効果ガス排出量のうち８から10％は、この食べ残しの運搬や焼却などの食品ロスに関連があると推定されています。"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "本市における食品ロスの現状については、詳細な実態調査は行っておらず、家庭系ごみ、事業系ごみともに具体的な数字は把握していないところでございます。"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "その結果として、収納状況が改善されたのではないでしょうか。例えば、令和４年度の現年度の収納率は96.67％と、前年度比較で0.56％上昇し、滞納繰越分も含めた収納率は85.14％と、これも前年度比較で0.84％上昇しました。"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "４年連続で国民健康保険税の税率を引き下げたことにより、令和３年度から単年度収支では赤字ということになっております。"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "仮に、未就学児と同様の均等割の軽減を18歳までの被保険者に拡大した場合は、さらに約676万円が軽減されることになります"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "均等割を免除した場合、基金を活用した場合でも、結果的に、子どもの加入がない世帯からの負担増につながるものと捉えております。"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "市民と行政との互いの信頼関係を築きながら、まちの課題をしっかり共有して、何を優先的に解決すべきかと優先順位もしっかり話し合いながら、課題をどう解決していくか丁寧な説明の下、しっかりと対話していく風土をつくってまいりたいと思います。"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "そのテーマの当事者、提案者である話したい若者と市長が直接意見交換を行うことで、本市における課題を明確化し、市長の判断の下、市の政策にしっかり反映していければと考えております。"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "酒田地区広域行政組合のごみ処理施設及び最終処分場にて焼却または埋立処分されていると確認しております。"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "見回り時の鳥獣被害対策実施隊員の安全確保と見回りの労力削減の観点から、一定の成果が得られております"@ja.
+<< kg:id_38 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "見回り時の鳥獣被害対策実施隊員の安全確保と見回りの労力削減の観点から、一定の成果が得られております"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "９月６日の降雨時に、道路冠水を検知した浸水センサーの場所は、全13か所のうち富士見町二丁目、東栄町、東中の口町、亀ケ崎四丁目、錦町一丁目の５か所でございました。"@ja.
+<< kg:id_41 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "また、排水路に設置しております危機管理型水位計は、全６か所のうち家際排水路と札谷地排水路の２か所で水位上昇を記録し、そのうち、家際排水路は水深８割を超える水位も記録しました。"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "今回検知しました水位監視システムにつきましては、浸水センサーが検知すると同時に職員にメールが通知され、職員が現場へ赴き道路冠水状況を確認しております。"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "日本ご当地ラーメン総選挙での日本一の効果も相まって本市に観光客を呼ぶことができる重要な観光資源であると再認識をしたところでございます。"@ja.
+<< kg:id_48 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "この日本一によって、皆様お気づきのとおり、市外から多くの観光客の方が、ラーメン目当てでお越しいただいていると実感をしているところであります。"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:text-txt_contents "こちらの取組としましては、市広報やホームページでの周知のほか"@ja.
+<< kg:id_50 prop:contermeasure kg:id_52 >>
+    prop:text-txt_contents "外食時の食べ残しの持ち帰りを促すポスターを作成いたしました。こちらを各コミュニティ振興会へ設置するなど"@ja.
+<< kg:id_50 prop:contermeasure kg:id_53 >>
+    prop:text-txt_contents "10月の食品ロス削減月間や年末年始のおいしい食べ切り運動の啓発として推進しております。"@ja.
+<< kg:id_50 prop:contermeasure kg:id_54 >>
+    prop:text-txt_contents "酒田南高校食育調理コースの高校生が考案したメニューを使った食品ロス削減講習会"@ja.
+<< kg:id_50 prop:contermeasure kg:id_55 >>
+    prop:text-txt_contents "エコクッキング教室を実施したほか"@ja.
+<< kg:id_50 prop:contermeasure kg:id_56 >>
+    prop:text-txt_contents "各種イベントや本庁舎で実施するフードドライブ"@ja.
+<< kg:id_50 prop:contermeasure kg:id_57 >>
+    prop:text-txt_contents "保育園、小学校への食品ロス削減の出前講座等を実施しております。"@ja.
+<< kg:id_50 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "今後、改訂を予定しております酒田市環境基本計画、そして、酒田市ごみ処理基本計画に盛り込むなどの方法を検討し"@ja.
+<< kg:id_32 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "日頃から各部署、各係にとっての対話すべき当事者、利害関係者との対話は、これまでどおり進めてまいります"@ja.
+<< kg:id_32 prop:contermeasure kg:id_60 >>
+    prop:text-txt_contents "加えまして、外部委員会や市民とのワークショップといった手法もしっかり取っていきたいと思っております。"@ja.
+<< kg:id_32 prop:contermeasure kg:id_61 >>
+    prop:text-txt_contents "また、パブリックコメントや市民アンケートは、市の考え方をしっかり示しながら、市民の皆様の意見を聞き、それに応え、政策に反映していく"@ja.
+<< kg:id_12 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "中高生から40代の方までを対象に、若者カフェミーティングといった形での実施を今年度２回考えております。"@ja.
+<< kg:id_12 prop:contermeasure kg:id_63 >>
+    prop:text-txt_contents "若者カフェミーティング以外にも、ウェブアンケートやデジタル技術を活用した手法などで意見を把握し"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "全国的な取組事例も研究しながら、酒田地区広域行政組合と連携して、指定ごみ袋を含めたプラスチックごみの削減、また再資源化に係る取組が実施できないか見極めてまいりたいと考えております。"@ja.
+<< kg:id_64 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "分別収集の方法を検討していきながら、まず酒田地区広域行政組合で実施しておりますので、本市を含めて、遊佐町、庄内町とも協議する必要があると感じております。"@ja.
+<< kg:id_67 prop:contermeasure kg:id_68 >>
+    prop:text-txt_contents "全国市長会を通じて、引き続き、国に要望していきたいと考えております。"@ja.
+<< kg:id_69 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "現時点では、令和６年度の税率は据置きの方向で考えております。"@ja.
+<< kg:id_71 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "本市では、農地への電気柵設置に対する支援として、有害鳥獣被害対策推進事業を平成25年度より県と市の協調補助で実施しております。"@ja.
+<< kg:id_71 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "箱わなセンサーの稼働実績としましては、12月15日時点で、熊の捕獲のため７回設置したうち、５回はセンサーが作動し捕獲しました"@ja.
+<< kg:id_71 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "ドローンによる鳥獣被害対策については、他自治体の取組状況の情報を収集しながら、どのような効果があるのか、検証をした上で、導入の可能性について研究してまいりたいと思います。"@ja.
+<< kg:id_75 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "今後も継続して水位監視システムから得られるデータの取得、分析に努めてまいります。"@ja.
+<< kg:id_75 prop:contermeasure kg:id_77 >>
+    prop:text-txt_contents "県道周辺に集まった雨水を若浜排水区と本溝排水区から切り離して直接新井田川へ導く新たな排水ルートについて検討を始めたところでございます。"@ja.
+<< kg:id_75 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "本市では、現在、水位監視システムから得られる道路冠水情報を令和６年度中に市民へメール配信できるよう検討を進めております。"@ja.
+<< kg:id_79 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "酒田のラーメンＥＸＰＯをはじめとした市内での関連イベント、この開催に対する支援と協力を、引き続き、行っていくことを検討していきたいと思っております。"@ja.
+<< kg:id_79 prop:contermeasure kg:id_81 >>
+    prop:text-txt_contents "首都圏などで開催される食の見本市のようなイベントに酒田のラーメンを考える会ですとか、そのほか食関係の団体の皆さんに出ていただくということ、出店を促していくこともやっていきたいと思います。"@ja.
+<< kg:id_79 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "ラーメン店マップ、こちらは観光客の皆様から好評を博しておりますが、作成から少し時間がたっており、情報が古くなっておりますので、考える会の皆さんと協力しながら更新をして、しっかりＰＲを行っていきたいと思っています。"@ja.
+<< kg:id_79 prop:contermeasure kg:id_83 >>
+    prop:text-txt_contents "このラーメンマップのほかにラーメンＰＲチラシもありますので、これもしっかり店舗へ配布をしたり、ウェブを使って展開をしていくこと"@ja.
+<< kg:id_79 prop:contermeasure kg:id_84 >>
+    prop:text-txt_contents "現在、山居倉庫で行っております酒田のワンタンメンの販売、こういった酒田の情報発信の拠点を使って、イベントの情報発信をどんどんしていくこと"@ja.
+<< kg:id_79 prop:contermeasure kg:id_85 >>
+    prop:text-txt_contents "本市のふるさと納税での酒田のラーメンの関連商品の紹介をしていくということ"@ja.
+<< kg:id_79 prop:contermeasure kg:id_86 >>
+    prop:text-txt_contents "文化庁に認定された100年フードですとか、県が推進しているラーメン県そば王国やまがたのキャッチフレーズをしっかり活用しながらＰＲをしていくこと"@ja.
+<< kg:id_79 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "本市公認マスコットキャラクターもしぇのん、あののん、こちらも出番が少なくならないようにいろんなラーメン関連のイベントにもしっかり派遣していきたいと。または、印刷物へキャラクターのイラストをしっかり出していくことも取り組んでまいりたいと思います。"@ja.
+<< kg:id_88 prop:contermeasure kg:id_89 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "レストランや食堂などを紹介する食さんぽですとか、お酒やディナーを楽しむことができるお店を紹介しております夜さんぽ、こういったマップをつくって、観光案内所や観光施設などに配置をしております。"@ja.
+<< kg:id_88 prop:contermeasure kg:id_90 >>
+    prop:text-txt_contents "酒田ＤＭＯの酒田さんぽというウェブサイトです。しっかりサイトで検索いただくと、上位に表示が出るよう、そういったＳＥＯ対策を組んでしっかりＰＲできるように"@ja.
+<< kg:id_91 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "観光客の皆様に、この酒田駅大学線を活用してもらえるよう、るんるんバスまち歩きマップといったチラシの作成も検討しておりまして"@ja.
+<< kg:id_93 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "この日本一に輝いた日、10月９日を酒田のラーメンの日としようと、その日を中心とした１週間をラーメンウィークとすることを発表いたしました。"@ja.
+<< kg:id_95 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "議員御提案のような地元孟宗竹を使ったメンマなど、さらにもう一歩地元の食材の使用を進めていく、そのために、例えば、こういう食材があればいいのにということ、供給へのマッチングについては、行政が協力できる分野はしっかりとやってきたいと思っております。"@ja.
+}

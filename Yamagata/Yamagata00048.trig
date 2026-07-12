@@ -1,0 +1,1602 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00048> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "人口減少"@ja.
+kg:id_1 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "若い人特に男性よりも女性のほうが多く都会に出て行くこと"@ja.
+kg:id_2 rdf:type cls:c_1518.
+cls:c_1518 rdfs:label "若年女性流出"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "その地域における婚姻数が減ること"@ja.
+kg:id_3 rdf:type cls:c_1167.
+cls:c_1167 rdfs:label "婚姻減少"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "生まれる子どもの数が減っていること"@ja.
+kg:id_4 rdf:type cls:c_1157.
+cls:c_1157 rdfs:label "出生減少"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "生産年齢人口の減少"@ja.
+kg:id_5 rdf:type cls:c_1519.
+cls:c_1519 rdfs:label "労働力減少"@ja.
+kg:id_6 rdfs:label "働きたいと考える全ての市民が働くことのできる環境整備が必要になる"@ja.
+kg:id_6 rdf:type cls:c_1520.
+cls:c_1520 rdfs:label "就労環境整備"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "人口が減少したとしても安心して地域コミュニティで暮らせる仕組みが必要になる"@ja.
+kg:id_7 rdf:type cls:c_1521.
+cls:c_1521 rdfs:label "地域生活基盤"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "市民の幸せを実現する施策が必要になる"@ja.
+kg:id_8 rdf:type cls:c_1522.
+cls:c_1522 rdfs:label "幸福実現施策"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "市民所得の向上を図ること"@ja.
+kg:id_9 rdf:type cls:c_1276.
+cls:c_1276 rdfs:label "所得向上"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "産業を振興し若い人が就きたいと思うような仕事を創出すること"@ja.
+kg:id_10 rdf:type cls:c_1113.
+cls:c_1113 rdfs:label "雇用創出"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "観光や移輸出など外貨を獲得すること"@ja.
+kg:id_11 rdf:type cls:c_1523.
+cls:c_1523 rdfs:label "外貨獲得"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "ローカルSDGsに資すること"@ja.
+kg:id_12 rdf:type cls:c_1524.
+cls:c_1524 rdfs:label "持続可能施策"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "産業の基盤となるインフラを整備すること"@ja.
+kg:id_13 rdf:type cls:c_1525.
+cls:c_1525 rdfs:label "産業基盤整備"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "働きたいと考える全ての市民が働くことのできる環境を整備すること"@ja.
+kg:id_14 rdf:type cls:c_1520.
+kg:id_5 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "男性だけでなく女性も高齢者も障がいのある方も外国籍の方も社会で活躍できるよう支援すること"@ja.
+kg:id_15 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "就労支援"@ja.
+kg:id_5 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "仕事と家庭の両立を可能にする保育介護などの制度を充実させること"@ja.
+kg:id_16 rdf:type cls:c_1526.
+cls:c_1526 rdfs:label "両立支援制度"@ja.
+kg:id_5 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "ジェンダー平等意識を啓発すること"@ja.
+kg:id_17 rdf:type cls:c_1527.
+cls:c_1527 rdfs:label "平等意識啓発"@ja.
+kg:id_5 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "デジタル変革を進めること"@ja.
+kg:id_18 rdf:type cls:c_749.
+cls:c_749 rdfs:label "デジタル化"@ja.
+kg:id_5 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "移住者定住者や関係人口を増やすこと"@ja.
+kg:id_19 rdf:type cls:c_1419.
+cls:c_1419 rdfs:label "移住定住促進"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "人口が減少したとしても豊かに安心して暮らせるまちを創ること"@ja.
+kg:id_20 rdf:type cls:c_1528.
+cls:c_1528 rdfs:label "安心なまち"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "若者女性障がい者などの意見を施策に反映すること"@ja.
+kg:id_21 rdf:type cls:c_628.
+cls:c_628 rdfs:label "意見反映"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "若者カフェミーティングを開催し施策に若者の意見を反映していくこと"@ja.
+kg:id_22 rdf:type cls:c_1529.
+cls:c_1529 rdfs:label "対話機会"@ja.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "東北公益文科大学の存続"@ja.
+kg:id_23 rdf:type cls:c_1530.
+cls:c_1530 rdfs:label "大学存続"@ja.
+kg:id_24 rdfs:label "山形県庄内2市3町が協力し早期の公立化に向けた取組を進めること"@ja.
+kg:id_24 rdf:type cls:c_1369.
+cls:c_1369 rdfs:label "公立化推進"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "夏の猛暑下における登下校時の安全確保"@ja.
+kg:id_25 rdf:type cls:c_1531.
+cls:c_1531 rdfs:label "通学安全"@ja.
+kg:id_26 rdfs:label "スクールバスを運行すること"@ja.
+kg:id_26 rdf:type cls:c_1532.
+cls:c_1532 rdfs:label "通学支援"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "夏の猛暑下における学習環境"@ja.
+kg:id_27 rdf:type cls:c_1533.
+cls:c_1533 rdfs:label "学習環境"@ja.
+kg:id_28 rdfs:label "小中学校の特別教室へのエアコン設置を計画的に進めること"@ja.
+kg:id_28 rdf:type cls:c_1534.
+cls:c_1534 rdfs:label "空調整備"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "家庭環境などに問題を抱える子どもへの支援不足"@ja.
+kg:id_29 rdf:type cls:c_1535.
+cls:c_1535 rdfs:label "子ども支援不足"@ja.
+kg:id_30 rdfs:label "スクールソーシャルワーカーを1名増員すること"@ja.
+kg:id_30 rdf:type cls:c_1536.
+cls:c_1536 rdfs:label "相談員増員"@ja.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "教育福祉部門の連携を強化すること"@ja.
+kg:id_31 rdf:type cls:c_1537.
+cls:c_1537 rdfs:label "部門連携強化"@ja.
+kg:id_29 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "屋内スケート施設不足"@ja.
+kg:id_32 rdf:type cls:c_1538.
+cls:c_1538 rdfs:label "施設不足"@ja.
+kg:id_33 rdfs:label "山形県に対して本市への設置を粘り強く要望すること"@ja.
+kg:id_33 rdf:type cls:c_1539.
+cls:c_1539 rdfs:label "設置要望"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "暫定的に利用できる仮設リンクを低コストで設置する施設の調査を進めること"@ja.
+kg:id_34 rdf:type cls:c_1540.
+cls:c_1540 rdfs:label "代替施設調査"@ja.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "地域課題の解決"@ja.
+kg:id_35 rdf:type cls:c_1358.
+cls:c_1358 rdfs:label "地域課題"@ja.
+kg:id_36 rdfs:label "コミュニティファンドを創設すること"@ja.
+kg:id_36 rdf:type cls:c_1541.
+cls:c_1541 rdfs:label "資金支援"@ja.
+kg:id_35 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "地元就職の促進"@ja.
+kg:id_37 rdf:type cls:c_1542.
+cls:c_1542 rdfs:label "地元就職"@ja.
+kg:id_38 rdfs:label "情報サービス業などの賃借型立地を誘導する助成金を拡充すること"@ja.
+kg:id_38 rdf:type cls:c_1543.
+cls:c_1543 rdfs:label "立地助成"@ja.
+kg:id_37 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "地元企業の人材確保"@ja.
+kg:id_39 rdf:type cls:c_829.
+cls:c_829 rdfs:label "人材確保"@ja.
+kg:id_40 rdfs:label "若者高齢者障がい者外国人の雇用や業務改善などに関する企業向けセミナーを開催すること"@ja.
+kg:id_40 rdf:type cls:c_1544.
+cls:c_1544 rdfs:label "雇用研修"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "日本一女性が働きやすいまちの実現"@ja.
+kg:id_41 rdf:type cls:c_1545.
+cls:c_1545 rdfs:label "働きやすいまち"@ja.
+kg:id_42 rdfs:label "誰もが働きやすい職場づくりに取り組む市内企業に対して酒田市一般事業主行動計画策定奨励金を支給すること"@ja.
+kg:id_42 rdf:type cls:c_1546.
+cls:c_1546 rdfs:label "企業奨励"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "本市への人材の呼び込みと定着"@ja.
+kg:id_43 rdf:type cls:c_1547.
+cls:c_1547 rdfs:label "人材定着"@ja.
+kg:id_44 rdfs:label "次世代を担う若手農業者に経営開始資金などを助成すること"@ja.
+kg:id_44 rdf:type cls:c_1548.
+cls:c_1548 rdfs:label "就業助成"@ja.
+kg:id_43 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "持続可能な循環型農業の実現"@ja.
+kg:id_45 rdf:type cls:c_746.
+cls:c_746 rdfs:label "循環型農業"@ja.
+kg:id_46 rdfs:label "オーガニックビレッジ宣言を行うこと"@ja.
+kg:id_46 rdf:type cls:c_1549.
+cls:c_1549 rdfs:label "有機農業推進"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "みどりの食料システム戦略推進交付金を活用し環境整備を行うこと"@ja.
+kg:id_47 rdf:type cls:c_1550.
+cls:c_1550 rdfs:label "農業環境整備"@ja.
+kg:id_45 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "松くい虫被害の増大"@ja.
+kg:id_48 rdf:type cls:c_1551.
+cls:c_1551 rdfs:label "虫害拡大"@ja.
+kg:id_49 rdfs:label "夏季の高温や少雨の影響"@ja.
+kg:id_49 rdf:type cls:c_1552.
+cls:c_1552 rdfs:label "高温少雨"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "ビニールハウスなど農業施設への倒木被害が頻発していること"@ja.
+kg:id_50 rdf:type cls:c_1553.
+cls:c_1553 rdfs:label "倒木被害"@ja.
+kg:id_48 prop:effect kg:id_50.
+kg:id_51 rdfs:label "伐倒駆除及び薬剤防除により被害の拡大を防止すること"@ja.
+kg:id_51 rdf:type cls:c_1554.
+cls:c_1554 rdfs:label "被害防除"@ja.
+kg:id_48 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "スルメイカの安定的な水揚げ量確保"@ja.
+kg:id_52 rdf:type cls:c_1555.
+cls:c_1555 rdfs:label "水揚げ確保"@ja.
+kg:id_53 rdfs:label "県外漁船の誘致を行うこと"@ja.
+kg:id_53 rdf:type cls:c_1556.
+cls:c_1556 rdfs:label "漁船誘致"@ja.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "移住者定住者の増加"@ja.
+kg:id_54 rdf:type cls:c_1557.
+cls:c_1557 rdfs:label "移住定住"@ja.
+kg:id_55 rdfs:label "子育て世代をターゲットとして移住に関する情報発信を強化すること"@ja.
+kg:id_55 rdf:type cls:c_1558.
+cls:c_1558 rdfs:label "情報発信強化"@ja.
+kg:id_54 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "子育て世帯が本市での暮らしをイメージできるようなツアー事業を実施すること"@ja.
+kg:id_56 rdf:type cls:c_1559.
+cls:c_1559 rdfs:label "体験機会"@ja.
+kg:id_54 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "関係人口の創出や拡大"@ja.
+kg:id_57 rdf:type cls:c_1560.
+cls:c_1560 rdfs:label "関係人口"@ja.
+kg:id_58 rdfs:label "本市出身者等とつながりを持ちその関係性を深めることによりまちづくりに参画できる戦略仕組みをつくること"@ja.
+kg:id_58 rdf:type cls:c_1561.
+cls:c_1561 rdfs:label "参加仕組み"@ja.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "観光消費額の増加"@ja.
+kg:id_59 rdf:type cls:c_1562.
+cls:c_1562 rdfs:label "観光消費"@ja.
+kg:id_60 rdfs:label "一般財団法人酒田DMOがマーケティングに基づく戦略的なプロモーションや観光プログラムによる誘客を進めること"@ja.
+kg:id_60 rdf:type cls:c_1563.
+cls:c_1563 rdfs:label "観光誘客"@ja.
+kg:id_59 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "国内外からの教育旅行の誘致を進めること"@ja.
+kg:id_61 rdf:type cls:c_1564.
+cls:c_1564 rdfs:label "教育旅行誘致"@ja.
+kg:id_59 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "インバウンド誘客の推進"@ja.
+kg:id_62 rdf:type cls:c_1565.
+cls:c_1565 rdfs:label "訪日誘客"@ja.
+kg:id_63 rdfs:label "インバウンド向けの情報発信プロモーション及びツアー造成等に取り組むこと"@ja.
+kg:id_63 rdf:type cls:c_1566.
+cls:c_1566 rdfs:label "訪日広報"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "福祉相談内容の複雑化や複合化"@ja.
+kg:id_64 rdf:type cls:c_1567.
+cls:c_1567 rdfs:label "相談複雑化"@ja.
+kg:id_65 rdfs:label "福祉総合相談窓口を設置すること"@ja.
+kg:id_65 rdf:type cls:c_1568.
+cls:c_1568 rdfs:label "総合相談窓口"@ja.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "障がい者支援の充実"@ja.
+kg:id_66 rdf:type cls:c_1569.
+cls:c_1569 rdfs:label "障がい者支援"@ja.
+kg:id_67 rdfs:label "基幹相談支援センターを設置すること"@ja.
+kg:id_67 rdf:type cls:c_1570.
+cls:c_1570 rdfs:label "相談支援拠点"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "社会的な孤独や孤立"@ja.
+kg:id_68 rdf:type cls:c_1571.
+cls:c_1571 rdfs:label "社会的孤立"@ja.
+kg:id_69 rdfs:label "様々な要因によって引き起こされること"@ja.
+kg:id_69 rdf:type cls:c_1572.
+cls:c_1572 rdfs:label "多様要因"@ja.
+kg:id_68 prop:cause kg:id_69.
+kg:id_70 rdfs:label "ひきこもりの状態にある方やその家族からの相談や居場所づくりに取り組む団体の活動を支援すること"@ja.
+kg:id_70 rdf:type cls:c_1573.
+cls:c_1573 rdfs:label "団体支援"@ja.
+kg:id_68 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "民生委員児童委員の充足不足"@ja.
+kg:id_71 rdf:type cls:c_1574.
+cls:c_1574 rdfs:label "委員不足"@ja.
+kg:id_72 rdfs:label "1人当たりの活動費を引き上げること"@ja.
+kg:id_72 rdf:type cls:c_1575.
+cls:c_1575 rdfs:label "活動費増額"@ja.
+kg:id_71 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "高齢者が住み慣れた地域で安心して生活を継続できること"@ja.
+kg:id_73 rdf:type cls:c_1576.
+cls:c_1576 rdfs:label "高齢者生活"@ja.
+kg:id_74 rdfs:label "地域包括支援センターの体制や機能の強化に向けて地域や事業者との話合いを進めること"@ja.
+kg:id_74 rdf:type cls:c_1577.
+cls:c_1577 rdfs:label "支援拠点強化"@ja.
+kg:id_73 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "第9期介護保険料"@ja.
+kg:id_75 rdf:type cls:c_1578.
+cls:c_1578 rdfs:label "保険料"@ja.
+kg:id_76 rdfs:label "介護給付費準備基金を活用して基準月額を引き下げること"@ja.
+kg:id_76 rdf:type cls:c_1579.
+cls:c_1579 rdfs:label "保険料引下げ"@ja.
+kg:id_75 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "男女共同参画社会の実現"@ja.
+kg:id_77 rdf:type cls:c_1580.
+cls:c_1580 rdfs:label "男女共同参画"@ja.
+kg:id_78 rdfs:label "家事シェア及び家事の省力化につながる取組を行うこと"@ja.
+kg:id_78 rdf:type cls:c_1581.
+cls:c_1581 rdfs:label "家事負担軽減"@ja.
+kg:id_77 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "多様性と人権を尊重する共生社会づくり"@ja.
+kg:id_79 rdf:type cls:c_1582.
+cls:c_1582 rdfs:label "共生社会"@ja.
+kg:id_80 rdfs:label "市民部に共生社会課を新たに設置すること"@ja.
+kg:id_80 rdf:type cls:c_1583.
+cls:c_1583 rdfs:label "推進体制整備"@ja.
+kg:id_79 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "結婚を望む独身男女への出会い機会不足"@ja.
+kg:id_81 rdf:type cls:c_1584.
+cls:c_1584 rdfs:label "出会い機会不足"@ja.
+kg:id_82 rdfs:label "メタバース婚活を山形県庄内2市3町が連携して実施すること"@ja.
+kg:id_82 rdf:type cls:c_1585.
+cls:c_1585 rdfs:label "婚活機会"@ja.
+kg:id_81 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "家事や子育てに対して不安や負担を抱えた家庭への支援"@ja.
+kg:id_83 rdf:type cls:c_1586.
+cls:c_1586 rdfs:label "家庭支援"@ja.
+kg:id_84 rdfs:label "子育て世帯訪問支援事業の利用を勧めるなど支援を強化すること"@ja.
+kg:id_84 rdf:type cls:c_1587.
+cls:c_1587 rdfs:label "訪問支援強化"@ja.
+kg:id_83 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "子育て世帯の負担"@ja.
+kg:id_85 rdf:type cls:c_1588.
+cls:c_1588 rdfs:label "子育て負担"@ja.
+kg:id_86 rdfs:label "小中学校の給食費に係る保護者負担額を据え置くこと"@ja.
+kg:id_86 rdf:type cls:c_1589.
+cls:c_1589 rdfs:label "給食費据置"@ja.
+kg:id_85 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "ひとり親家庭や低所得世帯などの料金負担"@ja.
+kg:id_87 rdf:type cls:c_960.
+cls:c_960 rdfs:label "料金負担"@ja.
+kg:id_88 rdfs:label "ファミリーサポートセンターの料金負担を軽減すること"@ja.
+kg:id_88 rdf:type cls:c_1590.
+cls:c_1590 rdfs:label "利用料軽減"@ja.
+kg:id_87 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "家庭の経済状況により大学等への進学を諦めること"@ja.
+kg:id_89 rdf:type cls:c_1591.
+cls:c_1591 rdfs:label "進学断念"@ja.
+kg:id_90 rdfs:label "低所得世帯などを対象とした大学等の受験費用の支援を行うこと"@ja.
+kg:id_90 rdf:type cls:c_1592.
+cls:c_1592 rdfs:label "受験費支援"@ja.
+kg:id_89 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "家庭の経済状況により進路機会が制約されること"@ja.
+kg:id_91 rdf:type cls:c_1593.
+cls:c_1593 rdfs:label "進路制約"@ja.
+kg:id_92 rdfs:label "中学3年生と高校3年生の模擬試験費用の支援を行うこと"@ja.
+kg:id_92 rdf:type cls:c_1594.
+cls:c_1594 rdfs:label "試験費支援"@ja.
+kg:id_91 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "自殺対策の効果的推進"@ja.
+kg:id_93 rdf:type cls:c_1595.
+cls:c_1595 rdfs:label "自殺対策"@ja.
+kg:id_94 rdfs:label "有識者会議を新たに設置しその意見を施策に反映すること"@ja.
+kg:id_94 rdf:type cls:c_1596.
+cls:c_1596 rdfs:label "有識者会議"@ja.
+kg:id_93 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "将来にわたり市民が必要な医療介護サービスを受けられる体制"@ja.
+kg:id_95 rdf:type cls:c_1597.
+cls:c_1597 rdfs:label "医療介護体制"@ja.
+kg:id_96 rdfs:label "日本海総合病院が行う医療介護連携DX事業を支援すること"@ja.
+kg:id_96 rdf:type cls:c_1598.
+cls:c_1598 rdfs:label "連携デジタル化"@ja.
+kg:id_95 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "地域医療を支える看護人材の育成"@ja.
+kg:id_97 rdf:type cls:c_1599.
+cls:c_1599 rdfs:label "看護人材育成"@ja.
+kg:id_98 rdfs:label "酒田看護専門学校の学生への支援を引き続き実施し市内での就業を促進すること"@ja.
+kg:id_98 rdf:type cls:c_1600.
+cls:c_1600 rdfs:label "学生支援"@ja.
+kg:id_97 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "買物弱者への支援"@ja.
+kg:id_99 rdf:type cls:c_1601.
+cls:c_1601 rdfs:label "買物支援"@ja.
+kg:id_100 rdfs:label "宅配などの民間事業者のサービスを整理して分かりやすい形で情報発信すること"@ja.
+kg:id_100 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_99 prop:contermeasure kg:id_100.
+kg:id_101 rdfs:label "地球温暖化防止と地域循環共生圏形成"@ja.
+kg:id_101 rdf:type cls:c_699.
+cls:c_699 rdfs:label "温暖化対策"@ja.
+kg:id_102 rdfs:label "酒田市地球温暖化対策実行計画区域施策編を策定すること"@ja.
+kg:id_102 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_101 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "企画調整課にローカルSDGs推進室を新設すること"@ja.
+kg:id_103 rdf:type cls:c_1583.
+kg:id_101 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "猫の繁殖"@ja.
+kg:id_104 rdf:type cls:c_1602.
+cls:c_1602 rdfs:label "猫繁殖"@ja.
+kg:id_105 rdfs:label "飼い主のいない猫に不妊去勢手術を施し元の場所に戻す活動を行う団体に対して助成を行うこと"@ja.
+kg:id_105 rdf:type cls:c_1603.
+cls:c_1603 rdfs:label "繁殖抑制支援"@ja.
+kg:id_104 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "令和6年能登半島地震の際の本市の一連の避難者対応"@ja.
+kg:id_106 rdf:type cls:c_1604.
+cls:c_1604 rdfs:label "避難対応"@ja.
+kg:id_107 rdfs:label "検証し避難所連絡員等の配置や防災備蓄品の整備等について見直すこと"@ja.
+kg:id_107 rdf:type cls:c_1605.
+cls:c_1605 rdfs:label "体制見直し"@ja.
+kg:id_106 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "災害時の体制"@ja.
+kg:id_108 rdf:type cls:c_1606.
+cls:c_1606 rdfs:label "災害体制"@ja.
+kg:id_109 rdfs:label "防災情報一斉配信システムを導入すること"@ja.
+kg:id_109 rdf:type cls:c_1607.
+cls:c_1607 rdfs:label "情報配信整備"@ja.
+kg:id_108 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "適正な消防団員数の確保"@ja.
+kg:id_110 rdf:type cls:c_1309.
+cls:c_1309 rdfs:label "団員確保"@ja.
+kg:id_111 rdfs:label "消防団員の待遇を改善すること"@ja.
+kg:id_111 rdf:type cls:c_1608.
+cls:c_1608 rdfs:label "待遇改善"@ja.
+kg:id_110 prop:contermeasure kg:id_111.
+kg:id_112 rdfs:label "管理不全な空き家"@ja.
+kg:id_112 rdf:type cls:c_1609.
+cls:c_1609 rdfs:label "空き家管理不全"@ja.
+kg:id_113 rdfs:label "地域住民の生活環境財産に悪影響を及ぼすこと"@ja.
+kg:id_113 rdf:type cls:c_1610.
+cls:c_1610 rdfs:label "生活環境悪化"@ja.
+kg:id_112 prop:effect kg:id_113.
+kg:id_114 rdfs:label "財産管理人制度などの活用により相続人が存在しない老朽危険空き家等の解消に努めること"@ja.
+kg:id_114 rdf:type cls:c_1611.
+cls:c_1611 rdfs:label "危険空き家解消"@ja.
+kg:id_112 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "住宅の耐震化"@ja.
+kg:id_115 rdf:type cls:c_1612.
+cls:c_1612 rdfs:label "住宅耐震化"@ja.
+kg:id_116 rdfs:label "昭和56年以前に建てられた空き家の解体と住宅の新築を支援すること"@ja.
+kg:id_116 rdf:type cls:c_1613.
+cls:c_1613 rdfs:label "建替え支援"@ja.
+kg:id_115 prop:contermeasure kg:id_116.
+kg:id_117 rdfs:label "犯罪被害者等への支援"@ja.
+kg:id_117 rdf:type cls:c_1614.
+cls:c_1614 rdfs:label "被害者支援"@ja.
+kg:id_118 rdfs:label "犯罪被害者等支援条例を制定し窓口をまちづくり推進課に設置すること"@ja.
+kg:id_118 rdf:type cls:c_1615.
+cls:c_1615 rdfs:label "支援制度整備"@ja.
+kg:id_117 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "大型獣類捕獲業務の従事者の減少"@ja.
+kg:id_119 rdf:type cls:c_1616.
+cls:c_1616 rdfs:label "捕獲従事者減少"@ja.
+kg:id_120 rdfs:label "高齢化"@ja.
+kg:id_120 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_119 prop:cause kg:id_120.
+kg:id_121 rdfs:label "箱わなセンサーの拡充による負担軽減を行うこと"@ja.
+kg:id_121 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_119 prop:contermeasure kg:id_121.
+kg:id_122 rdfs:label "狩猟免許取得などへの助成を行い免許保持者を増やすこと"@ja.
+kg:id_122 rdf:type cls:c_829.
+kg:id_119 prop:contermeasure kg:id_122.
+kg:id_123 rdfs:label "地域公共交通の維持拡充"@ja.
+kg:id_123 rdf:type cls:c_1617.
+cls:c_1617 rdfs:label "公共交通"@ja.
+kg:id_124 rdfs:label "高校生などを対象にアンケート調査を実施すること"@ja.
+kg:id_124 rdf:type cls:c_1618.
+cls:c_1618 rdfs:label "実態調査"@ja.
+kg:id_123 prop:contermeasure kg:id_124.
+kg:id_125 rdfs:label "公共交通について識見を有する交通政策顧問を配置すること"@ja.
+kg:id_125 rdf:type cls:c_1619.
+cls:c_1619 rdfs:label "専門人材配置"@ja.
+kg:id_123 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "定期船とびしまの更新"@ja.
+kg:id_126 rdf:type cls:c_1620.
+cls:c_1620 rdfs:label "船舶更新"@ja.
+kg:id_127 rdfs:label "利用者のニーズを踏まえ船舶の更新に向けた調査を開始すること"@ja.
+kg:id_127 rdf:type cls:c_1621.
+cls:c_1621 rdfs:label "更新調査"@ja.
+kg:id_126 prop:contermeasure kg:id_127.
+kg:id_128 rdfs:label "飛島地区の倒木"@ja.
+kg:id_128 rdf:type cls:c_1622.
+cls:c_1622 rdfs:label "倒木"@ja.
+kg:id_129 rdfs:label "令和5年12月の大雪"@ja.
+kg:id_129 rdf:type cls:c_1623.
+cls:c_1623 rdfs:label "大雪"@ja.
+kg:id_128 prop:cause kg:id_129.
+kg:id_130 rdfs:label "道路や遊歩道避難路などの安全を確保するため倒木を除去すること"@ja.
+kg:id_130 rdf:type cls:c_1624.
+cls:c_1624 rdfs:label "倒木除去"@ja.
+kg:id_128 prop:contermeasure kg:id_130.
+kg:id_131 rdfs:label "高速交通ネットワークの形成"@ja.
+kg:id_131 rdf:type cls:c_1625.
+cls:c_1625 rdfs:label "高速交通網"@ja.
+kg:id_132 rdfs:label "日本海沿岸東北自動車道の遊佐象潟道路及び朝日温海道路の早期開通に向けて国及び山形県に働きかけること"@ja.
+kg:id_132 rdf:type cls:c_1626.
+cls:c_1626 rdfs:label "早期開通要望"@ja.
+kg:id_131 prop:contermeasure kg:id_132.
+kg:id_133 rdfs:label "新庄酒田道路の高屋草薙間と立川余目間の事業化に向けて国及び山形県に働きかけること"@ja.
+kg:id_133 rdf:type cls:c_1627.
+cls:c_1627 rdfs:label "事業化要望"@ja.
+kg:id_131 prop:contermeasure kg:id_133.
+kg:id_134 rdfs:label "駅周辺の利便性"@ja.
+kg:id_134 rdf:type cls:c_1628.
+cls:c_1628 rdfs:label "駅利便性"@ja.
+kg:id_135 rdfs:label "JR酒田駅周辺整備の仕上げとして駅東広場の整備と駐輪場の更新を行うこと"@ja.
+kg:id_135 rdf:type cls:c_1629.
+cls:c_1629 rdfs:label "駅前整備"@ja.
+kg:id_134 prop:contermeasure kg:id_135.
+kg:id_136 rdfs:label "誘客"@ja.
+kg:id_136 rdf:type cls:c_1630.
+cls:c_1630 rdfs:label "誘客"@ja.
+kg:id_137 rdfs:label "いろは蔵パークの供用開始に向けて観光バス駐車場を整備すること"@ja.
+kg:id_137 rdf:type cls:c_1631.
+cls:c_1631 rdfs:label "駐車場整備"@ja.
+kg:id_136 prop:contermeasure kg:id_137.
+kg:id_138 rdfs:label "公共サービスのワンストップ提供"@ja.
+kg:id_138 rdf:type cls:c_1632.
+cls:c_1632 rdfs:label "公共サービス"@ja.
+kg:id_139 rdfs:label "公共機関などの集約を含めたまちづくりの方向性を官民連携してデザインしていくこと"@ja.
+kg:id_139 rdf:type cls:c_1633.
+cls:c_1633 rdfs:label "拠点集約"@ja.
+kg:id_138 prop:contermeasure kg:id_139.
+kg:id_140 rdfs:label "オンライン市役所の実現"@ja.
+kg:id_140 rdf:type cls:c_1634.
+cls:c_1634 rdfs:label "オンライン行政"@ja.
+kg:id_141 rdfs:label "さかたコンポの道路水位情報の自動配信などの機能を拡充すること"@ja.
+kg:id_141 rdf:type cls:c_1635.
+cls:c_1635 rdfs:label "機能拡充"@ja.
+kg:id_140 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "庄内地域の水道広域化"@ja.
+kg:id_142 rdf:type cls:c_1636.
+cls:c_1636 rdfs:label "水道広域化"@ja.
+kg:id_143 rdfs:label "本市鶴岡市及び庄内町が運営する末端給水事業による企業団の令和7年度設立令和8年度事業開始を目指すこと"@ja.
+kg:id_143 rdf:type cls:c_1637.
+cls:c_1637 rdfs:label "運営統合"@ja.
+kg:id_142 prop:contermeasure kg:id_143.
+kg:id_144 rdfs:label "山形県庄内広域水道用水供給事業との垂直統合の早期実現に向けて県との協議を進めること"@ja.
+kg:id_144 rdf:type cls:c_1638.
+cls:c_1638 rdfs:label "垂直統合"@ja.
+kg:id_142 prop:contermeasure kg:id_144.
+kg:id_145 rdfs:label "下水道事業の経費削減と管理の効率化"@ja.
+kg:id_145 rdf:type cls:c_1639.
+cls:c_1639 rdfs:label "下水道効率化"@ja.
+kg:id_146 rdfs:label "工務課下水道施設係を新設し施設の統廃合に取り組むこと"@ja.
+kg:id_146 rdf:type cls:c_1640.
+cls:c_1640 rdfs:label "施設統廃合"@ja.
+kg:id_145 prop:contermeasure kg:id_146.
+kg:id_147 rdfs:label "道路橋の老朽化"@ja.
+kg:id_147 rdf:type cls:c_1641.
+cls:c_1641 rdfs:label "橋梁老朽化"@ja.
+kg:id_148 rdfs:label "補修を必要とする道路橋が急速に増加していること"@ja.
+kg:id_148 rdf:type cls:c_1642.
+cls:c_1642 rdfs:label "補修需要増加"@ja.
+kg:id_147 prop:effect kg:id_148.
+kg:id_149 rdfs:label "東泉跨線橋及び浜田跨線橋の補修を進めること"@ja.
+kg:id_149 rdf:type cls:c_1643.
+cls:c_1643 rdfs:label "橋梁補修"@ja.
+kg:id_147 prop:contermeasure kg:id_149.
+kg:id_150 rdfs:label "公共住宅の維持管理費"@ja.
+kg:id_150 rdf:type cls:c_1644.
+cls:c_1644 rdfs:label "住宅維持費"@ja.
+kg:id_151 rdfs:label "酒田市公共住宅長寿命化計画を更新し維持管理費の縮減と平準化を図ること"@ja.
+kg:id_151 rdf:type cls:c_1645.
+cls:c_1645 rdfs:label "長寿命化計画"@ja.
+kg:id_150 prop:contermeasure kg:id_151.
+kg:id_152 rdfs:label "光ケ丘公園などの松くい虫被害"@ja.
+kg:id_152 rdf:type cls:c_1551.
+kg:id_153 rdfs:label "伐倒駆除を継続し被害の拡大防止を図ること"@ja.
+kg:id_153 rdf:type cls:c_1554.
+kg:id_152 prop:contermeasure kg:id_153.
+kg:id_154 rdfs:label "窓口業務"@ja.
+kg:id_154 rdf:type cls:c_1646.
+cls:c_1646 rdfs:label "窓口業務"@ja.
+kg:id_155 rdfs:label "総務省のモデル事業として改革に取り組むこと"@ja.
+kg:id_155 rdf:type cls:c_1647.
+cls:c_1647 rdfs:label "窓口改革"@ja.
+kg:id_154 prop:contermeasure kg:id_155.
+kg:id_156 rdfs:label "市民の利便性向上"@ja.
+kg:id_156 rdf:type cls:c_1648.
+cls:c_1648 rdfs:label "利便性向上"@ja.
+kg:id_157 rdfs:label "コンビニ交付サービスを利用し住民票など5種類の証明書を取得する場合の手数料を100円引き下げること"@ja.
+kg:id_157 rdf:type cls:c_1649.
+cls:c_1649 rdfs:label "手数料引下げ"@ja.
+kg:id_156 prop:contermeasure kg:id_157.
+kg:id_158 rdfs:label "公共施設の再編"@ja.
+kg:id_158 rdf:type cls:c_1650.
+cls:c_1650 rdfs:label "公共施設再編"@ja.
+kg:id_159 rdfs:label "公共施設適正化懇談会を引き続き開催し市民の意見を取り入れた上で公共施設適正化実施方針に基づき取り組むこと"@ja.
+kg:id_159 rdf:type cls:c_1651.
+cls:c_1651 rdfs:label "市民対話"@ja.
+kg:id_158 prop:contermeasure kg:id_159.
+kg:id_160 rdfs:label "人事制度全般"@ja.
+kg:id_160 rdf:type cls:c_1652.
+cls:c_1652 rdfs:label "人事制度"@ja.
+kg:id_161 rdfs:label "人事制度改革室を新設し採用試験人材育成人事配置人事評価などの見直しや副業制度の創設に取り組むこと"@ja.
+kg:id_161 rdf:type cls:c_1653.
+cls:c_1653 rdfs:label "制度改革"@ja.
+kg:id_160 prop:contermeasure kg:id_161.
+kg:id_162 rdfs:label "総人件費の抑制"@ja.
+kg:id_162 rdf:type cls:c_1654.
+cls:c_1654 rdfs:label "人件費抑制"@ja.
+kg:id_163 rdfs:label "事業の見直し任用形態の多様化業務のデジタル化などにより努めること"@ja.
+kg:id_163 rdf:type cls:c_1655.
+cls:c_1655 rdfs:label "業務見直し"@ja.
+kg:id_162 prop:contermeasure kg:id_163.
+kg:id_164 rdfs:label "政策立案機能"@ja.
+kg:id_164 rdf:type cls:c_1656.
+cls:c_1656 rdfs:label "政策立案"@ja.
+kg:id_165 rdfs:label "企画調整課に統計係を置きデータを活用した合理的根拠に基づく課題抽出政策立案の機能を強化すること"@ja.
+kg:id_165 rdf:type cls:c_1657.
+cls:c_1657 rdfs:label "統計活用"@ja.
+kg:id_164 prop:contermeasure kg:id_165.
+kg:id_166 rdfs:label "歳入確保"@ja.
+kg:id_166 rdf:type cls:c_1513.
+cls:c_1513 rdfs:label "歳入確保"@ja.
+kg:id_167 rdfs:label "個人版及び企業版のふるさと納税ネーミングライツを含む新たな広告収入未利用財産の売払いなどにより努めること"@ja.
+kg:id_167 rdf:type cls:c_1658.
+cls:c_1658 rdfs:label "収入多角化"@ja.
+kg:id_166 prop:contermeasure kg:id_167.
+kg:id_168 rdfs:label "白崎資金調整基金"@ja.
+kg:id_168 rdf:type cls:c_1659.
+cls:c_1659 rdfs:label "基金"@ja.
+kg:id_169 rdfs:label "廃止すること"@ja.
+kg:id_169 rdf:type cls:c_1660.
+cls:c_1660 rdfs:label "廃止"@ja.
+kg:id_168 prop:contermeasure kg:id_169.
+kg:id_170 rdfs:label "白崎資金調整基金の廃止"@ja.
+kg:id_170 rdf:type cls:c_1661.
+cls:c_1661 rdfs:label "基金廃止"@ja.
+kg:id_171 rdfs:label "所期の目的を達成したため"@ja.
+kg:id_171 rdf:type cls:c_1662.
+cls:c_1662 rdfs:label "目的達成"@ja.
+kg:id_170 prop:cause kg:id_171.
+kg:id_172 rdfs:label "酒田市総合計画後期計画の変更"@ja.
+kg:id_172 rdf:type cls:c_1663.
+cls:c_1663 rdfs:label "計画変更"@ja.
+kg:id_173 rdfs:label "市長所信表明をもとに行政経営方針を変更するため"@ja.
+kg:id_173 rdf:type cls:c_1664.
+cls:c_1664 rdfs:label "方針変更"@ja.
+kg:id_172 prop:cause kg:id_173.
+kg:id_174 rdfs:label "酒田市県営土地改良事業分担金徴収条例の一部改正"@ja.
+kg:id_174 rdf:type cls:c_1665.
+cls:c_1665 rdfs:label "条例改正"@ja.
+kg:id_175 rdfs:label "庄内砂丘地区農村地域防災減災事業が完了したこと"@ja.
+kg:id_175 rdf:type cls:c_1666.
+cls:c_1666 rdfs:label "事業完了"@ja.
+kg:id_174 prop:cause kg:id_175.
+kg:id_176 rdfs:label "備畑地区経営体育成基盤整備事業が完了したこと"@ja.
+kg:id_176 rdf:type cls:c_1666.
+kg:id_174 prop:cause kg:id_176.
+kg:id_177 rdfs:label "あらたに生じた土地の確認"@ja.
+kg:id_177 rdf:type cls:c_1667.
+cls:c_1667 rdfs:label "土地確認"@ja.
+kg:id_178 rdfs:label "酒田港外港地区における公有水面埋立工事の竣功"@ja.
+kg:id_178 rdf:type cls:c_1668.
+cls:c_1668 rdfs:label "埋立工事完了"@ja.
+kg:id_177 prop:cause kg:id_178.
+kg:id_179 rdfs:label "字の区域の変更"@ja.
+kg:id_179 rdf:type cls:c_1669.
+cls:c_1669 rdfs:label "区域変更"@ja.
+kg:id_180 rdfs:label "あらたに生じた土地等について字の区域を変更するため"@ja.
+kg:id_180 rdf:type cls:c_1670.
+cls:c_1670 rdfs:label "土地変更"@ja.
+kg:id_179 prop:cause kg:id_180.
+kg:id_181 rdfs:label "公有水面埋立ての免許に係る意見書提出"@ja.
+kg:id_181 rdf:type cls:c_1671.
+cls:c_1671 rdfs:label "意見書提出"@ja.
+kg:id_182 rdfs:label "酒田港港湾管理者の長である山形県知事へ意見書を提出すること"@ja.
+kg:id_182 rdf:type cls:c_1672.
+cls:c_1672 rdfs:label "行政手続"@ja.
+kg:id_181 prop:contermeasure kg:id_182.
+kg:id_183 rdfs:label "相手方自転車の転倒事故"@ja.
+kg:id_183 rdf:type cls:c_1673.
+cls:c_1673 rdfs:label "自転車事故"@ja.
+kg:id_184 rdfs:label "道路舗装の亀裂"@ja.
+kg:id_184 rdf:type cls:c_1674.
+cls:c_1674 rdfs:label "舗装亀裂"@ja.
+kg:id_183 prop:cause kg:id_184.
+kg:id_185 rdfs:label "相手方自転車が転倒し受傷した事故"@ja.
+kg:id_185 rdf:type cls:c_1673.
+kg:id_184 prop:effect kg:id_185.
+kg:id_186 rdfs:label "令和5年度酒田市一般会計補正予算"@ja.
+kg:id_186 rdf:type cls:c_1675.
+cls:c_1675 rdfs:label "補正予算"@ja.
+kg:id_187 rdfs:label "歳入の増加や決算見込み等により生じた財源の基金への積立て"@ja.
+kg:id_187 rdf:type cls:c_691.
+cls:c_691 rdfs:label "基金積立"@ja.
+kg:id_186 prop:cause kg:id_187.
+kg:id_188 rdfs:label "ふるさと納税寄附金の増加見込みによる返礼品等の経費及びさかた応援基金積立金の増額"@ja.
+kg:id_188 rdf:type cls:c_1676.
+cls:c_1676 rdfs:label "寄附増加"@ja.
+kg:id_186 prop:cause kg:id_188.
+kg:id_189 rdfs:label "決算見込みによる事業費の調整"@ja.
+kg:id_189 rdf:type cls:c_1677.
+cls:c_1677 rdfs:label "事業費調整"@ja.
+kg:id_186 prop:cause kg:id_189.
+kg:id_190 rdfs:label "18歳以下の児童を養育する世帯への給付"@ja.
+kg:id_190 rdf:type cls:c_1678.
+cls:c_1678 rdfs:label "子育て世帯支援"@ja.
+kg:id_191 rdfs:label "新型コロナウイルス感染症対応地方創生臨時交付金を活用して児童1人当たり1万5000円を給付すること"@ja.
+kg:id_191 rdf:type cls:c_1679.
+cls:c_1679 rdfs:label "現金給付"@ja.
+kg:id_190 prop:contermeasure kg:id_191.
+kg:id_192 rdfs:label "令和5年度酒田市駐車場事業特別会計補正予算"@ja.
+kg:id_192 rdf:type cls:c_1675.
+kg:id_193 rdfs:label "決算見込みにより生じた財源の駐車場整備基金への積立て"@ja.
+kg:id_193 rdf:type cls:c_691.
+kg:id_192 prop:cause kg:id_193.
+kg:id_194 rdfs:label "議第27号の条例改正"@ja.
+kg:id_194 rdf:type cls:c_1665.
+kg:id_195 rdfs:label "消費税の対象となる行政財産の目的外使用に対し消費税相当額を加算するため"@ja.
+kg:id_195 rdf:type cls:c_1680.
+cls:c_1680 rdfs:label "税額加算"@ja.
+kg:id_194 prop:cause kg:id_195.
+kg:id_196 rdfs:label "議第29号の条例改正"@ja.
+kg:id_196 rdf:type cls:c_1665.
+kg:id_197 rdfs:label "消防団員の報酬を増額すること"@ja.
+kg:id_197 rdf:type cls:c_1681.
+cls:c_1681 rdfs:label "報酬増額"@ja.
+kg:id_196 prop:contermeasure kg:id_197.
+kg:id_198 rdfs:label "選挙における投票所の閉鎖時刻の繰上げを行うに当たり投票管理者及び投票立会人の報酬額について従事時間に応じた報酬額に変更するため"@ja.
+kg:id_198 rdf:type cls:c_1682.
+cls:c_1682 rdfs:label "報酬変更"@ja.
+kg:id_196 prop:cause kg:id_198.
+kg:id_199 rdfs:label "議第30号の条例改正"@ja.
+kg:id_199 rdf:type cls:c_1665.
+kg:id_200 rdfs:label "消防団員の定数入団資格等を改めるため"@ja.
+kg:id_200 rdf:type cls:c_1683.
+cls:c_1683 rdfs:label "資格見直し"@ja.
+kg:id_199 prop:cause kg:id_200.
+kg:id_201 rdfs:label "議第32号の条例制定"@ja.
+kg:id_201 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_202 rdfs:label "酒田市総合文化センター内に酒田市文化資料館光丘文庫を設置するため"@ja.
+kg:id_202 rdf:type cls:c_303.
+cls:c_303 rdfs:label "施設設置"@ja.
+kg:id_201 prop:cause kg:id_202.
+kg:id_203 rdfs:label "議第34号の条例制定"@ja.
+kg:id_203 rdf:type cls:c_1684.
+kg:id_204 rdfs:label "犯罪被害者等の支援に関する施策の基本となる事項を定めるため"@ja.
+kg:id_204 rdf:type cls:c_1615.
+kg:id_203 prop:cause kg:id_204.
+kg:id_205 rdfs:label "議第35号の条例改正"@ja.
+kg:id_205 rdf:type cls:c_1665.
+kg:id_206 rdfs:label "コンビニエンスストア等に設置された多機能端末機による証明書の交付手数料を引き下げること"@ja.
+kg:id_206 rdf:type cls:c_1649.
+kg:id_205 prop:contermeasure kg:id_206.
+kg:id_207 rdfs:label "議第36号の条例改正"@ja.
+kg:id_207 rdf:type cls:c_1665.
+kg:id_208 rdfs:label "事業者による障がいのある人への合理的な配慮の提供が義務化されること"@ja.
+kg:id_208 rdf:type cls:c_1685.
+cls:c_1685 rdfs:label "配慮義務化"@ja.
+kg:id_207 prop:cause kg:id_208.
+kg:id_209 rdfs:label "議第37号の条例改正"@ja.
+kg:id_209 rdf:type cls:c_1665.
+kg:id_210 rdfs:label "児童発達支援センターの類型の一元化"@ja.
+kg:id_210 rdf:type cls:c_1686.
+cls:c_1686 rdfs:label "類型一元化"@ja.
+kg:id_209 prop:cause kg:id_210.
+kg:id_211 rdfs:label "保護者の就労支援を目的とした預かり時間延長"@ja.
+kg:id_211 rdf:type cls:c_1687.
+cls:c_1687 rdfs:label "預かり延長"@ja.
+kg:id_209 prop:cause kg:id_211.
+kg:id_212 rdfs:label "議第38号の条例改正"@ja.
+kg:id_212 rdf:type cls:c_1665.
+kg:id_213 rdfs:label "第9期介護保険事業計画の介護サービスの見込量に基づく介護保険料の改定"@ja.
+kg:id_213 rdf:type cls:c_1688.
+cls:c_1688 rdfs:label "保険料改定"@ja.
+kg:id_212 prop:cause kg:id_213.
+kg:id_214 rdfs:label "介護保険法施行令の一部改正に伴う保険料算定のための合計所得金額の計算方法の変更"@ja.
+kg:id_214 rdf:type cls:c_1689.
+cls:c_1689 rdfs:label "算定変更"@ja.
+kg:id_212 prop:cause kg:id_214.
+kg:id_215 rdfs:label "議第40号の条例改正"@ja.
+kg:id_215 rdf:type cls:c_1665.
+kg:id_216 rdfs:label "用地取得助成金の交付要件に労働者の賃金水準を追加するため"@ja.
+kg:id_216 rdf:type cls:c_1690.
+cls:c_1690 rdfs:label "要件追加"@ja.
+kg:id_215 prop:cause kg:id_216.
+kg:id_217 rdfs:label "議第41号の条例改正"@ja.
+kg:id_217 rdf:type cls:c_1665.
+kg:id_218 rdfs:label "消費税の対象となる一月未満の道路の占用に対し消費税相当額を加算するため"@ja.
+kg:id_218 rdf:type cls:c_1680.
+kg:id_217 prop:cause kg:id_218.
+kg:id_219 rdfs:label "議第42号の条例改正"@ja.
+kg:id_219 rdf:type cls:c_1665.
+kg:id_220 rdfs:label "消費税の対象となる一月未満の公園の占用及び公園の使用に対し消費税相当額を加算するため"@ja.
+kg:id_220 rdf:type cls:c_1680.
+kg:id_219 prop:cause kg:id_220.
+kg:id_221 rdfs:label "議第44号の認可"@ja.
+kg:id_221 rdf:type cls:c_1691.
+cls:c_1691 rdfs:label "認可"@ja.
+kg:id_222 rdfs:label "地方独立行政法人山形県酒田市病院機構が作成した中期目標を達成するための計画を認可すること"@ja.
+kg:id_222 rdf:type cls:c_1692.
+cls:c_1692 rdfs:label "計画認可"@ja.
+kg:id_221 prop:cause kg:id_222.
+kg:id_223 rdfs:label "さかた海鮮市場"@ja.
+kg:id_223 rdf:type cls:c_1693.
+cls:c_1693 rdfs:label "公設施設"@ja.
+kg:id_224 rdfs:label "使用者に長期かつ独占的に利用させること"@ja.
+kg:id_224 rdf:type cls:c_1694.
+cls:c_1694 rdfs:label "長期利用"@ja.
+kg:id_223 prop:contermeasure kg:id_224.
+kg:id_225 rdfs:label "産直たわわ"@ja.
+kg:id_225 rdf:type cls:c_1693.
+kg:id_225 prop:contermeasure kg:id_224.
+kg:id_226 rdfs:label "めんたま畑"@ja.
+kg:id_226 rdf:type cls:c_1693.
+kg:id_226 prop:contermeasure kg:id_224.
+kg:st_1 rdfs:label "多くの専門家"@ja.
+kg:st_1 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_1 prop:content "若い人特に女性の流出が人口減少の原因と指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "若年流出により地域の婚姻数が減ると指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "出生数減少が人口減少の要因と指摘"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "矢口明子市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_4 prop:content "全ての市民が働ける環境整備で生産年齢人口減少を補うべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "人口減少下でも安心して暮らせる仕組みづくりが必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "人口減少下でも市民の幸せを実現する市政を目指す"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "人口減少を緩やかにするため市民所得向上を重点化"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "若者が就きたい仕事をつくり人口減少抑制を図る"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "外貨獲得で地域経済を強化し人口減少対策につなげる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "ローカルSDGsの推進を重点化する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "産業基盤インフラ整備で人口減少対策を進める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "全ての市民が働ける環境整備を進める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "多様な市民が活躍できる支援を行う"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "保育介護制度を充実し就労継続を支える"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "ジェンダー平等意識の啓発を進める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "機械化とデジタル変革で人手不足を補う"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "移住定住と関係人口の増加に取り組む"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "人口減少下でも豊かに安心して暮らせるまちを目指す"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "多様な当事者の意見を施策に反映する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "若者カフェミーティングで若者の声を市政に反映する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "大学存続のため早期公立化を進める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "猛暑時の登下校安全のためスクールバスを運行する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "特別教室へのエアコン設置を進める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "支援充実のためスクールソーシャルワーカーを増員する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "教育と福祉の連携を強化し子ども支援を充実させる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "屋内スケート施設の本市設置を県に要望する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "県要望実現まで仮設リンク設置の調査を進める"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "若い世代や民間事業者を資金面で支えるコミュニティファンドを創設する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "IT企業集積と地元就職促進のため助成を拡充する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "多様な人材雇用と業務改善のセミナーを開く"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "働きやすい職場づくりに取り組む企業を支援する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "若手農業者支援で人材の呼び込みと定着を図る"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "オーガニックビレッジ宣言で持続可能な農業を進める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "交付金を活用し循環型農業の環境整備を進める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "高温と少雨が松くい虫被害増大の要因"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "倒木被害が農業施設で頻発している"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "伐倒駆除と薬剤防除で被害拡大を防ぐ"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "県外漁船誘致でスルメイカ水揚げ量確保を図る"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "子育て世代向けに移住情報発信を強化する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "移住後の暮らしをイメージできるツアーを行う"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "本市出身者との関係を深め関係人口を広げる"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "酒田DMO中心に戦略的プロモーションで誘客を進める"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "教育旅行誘致で観光消費額増加を図る"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "鉄道も活用しインバウンド向け発信とツアー造成を進める"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "複雑化した相談に対応する福祉総合相談窓口を設置する"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "障がい者への総合的専門的相談支援のためセンターを設置する"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "孤独孤立は様々な要因で引き起こされる"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "ひきこもり当事者や家族を支える団体活動を支援する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "民生委員児童委員確保のため活動費を引き上げる"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+kg:op_50 prop:content "地域包括支援センターの体制強化を進める"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "基金活用で介護保険料基準月額を引き下げる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "家事シェアと省力化でケア労働負担の軽減を図る"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "共生社会課を新設し相互理解の増進を図る"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "メタバース婚活で独身男女に出会いの機会を提供する"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "訪問支援事業の活用を促し家事育児支援を強化する"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "物価高騰下でも給食費の保護者負担を据え置く"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "ひとり親家庭や低所得世帯の利用負担を軽減する"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "経済状況で進学を諦めないよう受験費用を支援する"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "模擬試験費用支援で進路機会を確保する"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "有識者会議を設置し自殺対策施策を強化する"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+kg:op_61 prop:content "医療介護連携DXを支援し必要なサービス体制を構築する"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_2.
+kg:op_62 prop:content "看護学生支援を継続し市内就業を促進する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_2.
+kg:op_63 prop:content "民間サービス情報を整理し買物弱者に分かりやすく発信する"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_2.
+kg:op_64 prop:content "温暖化対策実行計画を策定し取組を促進する"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_2.
+kg:op_65 prop:content "ローカルSDGs推進室を新設し取組を促す"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_2.
+kg:op_66 prop:content "地域猫活動への助成で猫の繁殖抑制と生活環境改善を図る"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_2.
+kg:op_67 prop:content "避難者対応を検証し配置や備蓄を見直す"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_2.
+kg:op_68 prop:content "複数メディアへ一斉配信できるシステムで災害対応を強化する"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_2.
+kg:op_69 prop:content "待遇改善で消防団員数を確保し防災体制を維持する"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_2.
+kg:op_70 prop:content "管理不全な空き家は生活環境と財産に悪影響を及ぼす"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_2.
+kg:op_71 prop:content "財産管理人制度活用で老朽危険空き家の解消を進める"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_2.
+kg:op_72 prop:content "旧耐震空き家解体と新築支援で耐震化を促進する"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_2.
+kg:op_73 prop:content "条例制定と窓口設置で犯罪被害者支援を行う"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_2.
+kg:op_74 prop:content "高齢化で大型獣類捕獲従事者が減少している"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_2.
+kg:op_75 prop:content "箱わなセンサー拡充で従事者負担を軽減する"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_2.
+kg:op_76 prop:content "狩猟免許取得助成で免許保持者を増やす"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_2.
+kg:op_77 prop:content "利用実態把握のため高校生などへ調査を行う"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_2.
+kg:op_78 prop:content "交通政策顧問を配置し公共交通の維持拡充を図る"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_2.
+kg:op_79 prop:content "利用者ニーズを踏まえ船舶更新調査を始める"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_2.
+kg:op_80 prop:content "大雪で飛島地区に倒木が発生した"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_2.
+kg:op_81 prop:content "道路や避難路の安全確保のため倒木除去を行う"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_2.
+kg:op_82 prop:content "高速道路の早期開通を国と県に働きかける"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_2.
+kg:op_83 prop:content "新庄酒田道路の事業化を働きかける"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_2.
+kg:op_84 prop:content "駅東広場整備と駐輪場更新で利便性を高める"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_2.
+kg:op_85 prop:content "観光バス駐車場整備でいろは蔵パークへの誘客につなげる"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_2.
+kg:op_86 prop:content "公共機関集約を含めたまちづくりを官民連携で進める"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_2.
+kg:op_87 prop:content "さかたコンポの機能拡充でオンライン市役所を進める"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_2.
+kg:op_88 prop:content "水道広域化企業団の設立と事業開始を目指す"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_2.
+kg:op_89 prop:content "垂直統合の早期実現へ県と協議を進める"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_2.
+kg:op_90 prop:content "下水道施設係新設で統廃合を進める"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_2.
+kg:op_91 prop:content "老朽化で補修を要する道路橋が急増している"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_2.
+kg:op_92 prop:content "跨線橋の補修を進める"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_2.
+kg:op_93 prop:content "公共住宅長寿命化計画更新で維持管理費を縮減平準化する"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_2.
+kg:op_94 prop:content "公園の松くい虫被害拡大防止のため伐倒駆除を継続する"@ja.
+kg:op_94 rdf:type cls:opinion.
+kg:op_94 prop:speaker kg:st_2.
+kg:op_95 prop:content "市民と職員双方に優しい窓口を実現するため窓口改革を進める"@ja.
+kg:op_95 rdf:type cls:opinion.
+kg:op_95 prop:speaker kg:st_2.
+kg:op_96 prop:content "コンビニ交付手数料引下げで利便性を高める"@ja.
+kg:op_96 rdf:type cls:opinion.
+kg:op_96 prop:speaker kg:st_2.
+kg:op_97 prop:content "市民意見を踏まえて公共施設再編に取り組む"@ja.
+kg:op_97 rdf:type cls:opinion.
+kg:op_97 prop:speaker kg:st_2.
+kg:op_98 prop:content "人事制度改革室を新設し制度全般の改革を進める"@ja.
+kg:op_98 rdf:type cls:opinion.
+kg:op_98 prop:speaker kg:st_2.
+kg:op_99 prop:content "事業見直しやデジタル化で総人件費抑制に努める"@ja.
+kg:op_99 rdf:type cls:opinion.
+kg:op_99 prop:speaker kg:st_2.
+kg:op_100 prop:content "統計係設置でデータに基づく政策立案を強化する"@ja.
+kg:op_100 rdf:type cls:opinion.
+kg:op_100 prop:speaker kg:st_2.
+kg:op_101 prop:content "ふるさと納税や広告収入未利用財産売却で歳入確保を図る"@ja.
+kg:op_101 rdf:type cls:opinion.
+kg:op_101 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "このような急激な人口減少の原因は、若い人、特に男性よりも女性のほうが多く都会に出て行くことにより"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地方都市、つまりその地域における婚姻数が減り"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "生まれる子どもの数が減っていることであると多くの専門家から指摘されています"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "第二に、生産年齢人口の減少を補うために、働きたいと考える全ての市民が働くことのできる環境を整備することです"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "人口が減少したとしても安心して地域コミュニティで暮らせる仕組みを整えることに取り組みます"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "第四に、人口減少下においても、市民の幸せ（ウェルビーイング）を実現する酒田市にすることです"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "第一に、人口減少を緩やかにするために、市民所得の向上を図ることです"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "具体的には、産業を振興し、若い人が就きたいと思うような仕事を創出すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "観光や移輸出など外貨を獲得すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "ローカルＳＤＧｓに資すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "産業の基盤となるインフラを整備することなどに取り組みます"@ja.
+<< kg:id_5 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "第二に、生産年齢人口の減少を補うために、働きたいと考える全ての市民が働くことのできる環境を整備することです"@ja.
+<< kg:id_5 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "男性だけでなく女性も、高齢者も、障がいのある方も、外国籍の方も、社会で活躍できるよう支援すること"@ja.
+<< kg:id_5 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "仕事と家庭の両立を可能にする保育・介護などの制度を充実させ"@ja.
+<< kg:id_5 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "ジェンダー平等意識を啓発すること"@ja.
+<< kg:id_5 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "機械にできる仕事は機械に任せ、人間は人間にしかできない仕事に専念するためのデジタル変革を進めること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "移住者・定住者や関係人口を増やすことなどに取り組みます"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "第三に、人口が減少したとしても、豊かに安心して暮らせるまちを創ることです"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "若者・女性・障がい者などの意見を施策に反映すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "若者の意見を市長が直接聴く場として、若者カフェミーティングを開催し、施策に若者の意見を反映していきます"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "東北公益文科大学を存続させるため、設立団体である山形県、庄内２市３町が協力し、早期の公立化に向けた取組を進めます"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "夏の猛暑下における登下校時の安全確保のためスクールバスを運行するとともに"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "小中学校の特別教室へのエアコン設置を計画的に進めます"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "スクールソーシャルワーカーを１名増員し、家庭環境などに問題を抱える子どもに対し適切な支援が行き届くよう"@ja.
+<< kg:id_29 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "教育、福祉部門の連携を強化します"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "屋内スケート施設については、山形県に対して、本市への設置を粘り強く要望します"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "山形県への要望が実現するまでの間、暫定的に利用できる仮設リンクを低コストで設置する施設の調査を進めます"@ja.
+<< kg:id_35 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "地域課題の解決などに取り組む若い世代や民間事業者を資金面でサポートするコミュニティファンドを創設します"@ja.
+<< kg:id_37 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "地元就職を促進するため、情報サービス業などの賃借型立地を誘導する助成金を拡充するとともに"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "地元企業の人材確保と労働生産性の向上等を図るため、若者、高齢者、障がい者、外国人の雇用や業務改善などに関する企業向けセミナーを開催します"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "誰もが働きやすい職場づくりに取り組む市内企業に対して、酒田市一般事業主行動計画策定奨励金を支給するなどの支援を引き続き行います"@ja.
+<< kg:id_43 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "本市への人材の呼び込みと定着を図るため、経営開始資金などを助成します"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "オーガニックビレッジ宣言を行うとともに"@ja.
+<< kg:id_45 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "みどりの食料システム戦略推進交付金を活用し、持続可能な循環型農業の実現に向けた環境整備を行います"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "夏季の高温や少雨の影響により松くい虫被害が増大し"@ja.
+<< kg:id_48 prop:effect kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "ビニールハウスなど農業施設への倒木被害が頻発していることから"@ja.
+<< kg:id_48 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "伐倒駆除及び薬剤防除により被害の拡大を防止します"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "県外漁船の誘致によるスルメイカの安定的な水揚げ量確保をはじめ"@ja.
+<< kg:id_54 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "子育て世代をターゲットとして、移住に関する情報発信を強化するとともに"@ja.
+<< kg:id_54 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "子育て世帯が本市での暮らしをイメージできるようなツアー事業を実施します"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "本市出身者等とつながりを持ち、その関係性を深めることにより、まちづくりに参画できる戦略・仕組みをつくります"@ja.
+<< kg:id_59 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "一般財団法人酒田ＤＭＯが観光地域づくりの中心となり、マーケティングに基づく戦略的なプロモーションや地域資源を活用した観光プログラムによる誘客"@ja.
+<< kg:id_59 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "国内外からの教育旅行の誘致など、観光消費額を増加させる取組を進めます"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "インバウンド向けの情報発信、プロモーション及びツアー造成等に取り組み、鉄道を活用したインバウンド誘客を推進します"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "福祉総合相談窓口は、相談内容の複雑化や複合化に対応するため、包括的な支援体制の充実を図るものです"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "基幹相談支援センターは、障がい者への総合的・専門的な相談支援の実施や障がい者の権利擁護・虐待の防止、相談機関との連携強化などを担います"@ja.
+<< kg:id_68 prop:cause kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "様々な要因によって引き起こされる社会的な孤独や孤立"@ja.
+<< kg:id_68 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "ひきこもりの状態にある方やその家族からの相談や居場所づくりに取り組む団体の活動を支援します"@ja.
+<< kg:id_71 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "民生委員・児童委員の充足を図るため、１人当たりの活動費を引き上げます"@ja.
+<< kg:id_73 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "高齢者が住み慣れた地域で安心して生活を継続できるよう、日常生活圏域を単位とした地域包括支援センターの体制や機能の強化に向けて、地域や事業者との話合いを進めます"@ja.
+<< kg:id_75 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "介護給付費準備基金を活用して、第８期に続き、２期連続で基準月額を引き下げます"@ja.
+<< kg:id_77 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "家事シェア及び家事の省力化につながる取組を行い、家庭における家事・育児などのケア労働の負担軽減を図ります"@ja.
+<< kg:id_79 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "市民部に新たに設置する共生社会課で一体的に担うことにより、国籍や性別などの属性にとらわれず相互理解の増進を図り、多様性と人権を尊重する共生社会づくりを推進します"@ja.
+<< kg:id_81 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "結婚を望む独身男女に出会いの機会を提供するため、婚活スタイルの一つとして注目されているインターネット上の仮想空間であるメタバース内で、自分の分身であるアバターを使って話しながら婚活するメタバース婚活を、山形県、庄内２市３町が連携して実施します"@ja.
+<< kg:id_83 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "家事や子育てに対して不安や負担を抱えた家庭、また、妊産婦やヤングケアラー等がいる家庭を訪問し、家事や育児の支援を行う子育て世帯訪問支援事業の利用を勧めるなど支援を強化します"@ja.
+<< kg:id_85 prop:contermeasure kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "子育て世帯の負担を軽減するため、物価高騰対応重点支援地方創生臨時交付金を活用し、小中学校の給食費に係る保護者負担額を据え置きます"@ja.
+<< kg:id_87 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "ファミリー・サポート・センターでは、ひとり親家庭や低所得世帯などの料金負担を軽減します"@ja.
+<< kg:id_89 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "家庭の経済状況により大学等への進学を諦めることなく、子どもが将来の目標に向かって進めるよう、低所得世帯などを対象とした大学等の受験費用の支援"@ja.
+<< kg:id_91 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "新たに中学３年生と高校３年生の模擬試験費用の支援を行います"@ja.
+<< kg:id_93 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "自殺対策に関する施策をより効果的に推進するため、有識者会議を新たに設置し、その意見を施策に反映します"@ja.
+<< kg:id_95 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "将来にわたり市民が必要な医療・介護サービスを受けられる体制を構築するため、日本海総合病院が行う医療・介護連携ＤＸ事業を支援します"@ja.
+<< kg:id_97 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "地域医療を支える看護人材を育成するため、酒田看護専門学校の学生への支援を引き続き実施し、市内での就業を促進します"@ja.
+<< kg:id_99 prop:contermeasure kg:id_100 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "買物弱者に対する支援については、宅配などの民間事業者のサービスを整理して、分かりやすい形で情報発信します"@ja.
+<< kg:id_101 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "酒田市地球温暖化対策実行計画、区域施策編を策定するとともに"@ja.
+<< kg:id_101 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "企画調整課にローカルＳＤＧｓ推進室を新設し、地球温暖化防止と地域循環共生圏形成に資する取組を促します"@ja.
+<< kg:id_104 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "飼い主のいない猫に不妊去勢手術を施し、元の場所に戻す活動を行う団体に対して助成を行い、猫の繁殖を抑制しながら、生活環境の改善を図ります"@ja.
+<< kg:id_106 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "令和６年能登半島地震の際の本市の一連の避難者対応について検証し、避難所連絡員等の配置や防災備蓄品の整備等について見直します"@ja.
+<< kg:id_108 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "緊急災害情報を複数メディアへ一斉配信できる防災情報一斉配信システムを導入し、迅速な情報伝達と効率化を図り、災害時の体制を強化します"@ja.
+<< kg:id_110 prop:contermeasure kg:id_111 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "消防団員の待遇を改善することにより、適正な消防団員数を確保し、防災体制の維持に努めます"@ja.
+<< kg:id_112 prop:effect kg:id_113 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "地域住民の生活環境・財産に悪影響を及ぼす管理不全な空き家"@ja.
+<< kg:id_112 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "財産管理人制度などの活用により、相続人が存在しない老朽危険空き家等の解消に努めます"@ja.
+<< kg:id_115 prop:contermeasure kg:id_116 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "昭和56年以前に建てられた空き家の解体と住宅の新築を支援することにより、住宅の耐震化を促進します"@ja.
+<< kg:id_117 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "犯罪被害者等支援条例を制定し、窓口をまちづくり推進課に設置し、犯罪被害に遭われた方の相談等の支援を行います"@ja.
+<< kg:id_119 prop:cause kg:id_120 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "熊などの大型獣類捕獲業務の従事者については、高齢化により減少傾向にあるため"@ja.
+<< kg:id_119 prop:contermeasure kg:id_121 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "箱わなセンサーの拡充による負担軽減に加え"@ja.
+<< kg:id_119 prop:contermeasure kg:id_122 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "狩猟免許取得などへの助成を行い、免許保持者を増やすことにより、有害鳥獣の捕獲体制を強化します"@ja.
+<< kg:id_123 prop:contermeasure kg:id_124 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "地域公共交通の維持、拡充を図るため、高校生などを対象にアンケート調査を実施するとともに"@ja.
+<< kg:id_123 prop:contermeasure kg:id_125 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "公共交通について識見を有する交通政策顧問を配置します"@ja.
+<< kg:id_126 prop:contermeasure kg:id_127 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "定期船とびしまについては、利用者のニーズを踏まえ、船舶の更新に向けた調査を開始します"@ja.
+<< kg:id_128 prop:cause kg:id_129 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "令和５年12月の大雪により発生した飛島地区の倒木"@ja.
+<< kg:id_128 prop:contermeasure kg:id_130 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "飛島地区の倒木を除去し、道路や遊歩道、避難路などの安全を確保します"@ja.
+<< kg:id_131 prop:contermeasure kg:id_132 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "日本海沿岸東北自動車道の遊佐象潟道路及び朝日温海道路の早期開通...国及び山形県に働きかけます"@ja.
+<< kg:id_131 prop:contermeasure kg:id_133 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "みちのくウエストラインを構成する新庄酒田道路の高屋～草薙間と立川～余目間の事業化に向けて、国及び山形県に働きかけます"@ja.
+<< kg:id_134 prop:contermeasure kg:id_135 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "駅東広場の整備を行い、駐輪場の更新など、駅周辺の利便性の向上を図ります"@ja.
+<< kg:id_136 prop:contermeasure kg:id_137 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "観光バス駐車場を整備し、誘客につなげます"@ja.
+<< kg:id_138 prop:contermeasure kg:id_139 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "公共機関などの集約を含めたまちづくりの方向性を官民連携してデザインしていきます"@ja.
+<< kg:id_140 prop:contermeasure kg:id_141 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "さかたコンポについては、道路水位情報の自動配信などの機能を拡充し、利用者の増加を図ります"@ja.
+<< kg:id_142 prop:contermeasure kg:id_143 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "本市、鶴岡市及び庄内町が運営する末端給水事業による企業団の令和７年度設立、令和８年度事業開始を目指し、作業を進めます"@ja.
+<< kg:id_142 prop:contermeasure kg:id_144 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "山形県庄内広域水道用水供給事業との垂直統合の早期実現に向けて、県との協議を進めます"@ja.
+<< kg:id_145 prop:contermeasure kg:id_146 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "工務課下水道施設係を新設し、酒田市下水道事業経営戦略に基づき、施設の統廃合による経費削減と管理の効率化に取り組みます"@ja.
+<< kg:id_147 prop:effect kg:id_148 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "老朽化により補修を必要とする道路橋が急速に増加している中で"@ja.
+<< kg:id_147 prop:contermeasure kg:id_149 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "東泉跨線橋及び浜田跨線橋の補修を進めます"@ja.
+<< kg:id_150 prop:contermeasure kg:id_151 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "酒田市公共住宅長寿命化計画を更新し、安全で快適な市営住宅などの安定的な確保や建物等の維持管理費の縮減と平準化を図ります"@ja.
+<< kg:id_152 prop:contermeasure kg:id_153 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_94;
+    prop:text-txt_contents "光ケ丘公園などの松くい虫被害に対し伐倒駆除を継続し、被害の拡大防止を図ります"@ja.
+<< kg:id_154 prop:contermeasure kg:id_155 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_95;
+    prop:text-txt_contents "総務省のモデル事業として窓口業務の改革に取り組み、利用する市民、事務を行う職員、双方にとって優しい市役所の窓口を実現します"@ja.
+<< kg:id_156 prop:contermeasure kg:id_157 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_96;
+    prop:text-txt_contents "市民の利便性向上などを図るため、コンビニ交付サービスを利用し、住民票など５種類の証明書を取得する場合の手数料を100円引き下げます"@ja.
+<< kg:id_158 prop:contermeasure kg:id_159 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_97;
+    prop:text-txt_contents "公共施設適正化懇談会を引き続き開催し、市民の意見を取り入れた上で、公共施設適正化実施方針に基づき、公共施設の再編に取り組みます"@ja.
+<< kg:id_160 prop:contermeasure kg:id_161 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_98;
+    prop:text-txt_contents "人事課に新設する人事制度改革室は、採用試験、人材育成、人事配置、人事評価などの見直しや地域貢献に資する副業制度の創設など、人事制度全般に係る改革に取り組みます"@ja.
+<< kg:id_162 prop:contermeasure kg:id_163 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_99;
+    prop:text-txt_contents "事業の見直し、任用形態の多様化、業務のデジタル化などにより、総人件費の抑制に努めます"@ja.
+<< kg:id_164 prop:contermeasure kg:id_165 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_100;
+    prop:text-txt_contents "企画調整課に統計係を置き、データを活用した合理的根拠に基づく課題抽出、政策立案の機能を強化します"@ja.
+<< kg:id_166 prop:contermeasure kg:id_167 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_101;
+    prop:text-txt_contents "個人版及び企業版のふるさと納税、ネーミングライツを含む新たな広告収入、未利用財産の売払いなどにより、歳入確保に努めます"@ja.
+<< kg:id_168 prop:contermeasure kg:id_169 >>
+    prop:text-txt_contents "所期の目的を達成したため、白崎資金調整基金を廃止するものであり"@ja.
+<< kg:id_170 prop:cause kg:id_171 >>
+    prop:text-txt_contents "所期の目的を達成したため、白崎資金調整基金を廃止するものであり"@ja.
+<< kg:id_172 prop:cause kg:id_173 >>
+    prop:text-txt_contents "市長所信表明をもとに、酒田市総合計画後期計画の行政経営方針を変更することから"@ja.
+<< kg:id_174 prop:cause kg:id_175 >>
+    prop:text-txt_contents "庄内砂丘地区農村地域防災減災事業及び備畑地区経営体育成基盤整備事業が完了したことに伴い"@ja.
+<< kg:id_174 prop:cause kg:id_176 >>
+    prop:text-txt_contents "庄内砂丘地区農村地域防災減災事業及び備畑地区経営体育成基盤整備事業が完了したことに伴い"@ja.
+<< kg:id_177 prop:cause kg:id_178 >>
+    prop:text-txt_contents "酒田港外港地区における公有水面埋立工事の竣功により、あらたに生じた土地を確認するため"@ja.
+<< kg:id_179 prop:cause kg:id_180 >>
+    prop:text-txt_contents "あらたに生じた土地等について、字の区域を変更するため"@ja.
+<< kg:id_181 prop:contermeasure kg:id_182 >>
+    prop:text-txt_contents "公有水面の埋立てについて、酒田港港湾管理者の長である山形県知事へ意見書を提出するため"@ja.
+<< kg:id_183 prop:cause kg:id_184 >>
+    prop:text-txt_contents "道路舗装の亀裂により相手方自転車が転倒し受傷した事故"@ja.
+<< kg:id_184 prop:effect kg:id_185 >>
+    prop:text-txt_contents "道路舗装の亀裂により相手方自転車が転倒し受傷した事故"@ja.
+<< kg:id_186 prop:cause kg:id_187 >>
+    prop:text-txt_contents "今回の補正は、主に歳入の増加や決算見込み等により生じた財源の基金への積立て"@ja.
+<< kg:id_186 prop:cause kg:id_188 >>
+    prop:text-txt_contents "ふるさと納税寄附金の増加見込みによる返礼品等の経費及びさかた応援基金積立金の増額"@ja.
+<< kg:id_186 prop:cause kg:id_189 >>
+    prop:text-txt_contents "決算見込みによる事業費の調整によるものであります"@ja.
+<< kg:id_190 prop:contermeasure kg:id_191 >>
+    prop:text-txt_contents "新型コロナウイルス感染症対応地方創生臨時交付金を活用して、18歳以下の児童を養育する世帯に対して児童１人当たり１万5,000円を給付するための経費の計上"@ja.
+<< kg:id_192 prop:cause kg:id_193 >>
+    prop:text-txt_contents "決算見込みにより生じた財源の駐車場整備基金への積立てに伴う補正"@ja.
+<< kg:id_194 prop:cause kg:id_195 >>
+    prop:text-txt_contents "消費税の対象となる行政財産の目的外使用に対し、消費税相当額を加算するため"@ja.
+<< kg:id_196 prop:contermeasure kg:id_197 >>
+    prop:text-txt_contents "消防団員の報酬を増額するとともに"@ja.
+<< kg:id_196 prop:cause kg:id_198 >>
+    prop:text-txt_contents "選挙における投票所の閉鎖時刻の繰上げを行うに当たり、投票管理者及び投票立会人の報酬額について従事時間に応じた報酬額に変更するため"@ja.
+<< kg:id_199 prop:cause kg:id_200 >>
+    prop:text-txt_contents "消防団員の定数、入団資格等を改めるため"@ja.
+<< kg:id_201 prop:cause kg:id_202 >>
+    prop:text-txt_contents "酒田市総合文化センター内に酒田市文化資料館光丘文庫を設置するため"@ja.
+<< kg:id_203 prop:cause kg:id_204 >>
+    prop:text-txt_contents "犯罪被害者等の支援に関する施策の基本となる事項を定めるため、新たに条例を制定するものであります"@ja.
+<< kg:id_205 prop:contermeasure kg:id_206 >>
+    prop:text-txt_contents "コンビニエンスストア等に設置された多機能端末機による証明書の交付手数料を引き下げ"@ja.
+<< kg:id_207 prop:cause kg:id_208 >>
+    prop:text-txt_contents "事業者による障がいのある人への合理的な配慮の提供が義務化されることに伴い"@ja.
+<< kg:id_209 prop:cause kg:id_210 >>
+    prop:text-txt_contents "児童福祉法の一部改正による児童発達支援センターの類型の一元化"@ja.
+<< kg:id_209 prop:cause kg:id_211 >>
+    prop:text-txt_contents "保護者の就労支援を目的とした預かり時間延長のため"@ja.
+<< kg:id_212 prop:cause kg:id_213 >>
+    prop:text-txt_contents "第９期介護保険事業計画の介護サービスの見込量に基づく介護保険料の改定"@ja.
+<< kg:id_212 prop:cause kg:id_214 >>
+    prop:text-txt_contents "介護保険法施行令の一部改正に伴う保険料算定のための合計所得金額の計算方法の変更"@ja.
+<< kg:id_215 prop:cause kg:id_216 >>
+    prop:text-txt_contents "用地取得助成金の交付要件に労働者の賃金水準を追加するため"@ja.
+<< kg:id_217 prop:cause kg:id_218 >>
+    prop:text-txt_contents "消費税の対象となる一月未満の道路の占用に対し、消費税相当額を加算するため"@ja.
+<< kg:id_219 prop:cause kg:id_220 >>
+    prop:text-txt_contents "消費税の対象となる一月未満の公園の占用及び公園の使用に対し、消費税相当額を加算するため"@ja.
+<< kg:id_221 prop:cause kg:id_222 >>
+    prop:text-txt_contents "地方独立行政法人山形県・酒田市病院機構が作成した中期目標を達成するための計画を認可することについて"@ja.
+<< kg:id_223 prop:contermeasure kg:id_224 >>
+    prop:text-txt_contents "さかた海鮮市場を使用者に長期かつ独占的に利用させるため"@ja.
+<< kg:id_225 prop:contermeasure kg:id_224 >>
+    prop:text-txt_contents "産直たわわを使用者に長期かつ独占的に利用させるため"@ja.
+<< kg:id_226 prop:contermeasure kg:id_224 >>
+    prop:text-txt_contents "めんたま畑を使用者に長期かつ独占的に利用させるため"@ja.
+}

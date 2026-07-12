@@ -1,0 +1,554 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00006> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "在来植物群落の消失面積"@ja.
+kg:id_1 rdf:type cls:c_120.
+cls:c_120 rdfs:label "植生消失"@ja.
+kg:id_2 rdfs:label "仮設ヤードの設置と移植先を自然裸地に設定したこと"@ja.
+kg:id_2 rdf:type cls:c_121.
+cls:c_121 rdfs:label "移植計画"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "移植が定着せず現在の在来植生を維持できない可能性"@ja.
+kg:id_3 rdf:type cls:c_122.
+cls:c_122 rdfs:label "植生維持困難"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "移植方法と数量的な具体計画を記載すること"@ja.
+kg:id_4 rdf:type cls:c_121.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "クロマツ林への影響"@ja.
+kg:id_5 rdf:type cls:c_123.
+cls:c_123 rdfs:label "森林影響"@ja.
+kg:id_6 rdfs:label "マツ材線虫病の罹病木の状況を調査に反映していないこと"@ja.
+kg:id_6 rdf:type cls:c_124.
+cls:c_124 rdfs:label "調査不足"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "風車設置後の影響の有無を比較評価できなくなること"@ja.
+kg:id_7 rdf:type cls:c_125.
+cls:c_125 rdfs:label "比較困難"@ja.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "関係機関の協力を得て被害状況の把握に努めること"@ja.
+kg:id_8 rdf:type cls:c_126.
+cls:c_126 rdfs:label "被害把握"@ja.
+kg:id_5 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "砂丘地形の改変"@ja.
+kg:id_9 rdf:type cls:c_127.
+cls:c_127 rdfs:label "地形改変"@ja.
+kg:id_10 rdfs:label "風車など大きな建造物の設置による風の流れの変化"@ja.
+kg:id_10 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風況変化"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "堆砂が継続して大きな地形変化が生じる可能性"@ja.
+kg:id_11 rdf:type cls:c_129.
+cls:c_129 rdfs:label "地形変化"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:id_12 rdfs:label "地形改変について定量的な事後評価を行うこと"@ja.
+kg:id_12 rdf:type cls:c_130.
+cls:c_130 rdfs:label "事後評価"@ja.
+kg:id_9 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "コアジサシへの影響"@ja.
+kg:id_13 rdf:type cls:c_6.
+cls:c_6 rdfs:label "鳥類影響"@ja.
+kg:id_14 rdfs:label "風車設置や工事および四輪駆動車などの進入"@ja.
+kg:id_14 rdf:type cls:c_131.
+cls:c_131 rdfs:label "工事車両"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "繁殖地として利用されなくなる可能性"@ja.
+kg:id_15 rdf:type cls:c_132.
+cls:c_132 rdfs:label "繁殖地放棄"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "飛来時期を正確に把握し工事時期を見直し事後調査を行うこと"@ja.
+kg:id_16 rdf:type cls:c_133.
+cls:c_133 rdfs:label "工事調整"@ja.
+kg:id_13 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "鳥類への影響"@ja.
+kg:id_17 rdf:type cls:c_6.
+kg:id_18 rdfs:label "風車の設置によるバードストライクや移動経路の遮断や生息地放棄"@ja.
+kg:id_18 rdf:type cls:c_134.
+cls:c_134 rdfs:label "風車設置"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "風車周辺からいなくなることや移動の障壁になること"@ja.
+kg:id_19 rdf:type cls:c_135.
+cls:c_135 rdfs:label "生息地放棄"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "鳥種ごとに個別に予測し継続的に評価すること"@ja.
+kg:id_20 rdf:type cls:c_136.
+cls:c_136 rdfs:label "個別評価"@ja.
+kg:id_17 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "バードストライクの累積的影響"@ja.
+kg:id_21 rdf:type cls:c_13.
+cls:c_13 rdfs:label "累積影響"@ja.
+kg:id_22 rdfs:label "県営事業と酒田市事業の調査結果を単純に足し合わせて評価していること"@ja.
+kg:id_22 rdf:type cls:c_137.
+cls:c_137 rdfs:label "評価手法"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "進入回数の過小評価による累積的影響の過小評価"@ja.
+kg:id_23 rdf:type cls:c_138.
+cls:c_138 rdfs:label "過小評価"@ja.
+kg:id_21 prop:effect kg:id_23.
+kg:id_24 rdfs:label "双方の調査データを持ち寄り6基前提で再評価すること"@ja.
+kg:id_24 rdf:type cls:c_139.
+cls:c_139 rdfs:label "再評価"@ja.
+kg:id_21 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "住民理解の不足"@ja.
+kg:id_25 rdf:type cls:c_140.
+cls:c_140 rdfs:label "住民理解不足"@ja.
+kg:id_26 rdfs:label "住民説明会だけでは地域の不安や意見への対応が十分でないこと"@ja.
+kg:id_26 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "住民の理解が十分得られないまま事業が進む懸念"@ja.
+kg:id_27 rdf:type cls:c_141.
+cls:c_141 rdfs:label "事業進行"@ja.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "住民や環境保全団体との対話と説明の機会を継続すること"@ja.
+kg:id_28 rdf:type cls:c_142.
+cls:c_142 rdfs:label "対話継続"@ja.
+kg:id_25 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "風車機種の選定"@ja.
+kg:id_29 rdf:type cls:c_143.
+cls:c_143 rdfs:label "機種選定"@ja.
+kg:id_30 rdfs:label "出力や風況などを総合的に勘案して従来型機種を想定したこと"@ja.
+kg:id_30 rdf:type cls:c_144.
+cls:c_144 rdfs:label "選定条件"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "バードストライク低減など環境配慮型機種の採用根拠が不明確であること"@ja.
+kg:id_31 rdf:type cls:c_145.
+cls:c_145 rdfs:label "根拠不明"@ja.
+kg:id_29 prop:effect kg:id_31.
+kg:id_32 rdfs:label "環境に配慮した新しい機種があれば検討すること"@ja.
+kg:id_32 rdf:type cls:c_146.
+cls:c_146 rdfs:label "機種検討"@ja.
+kg:id_29 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "在来海浜植生群落の消失率0.03%"@ja.
+kg:id_33 rdf:type cls:c_120.
+kg:id_34 rdfs:label "仮設工事用道路等の植生が完全に復元する前提で記載していること"@ja.
+kg:id_34 rdf:type cls:c_147.
+cls:c_147 rdfs:label "復元前提"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "元の群落に戻らず実際の消失面積を過小に見せる可能性"@ja.
+kg:id_35 rdf:type cls:c_138.
+kg:id_33 prop:effect kg:id_35.
+kg:id_36 rdfs:label "改変域も含めて表現し事後調査と環境監視を継続すること"@ja.
+kg:id_36 rdf:type cls:c_148.
+cls:c_148 rdfs:label "監視継続"@ja.
+kg:id_33 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "植生の復元"@ja.
+kg:id_37 rdf:type cls:c_149.
+cls:c_149 rdfs:label "植生復元"@ja.
+kg:id_38 rdfs:label "緑化計画や施肥の妥当性の詳細記述が不足していること"@ja.
+kg:id_38 rdf:type cls:c_150.
+cls:c_150 rdfs:label "計画不足"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "海浜植物の回復が難しく環境影響の回避につながらないおそれ"@ja.
+kg:id_39 rdf:type cls:c_151.
+cls:c_151 rdfs:label "復元困難"@ja.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "専門的知識を踏まえて具体的な植栽計画を検討し記載すること"@ja.
+kg:id_40 rdf:type cls:c_152.
+cls:c_152 rdfs:label "植栽計画"@ja.
+kg:id_37 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "猛禽類への影響評価"@ja.
+kg:id_41 rdf:type cls:c_153.
+cls:c_153 rdfs:label "猛禽類影響"@ja.
+kg:id_42 rdfs:label "県営の調査範囲との境界で調査範囲を区切っていること"@ja.
+kg:id_42 rdf:type cls:c_154.
+cls:c_154 rdfs:label "調査範囲"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "バードストライク等の予測に必要な情報が不足する懸念"@ja.
+kg:id_43 rdf:type cls:c_155.
+cls:c_155 rdfs:label "情報不足"@ja.
+kg:id_41 prop:effect kg:id_43.
+kg:id_44 rdfs:label "互いの調査データを共有して状況を把握すること"@ja.
+kg:id_44 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_41 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "コアジサシ保全措置の時期"@ja.
+kg:id_45 rdf:type cls:c_157.
+cls:c_157 rdfs:label "鳥類保全"@ja.
+kg:id_46 rdfs:label "繁殖が確認された場合に保全措置を行う記載が時点不明であること"@ja.
+kg:id_46 rdf:type cls:c_158.
+cls:c_158 rdfs:label "時期不明"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "工事開始後の対応では保全措置が遅れ実質的影響が出るおそれ"@ja.
+kg:id_47 rdf:type cls:c_159.
+cls:c_159 rdfs:label "対応遅延"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "工事前から県関係部署等と連携して配慮し立入制限等を進めること"@ja.
+kg:id_48 rdf:type cls:c_160.
+cls:c_160 rdfs:label "事前配慮"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:st_1 rdfs:label "横山委員"@ja.
+kg:st_1 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_1 prop:content "自然裸地が移植先として適切か疑問であり移植の定着は不確実なので具体的計画を示すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "移植だけでは元に戻るとは限らず在来植生維持の方法を明確にすべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "何の植物をどれくらい移植するかを含めた具体計画を示すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "事業者"@ja.
+kg:st_2 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_4 prop:content "緑化に関する具体的内容を今後もう少し踏み込んだ形で検討したい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "野堀委員"@ja.
+kg:st_3 rdfs:type cls:st_3.
+kg:op_5 prop:content "罹病木の有無を示さないと影響評価にならない"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "上木委員"@ja.
+kg:st_4 rdfs:type cls:st_3.
+kg:op_6 prop:content "現状比較ができないと風力発電の影響の有無を判断しにくい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:op_7 prop:content "関係機関の協力を得ながら材線虫病被害の状況把握に努める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "小杉委員"@ja.
+kg:st_5 rdfs:type cls:st_3.
+kg:op_8 prop:content "大きな建造物で風の流れが変わり砂丘へ影響が出る可能性がある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_5.
+kg:op_9 prop:content "年間6センチの堆砂でも長期には大きな地形変化になり得る"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "砂の堆積量などを数値で記録する事後評価を行うべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "防浪砂堤の監視を続け必要に応じ数値的な把握も行う"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "風車だけでなく車両進入など他要因も整理しないと影響評価できない"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "後藤委員"@ja.
+kg:st_6 rdfs:type cls:st_3.
+kg:op_13 prop:content "飛来初期に工事していると来させないことにつながる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_6.
+kg:op_14 prop:content "来なくなった場合に風力発電の影響か他要因かを把握する必要がある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "飛来時に工事があると繁殖の次の段階に進まないおそれがある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "5月からではなく飛来する4月も含めて工事停止時期を検討すべき"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:op_17 prop:content "専門家に相談しながら事後調査の方法や方向性を進めたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "鳥類被害はバードストライクだけでなく生息地破壊や障壁化も見るべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_6.
+kg:op_19 prop:content "鳥種ごとに異なる影響があるため一括せず個別にみるべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:op_20 prop:content "重要な種ごとにバードストライク以外も含め個別に予測している"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "鳥の移動を考慮せず数値を足すだけでは累積的影響の評価として不適切"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "鳥が範囲内に突然現れて消える前提となり進入回数を過小評価している"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "両方の調査データを6基の風車が建つ前提で計算し直すべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "酒田市事業者"@ja.
+kg:st_7 rdfs:type cls:st_1.
+kg:op_24 prop:content "双方のデータを確認整理して持ち寄り何ができるか検討したい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "池田委員"@ja.
+kg:st_8 rdfs:type cls:st_3.
+kg:op_25 prop:content "説明会を開いただけでは足りず地域の不安に丁寧に対応すべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_8.
+kg:op_26 prop:content "県のほうで一人歩きし住民理解が不十分なまま進むことを懸念する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_8.
+kg:op_27 prop:content "地元団体とも話し合いの場を持ち丁寧な説明を続けるべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "県営事業者"@ja.
+kg:st_9 rdfs:type cls:st_1.
+kg:op_28 prop:content "住民説明会や意見を踏まえ適切に対応して進めたい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_9.
+kg:op_29 prop:content "機会をとらえて市民に説明し意見交換していきたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_7.
+kg:op_30 prop:content "出力や風況などを総合的に勘案して現在の機種を想定した"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_9.
+kg:op_31 prop:content "系統連系 落雷対策 強風対策 保守体制 発電量などから選定した"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_7.
+kg:op_32 prop:content "新しい環境配慮型機種を考慮した上で従来型にした根拠が分からない"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_8.
+kg:op_33 prop:content "今後も環境に配慮した機種選定を検討すべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_8.
+kg:op_34 prop:content "より優れた仕様のものがあれば検討したい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_9.
+kg:op_35 prop:content "形などが大きく変わらない範囲で環境配慮型機種があれば検討する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_7.
+kg:op_36 prop:content "完全復元を前提にした0.03%という記載は踏み込み過ぎである"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "元の群落に戻らない可能性があり改変域を消失面積に加えて表現すべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "改変域を消失面積に加え移植で改善される表現に改めるべき"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "事後調査と環境監視で状況把握し必要なら追加調査も検討する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_7.
+kg:op_40 prop:content "施肥だけで良いように読める簡単な記述では不十分"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_8.
+kg:op_41 prop:content "施肥で余計なものが生える可能性がある"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "海浜植物の回復は難しいため専門知識なしでは適切な復元が難しい"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_8.
+kg:op_43 prop:content "専門家の知見を得て具体的な植栽計画を明確にすべき"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_8.
+kg:op_44 prop:content "今後適切に具体的な緑化計画を検討していく必要がある"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_7.
+kg:st_10 rdfs:label "東委員"@ja.
+kg:st_10 rdfs:type cls:st_3.
+kg:op_45 prop:content "県営側に営巣木があるのに調査範囲を区切った理由を確認すべき"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_10.
+kg:op_46 prop:content "調査範囲設定が予測評価に反映されるため妥当性確認が必要"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_10.
+kg:op_47 prop:content "県事業と互いに情報共有して営巣状況を把握している"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_7.
+kg:op_48 prop:content "確認された場合がいつなのか不明で工事開始後では遅い"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_10.
+kg:op_49 prop:content "工事が始まってからでは遅い"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_10.
+kg:op_50 prop:content "工事が始まる前から配慮し県関係部署や企業局と連携協議しながら進める"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "仮設ヤードは基本的に移植で対応するので、最終的な在来植物群落の消失面積は改変面積よりも少ないと判断されているのですが、移植対象先が自然裸地に設定されていて、自然裸地だということは、要は自然状態で何も生えていないということは、そこが移植先として適切かどうかということは、問題があると思うんですよね。移植したものが定着するかどうかというのはかなり不確定要素が高い"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "移植したものが定着するかどうかというのはかなり不確定要素が高いですし、それから改変したところも移植するから元に戻るのでちょっと減るだろうというのも、必ずそうなるとは限りません"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "何の植物をどれくらい、例えば移植するなら移植するということを、数量的な計画がかなり立ちやすいデータが出てきていると思うんです。ですので、それであればこの段階である程度、ここにこういう風に動かしますよという計画が立てられるのではないかと思います"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "その中に一本も材線虫病の罹病木が入っていないんですよ。当然、風車を作るんですから影響評価をするというのであれば、罹病木があるということを出しておかなければ、そのあと影響が出たよとなってしまう"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本当に風車が建ったあとに、何か今と違った状況が起きた場合に、何が原因で起こったことなのかということを、何かしら現状と比較検討しないと風力発電の影響があったかなかったか、言いにくくなると思う"@ja.
+<< kg:id_5 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "マツの材線虫病の被害につきましては、関係機関の御協力を頂きながら、状況の把握には努めてまいりたいという風に考えてございます"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "砂丘地であるということで、こういった大きな建造物ができると、その影響で風の流れなどが変わって、砂丘に影響が出るのではと注意していまして"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "１年間で６センチメートル溜まるとすると、10 年間で 60 センチメートル、20 年間で１メートル以上という数字になるわけです。結構影響が出る場合もあるのではないか"@ja.
+<< kg:id_9 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "風車ができた後の地形の改変がどうだったかというのを定量的に調べるためにきちんと事後評価をしたほうがいいのではないかと思います"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "四輪駆動車が入っていったり、波消しブロックの影響があったりとの記述もある。事後調査をする場合、どういうことが風力発電の影響によって起こったのかという因果関係を、事後調査によって把握できるのかどうか"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "もしそうではなくて、全く来なくなったりした場合に、風力発電が影響したのか、他のことが影響したのか、これをどのようにして掴もうとしているのか"@ja.
+<< kg:id_13 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "コアジサシが飛来するのは４月っていうのが、環境省のコアジサシの説明の中には入っているんですね。最初にきた時に工事をしていたら、５月以降やらないと言っても、来させないということにつながるので、もう少し前から、飛来したときから止めたほうがいい"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "バードストライクというのは一つありますけれど、そのほかに、生息地を破壊する。それから風車周辺からいなくなる、生息地放棄。バードストライク、そういう事故ではないんだけれども、きっかけとなるかもしれない"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "風車周辺からいなくなる、生息地放棄。...移動の障壁になると。１基であれば問題ないものが、重なることによってそういうのがあって、その影響。それが動物において違う"@ja.
+<< kg:id_17 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "重要な種、種類ごとに供用時の影響、バードストライク以外にも、騒音とかブレードの回転による影響とか、移動経路の遮断の阻害などの影響という形で、１種類ずつ個別に予測をしている"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "累積的影響の評価の仕方は、結局、どれも足し算をしているだけで、...特に鳥に対する影響は、鳥が動くので、...今回県のほうで調査をした調査データを県の風車に当る確率と、それから酒田市が調査したデータがあって、酒田市の風車に当る確率をただ足しただけでは、結局、バードストライクの正しい評価にはならない"@ja.
+<< kg:id_21 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "この予測の仕方というのは、あたかも調査範囲の中に突如、鳥が出現して、突如いなくなる、ということを前提に予測をしているので、そうすると要は進入回数を過小評価する形になるんですね"@ja.
+<< kg:id_21 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "本来であれば両方の調査データを６基の風車が建っているという状態で計算して、それを足し合わせるという形にすべきなのではないか"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "事業者の見解としては住民説明会を６回開いているから、理解してくれという形にしか受け取れない。地域の人の色んな不安があって、意見が出されていますので、もっと時間をかけて丁寧な説明を行う必要があるのかなと思いました"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "県のほうで一人歩きしながら進んでしまって、住民の理解が十分に得られないまま進むというのは、ちょっと、非常に心配なところがあります"@ja.
+<< kg:id_25 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_28;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "クロマツ林とか、海岸林で鳥類の観察会をしている団体とか、そういう関連した団体にも話し合いの場を持ったほうがいいのではないか"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_30;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "想定するにあたりましては、出力とか風況の状況とかですね、そういったものを総合的に勘案した結果として、今の機種を想定してアセスを進めた"@ja.
+<< kg:id_29 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "バードストライクの問題が世界中で問題になっていて、新しい機種がどんどん出ているはずなんです。...そういうのを考慮したうえで、やっぱりこっちにしたという根拠が良く分からない"@ja.
+<< kg:id_29 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_34;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "当然、仕様としてより優れたものがあれば、そういったものは検討しなければならないと思う"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "供用後の植物群落の消失面積が、タワー部分の面積である 0.03％のみと読めてしまう。これは、書き過ぎなのではないかと思う。完全に植生が回復することを前提の記述になっている"@ja.
+<< kg:id_33 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "元の群落に戻らないという可能性があり、結果的に改変されてしまうこともある"@ja.
+<< kg:id_33 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "植生の回復については、基本的に時間がかかるものだと認識しており、また、不確実性が高いということで、事後調査と環境監視を行うこととしている"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "ハマニンニク、コウボウムギ等の在来海浜植物による砂草植栽を実施するとともに、植栽後は施肥を行い、植物の生育を促進する。との簡単な記述になっている。施肥だけすれば良いように読めてしまう"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "海浜植物の回復は、難しいものなので、専門的な知識を持った方と協議を重ねて計画を練っていってほしい"@ja.
+<< kg:id_37 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_43;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "このようなことも含めて植栽計画というものを、専門的な知識を聞きながら、もう少し明確にしていくべきなのではないかと思う"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "県営の調査範囲との境界で終わってしまっている。この県営の調査範囲にオオタカの営巣木があるんですが、どうして、ここで調査範囲を区切っているのか"@ja.
+<< kg:id_41 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "この範囲で行った調査結果が、バードストライク等の予測に反映されていると思うので、なぜこのような調査範囲を設定したのか確認したい"@ja.
+<< kg:id_41 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "これらの情報は互いに共有されていて、それぞれの調査範囲には含めず、共有情報とさせてもらっていて、当然、状況は把握させてもらっている"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "工事実施箇所付近にコアジサシの繁殖が確認された場合は、作業員や作業車両が近付かないよう指導を行い、工事期間外も必要に応じて、立ち入りを制限するなどの措置を行うと記載されているんですが、「確認された場合」というのがいつなのか"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "工事が始まってからでは遅いと思うが、どうでしょうか"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "工事が始まる前から配慮して行います。当該地の管理者である県の関係部署や、山形県企業局とも連携・協議しながら判断し進めていきたい"@ja.
+}

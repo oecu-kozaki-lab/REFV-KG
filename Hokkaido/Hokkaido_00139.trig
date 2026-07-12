@@ -1,0 +1,207 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00139> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "リエネ松前風力発電所"@ja.
+kg:id_1 rdf:type cls:c_410.
+cls:c_410 rdfs:label "風力発電所"@ja.
+kg:id_2 rdfs:label "資源として風を利用すること"@ja.
+kg:id_2 rdf:type cls:c_16226.
+cls:c_16226 rdfs:label "風力利用"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "松前町の風"@ja.
+kg:id_3 rdf:type cls:c_16227.
+cls:c_16227 rdfs:label "風"@ja.
+kg:id_4 rdfs:label "冬に雪が舞ってホワイトアウトするほど町民の悩みのタネになる"@ja.
+kg:id_4 rdf:type cls:c_4611.
+cls:c_4611 rdfs:label "生活被害"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "風力発電を通じた地域活性化"@ja.
+kg:id_5 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_6 rdfs:label "災害時に既存の送配電網を活用して風力発電所の電力を届ける地域マイクログリッド構築"@ja.
+kg:id_6 rdf:type cls:c_8969.
+cls:c_8969 rdfs:label "地域電力網"@ja.
+kg:id_5 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "風という資源を生かした町のシンボルを目指すリエネウインドファーム松前の開園"@ja.
+kg:id_7 rdf:type cls:c_8271.
+cls:c_8271 rdfs:label "観光施設"@ja.
+kg:id_5 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "再エネ事業"@ja.
+kg:id_8 rdf:type cls:c_4057.
+cls:c_4057 rdfs:label "再エネ事業"@ja.
+kg:id_9 rdfs:label "まちの税収増に貢献する"@ja.
+kg:id_9 rdf:type cls:c_3013.
+cls:c_3013 rdfs:label "税収増"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "建設にあたって地元業者の仕事になる"@ja.
+kg:id_10 rdf:type cls:c_16228.
+cls:c_16228 rdfs:label "地域業務"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "新たな雇用が生まれる"@ja.
+kg:id_11 rdf:type cls:c_1113.
+cls:c_1113 rdfs:label "雇用創出"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "プレミアム・サマーフェスト"@ja.
+kg:id_12 rdf:type cls:c_16229.
+cls:c_16229 rdfs:label "地域イベント"@ja.
+kg:id_13 rdfs:label "イベント使用電力の一部を東急不動産が提供するポータブル蓄電池でまかなう"@ja.
+kg:id_13 rdf:type cls:c_15150.
+cls:c_15150 rdfs:label "蓄電池活用"@ja.
+kg:id_12 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "観光物産協会の新しい組織"@ja.
+kg:id_14 rdf:type cls:c_16230.
+cls:c_16230 rdfs:label "観光団体"@ja.
+kg:id_15 rdfs:label "統一したブランドロゴを学生に考えてもらう提案"@ja.
+kg:id_15 rdf:type cls:c_16231.
+cls:c_16231 rdfs:label "ブランド提案"@ja.
+kg:id_14 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "松前町スタケーションプロジェクト"@ja.
+kg:id_16 rdf:type cls:c_16232.
+cls:c_16232 rdfs:label "地域交流事業"@ja.
+kg:id_17 rdfs:label "学生が提案したデザインが特産品のパッケージデザインにも採用されている"@ja.
+kg:id_17 rdf:type cls:c_16233.
+cls:c_16233 rdfs:label "意匠採用"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "町内で発電した電気で町内の消費電力をまかなうRE100"@ja.
+kg:id_18 rdf:type cls:c_16234.
+cls:c_16234 rdfs:label "地域目標"@ja.
+kg:id_19 rdfs:label "発電や電力小売の知見を生かして町の目標達成に貢献する"@ja.
+kg:id_19 rdf:type cls:c_16235.
+cls:c_16235 rdfs:label "目標達成支援"@ja.
+kg:id_18 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "再エネを中心とした地域づくり"@ja.
+kg:id_20 rdf:type cls:c_2844.
+cls:c_2844 rdfs:label "地域づくり"@ja.
+kg:id_21 rdfs:label "町の主要産業の再エネを通じた振興に波及し地域経済が発展する"@ja.
+kg:id_21 rdf:type cls:c_14373.
+cls:c_14373 rdfs:label "地域経済発展"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "一般社団法人再生可能エネルギー地域活性協会FOURE"@ja.
+kg:id_22 rdf:type cls:c_16236.
+cls:c_16236 rdfs:label "地域活性団体"@ja.
+kg:id_23 rdfs:label "再エネ発電所のある地域の特産品などを返礼品としたふるさと納税を行う"@ja.
+kg:id_23 rdf:type cls:c_7208.
+cls:c_7208 rdfs:label "ふるさと納税"@ja.
+kg:id_22 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "一般社団法人再生可能エネルギー地域活性協会FOUREのふるさと納税"@ja.
+kg:id_24 rdf:type cls:c_7208.
+kg:id_25 rdfs:label "発電所所在地ではないエリアからも再エネ事業を支援できる"@ja.
+kg:id_25 rdf:type cls:c_1826.
+cls:c_1826 rdfs:label "事業支援"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:st_1 rdfs:label "東急不動産 風力発電事業開発部 松前事務所 布目海大さん"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "地域との共生と相互発展を目的に再エネ事業を進めている"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "松前町長 石山英雄さん"@ja.
+kg:st_2 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_2 prop:content "厄介だった風が資源となりまちの財産になるとは思わなかった"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "税収増に貢献すると見ている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "地元業者の仕事につながると見ている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "新たな雇用創出を期待している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "松前町商工会青年部 部長 西川典英さん"@ja.
+kg:st_3 rdfs:type cls:st_14.
+cls:st_14 rdfs:label "地域団体"@ja.
+kg:op_6 prop:content "風力発電の電気活用の相談が実現しブース出店でもイベントを盛り上げてくれた"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "一般社団法人北海道まつまえ観光物産協会 専務理事 松村忠司さん"@ja.
+kg:st_4 rdfs:type cls:st_109.
+cls:st_109 rdfs:label "観光団体"@ja.
+kg:op_7 prop:content "要望をくみ取り素晴らしい提案を実行までしてくれた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "発電や電力小売の知見で町の目標達成に貢献したい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "再エネを中心として地域経済が発展するモデルをつくりたい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "「リエネ松前風力発電所」が建設された理由は、資源として風を利用することだが"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "「10月に入ると風が強くなって、冬には雪が舞ってホワイトアウトするほどで、町民にとっては悩みのタネです。それが風力発電によって、資源にもなり、まちの財産になるとは考えもしませんでした"@ja.
+<< kg:id_5 prop:contermeasure kg:id_6 >>
+    prop:text-txt_contents "風力発電を通じた地域活性化の取り組みの1つとして、2023年2月には災害時に既存の送配電網を活⽤して⾵⼒発電所の電⼒を届ける「地域マイクログリッド構築」の設備導入が完了している"@ja.
+<< kg:id_5 prop:contermeasure kg:id_7 >>
+    prop:text-txt_contents "2023年9月には、「風」という資源を生かした町のシンボルを目指した「リエネウインドファーム松前」を開園する"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "「再エネ事業はまちの税収増にも貢献しますし"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "建設にあたっては地元業者の仕事にもなります"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "新たな雇用も生まれるのではないかと期待をしています"@ja.
+<< kg:id_12 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "青年部が主催する夏のビッグイベント「プレミアム・サマーフェスト」では、イベントで使用する電力の一部を東急不動産が提供するポータブル蓄電池でまかった"@ja.
+<< kg:id_14 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "「新しい組織になるなら統一したブランドロゴが欲しい」と考えていた松村専務理事の元へ、東急不動産から「学生に考えてもらったらどうか」という提案があった"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:text-txt_contents "東急不動産と株式会社学生情報センターが実施した『松前町スタケーションプロジェクト』では、学生が提案したデザインが特産品のパッケージデザインにも採用されている"@ja.
+<< kg:id_18 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "「まちとしても定めている目標として、町内で発電した電気で町内の消費電力をまかなう『RE100』があります。私たちには発電や電力小売の知見があるので、町の目標達成に貢献していきたいです"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "最終的には、町の主要産業の再エネを通じた振興にも波及していって、再エネを中心として地域経済が発展するようなモデルをつくりたいです"@ja.
+<< kg:id_22 prop:contermeasure kg:id_23 >>
+    prop:text-txt_contents "FOUREでは、再エネ発電所のある地域の特産品などを返礼品とした「ふるさと納税」を行っている"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:text-txt_contents "ふるさと納税という形を取ることにより、発電所所在地ではないエリアからも再エネ事業を支援できるような先進的な取り組みとなっている"@ja.
+}

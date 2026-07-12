@@ -1,0 +1,467 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00123> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "稲作の減収"@ja.
+kg:id_1 rdf:type cls:c_2523.
+cls:c_2523 rdfs:label "農業被害"@ja.
+kg:id_2 rdfs:label "8月中旬以降の日照不足"@ja.
+kg:id_2 rdf:type cls:c_322.
+cls:c_322 rdfs:label "日照不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "8月中旬の低温"@ja.
+kg:id_3 rdf:type cls:c_7284.
+cls:c_7284 rdfs:label "低温"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "5月下旬以降の高温"@ja.
+kg:id_4 rdf:type cls:c_602.
+cls:c_602 rdfs:label "高温"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "苗の根の生育を阻害するガスの発生"@ja.
+kg:id_5 rdf:type cls:c_7285.
+cls:c_7285 rdfs:label "有害ガス発生"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "7月の高温少雨"@ja.
+kg:id_6 rdf:type cls:c_1552.
+cls:c_1552 rdfs:label "高温少雨"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "台風等による強風"@ja.
+kg:id_7 rdf:type cls:c_3681.
+cls:c_3681 rdfs:label "強風"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "フェーン現象"@ja.
+kg:id_8 rdf:type cls:c_7286.
+cls:c_7286 rdfs:label "フェーン"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "大雨"@ja.
+kg:id_9 rdf:type cls:c_7287.
+cls:c_7287 rdfs:label "大雨"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "稲本体と根の活力の消耗"@ja.
+kg:id_10 rdf:type cls:c_4790.
+cls:c_4790 rdfs:label "生育不良"@ja.
+kg:id_1 prop:cause kg:id_10.
+kg:id_11 rdfs:label "7月末から10月までに発生した5つの台風による強風"@ja.
+kg:id_11 rdf:type cls:c_3681.
+kg:id_1 prop:cause kg:id_11.
+kg:id_12 rdfs:label "7月末から10月までに発生した5つの台風によるフェーン現象"@ja.
+kg:id_12 rdf:type cls:c_7286.
+kg:id_1 prop:cause kg:id_12.
+kg:id_13 rdfs:label "つや姫の減収"@ja.
+kg:id_13 rdf:type cls:c_2523.
+kg:id_14 rdfs:label "基準ふるい目幅が通常の1.85mmより大きい1.90mmを採用していること"@ja.
+kg:id_14 rdf:type cls:c_7288.
+cls:c_7288 rdfs:label "出荷基準"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "くず米が非常に多いこと"@ja.
+kg:id_15 rdf:type cls:c_7289.
+cls:c_7289 rdfs:label "規格外米"@ja.
+kg:id_13 prop:cause kg:id_15.
+kg:id_16 rdfs:label "今夏の異常気象"@ja.
+kg:id_16 rdf:type cls:c_2542.
+cls:c_2542 rdfs:label "異常気象"@ja.
+kg:id_17 rdfs:label "本市農業の基幹作物である稲作への大きな影響"@ja.
+kg:id_17 rdf:type cls:c_2523.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "農家収入の大きな減少"@ja.
+kg:id_18 rdf:type cls:c_603.
+cls:c_603 rdfs:label "収入減少"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "来年の水稲栽培に必要な農業用資材の購入への支障"@ja.
+kg:id_19 rdf:type cls:c_7290.
+cls:c_7290 rdfs:label "資材購入難"@ja.
+kg:id_1 prop:effect kg:id_19.
+kg:id_20 rdfs:label "生産者の意欲の低下"@ja.
+kg:id_20 rdf:type cls:c_6352.
+cls:c_6352 rdfs:label "意欲低下"@ja.
+kg:id_1 prop:effect kg:id_20.
+kg:id_21 rdfs:label "主食用米として販売する米の実数の減少"@ja.
+kg:id_21 rdf:type cls:c_7291.
+cls:c_7291 rdfs:label "出荷量減少"@ja.
+kg:id_1 prop:effect kg:id_21.
+kg:id_22 rdfs:label "米が集まらない現象"@ja.
+kg:id_22 rdf:type cls:c_7292.
+cls:c_7292 rdfs:label "集荷不足"@ja.
+kg:id_1 prop:effect kg:id_22.
+kg:id_23 rdfs:label "契約未達による地域の米の信用問題"@ja.
+kg:id_23 rdf:type cls:c_7293.
+cls:c_7293 rdfs:label "信用低下"@ja.
+kg:id_1 prop:effect kg:id_23.
+kg:id_24 rdfs:label "地域経済が回りにくくなることへの危惧"@ja.
+kg:id_24 rdf:type cls:c_6673.
+cls:c_6673 rdfs:label "地域経済停滞"@ja.
+kg:id_1 prop:effect kg:id_24.
+kg:id_25 rdfs:label "異常気象農作物被害"@ja.
+kg:id_25 rdf:type cls:c_604.
+cls:c_604 rdfs:label "農作物被害"@ja.
+kg:id_26 rdfs:label "異常気象農作物被害対策資金利子補給事業"@ja.
+kg:id_26 rdf:type cls:c_1855.
+cls:c_1855 rdfs:label "利子補給"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "無利子で運転資金を活用できる措置"@ja.
+kg:id_27 rdf:type cls:c_1541.
+cls:c_1541 rdfs:label "資金支援"@ja.
+kg:id_25 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "丈夫な苗づくり"@ja.
+kg:id_28 rdf:type cls:c_7294.
+cls:c_7294 rdfs:label "苗づくり"@ja.
+kg:id_1 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "土づくり肥料の散布"@ja.
+kg:id_29 rdf:type cls:c_2007.
+cls:c_2007 rdfs:label "土づくり"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "わらの分解促進"@ja.
+kg:id_30 rdf:type cls:c_7295.
+cls:c_7295 rdfs:label "わら分解"@ja.
+kg:id_1 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "生育状況に応じた追肥"@ja.
+kg:id_31 rdf:type cls:c_7296.
+cls:c_7296 rdfs:label "追肥"@ja.
+kg:id_1 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "水管理"@ja.
+kg:id_32 rdf:type cls:c_7297.
+cls:c_7297 rdfs:label "水管理"@ja.
+kg:id_1 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "つや姫の栽培マニュアルの見直し検討要望"@ja.
+kg:id_33 rdf:type cls:c_7298.
+cls:c_7298 rdfs:label "栽培指針見直し"@ja.
+kg:id_13 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "マニュアルに沿った栽培管理の徹底"@ja.
+kg:id_34 rdf:type cls:c_7299.
+cls:c_7299 rdfs:label "栽培管理徹底"@ja.
+kg:id_13 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "必要に応じたマニュアル見直し"@ja.
+kg:id_35 rdf:type cls:c_7298.
+kg:id_13 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "科学的データに基づく作業の省力化と合理化"@ja.
+kg:id_36 rdf:type cls:c_7300.
+cls:c_7300 rdfs:label "営農合理化"@ja.
+kg:id_1 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "ドローンや人工衛星によるセンシング技術を活用したスマート農業"@ja.
+kg:id_37 rdf:type cls:c_631.
+cls:c_631 rdfs:label "スマート農業"@ja.
+kg:id_1 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "庄内バイオ研修センターを活用した先進的な農業の推進"@ja.
+kg:id_38 rdf:type cls:c_7301.
+cls:c_7301 rdfs:label "栽培体系検討"@ja.
+kg:id_1 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "庄内地域全体の特性や意見を集約した地域に適した栽培体系の検討"@ja.
+kg:id_39 rdf:type cls:c_7302.
+cls:c_7302 rdfs:label "消費拡大"@ja.
+kg:id_1 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "消費拡大に向けた取り組み"@ja.
+kg:id_40 rdf:type cls:c_5145.
+cls:c_5145 rdfs:label "要望伝達"@ja.
+kg:id_1 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "庄内地域の自治体首長と連携して関係機関に地元の声を届けること"@ja.
+kg:id_41 rdf:type cls:c_2005.
+cls:c_2005 rdfs:label "複合経営"@ja.
+kg:id_1 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "農家所得の不安定"@ja.
+kg:id_43 rdfs:label "稲作だけではなく複合経営により農家所得を上げること"@ja.
+kg:id_42 prop:contermeasure kg:id_43.
+kg:st_1 rdfs:label "梶原宗明議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "減収の原因をきちんと把握することが重要と求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "減収の原因をきちんと把握することが重要と求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "丸山至市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_3 prop:content "異常気象が常態化するなら高品質で安定した収量を上げられる栽培管理を徹底すべきと考える"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "中里智子農林水産部長"@ja.
+kg:st_3 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_4 prop:content "根張りが弱かったため苗づくりの工夫を関係者と話し合いたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "異常気象に強い土づくりや栽培管理が必要と考える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "庄内北部に特徴的な現象として分析している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "庄内北部に特徴的な現象として分析している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "異常気象の影響が大きかったと認識している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "根張りが弱かったことも影響しており苗づくりの工夫が必要とみる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "酒田市・遊佐町地域で稲の体力を消耗させたと分析する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "酒田市・遊佐町地域で稲の体力を消耗させたと分析する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "栽培基準が内陸型ではないかとの声があり庄内が強く発言すべきと述べる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "つや姫をやめたいという人も出ており影響を調べるべきと求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "農家の実感としては不作ではなく凶作との声がある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "農家の収入が地域経済に及ぼす影響は非常に大きいと懸念する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "生産者の意欲をそぐことがないよう支援が必要と述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "生産者の意欲をそがないため無利子の運転資金措置を講じたと説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "実収と基準反収の差をきちんと精査して訴えるべきと求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "販売面でも大変になると懸念する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "契約に満たないと地域の米の信用問題にかかわると懸念する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "農家の収入減が消費や購買を冷やし地域経済に波及すると懸念する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "稲作農家のつなぎ資金の確保対策として必要な措置と評価する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "農業者が経営の維持安定に向けて取り組む際の負担軽減を図る措置と説明する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "しっかりと苗づくりの工夫を関係者と話し合いたい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "苗の初期生育確保に向けて重要と説明する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "根の生育を阻害するガスの発生を抑えるため重要と説明する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "異常気象への対応として特に重要と説明する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "異常気象への対応として特に重要と説明する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "栽培マニュアルや基準の見直しを求める声が上がっていると指摘する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "高品質で安定した収量のためまず栽培管理を徹底すべきと考える"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "必要であればマニュアルも見直されるべきと考える"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "本市の基幹産業である農業の持続的発展のため必要と考える"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "異常気象に強い土づくりや栽培管理につなげたいと考える"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "藤井教授の協力を得ながら先進的な農業を進めたいと述べる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "地域一体となり各機関に訴えるべきと求める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "地域一体となり各機関に訴えるべきと求める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "鶴岡市長や三川町長庄内町長遊佐町長と一緒に地元の声を届けたいと述べる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "ネギやアスパラや花卉の産地化に引き続き取り組みたいと述べる"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "その原因としてことしは、御指摘にもございましたけれども、８月中旬以降の日照不足と８月中旬の低温が登熟不良の一因として挙げられているところでございます。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "その原因としてことしは、御指摘にもございましたけれども、８月中旬以降の日照不足と８月中旬の低温が登熟不良の一因として挙げられているところでございます。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "また、日照不足以外にも５月下旬以降の高温により、水田に定植された苗の根の生育を阻害するガスの発生ですとか"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "５月下旬以降の高温により、水田に定植された苗の根の生育を阻害するガスの発生ですとか"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "７月の高温少雨ですとか、たび重なる台風等による強風、フェーン現象、そして大雨等によります稲本体と根の活力の消耗も大きく影響したものと考えられております。"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "７月の高温少雨ですとか、たび重なる台風等による強風、フェーン現象、そして大雨等によります稲本体と根の活力の消耗も大きく影響したものと考えられております。"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "７月の高温少雨ですとか、たび重なる台風等による強風、フェーン現象、そして大雨等によります稲本体と根の活力の消耗も大きく影響したものと考えられております。"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "７月の高温少雨ですとか、たび重なる台風等による強風、フェーン現象、そして大雨等によります稲本体と根の活力の消耗も大きく影響したものと考えられております。"@ja.
+<< kg:id_1 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "たび重なる台風等による強風、フェーン現象、そして大雨等によります稲本体と根の活力の消耗も大きく影響したものと考えられております。"@ja.
+<< kg:id_1 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "特に、庄内地方の中でも酒田市・遊佐町地域は、７月末から10月までに発生した５つの台風による強風やフェーン現象が、稲の体力を消耗させたのではないかと、このように分析をしております。"@ja.
+<< kg:id_1 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "特に、庄内地方の中でも酒田市・遊佐町地域は、７月末から10月までに発生した５つの台風による強風やフェーン現象が、稲の体力を消耗させたのではないかと、このように分析をしております。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "また、出荷基準についても、基準ふるい目幅が通常の1.85mmより大きい1.90mmを採用していることもくず米が多く出た要因であると、このように考えております。"@ja.
+<< kg:id_13 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "特につや姫はくず米と呼ばれる基準ふるい目幅サイズ以下のものが非常に多くて、これが373kgとなり、平成29年産の収量と比較すると、はえぬきで75kgの減収に対して、つや姫は140kgの大幅な減収となっているところでございます。"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "それにより、本市農業の基幹作物である稲作にも大きな影響を受けたものと思います。"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "その一方で、今回の異常気象による減収によりまして、農家収入が大きく減少している状況等を踏まえ"@ja.
+<< kg:id_1 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "来年の水稲栽培に必要な水稲の種子や肥料、農薬といった農業用資材の購入等に支障を来し、生産者の意欲をそぐことがないように"@ja.
+<< kg:id_1 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "来年の水稲栽培に必要な水稲の種子や肥料、農薬といった農業用資材の購入等に支障を来し、生産者の意欲をそぐことがないように"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "主食用米として販売する米の実数がぐっと下がるわけなんですよ。"@ja.
+<< kg:id_1 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "すると、今、販売するほうでは、今度米が集まらないという現象が実は起きています。"@ja.
+<< kg:id_1 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "その契約に満たないと、この地域のある意味米の信用問題にもかかわるということで"@ja.
+<< kg:id_1 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "そういったことになると、この地域の経済が回りにくくなるんではないかなと思います。"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "今回の利子補給事業は稲作農家、特に法人化等により大規模栽培している農家にはつなぎ資金の確保対策として必要な措置であると考えます。"@ja.
+<< kg:id_25 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今回補正予算の中で異常気象農作物被害対策資金利子補給事業、これを設定し、これにより無利子で運転資金を活用できるように措置をしたところでございます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "このような異常気象に対応するための対策といたしましては、まずは丈夫な苗づくりが重要でありまして"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "苗の初期生育確保に向けた土づくり肥料の散布"@ja.
+<< kg:id_1 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "根の生育を阻害するガスの発生を抑えるためのわらの分解促進"@ja.
+<< kg:id_1 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "そして生育状況に応じた追肥、水管理等が特に重要であると"@ja.
+<< kg:id_1 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "そして生育状況に応じた追肥、水管理等が特に重要であると"@ja.
+<< kg:id_13 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "12月３日に県知事とＪＡの組合長との意見交換の中で、つや姫の栽培マニュアルの見直し検討要望が伝えられたと"@ja.
+<< kg:id_13 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "まずはマニュアルに沿ってしっかり栽培管理が行われるように対策が話し合われているところでございます。"@ja.
+<< kg:id_13 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "必要であればマニュアルも見直されるべきであると、私はこのように考えております。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "科学的データに基づく作業の省力化、合理化やドローンですとか人工衛星によるセンシング技術も活用した米づくり、いわゆるスマート農業に取り組む必要があると"@ja.
+<< kg:id_1 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "ドローンですとか人工衛星によるセンシング技術も活用した米づくり、いわゆるスマート農業に取り組む必要があると"@ja.
+<< kg:id_1 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "藤井教授の協力を得ながら、今後、本市の大宮にあります庄内バイオ研修センターも活用して、先進的な農業を進めていきたいと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "本市のみならず庄内地域全体の特性、意見を集約して地域に適した栽培体系の検討や消費拡大に向けた取り組みを地域一体となり各機関に訴えるべきと考えます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "地域に適した栽培体系の検討や消費拡大に向けた取り組みを地域一体となり各機関に訴えるべきと考えます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "鶴岡市長さんですとか、三川、庄内、遊佐の３町長さんと一緒に関係機関にしっかりと地元の声を届けてまいりたいと"@ja.
+<< kg:id_42 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "農家の所得を安定する対策といたしましては、稲作だけではなく複合経営によりまして農家所得を上げていきたいと思っておりまして"@ja.
+}

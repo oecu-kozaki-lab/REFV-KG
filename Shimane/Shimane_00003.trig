@@ -1,0 +1,235 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00003> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "方法書説明会"@ja.
+kg:id_1 rdf:type cls:c_3027.
+cls:c_3027 rdfs:label "説明会"@ja.
+kg:id_2 rdfs:label "方法書段階のため調査してみないとわからないとする不明瞭な答えが多かったこと"@ja.
+kg:id_2 rdf:type cls:c_14084.
+cls:c_14084 rdfs:label "不明瞭回答"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "賛同の声よりも多くの不安と不満の声が上がった"@ja.
+kg:id_3 rdf:type cls:c_14085.
+cls:c_14085 rdfs:label "不安の声"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "住民との話し合いが平行線のままで終わった"@ja.
+kg:id_4 rdf:type cls:c_14086.
+cls:c_14086 rdfs:label "対話不成立"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "地域の住民や関係者から当会に多くの意見や質問が寄せられた"@ja.
+kg:id_5 rdf:type cls:c_92.
+cls:c_92 rdfs:label "意見提出"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電施設の整備"@ja.
+kg:id_6 rdf:type cls:c_1935.
+cls:c_1935 rdfs:label "施設整備"@ja.
+kg:id_7 rdfs:label "地形が改変する"@ja.
+kg:id_7 rdf:type cls:c_127.
+cls:c_127 rdfs:label "地形改変"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "開発行為"@ja.
+kg:id_8 rdf:type cls:c_14087.
+cls:c_14087 rdfs:label "開発行為"@ja.
+kg:id_9 rdfs:label "負荷流量により既存の市管理河川の流下能力を越える懸念"@ja.
+kg:id_9 rdf:type cls:c_14088.
+cls:c_14088 rdfs:label "治水懸念"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "下流の治水ダムの既存の放流量に上乗せとなる"@ja.
+kg:id_10 rdf:type cls:c_14089.
+cls:c_14089 rdfs:label "放流増加"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "濁水"@ja.
+kg:id_11 rdf:type cls:c_470.
+cls:c_470 rdfs:label "濁水"@ja.
+kg:id_12 rdfs:label "濾過膜閉塞により緩速濾過池が機能不能となり水道水を供給できなくなる"@ja.
+kg:id_12 rdf:type cls:c_2096.
+cls:c_2096 rdfs:label "断水"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "梅雨末期の集中豪雨や台風による豪雨"@ja.
+kg:id_13 rdf:type cls:c_1842.
+cls:c_1842 rdfs:label "豪雨"@ja.
+kg:id_14 rdfs:label "山腹崩壊を確認している"@ja.
+kg:id_14 rdf:type cls:c_14019.
+cls:c_14019 rdfs:label "山腹崩壊"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "脆弱な砂質土"@ja.
+kg:id_15 rdf:type cls:c_14090.
+cls:c_14090 rdfs:label "砂質土"@ja.
+kg:id_16 rdfs:label "降雨により地中の含水比が上昇すると固結状態が解放され浅層崩壊が発生する"@ja.
+kg:id_16 rdf:type cls:c_14091.
+cls:c_14091 rdfs:label "浅層崩壊"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "開発区域でしゃき土が露呈すること"@ja.
+kg:id_17 rdf:type cls:c_14092.
+cls:c_14092 rdfs:label "土壌露出"@ja.
+kg:id_18 rdfs:label "建設中の土砂災害や山腹崩壊による土石流"@ja.
+kg:id_18 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "下流域の治水対策を計画する"@ja.
+kg:id_19 rdf:type cls:c_9748.
+cls:c_9748 rdfs:label "治水対策"@ja.
+kg:id_8 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "開発行為による負荷流量"@ja.
+kg:id_20 rdf:type cls:c_14093.
+cls:c_14093 rdfs:label "負荷流量"@ja.
+kg:id_21 rdfs:label "下流の治水ダムへの上乗せに対する対策を取る"@ja.
+kg:id_21 rdf:type cls:c_14094.
+cls:c_14094 rdfs:label "放流対策"@ja.
+kg:id_20 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "濁度についての考えを示す"@ja.
+kg:id_22 rdf:type cls:c_580.
+cls:c_580 rdfs:label "濁水対策"@ja.
+kg:id_11 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "風力発電施設の設計"@ja.
+kg:id_23 rdf:type cls:c_6874.
+cls:c_6874 rdfs:label "施設設計"@ja.
+kg:id_24 rdfs:label "線状降水帯を考慮した降雨強度で設計する"@ja.
+kg:id_24 rdf:type cls:c_14095.
+cls:c_14095 rdfs:label "豪雨対応"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "具体的な対策をすることが必要"@ja.
+kg:id_25 rdf:type cls:c_14096.
+cls:c_14096 rdfs:label "災害対策"@ja.
+kg:id_18 prop:contermeasure kg:id_25.
+kg:st_1 rdfs:label "出雲・伯伎 神話の里と豊かな自然を守る会"@ja.
+kg:st_1 rdfs:type cls:st_106.
+cls:st_106 rdfs:label "住民団体"@ja.
+kg:op_1 prop:content "既存施設の運用実績や一般的な予測計算で答えられる質問にも不明瞭な回答が多かったと指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "説明会では賛同より不安と不満が多かったと述べる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "最後の説明会では質問と回答がかみ合わず平行線だったと指摘"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "説明会の結果として住民や関係者から多くの意見と質問が寄せられたと述べる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "開発による負荷流量で市管理河川の流下能力を超えることを懸念"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "開発行為による負荷流量が下流の治水ダム放流量に上乗せされることを問題視"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "下流の水源地で濁水により浄水機能が失われ断水につながると懸念"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "豪雨により毎年山腹崩壊が起きていると述べる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "この地域の脆弱な砂質土は降雨で浅層崩壊を起こしやすいと説明"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "開発区域でしゃき土が露呈し土砂災害や土石流が起こることを懸念"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "下流域の治水対策の計画とシミュレーション結果の共有を求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "下流ダムへの負荷増加に対する具体的対策を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "水源地への影響を踏まえ濁度対策の考え方を示すよう求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "近年の気象状況を踏まえ線状降水帯を考慮した設計が必要と主張"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "しゃき土露呈を踏まえ土砂災害と土石流への具体策が必要と述べる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "住民からの環境影響調査方法に関する質問に対して、実際には貴社の既存施設の運用実績や確立された一般的な予測計算から回答できると思われる質問についても、「方法書段階のため、調査してみないとわからない」とする合点のいかない不明瞭な答えが多かったことがその原因にございました。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "しかしながら、そのような状況の中で、貴社の方法書説明会に於いては賛同の声よりも、大変多くの不安と不満の声が多く上がったことは、貴社もご承知のことと存じます。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "安来市文化ホール・アルテピア大ホールにて行われた最後の説明会では、予定時間を大幅に過ぎても、住民との話し合いは質問と回答が上手くかみ合わず、平行線のままで終わりました。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "その結果、地域の住民や関係者より当会にも多くの意見や質問が寄せられました。"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:text-txt_contents "問 20） 風力発電施設の整備により「地形」が改変する面積はどの程度か？"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "開発行為による負荷流量により、既存の市管理河川の流下能力を越えるのではないか懸念がございます。"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "また開発行為による負荷流量は下流の治水ダムの既存の放流量に上乗せとなりますが、どのような対策を取られるのかをお教えください。"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "上水道の水源地が下流にございますが、濁水により濾過膜閉塞により、緩速濾過池が機能不能となり、水道水を供給できなくなると考えられます。"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "毎年、梅雨末期の集中豪雨や台風による豪雨により、山腹崩壊を確認しています。"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これは脆弱な砂質土のため、降雨により地中の含水比が上昇すると固結状態が解放され浅層崩壊が発可するというものです。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "開発区域には、この「しゃき土」が露呈することは確実であり、建設中の土砂災害や山腹崩壊による土石流の対策をすることが必要と考えます"@ja.
+<< kg:id_8 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "下流域の治水対策をどのように計画されるかお伺いいたます。開発行為による負荷流量により、既存の市管理河川の流下能力を越えるのではないか懸念がございます。シミュレーションとその結果についてご共有をお願いいたします。"@ja.
+<< kg:id_20 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "また開発行為による負荷流量は下流の治水ダムの既存の放流量に上乗せとなりますが、どのような対策を取られるのかをお教えください。"@ja.
+<< kg:id_11 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "濁水により濾過膜閉塞により、緩速濾過池が機能不能となり、水道水を供給できなくなると考えられます。濁度については如何様に考えていらっしゃるかお考えをお聞かせください。"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "昨今の状況からして、線上降水帯を考慮した降雨強度で設計すべきですが、貴社の考えを伺いますので、お教え下さい。"@ja.
+<< kg:id_18 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "建設中の土砂災害や山腹崩壊による土石流の対策をすることが必要と考えますが、その点について具体的な対策とご意見を伺いますので、お答えいただきますようお願いいたします。"@ja.
+}

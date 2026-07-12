@@ -1,0 +1,125 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00050> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "釧路湿原周辺で太陽光発電所の建設が相次いでいること"@ja.
+kg:id_1 rdf:type cls:c_14734.
+cls:c_14734 rdfs:label "太陽光発電所設置"@ja.
+kg:id_2 rdfs:label "釧路管内の市民団体が釧路市に要望書を提出"@ja.
+kg:id_2 rdf:type cls:c_8905.
+cls:c_8905 rdfs:label "要望書提出"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "太陽光発電所の設置"@ja.
+kg:id_3 rdf:type cls:c_14734.
+kg:id_4 rdfs:label "住民説明会の義務化"@ja.
+kg:id_4 rdf:type cls:c_14735.
+cls:c_14735 rdfs:label "説明会義務化"@ja.
+kg:id_3 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "法令順守の徹底"@ja.
+kg:id_5 rdf:type cls:c_14736.
+cls:c_14736 rdfs:label "法令順守"@ja.
+kg:id_3 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "自治体間の連携"@ja.
+kg:id_6 rdf:type cls:c_7582.
+cls:c_7582 rdfs:label "自治体連携"@ja.
+kg:id_3 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "釧路管内の自治体ごとに条例やガイドラインの整備状況が異なること"@ja.
+kg:id_7 rdf:type cls:c_14737.
+cls:c_14737 rdfs:label "制度差異"@ja.
+kg:id_3 prop:cause kg:id_7.
+kg:id_8 rdfs:label "環境保全施策を率先"@ja.
+kg:id_8 rdf:type cls:c_14738.
+cls:c_14738 rdfs:label "環境保全施策"@ja.
+kg:id_3 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "太陽光発電所の建設"@ja.
+kg:id_9 rdf:type cls:c_14734.
+kg:id_10 rdfs:label "建設を規制する条例案の策定"@ja.
+kg:id_10 rdf:type cls:c_14739.
+cls:c_14739 rdfs:label "規制条例策定"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "これ以上太陽光発電所が増える懸念"@ja.
+kg:id_11 rdf:type cls:c_14740.
+cls:c_14740 rdfs:label "増加懸念"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:st_1 rdfs:label "どうする道東・太陽光発電と暮らしを考える会"@ja.
+kg:st_1 rdfs:type cls:st_73.
+cls:st_73 rdfs:label "市民団体"@ja.
+kg:op_1 prop:content "設置事業者に住民説明会の義務化を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "設置事業者に法令順守の徹底を求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "自治体ごとに整備状況が異なるため自治体間の連携を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "道東の豊かな自然を次世代に残すため釧路市が環境保全施策を率先してほしい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "鶴間秀典釧路市長"@ja.
+kg:st_2 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_5 prop:content "これ以上太陽光発電所が増えないよう対応したい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "釧路で太陽光発電所がこれ以上増えないようにしたい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "釧路湿原周辺で太陽光発電所の建設が相次いでいることを受け、釧路管内の市民団体が4日、釧路市役所を訪れ、発電所の設置事業者に対し、住民説明会の義務化や法令順守の徹底などを求める要望書を鶴間秀典市長に手渡した。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "発電所の設置事業者に対し、住民説明会の義務化や法令順守の徹底などを求める要望書"@ja.
+<< kg:id_3 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "発電所の設置事業者に対し、住民説明会の義務化や法令順守の徹底などを求める要望書"@ja.
+<< kg:id_3 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "太陽光発電所の設置に関する条例やガイドラインの整備状況が釧路管内の自治体ごとに異なることから、自治体間の連携も求めている。"@ja.
+<< kg:id_3 prop:cause kg:id_7 >>
+    prop:text-txt_contents "太陽光発電所の設置に関する条例やガイドラインの整備状況が釧路管内の自治体ごとに異なることから、自治体間の連携も求めている。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "同会は「道東の豊かな自然を次世代に残していくためにも釧路市が環境保全施策を率先してほしい」と訴えた。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "発電所の建設を規制する条例案の策定を進める鶴間市長は「釧路にこれ以上、太陽光発電所が増えないように対応していきたい」と応じていた。"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "鶴間市長は「釧路にこれ以上、太陽光発電所が増えないように対応していきたい」と応じていた。"@ja.
+}

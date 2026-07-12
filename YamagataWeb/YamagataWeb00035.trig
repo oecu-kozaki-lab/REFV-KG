@@ -1,0 +1,189 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/YamagataWeb/00035> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "（仮称）栗子山風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "住人に広く説明会を開く"@ja.
+kg:id_2 rdf:type cls:c_94.
+cls:c_94 rdfs:label "説明会開催"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "地域住民の無視"@ja.
+kg:id_3 rdf:type cls:c_13313.
+cls:c_13313 rdfs:label "住民軽視"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "米沢の子供の未来への悪影響"@ja.
+kg:id_4 rdf:type cls:c_13314.
+cls:c_13314 rdfs:label "将来への悪影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "豊かな自然への悪影響"@ja.
+kg:id_5 rdf:type cls:c_13315.
+cls:c_13315 rdfs:label "自然環境への悪影響"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電"@ja.
+kg:id_6 rdf:type cls:c_999.
+cls:c_999 rdfs:label "風力発電"@ja.
+kg:id_7 rdfs:label "環境破壊"@ja.
+kg:id_7 rdf:type cls:c_13226.
+cls:c_13226 rdfs:label "環境破壊"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "健康被害"@ja.
+kg:id_8 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "騒音"@ja.
+kg:id_9 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_6 prop:effect kg:id_9.
+kg:id_10 rdfs:label "低周波問題"@ja.
+kg:id_10 rdf:type cls:c_13316.
+cls:c_13316 rdfs:label "低周波被害"@ja.
+kg:id_6 prop:effect kg:id_10.
+kg:id_6 prop:cause kg:id_7.
+kg:id_11 rdfs:label "市民の声を高める"@ja.
+kg:id_11 rdf:type cls:c_13317.
+cls:c_13317 rdfs:label "市民運動"@ja.
+kg:id_6 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "風のメリットを知る"@ja.
+kg:id_12 rdf:type cls:c_13318.
+cls:c_13318 rdfs:label "利点の周知"@ja.
+kg:id_6 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "渡り鳥への影響"@ja.
+kg:id_13 rdf:type cls:c_13319.
+cls:c_13319 rdfs:label "鳥類への悪影響"@ja.
+kg:id_6 prop:effect kg:id_13.
+kg:id_14 rdfs:label "JR東日本エネルギー開発"@ja.
+kg:id_14 rdf:type cls:c_2246.
+cls:c_2246 rdfs:label "事業者"@ja.
+kg:id_15 rdfs:label "地域住民との乖離"@ja.
+kg:id_15 rdf:type cls:c_13320.
+cls:c_13320 rdfs:label "地域住民との乖離"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:st_1 rdfs:label "米沢の子供の未来と豊かな自然を考える会"@ja.
+kg:st_1 rdfs:type cls:st_73.
+cls:st_73 rdfs:label "市民団体"@ja.
+kg:op_1 prop:content "住民への広い説明会開催を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地域住民が徹底的に無視されていると批判"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "子供の未来への影響を懸念"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "自然環境への影響を懸念"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "学習会参加者"@ja.
+kg:st_2 rdfs:type cls:st_74.
+cls:st_74 rdfs:label "参加者"@ja.
+kg:op_5 prop:content "風力発電の効果より環境破壊を懸念する声が多い"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "健康被害を懸念する声がある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "騒音を懸念する声がある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "低周波問題を懸念する声がある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "風力発電が生活環境破壊やバードストライクや土砂災害を引き起こす懸念がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "事業化阻止へ向け市民の声を高める必要がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "風力発電のメリットの周知も必要だとする意見がある"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "渡り鳥への影響を心配する意見がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "掲げる理念と実際の対応が真逆だと批判"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "住人に広く説明会を開いてほしいという要請を、我々から、市から、県からとお願いしている"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地域住民は徹底無視。寄り添う姿勢は皆無です。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "米沢の子供の未来と豊かな自然を考える会"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "米沢の子供の未来と豊かな自然を考える会"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "Q３．風力発電において、何が気がかりですか？（複数回答可） ①環境破壊（生活環境破壊・バードストライク・土砂災害）・・・9"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "②健康被害・・・7"@ja.
+<< kg:id_6 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "③騒音・・・4"@ja.
+<< kg:id_6 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "④低周波問題・・・5"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "①環境破壊（生活環境破壊・バードストライク・土砂災害）"@ja.
+<< kg:id_6 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "とにかく市が稼働できなくなるまで市民の声を高める必要があるのではないか。"@ja.
+<< kg:id_6 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "メリットはわかりますが、「風のメリットを知りたいです。又親は光設備が何々」"@ja.
+<< kg:id_6 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "健康被害や渡り鳥がズタズタれていきますが未然だけでなくイオタマ地区全体の問題だと思います。"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "JR東日本エネルギー開発の会社の理念は、「地域の皆さまとともに」です。掲げている理念と実際は真逆。"@ja.
+}

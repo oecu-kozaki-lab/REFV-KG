@@ -1,0 +1,1183 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00108> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "ニート・ひきこもりの実態把握の難しさ"@ja.
+kg:id_1 rdf:type cls:c_6355.
+cls:c_6355 rdfs:label "実態把握困難"@ja.
+kg:id_2 rdfs:label "親が子供の将来のことや世間体から隠す傾向"@ja.
+kg:id_2 rdf:type cls:c_6356.
+cls:c_6356 rdfs:label "家族の隠蔽"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "ひきこもり"@ja.
+kg:id_3 rdf:type cls:c_2121.
+cls:c_2121 rdfs:label "ひきこもり"@ja.
+kg:id_4 rdfs:label "障がい"@ja.
+kg:id_4 rdf:type cls:c_6357.
+cls:c_6357 rdfs:label "障害"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "精神的な疾患"@ja.
+kg:id_5 rdf:type cls:c_6358.
+cls:c_6358 rdfs:label "精神疾患"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "人間関係がうまくいかないこと"@ja.
+kg:id_6 rdf:type cls:c_6359.
+cls:c_6359 rdfs:label "人間関係不調"@ja.
+kg:id_3 prop:cause kg:id_6.
+kg:id_7 rdfs:label "進学できないことからの挫折感"@ja.
+kg:id_7 rdf:type cls:c_6360.
+cls:c_6360 rdfs:label "挫折感"@ja.
+kg:id_3 prop:cause kg:id_7.
+kg:id_8 rdfs:label "就労ができないことからの挫折感"@ja.
+kg:id_8 rdf:type cls:c_6360.
+kg:id_3 prop:cause kg:id_8.
+kg:id_9 rdfs:label "不登校"@ja.
+kg:id_9 rdf:type cls:c_2653.
+cls:c_2653 rdfs:label "不登校"@ja.
+kg:id_3 prop:cause kg:id_9.
+kg:id_10 rdfs:label "人間関係が良好に保てないこと"@ja.
+kg:id_10 rdf:type cls:c_6359.
+kg:id_3 prop:cause kg:id_10.
+kg:id_11 rdfs:label "新しい環境になじめないこと"@ja.
+kg:id_11 rdf:type cls:c_6361.
+cls:c_6361 rdfs:label "環境不適応"@ja.
+kg:id_3 prop:cause kg:id_11.
+kg:id_12 rdfs:label "若者就職支援センター利用者の悩み"@ja.
+kg:id_12 rdf:type cls:c_6362.
+cls:c_6362 rdfs:label "就労支援利用者の悩み"@ja.
+kg:id_13 rdfs:label "人間関係の問題"@ja.
+kg:id_13 rdf:type cls:c_6359.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "心の問題"@ja.
+kg:id_14 rdf:type cls:c_6363.
+cls:c_6363 rdfs:label "精神的不調"@ja.
+kg:id_12 prop:cause kg:id_14.
+kg:id_15 rdfs:label "若者就職支援センターの課題"@ja.
+kg:id_15 rdf:type cls:c_6364.
+cls:c_6364 rdfs:label "就労支援機関の課題"@ja.
+kg:id_16 rdfs:label "利用者の増加"@ja.
+kg:id_16 rdf:type cls:c_947.
+cls:c_947 rdfs:label "利用者増加"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "相談内容の多岐化"@ja.
+kg:id_17 rdf:type cls:c_6365.
+cls:c_6365 rdfs:label "相談多様化"@ja.
+kg:id_15 prop:cause kg:id_17.
+kg:id_18 rdfs:label "相談内容の複雑化"@ja.
+kg:id_18 rdf:type cls:c_1567.
+cls:c_1567 rdfs:label "相談複雑化"@ja.
+kg:id_15 prop:cause kg:id_18.
+kg:id_19 rdfs:label "解決が困難な事例の発生"@ja.
+kg:id_19 rdf:type cls:c_6366.
+cls:c_6366 rdfs:label "困難事例"@ja.
+kg:id_15 prop:effect kg:id_19.
+kg:id_20 rdfs:label "若者就職支援センター"@ja.
+kg:id_20 rdf:type cls:c_6367.
+cls:c_6367 rdfs:label "就労支援機関"@ja.
+kg:id_21 rdfs:label "キャリアアシスタントや産業カウンセリングなどの専門カウンセリング"@ja.
+kg:id_21 rdf:type cls:c_6368.
+cls:c_6368 rdfs:label "専門相談"@ja.
+kg:id_20 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "模擬面接によるアドバイス"@ja.
+kg:id_22 rdf:type cls:c_6369.
+cls:c_6369 rdfs:label "面接支援"@ja.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "企業紹介"@ja.
+kg:id_23 rdf:type cls:c_6370.
+cls:c_6370 rdfs:label "職業紹介"@ja.
+kg:id_20 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "家庭訪問の相談員の派遣"@ja.
+kg:id_24 rdf:type cls:c_4279.
+cls:c_4279 rdfs:label "訪問相談"@ja.
+kg:id_9 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "別室登校につながる支援"@ja.
+kg:id_25 rdf:type cls:c_1532.
+cls:c_1532 rdfs:label "通学支援"@ja.
+kg:id_9 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "適応指導教室につながる支援"@ja.
+kg:id_26 rdf:type cls:c_6371.
+cls:c_6371 rdfs:label "通所支援"@ja.
+kg:id_9 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "適応指導教室"@ja.
+kg:id_27 rdf:type cls:c_6372.
+cls:c_6372 rdfs:label "適応指導教室"@ja.
+kg:id_28 rdfs:label "魚釣りや調理実習や着つけ教室などの体験的な活動"@ja.
+kg:id_28 rdf:type cls:c_6373.
+cls:c_6373 rdfs:label "体験活動"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "作品制作などの作業を通した社会性を身につけるプログラム"@ja.
+kg:id_29 rdf:type cls:c_6374.
+cls:c_6374 rdfs:label "社会性育成"@ja.
+kg:id_27 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "若者の孤立"@ja.
+kg:id_30 rdf:type cls:c_6375.
+cls:c_6375 rdfs:label "若者の孤立"@ja.
+kg:id_31 rdfs:label "庄内地域若者サポートステーションの相談事業"@ja.
+kg:id_31 rdf:type cls:c_2126.
+cls:c_2126 rdfs:label "相談支援"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "庄内地域若者サポートステーションのキャリア支援プログラム"@ja.
+kg:id_32 rdf:type cls:c_6376.
+cls:c_6376 rdfs:label "キャリア支援"@ja.
+kg:id_30 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "庄内地域若者サポートステーションの職業体験事業"@ja.
+kg:id_33 rdf:type cls:c_6377.
+cls:c_6377 rdfs:label "職業体験"@ja.
+kg:id_30 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "同じ悩みを持つ方によるグループ研修"@ja.
+kg:id_34 rdf:type cls:c_6378.
+cls:c_6378 rdfs:label "集団支援"@ja.
+kg:id_30 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "ＤＶ相談件数の増加"@ja.
+kg:id_35 rdf:type cls:c_6379.
+cls:c_6379 rdfs:label "DV相談増加"@ja.
+kg:id_36 rdfs:label "ＤＶに対する意識の高まり"@ja.
+kg:id_36 rdf:type cls:c_6380.
+cls:c_6380 rdfs:label "DV意識向上"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "児童虐待相談件数の増加"@ja.
+kg:id_37 rdf:type cls:c_6381.
+cls:c_6381 rdfs:label "虐待相談増加"@ja.
+kg:id_38 rdfs:label "県警がＤＶを児童への心理的虐待として積極的に児童相談所に通告したこと"@ja.
+kg:id_38 rdf:type cls:c_6382.
+cls:c_6382 rdfs:label "警察通告強化"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "ＤＶ"@ja.
+kg:id_39 rdf:type cls:c_6383.
+cls:c_6383 rdfs:label "DV"@ja.
+kg:id_40 rdfs:label "児童への心理的虐待"@ja.
+kg:id_40 rdf:type cls:c_5049.
+cls:c_5049 rdfs:label "心理的虐待"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "ＤＶ被害の深刻化"@ja.
+kg:id_41 rdf:type cls:c_6384.
+cls:c_6384 rdfs:label "DV被害深刻化"@ja.
+kg:id_42 rdfs:label "どこにも相談しなかったこと"@ja.
+kg:id_42 rdf:type cls:c_6385.
+cls:c_6385 rdfs:label "未相談"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "ＤＶ被害の未相談"@ja.
+kg:id_43 rdf:type cls:c_6386.
+cls:c_6386 rdfs:label "DV未相談"@ja.
+kg:id_44 rdfs:label "相談しても無駄だと思ったこと"@ja.
+kg:id_44 rdf:type cls:c_6387.
+cls:c_6387 rdfs:label "相談無力感"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "自分さえ我慢すればいいと思ったこと"@ja.
+kg:id_45 rdf:type cls:c_6388.
+cls:c_6388 rdfs:label "自己犠牲意識"@ja.
+kg:id_43 prop:cause kg:id_45.
+kg:id_46 rdfs:label "ＤＶ理解不足"@ja.
+kg:id_46 rdf:type cls:c_6389.
+cls:c_6389 rdfs:label "DV理解不足"@ja.
+kg:id_47 rdfs:label "生活費を渡さないことや外出などの行動制限もＤＶであると知らないこと"@ja.
+kg:id_47 rdf:type cls:c_6390.
+cls:c_6390 rdfs:label "DV知識不足"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "ウィズ窓口へのパンフレット配置"@ja.
+kg:id_48 rdf:type cls:c_1198.
+cls:c_1198 rdfs:label "広報配布"@ja.
+kg:id_39 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "相談業務の中で制度や支援の流れの周知"@ja.
+kg:id_49 rdf:type cls:c_1062.
+cls:c_1062 rdfs:label "制度周知"@ja.
+kg:id_39 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "女性に対する暴力をなくす運動週間にあわせたパネル展"@ja.
+kg:id_50 rdf:type cls:c_6391.
+cls:c_6391 rdfs:label "啓発展示"@ja.
+kg:id_39 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "高校生を対象としたＤＶに関する講座"@ja.
+kg:id_51 rdf:type cls:c_3677.
+cls:c_3677 rdfs:label "予防講座"@ja.
+kg:id_39 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "ＤＶ被害者保護"@ja.
+kg:id_52 rdf:type cls:c_6392.
+cls:c_6392 rdfs:label "DV被害者保護"@ja.
+kg:id_53 rdfs:label "配偶者暴力相談支援センターにつなぐこと"@ja.
+kg:id_53 rdf:type cls:c_6393.
+cls:c_6393 rdfs:label "相談機関連携"@ja.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "被害者の一時保護"@ja.
+kg:id_54 rdf:type cls:c_6394.
+cls:c_6394 rdfs:label "一時保護"@ja.
+kg:id_52 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "ＤＶ被害者支援の見えにくさ"@ja.
+kg:id_55 rdf:type cls:c_6395.
+cls:c_6395 rdfs:label "DV支援不透明"@ja.
+kg:id_56 rdfs:label "相談した後の支援の形が見えないこと"@ja.
+kg:id_56 rdf:type cls:c_6396.
+cls:c_6396 rdfs:label "支援不透明"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "ＤＶ被害者支援"@ja.
+kg:id_57 rdf:type cls:c_6397.
+cls:c_6397 rdfs:label "DV被害者支援"@ja.
+kg:id_58 rdfs:label "一時保護から自立までの支援の流れや制度利用方法のパンフレット配置"@ja.
+kg:id_58 rdf:type cls:c_3560.
+cls:c_3560 rdfs:label "支援周知"@ja.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "市ホームページへの掲載"@ja.
+kg:id_59 rdf:type cls:c_6398.
+cls:c_6398 rdfs:label "広報掲載"@ja.
+kg:id_57 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "防災行政無線が聞こえず逃げおくれたこと"@ja.
+kg:id_60 rdf:type cls:c_3207.
+cls:c_3207 rdfs:label "避難遅れ"@ja.
+kg:id_61 rdfs:label "防災無線が聞こえづらかったこと"@ja.
+kg:id_61 rdf:type cls:c_6399.
+cls:c_6399 rdfs:label "放送不良"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "防災行政無線"@ja.
+kg:id_62 rdf:type cls:c_6400.
+cls:c_6400 rdfs:label "防災無線"@ja.
+kg:id_63 rdfs:label "不具合があった場合の問い合わせ先の紹介"@ja.
+kg:id_63 rdf:type cls:c_6401.
+cls:c_6401 rdfs:label "問合せ案内"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "アナログ更新時の随時デジタル化"@ja.
+kg:id_64 rdf:type cls:c_971.
+cls:c_971 rdfs:label "設備更新"@ja.
+kg:id_62 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "防災情報伝達"@ja.
+kg:id_65 rdf:type cls:c_6402.
+cls:c_6402 rdfs:label "防災情報伝達"@ja.
+kg:id_66 rdfs:label "個別受信機"@ja.
+kg:id_66 rdf:type cls:c_6403.
+cls:c_6403 rdfs:label "個別受信機"@ja.
+kg:id_65 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "携帯電話での緊急メール"@ja.
+kg:id_67 rdf:type cls:c_6404.
+cls:c_6404 rdfs:label "緊急メール"@ja.
+kg:id_65 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "ホームページの掲載"@ja.
+kg:id_68 rdf:type cls:c_6398.
+kg:id_65 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "ハーバーラジオによる災害放送"@ja.
+kg:id_69 rdf:type cls:c_6405.
+cls:c_6405 rdfs:label "災害放送"@ja.
+kg:id_65 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "広報車による周知"@ja.
+kg:id_70 rdf:type cls:c_6406.
+cls:c_6406 rdfs:label "広報車周知"@ja.
+kg:id_65 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "情報格差による災害情報の伝達漏れ"@ja.
+kg:id_71 rdf:type cls:c_6407.
+cls:c_6407 rdfs:label "情報伝達漏れ"@ja.
+kg:id_72 rdfs:label "広報車による周知など人海戦術での対応"@ja.
+kg:id_72 rdf:type cls:c_6408.
+cls:c_6408 rdfs:label "人的周知"@ja.
+kg:id_71 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "生活保護相談の増加"@ja.
+kg:id_73 rdf:type cls:c_6409.
+cls:c_6409 rdfs:label "生活保護相談増加"@ja.
+kg:id_74 rdfs:label "世帯主の病気やけが"@ja.
+kg:id_74 rdf:type cls:c_6410.
+cls:c_6410 rdfs:label "病気やけが"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "定年"@ja.
+kg:id_75 rdf:type cls:c_6411.
+cls:c_6411 rdfs:label "退職"@ja.
+kg:id_73 prop:cause kg:id_75.
+kg:id_76 rdfs:label "失業"@ja.
+kg:id_76 rdf:type cls:c_5862.
+cls:c_5862 rdfs:label "失業"@ja.
+kg:id_73 prop:cause kg:id_76.
+kg:id_77 rdfs:label "預貯金などの減少"@ja.
+kg:id_77 rdf:type cls:c_5863.
+cls:c_5863 rdfs:label "資産減少"@ja.
+kg:id_73 prop:cause kg:id_77.
+kg:id_78 rdfs:label "年金をもらっている親が亡くなったこと"@ja.
+kg:id_78 rdf:type cls:c_6412.
+cls:c_6412 rdfs:label "扶養者死亡"@ja.
+kg:id_73 prop:cause kg:id_78.
+kg:id_79 rdfs:label "生活保護申請者の困窮"@ja.
+kg:id_79 rdf:type cls:c_3482.
+cls:c_3482 rdfs:label "生活困窮"@ja.
+kg:id_80 rdfs:label "精神的にも追い詰められること"@ja.
+kg:id_80 rdf:type cls:c_6413.
+cls:c_6413 rdfs:label "精神的追い詰め"@ja.
+kg:id_79 prop:effect kg:id_80.
+kg:id_81 rdfs:label "生活保護申請者の生活不安"@ja.
+kg:id_81 rdf:type cls:c_1740.
+cls:c_1740 rdfs:label "生活不安"@ja.
+kg:id_82 rdfs:label "家賃や公共料金の滞納"@ja.
+kg:id_82 rdf:type cls:c_6414.
+cls:c_6414 rdfs:label "料金滞納"@ja.
+kg:id_81 prop:cause kg:id_82.
+kg:id_83 rdfs:label "生活保護"@ja.
+kg:id_83 rdf:type cls:c_6415.
+cls:c_6415 rdfs:label "生活保護"@ja.
+kg:id_84 rdfs:label "不安感を取り除く親身な相談"@ja.
+kg:id_84 rdf:type cls:c_2126.
+kg:id_83 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "生活保護申請後の生活不安"@ja.
+kg:id_85 rdf:type cls:c_1740.
+kg:id_86 rdfs:label "転居の支援"@ja.
+kg:id_86 rdf:type cls:c_6416.
+cls:c_6416 rdfs:label "転居支援"@ja.
+kg:id_85 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "債務整理の支援"@ja.
+kg:id_87 rdf:type cls:c_6417.
+cls:c_6417 rdfs:label "債務整理"@ja.
+kg:id_85 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "生活保護受給後の生活不安"@ja.
+kg:id_88 rdf:type cls:c_1740.
+kg:id_89 rdfs:label "定期的な訪問と随時必要な支援"@ja.
+kg:id_89 rdf:type cls:c_1792.
+cls:c_1792 rdfs:label "継続支援"@ja.
+kg:id_88 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "生活保護法改正による申請抑制"@ja.
+kg:id_90 rdf:type cls:c_6418.
+cls:c_6418 rdfs:label "申請抑制"@ja.
+kg:id_91 rdfs:label "扶養義務のある親族への連絡の徹底"@ja.
+kg:id_91 rdf:type cls:c_6419.
+cls:c_6419 rdfs:label "親族連絡強化"@ja.
+kg:id_90 prop:cause kg:id_91.
+kg:id_92 rdfs:label "通帳など多くの書類を添えないと申請さえ受け付けないと法文化したこと"@ja.
+kg:id_92 rdf:type cls:c_6420.
+cls:c_6420 rdfs:label "書類要件強化"@ja.
+kg:id_90 prop:cause kg:id_92.
+kg:id_93 rdfs:label "風疹流行"@ja.
+kg:id_93 rdf:type cls:c_6421.
+cls:c_6421 rdfs:label "風疹流行"@ja.
+kg:id_94 rdfs:label "妊娠初期の女性が感染すると生まれてくる子供に障がいが生じること"@ja.
+kg:id_94 rdf:type cls:c_6422.
+cls:c_6422 rdfs:label "出生障害"@ja.
+kg:id_93 prop:effect kg:id_94.
+kg:id_95 rdfs:label "感染拡大の防止が急がれること"@ja.
+kg:id_95 rdf:type cls:c_1168.
+cls:c_1168 rdfs:label "感染拡大"@ja.
+kg:id_93 prop:effect kg:id_95.
+kg:id_96 rdfs:label "風疹予防"@ja.
+kg:id_96 rdf:type cls:c_6423.
+cls:c_6423 rdfs:label "風疹予防"@ja.
+kg:id_97 rdfs:label "広報やホームページでの周知"@ja.
+kg:id_97 rdf:type cls:c_1087.
+cls:c_1087 rdfs:label "広報周知"@ja.
+kg:id_96 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "若年者健診での情報提供や注意喚起"@ja.
+kg:id_98 rdf:type cls:c_6424.
+cls:c_6424 rdfs:label "健診周知"@ja.
+kg:id_96 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "母子健康手帳交付時での情報提供や注意喚起"@ja.
+kg:id_99 rdf:type cls:c_6425.
+cls:c_6425 rdfs:label "手帳交付周知"@ja.
+kg:id_96 prop:contermeasure kg:id_99.
+kg:id_100 rdfs:label "婚姻届の際などきめ細かな周知"@ja.
+kg:id_100 rdf:type cls:c_6426.
+cls:c_6426 rdfs:label "届出時周知"@ja.
+kg:id_96 prop:contermeasure kg:id_100.
+kg:id_101 rdfs:label "人口減少"@ja.
+kg:id_101 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_102 rdfs:label "税収の減額"@ja.
+kg:id_102 rdf:type cls:c_2741.
+cls:c_2741 rdfs:label "税収減少"@ja.
+kg:id_101 prop:effect kg:id_102.
+kg:id_103 rdfs:label "一般消費の低迷"@ja.
+kg:id_103 rdf:type cls:c_2607.
+cls:c_2607 rdfs:label "消費低迷"@ja.
+kg:id_101 prop:effect kg:id_103.
+kg:id_104 rdfs:label "地域を支えるコミュニティの機能の低下"@ja.
+kg:id_104 rdf:type cls:c_6427.
+cls:c_6427 rdfs:label "地域機能低下"@ja.
+kg:id_101 prop:effect kg:id_104.
+kg:id_105 rdfs:label "人口推計と影響分析を踏まえた全庁的対応"@ja.
+kg:id_105 rdf:type cls:c_6428.
+cls:c_6428 rdfs:label "全庁対応"@ja.
+kg:id_101 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "結婚推進支援員の配置"@ja.
+kg:id_106 rdf:type cls:c_1434.
+cls:c_1434 rdfs:label "結婚支援"@ja.
+kg:id_101 prop:contermeasure kg:id_106.
+kg:id_107 rdfs:label "保育所・学童保育所の整備"@ja.
+kg:id_107 rdf:type cls:c_5280.
+cls:c_5280 rdfs:label "保育整備"@ja.
+kg:id_101 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "子育て世代の医療費無料化の拡大"@ja.
+kg:id_108 rdf:type cls:c_6429.
+cls:c_6429 rdfs:label "医療費軽減"@ja.
+kg:id_101 prop:contermeasure kg:id_108.
+kg:id_109 rdfs:label "プレステージ・インターナショナルの誘致"@ja.
+kg:id_109 rdf:type cls:c_1392.
+cls:c_1392 rdfs:label "企業誘致"@ja.
+kg:id_101 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "非正規雇用の増加"@ja.
+kg:id_110 rdf:type cls:c_6430.
+cls:c_6430 rdfs:label "非正規雇用増加"@ja.
+kg:id_111 rdfs:label "高齢化"@ja.
+kg:id_111 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_110 prop:cause kg:id_111.
+kg:id_112 rdfs:label "労働法制の改正"@ja.
+kg:id_112 rdf:type cls:c_3925.
+cls:c_3925 rdfs:label "制度改正"@ja.
+kg:id_110 prop:cause kg:id_112.
+kg:id_113 rdfs:label "非正規雇用者の雇用調整"@ja.
+kg:id_113 rdf:type cls:c_4778.
+cls:c_4778 rdfs:label "雇用調整"@ja.
+kg:id_114 rdfs:label "景気の急速な悪化"@ja.
+kg:id_114 rdf:type cls:c_5128.
+cls:c_5128 rdfs:label "景気悪化"@ja.
+kg:id_113 prop:cause kg:id_114.
+kg:id_115 rdfs:label "雇用の不安定化"@ja.
+kg:id_115 rdf:type cls:c_6431.
+cls:c_6431 rdfs:label "雇用不安定"@ja.
+kg:id_116 rdfs:label "求職意欲が弱まること"@ja.
+kg:id_116 rdf:type cls:c_6432.
+cls:c_6432 rdfs:label "求職意欲低下"@ja.
+kg:id_115 prop:effect kg:id_116.
+kg:id_117 rdfs:label "愛社精神や仕事を身につけたい気持ちが希薄になること"@ja.
+kg:id_117 rdf:type cls:c_6433.
+cls:c_6433 rdfs:label "職業意識低下"@ja.
+kg:id_115 prop:effect kg:id_117.
+kg:id_118 rdfs:label "企業に対する正社員雇用の要請"@ja.
+kg:id_118 rdf:type cls:c_6434.
+cls:c_6434 rdfs:label "正規雇用要請"@ja.
+kg:id_115 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "地元企業への支援施策の展開"@ja.
+kg:id_119 rdf:type cls:c_1080.
+cls:c_1080 rdfs:label "企業支援"@ja.
+kg:id_115 prop:contermeasure kg:id_119.
+kg:id_120 rdfs:label "空き家増加"@ja.
+kg:id_120 rdf:type cls:c_2556.
+cls:c_2556 rdfs:label "空き家増加"@ja.
+kg:id_121 rdfs:label "空き家等に関する意向調査アンケート"@ja.
+kg:id_121 rdf:type cls:c_1267.
+cls:c_1267 rdfs:label "意向調査"@ja.
+kg:id_120 prop:contermeasure kg:id_121.
+kg:id_122 rdfs:label "売却や賃貸希望者を宅地建物取引業協会につなぐこと"@ja.
+kg:id_122 rdf:type cls:c_6435.
+cls:c_6435 rdfs:label "不動産連携"@ja.
+kg:id_120 prop:contermeasure kg:id_122.
+kg:id_123 rdfs:label "宅地建物取引業協会や司法書士会や建設業協会や金融協会などとのネットワーク協議会"@ja.
+kg:id_123 rdf:type cls:c_6436.
+cls:c_6436 rdfs:label "官民協議"@ja.
+kg:id_120 prop:contermeasure kg:id_123.
+kg:id_124 rdfs:label "農業集落排水の新規接続費用の高さ"@ja.
+kg:id_124 rdf:type cls:c_6437.
+cls:c_6437 rdfs:label "接続費高額"@ja.
+kg:id_125 rdfs:label "真空運転システムの調整が必要になること"@ja.
+kg:id_125 rdf:type cls:c_6438.
+cls:c_6438 rdfs:label "設備調整"@ja.
+kg:id_124 prop:cause kg:id_125.
+kg:id_126 rdfs:label "真空装置停止中にバキュームカーの手配が必要になること"@ja.
+kg:id_126 rdf:type cls:c_6439.
+cls:c_6439 rdfs:label "代替処理"@ja.
+kg:id_124 prop:cause kg:id_126.
+kg:id_127 rdfs:label "公共汚水ます設置基準の見直し"@ja.
+kg:id_127 rdf:type cls:c_6440.
+cls:c_6440 rdfs:label "基準見直し"@ja.
+kg:id_124 prop:contermeasure kg:id_127.
+kg:id_128 rdfs:label "旧ジャスコ跡地整備事業の停滞"@ja.
+kg:id_128 rdf:type cls:c_6441.
+cls:c_6441 rdfs:label "事業停滞"@ja.
+kg:id_129 rdfs:label "建設費高騰のため工事発注ができないこと"@ja.
+kg:id_129 rdf:type cls:c_6442.
+cls:c_6442 rdfs:label "建設費高騰"@ja.
+kg:id_128 prop:cause kg:id_129.
+kg:id_130 rdfs:label "事業が立ち行かない状況になること"@ja.
+kg:id_130 rdf:type cls:c_6443.
+cls:c_6443 rdfs:label "事業困難"@ja.
+kg:id_128 prop:effect kg:id_130.
+kg:id_131 rdfs:label "国・県と相談しながら今後の対策を早くまとめること"@ja.
+kg:id_131 rdf:type cls:c_6444.
+cls:c_6444 rdfs:label "対策検討"@ja.
+kg:id_128 prop:contermeasure kg:id_131.
+kg:id_132 rdfs:label "風力発電事業への住民不安"@ja.
+kg:id_132 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_133 rdfs:label "低周波や騒音問題への懸念"@ja.
+kg:id_133 rdf:type cls:c_6256.
+cls:c_6256 rdfs:label "騒音懸念"@ja.
+kg:id_132 prop:cause kg:id_133.
+kg:id_134 rdfs:label "景観への影響への懸念"@ja.
+kg:id_134 rdf:type cls:c_6445.
+cls:c_6445 rdfs:label "景観懸念"@ja.
+kg:id_132 prop:cause kg:id_134.
+kg:id_135 rdfs:label "野鳥への影響への懸念"@ja.
+kg:id_135 rdf:type cls:c_1002.
+cls:c_1002 rdfs:label "生態影響懸念"@ja.
+kg:id_132 prop:cause kg:id_135.
+kg:id_136 rdfs:label "庄内海岸が生物多様性の宝庫であることへの懸念"@ja.
+kg:id_136 rdf:type cls:c_6446.
+cls:c_6446 rdfs:label "自然環境懸念"@ja.
+kg:id_132 prop:cause kg:id_136.
+kg:id_137 rdfs:label "風力発電事業"@ja.
+kg:id_137 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_138 rdfs:label "法に定める評価項目と同等の内容での調査"@ja.
+kg:id_138 rdf:type cls:c_192.
+cls:c_192 rdfs:label "環境調査"@ja.
+kg:id_137 prop:contermeasure kg:id_138.
+kg:id_139 rdfs:label "地元への事前説明会"@ja.
+kg:id_139 rdf:type cls:c_16.
+cls:c_16 rdfs:label "事前説明"@ja.
+kg:id_137 prop:contermeasure kg:id_139.
+kg:id_140 rdfs:label "方法書の公表"@ja.
+kg:id_140 rdf:type cls:c_6447.
+cls:c_6447 rdfs:label "資料公表"@ja.
+kg:id_137 prop:contermeasure kg:id_140.
+kg:id_141 rdfs:label "市民説明会の開催"@ja.
+kg:id_141 rdf:type cls:c_6448.
+cls:c_6448 rdfs:label "市民説明"@ja.
+kg:id_137 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "住民意見を踏まえた事業計画の見直し"@ja.
+kg:id_142 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_137 prop:contermeasure kg:id_142.
+kg:id_143 rdfs:label "男性育児休業取得の伸び悩み"@ja.
+kg:id_143 rdf:type cls:c_6449.
+cls:c_6449 rdfs:label "育休取得停滞"@ja.
+kg:id_144 rdfs:label "企業側の理解不足"@ja.
+kg:id_144 rdf:type cls:c_6450.
+cls:c_6450 rdfs:label "企業理解不足"@ja.
+kg:id_143 prop:cause kg:id_144.
+kg:id_145 rdfs:label "とりにくい職場の雰囲気"@ja.
+kg:id_145 rdf:type cls:c_6451.
+cls:c_6451 rdfs:label "職場風土"@ja.
+kg:id_143 prop:cause kg:id_145.
+kg:id_146 rdfs:label "休業中の生活保障として５万円や１０万円の１回限り支給では利用しにくいこと"@ja.
+kg:id_146 rdf:type cls:c_6452.
+cls:c_6452 rdfs:label "給付不足"@ja.
+kg:id_143 prop:cause kg:id_146.
+kg:id_147 rdfs:label "県の育児休業取得奨励金制度の周知"@ja.
+kg:id_147 rdf:type cls:c_1062.
+kg:id_143 prop:contermeasure kg:id_147.
+kg:id_148 rdfs:label "第３子以降の保育料負担"@ja.
+kg:id_148 rdf:type cls:c_1438.
+cls:c_1438 rdfs:label "保育料負担"@ja.
+kg:id_149 rdfs:label "子育てにかかる経済的負担の大きさ"@ja.
+kg:id_149 rdf:type cls:c_4173.
+cls:c_4173 rdfs:label "経済的負担"@ja.
+kg:id_148 prop:effect kg:id_149.
+kg:id_150 rdfs:label "保育園料を払うために給与をもらっている感覚になること"@ja.
+kg:id_150 rdf:type cls:c_6453.
+cls:c_6453 rdfs:label "家計圧迫"@ja.
+kg:id_148 prop:effect kg:id_150.
+kg:id_151 rdfs:label "同時入所の場合の第２子保育料を通常の３分の１に軽減"@ja.
+kg:id_151 rdf:type cls:c_1939.
+cls:c_1939 rdfs:label "保育料軽減"@ja.
+kg:id_148 prop:contermeasure kg:id_151.
+kg:id_152 rdfs:label "同時入所の場合の第３子保育料無料"@ja.
+kg:id_152 rdf:type cls:c_6454.
+cls:c_6454 rdfs:label "保育料免除"@ja.
+kg:id_148 prop:contermeasure kg:id_152.
+kg:id_153 rdfs:label "児童手当の保育料充当"@ja.
+kg:id_153 rdf:type cls:c_6455.
+cls:c_6455 rdfs:label "保育料充当"@ja.
+kg:id_154 rdfs:label "本人の同意を得て児童手当を現金支給しその場で納付相談を行うこと"@ja.
+kg:id_154 rdf:type cls:c_6456.
+cls:c_6456 rdfs:label "納付相談"@ja.
+kg:id_153 prop:contermeasure kg:id_154.
+kg:id_155 rdfs:label "保育料滞納"@ja.
+kg:id_155 rdf:type cls:c_6457.
+cls:c_6457 rdfs:label "保育料滞納"@ja.
+kg:id_156 rdfs:label "家庭の経済状況等を聞き取りしながらの丁寧な納付相談"@ja.
+kg:id_156 rdf:type cls:c_6456.
+kg:id_155 prop:contermeasure kg:id_156.
+kg:id_157 rdfs:label "年金後納制度の利用しにくさ"@ja.
+kg:id_157 rdf:type cls:c_6458.
+cls:c_6458 rdfs:label "制度利用困難"@ja.
+kg:id_158 rdfs:label "１０年間分の保険料で約１８０万円が必要になること"@ja.
+kg:id_158 rdf:type cls:c_6459.
+cls:c_6459 rdfs:label "高額負担"@ja.
+kg:id_157 prop:cause kg:id_158.
+kg:id_159 rdfs:label "山形県社会福祉協議会の貸付制度の活用"@ja.
+kg:id_159 rdf:type cls:c_6460.
+cls:c_6460 rdfs:label "貸付活用"@ja.
+kg:id_157 prop:contermeasure kg:id_159.
+kg:id_160 rdfs:label "後納制度と貸付制度の周知"@ja.
+kg:id_160 rdf:type cls:c_1062.
+kg:id_157 prop:contermeasure kg:id_160.
+kg:st_1 rdfs:label "江口暢子議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "実態把握が難しい中でも施策を講じる必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "石川翼久教育長"@ja.
+kg:st_2 rdfs:type cls:st_51.
+cls:st_51 rdfs:label "教育関係者"@ja.
+kg:op_2 prop:content "不登校が直接原因かは断定できないが要因となることは心配される"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "不登校と同様に人間関係の不調はひきこもりの要因になりうる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "新しい環境への不適応はひきこもりの要因になりうる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "若い世代は仕事以上に人間関係や心の問題で壁にぶつかっている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "若い世代は仕事以上に人間関係や心の問題で壁にぶつかっている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "大石薫商工観光部長"@ja.
+kg:st_3 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_7 prop:content "相談内容の複雑化に対応する高度な支援が課題である"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "相談内容の複雑化に対応する高度な支援が課題である"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "相談内容の複雑化に対応する高度な支援が課題である"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "より高度な対応が必要になる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "通学や仕事が難しい若者や家族を幅広く支援している"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "通学や仕事が難しい若者や家族を幅広く支援している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "通学や仕事が難しい若者や家族を幅広く支援している"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "本間正巳市長"@ja.
+kg:st_4 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_14 prop:content "ＤＶ防止法制定後の意識向上が相談増加の背景にある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "ＤＶ通告の積極化が相談件数増加につながった可能性がある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "相談につながらない実態が支援を難しくしている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "ＤＶの定義の理解不足が被害の自覚を妨げている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "杉原久市民部長"@ja.
+kg:st_5 rdfs:type cls:st_2.
+kg:op_18 prop:content "高校生は真剣に受講している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "支援の道筋を見える形で示すことが相談しやすさにつながる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "日ごろから住民の声を確認することが重要である"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "堀井一保建設部技監兼企画振興部危機管理監"@ja.
+kg:st_6 rdfs:type cls:st_2.
+kg:op_21 prop:content "相互通信や確認機能の有益性を踏まえデジタル化を進める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_6.
+kg:op_22 prop:content "情報弱者にも漏れなく伝えるよう複数手段で対応する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "久松勝郎健康福祉部長"@ja.
+kg:st_7 rdfs:type cls:st_2.
+kg:op_23 prop:content "不安感を取り除く親身な相談が必要である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_7.
+kg:op_24 prop:content "申請者や相談者に寄り添い不安を与えないようにしたい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:st_8 rdfs:label "市原栄子議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_25 prop:content "親族に知られたくない人の申請断念につながりかねない"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_8.
+kg:op_26 prop:content "申請権の侵害であり水際作戦の合法化だと懸念する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_8.
+kg:op_27 prop:content "感染拡大防止のため早急な対応が必要である"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_8.
+kg:op_28 prop:content "流行前の予防接種と助成が必要である"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_8.
+kg:op_29 prop:content "結婚時にも予防接種や抗体検査の周知が必要である"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "門田克己議員"@ja.
+kg:st_9 rdfs:type cls:st_16.
+kg:op_30 prop:content "市全体の近々の課題として真剣に対応すべきである"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_9.
+kg:op_31 prop:content "市全体の近々の課題として真剣に対応すべきである"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_9.
+kg:op_32 prop:content "地域を守る観点に立ったまちづくりが必要である"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "西澤義和企画振興部長"@ja.
+kg:st_10 rdfs:type cls:st_2.
+kg:op_33 prop:content "企画振興部を中心に将来推計と影響分析を深め施策立案を進める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_10.
+kg:op_34 prop:content "正社員化の改善策を関係機関が共通課題として進めるべきだ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_9.
+kg:op_35 prop:content "非正規雇用の多さが職業意識の低下につながる"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_9.
+kg:op_36 prop:content "関係機関と連携し正社員として雇用するよう要請する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "一人でも多くの雇用につながるよう企業支援を進める"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "官民一体で新たな定住促進に向けた対策を前向きに検討する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_5.
+kg:st_11 rdfs:label "佐藤文彦建設部長"@ja.
+kg:st_11 rdfs:type cls:st_2.
+kg:op_39 prop:content "真空方式で高額になるため費用負担軽減策を検討する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_11.
+kg:op_40 prop:content "市で管理している部分の費用対応を検討したい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_11.
+kg:op_41 prop:content "新規接続者の費用負担軽減が図られるよう見直しを検討する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_11.
+kg:op_42 prop:content "事業が立ち行かない状況となり非常に残念である"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "今後の対策を早くまとめる必要がある"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "少し時間は必要だが今後の対策をまとめたい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:st_12 rdfs:label "斎藤周議員"@ja.
+kg:st_12 rdfs:type cls:st_16.
+kg:op_45 prop:content "市民団体は事業妨害ではなく法に基づく評価を求めている"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_12.
+kg:op_46 prop:content "市民団体は事業妨害ではなく法に基づく評価を求めている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_12.
+kg:op_47 prop:content "市民団体は事業妨害ではなく法に基づく評価を求めている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_12.
+kg:op_48 prop:content "環境省や経済産業省の評価も得る法アセスが必要だとする声がある"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_12.
+kg:op_49 prop:content "法適用外でも同等内容の調査を実施し丁寧に説明する"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+kg:op_50 prop:content "変更が必要であれば柔軟に検討する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "県制度を市が補完して取得しやすくすべきである"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_12.
+kg:op_52 prop:content "県制度を市が補完して取得しやすくすべきである"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_12.
+kg:op_53 prop:content "２カ月３カ月取得時の市独自奨励金で県制度を補完すべきだ"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_12.
+kg:op_54 prop:content "まずは事業の周知が重要である"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_7.
+kg:op_55 prop:content "第３子以降の保育料無料化に踏み切るべきである"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_12.
+kg:op_56 prop:content "多子世帯の保育料軽減が必要である"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_12.
+kg:op_57 prop:content "差し押さえではなく公平性確保のため必要な対応である"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:op_58 prop:content "手持ち金がない人向けの貸付制度が必要である"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_12.
+kg:op_59 prop:content "まずは既存の有利な貸付制度を利用してもらいたい"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_7.
+kg:op_60 prop:content "制度利用促進のためＰＲしていきたい"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "ひきこもりにつきましての実態を正確に把握することは、非常に難しい状況にあります。それは、ひきこもりの子供がいても、親が子供の将来のことや世間体から隠す傾向にあるからであります"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "ひきこもりに至る背景につきましては、障がいですとか、精神的な疾患、人間関係がうまくいかない、進学、就労ができないといったことからの挫折感など、その要因は多岐にわたると考えております"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:text-txt_contents "ひきこもりに至る背景につきましては、障がいですとか、精神的な疾患、人間関係がうまくいかない、進学、就労ができないといったことからの挫折感など、その要因は多岐にわたると考えております"@ja.
+<< kg:id_3 prop:cause kg:id_6 >>
+    prop:text-txt_contents "ひきこもりに至る背景につきましては、障がいですとか、精神的な疾患、人間関係がうまくいかない、進学、就労ができないといったことからの挫折感など、その要因は多岐にわたると考えております"@ja.
+<< kg:id_3 prop:cause kg:id_7 >>
+    prop:text-txt_contents "ひきこもりに至る背景につきましては、障がいですとか、精神的な疾患、人間関係がうまくいかない、進学、就労ができないといったことからの挫折感など、その要因は多岐にわたると考えております"@ja.
+<< kg:id_3 prop:cause kg:id_8 >>
+    prop:text-txt_contents "ひきこもりに至る背景につきましては、障がいですとか、精神的な疾患、人間関係がうまくいかない、進学、就労ができないといったことからの挫折感など、その要因は多岐にわたると考えております"@ja.
+<< kg:id_3 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "不登校の場合と、このひきこもりは同様に、人間関係が良好に保てなかったり、新しい環境になじめなかったりする、そのことが青年期になってひきこもりの要因となるということは、心配される要因として捉えております"@ja.
+<< kg:id_3 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "不登校の場合と、このひきこもりは同様に、人間関係が良好に保てなかったり、新しい環境になじめなかったりする、そのことが青年期になってひきこもりの要因となるということは、心配される要因として捉えております"@ja.
+<< kg:id_3 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "不登校の場合と、このひきこもりは同様に、人間関係が良好に保てなかったり、新しい環境になじめなかったりする、そのことが青年期になってひきこもりの要因となるということは、心配される要因として捉えております"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "やはり、前に申し上げましたように、仕事そのもの以上に、人間関係、心の問題ということに若い世代が悩んで壁にぶつかっているという印象を受けました"@ja.
+<< kg:id_12 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "やはり、前に申し上げましたように、仕事そのもの以上に、人間関係、心の問題ということに若い世代が悩んで壁にぶつかっているという印象を受けました"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "課題につきましては、若者就職支援センターの利用者が増え、その相談内容は多岐にわたり、複雑化し、解決が困難な事例もあると聞いております"@ja.
+<< kg:id_15 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "課題につきましては、若者就職支援センターの利用者が増え、その相談内容は多岐にわたり、複雑化し、解決が困難な事例もあると聞いております"@ja.
+<< kg:id_15 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "課題につきましては、若者就職支援センターの利用者が増え、その相談内容は多岐にわたり、複雑化し、解決が困難な事例もあると聞いております"@ja.
+<< kg:id_15 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "課題につきましては、若者就職支援センターの利用者が増え、その相談内容は多岐にわたり、複雑化し、解決が困難な事例もあると聞いております"@ja.
+<< kg:id_20 prop:contermeasure kg:id_21 >>
+    prop:text-txt_contents "具体的には、キャリアアシスタントや産業カウンセリングなどの専門カウンセリングのほか、模擬面接によるアドバイス、企業紹介などを行っており"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "具体的には、キャリアアシスタントや産業カウンセリングなどの専門カウンセリングのほか、模擬面接によるアドバイス、企業紹介などを行っており"@ja.
+<< kg:id_20 prop:contermeasure kg:id_23 >>
+    prop:text-txt_contents "具体的には、キャリアアシスタントや産業カウンセリングなどの専門カウンセリングのほか、模擬面接によるアドバイス、企業紹介などを行っており"@ja.
+<< kg:id_9 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "教育委員会では、不登校になってしまった生徒、将来、社会に参加できるようにということで、その要望に応じて家庭訪問の相談員を派遣したり"@ja.
+<< kg:id_9 prop:contermeasure kg:id_25 >>
+    prop:text-txt_contents "児童・生徒の心をほぐし、まずは別室登校、または、ふれあい教室と呼んでいますが、適応指導教室につながるような支援をしております"@ja.
+<< kg:id_9 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "児童・生徒の心をほぐし、まずは別室登校、または、ふれあい教室と呼んでいますが、適応指導教室につながるような支援をしております"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "その適応指導教室では、生徒の実情に応じて魚釣りをやったり、調理実習、着つけ教室などの体験的な活動"@ja.
+<< kg:id_27 prop:contermeasure kg:id_29 >>
+    prop:text-txt_contents "作品制作などの作業を通して、少しでも人とのかかわりを持ち、社会性が身につくようにというプログラムを組んでおります"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "相談事業やキャリア支援プログラム、職業体験事業などを通し、若者の自立的、社会的参加のお手伝いをする支援機関であります"@ja.
+<< kg:id_30 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "相談事業やキャリア支援プログラム、職業体験事業などを通し、若者の自立的、社会的参加のお手伝いをする支援機関であります"@ja.
+<< kg:id_30 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "相談事業やキャリア支援プログラム、職業体験事業などを通し、若者の自立的、社会的参加のお手伝いをする支援機関であります"@ja.
+<< kg:id_30 prop:contermeasure kg:id_34 >>
+    prop:text-txt_contents "同じ悩みを持つ方によるグループ研修なども行っており、若者の居場所づくりの一つにもなっていると思っております"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "件数が増加しているというふうな状況にあります。これは、ＤＶ防止法の制定から10年以上が経過しているというふうなことで、ＤＶに対する意識の高まりがあるのではないか"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "その要因として、ＤＶが児童への心理的虐待に当たるとして、県警が積極的に児童相談所に通告したことが相談件数の増加につながった"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:text-txt_contents "ＤＶが児童への心理的虐待に当たるとして"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "ＤＶについて、自分が受けたと回答した方の62.5％がどこにも相談しなかったと答えています"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:text-txt_contents "その理由は、相談しても無駄だと思ったから、自分さえ我慢すればいいと思ったからということが圧倒的でした"@ja.
+<< kg:id_43 prop:cause kg:id_45 >>
+    prop:text-txt_contents "その理由は、相談しても無駄だと思ったから、自分さえ我慢すればいいと思ったからということが圧倒的でした"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "生活費を渡さないとか、外出などの行動を制限することもＤＶであるのに、そのことを知らない。つまり、ＤＶとは何かという理解が十分ではないことがうかがえます"@ja.
+<< kg:id_39 prop:contermeasure kg:id_48 >>
+    prop:text-txt_contents "ウィズの窓口にパンフレット等を配置するとともに"@ja.
+<< kg:id_39 prop:contermeasure kg:id_49 >>
+    prop:text-txt_contents "日ごろの相談業務の中で、制度あるいは支援の流れなどの周知を図っております"@ja.
+<< kg:id_39 prop:contermeasure kg:id_50 >>
+    prop:text-txt_contents "毎年11月に女性に対する暴力をなくす運動週間にあわせてパネル展を実施し、広く市民にＤＶ防止をわかりやすく呼びかけております"@ja.
+<< kg:id_39 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "市内の高校と共催させていただいて、テレビドラマなどを題材にして、高校生を対象としたＤＶに関する講座を平成20年度から開催しております"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:text-txt_contents "ＤＶにより保護が必要と判断された場合には、庄内総合支庁にある配偶者暴力相談支援センターにつないでおります"@ja.
+<< kg:id_52 prop:contermeasure kg:id_54 >>
+    prop:text-txt_contents "そして被害者の一時保護の対応を行っているというのが現状であります"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "相談するということができにくいのは、相談した後の支援の形が見えないから、相談しても仕方がないと思うからではないでしょうか"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:text-txt_contents "相談から一時保護、そして自立までの支援の流れや制度の利用方法がわかるパンフレット等を窓口に置くほか"@ja.
+<< kg:id_57 prop:contermeasure kg:id_59 >>
+    prop:text-txt_contents "市のホームページに掲載するなど、周知に努めてまいりたい"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "被災地の中には、日ごろから、防災無線が聞こえづらかったという震災前からの問題があったことから、防災無線が聞こえず逃げおくれたということもあった"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:text-txt_contents "試験放送の内容と一緒に、スピーカーからの音が出ない、著しい雑音で聞き取りにくいなどの例示を示して、不具合があった場合、御連絡をいただけるように問い合わせ先を紹介しております"@ja.
+<< kg:id_62 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "現在使用しているアナログの更新の際には、随時デジタルに更新する予定としてございます"@ja.
+<< kg:id_65 prop:contermeasure kg:id_66 >>
+    prop:text-txt_contents "防災行政無線、個別受信機、携帯電話での緊急メール、ホームページの掲載、ハーバーラジオによる災害放送、広報車による周知の複数の伝達手段で情報提供することとしております"@ja.
+<< kg:id_65 prop:contermeasure kg:id_67 >>
+    prop:text-txt_contents "防災行政無線、個別受信機、携帯電話での緊急メール、ホームページの掲載、ハーバーラジオによる災害放送、広報車による周知の複数の伝達手段で情報提供することとしております"@ja.
+<< kg:id_65 prop:contermeasure kg:id_68 >>
+    prop:text-txt_contents "防災行政無線、個別受信機、携帯電話での緊急メール、ホームページの掲載、ハーバーラジオによる災害放送、広報車による周知の複数の伝達手段で情報提供することとしております"@ja.
+<< kg:id_65 prop:contermeasure kg:id_69 >>
+    prop:text-txt_contents "防災行政無線、個別受信機、携帯電話での緊急メール、ホームページの掲載、ハーバーラジオによる災害放送、広報車による周知の複数の伝達手段で情報提供することとしております"@ja.
+<< kg:id_65 prop:contermeasure kg:id_70 >>
+    prop:text-txt_contents "防災行政無線、個別受信機、携帯電話での緊急メール、ホームページの掲載、ハーバーラジオによる災害放送、広報車による周知の複数の伝達手段で情報提供することとしております"@ja.
+<< kg:id_71 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "情報弱者の方々にもきちっと伝わるような形で、例えば広報車による周知など、人海戦術になりますけれども、そのようなものをやりながら伝達が漏れなく実施されるように対応しているところでございます"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:text-txt_contents "相談内容の傾向でございますけれども、これまでもそうだったんですが、ベスト３は世帯主の病気やけが、それから定年とか失業、そして預貯金などの減少であります"@ja.
+<< kg:id_73 prop:cause kg:id_75 >>
+    prop:text-txt_contents "相談内容の傾向でございますけれども、これまでもそうだったんですが、ベスト３は世帯主の病気やけが、それから定年とか失業、そして預貯金などの減少であります"@ja.
+<< kg:id_73 prop:cause kg:id_76 >>
+    prop:text-txt_contents "相談内容の傾向でございますけれども、これまでもそうだったんですが、ベスト３は世帯主の病気やけが、それから定年とか失業、そして預貯金などの減少であります"@ja.
+<< kg:id_73 prop:cause kg:id_77 >>
+    prop:text-txt_contents "相談内容の傾向でございますけれども、これまでもそうだったんですが、ベスト３は世帯主の病気やけが、それから定年とか失業、そして預貯金などの減少であります"@ja.
+<< kg:id_73 prop:cause kg:id_78 >>
+    prop:text-txt_contents "正確な統計数字はとっていないんですけれども、年金をもらっている親が亡くなったといったような相談も増えてきております"@ja.
+<< kg:id_79 prop:effect kg:id_80 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "相談者は、経済的な困窮により、精神的にも追い詰められて相談に至る方が多いことから"@ja.
+<< kg:id_81 prop:cause kg:id_82 >>
+    prop:text-txt_contents "申請者の多くは、家賃や公共料金の滞納など多くの問題を抱えて申請に至ることから"@ja.
+<< kg:id_83 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "できるだけ不安感を取り除き、親身な相談を行うように心がけております"@ja.
+<< kg:id_85 prop:contermeasure kg:id_86 >>
+    prop:text-txt_contents "経済的な支援のほかに、転居、債務整理など生活の安定を図るための支援を行っている"@ja.
+<< kg:id_85 prop:contermeasure kg:id_87 >>
+    prop:text-txt_contents "経済的な支援のほかに、転居、債務整理など生活の安定を図るための支援を行っている"@ja.
+<< kg:id_88 prop:contermeasure kg:id_89 >>
+    prop:text-txt_contents "保護開始以後も定期的に訪問しまして、随時必要な支援を行っております"@ja.
+<< kg:id_90 prop:cause kg:id_91 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "親族に知られたくないからと生活保護を受けることを断念させることにつながりかねません"@ja.
+<< kg:id_90 prop:cause kg:id_92 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "今は口頭でも受け付ける保護申請を、通帳など多くの書類を添えないと申請さえ受け付けないと法文化したことは、国民誰にも保障されている申請権の侵害"@ja.
+<< kg:id_93 prop:effect kg:id_94 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "妊娠初期の女性が風疹にかかると、妊娠１カ月では50％という高い確率で生まれてくる子供に障がいが生じる"@ja.
+<< kg:id_93 prop:effect kg:id_95 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "こうした初期は女性自身もみずからの妊娠に気づいていない場合もあるため、感染拡大の防止が急がれます"@ja.
+<< kg:id_96 prop:contermeasure kg:id_97 >>
+    prop:text-txt_contents "啓発につきましては、広報、ホームページは当然でありますけれども"@ja.
+<< kg:id_96 prop:contermeasure kg:id_98 >>
+    prop:text-txt_contents "そのほかに、若年者健診ですとか母子健康手帳交付時等で、情報提供や注意喚起してまいりたい"@ja.
+<< kg:id_96 prop:contermeasure kg:id_99 >>
+    prop:text-txt_contents "そのほかに、若年者健診ですとか母子健康手帳交付時等で、情報提供や注意喚起してまいりたい"@ja.
+<< kg:id_96 prop:contermeasure kg:id_100 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "例えば、婚姻届の際にもということでございますが、そこら辺、きめ細かに周知してまいりたいと考えております"@ja.
+<< kg:id_101 prop:effect kg:id_102 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "このような状況で今後とも推移するとするならば、本市における税収の減額、一般消費の低迷などにより、本市経済に与える影響は大変大きなものがあり"@ja.
+<< kg:id_101 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "このような状況で今後とも推移するとするならば、本市における税収の減額、一般消費の低迷などにより、本市経済に与える影響は大変大きなものがあり"@ja.
+<< kg:id_101 prop:effect kg:id_104 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "それと同時に地域を支えるコミュニティの機能の低下にもつながること必至であります"@ja.
+<< kg:id_101 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "今年度、人口推計の10年スパンをベースにして、各部の所管業務ごとに、将来推計、その影響、そして分析を深める"@ja.
+<< kg:id_101 prop:contermeasure kg:id_106 >>
+    prop:text-txt_contents "例えば、結婚推進支援員の配置、保育所・学童保育所の整備、子育て世代の医療費無料化の拡大、雇用対策としてのプレステージ・インターナショナルの誘致など"@ja.
+<< kg:id_101 prop:contermeasure kg:id_107 >>
+    prop:text-txt_contents "例えば、結婚推進支援員の配置、保育所・学童保育所の整備、子育て世代の医療費無料化の拡大、雇用対策としてのプレステージ・インターナショナルの誘致など"@ja.
+<< kg:id_101 prop:contermeasure kg:id_108 >>
+    prop:text-txt_contents "例えば、結婚推進支援員の配置、保育所・学童保育所の整備、子育て世代の医療費無料化の拡大、雇用対策としてのプレステージ・インターナショナルの誘致など"@ja.
+<< kg:id_101 prop:contermeasure kg:id_109 >>
+    prop:text-txt_contents "例えば、結婚推進支援員の配置、保育所・学童保育所の整備、子育て世代の医療費無料化の拡大、雇用対策としてのプレステージ・インターナショナルの誘致など"@ja.
+<< kg:id_110 prop:cause kg:id_111 >>
+    prop:text-txt_contents "こうした非正規雇用の増加の背景には、高齢化、それから労働法制の改正がある"@ja.
+<< kg:id_110 prop:cause kg:id_112 >>
+    prop:text-txt_contents "こうした非正規雇用の増加の背景には、高齢化、それから労働法制の改正がある"@ja.
+<< kg:id_113 prop:cause kg:id_114 >>
+    prop:text-txt_contents "景気の急速な悪化の中で非正規雇用者が雇用調整の対象になっている"@ja.
+<< kg:id_115 prop:effect kg:id_116 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "これは先行きの不透明な雇用条件であり、求職意欲も弱まることであり"@ja.
+<< kg:id_115 prop:effect kg:id_117 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "仮に入社しても愛社精神や仕事を身につけたいという気持ちも希薄になっている"@ja.
+<< kg:id_115 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "企業に対して引き続き正社員として雇用していただくよう要請を行う"@ja.
+<< kg:id_115 prop:contermeasure kg:id_119 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "一人でも多くの方を雇用していただくために、地元企業への支援の施策を展開してまいりたい"@ja.
+<< kg:id_120 prop:contermeasure kg:id_121 >>
+    prop:text-txt_contents "今年度の固定資産税納税通知書に、空き家等に関する意向調査アンケートを同封したところでございます"@ja.
+<< kg:id_120 prop:contermeasure kg:id_122 >>
+    prop:text-txt_contents "売却や賃貸等を希望される方には、市から所有者等に連絡を取りまして、了解を得た上で宅地建物取引業協会につなぐこととしております"@ja.
+<< kg:id_120 prop:contermeasure kg:id_123 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "宅地建物取引業協会、司法書士会、建設業協会、金融協会などと市によるネットワーク協議会を立ち上げまして、官民一体となって空き家等総合対策を検討していく"@ja.
+<< kg:id_124 prop:cause kg:id_125 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "真空方式では新規接続者の負担により真空運転システムの調整が必要になるなど、自然流下方式に比較しまして接続費用が高額になっております"@ja.
+<< kg:id_124 prop:cause kg:id_126 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "接続工事のため真空装置が停止している間にはバキュームカーの手配も必要になったりしております"@ja.
+<< kg:id_124 prop:contermeasure kg:id_127 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "費用負担の軽減が図られますよう、公共汚水ます設置基準の見直しについて検討してまいりたい"@ja.
+<< kg:id_128 prop:cause kg:id_129 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "建設費高騰のため工事発注ができない状況が続いていて、建設業者初め、関係者との調整を続けている"@ja.
+<< kg:id_128 prop:effect kg:id_130 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "建設費高騰などにより事業が立ち行かない状況になってしまった"@ja.
+<< kg:id_128 prop:contermeasure kg:id_131 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "今後の対策をなるべく早くまとめたいというふうに思っていますけれども、いま少し時間が必要"@ja.
+<< kg:id_132 prop:cause kg:id_133 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "市民団体からは、大型の風力のために低周波や騒音問題、あるいは景観や野鳥に対する影響"@ja.
+<< kg:id_132 prop:cause kg:id_134 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "市民団体からは、大型の風力のために低周波や騒音問題、あるいは景観や野鳥に対する影響"@ja.
+<< kg:id_132 prop:cause kg:id_135 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "市民団体からは、大型の風力のために低周波や騒音問題、あるいは景観や野鳥に対する影響"@ja.
+<< kg:id_132 prop:cause kg:id_136 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "庄内海岸は生物多様性の宝庫ということもあり、３年から４年はかかりますが、法律に基づく評価を求めている"@ja.
+<< kg:id_137 prop:contermeasure kg:id_138 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "環境影響評価の項目については、法に定める評価項目と同等の内容で、しっかりと調査を実施し、丁寧な説明を行いながら取り組んでいきたい"@ja.
+<< kg:id_137 prop:contermeasure kg:id_139 >>
+    prop:text-txt_contents "現在、環境影響評価の具体的手法を定める方法書の概要について、地元に事前に説明会を開催しております"@ja.
+<< kg:id_137 prop:contermeasure kg:id_140 >>
+    prop:text-txt_contents "今後、方法書を広く公表するとともに"@ja.
+<< kg:id_137 prop:contermeasure kg:id_141 >>
+    prop:text-txt_contents "市民説明会を開催し、評価項目や手法について意見をいただきながら"@ja.
+<< kg:id_137 prop:contermeasure kg:id_142 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "事業について変更が必要であれば、柔軟に検討してまいる考えであります"@ja.
+<< kg:id_143 prop:cause kg:id_144 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "その理由として、男性が７勤務日以上の育休を取得した場合、１カ月未満５万円、１カ月以上10万円支給するが、企業側の理解や、とりにくい職場の雰囲気"@ja.
+<< kg:id_143 prop:cause kg:id_145 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "その理由として、男性が７勤務日以上の育休を取得した場合、１カ月未満５万円、１カ月以上10万円支給するが、企業側の理解や、とりにくい職場の雰囲気"@ja.
+<< kg:id_143 prop:cause kg:id_146 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "休業中の生活保障という観点から見れば、５万円、10万円の１回限りの支給では利用しにくいとの指摘があります"@ja.
+<< kg:id_143 prop:contermeasure kg:id_147 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "酒田市としましては、男性の育児休業取得を進めるために、まずは、この事業の周知が重要であろうと考えております"@ja.
+<< kg:id_148 prop:effect kg:id_149 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "子育てにはお金がかかる、これは子育てに携わった方であれば誰しもが実感していることであります"@ja.
+<< kg:id_148 prop:effect kg:id_150 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "保育園に２人、３人と通わせると、保育園料を払うために給与をもらっているという感覚になるのではないでしょうか"@ja.
+<< kg:id_148 prop:contermeasure kg:id_151 >>
+    prop:text-txt_contents "同時入所の場合の第２子の保育料は、本市は、通常の保育料の３分の１に軽減しております"@ja.
+<< kg:id_148 prop:contermeasure kg:id_152 >>
+    prop:text-txt_contents "第３子の保育料軽減につきましては、同時入所の場合、保育料無料としております"@ja.
+<< kg:id_153 prop:contermeasure kg:id_154 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "本人の同意を得て、児童手当を現金で支給し、その場で納付相談を行い、支給した児童手当から保育料を納入していただいております"@ja.
+<< kg:id_155 prop:contermeasure kg:id_156 >>
+    prop:text-txt_contents "保育料の納付につきましては、家庭の経済状況等を聞き取りしながら丁寧に納付相談を行い、可能な額を納めてもらっております"@ja.
+<< kg:id_157 prop:cause kg:id_158 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "この制度を利用しまして仮に10年間分の保険料を納付する場合、約180万円となります"@ja.
+<< kg:id_157 prop:contermeasure kg:id_159 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "山形県社会福祉協議会が実施しております貸付制度がありますので、まずはそちらを利用していただきたい"@ja.
+<< kg:id_157 prop:contermeasure kg:id_160 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "まずは、後納制度の周知とあわせまして、貸付制度についてもＰＲしてまいりたい"@ja.
+}

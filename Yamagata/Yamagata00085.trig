@@ -1,0 +1,1112 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00085> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "出生率の減少"@ja.
+kg:id_1 rdf:type cls:c_4664.
+cls:c_4664 rdfs:label "出生率低下"@ja.
+kg:id_2 rdfs:label "新型コロナウイルス"@ja.
+kg:id_2 rdf:type cls:c_1345.
+cls:c_1345 rdfs:label "感染症"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "将来的に子どもが欲しくないこと"@ja.
+kg:id_3 rdf:type cls:c_4665.
+cls:c_4665 rdfs:label "出生意欲低下"@ja.
+kg:id_4 rdfs:label "仕事と子育てのバランスへの不安"@ja.
+kg:id_4 rdf:type cls:c_898.
+cls:c_898 rdfs:label "育児不安"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "経済的不安"@ja.
+kg:id_5 rdf:type cls:c_4666.
+cls:c_4666 rdfs:label "経済不安"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "みちのくウエストライン"@ja.
+kg:id_6 rdf:type cls:c_4667.
+cls:c_4667 rdfs:label "道路"@ja.
+kg:id_7 rdfs:label "沿線各地域の産業経済活動を支える"@ja.
+kg:id_7 rdf:type cls:c_4668.
+cls:c_4668 rdfs:label "地域経済支援"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "新たな広域観光周遊ルートの形成"@ja.
+kg:id_8 rdf:type cls:c_4669.
+cls:c_4669 rdfs:label "観光ルート形成"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "外航クルーズ船の寄港の増加"@ja.
+kg:id_9 rdf:type cls:c_4670.
+cls:c_4670 rdfs:label "寄港増加"@ja.
+kg:id_6 prop:effect kg:id_9.
+kg:id_10 rdfs:label "インバウンドの回遊への寄与"@ja.
+kg:id_10 rdf:type cls:c_4671.
+cls:c_4671 rdfs:label "観光周遊促進"@ja.
+kg:id_6 prop:effect kg:id_10.
+kg:id_11 rdfs:label "現行幹線道路の一般国道47号と国道108号"@ja.
+kg:id_11 rdf:type cls:c_4672.
+cls:c_4672 rdfs:label "幹線道路"@ja.
+kg:id_12 rdfs:label "地形的に脆弱な箇所が多いこと"@ja.
+kg:id_12 rdf:type cls:c_4673.
+cls:c_4673 rdfs:label "地形脆弱"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "通行止めリスク"@ja.
+kg:id_13 rdf:type cls:c_4674.
+cls:c_4674 rdfs:label "通行止めリスク"@ja.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "要望活動や機運醸成活動に尽力する"@ja.
+kg:id_14 rdf:type cls:c_671.
+cls:c_671 rdfs:label "要望活動"@ja.
+kg:id_6 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "新庄酒田道路"@ja.
+kg:id_15 rdf:type cls:c_4667.
+kg:id_16 rdfs:label "事業化と事業進捗のための予算の確保"@ja.
+kg:id_16 rdf:type cls:c_4675.
+cls:c_4675 rdfs:label "予算確保"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "開通時期の早期公表の要望"@ja.
+kg:id_17 rdf:type cls:c_4676.
+cls:c_4676 rdfs:label "開通時期公表"@ja.
+kg:id_15 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "妊産婦の孤立"@ja.
+kg:id_18 rdf:type cls:c_4677.
+cls:c_4677 rdfs:label "妊産婦孤立"@ja.
+kg:id_19 rdfs:label "核家族化"@ja.
+kg:id_19 rdf:type cls:c_2532.
+cls:c_2532 rdfs:label "家族形態変化"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "地縁の希薄化"@ja.
+kg:id_20 rdf:type cls:c_4678.
+cls:c_4678 rdfs:label "地域関係希薄化"@ja.
+kg:id_18 prop:cause kg:id_20.
+kg:id_21 rdfs:label "少子化により子育て世代がお互いに支え合う機会が減少したこと"@ja.
+kg:id_21 rdf:type cls:c_4679.
+cls:c_4679 rdfs:label "支え合い減少"@ja.
+kg:id_18 prop:cause kg:id_21.
+kg:id_22 rdfs:label "育児に悩む妊産婦が孤立するケースの増加"@ja.
+kg:id_22 rdf:type cls:c_4680.
+cls:c_4680 rdfs:label "孤立増加"@ja.
+kg:id_18 prop:effect kg:id_22.
+kg:id_23 rdfs:label "産前産後の不安"@ja.
+kg:id_23 rdf:type cls:c_4681.
+cls:c_4681 rdfs:label "産前産後不安"@ja.
+kg:id_24 rdfs:label "産前・産後サポート事業の実施"@ja.
+kg:id_24 rdf:type cls:c_4682.
+cls:c_4682 rdfs:label "母子支援事業"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "産後の心身の負担"@ja.
+kg:id_25 rdf:type cls:c_4683.
+cls:c_4683 rdfs:label "産後負担"@ja.
+kg:id_26 rdfs:label "宿泊型産後ケア事業の実施"@ja.
+kg:id_26 rdf:type cls:c_4684.
+cls:c_4684 rdfs:label "産後ケア事業"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "産後ケア事業の利用しにくさ"@ja.
+kg:id_27 rdf:type cls:c_2351.
+cls:c_2351 rdfs:label "利用困難"@ja.
+kg:id_28 rdfs:label "食事代を除いた利用者負担分の軽減"@ja.
+kg:id_28 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "アウトリーチ型やデイサービス型の産後ケア事業を実施していないこと"@ja.
+kg:id_29 rdf:type cls:c_4685.
+cls:c_4685 rdfs:label "事業未実施"@ja.
+kg:id_30 rdfs:label "受託先がないこと"@ja.
+kg:id_30 rdf:type cls:c_4686.
+cls:c_4686 rdfs:label "受託先不足"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "無痛分娩を希望する妊婦に対応できないこと"@ja.
+kg:id_31 rdf:type cls:c_4687.
+cls:c_4687 rdfs:label "医療対応不足"@ja.
+kg:id_32 rdfs:label "マンパワーの不足"@ja.
+kg:id_32 rdf:type cls:c_1145.
+cls:c_1145 rdfs:label "人員不足"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "無痛分娩"@ja.
+kg:id_33 rdf:type cls:c_4688.
+cls:c_4688 rdfs:label "医療行為"@ja.
+kg:id_34 rdfs:label "分娩時の痛みが軽減される"@ja.
+kg:id_34 rdf:type cls:c_4689.
+cls:c_4689 rdfs:label "痛み軽減"@ja.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "産後の体力を温存できる"@ja.
+kg:id_35 rdf:type cls:c_4690.
+cls:c_4690 rdfs:label "体力温存"@ja.
+kg:id_33 prop:effect kg:id_35.
+kg:id_36 rdfs:label "分娩時間が長くなる"@ja.
+kg:id_36 rdf:type cls:c_4691.
+cls:c_4691 rdfs:label "分娩時間長期化"@ja.
+kg:id_33 prop:effect kg:id_36.
+kg:id_37 rdfs:label "母体への副作用や合併症等が起こる"@ja.
+kg:id_37 rdf:type cls:c_4692.
+cls:c_4692 rdfs:label "副作用発生"@ja.
+kg:id_33 prop:effect kg:id_37.
+kg:id_38 rdfs:label "産後間もない産婦の不安"@ja.
+kg:id_38 rdf:type cls:c_4693.
+cls:c_4693 rdfs:label "産後不安"@ja.
+kg:id_39 rdfs:label "産後２週間健診の実施"@ja.
+kg:id_39 rdf:type cls:c_4694.
+cls:c_4694 rdfs:label "健診実施"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "出産や子育てに関する情報が当事者以外に届きにくいこと"@ja.
+kg:id_40 rdf:type cls:c_4695.
+cls:c_4695 rdfs:label "情報周知不足"@ja.
+kg:id_41 rdfs:label "当事者でない他の市民に対しても積極的な周知方法を検討する"@ja.
+kg:id_41 rdf:type cls:c_2415.
+cls:c_2415 rdfs:label "周知強化"@ja.
+kg:id_40 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "観光スタイルの変化"@ja.
+kg:id_42 rdf:type cls:c_2427.
+cls:c_2427 rdfs:label "観光変化"@ja.
+kg:id_43 rdfs:label "高齢化"@ja.
+kg:id_43 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "新型コロナウイルス感染拡大による３密回避"@ja.
+kg:id_44 rdf:type cls:c_1191.
+cls:c_1191 rdfs:label "感染症対策"@ja.
+kg:id_42 prop:cause kg:id_44.
+kg:id_45 rdfs:label "観光ガイド"@ja.
+kg:id_45 rdf:type cls:c_4696.
+cls:c_4696 rdfs:label "観光人材"@ja.
+kg:id_46 rdfs:label "旅行者に地域の魅力を体感させる"@ja.
+kg:id_46 rdf:type cls:c_4697.
+cls:c_4697 rdfs:label "魅力体験提供"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "旅行者と地域の人々を結びつける"@ja.
+kg:id_47 rdf:type cls:c_4698.
+cls:c_4698 rdfs:label "地域交流促進"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "観光ガイドの担い手不足"@ja.
+kg:id_48 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_49 rdfs:label "会員数が横ばいで人手不足が影響していること"@ja.
+kg:id_49 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "外国語対応可能な観光ガイドの不足"@ja.
+kg:id_50 rdf:type cls:c_807.
+kg:id_51 rdfs:label "インバウンド対応の研修の場を設ける"@ja.
+kg:id_51 rdf:type cls:c_870.
+cls:c_870 rdfs:label "研修実施"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "スキルアップのための支援を行う"@ja.
+kg:id_52 rdf:type cls:c_855.
+cls:c_855 rdfs:label "育成支援"@ja.
+kg:id_50 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "高校生ガイドの育成"@ja.
+kg:id_53 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_54 rdfs:label "地元愛の醸成に寄与する"@ja.
+kg:id_54 rdf:type cls:c_4699.
+cls:c_4699 rdfs:label "地元愛醸成"@ja.
+kg:id_53 prop:effect kg:id_54.
+kg:id_55 rdfs:label "鳥海山の案内看板の不足"@ja.
+kg:id_55 rdf:type cls:c_4700.
+cls:c_4700 rdfs:label "案内不足"@ja.
+kg:id_56 rdfs:label "不親切な山と受け止められる"@ja.
+kg:id_56 rdf:type cls:c_4701.
+cls:c_4701 rdfs:label "不親切評価"@ja.
+kg:id_55 prop:effect kg:id_56.
+kg:id_57 rdfs:label "山形県及び鳥海国定公園観光開発協議会を通じた案内看板の充実"@ja.
+kg:id_57 rdf:type cls:c_4702.
+cls:c_4702 rdfs:label "案内充実"@ja.
+kg:id_55 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "県道滝ノ小屋線付近の路上駐車問題"@ja.
+kg:id_58 rdf:type cls:c_4703.
+cls:c_4703 rdfs:label "路上駐車問題"@ja.
+kg:id_59 rdfs:label "冬季通行止め付近に駐車する利用者がいること"@ja.
+kg:id_59 rdf:type cls:c_4704.
+cls:c_4704 rdfs:label "利用者駐車"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "鳥海高原デーリィファームの大型車が通れなくなる"@ja.
+kg:id_60 rdf:type cls:c_3311.
+cls:c_3311 rdfs:label "通行阻害"@ja.
+kg:id_58 prop:effect kg:id_60.
+kg:id_61 rdfs:label "山形県や関係機関と課題解決に向けた対策を協議する"@ja.
+kg:id_61 rdf:type cls:c_4500.
+cls:c_4500 rdfs:label "対策協議"@ja.
+kg:id_58 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "能登半島地震時の避難の混乱"@ja.
+kg:id_62 rdf:type cls:c_4705.
+cls:c_4705 rdfs:label "避難混乱"@ja.
+kg:id_63 rdfs:label "市からの情報が少なかったこと"@ja.
+kg:id_63 rdf:type cls:c_155.
+cls:c_155 rdfs:label "情報不足"@ja.
+kg:id_62 prop:cause kg:id_63.
+kg:id_64 rdfs:label "津波警報発令中の自主帰宅者の発生"@ja.
+kg:id_64 rdf:type cls:c_4706.
+cls:c_4706 rdfs:label "自主帰宅発生"@ja.
+kg:id_65 rdfs:label "周知が徹底されていなかったこと"@ja.
+kg:id_65 rdf:type cls:c_1098.
+cls:c_1098 rdfs:label "周知不足"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "避難所や緊急一時避難場所から多くの自主帰宅者が出た"@ja.
+kg:id_66 rdf:type cls:c_4707.
+cls:c_4707 rdfs:label "自主帰宅増加"@ja.
+kg:id_64 prop:effect kg:id_66.
+kg:id_67 rdfs:label "津波避難ビルに備蓄がないこと"@ja.
+kg:id_67 rdf:type cls:c_4708.
+cls:c_4708 rdfs:label "備蓄不足"@ja.
+kg:id_68 rdfs:label "一時的に避難するための場所であり主に民間施設であること"@ja.
+kg:id_68 rdf:type cls:c_4709.
+cls:c_4709 rdfs:label "避難場所特性"@ja.
+kg:id_67 prop:cause kg:id_68.
+kg:id_69 rdfs:label "ゼリーやアルミシートなどの軽易なものを備蓄する"@ja.
+kg:id_69 rdf:type cls:c_4710.
+cls:c_4710 rdfs:label "軽易備蓄"@ja.
+kg:id_67 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "孤立集落での生活困難"@ja.
+kg:id_70 rdf:type cls:c_4711.
+cls:c_4711 rdfs:label "孤立集落"@ja.
+kg:id_71 rdfs:label "１週間程度の食料等を備蓄しておく"@ja.
+kg:id_71 rdf:type cls:c_4712.
+cls:c_4712 rdfs:label "食料備蓄"@ja.
+kg:id_70 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "災害時の情報不足"@ja.
+kg:id_72 rdf:type cls:c_155.
+kg:id_73 rdfs:label "異状がないといった事実も積極的に発信する"@ja.
+kg:id_73 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_72 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "災害時の情報のやり取りの限界"@ja.
+kg:id_74 rdf:type cls:c_4713.
+cls:c_4713 rdfs:label "情報伝達限界"@ja.
+kg:id_75 rdfs:label "避難所連絡員が必ずしも防災の専門知識があるわけではないこと"@ja.
+kg:id_75 rdf:type cls:c_4714.
+cls:c_4714 rdfs:label "専門知識不足"@ja.
+kg:id_74 prop:cause kg:id_75.
+kg:id_76 rdfs:label "防災士会をつくって各地区の避難所連絡員を補佐してもらう"@ja.
+kg:id_76 rdf:type cls:c_4715.
+cls:c_4715 rdfs:label "専門人材活用"@ja.
+kg:id_74 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "防災訓練参加の不足"@ja.
+kg:id_77 rdf:type cls:c_4716.
+cls:c_4716 rdfs:label "訓練参加不足"@ja.
+kg:id_78 rdfs:label "避難行動に明確な差が生じた"@ja.
+kg:id_78 rdf:type cls:c_4717.
+cls:c_4717 rdfs:label "避難差発生"@ja.
+kg:id_77 prop:effect kg:id_78.
+kg:id_79 rdfs:label "防災訓練の参加の必要性を積極的に呼びかける"@ja.
+kg:id_79 rdf:type cls:c_4718.
+cls:c_4718 rdfs:label "参加呼びかけ"@ja.
+kg:id_77 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "能登半島地震時の混乱"@ja.
+kg:id_80 rdf:type cls:c_4705.
+kg:id_81 rdfs:label "市全域への緊急速報メール配信で市内全域が避難対象と捉えられたこと"@ja.
+kg:id_81 rdf:type cls:c_4719.
+cls:c_4719 rdfs:label "対象誤認"@ja.
+kg:id_80 prop:cause kg:id_81.
+kg:id_82 rdfs:label "大津波警報として配信しその後訂正を流したこと"@ja.
+kg:id_82 rdf:type cls:c_4720.
+cls:c_4720 rdfs:label "誤情報配信"@ja.
+kg:id_80 prop:cause kg:id_82.
+kg:id_83 rdfs:label "要配慮者の避難困難"@ja.
+kg:id_83 rdf:type cls:c_2991.
+cls:c_2991 rdfs:label "避難困難"@ja.
+kg:id_84 rdfs:label "個別避難計画を作成する"@ja.
+kg:id_84 rdf:type cls:c_2110.
+cls:c_2110 rdfs:label "避難計画"@ja.
+kg:id_83 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "田沢コミュニティセンターの早期移転が実現しないこと"@ja.
+kg:id_85 rdf:type cls:c_4721.
+cls:c_4721 rdfs:label "施設移転困難"@ja.
+kg:id_86 rdfs:label "補助金の処分制限期間の10年間は用途変更できないこと"@ja.
+kg:id_86 rdf:type cls:c_4722.
+cls:c_4722 rdfs:label "用途変更制限"@ja.
+kg:id_85 prop:cause kg:id_86.
+kg:id_87 rdfs:label "補助金の返還や過疎債の一括繰上償還を求められる可能性"@ja.
+kg:id_87 rdf:type cls:c_4723.
+cls:c_4723 rdfs:label "財政負担可能性"@ja.
+kg:id_85 prop:cause kg:id_87.
+kg:id_88 rdfs:label "田沢小学校をコミュニティセンターとしてそのまま使えないこと"@ja.
+kg:id_88 rdf:type cls:c_4724.
+cls:c_4724 rdfs:label "施設利用困難"@ja.
+kg:id_89 rdfs:label "消防法に合わせた消防設備の拡充が必要なこと"@ja.
+kg:id_89 rdf:type cls:c_4725.
+cls:c_4725 rdfs:label "設備拡充必要"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "内水氾濫"@ja.
+kg:id_90 rdf:type cls:c_3361.
+cls:c_3361 rdfs:label "内水氾濫"@ja.
+kg:id_91 rdfs:label "土地区画整理事業等の宅地造成後に地盤沈下が生じくぼ地となったこと"@ja.
+kg:id_91 rdf:type cls:c_2888.
+cls:c_2888 rdfs:label "地盤沈下"@ja.
+kg:id_90 prop:cause kg:id_91.
+kg:id_92 rdfs:label "道路冠水や宅地の浸水"@ja.
+kg:id_92 rdf:type cls:c_1490.
+cls:c_1490 rdfs:label "浸水被害"@ja.
+kg:id_93 rdfs:label "計画時間雨量50.4ミリメートル以下の雨でも発生していること"@ja.
+kg:id_93 rdf:type cls:c_4726.
+cls:c_4726 rdfs:label "少雨浸水"@ja.
+kg:id_92 prop:cause kg:id_93.
+kg:id_94 rdfs:label "雨水幹線や排水ポンプ施設の整備"@ja.
+kg:id_94 rdf:type cls:c_3368.
+cls:c_3368 rdfs:label "排水施設整備"@ja.
+kg:id_90 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "浸水センサ13か所と危機管理型水位計6か所の設置"@ja.
+kg:id_95 rdf:type cls:c_4727.
+cls:c_4727 rdfs:label "監視設備設置"@ja.
+kg:id_90 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "札谷地排水路の排水能力不足"@ja.
+kg:id_96 rdf:type cls:c_4728.
+cls:c_4728 rdfs:label "排水能力不足"@ja.
+kg:id_97 rdfs:label "富士見町一丁目ポンプの更新工事"@ja.
+kg:id_97 rdf:type cls:c_4729.
+cls:c_4729 rdfs:label "ポンプ更新"@ja.
+kg:id_96 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "樋門の断面拡幅について県と協議する"@ja.
+kg:id_98 rdf:type cls:c_4730.
+cls:c_4730 rdfs:label "断面拡幅"@ja.
+kg:id_96 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "除雪事業者の経営不安定化"@ja.
+kg:id_99 rdf:type cls:c_4643.
+cls:c_4643 rdfs:label "経営不安定"@ja.
+kg:id_100 rdfs:label "暖冬による除雪稼働日数の著しい減少"@ja.
+kg:id_100 rdf:type cls:c_4731.
+cls:c_4731 rdfs:label "稼働減少"@ja.
+kg:id_99 prop:cause kg:id_100.
+kg:id_101 rdfs:label "待機補償費の支給"@ja.
+kg:id_101 rdf:type cls:c_2330.
+cls:c_2330 rdfs:label "待機補償"@ja.
+kg:id_99 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "除雪機械オペレーター不足"@ja.
+kg:id_102 rdf:type cls:c_807.
+kg:id_103 rdfs:label "道路除雪担い手支援制度を設ける"@ja.
+kg:id_103 rdf:type cls:c_623.
+cls:c_623 rdfs:label "担い手支援"@ja.
+kg:id_102 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "除雪業務の事務負担"@ja.
+kg:id_104 rdf:type cls:c_4732.
+cls:c_4732 rdfs:label "事務負担"@ja.
+kg:id_105 rdfs:label "除雪機械運行管理システムの導入"@ja.
+kg:id_105 rdf:type cls:c_781.
+cls:c_781 rdfs:label "管理システム"@ja.
+kg:id_104 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "環鳥海山エリアの観光振興"@ja.
+kg:id_106 rdf:type cls:c_1423.
+cls:c_1423 rdfs:label "観光振興"@ja.
+kg:id_107 rdfs:label "観光客の周遊促進"@ja.
+kg:id_107 rdf:type cls:c_3595.
+cls:c_3595 rdfs:label "周遊促進"@ja.
+kg:id_106 prop:effect kg:id_107.
+kg:id_108 rdfs:label "物流や地域経済の活性化"@ja.
+kg:id_108 rdf:type cls:c_4733.
+cls:c_4733 rdfs:label "地域経済活性化"@ja.
+kg:id_106 prop:effect kg:id_108.
+kg:id_109 rdfs:label "広域的な連携に官民一体となって取り組む"@ja.
+kg:id_109 rdf:type cls:c_827.
+cls:c_827 rdfs:label "広域連携"@ja.
+kg:id_106 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "世界ジオパーク認定"@ja.
+kg:id_110 rdf:type cls:c_4734.
+cls:c_4734 rdfs:label "認定取得"@ja.
+kg:id_111 rdfs:label "国際的価値のある地質遺産の創出"@ja.
+kg:id_111 rdf:type cls:c_4735.
+cls:c_4735 rdfs:label "地質遺産創出"@ja.
+kg:id_110 prop:contermeasure kg:id_111.
+kg:id_112 rdfs:label "拠点施設の整備"@ja.
+kg:id_112 rdf:type cls:c_1241.
+cls:c_1241 rdfs:label "拠点整備"@ja.
+kg:id_110 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "ウェブサイトや印刷物や誘導看板の多言語化"@ja.
+kg:id_113 rdf:type cls:c_1713.
+cls:c_1713 rdfs:label "多言語化"@ja.
+kg:id_110 prop:contermeasure kg:id_113.
+kg:id_114 rdfs:label "地域に根差した活動の展開"@ja.
+kg:id_114 rdf:type cls:c_2505.
+cls:c_2505 rdfs:label "地域活動"@ja.
+kg:id_110 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "自然体験型観光地づくり"@ja.
+kg:id_115 rdf:type cls:c_4736.
+cls:c_4736 rdfs:label "観光地づくり"@ja.
+kg:id_116 rdfs:label "長期滞在が可能な宿泊施設の整備"@ja.
+kg:id_116 rdf:type cls:c_4737.
+cls:c_4737 rdfs:label "宿泊整備"@ja.
+kg:id_115 prop:contermeasure kg:id_116.
+kg:id_117 rdfs:label "体験や学びを提供する人材の育成"@ja.
+kg:id_117 rdf:type cls:c_703.
+kg:id_115 prop:contermeasure kg:id_117.
+kg:id_118 rdfs:label "エリア内で周遊を促すルートの設定"@ja.
+kg:id_118 rdf:type cls:c_4738.
+cls:c_4738 rdfs:label "周遊ルート"@ja.
+kg:id_115 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "ふるさと納税の伸長"@ja.
+kg:id_119 rdf:type cls:c_1676.
+cls:c_1676 rdfs:label "寄附増加"@ja.
+kg:id_120 rdfs:label "返礼品の登録数を増やす取組を継続的に行ってきたこと"@ja.
+kg:id_120 rdf:type cls:c_4739.
+cls:c_4739 rdfs:label "返礼品拡充"@ja.
+kg:id_119 prop:cause kg:id_120.
+kg:id_121 rdfs:label "返礼品が質的に優れていること"@ja.
+kg:id_121 rdf:type cls:c_4740.
+cls:c_4740 rdfs:label "返礼品品質"@ja.
+kg:id_119 prop:cause kg:id_121.
+kg:id_122 rdfs:label "返礼品提供事業者や発送管理事業者や配送事業者やポータルサイト運営者が良好な関係を築いていること"@ja.
+kg:id_122 rdf:type cls:c_4741.
+cls:c_4741 rdfs:label "事業者連携"@ja.
+kg:id_119 prop:cause kg:id_122.
+kg:id_123 rdfs:label "お米のブランドが確立していたこと"@ja.
+kg:id_123 rdf:type cls:c_4742.
+cls:c_4742 rdfs:label "地域ブランド"@ja.
+kg:id_119 prop:cause kg:id_123.
+kg:id_124 rdfs:label "ふるさと納税"@ja.
+kg:id_124 rdf:type cls:c_3224.
+cls:c_3224 rdfs:label "寄附制度"@ja.
+kg:id_125 rdfs:label "ふるさと納税返礼品開発等支援補助金を活用して新たな返礼品開発に力を入れる"@ja.
+kg:id_125 rdf:type cls:c_3235.
+cls:c_3235 rdfs:label "返礼品開発"@ja.
+kg:id_124 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "ガバメントクラウドファンディングを通じて本市の取組を広くPRする"@ja.
+kg:id_126 rdf:type cls:c_1805.
+cls:c_1805 rdfs:label "広報活動"@ja.
+kg:id_124 prop:contermeasure kg:id_126.
+kg:id_127 rdfs:label "企業版ふるさと納税の寄附拡大"@ja.
+kg:id_127 rdf:type cls:c_4743.
+cls:c_4743 rdfs:label "企業寄附拡大"@ja.
+kg:id_128 rdfs:label "酒田DMOに寄附の営業活動業務を委託する"@ja.
+kg:id_128 rdf:type cls:c_4744.
+cls:c_4744 rdfs:label "営業委託"@ja.
+kg:id_127 prop:contermeasure kg:id_128.
+kg:id_129 rdfs:label "既に寄附実績のある企業にも営業活動を進める"@ja.
+kg:id_129 rdf:type cls:c_2068.
+cls:c_2068 rdfs:label "営業活動"@ja.
+kg:id_127 prop:contermeasure kg:id_129.
+kg:st_1 rdfs:label "大壁洋平議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "子育て世代の目線を重視して不安の払拭が必要と考える"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "子どもを望む人の将来不安に社会全体で寄り添う必要がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "経済的不安への支援が産み育てやすいまちづくりに必要と考える"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "矢口明子市長"@ja.
+kg:st_2 rdfs:type cls:st_17.
+cls:st_17 rdfs:label "市長"@ja.
+kg:op_4 prop:content "物流の大動脈として極めて重要な道路と認識している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "早期整備で広域観光周遊ルート形成が見込まれる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "整備によりクルーズ船寄港増加が期待される"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "インバウンド回遊にも寄与すると期待している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "通行止めリスクがあるため代替路の早期整備が必要と考える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "沿線住民の安全安心のため早期整備は必要不可欠と考える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "宮城山形両県や沿線市町村と連携して要望活動を進める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "全線開通を目指して予算確保と開通時期の早期公表を求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "官民一丸で早期公表を要望する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "松田俊一健康福祉部地域医療調整監"@ja.
+kg:st_3 rdfs:type cls:st_47.
+cls:st_47 rdfs:label "行政職"@ja.
+kg:op_13 prop:content "妊娠期から子育て期まで切れ目ない支援の継続が必要と考える"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "相談やサロン開催など多様な手法で不安軽減に取り組んでいる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "同世代の支え合い減少で育児に悩む妊産婦が孤立している"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "特に支援が必要な妊婦が増加している現状がある"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "訪問やサロン開催で不安軽減と情報提供を行っている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "産科医療機関への宿泊により母親の心身回復を支援している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "国の補助金を活用してより使いやすい制度にしたい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "今後改めて事業内容を検討したい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "安全に無痛分娩を実施できる体制整備が困難と認識している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "落ち着いて出産でき産後の体力温存にもつながる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "自然分娩と比べて産後回復面の利点がある"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "メリットだけでなくデメリットも理解した上で選択が必要"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "安全な提供体制の構築が前提と認識している"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "産科医療機関と情報共有し支援が必要な産婦に寄り添う"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "妊婦と家族以外への周知方法の検討が必要と認識している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "市村浩一議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_28 prop:content "量より質の観光を求める流れの中で観光ガイドの重要性が高まる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "個人旅行や体験重視の観光に変化しているとみている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_5 rdfs:type cls:st_47.
+kg:op_30 prop:content "観光客により深い体験と感動を与える重要な人材と考える"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:op_31 prop:content "本市の観光において非常に重要な役割を担っている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_5.
+kg:op_32 prop:content "ガイド件数増加に対し育成が必要と考える"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_4.
+kg:op_33 prop:content "より多くの外国語対応可能な観光ガイド育成が必須と考える"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_5.
+kg:op_34 prop:content "利用しやすい申込方法や受付体制整備も必要と考える"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_5.
+kg:op_35 prop:content "高校生から前向きな感想があり地元愛醸成にも寄与している"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_5.
+kg:op_36 prop:content "安心安全に登れるよう案内看板の充実が必要と考える"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "山形県や協議会と協議し安全対策と情報発信の在り方を進める"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_5.
+kg:op_38 prop:content "マナーを守らない残念な事例が多く課題と認識している"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_5.
+kg:op_39 prop:content "駐車スペース確保など何らかの対応が必要と考える"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "自然公園管理者や協議会と意見交換し課題解決を図りたい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "那須欣男総務部危機管理監"@ja.
+kg:st_6 rdfs:type cls:st_47.
+kg:op_41 prop:content "情報発信の在り方を検討し充実させる必要がある"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_6.
+kg:op_42 prop:content "避難所にとどまる重要性の周知を今後一層行う"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_6.
+kg:op_43 prop:content "今後解決しなければいけない課題と考えている"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_6.
+kg:op_44 prop:content "長引く場合に備え軽易な備蓄の必要性を感じている"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_6.
+kg:op_45 prop:content "施設管理者と備蓄について協議している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_6.
+kg:op_46 prop:content "出前講座等で備蓄を呼びかけている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_6.
+kg:op_47 prop:content "否定情報も含めた発信で市民の安心につなげたい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_6.
+kg:op_48 prop:content "防災士会の活用で情報提供と交換を強化したい"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_6.
+kg:op_49 prop:content "防災士会長を災害対策本部に置く構想を考えている"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_6.
+kg:op_50 prop:content "今回の地震で防災訓練参加の必要性が明らかになった"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_6.
+kg:op_51 prop:content "小中学校への防災教育拡充と合わせて参加を促したい"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_6.
+kg:op_52 prop:content "情報発信の在り方を反省し改善する必要がある"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_6.
+kg:op_53 prop:content "市民に混乱を招いたことを反省している"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_6.
+kg:op_54 prop:content "車避難の検討を地域と一緒に行うことが大切と考える"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_6.
+kg:op_55 prop:content "処分制限期間中は基本的に用途変更が難しいと認識している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "財政面の課題から慎重な判断が必要と考える"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "改修せずにコミュニティセンター活用するのは難しい認識に変わりはない"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "中村良一建設部長"@ja.
+kg:st_7 rdfs:type cls:st_47.
+kg:op_58 prop:content "浸水常襲地区の構造的要因として認識している"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_7.
+kg:op_59 prop:content "くぼ地のため比較的小さい雨でも浸水が起こる"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_7.
+kg:op_60 prop:content "整備済み地区では浸水被害は軽減されたと判断している"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_7.
+kg:op_61 prop:content "情報把握能力の向上を図っている"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_7.
+kg:op_62 prop:content "新年度に更新工事を予定している"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_7.
+kg:op_63 prop:content "樋門管理者である県と協議を行っている"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_7.
+kg:op_64 prop:content "少雪でも事業継続できるよう待機補償費を検討していく"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_7.
+kg:op_65 prop:content "平成18年度暖冬を契機に導入し令和2年度に拡充した"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_7.
+kg:op_66 prop:content "オペレーター確保に努めている"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_7.
+kg:op_67 prop:content "作業の見える化と事務負担軽減に効果がある"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_7.
+kg:op_68 prop:content "高速道路整備は周遊促進と地域経済活性化につながる"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_5.
+kg:op_69 prop:content "インフラ整備は観光だけでなく地域経済にも効果がある"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_5.
+kg:op_70 prop:content "行政同士団体間の連携と情報共有が重要と考える"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_5.
+kg:op_71 prop:content "英語論文の作成と既存論文の集積で価値の検証を進めている"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_5.
+kg:op_72 prop:content "遊佐パーキングエリアタウンや山居倉庫を核に整備を進める考え"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_5.
+kg:op_73 prop:content "英語中国語韓国語など多言語化を進めている"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_5.
+kg:op_74 prop:content "研究者企業地域住民が協力する仕組みづくりを進めている"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_5.
+kg:op_75 prop:content "長く滞在してもらうために必要な条件と考える"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_5.
+kg:op_76 prop:content "ジオガイド育成が観光振興に寄与している"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_5.
+kg:op_77 prop:content "多くのポイントで体験の場を提供し長期滞在につなげたい"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_5.
+kg:op_78 prop:content "返礼品の充実が寄附額増加の基盤になっている"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_5.
+kg:op_79 prop:content "質の高い返礼品が多くの寄附者に評価されている"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_5.
+kg:op_80 prop:content "関係者の良好な連携が寄附者対応の質を高めている"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_5.
+kg:op_81 prop:content "庄内米ブランドを生かした定期便が強みになった"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_5.
+kg:op_82 prop:content "寄附先として選ばれるため返礼品充実が重要と考える"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_5.
+kg:op_83 prop:content "共感を得ながら返礼品開発等の原資確保につなげたい"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_5.
+kg:op_84 prop:content "新規寄附企業の増加に一定程度成果があった"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_5.
+kg:op_85 prop:content "継続寄附企業の獲得も非常に重要と考える"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "出生率は新型コロナウイルスもあって加速度的に減少しており"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "将来的に子どもが欲しくない理由としましては、仕事と子育てのバランスとともに経済的不安を感じていることが主な原因である"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "将来的に子どもが欲しくない理由としましては、仕事と子育てのバランスとともに経済的不安を感じていることが主な原因である"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "みちのくウエストライン、石巻新庄道路・新庄酒田道路は、東北唯一の国際拠点港湾である仙台塩釜港の石巻港区と日本海側の物流拠点である重要港湾の酒田港をつなぐ物流の大動脈として、沿線各地域の産業経済活動を支える極めて重要な道路である"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "本路線の早期整備により、新たな広域観光周遊ルートの形成が見込まれる"@ja.
+<< kg:id_6 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "外航クルーズ船の寄港の増加、これに伴うインバウンドの回遊にも寄与することが期待されます"@ja.
+<< kg:id_6 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "外航クルーズ船の寄港の増加、これに伴うインバウンドの回遊にも寄与することが期待されます"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "しかしながら、地形的に脆弱な箇所が多く、通行止めリスクがあることから"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "地形的に脆弱な箇所が多く、通行止めリスクがあることから"@ja.
+<< kg:id_6 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "石巻新庄道路についても、宮城・山形両県、沿線市町村と連携を図りながら、要望活動や機運醸成活動に尽力してまいります"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "事業化と事業進捗のための予算の確保、それから開通時期の早期公表を要望してまいります"@ja.
+<< kg:id_15 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "開通時期の早期公表を要望してまいります"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "近年の核家族化、地縁の希薄化により、家族や地域で子育て家族を支援する力が弱まっている"@ja.
+<< kg:id_18 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "近年の核家族化、地縁の希薄化により、家族や地域で子育て家族を支援する力が弱まっている"@ja.
+<< kg:id_18 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "少子化により同じように子育てをしている世代がお互いに支え合う機会が減少し、育児に悩む妊産婦が孤立するケースが増加しております"@ja.
+<< kg:id_18 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "育児に悩む妊産婦が孤立するケースが増加しております"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "御自宅への訪問や子育て支援センターを会場としたサロンを開催するなど様々な手法を用いまして、傾聴等による不安の軽減、育児の手技の確認、地域の母子保健・子育て支援に係る情報の提供を行う産前・産後サポート事業を実施しております"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "家族等から産後の援助を受けられず、支援を要する母子が産科医療機関に宿泊し、育児指導を受けながら、母親の心身の回復を図る産後ケア事業を実施する"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "令和６年度の新たな取組としまして、食事代を除いた利用者負担分につきまして、国の補助金等を活用し軽減を図り、より使いやすい制度にしたい"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "アウトリーチ型とデイサービス型の実施につきましても検討したところですが、受託先がないことから断念した経過がございます"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "無痛分娩を希望される妊婦に対応できない大きな理由としましては、やはりマンパワーの不足ということが大きいということで、安全に無痛分娩を実施できる体制を整えることが困難である"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "無痛分娩は、分娩時の痛みが軽減されることにより、落ち着いて出産できる"@ja.
+<< kg:id_33 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "自然分娩と比べまして産後の体力を温存できるメリットがございます"@ja.
+<< kg:id_33 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "反面、分娩時間が長くなる"@ja.
+<< kg:id_33 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "麻酔によっては母体への副作用や合併症等が起こるなどのデメリットもある"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "日本海総合病院では令和６年４月から、自院で出産した産婦を対象としまして、希望される方に産後２週間健診を実施する"@ja.
+<< kg:id_40 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "当事者でない他の市民に対しても積極的な周知ができるような方法について検討してまいりたい"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "さらには高齢化や新型コロナウイルス感染拡大による３密回避による原因も輪をかけて"@ja.
+<< kg:id_42 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "新型コロナウイルス感染拡大による３密回避による原因も輪をかけて"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "旅行者に地域の魅力を体感させ"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "旅行者と地域の人々を結びつけて、交流やコミュニケーションを生みだすことができる観光ガイドは地域の観光にとって必要不可欠な存在"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "最近のガイドの件数も非常に増えているそうであります。しかしながら、会員数は横ばいであり、ここにも人手不足が影響しているようであり"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "今後もこうしたインバウンド対応の研修の場を設けたり、スキルアップのための支援を行ってまいりたい"@ja.
+<< kg:id_50 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "スキルアップのための支援を行ってまいりたい"@ja.
+<< kg:id_53 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "地元愛の醸成にも寄与しているものと考えているところでございます"@ja.
+<< kg:id_55 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "鳥海山ほど案内看板が少ない不親切な山はない"@ja.
+<< kg:id_55 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "道標、案内看板だけではなく、アプリケーションの利用推奨を含め、登山者の安全対策と登山道などの情報発信の在り方について、今後、山形県と鳥海国定公園観光開発協議会等の関係機関と協議を進めてまいりたい"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "県道368号線の冬季通行止め付近の路上駐車問題も生じております"@ja.
+<< kg:id_58 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "そこに出入りする大型車はその駐車が邪魔になって通れなくなる"@ja.
+<< kg:id_58 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "山形県や環境省等の関係部局のほか、鳥海国定公園観光開発協議会とも意見交換を行いながら、課題解決に向けた対策を協議してまいりたい"@ja.
+<< kg:id_62 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "市からの情報が少なかったとの指摘が市民の方々から寄せられました"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "周知が徹底されていなかったと思われます"@ja.
+<< kg:id_64 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "津波警報解除前であっても、各避難所から自主的に帰宅した方々が多くいたこと、特に沿岸部の避難所、緊急一時避難場所においても多くの自主帰宅者がおられました"@ja.
+<< kg:id_67 prop:cause kg:id_68 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "避難所ではないことと、避難場所である津波避難ビルは主に民間施設であるため、食料品等の備蓄品は配備しておりません"@ja.
+<< kg:id_67 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "ゼリーやアルミシートなどの軽易なものは備蓄したほうが良いと我々は考えております"@ja.
+<< kg:id_70 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "対象地区については、孤立した場合に備え１週間程度の食料等を備蓄しておくよう出前講座等において話をしております"@ja.
+<< kg:id_72 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "この地域はもう異状はありません、現在ここまでしか異状が確認されていません、といった否定情報も併せて発信する"@ja.
+<< kg:id_74 prop:cause kg:id_75 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "配備している避難所連絡員は、必ずしも防災の専門知識があるわけではございません"@ja.
+<< kg:id_74 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "専門知識のある防災士で防災士会をつくって、各地区の避難所連絡員を補佐してもらう"@ja.
+<< kg:id_77 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "今回の地震で、防災訓練に参加しているか、いないかで、避難行動に明確な差が生じ"@ja.
+<< kg:id_77 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "今回の地震を受けまして、防災訓練の参加の必要性を積極的に呼びかけていきたい"@ja.
+<< kg:id_80 prop:cause kg:id_81 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "市内全域への緊急速報メールの配信で、市内全域が避難対象として捉えられたものと考えております"@ja.
+<< kg:id_80 prop:cause kg:id_82 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "この警報を大津波警報として配信し、その後訂正を流したことにより市民の皆様に混乱を招いた"@ja.
+<< kg:id_83 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "要配慮者一人ひとりに合わせた個別避難計画を作成するとともに、地域それぞれの事情に応じた車避難の検討を地域と一緒に行うことが大切である"@ja.
+<< kg:id_85 prop:cause kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "補助金の処分制限期間の10年間である令和11年度までは用途変更できない"@ja.
+<< kg:id_85 prop:cause kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "補助金の返還や、それに伴った過疎債の償還残について一括繰上償還を求められることもあり得る"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "コミュニティセンターとして利用する場合は、用途変更に当たるだけでなく、消防法に合わせた消防設備の拡充が必要"@ja.
+<< kg:id_90 prop:cause kg:id_91 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "土地区画整理事業等の宅地造成後に地盤沈下が生じて、くぼ地となってしまったところが浸水常襲地区となった"@ja.
+<< kg:id_92 prop:cause kg:id_93 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "計画時間雨量50.4ミリメートル以下の雨でも道路冠水や宅地の浸水が発生している状況"@ja.
+<< kg:id_90 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "排水ポンプや幹線となります雨水排水施設を設置"@ja.
+<< kg:id_90 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "浸水センサ13か所と危機管理型水位計６か所を設置し、情報把握能力の向上を図っております"@ja.
+<< kg:id_96 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "札谷地排水路へ強制排水しております富士見町一丁目ポンプの更新工事を予定しております"@ja.
+<< kg:id_96 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "札谷地排水路の樋門の断面、こちらの拡幅につきましては、現在、樋門管理者であります県と協議を行っている"@ja.
+<< kg:id_99 prop:cause kg:id_100 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "稼働日数が著しく減少しております"@ja.
+<< kg:id_99 prop:contermeasure kg:id_101 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "待機補償費としまして、平均的な年間の稼働時間の半分を補償してきました"@ja.
+<< kg:id_102 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "令和３年度から道路除雪担い手支援制度を設け、除雪機械のオペレーターの確保に努めている"@ja.
+<< kg:id_104 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "令和４年度に除雪機械運行管理システムを導入いたしました"@ja.
+<< kg:id_106 prop:effect kg:id_107 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "日本海沿岸東北自動車道、遊佐比子インターチェンジから遊佐鳥海インターチェンジの間の開通は、環鳥海山エリアの観光客の周遊促進だけでなく、物流や地域経済の活性化につながる"@ja.
+<< kg:id_106 prop:effect kg:id_108 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "物流や地域経済の活性化につながる"@ja.
+<< kg:id_106 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "今後も、環鳥海山エリア内での広域的な連携に官民一体となって取り組んでまいりたい"@ja.
+<< kg:id_110 prop:contermeasure kg:id_111 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "国際的価値のある地質遺産の創出で、エリア内にある地質遺産が国際的に価値のあるものであると評価されるための学術論文が必要"@ja.
+<< kg:id_110 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "拠点施設の整備"@ja.
+<< kg:id_110 prop:contermeasure kg:id_113 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "ウェブサイトや印刷物、誘導看板などの多言語化が必要とされております"@ja.
+<< kg:id_110 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "地域に根差した活動の展開でございます。研究者、企業、地域住民などが協力をして地域を盛り上げていく仕組みづくり"@ja.
+<< kg:id_115 prop:contermeasure kg:id_116 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "長期滞在が可能な宿泊施設の整備や、魅力的な観光コンテンツの存在、体験や学びを提供する人材の育成、エリア内で周遊を促すルートの設定などが必要"@ja.
+<< kg:id_115 prop:contermeasure kg:id_117 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "体験や学びを提供する人材の育成"@ja.
+<< kg:id_115 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "エリア内で周遊を促すルートの設定などが必要"@ja.
+<< kg:id_119 prop:cause kg:id_120 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "返礼品の登録数を増やす取組を継続的に行ってきたこと"@ja.
+<< kg:id_119 prop:cause kg:id_121 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "それら返礼品が質的に優れていること"@ja.
+<< kg:id_119 prop:cause kg:id_122 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "返礼品提供事業者や発送管理事業者、配送事業者、各ポータルサイトの運営者などが良好な関係を築きながら取り組めている"@ja.
+<< kg:id_119 prop:cause kg:id_123 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "庄内米というブランドが確立しております"@ja.
+<< kg:id_124 prop:contermeasure kg:id_125 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "ふるさと納税返礼品開発等支援補助金を有効に活用いたしまして、事業者と共に、新たな返礼品開発にこれまで以上に力を入れていきたい"@ja.
+<< kg:id_124 prop:contermeasure kg:id_126 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "ガバメントクラウドファンディングを通じて本市の取組を広くＰＲし、共感を得ていきたい"@ja.
+<< kg:id_127 prop:contermeasure kg:id_128 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "今年度から、企業に対する寄附を促すためということで、その寄附の営業活動業務を酒田ＤＭＯに委託をしておりまして、新規寄附企業の増加を図っている"@ja.
+<< kg:id_127 prop:contermeasure kg:id_129 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "既に寄附実績のある企業の皆様に対しましても、酒田ＤＭＯから営業活動を進めていただきたい"@ja.
+}

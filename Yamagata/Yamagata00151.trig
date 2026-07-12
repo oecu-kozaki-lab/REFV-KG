@@ -1,0 +1,718 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00151> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "高齢者独り暮らし世帯と夫婦のみ世帯の増加"@ja.
+kg:id_1 rdf:type cls:c_8650.
+cls:c_8650 rdfs:label "高齢者世帯増加"@ja.
+kg:id_2 rdfs:label "高齢化社会への突入"@ja.
+kg:id_2 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "遊佐町の4分の1以上を占める状況"@ja.
+kg:id_3 rdf:type cls:c_8651.
+cls:c_8651 rdfs:label "高齢者割合増加"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "今後も増加傾向が続く見込み"@ja.
+kg:id_4 rdf:type cls:c_2654.
+cls:c_2654 rdfs:label "増加傾向"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "高齢者に関する情報共有不足"@ja.
+kg:id_5 rdf:type cls:c_1342.
+cls:c_1342 rdfs:label "情報共有不足"@ja.
+kg:id_6 rdfs:label "トラブルが防げない"@ja.
+kg:id_6 rdf:type cls:c_8652.
+cls:c_8652 rdfs:label "トラブル発生"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "つなぐカードの活用"@ja.
+kg:id_7 rdf:type cls:c_4461.
+cls:c_4461 rdfs:label "情報共有手段"@ja.
+kg:id_5 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "飼い主がペットを飼えなくなる事態"@ja.
+kg:id_8 rdf:type cls:c_8653.
+cls:c_8653 rdfs:label "飼育不能事態"@ja.
+kg:id_9 rdfs:label "ペットの行き場に困る"@ja.
+kg:id_9 rdf:type cls:c_8654.
+cls:c_8654 rdfs:label "飼育先不足"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "つなぐカードペット編の作成"@ja.
+kg:id_10 rdf:type cls:c_4461.
+kg:id_8 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "災害"@ja.
+kg:id_11 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "災害"@ja.
+kg:id_12 rdfs:label "避難所で数週間の団体生活を送ることになる"@ja.
+kg:id_12 rdf:type cls:c_8655.
+cls:c_8655 rdfs:label "避難所生活"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "災害時のペット同行避難"@ja.
+kg:id_13 rdf:type cls:c_8656.
+cls:c_8656 rdfs:label "ペット同行避難"@ja.
+kg:id_14 rdfs:label "地震や水害や津波の被害"@ja.
+kg:id_14 rdf:type cls:c_6931.
+cls:c_6931 rdfs:label "災害被害"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "避難所トラブルの発生"@ja.
+kg:id_15 rdf:type cls:c_8657.
+cls:c_8657 rdfs:label "避難所トラブル"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "同行避難マニュアルを分かりやすく示す"@ja.
+kg:id_16 rdf:type cls:c_8658.
+cls:c_8658 rdfs:label "避難指針"@ja.
+kg:id_13 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "避難所内居室への動物の持ち込みを原則禁止し屋外に飼育スペースを設ける"@ja.
+kg:id_17 rdf:type cls:c_8659.
+cls:c_8659 rdfs:label "避難所運営方針"@ja.
+kg:id_13 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "一般避難者と別の屋内の一室を開放する"@ja.
+kg:id_18 rdf:type cls:c_8660.
+cls:c_8660 rdfs:label "避難所分離対応"@ja.
+kg:id_13 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "飼い主への平時からのペット防災対策の啓発"@ja.
+kg:id_19 rdf:type cls:c_8661.
+cls:c_8661 rdfs:label "防災啓発"@ja.
+kg:id_13 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "広報や避難所開設訓練で町民理解を進める"@ja.
+kg:id_20 rdf:type cls:c_8662.
+cls:c_8662 rdfs:label "住民啓発"@ja.
+kg:id_13 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "避難所の分離運営"@ja.
+kg:id_21 rdf:type cls:c_8663.
+cls:c_8663 rdfs:label "避難所分離運営"@ja.
+kg:id_22 rdfs:label "現実的に厳しい"@ja.
+kg:id_22 rdf:type cls:c_3102.
+cls:c_3102 rdfs:label "運営困難"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "自主防災組織で検討する"@ja.
+kg:id_23 rdf:type cls:c_8664.
+cls:c_8664 rdfs:label "地域検討"@ja.
+kg:id_21 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "若い世代の発想や作品の可視化不足"@ja.
+kg:id_24 rdf:type cls:c_8665.
+cls:c_8665 rdfs:label "若者表現不足"@ja.
+kg:id_25 rdfs:label "新庁舎のデッドスペースに参加型コーナーを設置する"@ja.
+kg:id_25 rdf:type cls:c_8666.
+cls:c_8666 rdfs:label "参加型展示"@ja.
+kg:id_24 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "展示コーナーと掲示コーナーを有効活用する"@ja.
+kg:id_26 rdf:type cls:c_8667.
+cls:c_8667 rdfs:label "展示活用"@ja.
+kg:id_24 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "ふるさと納税の増加"@ja.
+kg:id_27 rdf:type cls:c_1676.
+cls:c_1676 rdfs:label "寄附増加"@ja.
+kg:id_28 rdfs:label "魅力ある返礼品の取りそろえ"@ja.
+kg:id_28 rdf:type cls:c_7206.
+cls:c_7206 rdfs:label "返礼品充実"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "新たな返礼品の追加"@ja.
+kg:id_29 rdf:type cls:c_8668.
+cls:c_8668 rdfs:label "返礼品追加"@ja.
+kg:id_27 prop:cause kg:id_29.
+kg:id_30 rdfs:label "財政運営上貴重な財源となる"@ja.
+kg:id_30 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_27 prop:effect kg:id_30.
+kg:id_31 rdfs:label "地元産品の消費による町の経済効果が大きい"@ja.
+kg:id_31 rdf:type cls:c_4242.
+cls:c_4242 rdfs:label "地域経済効果"@ja.
+kg:id_27 prop:effect kg:id_31.
+kg:id_32 rdfs:label "事務量の増加で職員が追われる"@ja.
+kg:id_32 rdf:type cls:c_8669.
+cls:c_8669 rdfs:label "業務負担増加"@ja.
+kg:id_27 prop:effect kg:id_32.
+kg:id_33 rdfs:label "職員が対応不可能になるおそれ"@ja.
+kg:id_33 rdf:type cls:c_5288.
+cls:c_5288 rdfs:label "対応限界"@ja.
+kg:id_27 prop:effect kg:id_33.
+kg:id_34 rdfs:label "産業課に受付業務を移管する"@ja.
+kg:id_34 rdf:type cls:c_8670.
+cls:c_8670 rdfs:label "業務移管"@ja.
+kg:id_27 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "地域活性化拠点施設を活用した特産品開発"@ja.
+kg:id_35 rdf:type cls:c_2860.
+cls:c_2860 rdfs:label "特産品開発"@ja.
+kg:id_27 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "松くい虫被害"@ja.
+kg:id_36 rdf:type cls:c_8671.
+cls:c_8671 rdfs:label "森林害虫被害"@ja.
+kg:id_37 rdfs:label "マツノマダラカミキリの羽化脱出"@ja.
+kg:id_37 rdf:type cls:c_6335.
+cls:c_6335 rdfs:label "害虫発生"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "被害木の伐倒破砕処理"@ja.
+kg:id_38 rdf:type cls:c_8672.
+cls:c_8672 rdfs:label "被害木処理"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "薬剤散布事業の実施"@ja.
+kg:id_39 rdf:type cls:c_8673.
+cls:c_8673 rdfs:label "薬剤散布"@ja.
+kg:id_36 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "県や国有林との情報共有と連携"@ja.
+kg:id_40 rdf:type cls:c_8674.
+cls:c_8674 rdfs:label "情報共有連携"@ja.
+kg:id_36 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "宅地などの民有地の松くい虫被害"@ja.
+kg:id_41 rdf:type cls:c_8675.
+cls:c_8675 rdfs:label "民有地害虫被害"@ja.
+kg:id_42 rdfs:label "町が直接伐倒処理を行っていない"@ja.
+kg:id_42 rdf:type cls:c_8676.
+cls:c_8676 rdfs:label "行政未対応"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "高齢者ドライバーの事故"@ja.
+kg:id_43 rdf:type cls:c_8677.
+cls:c_8677 rdfs:label "高齢運転事故"@ja.
+kg:id_44 rdfs:label "ハンドル操作やブレーキとアクセルの踏み間違い等の操作不適"@ja.
+kg:id_44 rdf:type cls:c_8678.
+cls:c_8678 rdfs:label "運転操作不適"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "高齢者安全運転支援事業費補助金の創設"@ja.
+kg:id_45 rdf:type cls:c_8679.
+cls:c_8679 rdfs:label "安全運転支援"@ja.
+kg:id_43 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "想定以上の申請で予算上限に達した"@ja.
+kg:id_46 rdf:type cls:c_8025.
+cls:c_8025 rdfs:label "予算超過"@ja.
+kg:id_43 prop:effect kg:id_46.
+kg:id_47 rdfs:label "免許の自主返納によるタクシー券助成"@ja.
+kg:id_47 rdf:type cls:c_3377.
+cls:c_3377 rdfs:label "移動支援"@ja.
+kg:id_43 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "交通死亡事故"@ja.
+kg:id_48 rdf:type cls:c_8680.
+cls:c_8680 rdfs:label "交通死亡事故"@ja.
+kg:id_49 rdfs:label "道路横断中に県外から来た車と衝突"@ja.
+kg:id_49 rdf:type cls:c_8681.
+cls:c_8681 rdfs:label "車両衝突"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "様々な要因が重なること"@ja.
+kg:id_50 rdf:type cls:c_8127.
+cls:c_8127 rdfs:label "複合要因"@ja.
+kg:id_48 prop:cause kg:id_50.
+kg:id_51 rdfs:label "交通安全教室の開催"@ja.
+kg:id_51 rdf:type cls:c_8682.
+cls:c_8682 rdfs:label "交通安全教育"@ja.
+kg:id_48 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "反射材の配布と着用啓発"@ja.
+kg:id_52 rdf:type cls:c_8683.
+cls:c_8683 rdfs:label "反射材啓発"@ja.
+kg:id_48 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "防災行政無線を活用した呼びかけ"@ja.
+kg:id_53 rdf:type cls:c_1141.
+cls:c_1141 rdfs:label "注意喚起"@ja.
+kg:id_48 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "ツキノワグマの出没増加"@ja.
+kg:id_54 rdf:type cls:c_8684.
+cls:c_8684 rdfs:label "クマ出没増加"@ja.
+kg:id_55 rdfs:label "山のブナが凶作で餌不足になったこと"@ja.
+kg:id_55 rdf:type cls:c_8685.
+cls:c_8685 rdfs:label "餌不足"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "目撃情報が昨年を大きく上回った"@ja.
+kg:id_56 rdf:type cls:c_8686.
+cls:c_8686 rdfs:label "目撃増加"@ja.
+kg:id_54 prop:effect kg:id_56.
+kg:id_57 rdfs:label "農作物被害や人的被害発生の危険"@ja.
+kg:id_57 rdf:type cls:c_8687.
+cls:c_8687 rdfs:label "被害危険"@ja.
+kg:id_54 prop:effect kg:id_57.
+kg:id_58 rdfs:label "鳥獣被害対策実施隊の設置"@ja.
+kg:id_58 rdf:type cls:c_8688.
+cls:c_8688 rdfs:label "捕獲防除体制"@ja.
+kg:id_54 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "関係機関による鳥獣被害防止対策協議会の設立"@ja.
+kg:id_59 rdf:type cls:c_2294.
+cls:c_2294 rdfs:label "協議体制"@ja.
+kg:id_54 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "看板設置や回覧文書や防災行政無線による注意喚起"@ja.
+kg:id_60 rdf:type cls:c_1141.
+kg:id_54 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "熊の餌となる放置果樹や生ごみの管理"@ja.
+kg:id_61 rdf:type cls:c_8689.
+cls:c_8689 rdfs:label "誘引物管理"@ja.
+kg:id_54 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "小学校統合の必要性"@ja.
+kg:id_62 rdf:type cls:c_8690.
+cls:c_8690 rdfs:label "学校統合必要性"@ja.
+kg:id_63 rdfs:label "児童数の減少と複式学級発生の見込み"@ja.
+kg:id_63 rdf:type cls:c_8691.
+cls:c_8691 rdfs:label "児童減少"@ja.
+kg:id_62 prop:cause kg:id_63.
+kg:id_64 rdfs:label "極少子化による教育環境への懸念"@ja.
+kg:id_64 rdf:type cls:c_8692.
+cls:c_8692 rdfs:label "教育環境懸念"@ja.
+kg:id_62 prop:cause kg:id_64.
+kg:id_65 rdfs:label "新型コロナウイルス感染症"@ja.
+kg:id_65 rdf:type cls:c_1345.
+cls:c_1345 rdfs:label "感染症"@ja.
+kg:id_66 rdfs:label "小学校統合の協議自体ができない状況が続いた"@ja.
+kg:id_66 rdf:type cls:c_8693.
+cls:c_8693 rdfs:label "協議停滞"@ja.
+kg:id_65 prop:effect kg:id_66.
+kg:id_67 rdfs:label "学校生活が元に戻らず新しい生活様式の対策下にある"@ja.
+kg:id_67 rdf:type cls:c_8694.
+cls:c_8694 rdfs:label "学校生活制約"@ja.
+kg:id_65 prop:effect kg:id_67.
+kg:id_68 rdfs:label "小学校統合"@ja.
+kg:id_68 rdf:type cls:c_4355.
+cls:c_4355 rdfs:label "学校統合"@ja.
+kg:id_69 rdfs:label "令和5年4月開校を目指して基本方針どおり進める"@ja.
+kg:id_69 rdf:type cls:c_8695.
+cls:c_8695 rdfs:label "統合推進"@ja.
+kg:id_68 prop:contermeasure kg:id_69.
+kg:st_1 rdfs:label "松永裕美議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "高齢化対策としてつなぐカードの導入を提案する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_2 prop:content "今後もこの傾向は続くと認識している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "どちらもかなりのペースで増加していると説明する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "区長や民生委員らの情報共有でトラブル防止ができると考える"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "自主的に使える情報共有の仕組みとして導入を提案する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "意義のある取組として将来の在り方を検討したい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "当町でも実際に何件かあった問題だと指摘する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "次の飼い主探しや情報共有に役立つ資料になると考える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "避難所生活の長期化を見据えた議論が必要と考える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "災害発生時を想定して避難の在り方を明確化すべきと求める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "動物が苦手な人やアレルギーのある人とのトラブル防止が必要と述べる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "他の避難者への配慮から居室への持ち込みを原則禁止としている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "最初から町民に分かりやすく示すべきだと主張する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "衛生面やアレルギーへの配慮から現行方針を説明する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "避難所運営組織の協議と理解が得られれば対応可能とする"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "予防接種やしつけ、備蓄など平時の備えが必要と説明する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "ペットが理由で避難しない人を出さないよう啓発したいと述べる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "堀総務課長"@ja.
+kg:st_3 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_18 prop:content "コロナ禍も含め避難所を分けて運営するのは難しいと考える"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "自主防災組織で解決策を議論していく必要があると述べる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "若い世代の柔軟な発想やビジョンを表現できる場が必要と提案する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "展示掲示コーナー活用の一案として検討したいと答える"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "各課から企画を集め継続的に検討したいと述べる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "魅力ある返礼品が納税者増加につながると説明する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "産業課移管後に新規返礼品が増えたと説明する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "本間知広議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_25 prop:content "今後大きな町の力になり得ると考える"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "寄附金は財政運営上貴重な財源だと述べる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "地場産品が消費されることで町の経済効果は非常に大きいと考える"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "佐藤産業課長"@ja.
+kg:st_5 rdfs:type cls:st_32.
+kg:op_28 prop:content "お礼状や証明書送付、返礼品対応などで職員負担が大きいと説明する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "これ以上寄附が増えると職員対応が限界になる可能性を示す"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:op_30 prop:content "産業振興推進の視点を加えるため移管したと説明する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "新たな特産品を返礼品に活用できるよう研究していくと述べる"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "佐藤俊太郎議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_32 prop:content "徹底的な駆除が必要だと指摘する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_6.
+kg:op_33 prop:content "次年度の初発日までに処理を完了する方針を説明する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "県や国と連携し効果的な防除対策を進めていると説明する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "庄内海岸林一体として円滑に防除対策を進めていると述べる"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "個人財産であるため所有者管理が基本と説明する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "一般的に高齢者事故の原因とされると説明する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "先進安全自動車購入や後づけ安全装置に補助する制度を創設したと説明する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "支援を望む声が多く補正予算を提案したと述べる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "安全運転支援と併せて交通事故を減らしたいと考える"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "大変痛ましい事故であり再発防止に取り組みたいと述べる"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "一つの要因だけではなく複合要因で発生すると説明する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "幼児から高齢者まで幅広い年代を対象に実施していると説明する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "夕方外出時は目立つ服と反射材で事故を未然に防げると考える"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "広く町民に注意喚起していきたいと述べる"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "餌を求めて人里に下りてきたと考えている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "高橋冠治議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_47 prop:content "住宅地や市街地での目撃が多発していると指摘する"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_7.
+kg:op_48 prop:content "今年度は50件超で昨年20件を大きく上回ると説明する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "これからも被害が増えると予想している"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_7.
+kg:op_50 prop:content "有害鳥獣の捕獲防除に努めてきたと説明する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "被害防止に向けた体制を整えてきたと説明する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "状況に応じて住民へ迅速に周知していると説明する"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "集落周辺の出没リスクを減らすため地域協力を求めたいと述べる"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "高瀬小や蕨岡小で複式学級が発生する状況にあると説明する"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "教育環境を心配する保護者も多いと認識している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "年度当初は協議が進まなかったが現在は各部会で進めていると述べる"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "子供たちや教職員にストレスが蓄積されていると考える"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:op_58 prop:content "衛生管理マニュアルに基づいた学校生活を送っていると説明する"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "今のところ基本方針にのっとり進める考えに変わりはないと述べる"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "那須教育長"@ja.
+kg:st_8 rdfs:type cls:st_19.
+cls:st_19 rdfs:label "教育長"@ja.
+kg:op_60 prop:content "少子化を見据え統合は今進めるタイミングだと考える"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地方の小さな自治体で目立つ人口減少や若者の流出、今までに経験したことのない高齢化社会への突入について"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "高齢者独り暮らしの世帯と夫婦のみ世帯を合わせると全体の27.2％となり、遊佐町の４分の１以上を占めている状況であります"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "65歳以上で独り暮らし世帯は80世帯増えており、また夫婦のみ世帯も49世帯増えていて、どちらもかなりのペースで増加しており、今後もこの傾向は続くものであろうと認識しております"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "区長、民生委員、保健師の皆さん、またはその地区の議員、または共助できる方たちが情報を共有することでトラブルが防げることがたくさんあります"@ja.
+<< kg:id_5 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "ここでつなぐカードを基に区長、民生委員、保健師の皆さん、またはその地区の議員、または共助できる方たちが情報を共有することでトラブルが防げることがたくさんあります"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "飼い主がもし万が一飼えなくなってしまったときに、この事例は実は当町でも何件かございました"@ja.
+<< kg:id_8 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "そのときにこのつなぐカード、ペット編があれば貴重な資料となることでありましょう"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "少なくとも数週間は避難所での団体生活を送ることになります"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地震や水害や津波の被害を遊佐町民の皆様がもし受けてしまった場合"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "動物好きの町民の方と反して動物が苦手な方、またはどうしても体質的に動物の毛などでアレルギーを患って体に疾患をお持ちになる町民の方との間で避難所トラブルが発生しないように"@ja.
+<< kg:id_13 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "最初から同行避難マニュアルを町民の皆様に分かりやすくお示しすべきだとも考えます"@ja.
+<< kg:id_13 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "避難所内居室への動物の持ち込みは原則禁止とし、敷地内の屋外に飼育スペースを設け、飼育させると定めております"@ja.
+<< kg:id_13 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "避難者による各避難所運営組織で協議をし、理解を得られれば、一般避難者との別の屋内の一室を開放する等の対応も可能と考えております"@ja.
+<< kg:id_13 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "いずれの場合においても、飼い主の方からは平時からペット防災対策に取り組んでいただく必要があります。具体的には予防接種やペットの体を清潔に保つなどの健康管理、排せつなどのしつけ、ペットフードやゲージ等のペット用品の備蓄が必要となります"@ja.
+<< kg:id_13 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "飼い主の皆様に国が示すガイドラインや町の対応について広報等で啓発を行いながら、避難所開設訓練等の機会を利用し、ペット同行避難者の対応について町民の皆様に理解を含めていただきたいと考えております"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "なかなか分けて避難所を運営すると、設置するというのは、現実的にはちょっと厳しいのではないかなというふうには考えております"@ja.
+<< kg:id_21 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "やはりそこは自主防災組織で検討していくというところが一番大事になるのではないかというふうに考えております"@ja.
+<< kg:id_24 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "今度新しくできます新庁舎のデッドスペース、デッドスペースとは生かし切れていない空間や隙間のことを指します。それを探し見つけ、有効利用して、町民まるっと参加型コーナー設置を提案させていただきます"@ja.
+<< kg:id_24 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "開庁以降も展示及び掲示コーナーを有効活用するため、各課から企画を集めて継続的に検討を行い、町民の皆様の意見をいただきながら、町民に親しまれる庁舎づくりを実現してまいりたいと考えております"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "魅力ある返礼品を取りそろえることが納税者の増加につながるため"@ja.
+<< kg:id_27 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "新たに８社25品目の返礼品が追加されております"@ja.
+<< kg:id_27 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "ふるさと納税で寄せられた寄附金は財政運営上貴重な財源として適正に取り扱うことはもとより"@ja.
+<< kg:id_27 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "その返礼品は地場産品であります。その地場産品が消費されることにより、町の経済効果というのは非常に大きいと考えております"@ja.
+<< kg:id_27 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "その方々へのお礼状の準備、それから納税証明書の送付、あと住民税の特例に係るワンストップ特例という事務もございます。あとは、返礼品の送付業務と苦情対応というようなところも産業課のほうで担当しておりますので、その業務に日々職員が追われている"@ja.
+<< kg:id_27 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "それ以上の寄附が来た場合はもう職員が対応不可能ということになると。そういうときになれば、もう申込みの受付はできないという状況も考えられることになります"@ja.
+<< kg:id_27 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "町内での産出される返礼品を通しての産業振興推進という視点を加え、今年度からふるさと納税の受付業務を企画課から産業課に移行したところであります"@ja.
+<< kg:id_27 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "地域活性化拠点施設の活用により新たな特産品の完成と、その特産品がふるさと納税の返礼として活用できるよう、今後も関係団体と連携し、研究していくところであります"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "６月のマツノマダラカミキリ羽化脱出前に伐倒、破砕処理を完了しました"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "年度内に把握した被害木については次年度のマツノマダラカミキリ初発日までに伐倒、破砕処理を完了することとされております"@ja.
+<< kg:id_36 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "薬剤散布事業については、昨年度に引き続き羽化予想時期に合わせ、５月下旬から６月下旬にかけて実施しました"@ja.
+<< kg:id_36 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "被害木等の情報については平時よりお互いに連絡を取り合い、相互に情報共有をしているところであります。また、年２回の庄内海岸林松くい虫被害対策強化プロジェクト会議において情報の共有、意見交換を行うなど、庄内海岸林一体として効果的な防除対策を円滑に実施できるよう取り組んでおります"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "宅地などの民有地にある木については、あくまでも個人の所有する財産であり、その伐倒などの管理については所有者に行っていただくというのが県、町の基本的な考えであります。このため、現状としては宅地などの民有地にある木の伐倒処理などを町では直接行っていないという状況にあります"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "高齢者ドライバーの事故原因は、ハンドル操作やブレーキとアクセルの踏み間違い等の操作不適が多いと一般的に言われております"@ja.
+<< kg:id_43 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "11月より遊佐町高齢者安全運転支援事業費補助金として、高齢者ドライバーに対する補助制度を創設したところであります"@ja.
+<< kg:id_43 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "想定した以上に多額の申請をいただき、既に予算の上限に達してしまったため、今現在は申請の受理を停止いたしております"@ja.
+<< kg:id_43 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "免許の自主返納によるタクシー券の助成等、運転に不安を覚える高齢者の交通手段に対する支援を併せて行うことで交通事故を一件でも減らせるよう"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "10月18日の夕方、本町比子地内で近所に住む70代の方が道路横断中に県外から来た車の方と衝突して亡くなるという大変痛ましい交通事故が発生しました"@ja.
+<< kg:id_48 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "交通事故は１つの要因だけではなく、様々な要因が重なることで発生しやすくなります"@ja.
+<< kg:id_48 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "今年度は、幼稚園、保育園、学校、老人クラブなど、年間延べ32回の交通安全教室を開催しております"@ja.
+<< kg:id_48 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "歩行者に関して言えば、反射材等の物品も交通安全教室の際には必ず配布しており、来場者の了解をいただいた上で、靴のかかとにその場で貼らせてもらっております"@ja.
+<< kg:id_48 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "交通安全教室のとき以外にも防災行政無線を活用しながら広く町民に呼びかけていきたいと思っております"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "特に今年は山のブナが凶作だったことが影響している、そして餌不足となっているということでありますが、まさに熊が餌を求めて人里に下りてきたところで目撃されたり、農作物被害が増加したと考えられています"@ja.
+<< kg:id_54 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_47;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "今年度の町内のツキノワグマの目撃情報は、11月末現在で50件を超えていまして、昨年１年間の目撃情報の20件をはるかに上回るものとなっていました"@ja.
+<< kg:id_54 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "これからも熊による被害は増えると予想されております"@ja.
+<< kg:id_54 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "平成28年度より遊佐町鳥獣被害対策実施隊を設置し、有害鳥獣の捕獲、防除に努めてきました"@ja.
+<< kg:id_54 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "農協、森林組合、猟友会、警察、消防、区長代表、県などを構成機関として、遊佐町鳥獣被害防止対策協議会を設立し、被害防止に向けた体制を整えてきたところであります"@ja.
+<< kg:id_54 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "状況に応じて看板の設置や回覧文書などによる注意喚起を行います。さらに、必要に応じて教育委員会へ情報を提供し、学校関係への周知や、危機管理では防災行政無線による周辺住民への注意喚起を行っております"@ja.
+<< kg:id_54 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "熊の餌となり得る集落周辺にある柿などの放置果樹の伐採や伐倒や、取り残しの果樹の撤去、食品や生ごみの放置に注意するなど、地域で防除にご協力をいただけるよう発信していきたいと考えております"@ja.
+<< kg:id_62 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "令和４年度から高瀬小学校に複式学級が発生する状況があり、令和５年度の蕨岡小学校においても１名減で複式学級が発生する状況にあります"@ja.
+<< kg:id_62 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "極少子化による教育環境を心配される保護者の皆さんも多くいらっしゃるということであります"@ja.
+<< kg:id_65 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "新型コロナウイルスの影響により今年の年度当初は協議自体ができない状況が続いておりました"@ja.
+<< kg:id_65 prop:effect kg:id_67 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "学校においてもその影響は大きく、年度当初からの休校が続き、再開した後も元の学校生活に戻ることができずに、いわゆる学校の新しい生活様式として文部科学省の衛生管理マニュアルに基づいた対策の中で学校生活を送っている状況にあります"@ja.
+<< kg:id_68 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "今のところ、この基本方針にのっとり進めていくという考えに変わりはございません"@ja.
+}

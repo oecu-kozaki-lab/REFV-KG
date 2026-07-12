@@ -1,0 +1,501 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00162> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "災害の多発"@ja.
+kg:id_1 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "災害"@ja.
+kg:id_2 rdfs:label "地球規模での気象変動"@ja.
+kg:id_2 rdf:type cls:c_618.
+cls:c_618 rdfs:label "気候変動"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "地球温暖化"@ja.
+kg:id_3 rdf:type cls:c_697.
+cls:c_697 rdfs:label "地球温暖化"@ja.
+kg:id_4 rdfs:label "元に戻すことは不可能で遅らせることしかできない"@ja.
+kg:id_4 rdf:type cls:c_9190.
+cls:c_9190 rdfs:label "進行抑制"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "遊佐町の温室効果ガス排出"@ja.
+kg:id_5 rdf:type cls:c_8941.
+cls:c_8941 rdfs:label "温室効果ガス排出"@ja.
+kg:id_6 rdfs:label "自動車等からの排出"@ja.
+kg:id_6 rdf:type cls:c_9191.
+cls:c_9191 rdfs:label "自動車排出"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "家庭からの排出"@ja.
+kg:id_7 rdf:type cls:c_9192.
+cls:c_9192 rdfs:label "家庭排出"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "農業由来のメタンガス"@ja.
+kg:id_8 rdf:type cls:c_9141.
+cls:c_9141 rdfs:label "農業排出"@ja.
+kg:id_5 prop:cause kg:id_8.
+kg:id_9 rdfs:label "遊佐町"@ja.
+kg:id_9 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_10 rdfs:label "家庭における省エネ進展"@ja.
+kg:id_10 rdf:type cls:c_4811.
+cls:c_4811 rdfs:label "省エネ推進"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "森林整備による吸収源対策"@ja.
+kg:id_11 rdf:type cls:c_9193.
+cls:c_9193 rdfs:label "吸収源対策"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "農地改良による吸収源対策"@ja.
+kg:id_12 rdf:type cls:c_9193.
+kg:id_9 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "エネルギー基本計画の改定でゼロカーボンまでの道筋を検討"@ja.
+kg:id_13 rdf:type cls:c_861.
+cls:c_861 rdfs:label "計画改定"@ja.
+kg:id_9 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "学習機会の提供による人材育成"@ja.
+kg:id_14 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_9 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "水田からの温室効果ガス排出"@ja.
+kg:id_15 rdf:type cls:c_8941.
+kg:id_16 rdfs:label "メタン等の排出"@ja.
+kg:id_16 rdf:type cls:c_9142.
+cls:c_9142 rdfs:label "メタン排出"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "森林吸収源としての機能低下"@ja.
+kg:id_17 rdf:type cls:c_9194.
+cls:c_9194 rdfs:label "森林機能低下"@ja.
+kg:id_18 rdfs:label "森林の高齢化"@ja.
+kg:id_18 rdf:type cls:c_9195.
+cls:c_9195 rdfs:label "森林高齢化"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "平成２年以降に植林され適切に間伐等が行われているものしかカウントできないこと"@ja.
+kg:id_19 rdf:type cls:c_9196.
+cls:c_9196 rdfs:label "吸収源要件"@ja.
+kg:id_17 prop:cause kg:id_19.
+kg:id_20 rdfs:label "田んぼでのメタンガス発生"@ja.
+kg:id_20 rdf:type cls:c_9197.
+cls:c_9197 rdfs:label "メタン発生"@ja.
+kg:id_21 rdfs:label "東北の田んぼが長く雪で覆われ稲の根っこの分解が進まないこと"@ja.
+kg:id_21 rdf:type cls:c_9198.
+cls:c_9198 rdfs:label "有機物残存"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "ゼロカーボンシティーの実現を目指す"@ja.
+kg:id_22 rdf:type cls:c_8120.
+cls:c_8120 rdfs:label "脱炭素推進"@ja.
+kg:id_9 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "農地"@ja.
+kg:id_23 rdf:type cls:c_9199.
+cls:c_9199 rdfs:label "農地"@ja.
+kg:id_24 rdfs:label "営農型太陽光発電設備の設置"@ja.
+kg:id_24 rdf:type cls:c_3825.
+cls:c_3825 rdfs:label "太陽光発電"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "藤崎の畑の太陽光発電施設"@ja.
+kg:id_25 rdf:type cls:c_9200.
+cls:c_9200 rdfs:label "太陽光発電施設"@ja.
+kg:id_26 rdfs:label "架台上部に太陽光パネルを設置し下で野菜を栽培"@ja.
+kg:id_26 rdf:type cls:c_3140.
+cls:c_3140 rdfs:label "営農型発電"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "高齢者の安全運転継続の困難"@ja.
+kg:id_27 rdf:type cls:c_9201.
+cls:c_9201 rdfs:label "安全運転困難"@ja.
+kg:id_28 rdfs:label "視野障がいなどの身体機能の低下"@ja.
+kg:id_28 rdf:type cls:c_3376.
+cls:c_3376 rdfs:label "身体機能低下"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "高齢者ドライバー事故"@ja.
+kg:id_29 rdf:type cls:c_9202.
+cls:c_9202 rdfs:label "高齢者事故"@ja.
+kg:id_30 rdfs:label "酒田警察署管内の人身事故の33.5％を占める"@ja.
+kg:id_30 rdf:type cls:c_9203.
+cls:c_9203 rdfs:label "事故割合"@ja.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "運転免許証自主返納支援事業でタクシー券を交付"@ja.
+kg:id_31 rdf:type cls:c_9204.
+cls:c_9204 rdfs:label "返納支援"@ja.
+kg:id_9 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "安全運転相談窓口の周知"@ja.
+kg:id_32 rdf:type cls:c_1743.
+cls:c_1743 rdfs:label "相談周知"@ja.
+kg:id_9 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "町の情報取得の不便"@ja.
+kg:id_33 rdf:type cls:c_9205.
+cls:c_9205 rdfs:label "情報取得不便"@ja.
+kg:id_34 rdfs:label "遊佐町LINEの導入"@ja.
+kg:id_34 rdf:type cls:c_3062.
+cls:c_3062 rdfs:label "情報配信"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "基本情報の事前入力により必要な情報のみ配信"@ja.
+kg:id_35 rdf:type cls:c_3062.
+kg:id_9 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "災害時の情報伝達不足"@ja.
+kg:id_36 rdf:type cls:c_3210.
+cls:c_3210 rdfs:label "情報伝達不足"@ja.
+kg:id_37 rdfs:label "LINEの一斉送信機能による情報発信"@ja.
+kg:id_37 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "高齢者のスマートフォン利用の難しさ"@ja.
+kg:id_38 rdf:type cls:c_9206.
+cls:c_9206 rdfs:label "機器利用困難"@ja.
+kg:id_39 rdfs:label "スマホ教室とLINE教室の開催"@ja.
+kg:id_39 rdf:type cls:c_7630.
+cls:c_7630 rdfs:label "利用講習"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "新小学校統合後の不安"@ja.
+kg:id_40 rdf:type cls:c_5026.
+cls:c_5026 rdfs:label "統合不安"@ja.
+kg:id_41 rdfs:label "交流学習の実施"@ja.
+kg:id_41 rdf:type cls:c_6834.
+cls:c_6834 rdfs:label "交流学習"@ja.
+kg:id_40 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "スクールバスの乗車練習"@ja.
+kg:id_42 rdf:type cls:c_9207.
+cls:c_9207 rdfs:label "乗車訓練"@ja.
+kg:id_40 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "地域行事と学校の連携の不明確さ"@ja.
+kg:id_43 rdf:type cls:c_9208.
+cls:c_9208 rdfs:label "連携不明確"@ja.
+kg:id_44 rdfs:label "地域連携担当職員の配置"@ja.
+kg:id_44 rdf:type cls:c_9209.
+cls:c_9209 rdfs:label "連携担当"@ja.
+kg:id_43 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "空き家問題"@ja.
+kg:id_45 rdf:type cls:c_1739.
+cls:c_1739 rdfs:label "空き家問題"@ja.
+kg:id_46 rdfs:label "周辺環境の悪化や倒壊"@ja.
+kg:id_46 rdf:type cls:c_9210.
+cls:c_9210 rdfs:label "環境悪化"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "空き家増加"@ja.
+kg:id_47 rdf:type cls:c_2556.
+cls:c_2556 rdfs:label "空き家増加"@ja.
+kg:id_48 rdfs:label "若者のニーズに合わず町中心部や酒田市内に新築またはアパートを借りること"@ja.
+kg:id_48 rdf:type cls:c_9211.
+cls:c_9211 rdfs:label "住宅選好"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "老朽危険空き家解体支援事業"@ja.
+kg:id_49 rdf:type cls:c_3299.
+cls:c_3299 rdfs:label "解体支援"@ja.
+kg:id_9 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "所有者不明土地問題"@ja.
+kg:id_50 rdf:type cls:c_9212.
+cls:c_9212 rdfs:label "所有者不明土地問題"@ja.
+kg:id_51 rdfs:label "相続登記の義務化"@ja.
+kg:id_51 rdf:type cls:c_9213.
+cls:c_9213 rdfs:label "登記義務化"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "土地の放置"@ja.
+kg:id_52 rdf:type cls:c_9214.
+cls:c_9214 rdfs:label "土地放置"@ja.
+kg:id_53 rdfs:label "相続土地国庫帰属制度"@ja.
+kg:id_53 rdf:type cls:c_9215.
+cls:c_9215 rdfs:label "土地帰属制度"@ja.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "空き家相談会の開催"@ja.
+kg:id_54 rdf:type cls:c_9216.
+cls:c_9216 rdfs:label "空き家相談"@ja.
+kg:id_9 prop:contermeasure kg:id_54.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "カーボンニュートラルは若い世代へつなぎ委ねなければ実現しない"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "温暖化対策は将来世代につなぐ長期的取組が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_3 prop:content "運輸部門への対策が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "家庭における省エネ進展が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "農業分野の排出実態に関心がある"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "農業分野もゼロカーボン対策が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "民生部門の排出削減を進める必要がある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "森林整備による吸収源対策が必要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "農地改良による吸収源対策が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "見える化事業を踏まえて具体的なロードマップを示したい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "各課が連携しながら学習機会の提供に努めたい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "脱炭素の学習の場を設けるべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "農業が基幹産業のため農業分野の排出対策は重要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "遊佐町の森林は高齢化が進み吸収源としての課題がある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "古い森林は吸収源として評価されにくい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "山形大学吉田教授"@ja.
+kg:st_3 rdfs:type cls:st_105.
+cls:st_105 rdfs:label "研究者"@ja.
+kg:op_16 prop:content "東北の田んぼは他地域よりメタンガスが発生しやすい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "積極的に宣言と取組を進めるべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "農業と発電を両立しカーボンニュートラルにつなげるべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "舘内産業課長"@ja.
+kg:st_4 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_19 prop:content "令和２年度に農地法第４条許可を受け10年間の営農型太陽光として実施している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "不安を感じたときは警察や専門指導員へ相談すべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "高齢者講習や相談窓口の周知が必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "返納後の交通支援として実施している"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "相談専用ダイヤルの周知を行いたい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "那須正幸議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_24 prop:content "防災や福祉や学校連絡などをLINEで受け取れるようにすべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "暮らしの情報と遊佐町の魅力をリアルタイムで発信したい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "利用者ごとに必要な情報を届けられるようにする"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "避難や解除情報が分かりやすくなる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_5.
+kg:op_28 prop:content "高齢者のLINE利用率向上に向けた取組を継続したい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "スマホ道場は評判がよく利用拡大に役立っている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:op_30 prop:content "顔合わせや一緒の学習を通して新校で仲よく過ごせるようにしたい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "児童の安全確保とスムーズな運行のために必要"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "四大祭をはじめ地域行事との連携窓口を明確にしたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "阿部満吉議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_33 prop:content "相続放棄や放置で危険家屋化することを懸念する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_6.
+kg:op_34 prop:content "家余りの状況が空き家増加の一因になっている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_6.
+kg:op_35 prop:content "危険空き家解体に対する支援を行っている"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "町民に不利益が生じないよう申請の簡素化や相談窓口が必要"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_6.
+kg:op_37 prop:content "土地を手放して国庫に帰属させる制度が始まる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "空き家等対策計画改定と併せて効果的に実施したい"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "近年、災害が多く発生しております。それは、地球規模での気象変動に起因するとも言われております。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地球の温暖化は、元に戻すことは不可能であり、遅らせることしかできないと、それが世界規模で一致した評価となっております。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "これまでの経過報告によれば、遊佐町で排出される温室効果ガスの４割が運輸部門、つまり自動車等から排出されており"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "また、民生部門、つまり家庭からの排出割合も高いものとなっております。"@ja.
+<< kg:id_5 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "さらに、農業由来のメタンガスの排出量がＣＯ２換算でおよそ1.3トンに上るという試算も出ております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "ゼロカーボンに向けて運輸部門はもちろんのこと、家庭における省エネ進展"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "さらには森林整備や農地改良による吸収源対策も必要であると考えております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "さらには森林整備や農地改良による吸収源対策も必要であると考えております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "今回の見える化事業を踏まえ、令和５年度予定しているエネルギー基本計画の改定において、その道筋を検討していきたいと考えております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "現在改定作業中の遊佐町環境基本計画において、持続可能な地域づくりのためには、地域づくりを牽引する人材育成こそ最重要課題であるとしており、今後各課がそれぞれの担当分野で、また連携しながら学習機会の提供に努めていきたいと考えております。"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "町政座談会でも配付した資料にもありますとおり、水田からはメタン等が排出されるということが言われております。"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "遊佐町の森林の半分は、高齢化にある森林状態だとは思います。"@ja.
+<< kg:id_17 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "森林吸収源の条件については、平成２年以降に植林されて、適切に間伐等が行われているものがカウントできると。それ以前については、非常に高齢化にある森林だということで、これから外されるような情報もあります。"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "東北の田んぼというのは長く雪で覆われているということで、稲の根っこの分解が進まないのだと。だから、その分日本のほかの地域よりはメタンガスが発生しやすいのだ"@ja.
+<< kg:id_9 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "昨日の施政方針何回も申し上げますが、ゼロカーボンシティーの実現を目指すという表明もされました。"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "一定農地に支柱を立てて、営農を適切に継続しながら、上部空間に太陽光発電設備を設置することにより農業と発電を両立する"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "営農型太陽光発電施設用地として、具体的には架台を組んだ上部に太陽光パネルを設置して、その下のほうで野菜を栽培するという、そういった内容のもので申請されて許可が下りたものでございます。"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "自動車の運転に際し、視野障がいなどの身体機能の低下等により運転に不安を感じたときは"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "令和４年度に酒田警察署管内で発生した人身事故は239件ですが、高齢者ドライバーが原因者による事故は発生件数の33.5％であり"@ja.
+<< kg:id_9 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "免許返納後の交通支援として、希望者に対してタクシー券の初乗り基本料20回分のタクシーへの券を交付する運転免許証自主返納支援事業を実施しております。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "警察では、安全運転相談窓口を設置しておりますので、相談専用ダイヤルの周知も行っていきたいと考えております。"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "ＩＣＴ推進室ができた頃から、防災や福祉の情報、学校連絡や子育てに関する情報などをＬＩＮＥでできないものかとの推進をしてきましたが、ようやく遊佐町のＬＩＮＥが導入される予定であります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "利用者が基本情報、例えば性別や年代、地区等を事前入力することで必要な情報のみを配信することも可能になります。"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "また、災害時には一斉送信機能による情報伝達が可能で、登録をした全ての人々への情報発信ができるようになります。"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "３月10日、明後日からは初心者向けのＬＩＮＥ教室も開催を予定いたしておりますので、その中でも町のＬＩＮＥをはじめとした友達登録の方法についても紹介していく予定になっております。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "新小学校の開校に向けては、新校でも仲よく学校生活が送れるよう、令和３年度から交流学習を実施してきました。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "児童の安全確保、スムーズな運行のため、３月と４月にも乗車練習を実施する予定であります。"@ja.
+<< kg:id_43 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "新校においては職員の中に地域連携担当職員を配置し、その職員をまちづくりセンターや地域学校協議会活動推進員との窓口として、四大祭をはじめ、地域行事との連携を図っていく方向で"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "中でも問題視されるのは、破損や倒壊のおそれのある危険家屋です。人口減少の時代を迎え、管理費用や手間がかさむことから、相続放棄などで放置されれば、周辺環境の悪化や倒壊などにもつながる。"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "たとえ生家であっても今の若者のニーズには合わず、実家があっても町の中心部や酒田市内に新築またはアパートを借りる現象があり、家余りの状況が空き家増加の一因となっている"@ja.
+<< kg:id_9 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "町では遊佐町老朽危険空き家解体支援事業を創設し、危険空き家解体に対する支援を行っており"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "不動産登記法では令和６年４月１日から段階的に施行される相続登記の義務化及び住居変更登記の義務化"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "令和５年４月27日から土地を手放して国庫に帰属させることを可能にする制度が新たに始まります。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "今年度中に遊佐町空き家等対策計画を改定し、空き家相談会の開催や老朽危険空き家解体支援事業をより効果的に実施していきたいと考えております。"@ja.
+}

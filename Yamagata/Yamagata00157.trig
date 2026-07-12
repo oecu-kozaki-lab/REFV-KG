@@ -1,0 +1,654 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00157> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "遊佐町エネルギー基本計画"@ja.
+kg:id_1 rdf:type cls:c_7140.
+cls:c_7140 rdfs:label "計画"@ja.
+kg:id_2 rdfs:label "再生可能エネルギーの導入促進"@ja.
+kg:id_2 rdf:type cls:c_3824.
+cls:c_3824 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "省エネルギーの推進"@ja.
+kg:id_3 rdf:type cls:c_8846.
+cls:c_8846 rdfs:label "省エネルギー推進"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "町民省エネ節電所の取組"@ja.
+kg:id_4 rdf:type cls:c_8847.
+cls:c_8847 rdfs:label "省エネルギー活動"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "再生可能エネルギーの利用"@ja.
+kg:id_5 rdf:type cls:c_8848.
+cls:c_8848 rdfs:label "再生可能エネルギー利用"@ja.
+kg:id_6 rdfs:label "自然景観を損なわないよう細心の注意を払う"@ja.
+kg:id_6 rdf:type cls:c_233.
+cls:c_233 rdfs:label "景観配慮"@ja.
+kg:id_5 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "周囲の環境と調和した導入を進める"@ja.
+kg:id_7 rdf:type cls:c_8849.
+cls:c_8849 rdfs:label "環境調和"@ja.
+kg:id_5 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "洋上風力発電事業"@ja.
+kg:id_8 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_9 rdfs:label "2050年カーボンニュートラル実現のため"@ja.
+kg:id_9 rdf:type cls:c_4056.
+cls:c_4056 rdfs:label "脱炭素"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "大規模発電が可能で再エネ主力電源化の切り札と位置づけられているため"@ja.
+kg:id_10 rdf:type cls:c_8850.
+cls:c_8850 rdfs:label "大規模発電性"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "遊佐町沖の洋上風力発電事業"@ja.
+kg:id_11 rdf:type cls:c_552.
+kg:id_12 rdfs:label "風況のよさ"@ja.
+kg:id_12 rdf:type cls:c_8851.
+cls:c_8851 rdfs:label "良好風況"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "県内全体で2800人の雇用創出効果"@ja.
+kg:id_13 rdf:type cls:c_1113.
+cls:c_1113 rdfs:label "雇用創出"@ja.
+kg:id_8 prop:effect kg:id_13.
+kg:id_14 rdfs:label "酒田港の基地港湾化による地域の活性化"@ja.
+kg:id_14 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_8 prop:effect kg:id_14.
+kg:id_15 rdfs:label "漁業への影響懸念"@ja.
+kg:id_15 rdf:type cls:c_8852.
+cls:c_8852 rdfs:label "漁業影響懸念"@ja.
+kg:id_8 prop:effect kg:id_15.
+kg:id_16 rdfs:label "サケへの影響懸念"@ja.
+kg:id_16 rdf:type cls:c_8853.
+cls:c_8853 rdfs:label "魚類影響懸念"@ja.
+kg:id_8 prop:effect kg:id_16.
+kg:id_17 rdfs:label "ジオパークへの影響懸念"@ja.
+kg:id_17 rdf:type cls:c_8854.
+cls:c_8854 rdfs:label "景観影響懸念"@ja.
+kg:id_8 prop:effect kg:id_17.
+kg:id_18 rdfs:label "国が定めた安全基準への適合"@ja.
+kg:id_18 rdf:type cls:c_8855.
+cls:c_8855 rdfs:label "安全基準適合"@ja.
+kg:id_8 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "住民への十分な説明と合意形成"@ja.
+kg:id_19 rdf:type cls:c_8856.
+cls:c_8856 rdfs:label "説明合意形成"@ja.
+kg:id_8 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "予防管理原則の徹底"@ja.
+kg:id_20 rdf:type cls:c_8125.
+cls:c_8125 rdfs:label "予防管理"@ja.
+kg:id_8 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "協定の締結"@ja.
+kg:id_21 rdf:type cls:c_7949.
+cls:c_7949 rdfs:label "協定締結"@ja.
+kg:id_8 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "住民への丁寧な説明"@ja.
+kg:id_22 rdf:type cls:c_5718.
+cls:c_5718 rdfs:label "説明実施"@ja.
+kg:id_8 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "サケの回遊域を避けた設置"@ja.
+kg:id_23 rdf:type cls:c_8857.
+cls:c_8857 rdfs:label "魚類回遊回避"@ja.
+kg:id_8 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "漁業者や内水面漁業者の経済的リスクの除去"@ja.
+kg:id_24 rdf:type cls:c_8858.
+cls:c_8858 rdfs:label "経済リスク除去"@ja.
+kg:id_8 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "ボランティアサークルくじら"@ja.
+kg:id_25 rdf:type cls:c_8859.
+cls:c_8859 rdfs:label "ボランティア団体"@ja.
+kg:id_26 rdfs:label "これまでの活動によりボランティアの意義が広く生徒に認知されたこと"@ja.
+kg:id_26 rdf:type cls:c_8860.
+cls:c_8860 rdfs:label "活動認知"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "地域の人との交流の中で社会参加と郷土愛の醸成"@ja.
+kg:id_27 rdf:type cls:c_8861.
+cls:c_8861 rdfs:label "社会参加醸成"@ja.
+kg:id_25 prop:effect kg:id_27.
+kg:id_28 rdfs:label "自己有用感の向上"@ja.
+kg:id_28 rdf:type cls:c_8862.
+cls:c_8862 rdfs:label "自己有用感向上"@ja.
+kg:id_25 prop:effect kg:id_28.
+kg:id_29 rdfs:label "地域協働活動への広がり"@ja.
+kg:id_29 rdf:type cls:c_8863.
+cls:c_8863 rdfs:label "地域協働拡大"@ja.
+kg:id_25 prop:effect kg:id_29.
+kg:id_30 rdfs:label "年間活動計画を立てながら活動の幅を広げる"@ja.
+kg:id_30 rdf:type cls:c_8864.
+cls:c_8864 rdfs:label "活動拡充"@ja.
+kg:id_25 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "高齢者の健康維持と見回り"@ja.
+kg:id_31 rdf:type cls:c_2061.
+cls:c_2061 rdfs:label "高齢者支援"@ja.
+kg:id_32 rdfs:label "配食サービス事業"@ja.
+kg:id_32 rdf:type cls:c_8865.
+cls:c_8865 rdfs:label "配食支援"@ja.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "冬期間の支援が必要なお年寄りや障がい者の生活不安"@ja.
+kg:id_33 rdf:type cls:c_1740.
+cls:c_1740 rdfs:label "生活不安"@ja.
+kg:id_34 rdfs:label "雪かき応援事業"@ja.
+kg:id_34 rdf:type cls:c_2457.
+cls:c_2457 rdfs:label "除雪支援"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "砂防林防風林の環境整備"@ja.
+kg:id_35 rdf:type cls:c_816.
+cls:c_816 rdfs:label "森林整備"@ja.
+kg:id_36 rdfs:label "つる切り下刈り枝払い等のボランティア作業"@ja.
+kg:id_36 rdf:type cls:c_8866.
+cls:c_8866 rdfs:label "環境整備作業"@ja.
+kg:id_35 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "地球温暖化対策"@ja.
+kg:id_37 rdf:type cls:c_699.
+cls:c_699 rdfs:label "温暖化対策"@ja.
+kg:id_38 rdfs:label "省エネとリサイクルポスター標語川柳コンクール事業"@ja.
+kg:id_38 rdf:type cls:c_8867.
+cls:c_8867 rdfs:label "啓発事業"@ja.
+kg:id_37 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "町民省エネ節電所事業"@ja.
+kg:id_39 rdf:type cls:c_8847.
+kg:id_37 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "ホームページのアクセス増加"@ja.
+kg:id_40 rdf:type cls:c_8868.
+cls:c_8868 rdfs:label "情報媒体利用増加"@ja.
+kg:id_41 rdfs:label "新型コロナウイルス感染情報など多くの人が最新情報を得ようとしたこと"@ja.
+kg:id_41 rdf:type cls:c_8869.
+cls:c_8869 rdfs:label "感染情報需要"@ja.
+kg:id_40 prop:cause kg:id_41.
+kg:id_42 rdfs:label "ホームページの見やすさの不足"@ja.
+kg:id_42 rdf:type cls:c_8870.
+cls:c_8870 rdfs:label "情報媒体見やすさ不足"@ja.
+kg:id_43 rdfs:label "掲載すべき期間が終わった情報や終了した制度情報の公開停止が適切でないこと"@ja.
+kg:id_43 rdf:type cls:c_8871.
+cls:c_8871 rdfs:label "情報整理不足"@ja.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "ホームページ運用上の課題"@ja.
+kg:id_44 rdf:type cls:c_8872.
+cls:c_8872 rdfs:label "情報媒体運用課題"@ja.
+kg:id_45 rdfs:label "ホームページに公開するべき内容とタイミングについて職員間で温度差があること"@ja.
+kg:id_45 rdf:type cls:c_8873.
+cls:c_8873 rdfs:label "運用認識差"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "職員のスキルアップのための研修開催"@ja.
+kg:id_46 rdf:type cls:c_2134.
+cls:c_2134 rdfs:label "職員研修"@ja.
+kg:id_44 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "臂曲地区の新たな採石計画の可能性"@ja.
+kg:id_47 rdf:type cls:c_8874.
+cls:c_8874 rdfs:label "採石計画可能性"@ja.
+kg:id_48 rdfs:label "事業者が広大な土地を所有していること"@ja.
+kg:id_48 rdf:type cls:c_8875.
+cls:c_8875 rdfs:label "土地所有"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "採石場周辺の災害リスク"@ja.
+kg:id_49 rdf:type cls:c_6934.
+cls:c_6934 rdfs:label "災害リスク"@ja.
+kg:id_50 rdfs:label "十分な植林がなされていないこと"@ja.
+kg:id_50 rdf:type cls:c_8876.
+cls:c_8876 rdfs:label "植林不足"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "採石場の緑化"@ja.
+kg:id_51 rdf:type cls:c_7971.
+cls:c_7971 rdfs:label "緑化"@ja.
+kg:id_52 rdfs:label "緑化の早期実現を求める"@ja.
+kg:id_52 rdf:type cls:c_8877.
+cls:c_8877 rdfs:label "早期緑化要請"@ja.
+kg:id_51 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "緑化の実施方法に関する協議の場を県に求める"@ja.
+kg:id_53 rdf:type cls:c_8878.
+cls:c_8878 rdfs:label "協議要請"@ja.
+kg:id_51 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "健全な水循環の保全"@ja.
+kg:id_54 rdf:type cls:c_8879.
+cls:c_8879 rdfs:label "水循環保全"@ja.
+kg:id_55 rdfs:label "採石場周辺の湧水や横堰の継続調査"@ja.
+kg:id_55 rdf:type cls:c_305.
+cls:c_305 rdfs:label "継続調査"@ja.
+kg:id_54 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "新庁舎の分かりにくさ"@ja.
+kg:id_56 rdf:type cls:c_8880.
+cls:c_8880 rdfs:label "庁舎分かりにくさ"@ja.
+kg:id_57 rdfs:label "玄関が東西2つあり目的の課に近い入口が分かりにくいこと"@ja.
+kg:id_57 rdf:type cls:c_8881.
+cls:c_8881 rdfs:label "入口不明瞭"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "各係の場所が分かりにくいこと"@ja.
+kg:id_58 rdf:type cls:c_8882.
+cls:c_8882 rdfs:label "配置不明瞭"@ja.
+kg:id_56 prop:cause kg:id_58.
+kg:id_59 rdfs:label "新庁舎の圧迫感"@ja.
+kg:id_59 rdf:type cls:c_8883.
+cls:c_8883 rdfs:label "庁舎圧迫感"@ja.
+kg:id_60 rdfs:label "職員に声をかけづらく見られているようで緊張すること"@ja.
+kg:id_60 rdf:type cls:c_8884.
+cls:c_8884 rdfs:label "心理的緊張"@ja.
+kg:id_59 prop:cause kg:id_60.
+kg:id_61 rdfs:label "新庁舎"@ja.
+kg:id_61 rdf:type cls:c_8885.
+cls:c_8885 rdfs:label "庁舎"@ja.
+kg:id_62 rdfs:label "平家建てのワンフロアで分かりやすい"@ja.
+kg:id_62 rdf:type cls:c_8886.
+cls:c_8886 rdfs:label "利用容易性"@ja.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "きれいで開放的で雰囲気が明るくなった"@ja.
+kg:id_63 rdf:type cls:c_8887.
+cls:c_8887 rdfs:label "快適性向上"@ja.
+kg:id_61 prop:effect kg:id_63.
+kg:id_64 rdfs:label "新庁舎の階段の見えにくさ"@ja.
+kg:id_64 rdf:type cls:c_8888.
+cls:c_8888 rdfs:label "階段視認性不足"@ja.
+kg:id_65 rdfs:label "東西玄関階段の段差を見えやすくするための塗装工事"@ja.
+kg:id_65 rdf:type cls:c_8889.
+cls:c_8889 rdfs:label "視認性改善工事"@ja.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "新庁舎東側窓の使用環境"@ja.
+kg:id_66 rdf:type cls:c_8890.
+cls:c_8890 rdfs:label "窓使用環境"@ja.
+kg:id_67 rdfs:label "ロールスクリーン追加設置工事"@ja.
+kg:id_67 rdf:type cls:c_8891.
+cls:c_8891 rdfs:label "遮光設備設置"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "受付カウンターの照明環境"@ja.
+kg:id_68 rdf:type cls:c_8892.
+cls:c_8892 rdfs:label "照明環境"@ja.
+kg:id_69 rdfs:label "照明追加工事"@ja.
+kg:id_69 rdf:type cls:c_8893.
+cls:c_8893 rdfs:label "照明改善工事"@ja.
+kg:id_68 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "新庁舎の位置の分かりにくさ"@ja.
+kg:id_70 rdf:type cls:c_8894.
+cls:c_8894 rdfs:label "庁舎位置分かりにくさ"@ja.
+kg:id_71 rdfs:label "平家で県道側から見えづらいこと"@ja.
+kg:id_71 rdf:type cls:c_8895.
+cls:c_8895 rdfs:label "建物視認性不足"@ja.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "県道側に2か所の案内看板を設置する"@ja.
+kg:id_72 rdf:type cls:c_8896.
+cls:c_8896 rdfs:label "案内看板設置"@ja.
+kg:id_70 prop:contermeasure kg:id_72.
+kg:st_1 rdfs:label "佐藤光保議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "地味だが大事な取組であり推進が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "省エネは我慢や重荷ではなく家計や企業の負担減につながる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "大事な取組であり推進する必要がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "自然環境と共存できる範囲での普及が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "自然環境との共存を前提に進めるべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_6 prop:content "当面2030年までの二酸化炭素削減目標達成のため必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "現段階では当該電力以外は考えられない"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "庄内沖の中でも遊佐町沖は有望区域に整理された"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "建設から保守メンテナンス、撤去まで長期の雇用効果が見込まれる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "地域活性化を想定している"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "30年後に漁業がどうなるか心配している"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "法定協議会参加者"@ja.
+kg:st_3 rdfs:type cls:st_102.
+cls:st_102 rdfs:label "協議会参加者"@ja.
+kg:op_12 prop:content "地域漁業との協調と共生について丁寧な協議が必要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "稚魚が海に出られるか戻ってこられるか非常に懸念している"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "サケなどの遡河性魚種の調査を求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "洋上風力がある場所で世界ジオパークを目指せるのか疑問"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "佐藤光弥企画課長"@ja.
+kg:st_4 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_16 prop:content "風車を理由に世界ジオパーク認定にならないことはない"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "山形県"@ja.
+kg:st_5 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_17 prop:content "大地震や強風にも耐えられるよう安全基準を満たす必要がある"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "住民への十分な説明を行って合意形成を図るべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "町民の疑問や不安が解消されるよう説明会開催を求めていく"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "リスクを最小限にしながら進めるべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "地域のリスク最小化のため協定が必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "国県事業者に丁寧な説明を求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "サケの通るところはできれば避けてほしい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "町を預かる立場として当然要望していく"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "認知の広がりが登録者増加の大きな要因"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "教育委員会教育課長"@ja.
+kg:st_6 rdfs:type cls:st_32.
+kg:op_26 prop:content "自己有用感の向上と地域とのつながりの広がりにつながっている"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "感謝や称賛を受けることで自己有用感が高まっている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:op_28 prop:content "地域の方々とのつながりが広がっている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_6.
+kg:op_29 prop:content "登録者増加を踏まえ活動内容を整理し幅を広げたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "畠中地域生活課長"@ja.
+kg:st_7 rdfs:type cls:st_32.
+kg:op_30 prop:content "小さくても継続した実践が大切"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_7.
+kg:op_31 prop:content "継続して実践していくことが大切"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_7.
+kg:op_32 prop:content "ホームページは貴重な情報伝達ツール"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "停止を正しく行えばより見やすいホームページになる"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "統一基準を設けるのは難しいが研修が必要"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "技術面と広報面の意識づけを含め検証していく"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "ホームページも重要な広報媒体として意識づけを進める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "完全決着には至っておらず新たな計画に備える必要がある"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "早期緑化を求めつつ実施方法の協議の場が必要"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "県に対し早期緑化を求めていく"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "木の種類や盛土の種類が生態系に影響するため協議が必要"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "単年で十分な成果は得られないため継続調査が必要"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "来庁者"@ja.
+kg:st_8 rdfs:type cls:st_103.
+cls:st_103 rdfs:label "来庁者"@ja.
+kg:op_42 prop:content "目的の課がどちらに近いか分からない"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_8.
+kg:op_43 prop:content "各係の場所が分かりにくい"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_8.
+kg:op_44 prop:content "職員に見られているようで緊張する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "見学者や来庁者"@ja.
+kg:st_9 rdfs:type cls:st_103.
+kg:op_45 prop:content "階段がなく分かりやすい"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_9.
+kg:op_46 prop:content "雰囲気が明るくなった"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_8.
+kg:op_47 prop:content "町内の地理に不案内な来庁者に不便をかけている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "施策の内容は、再生可能エネルギーの導入促進、省エネルギーの推進を柱として"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "施策の内容は、再生可能エネルギーの導入促進、省エネルギーの推進を柱として"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "町民がみんなで節電、省エネすることにより、エネルギー生産ではなく節電で利益を上げようという取組"@ja.
+<< kg:id_5 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "再生可能エネルギーを利用する際は、自然景観を損なわないように細心の注意を払う"@ja.
+<< kg:id_5 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "周囲の環境と調和した導入を進めます"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "政府では「2050年カーボンニュートラル」の実現のため、当面2030年まで46％の二酸化炭素削減を目指しています"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "大規模発電が可能となる洋上風力発電は、再エネの主力電源化に向けた切り札と位置づけられ"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "庄内沖もその風況のよさから遊佐町沖についても昨年９月に「再エネ海域利用法」に基づく「有望な区域」に整備された"@ja.
+<< kg:id_8 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "30年の長期に見た場合に、建設時の建設・製造、稼働後の保守メンテナンスに関する事業、最終的に撤去する際の事業など、県内全体で2,800人の雇用創出効果があると見込まれた"@ja.
+<< kg:id_8 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "酒田港の基地港湾化による地域の活性化というものを想定しているものと受け止めております"@ja.
+<< kg:id_8 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "果たしてこの事業が終わって30年後、漁業はどういう状況になってしまうのだろう"@ja.
+<< kg:id_8 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "果たしてサケが、まず稚魚が海に出られるだろうかと。また、戻ってこれるだろうか"@ja.
+<< kg:id_8 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "こんな洋上風力がくるくる回っているようなところで、それは海なわけですけれども、そういうところでジオパークなんて言えるのだろうか"@ja.
+<< kg:id_8 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "事業者は国が定めた安全基準を満たさなければならないため、大地震や強風にも耐えられるものと思われる"@ja.
+<< kg:id_8 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "住民への十分な説明を行って合意形成を図ることであると考えます"@ja.
+<< kg:id_8 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "予防管理原則の徹底"@ja.
+<< kg:id_8 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "協定の締結"@ja.
+<< kg:id_8 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "住民への丁寧な説明など「基本方針」について申し述べさせていただいた"@ja.
+<< kg:id_8 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "２キロまで、サケの通るところはできれば避けていただきたい"@ja.
+<< kg:id_8 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "それら等の経済的リスクをまずしっかりと取り除いていただくということがこの町を預かる私の立場としては、当然それは要望していくことであろう"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "登録者が大きく増えた要因としまして、これまでの活動により、ボランティアの意義が広く生徒に認知されたことが大きいものと考えております"@ja.
+<< kg:id_25 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "ボランティアの実践を通して地域を知り、地域の人との交流の中で社会参加と郷土愛の醸成を図る"@ja.
+<< kg:id_25 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "ありがとう、ご苦労さまでしたということで感謝の言葉と褒められたことでひとつ自分たちの自己有用感が高まっている"@ja.
+<< kg:id_25 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "地域協働活動への広がりも見せているところであります"@ja.
+<< kg:id_25 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "ある程度年間活動計画を立てながら、活動の幅を広げていけるよう取り組んでいきたい"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:text-txt_contents "週１回およそ80戸の高齢者宅を民生児童委員や遊佐町ボランティア連絡協議委員会等約20名のボランティアから弁当を配布していただき、高齢者の健康の維持と見回りを実施しております"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:text-txt_contents "冬期間の生活を安心して過ごせるよう、地域ぐるみでの生活通路の確保を行うことを支援する事業"@ja.
+<< kg:id_35 prop:contermeasure kg:id_36 >>
+    prop:text-txt_contents "つる切り、下刈り、枝払い等ボランティアによる森林環境整備を実施しています"@ja.
+<< kg:id_37 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "省エネとリサイクルポスター、標語、川柳コンクール事業"@ja.
+<< kg:id_37 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "７年目となりました町民省エネ節電所事業"@ja.
+<< kg:id_40 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "新型コロナウイルス感染情報など、多くの人がホームページから町の最新情報を得ようとして考えるなど、貴重な情報伝達ツールであるとの認識であります"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "掲載すべき期間が終わったものや、制度が終了したものの情報についても、情報の公開停止などを正しくすることでより見やすいホームページになる"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "ホームページに公開するべき内容とタイミングについては、職員間で多少温度差があり"@ja.
+<< kg:id_44 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "今後はこれらも含めた職員のスキルアップのための研修など開催していきたい"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "事業者は大変な広大な面積の土地を持っているわけですから、新たな採石計画が出される可能性もある"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "現時点では十分な植林がなされているとは言えず、大規模災害や大雨による土砂崩れ、採石場外への土砂の流出等が危惧されます"@ja.
+<< kg:id_51 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "緑化の早期実現を求める"@ja.
+<< kg:id_51 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "緑化の実施方法に関する協議の場を設けることを県に求めていきたい"@ja.
+<< kg:id_54 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "町では採石場周辺の湧水や臂曲地区を流れる横堰の調査を行い、季節的な変化及び経年による変化に注視している"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "玄関が東西２つあり、中に入るまで目的の課がどちらが近いか分からない"@ja.
+<< kg:id_56 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "各係の場所が分かりにくい"@ja.
+<< kg:id_59 prop:cause kg:id_60 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "職員に声をかけづらい、職員に見られているようで緊張する"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "平家建てのワンフロアで分かりやすいという声が多く聞かれました"@ja.
+<< kg:id_61 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "きれいで開放的で雰囲気が明るくなった"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:text-txt_contents "東西玄関階段の段差を見えやすくするため塗装工事"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:text-txt_contents "庁舎東側窓へのロールスクーン追加設置工事"@ja.
+<< kg:id_68 prop:contermeasure kg:id_69 >>
+    prop:text-txt_contents "受付カウンターへの照明追加工事"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "新庁舎は平家であるがゆえに、その位置が県道側から見えづらい"@ja.
+<< kg:id_70 prop:contermeasure kg:id_72 >>
+    prop:text-txt_contents "今年度内に県道側に２か所設置いたします"@ja.
+}

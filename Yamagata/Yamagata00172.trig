@@ -1,0 +1,837 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00172> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "漁業への影響"@ja.
+kg:id_2 rdf:type cls:c_2215.
+cls:c_2215 rdfs:label "産業影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "地元経済への大きな影響"@ja.
+kg:id_3 rdf:type cls:c_2210.
+cls:c_2210 rdfs:label "地域経済影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "超低周波音の影響"@ja.
+kg:id_4 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "景観への影響"@ja.
+kg:id_5 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "健康被害への不安"@ja.
+kg:id_6 rdf:type cls:c_2062.
+cls:c_2062 rdfs:label "健康不安"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "視察団の増加"@ja.
+kg:id_7 rdf:type cls:c_5299.
+cls:c_5299 rdfs:label "来訪増加"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "湾岸エリアの活気"@ja.
+kg:id_8 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "観光の増加"@ja.
+kg:id_9 rdf:type cls:c_5299.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "宿泊予約の増加"@ja.
+kg:id_10 rdf:type cls:c_9597.
+cls:c_9597 rdfs:label "予約増加"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "食事予約の増加"@ja.
+kg:id_11 rdf:type cls:c_9597.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "不安の払拭に努める"@ja.
+kg:id_12 rdf:type cls:c_9470.
+cls:c_9470 rdfs:label "不安軽減"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "漁業振興・共生策の実施"@ja.
+kg:id_13 rdf:type cls:c_4528.
+cls:c_4528 rdfs:label "共生推進"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "漁業影響調査の実施"@ja.
+kg:id_14 rdf:type cls:c_2827.
+cls:c_2827 rdfs:label "影響調査"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "環境影響評価による調査とシミュレーション"@ja.
+kg:id_15 rdf:type cls:c_3010.
+cls:c_3010 rdfs:label "環境評価"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "国や県と連携した見守り"@ja.
+kg:id_16 rdf:type cls:c_9598.
+cls:c_9598 rdfs:label "事業監視"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "異常発生時の運転停止措置を含めた協定締結"@ja.
+kg:id_17 rdf:type cls:c_9599.
+cls:c_9599 rdfs:label "安全協定"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "地元企業向けセミナーの開催"@ja.
+kg:id_18 rdf:type cls:c_9600.
+cls:c_9600 rdfs:label "参入支援"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "先行区域に学ぶ研修会の実施"@ja.
+kg:id_19 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "情報共有や勉強会の開催"@ja.
+kg:id_20 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "技術者養成やメンテナンス事業の育成"@ja.
+kg:id_21 rdf:type cls:c_703.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "日沿道に関する動画"@ja.
+kg:id_22 rdf:type cls:c_1805.
+cls:c_1805 rdfs:label "広報活動"@ja.
+kg:id_23 rdfs:label "町によるプロモーションビデオの作成と発信"@ja.
+kg:id_23 rdf:type cls:c_9601.
+cls:c_9601 rdfs:label "動画発信"@ja.
+kg:id_22 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "生活クラブとの共同宣言事業"@ja.
+kg:id_24 rdf:type cls:c_1426.
+cls:c_1426 rdfs:label "連携事業"@ja.
+kg:id_25 rdfs:label "地域課題や生活・組織課題を提携と交流で解決したい願い"@ja.
+kg:id_25 rdf:type cls:c_9602.
+cls:c_9602 rdfs:label "課題解決志向"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "町民の環境問題意識の高まり"@ja.
+kg:id_26 rdf:type cls:c_7530.
+cls:c_7530 rdfs:label "意識向上"@ja.
+kg:id_24 prop:effect kg:id_26.
+kg:id_27 rdfs:label "移住や援農へのつながり"@ja.
+kg:id_27 rdf:type cls:c_9077.
+cls:c_9077 rdfs:label "関係人口増加"@ja.
+kg:id_24 prop:effect kg:id_27.
+kg:id_28 rdfs:label "まちづくり部会・農業振興部会・環境部会での連携推進"@ja.
+kg:id_28 rdf:type cls:c_4834.
+cls:c_4834 rdfs:label "連携推進"@ja.
+kg:id_24 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "共存の森事業"@ja.
+kg:id_29 rdf:type cls:c_9603.
+cls:c_9603 rdfs:label "森林保全事業"@ja.
+kg:id_30 rdfs:label "乱開発を防止し水脈を守るための山林買取り"@ja.
+kg:id_30 rdf:type cls:c_9604.
+cls:c_9604 rdfs:label "水源保全"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "下草刈り・枝払い・植生調査・森の散策の実施"@ja.
+kg:id_31 rdf:type cls:c_9605.
+cls:c_9605 rdfs:label "保全活動"@ja.
+kg:id_29 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "農業体験等を交えた森づくり事業の検討"@ja.
+kg:id_32 rdf:type cls:c_1222.
+cls:c_1222 rdfs:label "体験事業"@ja.
+kg:id_29 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "事業継続上の課題"@ja.
+kg:id_33 rdf:type cls:c_1967.
+cls:c_1967 rdfs:label "運営課題"@ja.
+kg:id_29 prop:effect kg:id_33.
+kg:id_34 rdfs:label "スクールバス利用"@ja.
+kg:id_34 rdf:type cls:c_9606.
+cls:c_9606 rdfs:label "バス利用"@ja.
+kg:id_35 rdfs:label "冬期間の登下校の安全確保が必要"@ja.
+kg:id_35 rdf:type cls:c_1225.
+cls:c_1225 rdfs:label "安全確保"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "バス停待合所設置が困難な場所が多い"@ja.
+kg:id_36 rdf:type cls:c_9607.
+cls:c_9607 rdfs:label "整備困難"@ja.
+kg:id_34 prop:effect kg:id_36.
+kg:id_37 rdfs:label "バス停設置状況調査の実施"@ja.
+kg:id_37 rdf:type cls:c_1618.
+cls:c_1618 rdfs:label "実態調査"@ja.
+kg:id_34 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "区長との意見交換の実施"@ja.
+kg:id_38 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_34 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "自主除雪制度の活用"@ja.
+kg:id_39 rdf:type cls:c_6332.
+cls:c_6332 rdfs:label "除雪対応"@ja.
+kg:id_34 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "街灯整備要望への対応"@ja.
+kg:id_40 rdf:type cls:c_9608.
+cls:c_9608 rdfs:label "照明整備"@ja.
+kg:id_34 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "通学路安全推進会議と合同点検の実施"@ja.
+kg:id_41 rdf:type cls:c_8296.
+cls:c_8296 rdfs:label "安全点検"@ja.
+kg:id_34 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "鳥獣被害情報の学校共有と保護者へのメール配信"@ja.
+kg:id_42 rdf:type cls:c_156.
+kg:id_34 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "保護者迎えまでの学校待機対応"@ja.
+kg:id_43 rdf:type cls:c_9577.
+cls:c_9577 rdfs:label "待機対応"@ja.
+kg:id_34 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "運行管理マニュアルの作成と月例ミーティング"@ja.
+kg:id_44 rdf:type cls:c_5832.
+cls:c_5832 rdfs:label "安全管理"@ja.
+kg:id_34 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "集落の教科書作り"@ja.
+kg:id_45 rdf:type cls:c_9609.
+cls:c_9609 rdfs:label "地域案内作成"@ja.
+kg:id_46 rdfs:label "移住後のミスマッチの発生"@ja.
+kg:id_46 rdf:type cls:c_9610.
+cls:c_9610 rdfs:label "定住不適合"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "住民が集落や地域を見詰め直す機会になる"@ja.
+kg:id_47 rdf:type cls:c_9611.
+cls:c_9611 rdfs:label "地域再認識"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "移住者向けガイドブックの作成"@ja.
+kg:id_48 rdf:type cls:c_5105.
+cls:c_5105 rdfs:label "案内作成"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "集落支援員による移住者フォローと橋渡し"@ja.
+kg:id_49 rdf:type cls:c_1420.
+cls:c_1420 rdfs:label "移住支援"@ja.
+kg:id_45 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "小学生の放課後・長期休暇の居場所不足"@ja.
+kg:id_50 rdf:type cls:c_8171.
+cls:c_8171 rdfs:label "居場所不足"@ja.
+kg:id_51 rdfs:label "核家族化や共働き世帯の増加"@ja.
+kg:id_51 rdf:type cls:c_3633.
+cls:c_3633 rdfs:label "家庭変化"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "近所に子供がいないことや家に誰もいないこと"@ja.
+kg:id_52 rdf:type cls:c_9612.
+cls:c_9612 rdfs:label "家庭不在"@ja.
+kg:id_50 prop:cause kg:id_52.
+kg:id_53 rdfs:label "放課後児童クラブだけでは見守りニーズを充足できない"@ja.
+kg:id_53 rdf:type cls:c_2805.
+cls:c_2805 rdfs:label "見守り不足"@ja.
+kg:id_50 prop:effect kg:id_53.
+kg:id_54 rdfs:label "土曜日や長期休暇や午後6時以降の受入れが十分でない"@ja.
+kg:id_54 rdf:type cls:c_9613.
+cls:c_9613 rdfs:label "受入不足"@ja.
+kg:id_50 prop:effect kg:id_54.
+kg:id_55 rdfs:label "民間放課後児童クラブへの支援拡充"@ja.
+kg:id_55 rdf:type cls:c_2014.
+cls:c_2014 rdfs:label "支援拡充"@ja.
+kg:id_50 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "空き校舎や未利用施設の活用"@ja.
+kg:id_56 rdf:type cls:c_5401.
+cls:c_5401 rdfs:label "施設活用"@ja.
+kg:id_50 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "放課後子ども教室の見守り型維持と体験型への移行準備"@ja.
+kg:id_57 rdf:type cls:c_9614.
+cls:c_9614 rdfs:label "運営移行"@ja.
+kg:id_50 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "子育て世帯の移住"@ja.
+kg:id_58 rdf:type cls:c_1420.
+kg:id_59 rdfs:label "子育て世帯移住奨励金の交付"@ja.
+kg:id_59 rdf:type cls:c_2944.
+cls:c_2944 rdfs:label "経済支援"@ja.
+kg:id_58 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "学校から放課後児童クラブ等へのスクールバス利用"@ja.
+kg:id_60 rdf:type cls:c_3377.
+cls:c_3377 rdfs:label "移動支援"@ja.
+kg:id_58 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "蕨岡・高瀬まちづくりセンター移転"@ja.
+kg:id_61 rdf:type cls:c_2565.
+cls:c_2565 rdfs:label "施設移転"@ja.
+kg:id_62 rdfs:label "老朽化したまちづくりセンターの更新と空き校舎活用の必要性"@ja.
+kg:id_62 rdf:type cls:c_2623.
+cls:c_2623 rdfs:label "施設更新"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "事業費の減額が必要になった"@ja.
+kg:id_63 rdf:type cls:c_9615.
+cls:c_9615 rdfs:label "予算縮減"@ja.
+kg:id_61 prop:effect kg:id_63.
+kg:id_64 rdfs:label "講堂スペースが確保できない"@ja.
+kg:id_64 rdf:type cls:c_7200.
+cls:c_7200 rdfs:label "空間不足"@ja.
+kg:id_61 prop:effect kg:id_64.
+kg:id_65 rdfs:label "改築検討委員会の開催"@ja.
+kg:id_65 rdf:type cls:c_9616.
+cls:c_9616 rdfs:label "検討会開催"@ja.
+kg:id_61 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "体育館活用による大規模事業対応"@ja.
+kg:id_66 rdf:type cls:c_9617.
+cls:c_9617 rdfs:label "代替利用"@ja.
+kg:id_61 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "空き校舎利活用調整会議による情報共有"@ja.
+kg:id_67 rdf:type cls:c_156.
+kg:id_61 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "実施設計期間の延長と合意形成"@ja.
+kg:id_68 rdf:type cls:c_721.
+cls:c_721 rdfs:label "合意形成"@ja.
+kg:id_61 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "空き校舎利活用"@ja.
+kg:id_69 rdf:type cls:c_5401.
+kg:id_70 rdfs:label "貸しオフィスとしての有償貸出"@ja.
+kg:id_70 rdf:type cls:c_2117.
+cls:c_2117 rdfs:label "事業者誘致"@ja.
+kg:id_69 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "プロポーザルによる公募"@ja.
+kg:id_71 rdf:type cls:c_9618.
+cls:c_9618 rdfs:label "公募選定"@ja.
+kg:id_69 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "地域貢献に理解のある事業者の入居"@ja.
+kg:id_72 rdf:type cls:c_4.
+cls:c_4 rdfs:label "地域貢献"@ja.
+kg:id_69 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "用途変更に必要な工事の実施"@ja.
+kg:id_73 rdf:type cls:c_9619.
+cls:c_9619 rdfs:label "用途変更"@ja.
+kg:id_69 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "民間資本による改修も視野に入れた企業誘致"@ja.
+kg:id_74 rdf:type cls:c_2117.
+kg:id_69 prop:contermeasure kg:id_74.
+kg:st_1 rdfs:label "斎藤弥志夫議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "促進区域指定により漁業への支障はないとみなせるのではないか"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_2 prop:content "漁業に全く影響がないわけではないが共生策で共存共栄は可能と考える"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "地域生活課長 太田智光"@ja.
+kg:st_3 rdfs:type cls:st_60.
+cls:st_60 rdfs:label "自治体職員"@ja.
+kg:op_3 prop:content "構造物が建つ以上支障はあるが振興策や共生策と併せて共存していく認識である"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "酒田港風力発電事業者協議会会長"@ja.
+kg:st_4 rdfs:type cls:st_107.
+cls:st_107 rdfs:label "事業者団体"@ja.
+kg:op_4 prop:content "地域協調型事業として地域経済活性化につなげたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_4.
+kg:op_5 prop:content "住居への直接的な影響はほぼないと認識している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "低周波問題は過度に心配する必要はなく前向きに事業に臨むべきだ"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "能代市エネルギー産業政策課"@ja.
+kg:st_5 rdfs:type cls:st_108.
+cls:st_108 rdfs:label "自治体組織"@ja.
+kg:op_7 prop:content "景観は主観の問題であり大きな問題ではないとの認識を示した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_5.
+kg:op_8 prop:content "景観などへの不安の払拭に努めたい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "健康問題は世間で言われるほど心配する必要はない"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "健康に害を及ぼすものを建ててよいという法律はなく環境影響評価で確認すべきだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "市民の理解は進んでおり健康被害はないと説明した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "能代観光協会"@ja.
+kg:st_6 rdfs:type cls:st_109.
+cls:st_109 rdfs:label "観光団体"@ja.
+kg:op_12 prop:content "洋上風力発電事業の開始後に視察団の増加が起きている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_6.
+kg:op_13 prop:content "湾岸エリアの活気が生まれていると説明した"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_6.
+kg:op_14 prop:content "観光の増加が見込まれる変化が起きている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_6.
+kg:op_15 prop:content "宿泊予約の増加が見込まれる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "食事予約の増加が見込まれる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_6.
+kg:op_17 prop:content "超低周波音や景観への不安の払拭に努めたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "漁業への影響を前提に振興策や共生策で洋上風力との共生を図るべきだ"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "事業者による振興策や共生策と併せて共存していくべきだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "実際の運営後も漁業センサスのような調査は必要だ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "事前の環境影響評価をしっかり行った上で建設に着手すべきだ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "町として国や県と連携し事業完了まで責任を持って見守る"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "異常発生時の運転停止措置を含めた協定締結を進めたい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "県と協議会の連携による地元企業向けセミナーは参入促進に有効だ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "先行区域に学ぶ研修会を通じて地元の準備を進めるべきだ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "酒田市の経済界や商工会と勉強会を進め地元に事業を根づかせたい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "地元から技術者を多く育成し長期的なメンテナンスにも対応すべきだ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "全国の先行事例を参考に地元でメンテナンス事業ができる形を目指したい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "高速道路が通る町であることを町自ら動画でアピールすべきだ"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "企画課長 渡会和裕"@ja.
+kg:st_7 rdfs:type cls:st_60.
+kg:op_30 prop:content "提案を受け止め有効な観光PRにつながる形を検討したい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "副町長 池田与四也"@ja.
+kg:st_8 rdfs:type cls:st_11.
+kg:op_31 prop:content "町自力の情報発信として前向きに検討したい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_8.
+kg:op_32 prop:content "消費者と生産者の関係から一歩進み新しいステージに前進する提携だった"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "石けん運動やアルミ工場移転問題で町民の環境意識向上に大きく貢献した"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "生活クラブ関連事業を通じて農業支援に来る人が遊佐町にも来ておりありがたい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "3部会を核に基幹産業と地域社会の持続的発展課題に取り組むべきだ"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "水の出る区域を守るために土地を買い求めたことは大きかった"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "生活クラブや夢都里路くらぶと連携し農業体験を交えた事業を検討中である"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:st_9 rdfs:label "産業課長 舘内ひろみ"@ja.
+kg:st_9 rdfs:type cls:st_60.
+kg:op_38 prop:content "現地までの交通の不便さと少人数体制が課題である"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "渋谷敏議員"@ja.
+kg:st_10 rdfs:type cls:st_16.
+kg:op_39 prop:content "冬期間の登下校にさらなる安全対策が必要だ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_10.
+kg:op_40 prop:content "住宅や私有地の前や道路幅の狭い場所が多く待合所整備は容易でない"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "教育長と課長が全ての場所を確認し現状把握を進めた"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "統合後初の冬を前に区長と安全対策等の意見交換を行った"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "バス停までの除雪は自主除雪制度を活用した地域協力をお願いしている"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "保護者を含め集落で協議した上で街灯整備を要望してもらう対応としている"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "関係機関と合同点検を行い信号機設置要望箇所などを確認した"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "熊などの情報を学校経由で保護者に伝え送迎協力をお願いしている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "中学校では保護者が迎えに来るまで学校待機できるようにしている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "置き去り防止も含め運転手間で安全管理を徹底している"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:st_11 rdfs:label "齋藤武議員"@ja.
+kg:st_11 rdfs:type cls:st_16.
+kg:op_49 prop:content "移住後のミスマッチを防ぐため地域の慣習やルールを事前に伝える必要がある"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_11.
+kg:op_50 prop:content "教科書作りの過程自体が住民にとって地域を見詰め直す効用を持つ"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_11.
+kg:op_51 prop:content "移住者が自治会や地域理解を深める資料として一面有効な手段だ"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "取り組みたい集落があれば出前講座的に関わることは現実的だ"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_7.
+kg:op_53 prop:content "これまで集落支援員を活用し移住者へのフォローと集落との橋渡しを行ってきた"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "共働き家庭の増加により放課後の受皿拡大が効果的だ"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:st_12 rdfs:label "駒井江美子議員"@ja.
+kg:st_12 rdfs:type cls:st_16.
+kg:op_55 prop:content "少子化と核家族化で放課後の過ごし方に困る子供が増えている"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_12.
+kg:op_56 prop:content "放課後子ども教室と合わせないと見守り需要を満たせない状況である"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "放課後児童クラブだけでも時間帯や日取りの受入れはまだ十分ではない"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "既存クラブへの支援拡充と新規参入支援で受皿確保を進めたい"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "空き校舎や未利用施設の提供も視野に民間参入しやすい条件整備を進める"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "統合後おおむね5年は見守り型を維持しその後の体験型移行を準備する"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+kg:op_61 prop:content "移住した子育て世帯の経済的不安を軽減し安心して子育てできる環境を支援する"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_2.
+kg:op_62 prop:content "学校から放課後児童クラブ等への移動で保護者負担の軽減を図っている"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_2.
+kg:op_63 prop:content "老朽化施設の更新と空き校舎の有効活用という二つの課題を同時に解決することが重要だ"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_2.
+kg:st_13 rdfs:label "今野博義議員"@ja.
+kg:st_13 rdfs:type cls:st_16.
+kg:op_64 prop:content "要望を盛り込んだ改修費が高額となり大幅縮小案が示された"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_13.
+kg:op_65 prop:content "蕨岡では講堂的設備が整えられず地域活動に支障が出る懸念がある"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_13.
+kg:op_66 prop:content "地域の要望を反映させるため各地区4回の改築検討委員会を開いた"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_2.
+kg:op_67 prop:content "大規模イベントは隣接体育館の活用を想定している"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_2.
+kg:op_68 prop:content "企画係が全体調整役となり関係係で進捗確認と情報共有を行っている"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_2.
+kg:op_69 prop:content "変更案について地区と合意形成した上で令和6年度工事完了を目指す"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_2.
+kg:op_70 prop:content "空き校舎をビジネス拠点として活用し企業誘致と起業者支援につなげたい"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_2.
+kg:op_71 prop:content "事業者選定はプロポーザルによる公募形式を予定している"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_2.
+kg:op_72 prop:content "旧校舎の活用には地域貢献に理解のある事業者に入居してもらいたい"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_2.
+kg:op_73 prop:content "大規模スペースは事業者負担の改修可能性も視野に企業誘致を進めたい"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "洋上風力発電は海域を利用することによる漁業などへの影響はもちろん、部材の多さや事業規模の大きさから、地元経済にも大きな影響を与えることが予想され"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "洋上風力発電は海域を利用することによる漁業などへの影響はもちろん、部材の多さや事業規模の大きさから、地元経済にも大きな影響を与えることが予想され"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "町長はようやく事業が本格的にスタートする、超低周波音の影響や景観など、事業に対する多くの心配や不安の声も寄せられている"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "町長はようやく事業が本格的にスタートする、超低周波音の影響や景観など、事業に対する多くの心配や不安の声も寄せられている"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "能代市のエネルギー産業政策課の話では、エネルギーのまちづくりを目指す能代市の方針に市民の理解は進んでおり、不安に思われることがある健康被害はないということであります"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "能代観光協会は、洋上風力発電事業が始まってから、まちは視察団の増加、湾岸エリアの活気、プラス観光の増加、宿泊、食事予約の増加が見込まれる変化が起こっていると説明していて"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "能代観光協会は、洋上風力発電事業が始まってから、まちは視察団の増加、湾岸エリアの活気、プラス観光の増加、宿泊、食事予約の増加が見込まれる変化が起こっていると説明していて"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "能代観光協会は、洋上風力発電事業が始まってから、まちは視察団の増加、湾岸エリアの活気、プラス観光の増加、宿泊、食事予約の増加が見込まれる変化が起こっていると説明していて"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "能代観光協会は、洋上風力発電事業が始まってから、まちは視察団の増加、湾岸エリアの活気、プラス観光の増加、宿泊、食事予約の増加が見込まれる変化が起こっていると説明していて"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "能代観光協会は、洋上風力発電事業が始まってから、まちは視察団の増加、湾岸エリアの活気、プラス観光の増加、宿泊、食事予約の増加が見込まれる変化が起こっていると説明していて"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "町長はようやく事業が本格的にスタートする、超低周波音の影響や景観など、事業に対する多くの心配や不安の声も寄せられている、そうした不安の払拭に努めたいと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "法定協議会の意見取りまとめの中でも示している発電事業者による漁業振興・共生策等を通じて、発電事業者と共存共栄が実現可能であるかという観点で判断されています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "なお、漁業への影響に関しては、今後漁業影響調査が行われることで詳細に示されていくこととなると思っております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "今後、発電事業者が実施する事前の環境影響評価により調査、シミュレーション等をしっかり行った上で影響がないと判断されることで、建設に着手することとなっております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "町としても国や県と連携して、事業完了まで責任を持って見守りを続けるものと考えております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "発電事業者と異常発生時の運転停止措置を含めた協定締結など、町としての対応もしっかり行っていきたいと考えております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "県では酒田港風力発電事業者協議会と連携し、地元企業向けのセミナーを開催しておりますし"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "地元でも先行区域に学ぶ研修会を行っております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "秋田県では、風力発電事業における情報共有や勉強会の開催、周辺産業の創出に向け"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "技術屋さんの養成はやっぱり必要だと思うのです。...長期的に見て、メンテナンス作業もいずれ必要になってくる"@ja.
+<< kg:id_22 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_30;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "これからは場合によって遊佐町自ら作成して、高速道路が通る町であることをアピールする必要があると思います"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "３者が抱えている地域課題や生活、組織課題を、提携と交流を通じて解決していきたいという願いがあったものであります"@ja.
+<< kg:id_24 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "さきに申し述べた石けん運動や月光川上流区域でのアルミ工場の移転問題など、町民の環境問題の意識の大いなる高まりに貢献していただきました"@ja.
+<< kg:id_24 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "生活クラブがそれを支えて実現し、そしてその来た皆さんの熱意、農業やってみたい、応援してみたいという方は、遊佐町にも援農という形でおいでいただいている"@ja.
+<< kg:id_24 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "今後につきましても、共同宣言を推進させるため、まちづくり、そして環境、農業振興の３部会を核に事業を展開して"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "これは乱開発を防止し、水脈を守るために買取りをした胴腹滝上流部の山林を町民と生活クラブの連携によって、共存の森として設置し"@ja.
+<< kg:id_29 prop:contermeasure kg:id_31 >>
+    prop:text-txt_contents "現在は、下草刈り、枝払い、植生調査、森の散策等、森に親しむということを一つのテーマとして、主にソフト事業を中心に実施しております"@ja.
+<< kg:id_29 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "今後の事業展開として、農業体験等を交えた森づくり事業を実施していきたいと検討中であります"@ja.
+<< kg:id_29 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "共存の森についてのソフト事業ということでございまして、...現地まで交通手段が容易でない山の奥というようなところもありますし、あとさらに現場で実際このソフト事業に取り組む段階でのスタッフの作業ということの観点でも、やはり実際事業自体が少人数の体制で実施しているような状況でございます"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "特に冬期間の登下校における安全対策をどのようにされているかについて伺います"@ja.
+<< kg:id_34 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "特に待合所が未設置のバス停については、住宅や私有地の前にバス停があったり、道路の幅の狭い場所だったりと、待機場所を設置する敷地を確保することが困難な場所がほとんどであった"@ja.
+<< kg:id_34 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "６月から８月にかけて、バス停留所の設置状況を調査させていただきました"@ja.
+<< kg:id_34 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "10月に入りましてから、統合して初めての冬を迎える前に、スクールバスの運行状況や待合所の整備、登下校時の安全対策等についての地区ごとに、区長の皆様と意見交換をさせていただきました"@ja.
+<< kg:id_34 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "除雪につきましては集落内で燃料費の補助である自主除雪制度を活用した協力をお願いしたところであります"@ja.
+<< kg:id_34 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "街灯の整備につきましては、保護者を含め、集落で協議した上で要望いただくようお願いしているところであります"@ja.
+<< kg:id_34 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "例年、通学路の安全確保のため、遊佐町通学路安全推進会議を開催しており、こちらにつきましては10月に国、県、町の道路管理担当者及び警察等の関係機関と合同点検を実施し"@ja.
+<< kg:id_34 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "産業課よりいただいた情報を小中学校に伝達して、小中学校においては保護者にメールで一斉送信により、各家庭でのスクールバス下車後も含め、登下校の送迎等の協力をお願いしている"@ja.
+<< kg:id_34 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "また、中学校においては、授業が終了後、保護者が迎えに来る時間まで学校で待機させることができるような対応もしております"@ja.
+<< kg:id_34 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "スクールバス運行に関わる安全対策としては、運行管理に関するマニュアルを作成し、運転手と共有し、置き去り防止も含めて、月例で運転手間でのミーティングも開催しているところであります"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "都市部から地方への移住が活発になるにつれ、時として移住後のミスマッチということも生じています。そこで、移住者に向け、事前に集落や地域の慣習やルールなどを知ってもらうために、集落の教科書などと呼ばれるガイドブック作りが各地で始まっています"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "このガイドブック作りの過程では、もとからの住民が話し合う機会が設けられます。このことから必然的に、自らがこれまで住んできた集落や地域を見詰め直すことになり"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "移住相談においても、集落の環境や行事、自治会費などの問合せもあることから、移住定住を希望する人が、自治会や地域の理解を深めるための資料として、地区の習慣や行事などが確認できる、いわゆる集落の教科書を作成することは、一面有効な手段であるとは考えております"@ja.
+<< kg:id_45 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "遊佐町では、これまで集落支援員を配置し、活用し、移住者へのフォローと集落との橋渡し役として、移住者のサポートを行ってまいりました"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "子育てを取り巻く環境は、全国的な人口減少、核家族化や共働き世帯の増加などにより大きく変化してきております"@ja.
+<< kg:id_50 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "少子化の影響で近所に住んでいる子供がいなくて、放課後の過ごし方に困る子供たちがいること、核家族化でおうちに誰もいないお子さんが増えている現状を見ると"@ja.
+<< kg:id_50 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "見守りが必要な児童は放課後児童クラブだけでは充足することができず、放課後子ども教室を合わせないと充足できないことが課題として確認されております"@ja.
+<< kg:id_50 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "土曜日や長期休暇、平日で午後６時以降の時間帯など、放課後子ども教室でカバーできない時間帯や日取りなどは放課後児童クラブのみで十分カバーできておらず"@ja.
+<< kg:id_50 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "放課後児童クラブについては、既存クラブへ町が支援を拡充することや、民間事業者の新規開設に向ける各種支援を行うことを基本的な考えとしながら"@ja.
+<< kg:id_50 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "空き校舎の活用や町の未利用施設等の提供も視野に置きながら、民間事業者が容易に参入できるよう条件の整備を進めることとしております"@ja.
+<< kg:id_50 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "統合からおおむね５年は現存の見守り型を維持し、その間地域と連携した事業実施を模索しながら運営体制や内容の見直しを図り、５年後の体験型への移行準備を進めることとしております"@ja.
+<< kg:id_58 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "町外より移住された子育て世帯に対し子育て世帯移住奨励金として、子供１人当たり月額１万円を３年間交付し、新天地での子育てにかかる経済的な不安を少しでも軽減し"@ja.
+<< kg:id_58 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "学校、教育委員会等と協力し、学校から放課後児童クラブ等への移動はスクールバスを利用するなどし、保護者の負担を軽減するよう取組を行っております"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "空き校舎への移転によって、老朽化した蕨岡、高瀬、まちづくりセンターの更新と、空き校舎を有効活用し、町全体の施設保有量を減らすという２つの課題を解決できることが重要であると考えております"@ja.
+<< kg:id_61 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "要望を網羅する形で概算の工事費の精査を行いましたが、遊佐町総合発展計画の第８期実施計画策定において事業費の全体調整を行う過程で事業費の減額が必要となったところであります"@ja.
+<< kg:id_61 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "蕨岡に関しては、２階にあった190平方メートルの研修室スペースはあるものの、１階の改修エリアには現まちづくりセンターのような広さの講堂スペースはありません"@ja.
+<< kg:id_61 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "実施計画業務に地区の皆様の要望を反映させたいとの考えで、９月までに各地区４回の改築検討委員会を開催し、要望を取りまとめてきました"@ja.
+<< kg:id_61 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "これまで講堂で行ってきた規模のイベントを行う際は、現在社会体育施設として使用している体育館、隣接する体育館の活用を想定しております"@ja.
+<< kg:id_61 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "企画係が全体調整役となり、各係所管部分の進捗確認と情報共有を目的に、関係係職員で構成する、空き校舎利活用調整会議を設け、これまで３回開催しております"@ja.
+<< kg:id_61 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "実施設計の業務期間として、当初の12月上旬から２月末までの延長を予定しております。変更案に対する両地区の皆さんとの合意形成を行った上で、予定どおり令和６年度の工事完了及び移転に向け進めていきたい"@ja.
+<< kg:id_69 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "貸しオフィスとして利用する理由は、空き校舎をビジネスの拠点として事業者に活用していただき、企業誘致と起業者支援につなげていきたいという狙いがあります"@ja.
+<< kg:id_69 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "ご質問の事業者の採択は、プロポーザルによる公募形式を予定しております"@ja.
+<< kg:id_69 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "旧校舎ですので、地域貢献に理解のある事業者に入居していただきたいと考えております"@ja.
+<< kg:id_69 prop:contermeasure kg:id_73 >>
+    prop:text-txt_contents "町として行う校舎教室の改修は、貸しオフィスとして有償で貸し出すために、建築基準法で建物用途を学校から貸しオフィスに変更することに必要な工事を想定しております"@ja.
+<< kg:id_69 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "特に広いスペースを保有するとなれば、事業者の改修費を負担するといった可能性も視野に入れながら、今後、企業誘致にも努めてまいりたい"@ja.
+}

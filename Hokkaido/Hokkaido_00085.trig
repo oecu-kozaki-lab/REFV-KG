@@ -1,0 +1,120 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00085> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "メガソーラーの乱立"@ja.
+kg:id_1 rdf:type cls:c_14837.
+cls:c_14837 rdfs:label "太陽光発電所"@ja.
+kg:id_2 rdfs:label "同公園周辺が日照時間が長く少雪で太陽光発電に適していること"@ja.
+kg:id_2 rdf:type cls:c_14972.
+cls:c_14972 rdfs:label "発電適地"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "1970～80年代に投資目的で売買され塩漬けになった土地が多いこと"@ja.
+kg:id_3 rdf:type cls:c_14973.
+cls:c_14973 rdfs:label "遊休地"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "近年、事業者による土地購入が相次いでいたこと"@ja.
+kg:id_4 rdf:type cls:c_14509.
+cls:c_14509 rdfs:label "土地取得"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "釧路湿原国立公園周辺での建設が懸念される"@ja.
+kg:id_5 rdf:type cls:c_14974.
+cls:c_14974 rdfs:label "自然環境への影響"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "湿原に生息する釧路市の天然記念物キタサンショウウオへの影響が懸念される"@ja.
+kg:id_6 rdf:type cls:c_14965.
+cls:c_14965 rdfs:label "希少生物への影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "希少野生生物の調査のための寄付金を受け付ける"@ja.
+kg:id_7 rdf:type cls:c_14975.
+cls:c_14975 rdfs:label "寄付募集"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "同公園周辺の土地を購入するための寄付金を受け付ける"@ja.
+kg:id_8 rdf:type cls:c_14975.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "寄付を原資に土地を購入してメガソーラーの建設を防ぐ"@ja.
+kg:id_9 rdf:type cls:c_14509.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "キタサンショウウオの生息調査費用に充てる"@ja.
+kg:id_10 rdf:type cls:c_13136.
+cls:c_13136 rdfs:label "生息調査"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:st_1 rdfs:label "釧路自然保護協会など"@ja.
+kg:st_1 rdfs:type cls:st_173.
+cls:st_173 rdfs:label "環境保護団体"@ja.
+kg:op_1 prop:content "乱立を防ぎたい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "希少野生生物の保全を重視する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "寄付への協力を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "寄付への協力を求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "神田房行会長"@ja.
+kg:st_2 rdfs:type cls:st_163.
+cls:st_163 rdfs:label "団体代表"@ja.
+kg:op_5 prop:content "適地の土地をわずかでも購入できれば建設を防げる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "同公園周辺は1970～80年代に投資目的で売買され、塩漬けになった土地が多いという。日照時間が長く少雪のため太陽光発電に適しており、近年、事業者による購入が相次いでいた。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "同公園周辺は1970～80年代に投資目的で売買され、塩漬けになった土地が多いという。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "近年、事業者による購入が相次いでいた。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "釧路湿原国立公園周辺での大規模太陽光発電所（メガソーラー）の乱立を防ごうと、釧路自然保護協会（釧路）などは、希少野生生物の調査や同公園周辺の土地を購入するための寄付金を受け付けている。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "同協会は、寄付を原資にこうした土地を購入してメガソーラーの建設を防ぐとともに、湿原に生息する釧路市の天然記念物キタサンショウウオの生息調査費用などに充てて活用する。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "釧路自然保護協会（釧路）などは、希少野生生物の調査や同公園周辺の土地を購入するための寄付金を受け付けている。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "釧路自然保護協会（釧路）などは、希少野生生物の調査や同公園周辺の土地を購入するための寄付金を受け付けている。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "同協会は、寄付を原資にこうした土地を購入してメガソーラーの建設を防ぐとともに、湿原に生息する釧路市の天然記念物キタサンショウウオの生息調査費用などに充てて活用する。神田房行会長は「メガソーラーの適地の土地をわずかでも購入できれば建設を防ぐことができる。皆さんの力を貸してほしい」と話している。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:text-txt_contents "同協会は、寄付を原資にこうした土地を購入してメガソーラーの建設を防ぐとともに、湿原に生息する釧路市の天然記念物キタサンショウウオの生息調査費用などに充てて活用する。"@ja.
+}

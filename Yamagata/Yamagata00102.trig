@@ -1,0 +1,1057 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00102> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "市税の減少"@ja.
+kg:id_1 rdf:type cls:c_2606.
+cls:c_2606 rdfs:label "税収減"@ja.
+kg:id_2 rdfs:label "個人市民税の伸び悩み"@ja.
+kg:id_2 rdf:type cls:c_6026.
+cls:c_6026 rdfs:label "個人住民税停滞"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "固定資産税の評価額の下落"@ja.
+kg:id_3 rdf:type cls:c_6027.
+cls:c_6027 rdfs:label "資産評価額下落"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "歳入減"@ja.
+kg:id_4 rdf:type cls:c_6028.
+cls:c_6028 rdfs:label "歳入減"@ja.
+kg:id_5 rdfs:label "国の経済対策による繰り越し事業に係る交付金の終了"@ja.
+kg:id_5 rdf:type cls:c_5911.
+cls:c_5911 rdfs:label "交付金終了"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "財政の硬直化"@ja.
+kg:id_6 rdf:type cls:c_4430.
+cls:c_4430 rdfs:label "財政硬直化"@ja.
+kg:id_7 rdfs:label "市税の減少傾向"@ja.
+kg:id_7 rdf:type cls:c_6029.
+cls:c_6029 rdfs:label "税収減傾向"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "人口減少"@ja.
+kg:id_8 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "少子高齢化の進展"@ja.
+kg:id_9 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_6 prop:cause kg:id_9.
+kg:id_10 rdfs:label "景気の低迷"@ja.
+kg:id_10 rdf:type cls:c_5291.
+cls:c_5291 rdfs:label "景気低迷"@ja.
+kg:id_6 prop:cause kg:id_10.
+kg:id_11 rdfs:label "黒字決算"@ja.
+kg:id_11 rdf:type cls:c_6030.
+cls:c_6030 rdfs:label "黒字決算"@ja.
+kg:id_12 rdfs:label "特別交付税の増"@ja.
+kg:id_12 rdf:type cls:c_6031.
+cls:c_6031 rdfs:label "交付税増"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "職員の経費節減の努力"@ja.
+kg:id_13 rdf:type cls:c_6032.
+cls:c_6032 rdfs:label "経費節減"@ja.
+kg:id_11 prop:cause kg:id_13.
+kg:id_14 rdfs:label "不用額約9億円"@ja.
+kg:id_14 rdf:type cls:c_6033.
+cls:c_6033 rdfs:label "不用額"@ja.
+kg:id_11 prop:cause kg:id_14.
+kg:id_15 rdfs:label "東日本大震災の影響"@ja.
+kg:id_15 rdf:type cls:c_181.
+cls:c_181 rdfs:label "災害影響"@ja.
+kg:id_16 rdfs:label "原材料が入らないこと"@ja.
+kg:id_16 rdf:type cls:c_6034.
+cls:c_6034 rdfs:label "原材料不足"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "取引先が被害に遭ったこと"@ja.
+kg:id_17 rdf:type cls:c_6035.
+cls:c_6035 rdfs:label "取引先被災"@ja.
+kg:id_15 prop:cause kg:id_17.
+kg:id_18 rdfs:label "納税義務者数の減少"@ja.
+kg:id_18 rdf:type cls:c_6036.
+cls:c_6036 rdfs:label "納税者減少"@ja.
+kg:id_1 prop:cause kg:id_18.
+kg:id_19 rdfs:label "給与所得の伸び悩み"@ja.
+kg:id_19 rdf:type cls:c_2004.
+cls:c_2004 rdfs:label "所得停滞"@ja.
+kg:id_1 prop:cause kg:id_19.
+kg:id_20 rdfs:label "土地評価額の下落"@ja.
+kg:id_20 rdf:type cls:c_6027.
+kg:id_1 prop:cause kg:id_20.
+kg:id_21 rdfs:label "償却資産の減価分の影響"@ja.
+kg:id_21 rdf:type cls:c_6037.
+cls:c_6037 rdfs:label "償却資産減価"@ja.
+kg:id_1 prop:cause kg:id_21.
+kg:id_22 rdfs:label "個人市民税への影響"@ja.
+kg:id_22 rdf:type cls:c_6038.
+cls:c_6038 rdfs:label "個人住民税影響"@ja.
+kg:id_22 prop:cause kg:id_10.
+kg:id_23 rdfs:label "法人市民税の不安定化"@ja.
+kg:id_23 rdf:type cls:c_6039.
+cls:c_6039 rdfs:label "法人住民税不安定"@ja.
+kg:id_24 rdfs:label "円高による国内経済の空洞化"@ja.
+kg:id_24 rdf:type cls:c_6040.
+cls:c_6040 rdfs:label "経済空洞化"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "固定資産税の減少"@ja.
+kg:id_25 rdf:type cls:c_6041.
+cls:c_6041 rdfs:label "固定資産税減"@ja.
+kg:id_26 rdfs:label "評価額の下落"@ja.
+kg:id_26 rdf:type cls:c_5904.
+cls:c_5904 rdfs:label "評価額下落"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "歳出増"@ja.
+kg:id_27 rdf:type cls:c_6042.
+cls:c_6042 rdfs:label "歳出増"@ja.
+kg:id_28 rdfs:label "東日本大震災の総合支援対策経費"@ja.
+kg:id_28 rdf:type cls:c_6043.
+cls:c_6043 rdfs:label "災害対応経費"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "豪雨災害に対応するための経費"@ja.
+kg:id_29 rdf:type cls:c_6043.
+kg:id_27 prop:cause kg:id_29.
+kg:id_30 rdfs:label "豪雪対応の経費"@ja.
+kg:id_30 rdf:type cls:c_6043.
+kg:id_27 prop:cause kg:id_30.
+kg:id_31 rdfs:label "歳入増"@ja.
+kg:id_31 rdf:type cls:c_6044.
+cls:c_6044 rdfs:label "歳入増"@ja.
+kg:id_32 rdfs:label "地方交付税の増額"@ja.
+kg:id_32 rdf:type cls:c_6031.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "県支出金の増額"@ja.
+kg:id_33 rdf:type cls:c_6045.
+cls:c_6045 rdfs:label "県支出金増"@ja.
+kg:id_31 prop:cause kg:id_33.
+kg:id_34 rdfs:label "繰越金の増額"@ja.
+kg:id_34 rdf:type cls:c_6046.
+cls:c_6046 rdfs:label "繰越金増"@ja.
+kg:id_31 prop:cause kg:id_34.
+kg:id_35 rdfs:label "平成22年度からの繰り越しとなった補助金約18億円"@ja.
+kg:id_35 rdf:type cls:c_6047.
+cls:c_6047 rdfs:label "繰越補助金"@ja.
+kg:id_31 prop:cause kg:id_35.
+kg:id_36 rdfs:label "繰り越し分総額23億円"@ja.
+kg:id_36 rdf:type cls:c_6048.
+cls:c_6048 rdfs:label "繰越財源"@ja.
+kg:id_31 prop:cause kg:id_36.
+kg:id_37 rdfs:label "雇用改善"@ja.
+kg:id_37 rdf:type cls:c_5900.
+cls:c_5900 rdfs:label "雇用改善"@ja.
+kg:id_38 rdfs:label "緊急雇用創出事業臨時特例基金事業"@ja.
+kg:id_38 rdf:type cls:c_5003.
+cls:c_5003 rdfs:label "雇用創出事業"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "ふるさと雇用再生特別基金事業"@ja.
+kg:id_39 rdf:type cls:c_5003.
+kg:id_37 prop:cause kg:id_39.
+kg:id_40 rdfs:label "未就職学卒者雇用促進助成金の対象拡大"@ja.
+kg:id_40 rdf:type cls:c_6049.
+cls:c_6049 rdfs:label "雇用助成拡大"@ja.
+kg:id_37 prop:cause kg:id_40.
+kg:id_41 rdfs:label "地域経済への影響"@ja.
+kg:id_41 rdf:type cls:c_2210.
+cls:c_2210 rdfs:label "地域経済影響"@ja.
+kg:id_42 rdfs:label "飲食業への影響"@ja.
+kg:id_42 rdf:type cls:c_1170.
+cls:c_1170 rdfs:label "飲食業影響"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "個人事業主への影響"@ja.
+kg:id_43 rdf:type cls:c_6050.
+cls:c_6050 rdfs:label "個人事業影響"@ja.
+kg:id_41 prop:effect kg:id_43.
+kg:id_44 rdfs:label "東日本大震災"@ja.
+kg:id_44 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "災害"@ja.
+kg:id_45 rdfs:label "従業員を休ませる"@ja.
+kg:id_45 rdf:type cls:c_6051.
+cls:c_6051 rdfs:label "休業発生"@ja.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "新規学卒者の入社を先延ばしする"@ja.
+kg:id_46 rdf:type cls:c_6052.
+cls:c_6052 rdfs:label "入社延期"@ja.
+kg:id_44 prop:effect kg:id_46.
+kg:id_47 rdfs:label "4会計で繰越明許費を設定"@ja.
+kg:id_47 rdf:type cls:c_6053.
+cls:c_6053 rdfs:label "繰越設定"@ja.
+kg:id_44 prop:effect kg:id_47.
+kg:id_48 rdfs:label "一般会計20事業約1億9500万円を平成23年度に繰り越し"@ja.
+kg:id_48 rdf:type cls:c_6054.
+cls:c_6054 rdfs:label "事業繰越"@ja.
+kg:id_44 prop:effect kg:id_48.
+kg:id_49 rdfs:label "財政の健全化"@ja.
+kg:id_49 rdf:type cls:c_1970.
+cls:c_1970 rdfs:label "財政健全化"@ja.
+kg:id_50 rdfs:label "実質公債費比率11.0％で前年度比0.9ポイント改善"@ja.
+kg:id_50 rdf:type cls:c_6055.
+cls:c_6055 rdfs:label "公債費比率改善"@ja.
+kg:id_49 prop:effect kg:id_50.
+kg:id_51 rdfs:label "将来負担比率56.6％で6.7ポイント改善"@ja.
+kg:id_51 rdf:type cls:c_6056.
+cls:c_6056 rdfs:label "将来負担改善"@ja.
+kg:id_49 prop:effect kg:id_51.
+kg:id_52 rdfs:label "経常収支比率91.3％で前年度比1.5ポイント上昇"@ja.
+kg:id_52 rdf:type cls:c_6057.
+cls:c_6057 rdfs:label "経常収支悪化"@ja.
+kg:id_6 prop:effect kg:id_52.
+kg:id_53 rdfs:label "投資的事業"@ja.
+kg:id_53 rdf:type cls:c_2746.
+cls:c_2746 rdfs:label "投資事業"@ja.
+kg:id_54 rdfs:label "地元経済に大きな刺激を与える"@ja.
+kg:id_54 rdf:type cls:c_6058.
+cls:c_6058 rdfs:label "地域経済刺激"@ja.
+kg:id_53 prop:effect kg:id_54.
+kg:id_55 rdfs:label "緊急融資資金貸付事業"@ja.
+kg:id_55 rdf:type cls:c_6059.
+cls:c_6059 rdfs:label "融資事業"@ja.
+kg:id_56 rdfs:label "地域経済の底支え"@ja.
+kg:id_56 rdf:type cls:c_6060.
+cls:c_6060 rdfs:label "地域経済下支え"@ja.
+kg:id_55 prop:effect kg:id_56.
+kg:id_57 rdfs:label "震災の景気雇用対策"@ja.
+kg:id_57 rdf:type cls:c_6061.
+cls:c_6061 rdfs:label "景気雇用対策"@ja.
+kg:id_58 rdfs:label "一定の効果を上げる"@ja.
+kg:id_58 rdf:type cls:c_6062.
+cls:c_6062 rdfs:label "効果発現"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "コミュニティ振興会活動"@ja.
+kg:id_59 rdf:type cls:c_2505.
+cls:c_2505 rdfs:label "地域活動"@ja.
+kg:id_60 rdfs:label "地域住民による自主的な地域づくり活動が着実に根づき発展"@ja.
+kg:id_60 rdf:type cls:c_6063.
+cls:c_6063 rdfs:label "地域づくり定着"@ja.
+kg:id_59 prop:effect kg:id_60.
+kg:id_61 rdfs:label "風力発電事業"@ja.
+kg:id_61 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_62 rdfs:label "10数年で費用回収ができる見込み"@ja.
+kg:id_62 rdf:type cls:c_6064.
+cls:c_6064 rdfs:label "費用回収見込"@ja.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "その後の収入を地元や市民に還元できる"@ja.
+kg:id_63 rdf:type cls:c_6065.
+cls:c_6065 rdfs:label "収益還元"@ja.
+kg:id_61 prop:effect kg:id_63.
+kg:id_64 rdfs:label "甲子園出場基金の残高消滅"@ja.
+kg:id_64 rdf:type cls:c_6066.
+cls:c_6066 rdfs:label "基金残高消滅"@ja.
+kg:id_65 rdfs:label "基金は廃止する方向"@ja.
+kg:id_65 rdf:type cls:c_6067.
+cls:c_6067 rdfs:label "基金廃止方針"@ja.
+kg:id_64 prop:effect kg:id_65.
+kg:id_66 rdfs:label "一般財源から支出するルール化を検討する"@ja.
+kg:id_66 rdf:type cls:c_6068.
+cls:c_6068 rdfs:label "一般財源支出"@ja.
+kg:id_64 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "酒田市"@ja.
+kg:id_67 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_68 rdfs:label "無利子の緊急融資資金貸付事業を創設"@ja.
+kg:id_68 rdf:type cls:c_6069.
+cls:c_6069 rdfs:label "緊急融資創設"@ja.
+kg:id_67 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "各種融資制度の利子補給制度を創設"@ja.
+kg:id_69 rdf:type cls:c_6070.
+cls:c_6070 rdfs:label "利子補給創設"@ja.
+kg:id_67 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "保証料補給事業を創設"@ja.
+kg:id_70 rdf:type cls:c_6071.
+cls:c_6071 rdfs:label "保証料補給創設"@ja.
+kg:id_67 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "被災者4人を臨時職員で雇用"@ja.
+kg:id_71 rdf:type cls:c_6072.
+cls:c_6072 rdfs:label "被災者雇用"@ja.
+kg:id_67 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "コミュニティ振興会への財政的支援"@ja.
+kg:id_72 rdf:type cls:c_1007.
+cls:c_1007 rdfs:label "財政支援"@ja.
+kg:id_67 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "地区ごとに担当職員を決めて技術的なアドバイスを行う"@ja.
+kg:id_73 rdf:type cls:c_5079.
+cls:c_5079 rdfs:label "技術支援"@ja.
+kg:id_67 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "コミュニティ振興会活動事例の発表会開催"@ja.
+kg:id_74 rdf:type cls:c_6073.
+cls:c_6073 rdfs:label "事例発表会"@ja.
+kg:id_67 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "事務局職員に対する研修の開催"@ja.
+kg:id_75 rdf:type cls:c_2134.
+cls:c_2134 rdfs:label "職員研修"@ja.
+kg:id_67 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "中山間地域など事情を踏まえた新たな支援制度を検討する"@ja.
+kg:id_76 rdf:type cls:c_4315.
+cls:c_4315 rdfs:label "支援制度検討"@ja.
+kg:id_67 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "風力発電事業の環境影響評価を実施する"@ja.
+kg:id_77 rdf:type cls:c_161.
+cls:c_161 rdfs:label "環境影響評価"@ja.
+kg:id_67 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "風力発電計画を市民に情報提供する"@ja.
+kg:id_78 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_67 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "空き家空き地条例による助言指導勧告命令公表"@ja.
+kg:id_79 rdf:type cls:c_6074.
+cls:c_6074 rdfs:label "条例措置"@ja.
+kg:id_67 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "空き家空き地所有者向け相談会を開催"@ja.
+kg:id_80 rdf:type cls:c_6075.
+cls:c_6075 rdfs:label "相談会開催"@ja.
+kg:id_67 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "児童虐待の評価シートで客観的把握を行う"@ja.
+kg:id_81 rdf:type cls:c_6076.
+cls:c_6076 rdfs:label "虐待評価"@ja.
+kg:id_67 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "子ども家庭支援員を配置して世帯に派遣する"@ja.
+kg:id_82 rdf:type cls:c_1376.
+cls:c_1376 rdfs:label "支援員配置"@ja.
+kg:id_67 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "認知症サポーター養成講座の実施"@ja.
+kg:id_83 rdf:type cls:c_3987.
+cls:c_3987 rdfs:label "養成講座"@ja.
+kg:id_67 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "認知症支援グループを設置して検討する"@ja.
+kg:id_84 rdf:type cls:c_6077.
+cls:c_6077 rdfs:label "支援体制検討"@ja.
+kg:id_67 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "6次産業化支援事業補助金を活用する"@ja.
+kg:id_85 rdf:type cls:c_6078.
+cls:c_6078 rdfs:label "産業化支援"@ja.
+kg:id_67 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "まんなかマルシェの活動を活発にする"@ja.
+kg:id_86 rdf:type cls:c_6079.
+cls:c_6079 rdfs:label "活動拠点活性化"@ja.
+kg:id_67 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "デマンドタクシーの制度改善を継続する"@ja.
+kg:id_87 rdf:type cls:c_4938.
+cls:c_4938 rdfs:label "制度改善"@ja.
+kg:id_67 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "被災地へ職員派遣を行う"@ja.
+kg:id_88 rdf:type cls:c_6080.
+cls:c_6080 rdfs:label "職員派遣"@ja.
+kg:id_67 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "被災者避難者支援ボランティアのコーディネートを行う"@ja.
+kg:id_89 rdf:type cls:c_6081.
+cls:c_6081 rdfs:label "支援調整"@ja.
+kg:id_67 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "松島町からの可燃ごみ受け入れを進める"@ja.
+kg:id_90 rdf:type cls:c_6082.
+cls:c_6082 rdfs:label "ごみ受入"@ja.
+kg:id_67 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "4市災害協定を柱に石巻や大崎と協力する"@ja.
+kg:id_91 rdf:type cls:c_5834.
+cls:c_5834 rdfs:label "広域協力"@ja.
+kg:id_67 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "行財政改革を進め基金積み立てで公債費ピークに備える"@ja.
+kg:id_92 rdf:type cls:c_5222.
+cls:c_5222 rdfs:label "行財政改革"@ja.
+kg:id_67 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "税収確保対策向上対策にしっかり取り組む"@ja.
+kg:id_93 rdf:type cls:c_6083.
+cls:c_6083 rdfs:label "税収確保"@ja.
+kg:id_67 prop:contermeasure kg:id_93.
+kg:id_94 rdfs:label "公正かつ適正な滞納整理を進める"@ja.
+kg:id_94 rdf:type cls:c_6084.
+cls:c_6084 rdfs:label "滞納整理"@ja.
+kg:id_67 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "空き家空き地対策の担当職員研修と市民相談員の質向上を図る"@ja.
+kg:id_95 rdf:type cls:c_6085.
+cls:c_6085 rdfs:label "相談体制強化"@ja.
+kg:id_67 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "空き家空き地の専門家相談会を進める"@ja.
+kg:id_96 rdf:type cls:c_6086.
+cls:c_6086 rdfs:label "専門家相談"@ja.
+kg:id_67 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "要保護児童対策地域協議会実務者会議で終結判断と継続フォローを行う"@ja.
+kg:id_97 rdf:type cls:c_6087.
+cls:c_6087 rdfs:label "児童保護会議"@ja.
+kg:id_67 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "認知症徘徊について関係機関のネットワークづくりを考える"@ja.
+kg:id_98 rdf:type cls:c_6088.
+cls:c_6088 rdfs:label "見守り網検討"@ja.
+kg:id_67 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "6次産業化のフォローアップと研修会商談会開催"@ja.
+kg:id_99 rdf:type cls:c_6089.
+cls:c_6089 rdfs:label "産業化推進"@ja.
+kg:id_67 prop:contermeasure kg:id_99.
+kg:id_100 rdfs:label "デマンドタクシーの登録者と利用者を増やす"@ja.
+kg:id_100 rdf:type cls:c_1221.
+cls:c_1221 rdfs:label "利用促進"@ja.
+kg:id_67 prop:contermeasure kg:id_100.
+kg:st_1 rdfs:label "阿部寿一市長"@ja.
+kg:st_1 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_1 prop:content "市税減少の一因として個人市民税の伸び悩みを挙げる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "市税減少の一因として固定資産税評価額の下落を挙げる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "努力だけではどうしようもない要因として国庫支出金の減少を説明する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "田中廣議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_4 prop:content "市税減少が続き財政硬直化が高水準で推移すると懸念する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "人口減少が今後の財政硬直化を招くと懸念する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "少子高齢化の進展が財政硬直化を招くと懸念する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "景気低迷が扶助費高どまりを通じて財政硬直化を招くと懸念する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "震災対応経費分などによる特別交付税の増が黒字要因と説明する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "職員の経費節減努力が黒字の大きな要因と説明する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "不用額約9億円が実質収支黒字の最大要因と説明する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "震災直後は製造業で原材料不足が発生したと説明する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "取引先被災が地元雇用に影響したと説明する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "個人市民税減額の要因として納税義務者数減少を挙げる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "個人市民税減額の要因として給与所得の伸び悩みを挙げる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "固定資産税減額の要因として土地評価額下落を挙げる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "固定資産税減額の要因として償却資産の減価分を挙げる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "景気低迷が納税義務者減少と相まって個人市民税に大きく影響すると説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "円高による国内経済の空洞化で法人経営や景気動向は不安定とみる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "固定資産税は評価額下落で平均約5％ずつ減少していると説明する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "当初予算では想定できなかった震災対応経費で補正が必要だったと説明する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "豪雨災害対応経費が補正増額の主因と説明する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "豪雪対応経費が補正増額の主因と説明する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "歳入増の要因として地方交付税増額を挙げる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "歳入増の要因として県支出金増額を挙げる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "繰越金増額が歳入増に大きく影響したと説明する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "国の補正予算に伴う繰越補助金が一時的な歳入増の大きな要因と説明する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "繰り越し分総額23億円が歳入増の大きな影響と説明する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "緊急雇用創出事業で雇用創出を図ったと説明する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "ふるさと雇用再生特別基金事業で雇用創出を図ったと説明する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "助成金対象拡大で大学卒業者を含む雇用につながったと説明する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "震災直後に飲食業が真っ先に影響を受けたと説明する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "震災直後に個人事業主が影響を受けたと説明する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "製造業などで従業員を休ませる影響が出たと説明する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "新規学卒者の入社先延ばしが発生したと説明する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "年度内執行困難となり繰越明許費設定が必要になったと説明する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "震災の影響で一般会計事業の繰り越しが発生したと説明する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "財政健全化への取り組みが効果を上げたと評価する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "将来を見越した財政運営の効果が出ていると評価する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "財政健全化が進む一方で硬直化も同時に進んでいるとみる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "大規模な投資事業が地元経済への刺激になったと評価する"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "緊急融資で地域経済を底支えできたと評価する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "震災影響を最小限にする対策で一定の効果を上げたと評価する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "地域の特色を生かした活動が着実に根づいていると評価する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "固定価格買取制度の期間内なら採算性は確保できるとみる"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "費用回収後の収入は地元や市民に還元したい考えを示す"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:op_46 prop:content "残高がなくなったため基金廃止の方向を示す"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "今後の甲子園出場支援は一般財源からのルール化を早急に検討すると述べる"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "震災直後から市独自の無利子融資で事業者支援を行ったと説明する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "震災対応として利子補給制度を創設したと説明する"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "県と市で全額保証する保証料補給事業を創設したと説明する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "緊急雇用創出事業で被災者雇用支援を行ったと説明する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "財政支援は継続しつつ必要な支援を充実すると述べる"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "地区担当職員による技術的支援を行っていると説明する"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_1.
+kg:op_54 prop:content "活動事例の共有による支援を続ける考えを示す"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "事務局職員研修などの支援を行っていると説明する"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "中山間地域の事情を踏まえた新たな支援制度の構築を検討すると述べる"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "武田恵子議員"@ja.
+kg:st_3 rdfs:type cls:st_16.
+kg:op_57 prop:content "環境への影響や採算性を市民にわかりやすく説明すべきと求める"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_3.
+kg:op_58 prop:content "環境影響評価を事前に実施し事業実施の可否を判断すると述べる"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_1.
+kg:op_59 prop:content "風力発電事業は市民に具体的な構想を示すべきと求める"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_3.
+kg:op_60 prop:content "市報などを活用し適切な情報提供に努めると述べる"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "阿部ひとみ議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_61 prop:content "市民に制度内容を丁寧に周知し専門的人材育成も必要と求める"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_4.
+kg:op_62 prop:content "所有者の適切管理を促すことが重要とし条例措置を進める"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_1.
+kg:op_63 prop:content "宅建業界や解体業者、金融機関の協力を得て相談会を開催すると説明する"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_1.
+kg:op_64 prop:content "虐待通告には評価シートで客観的把握を行うと説明する"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_1.
+kg:op_65 prop:content "児童の健全育成のため支援員を配置していると説明する"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_1.
+kg:op_66 prop:content "対象を幅広くし徘徊時の地域ネットワーク構築も必要と求める"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_4.
+kg:op_67 prop:content "講座は認知症理解のきっかけとして目的を達成していると評価する"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_1.
+kg:op_68 prop:content "課題別グループを設置し体制づくりや家族支援に対応していると説明する"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_1.
+kg:op_69 prop:content "農業者と商工業者の連携による新たな食と農のビジネス創出を期待する"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_4.
+kg:op_70 prop:content "6次産業化は付加価値の高い農業経営のため重要とみる"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_1.
+kg:op_71 prop:content "6次産業化の活動拠点としてまんなかマルシェを活発化したいと述べる"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_1.
+kg:op_72 prop:content "デマンドタクシーを本市の目玉となる大胆な施策にすべきと求める"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_4.
+kg:op_73 prop:content "利用者意見を聞きながら改善し制度定着に努めると述べる"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "後藤孝也議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_74 prop:content "復興支援はハードとソフト両面で息の長い取り組みが必要と求める"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_5.
+kg:op_75 prop:content "石巻広域水道と岩沼市へ職員2名を長期派遣していると説明する"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_1.
+kg:op_76 prop:content "ボランティアセンターが支援のコーディネートを行っていると説明する"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_1.
+kg:op_77 prop:content "瓦れき広域処理は被災地復興の観点から大いに評価すべきと述べる"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_5.
+kg:op_78 prop:content "可燃ごみ受け入れを進める一方埋立ごみ受け入れは難しいと説明する"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_1.
+kg:op_79 prop:content "酒田市と新庄市が積極的に復興支援の音頭を取るべきと求める"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_5.
+kg:op_80 prop:content "石巻や大崎と話し合いをしできる支援があれば協力したいと述べる"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_1.
+kg:op_81 prop:content "公債費償還ピークに備え行財政改革と基金積み立てが必要と述べる"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_1.
+kg:op_82 prop:content "市税は自主財源の根幹であり滞納徴収をきちんと進めるべきと求める"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_2.
+kg:op_83 prop:content "景気対策とあわせ税収確保対策に取り組む必要があると認識する"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_1.
+kg:op_84 prop:content "時効成立前の執行停止や時効中断の判断を積極的に行う必要があると求める"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "村上秀一財務部長"@ja.
+kg:st_6 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_85 prop:content "納税の公平性と公正性確保のため公正かつ適正な滞納整理を進めると述べる"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_6.
+kg:op_86 prop:content "関係法令などの専門的知識を持つ人材育成が必要と求める"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_4.
+kg:st_7 rdfs:label "太田豊市民部長"@ja.
+kg:st_7 rdfs:type cls:st_18.
+kg:op_87 prop:content "担当職員の研修や市民相談員の質向上を図り個別解決に対応すると述べる"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_7.
+kg:op_88 prop:content "専門家や専門業者を含めた相談会を通じ適正管理を促すと述べる"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "久松勝郎健康福祉部長"@ja.
+kg:st_8 rdfs:type cls:st_18.
+kg:op_89 prop:content "終結後も実務者会議で話題にし必要なら再度ケース化すると述べる"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_8.
+kg:op_90 prop:content "企業や学校、PTAも含めた徘徊高齢者捜索ネットワーク構築が必要と求める"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_4.
+kg:op_91 prop:content "徘徊についての関係機関のネットワークづくりを今後考えると述べる"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "白崎好行農林水産部長"@ja.
+kg:st_9 rdfs:type cls:st_18.
+kg:op_92 prop:content "国県事業も活用し新しい事業の掘り起こしを進めると述べる"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "大石薫商工観光部長"@ja.
+kg:st_10 rdfs:type cls:st_18.
+kg:op_93 prop:content "制度周知に努め登録者利用者を増やすと述べる"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_10.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "市税が個人市民税の伸び悩み、固定資産税の評価額の下落などの影響がありました"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "市税が個人市民税の伸び悩み、固定資産税の評価額の下落などの影響がありました"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "また国庫支出金が国の経済対策による繰り越し事業に係る交付金の終了などによって減となりまして、全体としては3.3％の歳入減ということになった"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "景気低迷による市税の減少傾向は変わらず、財政の硬直化は高い水準で推移していると見ざるを得ない状態であります"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展、景気の低迷を考えると、扶助費などの固定的な経費が高どまりし、財政の硬直化を招いていくことが懸念される"@ja.
+<< kg:id_6 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展、景気の低迷を考えると、扶助費などの固定的な経費が高どまりし、財政の硬直化を招いていくことが懸念される"@ja.
+<< kg:id_6 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展、景気の低迷を考えると、扶助費などの固定的な経費が高どまりし、財政の硬直化を招いていくことが懸念される"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "歳入では震災対応経費分などの増による特別交付税の増"@ja.
+<< kg:id_11 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "職員の経費節減の努力などが効果を上げ、不用額が約９億円ということになったわけであります。このことが実質収支の黒字の一番大きな要因であります"@ja.
+<< kg:id_11 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "不用額が約９億円ということになったわけであります。このことが実質収支の黒字の一番大きな要因であります"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "震災直後、製造業などでは原材料が入らないとか"@ja.
+<< kg:id_15 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "もしくは取引先が被害に遭ったというようなことなどから"@ja.
+<< kg:id_1 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "個人市民税が納税義務者数の減少及び給与所得の伸び悩みにより減額"@ja.
+<< kg:id_1 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "個人市民税が納税義務者数の減少及び給与所得の伸び悩みにより減額"@ja.
+<< kg:id_1 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "固定資産税が土地評価額の下落及び償却資産の減価分の影響により"@ja.
+<< kg:id_1 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "固定資産税が土地評価額の下落及び償却資産の減価分の影響により"@ja.
+<< kg:id_22 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "納税義務者が減るということについては、景気の低迷と相まって個人市民税に対しては大変大きな影響がある"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "円高による国内経済の空洞化というようなことが言われているわけでありまして、今後もこのような法人経営、景気の動向というのは不安定に推移をする"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "固定資産税については、評価額の下落によりまして、平成23年度以降、対前年度比では平均約５％ずつ減少している"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "これは、東日本大震災の総合支援対策経費"@ja.
+<< kg:id_27 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "それから６月から８月にかけての豪雨災害に対応するための経費"@ja.
+<< kg:id_27 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "豪雪対応の経費などが主な項目でございます"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "地方交付税、県支出金、繰越金が増額となった"@ja.
+<< kg:id_31 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "地方交付税、県支出金、繰越金が増額となった"@ja.
+<< kg:id_31 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "地方交付税、県支出金、繰越金が増額となった"@ja.
+<< kg:id_31 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "特に国の補正予算に係る平成22年度からの繰り越しとなった補助金が約18億円ありました"@ja.
+<< kg:id_31 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "繰り越し分が総額23億円ありましたので、このことが大きな影響"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "緊急雇用創出事業臨時特例基金事業でありますとか、ふるさと雇用再生特別基金事業ということに取り組んだ結果、232人の雇用創出が図られました"@ja.
+<< kg:id_37 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "緊急雇用創出事業臨時特例基金事業でありますとか、ふるさと雇用再生特別基金事業ということに取り組んだ結果、232人の雇用創出が図られました"@ja.
+<< kg:id_37 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "未就職学卒者雇用促進助成金の対象を大学卒業者まで拡大をさせていただいた結果、９人の雇用につながっている"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "真っ先に出た影響が、飲食業とか個人事業主に対する影響でございました"@ja.
+<< kg:id_41 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "真っ先に出た影響が、飲食業とか個人事業主に対する影響でございました"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "従業員を休ませたり"@ja.
+<< kg:id_44 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "新規学卒者の入社を先延ばしするなどの影響が出た"@ja.
+<< kg:id_44 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "平成22年度事業の一部について、年度内執行が困難というふうなことが見込まれたために、専決処分で４会計で繰越明許費を設定"@ja.
+<< kg:id_44 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "一般会計では20事業、１億9,500万円ほどを平成23年度に繰り越し"@ja.
+<< kg:id_49 prop:effect kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "実質公債費比率が11.0％ということで、前年度比0.9％の改善"@ja.
+<< kg:id_49 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "将来負担比率も56.6％と6.7ポイントの改善"@ja.
+<< kg:id_6 prop:effect kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "経常収支比率については、前年度よりも上昇をしております。91.3％と前年度比1.5ポイント上昇"@ja.
+<< kg:id_53 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "これだけの投資事業をこなすことによって、地元経済にも大きな刺激を与えることができた"@ja.
+<< kg:id_55 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "本事業により地域経済の底支えができた"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "一定の効果を上げることができたんではないか"@ja.
+<< kg:id_59 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "地域住民による自主的な地域づくり活動というものが着実に根づき発展をしていっている"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "現行の制度を前提とすれば、10数年で採算はとれるというか、費用回収はできる"@ja.
+<< kg:id_61 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "その費用については、メンテナンスを除けば収入がかなりの額に上ってくると思っておりますので、そのことについては地元、また市民の皆さんにしっかりと還元をしていく"@ja.
+<< kg:id_64 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "ことしの甲子園出場で残高はなくなりました。今後、残高がなくなったわけでございますので、基金は廃止をするという方向で考えている"@ja.
+<< kg:id_64 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "早急にルール化をしていきたい。そのルールについては議会の皆さんにも相談をさせていただき、そしてルールに基づいて一般財源から支出をしていく"@ja.
+<< kg:id_67 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "４月には市独自で無利子の緊急融資資金貸付事業"@ja.
+<< kg:id_67 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "各種融資制度の利子補給制度を創設"@ja.
+<< kg:id_67 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "６月には保証料を県と市で全額保証するという保証料補給事業を創設"@ja.
+<< kg:id_67 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "市としても緊急雇用創出事業で被災者４人を臨時職員で雇用するなどの支援を行わせていただきました"@ja.
+<< kg:id_67 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "市としても当然のことながら財政的な支援をさせていただいております"@ja.
+<< kg:id_67 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "地区ごとに担当職員を決めたりして、技術的なアドバイスというようなこともしっかりさせていただいております"@ja.
+<< kg:id_67 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "コミュニティ振興会の活動事例の発表会の開催"@ja.
+<< kg:id_67 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "事務局職員に対する研修など、さまざまな研修会も開催"@ja.
+<< kg:id_67 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "中山間地域においては、過疎化、高齢化が急激に進んでいるということから、市街地のコミュニティ振興会とまた違った支援というものがあってもいいのではないか...新たな支援制度が構築できないかということについては、検討を進めていきたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_57;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "環境影響評価を事前に実施することによって環境に与える影響を調査し、景観への配慮などを検討した上で事業実施の可否を判断していきたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_59;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "今後も市報などを活用しながら、適切な情報提供に努めてまいりたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_61;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "この条例の中で助言、指導、勧告、命令、公表というような措置を盛り込んだ"@ja.
+<< kg:id_67 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "宅建業界、それから建物の解体業者、金融機関などの協力を得ながら、所有者に対する相談会などを開催"@ja.
+<< kg:id_67 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "評価シートというものを持っておりまして、それを用いて虐待の程度を客観的に把握"@ja.
+<< kg:id_67 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "児童の健全育成のために子ども家庭支援員というものも配置"@ja.
+<< kg:id_67 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_66;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "認知症サポーター養成講座でありますが、平成23年度43回実施し、1,725人から受講いただいております"@ja.
+<< kg:id_67 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "地域包括支援センターと介護保健課で課題別グループ認知症支援グループというものを設置し、検討"@ja.
+<< kg:id_67 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_69;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "平成23年度６次産業化支援事業補助金を活用してサツマイモ加工クラブ、そでうらファーム、ＪＡ山形農工連が事業を実施"@ja.
+<< kg:id_67 prop:contermeasure kg:id_86 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "さかた中町マルシェなどでもこのような活動の拠点として、まんなかマルシェの活動を活発にしていきたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_72;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "今後もしっかりとその利用者の御意見なども伺いながら、改善すべき点はしっかり改善をするというような姿勢で、この制度の定着に努めてまいりたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_74;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "現在、長期に職員派遣をしているのがございまして、石巻の広域水道と岩沼市に職員２名、派遣をしております"@ja.
+<< kg:id_67 prop:contermeasure kg:id_89 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "本年度ボランティアセンターが立ち上がり、被災者、避難者の支援のためのボランティアのコーディネートを行っていただいている"@ja.
+<< kg:id_67 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_77;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "今現在、松島町からの可燃ごみの受け入れを進めている"@ja.
+<< kg:id_67 prop:contermeasure kg:id_91 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_79;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "石巻や大崎の皆さんと話し合いをする中で、できる支援があればこの協定書の存在なども大きな柱にしながら、協力はしていきたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "当然のことながら行財政改革を引き続きしっかり進めていくと同時に、基金などの積み立てなどによってピーク時に備えていく"@ja.
+<< kg:id_67 prop:contermeasure kg:id_93 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_82;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "景気対策等の関係によりまして税収の確保対策、向上対策をしっかり取り組まなければならない状況"@ja.
+<< kg:id_67 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_84;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "引き続き、公正かつ適正な滞納整理を進めてまいりたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_86;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "担当職員の研修あるいは市民相談員等の質の向上等を図りながら、個別解決に向けて対応をしていきたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "それぞれの専門の方々あるいは専門の業者等を含めました相談会、こういったものを通しながら空き家の適正管理を促していく"@ja.
+<< kg:id_67 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "酒田市要保護児童対策地域協議会の実務者会議というものを開いております。隔月に開催をしますが、そこに諮りまして、終結をしてよろしいかどうかを判断します。なお、終結をしたケースのフォローでありますけれども、その後も実務者会議の中で話題にしながら、また問題があれば再度ケースに上げます"@ja.
+<< kg:id_67 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_90;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "今後その徘徊についての関係機関のネットワークづくり、この辺についても考えてまいりたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_99 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "今後とも今までの事業のフォローアップをしながら、さらに国・県の事業を入れながら研修会、商談会を開催をしまして、新しい事業の掘り起こしを一生懸命頑張っていきたい"@ja.
+<< kg:id_67 prop:contermeasure kg:id_100 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "制度の周知に努めまして、登録者、利用者、それぞれふやしていくように努めてまいります"@ja.
+}

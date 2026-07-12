@@ -1,0 +1,262 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00145> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "昭和地区大規模太陽光発電所建設計画"@ja.
+kg:id_1 rdf:type cls:c_12240.
+cls:c_12240 rdfs:label "開発計画"@ja.
+kg:id_2 rdfs:label "オジロワシの営巣地に重大な影響を及ぼす恐れ"@ja.
+kg:id_2 rdf:type cls:c_16284.
+cls:c_16284 rdfs:label "営巣地への影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "ヒナが餓死するリスク"@ja.
+kg:id_3 rdf:type cls:c_16285.
+cls:c_16285 rdfs:label "ヒナの死亡リスク"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "親鳥が営巣地を放棄するリスク"@ja.
+kg:id_4 rdf:type cls:c_16286.
+cls:c_16286 rdfs:label "営巣地放棄リスク"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "オジロワシが将来的にその場所で繁殖できなくなる恐れ"@ja.
+kg:id_5 rdf:type cls:c_16287.
+cls:c_16287 rdfs:label "繁殖不能リスク"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "湿原やそこに生息する動物たちへの影響"@ja.
+kg:id_6 rdf:type cls:c_16288.
+cls:c_16288 rdfs:label "生態系への影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "オジロワシの生息環境を損なう"@ja.
+kg:id_7 rdf:type cls:c_16289.
+cls:c_16289 rdfs:label "生息環境の悪化"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "学びの機会を失う危険性"@ja.
+kg:id_8 rdf:type cls:c_16290.
+cls:c_16290 rdfs:label "学習機会の喪失"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "地域の貴重な学びの場を失わせる危険性"@ja.
+kg:id_9 rdf:type cls:c_16290.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "事業の即時中止または大幅な見直し"@ja.
+kg:id_10 rdf:type cls:c_13134.
+cls:c_13134 rdfs:label "事業中止要求"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "工事再開や立ち入りについて慎重に検討し事業者・関係機関への働きかけを強化"@ja.
+kg:id_11 rdf:type cls:c_16291.
+cls:c_16291 rdfs:label "慎重な検討"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "営巣地周辺への開発自体を厳格に規制する"@ja.
+kg:id_12 rdf:type cls:c_14691.
+cls:c_14691 rdfs:label "開発規制"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "営巣地から半径500m以内での大規模開発を慎重に再検討する条例を早急に整備"@ja.
+kg:id_13 rdf:type cls:c_2591.
+cls:c_2591 rdfs:label "条例整備"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "北海道生物多様性の保全等に関する条例の活用"@ja.
+kg:id_14 rdf:type cls:c_16292.
+cls:c_16292 rdfs:label "条例活用"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "道が主導して猛禽類の生息地を保護するための地域指定や開発行為に対する規制を強化"@ja.
+kg:id_15 rdf:type cls:c_14800.
+cls:c_14800 rdfs:label "規制強化"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "開発や土地改変に対し道に積極的に関与し規制措置を講じるよう働きかけ"@ja.
+kg:id_16 rdf:type cls:c_16293.
+cls:c_16293 rdfs:label "規制措置"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "環境教育や湿原保全の重要性を広く周知する"@ja.
+kg:id_17 rdf:type cls:c_16294.
+cls:c_16294 rdfs:label "重要性の周知"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "市民や教育現場へ積極的に情報発信し行政としての責任ある姿勢を示す"@ja.
+kg:id_18 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "湿原を活用した授業や体験学習を強化し子どもたちが釧路の自然を学び誇りに思う機会を確保"@ja.
+kg:id_19 rdf:type cls:c_16295.
+cls:c_16295 rdfs:label "環境教育の強化"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "健全な事業者の取り組みと自然エネルギーの共生の重要性を認識する"@ja.
+kg:id_20 rdf:type cls:c_16296.
+cls:c_16296 rdfs:label "共生の認識"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "環境保護とエネルギー開発の調和を図る視点を今後の規制や計画に反映"@ja.
+kg:id_21 rdf:type cls:c_16297.
+cls:c_16297 rdfs:label "調和の反映"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:st_1 rdfs:label "釧路鳥取てらこや・釧路日台親善協会・釧路ロータリークラブ・ひがし北海道ブランド化推進協議会・猛禽類医学研究所"@ja.
+kg:st_1 rdfs:type cls:st_73.
+cls:st_73 rdfs:label "市民団体"@ja.
+kg:op_1 prop:content "営巣地への重大な影響を懸念し強い危機感を抱く"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "専門家"@ja.
+kg:st_2 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_2 prop:content "再開工事や人の接近でヒナの餓死リスクが高まると警鐘を鳴らす"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "再開工事や人の接近で親鳥の営巣地放棄リスクが高まると警鐘を鳴らす"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "営巣地から半径500m以内の建設予定地は将来的な繁殖不能の恐れが高いと警鐘を鳴らす"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "一時的な工事停止では不十分で湿原や動物への影響は避けられないと考える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "建設計画はオジロワシの生息環境を損なうと訴える"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "環境教育の場が失われる危険を訴える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "地域の学びの場を失わせる危険性を市民や教育現場に周知すべきと求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "事業の即時中止または大幅見直しを強く要望する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "工事再開や立ち入りを慎重に検討し事業者等への働きかけ強化を求める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "営巣地周辺の開発自体を厳格に規制すべきと求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "半径500m以内の大規模開発を再検討する条例整備を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "北海道生物多様性条例の活用を強く求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "道主導の地域指定と開発規制強化を求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "開発や土地改変への道の積極関与と規制措置を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "環境教育や湿原保全の重要性の広い周知を求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "市民や教育現場への積極的な情報発信を求める"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "湿原を活用した授業や体験学習の強化を求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "環境保護と自然エネルギーの共生の重要性を認識すべきと求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "環境保護とエネルギー開発の調和を規制や計画に反映すべきと求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "現在懸念されている大阪市の事業者による大規模太陽光発電所（メガソーラー）建設計画は、国の天然記念物であるオジロワシの営巣地に重大な影響を及ぼす恐れがあり、私たちは強い危機感を抱いております。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "オジロワシの繁殖期は、造巣・抱卵・巣内育雛・巣外育雛を経て9月末まで続くことが多く、再開工事や人の接近が行われる場合、ヒナが餓死したり親鳥が営巣地を放棄するリスクが高まります。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "オジロワシの繁殖期は、造巣・抱卵・巣内育雛・巣外育雛を経て9月末まで続くことが多く、再開工事や人の接近が行われる場合、ヒナが餓死したり親鳥が営巣地を放棄するリスクが高まります。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "また、建設予定地が営巣地から半径500m以内に及ぶ場合、将来的にオジロワシがその場所で繁殖できなくなる恐れが極めて高いことが専門家から警鐘を鳴らされています。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "特に、事業者が示す一時的な工事停止では、ヒナが巣立った後の「巣外育雛期」への配慮が不足しており、湿原やそこに生息する動物たちへの影響が避けられません。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "今回の建設計画が、オジロワシの生息環境を損なうことにより、こうした学びの機会を失う危険性があることを改めて訴えます。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今回の建設計画が、オジロワシの生息環境を損なうことにより、こうした学びの機会を失う危険性があることを改めて訴えます。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "本計画が地域の貴重な学びの場を失わせる危険性を、市民や教育現場へ積極的に情報発信し、行政としての責任ある姿勢を示してください。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "１，事業の即時中止または大幅な見直しを促す"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "立ち入り規制の期限が9月末まで延長されたことを踏まえ、その後の工事再開や立ち入りについて慎重に検討し、事業者・関係機関への働きかけを強化してください。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "２，営巣地周辺への開発自体を厳格に規制する"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "オジロワシが長期的に繁殖できる環境を保持するため、営巣地から半径500m以内での大規模開発を慎重に再検討する条例を早急に整備してください。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "３，北海道生物多様性の保全等に関する条例の活用"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "この条例に基づき、道が主導して猛禽類の生息地を保護するための地域指定や開発行為に対する規制を強化することが重要です。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "開発や土地改変に対し、道に積極的に関与し、規制措置を講じるよう働きかけを行っていただきたいと考えます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "４，環境教育や湿原保全の重要性を広く周知する"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "本計画が地域の貴重な学びの場を失わせる危険性を、市民や教育現場へ積極的に情報発信し、行政としての責任ある姿勢を示してください。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "特に教育委員会の立場からは、湿原を活用した授業や体験学習を強化し、子どもたちが釧路の自然を学び、誇りに思う機会を確保するようご尽力いただきたく存じます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "５，健全な事業者の取り組みと自然エネルギーの共生の重要性を認識する"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "したがって、環境保護とエネルギー開発の調和を図る視点を持つべきであると強く認識し、今後の規制や計画に反映させていただきたく存じます。"@ja.
+}

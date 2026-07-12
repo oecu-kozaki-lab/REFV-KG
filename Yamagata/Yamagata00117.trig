@@ -1,0 +1,1079 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00117> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "若者の政治離れ"@ja.
+kg:id_1 rdf:type cls:c_7018.
+cls:c_7018 rdfs:label "政治参加低下"@ja.
+kg:id_2 rdfs:label "政治や政策への教育や指導の不足"@ja.
+kg:id_2 rdf:type cls:c_7019.
+cls:c_7019 rdfs:label "政治教育不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "若者の政治参加の低さ"@ja.
+kg:id_3 rdf:type cls:c_7018.
+kg:id_4 rdfs:label "自分たちの主張が制度に反映されないこと"@ja.
+kg:id_4 rdf:type cls:c_4015.
+cls:c_4015 rdfs:label "意見反映不足"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "社会そのものの衰退"@ja.
+kg:id_5 rdf:type cls:c_7020.
+cls:c_7020 rdfs:label "社会衰退"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "18歳選挙権への対応"@ja.
+kg:id_6 rdf:type cls:c_7021.
+cls:c_7021 rdfs:label "選挙権対応"@ja.
+kg:id_7 rdfs:label "主権者教育の実施"@ja.
+kg:id_7 rdf:type cls:c_7022.
+cls:c_7022 rdfs:label "主権者教育"@ja.
+kg:id_6 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "教育委員会によるガイドラインづくりやルールづくり"@ja.
+kg:id_8 rdf:type cls:c_7023.
+cls:c_7023 rdfs:label "指針整備"@ja.
+kg:id_6 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "副教材に基づく具体的な活動"@ja.
+kg:id_9 rdf:type cls:c_7024.
+cls:c_7024 rdfs:label "教育活動"@ja.
+kg:id_6 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "市長や行政による中高生との対話機会の設定"@ja.
+kg:id_10 rdf:type cls:c_1529.
+cls:c_1529 rdfs:label "対話機会"@ja.
+kg:id_6 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "親世代も巻き込んだ社会教育や地域活動"@ja.
+kg:id_11 rdf:type cls:c_7025.
+cls:c_7025 rdfs:label "社会教育"@ja.
+kg:id_6 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "課題解決型学習や話し合い活動の継続"@ja.
+kg:id_12 rdf:type cls:c_7026.
+cls:c_7026 rdfs:label "参加型学習"@ja.
+kg:id_6 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "PTAや保護者会での周知"@ja.
+kg:id_13 rdf:type cls:c_3778.
+cls:c_3778 rdfs:label "保護者周知"@ja.
+kg:id_6 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "マイナンバー制度の周知不足"@ja.
+kg:id_14 rdf:type cls:c_5601.
+cls:c_5601 rdfs:label "制度周知不足"@ja.
+kg:id_15 rdfs:label "市民への周知度の低さ"@ja.
+kg:id_15 rdf:type cls:c_1098.
+cls:c_1098 rdfs:label "周知不足"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "マイナンバー制度"@ja.
+kg:id_16 rdf:type cls:c_7027.
+cls:c_7027 rdfs:label "番号制度"@ja.
+kg:id_17 rdfs:label "住民票と違う場所に住む人が通知を受け取れない問題"@ja.
+kg:id_17 rdf:type cls:c_7028.
+cls:c_7028 rdfs:label "通知未達"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "個人情報流出への不安"@ja.
+kg:id_18 rdf:type cls:c_7029.
+cls:c_7029 rdfs:label "情報漏えい不安"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "広報やホームページ掲載"@ja.
+kg:id_19 rdf:type cls:c_1087.
+cls:c_1087 rdfs:label "広報周知"@ja.
+kg:id_16 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "出前講座の実施"@ja.
+kg:id_20 rdf:type cls:c_7030.
+cls:c_7030 rdfs:label "説明活動"@ja.
+kg:id_16 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "回覧板での周知"@ja.
+kg:id_21 rdf:type cls:c_7031.
+cls:c_7031 rdfs:label "回覧周知"@ja.
+kg:id_16 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "居所情報登録期限の延長対応"@ja.
+kg:id_22 rdf:type cls:c_7032.
+cls:c_7032 rdfs:label "登録支援"@ja.
+kg:id_16 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "法人のマイナンバー対応"@ja.
+kg:id_23 rdf:type cls:c_7033.
+cls:c_7033 rdfs:label "法人対応"@ja.
+kg:id_24 rdfs:label "中小企業の制度内容の認知不足"@ja.
+kg:id_24 rdf:type cls:c_7034.
+cls:c_7034 rdfs:label "制度認知不足"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "安全管理措置や社員教育などの実務負担"@ja.
+kg:id_25 rdf:type cls:c_7035.
+cls:c_7035 rdfs:label "実務負担"@ja.
+kg:id_23 prop:effect kg:id_25.
+kg:id_26 rdfs:label "国や関係団体による説明会や周知"@ja.
+kg:id_26 rdf:type cls:c_1289.
+cls:c_1289 rdfs:label "説明周知"@ja.
+kg:id_23 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "ホームページ情報提供と税務署等との連携による説明会開催"@ja.
+kg:id_27 rdf:type cls:c_1289.
+kg:id_23 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "事業所数の減少"@ja.
+kg:id_28 rdf:type cls:c_7036.
+cls:c_7036 rdfs:label "事業所減少"@ja.
+kg:id_29 rdfs:label "廃業数が開業数を上回っていること"@ja.
+kg:id_29 rdf:type cls:c_7037.
+cls:c_7037 rdfs:label "廃業超過"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "従業者数の減少"@ja.
+kg:id_30 rdf:type cls:c_7038.
+cls:c_7038 rdfs:label "雇用減少"@ja.
+kg:id_28 prop:effect kg:id_30.
+kg:id_31 rdfs:label "事業承継問題"@ja.
+kg:id_31 rdf:type cls:c_7039.
+cls:c_7039 rdfs:label "事業承継問題"@ja.
+kg:id_32 rdfs:label "創業者の高齢化"@ja.
+kg:id_32 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "後継ぎの不在"@ja.
+kg:id_33 rdf:type cls:c_1717.
+cls:c_1717 rdfs:label "後継者不足"@ja.
+kg:id_31 prop:cause kg:id_33.
+kg:id_34 rdfs:label "中小企業の廃業"@ja.
+kg:id_34 rdf:type cls:c_1787.
+cls:c_1787 rdfs:label "廃業"@ja.
+kg:id_31 prop:effect kg:id_34.
+kg:id_35 rdfs:label "地方創生の理念からかけ離れた実態"@ja.
+kg:id_35 rdf:type cls:c_5779.
+cls:c_5779 rdfs:label "地域衰退"@ja.
+kg:id_31 prop:effect kg:id_35.
+kg:id_36 rdfs:label "改正中小企業経営承継円滑化法の周知"@ja.
+kg:id_36 rdf:type cls:c_1062.
+cls:c_1062 rdfs:label "制度周知"@ja.
+kg:id_31 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "山形県事業引継ぎ支援センターや関係機関と連携した周知強化"@ja.
+kg:id_37 rdf:type cls:c_7040.
+cls:c_7040 rdfs:label "連携周知"@ja.
+kg:id_31 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "後継者人材バンクの活用"@ja.
+kg:id_38 rdf:type cls:c_7041.
+cls:c_7041 rdfs:label "人材仲介"@ja.
+kg:id_31 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "飛島地区の漁業振興"@ja.
+kg:id_39 rdf:type cls:c_3023.
+cls:c_3023 rdfs:label "漁業振興"@ja.
+kg:id_40 rdfs:label "魚価の低迷"@ja.
+kg:id_40 rdf:type cls:c_5313.
+cls:c_5313 rdfs:label "魚価低迷"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "漁業従事者の減少"@ja.
+kg:id_41 rdf:type cls:c_615.
+cls:c_615 rdfs:label "担い手減少"@ja.
+kg:id_39 prop:cause kg:id_41.
+kg:id_42 rdfs:label "高齢化の進行"@ja.
+kg:id_42 rdf:type cls:c_613.
+kg:id_39 prop:cause kg:id_42.
+kg:id_43 rdfs:label "トビウオ焼き干しや天然ワカメの特産化"@ja.
+kg:id_43 rdf:type cls:c_7042.
+cls:c_7042 rdfs:label "特産化"@ja.
+kg:id_39 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "加工施設の設置や誘致"@ja.
+kg:id_44 rdf:type cls:c_7043.
+cls:c_7043 rdfs:label "加工拠点"@ja.
+kg:id_39 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "新規漁業就業者への給付や漁船建造補助"@ja.
+kg:id_45 rdf:type cls:c_1828.
+cls:c_1828 rdfs:label "就業支援"@ja.
+kg:id_39 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "飛島地区の交通支援"@ja.
+kg:id_46 rdf:type cls:c_6590.
+cls:c_6590 rdfs:label "交通支援"@ja.
+kg:id_47 rdfs:label "高齢化の進行と自動車等を持たない世帯の存在"@ja.
+kg:id_47 rdf:type cls:c_613.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "地域の助け合いによる乗り合い"@ja.
+kg:id_48 rdf:type cls:c_7044.
+cls:c_7044 rdfs:label "相乗り支援"@ja.
+kg:id_46 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "軽度生活援助事業による荷物配達"@ja.
+kg:id_49 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_46 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "飛島地区の外部支援"@ja.
+kg:id_50 rdf:type cls:c_7045.
+cls:c_7045 rdfs:label "外部支援"@ja.
+kg:id_51 rdfs:label "飛島クリーンアップ作戦への支援"@ja.
+kg:id_51 rdf:type cls:c_7046.
+cls:c_7046 rdfs:label "清掃支援"@ja.
+kg:id_50 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "飛島ボランティア活動支援補助金による旅客運賃全額補助"@ja.
+kg:id_52 rdf:type cls:c_7047.
+cls:c_7047 rdfs:label "運賃補助"@ja.
+kg:id_50 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "飛島地区の介護事業"@ja.
+kg:id_53 rdf:type cls:c_7048.
+cls:c_7048 rdfs:label "介護事業"@ja.
+kg:id_54 rdfs:label "高齢化の進行と介護需要の高まり"@ja.
+kg:id_54 rdf:type cls:c_613.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "島内事業所にとって厳しい事業運営"@ja.
+kg:id_55 rdf:type cls:c_7049.
+cls:c_7049 rdfs:label "運営難"@ja.
+kg:id_53 prop:effect kg:id_55.
+kg:id_56 rdfs:label "離島相当サービスの適用"@ja.
+kg:id_56 rdf:type cls:c_7050.
+cls:c_7050 rdfs:label "特例適用"@ja.
+kg:id_53 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "離島特別地域加算の制度改正を県へ働きかけ"@ja.
+kg:id_57 rdf:type cls:c_7051.
+cls:c_7051 rdfs:label "制度改正要望"@ja.
+kg:id_53 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "飛島地区の高齢者支援"@ja.
+kg:id_58 rdf:type cls:c_2061.
+cls:c_2061 rdfs:label "高齢者支援"@ja.
+kg:id_59 rdfs:label "サロン活動や介護予防講座による居場所づくり"@ja.
+kg:id_59 rdf:type cls:c_7052.
+cls:c_7052 rdfs:label "居場所づくり"@ja.
+kg:id_58 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "定期航路運賃助成券の交付"@ja.
+kg:id_60 rdf:type cls:c_7053.
+cls:c_7053 rdfs:label "運賃助成"@ja.
+kg:id_58 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "冠水・浸水被害"@ja.
+kg:id_61 rdf:type cls:c_1490.
+cls:c_1490 rdfs:label "浸水被害"@ja.
+kg:id_62 rdfs:label "短期的ゲリラ豪雨"@ja.
+kg:id_62 rdf:type cls:c_1842.
+cls:c_1842 rdfs:label "豪雨"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "市街地の道路冠水"@ja.
+kg:id_63 rdf:type cls:c_2570.
+cls:c_2570 rdfs:label "道路冠水"@ja.
+kg:id_61 prop:effect kg:id_63.
+kg:id_64 rdfs:label "住宅浸水"@ja.
+kg:id_64 rdf:type cls:c_7054.
+cls:c_7054 rdfs:label "住宅浸水"@ja.
+kg:id_61 prop:effect kg:id_64.
+kg:id_65 rdfs:label "土のうやバリケード配備と巡回対応"@ja.
+kg:id_65 rdf:type cls:c_5366.
+cls:c_5366 rdfs:label "応急対応"@ja.
+kg:id_61 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "雨水貯留施設の整備"@ja.
+kg:id_66 rdf:type cls:c_7055.
+cls:c_7055 rdfs:label "貯留整備"@ja.
+kg:id_61 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "雨水浸透ますの設置"@ja.
+kg:id_67 rdf:type cls:c_7056.
+cls:c_7056 rdfs:label "浸透施設"@ja.
+kg:id_61 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "若浜排水区のポンプ場や雨水幹線整備"@ja.
+kg:id_68 rdf:type cls:c_2624.
+cls:c_2624 rdfs:label "排水整備"@ja.
+kg:id_61 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "用水路・排水路の危険"@ja.
+kg:id_69 rdf:type cls:c_7057.
+cls:c_7057 rdfs:label "排水路危険"@ja.
+kg:id_70 rdfs:label "老朽化"@ja.
+kg:id_70 rdf:type cls:c_680.
+cls:c_680 rdfs:label "老朽化"@ja.
+kg:id_69 prop:cause kg:id_70.
+kg:id_71 rdfs:label "浸水のおそれや道路の起伏による交通危険"@ja.
+kg:id_71 rdf:type cls:c_7058.
+cls:c_7058 rdfs:label "交通危険"@ja.
+kg:id_69 prop:effect kg:id_71.
+kg:id_72 rdfs:label "下水道計画への取り込みと修繕改修"@ja.
+kg:id_72 rdf:type cls:c_7059.
+cls:c_7059 rdfs:label "改修整備"@ja.
+kg:id_69 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "市民への安全情報伝達の不十分さ"@ja.
+kg:id_73 rdf:type cls:c_3210.
+cls:c_3210 rdfs:label "情報伝達不足"@ja.
+kg:id_74 rdfs:label "市民への情報伝達が十分でなかったこと"@ja.
+kg:id_74 rdf:type cls:c_7060.
+cls:c_7060 rdfs:label "伝達不足"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "住民や自治会での混乱"@ja.
+kg:id_75 rdf:type cls:c_3292.
+cls:c_3292 rdfs:label "住民混乱"@ja.
+kg:id_73 prop:effect kg:id_75.
+kg:id_76 rdfs:label "関係課共有と学校保育園自治会への連絡"@ja.
+kg:id_76 rdf:type cls:c_7061.
+cls:c_7061 rdfs:label "連絡共有"@ja.
+kg:id_73 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "ホームページやラジオフェイスブック回覧板での周知"@ja.
+kg:id_77 rdf:type cls:c_7062.
+cls:c_7062 rdfs:label "多重周知"@ja.
+kg:id_73 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "広報車やマスコミ活用を含めた伝達方法の見直し"@ja.
+kg:id_78 rdf:type cls:c_7063.
+cls:c_7063 rdfs:label "伝達改善"@ja.
+kg:id_73 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "港南アパート掲示板の出火"@ja.
+kg:id_79 rdf:type cls:c_7064.
+cls:c_7064 rdfs:label "火災事故"@ja.
+kg:id_80 rdfs:label "住民の不安"@ja.
+kg:id_80 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_79 prop:effect kg:id_80.
+kg:id_81 rdfs:label "消防への通報失念"@ja.
+kg:id_81 rdf:type cls:c_7065.
+cls:c_7065 rdfs:label "通報失念"@ja.
+kg:id_79 prop:cause kg:id_81.
+kg:id_82 rdfs:label "今後は施設管理者として消防へ通報"@ja.
+kg:id_82 rdf:type cls:c_7066.
+cls:c_7066 rdfs:label "通報徹底"@ja.
+kg:id_79 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "非婚ひとり親支援の格差"@ja.
+kg:id_83 rdf:type cls:c_7067.
+cls:c_7067 rdfs:label "ひとり親格差"@ja.
+kg:id_84 rdfs:label "寡婦控除が非婚のひとり親に適用されないこと"@ja.
+kg:id_84 rdf:type cls:c_7068.
+cls:c_7068 rdfs:label "控除不適用"@ja.
+kg:id_83 prop:cause kg:id_84.
+kg:id_85 rdfs:label "税負担や支援制度上の不利益"@ja.
+kg:id_85 rdf:type cls:c_3940.
+cls:c_3940 rdfs:label "負担増"@ja.
+kg:id_83 prop:effect kg:id_85.
+kg:id_86 rdfs:label "みなし寡婦控除の適用"@ja.
+kg:id_86 rdf:type cls:c_7069.
+cls:c_7069 rdfs:label "控除適用"@ja.
+kg:id_83 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "国への制度改正要望の検討"@ja.
+kg:id_87 rdf:type cls:c_7051.
+kg:id_83 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "保育料負担増"@ja.
+kg:id_88 rdf:type cls:c_7070.
+cls:c_7070 rdfs:label "保育料負担増"@ja.
+kg:id_89 rdfs:label "年少扶養控除のみなし適用廃止"@ja.
+kg:id_89 rdf:type cls:c_5274.
+cls:c_5274 rdfs:label "控除廃止"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "三人以上の子を持つ世帯など二百数十人程度の階層区分変更"@ja.
+kg:id_90 rdf:type cls:c_7071.
+cls:c_7071 rdfs:label "階層変更"@ja.
+kg:id_88 prop:effect kg:id_90.
+kg:id_91 rdfs:label "国への制度設計見直し要望"@ja.
+kg:id_91 rdf:type cls:c_7051.
+kg:id_88 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "地方創生事業の推進"@ja.
+kg:id_92 rdf:type cls:c_7072.
+cls:c_7072 rdfs:label "地方創生推進"@ja.
+kg:id_93 rdfs:label "コワーキングスペースの整備"@ja.
+kg:id_93 rdf:type cls:c_7073.
+cls:c_7073 rdfs:label "創業拠点"@ja.
+kg:id_92 prop:contermeasure kg:id_93.
+kg:id_94 rdfs:label "UIJターンコーディネーター配置"@ja.
+kg:id_94 rdf:type cls:c_7074.
+cls:c_7074 rdfs:label "移住就業支援"@ja.
+kg:id_92 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "移住総合窓口の設置と住宅取得費補助"@ja.
+kg:id_95 rdf:type cls:c_1420.
+cls:c_1420 rdfs:label "移住支援"@ja.
+kg:id_92 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "徳とく券事業"@ja.
+kg:id_96 rdf:type cls:c_2309.
+cls:c_2309 rdfs:label "消費喚起"@ja.
+kg:id_92 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "地方創生先行型交付金事業の継続と上乗せ交付活用"@ja.
+kg:id_97 rdf:type cls:c_3467.
+cls:c_3467 rdfs:label "交付金活用"@ja.
+kg:id_92 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "働きたいがかなう酒田づくり"@ja.
+kg:id_98 rdf:type cls:c_1113.
+cls:c_1113 rdfs:label "雇用創出"@ja.
+kg:id_99 rdfs:label "酒田港を活かした産業振興"@ja.
+kg:id_99 rdf:type cls:c_1824.
+cls:c_1824 rdfs:label "港湾活用"@ja.
+kg:id_98 prop:contermeasure kg:id_99.
+kg:id_100 rdfs:label "地元企業の事業拡張支援"@ja.
+kg:id_100 rdf:type cls:c_7075.
+cls:c_7075 rdfs:label "事業拡張支援"@ja.
+kg:id_98 prop:contermeasure kg:id_100.
+kg:id_101 rdfs:label "創業支援コーディネーターによる相談支援"@ja.
+kg:id_101 rdf:type cls:c_3410.
+cls:c_3410 rdfs:label "創業相談"@ja.
+kg:id_98 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "企業誘致の推進"@ja.
+kg:id_102 rdf:type cls:c_1392.
+cls:c_1392 rdfs:label "企業誘致"@ja.
+kg:id_98 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "再生可能エネルギー関連産業の振興"@ja.
+kg:id_103 rdf:type cls:c_7076.
+cls:c_7076 rdfs:label "エネルギー産業"@ja.
+kg:id_98 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "魅力あふれる農林水産業の振興"@ja.
+kg:id_104 rdf:type cls:c_7077.
+cls:c_7077 rdfs:label "農林水産業振興"@ja.
+kg:id_105 rdfs:label "TPP大筋合意による農業への影響懸念"@ja.
+kg:id_105 rdf:type cls:c_7078.
+cls:c_7078 rdfs:label "通商影響懸念"@ja.
+kg:id_104 prop:cause kg:id_105.
+kg:id_106 rdfs:label "担い手への集中支援と農地集積"@ja.
+kg:id_106 rdf:type cls:c_623.
+cls:c_623 rdfs:label "担い手支援"@ja.
+kg:id_104 prop:contermeasure kg:id_106.
+kg:id_107 rdfs:label "6次産業化と農商工連携の推進"@ja.
+kg:id_107 rdf:type cls:c_5726.
+cls:c_5726 rdfs:label "6次産業化"@ja.
+kg:id_104 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "施設園芸や新規作物の推進"@ja.
+kg:id_108 rdf:type cls:c_7079.
+cls:c_7079 rdfs:label "作目多角化"@ja.
+kg:id_104 prop:contermeasure kg:id_108.
+kg:id_109 rdfs:label "農林水産物の海外輸出促進"@ja.
+kg:id_109 rdf:type cls:c_4398.
+cls:c_4398 rdfs:label "輸出促進"@ja.
+kg:id_104 prop:contermeasure kg:id_109.
+kg:st_1 rdfs:label "佐藤猛議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "若者の投票率の低さは若者だけの問題ではなく政治教育不足も要因だとみる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "若者の意見が反映されないことが社会参加意識の低下につながると指摘する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "若者の参画意識の低下は負のスパイラルとなり社会衰退を招くとみる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "未来を担う若者が政治に関心を持ち地域課題を主体的に考える教育が重要だと求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "主権者教育を進めるため教育委員会のガイドラインとルール整備が重要だと求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "国の副教材を高校生の下の世代も含めた指針として具体的活動に生かすべきだと述べる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "丸山至市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_7 prop:content "市長自ら中高生と地域づくりの思いや課題を共有する機会が必要と考える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "学校教育だけでなく親世代を含めた社会教育や地域活動での働きかけが重要とみる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "村上幸太郎教育長"@ja.
+kg:st_3 rdfs:type cls:st_19.
+cls:st_19 rdfs:label "教育長"@ja.
+kg:op_9 prop:content "小中学校段階から根拠に基づく判断や合意形成の力を育てる学習を重ねるべきとする"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "保護者にも権利と義務の変化を周知するためPTA等で話題にしていきたいとする"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "広報やホームページだけでは市民周知が不十分だと指摘する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "通知カードを受け取れない人が出ることを懸念している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "個人情報流出への不安が大きいと指摘する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "中川崇企画振興部長"@ja.
+kg:st_4 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_14 prop:content "広報やホームページで継続的に制度周知を進めていると説明する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "高齢者等への理解促進に出前講座が効果的であり拡充していく考えを示す"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "通知カード発送時期に自治会回覧で周知を図るとしている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "DV被害者や長期入所者等に配慮し登録手続期限を延長して対応したと説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "市内中小企業は制度内容の周知が十分でないのではないかと懸念する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "企業には安全管理や教育など多くの実務負担が課されると指摘する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "国や関係団体による説明会と広報で民間事業者への周知が進められていると説明する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "市も関連情報提供や酒田税務署等との連携で説明会開催に努める考えを示す"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "廃業のほうが多い傾向にあり今後も続くと推察している"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "事業所減少に伴い従業者数も大きく減少していると説明する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "創業者の高齢化が事業承継難の背景にあると指摘する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "後継者不在でやむなく廃業する中小企業が多いと指摘する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "後継者問題は中小企業の廃業につながっていると述べる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "地方ほど事業承継難が深刻で地方創生に逆行しているとみる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "親族外承継も可能にする法改正を周知し円滑な承継につなげたい考えを示す"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "県支援センターや金融機関商工会議所と連携し周知を強化したいとする"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "後継者不足に悩む企業と創業希望者のマッチング制度は有効と認識している"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "牧秀樹議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_31 prop:content "飛島漁業は魚価低迷など多くの課題を抱えていると指摘する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_5.
+kg:op_32 prop:content "漁業従事者の減少が飛島漁業の課題だとみる"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_5.
+kg:op_33 prop:content "高齢化進行が飛島漁業の持続性を脅かしていると指摘する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_5.
+kg:op_34 prop:content "飛島ではトビウオ焼き干しや天然ワカメの特産化を進めたいとする"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "加工施設の充実は漁業者所得向上に有効と認識している"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "国県制度による給付や補助を活用し漁業就労支援を充実させたいとする"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "高齢化が進む中で島内移動手段の整備が必要と指摘する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_5.
+kg:op_38 prop:content "現状は地域住民の助け合いによる移動で対応していると説明する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "買い物支援として荷物配達を行っていると説明する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "県市民間島民ボランティア協力でクリーンアップ作戦を支援している"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "外部ボランティア受け入れのため運賃全額補助を継続したいとする"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "飛島では高齢化が顕著で介護需要が高まっていると指摘する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "岩堀慎司健康福祉部長"@ja.
+kg:st_6 rdfs:type cls:st_18.
+kg:op_43 prop:content "介護報酬改定により島内事業所の経営は厳しくなったと認識している"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_6.
+kg:op_44 prop:content "離島の特例を用いてショートステイやデイサービスを維持していると説明する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_6.
+kg:op_45 prop:content "短期入所通所介護にも離島加算を認めるよう県に働きかけている"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_6.
+kg:op_46 prop:content "高齢者の居場所づくりは介護予防に有益で今後具体化したいとする"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_6.
+kg:op_47 prop:content "高齢者の通院等の経済負担軽減のため助成券増加も前向きに検討するとする"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_6.
+kg:op_48 prop:content "近年のゲリラ豪雨が道路冠水や住宅浸水の要因だと指摘する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_5.
+kg:op_49 prop:content "市街地で道路冠水が発生していると指摘する"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_5.
+kg:op_50 prop:content "住宅浸水被害が発生していると指摘する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:st_7 rdfs:label "佐藤文彦建設部長"@ja.
+kg:st_7 rdfs:type cls:st_18.
+kg:op_51 prop:content "大雨予測時には土のうやバリケードを準備し巡回対応している"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_7.
+kg:op_52 prop:content "浜田幸町上本町地区では貯留施設整備により浸水防止能力向上を図っている"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_7.
+kg:op_53 prop:content "合流地区に多数の雨水浸透ますを設置し浸透量確保を図っている"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_7.
+kg:op_54 prop:content "ポンプ場整備で排水能力を高め浸水防止を図っている"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_7.
+kg:op_55 prop:content "古い用水路の老朽化が危険を高めていると指摘する"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_5.
+kg:op_56 prop:content "用水路脇道路は交通上危険で溢水も起きていると指摘する"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_5.
+kg:op_57 prop:content "幹線水路は下水道計画に取り込み必要に応じ修繕改修している"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "市原栄子議員"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_58 prop:content "猿出没時の情報共有と伝達が市民まで十分届いていなかったと問題提起する"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_8.
+kg:op_59 prop:content "猿出没情報が自治会長に届かず住民側で混乱が起きたと指摘する"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "渋谷斉市民部長"@ja.
+kg:st_9 rdfs:type cls:st_18.
+kg:op_60 prop:content "猿目撃時は関係課で共有し学校保育園コミュニティ振興会へ注意喚起したと説明する"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_9.
+kg:op_61 prop:content "ホームページやラジオ回覧板など複数手段で周知したと説明する"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "桐山久夫建設部技監兼総務部危機管理監"@ja.
+kg:st_10 rdfs:type cls:st_88.
+cls:st_88 rdfs:label "危機管理者"@ja.
+kg:op_62 prop:content "今後は市民への迅速な情報伝達方法を追加していきたいとする"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_10.
+kg:op_63 prop:content "不審火が続く中で住民不安が高まっていると指摘する"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_8.
+kg:op_64 prop:content "鎮火後の現場対応や警察の判断もあり消防通報に思い至らなかったと説明する"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_7.
+kg:op_65 prop:content "今後は入居者から火災通報があれば市も消防へ通報するよう改めるとする"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_7.
+kg:op_66 prop:content "結婚の有無だけで支援格差が生じるのは不合理だと訴える"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_8.
+kg:op_67 prop:content "非婚ひとり親は納税額が増え各種支援負担も増えると指摘する"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_8.
+kg:op_68 prop:content "結婚歴の有無で格差が生じるのは不合理でありみなし寡婦控除適用を検討するとする"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_2.
+kg:op_69 prop:content "国への意見要望の方法を検討したいとする"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_2.
+kg:op_70 prop:content "みなし適用廃止で前年度と所得が変わらなくても保育料が上がる問題を指摘する"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_8.
+kg:op_71 prop:content "再計算すれば二百数十人程度に影響があると認識している"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_6.
+kg:op_72 prop:content "年少扶養控除のみなし適用は本来国が全国一律で行うべきで国に働きかけたいとする"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_6.
+kg:op_73 prop:content "創業支援としてコワーキングスペース開設が始動していると説明する"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_2.
+kg:op_74 prop:content "UIJターン希望者と市内企業のマッチング強化で雇用と転入につなげている"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_2.
+kg:op_75 prop:content "移住相談増加や住宅取得費補助により移住実績が出ていると説明する"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_2.
+kg:op_76 prop:content "徳とく券は市民の期待が高く消費喚起効果も高かったと評価する"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_2.
+kg:op_77 prop:content "総合戦略に盛り込んだ事業は来年度も継続し上乗せ交付で新規事業にも取り組む考えを示す"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_2.
+kg:st_11 rdfs:label "安藤智広商工観光部長"@ja.
+kg:st_11 rdfs:type cls:st_18.
+kg:op_78 prop:content "貨物量拡大や港湾機能強化を生かし産業振興を進める考えを示す"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_11.
+kg:op_79 prop:content "融資や助成金固定資産税支援で地元企業の拡張を後押ししている"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_11.
+kg:op_80 prop:content "多くの創業相談を受け具体的な創業支援につなげている"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_11.
+kg:op_81 prop:content "新工場立地により雇用創出を進め本社機能移転も促したいとする"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_11.
+kg:op_82 prop:content "バイオマス発電立地は雇用創出や港湾林業振興につながると期待する"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "白崎好行農林水産部長"@ja.
+kg:st_12 rdfs:type cls:st_18.
+kg:op_83 prop:content "TPPは本市基幹産業や関連産業に大きな影響を及ぼしかねず危機感を持つ"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_12.
+kg:op_84 prop:content "農地集積でコストダウンを図り担い手経営基盤を強化したいとする"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_12.
+kg:op_85 prop:content "女性農業者も含め6次産業化や農商工連携を進めたいとする"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_12.
+kg:op_86 prop:content "施設園芸支援や枝豆餅米など新規作物PRで複合経営を進めたいとする"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_12.
+kg:op_87 prop:content "刈屋梨や啓翁桜などの輸出拡大を進めたいとする"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_12.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "じゃ、その人たちに日本の政治のこと、またさまざまな政策のことをどこまで誰がちゃんと指導というか教育してきたのかということを考えてみれば、それは公民なんかでいろいろやってはきたと思うんですけれども、そんなことは一切、実は余りなかったんだろうなと思うわけです"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "いわゆる自分たちの主張が認められない、自分たちが考えていることが制度としてなっていかない、そういうことに対して、若者の社会に対しての参画意識が極端に少なくなっていく"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "これが結果として負のスパイラルになって、社会そのものが衰退をしていくんだ"@ja.
+<< kg:id_6 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "大切なのが主権者教育と言われております。未来を担う若者が政治に関心を持ち、社会や地域の課題を主体的に考え、行動することが極めて大切であります"@ja.
+<< kg:id_6 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "主権者教育の趣旨からいって、教育委員会によるガイドラインづくりや、それに基づくルールづくりが大変重要になってくると思います"@ja.
+<< kg:id_6 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "副教材に基づく具体的な活動についてのお考えをお教え願いたいと思います"@ja.
+<< kg:id_6 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "市長といたしましては、中学校や高等学校に積極的に出向いて、中学生や高校生と地域づくりへの思いや課題などを共有する機会を設けることも必要になってくるだろうと思います"@ja.
+<< kg:id_6 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "学校における教育現場での主権者教育、これに加えまして、親世代も巻き込んだ形で社会教育ですとか地域活動での活動として、市役所レベルでいえば我々市長部局ですとか、あるいは議会での働きかけも大変重要"@ja.
+<< kg:id_6 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "小中学校のほうでは、対立する課題を取り上げまして、新聞などの資料を調べて、自分の意見をまとめ、話し合いをし、一定の結論を出していくような授業が社会科で行われております"@ja.
+<< kg:id_6 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "具体的には各学校のＰＴＡの会議、あるいは研修会、あるいは市Ｐ連という組織もございまして、そういった中でどのように取り上げることができるかどうか話題としていきたい"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "本市においては、４月、９月の広報やホームページへのアップなど周知に努めておられるようですが、まだまだ市民への周知度は低いと言わざるを得ないと思います"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "住民票と違うところに住んでいる人が通知を受け取れない問題"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "個人情報流出への不安なども数多く指摘されております"@ja.
+<< kg:id_16 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "市の広報やホームページ、そのほかにも職員による出前講座やコミュニティＦＭ放送、それから市民の方へのパンフレット配布などによって周知を図っているところでございます"@ja.
+<< kg:id_16 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "この出前講座は特に高齢者等の方への制度の周知や理解に非常に効果的であると思っております"@ja.
+<< kg:id_16 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "11月初めに、自治会への協力依頼によりまして、回覧板での周知を行いたい"@ja.
+<< kg:id_16 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "居所情報登録につきまして、震災避難者各世帯へのお知らせ、それからＤＶ等の被害者対応として市内保育所・幼稚園への周知依頼、さらには長期入所者対応として各介護施設等への周知を実施しておりますが、登録手続の期限を延長して対応した"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "果たして本市にある中小企業はどこまでこの内容を周知しているかということについては懸念を持たざるを得ません"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "対象業務を洗い出したり、それから社内規程の見直しをしたり、またはシステムの対応、それから組織において責任者を選定して事務の取扱者と区分をしたりという組織体制の見直し、さらには社員研修や勉強会等の対応が必要となる"@ja.
+<< kg:id_23 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "政府がマスメディア等を通した集中広報を行うとともに、民間事業者向けの説明会を開催しており"@ja.
+<< kg:id_23 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "本市としても、引き続きホームページ等で民間事業者に対しまして関連情報の提供を行いますとともに、さらに酒田税務署などとも連携をしながら、関係機関と協力をしながら説明会等の開催を通して制度の周知に努めてまいりたい"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "平成21年から平成24年までの間に、新設した事業所の数が240…に対して、廃業した事業所の数は883…廃業のほうが多い傾向が見られ、今後もこの傾向が続くものと推察"@ja.
+<< kg:id_28 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "酒田市内の従業者数でございますが、平成21年が５万1,386人、平成24年が４万8,596人でありまして、2,790人減少している"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "創業者の高齢化が進んでいるため"@ja.
+<< kg:id_31 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "後継ぎの不在からやむなく廃業に追われている中小企業も残念ながら後を絶ちません"@ja.
+<< kg:id_31 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "後継ぎの不在からやむなく廃業に追われている中小企業も残念ながら後を絶ちません"@ja.
+<< kg:id_31 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "地方であればあるほどその流れは顕著であり、地方創生の理念からかけ離れた実態にある"@ja.
+<< kg:id_31 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "従来の親族への承継に限定をされていました持ち株の遺留分特例制度、この対象を親族外の承継の際にも適用できるように制度の範囲を拡充した"@ja.
+<< kg:id_31 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "今後は、山形県事業引継ぎ支援センター、あるいは各金融機関、商工会議所、ふれあい商工会などの関係機関と連携をいたしまして、あらゆる機会を通じて事業承継に関する情報の周知を強化してまいりたい"@ja.
+<< kg:id_31 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "後継者人材バンクは、後継者不足に悩む中小企業等と創業希望者等のマッチングを行うものでございますけれども、本市においても廃業事業所の数を抑制する有効な制度であると認識"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "魚価の低迷、漁業従事者の減少、高齢化の進行など、さまざまな課題を抱えている漁業"@ja.
+<< kg:id_39 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "魚価の低迷、漁業従事者の減少、高齢化の進行など、さまざまな課題を抱えている漁業"@ja.
+<< kg:id_39 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "魚価の低迷、漁業従事者の減少、高齢化の進行など、さまざまな課題を抱えている漁業"@ja.
+<< kg:id_39 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "飛島では、トビウオの焼き干し、そして天然ワカメなどをブランド化というよりは特産化していきたい"@ja.
+<< kg:id_39 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "漁業者の所得の向上を図るためにも、県漁業協同組合も含めて加工施設の設置と民間からの加工事業所の誘致、これは非常に漁業振興には有効"@ja.
+<< kg:id_39 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "新規漁業就業者については、農業における就農給付金制度と同じく、国や県の制度として、年間150万円の給付を受けながら研修を受けるという制度がございます。また、研修後、独立を目指す漁業者には、県と山形県漁業協同組合が連携して実施する漁船建造のための補助制度などもある"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "飛島地区において、高齢化が進む中、全世帯が自動車等の所有者ではないと思います。人の手を煩わせることなく島内を移動する手段として、公共交通もしくはそれにかわる手段等の整備が緊急の課題"@ja.
+<< kg:id_46 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "車での移動が必要な場合は、地域の方々が気楽に声をかけ合って、助け合いながら乗り合いをしている"@ja.
+<< kg:id_46 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "軽度生活援助事業を利用して、地元の事業者が勝浦港に届いた荷物を利用者宅に配達を行っております"@ja.
+<< kg:id_50 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "飛島クリーンアップ作戦におきまして、山形県は運営経費に対し助成金を出して実施を支援しておりますし、酒田市では参加者への昼食の提供ですとか、集めたごみの運搬・処分について支援をしております"@ja.
+<< kg:id_50 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "飛島でボランティア活動をする２人以上の団体には、飛島ボランティア活動支援補助金として旅客運賃の全額を市が補助"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "飛島地区の介護サービスにおいても、高齢化が顕著である上に、介護需要が高まり"@ja.
+<< kg:id_53 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "今年度の介護報酬改定では、この短期入所、通所介護につきましても減額をされており、島内事業所にとっても厳しいものになったと認識"@ja.
+<< kg:id_53 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "離島における特例として、人員、設備等の基準を満たしていないものの、設置の要件を緩和して介護報酬を受けることができる離島相当サービスとして市が適用"@ja.
+<< kg:id_53 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "離島の特別地域加算を短期入所、通所介護についても認められるよう、制度改正についてまずは県のほうに働きかけを行っております"@ja.
+<< kg:id_58 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "飛島では、島民で組織するもちの木ヘルパー会主催のサロン活動を平成25年度から年数回程度実施し、好評と伺っております"@ja.
+<< kg:id_58 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "身体障害者手帳所持者を除く飛島在住の65歳以上の方に、島民運賃の復路、つまり飛島に戻る分を補助する助成券を年間６枚交付している"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "近年、短期的ゲリラ豪雨によって、市街地の道路冠水、住宅浸水が話題となっております"@ja.
+<< kg:id_61 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "市街地の道路冠水、住宅浸水が話題となっております"@ja.
+<< kg:id_61 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "市街地の道路冠水、住宅浸水が話題となっております"@ja.
+<< kg:id_61 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "気象予報により大雨が予測される場合、通行どめ規制のバリケードや土のうを用意して冠水常襲地区へ配備し"@ja.
+<< kg:id_61 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "今回、貯留施設を整備することによりまして、７年に１回降ると想定される最大雨量50.4mmまでの降雨による浸水を防ぐことができます"@ja.
+<< kg:id_61 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "現在、合流地区に設置されております雨水浸透ます、これは3,423基設置されております"@ja.
+<< kg:id_61 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "分流式雨水幹線整備事業で整備いたしました若浜排水区は、ゲートポンプを設置したことにより１時間当たり約9,300立方メートル排水され"@ja.
+<< kg:id_69 prop:cause kg:id_70 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "堰のコンクリート護岸には1961年とのプレートがあり、実に54年経過しております"@ja.
+<< kg:id_69 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "浸水するおそれもあり、用水路脇の道路も起伏が激しく、交通には甚だ危険と思われます。実際、数年ごと水路より溢れることもあり"@ja.
+<< kg:id_69 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "幹線となります大きな水路に関しましては、下水道の認可区域拡大とともに下水道計画の中に取り込んでおりますし、また、状況を確認しながら、修繕、改修も適宜実施"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "市民や関係部署への情報の伝達、これが十分になされていなかったのではないか"@ja.
+<< kg:id_73 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "自治会長はびっくりしてしまって、その後、学校に、子供たちがちょうど登校時間だったものですから、子供たちに何かあったら困る困るということで連絡をしたりとか、みんなで猿が出ているから大変だということで、そういった混乱が実際に起きている"@ja.
+<< kg:id_73 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "危機管理課、環境衛生課、当然、学校教育課も入っていますが、まちづくり推進課、子育て支援課と、こういったところに連絡をいたします"@ja.
+<< kg:id_73 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "ホームページに掲載…朝昼のハーバーラジオ「インフォメーションさかた」…市のフェイスブックにも掲載…自治会に情報提供をするとともに、回覧板で回覧をしていただくように依頼"@ja.
+<< kg:id_73 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "早い時期から広報車を出すという…マスコミの皆様の御協力を得るとか、いろんなやり方があったかと思います…市民へいかにして情報をすぐ伝えるか、庁内の情報伝達をいかにするかということにつきましても追加していく"@ja.
+<< kg:id_79 prop:effect kg:id_80 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "全く人がいないところで火事が起きている。そうした不安の中で、たとえぼやの状態と言いながらも、やはり市民は大変不安に思っている"@ja.
+<< kg:id_79 prop:cause kg:id_81 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "消防への通報については思い至らなかったということでございます"@ja.
+<< kg:id_79 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "今後は入居者から火災発生の通報があった場合は、施設の管理者としても消防へ通報するようにしてまいります"@ja.
+<< kg:id_83 prop:cause kg:id_84 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "同じひとり親でも、非婚の場合は対象になりません"@ja.
+<< kg:id_83 prop:effect kg:id_85 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "非婚のひとり親世帯の場合、控除がない分、納税額がふえ、さらにひとり親支援制度も負担金などがふえてしまう"@ja.
+<< kg:id_83 prop:contermeasure kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "子育て支援が結婚歴の有無で格差が生じるということは、不合理であると私も考えますので、他市の状況を踏まえて、みなし寡婦控除を適用する方向で検討してまいりたい"@ja.
+<< kg:id_83 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "国への意見要望についてでございましたが、どのような形で行ったほうがいいのか、少し検討してまいりたい"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "前年度と所得が変わっていなくても保育料が上がってしまった"@ja.
+<< kg:id_88 prop:effect kg:id_90 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "仮に再計算を行えば、保育料に影響する、つまり階層区分が変わると思われる人数は、二百数十人程度と認識"@ja.
+<< kg:id_88 prop:contermeasure kg:id_91 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "各自治体の判断に委ねられるものではなく、本来、国における税や子育て支援の制度設計により全国一律に行われるべきもの…機会を捉えて、国への働きかけを行ってまいりたい"@ja.
+<< kg:id_92 prop:contermeasure kg:id_93 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "ことし９月に東北公益文科大学内の公益研修センター内にコワーキングスペース「ＵＮＤＥＲＢＡＲ（アンダーバー）」がグランドオープン"@ja.
+<< kg:id_92 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "ＵＩＪターンコーディネーターを配置をいたしまして、ＵＩＪターン就職を希望する求職者と市内企業とのマッチングを充実"@ja.
+<< kg:id_92 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "移住総合窓口の設置により、これまで75件の相談…住宅取得費補助金につきましては３件、交付決定"@ja.
+<< kg:id_92 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "販売から２カ月で69％、３カ月で約88％で12億円の販売額のうち約10億円が既に換金されていることから、消費喚起の効果は高かった"@ja.
+<< kg:id_92 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "地方創生先行型の交付金を活用した事業は、地方版総合戦略に盛り込むこととされておりますことから、基本的には来年度も事業を継続する"@ja.
+<< kg:id_98 prop:contermeasure kg:id_99 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "重要港湾である酒田港を活かした産業振興につきましては、平成27年の酒田港国際定期コンテナの貨物量が…過去最高"@ja.
+<< kg:id_98 prop:contermeasure kg:id_100 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "産業立地促進資金による融資、工場等拡張支援助成金による支援"@ja.
+<< kg:id_98 prop:contermeasure kg:id_101 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "酒田市創業支援コーディネーターが窓口となり、各種の創業・起業相談を受ける体制…今年度９月末現在で413件の相談"@ja.
+<< kg:id_98 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "パイプ・ラインエンジニアリング株式会社の誘致により、10月15日、酒田工場の竣工…既に本市を中心に８名を雇用"@ja.
+<< kg:id_98 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "バイオマス発電所の立地計画…約20名の新規雇用が見込まれるほか…港湾振興や地元産材の活用による林業振興など、産業振興、地域活性化につながる"@ja.
+<< kg:id_104 prop:cause kg:id_105 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "ＴＰＰ交渉が加盟国協議で大筋合意されましたが、本市の基幹産業である農業や、その関連産業への影響について、大変危機感を持って"@ja.
+<< kg:id_104 prop:contermeasure kg:id_106 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "担い手への施策の集中支援と農地集積…集積を図ることによりまして、担い手のコストダウンとつながっていく"@ja.
+<< kg:id_104 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "６次産業化の支援といたしまして女性農業者の地域づくりのそういう地区を設けながら、いろんな方々への６次産業農商工連携の推進"@ja.
+<< kg:id_104 prop:contermeasure kg:id_108 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "施設園芸の支援…新規作物として今年度、エダマメ、「あねちゃまめ」、それから今回デビューいたしますモチ米の「まめほの香」"@ja.
+<< kg:id_104 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "新たに刈屋梨の輸出に取り組んでおりますし、来年３月をめどに、ロシアを含めまして啓翁桜、その他の花の花卉の輸出も促進"@ja.
+}

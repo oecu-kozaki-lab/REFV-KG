@@ -1,0 +1,1004 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00147> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "国庫支出金の減少"@ja.
+kg:id_1 rdf:type cls:c_8438.
+cls:c_8438 rdfs:label "公的支出の減少"@ja.
+kg:id_2 rdfs:label "平成30年度からの国保の県の一本化"@ja.
+kg:id_2 rdf:type cls:c_8439.
+cls:c_8439 rdfs:label "制度統合"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "県の支出金への切替"@ja.
+kg:id_3 rdf:type cls:c_8440.
+cls:c_8440 rdfs:label "財源切替"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "国保会計の厳しさ"@ja.
+kg:id_4 rdf:type cls:c_8441.
+cls:c_8441 rdfs:label "保険会計の厳しさ"@ja.
+kg:id_5 rdfs:label "被保険者数の減少"@ja.
+kg:id_5 rdf:type cls:c_3930.
+cls:c_3930 rdfs:label "加入者減少"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "国保税の減少"@ja.
+kg:id_6 rdf:type cls:c_8442.
+cls:c_8442 rdfs:label "保険料収入の減少"@ja.
+kg:id_6 prop:cause kg:id_5.
+kg:id_7 rdfs:label "一般会計繰出しの減少"@ja.
+kg:id_7 rdf:type cls:c_8443.
+cls:c_8443 rdfs:label "繰出金の減少"@ja.
+kg:id_7 prop:cause kg:id_5.
+kg:id_8 rdfs:label "国保会計の剰余幅縮小"@ja.
+kg:id_8 rdf:type cls:c_8444.
+cls:c_8444 rdfs:label "会計余力の縮小"@ja.
+kg:id_9 rdfs:label "基金の取崩し"@ja.
+kg:id_9 rdf:type cls:c_2745.
+cls:c_2745 rdfs:label "基金取崩し"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "国保会計の健全化"@ja.
+kg:id_10 rdf:type cls:c_8445.
+cls:c_8445 rdfs:label "保険会計の健全化"@ja.
+kg:id_11 rdfs:label "法定外繰出し2億8,700万円の一般会計への全額返還"@ja.
+kg:id_11 rdf:type cls:c_8446.
+cls:c_8446 rdfs:label "繰出金返還"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "国保会計"@ja.
+kg:id_12 rdf:type cls:c_8447.
+cls:c_8447 rdfs:label "保険会計"@ja.
+kg:id_13 rdfs:label "余裕の幅の縮小"@ja.
+kg:id_13 rdf:type cls:c_8444.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "基金が底をついた場合は県から一時借入れが必要"@ja.
+kg:id_14 rdf:type cls:c_8448.
+cls:c_8448 rdfs:label "一時借入れ"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "負担の増加"@ja.
+kg:id_15 rdf:type cls:c_952.
+cls:c_952 rdfs:label "負担増加"@ja.
+kg:id_12 prop:effect kg:id_15.
+kg:id_16 rdfs:label "保険税収入の減少"@ja.
+kg:id_16 rdf:type cls:c_8442.
+kg:id_16 prop:cause kg:id_5.
+kg:id_17 rdfs:label "1人当たり医療費の増加"@ja.
+kg:id_17 rdf:type cls:c_8449.
+cls:c_8449 rdfs:label "一人当たり医療費の増加"@ja.
+kg:id_18 rdfs:label "保険給付費が大きく減らず推移していること"@ja.
+kg:id_18 rdf:type cls:c_8450.
+cls:c_8450 rdfs:label "給付費高止まり"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "新型コロナのような大規模発生にも耐えられる体系づくり"@ja.
+kg:id_19 rdf:type cls:c_8451.
+cls:c_8451 rdfs:label "危機対応体制"@ja.
+kg:id_12 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "介護保険料の増加"@ja.
+kg:id_20 rdf:type cls:c_8452.
+cls:c_8452 rdfs:label "保険料の増加"@ja.
+kg:id_21 rdfs:label "65歳に到達した1号被保険者の増加"@ja.
+kg:id_21 rdf:type cls:c_5688.
+cls:c_5688 rdfs:label "高齢者増加"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "介護サービスの増加"@ja.
+kg:id_22 rdf:type cls:c_8453.
+cls:c_8453 rdfs:label "介護サービスの増加"@ja.
+kg:id_23 rdfs:label "新たな介護保険事業計画の策定に向けた3年間での確実な増加"@ja.
+kg:id_23 rdf:type cls:c_607.
+cls:c_607 rdfs:label "需要増加"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "介護保険"@ja.
+kg:id_24 rdf:type cls:c_8454.
+cls:c_8454 rdfs:label "介護保険"@ja.
+kg:id_25 rdfs:label "負担の増加予想"@ja.
+kg:id_25 rdf:type cls:c_952.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "介護保険会計"@ja.
+kg:id_26 rdf:type cls:c_8455.
+cls:c_8455 rdfs:label "介護会計"@ja.
+kg:id_27 rdfs:label "介護保険準備基金を活用した大幅な負担増の調整"@ja.
+kg:id_27 rdf:type cls:c_3420.
+cls:c_3420 rdfs:label "基金活用"@ja.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "介護保険制度の厳しさ"@ja.
+kg:id_28 rdf:type cls:c_8456.
+cls:c_8456 rdfs:label "介護制度の厳しさ"@ja.
+kg:id_29 rdfs:label "制度がもつのかという不安"@ja.
+kg:id_29 rdf:type cls:c_8457.
+cls:c_8457 rdfs:label "制度不安"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "介護予防の重要性"@ja.
+kg:id_30 rdf:type cls:c_8458.
+cls:c_8458 rdfs:label "介護予防の重要性"@ja.
+kg:id_31 rdfs:label "被保険者が右肩上がりで増えていくこと"@ja.
+kg:id_31 rdf:type cls:c_8459.
+cls:c_8459 rdfs:label "加入者増加"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "地域包括支援センターを中心とした介護予防の取組"@ja.
+kg:id_32 rdf:type cls:c_8460.
+cls:c_8460 rdfs:label "地域支援体制"@ja.
+kg:id_30 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "住民主体による実施団体の立上げと地域の担い手育成"@ja.
+kg:id_33 rdf:type cls:c_8461.
+cls:c_8461 rdfs:label "地域人材育成"@ja.
+kg:id_30 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "高齢者の保健事業と介護予防の一体的実施"@ja.
+kg:id_34 rdf:type cls:c_8462.
+cls:c_8462 rdfs:label "一体的実施"@ja.
+kg:id_30 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "保健師を中心とした体制づくり"@ja.
+kg:id_35 rdf:type cls:c_8463.
+cls:c_8463 rdfs:label "実施体制整備"@ja.
+kg:id_30 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "介護予防人材の不足"@ja.
+kg:id_36 rdf:type cls:c_7660.
+cls:c_7660 rdfs:label "介護人材不足"@ja.
+kg:id_37 rdfs:label "ボランティアへの依存"@ja.
+kg:id_37 rdf:type cls:c_8464.
+cls:c_8464 rdfs:label "ボランティア依存"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "介護人材不足"@ja.
+kg:id_38 rdf:type cls:c_7660.
+kg:id_39 rdfs:label "介護人材の不足が各方面から課題とされていること"@ja.
+kg:id_39 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "映画ケアニン上映による啓発"@ja.
+kg:id_40 rdf:type cls:c_2541.
+cls:c_2541 rdfs:label "啓発活動"@ja.
+kg:id_38 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "小学校での読み聞かせや授業による介護理解の取組"@ja.
+kg:id_41 rdf:type cls:c_7024.
+cls:c_7024 rdfs:label "教育活動"@ja.
+kg:id_38 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "人材育成への町の支援制度づくり"@ja.
+kg:id_42 rdf:type cls:c_1365.
+cls:c_1365 rdfs:label "人材育成支援"@ja.
+kg:id_38 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "日本福祉大学との連携による人材戦略"@ja.
+kg:id_43 rdf:type cls:c_8465.
+cls:c_8465 rdfs:label "連携戦略"@ja.
+kg:id_38 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "遊佐高校のヘルパー養成講座と実践を通じた就職促進"@ja.
+kg:id_44 rdf:type cls:c_8466.
+cls:c_8466 rdfs:label "就業促進"@ja.
+kg:id_38 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "介護保険制度"@ja.
+kg:id_45 rdf:type cls:c_8467.
+cls:c_8467 rdfs:label "介護保険制度"@ja.
+kg:id_46 rdfs:label "戦後のベビーブーマーが後期高齢者になること"@ja.
+kg:id_46 rdf:type cls:c_5688.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "マンパワー不足"@ja.
+kg:id_47 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "自助共助を地域と力を合わせて準備すること"@ja.
+kg:id_48 rdf:type cls:c_3684.
+cls:c_3684 rdfs:label "地域共助"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "エプロンサービスや無料送迎など地域の取組"@ja.
+kg:id_49 rdf:type cls:c_8468.
+cls:c_8468 rdfs:label "地域支援活動"@ja.
+kg:id_45 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "町の持ち出し増加"@ja.
+kg:id_50 rdf:type cls:c_8469.
+cls:c_8469 rdfs:label "公費負担増加"@ja.
+kg:id_45 prop:effect kg:id_50.
+kg:id_51 rdfs:label "県内で同じ制度同じ負担となる平準化の要望"@ja.
+kg:id_51 rdf:type cls:c_8470.
+cls:c_8470 rdfs:label "負担平準化要望"@ja.
+kg:id_45 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "公共下水道接続率の低さ"@ja.
+kg:id_52 rdf:type cls:c_8471.
+cls:c_8471 rdfs:label "接続率の低さ"@ja.
+kg:id_53 rdfs:label "総合的な接続率向上の必要性"@ja.
+kg:id_53 rdf:type cls:c_8472.
+cls:c_8472 rdfs:label "接続促進の必要"@ja.
+kg:id_52 prop:effect kg:id_53.
+kg:id_54 rdfs:label "地域集落排水接続率の低さ"@ja.
+kg:id_54 rdf:type cls:c_8471.
+kg:id_55 rdfs:label "維持管理費を使用料で賄えない状況"@ja.
+kg:id_55 rdf:type cls:c_8473.
+cls:c_8473 rdfs:label "維持費不足"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_56 rdfs:label "高齢者の一人世帯が多いこと"@ja.
+kg:id_56 rdf:type cls:c_6795.
+cls:c_6795 rdfs:label "高齢者世帯"@ja.
+kg:id_54 prop:cause kg:id_56.
+kg:id_57 rdfs:label "地区総会での毎年の接続協力要請"@ja.
+kg:id_57 rdf:type cls:c_8474.
+cls:c_8474 rdfs:label "接続要請"@ja.
+kg:id_54 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "下水道施設への高い補助率による支援"@ja.
+kg:id_58 rdf:type cls:c_8475.
+cls:c_8475 rdfs:label "接続補助"@ja.
+kg:id_54 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "追加支援制度の慎重検討"@ja.
+kg:id_59 rdf:type cls:c_8476.
+cls:c_8476 rdfs:label "追加支援検討"@ja.
+kg:id_54 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "若者向け住宅不足"@ja.
+kg:id_60 rdf:type cls:c_8477.
+cls:c_8477 rdfs:label "若者向け住宅不足"@ja.
+kg:id_61 rdfs:label "人口減少対策として施策の見直しが必要"@ja.
+kg:id_61 rdf:type cls:c_2502.
+cls:c_2502 rdfs:label "施策見直し"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:id_62 rdfs:label "若者向け住宅整備"@ja.
+kg:id_62 rdf:type cls:c_8478.
+cls:c_8478 rdfs:label "若者住宅整備"@ja.
+kg:id_63 rdfs:label "民間活力を活用した戸建て住宅建設支援"@ja.
+kg:id_63 rdf:type cls:c_4771.
+cls:c_4771 rdfs:label "民間活用"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "若者住宅建設"@ja.
+kg:id_64 rdf:type cls:c_8478.
+kg:id_65 rdfs:label "1戸当たり200万円の補助"@ja.
+kg:id_65 rdf:type cls:c_8479.
+cls:c_8479 rdfs:label "住宅補助"@ja.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "地盤改良への補助"@ja.
+kg:id_66 rdf:type cls:c_8480.
+cls:c_8480 rdfs:label "地盤改良補助"@ja.
+kg:id_64 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "町営住宅維持費の増加"@ja.
+kg:id_67 rdf:type cls:c_8481.
+cls:c_8481 rdfs:label "住宅維持費の増加"@ja.
+kg:id_68 rdfs:label "お金がかかることへの懸念"@ja.
+kg:id_68 rdf:type cls:c_813.
+cls:c_813 rdfs:label "費用負担"@ja.
+kg:id_67 prop:effect kg:id_68.
+kg:id_69 rdfs:label "岩ガキ資源の不足"@ja.
+kg:id_69 rdf:type cls:c_8482.
+cls:c_8482 rdfs:label "水産資源不足"@ja.
+kg:id_70 rdfs:label "流砂の浸食による藻場や岩場の減少"@ja.
+kg:id_70 rdf:type cls:c_8483.
+cls:c_8483 rdfs:label "生息環境悪化"@ja.
+kg:id_69 prop:cause kg:id_70.
+kg:id_71 rdfs:label "マイクロバブル洗浄による安全性向上"@ja.
+kg:id_71 rdf:type cls:c_8484.
+cls:c_8484 rdfs:label "安全性向上"@ja.
+kg:id_69 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "魚礁清掃と着床環境整備"@ja.
+kg:id_72 rdf:type cls:c_8485.
+cls:c_8485 rdfs:label "生息環境整備"@ja.
+kg:id_69 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "岩ガキ種苗の導入実験"@ja.
+kg:id_73 rdf:type cls:c_8486.
+cls:c_8486 rdfs:label "種苗導入"@ja.
+kg:id_69 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "藻場造成と岩ガキ用増殖礁の設置"@ja.
+kg:id_74 rdf:type cls:c_8232.
+cls:c_8232 rdfs:label "藻場造成"@ja.
+kg:id_69 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "漁業の担い手不足"@ja.
+kg:id_75 rdf:type cls:c_629.
+cls:c_629 rdfs:label "担い手不足"@ja.
+kg:id_76 rdfs:label "漁業関係の担い手不足"@ja.
+kg:id_76 rdf:type cls:c_807.
+kg:id_75 prop:cause kg:id_76.
+kg:id_77 rdfs:label "漁獲量の減少"@ja.
+kg:id_77 rdf:type cls:c_8487.
+cls:c_8487 rdfs:label "漁獲量の減少"@ja.
+kg:id_78 rdfs:label "海の資源不足"@ja.
+kg:id_78 rdf:type cls:c_8482.
+kg:id_77 prop:cause kg:id_78.
+kg:id_79 rdfs:label "漁業振興"@ja.
+kg:id_79 rdf:type cls:c_3023.
+cls:c_3023 rdfs:label "漁業振興"@ja.
+kg:id_80 rdfs:label "ヒラメクロダイトラフグ等の放流事業"@ja.
+kg:id_80 rdf:type cls:c_8488.
+cls:c_8488 rdfs:label "放流事業"@ja.
+kg:id_79 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "洋上風力発電"@ja.
+kg:id_81 rdf:type cls:c_1754.
+cls:c_1754 rdfs:label "洋上風力発電"@ja.
+kg:id_82 rdfs:label "魚礁としての利用への期待"@ja.
+kg:id_82 rdf:type cls:c_8489.
+cls:c_8489 rdfs:label "魚礁利用期待"@ja.
+kg:id_81 prop:effect kg:id_82.
+kg:id_83 rdfs:label "地域貢献基金を漁業振興策に活用する検討"@ja.
+kg:id_83 rdf:type cls:c_6972.
+cls:c_6972 rdfs:label "基金活用検討"@ja.
+kg:id_81 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "加工施設利用の少なさ"@ja.
+kg:id_84 rdf:type cls:c_8490.
+cls:c_8490 rdfs:label "施設利用の少なさ"@ja.
+kg:id_85 rdfs:label "利用者が数件にとどまっている状況"@ja.
+kg:id_85 rdf:type cls:c_3977.
+cls:c_3977 rdfs:label "利用低迷"@ja.
+kg:id_84 prop:effect kg:id_85.
+kg:id_86 rdfs:label "周知方法の再検討"@ja.
+kg:id_86 rdf:type cls:c_8491.
+cls:c_8491 rdfs:label "周知見直し"@ja.
+kg:id_84 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "施設区割りの検討"@ja.
+kg:id_87 rdf:type cls:c_8492.
+cls:c_8492 rdfs:label "区画見直し"@ja.
+kg:id_84 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "駐車場を活用したマルシェ開催の検討"@ja.
+kg:id_88 rdf:type cls:c_8493.
+cls:c_8493 rdfs:label "販売機会創出"@ja.
+kg:id_84 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "新規就農の困難さ"@ja.
+kg:id_89 rdf:type cls:c_8494.
+cls:c_8494 rdfs:label "新規就農の困難さ"@ja.
+kg:id_90 rdfs:label "水利権がないこと"@ja.
+kg:id_90 rdf:type cls:c_8495.
+cls:c_8495 rdfs:label "水利権不足"@ja.
+kg:id_89 prop:cause kg:id_90.
+kg:id_91 rdfs:label "有害鳥獣被害"@ja.
+kg:id_91 rdf:type cls:c_710.
+cls:c_710 rdfs:label "鳥獣被害"@ja.
+kg:id_92 rdfs:label "熊イノシシニホンジカの生息増加"@ja.
+kg:id_92 rdf:type cls:c_8496.
+cls:c_8496 rdfs:label "野生動物増加"@ja.
+kg:id_91 prop:cause kg:id_92.
+kg:id_93 rdfs:label "農地や作物への被害"@ja.
+kg:id_93 rdf:type cls:c_2523.
+cls:c_2523 rdfs:label "農業被害"@ja.
+kg:id_91 prop:effect kg:id_93.
+kg:id_94 rdfs:label "看板設置とわなによる捕獲"@ja.
+kg:id_94 rdf:type cls:c_8497.
+cls:c_8497 rdfs:label "捕獲対策"@ja.
+kg:id_91 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "猟友会支援と狩猟免許取得支援"@ja.
+kg:id_95 rdf:type cls:c_8498.
+cls:c_8498 rdfs:label "狩猟支援"@ja.
+kg:id_91 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "電気柵設置支援"@ja.
+kg:id_96 rdf:type cls:c_4054.
+cls:c_4054 rdfs:label "侵入防止"@ja.
+kg:id_91 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "ジオパーク推進体制"@ja.
+kg:id_97 rdf:type cls:c_2230.
+cls:c_2230 rdfs:label "推進体制"@ja.
+kg:id_98 rdfs:label "当分の間の職員派遣継続"@ja.
+kg:id_98 rdf:type cls:c_6080.
+cls:c_6080 rdfs:label "職員派遣"@ja.
+kg:id_97 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "地域おこし協力隊の活用"@ja.
+kg:id_99 rdf:type cls:c_8499.
+cls:c_8499 rdfs:label "協力隊活用"@ja.
+kg:id_97 prop:contermeasure kg:id_99.
+kg:id_100 rdfs:label "放課後児童クラブの感染対策負担"@ja.
+kg:id_100 rdf:type cls:c_3865.
+cls:c_3865 rdfs:label "運営負担"@ja.
+kg:id_101 rdfs:label "新型コロナによる密回避と熱中症対策の両立"@ja.
+kg:id_101 rdf:type cls:c_8500.
+cls:c_8500 rdfs:label "感染対策両立"@ja.
+kg:id_100 prop:cause kg:id_101.
+kg:id_102 rdfs:label "放課後児童クラブ運営"@ja.
+kg:id_102 rdf:type cls:c_8501.
+cls:c_8501 rdfs:label "児童施設運営"@ja.
+kg:id_103 rdfs:label "換気手洗い消毒検温の徹底"@ja.
+kg:id_103 rdf:type cls:c_2142.
+cls:c_2142 rdfs:label "感染対策"@ja.
+kg:id_102 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "遊佐中ランチルームでの学習活動"@ja.
+kg:id_104 rdf:type cls:c_2366.
+cls:c_2366 rdfs:label "学習支援"@ja.
+kg:id_102 prop:contermeasure kg:id_104.
+kg:id_105 rdfs:label "あそぶ塾の施設課題"@ja.
+kg:id_105 rdf:type cls:c_8502.
+cls:c_8502 rdfs:label "施設課題"@ja.
+kg:id_106 rdfs:label "建物の老朽化"@ja.
+kg:id_106 rdf:type cls:c_680.
+cls:c_680 rdfs:label "老朽化"@ja.
+kg:id_105 prop:cause kg:id_106.
+kg:id_107 rdfs:label "独立した新設建物の希望"@ja.
+kg:id_107 rdf:type cls:c_8503.
+cls:c_8503 rdfs:label "施設新設"@ja.
+kg:id_105 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "町による支援策提示と継続協議"@ja.
+kg:id_108 rdf:type cls:c_8054.
+cls:c_8054 rdfs:label "支援協議"@ja.
+kg:id_105 prop:contermeasure kg:id_108.
+kg:id_109 rdfs:label "高齢者インフルエンザ予防接種"@ja.
+kg:id_109 rdf:type cls:c_1348.
+cls:c_1348 rdfs:label "予防接種"@ja.
+kg:id_110 rdfs:label "10月1日からの接種案内と協力呼びかけ"@ja.
+kg:id_110 rdf:type cls:c_8504.
+cls:c_8504 rdfs:label "接種案内"@ja.
+kg:id_109 prop:contermeasure kg:id_110.
+kg:id_111 rdfs:label "発熱時にインフルエンザかコロナか判別が問題になること"@ja.
+kg:id_111 rdf:type cls:c_8505.
+cls:c_8505 rdfs:label "判別困難"@ja.
+kg:id_109 prop:effect kg:id_111.
+kg:id_112 rdfs:label "予防接種による予防の推進"@ja.
+kg:id_112 rdf:type cls:c_2015.
+cls:c_2015 rdfs:label "感染予防"@ja.
+kg:id_109 prop:contermeasure kg:id_112.
+kg:st_1 rdfs:label "赤塚英一委員"@ja.
+kg:st_1 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_1 prop:content "県への一本化で国庫支出金が大きく減少したと理解する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "中川健康福祉課長"@ja.
+kg:st_2 rdfs:type cls:st_95.
+cls:st_95 rdfs:label "課長"@ja.
+kg:op_2 prop:content "減少分は県の支出金に切り替わったと説明する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "被保険者の減少が厳しい会計状況の要因だとみる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "被保険者数の減少に比例して国保税も減少していると説明する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "被保険者数の減少に比例して一般会計繰出しも減少していると説明する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "会計全体は赤字ではないが昨年度より余裕の幅が小さくなったとみる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "法定外繰出しの貸し借りが解消され現在は健全な状態と考える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "会計の余裕が減少してきていることを強く懸念する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "財源不足時は県から借入れして不足分を埋める可能性がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "県から借入れした場合は償還のため負担増も視野に入るとみる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "保険税収入は被保険者数の減少と連動して下がっているとみる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "被保険者が減る一方で給付費が大きく変わらず1人当たり医療費は増えているとみる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "パンデミックのような事態でも耐えられる会計体系にしてほしい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "65歳到達者の増加が保険料決算額増加の最大要因と説明する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "介護サービスは確実に増加しており新計画で保険料見直しが必要になるとみる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "介護保険も将来的に維持できるか非常に不安だと感じている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "準備基金を財政調整的な背景として大幅な負担増を抑える必要があると考える"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "国保と同様に介護保険も維持できるのか非常に不安に思う"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "被保険者増加は避けられずサービス利用を遅らせる取組が重要だと考える"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "地域包括支援センターの活動を中心に介護予防を計画へ盛り込みたい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "元気な高齢者が生活支援の担い手となる仕組みづくりを続けたい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "KDBシステムを活用し個人に合った保健指導につなげたい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "保健師が中心となって一体的実施をコーディネートする体制を準備している"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "ボランティアに過度な負担をかけると長続きしないと懸念する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "介護人材の不足は大変な課題だと受け止めている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "介護の重要性を広く理解してもらう啓発に取り組んだ"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "子供たちに幼い頃から介護への理解を深めてもらう取組を始めている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "時田町長"@ja.
+kg:st_3 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_28 prop:content "介護人材確保のため将来的に町が人材育成支援へ踏み出す時代が来ていると考える"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "日本福祉大学との連携を生かし長期的な戦略を持つ必要があると考える"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "地元での実践体験を通じて若い人が介護の道を選ぶことを心強く感じる"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "戦後のベビーブーマーが後期高齢者になるためマンパワー不足が想定される"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "介護現場は完全にマンパワーの問題であり有資格者確保が大きな課題とみる"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "公助だけでなく地域の自助共助をどう準備するかが重要だと考える"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "地域が大胆に取り組み切り開いてくれていることを心強く思う"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "介護会計の拡大に伴い町の持ち出しも当然増えるとみる"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "同じ県内で同じ制度なら負担の公平となる方向を要望したい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "斎藤弥志夫委員"@ja.
+kg:st_4 rdfs:type cls:st_3.
+kg:op_37 prop:content "接続率や設置率の向上に総合的に努める必要があると考える"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "畠中地域生活課長"@ja.
+kg:st_5 rdfs:type cls:st_95.
+kg:op_38 prop:content "集落排水は維持管理費に使用料を充当しても賄えていないと説明する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_5.
+kg:op_39 prop:content "未接続世帯は高齢者の一人暮らしが多く事情があると説明する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_5.
+kg:op_40 prop:content "地区総会で毎年協力をお願いし補助制度もPRしている"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:op_41 prop:content "補助率22％の支援制度を周知し接続を促している"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_5.
+kg:op_42 prop:content "既に接続した人との不公平感が生じるため追加支援は慎重に考える"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "阿部満吉委員"@ja.
+kg:st_6 rdfs:type cls:st_3.
+kg:op_43 prop:content "若者向け住宅はまだ足りず施策の考え直しが必要だと考える"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_6.
+kg:op_44 prop:content "公共単価では高額になるため民間活力を活用する方向に転換した"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_5.
+kg:op_45 prop:content "20坪以上を条件に1戸当たり200万円を補助した"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_5.
+kg:op_46 prop:content "地盤が悪いため地盤改良についても補助した"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_5.
+kg:op_47 prop:content "町営住宅を維持するには相当な費用がかかると感じる"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "佐藤産業課長"@ja.
+kg:st_7 rdfs:type cls:st_95.
+kg:op_48 prop:content "流砂の浸食で藻場や岩場が少なくなり岩ガキ資源に影響していると説明する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_7.
+kg:op_49 prop:content "安全性の高い付加価値をつけて販売する事業として進めている"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_7.
+kg:op_50 prop:content "魚礁の清掃などで岩ガキが成長できる環境整備を進めている"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_7.
+kg:op_51 prop:content "アワビ養殖施設の沈殿槽を利用して種苗導入実験を行っている"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_7.
+kg:op_52 prop:content "県事業を活用し藻場造成と増殖礁設置を進める予定だと説明する"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_7.
+kg:op_53 prop:content "漁業関係は担い手不足が続いていると認識している"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_7.
+kg:op_54 prop:content "世界的に海の資源が不足し酒田飽海管内の漁獲量も減少していると説明する"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_7.
+kg:op_55 prop:content "需要が増すと見込まれる魚種の放流で支援してきた"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_7.
+kg:op_56 prop:content "漁業者は反対よりも魚礁利用による水産資源への期待が大きい"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_7.
+kg:op_57 prop:content "事業者の地域貢献基金を何かあったときの漁業振興に使う検討をしている"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:op_58 prop:content "整備した加工施設はまだ利用者が少なく周知方法の再検討が必要とみる"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_7.
+kg:op_59 prop:content "利用増加に向けて周知方法を再度検討したい"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_7.
+kg:op_60 prop:content "広すぎるスペースは区割りすれば入りたい希望があるため検討したい"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_7.
+kg:op_61 prop:content "加工品販売のためマルシェ開催も含めて検討したい"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_7.
+kg:op_62 prop:content "新規参入者は水利権がないため苦労していると指摘する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_6.
+kg:op_63 prop:content "熊だけでなくイノシシやニホンジカの生息も増加していると説明する"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_7.
+kg:op_64 prop:content "イノシシは農地を荒らし臭いがついた稲は売り物にならないと説明する"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_7.
+kg:op_65 prop:content "目撃情報があれば看板設置やわなでの捕獲を行っている"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_7.
+kg:op_66 prop:content "猟友会への支援や狩猟免許取得支援を進めている"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_7.
+kg:op_67 prop:content "県補助事業を活用して電気柵設置を支援している"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "髙橋企画課長"@ja.
+kg:st_8 rdfs:type cls:st_95.
+kg:op_68 prop:content "現状の取組では当分職員派遣を継続する認識だと説明する"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_8.
+kg:op_69 prop:content "ジオパーク活動に従事する地域おこし協力隊を採用し期待している"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_8.
+kg:op_70 prop:content "コロナ対策と暑さ対策の両立で運営側は本当に大変な年だったと評価する"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_2.
+kg:op_71 prop:content "感染者を出さないことを第一に感染対策を徹底したと説明する"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_2.
+kg:op_72 prop:content "教育委員会の協力を得て広いスペースで学習できる取組は良かったと評価する"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_2.
+kg:op_73 prop:content "あそぶ塾は建物の老朽化が指摘されていると認識している"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_2.
+kg:op_74 prop:content "あそぶ塾側は独立した新設建物を希望していると説明する"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_2.
+kg:op_75 prop:content "クラブ側の判断を尊重しつつ町が可能な支援を示して協議したい"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_2.
+kg:op_76 prop:content "町は広報等で10月1日から接種可能と周知し協力をお願いする"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_2.
+kg:op_77 prop:content "コロナとインフルエンザが重なると発熱時の見分けが問題になると認識する"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_2.
+kg:op_78 prop:content "コロナとインフルエンザ双方への備えとして予防接種も一つの方法だと考える"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "平成30年度から国保の県の一本化によりまして、歳入歳出の中身が若干変わったということがその主な要因"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "その分が県の支出金に切り替わったというふうにご理解いただければと思います"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "特徴的なのはやはり被保険者数がどんどん減っているということが目につく"@ja.
+<< kg:id_6 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "それに比例するような形で国保税、それから一般会計の繰り出しについても減少している"@ja.
+<< kg:id_7 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "それに比例するような形で国保税、それから一般会計の繰り出しについても減少している"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "令和元年度中に3,490万円ほど基金の取崩しをして会計の中に入れさせていただいたということでありまして、会計全体として赤字ではもちろんないわけでございますが、昨年度に比較するとちょっと余裕の幅が小さくなった"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これを平成30年度に一般会計のほうに全てお返しをしたということでありまして...貸し借りが解消されたということで、現在の国保会計は健全な状態であると考えている"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "昨年度に比較するとちょっと余裕の幅が小さくなったなという状況"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "仮に基金が底をついて財源が不足した場合は、県のほうから一時的に借入れをしながらその不足部分を埋めていく方法にならざるを得ない"@ja.
+<< kg:id_12 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "そういった場合にはやはり負担のほうを若干増やさせていただくということも視界に入ってくる"@ja.
+<< kg:id_16 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "保険税の収入は当然被保険者の数と比例して下がってきています"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "保険給付費、こちらのほうがどんどん上がってきているということは、１人当たりにかかる医療費というのは非常にだんだん増えてきている"@ja.
+<< kg:id_12 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今回のような新型コロナみたいに大規模に...発生した場合、会計なんかを急激に圧迫する可能性もありますので、そういう場合にもやっぱり耐えられるような体系にしていただければ"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "これは65歳に到達した１号保険者がここ五、六年ずっと増えているということがまず最大の要因"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "この３年間で介護サービスは確実に増加をしている...現行の介護保険料が見直されまして、負担の増が予想されております"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "現行の介護保険料が見直されまして、負担の増が予想されております"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "この介護保険準備基金残高を財政調整的な背景としまして、大幅な負担増とならないように調整していく必要がある"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "国保もそうなのですけれども、介護ももつのかなというのは非常に不安に思う"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "介護保険の被保険者となられる方についてはどんどん、どんどん右肩上がりで増えていく...それを遅らせる取組というのは非常に大切"@ja.
+<< kg:id_30 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "地域包括支援センターの活動を中心としながら...そういったことを考慮しながら計画の中にも盛り込んでいきたい"@ja.
+<< kg:id_30 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "住民主体による実施団体の立ち上げということで、元気な高齢者が生活支援の担い手となる仕組みづくり"@ja.
+<< kg:id_30 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "高齢者の保健事業と介護予防の一体化、一体的な実施...これまで以上にその方に合った保健指導を行っていく"@ja.
+<< kg:id_30 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "遊佐町の場合はやはり保健師が中心になって、そこをうまくコーディネートしていく体制づくり"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "どうしてもボランティアの方々に依存しなければならない部分...その方に過度に負担になるようなことはやはり避けていかないと"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "介護人材の不足については、各方面からいろいろとお話もいただいているところでありまして、大変な課題"@ja.
+<< kg:id_38 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "介護は大事なのだよということを皆様に分かってもらうための啓発の活動としまして映画の上映"@ja.
+<< kg:id_38 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "子供たちを対象にしまして...子供たちにそういったことを今から学んでいただくという取組"@ja.
+<< kg:id_38 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "そういう人材育成の応援を将来的に町はやっぱり踏み出していかなければならないという時代が来ている"@ja.
+<< kg:id_38 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "日本福祉大学との連携の下に...しっかりと長期的に戦略を持っていくことが必要"@ja.
+<< kg:id_38 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "ヘルパー養成講座というのは既にもう支援はお金として出ている...地元で実践を通してその場でやっぱり自分も働いてみたいな"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "確実に戦後のベビーブーマーが後期高齢者になるということは、圧倒的にマンパワーが足りなくなるということがもう既に想定"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "介護の現場に行けばそれは完全にマンパワーの問題であると思っていますし、有資格者をどのように確保していくかということが大きな課題"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "ないためには自助、共助をどうやって地域と力を合わせて準備するか"@ja.
+<< kg:id_45 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "エプロンサービスとか、いわゆる車の無料の送り迎えとか、地域で大胆に取り組んで切り開いてくれている"@ja.
+<< kg:id_45 prop:effect kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "会計的には決算６億円の2.5以上になっているわけですから、町の持ち出しもそれは当然増えてくる"@ja.
+<< kg:id_45 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "同じ県内で同じ制度で同じサービスを受けたときに負担の公平という形にしていくために...将来的には町村会等で求めていきたい"@ja.
+<< kg:id_52 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "この辺総合的に接続率、それから設置率の向上に努めなければならない状況"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "集落排水につきましては維持管理費に使用料を充当すると、600万円くらいでしょうか、単純にこの維持管理経費が賄えていない"@ja.
+<< kg:id_54 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "未接続の方の事情確認してみますと、高齢者で独り暮らしとか、そのような世帯が多うございます"@ja.
+<< kg:id_54 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "毎年それぞれの地区のほうで...接続率のことにつきまして町のほうからでもご協力をお願いしたい"@ja.
+<< kg:id_54 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "下水道の施設に関しては特化した形で、補助率もかなり高い形で補助を差し上げてございます"@ja.
+<< kg:id_54 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "これ以上の支援制度を差し上げるのは、ちょっとなかなかこれまでつないでいた方々が不公平感を生じかねない"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "まだまだ遊佐には若者向け住宅というのは足りないというふうに言われておりますので、その辺の考え直しも必要"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "公共単価でなかなか高価になってしまう...方針転換させていただきまして、戸建ての民間の活力を活用した"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "戸建てにつきまして200万円までということで、20坪以上、そのような条件をつけさせていただきまして"@ja.
+<< kg:id_64 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "地盤も悪かったということで地盤改良につきましても一定の補助金という形で交付"@ja.
+<< kg:id_67 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "お金がかかるものだなというふうには思います"@ja.
+<< kg:id_69 prop:cause kg:id_70 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "特産品の岩ガキについてもなかなか流砂の浸食によりまして藻場が、岩場が少なくなっている"@ja.
+<< kg:id_69 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "特産品の岩ガキにマイクロバブル洗浄等を行うことで安全性の高い付加価値をつけながら販売していく"@ja.
+<< kg:id_69 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "岩ガキの着床する魚礁の清掃でありますとか...岩ガキが成長できるように環境整備をしている"@ja.
+<< kg:id_69 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "アワビの養殖はしておりますので、そちらの沈殿槽を利用しながら岩ガキの種苗を導入して、一応どのように成長するか実験"@ja.
+<< kg:id_69 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "県の事業を利用しながら、滝ノ浦から女鹿のほうにかけまして藻場の造成でありますとか岩ガキ用の増殖礁の設置を行う予定"@ja.
+<< kg:id_75 prop:cause kg:id_76 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "漁業関係については担い手の方も不足をしているという状況"@ja.
+<< kg:id_77 prop:cause kg:id_78 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "世界的に海の資源そのものが今不足しているという状況...酒田飽海管内の年間の漁獲量につきましても年々減少"@ja.
+<< kg:id_79 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "ヒラメでありますとかクロダイ、トラフグ等、これから需要が増すであろうと思われるものについては放流事業等を行いながら"@ja.
+<< kg:id_81 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "着床式の風力発電になりますので、その根本の辺り...魚礁として利用して、さらに水産資源として利用できないものかと期待"@ja.
+<< kg:id_81 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "地域振興策として事業者が発電施設を設置した場合、そちらに地域貢献として基金となるようなものを設置したい...それを漁業振興策のようなものに使うようにできないかというような検討"@ja.
+<< kg:id_84 prop:effect kg:id_85 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "現在のところ、まだ６月頃から始まって、利用者的には数件という形になっておりますので、今後の周知の方法についても我々のほうで再度検討"@ja.
+<< kg:id_84 prop:contermeasure kg:id_86 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "今後の周知の方法についても我々のほうで再度検討しなければいけない"@ja.
+<< kg:id_84 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "前のレストランのところについてもスペースがちょっと広過ぎるということで、区割りをしていただければ入りたい"@ja.
+<< kg:id_84 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "駐車場を利用しながら開催するとか、いろいろやり方はあるかと思いますので、それらも含めて今後検討"@ja.
+<< kg:id_89 prop:cause kg:id_90 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "一番困るのが水利権がないということで、なかなか苦労しているようです"@ja.
+<< kg:id_91 prop:cause kg:id_92 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "熊だけでなくイノシシや、それからニホンジカの生息もこの辺で確認をされている...以前から比べれば大分頭数も増加"@ja.
+<< kg:id_91 prop:effect kg:id_93 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "イノシシは、農地を荒らして作物に臭いをつけてしまうということで、臭いがついた稲なんかはもう売り物にならない"@ja.
+<< kg:id_91 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "情報をいただいたときこちらのほうで地域に出向きまして、看板等の設置、それから必要に応じてわなを仕掛けて捕獲"@ja.
+<< kg:id_91 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "猟友会のほうへの支援でありますとか、あとは狩猟免許取得に係る支援も行っております"@ja.
+<< kg:id_91 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "予防策としては電気柵の設置、それらについても県の補助事業を利用しながら町のほうでも支援"@ja.
+<< kg:id_97 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "現状の取組においては、まず当分は派遣を継続する"@ja.
+<< kg:id_97 prop:contermeasure kg:id_99 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "今年度も幸いジオパーク活動に従事する協力隊員を採用することができまして、10月から来ていただく予定"@ja.
+<< kg:id_100 prop:cause kg:id_101 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "密を避けながら、しかも熱中症対策もしなければならないということで、運営側には本当に大変な年だった"@ja.
+<< kg:id_102 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "感染者を出してはいけないということをまず第一に、感染対策としまして換気でありますとか、あと手洗い、消毒、検温もきちっと実施"@ja.
+<< kg:id_102 prop:contermeasure kg:id_104 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "教育支援員の協力を得て、遊佐中のランチルームで学習活動をしていただいた...これは非常にいい取組だった"@ja.
+<< kg:id_105 prop:cause kg:id_106 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "あそぶ塾に関しては、今の建物についてもかなり老朽化をしているということはご指摘を受けている"@ja.
+<< kg:id_105 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "あそぶ塾さん側の希望としては、あそぶ塾として独立した新設の建物があれば、これが希望"@ja.
+<< kg:id_105 prop:contermeasure kg:id_108 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "クラブ側のほうでこうしたいということで判断されれば、それに対する町の支援はこういうことがありますよということをお伝えをしながら、またさらに協議"@ja.
+<< kg:id_109 prop:contermeasure kg:id_110 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "町としては、このインフルエンザワクチン接種の関係で、10月の１日から接種を希望される方については受けられますよということを広報等でお知らせ"@ja.
+<< kg:id_109 prop:effect kg:id_111 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "なかなかそういったことで発熱をするとインフルエンザなのか、あるいはコロナなのかということが非常に問題"@ja.
+<< kg:id_109 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "やはりコロナも含めて、インフルエンザも含めて予防するということが大切...予防接種を受けていただくということも一つの方法"@ja.
+}

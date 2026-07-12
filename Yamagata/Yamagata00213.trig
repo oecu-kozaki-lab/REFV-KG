@@ -1,0 +1,400 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00213> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "インクルーシブ教育システムの構築"@ja.
+kg:id_1 rdf:type cls:c_12326.
+cls:c_12326 rdfs:label "教育制度"@ja.
+kg:id_2 rdfs:label "日本でインクルーシブ教育システムがまだ確立されていないこと"@ja.
+kg:id_2 rdf:type cls:c_12327.
+cls:c_12327 rdfs:label "制度未整備"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "障害のある子供の分離教育"@ja.
+kg:id_3 rdf:type cls:c_12328.
+cls:c_12328 rdfs:label "分離教育"@ja.
+kg:id_4 rdfs:label "特別支援教育制度が分離教育と位置づけられていること"@ja.
+kg:id_4 rdf:type cls:c_12326.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "障害のある子供の通常学校での受入れ否定"@ja.
+kg:id_5 rdf:type cls:c_12329.
+cls:c_12329 rdfs:label "受入れ否定"@ja.
+kg:id_6 rdfs:label "障害のある子供を受け入れるには事実上準備不足であると受け取られていること"@ja.
+kg:id_6 rdf:type cls:c_12330.
+cls:c_12330 rdfs:label "準備不足"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "特別支援教育の推進"@ja.
+kg:id_7 rdf:type cls:c_3879.
+cls:c_3879 rdfs:label "教育推進"@ja.
+kg:id_8 rdfs:label "平成19年4月の学校教育法改正"@ja.
+kg:id_8 rdf:type cls:c_1031.
+cls:c_1031 rdfs:label "法改正"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "発達障害を含め通常の学級でも支援が義務づけられたこと"@ja.
+kg:id_9 rdf:type cls:c_12331.
+cls:c_12331 rdfs:label "支援義務"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "特別支援教育"@ja.
+kg:id_10 rdf:type cls:c_1375.
+cls:c_1375 rdfs:label "特別支援教育"@ja.
+kg:id_11 rdfs:label "子供の生活や学習上の困難の改善または克服"@ja.
+kg:id_11 rdf:type cls:c_12332.
+cls:c_12332 rdfs:label "困難改善"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "交流及び共同学習"@ja.
+kg:id_12 rdf:type cls:c_12333.
+cls:c_12333 rdfs:label "共同学習"@ja.
+kg:id_13 rdfs:label "両者にとって経験を深め社会性を養い豊かな人間性を育むこと"@ja.
+kg:id_13 rdf:type cls:c_6374.
+cls:c_6374 rdfs:label "社会性育成"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "お互いを尊重し合う大切さを学ぶ機会となること"@ja.
+kg:id_14 rdf:type cls:c_12334.
+cls:c_12334 rdfs:label "相互尊重"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "インクルーシブ教育システム"@ja.
+kg:id_15 rdf:type cls:c_12326.
+kg:id_16 rdfs:label "専門家チームによる巡回相談"@ja.
+kg:id_16 rdf:type cls:c_12335.
+cls:c_12335 rdfs:label "巡回相談"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "必要に応じた個別の知能検査や医療受診への接続"@ja.
+kg:id_17 rdf:type cls:c_1052.
+cls:c_1052 rdfs:label "専門支援"@ja.
+kg:id_15 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "特別支援教育に関わる校内委員会の機能強化"@ja.
+kg:id_18 rdf:type cls:c_12336.
+cls:c_12336 rdfs:label "校内体制"@ja.
+kg:id_15 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "個別の教育支援計画の作成"@ja.
+kg:id_19 rdf:type cls:c_7982.
+cls:c_7982 rdfs:label "支援計画"@ja.
+kg:id_15 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "個別の指導計画の作成"@ja.
+kg:id_20 rdf:type cls:c_12337.
+cls:c_12337 rdfs:label "指導計画"@ja.
+kg:id_15 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "通常の学級在籍で発達障害等の疑いがある児童生徒への計画作成"@ja.
+kg:id_21 rdf:type cls:c_7982.
+kg:id_15 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "特別支援教育コーディネーターによる連絡調整体制の充実"@ja.
+kg:id_22 rdf:type cls:c_25.
+cls:c_25 rdfs:label "連絡調整"@ja.
+kg:id_15 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "特別支援教育コーディネーター連絡会の開催"@ja.
+kg:id_23 rdf:type cls:c_9128.
+cls:c_9128 rdfs:label "連絡会"@ja.
+kg:id_15 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "通常の学級 通級による指導 特別支援学級 特別支援学校という学びの場の提供"@ja.
+kg:id_24 rdf:type cls:c_4635.
+cls:c_4635 rdfs:label "学習機会"@ja.
+kg:id_15 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "合理的配慮の提供や交流及び共同学習の実践"@ja.
+kg:id_25 rdf:type cls:c_12338.
+cls:c_12338 rdfs:label "合理的配慮"@ja.
+kg:id_15 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "学級活動 学校行事 給食 清掃等で可能な限り共に行うこと"@ja.
+kg:id_26 rdf:type cls:c_5029.
+cls:c_5029 rdfs:label "共同活動"@ja.
+kg:id_15 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "音楽や体育等の共同実施を保護者と相談し年間指導計画に位置づけて実施"@ja.
+kg:id_27 rdf:type cls:c_5029.
+kg:id_15 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "特別支援教育の質の向上"@ja.
+kg:id_28 rdf:type cls:c_12339.
+cls:c_12339 rdfs:label "質向上"@ja.
+kg:id_29 rdfs:label "毎年8月の特別支援教育講座の開講"@ja.
+kg:id_29 rdf:type cls:c_2666.
+cls:c_2666 rdfs:label "教員研修"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "全教員への個別の教育支援計画 個別の指導計画 発達障害理解と支援方法の受講"@ja.
+kg:id_30 rdf:type cls:c_2666.
+kg:id_28 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "特別支援学級担任への自立活動の具体例と指導方法の受講"@ja.
+kg:id_31 rdf:type cls:c_2666.
+kg:id_28 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "特別支援学級の教育課程に関する管理職向け講座の開講"@ja.
+kg:id_32 rdf:type cls:c_2666.
+kg:id_28 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "鶴岡市の特別支援教育"@ja.
+kg:id_33 rdf:type cls:c_1375.
+kg:id_34 rdfs:label "保護者や子供に寄り添った就学選択ができること"@ja.
+kg:id_34 rdf:type cls:c_12340.
+cls:c_12340 rdfs:label "就学選択"@ja.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "特別支援教育推進計画の構築検討"@ja.
+kg:id_35 rdf:type cls:c_3314.
+cls:c_3314 rdfs:label "推進計画"@ja.
+kg:id_33 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "音楽での合唱 合奏と十分な事前練習 合理的配慮"@ja.
+kg:id_36 rdf:type cls:c_12338.
+kg:id_12 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "修学旅行等で通常学級の子供たちが一緒に考えながら活動すること"@ja.
+kg:id_37 rdf:type cls:c_5029.
+kg:id_12 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "特別支援教育の専門性向上"@ja.
+kg:id_38 rdf:type cls:c_6004.
+cls:c_6004 rdfs:label "専門性向上"@ja.
+kg:id_39 rdfs:label "特別支援免許を持たない教員が担任していること"@ja.
+kg:id_39 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "県教委による特別支援学級担任枠での採用"@ja.
+kg:id_40 rdf:type cls:c_12341.
+cls:c_12341 rdfs:label "教員採用"@ja.
+kg:id_38 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "県の特別支援担任者研修の活用"@ja.
+kg:id_41 rdf:type cls:c_2666.
+kg:id_38 prop:contermeasure kg:id_41.
+kg:st_1 rdfs:label "佐藤博幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "特別支援教育の振興をさらに推進すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "分離ではなく共生に向かう取組が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "現状認識を踏まえ特別支援教育の改善が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "教育長 布川敦"@ja.
+kg:st_2 rdfs:type cls:st_51.
+cls:st_51 rdfs:label "教育関係者"@ja.
+kg:op_4 prop:content "通常学級を含めた支援体制整備を進めている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "教育的ニーズに応じた適切な指導と支援が重要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "交流だけでなく相互理解を深める取組が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "学校行事や教科学習で共同活動を充実させたい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "各校を訪問し早期発見早期対応の助言を行う"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "必要に応じて専門的支援へつなげている"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "校内組織全体で支援する体制を整えている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "家庭地域医療福祉と連携する長期的支援に活用している"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "一人一人の目標内容配慮事項を明確にしている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "通常学級の児童生徒にも教育的ニーズに応じた支援を行う"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "校内外の関係者と保護者の連絡調整機能を強化する必要がある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "役割確認や他校との情報交換の場として年2回開催している"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "障害の状態に応じ十分な教育を受けられるよう多様な学びの場を整えている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "モデル事業で蓄積した実践事例を各校に普及している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "可能な限り同じ場で学ぶことを実践している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "教科学習でも共同実施可能なものを計画的に進めている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "教職員の役割に応じた研修機会を提供している"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "全ての教員が必要な知識技能を身につけるようにしている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "障害による困難の改善克服のための専門性向上を図っている"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "学校全体の専門性確保に管理職の理解が不可欠"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "保護者の同意を得ながら進路や支援形態を決めている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "既存の取組を肉づけした推進計画の策定を検討すべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "取組をまとめた冊子を基に構築することは十分可能"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "特別支援学級の子供が楽しく取り組めるよう配慮している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "通常学級の子供も共に充実した活動を考える機会になっている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "人材不足があり研修と採用改善で対応していく"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "免許を持った担任が今後増えてくると考えている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "初めて担任する教員が困らないよう1年間の研修を受けている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "日本はインクルーシブ教育システムが確立されているとはまだいえず、まだまだ課題も多いと言えます"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "障害者権利委員会による日本の第一次審査では、特別支援教育制度を分離教育と位置づけました"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "障害のある子供を受け入れるには事実上準備不足であると受け取られていることにより、障害のある子供の通常の学校での受入れを否定しているという指摘"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "平成19年４月に学校教育法が改正されまして、それまでの特殊教育から現在の特別支援教育へと制度改正が行われました"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "従来の特殊教育の対象障害に加え、発達障害も含めて、特別支援学校や特別支援学級に限らず、通常の学級においても障害のある児童・生徒の支援が義務づけられました"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "子供一人一人の教育的ニーズを把握し、その持てる力を高め、生活や学習上の困難を改善、または克服するため、適切な指導及び必要な支援を行うもの"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "障害のある児童・生徒と障害のない児童・生徒が触れ合い、共に活動する交流及び共同学習は、両者にとって経験を深め、社会性を養い、豊かな人間性を育む"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "お互いを尊重し合う大切さを学ぶ機会となるなど、大きな意義を有するものであります"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "１つ目は、専門家チームによる巡回相談でございます。大学教授、教育相談員、指導主事が各校を訪問し、先生方の日頃の対応について、また子供たちの障害の早期発見、早期対応のための助言などを行い、支援をしております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "さらに、必要に応じて個別の知能検査や医療受診につなげております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "２つ目は、特別支援教育に関わる校内委員会の機能の強化でございます"@ja.
+<< kg:id_15 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "個別の教育支援計画は、障害のある児童・生徒について、家庭、地域及び医療や福祉等の関係機関と連携を図り、長期的な視点で教育的支援を行うために作成する計画です"@ja.
+<< kg:id_15 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "個別の指導計画は、障害のある児童・生徒一人一人について指導の目標や内容、配慮事項などを示した計画でございます"@ja.
+<< kg:id_15 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "通常の学級に在籍し、専門家チームにより発達障害等の疑いがあると判断された児童・生徒につきましても計画を作成し、児童・生徒一人一人の教育的ニーズに応じた支援につなげております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "各校で任命された特別支援教育コーディネーターが校内の教職員や校外の専門家、関係機関、保護者との連絡調整に当たる仕組みもさらに充実させる必要がございます"@ja.
+<< kg:id_15 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "教育委員会といたしましては、特別支援教育コーディネーターが校内で特別支援教育を推進していくために具体的な役割や業務内容を確認したり、他校と情報交換したりする場である連絡会を年に２回開催しております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "障害の状態に応じ十分な教育を受けられるよう、通常の学級、通級による指導、特別支援学級、特別支援学校という学びの場を提供しております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "そこで蓄積された実践事例を各校に普及し、合理的配慮の提供や交流及び共同学習の実践に生かしております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "具体的には、子供の障害の特性や個々の学習の状況等に応じ、学級活動や学校行事、給食、清掃等において可能な限り共に行っております"@ja.
+<< kg:id_15 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "教科学習についても、児童・生徒の障害の状態を踏まえ、音楽や体育等、共同で実施することが可能なものにつきましては、保護者と相談しながら年間指導計画等に位置づけて計画的に実施しております"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "教育委員会といたしましては毎年８月に特別支援教育講座を開講し、さきに述べましたそれぞれの役割を担う教職員に必要な内容の研修機会を提供しております"@ja.
+<< kg:id_28 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "個別の教育支援計画、個別の指導計画の作成の仕方、発達障害の理解と支援方法等を全ての教員が受講するようにしております"@ja.
+<< kg:id_28 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "特別支援学級等の教育課程において特別に設けられた指導領域である自立活動の具体例と指導方法について、特別支援学級の担任が受講しております"@ja.
+<< kg:id_28 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "現行の学習指導要領で求められている特別支援学級の教育課程につきましては、特別支援学級の担任はもちろんのこと、管理職に向けても開講しております"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "一人一人の保護者の方に寄り添った、そして子供さんに寄り添った様々な面談をしながら特別支援学校に行かれるか、特別支援学級で学ばれるか、または様々な通級をしたりするか、もしくは通常学級でも十分対応できるかということで保護者の同意を得ながらやっております"@ja.
+<< kg:id_33 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "これらをもっと肉づけした形で推進計画をつくったらどうかなと思っているんですが この鶴岡市の特別支援教育の推進計画の策定を検討するお考えがあるかどうか 今年度も特別支援教育の推進についてということで令和４年度の取組が実はまとめられております 今 様々議員からお話がありましたけれども 本市の取組につきまして全てまとめている冊子がありますので 例えばそれを基に構築することは十分可能かと思います"@ja.
+<< kg:id_12 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "具体的には、音楽での合唱、合奏、それからそれにつきまして十分な事前練習、それから合理的な配慮、特別支援学級の子供たちが慣れない環境の中で同学年の友達と一緒に楽しく活動に取り組めるようにしております"@ja.
+<< kg:id_12 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "修学旅行などでも一緒に活動する場合があるわけですけれども、そういう場合は通常学級の子供たちがやはりどうすればその特別支援学級の子供さんと一緒に楽しい、そして充実した修学旅行になるかということを一緒になって考えながら活動していく"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "全ての教職員が特別支援の免許を持っているわけではございませんので、中には特別支援の免許がなくて担任をしているという学年もございます"@ja.
+<< kg:id_38 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "県教委も採用枠を今度変えまして、特別支援学級担任という枠での免許を持った方の採用ということを取り組み始めました"@ja.
+<< kg:id_38 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "特別支援学級の担任を初めてするというような先生方につきましては、県のほうで特別支援担任者研修というのを１年間やっております"@ja.
+}

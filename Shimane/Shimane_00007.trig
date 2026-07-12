@@ -1,0 +1,178 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00007> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電"@ja.
+kg:id_1 rdf:type cls:c_567.
+cls:c_567 rdfs:label "発電施設"@ja.
+kg:id_2 rdfs:label "比婆山から日向山の景観への影響"@ja.
+kg:id_2 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "御神陵地への騒音の到達"@ja.
+kg:id_3 rdf:type cls:c_14126.
+cls:c_14126 rdfs:label "騒音到達"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "御神陵地への低周波の到達"@ja.
+kg:id_4 rdf:type cls:c_14127.
+cls:c_14127 rdfs:label "低周波到達"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "環境省"@ja.
+kg:id_5 rdf:type cls:c_891.
+cls:c_891 rdfs:label "行政機関"@ja.
+kg:id_6 rdfs:label "被害者の救済をしない"@ja.
+kg:id_6 rdf:type cls:c_14128.
+cls:c_14128 rdfs:label "被害者救済"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "法整備"@ja.
+kg:id_7 rdf:type cls:c_2695.
+cls:c_2695 rdfs:label "制度整備"@ja.
+kg:id_8 rdfs:label "再エネ議連の規制緩和圧力"@ja.
+kg:id_8 rdf:type cls:c_14129.
+cls:c_14129 rdfs:label "規制緩和圧力"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "エネ庁への圧力"@ja.
+kg:id_9 rdf:type cls:c_14130.
+cls:c_14130 rdfs:label "政策圧力"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "風力発電計画"@ja.
+kg:id_10 rdf:type cls:c_12240.
+cls:c_12240 rdfs:label "開発計画"@ja.
+kg:id_11 rdfs:label "賛成派と反対派の軋轢"@ja.
+kg:id_11 rdf:type cls:c_14131.
+cls:c_14131 rdfs:label "地域対立"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "東京からやってきた会社による地権者や土建者への大金話"@ja.
+kg:id_12 rdf:type cls:c_14132.
+cls:c_14132 rdfs:label "利益誘導"@ja.
+kg:id_10 prop:cause kg:id_12.
+kg:id_13 rdfs:label "地域の混乱"@ja.
+kg:id_13 rdf:type cls:c_14133.
+cls:c_14133 rdfs:label "地域混乱"@ja.
+kg:id_10 prop:effect kg:id_13.
+kg:id_14 rdfs:label "先に地域との合意を済ませてから具体的な場所やお金の話をする"@ja.
+kg:id_14 rdf:type cls:c_14134.
+cls:c_14134 rdfs:label "地域合意"@ja.
+kg:id_10 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "遮音カーテンを山に設置しない"@ja.
+kg:id_15 rdf:type cls:c_14135.
+cls:c_14135 rdfs:label "遮音設備"@ja.
+kg:id_10 prop:contermeasure kg:id_15.
+kg:st_1 rdfs:label "筆者"@ja.
+kg:st_1 rdfs:type cls:st_172.
+cls:st_172 rdfs:label "記述者"@ja.
+kg:op_1 prop:content "景観が気になるかは個人差があるが近くに風車が並ぶ"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "鎮魂の御神陵地なので騒音は望ましくない"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "低周波はここへ届くと懸念している"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "フィンランド環境保険協会"@ja.
+kg:st_2 rdfs:type cls:st_70.
+cls:st_70 rdfs:label "団体"@ja.
+kg:op_4 prop:content "低周波は何十キロ先までも届く"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "因果関係を認めず被害者の声に耳を塞いでいると批判している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "再エネビジネス促進のための圧力で法整備は難しいとみている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "エネ庁への圧力も法整備を難しくしているとみている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "計画が具体化したことで地域が分断されるとみている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "会社が大金話を持ち掛けたことが地域対立の背景にあるとみている"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "環境アセスがかえって地域に混乱を招いていると感じている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "具体的な場所や金額の話の前に地域合意を取るべきだとしている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "遮音カーテンは景観を損ねるので望ましくないとしている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "あの尾根沿いに風車が並び建つことになります。こうして見ると近い。山頂付近は木々が茂っていますし、参道の途中で木々の切れ目からは上写真のように見えます。景観が気になるならないは個人差があると思います。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "騒音は4000kw級なら届きそうです。鎮魂の御神陵地ですので騒音はよろしくないと思います。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "また、低周波もここへ届きます。風力発電の導入が日本よりも進んでいる欧米では風力タービンの低周波の研究も進んでいます。低周波は何十キロ先までも届くことが今ではわかっているのです。（フィンランド環境保険協会 https://syte.fi/）"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "残念ながら日本は驚くほどに遅れていて、環境省は因果関係は認められないとし、被害者の声に耳を塞ぎ救済することはありません。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "環境省に再エネ議連が再エネビジネス促進のため、規制緩和の圧力をかけているのをニュースでも見ました。エネ庁に圧かけてますし、なかなか法整備は難しいでしょう。"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "環境省に再エネ議連が再エネビジネス促進のため、規制緩和の圧力をかけているのをニュースでも見ました。エネ庁に圧かけてますし、なかなか法整備は難しいでしょう。"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "そこに突然、東京からやってきた会社が、地権者、土建者たちに大金話を持ち掛け、環境配慮書を公表する。そこまで話が具体的になってしまっては当然、賛成派と反対派に分かれた軋轢が産み落とされる。"@ja.
+<< kg:id_10 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "そこに突然、東京からやってきた会社が、地権者、土建者たちに大金話を持ち掛け、環境配慮書を公表する。"@ja.
+<< kg:id_10 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "環境アセスが、かえって地域に混乱を招いている気がしてなりません。"@ja.
+<< kg:id_10 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "先に地域との合意を済ませてから具体的な場所やお金の話をすべきではないでしょうか？"@ja.
+<< kg:id_10 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "遮音カーテンを山に設置してもらっては余計に景観がよろしくないので、四六時中の騒音は神様にはご不憫かもしれません。"@ja.
+}

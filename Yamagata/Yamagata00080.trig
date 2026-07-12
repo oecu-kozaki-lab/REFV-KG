@@ -1,0 +1,622 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00080> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市の様々な課題"@ja.
+kg:id_1 rdf:type cls:c_1358.
+cls:c_1358 rdfs:label "地域課題"@ja.
+kg:id_2 rdfs:label "急激な人口減少"@ja.
+kg:id_2 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "人口減少"@ja.
+kg:id_3 rdf:type cls:c_705.
+kg:id_4 rdfs:label "あらゆる分野における担い手不足"@ja.
+kg:id_4 rdf:type cls:c_629.
+cls:c_629 rdfs:label "担い手不足"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "空き家の増加"@ja.
+kg:id_5 rdf:type cls:c_2556.
+cls:c_2556 rdfs:label "空き家増加"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "買物弱者の課題"@ja.
+kg:id_6 rdf:type cls:c_3992.
+cls:c_3992 rdfs:label "生活課題"@ja.
+kg:id_3 prop:effect kg:id_6.
+kg:id_7 rdfs:label "法人立保育所等の経営難"@ja.
+kg:id_7 rdf:type cls:c_4354.
+cls:c_4354 rdfs:label "経営難"@ja.
+kg:id_3 prop:effect kg:id_7.
+kg:id_8 rdfs:label "学校の統廃合"@ja.
+kg:id_8 rdf:type cls:c_4355.
+cls:c_4355 rdfs:label "学校統合"@ja.
+kg:id_3 prop:effect kg:id_8.
+kg:id_9 rdfs:label "担い手不足"@ja.
+kg:id_9 rdf:type cls:c_629.
+kg:id_10 rdfs:label "生産年齢人口の大幅な減少"@ja.
+kg:id_10 rdf:type cls:c_1430.
+cls:c_1430 rdfs:label "生産年齢人口減少"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "2040年問題の前倒し"@ja.
+kg:id_11 rdf:type cls:c_4356.
+cls:c_4356 rdfs:label "将来問題"@ja.
+kg:id_12 rdfs:label "生産年齢人口と高齢者人口の割合が1.5対1を超えていること"@ja.
+kg:id_12 rdf:type cls:c_4357.
+cls:c_4357 rdfs:label "人口構成の偏り"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "若い人が都会に出ていくこと"@ja.
+kg:id_13 rdf:type cls:c_1876.
+cls:c_1876 rdfs:label "若者流出"@ja.
+kg:id_3 prop:cause kg:id_13.
+kg:id_14 rdfs:label "若い女性の結婚の減少"@ja.
+kg:id_14 rdf:type cls:c_4358.
+cls:c_4358 rdfs:label "結婚減少"@ja.
+kg:id_3 prop:cause kg:id_14.
+kg:id_15 rdfs:label "その地域で生まれる子どもの数の減少"@ja.
+kg:id_15 rdf:type cls:c_1157.
+cls:c_1157 rdfs:label "出生減少"@ja.
+kg:id_3 prop:cause kg:id_15.
+kg:id_16 rdfs:label "若い女性の都会への流出"@ja.
+kg:id_16 rdf:type cls:c_1878.
+cls:c_1878 rdfs:label "女性流出"@ja.
+kg:id_17 rdfs:label "やりがいを持って働ける仕事が地方都市で見つけにくいこと"@ja.
+kg:id_17 rdf:type cls:c_4359.
+cls:c_4359 rdfs:label "就業機会不足"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "所得の高い仕事を求めていること"@ja.
+kg:id_18 rdf:type cls:c_4360.
+cls:c_4360 rdfs:label "高所得志向"@ja.
+kg:id_16 prop:cause kg:id_18.
+kg:id_19 rdfs:label "伝統的な性別役割分担意識への嫌悪"@ja.
+kg:id_19 rdf:type cls:c_4361.
+cls:c_4361 rdfs:label "性別役割意識"@ja.
+kg:id_16 prop:cause kg:id_19.
+kg:id_20 rdfs:label "女性も男性も結婚して子どもをもうけるものだという無意識の先入観"@ja.
+kg:id_20 rdf:type cls:c_4362.
+cls:c_4362 rdfs:label "性別先入観"@ja.
+kg:id_16 prop:cause kg:id_20.
+kg:id_21 rdfs:label "日本一女性が働きやすいまちになること"@ja.
+kg:id_21 rdf:type cls:c_1254.
+cls:c_1254 rdfs:label "就労環境改善"@ja.
+kg:id_3 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "産業を振興し若い人が就きたい仕事を創出すること"@ja.
+kg:id_22 rdf:type cls:c_1917.
+cls:c_1917 rdfs:label "産業振興"@ja.
+kg:id_3 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "働きたい市民が働ける環境整備"@ja.
+kg:id_23 rdf:type cls:c_1520.
+cls:c_1520 rdfs:label "就労環境整備"@ja.
+kg:id_3 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "デジタル変革を進めること"@ja.
+kg:id_24 rdf:type cls:c_2581.
+cls:c_2581 rdfs:label "デジタル変革"@ja.
+kg:id_3 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "子育て教育医療防災など生活環境を整えること"@ja.
+kg:id_25 rdf:type cls:c_4363.
+cls:c_4363 rdfs:label "生活環境整備"@ja.
+kg:id_3 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "行政内部の態勢や環境を整えること"@ja.
+kg:id_26 rdf:type cls:c_4364.
+cls:c_4364 rdfs:label "行政体制整備"@ja.
+kg:id_3 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "デジタル関連企業の集積"@ja.
+kg:id_27 rdf:type cls:c_4365.
+cls:c_4365 rdfs:label "企業集積"@ja.
+kg:id_3 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "再生可能エネルギー関連企業の集積"@ja.
+kg:id_28 rdf:type cls:c_4365.
+kg:id_3 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "競争力のある産業の集積"@ja.
+kg:id_29 rdf:type cls:c_1928.
+cls:c_1928 rdfs:label "産業集積"@ja.
+kg:id_30 rdfs:label "インフラ整備が他地域より遅れていること"@ja.
+kg:id_30 rdf:type cls:c_4366.
+cls:c_4366 rdfs:label "インフラ整備"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "高規格道路網の整備促進"@ja.
+kg:id_31 rdf:type cls:c_1485.
+cls:c_1485 rdfs:label "道路整備"@ja.
+kg:id_3 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "酒田港の基地港湾指定に向けた取組"@ja.
+kg:id_32 rdf:type cls:c_1394.
+cls:c_1394 rdfs:label "港湾機能強化"@ja.
+kg:id_3 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "観光と移出輸出の促進"@ja.
+kg:id_33 rdf:type cls:c_2008.
+cls:c_2008 rdfs:label "需要拡大"@ja.
+kg:id_3 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "東北公益文科大学の公立化"@ja.
+kg:id_34 rdf:type cls:c_4367.
+cls:c_4367 rdfs:label "大学運営安定"@ja.
+kg:id_3 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "働きたい市民が働けないこと"@ja.
+kg:id_35 rdf:type cls:c_2089.
+cls:c_2089 rdfs:label "就労困難"@ja.
+kg:id_36 rdfs:label "仕事と家事育児介護等が両立する環境の不足"@ja.
+kg:id_36 rdf:type cls:c_4368.
+cls:c_4368 rdfs:label "両立環境不足"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "学童保育所の待機児童"@ja.
+kg:id_37 rdf:type cls:c_4369.
+cls:c_4369 rdfs:label "待機児童"@ja.
+kg:id_38 rdfs:label "その解消に取り組むこと"@ja.
+kg:id_38 rdf:type cls:c_4370.
+cls:c_4370 rdfs:label "待機児童解消"@ja.
+kg:id_37 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "障がい児福祉サービスの不足"@ja.
+kg:id_39 rdf:type cls:c_4371.
+cls:c_4371 rdfs:label "福祉サービス不足"@ja.
+kg:id_40 rdfs:label "酒田市児童発達支援センターはまなし学園の機能強化"@ja.
+kg:id_40 rdf:type cls:c_4372.
+cls:c_4372 rdfs:label "支援機能強化"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "家庭内や地域における男女平等意識の啓発"@ja.
+kg:id_41 rdf:type cls:c_4373.
+cls:c_4373 rdfs:label "男女平等啓発"@ja.
+kg:id_16 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "企業経営者の意識啓発と国の各種制度の周知"@ja.
+kg:id_42 rdf:type cls:c_4374.
+cls:c_4374 rdfs:label "職場意識啓発"@ja.
+kg:id_16 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "社会の維持の困難"@ja.
+kg:id_43 rdf:type cls:c_4375.
+cls:c_4375 rdfs:label "社会維持困難"@ja.
+kg:id_44 rdfs:label "生産年齢人口の減少"@ja.
+kg:id_44 rdf:type cls:c_1430.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "高齢者の雇用就業環境の整備"@ja.
+kg:id_45 rdf:type cls:c_4376.
+cls:c_4376 rdfs:label "高齢者就業支援"@ja.
+kg:id_3 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "障がい者の就労機会拡大"@ja.
+kg:id_46 rdf:type cls:c_4377.
+cls:c_4377 rdfs:label "障がい者就労支援"@ja.
+kg:id_3 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "人手不足の深刻化"@ja.
+kg:id_47 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_48 rdfs:label "デジタル変革のさらなる推進"@ja.
+kg:id_48 rdf:type cls:c_2581.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "空き家の除却支援の強化"@ja.
+kg:id_49 rdf:type cls:c_4378.
+cls:c_4378 rdfs:label "除却支援"@ja.
+kg:id_5 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "庁内プロジェクトチームの立ち上げ"@ja.
+kg:id_50 rdf:type cls:c_4379.
+cls:c_4379 rdfs:label "庁内連携"@ja.
+kg:id_6 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "民間企業とも連携し市民が日常の買物にアクセスできる環境整備"@ja.
+kg:id_51 rdf:type cls:c_4380.
+cls:c_4380 rdfs:label "買物環境整備"@ja.
+kg:id_6 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "出生数の減少"@ja.
+kg:id_52 rdf:type cls:c_1157.
+kg:id_53 rdfs:label "出産世代の人口減少"@ja.
+kg:id_53 rdf:type cls:c_4381.
+cls:c_4381 rdfs:label "出産世代減少"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "法人立保育所や認定こども園の経営への影響"@ja.
+kg:id_54 rdf:type cls:c_4382.
+cls:c_4382 rdfs:label "保育施設経営影響"@ja.
+kg:id_55 rdfs:label "保育環境の供給過剰"@ja.
+kg:id_55 rdf:type cls:c_4383.
+cls:c_4383 rdfs:label "供給過剰"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "市立と法人立の役割について市民と考え方を共有し持続可能な保育環境を整えること"@ja.
+kg:id_56 rdf:type cls:c_4384.
+cls:c_4384 rdfs:label "保育環境整備"@ja.
+kg:id_54 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "複式学級の編制"@ja.
+kg:id_57 rdf:type cls:c_4385.
+cls:c_4385 rdfs:label "複式学級"@ja.
+kg:id_58 rdfs:label "少子化"@ja.
+kg:id_58 rdf:type cls:c_4210.
+cls:c_4210 rdfs:label "少子化"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "第四中学校区の教育課題"@ja.
+kg:id_59 rdf:type cls:c_1706.
+cls:c_1706 rdfs:label "教育課題"@ja.
+kg:id_60 rdfs:label "小学校6校と中学校1校を義務教育学校として統合すること"@ja.
+kg:id_60 rdf:type cls:c_4355.
+kg:id_59 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "地域の防災力の低下"@ja.
+kg:id_61 rdf:type cls:c_4386.
+cls:c_4386 rdfs:label "防災力低下"@ja.
+kg:id_62 rdfs:label "人口減少により消防団の団員確保が困難な状況"@ja.
+kg:id_62 rdf:type cls:c_4387.
+cls:c_4387 rdfs:label "団員確保困難"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "市民一人一人と地域と行政の防災力強化"@ja.
+kg:id_63 rdf:type cls:c_4388.
+cls:c_4388 rdfs:label "防災力強化"@ja.
+kg:id_61 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "物価高に起因する課題とは別に多くの課題を生むこと"@ja.
+kg:id_64 rdf:type cls:c_1358.
+kg:id_3 prop:effect kg:id_64.
+kg:id_65 rdfs:label "物価高に起因する課題"@ja.
+kg:id_65 rdf:type cls:c_4389.
+cls:c_4389 rdfs:label "物価高課題"@ja.
+kg:id_66 rdfs:label "必要な支援の実施"@ja.
+kg:id_66 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_65 prop:contermeasure kg:id_66.
+kg:st_1 rdfs:label "矢口明子市長"@ja.
+kg:st_1 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_1 prop:content "人口減少が多様な課題の根本原因だと指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "担い手不足は人口減少の当然の帰結だと述べる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "空き家増加は人口減少に起因する課題と位置づける"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "買物弱者の課題も人口減少と結びつくと説明"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "保育所経営難の背景に人口減少があると説明"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "学校統廃合の背景にも人口減少があると述べる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "生産年齢人口減少が担い手不足を招いていると説明"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "酒田市では2040年問題が既に先行していると認識"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "地方都市の人口減少は若者流出が大きいと分析"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "多くの専門家"@ja.
+kg:st_2 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_10 prop:content "若い女性の結婚減少が人口減少につながると指摘"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "出生数減少が人口減少の直接要因だと指摘"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "女性が働きがいのある仕事を地方で見つけにくいと説明"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "若い女性は所得の高い仕事を求めて都会へ出ると述べる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "性別役割分担意識が女性流出の一因だと分析"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "無意識の先入観が地方離れを生むと述べる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "女性が働きやすいまちづくりが人口減少抑制の唯一の道だと述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "若者の就業機会創出と所得向上を重視"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "女性高齢者障がい者外国籍市民も働ける環境整備が必要と述べる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "人手不足への対応としてデジタル変革を進める考え"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "人口減少下でも安心して暮らせる環境整備を重視"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "人口減少下で市職員が機能する行政体制整備が必要と述べる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "若者に人気で所得水準の高い産業の集積を進める考え"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "地域資源を生かした産業集積で人口減少を緩和したい考え"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "産業集積には遅れたインフラ整備の改善が必須と述べる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "企業誘致や物流拡大のため道路整備を促進する考え"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "洋上風力の進展を踏まえ港湾機能強化を進める考え"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "市外需要を取り込むことが生活維持に必須と述べる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "大学の経営安定と地域存続のため公立化に取り組む考え"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "就労環境整備には家庭責任との両立支援が必要と述べる"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "学童保育の待機児童解消を進める考え"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "障がい児福祉サービス拡充のため機能強化を進める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "男女平等意識の啓発を継続する考え"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "育児介護休暇を取りやすい職場づくりを進める考え"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "社会維持のため高齢者就業環境整備が必要と述べる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "高齢者が生涯現役で活躍できる環境づくりを進める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "障がい者が能力を発揮して働ける環境づくりを進める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "人にしかできない仕事へ人材を振り向けるためDXが必須と述べる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "特に中心市街地の空き家除却を進める方針"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "庁内連携で買物弱者対策に取り組む考え"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "民間連携で買物環境を整える方針"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "出産世代人口減少が出生数減少の要因だと説明"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "保育需要減で供給過剰となり経営影響を懸念"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "市立と法人立の役割整理で持続可能な保育環境を目指す"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "少子化により学校規模の維持が難しくなると説明"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "最適な教育環境のため統合を進める考え"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:op_46 prop:content "人口減少で消防団員確保が難しくなり防災力低下を懸念"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "自助共助公助を強化する方針"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "人口減少起因の課題と物価高起因の課題の双方があると説明"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "物価高の中でも市民が安心して暮らせるよう支援を継続する考え"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "例えば、あらゆる分野における担い手不足、空き家の増加、小売店の閉鎖による、いわゆる買物弱者の課題、法人立保育所等の経営難、学校の統廃合など多くの課題がありますが、それらの根底にある原因は、急激な人口減少です。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "例えば、あらゆる分野における担い手不足、空き家の増加、小売店の閉鎖による、いわゆる買物弱者の課題、法人立保育所等の経営難、学校の統廃合など多くの課題がありますが、それらの根底にある原因は、急激な人口減少です。"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "例えば、あらゆる分野における担い手不足、空き家の増加、小売店の閉鎖による、いわゆる買物弱者の課題、法人立保育所等の経営難、学校の統廃合など多くの課題がありますが、それらの根底にある原因は、急激な人口減少です。"@ja.
+<< kg:id_3 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "例えば、あらゆる分野における担い手不足、空き家の増加、小売店の閉鎖による、いわゆる買物弱者の課題、法人立保育所等の経営難、学校の統廃合など多くの課題がありますが、それらの根底にある原因は、急激な人口減少です。"@ja.
+<< kg:id_3 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "例えば、あらゆる分野における担い手不足、空き家の増加、小売店の閉鎖による、いわゆる買物弱者の課題、法人立保育所等の経営難、学校の統廃合など多くの課題がありますが、それらの根底にある原因は、急激な人口減少です。"@ja.
+<< kg:id_3 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "例えば、あらゆる分野における担い手不足、空き家の増加、小売店の閉鎖による、いわゆる買物弱者の課題、法人立保育所等の経営難、学校の統廃合など多くの課題がありますが、それらの根底にある原因は、急激な人口減少です。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "特に15歳から64歳までの働く年代である、いわゆる生産年齢人口が大幅に減少していることが大きな課題です。43年前の1980年には約８万4,600人いた生産年齢人口が、その20年後の2000年には約７万5,500人となり、20年間で約9,000人の減少でした。それが、2020年には約５万3,700人となり、21世紀に入ってからの20年間では、約２万2,000人の生産年齢人口が減少しております。人口約10万人台のまちで、20年間で約２万2,000人の働く年代の人がいなくなったわけですから、市内のあらゆる分野で担い手不足が言われるのも当然の帰結と言えましょう。"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "酒田市では、既に2020年の国勢調査の時点で生産年齢人口が53.6％、高齢者人口が36.2％と、1.5対１の割合を超えています。つまり、2040年問題が20年前倒しとなっているのが酒田市の現状だと言えます。"@ja.
+<< kg:id_3 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "地方都市における人口減少の原因は、若い人、特に男性よりも女性のほうが多く都会に出ていくことにより地方都市における若い女性の結婚が減り、その結果、その地域で生まれる子どもの数が減っていることであると、多くの専門家から指摘されています。"@ja.
+<< kg:id_3 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地方都市における人口減少の原因は、若い人、特に男性よりも女性のほうが多く都会に出ていくことにより地方都市における若い女性の結婚が減り、その結果、その地域で生まれる子どもの数が減っていることであると、多くの専門家から指摘されています。"@ja.
+<< kg:id_3 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "地方都市における人口減少の原因は、若い人、特に男性よりも女性のほうが多く都会に出ていくことにより地方都市における若い女性の結婚が減り、その結果、その地域で生まれる子どもの数が減っていることであると、多くの専門家から指摘されています。"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "１つは、仕事です。大学などの高等教育機関へ進学する女性が増える中で、そういった女性がやりがいを持って働ける仕事が地方都市では見つけにくいというのが、１つ目の理由です。"@ja.
+<< kg:id_16 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "特に、所得水準の低い地域ほど女性の流出率が高いという調査結果もあります。所得の高い仕事を求めて、若い女性は都会へ出て行っているのです。"@ja.
+<< kg:id_16 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "２つ目の理由は、伝統的な性別役割分担意識が嫌だという点です。"@ja.
+<< kg:id_16 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "地方都市では、例えば、女性も男性も結婚して子どもをもうけるものだというような無意識の先入観（アンコンシャス・バイアス）が感じられることがあります。しかし、都会ではそういった先入観に縛られずに自らの望む生き方を自由に選択できるため、女性は都会へ出て行くというのです。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "日本一女性が働きやすいまちになることが酒田市の女性が都会へ出て行くのを食い止め、人口減少を抑制する唯一の道であると思い、宣言したものでございました。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "第１に、人口減少を緩やかにするために産業を振興し、若い人が就きたいと思うような仕事を創出し、市民の所得を向上させていくことです。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "第２に、生産年齢人口の減少を補うために、男性だけではなく女性も、そして、65歳以上の方も、障がいのある方も、外国籍の方も、仕事を持ちたい、働きたいと考える市民が働くことのできる環境を整備するとともに、機械にできる仕事は機械に任せ、人間は人間にしかできない仕事に専念できるようデジタル変革を進めることです。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "第２に、生産年齢人口の減少を補うために、男性だけではなく女性も、そして、65歳以上の方も、障がいのある方も、外国籍の方も、仕事を持ちたい、働きたいと考える市民が働くことのできる環境を整備するとともに、機械にできる仕事は機械に任せ、人間は人間にしかできない仕事に専念できるようデジタル変革を進めることです。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "第３に、これが一番の目的ですが、人口がたとえ減ったとしても豊かに安心して暮らせるように、子育て、教育、医療、防災など、あらゆる面から生活環境を整えていくことです。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "第４に、人口減少下においても市民の幸せを目指して市の職員が働けるよう、あらゆる角度から行政内部の態勢や環境を整えることです。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "人口減少を緩やかにするための産業集積の柱として、２つを考えております。１つ目は、デジタル関連企業の集積です。デジタル関連企業は若者に人気があり、所得水準も高く、都会の仕事を酒田市ですることもできます。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "産業集積の柱の２つ目は、再生可能エネルギー関連企業の集積です。"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "競争力のある産業の集積を図るには、他地域より遅れているインフラ整備を進めることが必須です。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "第１に、企業誘致の推進及び物流の拡大など地域経済の活性化を図るため、日本海沿岸東北自動車道及び新庄酒田道路の高規格道路網の整備を促進します。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "第２に、遊佐町沖及び酒田市沖での洋上風力発電プロジェクトの進捗を踏まえ、酒田港の基地港湾指定に向けて、山形県と連携した取組を進め、関連する市内企業の所得向上を目指します。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "人口が減少する酒田市では、市外からの需要を獲得することが市民の生活を今後とも維持、向上させていくために必須です。そこで、市外から酒田市に来て消費をしてもらう観光と、酒田市の地域産品を市外、海外の人に販売する移出・輸出を、これまで以上に促進していきます。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "東北公益文科大学の経営を安定させ、今後とも存続させるために、山形県、鶴岡市、三川町、庄内町及び遊佐町とともに、東北公益文科大学の公立化に取り組みます。"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "働きたいと考える市民が働くことができるようにするために、仕事と家事、育児、介護等が両立する環境を整備することが必要です。"@ja.
+<< kg:id_37 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "現在、保育所、認定こども園の待機児童はいませんが、学童保育所には待機児童がいるため、その解消に取り組みます。"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "また、酒田市児童発達支援センターはまなし学園の機能強化を図るなど、障がい児福祉サービス事業を拡充します。"@ja.
+<< kg:id_16 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "家事、育児、介護など家庭内のケア労働は、女性だけでなく男性も共に担うものであることから、家事の省力化も含めて、家庭内や地域における男女平等意識の啓発を引き続き進めます。"@ja.
+<< kg:id_16 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "また、男女ともに育児や介護等を理由とした休暇を取りやすい職場が増えますように、日本一女性が働きやすいまち宣言に賛同するリーダーの会を通じた企業経営者の意識啓発のほか、国の各種制度の周知を進めます。"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "生産年齢人口が減少する中で社会を維持していくために、また、高齢者自身が豊かな人生を送ることができるようにするためにも、働く意欲のある高齢者が、年齢に関わりなく生涯現役で活躍し続けられるような雇用、就業環境を整えていくことが必要です。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "働く意欲のある高齢者が、年齢に関わりなく生涯現役で活躍し続けられるような雇用、就業環境を整えていくことが必要です。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "そのため、障がい者雇用についての企業経営者の理解を深め、障がい者の就労機会を拡大します。"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "人手不足が深刻化する中、デジタル変革を進めることにより、人には人にしかできない仕事に従事してもらうことが必須です。"@ja.
+<< kg:id_5 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "空き家の除却に対する支援を強化し、特に中心市街地にある空き家の除却を進め、資産の流動化を促進することで中心市街地の価値を高めていきます。"@ja.
+<< kg:id_6 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "これまでの対策は一部地域での移動販売が中心でしたが、買物弱者対策は庁内各課が連携して取り組むべき課題と考え、庁内プロジェクトチームを立ち上げます。"@ja.
+<< kg:id_6 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "買物弱者に関する現状を把握した上で、民間企業とも連携し、市民が日常の買物にアクセスできる環境を整えます。"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "出産世代の人口が減少していることにより出生数が減少していることから"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "酒田市の保育環境は供給過剰の状態となっており、このままでは法人立保育所や認定こども園の経営に影響することが懸念されています。"@ja.
+<< kg:id_54 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "酒田市立と法人立の役割などについて市民と考え方を共有し、持続可能な保育環境を整えていきます。"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "少子化に伴い、第四中学校区においては、令和６年度に小学校６校中４校で複式学級が編制される見込みです。"@ja.
+<< kg:id_59 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "子どもたちにとって最適な教育環境について地域住民とも協議を重ねた結果、第四中学校区の小学校６校と中学校１校を義務教育学校として統合します。"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "人口減少により、消防団の団員確保が困難な状況にあるなど、地域の防災力の低下が懸念されております。"@ja.
+<< kg:id_61 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "市民一人一人（自助）、地域（共助）、行政（公助）の防災力強化を図ります。"@ja.
+<< kg:id_3 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "なお、酒田市には、人口減少に起因する課題だけではなく、全国的な物価高に起因するような課題もたくさんあります。"@ja.
+<< kg:id_65 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "物価高の中でも市民が安心して暮らせますように、必要な支援は今後とも実施していきます。"@ja.
+}

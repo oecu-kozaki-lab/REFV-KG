@@ -1,0 +1,127 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00135> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地球環境問題"@ja.
+kg:id_1 rdf:type cls:c_533.
+cls:c_533 rdfs:label "環境問題"@ja.
+kg:id_2 rdfs:label "石油、天然ガスなどの化石燃料のほとんどを輸入していて、さらに発電時には温室効果ガスを発生"@ja.
+kg:id_2 rdf:type cls:c_16151.
+cls:c_16151 rdfs:label "化石燃料利用"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "再生可能エネルギー"@ja.
+kg:id_3 rdf:type cls:c_1977.
+cls:c_1977 rdfs:label "再生可能エネルギー"@ja.
+kg:id_4 rdfs:label "環境にもやさしく、資源の乏しい日本にとって有益なエネルギー源"@ja.
+kg:id_4 rdf:type cls:c_16152.
+cls:c_16152 rdfs:label "有益なエネルギー源"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "大規模停電"@ja.
+kg:id_5 rdf:type cls:c_14555.
+cls:c_14555 rdfs:label "大規模停電"@ja.
+kg:id_6 rdfs:label "電力の分散化が図られていないこと"@ja.
+kg:id_6 rdf:type cls:c_16153.
+cls:c_16153 rdfs:label "電力分散不足"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "地域で発電した電気をその地域で消費する電力の分散化"@ja.
+kg:id_7 rdf:type cls:c_16154.
+cls:c_16154 rdfs:label "電力分散"@ja.
+kg:id_5 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "災害などの非常時に独立して電気を送る仕組みを構築"@ja.
+kg:id_8 rdf:type cls:c_15154.
+cls:c_15154 rdfs:label "非常時電力供給"@ja.
+kg:id_5 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "松前町全域の電力消費"@ja.
+kg:id_9 rdf:type cls:c_16155.
+cls:c_16155 rdfs:label "電力消費"@ja.
+kg:id_10 rdfs:label "100％を再生可能エネルギーで賄う"@ja.
+kg:id_10 rdf:type cls:c_16156.
+cls:c_16156 rdfs:label "再生可能エネルギー供給"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "松前町の再生可能エネルギー"@ja.
+kg:id_11 rdf:type cls:c_1977.
+kg:id_12 rdfs:label "日本でも有数の風況"@ja.
+kg:id_12 rdf:type cls:c_16157.
+cls:c_16157 rdfs:label "良好な風況"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "企業との連携による産業の活性化と再生や、環境の保存と調和"@ja.
+kg:id_13 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_3 prop:effect kg:id_13.
+kg:id_14 rdfs:label "水素"@ja.
+kg:id_14 rdf:type cls:c_16158.
+cls:c_16158 rdfs:label "水素"@ja.
+kg:id_15 rdfs:label "余剰電力で生産できる"@ja.
+kg:id_15 rdf:type cls:c_16159.
+cls:c_16159 rdfs:label "余剰電力"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "再生可能エネルギーの推進"@ja.
+kg:id_16 rdf:type cls:c_14897.
+cls:c_14897 rdfs:label "再生可能エネルギー推進"@ja.
+kg:id_17 rdfs:label "過疎化対策においても重要かつ有効な手段として注目されていて、松前町の将来にも追い風が期待できる"@ja.
+kg:id_17 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:st_1 rdfs:label "東急不動産㈱と松前町"@ja.
+kg:st_1 rdfs:type cls:st_236.
+cls:st_236 rdfs:label "官民連携"@ja.
+kg:op_1 prop:content "災害に強いまちづくりを目指しマスタープラン策定に共同着手"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "環境にやさしい安価で安定した電力供給の仕組みを検討"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "日本は、火力発電で使う石油、天然ガスなどの化石燃料のほとんどを輸入していて、さらに発電時には温室効果ガスを発生し地球環境問題となっています"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "再生可能エネルギーは、ほとんど発生しないため、環境にもやさしく、資源の乏しい日本にとって有益なエネルギー源です"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "その地域で消費する「電力の分散化」を図ることで、結果として一昨年に発生した大規模停電（ブラックアウト）のようなことが起きないようにする仕組みです"@ja.
+<< kg:id_5 prop:contermeasure kg:id_7 >>
+    prop:text-txt_contents "その地域で消費する「電力の分散化」を図ることで、結果として一昨年に発生した大規模停電（ブラックアウト）のようなことが起きないようにする仕組みです"@ja.
+<< kg:id_5 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "計画は、大規模停電を想定し、まずは本町区域で災害などの非常時に独立して電気を送る仕組みを構築するものです"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "将来的には、平常時を含む松前町全域の電力消費の100％を再生可能エネルギーで賄うことを目指し、環境にやさしい、安価で安定した電力供給の仕組みを検討していきます"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "松前町は、日本でも有数の風況で、再生可能エネルギーとして、陸上及び洋上風力発電が有力です"@ja.
+<< kg:id_3 prop:effect kg:id_13 >>
+    prop:text-txt_contents "再生可能エネルギーを通じて、企業との連携による産業の活性化と再生や、環境の保存と調和を目指していきます"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "また、石油に代わるエネルギーとして注目される「水素電池」に使う水素も余剰電力で生産できるなど"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:text-txt_contents "再生可能エネルギーの推進は、過疎化対策においても重要かつ有効な手段として注目されていて、松前町の将来にも追い風が期待できます"@ja.
+}

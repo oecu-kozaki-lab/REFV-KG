@@ -1,0 +1,658 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00113> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "消防団使用無線機のデジタル化"@ja.
+kg:id_1 rdf:type cls:c_6715.
+cls:c_6715 rdfs:label "無線機更新"@ja.
+kg:id_2 rdfs:label "アナログ簡易業務用無線の使用期限到来"@ja.
+kg:id_2 rdf:type cls:c_6716.
+cls:c_6716 rdfs:label "無線使用期限"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "アナログ簡易無線機の使用停止"@ja.
+kg:id_3 rdf:type cls:c_6717.
+cls:c_6717 rdfs:label "無線使用停止"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "消防団員不足"@ja.
+kg:id_4 rdf:type cls:c_3048.
+cls:c_3048 rdfs:label "団員不足"@ja.
+kg:id_5 rdfs:label "新入団員の確保が容易でないこと"@ja.
+kg:id_5 rdf:type cls:c_2513.
+cls:c_2513 rdfs:label "人材確保難"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "高齢化"@ja.
+kg:id_6 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_4 prop:cause kg:id_6.
+kg:id_7 rdfs:label "サクランボの選定"@ja.
+kg:id_7 rdf:type cls:c_6718.
+cls:c_6718 rdfs:label "品目選定"@ja.
+kg:id_8 rdfs:label "山形県を代表する果物であること"@ja.
+kg:id_8 rdf:type cls:c_6719.
+cls:c_6719 rdfs:label "地域特産"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "観光産業など他産業への波及効果が大きいこと"@ja.
+kg:id_9 rdf:type cls:c_3012.
+cls:c_3012 rdfs:label "波及効果"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "サクランボ栽培の難しさ"@ja.
+kg:id_10 rdf:type cls:c_6720.
+cls:c_6720 rdfs:label "栽培困難"@ja.
+kg:id_11 rdfs:label "初期投資が非常にかかること"@ja.
+kg:id_11 rdf:type cls:c_2732.
+cls:c_2732 rdfs:label "初期投資"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "収入が得られるまで約５年から10年かかること"@ja.
+kg:id_12 rdf:type cls:c_6721.
+cls:c_6721 rdfs:label "収益化長期"@ja.
+kg:id_10 prop:cause kg:id_12.
+kg:id_13 rdfs:label "受粉樹の管理が必要なこと"@ja.
+kg:id_13 rdf:type cls:c_6722.
+cls:c_6722 rdfs:label "受粉管理"@ja.
+kg:id_10 prop:cause kg:id_13.
+kg:id_14 rdfs:label "受粉のためのミツバチの飼育が必要なこと"@ja.
+kg:id_14 rdf:type cls:c_6722.
+kg:id_10 prop:cause kg:id_14.
+kg:id_15 rdfs:label "毛ばたきによる受粉作業などの専門性が求められること"@ja.
+kg:id_15 rdf:type cls:c_6723.
+cls:c_6723 rdfs:label "専門作業"@ja.
+kg:id_10 prop:cause kg:id_15.
+kg:id_16 rdfs:label "１樹園地を１団地として行う必要があること"@ja.
+kg:id_16 rdf:type cls:c_6724.
+cls:c_6724 rdfs:label "集団栽培"@ja.
+kg:id_10 prop:cause kg:id_16.
+kg:id_17 rdfs:label "森林・人工林の整備"@ja.
+kg:id_17 rdf:type cls:c_816.
+cls:c_816 rdfs:label "森林整備"@ja.
+kg:id_18 rdfs:label "温暖化対策の一翼を担っていること"@ja.
+kg:id_18 rdf:type cls:c_699.
+cls:c_699 rdfs:label "温暖化対策"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "海岸防災林の再生検討"@ja.
+kg:id_19 rdf:type cls:c_6725.
+cls:c_6725 rdfs:label "防災林再生"@ja.
+kg:id_20 rdfs:label "東日本大震災の発生"@ja.
+kg:id_20 rdf:type cls:c_6137.
+cls:c_6137 rdfs:label "大規模災害"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "根こそぎやられてしまった防災林があったこと"@ja.
+kg:id_21 rdf:type cls:c_6726.
+cls:c_6726 rdfs:label "防災林被害"@ja.
+kg:id_19 prop:cause kg:id_21.
+kg:id_22 rdfs:label "地元中小企業支援の重要性"@ja.
+kg:id_22 rdf:type cls:c_6727.
+cls:c_6727 rdfs:label "企業支援重要"@ja.
+kg:id_23 rdfs:label "個人消費や地元中小企業の業況判断が依然厳しいこと"@ja.
+kg:id_23 rdf:type cls:c_6728.
+cls:c_6728 rdfs:label "地域経済低迷"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "若者の早期離職"@ja.
+kg:id_24 rdf:type cls:c_4169.
+cls:c_4169 rdfs:label "早期離職"@ja.
+kg:id_25 rdfs:label "仕事が合わないこと"@ja.
+kg:id_25 rdf:type cls:c_6729.
+cls:c_6729 rdfs:label "仕事不適合"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "おもしろくないこと"@ja.
+kg:id_26 rdf:type cls:c_6730.
+cls:c_6730 rdfs:label "仕事不満"@ja.
+kg:id_24 prop:cause kg:id_26.
+kg:id_27 rdfs:label "ほかにやりたいことがあること"@ja.
+kg:id_27 rdf:type cls:c_6731.
+cls:c_6731 rdfs:label "進路志向"@ja.
+kg:id_24 prop:cause kg:id_27.
+kg:id_28 rdfs:label "職場の人間関係のトラブル"@ja.
+kg:id_28 rdf:type cls:c_6732.
+cls:c_6732 rdfs:label "人間関係"@ja.
+kg:id_24 prop:cause kg:id_28.
+kg:id_29 rdfs:label "山形新幹線庄内延伸の必要性"@ja.
+kg:id_29 rdf:type cls:c_6733.
+cls:c_6733 rdfs:label "鉄道延伸必要"@ja.
+kg:id_30 rdfs:label "庄内地域における高速鉄道が必要不可欠であること"@ja.
+kg:id_30 rdf:type cls:c_6734.
+cls:c_6734 rdfs:label "高速鉄道"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "地域経済活動への結びつきが大きいこと"@ja.
+kg:id_31 rdf:type cls:c_6735.
+cls:c_6735 rdfs:label "地域経済連携"@ja.
+kg:id_29 prop:cause kg:id_31.
+kg:id_32 rdfs:label "人口減少"@ja.
+kg:id_32 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_33 rdfs:label "地方から都市部への人口移動が今後も続くこと"@ja.
+kg:id_33 rdf:type cls:c_2557.
+cls:c_2557 rdfs:label "人口流出"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "出産の中心となる20歳から39歳年代の人口が現在の半分以下になること"@ja.
+kg:id_34 rdf:type cls:c_6736.
+cls:c_6736 rdfs:label "若年人口減"@ja.
+kg:id_32 prop:cause kg:id_34.
+kg:id_35 rdfs:label "税収減"@ja.
+kg:id_35 rdf:type cls:c_2606.
+cls:c_2606 rdfs:label "税収減"@ja.
+kg:id_32 prop:effect kg:id_35.
+kg:id_36 rdfs:label "地域コミュニティ機能への支障"@ja.
+kg:id_36 rdf:type cls:c_6427.
+cls:c_6427 rdfs:label "地域機能低下"@ja.
+kg:id_32 prop:effect kg:id_36.
+kg:id_37 rdfs:label "消防団員の確保への支障"@ja.
+kg:id_37 rdf:type cls:c_6737.
+cls:c_6737 rdfs:label "団員確保難"@ja.
+kg:id_32 prop:effect kg:id_37.
+kg:id_38 rdfs:label "各種ボランティア活動への支障"@ja.
+kg:id_38 rdf:type cls:c_629.
+cls:c_629 rdfs:label "担い手不足"@ja.
+kg:id_32 prop:effect kg:id_38.
+kg:id_39 rdfs:label "若者に夢を与えるまちづくりが困難になること"@ja.
+kg:id_39 rdf:type cls:c_6738.
+cls:c_6738 rdfs:label "まちづくり困難"@ja.
+kg:id_32 prop:effect kg:id_39.
+kg:id_40 rdfs:label "山形デスティネーションキャンペーン"@ja.
+kg:id_40 rdf:type cls:c_6739.
+cls:c_6739 rdfs:label "観光促進"@ja.
+kg:id_41 rdfs:label "交流人口の拡大"@ja.
+kg:id_41 rdf:type cls:c_2343.
+cls:c_2343 rdfs:label "交流人口拡大"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "リピーターの増加"@ja.
+kg:id_42 rdf:type cls:c_5769.
+cls:c_5769 rdfs:label "再訪増加"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "旅行エージェント85社への訪問"@ja.
+kg:id_43 rdf:type cls:c_6740.
+cls:c_6740 rdfs:label "営業訪問"@ja.
+kg:id_40 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "本市観光素材・受け入れ企画約200件の提案"@ja.
+kg:id_44 rdf:type cls:c_6741.
+cls:c_6741 rdfs:label "観光提案"@ja.
+kg:id_40 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "東京駅での山形フェアへの参加"@ja.
+kg:id_45 rdf:type cls:c_1804.
+cls:c_1804 rdfs:label "観光催事"@ja.
+kg:id_40 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "大宮駅での本市独自プロモーション活動"@ja.
+kg:id_46 rdf:type cls:c_1805.
+cls:c_1805 rdfs:label "広報活動"@ja.
+kg:id_40 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "ＪＲびゅうプラザ営業担当者向けの現地研修会への参加"@ja.
+kg:id_47 rdf:type cls:c_6742.
+cls:c_6742 rdfs:label "研修参加"@ja.
+kg:id_40 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "招待はがき発送キャンペーン"@ja.
+kg:id_48 rdf:type cls:c_6743.
+cls:c_6743 rdfs:label "招待広報"@ja.
+kg:id_40 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "カモンくん観光おもてなしガイドの発行"@ja.
+kg:id_49 rdf:type cls:c_6744.
+cls:c_6744 rdfs:label "教材発行"@ja.
+kg:id_40 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "ＤＣライナーの運行"@ja.
+kg:id_50 rdf:type cls:c_6745.
+cls:c_6745 rdfs:label "周遊交通"@ja.
+kg:id_40 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "観光用自転車の増設"@ja.
+kg:id_51 rdf:type cls:c_6746.
+cls:c_6746 rdfs:label "観光整備"@ja.
+kg:id_40 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "観光ガイドブックのリニューアル"@ja.
+kg:id_52 rdf:type cls:c_1047.
+cls:c_1047 rdfs:label "観光広報"@ja.
+kg:id_40 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "酒田花火ショーなど既存事業の充実"@ja.
+kg:id_53 rdf:type cls:c_6747.
+cls:c_6747 rdfs:label "事業充実"@ja.
+kg:id_40 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "山居倉庫での酒田舞娘による観光案内"@ja.
+kg:id_54 rdf:type cls:c_6748.
+cls:c_6748 rdfs:label "観光案内"@ja.
+kg:id_40 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "土門拳記念館のバックヤードツアー"@ja.
+kg:id_55 rdf:type cls:c_6749.
+cls:c_6749 rdfs:label "体験企画"@ja.
+kg:id_40 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "人口減少・少子化対策"@ja.
+kg:id_56 rdf:type cls:c_1245.
+cls:c_1245 rdfs:label "少子化対策"@ja.
+kg:id_57 rdfs:label "結婚・妊娠・出産・子育てに至るまで切れ目のない支援事業の展開"@ja.
+kg:id_57 rdf:type cls:c_4328.
+cls:c_4328 rdfs:label "切れ目ない支援"@ja.
+kg:id_56 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "酒田で働くという選択を後押しする転出抑制"@ja.
+kg:id_58 rdf:type cls:c_6750.
+cls:c_6750 rdfs:label "転出抑制"@ja.
+kg:id_56 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "若者のＵＩＪターンに向けた取り組み"@ja.
+kg:id_59 rdf:type cls:c_1235.
+cls:c_1235 rdfs:label "移住促進"@ja.
+kg:id_56 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "結婚サポーターの増員"@ja.
+kg:id_60 rdf:type cls:c_1434.
+cls:c_1434 rdfs:label "結婚支援"@ja.
+kg:id_56 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "交流広場への結婚サポートセンター新設"@ja.
+kg:id_61 rdf:type cls:c_1434.
+kg:id_56 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "結婚推進員の配置"@ja.
+kg:id_62 rdf:type cls:c_1434.
+kg:id_56 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "人口減少問題"@ja.
+kg:id_63 rdf:type cls:c_6212.
+cls:c_6212 rdfs:label "人口対策"@ja.
+kg:id_64 rdfs:label "人口減少問題に係る対策本部の立ち上げ"@ja.
+kg:id_64 rdf:type cls:c_4803.
+cls:c_4803 rdfs:label "対策本部"@ja.
+kg:id_63 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "庁内各部共通認識のもとで現状・課題・施策方向性・実施状況・成果を確認すること"@ja.
+kg:id_65 rdf:type cls:c_1749.
+cls:c_1749 rdfs:label "庁内共有"@ja.
+kg:id_63 prop:contermeasure kg:id_65.
+kg:st_1 rdfs:label "高橋正和議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "デジタル化のデメリットを踏まえ通信体制整備が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "消防団活動上のデメリットを解消する体制づくりを求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "桐山久夫建設部技監兼企画振興部危機管理監"@ja.
+kg:st_2 rdfs:type cls:st_32.
+cls:st_32 rdfs:label "行政職員"@ja.
+kg:op_3 prop:content "継続的な団員確保を進める必要がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "若い団員の入団促進を継続すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "白崎好行農林水産部長"@ja.
+kg:st_3 rdfs:type cls:st_32.
+kg:op_5 prop:content "サクランボは県を代表し波及効果が大きいため選定された"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "観光型産地づくりにつながる品目として適している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "新規参入には経営上の課題が多い"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "収益化まで時間がかかる点が課題"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "専門性が求められ本市では容易でない"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "専門的な管理が必要で課題が多い"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "専門性の高さが導入の障壁になっている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "農業経営として課題が多い"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "森林資源の整備は欠かせない"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "防災林の整備や計画の見直しが必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "防災林の現状を踏まえた見直しが必要"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "進藤晃議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_16 prop:content "企業誘致に加え地元中小企業支援が重要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "就職後のフォローアップが必要"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "本人だけでなく雇用側の対応も考えるべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "離職理由の把握と分析が必要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "雇い入れ側の対応や対策も必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "高速鉄道は地域発展に不可欠で早期実現を望む"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "地域経済や県民生活への影響から強く望まれる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "門田克己議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_23 prop:content "危機感を持って全庁的に取り組むべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "若者に夢を与えるまちづくりが困難になると懸念する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "地域社会の維持に重大な支障を来たす"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_5.
+kg:op_26 prop:content "地域社会の維持に影響が及ぶ"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_5.
+kg:op_27 prop:content "地域防災機能にも重大な支障が出る"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_5.
+kg:op_28 prop:content "地域社会の支え手不足につながる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "将来のまちづくりに大きな懸念がある"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "大壁洋平議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_30 prop:content "おもてなし次第で交流人口拡大につながる"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_6.
+kg:op_31 prop:content "口コミも含めリピーター増加に影響する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_6.
+kg:op_32 prop:content "現在の進捗状況を確認したい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_6.
+kg:op_33 prop:content "誘客の進捗確認が必要"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "丸山至市長職務代理者副市長"@ja.
+kg:st_7 rdfs:type cls:st_32.
+kg:op_34 prop:content "積極的に誘客活動を展開している"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_7.
+kg:op_35 prop:content "本市独自の誘客活動を実施している"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_7.
+kg:op_36 prop:content "営業担当者への現地訴求を行っている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_7.
+kg:op_37 prop:content "市民が主人公となる機運醸成策として重要"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_7.
+kg:op_38 prop:content "子供たちのおもてなしの心を育む"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_7.
+kg:op_39 prop:content "主要観光地を巡る受け入れ体制整備として有効"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_7.
+kg:op_40 prop:content "受け入れ体制整備の一環として進めている"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_7.
+kg:op_41 prop:content "観光客受け入れ環境の改善を進めている"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_7.
+kg:op_42 prop:content "魅力あるイベントとして既存事業を強化している"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_7.
+kg:op_43 prop:content "観光客への挨拶と案内でおもてなしを図る"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_7.
+kg:op_44 prop:content "普段見られない魅力を提供する企画"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_7.
+kg:op_45 prop:content "主要施策の柱として一体的に進める"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_7.
+kg:op_46 prop:content "若者の定着促進に取り組む"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_7.
+kg:op_47 prop:content "関係機関と連携して進める"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_7.
+kg:op_48 prop:content "結婚支援の充実を進める"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_7.
+kg:op_49 prop:content "結婚支援機能を強化している"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_7.
+kg:op_50 prop:content "活動を充実させ成果につなげている"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_7.
+kg:op_51 prop:content "総合的かつ戦略的に推進するため早急に設置する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_7.
+kg:op_52 prop:content "きめ細かな対策を打ち出したい"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "アナログ簡易業務用無線の使用期限は、2022年11月30日となっておるようです。それ以降は使用ができなくなるため、その後継がデジタル簡易無線免許局使用にかわるようです。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "アナログ簡易無線機の使用が、平成28年５月31日をもって使用停止になると言われております。"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "新入団員の確保も容易ではないため、高齢化に伴い、団員も年々少しずつ減少しているのが現状であります。"@ja.
+<< kg:id_4 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "新入団員の確保も容易ではないため、高齢化に伴い、団員も年々少しずつ減少しているのが現状であります。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "山形県の農業産出額2,155億円のうち、サクランボの産出額が275億円ということで、山形県を代表する果物となっており"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "観光産業など他産業に対する波及効果が大きいため、今回サクランボが選定されたものであり"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "初期投資が非常にかかり、収入が得られるようになるまで約５年から10年かかる"@ja.
+<< kg:id_10 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "収入が得られるようになるまで約５年から10年かかる"@ja.
+<< kg:id_10 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "庄内での取り組みは、受粉樹の管理や、受粉のためのミツバチの飼育、または毛ばたきによる受粉作業などの専門性が求められ"@ja.
+<< kg:id_10 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "受粉樹の管理や、受粉のためのミツバチの飼育"@ja.
+<< kg:id_10 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "毛ばたきによる受粉作業などの専門性が求められ"@ja.
+<< kg:id_10 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "１樹園地、サクランボを１団地として行う必要があるため、農業経営としては課題が多く"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "温暖化対策の一翼を担っている森林資源の整備は欠かせないことだと思います"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "東日本大震災の発生後、平成23年５月には海岸沿いの森林、海岸防災林について、改めてその機能の検証と再生に向けた課題を検討する指示が出たようです。"@ja.
+<< kg:id_19 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "一方では、根こそぎやられてしまった防災林もあったようです。"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "しかしながら個人消費や地元中小企業の業況判断は依然厳しいものがあります。このことから、企業誘致活動を推進することは重要であるものの、喫緊の状況からすると地元中小企業を支援することが重要であると考えます。"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "若者の早期離職理由には、仕事が合わない、おもしろくない、あるいは、ほかにやりたいことがある、職場の人間関係のトラブルなどが挙げられます"@ja.
+<< kg:id_24 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "若者の早期離職理由には、仕事が合わない、おもしろくない"@ja.
+<< kg:id_24 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "若者の早期離職理由には、仕事が合わない、おもしろくない、あるいは、ほかにやりたいことがある"@ja.
+<< kg:id_24 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "若者の早期離職理由には、仕事が合わない、おもしろくない、あるいは、ほかにやりたいことがある、職場の人間関係のトラブルなどが挙げられます"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "庄内地域における高速鉄道は必要不可欠であり、早期の実現を望むことからすれば、特に、山形新幹線の庄内延伸に期待するところであります。"@ja.
+<< kg:id_29 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "こうした高速交通網の整備は、首都圏とのビジネス業務や地域産業の発展のほか、庄内と内陸、あるいは仙台といった地域と地域の結びつきを促すなど、その役割はますます大きくなってきており、地域経済活動への結びつき、県民生活へのかかわり合いなどから、山形新幹線の庄内延伸について、強く望まれます。"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "これは、地方から都市部への人口移動が今後も続くと想定されることと"@ja.
+<< kg:id_32 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "出産の中心となる20歳から39歳年代に着目しており、この層の人口が現在の半分以下になる自治体では、出生率を幾ら上げても人口増は望めないとして"@ja.
+<< kg:id_32 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "懸念されるのは、税収減、地域コミュニティ機能のみならず"@ja.
+<< kg:id_32 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "懸念されるのは、税収減、地域コミュニティ機能のみならず"@ja.
+<< kg:id_32 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "消防団員の確保、各種ボランティア活動などといった、さまざまな地域社会の維持に重大な支障を来たす"@ja.
+<< kg:id_32 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "消防団員の確保、各種ボランティア活動などといった、さまざまな地域社会の維持に重大な支障を来たす"@ja.
+<< kg:id_32 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "この状況では、若者に夢を与えるまちづくりは困難になることを懸念するものであります。"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "来ていただいた観光客に対して、どのようにイベント企画、おもてなしをするかで、今後の交流人口の拡大、リピーターの増加にかかわってきます。"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "来ていただいた観光客に対して、どのようにイベント企画、おもてなしをするかで、今後の交流人口の拡大、リピーターの増加にかかわってきます。口コミの力も侮れません。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "庄内地域や本市への誘客のため、旅行エージェント85社への訪問や、本市観光素材・受け入れ企画約200件の提案を行っていく"@ja.
+<< kg:id_40 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "本市観光素材・受け入れ企画約200件の提案を行っていく"@ja.
+<< kg:id_40 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "６月３日でございますが、東京駅での山形フェアへの参加"@ja.
+<< kg:id_40 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "６月８日には大宮駅での本市独自プロモーション活動"@ja.
+<< kg:id_40 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "５月15日・16日にはＪＲびゅうプラザ営業担当者向けの現地研修会に参加するなど、積極的に誘客活動を展開してきたところでございます。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "市民一人一人が観光キャンペーンの主人公となって、県外の親戚や知人に招待はがきを発送し、全国からお客様を誘客するはがき発送キャンペーン"@ja.
+<< kg:id_40 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "子供たちのコミュニケーション能力の向上と他人への思いやり、おもてなしの心をはぐくんでもらうための観光学習の教材「カモンくん観光おもてなしガイド」の発行"@ja.
+<< kg:id_40 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "ＪＲ酒田駅前から酒田の名所・旧跡など主要７カ所を巡るジャンボタクシー、ＤＣライナーと呼んでおりますが、これを運行しております"@ja.
+<< kg:id_40 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "観光用自転車の増設ですとか"@ja.
+<< kg:id_40 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "観光ガイドブックなどのリニューアルを行っているところでございます。"@ja.
+<< kg:id_40 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "酒田花火ショーなど既存の事業を充実させる"@ja.
+<< kg:id_40 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "７月の毎日曜日に、山居倉庫に酒田舞娘が登場し、観光客の皆さんに御挨拶の口上、あるいは酒田の観光案内をしたりする"@ja.
+<< kg:id_40 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "土門拳記念館では、ふだん公開していない収蔵庫を見学するバックヤードツアー"@ja.
+<< kg:id_56 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "今年度から、結婚、妊娠・出産、子育てに至るまで切れ目のない支援事業を展開する"@ja.
+<< kg:id_56 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "酒田で働くという選択を後押しするための転出抑制ですとか"@ja.
+<< kg:id_56 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "若者のＵＩＪターンに向けた取り組みを関係機関と一緒になって進める"@ja.
+<< kg:id_56 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "結婚サポーターの増員を図ったり"@ja.
+<< kg:id_56 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "交流広場に結婚サポートセンターを新設し"@ja.
+<< kg:id_56 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "その事務局機能を担う結婚推進員を配置し、活動を充実させた"@ja.
+<< kg:id_63 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "人口減少問題に係る対策本部、私が本部長になるということで内部で詰めておりますけれども、その対策本部をすぐに立ち上げまして"@ja.
+<< kg:id_63 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "庁内各部共通認識のもとで、現状、課題及び施策の方向性並びに実施状況や成果等を確認しながら、きめ細かな対策を打ち出していきたい"@ja.
+}

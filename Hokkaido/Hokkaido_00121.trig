@@ -1,0 +1,1003 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00121> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "人口減少"@ja.
+kg:id_1 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "過疎と少子高齢化"@ja.
+kg:id_2 rdf:type cls:c_12216.
+cls:c_12216 rdfs:label "過疎高齢化"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "テレワーク拠点づくり"@ja.
+kg:id_3 rdf:type cls:c_1241.
+cls:c_1241 rdfs:label "拠点整備"@ja.
+kg:id_4 rdfs:label "光回線が一部分しか使えないインターネット環境の弱さ"@ja.
+kg:id_4 rdf:type cls:c_15634.
+cls:c_15634 rdfs:label "通信環境不備"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "Ｗｉ－Ｆｉ環境の物足りなさ"@ja.
+kg:id_5 rdf:type cls:c_15634.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "テーブル、イスやワーキングスペースの不備"@ja.
+kg:id_6 rdf:type cls:c_15635.
+cls:c_15635 rdfs:label "作業環境不備"@ja.
+kg:id_3 prop:cause kg:id_6.
+kg:id_7 rdfs:label "サービス環境の改善点"@ja.
+kg:id_7 rdf:type cls:c_15636.
+cls:c_15636 rdfs:label "受入環境不備"@ja.
+kg:id_3 prop:cause kg:id_7.
+kg:id_8 rdfs:label "雇用の場所の確保が難しいこと"@ja.
+kg:id_8 rdf:type cls:c_15637.
+cls:c_15637 rdfs:label "雇用確保難"@ja.
+kg:id_3 prop:cause kg:id_8.
+kg:id_9 rdfs:label "住まいの確保が難しいこと"@ja.
+kg:id_9 rdf:type cls:c_15638.
+cls:c_15638 rdfs:label "住居確保難"@ja.
+kg:id_3 prop:cause kg:id_9.
+kg:id_10 rdfs:label "オンライン対面で人と人とのコミュニケーションの希薄性が問題になる"@ja.
+kg:id_10 rdf:type cls:c_15639.
+cls:c_15639 rdfs:label "交流希薄化"@ja.
+kg:id_3 prop:effect kg:id_10.
+kg:id_11 rdfs:label "企業向けのワーケーションの推進"@ja.
+kg:id_11 rdf:type cls:c_15640.
+cls:c_15640 rdfs:label "観光滞在促進"@ja.
+kg:id_3 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "受入施設の整備"@ja.
+kg:id_12 rdf:type cls:c_15641.
+cls:c_15641 rdfs:label "受入施設整備"@ja.
+kg:id_3 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "宿泊場所の整備"@ja.
+kg:id_13 rdf:type cls:c_919.
+cls:c_919 rdfs:label "宿泊施設整備"@ja.
+kg:id_3 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "ワーケーションプログラムの検討"@ja.
+kg:id_14 rdf:type cls:c_15642.
+cls:c_15642 rdfs:label "滞在計画"@ja.
+kg:id_3 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "民間事業へシフトできる事業化"@ja.
+kg:id_15 rdf:type cls:c_3254.
+cls:c_3254 rdfs:label "事業化"@ja.
+kg:id_3 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "ワーケーション受入れ施設"@ja.
+kg:id_16 rdf:type cls:c_15643.
+cls:c_15643 rdfs:label "受入施設"@ja.
+kg:id_17 rdfs:label "東急不動産の事務所兼コミュニティスペース新築への協力"@ja.
+kg:id_17 rdf:type cls:c_15644.
+cls:c_15644 rdfs:label "施設整備協力"@ja.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "水道事業経営"@ja.
+kg:id_18 rdf:type cls:c_15645.
+cls:c_15645 rdfs:label "事業経営"@ja.
+kg:id_19 rdfs:label "急激な人口減少"@ja.
+kg:id_19 rdf:type cls:c_705.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "使用水量の減少"@ja.
+kg:id_20 rdf:type cls:c_1179.
+cls:c_1179 rdfs:label "需要減少"@ja.
+kg:id_18 prop:cause kg:id_20.
+kg:id_21 rdfs:label "令和７年度に当年度純利益が赤字と見込まれる"@ja.
+kg:id_21 rdf:type cls:c_15646.
+cls:c_15646 rdfs:label "赤字見込み"@ja.
+kg:id_18 prop:effect kg:id_21.
+kg:id_22 rdfs:label "水道料金"@ja.
+kg:id_22 rdf:type cls:c_15647.
+cls:c_15647 rdfs:label "料金制度"@ja.
+kg:id_23 rdfs:label "料金改定案について議員と町民から広く意見を聴く場を設ける"@ja.
+kg:id_23 rdf:type cls:c_99.
+cls:c_99 rdfs:label "意見聴取"@ja.
+kg:id_22 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "用途別料金体系から口径別料金体系への変更"@ja.
+kg:id_24 rdf:type cls:c_15648.
+cls:c_15648 rdfs:label "料金体系変更"@ja.
+kg:id_22 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "休栓料金の廃止"@ja.
+kg:id_25 rdf:type cls:c_15649.
+cls:c_15649 rdfs:label "料金廃止"@ja.
+kg:id_22 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "メーター使用料の新設"@ja.
+kg:id_26 rdf:type cls:c_15650.
+cls:c_15650 rdfs:label "料金新設"@ja.
+kg:id_22 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "基本料金に含まれる使用水量の見直し"@ja.
+kg:id_27 rdf:type cls:c_867.
+cls:c_867 rdfs:label "料金見直し"@ja.
+kg:id_22 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "約１０％程度の値上げ"@ja.
+kg:id_28 rdf:type cls:c_15651.
+cls:c_15651 rdfs:label "料金値上げ"@ja.
+kg:id_22 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "５年後に再度の料金改定を見込む"@ja.
+kg:id_29 rdf:type cls:c_8325.
+cls:c_8325 rdfs:label "料金改定"@ja.
+kg:id_22 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "さくらまつり入込数"@ja.
+kg:id_30 rdf:type cls:c_15652.
+cls:c_15652 rdfs:label "来訪者数"@ja.
+kg:id_31 rdfs:label "新型コロナウイルス感染症拡大前からの観光バスの減少"@ja.
+kg:id_31 rdf:type cls:c_15653.
+cls:c_15653 rdfs:label "団体客減少"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "マイカー来訪が半数程度にとどまったこと"@ja.
+kg:id_32 rdf:type cls:c_15654.
+cls:c_15654 rdfs:label "自家用車減少"@ja.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "桜の開花が早まったこと"@ja.
+kg:id_33 rdf:type cls:c_15655.
+cls:c_15655 rdfs:label "開花早期化"@ja.
+kg:id_30 prop:cause kg:id_33.
+kg:id_34 rdfs:label "大型連休後半に道内各地で桜の見どころを迎え観光客が分散したこと"@ja.
+kg:id_34 rdf:type cls:c_15656.
+cls:c_15656 rdfs:label "観光分散"@ja.
+kg:id_30 prop:cause kg:id_34.
+kg:id_35 rdfs:label "コロナ禍前の半数程度にとどまった"@ja.
+kg:id_35 rdf:type cls:c_15657.
+cls:c_15657 rdfs:label "来訪低迷"@ja.
+kg:id_30 prop:effect kg:id_35.
+kg:id_36 rdfs:label "高齢者介護医療"@ja.
+kg:id_36 rdf:type cls:c_15658.
+cls:c_15658 rdfs:label "高齢者医療介護"@ja.
+kg:id_37 rdfs:label "高齢化の進行"@ja.
+kg:id_37 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "身寄りもいない一人住まいの高齢者の増加"@ja.
+kg:id_38 rdf:type cls:c_15659.
+cls:c_15659 rdfs:label "独居高齢者増"@ja.
+kg:id_36 prop:cause kg:id_38.
+kg:id_39 rdfs:label "介護予備軍のフレイルの増加"@ja.
+kg:id_39 rdf:type cls:c_15660.
+cls:c_15660 rdfs:label "虚弱高齢者増"@ja.
+kg:id_36 prop:cause kg:id_39.
+kg:id_40 rdfs:label "高齢者通院"@ja.
+kg:id_40 rdf:type cls:c_15661.
+cls:c_15661 rdfs:label "高齢者通院"@ja.
+kg:id_41 rdfs:label "町内の病院では治療を受けられないこと"@ja.
+kg:id_41 rdf:type cls:c_15662.
+cls:c_15662 rdfs:label "医療不足"@ja.
+kg:id_40 prop:cause kg:id_41.
+kg:id_42 rdfs:label "多額の交通費をかけて町外で治療を受ける"@ja.
+kg:id_42 rdf:type cls:c_15663.
+cls:c_15663 rdfs:label "通院負担増"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "高齢者生活"@ja.
+kg:id_43 rdf:type cls:c_1576.
+cls:c_1576 rdfs:label "高齢者生活"@ja.
+kg:id_44 rdfs:label "所得の少ない高齢者の生活負担が増す"@ja.
+kg:id_44 rdf:type cls:c_5133.
+cls:c_5133 rdfs:label "生活負担増"@ja.
+kg:id_43 prop:effect kg:id_44.
+kg:id_45 rdfs:label "高齢者相談体制"@ja.
+kg:id_45 rdf:type cls:c_2611.
+cls:c_2611 rdfs:label "相談体制"@ja.
+kg:id_46 rdfs:label "自分の身体のことや函館の病院への行き方を気軽に相談できる人が少ないこと"@ja.
+kg:id_46 rdf:type cls:c_15664.
+cls:c_15664 rdfs:label "相談先不足"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "低所得者や生活弱者を含めた対応の検討"@ja.
+kg:id_47 rdf:type cls:c_9803.
+cls:c_9803 rdfs:label "弱者支援"@ja.
+kg:id_40 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "他町と連携した支援体制の整備"@ja.
+kg:id_48 rdf:type cls:c_827.
+cls:c_827 rdfs:label "広域連携"@ja.
+kg:id_40 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "介護人材不足"@ja.
+kg:id_49 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_50 rdfs:label "全国的な担い手不足の深刻化"@ja.
+kg:id_50 rdf:type cls:c_629.
+cls:c_629 rdfs:label "担い手不足"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "町内での人材確保が困難なこと"@ja.
+kg:id_51 rdf:type cls:c_2513.
+cls:c_2513 rdfs:label "人材確保難"@ja.
+kg:id_49 prop:cause kg:id_51.
+kg:id_52 rdfs:label "資格を有しながら勤務していない人がいること"@ja.
+kg:id_52 rdf:type cls:c_15665.
+cls:c_15665 rdfs:label "有資格者未就業"@ja.
+kg:id_49 prop:cause kg:id_52.
+kg:id_53 rdfs:label "町内事業所でも同様の人手不足が生じている"@ja.
+kg:id_53 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_49 prop:effect kg:id_53.
+kg:id_54 rdfs:label "町外からの人材確保"@ja.
+kg:id_54 rdf:type cls:c_15666.
+cls:c_15666 rdfs:label "域外人材確保"@ja.
+kg:id_49 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "各事業所との情報交換や協議の実施"@ja.
+kg:id_55 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_49 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "外国人労働者採用の検討"@ja.
+kg:id_56 rdf:type cls:c_15667.
+cls:c_15667 rdfs:label "外国人採用"@ja.
+kg:id_49 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "外国人介護人材活用"@ja.
+kg:id_57 rdf:type cls:c_15668.
+cls:c_15668 rdfs:label "外国人人材活用"@ja.
+kg:id_58 rdfs:label "コミュニケーションや言語の課題"@ja.
+kg:id_58 rdf:type cls:c_15669.
+cls:c_15669 rdfs:label "言語障壁"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "従事業務内容等の課題"@ja.
+kg:id_59 rdf:type cls:c_15670.
+cls:c_15670 rdfs:label "業務適合課題"@ja.
+kg:id_57 prop:cause kg:id_59.
+kg:id_60 rdfs:label "道の駅駐車場混雑"@ja.
+kg:id_60 rdf:type cls:c_15671.
+cls:c_15671 rdfs:label "駐車場混雑"@ja.
+kg:id_61 rdfs:label "さくらまつり期間中の利用客増加"@ja.
+kg:id_61 rdf:type cls:c_947.
+cls:c_947 rdfs:label "利用者増加"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "函館方面からの車が多かったこと"@ja.
+kg:id_62 rdf:type cls:c_15672.
+cls:c_15672 rdfs:label "来訪車集中"@ja.
+kg:id_60 prop:cause kg:id_62.
+kg:id_63 rdfs:label "駐車待ちの車で渋滞した"@ja.
+kg:id_63 rdf:type cls:c_3735.
+cls:c_3735 rdfs:label "交通渋滞"@ja.
+kg:id_60 prop:effect kg:id_63.
+kg:id_64 rdfs:label "観光客が駐車場に入れず来訪意欲を失うおそれ"@ja.
+kg:id_64 rdf:type cls:c_15673.
+cls:c_15673 rdfs:label "来訪意欲低下"@ja.
+kg:id_60 prop:effect kg:id_64.
+kg:id_65 rdfs:label "シャトルバス経路の見直し"@ja.
+kg:id_65 rdf:type cls:c_4415.
+cls:c_4415 rdfs:label "運行見直し"@ja.
+kg:id_60 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "臨時駐車場を経由する運行"@ja.
+kg:id_66 rdf:type cls:c_15674.
+cls:c_15674 rdfs:label "臨時駐車場活用"@ja.
+kg:id_60 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "役場前と沖口広場を停留所に追加"@ja.
+kg:id_67 rdf:type cls:c_15675.
+cls:c_15675 rdfs:label "停留所追加"@ja.
+kg:id_60 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "海産干場の活用検討"@ja.
+kg:id_68 rdf:type cls:c_15676.
+cls:c_15676 rdfs:label "用地活用検討"@ja.
+kg:id_60 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "斜路を広げて下のスペースを駐車場利用する検討"@ja.
+kg:id_69 rdf:type cls:c_15677.
+cls:c_15677 rdfs:label "駐車場拡張検討"@ja.
+kg:id_60 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "キャンピングカー駐車問題"@ja.
+kg:id_70 rdf:type cls:c_15678.
+cls:c_15678 rdfs:label "車中泊問題"@ja.
+kg:id_71 rdfs:label "道の駅での車中泊や連泊の増加"@ja.
+kg:id_71 rdf:type cls:c_15679.
+cls:c_15679 rdfs:label "車中泊増加"@ja.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "２台分の駐車スペースを占有する"@ja.
+kg:id_72 rdf:type cls:c_15680.
+cls:c_15680 rdfs:label "駐車占有"@ja.
+kg:id_70 prop:effect kg:id_72.
+kg:id_73 rdfs:label "道の駅駐車場がますます厳しい状態になる"@ja.
+kg:id_73 rdf:type cls:c_15681.
+cls:c_15681 rdfs:label "駐車逼迫"@ja.
+kg:id_70 prop:effect kg:id_73.
+kg:id_74 rdfs:label "国土交通省に準じたマナーの呼びかけ"@ja.
+kg:id_74 rdf:type cls:c_15682.
+cls:c_15682 rdfs:label "マナー啓発"@ja.
+kg:id_70 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "車中泊有料実験など他地域事例を参考に対応策を検討"@ja.
+kg:id_75 rdf:type cls:c_15683.
+cls:c_15683 rdfs:label "対応策検討"@ja.
+kg:id_70 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "松前公園の桜管理"@ja.
+kg:id_76 rdf:type cls:c_15684.
+cls:c_15684 rdfs:label "桜管理"@ja.
+kg:id_77 rdfs:label "樹齢５０年を超える桜が多いこと"@ja.
+kg:id_77 rdf:type cls:c_11469.
+cls:c_11469 rdfs:label "老木化"@ja.
+kg:id_76 prop:cause kg:id_77.
+kg:id_78 rdfs:label "第２公園の桜の木と木の間隔が狭いこと"@ja.
+kg:id_78 rdf:type cls:c_15685.
+cls:c_15685 rdfs:label "植栽過密"@ja.
+kg:id_76 prop:cause kg:id_78.
+kg:id_79 rdfs:label "第２公園の桜の老齢化"@ja.
+kg:id_79 rdf:type cls:c_11469.
+kg:id_76 prop:cause kg:id_79.
+kg:id_80 rdfs:label "マンパワー不足"@ja.
+kg:id_80 rdf:type cls:c_759.
+kg:id_76 prop:cause kg:id_80.
+kg:id_81 rdfs:label "枯れ枝が発生する"@ja.
+kg:id_81 rdf:type cls:c_15686.
+cls:c_15686 rdfs:label "枯れ枝発生"@ja.
+kg:id_76 prop:effect kg:id_81.
+kg:id_82 rdfs:label "松前公園整備計画の策定"@ja.
+kg:id_82 rdf:type cls:c_2463.
+cls:c_2463 rdfs:label "整備計画"@ja.
+kg:id_76 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "一部草刈り業務の回数を減らすなどして対応"@ja.
+kg:id_83 rdf:type cls:c_15687.
+cls:c_15687 rdfs:label "作業見直し"@ja.
+kg:id_76 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "桜の名木づくり"@ja.
+kg:id_84 rdf:type cls:c_15688.
+cls:c_15688 rdfs:label "名木育成"@ja.
+kg:id_85 rdfs:label "次世代に引き継ぐ名木を育てる"@ja.
+kg:id_85 rdf:type cls:c_15688.
+kg:id_84 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "松前公園整備計画の中で植栽場所や品種を検討"@ja.
+kg:id_86 rdf:type cls:c_152.
+cls:c_152 rdfs:label "植栽計画"@ja.
+kg:id_84 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "ふるさと納税の活用"@ja.
+kg:id_87 rdf:type cls:c_15689.
+cls:c_15689 rdfs:label "寄付活用"@ja.
+kg:id_84 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "クラウドファンディングの検討"@ja.
+kg:id_88 rdf:type cls:c_1230.
+cls:c_1230 rdfs:label "資金調達"@ja.
+kg:id_84 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "桜学習環境"@ja.
+kg:id_89 rdf:type cls:c_1533.
+cls:c_1533 rdfs:label "学習環境"@ja.
+kg:id_90 rdfs:label "桜講習会などの参加者が少ないこと"@ja.
+kg:id_90 rdf:type cls:c_13392.
+cls:c_13392 rdfs:label "参加低迷"@ja.
+kg:id_89 prop:cause kg:id_90.
+kg:id_91 rdfs:label "樹木医等による桜講習会の開催"@ja.
+kg:id_91 rdf:type cls:c_15690.
+cls:c_15690 rdfs:label "講習会開催"@ja.
+kg:id_89 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "町内小学生を対象に桜学習を行う"@ja.
+kg:id_92 rdf:type cls:c_15691.
+cls:c_15691 rdfs:label "学習実施"@ja.
+kg:id_89 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "桜資料館運営"@ja.
+kg:id_93 rdf:type cls:c_15692.
+cls:c_15692 rdfs:label "資料館運営"@ja.
+kg:id_94 rdfs:label "さくらまつり以外の入館状況が少ないこと"@ja.
+kg:id_94 rdf:type cls:c_15693.
+cls:c_15693 rdfs:label "入館低迷"@ja.
+kg:id_93 prop:cause kg:id_94.
+kg:id_95 rdfs:label "開館には常駐する職員が必要なこと"@ja.
+kg:id_95 rdf:type cls:c_15694.
+cls:c_15694 rdfs:label "常駐人員必要"@ja.
+kg:id_93 prop:cause kg:id_95.
+kg:id_96 rdfs:label "さくらまつり期間のみの臨時開館"@ja.
+kg:id_96 rdf:type cls:c_15695.
+cls:c_15695 rdfs:label "臨時開館"@ja.
+kg:id_93 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "松前藩屋敷の民家に資料の一部を展示する検討"@ja.
+kg:id_97 rdf:type cls:c_15696.
+cls:c_15696 rdfs:label "資料展示"@ja.
+kg:id_93 prop:contermeasure kg:id_97.
+kg:id_98 rdfs:label "桜資料館展示"@ja.
+kg:id_98 rdf:type cls:c_15696.
+kg:id_99 rdfs:label "ボランティアの意見を踏まえた展示方法の検討"@ja.
+kg:id_99 rdf:type cls:c_15697.
+cls:c_15697 rdfs:label "展示見直し"@ja.
+kg:id_98 prop:contermeasure kg:id_99.
+kg:id_100 rdfs:label "桜研究体制"@ja.
+kg:id_100 rdf:type cls:c_15698.
+cls:c_15698 rdfs:label "研究体制"@ja.
+kg:id_101 rdfs:label "松前桜保存研究推進協議会と連携した調査研究"@ja.
+kg:id_101 rdf:type cls:c_4818.
+cls:c_4818 rdfs:label "調査研究"@ja.
+kg:id_100 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "松前公園の希少性を大学等へアピールする"@ja.
+kg:id_102 rdf:type cls:c_15699.
+cls:c_15699 rdfs:label "研究発信"@ja.
+kg:id_100 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "桜の保存財源"@ja.
+kg:id_103 rdf:type cls:c_15700.
+cls:c_15700 rdfs:label "保存財源"@ja.
+kg:id_104 rdfs:label "桜のオーナー制度の構築検討"@ja.
+kg:id_104 rdf:type cls:c_15701.
+cls:c_15701 rdfs:label "所有制度"@ja.
+kg:id_103 prop:contermeasure kg:id_104.
+kg:id_105 rdfs:label "讃桜文化の継承"@ja.
+kg:id_105 rdf:type cls:c_11521.
+cls:c_11521 rdfs:label "文化継承"@ja.
+kg:id_106 rdfs:label "小学生を対象に桜学習を通じて普及啓発する"@ja.
+kg:id_106 rdf:type cls:c_15702.
+cls:c_15702 rdfs:label "学習普及"@ja.
+kg:id_105 prop:contermeasure kg:id_106.
+kg:id_107 rdfs:label "桜観察会の実施"@ja.
+kg:id_107 rdf:type cls:c_15703.
+cls:c_15703 rdfs:label "観察会"@ja.
+kg:id_105 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "桜の日記念の桜カレンダー作成"@ja.
+kg:id_108 rdf:type cls:c_15704.
+cls:c_15704 rdfs:label "広報作成"@ja.
+kg:id_105 prop:contermeasure kg:id_108.
+kg:id_109 rdfs:label "名木を回るスタンプラリーの開催"@ja.
+kg:id_109 rdf:type cls:c_5180.
+cls:c_5180 rdfs:label "周遊企画"@ja.
+kg:id_105 prop:contermeasure kg:id_109.
+kg:st_1 rdfs:label "９番梶谷康介君"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "テレワーク活用で人口減少に歯止めをかけるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "町長石山英雄君"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_2 prop:content "光回線整備で環境課題は改善したが受入れと運営の課題整理が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "利用者視点で細かな環境整備が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "作業環境の整備不足が受入れの障害になっている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "サービス面も含めた受入体制の整備が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "雇用と住まいの確保が進出受入れの大きな課題"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "住まいの確保を含めた受入環境づくりが必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "オンライン化の進展とともに対面交流の希薄化が課題"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "現状では企業向けワーケーション推進が有効"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "受入施設の整備は重要であり優先的に進めるべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "宿泊場所の確保も受入れに不可欠"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "東急不動産と連携しプログラムづくりを進める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "最終的には民間事業として自走できる形が必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "ワーケーション受入れ可能な施設となるよう要望し協力する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "人口減少で給水収益が増えず料金改定は避けられない"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "使用水量の減少が経営悪化の直接要因"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "将来赤字化する見通しのため早期対応が必要"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "改定前に議員と町民の意見を広く聴くべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "一度に大きな負担とならないよう段階的値上げにとどめるべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "団体ツアーが戻らず入込回復が鈍い"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "マイカー来訪の回復も十分でない"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "開花の前倒しが観光客分散の一因"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "道内各地との時期重複で観光客が分散した"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "回復傾向はあるがコロナ前水準には戻っていない"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "１１番堺繁光君"@ja.
+kg:st_3 rdfs:type cls:st_16.
+kg:op_25 prop:content "高齢者が増える中で介護と医療への不安に備えるべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "独居高齢者への支援体制を強めるべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "フレイル段階からの支援が重要"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "町外通院を余儀なくされる高齢者負担を軽減すべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "通院交通費の負担が大きい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "低所得高齢者の生活負担軽減策が必要"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "気軽に相談できる体制を整えるべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "生活弱者や低所得者を含めて対応していきたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "一町だけで難しいなら近隣町村と連携した支援体制を整えるべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "全国的な人手不足が町内事業所にも及んでいる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "町内だけでは必要人材を確保しにくい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "有資格者が勤務につながらない課題を解く必要がある"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "町内介護事業所でも人手不足が大きな課題"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "函館市内からの人材も確保しながら対応している"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "事業所と情報交換し制度活用を探るべき"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "外国人材活用は検討余地があるが言語と業務の課題整理が必要"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "言語面の課題が現実的導入の障壁"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "従事内容との適合を整理する必要がある"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "１０番斉藤勝君"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_43 prop:content "来年に向けて混雑対策を早急に考えるべき"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "函館方面からの来訪車増加も見込んだ対策が必要"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "利用客に大きな迷惑をかけたため改善が必要"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "駐車場に入れないだけで再訪意欲を失う人も出かねない"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "シャトルバス見直しで渋滞緩和と利便性向上を図る"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "臨時駐車場活用で渋滞緩和を図るべき"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "停留所追加で観光客の利便性を高める"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+kg:op_50 prop:content "海産干場を臨時駐車場として活用できるよう早急に検討すべき"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "財源も含めて利用方法を早速検討したい"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "キャンピングカー増加を見据えた対策が必要"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_4.
+kg:op_53 prop:content "駐車スペース占有が大きな問題になっている"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "このままでは駐車場運用が一層厳しくなる"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_4.
+kg:op_55 prop:content "当面はマナー啓発を徹底する"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "他地域の試行例を参考に今後の対応を検討する"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "老齢化が進む桜の管理強化が必要"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "植栽間隔の問題も含め更新方針を考えるべき"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "老齢木更新を含めた管理方針が必要"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "２番飯田幸仁君"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_60 prop:content "日本一の桜を目指すなら人手不足への対応が必要"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_5.
+kg:op_61 prop:content "花の間から枯れ枝が見える状況は改善すべき"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_5.
+kg:op_62 prop:content "整備計画の中で老齢木更新や植栽方針を検討する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_2.
+kg:op_63 prop:content "限られた人員の中で作業方法を工夫している"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_2.
+kg:op_64 prop:content "血脈桜のような名木を次世代に残したい"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_2.
+kg:op_65 prop:content "広く意見を聞きながら名木づくりを検討する"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_2.
+kg:op_66 prop:content "名木づくりの財源としてふるさと納税活用が考えられる"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_2.
+kg:op_67 prop:content "資金調達手法として検討価値がある"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_2.
+kg:op_68 prop:content "誰でも気軽に参加できる環境づくりが必要"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_2.
+kg:op_69 prop:content "入館状況を踏まえると期間延長は厳しい"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_2.
+kg:op_70 prop:content "常駐人員確保が期間延長の課題"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_2.
+kg:op_71 prop:content "藩屋敷での展示で桜の里を通年ＰＲしたい"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_2.
+kg:op_72 prop:content "来館者の声を聞くボランティアの意見を取り入れて展示を見直すべき"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_2.
+kg:op_73 prop:content "研究の場として松前公園をもっと認知させるべき"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_2.
+kg:op_74 prop:content "財源調達にもつながるため整備計画の中で意見を聞きたい"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_2.
+kg:op_75 prop:content "子どもへの学習を通じて讃桜文化を継承するべき"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "過疎、少子高齢化によって人口減少が進んで行きまして"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "松前町では、これまでテレワークの課題と致しましては、今議員おっしゃるようにインターネット環境の弱さであります。今や５Ｇや光回線が当たり前に使える中、光回線が一部分しか使えない現状にあった"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "昨年４月にＮＴＴが試験的に実施したワーケーションによる率直な評価は、Ｗｉ－Ｆｉ環境の物足りなさや"@ja.
+<< kg:id_3 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "テーブル、イスやワーキングスペースへの指摘"@ja.
+<< kg:id_3 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "更にはサービス環境にも改善点を指摘されるなど、人を呼び込むための環境整備は想定を越えるきめ細かさが必要であると評価がされて"@ja.
+<< kg:id_3 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これまでの移住定住やテレワークを進めるにあたって、行き詰まるのが雇用の場所と住まいの確保であります"@ja.
+<< kg:id_3 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これまでの移住定住やテレワークを進めるにあたって、行き詰まるのが雇用の場所と住まいの確保であります"@ja.
+<< kg:id_3 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "画面越しの会議ではなかなか空気が読めず、人と人とのコミュニケーションの希薄性が問題になるなど"@ja.
+<< kg:id_3 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "松前町の現状においては、企業向けのワーケーションの推進が有効ではないかというふうに思っているところであります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "受入施設の整備は重要であり、更に宿泊場所、そして松前町の魅力の設定、最後に宣伝と運営母体をどのようにしていくかと、課題は明確になってきているところであります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "受入施設の整備は重要であり、更に宿泊場所、そして松前町の魅力の設定"@ja.
+<< kg:id_3 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "担当課職員もワーケーションプログラムの検討を現在進めているところであります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "事業化に際しては民間事業へシフトしていけるようにならなければならず"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "東急不動産株式会社では、今後の風力発電の展開も見据えて、事務所兼コミュニティスペースの新築を検討しているとの話も聞き、町と致しましても、積極的に協力しながらワーケーションも受け入れできる施設となるように要望しながら"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "しかし、今般の急激な人口減少と比例し使用水量の減少が続き、今後も給水収益の増加が見込めない状況となっております"@ja.
+<< kg:id_18 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "急激な人口減少と比例し使用水量の減少が続き、今後も給水収益の増加が見込めない状況となっております"@ja.
+<< kg:id_18 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "令和７年度に当年度純利益が赤字と見込まれることから"@ja.
+<< kg:id_22 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "改定内容について議員の皆様を始め、町民の皆様に広くご意見を頂戴する場を設けさせていただきたい"@ja.
+<< kg:id_22 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "現在の用途別料金体系から口径別料金体系への変更"@ja.
+<< kg:id_22 prop:contermeasure kg:id_25 >>
+    prop:text-txt_contents "休栓料金を廃止して"@ja.
+<< kg:id_22 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "メーター使用料の新設"@ja.
+<< kg:id_22 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "基本料金に含まれる使用水量の見直しなどが大きな改正点となります"@ja.
+<< kg:id_22 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "今回の料金改定では、約１０％程度の値上げとなるように計画したところであります"@ja.
+<< kg:id_22 prop:contermeasure kg:id_29 >>
+    prop:text-txt_contents "なお、５年後には再度の料金改定を見込んでおります"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "これは観光バスが４９．２％、マイカーが５５．４％といずれも半数程度にとどまり、ツアーの団体客が戻らないことに加えて"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "マイカーが５５．４％といずれも半数程度にとどまり"@ja.
+<< kg:id_30 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "桜の開花が早まり"@ja.
+<< kg:id_30 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "大型連休後半には道内各地で桜の見どころを迎え、観光客が分散したことにより"@ja.
+<< kg:id_30 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "コロナ禍前の半数程度にとどまったと推察しています"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "高齢化が顕著に進んでいる中"@ja.
+<< kg:id_36 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "身寄りもいない一人住まいの高齢者も同様に増えております"@ja.
+<< kg:id_36 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "介護状態の一歩手前の、要するに介護予備軍のフレイルと言われる人達も、私を含め、たくさんおります"@ja.
+<< kg:id_40 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "町内の病院では、治療を受けられず、やむを得ず町外の病院まで"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "多額の交通費をかけて治療を受けに行っている低所得者、高齢者もいる"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "所得の少ない高齢者には、生活に対する負担も増してきており"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "自分の身体のことを他人に話したり、函館の病院はどう行ったらいいのかななど、気軽に相談できる人も少ないと思うんですね"@ja.
+<< kg:id_40 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "生活弱者の方含めまして、低所得者の方含めまして、いろいろ対応して行きたいなというふうに思っているところであります"@ja.
+<< kg:id_40 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "できるならば他町と連携した支援体制を整えていただきたい"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "全国的に担い手不足が深刻化しておりまして、解決策が見出されていないという現状のようでございます"@ja.
+<< kg:id_49 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "町内での人材確保が困難な場面もあり"@ja.
+<< kg:id_49 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "町内で資格を有りながら、勤務していただけない状況もあるようであります。課題があるからだというふうに思っているところであります"@ja.
+<< kg:id_49 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "町内の事業所におきましても、同様の状況となっております、大きな課題であります"@ja.
+<< kg:id_49 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "町外、これは函館市内からの人材を確保しながら、経営努力を続けられてる事業所もあるのが現状であります"@ja.
+<< kg:id_49 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "町と致しましても、人材確保のための情報の収集や制度の活用方法について、更に各事業所と情報交換や協議を実施していきたい"@ja.
+<< kg:id_49 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "外国人労働者の採用を検討して、協議をされたケースは町内にはあります"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "この理由と致しましては、やっぱりコミュニケーション、言語の関係、言葉の関係や"@ja.
+<< kg:id_57 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "従事業務内容等、課題の整理が必要だなというふうに思っております"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "ゴールデンウイーク期間中は、１日１千人を超える利用客で賑わった日もあるようであります。一方、利用客の増加で駐車場は満車となりまして"@ja.
+<< kg:id_60 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "特に函館方面からの車が多かった"@ja.
+<< kg:id_60 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "結果、駐車待ちの車で渋滞し、利用客の皆様に大変ご迷惑をおかけした"@ja.
+<< kg:id_60 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "この駐車場に入れないっていうだけでもう行きたくないと、こういう思いの人もいると思います"@ja.
+<< kg:id_60 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "対策として、さくらまつり期間中に運行しているシャトルバスを、現在の道の駅と藩屋敷の巡回経路を見直しして"@ja.
+<< kg:id_60 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "臨時駐車場を経由することで渋滞緩和に繋がらないか、検討をする予定でございます"@ja.
+<< kg:id_60 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "役場前と沖口広場を停留所に追加することで、観光客の利便性向上と交通渋滞の緩和に繋げていきたい"@ja.
+<< kg:id_60 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "あすこを、唐津側の入口を広げて斜路を、斜めになってる斜路を真っ直ぐにして、ぐるっと回るようにすれば相当な台数停めれる"@ja.
+<< kg:id_60 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "いろんな状況も承知しながら、これからどんな方法で利用できるのか、関係課と財源も含めて検討してみたいなというふうに思っております"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "今、あすこの駐車場の唐津よりの方に７台も８台もキャンピングカーが並んでいるんですよね。中には連泊するキャンピングカーもいる"@ja.
+<< kg:id_70 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "キャンピングカーの中には２台分の駐車スペースを占有し"@ja.
+<< kg:id_70 prop:effect kg:id_73 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "このキャンピングカーっての、今流行りと言いますか流行と言いますかね、大分多くなってきています"@ja.
+<< kg:id_70 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "当面の間は、道の駅と連携を図り、国土交通省に準じたマナーの呼びかけをしていきたい"@ja.
+<< kg:id_70 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "弟子屈町の道の駅摩周温泉で、国土交通省と連携し、試験的に車中泊の有料実験、これは、午前１０時から丸一日、１泊１千５００円を実施しているようであります。これらの動向も参考にしながら、今後の対応策を検討したい"@ja.
+<< kg:id_76 prop:cause kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "松前公園の桜は、樹齢５０年を超えるものが多くて、年齢化により除去しても新たな枯れ枝が発生する"@ja.
+<< kg:id_76 prop:cause kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "第２公園の桜は、木と木の間隔が狭く"@ja.
+<< kg:id_76 prop:cause kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "老齢化も進んでいることから"@ja.
+<< kg:id_76 prop:cause kg:id_80 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "マンパワー不足は、松前公園に限ったことではなくて、人口減少に伴い、あらゆる分野において不足しております"@ja.
+<< kg:id_76 prop:effect kg:id_81 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "年齢化により除去しても新たな枯れ枝が発生する"@ja.
+<< kg:id_76 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "今後予定している松前公園整備計画策定の中で、老齢木の更新も含めて、管理方針を検討する"@ja.
+<< kg:id_76 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "松前公園では、マンパワー不足に対応するために、一部草刈り業務の回数を減らすなどして、今後のあり方も検討をしている"@ja.
+<< kg:id_84 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "樹齢３００年を超える、今飯田議員のお尋ねにもございました、３００年を超える血脈桜のように、次世代に引き継ぐ名木を育てたい"@ja.
+<< kg:id_84 prop:contermeasure kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "今後予定している松前公園整備計画策定の中で、植栽の場所や品種について、広くご意見を伺いながら検討をしていきたい"@ja.
+<< kg:id_84 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "ふるさと納税を財源として行う事業の中に、世界一の桜の里づくりに関する事業を対象事業としております"@ja.
+<< kg:id_84 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "クラウドファンディングも資金調達の方法として、一般的に広く活用されているので、検討する価値はある"@ja.
+<< kg:id_89 prop:cause kg:id_90 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "しかし、残念ながら参加者も少ないことでありまして、誰でも気軽に参加できるような環境づくり"@ja.
+<< kg:id_89 prop:contermeasure kg:id_91 >>
+    prop:text-txt_contents "コロナ前の令和元年度までは町民を対象に樹木医等による桜講習会を開催"@ja.
+<< kg:id_89 prop:contermeasure kg:id_92 >>
+    prop:text-txt_contents "町内小学生を対象に桜学習を行うなど、学びの場は用意してきている"@ja.
+<< kg:id_93 prop:cause kg:id_94 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "施設の入館状況から見て、職員を置いての期間延長はできるんだというふうに思いますけども、そういう諸々の状況から判断すると、期間延長は、運営、コスト的にも大変厳しい"@ja.
+<< kg:id_93 prop:cause kg:id_95 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "いろんな施設の管理上、開館の際には常駐する職員が必要となります"@ja.
+<< kg:id_93 prop:contermeasure kg:id_96 >>
+    prop:text-txt_contents "桜資料館は現在ボランティアの協力でさくらまつり期間のみの臨時開館となっている"@ja.
+<< kg:id_93 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "さくらまつり以降、松前藩屋敷の民家に桜資料館にある資料の一部を展示し、桜の里のＰＲすることも現在検討している"@ja.
+<< kg:id_98 prop:contermeasure kg:id_99 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "来館者の声を直接聞いているボランティアの方々からもご意見を伺いながら、どんな展示方法がいいのか、検討してみたい"@ja.
+<< kg:id_100 prop:contermeasure kg:id_101 >>
+    prop:text-txt_contents "町では、松前桜保存研究推進協議会と連携して公園内にある桜を研究材料に、土壌改良を実施したり、樹木医らによる桜講習会や桜の保存活動などの調査、研究を行っている"@ja.
+<< kg:id_100 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "機会あるごとに松前公園の希少性をアピールし、認知されるように努める必要がある"@ja.
+<< kg:id_103 prop:contermeasure kg:id_104 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "桜のオーナー制度につきましては、何回かお話を聞いた時期がございました。桜を管理するうえでの財源調達にも繋がると思っております"@ja.
+<< kg:id_105 prop:contermeasure kg:id_106 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "現在は小学生を対象に桜学習を通じて、讃桜文化の普及、啓発に取り組んでいる"@ja.
+<< kg:id_105 prop:contermeasure kg:id_107 >>
+    prop:text-txt_contents "また、桜観察会や"@ja.
+<< kg:id_105 prop:contermeasure kg:id_108 >>
+    prop:text-txt_contents "５月１日の桜の日を記念した桜カレンダーも作成し"@ja.
+<< kg:id_105 prop:contermeasure kg:id_109 >>
+    prop:text-txt_contents "名木を回るスタンプラリーも開催し、松前の桜に関心を持ってもらう取り組みを行っております"@ja.
+}

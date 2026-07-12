@@ -1,0 +1,369 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00030> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電所の更新計画"@ja.
+kg:id_1 rdf:type cls:c_390.
+cls:c_390 rdfs:label "発電計画"@ja.
+kg:id_2 rdfs:label "更新前よりも大規模な出力規模や発電機諸元"@ja.
+kg:id_2 rdf:type cls:c_403.
+cls:c_403 rdfs:label "設備の大規模化"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "周辺環境への影響"@ja.
+kg:id_3 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "酒田北港地区と宮海地区海岸部"@ja.
+kg:id_4 rdf:type cls:c_404.
+cls:c_404 rdfs:label "事業区域"@ja.
+kg:id_5 rdfs:label "周辺の状況が大きく異なること"@ja.
+kg:id_5 rdf:type cls:c_405.
+cls:c_405 rdfs:label "地域差"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_4 prop:effect kg:id_3.
+kg:id_6 rdfs:label "宮海地区海岸部"@ja.
+kg:id_6 rdf:type cls:c_406.
+cls:c_406 rdfs:label "沿岸区域"@ja.
+kg:id_7 rdfs:label "酒田市風力発電施設建設ガイドラインに定める調整を要する区域"@ja.
+kg:id_7 rdf:type cls:c_407.
+cls:c_407 rdfs:label "調整区域"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "景観や環境等に十分に配慮"@ja.
+kg:id_8 rdf:type cls:c_103.
+cls:c_103 rdfs:label "環境配慮"@ja.
+kg:id_6 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "今後の環境影響評価の手続き"@ja.
+kg:id_9 rdf:type cls:c_161.
+cls:c_161 rdfs:label "環境影響評価"@ja.
+kg:id_10 rdfs:label "既存設備建設時のモニタリングデータや知見資料の検証総括と積極的活用"@ja.
+kg:id_10 rdf:type cls:c_408.
+cls:c_408 rdfs:label "既存知見の活用"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "風車の影"@ja.
+kg:id_11 rdf:type cls:c_359.
+cls:c_359 rdfs:label "風車影響"@ja.
+kg:id_12 rdfs:label "施設の大規模化"@ja.
+kg:id_12 rdf:type cls:c_403.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "周辺住宅地への影響"@ja.
+kg:id_13 rdf:type cls:c_409.
+cls:c_409 rdfs:label "住宅地影響"@ja.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "周辺住宅地を対象とした調査予測及び評価"@ja.
+kg:id_14 rdf:type cls:c_228.
+cls:c_228 rdfs:label "影響評価"@ja.
+kg:id_11 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "バードストライクによる鳥類への影響"@ja.
+kg:id_15 rdf:type cls:c_6.
+cls:c_6 rdfs:label "鳥類影響"@ja.
+kg:id_16 rdfs:label "事業実施想定区域周辺に本発電所のほかにも多数の風力発電所が存在"@ja.
+kg:id_16 rdf:type cls:c_410.
+cls:c_410 rdfs:label "風力発電所"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "鳥類への影響が大きくなること"@ja.
+kg:id_17 rdf:type cls:c_411.
+cls:c_411 rdfs:label "影響拡大"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "他の風力発電事業者との情報交換"@ja.
+kg:id_18 rdf:type cls:c_412.
+cls:c_412 rdfs:label "情報交換"@ja.
+kg:id_15 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "専門家へのヒアリング実施"@ja.
+kg:id_19 rdf:type cls:c_413.
+cls:c_413 rdfs:label "専門家聞取"@ja.
+kg:id_15 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "累積的な影響の予測評価"@ja.
+kg:id_20 rdf:type cls:c_414.
+cls:c_414 rdfs:label "累積影響評価"@ja.
+kg:id_15 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "バードストライクの調査予測及び評価"@ja.
+kg:id_21 rdf:type cls:c_298.
+cls:c_298 rdfs:label "鳥類調査"@ja.
+kg:id_22 rdfs:label "小型鳥類も対象として実施"@ja.
+kg:id_22 rdf:type cls:c_415.
+cls:c_415 rdfs:label "小型鳥類"@ja.
+kg:id_21 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "既設風車"@ja.
+kg:id_23 rdf:type cls:c_416.
+cls:c_416 rdfs:label "既存設備"@ja.
+kg:id_24 rdfs:label "鳥類の死骸調査の実施"@ja.
+kg:id_24 rdf:type cls:c_42.
+cls:c_42 rdfs:label "死骸調査"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "衝突数の推定"@ja.
+kg:id_25 rdf:type cls:c_417.
+cls:c_417 rdfs:label "衝突数推定"@ja.
+kg:id_26 rdfs:label "死骸の消失率など最新の知見の活用"@ja.
+kg:id_26 rdf:type cls:c_418.
+cls:c_418 rdfs:label "最新知見の活用"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "渡り鳥の調査"@ja.
+kg:id_27 rdf:type cls:c_419.
+cls:c_419 rdfs:label "渡り鳥調査"@ja.
+kg:id_28 rdfs:label "鳥の飛翔高度にも配慮した予測及び評価"@ja.
+kg:id_28 rdf:type cls:c_420.
+cls:c_420 rdfs:label "飛翔高度配慮"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "ハクチョウ"@ja.
+kg:id_29 rdf:type cls:c_421.
+cls:c_421 rdfs:label "水鳥"@ja.
+kg:id_30 rdfs:label "経由地だけでなく越冬している現在の状況により渡来地として捉えられること"@ja.
+kg:id_30 rdf:type cls:c_422.
+cls:c_422 rdfs:label "渡来地"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "渡りの経路を把握するなど適切な調査予測及び評価"@ja.
+kg:id_31 rdf:type cls:c_298.
+kg:id_29 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "植物の調査"@ja.
+kg:id_32 rdf:type cls:c_423.
+cls:c_423 rdfs:label "植物調査"@ja.
+kg:id_33 rdfs:label "宮海地区海岸部の既存設備工事による植生改変の有無及び復元状況の把握"@ja.
+kg:id_33 rdf:type cls:c_7.
+cls:c_7 rdfs:label "植生改変"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "丁寧な予測及び評価"@ja.
+kg:id_34 rdf:type cls:c_228.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "景観"@ja.
+kg:id_35 rdf:type cls:c_66.
+cls:c_66 rdfs:label "景観"@ja.
+kg:id_36 rdfs:label "施設の大規模化に伴いより広い範囲から風車が視認できる可能性が高まること"@ja.
+kg:id_36 rdf:type cls:c_403.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "より広い範囲から風車が視認できる可能性"@ja.
+kg:id_37 rdf:type cls:c_424.
+cls:c_424 rdfs:label "視認範囲拡大"@ja.
+kg:id_35 prop:effect kg:id_37.
+kg:id_38 rdfs:label "関係自治体の意見を聞き既知の眺望点以外にも調査地点を追加選定するなどより効果的な調査手法の検討"@ja.
+kg:id_38 rdf:type cls:c_425.
+cls:c_425 rdfs:label "調査手法検討"@ja.
+kg:id_35 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "景観への影響"@ja.
+kg:id_39 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_40 rdfs:label "酒田市景観計画を踏まえ主要な眺望点からの景観への影響をできる限り回避低減できるよう事業計画を検討"@ja.
+kg:id_40 rdf:type cls:c_426.
+cls:c_426 rdfs:label "事業計画検討"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:st_1 rdfs:label "山形県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "周辺環境への影響を回避低減できるよう慎重な検討を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "影響をできる限り回避低減するよう求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "それぞれの区域で個別に調査予測評価すべきとする"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "自然環境と地域生活環境への影響をそれぞれ評価するよう求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "景観や環境に十分配慮すべきとする"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "調整を要する区域であるため十分な配慮を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "既存データを適切に検証総括し積極活用すべきとする"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "大規模化に伴う影響の調査予測評価を求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "周辺住宅地を対象に影響を評価すべきとする"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "住宅地への影響把握のため調査予測評価を求める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "累積的影響の予測評価が必要とする"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "影響拡大を懸念して累積評価を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "他事業者との情報交換に努めるべきとする"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "研究を進める専門家への聞き取りを求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "累積的な影響を予測評価すべきとする"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "小型鳥類を含めて調査すべきとする"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "既設風車で死骸調査を行うよう求める"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "過小評価を避けるため最新知見の活用を求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "飛翔高度を踏まえて予測評価すべきとする"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "渡来地として適切な調査が必要とする"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "渡り経路の把握を含む適切な調査予測評価を求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "植生改変と復元状況を把握した上で評価すべきとする"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "丁寧な予測評価を求める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "視認範囲拡大を踏まえ調査手法の工夫を求める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "景観影響の広域化を考慮すべきとする"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "自治体の意見も踏まえ調査地点追加など効果的手法を求める"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "景観計画を踏まえ主要眺望点からの影響回避低減を求める"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "本事業では、風力発電所の出力規模や発電機諸元が、更新前よりも大規模なものとなる計画となっている"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "周辺環境への影響をできる限り回避、低減できるよう慎重に検討するとともに"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "事業実施想定区域である酒田北港地区と宮海地区海岸部では、周辺の状況が大きく異なることから"@ja.
+<< kg:id_4 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "周辺環境（自然環境、地域生活環境）に及ぼす影響について、それぞれ調査、予測及び評価を実施すること"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "宮海地区海岸部は、「酒田市風力発電施設建設ガイドライン」に定める調整を要する区域となっているため"@ja.
+<< kg:id_6 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "景観や環境等に十分に配慮すること"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "既存設備の建設時に行ったモニタリングデータなど、これまでの発電所の運営にあたって得られた知見や資料を適切に検証、総括するとともに、これらを積極的に活用すること"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "施設の大規模化に伴い、風車の影による影響が懸念されることから"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "特に周辺住宅地を対象として、風車の影の影響について調査、予測及び評価を行うこと"@ja.
+<< kg:id_11 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "特に周辺住宅地を対象として、風車の影の影響について調査、予測及び評価を行うこと"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "事業実施想定区域周辺には、本発電所のほかにも多数の風力発電所が存在することから、バードストライクによる鳥類への影響が大きくなることが懸念される"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "バードストライクによる鳥類への影響が大きくなることが懸念される"@ja.
+<< kg:id_15 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "他の風力発電事業者との情報交換に努めるとともに"@ja.
+<< kg:id_15 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "バードストライクの研究を進めている専門家へのヒアリングを実施し"@ja.
+<< kg:id_15 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "累積的な影響を予測、評価すること"@ja.
+<< kg:id_21 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "バードストライクの調査、予測及び評価にあたっては、小型鳥類も対象として実施すること"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "既設風車について、鳥類の死骸調査を実施することとし"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "調査に基づく衝突数の推定にあたっては、死骸の消失率などについて最新の知見を活用し、過小な評価にならないよう、適切に実施すること"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "渡り鳥の調査にあたっては、鳥の飛翔高度にも配慮して予測及び評価を行うこと"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "ハクチョウについては、経由地としてだけでなく、越冬している現在の状況により渡来地として捉えられるため"@ja.
+<< kg:id_29 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "渡りの経路を把握するなど適切な調査、予測及び評価を実施すること"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "植物の調査にあたっては、宮海地区海岸部における既存設備の工事による植生の改変の有無、及びその復元状況を把握した上で"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "丁寧な予測及び評価を行うこと"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "施設の大規模化に伴い、より広い範囲から風車が視認できる可能性が高まることから"@ja.
+<< kg:id_35 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "より広い範囲から風車が視認できる可能性が高まることから"@ja.
+<< kg:id_35 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "関係自治体の意見も聞きながら、既知の眺望点以外にも調査地点を追加選定するなど、より効果的な調査手法を検討すること"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "「酒田市景観計画」を踏まえ、主要な眺望点からの景観への影響をできる限り回避、低減することができるよう、事業計画を検討すること"@ja.
+}

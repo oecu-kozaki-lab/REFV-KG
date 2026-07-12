@@ -1,0 +1,139 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00019> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "由利大内ウィンドファーム風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "影響を受けるおそれのある環境要素について影響の程度を必要に応じて調査・予測・評価し総合的に評価して事業の位置・規模及び配置・構造の決定に反映する"@ja.
+kg:id_2 rdf:type cls:c_161.
+cls:c_161 rdfs:label "環境影響評価"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "事業の位置・規模及び配置・構造を可能な限り明確にするとともに環境配慮事項の検討経緯を記載する"@ja.
+kg:id_3 rdf:type cls:c_13534.
+cls:c_13534 rdfs:label "計画明確化"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "騒音及び超低周波音並びに風車の影響"@ja.
+kg:id_4 rdf:type cls:c_5.
+cls:c_5 rdfs:label "生活環境影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "事業実施想定区域の周辺に住居等が存在すること"@ja.
+kg:id_5 rdf:type cls:c_13593.
+cls:c_13593 rdfs:label "住居立地"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "風力発電機と住居等との距離を適切に確保して事業実施による影響を回避・低減する"@ja.
+kg:id_6 rdf:type cls:c_2152.
+cls:c_2152 rdfs:label "距離確保"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "植物への影響"@ja.
+kg:id_7 rdf:type cls:c_320.
+cls:c_320 rdfs:label "植物影響"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "工事用道路も含め自然改変を可能な限り小さくして植生等に影響を及ぼさないよう十分に配慮する"@ja.
+kg:id_8 rdf:type cls:c_13713.
+cls:c_13713 rdfs:label "自然改変抑制"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "地下水への影響"@ja.
+kg:id_9 rdf:type cls:c_7961.
+cls:c_7961 rdfs:label "地下水影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "地下水への影響について事業特性や地域特性を踏まえて検討する"@ja.
+kg:id_10 rdf:type cls:c_13546.
+cls:c_13546 rdfs:label "影響検討"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "環境要素への影響を調査・予測・評価し事業計画に反映すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "計画内容と環境配慮事項の検討経緯を明確に示すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "住居等への騒音・超低周波音・風車影響の回避低減が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "周辺に住居等があるため距離確保などの配慮が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "風力発電機と住居等の距離確保で影響を回避低減すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "自然改変を抑えて植生等への影響回避が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "工事用道路を含め自然改変を最小化すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "地下水への影響を事業特性と地域特性を踏まえて検討すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "地下水影響の検討を進めるべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "今後の事業計画の検討に当たっては、影響を受けるおそれのある環境要素について、影響の程度を必要に応じて調査・予測し、その結果を総合的に評価して事業の「位置・規模」及び「配置・構造」の決定に反映すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "方法書においては、事業の「位置・規模」及び「配置・構造」を可能な限り明確にするとともに、環境配慮事項の検討経緯を記載すること。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "騒音及び超低周波音、風車の影響"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "事業実施想定区域の周辺には、住居等が存在することから、風力発電機と住居等との距離を適切に確保するなど、事業実施による影響を回避・低減するよう配慮すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "事業実施想定区域の周辺には、住居等が存在することから、風力発電機と住居等との距離を適切に確保するなど、事業実施による影響を回避・低減するよう配慮すること。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "植物"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "風力発電機の配置の検討に当たっては、工事用道路も含め、自然改変を可能な限り小さくするなど、植生等に影響を及ぼさないよう十分に配慮すること。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "事業の実施に伴う地下水への影響について、事業特性や地域特性を踏まえて検討すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "事業の実施に伴う地下水への影響について、事業特性や地域特性を踏まえて検討すること。"@ja.
+}

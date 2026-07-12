@@ -1,0 +1,763 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00114> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "損害賠償の額の決定"@ja.
+kg:id_1 rdf:type cls:c_6751.
+cls:c_6751 rdfs:label "賠償決定"@ja.
+kg:id_2 rdfs:label "公用車運転中の事故"@ja.
+kg:id_2 rdf:type cls:c_6752.
+cls:c_6752 rdfs:label "事故"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "低所得世帯への生活支援"@ja.
+kg:id_3 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_4 rdfs:label "灯油等購入費の負担"@ja.
+kg:id_4 rdf:type cls:c_6753.
+cls:c_6753 rdfs:label "生活負担"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "県の補助制度創設の動き"@ja.
+kg:id_5 rdf:type cls:c_804.
+cls:c_804 rdfs:label "補助制度"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "国の消費喚起・生活支援型交付金の動き"@ja.
+kg:id_6 rdf:type cls:c_6754.
+cls:c_6754 rdfs:label "交付金制度"@ja.
+kg:id_3 prop:cause kg:id_6.
+kg:id_7 rdfs:label "風力発電施設整備推進事業費"@ja.
+kg:id_7 rdf:type cls:c_6755.
+cls:c_6755 rdfs:label "事業費"@ja.
+kg:id_8 rdfs:label "事業の内容及び工程の見直し"@ja.
+kg:id_8 rdf:type cls:c_834.
+cls:c_834 rdfs:label "事業見直し"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "保育所入所扶助事業費"@ja.
+kg:id_9 rdf:type cls:c_6756.
+cls:c_6756 rdfs:label "扶助事業費"@ja.
+kg:id_10 rdfs:label "保育単価の改定"@ja.
+kg:id_10 rdf:type cls:c_6757.
+cls:c_6757 rdfs:label "単価改定"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "各種予防接種事業費"@ja.
+kg:id_11 rdf:type cls:c_6755.
+kg:id_12 rdfs:label "決算見込み"@ja.
+kg:id_12 rdf:type cls:c_6566.
+cls:c_6566 rdfs:label "決算見込み"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "酒田地区広域行政組合分賦金"@ja.
+kg:id_13 rdf:type cls:c_6758.
+cls:c_6758 rdfs:label "負担金"@ja.
+kg:id_13 prop:cause kg:id_12.
+kg:id_14 rdfs:label "旧食肉処理場施設維持管理事業費"@ja.
+kg:id_14 rdf:type cls:c_6759.
+cls:c_6759 rdfs:label "維持管理費"@ja.
+kg:id_15 rdfs:label "施設の一部解体工事に係る工事内容の変更"@ja.
+kg:id_15 rdf:type cls:c_6760.
+cls:c_6760 rdfs:label "工事変更"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "土地改良負担事業費"@ja.
+kg:id_16 rdf:type cls:c_6761.
+cls:c_6761 rdfs:label "負担事業費"@ja.
+kg:id_16 prop:cause kg:id_12.
+kg:id_17 rdfs:label "中小企業融資資金貸付事業費"@ja.
+kg:id_17 rdf:type cls:c_6762.
+cls:c_6762 rdfs:label "貸付事業費"@ja.
+kg:id_17 prop:cause kg:id_12.
+kg:id_18 rdfs:label "県施行街路整備事業費"@ja.
+kg:id_18 rdf:type cls:c_6763.
+cls:c_6763 rdfs:label "整備事業費"@ja.
+kg:id_19 rdfs:label "豊里十里塚線に係る事業費の決算見込み"@ja.
+kg:id_19 rdf:type cls:c_6566.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "高畑山村広場整備事業費"@ja.
+kg:id_20 rdf:type cls:c_6763.
+kg:id_21 rdfs:label "事業費の確定"@ja.
+kg:id_21 rdf:type cls:c_6764.
+cls:c_6764 rdfs:label "事業費確定"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "公共土木施設災害復旧事業費"@ja.
+kg:id_22 rdf:type cls:c_6765.
+cls:c_6765 rdfs:label "復旧事業費"@ja.
+kg:id_23 rdfs:label "県施行急傾斜地崩壊対策事業負担金等の決算見込み"@ja.
+kg:id_23 rdf:type cls:c_6566.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "公債費元金"@ja.
+kg:id_24 rdf:type cls:c_6766.
+cls:c_6766 rdfs:label "公債費"@ja.
+kg:id_25 rdfs:label "市債の繰上償還の実施"@ja.
+kg:id_25 rdf:type cls:c_3503.
+cls:c_3503 rdfs:label "繰上償還"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "市税"@ja.
+kg:id_26 rdf:type cls:c_6767.
+cls:c_6767 rdfs:label "税収"@ja.
+kg:id_27 rdfs:label "市民税及び固定資産税の増収"@ja.
+kg:id_27 rdf:type cls:c_6768.
+cls:c_6768 rdfs:label "増収"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "公共下水道事業特別会計予算"@ja.
+kg:id_28 rdf:type cls:c_6769.
+cls:c_6769 rdfs:label "会計予算"@ja.
+kg:id_29 rdfs:label "決算見込みによる減額"@ja.
+kg:id_29 rdf:type cls:c_6566.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "病院事業会計予算の収益的収入"@ja.
+kg:id_30 rdf:type cls:c_6770.
+cls:c_6770 rdfs:label "会計収入"@ja.
+kg:id_31 rdfs:label "入院収益の減"@ja.
+kg:id_31 rdf:type cls:c_6771.
+cls:c_6771 rdfs:label "収益減"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "病院事業会計予算の支出"@ja.
+kg:id_32 rdf:type cls:c_6772.
+cls:c_6772 rdfs:label "会計支出"@ja.
+kg:id_33 rdfs:label "給与費・材料費などの決算見込み"@ja.
+kg:id_33 rdf:type cls:c_6566.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "病院事業会計予算の資本的収入"@ja.
+kg:id_34 rdf:type cls:c_6770.
+kg:id_35 rdfs:label "企業債・補助金の減額"@ja.
+kg:id_35 rdf:type cls:c_6773.
+cls:c_6773 rdfs:label "収入減"@ja.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "病院事業会計予算の資本的支出"@ja.
+kg:id_36 rdf:type cls:c_6772.
+kg:id_37 rdfs:label "建設改良費の減額"@ja.
+kg:id_37 rdf:type cls:c_6774.
+cls:c_6774 rdfs:label "支出減"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "酒田市部設置条例の一部改正"@ja.
+kg:id_38 rdf:type cls:c_1665.
+cls:c_1665 rdfs:label "条例改正"@ja.
+kg:id_39 rdfs:label "市の行政組織の変更"@ja.
+kg:id_39 rdf:type cls:c_4158.
+cls:c_4158 rdfs:label "組織変更"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "酒田市いじめ防止対策の推進に関する条例の制定"@ja.
+kg:id_40 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_41 rdfs:label "いじめ防止対策推進法の施行"@ja.
+kg:id_41 rdf:type cls:c_6775.
+cls:c_6775 rdfs:label "法令施行"@ja.
+kg:id_40 prop:cause kg:id_41.
+kg:id_42 rdfs:label "排水基準の変更"@ja.
+kg:id_42 rdf:type cls:c_6776.
+cls:c_6776 rdfs:label "基準変更"@ja.
+kg:id_43 rdfs:label "下水道法施行令の一部改正"@ja.
+kg:id_43 rdf:type cls:c_4224.
+cls:c_4224 rdfs:label "法令改正"@ja.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "民事調停事件に係る調停案の受諾"@ja.
+kg:id_44 rdf:type cls:c_6777.
+cls:c_6777 rdfs:label "調停案受諾"@ja.
+kg:id_45 rdfs:label "民事調停事件の発生"@ja.
+kg:id_45 rdf:type cls:c_6778.
+cls:c_6778 rdfs:label "調停事件"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "過疎地域自立促進計画の変更"@ja.
+kg:id_46 rdf:type cls:c_1663.
+cls:c_1663 rdfs:label "計画変更"@ja.
+kg:id_47 rdfs:label "計画の一部変更"@ja.
+kg:id_47 rdf:type cls:c_1663.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "青沢辺地に係る公共的施設の総合整備計画の策定"@ja.
+kg:id_48 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_49 rdfs:label "公共的施設の総合整備の必要"@ja.
+kg:id_49 rdf:type cls:c_6779.
+cls:c_6779 rdfs:label "整備必要"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "飛島辺地に係る公共的施設の総合整備計画の変更"@ja.
+kg:id_50 rdf:type cls:c_1663.
+kg:id_51 rdfs:label "公共的施設の総合整備計画の変更"@ja.
+kg:id_51 rdf:type cls:c_1663.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "市道路線の認定"@ja.
+kg:id_52 rdf:type cls:c_3480.
+cls:c_3480 rdfs:label "路線認定"@ja.
+kg:id_53 rdfs:label "交差点改良による代替路線"@ja.
+kg:id_53 rdf:type cls:c_6780.
+cls:c_6780 rdfs:label "代替路線"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "宅地造成により新たに築造された路線"@ja.
+kg:id_54 rdf:type cls:c_6781.
+cls:c_6781 rdfs:label "新設路線"@ja.
+kg:id_52 prop:cause kg:id_54.
+kg:id_55 rdfs:label "酒田市庁舎改築工事の請負金額変更"@ja.
+kg:id_55 rdf:type cls:c_3929.
+cls:c_3929 rdfs:label "金額変更"@ja.
+kg:id_56 rdfs:label "賃金水準等の変動"@ja.
+kg:id_56 rdf:type cls:c_6782.
+cls:c_6782 rdfs:label "価格変動"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "灯油だけでなくガスや電気による暖房使用世帯にも助成可能"@ja.
+kg:id_57 rdf:type cls:c_6550.
+cls:c_6550 rdfs:label "助成拡大"@ja.
+kg:id_3 prop:effect kg:id_57.
+kg:id_58 rdfs:label "できるだけ早い給付と活用が可能"@ja.
+kg:id_58 rdf:type cls:c_6783.
+cls:c_6783 rdfs:label "早期給付"@ja.
+kg:id_3 prop:effect kg:id_58.
+kg:id_59 rdfs:label "基金管理事業費の増額"@ja.
+kg:id_59 rdf:type cls:c_691.
+cls:c_691 rdfs:label "基金積立"@ja.
+kg:id_60 rdfs:label "後年度の財源不足に備える"@ja.
+kg:id_60 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_59 prop:effect kg:id_60.
+kg:id_61 rdfs:label "市債の繰上償還"@ja.
+kg:id_61 rdf:type cls:c_3503.
+kg:id_62 rdfs:label "後年度負担の軽減"@ja.
+kg:id_62 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "いじめ"@ja.
+kg:id_63 rdf:type cls:c_3971.
+cls:c_3971 rdfs:label "いじめ"@ja.
+kg:id_64 rdfs:label "人権侵害"@ja.
+kg:id_64 rdf:type cls:c_2273.
+cls:c_2273 rdfs:label "人権侵害"@ja.
+kg:id_63 prop:effect kg:id_64.
+kg:id_65 rdfs:label "いじめ防止法の禁止規定"@ja.
+kg:id_65 rdf:type cls:c_6784.
+cls:c_6784 rdfs:label "禁止規定"@ja.
+kg:id_66 rdfs:label "子供たちが人とのかかわりを萎縮するおそれ"@ja.
+kg:id_66 rdf:type cls:c_6785.
+cls:c_6785 rdfs:label "萎縮懸念"@ja.
+kg:id_65 prop:effect kg:id_66.
+kg:id_67 rdfs:label "厳罰主義"@ja.
+kg:id_67 rdf:type cls:c_6786.
+cls:c_6786 rdfs:label "厳罰主義"@ja.
+kg:id_68 rdfs:label "かえって心をゆがめてしまうおそれ"@ja.
+kg:id_68 rdf:type cls:c_6787.
+cls:c_6787 rdfs:label "悪影響"@ja.
+kg:id_67 prop:effect kg:id_68.
+kg:id_69 rdfs:label "豊かな人間関係の指導"@ja.
+kg:id_69 rdf:type cls:c_6788.
+cls:c_6788 rdfs:label "人間関係指導"@ja.
+kg:id_70 rdfs:label "人間関係が希薄な社会の中で豊かな人間関係が築ける"@ja.
+kg:id_70 rdf:type cls:c_6269.
+cls:c_6269 rdfs:label "関係形成"@ja.
+kg:id_69 prop:effect kg:id_70.
+kg:id_71 rdfs:label "いじめへの個別指導と心のケア"@ja.
+kg:id_71 rdf:type cls:c_3975.
+cls:c_3975 rdfs:label "個別指導"@ja.
+kg:id_72 rdfs:label "子供たちが立ち直り良好な人間関係がつくられる"@ja.
+kg:id_72 rdf:type cls:c_6789.
+cls:c_6789 rdfs:label "立ち直り"@ja.
+kg:id_71 prop:effect kg:id_72.
+kg:id_73 rdfs:label "人権教育を含めた道徳教育の推進"@ja.
+kg:id_73 rdf:type cls:c_3610.
+cls:c_3610 rdfs:label "道徳教育"@ja.
+kg:id_74 rdfs:label "生命尊重・集団生活の意義・公徳心の育成"@ja.
+kg:id_74 rdf:type cls:c_6790.
+cls:c_6790 rdfs:label "規範育成"@ja.
+kg:id_73 prop:effect kg:id_74.
+kg:id_75 rdfs:label "児童会・生徒会の自主的活動"@ja.
+kg:id_75 rdf:type cls:c_6791.
+cls:c_6791 rdfs:label "自主活動"@ja.
+kg:id_76 rdfs:label "よりよい学級や学校をつくろうとする気持ちの育成"@ja.
+kg:id_76 rdf:type cls:c_6792.
+cls:c_6792 rdfs:label "意識育成"@ja.
+kg:id_75 prop:effect kg:id_76.
+kg:id_77 rdfs:label "オレンジリボンキャンペーンなどの取り組み"@ja.
+kg:id_77 rdf:type cls:c_2541.
+cls:c_2541 rdfs:label "啓発活動"@ja.
+kg:id_78 rdfs:label "各学校の生徒会活動の活性化"@ja.
+kg:id_78 rdf:type cls:c_6793.
+cls:c_6793 rdfs:label "活動活性化"@ja.
+kg:id_77 prop:effect kg:id_78.
+kg:id_79 rdfs:label "灯油等購入費助成"@ja.
+kg:id_79 rdf:type cls:c_6794.
+cls:c_6794 rdfs:label "費用助成"@ja.
+kg:id_3 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "現金給付"@ja.
+kg:id_80 rdf:type cls:c_1679.
+cls:c_1679 rdfs:label "現金給付"@ja.
+kg:id_3 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "高齢者のみの世帯への助成"@ja.
+kg:id_81 rdf:type cls:c_6795.
+cls:c_6795 rdfs:label "高齢者世帯"@ja.
+kg:id_3 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "障がい者世帯への助成"@ja.
+kg:id_82 rdf:type cls:c_6796.
+cls:c_6796 rdfs:label "障害者世帯"@ja.
+kg:id_3 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "ひとり親世帯への助成"@ja.
+kg:id_83 rdf:type cls:c_6797.
+cls:c_6797 rdfs:label "ひとり親世帯"@ja.
+kg:id_3 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "要介護世帯への助成"@ja.
+kg:id_84 rdf:type cls:c_6798.
+cls:c_6798 rdfs:label "要介護世帯"@ja.
+kg:id_3 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "郵送での申請受付"@ja.
+kg:id_85 rdf:type cls:c_6799.
+cls:c_6799 rdfs:label "郵送申請"@ja.
+kg:id_3 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "既存支給口座の活用"@ja.
+kg:id_86 rdf:type cls:c_6800.
+cls:c_6800 rdfs:label "口座活用"@ja.
+kg:id_3 prop:contermeasure kg:id_86.
+kg:id_87 rdfs:label "市広報・ホームページ・マスコミによる周知"@ja.
+kg:id_87 rdf:type cls:c_1087.
+cls:c_1087 rdfs:label "広報周知"@ja.
+kg:id_3 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "申請意思の確認など丁寧な対応"@ja.
+kg:id_88 rdf:type cls:c_1499.
+cls:c_1499 rdfs:label "申請支援"@ja.
+kg:id_3 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "いじめ防止対策"@ja.
+kg:id_89 rdf:type cls:c_6801.
+cls:c_6801 rdfs:label "いじめ対策"@ja.
+kg:id_90 rdfs:label "酒田市いじめ防止基本方針の策定"@ja.
+kg:id_90 rdf:type cls:c_6802.
+cls:c_6802 rdfs:label "基本方針"@ja.
+kg:id_89 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "酒田市いじめ問題対策連絡協議会の設置"@ja.
+kg:id_91 rdf:type cls:c_6803.
+cls:c_6803 rdfs:label "協議会"@ja.
+kg:id_89 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "スクールカウンセラーの配置"@ja.
+kg:id_92 rdf:type cls:c_3508.
+cls:c_3508 rdfs:label "相談員配置"@ja.
+kg:id_89 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "教育相談員の配置"@ja.
+kg:id_93 rdf:type cls:c_3508.
+kg:id_89 prop:contermeasure kg:id_93.
+kg:id_94 rdfs:label "教育支援員の配置"@ja.
+kg:id_94 rdf:type cls:c_1376.
+cls:c_1376 rdfs:label "支援員配置"@ja.
+kg:id_89 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "いじめに至った背景を探る個別指導"@ja.
+kg:id_95 rdf:type cls:c_3975.
+kg:id_89 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "被害者への謝罪の気持ちの醸成"@ja.
+kg:id_96 rdf:type cls:c_6804.
+cls:c_6804 rdfs:label "謝罪醸成"@ja.
+kg:id_89 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "心のケアの継続"@ja.
+kg:id_97 rdf:type cls:c_6805.
+cls:c_6805 rdfs:label "心のケア"@ja.
+kg:id_89 prop:contermeasure kg:id_97.
+kg:id_89 prop:contermeasure kg:id_73.
+kg:id_98 rdfs:label "情報の適切な提供"@ja.
+kg:id_98 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_89 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "児童会・生徒会の自主的活動への支援"@ja.
+kg:id_99 rdf:type cls:c_6806.
+cls:c_6806 rdfs:label "自主活動支援"@ja.
+kg:id_89 prop:contermeasure kg:id_99.
+kg:id_100 rdfs:label "オレンジリボンキャンペーン"@ja.
+kg:id_100 rdf:type cls:c_2541.
+kg:id_89 prop:contermeasure kg:id_100.
+kg:id_101 rdfs:label "初期対応のあり方の検討・整備"@ja.
+kg:id_101 rdf:type cls:c_6807.
+cls:c_6807 rdfs:label "初期対応整備"@ja.
+kg:id_89 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "具体マニュアル等の整備"@ja.
+kg:id_102 rdf:type cls:c_6808.
+cls:c_6808 rdfs:label "運用指針"@ja.
+kg:id_89 prop:contermeasure kg:id_102.
+kg:st_1 rdfs:label "斎藤周議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "福祉灯油事業の実現に敬意を表し対象世帯への確実な交付を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "岩堀慎司健康福祉部長"@ja.
+kg:st_2 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_2 prop:content "県の補助を活用した臨時的事業として実施する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "国・県の動向を注視したい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "厳罰主義よりいじめた子の反省と立ち直りを支えるケアを重視すべきだ"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "村上幸太郎教育長"@ja.
+kg:st_3 rdfs:type cls:st_57.
+cls:st_57 rdfs:label "教育行政"@ja.
+kg:op_5 prop:content "いじめ禁止は人権尊重の意識を持たせる趣旨であり豊かな人間関係の指導が大切だ"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "現金給付により灯油以外の暖房利用者にも支援できる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "冬期間の生活支援として早期給付が適切だ"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "いじめは人権侵害であり厳罰主義ではなく立ち直り支援が必要だ"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "法律での禁止は子供の萎縮を招くおそれがある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "懲戒を含む厳罰主義は逆効果のおそれがある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "人とかかわらない方向ではなく豊かな人間関係を築く指導が大切だ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "背景を探る個別指導と謝罪の気持ちの醸成で立ち直りを支える"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "人権教育を含めた道徳教育の充実が必要だ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "子供たちが自主的に活動できるよう支援したい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "生徒会の情報交換が各学校の活動活性化につながっている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "低所得世帯の生活支援として臨時的に実施する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "現金給付の狙いと補助制度との整合性を確認したい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "灯油以外の暖房費にも対応でき早期給付にも適している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "生活支援の必要性が高い世帯として対象化した"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "生活支援の必要性が高い世帯として対象化した"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "生活支援の必要性が高い世帯として対象化した"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "生活支援の必要性が高い世帯として対象化した"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "申請しやすくして対象世帯への給付率向上を図る"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "口座番号記入の省略で申請負担を軽減する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "知らなかったということがないよう丁寧に周知する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "未申請を防ぐため申請状況を踏まえて丁寧に対応する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "各学校が基本方針をもとにしっかり対応できるよう支援したい"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "相談体制の拡充が求められる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "各中学校に配置し相談機能の充実を図る"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "相談機能を充実させ担任や学校職員との連携を図る"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "発達障がいを抱える子供の学習と学校生活を支援する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "加害者にも背景を探りながら個別指導を行う"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "いじめが許されないことに気づかせ謝罪の気持ちを育てる"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "いじめた子が立ち直るまで徹底したケアを行うべきだ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "立ち直りと良好な人間関係形成まで心のケアを続ける"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "生命・自由・平等などの人権教育こそ重視すべきだ"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "人権教育を含めた道徳教育の推進を図ることが大切だ"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "被害家族などに情報を隠さず提供すべきだ"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "適切な時期と方法で説明し個人情報に配慮して提供する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "学校からの一方的要請ではなく子供たちの自主性を尊重すべきだ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "子供たちが自主的に活動を行えるよう支援する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "生徒会連絡協議会でいじめ防止の取り組みとして情報交換している"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "学校関係者"@ja.
+kg:st_4 rdfs:type cls:st_25.
+cls:st_25 rdfs:label "学校関係者"@ja.
+kg:op_43 prop:content "重大事態への対応について初期対応のあり方も検討整備すべきだ"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "初期対応のあり方をさらに検討し各学校を支援したい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "方針を受けて実際に動く際の具体マニュアル等も整備すべきだ"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "平成26年11月26日に酒田市北新町地内で発生した公用車運転中の事故による損害賠償の額の決定"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "低所得世帯への生活支援のため、灯油等購入費助成に係る経費を計上"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "国の消費喚起、生活支援型交付金の動きや県の補助制度創設の動きを受けて、低所得世帯の生活支援という趣旨で臨時的に実施する"@ja.
+<< kg:id_3 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "国の消費喚起、生活支援型交付金の動きや県の補助制度創設の動きを受けて、低所得世帯の生活支援という趣旨で臨時的に実施する"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "事業の内容及び工程の見直しにより、風力発電施設整備推進事業費を減額しております"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "保育単価の改定に伴い、保育所入所扶助事業費を増額しております"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "決算見込みにより各種予防接種事業費及び酒田地区広域行政組合分賦金を減額しております"@ja.
+<< kg:id_13 prop:cause kg:id_12 >>
+    prop:text-txt_contents "決算見込みにより各種予防接種事業費及び酒田地区広域行政組合分賦金を減額しております"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "施設の一部解体工事に係る工事内容の変更により旧食肉処理場施設維持管理事業費を増額し"@ja.
+<< kg:id_16 prop:cause kg:id_12 >>
+    prop:text-txt_contents "決算見込みにより土地改良負担事業費を減額しております"@ja.
+<< kg:id_17 prop:cause kg:id_12 >>
+    prop:text-txt_contents "決算見込みにより中小企業融資資金貸付事業費を減額しております"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "豊里十里塚線に係る事業費の決算見込みにより県施行街路整備事業費を減額しております"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "事業費の確定に伴い、高畑山村広場整備事業費を減額しております"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:text-txt_contents "県施行急傾斜地崩壊対策事業負担金等の決算見込みに伴い、公共土木施設災害復旧事業費を減額しております"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:text-txt_contents "後年度負担の軽減を目的に、市債の繰上償還を実施するため、公債費元金を増額しております"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "市民税及び固定資産税の増収などにより市税を"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:text-txt_contents "このたびの補正は、決算見込みによる減額及び分流式管渠整備事業など２事業について繰越明許費を設定するものであります"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:text-txt_contents "病院事業会計予算の収益的収入及び支出の収入において、入院収益の減などにより"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:text-txt_contents "支出において給与費、材料費などの決算見込みにより"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:text-txt_contents "資本的収入及び支出の収入において、企業債、補助金の減額により"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:text-txt_contents "支出において、建設改良費の減額により"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:text-txt_contents "市の行政組織の変更に伴い、所要の改正を行うものであります"@ja.
+<< kg:id_40 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "いじめ防止対策推進法の施行に伴い、酒田市いじめ防止基本方針を定めることを規定するとともに、酒田市いじめ問題対策連絡協議会などの組織及び運営に関し必要な事項を定めるため、新たに条例を制定するものであります"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:text-txt_contents "下水道法施行令の一部改正に伴い、除害施設を設置する事業場からの排水基準を変更するため、所要の改正を行うものであります"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:text-txt_contents "民事調停事件に係る調停案を受諾することについて、地方自治法第96条第１項の規定により、議会の議決を求めるものであります"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:text-txt_contents "過疎地域自立促進計画の一部を変更するため、過疎地域自立促進特別措置法第６条第７項の規定により、議会の議決を求めるものであります"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:text-txt_contents "青沢辺地に係る公共的施設の総合整備計画を定める"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:text-txt_contents "飛島辺地に係る公共的施設の総合整備計画を変更するため"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:text-txt_contents "交差点改良による代替路線"@ja.
+<< kg:id_52 prop:cause kg:id_54 >>
+    prop:text-txt_contents "宅地造成により新たに築造された路線などを市道路線として認定するため"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:text-txt_contents "賃金水準等の変動に伴い、請負金額を変更するため"@ja.
+<< kg:id_3 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "現金給付にすることにより、灯油だけでなく、ガスや電気による暖房を使用していただいている方に対しても助成することが可能となりました"@ja.
+<< kg:id_3 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "できるだけ早く給付を行い、活用していただくことが適切と判断したものでございます"@ja.
+<< kg:id_59 prop:effect kg:id_60 >>
+    prop:text-txt_contents "歳入の増額等で生じた財源を後年度の財源不足に備えようとする基金積立金の増額"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:text-txt_contents "後年度負担の軽減を目的に、市債の繰上償還を実施するため"@ja.
+<< kg:id_63 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "いじめはどんな理由があれ、基本方針の目的にもあるように人権侵害であり"@ja.
+<< kg:id_65 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "そうなると、ちょっとしたことでも法律違反となり、子供たちが人とのかかわりを萎縮はしないかと思うのであります"@ja.
+<< kg:id_67 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "懲戒の規定を含めて、厳罰主義ではかえって心をゆがめてしまうと思うのであります"@ja.
+<< kg:id_69 prop:effect kg:id_70 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "人間関係が希薄になってきていると言われるこの社会の中で、豊かな人間関係が築けるように指導していくことが大事である"@ja.
+<< kg:id_71 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "いじめが解消し、子供たちが立ち直り、良好な人間関係がつくられるまで心のケアをしていくことが大切"@ja.
+<< kg:id_73 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "生命尊重、集団生活の意義、公徳心などをあわせて道徳教育を充実していきたい"@ja.
+<< kg:id_75 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "児童・生徒一人一人がいじめ問題について真剣に考え、みんなでよりよい学級や学校をつくっていこうとする気持ちが育ってきている"@ja.
+<< kg:id_77 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "いじめ防止の取り組みについて情報交換し、各学校の生徒会活動の活性化につなげております"@ja.
+<< kg:id_3 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "低所得世帯への生活支援のため、灯油等購入費助成に係る経費を計上"@ja.
+<< kg:id_3 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "今回は灯油等購入助成金ということで現金を口座に振り込むという内容であります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "低所得世帯の中でもより生活支援の必要性が高い世帯と考えられる高齢者のみの世帯"@ja.
+<< kg:id_3 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "低所得世帯の中でもより生活支援の必要性が高い世帯と考えられる障がい者世帯"@ja.
+<< kg:id_3 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "低所得世帯の中でもより生活支援の必要性が高い世帯と考えられるひとり親世帯"@ja.
+<< kg:id_3 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "低所得世帯の中でもより生活支援の必要性が高い世帯と考えられる要介護世帯"@ja.
+<< kg:id_3 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今回は支給方法を口座振り込みとしたことで、郵送での申請も可能となりました"@ja.
+<< kg:id_3 prop:contermeasure kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "昨年実施した臨時福祉給付金の支給口座への振り込みを希望する方には、口座番号の記入も省略できるようにもしております"@ja.
+<< kg:id_3 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "市広報、ホームページでの周知を初め、マスコミにも周知をしていただき"@ja.
+<< kg:id_3 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "申請状況を踏まえて申請意思の確認など丁寧に対応してまいりたい"@ja.
+<< kg:id_89 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "酒田市いじめ防止基本方針を定めることを規定するとともに"@ja.
+<< kg:id_89 prop:contermeasure kg:id_91 >>
+    prop:text-txt_contents "酒田市いじめ問題対策連絡協議会などの組織及び運営に関し必要な事項を定める"@ja.
+<< kg:id_89 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "各中学校にスクールカウンセラー及び教育相談員を配置しておりまして"@ja.
+<< kg:id_89 prop:contermeasure kg:id_93 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "各中学校にスクールカウンセラー及び教育相談員を配置しておりまして"@ja.
+<< kg:id_89 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "通常学級に在籍する発達障がいを抱える子供の学習と学校生活を支援するために、小・中学校に教育支援員も配置しております"@ja.
+<< kg:id_89 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "まず、加害者に対しても、いじめに至った背景を探りながら個別の指導を行っていきます"@ja.
+<< kg:id_89 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "いじめが許されない行為であることに気づかせ、被害者への謝罪の気持ちを醸成させる"@ja.
+<< kg:id_89 prop:contermeasure kg:id_97 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "子供たちが立ち直り、良好な人間関係がつくられるまで心のケアをしていくことが大切"@ja.
+<< kg:id_89 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "基本的な人権を尊重する教育というのは重要なことであり、人権教育を含めた道徳教育の推進を図ることが大切であります"@ja.
+<< kg:id_89 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "いじめを受けた児童・生徒やその保護者に対し、適切な時期に、適切な方法で説明を行いたい"@ja.
+<< kg:id_89 prop:contermeasure kg:id_99 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "今後も、子供たちが自主的に活動を行えるような支援をしてまいりたい"@ja.
+<< kg:id_89 prop:contermeasure kg:id_100 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "例えばオレンジリボンキャンペーンなど、いじめ防止の取り組みについて情報交換し"@ja.
+<< kg:id_89 prop:contermeasure kg:id_101 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "重大事態への対応について初期対応のあり方も検討・整備すべきである"@ja.
+<< kg:id_89 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "方針を受けて実際に動く際の具体マニュアル等も整備すべきであるという意見"@ja.
+}

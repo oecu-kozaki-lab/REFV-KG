@@ -1,0 +1,1401 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00107> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電施設整備事業"@ja.
+kg:id_1 rdf:type cls:c_6284.
+cls:c_6284 rdfs:label "開発事業"@ja.
+kg:id_2 rdfs:label "市民の不信感の助長"@ja.
+kg:id_2 rdf:type cls:c_6285.
+cls:c_6285 rdfs:label "市民の不信"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "市民一丸となった事業推進が困難"@ja.
+kg:id_3 rdf:type cls:c_6286.
+cls:c_6286 rdfs:label "事業推進の困難"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "市民との合意形成のあり方"@ja.
+kg:id_4 rdf:type cls:c_721.
+cls:c_721 rdfs:label "合意形成"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "景観の問題"@ja.
+kg:id_5 rdf:type cls:c_6287.
+cls:c_6287 rdfs:label "景観問題"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "環境影響評価の方法書段階で広く市民の意見を聞く"@ja.
+kg:id_6 rdf:type cls:c_99.
+cls:c_99 rdfs:label "意見聴取"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "準備書作成段階でも意見を聞く"@ja.
+kg:id_7 rdf:type cls:c_99.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "関係団体との意見交換"@ja.
+kg:id_8 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "原発事故以降の価値観の変化"@ja.
+kg:id_9 rdf:type cls:c_6288.
+cls:c_6288 rdfs:label "価値観の変化"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "景観と再生可能エネルギーとの調和を図る"@ja.
+kg:id_10 rdf:type cls:c_6289.
+cls:c_6289 rdfs:label "調和"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "景観審議会から意見を伺う"@ja.
+kg:id_11 rdf:type cls:c_6290.
+cls:c_6290 rdfs:label "審議会意見"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "コアジサシの県内唯一の繁殖地の存在"@ja.
+kg:id_12 rdf:type cls:c_6291.
+cls:c_6291 rdfs:label "希少種生息地"@ja.
+kg:id_1 prop:cause kg:id_12.
+kg:id_13 rdfs:label "鳥類を含めた環境影響評価を実施する"@ja.
+kg:id_13 rdf:type cls:c_161.
+cls:c_161 rdfs:label "環境影響評価"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "環境影響評価結果を踏まえて建設場所を判断する"@ja.
+kg:id_14 rdf:type cls:c_5631.
+cls:c_5631 rdfs:label "立地判断"@ja.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "鳥海山鹿ノ俣川上流の山腹大崩壊"@ja.
+kg:id_15 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_16 rdfs:label "日向川の汚染"@ja.
+kg:id_16 rdf:type cls:c_6292.
+cls:c_6292 rdfs:label "水質汚染"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "生物への被害"@ja.
+kg:id_17 rdf:type cls:c_6293.
+cls:c_6293 rdfs:label "生物被害"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "農家の不安"@ja.
+kg:id_18 rdf:type cls:c_6294.
+cls:c_6294 rdfs:label "農家の不安"@ja.
+kg:id_15 prop:effect kg:id_18.
+kg:id_19 rdfs:label "川底がシルトで覆われ水生昆虫が全滅したような状況"@ja.
+kg:id_19 rdf:type cls:c_6295.
+cls:c_6295 rdfs:label "生態系被害"@ja.
+kg:id_15 prop:effect kg:id_19.
+kg:id_20 rdfs:label "田んぼへのシルト質土砂の流入"@ja.
+kg:id_20 rdf:type cls:c_6296.
+cls:c_6296 rdfs:label "土砂流入"@ja.
+kg:id_15 prop:effect kg:id_20.
+kg:id_21 rdfs:label "流入を減らす対策工事の実施"@ja.
+kg:id_21 rdf:type cls:c_962.
+cls:c_962 rdfs:label "対策工事"@ja.
+kg:id_15 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "鹿ノ俣沢下流部の現地調査"@ja.
+kg:id_22 rdf:type cls:c_267.
+cls:c_267 rdfs:label "現地調査"@ja.
+kg:id_15 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "オイルフェンスの増設"@ja.
+kg:id_23 rdf:type cls:c_229.
+cls:c_229 rdfs:label "流出防止"@ja.
+kg:id_15 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "農業用水における沈砂地帯の検討"@ja.
+kg:id_24 rdf:type cls:c_6297.
+cls:c_6297 rdfs:label "沈砂対策"@ja.
+kg:id_15 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "オイルフェンス設置への助成"@ja.
+kg:id_25 rdf:type cls:c_6298.
+cls:c_6298 rdfs:label "設置助成"@ja.
+kg:id_15 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "アユの稚魚を荒瀬川に放流する"@ja.
+kg:id_26 rdf:type cls:c_6299.
+cls:c_6299 rdfs:label "生物保全"@ja.
+kg:id_15 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "地域活性化の停滞"@ja.
+kg:id_27 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_28 rdfs:label "旧中央公民館が担ってきた役割の低下"@ja.
+kg:id_28 rdf:type cls:c_6300.
+cls:c_6300 rdfs:label "拠点機能低下"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "人材や組織が育たなくなったこと"@ja.
+kg:id_29 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_27 prop:cause kg:id_29.
+kg:id_30 rdfs:label "地域協議会から地域づくりの意見や提案を得る"@ja.
+kg:id_30 rdf:type cls:c_6301.
+cls:c_6301 rdfs:label "意見提案"@ja.
+kg:id_27 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "八幡地域の活性化"@ja.
+kg:id_31 rdf:type cls:c_1287.
+kg:id_32 rdfs:label "少子高齢化や過疎化の進行"@ja.
+kg:id_32 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "地域内に勤め先がなく市街地へ転居すること"@ja.
+kg:id_33 rdf:type cls:c_5164.
+cls:c_5164 rdfs:label "雇用不足"@ja.
+kg:id_31 prop:cause kg:id_33.
+kg:id_34 rdfs:label "農業 商業 工業と連携した6次産業化"@ja.
+kg:id_34 rdf:type cls:c_1917.
+cls:c_1917 rdfs:label "産業振興"@ja.
+kg:id_31 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "松山地域の活性化"@ja.
+kg:id_35 rdf:type cls:c_1287.
+kg:id_36 rdfs:label "人口の減少"@ja.
+kg:id_36 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "少子高齢化の進行"@ja.
+kg:id_37 rdf:type cls:c_1146.
+kg:id_35 prop:cause kg:id_37.
+kg:id_38 rdfs:label "需要の落ち込み"@ja.
+kg:id_38 rdf:type cls:c_6302.
+cls:c_6302 rdfs:label "需要低下"@ja.
+kg:id_35 prop:cause kg:id_38.
+kg:id_39 rdfs:label "後継者がいないこと"@ja.
+kg:id_39 rdf:type cls:c_1717.
+cls:c_1717 rdfs:label "後継者不足"@ja.
+kg:id_35 prop:cause kg:id_39.
+kg:id_40 rdfs:label "地域資源を最大限活用したまちづくり"@ja.
+kg:id_40 rdf:type cls:c_2868.
+cls:c_2868 rdfs:label "資源活用"@ja.
+kg:id_35 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "平田地域の活性化"@ja.
+kg:id_41 rdf:type cls:c_1287.
+kg:id_42 rdfs:label "過疎化の進行"@ja.
+kg:id_42 rdf:type cls:c_5509.
+cls:c_5509 rdfs:label "過疎化"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "著しい少子高齢化"@ja.
+kg:id_43 rdf:type cls:c_1146.
+kg:id_41 prop:cause kg:id_43.
+kg:id_44 rdfs:label "自然 食べ物 施設をPRし活用する"@ja.
+kg:id_44 rdf:type cls:c_2868.
+kg:id_41 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "津波避難ビルの指定"@ja.
+kg:id_45 rdf:type cls:c_5391.
+cls:c_5391 rdfs:label "避難施設指定"@ja.
+kg:id_46 rdfs:label "東日本大震災を踏まえて県が示した津波浸水予想図"@ja.
+kg:id_46 rdf:type cls:c_6303.
+cls:c_6303 rdfs:label "浸水想定"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "地域ワークショップで住民意見を聞く"@ja.
+kg:id_47 rdf:type cls:c_99.
+kg:id_45 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "耐震性や構造基準を満たす建物を所有者と相談して選定する"@ja.
+kg:id_48 rdf:type cls:c_6304.
+cls:c_6304 rdfs:label "施設選定"@ja.
+kg:id_45 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "広報 ホームページ 防災ガイドブックで周知する"@ja.
+kg:id_49 rdf:type cls:c_1197.
+cls:c_1197 rdfs:label "情報周知"@ja.
+kg:id_45 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "地域での避難訓練で位置づけを周知する"@ja.
+kg:id_50 rdf:type cls:c_6305.
+cls:c_6305 rdfs:label "訓練周知"@ja.
+kg:id_45 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "表示看板やホームページで観光客に周知する"@ja.
+kg:id_51 rdf:type cls:c_6306.
+cls:c_6306 rdfs:label "観光客周知"@ja.
+kg:id_45 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "地域住民と合同訓練を実施する"@ja.
+kg:id_52 rdf:type cls:c_6307.
+cls:c_6307 rdfs:label "合同訓練"@ja.
+kg:id_45 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "防災訓練の実施やマニュアル整備"@ja.
+kg:id_53 rdf:type cls:c_6308.
+cls:c_6308 rdfs:label "訓練整備"@ja.
+kg:id_45 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "新たに建設された建物や耐震性確認済み建物の追加指定"@ja.
+kg:id_54 rdf:type cls:c_5487.
+cls:c_5487 rdfs:label "追加指定"@ja.
+kg:id_45 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "避難所としての学校施設"@ja.
+kg:id_55 rdf:type cls:c_6309.
+cls:c_6309 rdfs:label "学校避難所"@ja.
+kg:id_56 rdfs:label "備蓄品を校舎内の想定浸水深より上の階に保管する"@ja.
+kg:id_56 rdf:type cls:c_6310.
+cls:c_6310 rdfs:label "備蓄管理"@ja.
+kg:id_55 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "可搬型発電機の拡充を検討する"@ja.
+kg:id_57 rdf:type cls:c_6311.
+cls:c_6311 rdfs:label "電源確保"@ja.
+kg:id_55 prop:contermeasure kg:id_57.
+kg:id_58 rdfs:label "福祉避難所の整備の遅れ"@ja.
+kg:id_58 rdf:type cls:c_6312.
+cls:c_6312 rdfs:label "福祉避難所整備"@ja.
+kg:id_59 rdfs:label "運営スタッフの確保が課題"@ja.
+kg:id_59 rdf:type cls:c_3099.
+cls:c_3099 rdfs:label "人員確保"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "災害対策本部との連絡体制が未整理"@ja.
+kg:id_60 rdf:type cls:c_6313.
+cls:c_6313 rdfs:label "連絡体制"@ja.
+kg:id_58 prop:cause kg:id_60.
+kg:id_61 rdfs:label "避難者の移動方法が未整理"@ja.
+kg:id_61 rdf:type cls:c_6314.
+cls:c_6314 rdfs:label "移送体制"@ja.
+kg:id_58 prop:cause kg:id_61.
+kg:id_62 rdfs:label "医療介護体制が未整理"@ja.
+kg:id_62 rdf:type cls:c_1597.
+cls:c_1597 rdfs:label "医療介護体制"@ja.
+kg:id_58 prop:cause kg:id_62.
+kg:id_63 rdfs:label "福祉避難所"@ja.
+kg:id_63 rdf:type cls:c_5384.
+cls:c_5384 rdfs:label "福祉避難所"@ja.
+kg:id_64 rdfs:label "できるところから指定に取り組む"@ja.
+kg:id_64 rdf:type cls:c_6315.
+cls:c_6315 rdfs:label "指定推進"@ja.
+kg:id_63 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "防災リーダー育成の不足"@ja.
+kg:id_65 rdf:type cls:c_6316.
+cls:c_6316 rdfs:label "防災人材育成"@ja.
+kg:id_66 rdfs:label "研修参加者が男性中心"@ja.
+kg:id_66 rdf:type cls:c_4651.
+cls:c_4651 rdfs:label "性別偏在"@ja.
+kg:id_65 prop:cause kg:id_66.
+kg:id_67 rdfs:label "防災リーダー育成"@ja.
+kg:id_67 rdf:type cls:c_6316.
+kg:id_68 rdfs:label "危機管理アドバイザーや県事業を活用した研修会開催"@ja.
+kg:id_68 rdf:type cls:c_870.
+cls:c_870 rdfs:label "研修実施"@ja.
+kg:id_67 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "防災への女性視点の不足"@ja.
+kg:id_69 rdf:type cls:c_6317.
+cls:c_6317 rdfs:label "防災施策"@ja.
+kg:id_70 rdfs:label "女性職員の視点を施策に取り込む"@ja.
+kg:id_70 rdf:type cls:c_6318.
+cls:c_6318 rdfs:label "女性視点"@ja.
+kg:id_69 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "防災会議に女性委員を増員する"@ja.
+kg:id_71 rdf:type cls:c_5876.
+cls:c_5876 rdfs:label "女性参画"@ja.
+kg:id_69 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "英語で発信できる子ども育成事業"@ja.
+kg:id_72 rdf:type cls:c_6319.
+cls:c_6319 rdfs:label "語学教育事業"@ja.
+kg:id_73 rdfs:label "幼少期から英語に慣れ親しみ抵抗感をなくす"@ja.
+kg:id_73 rdf:type cls:c_6320.
+cls:c_6320 rdfs:label "英語親和"@ja.
+kg:id_72 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "ネイティブスピーカーと話しながら自然に英語を身につける"@ja.
+kg:id_74 rdf:type cls:c_6321.
+cls:c_6321 rdfs:label "会話習得"@ja.
+kg:id_72 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "希望者が参加しやすいよう複数会場で実施する"@ja.
+kg:id_75 rdf:type cls:c_6322.
+cls:c_6322 rdfs:label "参加機会"@ja.
+kg:id_72 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "コミュニティセンターを拠点とした実施も視野に入れる"@ja.
+kg:id_76 rdf:type cls:c_6323.
+cls:c_6323 rdfs:label "拠点拡大"@ja.
+kg:id_72 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "学校での食物アレルギー事故"@ja.
+kg:id_77 rdf:type cls:c_6324.
+cls:c_6324 rdfs:label "学校事故"@ja.
+kg:id_78 rdfs:label "医師の診断書と保護者聞き取りで対応を決める"@ja.
+kg:id_78 rdf:type cls:c_6325.
+cls:c_6325 rdfs:label "対応判断"@ja.
+kg:id_77 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "教職員 調理員 保護者間で情報共有を徹底する"@ja.
+kg:id_79 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_77 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "アレルギー物質を除いた給食や代替食を提供する"@ja.
+kg:id_80 rdf:type cls:c_6326.
+cls:c_6326 rdfs:label "代替給食"@ja.
+kg:id_77 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "医師から対応方法を学ぶ研修を学校保健委員会で行う"@ja.
+kg:id_81 rdf:type cls:c_870.
+kg:id_77 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "職員業務量の増加"@ja.
+kg:id_82 rdf:type cls:c_6327.
+cls:c_6327 rdfs:label "業務負担増"@ja.
+kg:id_83 rdfs:label "権限移譲等による業務増"@ja.
+kg:id_83 rdf:type cls:c_6328.
+cls:c_6328 rdfs:label "業務増加"@ja.
+kg:id_82 prop:cause kg:id_83.
+kg:id_84 rdfs:label "所属長への年2回ヒアリングで業務量と必要人員を確認する"@ja.
+kg:id_84 rdf:type cls:c_6329.
+cls:c_6329 rdfs:label "業務把握"@ja.
+kg:id_82 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "時間外勤務量 予算状況 有給休暇取得状況などを勘案して配置する"@ja.
+kg:id_85 rdf:type cls:c_2001.
+cls:c_2001 rdfs:label "人員配置"@ja.
+kg:id_82 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "庁舎等施設での転倒事故"@ja.
+kg:id_86 rdf:type cls:c_6330.
+cls:c_6330 rdfs:label "転倒事故"@ja.
+kg:id_87 rdfs:label "駐車場部分の凍結"@ja.
+kg:id_87 rdf:type cls:c_6331.
+cls:c_6331 rdfs:label "路面凍結"@ja.
+kg:id_86 prop:cause kg:id_87.
+kg:id_88 rdfs:label "職員による除雪と雪の剥ぎ取り"@ja.
+kg:id_88 rdf:type cls:c_6332.
+cls:c_6332 rdfs:label "除雪対応"@ja.
+kg:id_86 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "誘導員の配置や増員 時間延長で対応する"@ja.
+kg:id_89 rdf:type cls:c_5114.
+cls:c_5114 rdfs:label "誘導強化"@ja.
+kg:id_86 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "緊急雇用による日々雇用職員の就職難"@ja.
+kg:id_90 rdf:type cls:c_2902.
+cls:c_2902 rdfs:label "非正規雇用"@ja.
+kg:id_91 rdfs:label "求職活動に年次有給休暇を活用できるよう配慮する"@ja.
+kg:id_91 rdf:type cls:c_6333.
+cls:c_6333 rdfs:label "求職支援"@ja.
+kg:id_90 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "緊急雇用による日々雇用職員の増加"@ja.
+kg:id_92 rdf:type cls:c_2902.
+kg:id_93 rdfs:label "保育園における未満児の入所増"@ja.
+kg:id_93 rdf:type cls:c_1442.
+cls:c_1442 rdfs:label "保育需要増"@ja.
+kg:id_92 prop:cause kg:id_93.
+kg:id_94 rdfs:label "空き家問題"@ja.
+kg:id_94 rdf:type cls:c_1739.
+cls:c_1739 rdfs:label "空き家問題"@ja.
+kg:id_95 rdfs:label "少子高齢化"@ja.
+kg:id_95 rdf:type cls:c_1146.
+kg:id_94 prop:cause kg:id_95.
+kg:id_96 rdfs:label "過疎化"@ja.
+kg:id_96 rdf:type cls:c_5509.
+kg:id_94 prop:cause kg:id_96.
+kg:id_97 rdfs:label "放置された空き地 空き家"@ja.
+kg:id_97 rdf:type cls:c_1774.
+cls:c_1774 rdfs:label "空き家"@ja.
+kg:id_98 rdfs:label "安全面や防犯上の問題"@ja.
+kg:id_98 rdf:type cls:c_6334.
+cls:c_6334 rdfs:label "安全防犯問題"@ja.
+kg:id_97 prop:effect kg:id_98.
+kg:id_99 rdfs:label "庭木や雑草による害虫発生"@ja.
+kg:id_99 rdf:type cls:c_6335.
+cls:c_6335 rdfs:label "害虫発生"@ja.
+kg:id_97 prop:effect kg:id_99.
+kg:id_100 rdfs:label "隣接地の生活環境への悪影響"@ja.
+kg:id_100 rdf:type cls:c_1610.
+cls:c_1610 rdfs:label "生活環境悪化"@ja.
+kg:id_97 prop:effect kg:id_100.
+kg:id_101 rdfs:label "危険な空き家"@ja.
+kg:id_101 rdf:type cls:c_3195.
+cls:c_3195 rdfs:label "危険空き家"@ja.
+kg:id_102 rdfs:label "所有者等を調査して適正管理をお願いする"@ja.
+kg:id_102 rdf:type cls:c_2559.
+cls:c_2559 rdfs:label "適正管理"@ja.
+kg:id_101 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "緊急やむを得ない場合に市が必要最低限の対応をする"@ja.
+kg:id_103 rdf:type cls:c_6336.
+cls:c_6336 rdfs:label "緊急対応"@ja.
+kg:id_101 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "空き地 空き家の利活用不足"@ja.
+kg:id_104 rdf:type cls:c_1777.
+cls:c_1777 rdfs:label "空き家活用"@ja.
+kg:id_105 rdfs:label "空き家等総合対策ネットワーク協議会で仕組みを検討する"@ja.
+kg:id_105 rdf:type cls:c_6337.
+cls:c_6337 rdfs:label "協議体検討"@ja.
+kg:id_104 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "不動産業界と連携し物件情報サイトへ誘導する"@ja.
+kg:id_106 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_104 prop:contermeasure kg:id_106.
+kg:id_107 rdfs:label "民間事業者と連携した相談会や売買貸借促進ネットワークを構築する"@ja.
+kg:id_107 rdf:type cls:c_5056.
+cls:c_5056 rdfs:label "連携促進"@ja.
+kg:id_104 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "自治会などの意向を把握し寄附採納も含めて検討する"@ja.
+kg:id_108 rdf:type cls:c_6338.
+cls:c_6338 rdfs:label "寄附検討"@ja.
+kg:id_104 prop:contermeasure kg:id_108.
+kg:id_109 rdfs:label "空き家の庭木の危険"@ja.
+kg:id_109 rdf:type cls:c_6339.
+cls:c_6339 rdfs:label "空き家危険"@ja.
+kg:id_110 rdfs:label "自治会が緊急対応した場合に市が支援できる場合がある"@ja.
+kg:id_110 rdf:type cls:c_6340.
+cls:c_6340 rdfs:label "緊急支援"@ja.
+kg:id_109 prop:contermeasure kg:id_110.
+kg:id_111 rdfs:label "飛島の交流人口の低迷"@ja.
+kg:id_111 rdf:type cls:c_6341.
+cls:c_6341 rdfs:label "交流人口低迷"@ja.
+kg:id_112 rdfs:label "自然環境保全活動や体験学習による交流活性化"@ja.
+kg:id_112 rdf:type cls:c_6342.
+cls:c_6342 rdfs:label "交流活性化"@ja.
+kg:id_111 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "クリーンアップ活動に婚活イベントを加える"@ja.
+kg:id_113 rdf:type cls:c_6343.
+cls:c_6343 rdfs:label "交流企画"@ja.
+kg:id_111 prop:contermeasure kg:id_113.
+kg:id_114 rdfs:label "体験活動メニューを市外の小学校等へPRする"@ja.
+kg:id_114 rdf:type cls:c_2354.
+cls:c_2354 rdfs:label "広報強化"@ja.
+kg:id_111 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "しまcafe"@ja.
+kg:id_115 rdf:type cls:c_3981.
+cls:c_3981 rdfs:label "交流拠点"@ja.
+kg:id_116 rdfs:label "島が明るくなった"@ja.
+kg:id_116 rdf:type cls:c_1287.
+kg:id_115 prop:effect kg:id_116.
+kg:id_117 rdfs:label "観光客と島民 島民同士が気軽に話し合える場になった"@ja.
+kg:id_117 rdf:type cls:c_1382.
+cls:c_1382 rdfs:label "交流促進"@ja.
+kg:id_115 prop:effect kg:id_117.
+kg:id_118 rdfs:label "飛島のPR効果"@ja.
+kg:id_118 rdf:type cls:c_6344.
+cls:c_6344 rdfs:label "広報効果"@ja.
+kg:id_115 prop:effect kg:id_118.
+kg:id_119 rdfs:label "継続営業する"@ja.
+kg:id_119 rdf:type cls:c_6345.
+cls:c_6345 rdfs:label "継続運営"@ja.
+kg:id_115 prop:contermeasure kg:id_119.
+kg:id_120 rdfs:label "営業時間延長 提供メニュー充実 観光案内所機能強化 ネット販売"@ja.
+kg:id_120 rdf:type cls:c_2448.
+cls:c_2448 rdfs:label "機能強化"@ja.
+kg:id_115 prop:contermeasure kg:id_120.
+kg:id_121 rdfs:label "飛島の災害対応の弱さ"@ja.
+kg:id_121 rdf:type cls:c_6346.
+cls:c_6346 rdfs:label "災害対応力"@ja.
+kg:id_122 rdfs:label "消防団員の高齢化"@ja.
+kg:id_122 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_121 prop:cause kg:id_122.
+kg:id_123 rdfs:label "人の確保が難しいこと"@ja.
+kg:id_123 rdf:type cls:c_807.
+kg:id_121 prop:cause kg:id_123.
+kg:id_124 rdfs:label "火事を出さない予防対策を検討する"@ja.
+kg:id_124 rdf:type cls:c_6347.
+cls:c_6347 rdfs:label "予防対策"@ja.
+kg:id_121 prop:contermeasure kg:id_124.
+kg:id_125 rdfs:label "常備消防と連携し防災ヘリで消防職員を輸送する"@ja.
+kg:id_125 rdf:type cls:c_827.
+cls:c_827 rdfs:label "広域連携"@ja.
+kg:id_121 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "消防力向上策を検討する"@ja.
+kg:id_126 rdf:type cls:c_3691.
+cls:c_3691 rdfs:label "消防力強化"@ja.
+kg:id_121 prop:contermeasure kg:id_126.
+kg:id_127 rdfs:label "小型消火器への支援を検討する"@ja.
+kg:id_127 rdf:type cls:c_6348.
+cls:c_6348 rdfs:label "装備支援"@ja.
+kg:id_121 prop:contermeasure kg:id_127.
+kg:id_128 rdfs:label "高齢者肺炎球菌ワクチン接種率の低下懸念"@ja.
+kg:id_128 rdf:type cls:c_1348.
+cls:c_1348 rdfs:label "予防接種"@ja.
+kg:id_129 rdfs:label "2年度目は接種率が初年度より下がる傾向"@ja.
+kg:id_129 rdf:type cls:c_3916.
+cls:c_3916 rdfs:label "接種率低下"@ja.
+kg:id_128 prop:cause kg:id_129.
+kg:id_130 rdfs:label "高齢者肺炎球菌ワクチン接種"@ja.
+kg:id_130 rdf:type cls:c_1348.
+kg:id_131 rdfs:label "75歳以上を対象に助成する"@ja.
+kg:id_131 rdf:type cls:c_2408.
+cls:c_2408 rdfs:label "接種助成"@ja.
+kg:id_130 prop:contermeasure kg:id_131.
+kg:id_132 rdfs:label "子宮頸がん予防ワクチン未接種"@ja.
+kg:id_132 rdf:type cls:c_1348.
+kg:id_133 rdfs:label "副反応への不安"@ja.
+kg:id_133 rdf:type cls:c_3917.
+cls:c_3917 rdfs:label "副反応不安"@ja.
+kg:id_132 prop:cause kg:id_133.
+kg:id_134 rdfs:label "個別接種勧奨の通知を出す"@ja.
+kg:id_134 rdf:type cls:c_6349.
+cls:c_6349 rdfs:label "個別勧奨"@ja.
+kg:id_132 prop:contermeasure kg:id_134.
+kg:id_135 rdfs:label "正しい知識の普及を図る"@ja.
+kg:id_135 rdf:type cls:c_6350.
+cls:c_6350 rdfs:label "知識普及"@ja.
+kg:id_132 prop:contermeasure kg:id_135.
+kg:id_136 rdfs:label "個人と学校から接種勧奨を行う"@ja.
+kg:id_136 rdf:type cls:c_6351.
+cls:c_6351 rdfs:label "接種勧奨"@ja.
+kg:id_132 prop:contermeasure kg:id_136.
+kg:id_137 rdfs:label "ヒブワクチン接種率の不足"@ja.
+kg:id_137 rdf:type cls:c_1348.
+kg:id_138 rdfs:label "個人への接種勧奨を行う"@ja.
+kg:id_138 rdf:type cls:c_6349.
+kg:id_137 prop:contermeasure kg:id_138.
+kg:id_139 rdfs:label "小児用肺炎球菌ワクチン接種率の不足"@ja.
+kg:id_139 rdf:type cls:c_1348.
+kg:id_139 prop:contermeasure kg:id_138.
+kg:id_140 rdfs:label "女性管理職の少なさ"@ja.
+kg:id_140 rdf:type cls:c_2912.
+cls:c_2912 rdfs:label "女性登用"@ja.
+kg:id_141 rdfs:label "女性職員の希望や意欲に影響する可能性"@ja.
+kg:id_141 rdf:type cls:c_6352.
+cls:c_6352 rdfs:label "意欲低下"@ja.
+kg:id_140 prop:effect kg:id_141.
+kg:id_142 rdfs:label "補佐級職員への登用を積極的に図る"@ja.
+kg:id_142 rdf:type cls:c_6353.
+cls:c_6353 rdfs:label "登用促進"@ja.
+kg:id_140 prop:contermeasure kg:id_142.
+kg:id_143 rdfs:label "市役所文化の問題"@ja.
+kg:id_143 rdf:type cls:c_4902.
+cls:c_4902 rdfs:label "行政組織"@ja.
+kg:id_144 rdfs:label "専門的能力を高める"@ja.
+kg:id_144 rdf:type cls:c_6004.
+cls:c_6004 rdfs:label "専門性向上"@ja.
+kg:id_143 prop:contermeasure kg:id_144.
+kg:id_145 rdfs:label "ゼネラリストとスペシャリストの両面で人材育成する"@ja.
+kg:id_145 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_143 prop:contermeasure kg:id_145.
+kg:id_146 rdfs:label "市民目線で説明し納得を得ながら政策を進める"@ja.
+kg:id_146 rdf:type cls:c_6354.
+cls:c_6354 rdfs:label "説明責任"@ja.
+kg:id_143 prop:contermeasure kg:id_146.
+kg:st_1 rdfs:label "後藤泉議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "説明会を重ねるだけでは不信感が強まると懸念"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "オール酒田での事業推進にはほど遠いとみる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "本来の論点は合意形成のあり方にあると指摘"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "本来の論点は景観問題にあると指摘"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "本間正巳市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_5 prop:content "節目ごとに説明し市民意見を聞く考え"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "調査結果をまとめた段階でも意見聴取を続ける考え"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "関係団体との意見交換の場を検討する考え"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "原発依存を減らしたい市民の思いが背景にあると説明"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "景観だけを優先せず総合的判断が必要とする"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "環境影響評価後に景観審議会の意見を聞く方針"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "絶滅危惧種の繁殖地が計画地にある点を問題視"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "コアジサシを含む鳥類を十分評価すると説明"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "重大な環境影響がないか評価結果で判断するとする"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "山腹崩壊で日向川が汚染されたと指摘"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "川の生物や水生昆虫に深刻な被害が出たとみる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "農用地への取水に不安が広がったと指摘"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "川の生態系が著しく損なわれたと訴える"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "農地にシルトが入り農家が苦慮したと指摘"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "流域住民"@ja.
+kg:st_3 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_19 prop:content "白濁等の流入を減らす対策工事を求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "庄内森林管理署"@ja.
+kg:st_4 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_20 prop:content "具体的対策に向けた現地調査を予算化する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "山形県"@ja.
+kg:st_5 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_21 prop:content "河川監視や水質検査とあわせオイルフェンス増設を検討"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "農業用水での沈砂地整備を検討する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "酒田市"@ja.
+kg:st_6 rdfs:type cls:st_11.
+kg:op_23 prop:content "オイルフェンス設置を助成する考え"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:op_24 prop:content "県と協力しアユの稚魚放流を実施する考え"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:op_25 prop:content "旧中央公民館の役割低下で人材や組織が育ちにくくなったとみる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "地域づくりを担う人材と組織の不足が一因と指摘"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "土井一郎八幡総合支所長"@ja.
+kg:st_7 rdfs:type cls:st_80.
+cls:st_80 rdfs:label "支所長"@ja.
+kg:op_27 prop:content "地域協議会は地域づくり全般への意見提案を担う組織と位置づける"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:op_28 prop:content "少子高齢化と過疎化が地域の厳しい現状だと説明"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_7.
+kg:op_29 prop:content "雇用の不足で人材流出が起き地域力が低下していると説明"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_7.
+kg:op_30 prop:content "6次産業化による産業振興に取り組む"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "大場昭一松山総合支所長"@ja.
+kg:st_8 rdfs:type cls:st_80.
+kg:op_31 prop:content "人口減少が地域活性化の大きな課題と認識"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_8.
+kg:op_32 prop:content "少子高齢化が進み厳しい状況にあると説明"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_8.
+kg:op_33 prop:content "一部商店や事業者で需要が落ち込んでいると説明"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_8.
+kg:op_34 prop:content "後継者不足が厳しい状況を生んでいると説明"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_8.
+kg:op_35 prop:content "地域資源活用で交流人口拡大を図る考え"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "石川忠春平田総合支所長"@ja.
+kg:st_9 rdfs:type cls:st_80.
+kg:op_36 prop:content "中山間地域の過疎化が課題と説明"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_9.
+kg:op_37 prop:content "少子高齢化による課題が多いと説明"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_9.
+kg:op_38 prop:content "地域資源をPRし交流人口拡大を図る考え"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "江口暢子議員"@ja.
+kg:st_10 rdfs:type cls:st_16.
+kg:op_39 prop:content "津波浸水予想図に基づき指定が進められたと確認"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_10.
+kg:st_11 rdfs:label "太田豊総務部長兼総務課長"@ja.
+kg:st_11 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_40 prop:content "ハザードマップ作成の中で地域の意見を踏まえて選定したと説明"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_11.
+kg:op_41 prop:content "耐震性や所有者協議を踏まえて選定したと説明"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_11.
+kg:op_42 prop:content "市民に一時避難場所であることを周知する考え"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_11.
+kg:op_43 prop:content "避難訓練を通じ理解を求める考え"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_11.
+kg:op_44 prop:content "観光客には看板やホームページで周知する考え"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_11.
+kg:op_45 prop:content "所有者と地域住民の合同訓練を相談していく"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_11.
+kg:op_46 prop:content "所有者に防災訓練やマニュアル整備を相談する考え"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_11.
+kg:op_47 prop:content "今後も指定可能建物を追加していく方針"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_11.
+kg:op_48 prop:content "避難所機能のため上階保管を検討していると説明"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_11.
+kg:op_49 prop:content "大規模設備ではなく可搬型発電機の拡充を検討"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "久松勝郎健康福祉部長"@ja.
+kg:st_12 rdfs:type cls:st_18.
+kg:op_50 prop:content "運営スタッフ確保など整理すべき課題が多いと説明"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_12.
+kg:op_51 prop:content "連絡体制の整理が必要と説明"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_12.
+kg:op_52 prop:content "避難者移動方法の整理が必要と説明"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_12.
+kg:op_53 prop:content "医療介護体制など課題が多いと説明"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_12.
+kg:op_54 prop:content "全課題解決を待たず指定を進める考え"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_12.
+kg:op_55 prop:content "研修参加は男性が大半で女性参加が少ない状況を示した"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_11.
+kg:op_56 prop:content "リーダー育成を含む研修会を企画する考え"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_11.
+kg:op_57 prop:content "女性職員を通じ女性視点を取り込む考え"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_11.
+kg:op_58 prop:content "防災会議で女性委員増員を考えている"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_11.
+kg:op_59 prop:content "英語を楽しいと感じ自分の思いを伝える力を育てたい"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "自然に英語に親しむことを重視している"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+kg:op_61 prop:content "市内中心部と旧3町地区など複数会場で通いやすさに配慮"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_11.
+kg:op_62 prop:content "地域拠点での実施拡大を今後検討する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_11.
+kg:st_13 rdfs:label "兵藤芳勝教育部長"@ja.
+kg:st_13 rdfs:type cls:st_81.
+cls:st_81 rdfs:label "教育部長"@ja.
+kg:op_63 prop:content "診断書と聞き取りでアレルギー対応を決定している"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_13.
+kg:op_64 prop:content "関係者で情報共有を徹底している"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_13.
+kg:op_65 prop:content "個々の児童生徒に合わせた給食対応を行っている"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_13.
+kg:op_66 prop:content "医師による研修を各学校に要請していく考え"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_13.
+kg:op_67 prop:content "権限移譲の中で仕事は増える一方職員は減っていると問題提起"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_10.
+kg:op_68 prop:content "業務量や人員必要数を確認し適正配置の判断材料にしている"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_11.
+kg:op_69 prop:content "複数指標を見て適正配置に努めている"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_11.
+kg:st_14 rdfs:label "村上秀一財務部長"@ja.
+kg:st_14 rdfs:type cls:st_18.
+kg:op_70 prop:content "明け方の冷え込みで駐車場が凍結したと説明"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_14.
+kg:op_71 prop:content "職員や土木課で雪の剥ぎ取りを実施したと説明"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_14.
+kg:op_72 prop:content "混雑時は誘導員増員や時間延長で対応している"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_14.
+kg:op_73 prop:content "求職活動で有給休暇を取得しやすいよう配慮している"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_11.
+kg:op_74 prop:content "未満児入所増で保育士確保のため日々雇用が増えている"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_11.
+kg:st_15 rdfs:label "梶原宗明議員"@ja.
+kg:st_15 rdfs:type cls:st_16.
+kg:op_75 prop:content "少子高齢化を背景に空き地空き家が増加していると指摘"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_15.
+kg:op_76 prop:content "過疎化が空き家増加の背景にあると指摘"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_15.
+kg:op_77 prop:content "放置空き家は安全や防犯に悪影響を及ぼすと指摘"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_15.
+kg:op_78 prop:content "庭木や雑草による害虫発生を問題視"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_15.
+kg:op_79 prop:content "近隣生活環境に悪影響を及ぼすと指摘"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_15.
+kg:st_16 rdfs:label "杉原久市民部長"@ja.
+kg:st_16 rdfs:type cls:st_18.
+kg:op_80 prop:content "現地確認の上で所有者に適正管理を求めている"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_16.
+kg:op_81 prop:content "所有者等が不明で資力もない場合は市が最低限対応した例がある"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_16.
+kg:op_82 prop:content "情報管理や費用対効果を整理し有効な仕組みを検討する"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_16.
+kg:op_83 prop:content "市ホームページから不動産業界の物件情報へつなぐ方法を取っている"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_16.
+kg:op_84 prop:content "民間専門家との連携が有効活用や適正管理につながると認識"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_16.
+kg:op_85 prop:content "地域づくりに資する案件は寄附受入れも考える"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_16.
+kg:op_86 prop:content "緊急時には運搬など市が協力できる場合がある"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_16.
+kg:op_87 prop:content "離島振興計画の中で交流活性化を大きな課題と位置づける"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_2.
+kg:op_88 prop:content "新しい切り口で交流人口拡大を検討している"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_2.
+kg:op_89 prop:content "市外小学校等へのPRで交流人口を増やす考え"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_2.
+kg:st_17 rdfs:label "利用者"@ja.
+kg:st_17 rdfs:type cls:st_22.
+cls:st_22 rdfs:label "利用者"@ja.
+kg:op_90 prop:content "しまcafeで島が明るくなったと好評"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_17.
+kg:op_91 prop:content "地域活性化の上でも大きな成果があったと評価"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_2.
+kg:op_92 prop:content "各メディアに取り上げられ飛島のPRになったと評価"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_2.
+kg:op_93 prop:content "継続を求める声に応え営業継続を調整中"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_2.
+kg:op_94 prop:content "来年度は機能強化と新たな取り組みを計画"@ja.
+kg:op_94 rdf:type cls:opinion.
+kg:op_94 prop:speaker kg:st_2.
+kg:op_95 prop:content "消防団の高齢化は大きな課題と認識"@ja.
+kg:op_95 rdf:type cls:opinion.
+kg:op_95 prop:speaker kg:st_2.
+kg:op_96 prop:content "人材確保の難しさが課題と説明"@ja.
+kg:op_96 rdf:type cls:opinion.
+kg:op_96 prop:speaker kg:st_2.
+kg:op_97 prop:content "まずは火災予防対策が必要とする"@ja.
+kg:op_97 rdf:type cls:opinion.
+kg:op_97 prop:speaker kg:st_2.
+kg:op_98 prop:content "大きな災害時は防災ヘリ活用も含め連携する考え"@ja.
+kg:op_98 rdf:type cls:opinion.
+kg:op_98 prop:speaker kg:st_2.
+kg:op_99 prop:content "現状を踏まえ消防力をどう上げるか考えていく"@ja.
+kg:op_99 rdf:type cls:opinion.
+kg:op_99 prop:speaker kg:st_11.
+kg:op_100 prop:content "小型消火器支援も一つの考え方として検討する"@ja.
+kg:op_100 rdf:type cls:opinion.
+kg:op_100 prop:speaker kg:st_11.
+kg:op_101 prop:content "先行市でも2年度目は接種率が下がっており課題と認識"@ja.
+kg:op_101 rdf:type cls:opinion.
+kg:op_101 prop:speaker kg:st_12.
+kg:op_102 prop:content "医師会の知見に基づき75歳以上を対象に設定したと説明"@ja.
+kg:op_102 rdf:type cls:opinion.
+kg:op_102 prop:speaker kg:st_12.
+kg:op_103 prop:content "未接種者には副反応を心配する声があると認識"@ja.
+kg:op_103 rdf:type cls:opinion.
+kg:op_103 prop:speaker kg:st_12.
+kg:op_104 prop:content "接種率向上のため個別勧奨を行っている"@ja.
+kg:op_104 rdf:type cls:opinion.
+kg:op_104 prop:speaker kg:st_12.
+kg:op_105 prop:content "副反応不安に対し正しい知識を広めたい"@ja.
+kg:op_105 rdf:type cls:opinion.
+kg:op_105 prop:speaker kg:st_12.
+kg:op_106 prop:content "定期接種化後も個人と学校の双方から勧奨する考え"@ja.
+kg:op_106 rdf:type cls:opinion.
+kg:op_106 prop:speaker kg:st_12.
+kg:op_107 prop:content "定期接種化を踏まえさらに個別勧奨を行う"@ja.
+kg:op_107 rdf:type cls:opinion.
+kg:op_107 prop:speaker kg:st_12.
+kg:op_108 prop:content "定期接種化後も個別勧奨を続ける考え"@ja.
+kg:op_108 rdf:type cls:opinion.
+kg:op_108 prop:speaker kg:st_12.
+kg:st_18 rdfs:label "武田恵子議員"@ja.
+kg:st_18 rdfs:type cls:st_16.
+kg:op_109 prop:content "後に続く女性職員が希望を持てる職場か疑問を呈する"@ja.
+kg:op_109 rdf:type cls:opinion.
+kg:op_109 prop:speaker kg:st_18.
+kg:op_110 prop:content "女性管理職増加に向け補佐級登用を進めている"@ja.
+kg:op_110 rdf:type cls:opinion.
+kg:op_110 prop:speaker kg:st_2.
+kg:op_111 prop:content "たらい回しを防ぐため専門的能力向上が大事とする"@ja.
+kg:op_111 rdf:type cls:opinion.
+kg:op_111 prop:speaker kg:st_2.
+kg:op_112 prop:content "幅広い異動経験と専門性の双方を重視して幹部を育てる考え"@ja.
+kg:op_112 rdf:type cls:opinion.
+kg:op_112 prop:speaker kg:st_2.
+kg:op_113 prop:content "市民目線で説明し納得を得る必要があるとする"@ja.
+kg:op_113 rdf:type cls:opinion.
+kg:op_113 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "説明会をしましたという既成の事実だけを重ねるだけで事業を進めていくことは、ますます市民の不信感を助長していくだけで何の解決にもなりません"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "今回の十里塚地区への風力発電施設整備事業には異論を唱える方たちも多く、市民一丸となったオール酒田での事業推進にはほど遠い状況ではないかと思います"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "私はそのときも申し上げたとおり、本来の論点は市民との合意形成のあり方と景観の問題にあると認識しています"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "私はそのときも申し上げたとおり、本来の論点は市民との合意形成のあり方と景観の問題にあると認識しています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "まず、環境影響評価の方法書の段階で広く市民の意見を聞いていくこととしております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "その意見を踏まえた上で調査、予測評価を行って、その結果をまとめた準備書を作成した段階でもまた意見をお聞きしていく"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "会として市、県との意見交換の場の必要性を検討したいというふうなお答えをいただいております"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "原発事故以降、原発依存度を減らしていく社会の実現に対する市民の思いは強くなっていると感じております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これからは景観は大事にしながらも、それのみを優先させるという考え方ではなくて、景観と再生可能エネルギーとの調和といった総合的な考え方に立つことが求められている"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "市としては、酒田市風力発電建設ガイドラインに基づいて景観審議会から意見を伺うことになるわけであります。その時期は環境影響評価の結果が出た後になります"@ja.
+<< kg:id_1 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "今回の計画地は絶滅危惧種に指定されているコアジサシの県内唯一の繁殖地があるとされています"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "コアジサシを含めた鳥類については、今後環境影響評価を実施して十分な評価を行っていきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "環境保全をあらかじめ十分検討する必要があって、環境影響評価の結果を踏まえて判断をしていきたい"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "鳥海山鹿ノ俣川上流の山腹大崩壊が起こり、そこから流れ出した油まじりの粘土質の土砂は下流域の日向川を汚染し"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "そこに生息する生物はもとより、日向川の清流を水源として農用地に取水していた農家の方々にも大きな不安を与える事態となっていました"@ja.
+<< kg:id_15 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "日向川の清流を水源として農用地に取水していた農家の方々にも大きな不安を与える事態となっていました"@ja.
+<< kg:id_15 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "シルト質の土砂は日向川の川底一面を覆うように流れ、きれいだった玉石は灰褐色のシルトがへばりつき、水生昆虫も全滅したかというくらいの無残な川の状況"@ja.
+<< kg:id_15 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "田んぼの方々からも、少し油臭のするようなシルト質の土砂が入ってくるというので、何とかならないのかといった声が多く寄せられていました"@ja.
+<< kg:id_15 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "昨年10月18日に開催されました説明会では、日向川への白濁等の流入を減らす対策工事の実施、官民一体となった対応についての要望などがございました"@ja.
+<< kg:id_15 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "庄内森林管理署では、日向川に合流する手前の鹿ノ俣沢下流部におきまして、具体的な対策に向けました現地調査について予算化する"@ja.
+<< kg:id_15 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "県では河川監視、水質検査、営農技術指導を継続しながら、オイルフェンスの増設及び農業用水における沈砂地帯を検討する"@ja.
+<< kg:id_15 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "県では河川監視、水質検査、営農技術指導を継続しながら、オイルフェンスの増設及び農業用水における沈砂地帯を検討する"@ja.
+<< kg:id_15 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "本市としましては、オイルフェンスの設置に対する助成"@ja.
+<< kg:id_15 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "アユの稚魚をくみ上げ荒瀬川に放流する事業を県と協力して実施していきたい"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "旧中央公民館が担ってきた役割が薄らいでしまったことから人材、組織が育たなくなり"@ja.
+<< kg:id_27 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "人材、組織が育たなくなり、かつての青年団等のまちづくりにかかわってくるような広域的な地域づくりをしていく団体が育っていくことが難しい状況"@ja.
+<< kg:id_27 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "地域協議会の役割は、支所ごとの地域づくり全般につきまして、意見や提案をいただく役割をいただく組織であると認識しております"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "少子高齢化や過疎化の進行から限界集落ができている厳しい現状"@ja.
+<< kg:id_31 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "地域内には勤め先がなく市街地へ転居し、地域力が低下してきております"@ja.
+<< kg:id_31 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "今年度から新たに総合支所の事業として、農業、商業、工業と連携した６次産業化などの産業振興にも地域住民と協力しながら取り組んでおります"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "第１次産業が主たる松山地域も、人口の減少、少子高齢化がさらに進み"@ja.
+<< kg:id_35 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "人口の減少、少子高齢化がさらに進み"@ja.
+<< kg:id_35 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "一部の商店や事業経営者においては需要が落ち込んだり"@ja.
+<< kg:id_35 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "後継者がいないなど、厳しい状況がうかがえる"@ja.
+<< kg:id_35 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "松山地域にある魅力的な、そして特色のある多くの地域資源を最大限に活用したまちづくりをすることで交流人口の拡大を図っていく"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "中山間地域は過疎化が進んでおり"@ja.
+<< kg:id_41 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "著しい少子高齢化などによります課題が多くあります"@ja.
+<< kg:id_41 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "美しい自然、おいしい食べ物、魅力ある施設もあります。それらをＰＲし活用を図ることで、交流人口の拡大を図っていきたい"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "東日本大震災を踏まえて県が示した津波浸水予想図に基づき、市有施設など23カ所を選定"@ja.
+<< kg:id_45 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "ハザードマップ作成のワークショップの中で、まず地域の皆さんから御意見をお伺いしております"@ja.
+<< kg:id_45 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "耐震性や構造の基準を満たす建物について、ビルの所有者の方々と御相談をさせていただいた上で選定をさせていただいております"@ja.
+<< kg:id_45 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "市民の皆さんに対しては、広報、ホームページ、防災ガイドブックを活用しながらお知らせをしてまいりたい"@ja.
+<< kg:id_45 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "地域での避難訓練、そういった機会を捉えて避難ビルの位置づけを周知し、理解を求めていきたい"@ja.
+<< kg:id_45 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "観光客の方々については、表示看板、あるいはホームページなどで周知を考えている"@ja.
+<< kg:id_45 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "各ビルと地域住民との合同訓練の実施なども御相談してまいりたい"@ja.
+<< kg:id_45 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "ビルの所有者の方々には、地域住民の避難を想定した防災訓練の実施やマニュアル整備についても御相談をしてまいりたい"@ja.
+<< kg:id_45 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "今後、新たに建設された建物や耐震性が確認された建物については、指定について所有者の方々と協議を行っていきたい"@ja.
+<< kg:id_55 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "備蓄品の保管については校舎内への保管というふうに考えています。その際、想定浸水深よりも上の階への保管が適当"@ja.
+<< kg:id_55 prop:contermeasure kg:id_57 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "各小中学校には可搬型の発電機を配備しておりますけれども、こうした可搬型の発電機については、今後その拡充については少し検討を加えていきたい"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "運営スタッフの確保ですとか、災害対策本部との連絡体制、避難者の移動方法、医療介護体制といったさまざま整理すべき課題が多くありまして"@ja.
+<< kg:id_58 prop:cause kg:id_60 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "災害対策本部との連絡体制"@ja.
+<< kg:id_58 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "避難者の移動方法"@ja.
+<< kg:id_58 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "医療介護体制といったさまざま整理すべき課題が多くありまして"@ja.
+<< kg:id_63 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "全ての課題をクリアするには時間がかかりますことから、できるところから、福祉避難所の指定に取り組んでまいりたい"@ja.
+<< kg:id_65 prop:cause kg:id_66 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "山形県自主防災リーダー研修会に、50代から80代の男性19名、30代の女性１名が参加"@ja.
+<< kg:id_67 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "本市の危機管理アドバイザーや、県の事業を活用しながら、リーダー育成を含めた研修会の開催について企画をしてまいりたい"@ja.
+<< kg:id_69 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "市の危機管理室に女性職員を配置しております。当然、この女性職員を通しながらいろんな施策を検討していく上では、女性の視点が取り込まれていく"@ja.
+<< kg:id_69 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "今後予定されています防災会議には女性委員の増員も考えておりまして"@ja.
+<< kg:id_72 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "幼少期から遊びや生活の中でごく自然に英語になれ親しんで、英語に対する抵抗感をなくするというふうなことが、この事業の狙い"@ja.
+<< kg:id_72 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "ネイティブスピーカー、いわゆる母国語とする人たちとお話をしながら英語になれ親しむというふうなことで、より自然に英語が身につく"@ja.
+<< kg:id_72 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "現在３カ所、市内中心部については交流広場、それから旧３町地区については平田のタウンセンター、そして川南地区については公益研修センター"@ja.
+<< kg:id_72 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "コミュニティセンターを拠点として実施していく、こういったことも視野に入れて考えている"@ja.
+<< kg:id_77 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "原則医師からの診断書の提出を受け、アレルギー物質は何か、アレルギーの程度はどのくらいなのか、など、保護者のほうから十分に聞き取りを行って対応を決定しております"@ja.
+<< kg:id_77 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "個々のアレルギー状況について、教職員、調理員、保護者間で情報の共有化を徹底しております"@ja.
+<< kg:id_77 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "アレルギー物質を除いた給食を提供したり、例えば魚フライをとんかつにかえて提供したり"@ja.
+<< kg:id_77 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "医師からその対応方法を教えていただくということは大変重要なことであると考えておりますので、各学校の学校保健委員会などで研修を行えるよう要請してまいりたい"@ja.
+<< kg:id_82 prop:cause kg:id_83 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "このようにさまざまな権限が市に移譲されているという流れの中で、一方で職員の定員削減を図っていくという現状、つまり、仕事はふえるが職員は減らす"@ja.
+<< kg:id_82 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "各所属長に対して年に２回のヒアリングを行っておりまして、その中で新たに対応が必要となる業務上の課題や業務量の増減、人員の必要数などを確認"@ja.
+<< kg:id_82 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "時間外勤務の量、あるいは事業予算の状況、有給休暇の取得状況など、さまざまなものを勘案しながら"@ja.
+<< kg:id_86 prop:cause kg:id_87 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "明け方に冷え込んだことによりまして庁舎正面駐車場部分が凍結状態になったため"@ja.
+<< kg:id_86 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "通常では行っておらない雪の剥ぎ取りを、歩道については職員の手で、それから、駐車場内の通路については土木課に依頼をして行った"@ja.
+<< kg:id_86 prop:contermeasure kg:id_89 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "来庁者が多いと想定されます年度末、年度初め、議会開催時などでございますけれども、そのときには誘導員を増員、あるいは時間延長で対応しておる"@ja.
+<< kg:id_90 prop:contermeasure kg:id_91 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "ハローワークへの手続などの求職活動に関しましては、年次有給休暇などを活用していただいております"@ja.
+<< kg:id_92 prop:cause kg:id_93 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "保育園における未満児の入所増に伴いまして、日々雇用職員による保育士の確保をしなければいけない"@ja.
+<< kg:id_94 prop:cause kg:id_95 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "少子高齢化や過疎化などを背景に、全国的に空き地、空き家の増加が問題になっております"@ja.
+<< kg:id_94 prop:cause kg:id_96 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "少子高齢化や過疎化などを背景に、全国的に空き地、空き家の増加が問題になっております"@ja.
+<< kg:id_97 prop:effect kg:id_98 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "放置された空き地、空き家は、安全面や防犯上はもちろん"@ja.
+<< kg:id_97 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "伸び過ぎた庭木や雑草による害虫などの発生で"@ja.
+<< kg:id_97 prop:effect kg:id_100 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "隣接地の生活環境へも悪影響を及ぼしています"@ja.
+<< kg:id_101 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "その空き家の所有者等を調査しまして、適正な管理をお願いしているところでございます"@ja.
+<< kg:id_101 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "所有者等や利害関係人双方が所在不明、生活保護受給者など資力がない場合に限り、緊急やむを得ないと判断いたしまして、市が必要最低限の対応をした例は現実にございます"@ja.
+<< kg:id_104 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "有効に機能する仕組みを、今後立ち上げる空き家総合対策ネットワーク協議会、仮称でございますけれども、そこで検討していきたい"@ja.
+<< kg:id_104 prop:contermeasure kg:id_106 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "不動産業界と連携し、そういった物件情報サイトへリンクしやすいよう、市のホームページのＵＩＪターン情報相談窓口のページにリンクを張りつけるなどして、情報提供を行っている"@ja.
+<< kg:id_104 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "民間事業者を含めた関係機関、団体による空き家等総合対策ネットワーク協議会を立ち上げまして、民間事業者と連携して空き地、空き家の売買、貸借を促進するネットワークを構築しまして、有効活用や適正管理につなげていきたい"@ja.
+<< kg:id_104 prop:contermeasure kg:id_108 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "今後地域づくりに資することが可能な案件につきましては、寄附を受けることも考えていきたい"@ja.
+<< kg:id_109 prop:contermeasure kg:id_110 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "緊急やむを得ず自治会で対応された場合には、市としても支援できる場合もございますので、御相談いただければ対応してまいりたい"@ja.
+<< kg:id_111 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "飛島の交流人口の拡大については、新たな離島振興計画の策定作業においても大きな課題として位置づけられているところであります。その中で自然環境保全活動や体験学習などによる交流の活性化を図っていく"@ja.
+<< kg:id_111 prop:contermeasure kg:id_113 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "漂着ごみのクリーンアップ活動に婚活イベントを加えて実施すること"@ja.
+<< kg:id_111 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "いきいき体験スクールのような体験活動メニューを市外の小学校等へＰＲで、交流人口を拡大していく"@ja.
+<< kg:id_115 prop:effect kg:id_116 >>
+    prop:stateBy kg:st_17;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "利用者からは島が明るくなったというふうな、大変好評だった"@ja.
+<< kg:id_115 prop:effect kg:id_117 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "観光客と島民、それから島民同士が気軽に話し合うことができる場となったということは、地域活性化の上でも大きな成果"@ja.
+<< kg:id_115 prop:effect kg:id_118 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "各メディアが取り上げてくれたことで飛島のＰＲになったという面でも、大きな効果があった"@ja.
+<< kg:id_115 prop:contermeasure kg:id_119 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "島の内外からの継続を求める声に応えて、とびしま未来協議会が継続して営業していくことで、現在調整をしているところであります"@ja.
+<< kg:id_115 prop:contermeasure kg:id_120 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_94;
+    prop:text-txt_contents "来年度は、営業時間の延長、提供メニューの充実のほか、観光案内所の機能の強化とか、ごどいもや魚介類などのインターネット販売など、新たな取り組みも計画している"@ja.
+<< kg:id_121 prop:cause kg:id_122 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_95;
+    prop:text-txt_contents "団員の皆さんの高齢化"@ja.
+<< kg:id_121 prop:cause kg:id_123 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_96;
+    prop:text-txt_contents "人の確保が難しいということなど、多くの課題を抱えている"@ja.
+<< kg:id_121 prop:contermeasure kg:id_124 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_97;
+    prop:text-txt_contents "火災については、火事を出さないというふうなことで予防対策を検討する必要があります"@ja.
+<< kg:id_121 prop:contermeasure kg:id_125 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_98;
+    prop:text-txt_contents "より大きな災害が発生した場合は、常備消防と連携して、防災ヘリを使って常備消防の人を輸送する"@ja.
+<< kg:id_121 prop:contermeasure kg:id_126 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_99;
+    prop:text-txt_contents "こうした現状を踏まえて、いかに消防力を上げていくのかといったことについて、議員の御指摘のとおり、私どもも考えていきたい"@ja.
+<< kg:id_121 prop:contermeasure kg:id_127 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_100;
+    prop:text-txt_contents "小型消火器に対する支援ということも１つの考え方ではないか"@ja.
+<< kg:id_128 prop:cause kg:id_129 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_101;
+    prop:text-txt_contents "先行市では、２年度目の接種率が初年度よりも下がったということがあったようですので、本市においても、２年度目となります平成25年度の接種率をいかに上げるかということが課題"@ja.
+<< kg:id_130 prop:contermeasure kg:id_131 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_102;
+    prop:text-txt_contents "酒田地区医師会とも協議をしまして、専門の知見に基づきまして、高齢者の肺炎が多くなる75歳以上と設定した"@ja.
+<< kg:id_132 prop:cause kg:id_133 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_103;
+    prop:text-txt_contents "未接種者の中には副反応を心配する声もあるようであります"@ja.
+<< kg:id_132 prop:contermeasure kg:id_134 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_104;
+    prop:text-txt_contents "この２月に個別接種勧奨の通知を出しまして、接種率の向上を図っているところ"@ja.
+<< kg:id_132 prop:contermeasure kg:id_135 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_105;
+    prop:text-txt_contents "正しい知識の普及を図ってまいりたい"@ja.
+<< kg:id_132 prop:contermeasure kg:id_136 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_106;
+    prop:text-txt_contents "さらに個人への接種勧奨、学校からの接種勧奨を行いまして、子宮頸がんの予防を図ってまいりたい"@ja.
+<< kg:id_137 prop:contermeasure kg:id_138 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_107;
+    prop:text-txt_contents "これらの予防接種につきましても、平成25年度の定期接種化が予定されておりますので、さらに個人への接種勧奨を行い"@ja.
+<< kg:id_139 prop:contermeasure kg:id_138 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_108;
+    prop:text-txt_contents "さらに個人への接種勧奨を行い、処置を図ってまいりたい"@ja.
+<< kg:id_140 prop:effect kg:id_141 >>
+    prop:stateBy kg:st_18;
+    prop:relatedOpinion kg:op_109;
+    prop:text-txt_contents "後に続く女性職員が希望を持てる職場になっていますでしょうか"@ja.
+<< kg:id_140 prop:contermeasure kg:id_142 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_110;
+    prop:text-txt_contents "課長級は管理職員は２名ですけれども、補佐級職員への登用を積極的に図っている"@ja.
+<< kg:id_143 prop:contermeasure kg:id_144 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_111;
+    prop:text-txt_contents "そういった意味では、そうした専門的能力を高めることが大事だというふうに思います"@ja.
+<< kg:id_143 prop:contermeasure kg:id_145 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_112;
+    prop:text-txt_contents "いろんな部署を回して育てていくというやり方も一つあります。これはいわゆるゼネラリストと言われるもの...もう一つは専門部署にいて...いわゆるスペシャリスト"@ja.
+<< kg:id_143 prop:contermeasure kg:id_146 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_113;
+    prop:text-txt_contents "きちんと市民目線で説明をするなりしながら、住民の納得を得ながらきちんとやっていく必要がある"@ja.
+}

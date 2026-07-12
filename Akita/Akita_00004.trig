@@ -1,0 +1,211 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00004> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "電波障害"@ja.
+kg:id_1 rdf:type cls:c_5.
+cls:c_5 rdfs:label "生活環境影響"@ja.
+kg:id_2 rdfs:label "風力発電所の設置"@ja.
+kg:id_2 rdf:type cls:c_303.
+cls:c_303 rdfs:label "施設設置"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "騒音、超低周波音及び風車の影による影響"@ja.
+kg:id_3 rdf:type cls:c_5.
+kg:id_4 rdfs:label "施設の稼働"@ja.
+kg:id_4 rdf:type cls:c_563.
+cls:c_563 rdfs:label "施設稼働"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "鳥類への影響"@ja.
+kg:id_5 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_6 rdfs:label "本事業の実施"@ja.
+kg:id_6 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "景観への影響"@ja.
+kg:id_7 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_8 rdfs:label "風力発電機の大型化の可能性"@ja.
+kg:id_8 rdf:type cls:c_360.
+cls:c_360 rdfs:label "設備大型化"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "実施区域周辺の複数の住居等の存在"@ja.
+kg:id_9 rdf:type cls:c_13593.
+cls:c_13593 rdfs:label "住居立地"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "地域住民の生活環境への支障"@ja.
+kg:id_10 rdf:type cls:c_13558.
+cls:c_13558 rdfs:label "生活環境支障"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "騒音、超低周波音及び風車の影"@ja.
+kg:id_11 rdf:type cls:c_5.
+kg:id_12 rdfs:label "周辺の住居等への影響"@ja.
+kg:id_12 rdf:type cls:c_465.
+cls:c_465 rdfs:label "住居影響"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "本事業"@ja.
+kg:id_13 rdf:type cls:c_468.
+kg:id_13 prop:effect kg:id_5.
+kg:id_14 rdfs:label "風力発電機の規模や配置等"@ja.
+kg:id_14 rdf:type cls:c_13594.
+cls:c_13594 rdfs:label "設備計画"@ja.
+kg:id_14 prop:effect kg:id_7.
+kg:id_15 rdfs:label "環境影響評価の項目及び手法の選定等に係る事項"@ja.
+kg:id_15 rdf:type cls:c_137.
+cls:c_137 rdfs:label "評価手法"@ja.
+kg:id_16 rdfs:label "新たな事情が生じた場合の見直しと適切な対応"@ja.
+kg:id_16 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "本事業の調査、予測及び評価"@ja.
+kg:id_17 rdf:type cls:c_192.
+cls:c_192 rdfs:label "環境調査"@ja.
+kg:id_18 rdfs:label "専門家等の助言や最新の知見・事例等を踏まえた適切な実施"@ja.
+kg:id_18 rdf:type cls:c_13595.
+cls:c_13595 rdfs:label "専門知活用"@ja.
+kg:id_17 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "事業計画が明確でないこと"@ja.
+kg:id_19 rdf:type cls:c_9525.
+cls:c_9525 rdfs:label "計画不明確"@ja.
+kg:id_20 rdfs:label "準備書における事業計画の明確化と環境保全配慮の検討経緯・内容の詳細記載"@ja.
+kg:id_20 rdf:type cls:c_13534.
+cls:c_13534 rdfs:label "計画明確化"@ja.
+kg:id_19 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "地域住民の生活環境への配慮と影響発生時の関係法令等に従った適切な対応"@ja.
+kg:id_21 rdf:type cls:c_13596.
+cls:c_13596 rdfs:label "生活環境配慮"@ja.
+kg:id_6 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "適切な調査、予測及び評価"@ja.
+kg:id_22 rdf:type cls:c_192.
+kg:id_3 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "希少猛禽類の生息状況"@ja.
+kg:id_23 rdf:type cls:c_13597.
+cls:c_13597 rdfs:label "生息状況"@ja.
+kg:id_24 rdfs:label "広範囲の観測による鳥類への影響の適切な予測及び評価"@ja.
+kg:id_24 rdf:type cls:c_13598.
+cls:c_13598 rdfs:label "生態系評価"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "一般鳥類の調査"@ja.
+kg:id_25 rdf:type cls:c_298.
+cls:c_298 rdfs:label "鳥類調査"@ja.
+kg:id_26 rdfs:label "ラインセンサス法等の任意観察法以外の手法の検討"@ja.
+kg:id_26 rdf:type cls:c_425.
+cls:c_425 rdfs:label "調査手法検討"@ja.
+kg:id_25 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "適切な調査、予測及び評価と風力発電機の配置等の検討結果への反映"@ja.
+kg:id_27 rdf:type cls:c_192.
+kg:id_7 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "風力発電機の規模や配置等の検討"@ja.
+kg:id_28 rdf:type cls:c_13594.
+kg:id_29 rdfs:label "地域住民等への丁寧な説明と意見の十分な勘案"@ja.
+kg:id_29 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_28 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "景観調査地点"@ja.
+kg:id_30 rdf:type cls:c_387.
+cls:c_387 rdfs:label "調査地点"@ja.
+kg:id_31 rdfs:label "地域住民等の意見を確認した上での調査地点の追加検討"@ja.
+kg:id_31 rdf:type cls:c_13599.
+cls:c_13599 rdfs:label "地点追加検討"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:st_1 rdfs:label "地域住民等"@ja.
+kg:st_1 rdfs:type cls:st_167.
+cls:st_167 rdfs:label "地域住民"@ja.
+kg:op_1 prop:content "検討の経緯及び結果の丁寧な説明を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "専門家等"@ja.
+kg:st_2 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_2 prop:content "客観性と妥当性を確保するため複数の専門家から意見聴取すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "地域住民や地元自治体等"@ja.
+kg:st_3 rdfs:type cls:st_167.
+kg:op_3 prop:content "周知と丁寧な説明を受け、意見の事業反映を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "検討の経緯及び結果の説明と意見反映を求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "調査地点の追加を検討すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "県内の一部地域では風力発電所の設置が原因とみられる電波障害が発生している"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "施設の稼働に伴う騒音、超低周波音及び風車の影による影響"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "本事業の実施による鳥類への影響"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "現在計画している4,200kW程度の風力発電機より大型化する可能性があることから、景観への影響を適切に調査、予測及び評価をし"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:text-txt_contents "実施区域周辺には複数の住居等が存在するほか、現在計画している4,200kW程度の風力発電機より大型化する可能性があることから、景観への影響を適切に調査、予測及び評価をし"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:text-txt_contents "地域住民の生活環境に十分配慮するとともに、影響が生じた場合は、関係法令等に従って適切に対応すること"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:text-txt_contents "対象事業実施区域（以下「実施区域」という。）周辺には複数の住居等が存在するほか、現在計画している4,200kW程度の風力発電機より大型化する可能性があることから、施設の稼働に伴う騒音、超低周波音及び風車の影による影響について、適切に調査、予測及び評価をすること"@ja.
+<< kg:id_13 prop:effect kg:id_5 >>
+    prop:text-txt_contents "本事業の実施による鳥類への影響を適切に予測及び評価をすること"@ja.
+<< kg:id_14 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "風力発電機の規模や配置等の検討に当たっては、地域住民等に検討の経緯及び結果について丁寧な説明を行い、述べられた意見を十分に勘案すること"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:text-txt_contents "環境影響評価を行う過程において、環境影響評価の項目及び手法の選定等に係る事項に新たな事情が生じた場合は、これらについて必要に応じて見直しを行う等、適切に対応すること"@ja.
+<< kg:id_17 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本事業の調査、予測及び評価に当たっては、専門家等の助言や最新の知見・事例等を踏まえ、適切に調査、予測及び評価をすること。なお、意見聴取は環境要素ごとに複数の専門家に対して行うなど、環境影響評価の客観性及び妥当性の確保に努めること"@ja.
+<< kg:id_19 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "設置する風力発電機の機種や配置のほか、工事の規模や方法等が確定していないことから、準備書においては事業計画を明確にし、具体的な環境の保全の配慮に係る検討の経緯及びその内容を詳細に記載すること。また、これらについて、地域住民や地元自治体等（以下「地域住民等」という。）に広く周知するとともに丁寧な説明を行い、理解を得るよう努め、述べられた意見を可能な限り事業に反映すること"@ja.
+<< kg:id_6 prop:contermeasure kg:id_21 >>
+    prop:text-txt_contents "本事業の実施に当たっては、環境影響評価項目としての選定の有無によらず、地域住民の生活環境に十分配慮するとともに、影響が生じた場合は、関係法令等に従って適切に対応すること"@ja.
+<< kg:id_3 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "施設の稼働に伴う騒音、超低周波音及び風車の影による影響について、適切に調査、予測及び評価をすること"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "希少猛禽類の生息状況を広範囲に観測するなどし、本事業の実施による鳥類への影響を適切に予測及び評価をすること"@ja.
+<< kg:id_25 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "一般鳥類の調査には、任意観察法の他にも調査手法があることから、ホオジロ科等の小型鳥類の現地調査に当たっては、ラインセンサス法等の任意観察法以外の手法についても、検討すること"@ja.
+<< kg:id_7 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "景観への影響を適切に調査、予測及び評価をし、風力発電機の配置等の検討結果に反映させること"@ja.
+<< kg:id_28 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風力発電機の規模や配置等の検討に当たっては、地域住民等に検討の経緯及び結果について丁寧な説明を行い、述べられた意見を十分に勘案すること"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "地域住民等の意見を確認した上で、調査地点の追加について検討すること"@ja.
+}

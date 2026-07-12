@@ -1,0 +1,258 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00024> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "対象事業実施区域の年平均風速がおおむね6.5m/s以上であること"@ja.
+kg:id_2 rdf:type cls:c_14540.
+cls:c_14540 rdfs:label "風況条件"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "周辺の一般道路や林道の整備状況"@ja.
+kg:id_3 rdf:type cls:c_14541.
+cls:c_14541 rdfs:label "道路条件"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "地形条件"@ja.
+kg:id_4 rdf:type cls:c_1154.
+cls:c_1154 rdfs:label "地形条件"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "2050年カーボンニュートラル及び新たな温室効果ガス排出削減目標の実現"@ja.
+kg:id_5 rdf:type cls:c_8820.
+cls:c_8820 rdfs:label "脱炭素目標"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "地球温暖化防止への寄与"@ja.
+kg:id_6 rdf:type cls:c_5828.
+cls:c_5828 rdfs:label "温暖化防止"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "わが国のエネルギー自給率の向上への寄与"@ja.
+kg:id_7 rdf:type cls:c_8592.
+cls:c_8592 rdfs:label "自給率向上"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "風力発電を通じた地域の活性化への貢献"@ja.
+kg:id_8 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "地域との共存"@ja.
+kg:id_9 rdf:type cls:c_12899.
+cls:c_12899 rdfs:label "地域共生"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "沿道や近隣住居周辺の騒音への影響"@ja.
+kg:id_10 rdf:type cls:c_354.
+cls:c_354 rdfs:label "騒音影響"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "沿道や近隣住居周辺の振動への影響"@ja.
+kg:id_11 rdf:type cls:c_13707.
+cls:c_13707 rdfs:label "振動影響"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "沿道や近隣住居周辺の超低周波音への影響"@ja.
+kg:id_12 rdf:type cls:c_13849.
+cls:c_13849 rdfs:label "超低周波音影響"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "造成工事等"@ja.
+kg:id_13 rdf:type cls:c_14542.
+cls:c_14542 rdfs:label "造成工事"@ja.
+kg:id_14 rdfs:label "周辺河川の水の濁り"@ja.
+kg:id_14 rdf:type cls:c_327.
+cls:c_327 rdfs:label "水質影響"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "工事や風車の稼働"@ja.
+kg:id_15 rdf:type cls:c_563.
+cls:c_563 rdfs:label "施設稼働"@ja.
+kg:id_16 rdfs:label "事業エリア周辺の動物への影響"@ja.
+kg:id_16 rdf:type cls:c_401.
+cls:c_401 rdfs:label "動物影響"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "事業エリア周辺の植物への影響"@ja.
+kg:id_17 rdf:type cls:c_320.
+cls:c_320 rdfs:label "植物影響"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "事業エリア周辺の生態系への影響"@ja.
+kg:id_18 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_15 prop:effect kg:id_18.
+kg:id_19 rdfs:label "風車の稼働"@ja.
+kg:id_19 rdf:type cls:c_563.
+kg:id_20 rdfs:label "主要な眺望景観への影響"@ja.
+kg:id_20 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "風車の存在"@ja.
+kg:id_21 rdf:type cls:c_7409.
+cls:c_7409 rdfs:label "発電設備"@ja.
+kg:id_22 rdfs:label "風車の影の影響時間"@ja.
+kg:id_22 rdf:type cls:c_14543.
+cls:c_14543 rdfs:label "日影影響"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "自然度の高い植生エリアの回避"@ja.
+kg:id_23 rdf:type cls:c_14544.
+cls:c_14544 rdfs:label "植生回避"@ja.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "鳥獣保護区、特別保護地区の回避"@ja.
+kg:id_24 rdf:type cls:c_14545.
+cls:c_14545 rdfs:label "保護区回避"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "自然植生をできる限り避けるように絞り込む"@ja.
+kg:id_25 rdf:type cls:c_14544.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "既存の林道や活用可能性のある遊休地等のエリアを追加"@ja.
+kg:id_26 rdf:type cls:c_14546.
+cls:c_14546 rdfs:label "既存地活用"@ja.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "法令等の制約や環境保全、防災計画上の留意が必要な区域、施設等への配慮に基づくエリア調整"@ja.
+kg:id_27 rdf:type cls:c_14547.
+cls:c_14547 rdfs:label "区域調整"@ja.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "実際の改変範囲を必要最小限にとどめる"@ja.
+kg:id_28 rdf:type cls:c_14548.
+cls:c_14548 rdfs:label "改変抑制"@ja.
+kg:id_1 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "土石流危険渓流及び崩壊土砂流出危険地区の一部以外を回避する計画"@ja.
+kg:id_29 rdf:type cls:c_14549.
+cls:c_14549 rdfs:label "危険区域回避"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "超低周波音を評価項目として選定"@ja.
+kg:id_30 rdf:type cls:c_502.
+cls:c_502 rdfs:label "評価項目選定"@ja.
+kg:id_1 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "住民説明会等で皆さまの意見を聴いた上で調査・予測・評価を行う"@ja.
+kg:id_31 rdf:type cls:c_99.
+cls:c_99 rdfs:label "意見聴取"@ja.
+kg:id_1 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "地域の皆さまや関係行政機関からの意見を受け環境保全に十分配慮した事業開発の検討を進める"@ja.
+kg:id_32 rdf:type cls:c_103.
+cls:c_103 rdfs:label "環境配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_32.
+kg:st_1 rdfs:label "関西電力株式会社"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "地域の活性化への貢献と地域との共存を目指す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地域との共存を目指して取り組む"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域の皆様"@ja.
+kg:st_2 rdfs:type cls:st_167.
+cls:st_167 rdfs:label "地域住民"@ja.
+kg:op_3 prop:content "超低周波音を含む影響への関心が高い"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "超低周波音を含む影響への関心が高い"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "超低周波音への関心が高い"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "超低周波音への関心が高い"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "皆様"@ja.
+kg:st_3 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_7 prop:content "意見を述べる機会が設けられている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "地域や関係行政機関の意見を受け環境保全に十分配慮して検討を進める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "対象事業実施区域は年平均風速がおおむね6.5m/s以上であり、周辺の一般道路や林道の整備状況、地形条件からも風力発電事業に適したエリアと考え選定しています。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "対象事業実施区域は年平均風速がおおむね6.5m/s以上であり、周辺の一般道路や林道の整備状況、地形条件からも風力発電事業に適したエリアと考え選定しています。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "対象事業実施区域は年平均風速がおおむね6.5m/s以上であり、周辺の一般道路や林道の整備状況、地形条件からも風力発電事業に適したエリアと考え選定しています。"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:text-txt_contents "2050年カーボンニュートラル及び新たな温室効果ガス排出削減目標の実現に向け、令和3年10月に閣議決定された「第6次エネルギー基本計画」では、エネルギー政策の原則であるS+3Eを前提に、電力部門の脱炭素化に向け、再生可能エネルギーの主力電源化を徹底し、国民負担の抑制と地域との共生を図りながら最大限の導入を促すこととされています。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "本事業は、風況が良好と考えている北海道古平郡古平町及び余市郡余市町において陸上風力発電事業を計画及び実施し、再生可能エネルギーである風力による電気を供給することにより、地球温暖化防止、わが国のエネルギー自給率の向上への寄与、風力発電を通じた地域の活性化への貢献及び地域との共存を目指して取り組むものです。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:text-txt_contents "本事業は、風況が良好と考えている北海道古平郡古平町及び余市郡余市町において陸上風力発電事業を計画及び実施し、再生可能エネルギーである風力による電気を供給することにより、地球温暖化防止、わが国のエネルギー自給率の向上への寄与、風力発電を通じた地域の活性化への貢献及び地域との共存を目指して取り組むものです。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "本事業は、風況が良好と考えている北海道古平郡古平町及び余市郡余市町において陸上風力発電事業を計画及び実施し、再生可能エネルギーである風力による電気を供給することにより、地球温暖化防止、わが国のエネルギー自給率の向上への寄与、風力発電を通じた地域の活性化への貢献及び地域との共存を目指して取り組むものです。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本事業は、風況が良好と考えている北海道古平郡古平町及び余市郡余市町において陸上風力発電事業を計画及び実施し、再生可能エネルギーである風力による電気を供給することにより、地球温暖化防止、わが国のエネルギー自給率の向上への寄与、風力発電を通じた地域の活性化への貢献及び地域との共存を目指して取り組むものです。"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "工事用資機材の搬出入による工事車両の通行、建設機械の稼働および風車の稼働が、沿道や近隣住居周辺の騒音・振動・超低周波音にどのような影響を及ぼすかを予測します。"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "工事用資機材の搬出入による工事車両の通行、建設機械の稼働および風車の稼働が、沿道や近隣住居周辺の騒音・振動・超低周波音にどのような影響を及ぼすかを予測します。"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "超低周波音については、風力発電所の一般的な環境影響評価項目ではありませんが、地域の皆様のご関心も高いことから、評価項目として選定しています。"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:text-txt_contents "工事中の造成工事等によって周辺河川の水の濁りに影響が生じるかどうか、生じる場合はどの程度になるかを予測します。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:text-txt_contents "事業実施に伴う工事や風車の稼働が、事業エリア周辺の動物・植物・生態系にどのように影響するかを、現地調査にて現況を把握し、影響を予測します。"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:text-txt_contents "事業実施に伴う工事や風車の稼働が、事業エリア周辺の動物・植物・生態系にどのように影響するかを、現地調査にて現況を把握し、影響を予測します。"@ja.
+<< kg:id_15 prop:effect kg:id_18 >>
+    prop:text-txt_contents "事業実施に伴う工事や風車の稼働が、事業エリア周辺の動物・植物・生態系にどのように影響するかを、現地調査にて現況を把握し、影響を予測します。"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:text-txt_contents "風車の稼働が、事業エリア周辺の主要な眺望景観にどのように影響するかを、現地調査にて現況を把握し、影響を予測します。"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:text-txt_contents "事業実施区域の周辺（2kmの範囲）において、風車の影の影響時間を年間、春分、夏至、秋分、冬至ごとに予測"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:text-txt_contents "①北部エリア及び南部エリアへの絞り込み 1）自然度の高い植生エリアの回避"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "①北部エリア及び南部エリアへの絞り込み 2）鳥獣保護区、特別保護地区の回避"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:text-txt_contents "③北部エリア内での検討(事業計画の検討) 自然植生をできる限り避けるように絞り込んだ"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "③北部エリア内での検討(事業計画の検討) 自然植生をできる限り避けるように絞り込んだほか、既存の林道や活用可能性のある遊休地等のエリアを追加"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "④北部エリア内での検討(その他留意事項等への配慮) その他法令等の制約、環境保全ならびに防災計画上の留意が必要な区域、施設等への配慮に基づき、エリアを調整"@ja.
+<< kg:id_1 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "改変可能性のある範囲を全て含めて示したものであり、実際の改変範囲は必要最小限にとどめます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:text-txt_contents "対象事業実施区域及びその周囲における国土防災に係る指定区域等のうち、土石流危険渓流及び崩壊土砂流出危険地区の一部が対象事業実施区域と重複しておりますが、それ以外については回避する計画としています。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "超低周波音については、風力発電所の一般的な環境影響評価項目ではありませんが、地域の皆様のご関心も高いことから、評価項目として選定しています。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "住民説明会等で皆さまのご意見をお聴きした上で環境影響に関する調査・予測・評価を行い、その結果を「環境影響評価準備書」として作成・縦覧し、さらに「環境影響評価書」をとりまとめます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "本事業については、引き続き地域の皆さまや関係行政機関からのご意見を賜り、環境保全に十分配慮した事業開発の検討を進めてまいります。"@ja.
+}

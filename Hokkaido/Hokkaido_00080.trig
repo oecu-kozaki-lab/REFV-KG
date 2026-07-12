@@ -1,0 +1,145 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00080> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "希少種の生息地保護"@ja.
+kg:id_1 rdf:type cls:c_14939.
+cls:c_14939 rdfs:label "生息地保護"@ja.
+kg:id_2 rdfs:label "土地所有者などの違反行為"@ja.
+kg:id_2 rdf:type cls:c_14940.
+cls:c_14940 rdfs:label "違反行為"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "助言や指導しかできない"@ja.
+kg:id_3 rdf:type cls:c_14941.
+cls:c_14941 rdfs:label "指導不足"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "難しいケースが増える"@ja.
+kg:id_4 rdf:type cls:c_8915.
+cls:c_8915 rdfs:label "対応困難"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "違反行為があった場合の罰則新設"@ja.
+kg:id_5 rdf:type cls:c_14942.
+cls:c_14942 rdfs:label "罰則新設"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "法律で規制する"@ja.
+kg:id_6 rdf:type cls:c_14943.
+cls:c_14943 rdfs:label "法的規制"@ja.
+kg:id_1 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "国立公園から外れるエリアでも希少種の行動圏を科学的に規定し保護できるようにする"@ja.
+kg:id_7 rdf:type cls:c_14944.
+cls:c_14944 rdfs:label "保護範囲拡大"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "地方自治体が制定する規制条例"@ja.
+kg:id_8 rdf:type cls:c_14567.
+cls:c_14567 rdfs:label "規制条例"@ja.
+kg:id_9 rdfs:label "種の保存法を根拠に地方自治体が条例を厳罰化できるよう後押しする法改正"@ja.
+kg:id_9 rdf:type cls:c_1031.
+cls:c_1031 rdfs:label "法改正"@ja.
+kg:id_8 prop:contermeasure kg:id_9.
+kg:st_1 rdfs:label "専門家"@ja.
+kg:st_1 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_1 prop:content "違反行為があった場合の罰則新設を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "一部委員"@ja.
+kg:st_2 rdfs:type cls:st_3.
+cls:st_3 rdfs:label "委員"@ja.
+kg:op_2 prop:content "お願いベースの指導や助言では難しいケースが増えるため法律で規制すべきだと指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "複数の委員"@ja.
+kg:st_3 rdfs:type cls:st_3.
+kg:op_3 prop:content "同様に罰則を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "お願いベースの指導や助言では難しいケースが増える"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "お願いベースの指導や助言では対応が難しい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "罰則新設を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "同様に罰則を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "事業者の権利を保護しつつ法律で規制するしかない"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "別の委員"@ja.
+kg:st_4 rdfs:type cls:st_3.
+kg:op_9 prop:content "釧路のケースを念頭に国立公園外でも行動圏を科学的に規定し保護すべきだ"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "会合での指摘"@ja.
+kg:st_5 rdfs:type cls:st_217.
+cls:st_217 rdfs:label "会合"@ja.
+kg:op_10 prop:content "種の保存法を根拠に地方自治体が条例を厳罰化できるよう後押しする法改正にすべきだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "専門家は希少種の生息地保護に関して土地所有者などの違反行為があった場合の罰則を新設するよう求めた。現行法では、希少種の生息地保護に関して土地所有者らが必要な義務を果たさないなどの違反行為があったとしても助言や指導しかできない。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "現行法では、希少種の生息地保護に関して土地所有者らが必要な義務を果たさないなどの違反行為があったとしても助言や指導しかできない。これに対して、一部委員は「指導や助言といったお願いベースでは、難しいケースも増える。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "一部委員は「指導や助言といったお願いベースでは、難しいケースも増える。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "専門家は希少種の生息地保護に関して土地所有者などの違反行為があった場合の罰則を新設するよう求めた。複数の委員からも同様に罰則を求める意見が上がった。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "一部委員は「指導や助言といったお願いベースでは、難しいケースも増える。事業者の権利を保護しつつ、法律で規制するしかない」と指摘。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "別の委員からは釧路のケースを念頭に、「国立公園から外れるエリアでも希少種の行動圏を科学的に規定し、保護できるようにすべきだ」との意見も出た。"@ja.
+<< kg:id_8 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地方自治体が制定する規制条例について、会合では「種の保存法を根拠に、地方自治体が条例を厳罰化できるよう後押しする法改正にすべきだ」との指摘もあった。"@ja.
+}

@@ -1,0 +1,80 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00053> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "松前再エネ電力の創立記念セレモニーと町民向けイベント"@ja.
+kg:id_1 rdf:type cls:c_14757.
+cls:c_14757 rdfs:label "記念行事"@ja.
+kg:id_2 rdfs:label "同社の設立を広く町民に知ってもらうため"@ja.
+kg:id_2 rdf:type cls:c_102.
+cls:c_102 rdfs:label "周知"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "町内の公共施設10カ所への売電の取り次ぎ開始"@ja.
+kg:id_3 rdf:type cls:c_14758.
+cls:c_14758 rdfs:label "売電開始"@ja.
+kg:id_4 rdfs:label "6月の電気料金が従来より平均27％下がった"@ja.
+kg:id_4 rdf:type cls:c_14637.
+cls:c_14637 rdfs:label "電気料金低下"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "松前再エネ電力"@ja.
+kg:id_5 rdf:type cls:c_14634.
+cls:c_14634 rdfs:label "電力会社"@ja.
+kg:id_6 rdfs:label "町で発電した電気を地域で有効活用する"@ja.
+kg:id_6 rdf:type cls:c_1933.
+cls:c_1933 rdfs:label "地域活用"@ja.
+kg:id_5 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "町民と一緒に会社を育てていく"@ja.
+kg:id_7 rdf:type cls:c_14759.
+cls:c_14759 rdfs:label "協働運営"@ja.
+kg:id_5 prop:contermeasure kg:id_7.
+kg:st_1 rdfs:label "松前再エネ電力 佐藤隆信社長"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "町で発電した電気の地域での有効活用が大切"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "町民と一緒に会社を育てたい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "同社の設立を広く町民に知ってもらおうと8日に開催"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "6月から町内の公共施設10カ所への売電の取り次ぎを開始したことで、6月の電気料金が従来より平均27％下がった"@ja.
+<< kg:id_5 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "「町で発電した電気を地域で有効活用することが大切。町民と一緒に会社を育てていきたい」と語った"@ja.
+<< kg:id_5 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "「町で発電した電気を地域で有効活用することが大切。町民と一緒に会社を育てていきたい」と語った"@ja.
+}

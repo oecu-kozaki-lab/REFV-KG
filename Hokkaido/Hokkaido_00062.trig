@@ -1,0 +1,255 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00062> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電事業の撤退"@ja.
+kg:id_1 rdf:type cls:c_7911.
+cls:c_7911 rdfs:label "事業撤退"@ja.
+kg:id_2 rdfs:label "資材高騰"@ja.
+kg:id_2 rdf:type cls:c_791.
+cls:c_791 rdfs:label "資材高騰"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "円安"@ja.
+kg:id_3 rdf:type cls:c_798.
+cls:c_798 rdfs:label "為替変動"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "建設コストの膨張"@ja.
+kg:id_4 rdf:type cls:c_2053.
+cls:c_2053 rdfs:label "費用増加"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "エネルギーのまちの青写真が破れた"@ja.
+kg:id_5 rdf:type cls:c_14804.
+cls:c_14804 rdfs:label "地域構想の頓挫"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "観光振興や経済の活性化への期待が損なわれた"@ja.
+kg:id_6 rdf:type cls:c_14805.
+cls:c_14805 rdfs:label "地域活性化の停滞"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "地域共生の先行きが不透明になった"@ja.
+kg:id_7 rdf:type cls:c_14806.
+cls:c_14806 rdfs:label "地域共生の不透明化"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "市内のホテルやアパートのにぎわいが失われる可能性"@ja.
+kg:id_8 rdf:type cls:c_14807.
+cls:c_14807 rdfs:label "地域活気の喪失"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "洋上風力発電事業"@ja.
+kg:id_9 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_10 rdfs:label "地域共生の取り組みを継続する"@ja.
+kg:id_10 rdf:type cls:c_14808.
+cls:c_14808 rdfs:label "地域共生活動"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "国に事業者の再公募を早く求める"@ja.
+kg:id_11 rdf:type cls:c_14809.
+cls:c_14809 rdfs:label "再公募要求"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "風車羽根落下事故"@ja.
+kg:id_12 rdf:type cls:c_6752.
+cls:c_6752 rdfs:label "事故"@ja.
+kg:id_13 rdfs:label "近くにいた男性が死亡した"@ja.
+kg:id_13 rdf:type cls:c_10590.
+cls:c_10590 rdfs:label "死亡被害"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "住民の不安が高まった"@ja.
+kg:id_14 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "安全対策が必要"@ja.
+kg:id_15 rdf:type cls:c_271.
+cls:c_271 rdfs:label "安全対策"@ja.
+kg:id_12 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "風力発電計画"@ja.
+kg:id_16 rdf:type cls:c_390.
+cls:c_390 rdfs:label "発電計画"@ja.
+kg:id_17 rdfs:label "夕日の美しい海が風車で埋め尽くされる懸念"@ja.
+kg:id_17 rdf:type cls:c_14810.
+cls:c_14810 rdfs:label "景観悪化の懸念"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "風力発電を考える会の結成"@ja.
+kg:id_18 rdf:type cls:c_14811.
+cls:c_14811 rdfs:label "住民団体結成"@ja.
+kg:id_19 rdfs:label "事故の発生"@ja.
+kg:id_19 rdf:type cls:c_6752.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "鳥海山のふもとに風力発電所をつくる計画の浮上"@ja.
+kg:id_20 rdf:type cls:c_390.
+kg:id_18 prop:cause kg:id_20.
+kg:id_21 rdfs:label "買い物に困る人の増加"@ja.
+kg:id_21 rdf:type cls:c_14812.
+cls:c_14812 rdfs:label "生活困難の増加"@ja.
+kg:id_22 rdfs:label "小売業の撤退"@ja.
+kg:id_22 rdf:type cls:c_14813.
+cls:c_14813 rdfs:label "小売撤退"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "ローソンの出店"@ja.
+kg:id_23 rdf:type cls:c_14814.
+cls:c_14814 rdfs:label "小売出店"@ja.
+kg:id_21 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "洋上風力発電事業の地域共生の試み"@ja.
+kg:id_24 rdf:type cls:c_14808.
+kg:id_23 prop:cause kg:id_24.
+kg:st_1 rdfs:label "由利本荘市長 湊貴信"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "どんな影響が出るのか注視したい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "どんな影響が出るのか注視したい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "三菱商事社長 中西勝也"@ja.
+kg:st_2 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_3 prop:content "地元の期待を裏切る結果になり申し訳ない"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "地元の期待を裏切る結果になり申し訳ない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "観光振興や経済の活性化につながると期待していたため衝撃で残念"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "地域共生の取り組みはやめるつもりはない"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "洋上風力関係者の利用で地域がにぎわっていた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "地域共生の取り組みはやめるつもりはない"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "国に早く事業者を再公募するよう求める考え"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "由利本荘市住民 佐々木憲雄"@ja.
+kg:st_3 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_10 prop:content "恐れていたことがついに起きた"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "恐れていたことがついに起きた"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "人が近づける発電所も多く安全対策が必要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "夕日の美しい海が風車で埋め尽くされるのは想像できない"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "事故を受けて仲間と会を結成した"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "反対運動をしていたメンバーを中心に立ち上がった"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "主婦"@ja.
+kg:st_4 rdfs:type cls:st_5.
+kg:op_16 prop:content "総菜もあり便利でコンビニのある暮らしは初めて"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "ローソン由利本荘鳥海町店 店長 小沼文子"@ja.
+kg:st_5 rdfs:type cls:st_1.
+kg:op_17 prop:content "地域密着でお客様の生活を守っていきたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "雲行きが怪しくなったのは今年2月。資材高騰や円安で建設コストが膨らみ、三菱商事は由利本荘沖など3海域での計画見直しを表明。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "雲行きが怪しくなったのは今年2月。資材高騰や円安で建設コストが膨らみ、三菱商事は由利本荘沖など3海域での計画見直しを表明。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "雲行きが怪しくなったのは今年2月。資材高騰や円安で建設コストが膨らみ、三菱商事は由利本荘沖など3海域での計画見直しを表明。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "巨大プロジェクトをテコにした「エネルギーのまち」の青写真は破れ散った。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "「地域共生」はコンビニだけではない。カキ養殖支援、都内での物産展の開催……。「観光振興や経済の活性化につながると期待していた。衝撃だし、残念だ」と由利本荘市の湊貴信市長(60)。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "地元の期待を裏切る結果になり申し訳ない」。三菱商事の中西勝也社長(64)は8月27日、都内で会見し、撤退を発表。地域共生の取り組みについて、中西社長は「やめるつもりはない」と述べた。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "この2年ほどは、市内のホテルやアパートは洋上風力の関係者の利用でにぎわってきたという。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "地域共生の取り組みについて、中西社長は「やめるつもりはない」と述べた。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "湊市長は「どんな影響が出るのか注視したい」と語る一方、国に早く事業者を再公募するように求める考えだ。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "由利本荘の隣にある秋田市で5月、新屋浜風力発電所の風車の羽根が折れて、約80メートル離れた場所に落下する事故があった。近くにいた男性が死亡した。"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "その日常に、不安を抱える人も少なくない。"@ja.
+<< kg:id_12 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "「秋田には人が近づける発電所も多い。安全対策が必要だ」"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "また新しい事業者が現れるかもしれない。「夕日の美しい海が風車で埋め尽くされる。想像できない」と佐々木さん。"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "佐々木さんが仲間と「風力発電を考える会」を結成したのは、事故の後だ。"@ja.
+<< kg:id_18 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "当時、鳥海山のふもとに風力発電所をつくる計画が浮上。やがて計画は撤回されたが、その反対運動をしていたメンバーを中心に立ち上がった。"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "小売業の撤退が相次ぐ山間部では、買い物に困る人が増えている。"@ja.
+<< kg:id_21 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "昨秋、ローソンが開店した。...「コンビニのある暮らしは初めて。総菜もあって便利です」。...店長の小沼文子さん(46)は「地域密着で、お客様の生活を守っていきたい」と語る。"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:text-txt_contents "出店の背景には、由利本荘沖に建設されるはずだった洋上風力発電事業の存在がある。「地域共生」の試みとして、三菱商事中心の事業会社から紹介を受けたローソンが出店を決めた。"@ja.
+}

@@ -1,0 +1,781 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00150> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新型コロナウイルス感染症対策"@ja.
+kg:id_1 rdf:type cls:c_1191.
+cls:c_1191 rdfs:label "感染症対策"@ja.
+kg:id_2 rdfs:label "3月の全国一斉臨時休業"@ja.
+kg:id_2 rdf:type cls:c_3398.
+cls:c_3398 rdfs:label "臨時休業"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "学校現場の負担増大"@ja.
+kg:id_3 rdf:type cls:c_3097.
+cls:c_3097 rdfs:label "学校負担"@ja.
+kg:id_4 rdfs:label "消毒作業と検温と不安を抱える児童やそのご父兄との相互連絡業務の増加"@ja.
+kg:id_4 rdf:type cls:c_8607.
+cls:c_8607 rdfs:label "連絡業務"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "教材研究や授業準備の時間の確保困難"@ja.
+kg:id_5 rdf:type cls:c_7704.
+cls:c_7704 rdfs:label "時間不足"@ja.
+kg:id_6 rdfs:label "新学習指導要領への対応と子供の貧困問題やいじめや不登校問題など解決すべき課題の山積"@ja.
+kg:id_6 rdf:type cls:c_1706.
+cls:c_1706 rdfs:label "教育課題"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "教師の疲弊"@ja.
+kg:id_7 rdf:type cls:c_8608.
+cls:c_8608 rdfs:label "教師疲弊"@ja.
+kg:id_8 rdfs:label "ソーシャルディスタンスを取っての学校生活や授業の進め方"@ja.
+kg:id_8 rdf:type cls:c_8532.
+cls:c_8532 rdfs:label "学校運営"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "慢性的なマンパワー不足課題"@ja.
+kg:id_9 rdf:type cls:c_1145.
+cls:c_1145 rdfs:label "人員不足"@ja.
+kg:id_10 rdfs:label "現在の教育現場での人手不足"@ja.
+kg:id_10 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "新型コロナウイルス感染者確認事例への対応"@ja.
+kg:id_11 rdf:type cls:c_8609.
+cls:c_8609 rdfs:label "感染者対応"@ja.
+kg:id_12 rdfs:label "11月27日に本町初となる新型コロナウイルス感染者の確認事例が公表"@ja.
+kg:id_12 rdf:type cls:c_8610.
+cls:c_8610 rdfs:label "感染確認"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "学校現場"@ja.
+kg:id_13 rdf:type cls:c_8611.
+cls:c_8611 rdfs:label "学校現場"@ja.
+kg:id_14 rdfs:label "消毒作業や検温や相互連絡業務の増大で大変な状況"@ja.
+kg:id_14 rdf:type cls:c_3097.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "子供たちの豊かな学び"@ja.
+kg:id_15 rdf:type cls:c_4635.
+cls:c_4635 rdfs:label "学習機会"@ja.
+kg:id_16 rdfs:label "教材研究や授業準備の時間を十分に確保できない"@ja.
+kg:id_16 rdf:type cls:c_7704.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "教師"@ja.
+kg:id_17 rdf:type cls:c_8612.
+cls:c_8612 rdfs:label "教師"@ja.
+kg:id_18 rdfs:label "疲弊している"@ja.
+kg:id_18 rdf:type cls:c_8613.
+cls:c_8613 rdfs:label "疲弊"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "小学校の統廃合時"@ja.
+kg:id_19 rdf:type cls:c_4355.
+cls:c_4355 rdfs:label "学校統合"@ja.
+kg:id_20 rdfs:label "様々な教育課題への対応や児童生徒への教育的配慮が多く求められる"@ja.
+kg:id_20 rdf:type cls:c_8614.
+cls:c_8614 rdfs:label "教育配慮"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "GIGAスクール構想"@ja.
+kg:id_21 rdf:type cls:c_2664.
+cls:c_2664 rdfs:label "教育情報化"@ja.
+kg:id_22 rdfs:label "パソコンという機器が十分に子供たちに行き渡る"@ja.
+kg:id_22 rdf:type cls:c_8615.
+cls:c_8615 rdfs:label "学習機器"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "旧青山本邸"@ja.
+kg:id_23 rdf:type cls:c_2473.
+cls:c_2473 rdfs:label "文化施設"@ja.
+kg:id_24 rdfs:label "新型コロナウイルスの感染拡大の影響で入館者が減少"@ja.
+kg:id_24 rdf:type cls:c_1173.
+cls:c_1173 rdfs:label "利用減少"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "イベント開催"@ja.
+kg:id_25 rdf:type cls:c_8358.
+cls:c_8358 rdfs:label "イベント"@ja.
+kg:id_26 rdfs:label "鳥海山神鹿角切祭や鮭のつかみどり大会等のイベントは中止"@ja.
+kg:id_26 rdf:type cls:c_8616.
+cls:c_8616 rdfs:label "開催中止"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "山形暮らし大相談会"@ja.
+kg:id_27 rdf:type cls:c_3093.
+cls:c_3093 rdfs:label "相談会"@ja.
+kg:id_28 rdfs:label "参加団体は原則オンラインでの出展"@ja.
+kg:id_28 rdf:type cls:c_8617.
+cls:c_8617 rdfs:label "オンライン開催"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "まるっと遊佐ふるさと会"@ja.
+kg:id_29 rdf:type cls:c_8618.
+cls:c_8618 rdfs:label "会合"@ja.
+kg:id_30 rdfs:label "開催を見合わせ"@ja.
+kg:id_30 rdf:type cls:c_8619.
+cls:c_8619 rdfs:label "開催見合わせ"@ja.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "観光宿泊業や宴会場を営業する飲食店や旅行業"@ja.
+kg:id_31 rdf:type cls:c_8620.
+cls:c_8620 rdfs:label "観光業"@ja.
+kg:id_32 rdfs:label "特に影響が大きかった"@ja.
+kg:id_32 rdf:type cls:c_2235.
+cls:c_2235 rdfs:label "経営影響"@ja.
+kg:id_31 prop:effect kg:id_32.
+kg:id_33 rdfs:label "行政事務のデジタル化"@ja.
+kg:id_33 rdf:type cls:c_2173.
+cls:c_2173 rdfs:label "行政デジタル化"@ja.
+kg:id_34 rdfs:label "新型コロナウイルス感染症による社会的な状況"@ja.
+kg:id_34 rdf:type cls:c_8621.
+cls:c_8621 rdfs:label "社会状況"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "財務システム導入による紙面決済の廃止"@ja.
+kg:id_35 rdf:type cls:c_8622.
+cls:c_8622 rdfs:label "電子決裁"@ja.
+kg:id_33 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "グループセッション導入によるスケジュール管理や事務連絡の効率化"@ja.
+kg:id_36 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_33 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "ウェブ会議の活用"@ja.
+kg:id_37 rdf:type cls:c_8623.
+cls:c_8623 rdfs:label "ウェブ会議"@ja.
+kg:id_33 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "文書管理システム導入による文書の保存や廃棄管理や電子決済"@ja.
+kg:id_38 rdf:type cls:c_2590.
+cls:c_2590 rdfs:label "文書管理"@ja.
+kg:id_33 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "庶務システムの導入検討"@ja.
+kg:id_39 rdf:type cls:c_8624.
+cls:c_8624 rdfs:label "庶務システム"@ja.
+kg:id_33 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "職員提案制度の活用や各担当課でのデジタル化の検討"@ja.
+kg:id_40 rdf:type cls:c_7883.
+cls:c_7883 rdfs:label "業務改善"@ja.
+kg:id_33 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "住民への防災情報提供"@ja.
+kg:id_41 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_42 rdfs:label "フェイスブックでの情報発信"@ja.
+kg:id_42 rdf:type cls:c_8625.
+cls:c_8625 rdfs:label "SNS発信"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "無料通信アプリのラインも含めた新たな手段の導入検討"@ja.
+kg:id_43 rdf:type cls:c_8626.
+cls:c_8626 rdfs:label "連絡手段"@ja.
+kg:id_41 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "アプリケーションを使用できるソフトやスマートフォンなどの環境を持っていない方や操作方法等の手段を持たない方の存在"@ja.
+kg:id_44 rdf:type cls:c_8627.
+cls:c_8627 rdfs:label "利用困難者"@ja.
+kg:id_41 prop:cause kg:id_44.
+kg:id_45 rdfs:label "共同加工所の利用件数低迷"@ja.
+kg:id_45 rdf:type cls:c_8628.
+cls:c_8628 rdfs:label "施設利用低迷"@ja.
+kg:id_46 rdfs:label "新型コロナウイルス感染症予防のため4月の施設見学会を一旦中止"@ja.
+kg:id_46 rdf:type cls:c_8629.
+cls:c_8629 rdfs:label "見学中止"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "農業者は農閑期にならないと食品加工に取り組むことができない"@ja.
+kg:id_47 rdf:type cls:c_8630.
+cls:c_8630 rdfs:label "利用時期"@ja.
+kg:id_45 prop:cause kg:id_47.
+kg:id_48 rdfs:label "保健所の営業許可や衛生管理に対する知識が必要で手続が少し複雑"@ja.
+kg:id_48 rdf:type cls:c_4008.
+cls:c_4008 rdfs:label "手続負担"@ja.
+kg:id_45 prop:cause kg:id_48.
+kg:id_49 rdfs:label "共同加工所"@ja.
+kg:id_49 rdf:type cls:c_8631.
+cls:c_8631 rdfs:label "加工施設"@ja.
+kg:id_50 rdfs:label "遊佐ブランド推進協議会による伴走型支援"@ja.
+kg:id_50 rdf:type cls:c_1327.
+cls:c_1327 rdfs:label "利用支援"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "12月以降の施設見学会と研修会の毎月開催"@ja.
+kg:id_51 rdf:type cls:c_8632.
+cls:c_8632 rdfs:label "見学研修"@ja.
+kg:id_49 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "遊佐ブランド推進協議会事務局の常駐"@ja.
+kg:id_52 rdf:type cls:c_3075.
+cls:c_3075 rdfs:label "運営体制"@ja.
+kg:id_49 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "通信販売サイトの立ち上げ"@ja.
+kg:id_53 rdf:type cls:c_1911.
+cls:c_1911 rdfs:label "販路拡大"@ja.
+kg:id_49 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "利用者の会の立ち上げと統一パッケージやラベル作成"@ja.
+kg:id_54 rdf:type cls:c_1414.
+cls:c_1414 rdfs:label "ブランド化"@ja.
+kg:id_49 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "教育現場でのデジタル対応"@ja.
+kg:id_55 rdf:type cls:c_2664.
+kg:id_56 rdfs:label "新型コロナウイルスの影響で教育現場が大きく変化"@ja.
+kg:id_56 rdf:type cls:c_8633.
+cls:c_8633 rdfs:label "教育変化"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "コロナ禍による学校の長期閉鎖"@ja.
+kg:id_57 rdf:type cls:c_8634.
+cls:c_8634 rdfs:label "学校閉鎖"@ja.
+kg:id_55 prop:cause kg:id_57.
+kg:id_58 rdfs:label "ICTを日常的に活用できる環境整備"@ja.
+kg:id_58 rdf:type cls:c_8635.
+cls:c_8635 rdfs:label "ICT環境"@ja.
+kg:id_55 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "プログラミング的思考を育む学習活動の計画的実施"@ja.
+kg:id_59 rdf:type cls:c_8636.
+cls:c_8636 rdfs:label "学習活動"@ja.
+kg:id_55 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "吹浦小学校でのICT活用研究と授業公開"@ja.
+kg:id_60 rdf:type cls:c_8637.
+cls:c_8637 rdfs:label "実践研究"@ja.
+kg:id_55 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "町教育委員会主催による担当者研修の実施"@ja.
+kg:id_61 rdf:type cls:c_2666.
+cls:c_2666 rdfs:label "教員研修"@ja.
+kg:id_55 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "教務主任会等による研修の実施"@ja.
+kg:id_62 rdf:type cls:c_2666.
+kg:id_55 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "校内OJTによる研修の実施"@ja.
+kg:id_63 rdf:type cls:c_2666.
+kg:id_55 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "ICT支援員1名の配置計画"@ja.
+kg:id_64 rdf:type cls:c_8638.
+cls:c_8638 rdfs:label "ICT支援員"@ja.
+kg:id_55 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "指導用デジタル教科書の導入"@ja.
+kg:id_65 rdf:type cls:c_8639.
+cls:c_8639 rdfs:label "デジタル教材"@ja.
+kg:id_55 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "風力発電施設周辺住民の健康被害懸念"@ja.
+kg:id_66 rdf:type cls:c_8640.
+cls:c_8640 rdfs:label "健康被害懸念"@ja.
+kg:id_67 rdfs:label "風車による低周波音や機械音"@ja.
+kg:id_67 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_66 prop:cause kg:id_67.
+kg:id_68 rdfs:label "騒音が気になったり体調が悪くなって手術した人がいる"@ja.
+kg:id_68 rdf:type cls:c_8641.
+cls:c_8641 rdfs:label "体調不良"@ja.
+kg:id_66 prop:effect kg:id_68.
+kg:id_69 rdfs:label "事業者への情報提供と実態把握と必要に応じた調査要請の検討"@ja.
+kg:id_69 rdf:type cls:c_895.
+cls:c_895 rdfs:label "実態把握"@ja.
+kg:id_66 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "協定書に基づく関係住民との良好な関係構築を事業者に求める"@ja.
+kg:id_70 rdf:type cls:c_35.
+cls:c_35 rdfs:label "住民対応"@ja.
+kg:id_66 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "福祉灯油券助成事業"@ja.
+kg:id_71 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_72 rdfs:label "冬季に灯油が高騰すると低所得者の生活に大きな影響を受ける"@ja.
+kg:id_72 rdf:type cls:c_4261.
+cls:c_4261 rdfs:label "燃料高騰"@ja.
+kg:id_71 prop:cause kg:id_72.
+kg:id_73 rdfs:label "灯油価格が基準を超えて高騰したときに灯油券を支援"@ja.
+kg:id_73 rdf:type cls:c_8642.
+cls:c_8642 rdfs:label "灯油支援"@ja.
+kg:id_71 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "申請しなかった人の中には施設入所中など灯油を必要としない人が含まれる"@ja.
+kg:id_74 rdf:type cls:c_8643.
+cls:c_8643 rdfs:label "灯油不要"@ja.
+kg:id_71 prop:cause kg:id_74.
+kg:id_75 rdfs:label "新小学校開校準備"@ja.
+kg:id_75 rdf:type cls:c_8644.
+cls:c_8644 rdfs:label "開校準備"@ja.
+kg:id_76 rdfs:label "遊佐町立小学校新校開校準備委員会で協議しながら進める"@ja.
+kg:id_76 rdf:type cls:c_8645.
+cls:c_8645 rdfs:label "準備委員会"@ja.
+kg:id_75 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "校舎増築工事"@ja.
+kg:id_77 rdf:type cls:c_8646.
+cls:c_8646 rdfs:label "校舎整備"@ja.
+kg:id_75 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "普通教室のエアコン増設工事"@ja.
+kg:id_78 rdf:type cls:c_1534.
+cls:c_1534 rdfs:label "空調整備"@ja.
+kg:id_75 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "昇降口改修工事"@ja.
+kg:id_79 rdf:type cls:c_865.
+cls:c_865 rdfs:label "施設改修"@ja.
+kg:id_75 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "駐車場等用地買収と整備工事"@ja.
+kg:id_80 rdf:type cls:c_8647.
+cls:c_8647 rdfs:label "用地整備"@ja.
+kg:id_75 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "校歌作成と校旗作成購入"@ja.
+kg:id_81 rdf:type cls:c_8648.
+cls:c_8648 rdfs:label "学校備品"@ja.
+kg:id_75 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "特別支援学級"@ja.
+kg:id_82 rdf:type cls:c_1375.
+cls:c_1375 rdfs:label "特別支援教育"@ja.
+kg:id_83 rdfs:label "町負担の特別支援教育支援員を学校の実態に即して手厚く配置"@ja.
+kg:id_83 rdf:type cls:c_1376.
+cls:c_1376 rdfs:label "支援員配置"@ja.
+kg:id_82 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "統合後は支援員配置を集約しより充実した支援体制を整える"@ja.
+kg:id_84 rdf:type cls:c_7203.
+cls:c_7203 rdfs:label "支援体制"@ja.
+kg:id_82 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "臨床心理士である特別支援教育アドバイザーの各校派遣"@ja.
+kg:id_85 rdf:type cls:c_1262.
+cls:c_1262 rdfs:label "専門家派遣"@ja.
+kg:id_82 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "少人数学級の実現"@ja.
+kg:id_86 rdf:type cls:c_2756.
+cls:c_2756 rdfs:label "少人数学級"@ja.
+kg:id_87 rdfs:label "学級編制標準人数を標準30人小学校1年生は25人以下へ改正するよう要望"@ja.
+kg:id_87 rdf:type cls:c_5879.
+cls:c_5879 rdfs:label "制度要望"@ja.
+kg:id_86 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "特別支援教育支援員の低学年への優先配置"@ja.
+kg:id_88 rdf:type cls:c_1376.
+kg:id_86 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "特別支援教育アドバイザーの定期訪問"@ja.
+kg:id_89 rdf:type cls:c_8649.
+cls:c_8649 rdfs:label "専門家訪問"@ja.
+kg:id_86 prop:contermeasure kg:id_89.
+kg:st_1 rdfs:label "松永裕美議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "コロナ禍で教職員の負担が増え定数改善が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "学校現場は大変な状況にあり教職員の増員が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "子供たちの豊かな学びのための時間確保が困難になっている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "新しい生活様式への対応で多くの教師が疲弊している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "退職教員の協力だけでなく計画的な増員が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "教職員の業務負担が急増している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "豊かな学びの実現が困難になっている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "現場の教師の疲弊は深刻である"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "統廃合時には特に教職員の計画的増員が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "機器整備だけでなく教職員の人材確保が教育の土台として重要"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "菅原和幸議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+kg:op_11 prop:content "社会全体の転機と捉え前向きに対応すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "時田町長"@ja.
+kg:st_3 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_12 prop:content "様々な事務システムを導入しデジタル化を進めている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "デジタル化により事務連絡が簡単になっている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "県内会議や町外担当者との打合せにかなり活用されるようになった"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "今後の行政事務への活用を進めている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "今後庶務システムの導入も考えている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "若い世代も含めて進め他課にまたがる場合は意見交換の場を設けたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "防災に係る新たな伝達方法として発信可能になった"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "効果や町民の利用しやすさを検証しながら導入を検討する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "新たな情報伝達手段には使えない人への対応も必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "利用推進に向けた事業に取り組んでいく"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "12月以降毎月施設見学会と研修会を開催し利用推進を図る"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "町が説明や手続方法の支援を行い利用しやすい施設にしたい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "食品加工に取り組みやすい環境をつくるために進めてきた"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "利用推進に向けた事業に取り組む準備を進めている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "すぐに対応できる体制となる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "販売につなげるため通販サイトの立ち上げを進めている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "特産品の再ブランド化と販路拡大を図りたい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "赤塚英一議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_29 prop:content "時代に沿った教育の在り方と対応方法を考える必要がある"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "子供たちの教育水準を保ち知識向上につなげる工夫が必要"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "鉛筆やノートと同様に教育現場で不可欠なものとして整備を推進する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "論理的思考力や主体的に問題解決に取り組む態度を育てたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "教員のICT活用指導力向上を目指す取組を進める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "研修を充実させる予定である"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "研修を充実させる予定である"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "先輩が後輩を指導する形で研修を進める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "授業支援や校務支援や環境整備や校内研修支援を想定している"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "小学校は今年度中学校は来年度の教科書改訂に合わせ導入する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "斎藤弥志夫議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_39 prop:content "近隣住民の健康調査をして実態把握する必要がある"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_5.
+kg:op_40 prop:content "風力発電の影響がどの程度あるかは不明だが健康被害も考えられる"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:op_41 prop:content "健康被害事案があった際は連携して実態把握に努め必要なら調査要請を検討する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "誠実な対応を引き続き求める"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:op_43 prop:content "暖房に灯油を頼みとする低所得者への緊急的生活支援である"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_3.
+kg:op_44 prop:content "恒常的ではなく緊急的な生活支援である"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "申請しない理由には灯油不要の事情もある"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_3.
+kg:op_46 prop:content "令和5年4月の開校を目指して進めている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_3.
+kg:op_47 prop:content "令和3年度と4年度で施設整備を進める"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_3.
+kg:op_48 prop:content "必要な施設整備として進める"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_3.
+kg:op_49 prop:content "必要な施設整備として進める"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_3.
+kg:op_50 prop:content "開校に向け必要な整備を行う"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_3.
+kg:op_51 prop:content "開校準備の一環として進める"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_3.
+kg:op_52 prop:content "支援体制に不備が生じないよう配置している"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_3.
+kg:op_53 prop:content "在籍児童が増えてもより充実した支援体制が可能"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_3.
+kg:op_54 prop:content "各校の状況を把握し統合後の支援体制を事前に検討する"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_3.
+kg:op_55 prop:content "山形県市町村教育委員会協議会として県教育委員会と県議会議長へ要望している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_3.
+kg:op_56 prop:content "低学年ほど個別支援が必要な場合が多いため優先配置している"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_3.
+kg:op_57 prop:content "全児童の状況を把握できる体制を整えている"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "新型コロナウイルス感染症対策として、３月には全国一斉臨時休業が行われました"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "学校現場では当初、消毒作業、検温はもとより、不安を抱える児童やそのご父兄との相互連絡業務などが増大し、実に大変な状況がございました"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "それに加え、新学習指導要領への対応に加え、子供の貧困問題やいじめ、不登校問題など、解決すべき課題が山積しており、子供たちの豊かな学びを実現するための教材研究や授業準備の時間を十分に確保することが現在とても困難な状況になっている"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "教育現場においては今までにない経験のないソーシャルディスタンスを取っての学校生活や授業の進め方に多くの教師が疲弊しているのが現状である"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "現在の教育現場で見受けられます慢性的なマンパワー不足課題"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "11月27日、県より、本町初となる新型コロナウイルス感染者の確認事例が公表されたのを受け、第19回遊佐町新型コロナウイルス感染症対策本部会議を開催し、町の対応について協議しました"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "学校現場では当初、消毒作業、検温はもとより、不安を抱える児童やそのご父兄との相互連絡業務などが増大し、実に大変な状況がございました"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "子供たちの豊かな学びを実現するための教材研究や授業準備の時間を十分に確保することが現在とても困難な状況になっている"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "多くの教師が疲弊しているのが現状である"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "令和５年に予定されております小学校の統廃合時、数年の間は特に様々な教育課題への対応や児童生徒への教育的配慮が多く求められるであろうと予測され"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "ＧＩＧＡスクール構想が具体化し、ハード面ではパソコンという機器が十分に子供たちに行き渡ったとしても"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:text-txt_contents "新型コロナウイルスの感染拡大の影響で入館者が減少しています"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:text-txt_contents "例年開催していた「鳥海山神鹿角切祭」、「鮭のつかみどり大会」等のイベントは中止となりました"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:text-txt_contents "新型コロナの影響で参加団体は原則オンラインでの出展となり"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:text-txt_contents "感染症の影響により開催を見合わせておりました"@ja.
+<< kg:id_31 prop:effect kg:id_32 >>
+    prop:text-txt_contents "特に影響が大きかった観光宿泊業、50人以上収容の宴会場を営業する飲食店、旅行業"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "新型コロナウイルス感染症による社会的な状況もあり、先送りをせざるを得ない状況となりました。感染症への対応に当たって、本町では本部会議等を随時開催し、対応してきておりますが、最近頻繁に耳にする言葉にコロナ禍があります。私は、この今の現状を社会全体の転機と捉え、前向きに対応すべきと考えます"@ja.
+<< kg:id_33 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "現在の事務では財務システムの導入により、紙面での決済を遊佐町としてはなくしております"@ja.
+<< kg:id_33 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "グループセッションの導入によって、スケジュールの管理や職員の事務連絡が簡単にできるようになる"@ja.
+<< kg:id_33 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "コロナ禍により、県内の会議や町外の担当者等との打合せなどにウェブ会議がかなり活用されるようになりました"@ja.
+<< kg:id_33 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "行政事務への活用や文書管理システムの導入による文書の保存、廃棄管理や電子決済を進めています"@ja.
+<< kg:id_33 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今後庶務システムの導入も考えているところであります"@ja.
+<< kg:id_33 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "まずは職員提案制度の活用や各担当課でのデジタル化の検討を若い世代も含めて進めていき、他課にまたがるようであれば、意見の交換の場を設けていきたい"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "災害情報、新型コロナウイルス感染症等防災に係る情報の新たな伝達方法として、今年度よりフェイスブックでの情報発信が可能となりました"@ja.
+<< kg:id_41 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "提案ありました無料通信アプリのラインも含めた新たな手段について、その効果、町民の利用のしやすさなどを検証しながら導入を検討してまいります"@ja.
+<< kg:id_41 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "アプリケーションを使用できるソフトやスマートフォンなどの環境を持っていない方、環境が整っていても、操作方法等の手段を持たない方がいるわけでありますので、それらの人々への対応も必要となっております"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "共同加工所は昨年度末に整備され、今年４月に施設見学会を行い、オープンする予定でありましたが、新型コロナウイルス感染症予防のため一旦中止とし"@ja.
+<< kg:id_45 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "農業者からは、農閑期にならないと食品加工に取り組むことができないという意見もあり"@ja.
+<< kg:id_45 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "共同加工所を利用して商品を加工して販売する場合は、保健所の営業許可や衛生管理に対する知識も必要となり、その手続については少し複雑となっております"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "町が施設を借り受け、整備し、遊佐ブランド推進協議会が伴走型の支援を行うことで食品加工に取り組みやすい環境をつくることができると考え"@ja.
+<< kg:id_49 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "この12月以降、施設見学会と研修会を毎月開催し、利用推進に向けた事業に取り組んでいく準備を進めているところであります"@ja.
+<< kg:id_49 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "次年度より遊佐ブランド推進協議会事務局を常駐させることですぐに対応できる体制となるところであります"@ja.
+<< kg:id_49 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "現在遊佐ブランド推進協議会では、共同加工所から販売につなげるため、通信販売サイトの立ち上げを進めています"@ja.
+<< kg:id_49 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "共同加工所利用者の会等を立ち上げ、本町オリジナルの統一パッケージやラベルを作成し、新たな特産品だけでなく、これまでの特産品についても再度ブランド化を図り"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "新型コロナウイルスの影響で教育現場も大きく変化しています"@ja.
+<< kg:id_55 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "今回のコロナ禍による学校の長期閉鎖など、これまで考えていなかった環境の中でどのように子供たちの教育水準を保ち、知識向上につなげていくか"@ja.
+<< kg:id_55 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "学校生活や学習においても日常的にＩＣＴを活用できる環境を整備し、活用していくことが行政としては不可欠の問題と考えております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "児童がプログラミングを体験しながら、コンピューターに意図した処理を行わせるために必要な論理的思考力を身につけるための学習活動を計画的に実施することとしております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "県のＩＣＴ活用による学習活動充実の推進事業に関する業務の受託、令和２、３年度に吹浦小学校でＩＣＴ活用の研究を行い、授業を公開するとしております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "町教育委員会主催による担当者への研修の実施"@ja.
+<< kg:id_55 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "教務主任会等による研修の実施"@ja.
+<< kg:id_55 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "校内オン・ザ・ジョブ・トレーニング、ＯＪＴ、業務を通して先輩が後輩の指導を行うことによる研修の実施"@ja.
+<< kg:id_55 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "ＩＣＴ支援員１名の配置を来年度から計画しております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "今年度は小学校、来年度は中学校の教科書が新しくなるのに合わせ、指導用のデジタル教科書を導入することにしております"@ja.
+<< kg:id_66 prop:cause kg:id_67 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "風車によって低周波音や機械音が発生することがあって、近隣住宅の騒音問題になることがあります"@ja.
+<< kg:id_66 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "風力発電機の近くの集落の人で騒音が気になったり、体調が悪くなって手術したという人が中にはいます"@ja.
+<< kg:id_66 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "今後そのような事案があった際には事業者への情報を提供し、また事業者からの情報提供により相互に連携して実態の把握に努めなければなりませんし、必要であればそのための調査要請も検討していく"@ja.
+<< kg:id_66 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "事業者に対して、協定書に基づく関係住民との良好な関係を構築するため、誠実に対応していくことを引き続き求めてまいります"@ja.
+<< kg:id_71 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "需要が高まる冬期に灯油が高騰すると、暖房に灯油を頼みとする低所得の皆さんの生活は特に大きな影響を受けることになります"@ja.
+<< kg:id_71 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "そこで、灯油の配達価格が基準を超えて高騰したときは、灯油券という形で支援するという制度であります"@ja.
+<< kg:id_71 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "申請しなかった人の中には施設入所中の人など灯油を必要としない人が含まれています"@ja.
+<< kg:id_75 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "統合新小学校につきましては、現在令和５年４月の開校を目指して遊佐町立小学校新校開校準備委員会で協議しながら進めていただいているところでございます"@ja.
+<< kg:id_75 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "令和３年度が校舎増築工事費１億7,300万円"@ja.
+<< kg:id_75 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "普通教室のエアコン増設工事費3,000万円"@ja.
+<< kg:id_75 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "昇降口改修工事費3,000万円"@ja.
+<< kg:id_75 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "駐車場等用地買収の公有財産購入費1,967万3,000円"@ja.
+<< kg:id_75 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "これに校歌作成委託料、校旗作成購入費等を含めますと"@ja.
+<< kg:id_82 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "町負担の特別支援教育支援員は学校の実態に即しながら、支援体制が不備が生じないよう手厚く配置をしております"@ja.
+<< kg:id_82 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "統合後は、１学級の特別支援学級に在籍する児童の人数は増加しますが、それに合わせて特別支援教育支援員の配置も集約されますので、より充実した支援体制を整えることができる"@ja.
+<< kg:id_82 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "特別支援教育の専門家として、臨床心理士である特別支援教育アドバイザーを各校へ派遣しております。各校の特別支援学級の状況を詳細に把握しておりますので、事前に統合後の支援体制を検討し、不備が生じないよう計画的に進めていく"@ja.
+<< kg:id_86 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "学級編制標準人数の見直しと３密にならない教育環境を保ち、手厚く柔軟な指導を行うため、公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律に定める標準を10人ずつ減じて、標準30人、小学校１年生は25人以下への改正について国に働きかけていただきたいということを山形県市町村教育委員会協議会として県教育委員会、県議会議長へ提出をしておるところであります"@ja.
+<< kg:id_86 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "児童の発達段階においては低学年ほど、特に１年生に対しては個別の支援が必要になる場合が多いため、各校では低学年に町の特別教育支援員を優先的に配置をして対応しております"@ja.
+<< kg:id_86 prop:contermeasure kg:id_89 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "臨床心理士である特別支援教育アドバイザーが各校に定期的に、最低年３回でありますが、訪問し、全児童の状況を把握できるような体制を整えております"@ja.
+}

@@ -1,0 +1,181 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00140> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "太陽光発電施設の設置"@ja.
+kg:id_1 rdf:type cls:c_13931.
+cls:c_13931 rdfs:label "発電施設設置"@ja.
+kg:id_2 rdfs:label "ガイドラインの策定"@ja.
+kg:id_2 rdf:type cls:c_2506.
+cls:c_2506 rdfs:label "指針策定"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "市への届出"@ja.
+kg:id_3 rdf:type cls:c_16237.
+cls:c_16237 rdfs:label "届出"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "法令や条例に基づく手続きの徹底"@ja.
+kg:id_4 rdf:type cls:c_16238.
+cls:c_16238 rdfs:label "手続遵守"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "設置するのに適当でないエリアの明示"@ja.
+kg:id_5 rdf:type cls:c_16239.
+cls:c_16239 rdfs:label "不適地明示"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "設置するのに適当でないエリアへの設置検討"@ja.
+kg:id_6 rdf:type cls:c_16240.
+cls:c_16240 rdfs:label "不適地検討"@ja.
+kg:id_7 rdfs:label "計画の中止を含めた抜本的な見直し"@ja.
+kg:id_7 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_6 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "工事着手の60日前までに関係機関等と必要な協議等を行い届出"@ja.
+kg:id_8 rdf:type cls:c_16241.
+cls:c_16241 rdfs:label "事前協議届出"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "希少な野生動植物と優れた景観の保全に配慮"@ja.
+kg:id_9 rdf:type cls:c_103.
+cls:c_103 rdfs:label "環境配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "各種法令・ガイドライン等に適合した施設とすること"@ja.
+kg:id_10 rdf:type cls:c_3261.
+cls:c_3261 rdfs:label "基準適合"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "適切な運用・管理を行うこと"@ja.
+kg:id_11 rdf:type cls:c_16242.
+cls:c_16242 rdfs:label "運用管理"@ja.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "適切な災害対策を講じること"@ja.
+kg:id_12 rdf:type cls:c_14096.
+cls:c_14096 rdfs:label "災害対策"@ja.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "近隣住民との協調を保ち周辺環境との調和を図ること"@ja.
+kg:id_13 rdf:type cls:c_16243.
+cls:c_16243 rdfs:label "住民協調"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "水害などで水没・浸水した太陽光発電システムへの接近や接触"@ja.
+kg:id_14 rdf:type cls:c_16244.
+cls:c_16244 rdfs:label "浸水設備接触"@ja.
+kg:id_15 rdfs:label "感電のおそれ"@ja.
+kg:id_15 rdf:type cls:c_16245.
+cls:c_16245 rdfs:label "感電危険"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_15 prop:cause kg:id_14.
+kg:id_16 rdfs:label "近隣住民に対する説明会等"@ja.
+kg:id_16 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_17 rdfs:label "周辺自治会の長を通じて説明方法などを決める"@ja.
+kg:id_17 rdf:type cls:c_16246.
+cls:c_16246 rdfs:label "説明方法決定"@ja.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "宿泊施設をはじめとした観光業との事前協議"@ja.
+kg:id_18 rdf:type cls:c_13064.
+cls:c_13064 rdfs:label "事前協議"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "太陽光発電システム"@ja.
+kg:id_19 rdf:type cls:c_7409.
+cls:c_7409 rdfs:label "発電設備"@ja.
+kg:id_20 rdfs:label "無線通信の妨害"@ja.
+kg:id_20 rdf:type cls:c_16247.
+cls:c_16247 rdfs:label "通信妨害"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "釧路市建設作業指導要綱に基づく建設作業実施報告書の提出"@ja.
+kg:id_21 rdf:type cls:c_16248.
+cls:c_16248 rdfs:label "報告書提出"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:st_1 rdfs:label "釧路市"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "関連法令等に定められた手続きの遵守を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "該当エリアの場合は計画中止を含む抜本的見直しを求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "関係機関手続きや住民説明会の適切な実施確認のため届出を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "周辺自治会の長を通じた説明方法の決定が望ましいとする"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "観光業は景観を重視する可能性が高く事前協議が望ましいとする"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "特定建設作業に該当しない重機使用作業でも報告書提出を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:text-txt_contents "釧路市では、本市の豊かな自然環境や生物多様性、優れた景観を将来の世代に継承していくため、太陽光発電施設の設置に関し必要な事項等を定め、人と自然が共生した持続可能な地域社会の発展に寄与することを目的に、ガイドラインを策定しました。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:text-txt_contents "これにより令和5年7月1日以降に工事に着手する場合、市への届出が必要になります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "（1）　法令や条例に基づく手続きの徹底 太陽光発電施設の設置にあたって、関連する法令等に定められた手続き等を一覧として示しておりますので、遵守をお願いします。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:text-txt_contents "（2）　設置するのに適当でないエリアを25種類の法令等に基づき明示"@ja.
+<< kg:id_6 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "法令に基づき一定の制限のあるエリアを一覧に示しました。これに該当するエリアに設置を検討する際は、計画の中止を含め抜本的な見直しを検討することとしています。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "（4）　工事着手の60日前までに関係機関等と必要な協議等を行い届出 関係機関への手続きや住民への説明会等が適切に実施されているかを確認するため、市に届け出を行っていただきます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:text-txt_contents "希少な野生動植物と優れた景観の保全に配慮すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:text-txt_contents "各種法令・ガイドライン等に適合した施設とすること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:text-txt_contents "適切な運用・管理を行うこと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:text-txt_contents "適切な災害対策を講じること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:text-txt_contents "近隣住民との協調を保ち、周辺環境との調和を図ること"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:text-txt_contents "水害などで水没・浸水した太陽光発電システムに接近や接触することにより感電のおそれがあります。"@ja.
+<< kg:id_15 prop:cause kg:id_14 >>
+    prop:text-txt_contents "水害などで水没・浸水した太陽光発電システムに接近や接触することにより感電のおそれがあります。"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "説明の対象は、FIT・FIPの認定取得にかかわらず、資源エネルギー庁が策定する「説明会及び事前周知措置実施ガイドライン」に準じていただき、周辺自治会の長を通じて説明方法などを決めていただくのが望ましいと考えます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "また、宿泊施設をはじめとした観光業においては景観を重視している可能性が高いため、事前の協議していただくのが望ましいと考えます。"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:text-txt_contents "総務省 電波利用ポータル 太陽光発電システムを原因とする無線通信の妨害について（外部リンク）"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "騒音規制法及び振動規制法に基づく特定建設作業に該当しない重機を使用した建設作業についても、釧路市建設作業指導要綱に基づき「建設作業実施報告書」の提出をお願いしています。"@ja.
+}

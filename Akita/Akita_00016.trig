@@ -1,0 +1,244 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00016> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "住居等への影響"@ja.
+kg:id_2 rdf:type cls:c_5.
+cls:c_5 rdfs:label "生活環境影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "地域住民等に丁寧な説明を行い理解を得る"@ja.
+kg:id_3 rdf:type cls:c_5718.
+cls:c_5718 rdfs:label "説明実施"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "環境要素ごとの影響程度を調査及び予測し評価結果を位置規模等の決定に反映する"@ja.
+kg:id_4 rdf:type cls:c_97.
+cls:c_97 rdfs:label "環境調査評価"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "事業の位置規模等を可能な限り明確にし環境保全配慮の検討内容や結果を記載する"@ja.
+kg:id_5 rdf:type cls:c_13684.
+cls:c_13684 rdfs:label "情報明確化"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "他事業との複合的な環境影響"@ja.
+kg:id_6 rdf:type cls:c_13685.
+cls:c_13685 rdfs:label "複合環境影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "騒音"@ja.
+kg:id_7 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "超低周波音"@ja.
+kg:id_8 rdf:type cls:c_239.
+cls:c_239 rdfs:label "低周波音"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "住居等と風力発電機との距離を適切に確保する"@ja.
+kg:id_9 rdf:type cls:c_2152.
+cls:c_2152 rdfs:label "距離確保"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "工事の実施"@ja.
+kg:id_10 rdf:type cls:c_106.
+cls:c_106 rdfs:label "工事"@ja.
+kg:id_11 rdfs:label "土砂や濁水の発生"@ja.
+kg:id_11 rdf:type cls:c_13686.
+cls:c_13686 rdfs:label "土砂濁水発生"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "河川や沢等への流入"@ja.
+kg:id_12 rdf:type cls:c_13687.
+cls:c_13687 rdfs:label "水域流入"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "重要な水生動物の生息環境への影響"@ja.
+kg:id_13 rdf:type cls:c_13216.
+cls:c_13216 rdfs:label "土地改変"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "風力発電機や工事用道路の配置計画"@ja.
+kg:id_14 rdf:type cls:c_13216.
+kg:id_15 rdfs:label "土地の改変"@ja.
+kg:id_15 rdf:type cls:c_11898.
+cls:c_11898 rdfs:label "樹木伐採"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "樹木伐採"@ja.
+kg:id_16 rdf:type cls:c_62.
+cls:c_62 rdfs:label "植生影響"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "自然度の高い植生への影響"@ja.
+kg:id_17 rdf:type cls:c_13688.
+cls:c_13688 rdfs:label "保安林影響"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "水源かん養保安林への影響"@ja.
+kg:id_18 rdf:type cls:c_223.
+cls:c_223 rdfs:label "自然環境影響"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "緑の回廊への影響"@ja.
+kg:id_19 rdf:type cls:c_13689.
+cls:c_13689 rdfs:label "伐採回避"@ja.
+kg:id_1 prop:effect kg:id_19.
+kg:id_20 rdfs:label "土地の改変に伴う樹木伐採を極力回避する"@ja.
+kg:id_20 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "日常的な生活環境の場からの景観への影響"@ja.
+kg:id_21 rdf:type cls:c_1109.
+cls:c_1109 rdfs:label "情報収集"@ja.
+kg:id_1 prop:effect kg:id_21.
+kg:id_22 rdfs:label "関係自治体や地域住民から情報収集し適切な調査地点を選定する"@ja.
+kg:id_22 rdf:type cls:c_5718.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "地域の農畜産営農者や耕作者へ十分な説明を行う"@ja.
+kg:id_23 rdf:type cls:c_13064.
+cls:c_13064 rdfs:label "事前協議"@ja.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "着工前に協議を行う"@ja.
+kg:id_24 rdf:type cls:c_13690.
+cls:c_13690 rdfs:label "法手続"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "必要な農地法上の手続きをとる"@ja.
+kg:id_25 rdf:type cls:c_5718.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "調査対象区域の自治会へ十分な説明を行う"@ja.
+kg:id_26 rdf:type cls:c_270.
+cls:c_270 rdfs:label "生物調査"@ja.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "動物の生息状況を現地調査等により把握し必要に応じて環境保全措置を検討する"@ja.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "地域住民等に丁寧な説明を行い理解を得るべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "影響を受けるおそれのある環境要素を調査予測し事業計画に反映すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "方法書で事業の位置規模等を明確化し環境保全配慮の内容と結果を示すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "住居等との距離を適切に確保し影響を回避又は低減すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "配置計画の検討では樹木伐採を極力回避すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "眺望点は関係自治体や地域住民の情報を踏まえて適切に選定すべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "鹿角市庁内意見"@ja.
+kg:st_2 rdfs:type cls:st_2.
+kg:op_7 prop:content "地域の農畜産営農者や耕作者へ十分な説明を行うべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "農業振興地域指定箇所があるため着工前に協議が必要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "着工時には必要な農地法上の手続きをとるべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "調査対象区域の自治会へ十分な説明を行うべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "鹿角市環境保全審議会"@ja.
+cls:st_-1 rdfs:label "null"@ja.
+kg:op_11 prop:content "動物の生息状況を把握し必要に応じて環境保全措置を検討すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "周辺には複数の住居や畜舎等（以下「住居等」という。）が存在することから、工事中及び供用後において住居等への影響を回避又は低減するよう配慮すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地域住民等に丁寧な説明を行い、理解を得られるよう努めること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "影響を受けるおそれのある環境要素について、影響の程度を必要に応じて調査及び予測し、その結果を総合的に評価して事業の「位置・規模」及び「配置・構造」の決定に反映すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "方法書においては事業の位置・規模等を可能な限り明確にするとともに、具体的な環境の保全の配慮に係る検討内容やその結果を記載すること。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "事業実施想定区域周辺の既設及び計画中の風力発電所との複合的な環境影響を勘案し、可能な限りこれら他事業の諸元等の情報入手に努め、適切に調査、予測及び評価すること。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:text-txt_contents "騒音及び超低周波音、風車の影"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:text-txt_contents "騒音及び超低周波音、風車の影"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "事業実施想定区域周辺には住居等が存在することから、これらと風力発電機との距離を適切に確保する等、事業の実施による影響を回避又は低減するよう配慮すること。"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:text-txt_contents "工事の実施に伴い発生する土砂や濁水が"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:text-txt_contents "工事の実施に伴い発生する土砂や濁水が、事業実施想定区域及びその周辺に存在する河川や沢等に流入し"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:text-txt_contents "重要な水生動物の生息環境に影響することがないよう十分に配慮すること。"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "風力発電機や工事用道路等の配置計画の検討に当たっては、土地の改変に伴う"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:text-txt_contents "土地の改変に伴う樹木伐採"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:text-txt_contents "事業実施想定区域内にはブナーミズナラ群落等をはじめ自然度の高い植生が存在するほか"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:text-txt_contents "森林法（昭和26年法律第249号）に基づく水源かん養保安林等に指定されている区域や"@ja.
+<< kg:id_1 prop:effect kg:id_19 >>
+    prop:text-txt_contents "自然環境のまとまりの場として緑の回廊が確認されている。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "このため、風力発電機や工事用道路等の配置計画の検討に当たっては、土地の改変に伴う樹木伐採を極力回避するよう十分に配慮すること。"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:text-txt_contents "事業実施想定区域周辺には住居等が存在することから、日常的な生活環境の場からの景観にも十分に配慮すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "眺望点について関係自治体や地域住民からの情報収集に努め、適切な調査地点を選定すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "地域の農畜産営農者、耕作者へ十分な説明を行うこと。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "農業振興地域に指定されている箇所もあるため、着工前に協議が必要である。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "着工の場合、必要な農地法上の手続きをとること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "調査対象となる区域の自治会に対し十分な説明を行うこと。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "動物の生息状況を現地調査等により把握し、必要に応じて環境保全措置を検討すること。"@ja.
+}

@@ -1,0 +1,621 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00137> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "岩石採取"@ja.
+kg:id_1 rdf:type cls:c_7946.
+cls:c_7946 rdfs:label "資源採取"@ja.
+kg:id_2 rdfs:label "採石法が業者の採石を推進する内容になっていること"@ja.
+kg:id_2 rdf:type cls:c_7956.
+cls:c_7956 rdfs:label "法制度"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "事業者による再認可申請"@ja.
+kg:id_3 rdf:type cls:c_7957.
+cls:c_7957 rdfs:label "認可申請"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "標高320メートルより下の掘削計画"@ja.
+kg:id_4 rdf:type cls:c_7958.
+cls:c_7958 rdfs:label "掘削計画"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "上部の湿地の消失"@ja.
+kg:id_5 rdf:type cls:c_7959.
+cls:c_7959 rdfs:label "湿地消失"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "臂曲地区の湧水への影響"@ja.
+kg:id_6 rdf:type cls:c_7960.
+cls:c_7960 rdfs:label "湧水影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "水道水源や湧水が重金属の影響を受けやすくなること"@ja.
+kg:id_7 rdf:type cls:c_2094.
+cls:c_2094 rdfs:label "水質悪化"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "深い地下水の流れへの影響"@ja.
+kg:id_8 rdf:type cls:c_7961.
+cls:c_7961 rdfs:label "地下水影響"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "白井新田簡易水道水源への影響"@ja.
+kg:id_9 rdf:type cls:c_78.
+cls:c_78 rdfs:label "水源影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "農業用水横堰への影響"@ja.
+kg:id_10 rdf:type cls:c_7962.
+cls:c_7962 rdfs:label "水利影響"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "鳥海山の眺望を損なうこと"@ja.
+kg:id_11 rdf:type cls:c_839.
+cls:c_839 rdfs:label "景観悪化"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "運搬車両の通行により日常生活に不安を感じること"@ja.
+kg:id_12 rdf:type cls:c_1740.
+cls:c_1740 rdfs:label "生活不安"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "協定なしで認可された場合に歯止めがなくなること"@ja.
+kg:id_13 rdf:type cls:c_7963.
+cls:c_7963 rdfs:label "規制欠如"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "採石再開で三年間採り続けられるおそれ"@ja.
+kg:id_14 rdf:type cls:c_7964.
+cls:c_7964 rdfs:label "採取継続"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "採石跡地の修復に町の税金投入が必要になること"@ja.
+kg:id_15 rdf:type cls:c_7965.
+cls:c_7965 rdfs:label "公費負担"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "住民訴訟が起きかねないこと"@ja.
+kg:id_16 rdf:type cls:c_7966.
+cls:c_7966 rdfs:label "訴訟危険"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "環境保全に関する協定を締結すること"@ja.
+kg:id_17 rdf:type cls:c_7949.
+cls:c_7949 rdfs:label "協定締結"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "臂曲岩石採取事業監理委員会を設置し問題解決を図ること"@ja.
+kg:id_18 rdf:type cls:c_7967.
+cls:c_7967 rdfs:label "監理体制"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "標高320メートルより下の掘削を行わないこと"@ja.
+kg:id_19 rdf:type cls:c_7968.
+cls:c_7968 rdfs:label "掘削制限"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "白井新田簡易水道水源や農業用水等に明らかな影響があれば採取を中断すること"@ja.
+kg:id_20 rdf:type cls:c_7969.
+cls:c_7969 rdfs:label "採取中断"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "地下水脈調査の追加調査に事業者が協力すること"@ja.
+kg:id_21 rdf:type cls:c_388.
+cls:c_388 rdfs:label "追加調査"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "ダンプ等の安全運行マニュアルを作成し教育を徹底すること"@ja.
+kg:id_22 rdf:type cls:c_7970.
+cls:c_7970 rdfs:label "安全運行"@ja.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "採取場内の濁水が場外へ流出しないよう対策に万全を期すこと"@ja.
+kg:id_23 rdf:type cls:c_580.
+cls:c_580 rdfs:label "濁水対策"@ja.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "最終のり面を形成しながら掘削し速やかに緑化を行うこと"@ja.
+kg:id_24 rdf:type cls:c_7971.
+cls:c_7971 rdfs:label "緑化"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "掘削及び作業運搬を原則午前7時から午後5時までとすること"@ja.
+kg:id_25 rdf:type cls:c_7972.
+cls:c_7972 rdfs:label "時間制限"@ja.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "不法投棄に対し万全の対策を講ずること"@ja.
+kg:id_26 rdf:type cls:c_7973.
+cls:c_7973 rdfs:label "不法投棄対策"@ja.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "採取場を含む所有地の公有地化に向け別途覚書を締結すること"@ja.
+kg:id_27 rdf:type cls:c_7974.
+cls:c_7974 rdfs:label "公有地化"@ja.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "県に対し水資源保全条例と町の水循環保全条例の趣旨を踏まえた認可事務を求めること"@ja.
+kg:id_28 rdf:type cls:c_7975.
+cls:c_7975 rdfs:label "認可要請"@ja.
+kg:id_1 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "土地を取得し豊かな森林への再生を図ること"@ja.
+kg:id_29 rdf:type cls:c_7976.
+cls:c_7976 rdfs:label "森林再生"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "雇用増加"@ja.
+kg:id_30 rdf:type cls:c_2261.
+cls:c_2261 rdfs:label "雇用"@ja.
+kg:id_31 rdfs:label "人口減少"@ja.
+kg:id_31 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "町内に雇用の場がないこと"@ja.
+kg:id_32 rdf:type cls:c_5164.
+cls:c_5164 rdfs:label "雇用不足"@ja.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "若者の町外流出"@ja.
+kg:id_33 rdf:type cls:c_2557.
+cls:c_2557 rdfs:label "人口流出"@ja.
+kg:id_30 prop:effect kg:id_33.
+kg:id_34 rdfs:label "定住が進まないこと"@ja.
+kg:id_34 rdf:type cls:c_7977.
+cls:c_7977 rdfs:label "定住停滞"@ja.
+kg:id_30 prop:effect kg:id_34.
+kg:id_35 rdfs:label "所得の低下"@ja.
+kg:id_35 rdf:type cls:c_7978.
+cls:c_7978 rdfs:label "所得低下"@ja.
+kg:id_30 prop:effect kg:id_35.
+kg:id_36 rdfs:label "企業奨励条例を初めとする各助成制度の拡充"@ja.
+kg:id_36 rdf:type cls:c_2701.
+cls:c_2701 rdfs:label "助成拡充"@ja.
+kg:id_30 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "工業用水道料金支援補助等の新たな助成制度の創設"@ja.
+kg:id_37 rdf:type cls:c_2030.
+cls:c_2030 rdfs:label "助成制度"@ja.
+kg:id_30 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "ビジネスネットワークの設立"@ja.
+kg:id_38 rdf:type cls:c_809.
+cls:c_809 rdfs:label "連携組織"@ja.
+kg:id_30 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "雇用創出対策助成金の大幅な助成の拡大"@ja.
+kg:id_39 rdf:type cls:c_5007.
+cls:c_5007 rdfs:label "雇用助成"@ja.
+kg:id_30 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "中小企業への技術者養成研修等への助成制度の拡大"@ja.
+kg:id_40 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_30 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "県の基金事業終了後の継続雇用を支援する新たな助成制度の創設"@ja.
+kg:id_41 rdf:type cls:c_7979.
+cls:c_7979 rdfs:label "継続雇用"@ja.
+kg:id_30 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "ハローワーク、地区雇用対策協議会、町商工会等と連携して雇用対策に取り組むこと"@ja.
+kg:id_42 rdf:type cls:c_1099.
+cls:c_1099 rdfs:label "連携対応"@ja.
+kg:id_30 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "農林水産業とタイアップした六次産業化による雇用拡大"@ja.
+kg:id_43 rdf:type cls:c_1917.
+cls:c_1917 rdfs:label "産業振興"@ja.
+kg:id_30 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "認知症"@ja.
+kg:id_44 rdf:type cls:c_3988.
+cls:c_3988 rdfs:label "認知症"@ja.
+kg:id_45 rdfs:label "高齢化の進展"@ja.
+kg:id_45 rdf:type cls:c_613.
+cls:c_613 rdfs:label "高齢化"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "記憶や判断力の障害"@ja.
+kg:id_46 rdf:type cls:c_7980.
+cls:c_7980 rdfs:label "認知障害"@ja.
+kg:id_44 prop:effect kg:id_46.
+kg:id_47 rdfs:label "社会生活や対人関係に支障が出ること"@ja.
+kg:id_47 rdf:type cls:c_1773.
+cls:c_1773 rdfs:label "生活支障"@ja.
+kg:id_44 prop:effect kg:id_47.
+kg:id_48 rdfs:label "家族の精神的身体的経済的負担が大きいこと"@ja.
+kg:id_48 rdf:type cls:c_7981.
+cls:c_7981 rdfs:label "家族負担"@ja.
+kg:id_44 prop:effect kg:id_48.
+kg:id_49 rdfs:label "認知症に関する広報啓発活動"@ja.
+kg:id_49 rdf:type cls:c_2541.
+cls:c_2541 rdfs:label "啓発活動"@ja.
+kg:id_44 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "認知症ケアパスを作成し各家庭に配備すること"@ja.
+kg:id_50 rdf:type cls:c_7982.
+cls:c_7982 rdfs:label "支援計画"@ja.
+kg:id_44 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "地域包括支援センターで医療と介護の連携を図ること"@ja.
+kg:id_51 rdf:type cls:c_1240.
+cls:c_1240 rdfs:label "連携体制"@ja.
+kg:id_44 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "認知症生活共同介護事業所への入所を進めること"@ja.
+kg:id_52 rdf:type cls:c_7983.
+cls:c_7983 rdfs:label "施設入所"@ja.
+kg:id_44 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "家族の見守りとデイサービスやショートステイを組み合わせたケアプラン"@ja.
+kg:id_53 rdf:type cls:c_7984.
+cls:c_7984 rdfs:label "在宅支援"@ja.
+kg:id_44 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "運動や食生活など適切な生活習慣の普及"@ja.
+kg:id_54 rdf:type cls:c_7985.
+cls:c_7985 rdfs:label "生活習慣"@ja.
+kg:id_44 prop:contermeasure kg:id_54.
+kg:st_1 rdfs:label "伊藤マツ子議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "採石法だけでなく他の法律も駆使して採石を止めるべきだと求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "町は採石再開を前提にせず止めるための対応を講じるべきだと求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "320メートル以上でも安全とは言えず予防原則で採石を止めるべきだと主張する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "調査結果から湿地消失の可能性があり採石は認められないと主張する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "湧水への悪影響が懸念されるため県へ明確に伝えるべきだと求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "水道水源への影響は重大であり採石を止めるべきだと主張する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "深い地下水への影響可能性がある以上予防原則を重視すべきだと主張する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田博機町長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_8 prop:content "水資源に重要な地域であり県は条例の趣旨を踏まえて認可判断すべきだとする"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "下流域の水資源確保に重要な地域であり慎重な認可事務を求める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "地域の自然環境と景観を守る必要があるとする"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "住民生活への不安に配慮し協定で安全運行を求める必要があるとする"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "協定なしで認可される事態は絶対に避けるべきだと判断した"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "協定締結で採石再開され三年間採り尽くされる危険を懸念する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "採石跡地の修復に税金を使うのは無駄遣いだと批判する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "公有地化や税金投入は住民訴訟のリスクがあると警告する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "岩石採取の影響を最小限にするため協定締結が必要と判断した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "地元や関係者を含む監理委員会で協議しながら歯止めをかける考えを示す"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "法律を上回る歯止めとして320メートル以下を掘らせない協定を設けた"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "企画課長池田与四也"@ja.
+kg:st_3 rdfs:type cls:st_47.
+cls:st_47 rdfs:label "行政職"@ja.
+kg:op_19 prop:content "320メートル以上でも影響があれば中断協議する予防措置を協定に入れたと説明する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "追加調査により状況把握を続けるべきだとする"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "住民生活の不安を減らすため安全運行を徹底させる考えを示す"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "農業用水等への濁水流入を防ぐため厳格な対策が必要とする"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "景観と環境保全のため採取後の緑化を求める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "住民生活への影響軽減のため作業時間を制限する考えを示す"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "採石場周辺の環境悪化を防ぐため不法投棄対策が必要とする"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "公有地化こそ長年の問題解決の糸口であり早期実現を目指す"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "県は下流域の水資源確保に重要な地域であることを認識して判断すべきだとする"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "鳥海山と自然環境を次世代に継承するため公有地化と森林再生が必要とする"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "赤塚英一議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_29 prop:content "人口減少の大きな要因として就業状況の改善が必要だと指摘する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "川俣雄二地域生活課長"@ja.
+kg:st_5 rdfs:type cls:st_47.
+kg:op_30 prop:content "定住したくない理由の背景に町内雇用の不足があると説明する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:op_31 prop:content "働き場の確保ができず若い人が町外に行かざるを得ないことを残念に思う"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "定住策として雇用の確保が不可欠だと強調する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "佐藤源市産業課長"@ja.
+kg:st_6 rdfs:type cls:st_47.
+kg:op_33 prop:content "企業雇用や農林水産業の落ち込みが町民所得低下につながっていると認識する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_6.
+kg:op_34 prop:content "働き場確保のため企業誘致支援を強化してきたと説明する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "企業の立地と雇用創出を後押しする助成制度を整備しているとする"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "地域内外の事業連携を通じ雇用増加を図る考えを示す"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "既存事業所の雇用維持拡大を支援しているとする"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "地元企業の人材育成を通じた雇用安定を目指す"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "一時的雇用に終わらせず継続雇用を支える制度が必要だとする"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "関係機関と連携しながら雇用増加策を進めるべきだとする"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "商品開発と販売確保を進め農林水産業と結びつけた雇用拡大を図る考えを示す"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "髙橋久一議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_42 prop:content "高齢化とともに認知症は増加しており対策が必要だと指摘する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_7.
+kg:op_43 prop:content "認知症は生活に大きな支障をもたらすため早期受診が重要だと述べる"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_7.
+kg:op_44 prop:content "社会生活に支障が出る前に早期診断と治療につなげるべきだとする"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_7.
+kg:op_45 prop:content "在宅介護の家族負担軽減策を充実させる必要があると求める"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_7.
+kg:op_46 prop:content "町民に認知症への理解と対応方法を広く周知すべきだと求める"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_7.
+kg:op_47 prop:content "相談先や受診先や利用サービスが分かる認知症ケアパスを整備したいとする"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "包括支援センターを軸に認知症支援ネットワークを強化すべきだとする"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "徘回などで在宅介護負担が大きい場合はグループホーム利用を進めるべきだとする"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+kg:op_50 prop:content "ケースに応じた在宅サービスの組み合わせで生活継続を支えるべきだとする"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "健康寿命を延ばすため認知症予防の普及啓発をさらに充実させる考えを示す"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "採石法が業者の採石を推進する内容になっているもとで"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "平成25年７月23日に事業者が認可申請した岩石採取計画"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "標高320メーターより下の掘削をした場合にどのような影響が生じるかについても現段階で把握は困難"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "今後採石場から排出がふえると、上部の湿地の消失や臂曲地区の湧水に影響があらわれる可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "今後採石場から排出がふえると、上部の湿地の消失や臂曲地区の湧水に影響があらわれる可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "岩石採取等により表土を削除することは、水道水源や湧水が重金属の影響を受けやすくなることが指摘できる"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "採石場が現時点で地表溶岩より深い層の水の流れの一部を切っていることから、深い地下水の流れに影響を与える可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "下流域に農業用水横堰や白井新田簡易水道の水源がある湧水がある"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "下流域に農業用水横堰や白井新田簡易水道の水源がある湧水がある"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "鳥海山の眺望を損なっている"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "運搬車両の通行により、日常生活に不安を感じている"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "協定がない中での事業認可された場合には、何の歯どめもなくなるという事態が想定されます"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "協定を結んだことで採石が再開され、３年間とるだけとるということに何の危惧もないのでしょうか"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "採石跡地の修復も町でやることになりかねませんし、税金の無駄遣いであり"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "こんなことに税金を組むようなことになれば、私は住民訴訟も起きかねないだろうな"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "岩石採取の影響を最小限にするために環境保全に関する協定を締結すべきと判断をした"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "苦情、問題等の解決のため、臂曲岩石採取事業監理委員会を設置し、協議の上、問題解決を図る"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "標高320メーターより下の掘削は行わないこと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "標高320メートル以上の岩石採取であっても、白井新田簡易水道水源、農業用水（横堰）等に明らかな影響があったと認められた場合は、甲は直ちに採取を中断し委員会において協議する"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "地下水脈調査の追加調査を行う場合は、事業者は協力するとしております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "ダンプ等の通行に当たっては、安全運行マニュアルを作成し、運搬業務に従事する者への教育を徹底する"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "採取場内の濁水が場外へ流出し、農業用水等に濁水が流入しないよう対策に万全を期すこと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "最終のり面を形成しながら掘削し、速やかに緑化を行うこと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "掘削及び作業運搬は原則として午前７時から午後５時までとし、深夜、早朝の作業は行わないこと"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "不法投棄に対し万全の対策を講ずること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "第１条に規定する採取場を含む甲の所有地について、乙による公有地化に向け別途覚書を締結するものとする"@ja.
+<< kg:id_1 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "これらの２つの条例の制定趣旨を十分に踏まえて、認可事務に当たっていただきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "少しでも早く公有地化を実現し、豊かな森林への再生を図っていきたい"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "人口の流出、減少はいまだに続いております。この一番の要因は、就業状況にあるのではないか"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "通勤、通学が不便だからという答えが55.6％ほどありました。つまりは町内に雇用の場がないということも含めて"@ja.
+<< kg:id_30 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "働き場の確保、そしてどうしても町外に行かざるを得ない若い人たちの姿"@ja.
+<< kg:id_30 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "人口減少を抑え、増加に転ずるためにいろいろな施策を講じてきましたが、人口の流出、減少はいまだに続いております"@ja.
+<< kg:id_30 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "それらのいわゆる所得、町民全体の所得を上げるということにつきましては"@ja.
+<< kg:id_30 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "企業奨励条例を初めとする各助成制度の拡充"@ja.
+<< kg:id_30 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "工業用水道料金支援補助等の新たな助成制度の創設"@ja.
+<< kg:id_30 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "ビジネスネットワークの設立等々の施策を講じてきております"@ja.
+<< kg:id_30 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "雇用対策での雇用創出対策助成金の大幅な助成の拡大"@ja.
+<< kg:id_30 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "中小企業への技術者養成研修等への助成制度も大幅に拡大してきた"@ja.
+<< kg:id_30 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "今年度は県事業終了後の継続雇用を支援する新たな助成制度を創設した"@ja.
+<< kg:id_30 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "ハローワーク、地区雇用対策協議会、町商工会等と連携を密にし、雇用対策に取り組んでいきたい"@ja.
+<< kg:id_30 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "本町の基幹産業である農林水産業とタイアップした雇用の拡大を図ってまいる所存であります"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "高齢化の進展とともに認知症の人数も増加しており"@ja.
+<< kg:id_44 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "記憶、判断力の障害などが起こり"@ja.
+<< kg:id_44 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "社会生活や対人関係に支障が出ている状態"@ja.
+<< kg:id_44 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "在宅介護における家族の精神的、身体的、経済的負担は、とても大きなものです"@ja.
+<< kg:id_44 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "町民に認知症に関する広報、啓発活動が必要と考えます"@ja.
+<< kg:id_44 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "これを認知症ケアパスとして各家庭に配備し、もしものときに備えておきたい"@ja.
+<< kg:id_44 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "地域包括支援センターで医療と介護の連携を目指し、県の在宅医療推進モデル事業を活用した認知症支援ネットワーク会議を行っております"@ja.
+<< kg:id_44 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "認知症生活共同介護事業所、俗に言うグループホームへの入所を進めております"@ja.
+<< kg:id_44 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "家族の見守りとたまにデイサービスを利用したり、ほかにショートステイも利用できますので、ケースに応じたケアプランが組まれている"@ja.
+<< kg:id_44 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "運動や食生活を初めとする適切な生活習慣の普及を初め、認知症の早期発見、治療、適切な対応等、町民への啓発普及への取り組みもさらに充実させてまいりたい"@ja.
+}

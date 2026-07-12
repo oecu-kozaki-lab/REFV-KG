@@ -1,0 +1,441 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00013> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "本事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "事業"@ja.
+kg:id_2 rdfs:label "重要な自然環境への重大な影響"@ja.
+kg:id_2 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "事業計画の抜本的な見直し"@ja.
+kg:id_3 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "重大な環境影響"@ja.
+kg:id_4 rdf:type cls:c_348.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "事業規模の縮小"@ja.
+kg:id_5 rdf:type cls:c_14437.
+cls:c_14437 rdfs:label "規模縮小"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "事業実施想定区域の設定理由が不明瞭"@ja.
+kg:id_6 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "事業実施想定区域の設定理由の分かりやすい記載"@ja.
+kg:id_7 rdf:type cls:c_14438.
+cls:c_14438 rdfs:label "説明提供"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "急傾斜地崩壊危険区域等の存在"@ja.
+kg:id_8 rdf:type cls:c_14439.
+cls:c_14439 rdfs:label "危険区域"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "土砂流出等の防止への配慮"@ja.
+kg:id_9 rdf:type cls:c_14440.
+cls:c_14440 rdfs:label "防止配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "騒音及び超低周波音による影響"@ja.
+kg:id_10 rdf:type cls:c_354.
+cls:c_354 rdfs:label "騒音影響"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "風車の影による影響"@ja.
+kg:id_11 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "土砂流出等による影響"@ja.
+kg:id_12 rdf:type cls:c_14441.
+cls:c_14441 rdfs:label "土砂影響"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "関係町・関係機関・住民等への積極的な情報提供や丁寧な説明"@ja.
+kg:id_13 rdf:type cls:c_14438.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "住居や福祉施設等に対する騒音による重大な環境影響"@ja.
+kg:id_14 rdf:type cls:c_354.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "住居や福祉施設等に対する風車の影による重大な環境影響"@ja.
+kg:id_15 rdf:type cls:c_224.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "風車と住居等の離隔をとること"@ja.
+kg:id_16 rdf:type cls:c_358.
+cls:c_358 rdfs:label "離隔確保"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "土地改変に伴う濁水や土砂の流入"@ja.
+kg:id_17 rdf:type cls:c_2094.
+cls:c_2094 rdfs:label "水質悪化"@ja.
+kg:id_1 prop:cause kg:id_17.
+kg:id_18 rdfs:label "水道用水の水源への影響"@ja.
+kg:id_18 rdf:type cls:c_78.
+cls:c_78 rdfs:label "水源影響"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "濁水等の防止措置"@ja.
+kg:id_19 rdf:type cls:c_14442.
+cls:c_14442 rdfs:label "防止措置"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "水質への影響を特に配慮しなければならない区域の除外"@ja.
+kg:id_20 rdf:type cls:c_14395.
+cls:c_14395 rdfs:label "区域除外"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "クマタカなどの分布情報"@ja.
+kg:id_21 rdf:type cls:c_14443.
+cls:c_14443 rdfs:label "生物情報"@ja.
+kg:id_1 prop:cause kg:id_21.
+kg:id_22 rdfs:label "希少な鳥類や希少なコウモリ類の生息情報"@ja.
+kg:id_22 rdf:type cls:c_14443.
+kg:id_1 prop:cause kg:id_22.
+kg:id_23 rdfs:label "バードストライク"@ja.
+kg:id_23 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_1 prop:effect kg:id_23.
+kg:id_24 rdfs:label "バットストライク"@ja.
+kg:id_24 rdf:type cls:c_256.
+cls:c_256 rdfs:label "動物衝突"@ja.
+kg:id_1 prop:effect kg:id_24.
+kg:id_25 rdfs:label "生息環境の変化"@ja.
+kg:id_25 rdf:type cls:c_14444.
+cls:c_14444 rdfs:label "生息地変化"@ja.
+kg:id_1 prop:effect kg:id_25.
+kg:id_26 rdfs:label "風車配置等の検討への反映"@ja.
+kg:id_26 rdf:type cls:c_14338.
+cls:c_14338 rdfs:label "配置反映"@ja.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "生息地の改変を避けること"@ja.
+kg:id_27 rdf:type cls:c_14340.
+cls:c_14340 rdfs:label "生息地保全"@ja.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "植生自然度の高い群落、保安林、鳥獣保護区及び特別保護地区の存在"@ja.
+kg:id_28 rdf:type cls:c_211.
+cls:c_211 rdfs:label "自然環境"@ja.
+kg:id_1 prop:cause kg:id_28.
+kg:id_29 rdfs:label "それらの範囲を避けること"@ja.
+kg:id_29 rdf:type cls:c_246.
+cls:c_246 rdfs:label "区域回避"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "代償措置を優先的に検討しないこと"@ja.
+kg:id_30 rdf:type cls:c_14445.
+cls:c_14445 rdfs:label "代償回避"@ja.
+kg:id_1 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "生育地の改変を避けること"@ja.
+kg:id_31 rdf:type cls:c_14341.
+cls:c_14341 rdfs:label "生育地保全"@ja.
+kg:id_1 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "注目種の好適な生息地又は生育地の改変を避けること"@ja.
+kg:id_32 rdf:type cls:c_14340.
+kg:id_1 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "ヒアリング対象を広げ追加すべき眺望点を検討すること"@ja.
+kg:id_33 rdf:type cls:c_14446.
+cls:c_14446 rdfs:label "眺望点検討"@ja.
+kg:id_1 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "史跡や文化財など歴史的・文化的な観点からも景観資源を選定すること"@ja.
+kg:id_34 rdf:type cls:c_14447.
+cls:c_14447 rdfs:label "景観選定"@ja.
+kg:id_1 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "公園内外からの眺望景観への重大な影響"@ja.
+kg:id_35 rdf:type cls:c_224.
+kg:id_1 prop:effect kg:id_35.
+kg:id_36 rdfs:label "風力発電機設置想定範囲が広範囲"@ja.
+kg:id_36 rdf:type cls:c_11331.
+cls:c_11331 rdfs:label "広域配置"@ja.
+kg:id_1 prop:cause kg:id_36.
+kg:id_37 rdfs:label "眺望景観への重大な影響"@ja.
+kg:id_37 rdf:type cls:c_224.
+kg:id_1 prop:effect kg:id_37.
+kg:id_38 rdfs:label "風車の配置検討への反映"@ja.
+kg:id_38 rdf:type cls:c_14338.
+kg:id_1 prop:contermeasure kg:id_38.
+kg:st_1 rdfs:label "北海道知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "環境保全の見地からより慎重な検討が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "必要に応じて抜本的な見直しを行うべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "重大な環境影響を回避又は十分低減できない場合は計画見直しが必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "科学的根拠を示せない場合は事業規模の縮小が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "確認事項の選定理由や検討過程の説明が不足している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "方法書で設定理由を分かりやすく記載すべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "土砂流出等の防止への配慮が必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "急傾斜地崩壊危険区域等があるため防止に配慮すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域住民"@ja.
+kg:st_2 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_9 prop:content "騒音及び超低周波音による影響を懸念"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "風車の影による影響を懸念"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "土砂流出等による影響を懸念"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "相互理解の促進のため積極的な情報提供と丁寧な説明が必要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "住居や福祉施設等への重大な環境影響のおそれがある"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "住居や福祉施設等への重大な環境影響のおそれがある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "風車と住居等の距離を確保して影響を回避又は低減すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "水道用水の水源への影響が懸念される"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "水源への影響を懸念"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "調査結果を踏まえ濁水等の防止措置を講じるべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "水質への影響に特に配慮が必要な区域は事業実施想定区域から除外すべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "特に重点的な調査が必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "詳細な調査が必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "予測及び評価を実施し結果を風車配置等の検討に反映すべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "予測及び評価を実施し結果を風車配置等の検討に反映すべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "予測及び評価を実施し結果を風車配置等の検討に反映すべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "動物への影響評価結果を風車配置等に反映すべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "重要な動物種の生息地改変を避けるべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "重要な自然環境のまとまりの場を避ける必要がある"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "風車や搬入路の設置では重要な自然環境の範囲を避けるべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "保安林及び自然度の高い植生では代償措置を優先すべきでない"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "重要な植物種の生育地改変を避けるべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "生態系への影響低減のため注目種の好適地改変を避けるべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "主要な眺望点の選定は改めて検討すべき"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "景観資源は歴史的・文化的観点からも選定すべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "風車の設置により眺望景観へ重大な影響を及ぼすおそれがある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "場所によっては風車群が水平方向に広く視認されるおそれがある"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "景観への影響を調査し風車配置検討に反映すべき"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "景観への影響評価結果を風車配置検討に反映すべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "同区域のほぼ全域に重要な自然環境のまとまりの場等の配慮が必要な区域が含まれている。このため、今後、位置・規模等の熟度を高めたとしても重大な影響を回避することが困難となることが懸念され"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "事業実施想定区域及びその周辺の現況及び各環境要素の重要性について、改めて認識し直し、必要に応じて事業計画の抜本的な見直しを行うこと"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "重大な環境影響を回避又は十分低減できない場合若しくは回避又は低減できることを裏付ける科学的根拠を示すことができない場合は、事業規模の縮小など事業計画の見直しを行うことにより、確実に環境影響を回避又は低減すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "重大な環境影響を回避又は十分低減できない場合若しくは回避又は低減できることを裏付ける科学的根拠を示すことができない場合は、事業規模の縮小など事業計画の見直しを行うことにより、確実に環境影響を回避又は低減すること"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "確認事項の選定理由及びその理由に沿った検討過程の説明がされておらず、事業実施想定区域の設定理由が不明瞭である"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "方法書ではそれらについて分かりやすく記載すること"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "風力発電機設置想定範囲には急傾斜地崩壊危険区域等が存在している"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "土砂流出等の防止にも配慮すること"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "地域住民から騒音及び超低周波音、風車の影並びに土砂流出等による影響を懸念する声が認められている"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地域住民から騒音及び超低周波音、風車の影並びに土砂流出等による影響を懸念する声が認められている"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "地域住民から騒音及び超低周波音、風車の影並びに土砂流出等による影響を懸念する声が認められている"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "相互理解の促進のため、関係町、関係機関、住民等への積極的な情報提供や丁寧な説明に努めること"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "事業実施想定区域及びその周辺には住居や福祉施設等が存在しており、これらに対する騒音や風車の影による重大な環境影響が生じるおそれがある"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "事業実施想定区域及びその周辺には住居や福祉施設等が存在しており、これらに対する騒音や風車の影による重大な環境影響が生じるおそれがある"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "風車と住居等の離隔をとることなどにより、影響を回避又は十分に低減すること"@ja.
+<< kg:id_1 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "土地改変に伴う濁水や土砂の流入などによる水道用水の水源への影響が懸念される"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "土地改変に伴う濁水や土砂の流入などによる水道用水の水源への影響が懸念される"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "その結果を踏まえ濁水等の防止措置を講じること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "水質への影響を特に配慮しなければならない区域を事業実施想定区域から除外すること"@ja.
+<< kg:id_1 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "クマタカなどの分布情報により注意喚起レベルA3及びCのメッシュに含まれており、特に重点的な調査が必要とされている"@ja.
+<< kg:id_1 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "同区域及びその周辺では、文献や専門家ヒアリング等により希少な鳥類や希少なコウモリ類の生息に関する情報が得られている"@ja.
+<< kg:id_1 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "バードストライクやバットストライク、生息環境の変化などの影響について適切な方法により予測及び評価を実施し、その結果を風車配置等の検討に反映すること"@ja.
+<< kg:id_1 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "バードストライクやバットストライク、生息環境の変化などの影響について適切な方法により予測及び評価を実施し、その結果を風車配置等の検討に反映すること"@ja.
+<< kg:id_1 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "バードストライクやバットストライク、生息環境の変化などの影響について適切な方法により予測及び評価を実施し、その結果を風車配置等の検討に反映すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "その結果を風車配置等の検討に反映することなどにより、影響を回避又は十分に低減すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "重要な動物種について、適切な方法により予測及び評価を実施し、生息地の改変を避けることなどにより、影響を回避又は十分に低減すること"@ja.
+<< kg:id_1 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "事業実施想定区域には、植生自然度の高いエゾイタヤ－シナノキ群落、保安林、鳥獣保護区及び特別保護地区といった重要な自然環境のまとまりの場が存在している"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "風車や搬入路の設置に伴う土地改変箇所の検討に当たっては、それらの範囲を避けることなどにより、影響を回避又は十分に低減すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "代償措置を優先的に検討することがないようにすること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "重要な植物種について適切な方法により予測及び評価を実施し、生育地の改変を避けることなどにより、影響を回避又は十分に低減すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "注目種の好適な生息地又は生育地の改変を避けることなどにより、影響を回避又は十分に低減すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "ヒアリング対象を広げるなど、他に追加すべき眺望点がないか改めて検討すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "史跡や文化財など歴史的・文化的な観点からも選定すること"@ja.
+<< kg:id_1 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "風車の設置により公園内外からの眺望景観に重大な影響を及ぼすおそれがある"@ja.
+<< kg:id_1 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "風力発電機設置想定範囲が広範囲であることから、場所によっては風車群が水平方向に広く視認されるようになり"@ja.
+<< kg:id_1 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "眺望景観に重大な影響を及ぼすおそれがある"@ja.
+<< kg:id_1 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "その結果を風車の配置検討に反映することなどにより、影響を回避又は十分に低減すること"@ja.
+}

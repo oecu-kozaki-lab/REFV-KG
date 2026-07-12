@@ -1,0 +1,365 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00105> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電機の騒音・低周波音"@ja.
+kg:id_1 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_2 rdfs:label "影響が生じる可能性"@ja.
+kg:id_2 rdf:type cls:c_14930.
+cls:c_14930 rdfs:label "影響可能性"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "低周波音"@ja.
+kg:id_3 rdf:type cls:c_239.
+cls:c_239 rdfs:label "低周波音"@ja.
+kg:id_4 rdfs:label "一部の地点で現況からの増加"@ja.
+kg:id_4 rdf:type cls:c_2249.
+cls:c_2249 rdfs:label "増加"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "茂草地区の風車設置"@ja.
+kg:id_5 rdf:type cls:c_134.
+cls:c_134 rdfs:label "風車設置"@ja.
+kg:id_6 rdfs:label "風車からの距離が近く崖地の上に設置されること"@ja.
+kg:id_6 rdf:type cls:c_15108.
+cls:c_15108 rdfs:label "近接立地"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "平地での騒音予測とは違う結果になることがある"@ja.
+kg:id_7 rdf:type cls:c_15109.
+cls:c_15109 rdfs:label "予測差異"@ja.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "風車の影"@ja.
+kg:id_8 rdf:type cls:c_13604.
+cls:c_13604 rdfs:label "風車の影"@ja.
+kg:id_9 rdfs:label "走行車両に及ぼす影響"@ja.
+kg:id_9 rdf:type cls:c_15110.
+cls:c_15110 rdfs:label "車両影響"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "鳥類への影響予測・評価"@ja.
+kg:id_10 rdf:type cls:c_15111.
+cls:c_15111 rdfs:label "鳥類評価"@ja.
+kg:id_11 rdfs:label "調査方法や調査時期が十分ではないこと"@ja.
+kg:id_11 rdf:type cls:c_124.
+cls:c_124 rdfs:label "調査不足"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "風力発電機や取付道路などの設置"@ja.
+kg:id_12 rdf:type cls:c_303.
+cls:c_303 rdfs:label "施設設置"@ja.
+kg:id_13 rdfs:label "鳥類の生息環境への影響"@ja.
+kg:id_13 rdf:type cls:c_13097.
+cls:c_13097 rdfs:label "生息環境影響"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "風力発電機の騒音"@ja.
+kg:id_14 rdf:type cls:c_108.
+kg:id_15 rdfs:label "鳥類の生息環境に与える影響"@ja.
+kg:id_15 rdf:type cls:c_13097.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "飛翔高度や飛翔経路の調査方法"@ja.
+kg:id_16 rdf:type cls:c_15112.
+cls:c_15112 rdfs:label "調査方法"@ja.
+kg:id_17 rdfs:label "十分ではないこと"@ja.
+kg:id_17 rdf:type cls:c_124.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "猛禽類の採餌行動"@ja.
+kg:id_18 rdf:type cls:c_15113.
+cls:c_15113 rdfs:label "採餌行動"@ja.
+kg:id_19 rdfs:label "考慮していないこと"@ja.
+kg:id_19 rdf:type cls:c_15114.
+cls:c_15114 rdfs:label "考慮不足"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "バードストライク"@ja.
+kg:id_20 rdf:type cls:c_18.
+cls:c_18 rdfs:label "鳥類衝突"@ja.
+kg:id_21 rdfs:label "生じる可能性"@ja.
+kg:id_21 rdf:type cls:c_15115.
+cls:c_15115 rdfs:label "発生可能性"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "ほ乳類・両生類・昆虫類などの動物への影響予測・評価"@ja.
+kg:id_22 rdf:type cls:c_15116.
+cls:c_15116 rdfs:label "動物評価"@ja.
+kg:id_23 rdfs:label "調査時期が夏季・秋季のみで十分ではないこと"@ja.
+kg:id_23 rdf:type cls:c_124.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "植物への影響予測・評価"@ja.
+kg:id_24 rdf:type cls:c_15117.
+cls:c_15117 rdfs:label "植物評価"@ja.
+kg:id_25 rdfs:label "調査時期が春季・夏季のみで特定植物群落について影響評価がなされていないこと"@ja.
+kg:id_25 rdf:type cls:c_124.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "侵略的外来種"@ja.
+kg:id_26 rdf:type cls:c_15118.
+cls:c_15118 rdfs:label "外来種"@ja.
+kg:id_27 rdfs:label "生育域拡大による影響"@ja.
+kg:id_27 rdf:type cls:c_15119.
+cls:c_15119 rdfs:label "生育域拡大"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "風車の設置や地形の改変"@ja.
+kg:id_28 rdf:type cls:c_303.
+kg:id_29 rdfs:label "周辺環境への影響"@ja.
+kg:id_29 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "事後調査の結果"@ja.
+kg:id_30 rdf:type cls:c_598.
+cls:c_598 rdfs:label "事後調査結果"@ja.
+kg:id_31 rdfs:label "環境影響の程度が著しいことが明らかとなった場合"@ja.
+kg:id_31 rdf:type cls:c_15120.
+cls:c_15120 rdfs:label "著しい環境影響"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "評価書の作成"@ja.
+kg:id_32 rdf:type cls:c_100.
+cls:c_100 rdfs:label "評価書作成"@ja.
+kg:id_33 rdfs:label "発電所主務省令及び風力発電事業に係る環境影響評価実施要綱を踏まえ地域特性に十分配慮すること"@ja.
+kg:id_33 rdf:type cls:c_15121.
+cls:c_15121 rdfs:label "地域配慮"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "環境影響評価の項目及び調査の手法の選定"@ja.
+kg:id_34 rdf:type cls:c_15122.
+cls:c_15122 rdfs:label "手法選定"@ja.
+kg:id_35 rdfs:label "選定した理由及び選定しなかった理由を具体的に記載し大気質騒音水質動植物等について必要な予測・評価を行うこと"@ja.
+kg:id_35 rdf:type cls:c_483.
+cls:c_483 rdfs:label "理由記載"@ja.
+kg:id_34 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "風力発電施設等の設置"@ja.
+kg:id_36 rdf:type cls:c_303.
+kg:id_37 rdfs:label "土地の改変場所や面積を具体的に示し対象事業実施区域工事期間工程使用資機材作業車両等を評価書に記載すること"@ja.
+kg:id_37 rdf:type cls:c_13770.
+cls:c_13770 rdfs:label "詳細記載"@ja.
+kg:id_36 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "工事の実施に伴う影響要因"@ja.
+kg:id_38 rdf:type cls:c_13538.
+cls:c_13538 rdfs:label "工事実施"@ja.
+kg:id_39 rdfs:label "工事用資材等の搬出入建設機械の稼働造成等の施工による一時的な影響について調査予測評価を行うこと"@ja.
+kg:id_39 rdf:type cls:c_228.
+cls:c_228 rdfs:label "影響評価"@ja.
+kg:id_38 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "既に稼働している他の風力発電施設"@ja.
+kg:id_40 rdf:type cls:c_13908.
+cls:c_13908 rdfs:label "既設施設"@ja.
+kg:id_41 rdfs:label "課題や対応策などに関する情報を収集しその結果を評価書に活かすこと"@ja.
+kg:id_41 rdf:type cls:c_1109.
+cls:c_1109 rdfs:label "情報収集"@ja.
+kg:id_40 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "事後調査の内容"@ja.
+kg:id_42 rdf:type cls:c_17.
+cls:c_17 rdfs:label "事後調査"@ja.
+kg:id_43 rdfs:label "十分ではないことから再検討を行い評価書に記載すること"@ja.
+kg:id_43 rdf:type cls:c_7005.
+cls:c_7005 rdfs:label "再検討"@ja.
+kg:id_42 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "提出された意見を十分に検討し各種データや評価の根拠となる数値等を具体的に記載し分かりやすい内容とすること"@ja.
+kg:id_44 rdf:type cls:c_15123.
+cls:c_15123 rdfs:label "具体的記載"@ja.
+kg:id_32 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "事業計画や環境調査工事内容等に関する情報"@ja.
+kg:id_45 rdf:type cls:c_13581.
+cls:c_13581 rdfs:label "事業情報"@ja.
+kg:id_46 rdfs:label "地域の意向を踏まえて地域住民や松前町に対し積極的に情報公開や説明に努めること"@ja.
+kg:id_46 rdf:type cls:c_11.
+cls:c_11 rdfs:label "情報公開"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "稼働時間や設置場所などを含め影響が回避低減されているか再検討すること"@ja.
+kg:id_47 rdf:type cls:c_7005.
+kg:id_1 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "騒音・低周波音"@ja.
+kg:id_48 rdf:type cls:c_108.
+kg:id_49 rdfs:label "影響が最大となる時期を明らかにした上で予測評価を行うこと"@ja.
+kg:id_49 rdf:type cls:c_316.
+cls:c_316 rdfs:label "予測評価"@ja.
+kg:id_48 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "最新の知見を踏まえ増加分を回避低減するために必要な環境保全措置を検討すること"@ja.
+kg:id_50 rdf:type cls:c_370.
+cls:c_370 rdfs:label "保全措置"@ja.
+kg:id_3 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "地形の影響を考慮して再評価を行うこと"@ja.
+kg:id_51 rdf:type cls:c_139.
+cls:c_139 rdfs:label "再評価"@ja.
+kg:id_5 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "道路近傍に設置する風車"@ja.
+kg:id_52 rdf:type cls:c_134.
+kg:id_53 rdfs:label "風車の影が走行車両に及ぼす影響について予測評価を行うこと"@ja.
+kg:id_53 rdf:type cls:c_316.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "鳥類"@ja.
+kg:id_54 rdf:type cls:c_47.
+cls:c_47 rdfs:label "鳥類"@ja.
+kg:id_55 rdfs:label "必要な追加調査を行い影響が適切に予測評価できるようにすること"@ja.
+kg:id_55 rdf:type cls:c_388.
+cls:c_388 rdfs:label "追加調査"@ja.
+kg:id_54 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "土地の改変場所や面積を明らかにした上で鳥類の生息環境への影響を予測評価すること"@ja.
+kg:id_56 rdf:type cls:c_15124.
+cls:c_15124 rdfs:label "生息環境評価"@ja.
+kg:id_12 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "希少猛禽類のみならず鳥類全般"@ja.
+kg:id_57 rdf:type cls:c_47.
+kg:id_58 rdfs:label "最新の文献を参考として科学的に予測評価を行うこと"@ja.
+kg:id_58 rdf:type cls:c_15125.
+cls:c_15125 rdfs:label "科学的評価"@ja.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "最新の科学的知見を基に客観的かつ定量的な予測評価を行うこと"@ja.
+kg:id_59 rdf:type cls:c_15125.
+kg:id_54 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "ほ乳類・両生類・昆虫類などの動物"@ja.
+kg:id_60 rdf:type cls:c_112.
+cls:c_112 rdfs:label "動物"@ja.
+kg:id_61 rdfs:label "適期に必要な追加調査を行い影響が適切に予測評価できるようにすること"@ja.
+kg:id_61 rdf:type cls:c_388.
+kg:id_60 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "植物"@ja.
+kg:id_62 rdf:type cls:c_113.
+cls:c_113 rdfs:label "植物"@ja.
+kg:id_63 rdfs:label "適期に必要な追加調査を行うとともに特定植物群落について調査予測評価を行うこと"@ja.
+kg:id_63 rdf:type cls:c_388.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "侵略的外来種による影響"@ja.
+kg:id_64 rdf:type cls:c_15126.
+cls:c_15126 rdfs:label "外来種影響"@ja.
+kg:id_65 rdfs:label "調査予測評価を行うこと"@ja.
+kg:id_65 rdf:type cls:c_202.
+cls:c_202 rdfs:label "調査評価"@ja.
+kg:id_64 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "景観"@ja.
+kg:id_66 rdf:type cls:c_66.
+cls:c_66 rdfs:label "景観"@ja.
+kg:id_67 rdfs:label "事後調査項目に追加し風車の設置や地形の改変による周辺環境への影響を調査すること"@ja.
+kg:id_67 rdf:type cls:c_192.
+cls:c_192 rdfs:label "環境調査"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "有識者の助言内容と専門分野"@ja.
+kg:id_68 rdf:type cls:c_15127.
+cls:c_15127 rdfs:label "有識者助言"@ja.
+kg:id_69 rdfs:label "評価書に記載すること"@ja.
+kg:id_69 rdf:type cls:c_460.
+cls:c_460 rdfs:label "評価書記載"@ja.
+kg:id_68 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "事後調査の結果により環境影響の程度が著しいことが明らかとなった場合"@ja.
+kg:id_70 rdf:type cls:c_15120.
+kg:id_71 rdfs:label "対応の方針を評価書に具体的に記載すること"@ja.
+kg:id_71 rdf:type cls:c_455.
+cls:c_455 rdfs:label "対応方針"@ja.
+kg:id_70 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "事業の実施"@ja.
+kg:id_72 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_73 rdfs:label "関係法令を遵守し環境影響評価の結果を踏まえて環境保全について適切な配慮を行うこと"@ja.
+kg:id_73 rdf:type cls:c_103.
+cls:c_103 rdfs:label "環境配慮"@ja.
+kg:id_72 prop:contermeasure kg:id_73.
+kg:st_1 rdfs:label "地域住民や松前町"@ja.
+kg:st_1 rdfs:type cls:st_167.
+cls:st_167 rdfs:label "地域住民"@ja.
+kg:op_1 prop:content "地域の意向を踏まえた積極的な情報公開と説明を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "風力発電機の騒音・低周波音の環境保全措置については、稼働時間や設置場所などを含め、影響が回避・低減されているかどうかについて再検討"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "低周波音については、一部の地点で現況からの増加が認められる"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "茂草地区は風車からの距離が近く、風車の設置箇所が崖地の上となっている"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:text-txt_contents "特に崖地の上に設置される場合、平地での騒音予測とは違う結果になることがある"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:text-txt_contents "道路近傍に設置する風車については、風車の影が走行車両に及ぼす影響"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:text-txt_contents "鳥類については、その調査方法や調査時期が十分ではないことから"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:text-txt_contents "風力発電機や取付道路などの設置による土地の改変場所や面積が記載されていない。これらについても明らかにした上で、鳥類の生息環境への影響について予測・評価"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:text-txt_contents "風力発電機の騒音がその生息環境に与える影響"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:text-txt_contents "飛翔高度や飛翔経路の調査方法が十分ではなく"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "かつ、猛禽類の採餌行動などを考慮していない"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:text-txt_contents "渡り鳥があらかじめ飛翔経路を変えることなどによりバードストライクが生じる可能性は低いとしているが"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:text-txt_contents "ほ乳類・両生類・昆虫類などの動物の調査時期は、夏季・秋季のみとしているが、調査時期としては十分ではない"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:text-txt_contents "植物の調査の時期は春季・夏季のみで、特定植物群落については影響評価がなされていない"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:text-txt_contents "侵略的外来種の生育域拡大の防止策が記載されていない。侵略的外来種による影響"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:text-txt_contents "風車の設置や地形の改変による周辺環境への影響"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:text-txt_contents "事後調査の結果により環境影響の程度が著しいことが明らかとなった場合"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:text-txt_contents "評価書の作成に当たっては、「発電所の設置又は変更の工事の事業に係る環境影響評価の項目並びに当該項目に係る調査、予測及び評価を合理的に行うための手法を選定するための指針、環境の保全のための措置に関する指針等を定める省令」及び「風力発電事業に係る環境影響評価実施要綱」を踏まえるとともに、地域特性に十分配慮すること"@ja.
+<< kg:id_34 prop:contermeasure kg:id_35 >>
+    prop:text-txt_contents "環境影響評価の項目及び調査の手法の選定については、発電所主務省令別表第５及び別表第10に基づき、その選定した理由及び選定しなかった理由について具体的に記載すること。その上で、大気質、騒音、水質、動植物等について必要な予測・評価を行い"@ja.
+<< kg:id_36 prop:contermeasure kg:id_37 >>
+    prop:text-txt_contents "風力発電施設、変電施設、現場事務所、蓄電設備、取付道路、土捨場などの設置に伴う土地の改変場所や面積を具体的に示した上で、対象事業実施区域を設定し、工事の期間、工程、建設工事における使用資機材並びに作業車両の種類、規格、台数及び通行経路について評価書に記載すること"@ja.
+<< kg:id_38 prop:contermeasure kg:id_39 >>
+    prop:text-txt_contents "工事の実施に伴う影響要因については、発電所主務省令別表第５に基づき工事用資材等の搬出入、建設機械の稼働、造成等の施工による一時的な影響について調査・予測・評価を行い"@ja.
+<< kg:id_40 prop:contermeasure kg:id_41 >>
+    prop:text-txt_contents "既に稼働している他の風力発電施設についての課題や対応策などに関する情報を可能な範囲内で収集し、その結果を評価書に活かすよう努めること"@ja.
+<< kg:id_42 prop:contermeasure kg:id_43 >>
+    prop:text-txt_contents "事後調査の内容が十分ではないことから、発電所主務省令第17条に基づき再検討を行い、評価書に記載すること"@ja.
+<< kg:id_32 prop:contermeasure kg:id_44 >>
+    prop:text-txt_contents "評価書の作成に当たっては、提出された意見を十分に検討するとともに、各種データや評価の根拠となる数値等を具体的に記載するなど、分かりやすい内容となるよう努めること"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業計画や環境調査、工事内容等に関する情報については、地域の意向を十分踏まえて地域住民や松前町に対し、積極的に情報公開や説明に努めること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_47 >>
+    prop:text-txt_contents "風力発電機の騒音・低周波音の環境保全措置については、稼働時間や設置場所などを含め、影響が回避・低減されているかどうかについて再検討し"@ja.
+<< kg:id_48 prop:contermeasure kg:id_49 >>
+    prop:text-txt_contents "騒音・低周波音の予測対象時期を風力発電機が稼働する時点としているが、影響が最大となる時期について明らかにした上で予測・評価を行い"@ja.
+<< kg:id_3 prop:contermeasure kg:id_50 >>
+    prop:text-txt_contents "低周波音については、一部の地点で現況からの増加が認められる。低周波音に係る最新の知見を踏まえ、その増加分を回避・低減するために必要な環境保全措置を検討し"@ja.
+<< kg:id_5 prop:contermeasure kg:id_51 >>
+    prop:text-txt_contents "地形の影響を考慮して再評価を行い、その結果を評価書に記載すること"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:text-txt_contents "道路近傍に設置する風車については、風車の影が走行車両に及ぼす影響について予測・評価を行い"@ja.
+<< kg:id_54 prop:contermeasure kg:id_55 >>
+    prop:text-txt_contents "鳥類については、その調査方法や調査時期が十分ではないことから、鳥類への影響が適切に予測・評価できるよう必要な追加調査を行い"@ja.
+<< kg:id_12 prop:contermeasure kg:id_56 >>
+    prop:text-txt_contents "これらについても明らかにした上で、鳥類の生息環境への影響について予測・評価を行い"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:text-txt_contents "希少猛禽類のみならず鳥類全般について、最新の文献を参考として科学的に予測・評価を行い"@ja.
+<< kg:id_54 prop:contermeasure kg:id_59 >>
+    prop:text-txt_contents "最新の科学的知見を基に客観的かつ定量的な予測・評価を行い"@ja.
+<< kg:id_60 prop:contermeasure kg:id_61 >>
+    prop:text-txt_contents "ほ乳類等への影響が適切に予測・評価できるよう適期に必要な追加調査を行い"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:text-txt_contents "植物への影響が適切に予測・評価できるよう適期に必要な追加調査を行うとともに、特定植物群落についての調査・予測・評価を行い"@ja.
+<< kg:id_64 prop:contermeasure kg:id_65 >>
+    prop:text-txt_contents "侵略的外来種による影響について調査・予測・評価を行い"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:text-txt_contents "事後調査項目に景観を追加し、風車の設置や地形の改変による周辺環境への影響を調査すること"@ja.
+<< kg:id_68 prop:contermeasure kg:id_69 >>
+    prop:text-txt_contents "発電所主務省令第８条に基づき有識者の助言内容と専門分野を評価書に記載すること"@ja.
+<< kg:id_70 prop:contermeasure kg:id_71 >>
+    prop:text-txt_contents "事後調査の結果により環境影響の程度が著しいことが明らかとなった場合の対応の方針を評価書に具体的に記載すること"@ja.
+<< kg:id_72 prop:contermeasure kg:id_73 >>
+    prop:text-txt_contents "事業の実施に当たっては、関係法令を遵守することはもとより、環境影響評価の結果を踏まえて環境保全についての適切な配慮を行うこと"@ja.
+}

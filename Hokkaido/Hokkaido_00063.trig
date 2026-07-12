@@ -1,0 +1,192 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00063> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "釧路メガソーラー事業継続"@ja.
+kg:id_1 rdf:type cls:c_9015.
+cls:c_9015 rdfs:label "事業継続"@ja.
+kg:id_2 rdfs:label "多額の投資"@ja.
+kg:id_2 rdf:type cls:c_14815.
+cls:c_14815 rdfs:label "投資"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "森林の伐採超過"@ja.
+kg:id_3 rdf:type cls:c_14816.
+cls:c_14816 rdfs:label "森林伐採超過"@ja.
+kg:id_4 rdfs:label "北海道の許可が必要な0.5ヘクタール以上の森林伐採で0.8ヘクタールを伐採したこと"@ja.
+kg:id_4 rdf:type cls:c_14817.
+cls:c_14817 rdfs:label "無許可伐採"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "道から工事中止の勧告を受けた"@ja.
+kg:id_5 rdf:type cls:c_14818.
+cls:c_14818 rdfs:label "工事中止勧告"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "0.3ヘクタール分を植林する"@ja.
+kg:id_6 rdf:type cls:c_14819.
+cls:c_14819 rdfs:label "植林"@ja.
+kg:id_3 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "メガソーラー建設"@ja.
+kg:id_7 rdf:type cls:c_14564.
+cls:c_14564 rdfs:label "太陽光発電所建設"@ja.
+kg:id_8 rdfs:label "タンチョウやオジロワシなど希少な野生生物への影響が懸念されている"@ja.
+kg:id_8 rdf:type cls:c_14820.
+cls:c_14820 rdfs:label "野生生物影響"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "希少な野生生物への影響調査を提出する"@ja.
+kg:id_9 rdf:type cls:c_2827.
+cls:c_2827 rdfs:label "影響調査"@ja.
+kg:id_7 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "タンチョウが建設現場近くに近づく"@ja.
+kg:id_10 rdf:type cls:c_14821.
+cls:c_14821 rdfs:label "野生生物接近"@ja.
+kg:id_7 prop:effect kg:id_10.
+kg:id_11 rdfs:label "タンチョウが工事現場に立ち入らないよう保護柵を新設する"@ja.
+kg:id_11 rdf:type cls:c_14822.
+cls:c_14822 rdfs:label "保護柵設置"@ja.
+kg:id_7 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "市内5カ所の太陽光発電所建設計画の中断・取りやめ"@ja.
+kg:id_12 rdf:type cls:c_14823.
+cls:c_14823 rdfs:label "建設計画中断"@ja.
+kg:id_13 rdfs:label "希少な野生生物の生息への影響が軽微でないこと"@ja.
+kg:id_13 rdf:type cls:c_367.
+cls:c_367 rdfs:label "生息影響"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "実際に営巣があったこと"@ja.
+kg:id_14 rdf:type cls:c_14824.
+cls:c_14824 rdfs:label "営巣"@ja.
+kg:id_12 prop:cause kg:id_14.
+kg:id_15 rdfs:label "キタサンショウウオが確認されたこと"@ja.
+kg:id_15 rdf:type cls:c_14825.
+cls:c_14825 rdfs:label "希少種確認"@ja.
+kg:id_12 prop:cause kg:id_15.
+kg:id_16 rdfs:label "釧路湿原周辺の自然保護"@ja.
+kg:id_16 rdf:type cls:c_6952.
+cls:c_6952 rdfs:label "自然保護"@ja.
+kg:id_17 rdfs:label "モデルケースとして自然が破壊されないように取り組む"@ja.
+kg:id_17 rdf:type cls:c_14826.
+cls:c_14826 rdfs:label "保護推進"@ja.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:st_1 rdfs:label "日本エコロジーの松井政憲社長"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "多額の投資があるため事業は止められない"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "伐採しすぎたことを謝罪し早急に対応すると述べる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "勧告を受けた件について早急に対応すると述べる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "伐採超過分について植林で対応する考えを示す"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "釧路市教育委員会"@ja.
+kg:st_2 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_5 prop:content "希少な野生生物への影響調査を要請している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "影響調査を近々提出すると説明する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "再調査で大きな影響はないと確認していると述べる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "タンチョウ確認を受け保護柵を設ける考えを示す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "日本エコロジー"@ja.
+kg:st_3 rdfs:type cls:st_1.
+kg:op_9 prop:content "希少種への影響が軽微でないため中断や取りやめを行った"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "営巣確認が中断や取りやめの理由だと説明する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "キタサンショウウオの出現が中断や取りやめの理由だと説明する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "古屋圭司衆院議員"@ja.
+kg:st_4 rdfs:type cls:st_210.
+cls:st_210 rdfs:label "政治家"@ja.
+kg:op_12 prop:content "釧路湿原をモデルケースに自然破壊を防ぐ取り組みを進める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "約4.2ヘクタールの民有地に約6600枚のソーラーパネルを設置する計画について「多額の投資をしており、事業自体は立ち止まることはできない」と強調した。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "0.5ヘクタール以上の森林伐採には北海道の許可が必要だが、同社は0.8ヘクタールを伐採。"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "道から工事中止の勧告を受けたことについて「切りすぎてしまったことは謝罪する。早急に対応する」と述べ"@ja.
+<< kg:id_3 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "0.3ヘクタール分を植林する考えを示した。"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "釧路市教育委員会から要請されている国の特別天然記念物タンチョウや国の天然記念物オジロワシなど希少な野生生物への影響調査"@ja.
+<< kg:id_7 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "希少な野生生物への影響調査については「近々に提出する」と説明。"@ja.
+<< kg:id_7 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "建設現場近くにタンチョウが近づくことはあるとしながらも「再度調査をして大きな影響はないことを確認している」とも述べた。現場から数百メートル離れたところにタンチョウを確認"@ja.
+<< kg:id_7 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "国の特別天然記念物タンチョウが工事現場に立ち入らないようにする保護柵を新設する方針も明らかにした。"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "このうち5カ所でも希少な野生生物の生息への影響が軽微でないとして事業を中断、取りやめた"@ja.
+<< kg:id_12 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "5カ所について「実際に営巣があったり"@ja.
+<< kg:id_12 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "（国の絶滅危惧種である）キタサンショウウオが出たりした"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "古屋圭司衆院議員は面会後報道陣に「釧路湿原をモデルケースとして自然が破壊されないように取り組む」と述べた。"@ja.
+}

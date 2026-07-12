@@ -1,0 +1,114 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00093> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "メガソーラー建設"@ja.
+kg:id_1 rdf:type cls:c_6284.
+cls:c_6284 rdfs:label "開発事業"@ja.
+kg:id_2 rdfs:label "美化協力金として総額200万円を町内会に支払う"@ja.
+kg:id_2 rdf:type cls:c_15053.
+cls:c_15053 rdfs:label "協力金支払い"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "町内会が受け取りを拒否する方針"@ja.
+kg:id_3 rdf:type cls:c_15054.
+cls:c_15054 rdfs:label "受け取り拒否"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "キタサンショウウオの生息適地への影響懸念"@ja.
+kg:id_4 rdf:type cls:c_13180.
+cls:c_13180 rdfs:label "生息地影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "キタサンショウウオの生息再調査"@ja.
+kg:id_5 rdf:type cls:c_20.
+cls:c_20 rdfs:label "生態調査"@ja.
+kg:id_1 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "法令違反の発覚"@ja.
+kg:id_6 rdf:type cls:c_979.
+cls:c_979 rdfs:label "法令違反"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "町内会の受け取り拒否"@ja.
+kg:id_7 rdf:type cls:c_15054.
+kg:id_8 rdfs:label "金を理由に事業者が町内会に有無を言わせず着工するかもしれない懸念"@ja.
+kg:id_8 rdf:type cls:c_15055.
+cls:c_15055 rdfs:label "強行着工懸念"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:st_1 rdfs:label "日本エコロジー"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "美化協力金として毎年10万円を20年間支払う提案"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "昭和北1丁目町内会"@ja.
+kg:st_2 rdfs:type cls:st_218.
+cls:st_218 rdfs:label "地域住民組織"@ja.
+kg:op_2 prop:content "建設に反対し協力金の受け取りを拒否"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "釧路市教育委員会"@ja.
+kg:st_3 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_3 prop:content "生息調査が不十分で再調査を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "生息調査の再実施を求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "調査は適切として応じない"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "協力金を理由に強引に着工されることを懸念"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "日本エコロジー（大阪市）が、地元の昭和北1丁目町内会に「美化協力金」として総額200万円を支払う意向を示していた"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "建設に反対している同町内会は、受け取りを拒否する方針という"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "この建設予定地が絶滅危惧種で市の天然記念物キタサンショウウオの生息適地として、同社に生息調査が不十分として再調査を求めている"@ja.
+<< kg:id_1 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "市教育委員会は、この建設予定地が絶滅危惧種で市の天然記念物キタサンショウウオの生息適地として、同社に生息調査が不十分として再調査を求めているが、同社は「調査は適切」として応じない構え"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "同社のメガソーラー建設を巡っては、釧路湿原国立公園周辺の市北斗の計画で森林法違反など複数の法令違反が発覚している"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "町内会は4日に行った役員会で、「金を理由に（事業者は）町内会に有無を言わせず着工するかもしれない」と、受け取りを拒否する姿勢を再確認した"@ja.
+}

@@ -1,0 +1,1174 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00101> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "個人市民税"@ja.
+kg:id_1 rdf:type cls:c_5903.
+cls:c_5903 rdfs:label "地方税"@ja.
+kg:id_2 rdfs:label "給与所得の伸び悩み"@ja.
+kg:id_2 rdf:type cls:c_2004.
+cls:c_2004 rdfs:label "所得停滞"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "固定資産税"@ja.
+kg:id_3 rdf:type cls:c_5903.
+kg:id_4 rdfs:label "評価額の下落"@ja.
+kg:id_4 rdf:type cls:c_5904.
+cls:c_5904 rdfs:label "評価額下落"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "市税の減少"@ja.
+kg:id_5 rdf:type cls:c_2741.
+cls:c_2741 rdfs:label "税収減少"@ja.
+kg:id_6 rdfs:label "個人市民税の減少"@ja.
+kg:id_6 rdf:type cls:c_5905.
+cls:c_5905 rdfs:label "地方税減少"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "固定資産税の減少"@ja.
+kg:id_7 rdf:type cls:c_5905.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "地方交付税の増加"@ja.
+kg:id_8 rdf:type cls:c_5906.
+cls:c_5906 rdfs:label "交付税増加"@ja.
+kg:id_9 rdfs:label "普通交付税における公債費算入額の増加"@ja.
+kg:id_9 rdf:type cls:c_5907.
+cls:c_5907 rdfs:label "公債費増加"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "基準財政収入額の減少"@ja.
+kg:id_10 rdf:type cls:c_5908.
+cls:c_5908 rdfs:label "財政収入減少"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "特別交付税の震災復興対応分等の増加"@ja.
+kg:id_11 rdf:type cls:c_5909.
+cls:c_5909 rdfs:label "復興対応増加"@ja.
+kg:id_8 prop:cause kg:id_11.
+kg:id_12 rdfs:label "国庫支出金の減少"@ja.
+kg:id_12 rdf:type cls:c_5910.
+cls:c_5910 rdfs:label "国庫支出減少"@ja.
+kg:id_13 rdfs:label "国の経済対策による繰越事業に係る交付金の終了"@ja.
+kg:id_13 rdf:type cls:c_5911.
+cls:c_5911 rdfs:label "交付金終了"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "県支出金の増加"@ja.
+kg:id_14 rdf:type cls:c_5912.
+cls:c_5912 rdfs:label "県支出増加"@ja.
+kg:id_15 rdfs:label "子ども手当費負担金の増加"@ja.
+kg:id_15 rdf:type cls:c_5913.
+cls:c_5913 rdfs:label "扶助費増加"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "緊急雇用創出事業臨時特例基金事業費補助金の増加"@ja.
+kg:id_16 rdf:type cls:c_5914.
+cls:c_5914 rdfs:label "基金事業増加"@ja.
+kg:id_14 prop:cause kg:id_16.
+kg:id_17 rdfs:label "地方債の減少"@ja.
+kg:id_17 rdf:type cls:c_5915.
+cls:c_5915 rdfs:label "地方債減少"@ja.
+kg:id_18 rdfs:label "地方独立行政法人病院事業に係る病院債の減少"@ja.
+kg:id_18 rdf:type cls:c_5916.
+cls:c_5916 rdfs:label "病院債減少"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "臨時財政対策債の減少"@ja.
+kg:id_19 rdf:type cls:c_5917.
+cls:c_5917 rdfs:label "臨時債減少"@ja.
+kg:id_17 prop:cause kg:id_19.
+kg:id_20 rdfs:label "議会費の増加"@ja.
+kg:id_20 rdf:type cls:c_5918.
+cls:c_5918 rdfs:label "議会費増加"@ja.
+kg:id_21 rdfs:label "地方議会議員年金制度の見直しに伴う共済費の増加"@ja.
+kg:id_21 rdf:type cls:c_5919.
+cls:c_5919 rdfs:label "共済費増加"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "総務費の減少"@ja.
+kg:id_22 rdf:type cls:c_5920.
+cls:c_5920 rdfs:label "総務費減少"@ja.
+kg:id_23 rdfs:label "地域情報通信基盤整備事業費の皆減"@ja.
+kg:id_23 rdf:type cls:c_5921.
+cls:c_5921 rdfs:label "事業費皆減"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "地域づくり基金積立金の皆減"@ja.
+kg:id_24 rdf:type cls:c_5922.
+cls:c_5922 rdfs:label "積立金皆減"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "退職手当の減少"@ja.
+kg:id_25 rdf:type cls:c_5923.
+cls:c_5923 rdfs:label "人件費減少"@ja.
+kg:id_22 prop:cause kg:id_25.
+kg:id_26 rdfs:label "基金管理事業費等の減少"@ja.
+kg:id_26 rdf:type cls:c_5924.
+cls:c_5924 rdfs:label "事業費減少"@ja.
+kg:id_22 prop:cause kg:id_26.
+kg:id_27 rdfs:label "民生費の増加"@ja.
+kg:id_27 rdf:type cls:c_5925.
+cls:c_5925 rdfs:label "民生費増加"@ja.
+kg:id_28 rdfs:label "子ども手当扶助事業費の増加"@ja.
+kg:id_28 rdf:type cls:c_5913.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "障がい福祉サービス給付事業費の増加"@ja.
+kg:id_29 rdf:type cls:c_5926.
+cls:c_5926 rdfs:label "福祉給付増加"@ja.
+kg:id_27 prop:cause kg:id_29.
+kg:id_30 rdfs:label "衛生費の減少"@ja.
+kg:id_30 rdf:type cls:c_5927.
+cls:c_5927 rdfs:label "衛生費減少"@ja.
+kg:id_31 rdfs:label "地方独立行政法人病院事業運営費負担事業費の減少"@ja.
+kg:id_31 rdf:type cls:c_5928.
+cls:c_5928 rdfs:label "病院負担減少"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "労働費の増加"@ja.
+kg:id_32 rdf:type cls:c_5929.
+cls:c_5929 rdfs:label "労働費増加"@ja.
+kg:id_33 rdfs:label "緊急雇用創出事業臨時特例基金事業費の増加"@ja.
+kg:id_33 rdf:type cls:c_5914.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "ふるさと雇用再生特別基金事業費の増加"@ja.
+kg:id_34 rdf:type cls:c_5914.
+kg:id_32 prop:cause kg:id_34.
+kg:id_35 rdfs:label "農林水産業費の増加"@ja.
+kg:id_35 rdf:type cls:c_5930.
+cls:c_5930 rdfs:label "農林水産費増加"@ja.
+kg:id_36 rdfs:label "土地改良負担事業費の増加"@ja.
+kg:id_36 rdf:type cls:c_5931.
+cls:c_5931 rdfs:label "土地改良増加"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "商工費の増加"@ja.
+kg:id_37 rdf:type cls:c_5932.
+cls:c_5932 rdfs:label "商工費増加"@ja.
+kg:id_38 rdfs:label "東北地方太平洋沖地震関連緊急融資資金貸付事業費の皆増"@ja.
+kg:id_38 rdf:type cls:c_5933.
+cls:c_5933 rdfs:label "融資事業皆増"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "土木費の増加"@ja.
+kg:id_39 rdf:type cls:c_5934.
+cls:c_5934 rdfs:label "土木費増加"@ja.
+kg:id_40 rdfs:label "公共下水道事業特別会計繰出金の増加"@ja.
+kg:id_40 rdf:type cls:c_5935.
+cls:c_5935 rdfs:label "繰出金増加"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "住宅リフォーム総合支援事業費の皆増"@ja.
+kg:id_41 rdf:type cls:c_5936.
+cls:c_5936 rdfs:label "支援事業皆増"@ja.
+kg:id_39 prop:cause kg:id_41.
+kg:id_42 rdfs:label "消防費の増加"@ja.
+kg:id_42 rdf:type cls:c_5937.
+cls:c_5937 rdfs:label "消防費増加"@ja.
+kg:id_43 rdfs:label "消防団員災害補償分担金の増加"@ja.
+kg:id_43 rdf:type cls:c_5938.
+cls:c_5938 rdfs:label "補償負担増加"@ja.
+kg:id_42 prop:cause kg:id_43.
+kg:id_44 rdfs:label "教育費の増加"@ja.
+kg:id_44 rdf:type cls:c_5939.
+cls:c_5939 rdfs:label "教育費増加"@ja.
+kg:id_45 rdfs:label "義務教育施設の改築や改修事業費の増加"@ja.
+kg:id_45 rdf:type cls:c_5940.
+cls:c_5940 rdfs:label "施設整備増加"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "災害復旧費の増加"@ja.
+kg:id_46 rdf:type cls:c_5941.
+cls:c_5941 rdfs:label "復旧費増加"@ja.
+kg:id_47 rdfs:label "昨年６月から８月の大雨災害による復旧事業費の増加"@ja.
+kg:id_47 rdf:type cls:c_5942.
+cls:c_5942 rdfs:label "復旧事業増加"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "公債費の減少"@ja.
+kg:id_48 rdf:type cls:c_5943.
+cls:c_5943 rdfs:label "公債費減少"@ja.
+kg:id_49 rdfs:label "公的資金補償金免除繰上償還の皆減"@ja.
+kg:id_49 rdf:type cls:c_5944.
+cls:c_5944 rdfs:label "繰上償還皆減"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "義務的経費の減少"@ja.
+kg:id_50 rdf:type cls:c_5945.
+cls:c_5945 rdfs:label "義務的経費減少"@ja.
+kg:id_51 rdfs:label "人件費の減少"@ja.
+kg:id_51 rdf:type cls:c_5923.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "職員給の減少"@ja.
+kg:id_52 rdf:type cls:c_5946.
+cls:c_5946 rdfs:label "職員給減少"@ja.
+kg:id_51 prop:cause kg:id_52.
+kg:id_51 prop:cause kg:id_25.
+kg:id_53 rdfs:label "扶助費の増加"@ja.
+kg:id_53 rdf:type cls:c_5913.
+kg:id_54 rdfs:label "子ども手当の増加"@ja.
+kg:id_54 rdf:type cls:c_5913.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "介護・訓練等給付費の増加"@ja.
+kg:id_55 rdf:type cls:c_5926.
+kg:id_53 prop:cause kg:id_55.
+kg:id_56 rdfs:label "普通建設事業費の増加"@ja.
+kg:id_56 rdf:type cls:c_5947.
+cls:c_5947 rdfs:label "建設事業増加"@ja.
+kg:id_57 rdfs:label "光ケ丘陸上競技場整備事業の実施"@ja.
+kg:id_57 rdf:type cls:c_5948.
+cls:c_5948 rdfs:label "施設整備実施"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "義務教育施設の改築や改修への取り組み"@ja.
+kg:id_58 rdf:type cls:c_5949.
+cls:c_5949 rdfs:label "施設整備推進"@ja.
+kg:id_56 prop:cause kg:id_58.
+kg:id_59 rdfs:label "物件費の増加"@ja.
+kg:id_59 rdf:type cls:c_5950.
+cls:c_5950 rdfs:label "物件費増加"@ja.
+kg:id_60 rdfs:label "子宮頸がん等ワクチン接種事業費の増加"@ja.
+kg:id_60 rdf:type cls:c_5951.
+cls:c_5951 rdfs:label "接種事業増加"@ja.
+kg:id_59 prop:cause kg:id_60.
+kg:id_61 rdfs:label "緊急雇用創出事業臨時特例基金事業費の委託料の増加"@ja.
+kg:id_61 rdf:type cls:c_5952.
+cls:c_5952 rdfs:label "委託料増加"@ja.
+kg:id_59 prop:cause kg:id_61.
+kg:id_62 rdfs:label "ふるさと雇用再生特別基金事業費の委託料の増加"@ja.
+kg:id_62 rdf:type cls:c_5952.
+kg:id_59 prop:cause kg:id_62.
+kg:id_63 rdfs:label "補助費等の減少"@ja.
+kg:id_63 rdf:type cls:c_5953.
+cls:c_5953 rdfs:label "補助費減少"@ja.
+kg:id_64 rdfs:label "国営最上川下流沿岸農業水利負担金の皆増"@ja.
+kg:id_64 rdf:type cls:c_5954.
+cls:c_5954 rdfs:label "負担金皆増"@ja.
+kg:id_63 prop:cause kg:id_64.
+kg:id_65 rdfs:label "住宅リフォーム総合支援補助金の皆増"@ja.
+kg:id_65 rdf:type cls:c_5955.
+cls:c_5955 rdfs:label "補助金皆増"@ja.
+kg:id_63 prop:cause kg:id_65.
+kg:id_66 rdfs:label "独立行政法人病院事業運営費交付金の増加"@ja.
+kg:id_66 rdf:type cls:c_5956.
+cls:c_5956 rdfs:label "交付金増加"@ja.
+kg:id_63 prop:cause kg:id_66.
+kg:id_67 rdfs:label "酒田地区広域行政組合分賦金の増加"@ja.
+kg:id_67 rdf:type cls:c_5957.
+cls:c_5957 rdfs:label "分賦金増加"@ja.
+kg:id_63 prop:cause kg:id_67.
+kg:id_68 rdfs:label "積立金の減少"@ja.
+kg:id_68 rdf:type cls:c_5958.
+cls:c_5958 rdfs:label "積立金減少"@ja.
+kg:id_69 rdfs:label "財政調整基金の減少"@ja.
+kg:id_69 rdf:type cls:c_2748.
+cls:c_2748 rdfs:label "基金減少"@ja.
+kg:id_68 prop:cause kg:id_69.
+kg:id_70 rdfs:label "市債管理基金の減少"@ja.
+kg:id_70 rdf:type cls:c_2748.
+kg:id_68 prop:cause kg:id_70.
+kg:id_71 rdfs:label "地域づくり基金積立金の減少"@ja.
+kg:id_71 rdf:type cls:c_5958.
+kg:id_68 prop:cause kg:id_71.
+kg:id_72 rdfs:label "投資・出資・貸付金の減少"@ja.
+kg:id_72 rdf:type cls:c_5959.
+cls:c_5959 rdfs:label "投融資減少"@ja.
+kg:id_73 rdfs:label "地方独立行政法人病院事業への出資金の減少"@ja.
+kg:id_73 rdf:type cls:c_5960.
+cls:c_5960 rdfs:label "出資金減少"@ja.
+kg:id_72 prop:cause kg:id_73.
+kg:id_74 rdfs:label "長期貸付金の減少"@ja.
+kg:id_74 rdf:type cls:c_5961.
+cls:c_5961 rdfs:label "貸付金減少"@ja.
+kg:id_72 prop:cause kg:id_74.
+kg:id_75 rdfs:label "財政の硬直化"@ja.
+kg:id_75 rdf:type cls:c_4430.
+cls:c_4430 rdfs:label "財政硬直化"@ja.
+kg:id_76 rdfs:label "景気低迷による市税の減少傾向"@ja.
+kg:id_76 rdf:type cls:c_2741.
+kg:id_75 prop:cause kg:id_76.
+kg:id_75 prop:cause kg:id_53.
+kg:id_75 prop:cause kg:id_59.
+kg:id_77 rdfs:label "東日本大震災に伴う被災地・避難者支援"@ja.
+kg:id_77 rdf:type cls:c_5962.
+cls:c_5962 rdfs:label "被災者支援"@ja.
+kg:id_78 rdfs:label "本市地域経済への影響"@ja.
+kg:id_78 rdf:type cls:c_2210.
+cls:c_2210 rdfs:label "地域経済影響"@ja.
+kg:id_77 prop:effect kg:id_78.
+kg:id_79 rdfs:label "昨年６月から８月の大雨災害"@ja.
+kg:id_79 rdf:type cls:c_661.
+cls:c_661 rdfs:label "豪雨災害"@ja.
+kg:id_80 rdfs:label "復旧事業費の増加"@ja.
+kg:id_80 rdf:type cls:c_5942.
+kg:id_79 prop:effect kg:id_80.
+kg:id_81 rdfs:label "景気低迷"@ja.
+kg:id_81 rdf:type cls:c_5291.
+cls:c_5291 rdfs:label "景気低迷"@ja.
+kg:id_82 rdfs:label "市税の減少傾向"@ja.
+kg:id_82 rdf:type cls:c_2741.
+kg:id_81 prop:effect kg:id_82.
+kg:id_83 rdfs:label "今後の人口減少・少子高齢化の進展"@ja.
+kg:id_83 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_83 prop:effect kg:id_53.
+kg:id_84 rdfs:label "繰出金の増加"@ja.
+kg:id_84 rdf:type cls:c_5935.
+kg:id_83 prop:effect kg:id_84.
+kg:id_85 rdfs:label "施設の維持補修費の高どまり"@ja.
+kg:id_85 rdf:type cls:c_5963.
+cls:c_5963 rdfs:label "維持費高止まり"@ja.
+kg:id_83 prop:effect kg:id_85.
+kg:id_83 prop:effect kg:id_75.
+kg:id_86 rdfs:label "合併の特例措置である地方交付税の平成28年度以降の漸減"@ja.
+kg:id_86 rdf:type cls:c_5964.
+cls:c_5964 rdfs:label "交付税漸減"@ja.
+kg:id_87 rdfs:label "後年度に備えた財政基盤の安定化の必要"@ja.
+kg:id_87 rdf:type cls:c_5965.
+cls:c_5965 rdfs:label "基盤安定化必要"@ja.
+kg:id_86 prop:effect kg:id_87.
+kg:id_88 rdfs:label "給水人口・給水栓数の増加"@ja.
+kg:id_88 rdf:type cls:c_5966.
+cls:c_5966 rdfs:label "給水増加"@ja.
+kg:id_89 rdfs:label "八幡簡易水道が加わったこと"@ja.
+kg:id_89 rdf:type cls:c_5967.
+cls:c_5967 rdfs:label "水道統合"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "有収率の低下"@ja.
+kg:id_90 rdf:type cls:c_5968.
+cls:c_5968 rdfs:label "有収率低下"@ja.
+kg:id_91 rdfs:label "90％を下回らないよう求められる状況"@ja.
+kg:id_91 rdf:type cls:c_5969.
+cls:c_5969 rdfs:label "水準維持要請"@ja.
+kg:id_90 prop:effect kg:id_91.
+kg:id_92 rdfs:label "総配水量の年々減少"@ja.
+kg:id_92 rdf:type cls:c_5970.
+cls:c_5970 rdfs:label "配水量減少"@ja.
+kg:id_93 rdfs:label "施設利用率の低下"@ja.
+kg:id_93 rdf:type cls:c_5971.
+cls:c_5971 rdfs:label "利用率低下"@ja.
+kg:id_92 prop:effect kg:id_93.
+kg:id_94 rdfs:label "県からの受水量の割合が50％近くに達していること"@ja.
+kg:id_94 rdf:type cls:c_5972.
+cls:c_5972 rdfs:label "受水依存"@ja.
+kg:id_95 rdfs:label "新たな水運用システムの構築と施設管理の効率化が課題"@ja.
+kg:id_95 rdf:type cls:c_5973.
+cls:c_5973 rdfs:label "運用改善課題"@ja.
+kg:id_94 prop:effect kg:id_95.
+kg:id_96 rdfs:label "給水原価の大幅な増加"@ja.
+kg:id_96 rdf:type cls:c_5974.
+cls:c_5974 rdfs:label "給水原価増加"@ja.
+kg:id_97 rdfs:label "料金回収率の低下"@ja.
+kg:id_97 rdf:type cls:c_5975.
+cls:c_5975 rdfs:label "回収率低下"@ja.
+kg:id_96 prop:effect kg:id_97.
+kg:id_98 rdfs:label "給水原価が供給単価を上回ること"@ja.
+kg:id_98 rdf:type cls:c_5976.
+cls:c_5976 rdfs:label "逆ざや拡大"@ja.
+kg:id_99 rdfs:label "逆ざや状態の拡大"@ja.
+kg:id_99 rdf:type cls:c_5976.
+kg:id_98 prop:effect kg:id_99.
+kg:id_100 rdfs:label "一般会計からの繰入金の増加"@ja.
+kg:id_100 rdf:type cls:c_5977.
+cls:c_5977 rdfs:label "繰入金増加"@ja.
+kg:id_101 rdfs:label "病院事業の純利益の確保"@ja.
+kg:id_101 rdf:type cls:c_5978.
+cls:c_5978 rdfs:label "利益確保"@ja.
+kg:id_100 prop:effect kg:id_101.
+kg:id_102 rdfs:label "入院外来患者数の減少"@ja.
+kg:id_102 rdf:type cls:c_5979.
+cls:c_5979 rdfs:label "患者減少"@ja.
+kg:id_103 rdfs:label "収益に与える影響が大きい最重要の経営課題"@ja.
+kg:id_103 rdf:type cls:c_5980.
+cls:c_5980 rdfs:label "経営課題"@ja.
+kg:id_102 prop:effect kg:id_103.
+kg:id_104 rdfs:label "退職給与金の支出"@ja.
+kg:id_104 rdf:type cls:c_5981.
+cls:c_5981 rdfs:label "退職給付支出"@ja.
+kg:id_105 rdfs:label "医業収支が大きく左右される"@ja.
+kg:id_105 rdf:type cls:c_5982.
+cls:c_5982 rdfs:label "収支変動"@ja.
+kg:id_104 prop:effect kg:id_105.
+kg:id_106 rdfs:label "地方公営企業の会計基準見直し"@ja.
+kg:id_106 rdf:type cls:c_5983.
+cls:c_5983 rdfs:label "会計基準見直し"@ja.
+kg:id_107 rdfs:label "医業費用の増加見込み"@ja.
+kg:id_107 rdf:type cls:c_5984.
+cls:c_5984 rdfs:label "費用増加見込み"@ja.
+kg:id_106 prop:effect kg:id_107.
+kg:id_108 rdfs:label "財政運営"@ja.
+kg:id_108 rdf:type cls:c_2720.
+cls:c_2720 rdfs:label "財政運営"@ja.
+kg:id_109 rdfs:label "新行財政集中改革プランを計画的に推進する"@ja.
+kg:id_109 rdf:type cls:c_5985.
+cls:c_5985 rdfs:label "改革推進"@ja.
+kg:id_108 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "中長期的な視野を持ちながら効率的で健全な財政運営に努める"@ja.
+kg:id_110 rdf:type cls:c_5986.
+cls:c_5986 rdfs:label "健全運営"@ja.
+kg:id_108 prop:contermeasure kg:id_110.
+kg:id_111 rdfs:label "一般会計補正予算"@ja.
+kg:id_111 rdf:type cls:c_1675.
+cls:c_1675 rdfs:label "補正予算"@ja.
+kg:id_112 rdfs:label "風力発電施設整備推進事業費を新たに計上する"@ja.
+kg:id_112 rdf:type cls:c_5987.
+cls:c_5987 rdfs:label "発電整備計上"@ja.
+kg:id_111 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "低所得世帯の学童保育利用に対する支援のため放課後児童健全育成事業費を増額する"@ja.
+kg:id_113 rdf:type cls:c_5988.
+cls:c_5988 rdfs:label "学童支援増額"@ja.
+kg:id_111 prop:contermeasure kg:id_113.
+kg:id_114 rdfs:label "不活化ポリオワクチン接種の導入のため各種予防接種事業費を増額する"@ja.
+kg:id_114 rdf:type cls:c_5989.
+cls:c_5989 rdfs:label "接種事業増額"@ja.
+kg:id_111 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "緊急雇用創出事業臨時特例基金事業を増額する"@ja.
+kg:id_115 rdf:type cls:c_5990.
+cls:c_5990 rdfs:label "基金事業増額"@ja.
+kg:id_111 prop:contermeasure kg:id_115.
+kg:id_116 rdfs:label "活力ある園芸産地創出支援事業費を増額する"@ja.
+kg:id_116 rdf:type cls:c_5991.
+cls:c_5991 rdfs:label "園芸支援増額"@ja.
+kg:id_111 prop:contermeasure kg:id_116.
+kg:id_117 rdfs:label "農林水産業創意工夫プロジェクト支援事業費を増額する"@ja.
+kg:id_117 rdf:type cls:c_5992.
+cls:c_5992 rdfs:label "農業支援増額"@ja.
+kg:id_111 prop:contermeasure kg:id_117.
+kg:id_118 rdfs:label "住宅リフォーム総合支援事業費を増額する"@ja.
+kg:id_118 rdf:type cls:c_5993.
+cls:c_5993 rdfs:label "住宅支援増額"@ja.
+kg:id_111 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "合併処理浄化槽事業"@ja.
+kg:id_119 rdf:type cls:c_5994.
+cls:c_5994 rdfs:label "浄化槽事業"@ja.
+kg:id_120 rdfs:label "合併処理浄化槽への転換に対して負担を軽減し普及率の向上を図る"@ja.
+kg:id_120 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_119 prop:contermeasure kg:id_120.
+kg:id_121 rdfs:label "災害対策基本法の一部改正への対応"@ja.
+kg:id_121 rdf:type cls:c_5995.
+cls:c_5995 rdfs:label "法改正対応"@ja.
+kg:id_122 rdfs:label "酒田市防災会議の所掌事務を追加するなど関係条例を改正する"@ja.
+kg:id_122 rdf:type cls:c_1665.
+cls:c_1665 rdfs:label "条例改正"@ja.
+kg:id_121 prop:contermeasure kg:id_122.
+kg:id_123 rdfs:label "固定資産税と個人市民税の見直し"@ja.
+kg:id_123 rdf:type cls:c_5996.
+cls:c_5996 rdfs:label "税制見直し"@ja.
+kg:id_124 rdfs:label "固定資産税の課税標準の特例措置を設け個人市民税の税率を変更する"@ja.
+kg:id_124 rdf:type cls:c_5664.
+cls:c_5664 rdfs:label "税制改正"@ja.
+kg:id_123 prop:contermeasure kg:id_124.
+kg:id_125 rdfs:label "旧鐙屋の管理"@ja.
+kg:id_125 rdf:type cls:c_1892.
+cls:c_1892 rdfs:label "施設管理"@ja.
+kg:id_126 rdfs:label "指定管理者に行わせることができるようにする"@ja.
+kg:id_126 rdf:type cls:c_5997.
+cls:c_5997 rdfs:label "指定管理化"@ja.
+kg:id_125 prop:contermeasure kg:id_126.
+kg:id_127 rdfs:label "眺海の森天体観測館の管理"@ja.
+kg:id_127 rdf:type cls:c_1892.
+kg:id_128 rdfs:label "指定管理者に行わせることができるようにするとともに開館時間を変更する"@ja.
+kg:id_128 rdf:type cls:c_5997.
+kg:id_127 prop:contermeasure kg:id_128.
+kg:id_129 rdfs:label "学童保育所"@ja.
+kg:id_129 rdf:type cls:c_5998.
+cls:c_5998 rdfs:label "学童保育所"@ja.
+kg:id_130 rdfs:label "平田学区学童保育所及び南平田学童保育所を追加する"@ja.
+kg:id_130 rdf:type cls:c_5999.
+cls:c_5999 rdfs:label "施設追加"@ja.
+kg:id_129 prop:contermeasure kg:id_130.
+kg:id_131 rdfs:label "山王くらぶの管理"@ja.
+kg:id_131 rdf:type cls:c_1892.
+kg:id_131 prop:contermeasure kg:id_126.
+kg:id_132 rdfs:label "眺海の森外山ロッジ及び展望休憩所"@ja.
+kg:id_132 rdf:type cls:c_2118.
+cls:c_2118 rdfs:label "施設運営"@ja.
+kg:id_133 rdfs:label "開館時間と使用料等を変更する"@ja.
+kg:id_133 rdf:type cls:c_6000.
+cls:c_6000 rdfs:label "運営条件変更"@ja.
+kg:id_132 prop:contermeasure kg:id_133.
+kg:id_134 rdfs:label "酒田市総合計画"@ja.
+kg:id_134 rdf:type cls:c_6001.
+cls:c_6001 rdfs:label "総合計画"@ja.
+kg:id_135 rdfs:label "計画を見直し後期計画を策定する"@ja.
+kg:id_135 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_134 prop:contermeasure kg:id_135.
+kg:id_136 rdfs:label "病院事業会計未処分利益剰余金"@ja.
+kg:id_136 rdf:type cls:c_3932.
+cls:c_3932 rdfs:label "剰余金処分"@ja.
+kg:id_137 rdfs:label "減債積立金に積み立てる"@ja.
+kg:id_137 rdf:type cls:c_6002.
+cls:c_6002 rdfs:label "減債積立"@ja.
+kg:id_136 prop:contermeasure kg:id_137.
+kg:id_138 rdfs:label "水道事業会計未処分利益剰余金"@ja.
+kg:id_138 rdf:type cls:c_3932.
+kg:id_138 prop:contermeasure kg:id_137.
+kg:id_139 rdfs:label "収入未済額と不納欠損額"@ja.
+kg:id_139 rdf:type cls:c_6003.
+cls:c_6003 rdfs:label "未収金対策"@ja.
+kg:id_140 rdfs:label "職員の専門性を高め市民が納税や相談しやすい環境を整える"@ja.
+kg:id_140 rdf:type cls:c_6004.
+cls:c_6004 rdfs:label "専門性向上"@ja.
+kg:id_139 prop:contermeasure kg:id_140.
+kg:id_141 rdfs:label "先進事例も参考にして効果的な組織体制の検討を進める"@ja.
+kg:id_141 rdf:type cls:c_6005.
+cls:c_6005 rdfs:label "体制検討"@ja.
+kg:id_139 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "財政基盤の安定化"@ja.
+kg:id_142 rdf:type cls:c_6006.
+cls:c_6006 rdfs:label "基盤安定化"@ja.
+kg:id_143 rdfs:label "事務事業の見直しを引き続き実施する"@ja.
+kg:id_143 rdf:type cls:c_834.
+cls:c_834 rdfs:label "事業見直し"@ja.
+kg:id_142 prop:contermeasure kg:id_143.
+kg:id_144 rdfs:label "基金の積み立てを引き続き実施する"@ja.
+kg:id_144 rdf:type cls:c_691.
+cls:c_691 rdfs:label "基金積立"@ja.
+kg:id_142 prop:contermeasure kg:id_144.
+kg:id_145 rdfs:label "財政収支の改善"@ja.
+kg:id_145 rdf:type cls:c_6007.
+cls:c_6007 rdfs:label "収支改善"@ja.
+kg:id_146 rdfs:label "市税を初めとする経常的な収入の安定確保に努める"@ja.
+kg:id_146 rdf:type cls:c_739.
+cls:c_739 rdfs:label "収入確保"@ja.
+kg:id_145 prop:contermeasure kg:id_146.
+kg:id_147 rdfs:label "受益者負担の適正化に努める"@ja.
+kg:id_147 rdf:type cls:c_6008.
+cls:c_6008 rdfs:label "負担適正化"@ja.
+kg:id_145 prop:contermeasure kg:id_147.
+kg:id_148 rdfs:label "水道事業"@ja.
+kg:id_148 rdf:type cls:c_6009.
+cls:c_6009 rdfs:label "水道事業"@ja.
+kg:id_149 rdfs:label "新たな水運用システムの構築に取り組む"@ja.
+kg:id_149 rdf:type cls:c_6010.
+cls:c_6010 rdfs:label "運用改善"@ja.
+kg:id_148 prop:contermeasure kg:id_149.
+kg:id_150 rdfs:label "施設管理の効率化に取り組む"@ja.
+kg:id_150 rdf:type cls:c_6011.
+cls:c_6011 rdfs:label "管理効率化"@ja.
+kg:id_148 prop:contermeasure kg:id_150.
+kg:id_151 rdfs:label "配水能力の見直しに取り組む"@ja.
+kg:id_151 rdf:type cls:c_6012.
+cls:c_6012 rdfs:label "能力見直し"@ja.
+kg:id_148 prop:contermeasure kg:id_151.
+kg:id_152 rdfs:label "水道事業の逆ざや状態"@ja.
+kg:id_152 rdf:type cls:c_6013.
+cls:c_6013 rdfs:label "逆ざや状態"@ja.
+kg:id_153 rdfs:label "縮小改善に向けた検討を行う"@ja.
+kg:id_153 rdf:type cls:c_6014.
+cls:c_6014 rdfs:label "改善検討"@ja.
+kg:id_152 prop:contermeasure kg:id_153.
+kg:id_154 rdfs:label "水道事業の経営改善"@ja.
+kg:id_154 rdf:type cls:c_6015.
+cls:c_6015 rdfs:label "経営改善"@ja.
+kg:id_155 rdfs:label "毎月定例の経営会議を開催する"@ja.
+kg:id_155 rdf:type cls:c_1196.
+cls:c_1196 rdfs:label "会議開催"@ja.
+kg:id_154 prop:contermeasure kg:id_155.
+kg:id_156 rdfs:label "水道事業を取り巻く経営諸課題に的確に取り組む体制を強化する"@ja.
+kg:id_156 rdf:type cls:c_2021.
+cls:c_2021 rdfs:label "体制強化"@ja.
+kg:id_154 prop:contermeasure kg:id_156.
+kg:id_157 rdfs:label "病院経営"@ja.
+kg:id_157 rdf:type cls:c_5225.
+cls:c_5225 rdfs:label "病院経営"@ja.
+kg:id_158 rdfs:label "全職員の経営に対する意識改革を図る"@ja.
+kg:id_158 rdf:type cls:c_4400.
+cls:c_4400 rdfs:label "意識改革"@ja.
+kg:id_157 prop:contermeasure kg:id_158.
+kg:id_159 rdfs:label "経営会議を開催する"@ja.
+kg:id_159 rdf:type cls:c_1196.
+kg:id_157 prop:contermeasure kg:id_159.
+kg:id_160 rdfs:label "常勤医師を確保する"@ja.
+kg:id_160 rdf:type cls:c_6016.
+cls:c_6016 rdfs:label "医師確保"@ja.
+kg:id_157 prop:contermeasure kg:id_160.
+kg:id_161 rdfs:label "退職給与引当金の計上を検討する"@ja.
+kg:id_161 rdf:type cls:c_6017.
+cls:c_6017 rdfs:label "引当金検討"@ja.
+kg:id_157 prop:contermeasure kg:id_161.
+kg:id_162 rdfs:label "病院未収金管理"@ja.
+kg:id_162 rdf:type cls:c_6018.
+cls:c_6018 rdfs:label "未収金管理"@ja.
+kg:id_163 rdfs:label "過年度損益の修正を行う"@ja.
+kg:id_163 rdf:type cls:c_6019.
+cls:c_6019 rdfs:label "損益修正"@ja.
+kg:id_162 prop:contermeasure kg:id_163.
+kg:id_164 rdfs:label "医業収益及び医業未収金を適正に計上する"@ja.
+kg:id_164 rdf:type cls:c_6020.
+cls:c_6020 rdfs:label "適正計上"@ja.
+kg:id_162 prop:contermeasure kg:id_164.
+kg:id_165 rdfs:label "新会計基準による影響を早期に把握し今後の経営計画に反映する"@ja.
+kg:id_165 rdf:type cls:c_6021.
+cls:c_6021 rdfs:label "影響把握"@ja.
+kg:id_157 prop:contermeasure kg:id_165.
+kg:id_166 rdfs:label "公立病院改革プラン"@ja.
+kg:id_166 rdf:type cls:c_6022.
+cls:c_6022 rdfs:label "改革計画"@ja.
+kg:id_167 rdfs:label "改革プラン評価委員会を早急に設置する"@ja.
+kg:id_167 rdf:type cls:c_6023.
+cls:c_6023 rdfs:label "委員会設置"@ja.
+kg:id_166 prop:contermeasure kg:id_167.
+kg:id_168 rdfs:label "病院の経営形態見直し"@ja.
+kg:id_168 rdf:type cls:c_6024.
+cls:c_6024 rdfs:label "経営形態見直し"@ja.
+kg:id_169 rdfs:label "経営形態のあり方検討会を設置する"@ja.
+kg:id_169 rdf:type cls:c_1387.
+cls:c_1387 rdfs:label "検討会設置"@ja.
+kg:id_168 prop:contermeasure kg:id_169.
+kg:id_170 rdfs:label "当初計画したプランの進捗状況を確認し適切に実施する"@ja.
+kg:id_170 rdf:type cls:c_6025.
+cls:c_6025 rdfs:label "進捗確認"@ja.
+kg:id_166 prop:contermeasure kg:id_170.
+kg:st_1 rdfs:label "阿部寿一市長"@ja.
+kg:st_1 rdfs:type cls:st_76.
+cls:st_76 rdfs:label "行政責任者"@ja.
+kg:op_1 prop:content "効率的で健全な財政運営に努める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "行政サービスの維持向上に努めつつ改革プランを推進する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "行政サービスの維持向上に努めつつ改革プランを推進する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "地域経済への対策と景気雇用対策に積極対応した"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "加藤裕監査委員"@ja.
+kg:st_2 rdfs:type cls:st_77.
+cls:st_77 rdfs:label "監査担当者"@ja.
+kg:op_5 prop:content "財政の硬直化が懸念される"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "固定的経費の高止まりと財政硬直化を懸念"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "固定的経費の高止まりと財政硬直化を懸念"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "固定的経費の高止まりと財政硬直化を懸念"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "財源確保と財政基盤の安定化が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "事務事業見直しと基金積み立ての継続が必要"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "一方で有収水量は減少している"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "今後90％を下回らないよう望む"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "新たな水運用システム構築と施設管理効率化が急務"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "配水能力の見直しに取り組むことが急務"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "逆ざや状態の縮小改善を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "逆ざや状態の縮小改善に向けた検討を望む"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "病院経営は依然厳しい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "常勤医師の確保など診療体制充実による収益構造改善を望む"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "退職給与引当金の計上を検討すべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "病院経営への影響を早期に把握し経営計画に反映すべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "行政サービスの維持向上と両立させて進める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "効率的で健全な財政運営に努める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "風力発電施設整備を検討するため新規計上した"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "県の制度を活用して低所得世帯支援を行う"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "不活化ポリオワクチン接種導入に対応する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "県補助事業の追加に伴い増額する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "県の補助採択見込みに伴い増額する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "県の補助採択見込みに伴い増額する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "利用者増加に伴い増額する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "県の補助を受けて負担軽減と普及率向上を図る"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "関係する条例について所要の改正を行う"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "所要の改正を行う"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "条例の全部を改正する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "条例の全部を改正する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "新たに追加するため改正する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "条例の全部を改正する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "所要の改正を行う"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "後期計画の策定について議決を求める"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "議会の議決を求める"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "議会の議決を求める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "収納率向上に向けた取り組みを要望する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "収納率が一層向上する取り組みを要望する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "後年度に備えた財政基盤の安定化が必要"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "後年度に備えた財政基盤の安定化が必要"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "財源の確保と財政基盤の安定化に努めるべき"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "財源の確保と財政基盤の安定化に努めるべき"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "施設管理の効率化と配水能力見直しが急務"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "新たな水運用システム構築とあわせて対応が必要"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "急務である"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+kg:op_50 prop:content "逆ざや状態の縮小改善に向けた検討を望む"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "経営意識を高め体制を強化すべき"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "経営基盤の強化と安定に不可欠"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "より一層の良質な医療の提供と経営健全化に努めるべき"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "収益構造の改善につなげるべき"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "診療体制の充実による収益構造改善を望む"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "後年度の人件費負担の平準化を図るべき"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "医業収益及び医業未収金を適正に計上するよう要請する"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "適正計上を要請する"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "医業費用増加を見据えて対応すべき"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "数値目標の評価時期を迎えており早急な設置が必要"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+kg:op_61 prop:content "担当部局と連携し検討会を設置すべき"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_2.
+kg:op_62 prop:content "真に実効あるものとするため適切な実施を要望する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "個人市民税が給与所得の伸び悩みや、固定資産税が評価額の下落の影響などにより減少となった"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "固定資産税が評価額の下落の影響などにより減少となった"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "個人市民税が給与所得の伸び悩みや、固定資産税が評価額の下落の影響などにより減少となったことなどから、市税が0.3％の減となっております"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:text-txt_contents "個人市民税が給与所得の伸び悩みや、固定資産税が評価額の下落の影響などにより減少となったことなどから、市税が0.3％の減となっております"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "地方交付税については、普通交付税において公債費算入額の増加や基準財政収入額が減少したことなどにより増となった"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:text-txt_contents "地方交付税については、普通交付税において公債費算入額の増加や基準財政収入額が減少したことなどにより増となった"@ja.
+<< kg:id_8 prop:cause kg:id_11 >>
+    prop:text-txt_contents "特別交付税も震災復興対応分等により増加したことにより、全体で2.6％の増となりました"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:text-txt_contents "国庫支出金については、国の経済対策による繰越事業に係る交付金の終了などにより14.8％の減となり"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "県支出金については、子ども手当費負担金や緊急雇用創出事業臨時特例基金事業費補助金の増加などにより8.9％の増となりました"@ja.
+<< kg:id_14 prop:cause kg:id_16 >>
+    prop:text-txt_contents "県支出金については、子ども手当費負担金や緊急雇用創出事業臨時特例基金事業費補助金の増加などにより8.9％の増となりました"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:text-txt_contents "地方債については、地方独立行政法人病院事業に係る病院債や臨時財政対策債の減少により20.8％の減となっております"@ja.
+<< kg:id_17 prop:cause kg:id_19 >>
+    prop:text-txt_contents "地方債については、地方独立行政法人病院事業に係る病院債や臨時財政対策債の減少により20.8％の減となっております"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "議会費は、地方議会議員年金制度の見直しに伴う共済費の増加により28.5％の増となっております"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:text-txt_contents "総務費は、地域情報通信基盤整備事業費、地域づくり基金積立金の皆減や、退職手当、基金管理事業費等の減少などにより33.1％の減となっております"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:text-txt_contents "総務費は、地域情報通信基盤整備事業費、地域づくり基金積立金の皆減や、退職手当、基金管理事業費等の減少などにより33.1％の減となっております"@ja.
+<< kg:id_22 prop:cause kg:id_25 >>
+    prop:text-txt_contents "総務費は、地域情報通信基盤整備事業費、地域づくり基金積立金の皆減や、退職手当、基金管理事業費等の減少などにより33.1％の減となっております"@ja.
+<< kg:id_22 prop:cause kg:id_26 >>
+    prop:text-txt_contents "総務費は、地域情報通信基盤整備事業費、地域づくり基金積立金の皆減や、退職手当、基金管理事業費等の減少などにより33.1％の減となっております"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:text-txt_contents "民生費は、子ども手当扶助事業費、障がい福祉サービス給付事業費の増加などにより2.5％の増となっております"@ja.
+<< kg:id_27 prop:cause kg:id_29 >>
+    prop:text-txt_contents "民生費は、子ども手当扶助事業費、障がい福祉サービス給付事業費の増加などにより2.5％の増となっております"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:text-txt_contents "衛生費は、地方独立行政法人病院事業運営費負担事業費の減少などにより21.8％の減となっております"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:text-txt_contents "労働費は、緊急雇用創出事業臨時特例基金事業費、ふるさと雇用再生特別基金事業費の増加などにより42.5％の増となっております"@ja.
+<< kg:id_32 prop:cause kg:id_34 >>
+    prop:text-txt_contents "労働費は、緊急雇用創出事業臨時特例基金事業費、ふるさと雇用再生特別基金事業費の増加などにより42.5％の増となっております"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:text-txt_contents "農林水産業費は、土地改良負担事業費の増加などにより36.9％の増となっております"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:text-txt_contents "商工費は、東北地方太平洋沖地震関連緊急融資資金貸付事業費の皆増などにより2.1％の増となっております"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:text-txt_contents "土木費は、公共下水道事業特別会計繰出金の増加、住宅リフォーム総合支援事業費の皆増などにより2.9％の増となっております"@ja.
+<< kg:id_39 prop:cause kg:id_41 >>
+    prop:text-txt_contents "土木費は、公共下水道事業特別会計繰出金の増加、住宅リフォーム総合支援事業費の皆増などにより2.9％の増となっております"@ja.
+<< kg:id_42 prop:cause kg:id_43 >>
+    prop:text-txt_contents "消防費は、消防団員災害補償分担金の増加などにより3.7％の増となっております"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:text-txt_contents "教育費は、義務教育施設の改築や改修事業費の増加などにより15.9％の増となっております"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:text-txt_contents "災害復旧費は、昨年６月から８月の大雨災害による復旧事業費の増加により490.7％の増となっております"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:text-txt_contents "公債費は、公的資金補償金免除繰上償還の皆減などにより0.1％の減となっております"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:text-txt_contents "義務的経費は、人件費が職員給や退職手当の減少により4.4％の減"@ja.
+<< kg:id_51 prop:cause kg:id_52 >>
+    prop:text-txt_contents "人件費が職員給や退職手当の減少により4.4％の減"@ja.
+<< kg:id_51 prop:cause kg:id_25 >>
+    prop:text-txt_contents "人件費が職員給や退職手当の減少により4.4％の減"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:text-txt_contents "扶助費が子ども手当や介護・訓練等給付費などの増加4.1％の増"@ja.
+<< kg:id_53 prop:cause kg:id_55 >>
+    prop:text-txt_contents "扶助費が子ども手当や介護・訓練等給付費などの増加4.1％の増"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:text-txt_contents "普通建設事業費については、光ケ丘陸上競技場整備事業の実施や、義務教育施設の改築や改修などに積極的に取り組み、4.5％の増となっております"@ja.
+<< kg:id_56 prop:cause kg:id_58 >>
+    prop:text-txt_contents "普通建設事業費については、光ケ丘陸上競技場整備事業の実施や、義務教育施設の改築や改修などに積極的に取り組み、4.5％の増となっております"@ja.
+<< kg:id_59 prop:cause kg:id_60 >>
+    prop:text-txt_contents "物件費については、子宮頸がん等ワクチン接種事業費、緊急雇用創出事業臨時特例基金事業費、ふるさと雇用再生特別基金事業費の委託料の増加などにより5.7％の増"@ja.
+<< kg:id_59 prop:cause kg:id_61 >>
+    prop:text-txt_contents "物件費については、子宮頸がん等ワクチン接種事業費、緊急雇用創出事業臨時特例基金事業費、ふるさと雇用再生特別基金事業費の委託料の増加などにより5.7％の増"@ja.
+<< kg:id_59 prop:cause kg:id_62 >>
+    prop:text-txt_contents "物件費については、子宮頸がん等ワクチン接種事業費、緊急雇用創出事業臨時特例基金事業費、ふるさと雇用再生特別基金事業費の委託料の増加などにより5.7％の増"@ja.
+<< kg:id_63 prop:cause kg:id_64 >>
+    prop:text-txt_contents "補助費等は、国営最上川下流沿岸農業水利負担金、住宅リフォーム総合支援補助金の皆増、独立行政法人病院事業運営費交付金、酒田地区広域行政組合分賦金の増加などにより20.3％の減"@ja.
+<< kg:id_63 prop:cause kg:id_65 >>
+    prop:text-txt_contents "補助費等は、国営最上川下流沿岸農業水利負担金、住宅リフォーム総合支援補助金の皆増、独立行政法人病院事業運営費交付金、酒田地区広域行政組合分賦金の増加などにより20.3％の減"@ja.
+<< kg:id_63 prop:cause kg:id_66 >>
+    prop:text-txt_contents "補助費等は、国営最上川下流沿岸農業水利負担金、住宅リフォーム総合支援補助金の皆増、独立行政法人病院事業運営費交付金、酒田地区広域行政組合分賦金の増加などにより20.3％の減"@ja.
+<< kg:id_63 prop:cause kg:id_67 >>
+    prop:text-txt_contents "補助費等は、国営最上川下流沿岸農業水利負担金、住宅リフォーム総合支援補助金の皆増、独立行政法人病院事業運営費交付金、酒田地区広域行政組合分賦金の増加などにより20.3％の減"@ja.
+<< kg:id_68 prop:cause kg:id_69 >>
+    prop:text-txt_contents "積立金が、財政調整基金、市債管理基金、地域づくり基金積立金の減少などにより54.6％の減"@ja.
+<< kg:id_68 prop:cause kg:id_70 >>
+    prop:text-txt_contents "積立金が、財政調整基金、市債管理基金、地域づくり基金積立金の減少などにより54.6％の減"@ja.
+<< kg:id_68 prop:cause kg:id_71 >>
+    prop:text-txt_contents "積立金が、財政調整基金、市債管理基金、地域づくり基金積立金の減少などにより54.6％の減"@ja.
+<< kg:id_72 prop:cause kg:id_73 >>
+    prop:text-txt_contents "投資・出資・貸付金については、地方独立行政法人病院事業への出資金や、長期貸付金の減少などにより55.2％の減"@ja.
+<< kg:id_72 prop:cause kg:id_74 >>
+    prop:text-txt_contents "投資・出資・貸付金については、地方独立行政法人病院事業への出資金や、長期貸付金の減少などにより55.2％の減"@ja.
+<< kg:id_75 prop:cause kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "景気低迷による市税の減少傾向は変わらず、財政の硬直化は高い水準で推移していることは否めません"@ja.
+<< kg:id_75 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "扶助費や物件費は増加していることから、今後とも行政サービスの維持、向上に努めながら、また、新行財政集中改革プランを計画的に推進し"@ja.
+<< kg:id_75 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "扶助費や物件費は増加していることから、今後とも行政サービスの維持、向上に努めながら、また、新行財政集中改革プランを計画的に推進し"@ja.
+<< kg:id_77 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "東日本大震災に伴う被災地・避難者支援や影響を受けた本市地域経済への対策など、積極的に景気雇用対策にも対応してまいりました"@ja.
+<< kg:id_79 prop:effect kg:id_80 >>
+    prop:text-txt_contents "災害復旧費は、昨年６月から８月の大雨災害による復旧事業費の増加により490.7％の増となっております"@ja.
+<< kg:id_81 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "景気低迷による市税の減少傾向は変わらず、財政の硬直化は高い水準で推移していることは否めません"@ja.
+<< kg:id_83 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展等を考えますと、扶助費、繰出金の増加、施設の維持補修費など固定的な経費が高どまりし、財政の硬直化を招くことが懸念されます"@ja.
+<< kg:id_83 prop:effect kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展等を考えますと、扶助費、繰出金の増加、施設の維持補修費など固定的な経費が高どまりし、財政の硬直化を招くことが懸念されます"@ja.
+<< kg:id_83 prop:effect kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展等を考えますと、扶助費、繰出金の増加、施設の維持補修費など固定的な経費が高どまりし、財政の硬直化を招くことが懸念されます"@ja.
+<< kg:id_83 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "今後の人口減少、少子高齢化の進展等を考えますと、扶助費、繰出金の増加、施設の維持補修費など固定的な経費が高どまりし、財政の硬直化を招くことが懸念されます"@ja.
+<< kg:id_86 prop:effect kg:id_87 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "合併の特例措置であります地方交付税は平成28年度以降漸減されることから、合併特例期間の終了を見据え、事務事業の見直し、基金の積み立てなどを引き続き実施し、後年度に備えた財政基盤の安定化を図る"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "業務状況では、八幡簡易水道が加わったため、給水人口、給水栓数とも前年度より増加しています"@ja.
+<< kg:id_90 prop:effect kg:id_91 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "有収率は90.36％と前年度より低下しましたが、本市と同規模事業の平均値89.9％をわずかに上回っています。今後90％を下回らないよう望むものです"@ja.
+<< kg:id_92 prop:effect kg:id_93 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "総配水量が年々減少しているため、施設利用率の低下も深刻になっております"@ja.
+<< kg:id_94 prop:effect kg:id_95 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "県からの受水量の割合も50％近くに達していますので、課題となっています新たな水運用システムの構築と施設管理の効率化、配水能力の見直しに取り組むことが急務と思われます"@ja.
+<< kg:id_96 prop:effect kg:id_97 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "給水原価が大幅に増加しています。料金回収率は92.5％と前年度より低下しており"@ja.
+<< kg:id_98 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "供給単価を給水原価が上回る差額は17円70銭と前年度より拡大しています"@ja.
+<< kg:id_100 prop:effect kg:id_101 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "一般会計からの繰入金の増により純利益は1,186万円となっています"@ja.
+<< kg:id_102 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "入院外来患者数としては、前年度より1,276人、3.3％減少しています。病床利用率は、目標とする90％を達成しましたが、今後とも患者数の確保は収益に与える影響を考えれば最重要の経営課題と言えます"@ja.
+<< kg:id_104 prop:effect kg:id_105 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "退職給与金の支出によって医業収支が大きく左右されています"@ja.
+<< kg:id_106 prop:effect kg:id_107 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "平成26年度より新しい会計基準が適用されます。これにより退職給与引当金の計上の義務化、みなし償却制度の廃止など、医業費用の増加が見込まれます"@ja.
+<< kg:id_108 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "新行財政集中改革プランを計画的に推進し、財政運営の中長期的な視野を持ちながら効率的で健全な財政運営に努めてまいります"@ja.
+<< kg:id_108 prop:contermeasure kg:id_110 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "財政運営の中長期的な視野を持ちながら効率的で健全な財政運営に努めてまいります"@ja.
+<< kg:id_111 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "風力発電施設整備を検討するため、風力発電施設整備推進事業費を新たに計上しております"@ja.
+<< kg:id_111 prop:contermeasure kg:id_113 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "県の制度を活用し低所得世帯の学童保育利用に対する支援のための放課後児童健全育成事業費をそれぞれ増額しております"@ja.
+<< kg:id_111 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "不活化ポリオワクチン接種の導入のため、各種予防接種事業費を増額しております"@ja.
+<< kg:id_111 prop:contermeasure kg:id_115 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "県補助事業の追加に伴い、緊急雇用創出事業臨時特例基金事業を増額しております"@ja.
+<< kg:id_111 prop:contermeasure kg:id_116 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "県の補助採択見込みに伴い、活力ある園芸産地創出支援事業費、農林水産業創意工夫プロジェクト支援事業費をそれぞれ増額しております"@ja.
+<< kg:id_111 prop:contermeasure kg:id_117 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "県の補助採択見込みに伴い、活力ある園芸産地創出支援事業費、農林水産業創意工夫プロジェクト支援事業費をそれぞれ増額しております"@ja.
+<< kg:id_111 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "土木費では、利用者増加に伴い、住宅リフォーム総合支援事業費を増額しております"@ja.
+<< kg:id_119 prop:contermeasure kg:id_120 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "県の補助を受けて合併処理浄化槽への転換に対して負担を軽減し普及率の向上を図る"@ja.
+<< kg:id_121 prop:contermeasure kg:id_122 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "災害対策基本法の一部改正に伴い、酒田市防災会議の所掌事務を追加するなど、関係する条例について所要の改正を行うものであります"@ja.
+<< kg:id_123 prop:contermeasure kg:id_124 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "固定資産税の課税標準の特例措置を設けるとともに、個人市民税の税率を変更するため、所要の改正を行うものであります"@ja.
+<< kg:id_125 prop:contermeasure kg:id_126 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "旧鐙屋の管理を指定管理者に行わせることができるようにするため、条例の全部を改正するものであります"@ja.
+<< kg:id_127 prop:contermeasure kg:id_128 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "眺海の森天体観測館の管理を指定管理者に行わせることができるようにするとともに、開館時間を変更するなど条例の全部を改正するものであります"@ja.
+<< kg:id_129 prop:contermeasure kg:id_130 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "新たに平田学区学童保育所及び南平田学童保育所を追加するため、所要の改正を行うものであります"@ja.
+<< kg:id_131 prop:contermeasure kg:id_126 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "山王くらぶの管理を指定管理者に行わせることができるようにするため、条例の全部を改正するものであります"@ja.
+<< kg:id_132 prop:contermeasure kg:id_133 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "眺海の森外山ロッジ及び展望休憩所における開館時間、使用料等を変更するため、所要の改正を行うものであります"@ja.
+<< kg:id_134 prop:contermeasure kg:id_135 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "平成19年に策定した酒田市総合計画について計画を見直し後期計画を策定する"@ja.
+<< kg:id_136 prop:contermeasure kg:id_137 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "平成23年度酒田市病院事業会計及び平成23年度酒田市水道事業会計において未処分利益剰余金を減債積立金に積み立てるため"@ja.
+<< kg:id_138 prop:contermeasure kg:id_137 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "平成23年度酒田市病院事業会計及び平成23年度酒田市水道事業会計において未処分利益剰余金を減債積立金に積み立てるため"@ja.
+<< kg:id_139 prop:contermeasure kg:id_140 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "未納対策として職員の専門性を高め、市民が納税や相談しやすい環境を整える"@ja.
+<< kg:id_139 prop:contermeasure kg:id_141 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "先進事例も参考にして効果的な組織体制の検討を進めるなど、収納率が一層向上する取り組みを要望するものです"@ja.
+<< kg:id_142 prop:contermeasure kg:id_143 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "事務事業の見直し、基金の積み立てなどを引き続き実施し、後年度に備えた財政基盤の安定化を図る"@ja.
+<< kg:id_142 prop:contermeasure kg:id_144 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "事務事業の見直し、基金の積み立てなどを引き続き実施し、後年度に備えた財政基盤の安定化を図る"@ja.
+<< kg:id_145 prop:contermeasure kg:id_146 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "市税を初めとする経常的な収入の安定確保や、受益者負担の適正化などにより財政収支の改善に努めていく必要があります"@ja.
+<< kg:id_145 prop:contermeasure kg:id_147 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "市税を初めとする経常的な収入の安定確保や、受益者負担の適正化などにより財政収支の改善に努めていく必要があります"@ja.
+<< kg:id_148 prop:contermeasure kg:id_149 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "新たな水運用システムの構築と施設管理の効率化、配水能力の見直しに取り組むことが急務と思われます"@ja.
+<< kg:id_148 prop:contermeasure kg:id_150 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "新たな水運用システムの構築と施設管理の効率化、配水能力の見直しに取り組むことが急務と思われます"@ja.
+<< kg:id_148 prop:contermeasure kg:id_151 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "新たな水運用システムの構築と施設管理の効率化、配水能力の見直しに取り組むことが急務と思われます"@ja.
+<< kg:id_152 prop:contermeasure kg:id_153 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "この逆ざや状態の縮小・改善に向けた検討を望むものです"@ja.
+<< kg:id_154 prop:contermeasure kg:id_155 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "職員が一丸となって経営改善に取り組み、経営意識を高めるためにも毎月定例の経営会議を開催し"@ja.
+<< kg:id_154 prop:contermeasure kg:id_156 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "水道事業を取り巻く経営諸課題に的確に取り組む体制を強化するよう要望するものであります"@ja.
+<< kg:id_157 prop:contermeasure kg:id_158 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "病院側としても、全職員の経営に対する意識改革を図り"@ja.
+<< kg:id_157 prop:contermeasure kg:id_159 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "経営会議の開催や常勤医師の確保など診療体制の充実による収益構造の改善についても検討され"@ja.
+<< kg:id_157 prop:contermeasure kg:id_160 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "経営会議の開催や常勤医師の確保など診療体制の充実による収益構造の改善についても検討され"@ja.
+<< kg:id_157 prop:contermeasure kg:id_161 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "後年度の人件費負担の平準化を図るためにも、退職給与引当金の計上について検討する時期に来ています"@ja.
+<< kg:id_162 prop:contermeasure kg:id_163 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "平成24年度において過年度損益の修正を行うとともに、医業収益及び医業未収金を適正に計上されるよう要請いたします"@ja.
+<< kg:id_162 prop:contermeasure kg:id_164 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "医業収益及び医業未収金を適正に計上されるよう要請いたします"@ja.
+<< kg:id_157 prop:contermeasure kg:id_165 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "病院経営に与える影響について早期に把握し、今後の経営計画に反映されるよう望むものであります"@ja.
+<< kg:id_166 prop:contermeasure kg:id_167 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "早急に評価委員会を設置する必要があります"@ja.
+<< kg:id_168 prop:contermeasure kg:id_169 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "経営形態のあり方検討会を設置し、平成25年４月をめどに検討することになっていますが、未設置でありました。担当部局とも連携し、検討会を設置されるよう望みます"@ja.
+<< kg:id_166 prop:contermeasure kg:id_170 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "公立病院改革プランを真に実効あるものとするため、当初計画したプランの進捗状況を確認され、適切に実施されることを要望いたします"@ja.
+}

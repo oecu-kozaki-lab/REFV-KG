@@ -1,0 +1,230 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00023> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "方法書説明会"@ja.
+kg:id_1 rdf:type cls:c_3027.
+cls:c_3027 rdfs:label "説明会"@ja.
+kg:id_2 rdfs:label "不安の増長"@ja.
+kg:id_2 rdf:type cls:c_11690.
+cls:c_11690 rdfs:label "不安増大"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "押し問答の継続"@ja.
+kg:id_3 rdf:type cls:c_14194.
+cls:c_14194 rdfs:label "対立継続"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "風力発電"@ja.
+kg:id_4 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_5 rdfs:label "地域へのメリットが不明確"@ja.
+kg:id_5 rdf:type cls:c_14195.
+cls:c_14195 rdfs:label "利益不明"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電と関係のない答弁の繰り返し"@ja.
+kg:id_6 rdf:type cls:c_14196.
+cls:c_14196 rdfs:label "不適切応答"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "火に油を注ぐ状況"@ja.
+kg:id_7 rdf:type cls:c_14197.
+cls:c_14197 rdfs:label "反発増大"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "45分近い時間超過"@ja.
+kg:id_8 rdf:type cls:c_14198.
+cls:c_14198 rdfs:label "時間超過"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "出席者からの質問が終わらないこと"@ja.
+kg:id_9 rdf:type cls:c_14199.
+cls:c_14199 rdfs:label "質問継続"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "環境調査前に納得のいく説明責任が果たされていないこと"@ja.
+kg:id_10 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_1 prop:cause kg:id_10.
+kg:id_11 rdfs:label "事業者と住民の平行線"@ja.
+kg:id_11 rdf:type cls:c_14194.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "風力発電計画"@ja.
+kg:id_12 rdf:type cls:c_390.
+cls:c_390 rdfs:label "発電計画"@ja.
+kg:id_13 rdfs:label "事業者への不信"@ja.
+kg:id_13 rdf:type cls:c_14200.
+cls:c_14200 rdfs:label "事業者不信"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "地域の人または地域の人が選んだ第三者の調査機関と共に調査すること"@ja.
+kg:id_14 rdf:type cls:c_14201.
+cls:c_14201 rdfs:label "共同調査"@ja.
+kg:id_12 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "納得の行くまで計画をすすめないこと"@ja.
+kg:id_15 rdf:type cls:c_14202.
+cls:c_14202 rdfs:label "計画保留"@ja.
+kg:id_12 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "環境アセス"@ja.
+kg:id_16 rdf:type cls:c_3010.
+cls:c_3010 rdfs:label "環境評価"@ja.
+kg:id_17 rdfs:label "抜け穴だらけであること"@ja.
+kg:id_17 rdf:type cls:c_14203.
+cls:c_14203 rdfs:label "制度不備"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "多くの質問や不安の増加"@ja.
+kg:id_18 rdf:type cls:c_11690.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "公開質問状を事業者へ送ること"@ja.
+kg:id_19 rdf:type cls:c_14193.
+cls:c_14193 rdfs:label "質問提出"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "地域住民への声掛けによる参加促進"@ja.
+kg:id_20 rdf:type cls:c_1872.
+cls:c_1872 rdfs:label "参加促進"@ja.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:st_1 rdfs:label "筆者"@ja.
+kg:st_1 rdfs:type cls:st_178.
+cls:st_178 rdfs:label "筆者"@ja.
+kg:op_1 prop:content "事業者の回答が不安を強めた"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "参加者"@ja.
+kg:st_2 rdfs:type cls:st_74.
+cls:st_74 rdfs:label "参加者"@ja.
+kg:op_2 prop:content "納得のいく説明を求め続けた"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "地域にもたらすメリットは何かと疑問を示した"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "事業者の答弁が場を悪化させた"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "事業者の答弁が反発を強めた"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "住民"@ja.
+kg:st_3 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_6 prop:content "環境調査前に納得のいく説明責任を果たすべきと求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "事業者"@ja.
+kg:st_4 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_7 prop:content "環境調査を行わないと正確な事は言えないので回答を控える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "環境調査前に納得のいく説明責任を求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "自主的な環境調査だけでは安心できない"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "地域の人や第三者機関と一緒に調査すべきだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "住民が納得するまで計画を進めるべきではない"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "環境アセスの制度に問題がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "当会"@ja.
+kg:st_5 rdfs:type cls:st_70.
+cls:st_70 rdfs:label "団体"@ja.
+kg:op_13 prop:content "説明会後も多くの質問や不安が寄せられている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "あらためて公開質問状を事業者へ送る考え"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:op_15 prop:content "事業者は地域住民に声掛けして参加を促すべきだ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "説明会での事業者の説明は、相変わらずです「調査しないとお答えできない」が多く、不安を増長させる回答が多かったです。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "参加者もやはり納得がいく説明を求めて、ずっと押し問答を繰り返していました。"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "風力発電が地域にもたらすメリットは何か？という問いにも「清掃活動や公民館のリフォーム等の地域貢献活動」という風力発電とは関係のない答弁を繰り返すため"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "「清掃活動や公民館のリフォーム等の地域貢献活動」という風力発電とは関係のない答弁を繰り返すため、余計、火に油を注いだ感はありました。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "「清掃活動や公民館のリフォーム等の地域貢献活動」という風力発電とは関係のない答弁を繰り返すため、余計、火に油を注いだ感はありました。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:text-txt_contents "結局、出席者からの質問が終わらず、45分近く時間をオーバーしていました。"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:text-txt_contents "結局、出席者からの質問が終わらず、45分近く時間をオーバーしていました。"@ja.
+<< kg:id_1 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "「環境調査に入る前に納得のいく説明責任を果たすべき」と求める住民。"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "「環境調査を行わないと正確な事は言えないので控えさせていただく」という事業者、「環境調査に入る前に納得のいく説明責任を果たすべき」と求める住民。平行線のままです。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "東京からやってきた得体のしれない企業が、自主的な環境調査をやって安心させますと言われても、それは無理ってものです。"@ja.
+<< kg:id_12 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "せめて、地域の人、もしくは地域の人が選んだ第三者の調査機関と共に一緒に調査させていただき"@ja.
+<< kg:id_12 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "納得の行くまで計画はすすめない、くらい言ってほしいものです。"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "環境アセスが抜け穴だらけでダメなんでしょう。"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今回の説明会を経て、また多くの質問や不安が当会には寄せられてきています。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "あらためて公開質問状を事業者へ送り届けようと思います。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "大ホールで開催するなら、きちんと地域住民に声掛けを事業者さんからして参加を促すべきだと思います。"@ja.
+}

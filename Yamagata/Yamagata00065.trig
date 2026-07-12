@@ -1,0 +1,637 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00065> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業収益の還元"@ja.
+kg:id_1 rdf:type cls:c_3267.
+cls:c_3267 rdfs:label "事業収益還元"@ja.
+kg:id_2 rdfs:label "風力発電事業地域未来創造基金への積立て"@ja.
+kg:id_2 rdf:type cls:c_691.
+cls:c_691 rdfs:label "基金積立"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "地域振興事業等への充当"@ja.
+kg:id_3 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "風力発電事業の収益が原資であること"@ja.
+kg:id_4 rdf:type cls:c_3269.
+cls:c_3269 rdfs:label "事業収益"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "広く市民に還元できる"@ja.
+kg:id_5 rdf:type cls:c_3270.
+cls:c_3270 rdfs:label "市民還元"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "熊の出没"@ja.
+kg:id_6 rdf:type cls:c_849.
+cls:c_849 rdfs:label "獣害"@ja.
+kg:id_7 rdfs:label "耕作放棄地等が隠れ場所になっていること"@ja.
+kg:id_7 rdf:type cls:c_3271.
+cls:c_3271 rdfs:label "耕作放棄地"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "農作物の収穫した残りの放置"@ja.
+kg:id_8 rdf:type cls:c_3272.
+cls:c_3272 rdfs:label "餌資源放置"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "生ごみ等の放置"@ja.
+kg:id_9 rdf:type cls:c_3272.
+kg:id_6 prop:cause kg:id_9.
+kg:id_10 rdfs:label "地元住民の不安感と危機感の強まり"@ja.
+kg:id_10 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_6 prop:effect kg:id_10.
+kg:id_11 rdfs:label "地域以外の方の安全にもつながる問題"@ja.
+kg:id_11 rdf:type cls:c_3274.
+cls:c_3274 rdfs:label "安全問題"@ja.
+kg:id_6 prop:effect kg:id_11.
+kg:id_12 rdfs:label "登下校の時間変更や休校"@ja.
+kg:id_12 rdf:type cls:c_3275.
+cls:c_3275 rdfs:label "学校対応"@ja.
+kg:id_6 prop:effect kg:id_12.
+kg:id_13 rdfs:label "警察等への通報の呼びかけ"@ja.
+kg:id_13 rdf:type cls:c_3276.
+cls:c_3276 rdfs:label "通報要請"@ja.
+kg:id_6 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "現地調査と警戒の実施"@ja.
+kg:id_14 rdf:type cls:c_3277.
+cls:c_3277 rdfs:label "現地警戒"@ja.
+kg:id_6 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "関係機関や地域への連絡"@ja.
+kg:id_15 rdf:type cls:c_3278.
+cls:c_3278 rdfs:label "関係者連絡"@ja.
+kg:id_6 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "広報車による街宣"@ja.
+kg:id_16 rdf:type cls:c_1805.
+cls:c_1805 rdfs:label "広報活動"@ja.
+kg:id_6 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "防災無線での広報"@ja.
+kg:id_17 rdf:type cls:c_1805.
+kg:id_6 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "LINEやツイッターやフェイスブックでの情報発信"@ja.
+kg:id_18 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_6 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "農作物残渣や生ごみを野外に放置しない周知"@ja.
+kg:id_19 rdf:type cls:c_3279.
+cls:c_3279 rdfs:label "放置防止周知"@ja.
+kg:id_6 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "中山間地域等直接支払交付金による農地維持管理支援"@ja.
+kg:id_20 rdf:type cls:c_3280.
+cls:c_3280 rdfs:label "農地管理支援"@ja.
+kg:id_6 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "森林などの下草や灌木の刈り払いによる緩衝帯整備"@ja.
+kg:id_21 rdf:type cls:c_3281.
+cls:c_3281 rdfs:label "緩衝帯整備"@ja.
+kg:id_6 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "地域住民と協働した地域ぐるみの対策検討"@ja.
+kg:id_22 rdf:type cls:c_3282.
+cls:c_3282 rdfs:label "地域協働"@ja.
+kg:id_6 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "ヤングケアラー"@ja.
+kg:id_23 rdf:type cls:c_3283.
+cls:c_3283 rdfs:label "要支援児童"@ja.
+kg:id_24 rdfs:label "家庭内のデリケートな問題で表面化しにくいこと"@ja.
+kg:id_24 rdf:type cls:c_3284.
+cls:c_3284 rdfs:label "家庭問題"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "社会的認知度の低さ"@ja.
+kg:id_25 rdf:type cls:c_1063.
+cls:c_1063 rdfs:label "認知不足"@ja.
+kg:id_23 prop:cause kg:id_25.
+kg:id_26 rdfs:label "子供自身の育ちや教育への影響"@ja.
+kg:id_26 rdf:type cls:c_2410.
+cls:c_2410 rdfs:label "発達影響"@ja.
+kg:id_23 prop:effect kg:id_26.
+kg:id_27 rdfs:label "子供自身の権利が守られていないこと"@ja.
+kg:id_27 rdf:type cls:c_3285.
+cls:c_3285 rdfs:label "権利侵害"@ja.
+kg:id_23 prop:effect kg:id_27.
+kg:id_28 rdfs:label "学習や心身の健康や生活や進路選択や幸福度への影響"@ja.
+kg:id_28 rdf:type cls:c_356.
+cls:c_356 rdfs:label "生活影響"@ja.
+kg:id_23 prop:effect kg:id_28.
+kg:id_29 rdfs:label "認知度の向上"@ja.
+kg:id_29 rdf:type cls:c_3286.
+cls:c_3286 rdfs:label "認知向上"@ja.
+kg:id_23 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "学校を心理的に安全安心な場所にすること"@ja.
+kg:id_30 rdf:type cls:c_3287.
+cls:c_3287 rdfs:label "相談環境"@ja.
+kg:id_23 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "早期発見して適切な支援につなぐこと"@ja.
+kg:id_31 rdf:type cls:c_3288.
+cls:c_3288 rdfs:label "早期発見支援"@ja.
+kg:id_23 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "他の専門分野との連携"@ja.
+kg:id_32 rdf:type cls:c_3289.
+cls:c_3289 rdfs:label "分野連携"@ja.
+kg:id_23 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "避難情報の分かりにくさ"@ja.
+kg:id_33 rdf:type cls:c_3290.
+cls:c_3290 rdfs:label "避難情報"@ja.
+kg:id_34 rdfs:label "避難勧告と避難指示の違いが分かりにくかったこと"@ja.
+kg:id_34 rdf:type cls:c_3291.
+cls:c_3291 rdfs:label "情報不統一"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "住民が勧告と指示の違いに迷うこと"@ja.
+kg:id_35 rdf:type cls:c_3292.
+cls:c_3292 rdfs:label "住民混乱"@ja.
+kg:id_33 prop:effect kg:id_35.
+kg:id_36 rdfs:label "避難勧告を廃止し避難指示に一本化"@ja.
+kg:id_36 rdf:type cls:c_3209.
+cls:c_3209 rdfs:label "情報一本化"@ja.
+kg:id_33 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "広報やホームページやSNSやポスターやチラシによる周知"@ja.
+kg:id_37 rdf:type cls:c_3293.
+cls:c_3293 rdfs:label "周知広報"@ja.
+kg:id_33 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "避難訓練の繰り返し実施"@ja.
+kg:id_38 rdf:type cls:c_1261.
+cls:c_1261 rdfs:label "避難訓練"@ja.
+kg:id_33 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "空き家の増加"@ja.
+kg:id_39 rdf:type cls:c_1739.
+cls:c_1739 rdfs:label "空き家問題"@ja.
+kg:id_40 rdfs:label "人口減少"@ja.
+kg:id_40 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "少子高齢化"@ja.
+kg:id_41 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_39 prop:cause kg:id_41.
+kg:id_42 rdfs:label "核家族化"@ja.
+kg:id_42 rdf:type cls:c_3294.
+cls:c_3294 rdfs:label "家族縮小"@ja.
+kg:id_39 prop:cause kg:id_42.
+kg:id_43 rdfs:label "世帯当たりの人員減少による既存中古物件とのミスマッチ"@ja.
+kg:id_43 rdf:type cls:c_3295.
+cls:c_3295 rdfs:label "住宅不一致"@ja.
+kg:id_39 prop:cause kg:id_43.
+kg:id_44 rdfs:label "所有者の把握が困難な住宅の増加"@ja.
+kg:id_44 rdf:type cls:c_3296.
+cls:c_3296 rdfs:label "所有者不明化"@ja.
+kg:id_39 prop:cause kg:id_44.
+kg:id_45 rdfs:label "管理不適切な空き家問題の解決が行政だけでは厳しい状況"@ja.
+kg:id_45 rdf:type cls:c_3297.
+cls:c_3297 rdfs:label "行政対応困難"@ja.
+kg:id_39 prop:effect kg:id_45.
+kg:id_46 rdfs:label "空き家等の適正管理を啓発するチラシの送付"@ja.
+kg:id_46 rdf:type cls:c_3298.
+cls:c_3298 rdfs:label "管理啓発"@ja.
+kg:id_39 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "返信はがきによる意向調査"@ja.
+kg:id_47 rdf:type cls:c_1267.
+cls:c_1267 rdfs:label "意向調査"@ja.
+kg:id_39 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "空き家等無料相談会"@ja.
+kg:id_48 rdf:type cls:c_2126.
+cls:c_2126 rdfs:label "相談支援"@ja.
+kg:id_39 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "解体補助金の周知"@ja.
+kg:id_49 rdf:type cls:c_3299.
+cls:c_3299 rdfs:label "解体支援"@ja.
+kg:id_39 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "空き家等情報サイトへの掲載呼びかけ"@ja.
+kg:id_50 rdf:type cls:c_3300.
+cls:c_3300 rdfs:label "情報掲載"@ja.
+kg:id_39 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "自治会や不動産業者や法務関係団体との連携"@ja.
+kg:id_51 rdf:type cls:c_2967.
+cls:c_2967 rdfs:label "官民連携"@ja.
+kg:id_39 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "マイナンバーカードのオンライン申請の課題"@ja.
+kg:id_52 rdf:type cls:c_3301.
+cls:c_3301 rdfs:label "電子申請課題"@ja.
+kg:id_53 rdfs:label "マイナポータル上で申請完了表示がなかったこと"@ja.
+kg:id_53 rdf:type cls:c_3302.
+cls:c_3302 rdfs:label "完了表示不足"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "重複申請として却下され郵送で通知されること"@ja.
+kg:id_54 rdf:type cls:c_3303.
+cls:c_3303 rdfs:label "重複申請却下"@ja.
+kg:id_52 prop:effect kg:id_54.
+kg:id_55 rdfs:label "DV等がある世帯で世帯主給付が適切でない場合があること"@ja.
+kg:id_55 rdf:type cls:c_3304.
+cls:c_3304 rdfs:label "給付不適合"@ja.
+kg:id_52 prop:effect kg:id_55.
+kg:id_56 rdfs:label "マイナンバー利活用の前向きな検討"@ja.
+kg:id_56 rdf:type cls:c_3305.
+cls:c_3305 rdfs:label "制度改善検討"@ja.
+kg:id_52 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "公共施設の老朽化"@ja.
+kg:id_57 rdf:type cls:c_860.
+cls:c_860 rdfs:label "施設老朽化"@ja.
+kg:id_58 rdfs:label "施設全体が更新時期を迎え老朽化していること"@ja.
+kg:id_58 rdf:type cls:c_3306.
+cls:c_3306 rdfs:label "更新時期到来"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "今後40年間で多額の更新費用が必要となること"@ja.
+kg:id_59 rdf:type cls:c_3307.
+cls:c_3307 rdfs:label "更新費用増大"@ja.
+kg:id_57 prop:effect kg:id_59.
+kg:id_60 rdfs:label "限られた財源の中で選択と集中が必要な厳しい状況"@ja.
+kg:id_60 rdf:type cls:c_3127.
+cls:c_3127 rdfs:label "財政制約"@ja.
+kg:id_57 prop:effect kg:id_60.
+kg:id_61 rdfs:label "公共施設適正化基本計画の策定"@ja.
+kg:id_61 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_57 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "適正化実施方針による集約"@ja.
+kg:id_62 rdf:type cls:c_3308.
+cls:c_3308 rdfs:label "施設集約"@ja.
+kg:id_57 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "安全と劣化を第一念頭に置いた対応"@ja.
+kg:id_63 rdf:type cls:c_3309.
+cls:c_3309 rdfs:label "安全優先対応"@ja.
+kg:id_57 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "無電柱化の必要性"@ja.
+kg:id_64 rdf:type cls:c_3310.
+cls:c_3310 rdfs:label "無電柱化"@ja.
+kg:id_65 rdfs:label "電柱倒壊による通行の妨げ"@ja.
+kg:id_65 rdf:type cls:c_3311.
+cls:c_3311 rdfs:label "通行阻害"@ja.
+kg:id_64 prop:cause kg:id_65.
+kg:id_66 rdfs:label "停電や通信障害が長期間に及ぶこと"@ja.
+kg:id_66 rdf:type cls:c_3312.
+cls:c_3312 rdfs:label "長期障害"@ja.
+kg:id_64 prop:cause kg:id_66.
+kg:id_67 rdfs:label "防災性の向上や安全で円滑な交通確保や良好な景観形成の必要"@ja.
+kg:id_67 rdf:type cls:c_3313.
+cls:c_3313 rdfs:label "防災交通景観"@ja.
+kg:id_64 prop:effect kg:id_67.
+kg:id_68 rdfs:label "酒田市無電柱化推進計画の策定"@ja.
+kg:id_68 rdf:type cls:c_3314.
+cls:c_3314 rdfs:label "推進計画"@ja.
+kg:id_64 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "無電柱化連絡協議会の設置"@ja.
+kg:id_69 rdf:type cls:c_3315.
+cls:c_3315 rdfs:label "協議体設置"@ja.
+kg:id_64 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "電線管理者や道路管理者等のすり合わせと調整"@ja.
+kg:id_70 rdf:type cls:c_3316.
+cls:c_3316 rdfs:label "関係者調整"@ja.
+kg:id_64 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "光丘文庫建物の維持"@ja.
+kg:id_71 rdf:type cls:c_3317.
+cls:c_3317 rdfs:label "建物維持"@ja.
+kg:id_72 rdfs:label "老朽化の進行"@ja.
+kg:id_72 rdf:type cls:c_680.
+cls:c_680 rdfs:label "老朽化"@ja.
+kg:id_71 prop:cause kg:id_72.
+kg:id_73 rdfs:label "耐震補強の必要性"@ja.
+kg:id_73 rdf:type cls:c_3318.
+cls:c_3318 rdfs:label "耐震補強"@ja.
+kg:id_71 prop:cause kg:id_73.
+kg:id_74 rdfs:label "コンクリート部分の中性化の進行可能性"@ja.
+kg:id_74 rdf:type cls:c_3319.
+cls:c_3319 rdfs:label "劣化可能性"@ja.
+kg:id_71 prop:cause kg:id_74.
+kg:id_75 rdfs:label "建物の耐震性への不安"@ja.
+kg:id_75 rdf:type cls:c_3320.
+cls:c_3320 rdfs:label "耐震不安"@ja.
+kg:id_71 prop:effect kg:id_75.
+kg:id_76 rdfs:label "機械警備や電気や防災設備点検や敷地内清掃による必要最小限の管理"@ja.
+kg:id_76 rdf:type cls:c_3321.
+cls:c_3321 rdfs:label "最低限管理"@ja.
+kg:id_71 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "専門的な調査と長期的な計画に基づく対策検討"@ja.
+kg:id_77 rdf:type cls:c_987.
+cls:c_987 rdfs:label "調査検討"@ja.
+kg:id_71 prop:contermeasure kg:id_77.
+kg:st_1 rdfs:label "後藤仁議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "収益還元は話題性とスピード感を持って今年度から実施すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "風力発電の利益還元を早期に見える形で示し市民理解を高めるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "餌場をつくらないことが人と熊のすみ分けに重要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "餌場をつくらないことが人と熊のすみ分けに重要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "人家近くへの出没が増え住民の不安と危機感が強まっている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "大谷謙治市民部長"@ja.
+kg:st_2 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_6 prop:content "地域以外の方の安全のためできる限り警察等に通報してほしい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "熊対策用として緩衝帯を事業化して整備すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "江口暢子議員"@ja.
+kg:st_3 rdfs:type cls:st_16.
+kg:op_8 prop:content "家庭内の問題で可視化されにくく支援につながりにくい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "鈴木和仁教育長"@ja.
+kg:st_4 rdfs:type cls:st_57.
+cls:st_57 rdfs:label "教育行政"@ja.
+kg:op_9 prop:content "教職員と子どもと保護者の認知を高めることが最重要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:op_10 prop:content "子どもの権利を主軸に置いて対応すべき問題"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "日々の介護負担が本人の幸福度や将来にまで影響し得る"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "理解促進と認知度向上が早期発見の前提になる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "学校が安心して何でも相談できる場であることが重要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "学校は発見の場となりその後は専門分野につなぐべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "教育福祉介護医療の連携が必要"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "適切な避難タイミングの認識が重要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "那須欣男総務部危機管理監"@ja.
+kg:st_5 rdfs:type cls:st_2.
+kg:op_17 prop:content "出水期を前に継続的に市民へ周知し避難の意識づけを改めたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "新しい避難情報を使った訓練を繰り返すことが効果的"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "安藤浩夫議員"@ja.
+kg:st_6 rdfs:type cls:st_16.
+kg:op_19 prop:content "空き家の情報量を増やし官民一体で抑制と予防を進めるべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:op_20 prop:content "相談会の回数を増やし抑制と予防に生かすべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:op_21 prop:content "官民一体となって空き家発生の抑制に努めたい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "竹越攻征総務部長"@ja.
+kg:st_7 rdfs:type cls:st_2.
+kg:op_22 prop:content "オンライン申請者に郵送で却下通知が届く仕組みにもどかしさを感じた"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_7.
+kg:op_23 prop:content "世帯主限定の給付は多様な家庭事情に必ずしも適切でない"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_7.
+kg:op_24 prop:content "しっかり選択と集中をしないとなかなか厳しい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_7.
+kg:op_25 prop:content "安全と劣化を第一に優先順位をつけて対応する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "藤井昌道建設部長"@ja.
+kg:st_8 rdfs:type cls:st_2.
+kg:op_26 prop:content "国庫補助活用と円滑な事業推進のため早期策定に取り組みたい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "関井美喜男議員"@ja.
+kg:st_9 rdfs:type cls:st_16.
+kg:op_27 prop:content "酒田市が中心となって関係者が一堂に会する協議体を設けるべき"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "阿部秀徳議員"@ja.
+kg:st_10 rdfs:type cls:st_16.
+kg:op_28 prop:content "劣化を防ぐため応急的な処置も検討すべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_10.
+kg:st_11 rdfs:label "池田里枝教育次長"@ja.
+kg:st_11 rdfs:type cls:st_57.
+kg:op_29 prop:content "応急措置は難しく長期的な計画に基づく対策が必要"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_11.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業の収益につきましては、風力発電事業地域未来創造基金、こちらのほうに積立てをして、広く市民に還元できるようにと地域振興事業等に充てることとしております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "事業の収益につきましては、風力発電事業地域未来創造基金、こちらのほうに積立てをして、広く市民に還元できるようにと地域振興事業等に充てることとしております"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "具体的な使途については未定でございますけれども、風力発電事業の収益が原資であるということを踏まえて、今後の予算編成の際に決定していきたいと考えているところでございます"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "事業の収益につきましては、風力発電事業地域未来創造基金、こちらのほうに積立てをして、広く市民に還元できるようにと地域振興事業等に充てることとしております"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:text-txt_contents "熊が人里周辺に出没しないようにする対策としては、やはり隠れ場所となるような耕作放棄地等をなくし"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "そのため、農作物の収穫した残り、それから、生ごみ等については、熊にとっては餌になってしまうことから、野外に放置しないように市広報等を通じて周知を図っているところでございます"@ja.
+<< kg:id_6 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "そのため、農作物の収穫した残り、それから、生ごみ等については、熊にとっては餌になってしまうことから、野外に放置しないように市広報等を通じて周知を図っているところでございます"@ja.
+<< kg:id_6 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "近年は熊が人家近く、30メートルから50メートル以内に熊が現れているという情報も多く、地元住民の不安感、危機感が強まっていると感じるところでございます"@ja.
+<< kg:id_6 prop:effect kg:id_11 >>
+    prop:text-txt_contents "地域以外の方の安全にもつながることでございますので、これにつきましては、できる限り警察等に通報していただくよう機会があるごとに市民の方にお願いしているという状況でございます"@ja.
+<< kg:id_6 prop:effect kg:id_12 >>
+    prop:text-txt_contents "熊の出没を受けた登下校の時間変更や休校などの情報は速やかに警察へも連絡し"@ja.
+<< kg:id_6 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これにつきましては、できる限り警察等に通報していただくよう機会があるごとに市民の方にお願いしているという状況でございます"@ja.
+<< kg:id_6 prop:contermeasure kg:id_14 >>
+    prop:text-txt_contents "市民等からの通報を受けまして、警察や各総合支所の職員、それから、環境衛生課職員による現地調査と警戒を実施する"@ja.
+<< kg:id_6 prop:contermeasure kg:id_15 >>
+    prop:text-txt_contents "市の関係各課、市内外の関係機関、猟友会や庄内総合支所等への連絡、それから、地域のコミュニティ振興会や自治会、地元の幼稚園・保育園、小中学校、高校等への連絡を行っている"@ja.
+<< kg:id_6 prop:contermeasure kg:id_16 >>
+    prop:text-txt_contents "必要に応じまして、出没地域に対しましては、広報車による街宣、それから、防災無線での広報等を実施している"@ja.
+<< kg:id_6 prop:contermeasure kg:id_17 >>
+    prop:text-txt_contents "必要に応じまして、出没地域に対しましては、広報車による街宣、それから、防災無線での広報等を実施している"@ja.
+<< kg:id_6 prop:contermeasure kg:id_18 >>
+    prop:text-txt_contents "今年度からは危機管理課や広報広聴係と連携し、市長公室になりますけれども、広い範囲で影響のある市街地付近での出没事案などの場合は、市のＬＩＮＥ、それから、ツイッター、フェイスブック等での情報発信も行っております"@ja.
+<< kg:id_6 prop:contermeasure kg:id_19 >>
+    prop:text-txt_contents "農作物の収穫した残り、それから、生ごみ等については、熊にとっては餌になってしまうことから、野外に放置しないように市広報等を通じて周知を図っているところでございます"@ja.
+<< kg:id_6 prop:contermeasure kg:id_20 >>
+    prop:text-txt_contents "耕作放棄地の発生防止のために、農地の維持管理を目的といたしました中山間地域等直接支払交付金を交付するなど、適切な営農支援を行っているところでございます"@ja.
+<< kg:id_6 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "森林などの下草や灌木、低木ですけれども、この刈り払いをしっかり行いながら、見通しを良くする緩衝帯をつくることで、警戒心の強い熊の隠れ場所をなくし、出没しにくくすることが考えられます"@ja.
+<< kg:id_6 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "緩衝帯の整備等は、広域かつ長期的な維持管理が必要となるため、やはり地域住民と協働して課題解決に取り組み、地域ぐるみで対策を検討していく必要がある"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "ヤングケアラーは、家庭内のデリケートな問題であることから、表面化しにくい構造になっています"@ja.
+<< kg:id_23 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "ヤングケアラーは社会的認知度が低く、そのために家庭も子供自身も、学校をはじめ行政も支援が必要になるような事例に及ぶ場合でも気づくことができないことがある"@ja.
+<< kg:id_23 prop:effect kg:id_26 >>
+    prop:text-txt_contents "本来、大人が担うと想定されている家事や家族の世話などを日常的に行っていることにより、子供自身の育ちや教育に影響がある"@ja.
+<< kg:id_23 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "子供自身の権利が守られていないと思われる18歳未満の子供のことをいうそうです"@ja.
+<< kg:id_23 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "子供の学習や心身の健康、生活や進路選択、幸福度まで大きな影響を与えてしまうことがある"@ja.
+<< kg:id_23 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "支援の前に、何はともあれ表面化しにくいこういう状況の中で、どう発見していくかということが非常に重要なことなんだろうと思います。そのためにも認知度を上げていくことというのが最重要なことではないか"@ja.
+<< kg:id_23 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "学校が心理的に安全・安心な場所になっていることも早期の発見には欠かせないことだと私は考えております。周囲を気にすることなく、安心して何でも相談ができる環境"@ja.
+<< kg:id_23 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "ヤングケアラーに関する理解促進を図りながら、早期の発見ができるよう環境を整えて、その適切な支援につないでいく"@ja.
+<< kg:id_23 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "福祉、医療、介護、教育と多くの分野、機関の連携が必要です"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:text-txt_contents "従来の警戒レベル４避難勧告・避難指示の違いの分かりにくさを解消するのが狙い"@ja.
+<< kg:id_33 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "住民には勧告と指示の違いに迷うことがなくなるということであります"@ja.
+<< kg:id_33 prop:contermeasure kg:id_36 >>
+    prop:text-txt_contents "今回の法改正では、災害発生のおそれが高い際に出してきた避難勧告を廃止し、避難指示に一本化するのが柱となっております"@ja.
+<< kg:id_33 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "避難情報の変更については、本市６月16日号の広報に掲載したほか、市のホームページやフェイスブック、ＬＩＮＥ等で周知を行っております。また、コミュニティセンターや市所管施設等においてポスターを掲示したり、市役所、総合文化センター、各総合支所でチラシ配布を行うなどして周知・広報に努めております"@ja.
+<< kg:id_33 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "そういった訓練を繰り返しやはりやっていくことが必要なのかなと考えているところでございます"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:text-txt_contents "その要因といたしましては、やはり人口減少、少子高齢化、核家族化"@ja.
+<< kg:id_39 prop:cause kg:id_41 >>
+    prop:text-txt_contents "その要因といたしましては、やはり人口減少、少子高齢化、核家族化"@ja.
+<< kg:id_39 prop:cause kg:id_42 >>
+    prop:text-txt_contents "その要因といたしましては、やはり人口減少、少子高齢化、核家族化"@ja.
+<< kg:id_39 prop:cause kg:id_43 >>
+    prop:text-txt_contents "世帯当たりの人員減少による既存の中古物件とのミスマッチ"@ja.
+<< kg:id_39 prop:cause kg:id_44 >>
+    prop:text-txt_contents "所有者の把握が困難な住宅の増加が本市においても挙げられる"@ja.
+<< kg:id_39 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "管理が不適切な空き家等につきましては、やはり相続の問題、それから、経済的な問題など、様々な個別の事情を抱えている事例が大変多いことから、空き家問題をなかなか行政だけの力で解決するには大変厳しい状況"@ja.
+<< kg:id_39 prop:contermeasure kg:id_46 >>
+    prop:text-txt_contents "固定資産税納税通知書に同封しております空き家等の適正管理を啓発するチラシ"@ja.
+<< kg:id_39 prop:contermeasure kg:id_47 >>
+    prop:text-txt_contents "空き家等をどうしたいのかを、そういった意向を調査する返信はがきとなっておりまして、その意向を確認した上で"@ja.
+<< kg:id_39 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "希望者に空き家等の無料相談会につなげるという取組を行っております"@ja.
+<< kg:id_39 prop:contermeasure kg:id_49 >>
+    prop:text-txt_contents "相談者に市の単独で行っております解体補助金の周知"@ja.
+<< kg:id_39 prop:contermeasure kg:id_50 >>
+    prop:text-txt_contents "ホームページの空き家等情報サイトへの掲載を呼びかけるなど、空き家等の掘り起こしにも努めている"@ja.
+<< kg:id_39 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "空き家等の所有者、それから、地域の自治会組織、不動産業者や法務関係の団体等との連携を密に図りながら、官民一体となった空き家発生の抑制に努めてまいりたい"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:text-txt_contents "オンライン上で最後、『申請完了』のような表示がなかったとお伺いしているので、市民の方が不安になられて、一度入力をしたのにもう一度入力してしまった"@ja.
+<< kg:id_52 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "『重複申請』ということで、これは却下ということで、郵送で残念なお知らせをすると"@ja.
+<< kg:id_52 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "特別定額給付金制度自体の最大の課題というのが、やはり申請者を世帯主に限定したと... 様々な家庭の事情により、必ずしもこの世帯主給付というのが適切であったのかどうか"@ja.
+<< kg:id_52 prop:contermeasure kg:id_56 >>
+    prop:text-txt_contents "今回の特別定額給付金事業の経験を踏まえて様々な改善を図っていただいて、本市でも明らかになったこういった知見を利用しながら、デジタル変革戦略室と連携してしっかりとマイナンバーの利活用を前向きに検討してまいりたい"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:text-txt_contents "現在、市で保有している施設の老朽化、それから更新と、施設全体が更新時期を迎えたり老朽化したりしている"@ja.
+<< kg:id_57 prop:effect kg:id_59 >>
+    prop:text-txt_contents "今後この施設を全て更新していくとした場合に、今後40年間で必要となる費用というのが試算されていて、これが約2,000億円"@ja.
+<< kg:id_57 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "結論から申し上げますと、しっかりと選択と集中をしていかないとなかなか厳しい状況だ"@ja.
+<< kg:id_57 prop:contermeasure kg:id_61 >>
+    prop:text-txt_contents "平成26年度に酒田市公共施設適正化基本計画を策定"@ja.
+<< kg:id_57 prop:contermeasure kg:id_62 >>
+    prop:text-txt_contents "翌27年度にはこの基本計画に基づく適正化実施方針を定めて実施している"@ja.
+<< kg:id_57 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "まずは安全、それから劣化、こういったものを第一念頭に置きながら対応させていただきたい"@ja.
+<< kg:id_64 prop:cause kg:id_65 >>
+    prop:text-txt_contents "近年の台風や豪雨あるいは地震といった災害では、電柱倒壊による通行の妨げ"@ja.
+<< kg:id_64 prop:cause kg:id_66 >>
+    prop:text-txt_contents "停電並びに通信障害等が長期間に及ぶケースもあり"@ja.
+<< kg:id_64 prop:effect kg:id_67 >>
+    prop:text-txt_contents "道路の無電柱化の目的は、防災上の向上をはじめ、安全かつ円滑な交通の確保、それから良好な景観形成等に寄与すること"@ja.
+<< kg:id_64 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "防災、景観形成等の観点から無電柱化を図るべき路線を抽出した上で『酒田市無電柱化推進計画』を策定し、公表することが必須条件になります"@ja.
+<< kg:id_64 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "こうしたことを考え合わせると、本市が中心的な役割を担う無電柱化連絡協議会、これの設置の必要性は強く認識をしているところであります"@ja.
+<< kg:id_64 prop:contermeasure kg:id_70 >>
+    prop:text-txt_contents "電線管理者、道路管理者等が会し、おのおのの中長期的な工事計画、基本方針を持ち寄って、できる限り同一路線で、それも同時期に効率的に工事を実施し、無電柱化を図ることができないか"@ja.
+<< kg:id_71 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "建物は平成29年に閉館したままで、劣化の進行も懸念されております"@ja.
+<< kg:id_71 prop:cause kg:id_73 >>
+    prop:text-txt_contents "建築専門の先生によって目視で調査していただいたところ、耐震補強の必要性を指摘されております"@ja.
+<< kg:id_71 prop:cause kg:id_74 >>
+    prop:text-txt_contents "コンクリート部分の中性化が進んでいるかもしれない"@ja.
+<< kg:id_71 prop:effect kg:id_75 >>
+    prop:text-txt_contents "光丘文庫建物の耐震性の不安については、耐震要素である壁の量がちょっと多くないかなという指摘"@ja.
+<< kg:id_71 prop:contermeasure kg:id_76 >>
+    prop:text-txt_contents "現在は旧光丘文庫の建物につきましては、必要最小限の管理ということで、機械警備、電気、それから防災設備点検、敷地内の清掃など業務を委託"@ja.
+<< kg:id_71 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "専門的な調査を行った上でいろいろな手続が必要だと思いますけれども... 長期的な計画に基づいて対策を考えていく"@ja.
+}

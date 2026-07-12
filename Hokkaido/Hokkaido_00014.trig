@@ -1,0 +1,561 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00014> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電計画への住民の反対"@ja.
+kg:id_1 rdf:type cls:c_14166.
+cls:c_14166 rdfs:label "住民の反対"@ja.
+kg:id_2 rdfs:label "風車建設に伴う景観の悪化"@ja.
+kg:id_2 rdf:type cls:c_839.
+cls:c_839 rdfs:label "景観悪化"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "森林伐採"@ja.
+kg:id_3 rdf:type cls:c_13215.
+cls:c_13215 rdfs:label "森林伐採"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "土砂崩れ"@ja.
+kg:id_4 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "生態系への影響"@ja.
+kg:id_5 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "企業の姿勢への不信"@ja.
+kg:id_6 rdf:type cls:c_14200.
+cls:c_14200 rdfs:label "事業者不信"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "蔵王国定公園を含む事業想定区域"@ja.
+kg:id_7 rdf:type cls:c_14448.
+cls:c_14448 rdfs:label "保護地域"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "水源への影響"@ja.
+kg:id_8 rdf:type cls:c_78.
+cls:c_78 rdfs:label "水源影響"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "適地の減少により山の稜線などへの大型風車計画が増加"@ja.
+kg:id_9 rdf:type cls:c_14449.
+cls:c_14449 rdfs:label "適地減少"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "事業計画の急増"@ja.
+kg:id_10 rdf:type cls:c_14450.
+cls:c_14450 rdfs:label "計画急増"@ja.
+kg:id_1 prop:cause kg:id_10.
+kg:id_11 rdfs:label "自然環境への影響への懸念"@ja.
+kg:id_11 rdf:type cls:c_54.
+cls:c_54 rdfs:label "環境懸念"@ja.
+kg:id_1 prop:cause kg:id_11.
+kg:id_12 rdfs:label "保安林を含む区域での計画"@ja.
+kg:id_12 rdf:type cls:c_14451.
+cls:c_14451 rdfs:label "保安林区域"@ja.
+kg:id_1 prop:cause kg:id_12.
+kg:id_13 rdfs:label "希少種クマタカの生息エリアでの計画"@ja.
+kg:id_13 rdf:type cls:c_6291.
+cls:c_6291 rdfs:label "希少種生息地"@ja.
+kg:id_1 prop:cause kg:id_13.
+kg:id_14 rdfs:label "原生的な森林を含む計画"@ja.
+kg:id_14 rdf:type cls:c_14452.
+cls:c_14452 rdfs:label "自然林区域"@ja.
+kg:id_1 prop:cause kg:id_14.
+kg:id_15 rdfs:label "農業用水への影響"@ja.
+kg:id_15 rdf:type cls:c_14453.
+cls:c_14453 rdfs:label "水利用影響"@ja.
+kg:id_1 prop:cause kg:id_15.
+kg:id_16 rdfs:label "風車から発生する騒音"@ja.
+kg:id_16 rdf:type cls:c_8697.
+cls:c_8697 rdfs:label "騒音発生"@ja.
+kg:id_1 prop:cause kg:id_16.
+kg:id_17 rdfs:label "配慮書の縦覧期間の制約と資料閲覧の不便さ"@ja.
+kg:id_17 rdf:type cls:c_14454.
+cls:c_14454 rdfs:label "情報アクセス不全"@ja.
+kg:id_1 prop:cause kg:id_17.
+kg:id_18 rdfs:label "地域の合意が得られず計画が撤回される"@ja.
+kg:id_18 rdf:type cls:c_1291.
+cls:c_1291 rdfs:label "計画撤回"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "景観の悪化"@ja.
+kg:id_19 rdf:type cls:c_839.
+kg:id_1 prop:effect kg:id_19.
+kg:id_20 rdfs:label "土砂災害のリスク増大"@ja.
+kg:id_20 rdf:type cls:c_832.
+kg:id_1 prop:effect kg:id_20.
+kg:id_1 prop:effect kg:id_15.
+kg:id_21 rdfs:label "風車騒音の発生"@ja.
+kg:id_21 rdf:type cls:c_8697.
+kg:id_1 prop:effect kg:id_21.
+kg:id_1 prop:effect kg:id_5.
+kg:id_22 rdfs:label "クマが山を追われ家畜を襲う"@ja.
+kg:id_22 rdf:type cls:c_2867.
+cls:c_2867 rdfs:label "獣害発生"@ja.
+kg:id_1 prop:effect kg:id_22.
+kg:id_23 rdfs:label "土砂崩れで畑が使えなくなる"@ja.
+kg:id_23 rdf:type cls:c_11646.
+cls:c_11646 rdfs:label "農地被害"@ja.
+kg:id_1 prop:effect kg:id_23.
+kg:id_24 rdfs:label "北海道の自然の魅力が失われる"@ja.
+kg:id_24 rdf:type cls:c_14455.
+cls:c_14455 rdfs:label "自然魅力低下"@ja.
+kg:id_1 prop:effect kg:id_24.
+kg:id_25 rdfs:label "漁業への影響"@ja.
+kg:id_25 rdf:type cls:c_3020.
+cls:c_3020 rdfs:label "漁業影響"@ja.
+kg:id_1 prop:effect kg:id_25.
+kg:id_26 rdfs:label "売電収入がほとんど地域に還元されていない"@ja.
+kg:id_26 rdf:type cls:c_14456.
+cls:c_14456 rdfs:label "地域還元不足"@ja.
+kg:id_1 prop:effect kg:id_26.
+kg:id_27 rdfs:label "国"@ja.
+kg:id_27 rdf:type cls:c_891.
+cls:c_891 rdfs:label "行政機関"@ja.
+kg:id_28 rdfs:label "市町村が再エネの促進区域を指定する制度を創設"@ja.
+kg:id_28 rdf:type cls:c_14457.
+cls:c_14457 rdfs:label "区域指定制度"@ja.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "企業に促進区域内で事業を行うよう配慮を求める"@ja.
+kg:id_29 rdf:type cls:c_14458.
+cls:c_14458 rdfs:label "立地配慮要請"@ja.
+kg:id_27 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "資源エネルギー庁"@ja.
+kg:id_30 rdf:type cls:c_891.
+kg:id_31 rdfs:label "企業側に積極的な住民説明を促す"@ja.
+kg:id_31 rdf:type cls:c_14459.
+cls:c_14459 rdfs:label "住民説明促進"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "宮城県"@ja.
+kg:id_32 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_33 rdfs:label "再エネ課税を検討"@ja.
+kg:id_33 rdf:type cls:c_14460.
+cls:c_14460 rdfs:label "再エネ課税"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "促進区域は非課税として適地への誘導を進める"@ja.
+kg:id_34 rdf:type cls:c_14461.
+cls:c_14461 rdfs:label "適地誘導"@ja.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "北海道"@ja.
+kg:id_35 rdf:type cls:c_909.
+kg:id_36 rdfs:label "促進地域の基準を策定中"@ja.
+kg:id_36 rdf:type cls:c_14462.
+cls:c_14462 rdfs:label "区域基準策定"@ja.
+kg:id_35 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "ユーラスエナジーホールディングス"@ja.
+kg:id_37 rdf:type cls:c_2246.
+cls:c_2246 rdfs:label "事業者"@ja.
+kg:id_38 rdfs:label "風車の数を減らす方向で検討"@ja.
+kg:id_38 rdf:type cls:c_14437.
+cls:c_14437 rdfs:label "規模縮小"@ja.
+kg:id_37 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "関西電力"@ja.
+kg:id_39 rdf:type cls:c_2246.
+kg:id_40 rdfs:label "売電収入の一部で基金を創設し地元農産品の販売促進に充てることを検討"@ja.
+kg:id_40 rdf:type cls:c_14463.
+cls:c_14463 rdfs:label "地域還元策"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "住民団体「丸森の未来を考える会」"@ja.
+kg:id_41 rdf:type cls:c_13351.
+cls:c_13351 rdfs:label "住民団体"@ja.
+kg:id_42 rdfs:label "地元の合意がなければ事業計画を進めないよう求める"@ja.
+kg:id_42 rdf:type cls:c_14464.
+cls:c_14464 rdfs:label "合意要求"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "町議会に請願"@ja.
+kg:id_43 rdf:type cls:c_13207.
+cls:c_13207 rdfs:label "請願提出"@ja.
+kg:id_41 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "環境相などに要望書を提出"@ja.
+kg:id_44 rdf:type cls:c_8905.
+cls:c_8905 rdfs:label "要望書提出"@ja.
+kg:id_41 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "町民有志"@ja.
+kg:id_45 rdf:type cls:c_13351.
+kg:id_46 rdfs:label "考える会を結成し風車建設の悪影響を訴える"@ja.
+kg:id_46 rdf:type cls:c_13205.
+cls:c_13205 rdfs:label "反対活動"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "洋上風力発電"@ja.
+kg:id_47 rdf:type cls:c_1754.
+cls:c_1754 rdfs:label "洋上風力発電"@ja.
+kg:id_48 rdfs:label "陸地への影響を少なくする解決策として活用"@ja.
+kg:id_48 rdf:type cls:c_14465.
+cls:c_14465 rdfs:label "影響低減策"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "地域と再エネの共生"@ja.
+kg:id_49 rdf:type cls:c_12899.
+cls:c_12899 rdfs:label "地域共生"@ja.
+kg:id_50 rdfs:label "エネルギーの地産地消を進める"@ja.
+kg:id_50 rdf:type cls:c_625.
+cls:c_625 rdfs:label "地産地消"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "地域新電力を設けて風力や太陽光などの再エネを地元で使う"@ja.
+kg:id_51 rdf:type cls:c_3835.
+cls:c_3835 rdfs:label "地域新電力"@ja.
+kg:id_49 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "再エネ導入のあり方"@ja.
+kg:id_52 rdf:type cls:c_14466.
+cls:c_14466 rdfs:label "導入方針"@ja.
+kg:id_53 rdfs:label "地域レベルで電源構成を考えるボトムアップ型に転換する"@ja.
+kg:id_53 rdf:type cls:c_14467.
+cls:c_14467 rdfs:label "地域主導"@ja.
+kg:id_52 prop:contermeasure kg:id_53.
+kg:st_1 rdfs:label "宮城県川崎町の住民有志"@ja.
+kg:st_1 rdfs:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_1 prop:content "景観を損ねるとして反対している"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "後志管内仁木町の住民説明会出席者"@ja.
+kg:st_2 rdfs:type cls:st_5.
+kg:op_2 prop:content "森林伐採による農業用水への影響を懸念している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "日本自然保護協会の若松伸彦・保護チーム室長"@ja.
+kg:st_3 rdfs:type cls:st_148.
+cls:st_148 rdfs:label "自然保護団体"@ja.
+kg:op_3 prop:content "林道造成のため樹齢３００年の樹木を切り倒した例があると指摘する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "住民説明会の会場参加者"@ja.
+kg:st_4 rdfs:type cls:st_5.
+kg:op_4 prop:content "土砂災害のリスクを指摘している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "住民団体「丸森の未来を考える会」共同代表 菅野俊一"@ja.
+kg:st_5 rdfs:type cls:st_106.
+cls:st_106 rdfs:label "住民団体"@ja.
+kg:op_5 prop:content "風車建設で土砂災害の危険が増すとして強く反発している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_5.
+kg:op_6 prop:content "生態系への影響を懸念している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "町内のデザイナー 中山奈月"@ja.
+kg:st_6 rdfs:type cls:st_5.
+kg:op_7 prop:content "風車で山を追われたクマが家畜を襲う未来を懸念している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "宮城県川崎町長 小山修作"@ja.
+kg:st_7 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_8 prop:content "税収は魅力的でも企業の姿勢が信頼できないため反対した"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_7.
+kg:op_9 prop:content "災害復旧途上での計画に不信感がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "国定公園を含むため計画には無理があったとみている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "青森県知事 三村申吾"@ja.
+kg:st_8 rdfs:type cls:st_33.
+kg:op_11 prop:content "命につながる山と水を守るべきだとして計画に懸念を示した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_8.
+kg:op_12 prop:content "採算の取れる土地が少なくなり山間部での大型風車計画が増えたとみる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:st_9 rdfs:label "日本自然保護協会"@ja.
+kg:st_9 rdfs:type cls:st_148.
+kg:op_13 prop:content "全国で計画件数が急増し東北と北海道に集中している"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_9.
+kg:op_14 prop:content "１０年代後半以降、自然環境への影響を懸念する声が高まり地域トラブルが目立つと指摘する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "多くの計画が保安林を含む区域に及んでいると問題視している"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "半数の計画が希少種の生息域にかかると指摘する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "北海道では原生的な森林を含む計画の割合が高いと指摘する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "森林伐採に伴う農業用水への影響を不安視している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "風車騒音を懸念している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "限られた縦覧期間で分厚い資料を読めずコピーもできないのはおかしいと批判する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:op_21 prop:content "景観を損ねるとみている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "風車建設で土砂災害の危険が増すと訴える"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "森林伐採により農業用水へ影響が出ることを懸念している"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "風車から発生する騒音を懸念している"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "生態系への悪影響を心配している"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "風車でクマが山を追われ家畜被害が起こる未来を危惧している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "土砂崩れで農地利用ができなくなることを懸念している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:st_10 rdfs:label "道環境審議会会長 中村太士・北大大学院教授"@ja.
+kg:st_10 rdfs:type cls:st_13.
+cls:st_13 rdfs:label "有識者"@ja.
+kg:op_28 prop:content "道が歯止めをかけなければ北海道の自然の魅力が失われかねないと警告する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_10.
+kg:st_11 rdfs:label "一橋大准教授 山下英俊"@ja.
+kg:st_11 rdfs:type cls:st_13.
+kg:op_29 prop:content "再エネの売電収入が地域に還元されていない現状を問題視している"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "資源エネルギー庁"@ja.
+kg:st_12 rdfs:type cls:st_6.
+cls:st_6 rdfs:label "行政機関"@ja.
+kg:op_30 prop:content "対立の原因はコミュニケーション不足だとみている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_12.
+kg:st_13 rdfs:label "宮城県再生可能エネルギー室"@ja.
+kg:st_13 rdfs:type cls:st_6.
+kg:op_31 prop:content "森林を伐採しなくても再エネ導入できる未利用地は十分あり地域に受け入れられるものでなければ長続きしないと訴える"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_13.
+kg:op_32 prop:content "未利用地活用へ誘導し地域に受け入れられる再エネを目指す"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_13.
+kg:op_33 prop:content "道独自の考え方を示し再エネ開発に歯止めをかけるべきだ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_10.
+kg:st_14 rdfs:label "ユーラスエナジーホールディングス"@ja.
+kg:st_14 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_34 prop:content "無理に計画を進めるつもりはない"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_14.
+kg:st_15 rdfs:label "関西電力広報室"@ja.
+kg:st_15 rdfs:type cls:st_1.
+kg:op_35 prop:content "地域貢献策を考え話し合っていきたい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_15.
+kg:op_36 prop:content "地元合意なしで事業を進めるべきではないと求めている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_5.
+kg:st_16 rdfs:label "後志管内仁木町の町民有志"@ja.
+kg:st_16 rdfs:type cls:st_5.
+kg:op_37 prop:content "風車建設の悪影響を訴えるため組織化した"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_16.
+kg:op_38 prop:content "陸から遠ければ陸地への影響は少なくなる"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:st_17 rdfs:label "環境省幹部"@ja.
+kg:st_17 rdfs:type cls:st_6.
+kg:op_39 prop:content "自治体が再エネ事業を行い地産地消すれば理解を得やすい"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_17.
+kg:op_40 prop:content "地域の電力は地域でまかなうことを原則とすべきだ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:op_41 prop:content "国主導のエネルギーミックス決定は行き詰まっており地域レベルのボトムアップ型に転換すべきだ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_11.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "風車の建設に伴う景観の悪化、森林伐採、土砂崩れ、生態系への影響などが懸念されるためだ。住民有志は景観を損ねるなどとして、３５００人分の反対の意見書を町に提出し"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "風車の建設に伴う景観の悪化、森林伐採、土砂崩れ、生態系への影響などが懸念されるためだ。出席者からは森林伐採による農業用水への影響や土砂災害、風車から発生する騒音、生態系への影響などを懸念する発言が相次いだ。若松さんは「風車を運ぶ林道を造成するため、樹齢３００年の樹木を切り倒したケースもある」と指摘する"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "会場からは土砂災害のリスクを指摘する声が相次いだ。菅野さんらは「（風車建設で）土砂災害の危険が増す」と強く反発"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "風車の建設に伴う景観の悪化、森林伐採、土砂崩れ、生態系への影響などが懸念されるためだ。出席者からは森林伐採による農業用水への影響や土砂災害、風車から発生する騒音、生態系への影響などを懸念する発言が相次いだ。風車によって、山を追われたクマが家畜を襲い"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "「税収は魅力的だが、企業の姿勢が信頼できないと判断した」。住民団体「丸森の未来を考える会」の菅野俊一共同代表（７４）が「災害復旧も道半ばなのに。残念で、不信感がある」と声を上げた"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "町はその後、広報誌でいきさつを特集。小山町長は事業想定区域に蔵王国定公園があったことなどから「計画は正直、無理があった」と記した"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "三村申吾・青森県知事は２２年８月、最大手のユーラスエナジーホールディングス（東京）による青森市などの八甲田山系の計画に対し、水源への影響などに触れ、「命につながる山と水を守るのが使命」「無秩序に開発していいわけではない」と指摘"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "風況がよく、採算が取れる土地が少なくなったため、山の稜線などに、より大型の風車を建てる計画が増えた"@ja.
+<< kg:id_1 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "なぜ各地で異論が相次ぐのか。背景には事業計画の急増がある。日本自然保護協会（東京）の調べによると、２２年９月末時点で全国の風力発電事業数は道内の２１件を含む１４８件。これに対し、計画は２倍近い２８７件に上り"@ja.
+<< kg:id_1 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "１０年代後半以降、自然環境への影響などを懸念する声が高まり、開発を巡る地域とのトラブルが目立つようになったという"@ja.
+<< kg:id_1 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "事業計画のうち８５％は区域内に保安林があり"@ja.
+<< kg:id_1 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "５０％は希少種のクマタカが生息するエリアがあった"@ja.
+<< kg:id_1 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "道内でみると、環境省の指標で「原生的な森林」とされるエリアを含む計画が９３％に上り、全国の５７％を大きく上回った"@ja.
+<< kg:id_1 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "出席者からは森林伐採による農業用水への影響や土砂災害、風車から発生する騒音、生態系への影響などを懸念する発言が相次いだ"@ja.
+<< kg:id_1 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "出席者からは森林伐採による農業用水への影響や土砂災害、風車から発生する騒音、生態系への影響などを懸念する発言が相次いだ"@ja.
+<< kg:id_1 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "配慮書の公開後、町役場を訪れたが、限られた縦覧期間内に分厚い資料を読み込むのは困難で、コピーも認められなかった。「こんなのはおかしい」"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:text-txt_contents "地域の合意が得られず計画が撤回される事例も相次ぐ。関電は公表の２カ月後に撤回した。この計画も後に撤回された"@ja.
+<< kg:id_1 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "風車の建設に伴う景観の悪化。住民有志は景観を損ねるなどとして"@ja.
+<< kg:id_1 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "会場からは土砂災害のリスクを指摘する声が相次いだ。菅野さんらは「（風車建設で）土砂災害の危険が増す」と強く反発"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "出席者からは森林伐採による農業用水への影響や土砂災害"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "風車から発生する騒音"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "生態系への影響などを懸念する発言が相次いだ"@ja.
+<< kg:id_1 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風車によって、山を追われたクマが家畜を襲い"@ja.
+<< kg:id_1 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "土砂崩れで畑が使えなくなるシーンを描いた"@ja.
+<< kg:id_1 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "道が再エネ開発に歯止めをかけなければ、結果として北海道の自然の魅力が失われかねない"@ja.
+<< kg:id_1 prop:effect kg:id_25 >>
+    prop:text-txt_contents "さらに、一つの解決策として注目されているのが洋上風力発電だ。漁業への影響などが懸念されているものの"@ja.
+<< kg:id_1 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "再エネによる売電収入がほとんど地域に還元されていない現状を指摘"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "国は住民理解を得て再エネ導入を進めるため、昨年４月施行の改正地球温暖化対策推進法で、市町村が再エネの「促進区域」を指定する制度を創設"@ja.
+<< kg:id_27 prop:contermeasure kg:id_29 >>
+    prop:text-txt_contents "企業には区域内で事業を行うよう配慮を求めた"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "資源エネルギー庁は「対立の原因はコミュニケーション不足」として、企業側に積極的な住民説明を促している"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "宮城県は全国初の「再エネ課税」を検討中。森林を伐採して風力や太陽光などの再エネ事業を行う企業に課税する"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "「促進区域」は非課税とすることで「適地への誘導」を進める"@ja.
+<< kg:id_35 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "道も「促進地域」の基準を策定中だが、原案に対して道環境審議会では「国が定めた基準の丸写しで、道の考え方が見えない」との批判も"@ja.
+<< kg:id_37 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "ユーラス社は「無理に計画を進めるつもりはない」と説明し、風車の数を減らす方向で検討中だ"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "関電は売電収入の一部で基金を創設し、地元農産品の販売促進に充てることなどを検討中で「地域貢献策を考え、話し合っていきたい」（広報室）という"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "地元の合意がなければ事業計画を進めないように求め"@ja.
+<< kg:id_41 prop:contermeasure kg:id_43 >>
+    prop:text-txt_contents "町議会に請願した"@ja.
+<< kg:id_41 prop:contermeasure kg:id_44 >>
+    prop:text-txt_contents "環境相などに要望書を提出した"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "町民有志は「考える会」を結成し、風車建設の悪影響を訴える"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "さらに、一つの解決策として注目されているのが洋上風力発電だ。漁業への影響などが懸念されているものの、「陸から遠ければ陸地への影響は少なくなる」（日本自然保護協会の若松室長）という"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_17;
+    prop:relatedOpinion kg:op_39;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "地域の人々が主体となって地元の資源を活用する「エネルギーの地産地消」の取り組みも各地で動き出している。環境省幹部は「個人的な意見だが、上下水道のように自治体が再エネ事業を行い、エネルギーを地産地消すれば、理解が得やすくなるのでは」という。若松室長も「地域の電力は地域でまかなうことを原則とすべきだ」と訴える"@ja.
+<< kg:id_49 prop:contermeasure kg:id_51 >>
+    prop:text-txt_contents "「先行地域」４６件の計画は、「地域新電力」を設けて風力や太陽光などの再エネを地元で使うとする内容も目立った"@ja.
+<< kg:id_52 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "「国がエネルギーミックス（電源構成）を決めるやり方は行き詰まっている。地域レベルで電源構成を考える『ボトムアップ型』に転換しなければならない」と強調した"@ja.
+}

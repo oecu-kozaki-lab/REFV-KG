@@ -1,0 +1,931 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00105> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "東日本大震災"@ja.
+kg:id_1 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "災害"@ja.
+kg:id_2 rdfs:label "東北地方を中心に未曽有の被害をもたらした"@ja.
+kg:id_2 rdf:type cls:c_2500.
+cls:c_2500 rdfs:label "被害"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "命を奪われた多数の方々が出た"@ja.
+kg:id_3 rdf:type cls:c_6171.
+cls:c_6171 rdfs:label "犠牲"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "犠牲となった全ての方々に哀悼の意を表するため1分間の黙祷を捧げる"@ja.
+kg:id_4 rdf:type cls:c_6172.
+cls:c_6172 rdfs:label "追悼行為"@ja.
+kg:id_1 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "酒田市立学校の統合"@ja.
+kg:id_5 rdf:type cls:c_4355.
+cls:c_4355 rdfs:label "学校統合"@ja.
+kg:id_6 rdfs:label "亀城小学校及び港南小学校の統合"@ja.
+kg:id_6 rdf:type cls:c_4355.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "松山中学校及び飛鳥中学校の統合"@ja.
+kg:id_7 rdf:type cls:c_4355.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "統合校の名称を定める"@ja.
+kg:id_8 rdf:type cls:c_6173.
+cls:c_6173 rdfs:label "名称設定"@ja.
+kg:id_5 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "酒田市一般廃棄物処理施設の技術管理者資格の未整備"@ja.
+kg:id_9 rdf:type cls:c_6174.
+cls:c_6174 rdfs:label "基準未整備"@ja.
+kg:id_10 rdfs:label "地域主権改革一括法の施行に伴う廃棄物の処理及び清掃に関する法律の一部改正"@ja.
+kg:id_10 rdf:type cls:c_1031.
+cls:c_1031 rdfs:label "法改正"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "一般廃棄物処理施設の技術管理者の資格について規定するため新たに条例を制定する"@ja.
+kg:id_11 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "体育施設利用者の不便"@ja.
+kg:id_12 rdf:type cls:c_4060.
+cls:c_4060 rdfs:label "利用不便"@ja.
+kg:id_13 rdfs:label "使用期間使用時間等について所要の改正を行う"@ja.
+kg:id_13 rdf:type cls:c_3925.
+cls:c_3925 rdfs:label "制度改正"@ja.
+kg:id_12 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "写真展示館の入館者減少"@ja.
+kg:id_14 rdf:type cls:c_6175.
+cls:c_6175 rdfs:label "入館者減少"@ja.
+kg:id_15 rdfs:label "開館時間を延長する"@ja.
+kg:id_15 rdf:type cls:c_6176.
+cls:c_6176 rdfs:label "時間延長"@ja.
+kg:id_14 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "障害者自立支援法の改正"@ja.
+kg:id_16 rdf:type cls:c_1031.
+kg:id_17 rdfs:label "地域社会における共生の実現に向けて新たな障害保健福祉施策を講ずるための関係法律の整備に関する法律の制定"@ja.
+kg:id_17 rdf:type cls:c_6177.
+cls:c_6177 rdfs:label "法制定"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "障害者自立支援法が障害者の日常生活及び社会生活を総合的に支援するための法律に改正された"@ja.
+kg:id_18 rdf:type cls:c_1031.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "所要の改正を行う"@ja.
+kg:id_19 rdf:type cls:c_3925.
+kg:id_16 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "指定地域密着型サービス事業及び介護予防サービス事業の基準未整備"@ja.
+kg:id_20 rdf:type cls:c_6174.
+kg:id_21 rdfs:label "地域主権改革一括法の施行に伴う介護保険法の一部改正"@ja.
+kg:id_21 rdf:type cls:c_1031.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "人員設備及び運営の基準等について規定するため新たに条例を制定する"@ja.
+kg:id_22 rdf:type cls:c_1684.
+kg:id_20 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "国民健康保険税の改定"@ja.
+kg:id_23 rdf:type cls:c_6178.
+cls:c_6178 rdfs:label "税改定"@ja.
+kg:id_24 rdfs:label "平成25年度分の概算介護給付費納付金の確定"@ja.
+kg:id_24 rdf:type cls:c_6179.
+cls:c_6179 rdfs:label "給付費確定"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "介護納付金課税被保険者に係る各割額を改定する"@ja.
+kg:id_25 rdf:type cls:c_3545.
+cls:c_3545 rdfs:label "税額改定"@ja.
+kg:id_23 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "市道の構造の技術的基準等の未整備"@ja.
+kg:id_26 rdf:type cls:c_6174.
+kg:id_27 rdfs:label "地域主権改革一括法の施行に伴う道路法などの一部改正"@ja.
+kg:id_27 rdf:type cls:c_1031.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "市道の構造の技術的基準等について規定するため新たに条例を制定する"@ja.
+kg:id_28 rdf:type cls:c_1684.
+kg:id_26 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "準用河川の河川管理施設等の構造基準の未整備"@ja.
+kg:id_29 rdf:type cls:c_6174.
+kg:id_30 rdfs:label "地域主権改革一括法の施行に伴う河川法の一部改正"@ja.
+kg:id_30 rdf:type cls:c_1031.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "一般的技術的基準について規定するため新たに条例を制定する"@ja.
+kg:id_31 rdf:type cls:c_1684.
+kg:id_29 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "低炭素建築物新築等計画の認定申請手数料の未規定"@ja.
+kg:id_32 rdf:type cls:c_6180.
+cls:c_6180 rdfs:label "手数料未規定"@ja.
+kg:id_33 rdfs:label "都市の低炭素化の促進に関する法律の施行"@ja.
+kg:id_33 rdf:type cls:c_6181.
+cls:c_6181 rdfs:label "法施行"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "認定申請手数料を規定するため所要の改正を行う"@ja.
+kg:id_34 rdf:type cls:c_3925.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "公共下水道の構造等の基準未整備"@ja.
+kg:id_35 rdf:type cls:c_6174.
+kg:id_36 rdfs:label "地域主権改革一括法の施行に伴う下水道法の一部改正"@ja.
+kg:id_36 rdf:type cls:c_1031.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "特定事業場からの下水の排水の制限に係る水質基準の未整備"@ja.
+kg:id_37 rdf:type cls:c_6174.
+kg:id_38 rdfs:label "下水道法施行令の一部改正"@ja.
+kg:id_38 rdf:type cls:c_1031.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "公共下水道の構造等の基準を規定する"@ja.
+kg:id_39 rdf:type cls:c_6182.
+cls:c_6182 rdfs:label "基準規定"@ja.
+kg:id_35 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "水質の基準を規定する"@ja.
+kg:id_40 rdf:type cls:c_6182.
+kg:id_37 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "都市公園の設置基準等の未整備"@ja.
+kg:id_41 rdf:type cls:c_6174.
+kg:id_42 rdfs:label "地域主権改革一括法の施行に伴う都市公園法などの一部改正"@ja.
+kg:id_42 rdf:type cls:c_1031.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "都市公園の設置基準等について規定するため所要の改正を行う"@ja.
+kg:id_43 rdf:type cls:c_6182.
+kg:id_41 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "鳥海高原家族旅行村の休館日の未整理"@ja.
+kg:id_44 rdf:type cls:c_6183.
+cls:c_6183 rdfs:label "運営未整理"@ja.
+kg:id_45 rdfs:label "休館日を整理するため所要の改正を行う"@ja.
+kg:id_45 rdf:type cls:c_3925.
+kg:id_44 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "市民生活"@ja.
+kg:id_46 rdf:type cls:c_1971.
+cls:c_1971 rdfs:label "市民生活"@ja.
+kg:id_47 rdfs:label "アベノミクスによる2％の物価の上昇"@ja.
+kg:id_47 rdf:type cls:c_6184.
+cls:c_6184 rdfs:label "物価上昇"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "消費税の増税"@ja.
+kg:id_48 rdf:type cls:c_6185.
+cls:c_6185 rdfs:label "増税"@ja.
+kg:id_46 prop:cause kg:id_48.
+kg:id_49 rdfs:label "円安によるガソリンや灯油などの生活必需品や食料などの値上がり"@ja.
+kg:id_49 rdf:type cls:c_6186.
+cls:c_6186 rdfs:label "生活費上昇"@ja.
+kg:id_46 prop:cause kg:id_49.
+kg:id_50 rdfs:label "今まで以上の危機に直面している"@ja.
+kg:id_50 rdf:type cls:c_6187.
+cls:c_6187 rdfs:label "生活危機"@ja.
+kg:id_46 prop:effect kg:id_50.
+kg:id_51 rdfs:label "課税義務のない消費税の転嫁を行わない"@ja.
+kg:id_51 rdf:type cls:c_890.
+cls:c_890 rdfs:label "負担軽減"@ja.
+kg:id_46 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "ほっとふくし券を以前のように介護サービスに使えるようにする"@ja.
+kg:id_52 rdf:type cls:c_6188.
+cls:c_6188 rdfs:label "福祉拡充"@ja.
+kg:id_46 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "後期高齢者や低所得者への医療費負担分の助成を福祉的観点で行う"@ja.
+kg:id_53 rdf:type cls:c_6189.
+cls:c_6189 rdfs:label "医療助成"@ja.
+kg:id_46 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "国民健康保険特別会計の運営"@ja.
+kg:id_54 rdf:type cls:c_5287.
+cls:c_5287 rdfs:label "保険財政"@ja.
+kg:id_55 rdfs:label "一般会計から法定外繰り出しを行い市民への国保税の負担軽減を行う"@ja.
+kg:id_55 rdf:type cls:c_890.
+kg:id_54 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "市民負担"@ja.
+kg:id_56 rdf:type cls:c_6190.
+cls:c_6190 rdfs:label "市民負担"@ja.
+kg:id_57 rdfs:label "平成24年度には大幅な国保税と介護納付金分の値上げが行われた"@ja.
+kg:id_57 rdf:type cls:c_6191.
+cls:c_6191 rdfs:label "保険税値上げ"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "新年度は介護納付の値上げとなる"@ja.
+kg:id_58 rdf:type cls:c_5682.
+cls:c_5682 rdfs:label "保険料値上げ"@ja.
+kg:id_56 prop:cause kg:id_58.
+kg:id_59 rdfs:label "市民負担は大きいものになっている"@ja.
+kg:id_59 rdf:type cls:c_6192.
+cls:c_6192 rdfs:label "負担増大"@ja.
+kg:id_56 prop:effect kg:id_59.
+kg:id_60 rdfs:label "国民健康保険"@ja.
+kg:id_60 rdf:type cls:c_6193.
+cls:c_6193 rdfs:label "公的保険"@ja.
+kg:id_61 rdfs:label "失業した方や収入のない方が多く加入している"@ja.
+kg:id_61 rdf:type cls:c_6194.
+cls:c_6194 rdfs:label "低所得加入"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:id_62 rdfs:label "住宅リフォーム事業"@ja.
+kg:id_62 rdf:type cls:c_2799.
+cls:c_2799 rdfs:label "住宅改修"@ja.
+kg:id_63 rdfs:label "市独自の拡充を行う"@ja.
+kg:id_63 rdf:type cls:c_4584.
+cls:c_4584 rdfs:label "事業拡充"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "雇用対策"@ja.
+kg:id_64 rdf:type cls:c_5004.
+cls:c_5004 rdfs:label "雇用対策"@ja.
+kg:id_65 rdfs:label "緊急雇用創出事業臨時特例基金事業の事業規模は年々縮小されている"@ja.
+kg:id_65 rdf:type cls:c_3615.
+cls:c_3615 rdfs:label "事業縮小"@ja.
+kg:id_64 prop:effect kg:id_65.
+kg:id_66 rdfs:label "市としても予算措置を行いより多くの雇用を進める"@ja.
+kg:id_66 rdf:type cls:c_5578.
+cls:c_5578 rdfs:label "雇用拡大"@ja.
+kg:id_64 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "敬老寿賀事業"@ja.
+kg:id_67 rdf:type cls:c_6195.
+cls:c_6195 rdfs:label "敬老事業"@ja.
+kg:id_68 rdfs:label "喜寿を対象から外した"@ja.
+kg:id_68 rdf:type cls:c_6196.
+cls:c_6196 rdfs:label "対象除外"@ja.
+kg:id_67 prop:cause kg:id_68.
+kg:id_69 rdfs:label "市として長寿を市民とともに祝うという姿勢が後退している"@ja.
+kg:id_69 rdf:type cls:c_6197.
+cls:c_6197 rdfs:label "祝意後退"@ja.
+kg:id_67 prop:effect kg:id_69.
+kg:id_70 rdfs:label "公立保育園の民間移管"@ja.
+kg:id_70 rdf:type cls:c_6198.
+cls:c_6198 rdfs:label "保育運営"@ja.
+kg:id_71 rdfs:label "民間移管すべきではない"@ja.
+kg:id_71 rdf:type cls:c_6199.
+cls:c_6199 rdfs:label "民営化中止"@ja.
+kg:id_70 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "市民サービス"@ja.
+kg:id_72 rdf:type cls:c_6200.
+cls:c_6200 rdfs:label "市民サービス"@ja.
+kg:id_73 rdfs:label "平田総合支所で独自に行われていた延長窓口が終了する"@ja.
+kg:id_73 rdf:type cls:c_6201.
+cls:c_6201 rdfs:label "窓口終了"@ja.
+kg:id_72 prop:effect kg:id_73.
+kg:id_74 rdfs:label "財政"@ja.
+kg:id_74 rdf:type cls:c_1504.
+cls:c_1504 rdfs:label "財政"@ja.
+kg:id_75 rdfs:label "法人市民税の減税"@ja.
+kg:id_75 rdf:type cls:c_4559.
+cls:c_4559 rdfs:label "減税"@ja.
+kg:id_74 prop:cause kg:id_75.
+kg:id_76 rdfs:label "地方消費税交付金の減少"@ja.
+kg:id_76 rdf:type cls:c_6202.
+cls:c_6202 rdfs:label "交付金減少"@ja.
+kg:id_74 prop:cause kg:id_76.
+kg:id_77 rdfs:label "基金を取り崩しての予算編成である"@ja.
+kg:id_77 rdf:type cls:c_6203.
+cls:c_6203 rdfs:label "基金取崩"@ja.
+kg:id_74 prop:effect kg:id_77.
+kg:id_78 rdfs:label "市民の消費活動"@ja.
+kg:id_78 rdf:type cls:c_6204.
+cls:c_6204 rdfs:label "消費活動"@ja.
+kg:id_79 rdfs:label "停滞している"@ja.
+kg:id_79 rdf:type cls:c_6205.
+cls:c_6205 rdfs:label "消費停滞"@ja.
+kg:id_78 prop:effect kg:id_79.
+kg:id_80 rdfs:label "国民健康保険税の値上げ"@ja.
+kg:id_80 rdf:type cls:c_6191.
+kg:id_81 rdfs:label "国保税の負担は市民の担税能力を超えている"@ja.
+kg:id_81 rdf:type cls:c_6206.
+cls:c_6206 rdfs:label "負担超過"@ja.
+kg:id_80 prop:effect kg:id_81.
+kg:id_82 rdfs:label "払いたくても払えないことにより滞納者がふえる"@ja.
+kg:id_82 rdf:type cls:c_6207.
+cls:c_6207 rdfs:label "滞納増加"@ja.
+kg:id_80 prop:effect kg:id_82.
+kg:id_83 rdfs:label "病状の悪化を招き医療給付のさらなる増へつながる"@ja.
+kg:id_83 rdf:type cls:c_6208.
+cls:c_6208 rdfs:label "病状悪化"@ja.
+kg:id_80 prop:effect kg:id_83.
+kg:id_84 rdfs:label "一般会計から法定外繰り入れを行う"@ja.
+kg:id_84 rdf:type cls:c_1007.
+cls:c_1007 rdfs:label "財政支援"@ja.
+kg:id_80 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "平成25年度酒田市一般会計予算"@ja.
+kg:id_85 rdf:type cls:c_6209.
+cls:c_6209 rdfs:label "予算"@ja.
+kg:id_86 rdfs:label "一般会計の当初予算としては過去最大規模になる"@ja.
+kg:id_86 rdf:type cls:c_6210.
+cls:c_6210 rdfs:label "最大規模"@ja.
+kg:id_85 prop:effect kg:id_86.
+kg:id_87 rdfs:label "防災拠点ともなる新市庁舎建てかえなどの投資的経費が大幅増になった"@ja.
+kg:id_87 rdf:type cls:c_6211.
+cls:c_6211 rdfs:label "投資増加"@ja.
+kg:id_85 prop:effect kg:id_87.
+kg:id_88 rdfs:label "人口減少少子高齢化対策"@ja.
+kg:id_88 rdf:type cls:c_6212.
+cls:c_6212 rdfs:label "人口対策"@ja.
+kg:id_89 rdfs:label "雇用の場の確保と産業振興が欠かせない"@ja.
+kg:id_89 rdf:type cls:c_1915.
+cls:c_1915 rdfs:label "雇用確保"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "財政規律"@ja.
+kg:id_90 rdf:type cls:c_6213.
+cls:c_6213 rdfs:label "財政規律"@ja.
+kg:id_91 rdfs:label "行財政改革推進室の設置"@ja.
+kg:id_91 rdf:type cls:c_6214.
+cls:c_6214 rdfs:label "組織設置"@ja.
+kg:id_90 prop:contermeasure kg:id_91.
+kg:id_92 rdfs:label "アセットマネジメントの導入"@ja.
+kg:id_92 rdf:type cls:c_6215.
+cls:c_6215 rdfs:label "管理導入"@ja.
+kg:id_90 prop:contermeasure kg:id_92.
+kg:id_93 rdfs:label "風力発電施設整備推進事業"@ja.
+kg:id_93 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_94 rdfs:label "環境影響評価と基本設計等の予算を計上する"@ja.
+kg:id_94 rdf:type cls:c_6216.
+cls:c_6216 rdfs:label "調査設計"@ja.
+kg:id_93 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "景観上の問題と市民との合意形成の進め方について納得のいく議論ではない"@ja.
+kg:id_95 rdf:type cls:c_5586.
+cls:c_5586 rdfs:label "合意不足"@ja.
+kg:id_93 prop:effect kg:id_95.
+kg:id_96 rdfs:label "大規模風力発電事業"@ja.
+kg:id_96 rdf:type cls:c_552.
+kg:id_97 rdfs:label "全国的に環境への負荷に関する問題が出ている"@ja.
+kg:id_97 rdf:type cls:c_533.
+cls:c_533 rdfs:label "環境問題"@ja.
+kg:id_96 prop:cause kg:id_97.
+kg:id_98 rdfs:label "風力発電施設の設置を法の対象事業として追加する"@ja.
+kg:id_98 rdf:type cls:c_6217.
+cls:c_6217 rdfs:label "法対象化"@ja.
+kg:id_96 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "透明性の高い環境アセスが確保され住民の理解が進み環境と調和した健全な立地が促進される"@ja.
+kg:id_99 rdf:type cls:c_4449.
+cls:c_4449 rdfs:label "理解促進"@ja.
+kg:id_96 prop:effect kg:id_99.
+kg:id_100 rdfs:label "自主アセス"@ja.
+kg:id_100 rdf:type cls:c_3010.
+cls:c_3010 rdfs:label "環境評価"@ja.
+kg:id_101 rdfs:label "関係省庁の勧告や審査の過程を経ない"@ja.
+kg:id_101 rdf:type cls:c_6218.
+cls:c_6218 rdfs:label "審査欠如"@ja.
+kg:id_100 prop:effect kg:id_101.
+kg:id_102 rdfs:label "住民を納得させられる評価書にはなり得ない"@ja.
+kg:id_102 rdf:type cls:c_993.
+cls:c_993 rdfs:label "説明不十分"@ja.
+kg:id_100 prop:effect kg:id_102.
+kg:id_103 rdfs:label "事業利益を市民に還元することに余りにもとらわれ過ぎている"@ja.
+kg:id_103 rdf:type cls:c_6219.
+cls:c_6219 rdfs:label "利益偏重"@ja.
+kg:id_93 prop:cause kg:id_103.
+kg:id_104 rdfs:label "冷静に検討していく時間をなくし将来に禍根を残すことにならないか大変危惧される"@ja.
+kg:id_104 rdf:type cls:c_6220.
+cls:c_6220 rdfs:label "拙速懸念"@ja.
+kg:id_93 prop:effect kg:id_104.
+kg:id_105 rdfs:label "環境省に判断を仰ぐ"@ja.
+kg:id_105 rdf:type cls:c_6221.
+cls:c_6221 rdfs:label "判断要請"@ja.
+kg:id_93 prop:contermeasure kg:id_105.
+kg:id_106 rdfs:label "全国的にもアセスを行っている業者や民間事業者にも注目されつつある"@ja.
+kg:id_106 rdf:type cls:c_6222.
+cls:c_6222 rdfs:label "注目増加"@ja.
+kg:id_93 prop:effect kg:id_106.
+kg:id_107 rdfs:label "全国的に模範となるような事業展開をしていく"@ja.
+kg:id_107 rdf:type cls:c_6223.
+cls:c_6223 rdfs:label "模範展開"@ja.
+kg:id_93 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "ＴＰＰ交渉参加"@ja.
+kg:id_108 rdf:type cls:c_6224.
+cls:c_6224 rdfs:label "通商交渉"@ja.
+kg:id_109 rdfs:label "農業生産に壊滅的な打撃を与える"@ja.
+kg:id_109 rdf:type cls:c_6225.
+cls:c_6225 rdfs:label "農業打撃"@ja.
+kg:id_108 prop:effect kg:id_109.
+kg:id_110 rdfs:label "安全安心な暮らし医療など我が国の根幹にかかわる制度が変えられる"@ja.
+kg:id_110 rdf:type cls:c_2742.
+cls:c_2742 rdfs:label "制度変更"@ja.
+kg:id_108 prop:effect kg:id_110.
+kg:id_111 rdfs:label "地域経済社会を崩壊に導くことは必至である"@ja.
+kg:id_111 rdf:type cls:c_6226.
+cls:c_6226 rdfs:label "地域崩壊"@ja.
+kg:id_108 prop:effect kg:id_111.
+kg:id_112 rdfs:label "交渉参加に向けた取り組みを断念する"@ja.
+kg:id_112 rdf:type cls:c_6227.
+cls:c_6227 rdfs:label "参加断念"@ja.
+kg:id_108 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "より安価な外国産農畜産物の流入により農業生産に壊滅的な打撃を受ける"@ja.
+kg:id_113 rdf:type cls:c_6225.
+kg:id_108 prop:effect kg:id_113.
+kg:id_114 rdfs:label "食糧自給率の低下や地域経済の崩壊を招く"@ja.
+kg:id_114 rdf:type cls:c_6228.
+cls:c_6228 rdfs:label "自給低下"@ja.
+kg:id_108 prop:effect kg:id_114.
+kg:id_115 rdfs:label "国土の保全などの多面的機能の喪失を招く"@ja.
+kg:id_115 rdf:type cls:c_6229.
+cls:c_6229 rdfs:label "機能喪失"@ja.
+kg:id_108 prop:effect kg:id_115.
+kg:id_116 rdfs:label "食の安全医療保険金融等の多方面に渡り多大な影響を受ける"@ja.
+kg:id_116 rdf:type cls:c_6230.
+cls:c_6230 rdfs:label "多方面影響"@ja.
+kg:id_108 prop:effect kg:id_116.
+kg:id_117 rdfs:label "国民的議論を早急に行う"@ja.
+kg:id_117 rdf:type cls:c_6231.
+cls:c_6231 rdfs:label "議論実施"@ja.
+kg:id_108 prop:contermeasure kg:id_117.
+kg:id_118 rdfs:label "我が国の農業を成長させ食料安全保障を堅持する施策を十分に講じる"@ja.
+kg:id_118 rdf:type cls:c_3561.
+cls:c_3561 rdfs:label "農業支援"@ja.
+kg:id_108 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "国民の生命に直結する重要な制度仕組みを堅守して慎重に対応する"@ja.
+kg:id_119 rdf:type cls:c_290.
+cls:c_290 rdfs:label "慎重対応"@ja.
+kg:id_108 prop:contermeasure kg:id_119.
+kg:st_1 rdfs:label "村上栄三郎議長"@ja.
+kg:st_1 rdfs:type cls:st_49.
+cls:st_49 rdfs:label "議長"@ja.
+kg:op_1 prop:content "犠牲者に哀悼の意を表し被災者に見舞いを述べる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "犠牲者に哀悼の意を表する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "本議会として1分間の黙祷を捧げたい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市原栄子議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_4 prop:content "昨年に引き続く値上げで市民負担は担税能力を超えている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "法定外繰り入れで市民負担を軽減すべきだ"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "市民生活は今まで以上の危機に直面している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "市民の暮らしを守る防波堤として市独自施策が必要だ"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "市民生活は危機に直面している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "市民の暮らしと福祉を守るべきだ"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "市独自に市民の暮らしと家計を応援すべきだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "介護サービスにも使えるように戻すべきだ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "医療費負担分の助成を行うべきだ"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "法定外繰り出しで国保税負担を軽減すべきだ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "現行制度の中では市民負担は大きい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "さらなる負担増になる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "市民負担は重い"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "国保は市民の健康と命を守るセーフティーネットだ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "地元中小企業への直接の仕事を生み出すため拡充すべきだ"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "事業規模縮小ではなくより多くの雇用を進めるべきだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "直接の仕事と雇用を生み出すため予算措置を行うべきだ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "長寿を市民とともに祝う姿勢が後退している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "地域コミュニティの中でも重要な事業だ"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "公立保育園は子育て施策実践と充実の重要な場であり民間移管すべきではない"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "市民サービスの打ち切りがある"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "個人市民税の伸びが相殺される"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "厳しい財政状況である"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "このような時期だからこそ市民の暮らしの底支えに力を注ぐべきだ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "市民の暮らしの底支えが必要だ"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "引き続く値上げには反対だ"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "さらなる国保財政悪化を招くことが危惧される"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "値上げへの負のスパイラルに陥る"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "市民負担軽減のため法定外繰り入れを求めるべきだ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "荒生令悦議員"@ja.
+kg:st_3 rdfs:type cls:st_16.
+kg:op_33 prop:content "最重要課題に向けた英知が最大限に結集されている予算編成だ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "社会基盤整備が特徴だ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "市長の最重要課題認識はそのとおりだ"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "財政の健全運用に向けた新たな施策を講じている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "財政の健全運用に向けた施策だ"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "後藤泉議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_38 prop:content "自主アセスではなく法定アセスで進めるべきだ"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "景観問題と市民合意形成の議論が不十分だ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "環境省が法対象事業に追加すべきとした趣旨を重く見るべきだ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "透明性の高い環境アセスの確保が必要だ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_4.
+kg:op_42 prop:content "法対象とする意義は大きい"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "住民を納得させられる評価書にはなり得ない"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "自主アセスでは不十分だ"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "高い買取価格のうちに建設を急ぐことに危惧がある"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "拙速な建設は将来に禍根を残しかねない"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "指摘されている問題がある以上環境省に判断を仰ぐべきだ"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "全国的に模範となるような事業展開をすべきだ"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+kg:op_49 prop:content "自治体事業として模範となるべきだ"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "経済常任委員会委員長佐藤猛議員"@ja.
+kg:st_5 rdfs:type cls:st_36.
+cls:st_36 rdfs:label "委員長"@ja.
+kg:op_50 prop:content "交渉参加には断固反対であり取り組みを断念すべきだ"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_5.
+kg:op_51 prop:content "暮らしや医療などの制度が変えられることを懸念する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_5.
+kg:op_52 prop:content "地域経済社会の崩壊につながるため反対だ"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_5.
+kg:op_53 prop:content "政府に断念を求める意見書を提出すべきだ"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_5.
+kg:op_54 prop:content "安価な外国産農畜産物の流入で農業が深刻な打撃を受ける"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_5.
+kg:op_55 prop:content "食料安全保障と地域経済に重大な悪影響がある"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_5.
+kg:op_56 prop:content "農業の多面的機能の喪失を危惧する"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_5.
+kg:op_57 prop:content "食の安全や医療保険金融にも影響が及ぶ"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_5.
+kg:op_58 prop:content "まず国民的議論を行うべきだ"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_5.
+kg:op_59 prop:content "農業成長と食料安全保障を堅持する施策が必要だ"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_5.
+kg:op_60 prop:content "重要な制度と仕組みを守り慎重に対応すべきだ"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_5.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "東北地方を中心に未曽有の被害をもたらした東日本大震災"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "この震災で命を奪われた多数の方々"@ja.
+<< kg:id_1 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "この震災により犠牲となられた全ての方々に哀悼の意を表するため、１分間の黙祷を捧げたいと思います"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "亀城小学校及び港南小学校、松山中学校及び飛鳥中学校の統合に伴い"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:text-txt_contents "亀城小学校及び港南小学校、松山中学校及び飛鳥中学校の統合に伴い"@ja.
+<< kg:id_5 prop:contermeasure kg:id_8 >>
+    prop:text-txt_contents "統合校の名称を定めるなど所要の改正を行うもの"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "地域主権改革一括法の施行に伴う廃棄物の処理及び清掃に関する法律の一部改正により"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:text-txt_contents "一般廃棄物処理施設の技術管理者の資格について規定するため新たに条例を制定する"@ja.
+<< kg:id_12 prop:contermeasure kg:id_13 >>
+    prop:text-txt_contents "体育施設利用者の利便性の向上を図るため、使用期間、使用時間等について所要の改正を行う"@ja.
+<< kg:id_14 prop:contermeasure kg:id_15 >>
+    prop:text-txt_contents "写真展示館の入館者の増加と利便性の向上を図るため開館時間を延長する"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:text-txt_contents "地域社会における共生の実現に向けて新たな障害保健福祉施策を講ずるための関係法律の整備に関する法律の制定に伴い"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:text-txt_contents "障害者自立支援法が障害者の日常生活及び社会生活を総合的に支援するための法律に改正された"@ja.
+<< kg:id_16 prop:contermeasure kg:id_19 >>
+    prop:text-txt_contents "所要の改正を行うもの"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "地域主権改革一括法の施行に伴う介護保険法の一部改正により"@ja.
+<< kg:id_20 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "指定地域密着型サービス事業及び介護予防サービス事業の人員、設備及び運営の基準等について規定するため新たに条例を制定する"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "平成25年度分の概算介護給付費納付金の確定に伴い"@ja.
+<< kg:id_23 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "国民健康保険税のうち介護納付金課税被保険者に係る各割額を改定するため所要の改正を行う"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "地域主権改革一括法の施行に伴う道路法などの一部改正により"@ja.
+<< kg:id_26 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "市道の構造の技術的基準等について規定するため新たに条例を制定する"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:text-txt_contents "地域主権改革一括法の施行に伴う河川法の一部改正により"@ja.
+<< kg:id_29 prop:contermeasure kg:id_31 >>
+    prop:text-txt_contents "準用河川の河川管理施設等の構造に係る一般的技術的基準について規定するため新たに条例を制定する"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:text-txt_contents "都市の低炭素化の促進に関する法律の施行に伴い"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:text-txt_contents "低炭素建築物新築等計画の認定申請手数料を規定するため所要の改正を行う"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:text-txt_contents "地域主権改革一括法の施行に伴う下水道法の一部改正により"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:text-txt_contents "下水道法施行令の一部改正により特定事業場からの下水の排水の制限に係る水質の基準を規定するため"@ja.
+<< kg:id_35 prop:contermeasure kg:id_39 >>
+    prop:text-txt_contents "公共下水道の構造等の基準を規定するとともに"@ja.
+<< kg:id_37 prop:contermeasure kg:id_40 >>
+    prop:text-txt_contents "特定事業場からの下水の排水の制限に係る水質の基準を規定するため所要の改正を行う"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:text-txt_contents "地域主権改革一括法の施行に伴う都市公園法などの一部改正により"@ja.
+<< kg:id_41 prop:contermeasure kg:id_43 >>
+    prop:text-txt_contents "都市公園の設置基準等について規定するため所要の改正を行う"@ja.
+<< kg:id_44 prop:contermeasure kg:id_45 >>
+    prop:text-txt_contents "鳥海高原家族旅行村の休館日を整理するため所要の改正を行う"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "アベノミクスによる２％の物価の上昇"@ja.
+<< kg:id_46 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "さらには消費税の増税が目の前に迫っております"@ja.
+<< kg:id_46 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "既に円安によるガソリンや灯油などの生活必需品や食料などの値上がりが始まり"@ja.
+<< kg:id_46 prop:effect kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "市民生活は今まで以上の危機に直面しています"@ja.
+<< kg:id_46 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "課税義務のない消費税の転嫁を行わないこと"@ja.
+<< kg:id_46 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "ほっとふくし券を以前のように介護サービスに使えるようにする"@ja.
+<< kg:id_46 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "後期高齢者や低所得者への医療費負担分の助成を福祉的観点で行う"@ja.
+<< kg:id_54 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "国民健康保険特別会計に対して一般会計から法定外繰り出しを行い、市民への国保税の負担軽減"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "平成24年度には大幅な国保税と介護納付金分の値上げが行われました"@ja.
+<< kg:id_56 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "さらに、新年度は介護納付の値上げとなり、さらなる負担増となっております"@ja.
+<< kg:id_56 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "現行の制度の中では市民負担は大きいものになっております"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "国民健康保険は失業した方や収入のない方が多く加入している保険"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "地元中小企業への直接の仕事を生み出す住宅リフォーム事業に対して、市独自の拡充"@ja.
+<< kg:id_64 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "緊急雇用創出事業臨時特例基金事業が引き続き行われましたが、事業規模は年々縮小されております"@ja.
+<< kg:id_64 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "市としても予算措置を行いより多くの雇用を進めるべきである"@ja.
+<< kg:id_67 prop:cause kg:id_68 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "敬老寿賀事業で、喜寿を対象から外した"@ja.
+<< kg:id_67 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "市として長寿を市民とともに祝うという姿勢が後退しています"@ja.
+<< kg:id_70 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "公立保育園を民間移管すべきではありません"@ja.
+<< kg:id_72 prop:effect kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "平田総合支所で独自に行われていた延長窓口が終了するなど、市民サービスの打ち切りがある"@ja.
+<< kg:id_74 prop:cause kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "法人市民税の減税によりその伸び分が相殺されてしまう"@ja.
+<< kg:id_74 prop:cause kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "さらに地方消費税交付金の減少も見られ"@ja.
+<< kg:id_74 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "基金を取り崩しての予算編成であります"@ja.
+<< kg:id_78 prop:effect kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "市民の消費活動が停滞していることも審議の中で明らかになりました"@ja.
+<< kg:id_80 prop:effect kg:id_81 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "今や国保税の負担は市民の担税能力を超えていると言わざるを得ません"@ja.
+<< kg:id_80 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "払いたくても払えないことにより滞納者がふえることで、さらなる国保財政の悪化を招くことが危惧されます"@ja.
+<< kg:id_80 prop:effect kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "病状の悪化を招き、医療給付のさらなる増へつながるという問題も心配されます"@ja.
+<< kg:id_80 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "市民負担軽減のためにも法定外繰り入れを求めるべきであります"@ja.
+<< kg:id_85 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "今回の編成は一般会計の当初予算としては過去最大規模になる"@ja.
+<< kg:id_85 prop:effect kg:id_87 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "防災拠点ともなる新市庁舎建てかえ、亀城小改築、飛鳥中改修、大規模誘致企業に10年間無償で貸し出しするための用地取得費などの投資的経費が大幅増になった"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "その解決には雇用の場の確保と産業振興が欠かせない"@ja.
+<< kg:id_90 prop:contermeasure kg:id_91 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "対策として市は行財政改革推進室の設置"@ja.
+<< kg:id_90 prop:contermeasure kg:id_92 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "アセットマネジメントの導入など、財政の健全運用に向けた新たな施策も講じております"@ja.
+<< kg:id_93 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "風力発電施設整備推進事業として、環境影響評価と基本設計等の予算が計上されております"@ja.
+<< kg:id_93 prop:effect kg:id_95 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "景観上の問題と市民との合意形成の進め方についても、私は納得のいく議論とはまだまだ言えるものではない"@ja.
+<< kg:id_96 prop:cause kg:id_97 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "大規模風力発電事業では全国的に環境への負荷に関する問題が出ている"@ja.
+<< kg:id_96 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "風力発電施設の設置を法の対象事業として追加すべき"@ja.
+<< kg:id_96 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "法対象とすることで透明性の高い環境アセスが確保され、住民の理解が進み、環境と調和した健全な立地が促進される"@ja.
+<< kg:id_100 prop:effect kg:id_101 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "法律によらない自主アセスでは、関係省庁の勧告や審査の過程を経ないもの"@ja.
+<< kg:id_100 prop:effect kg:id_102 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "住民を納得させられる評価書にはなり得ないものだと思います"@ja.
+<< kg:id_93 prop:cause kg:id_103 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "事業利益を市民に還元するということに余りにもとらわれ過ぎて"@ja.
+<< kg:id_93 prop:effect kg:id_104 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "冷静に検討していく時間をなくし、将来に禍根を残すことにならないか大変危惧される"@ja.
+<< kg:id_93 prop:contermeasure kg:id_105 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "本来ならば指摘されている問題があるのですから、判断を仰ぐべきではないでしょうか"@ja.
+<< kg:id_93 prop:effect kg:id_106 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "全国的にもアセスを行っている業者やこれから風力発電事業をやろうとしている民間事業者にも注目されつつある問題"@ja.
+<< kg:id_93 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "全国的に模範となるような事業展開をしていくべき"@ja.
+<< kg:id_108 prop:effect kg:id_109 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "農業生産に壊滅的な打撃を与え"@ja.
+<< kg:id_108 prop:effect kg:id_110 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "安全・安心な暮らし、医療など、我が国の根幹にかかわる制度が変えられ"@ja.
+<< kg:id_108 prop:effect kg:id_111 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "地域経済・社会を崩壊に導くことは必至である"@ja.
+<< kg:id_108 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "交渉参加に向けた取り組みを断念するよう、政府に対し意見書を提出されたい"@ja.
+<< kg:id_108 prop:effect kg:id_113 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "より安価な外国産農畜産物の流入により、農業生産に壊滅的な打撃を受け"@ja.
+<< kg:id_108 prop:effect kg:id_114 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "食糧自給率の低下や地域経済の崩壊を招く"@ja.
+<< kg:id_108 prop:effect kg:id_115 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "農業の果たしている国土の保全などの多面的機能の喪失"@ja.
+<< kg:id_108 prop:effect kg:id_116 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "食の安全、医療、保険、金融等の多方面に渡り多大な影響を受ける危惧があります"@ja.
+<< kg:id_108 prop:contermeasure kg:id_117 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "国民的議論を早急に行い"@ja.
+<< kg:id_108 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "我が国の農業を成長させ、食料安全保障を堅持する施策を十分に講じ"@ja.
+<< kg:id_108 prop:contermeasure kg:id_119 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "国民の生命に直結する重要な制度・仕組みを堅守して、慎重に対応されるよう強く要望いたします"@ja.
+}

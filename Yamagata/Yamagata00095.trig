@@ -1,0 +1,1589 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00095> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "福祉避難所の設置運営"@ja.
+kg:id_1 rdf:type cls:c_5382.
+cls:c_5382 rdfs:label "福祉避難所運営"@ja.
+kg:id_2 rdfs:label "東日本大震災"@ja.
+kg:id_2 rdf:type cls:c_5383.
+cls:c_5383 rdfs:label "大規模地震"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "福祉避難所"@ja.
+kg:id_3 rdf:type cls:c_5384.
+cls:c_5384 rdfs:label "福祉避難所"@ja.
+kg:id_4 rdfs:label "高齢者や障がい者や妊婦の避難所生活が困難"@ja.
+kg:id_4 rdf:type cls:c_5385.
+cls:c_5385 rdfs:label "避難困難者"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "親子スポーツ会館の避難所開設"@ja.
+kg:id_5 rdf:type cls:c_5386.
+cls:c_5386 rdfs:label "避難所開設"@ja.
+kg:id_6 rdfs:label "車いすの避難者が別の避難所へ移動"@ja.
+kg:id_6 rdf:type cls:c_5387.
+cls:c_5387 rdfs:label "避難者移動"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "要援護者支援"@ja.
+kg:id_7 rdf:type cls:c_5101.
+cls:c_5101 rdfs:label "要援護者支援"@ja.
+kg:id_8 rdfs:label "可能な限りの状況調査とデータ確保"@ja.
+kg:id_8 rdf:type cls:c_5388.
+cls:c_5388 rdfs:label "情報調査"@ja.
+kg:id_7 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "緊急入所などの可能な施設の把握"@ja.
+kg:id_9 rdf:type cls:c_5389.
+cls:c_5389 rdfs:label "受入施設把握"@ja.
+kg:id_3 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "老人施設や障がい者センターや保健センターや支援学校などの拠点的施設の指定"@ja.
+kg:id_10 rdf:type cls:c_5390.
+cls:c_5390 rdfs:label "拠点施設指定"@ja.
+kg:id_3 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "指定避難所内に福祉避難所の空間を確保できる施設の指定"@ja.
+kg:id_11 rdf:type cls:c_5391.
+cls:c_5391 rdfs:label "避難施設指定"@ja.
+kg:id_3 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "福祉避難所担当の係を事前に決定"@ja.
+kg:id_12 rdf:type cls:c_5392.
+cls:c_5392 rdfs:label "担当決定"@ja.
+kg:id_3 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "福祉部局を中心に支援団体福祉施設保健師医師看護師民生委員コミュニティセンターをメンバーとする協議会の設置"@ja.
+kg:id_13 rdf:type cls:c_4300.
+cls:c_4300 rdfs:label "協議会設置"@ja.
+kg:id_3 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "ワンストップサービスを提供する事前体制整備"@ja.
+kg:id_14 rdf:type cls:c_1372.
+cls:c_1372 rdfs:label "相談体制整備"@ja.
+kg:id_3 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "避難所のスペースや支援物資が限られる"@ja.
+kg:id_15 rdf:type cls:c_5393.
+cls:c_5393 rdfs:label "資源不足"@ja.
+kg:id_3 prop:effect kg:id_15.
+kg:id_16 rdfs:label "要援護者のニーズによる避難場所の振り分け"@ja.
+kg:id_16 rdf:type cls:c_5394.
+cls:c_5394 rdfs:label "避難先振分"@ja.
+kg:id_3 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "手話通訳や点訳や音訳のボランティア人材の確保とリストアップ"@ja.
+kg:id_17 rdf:type cls:c_5395.
+cls:c_5395 rdfs:label "支援人材確保"@ja.
+kg:id_3 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "災害時要援護者把握"@ja.
+kg:id_18 rdf:type cls:c_5396.
+cls:c_5396 rdfs:label "要援護者把握"@ja.
+kg:id_19 rdfs:label "避難に援助を必要とする方の台帳登録"@ja.
+kg:id_19 rdf:type cls:c_5397.
+cls:c_5397 rdfs:label "台帳整備"@ja.
+kg:id_18 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "年齢緊急連絡先身体状況担当民生委員などの情報把握"@ja.
+kg:id_20 rdf:type cls:c_5398.
+cls:c_5398 rdfs:label "情報把握"@ja.
+kg:id_18 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "台帳などの整備充実"@ja.
+kg:id_21 rdf:type cls:c_5397.
+kg:id_3 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "バリアフリー化"@ja.
+kg:id_22 rdf:type cls:c_1228.
+cls:c_1228 rdfs:label "バリアフリー化"@ja.
+kg:id_3 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "スロープの整備"@ja.
+kg:id_23 rdf:type cls:c_1229.
+cls:c_1229 rdfs:label "設備整備"@ja.
+kg:id_3 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "手すりの整備"@ja.
+kg:id_24 rdf:type cls:c_1229.
+kg:id_3 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "障がい者用トイレの整備"@ja.
+kg:id_25 rdf:type cls:c_1229.
+kg:id_3 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "コミュニティセンター"@ja.
+kg:id_26 rdf:type cls:c_5399.
+cls:c_5399 rdfs:label "地域施設"@ja.
+kg:id_27 rdfs:label "福祉避難所の第一候補として位置づけ"@ja.
+kg:id_27 rdf:type cls:c_5400.
+cls:c_5400 rdfs:label "福祉避難所候補"@ja.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "大きな体育館を間仕切りして福祉避難所的に使う工夫"@ja.
+kg:id_28 rdf:type cls:c_5401.
+cls:c_5401 rdfs:label "施設活用"@ja.
+kg:id_3 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "保健師などの支援スタッフ配置"@ja.
+kg:id_29 rdf:type cls:c_5402.
+cls:c_5402 rdfs:label "支援職員配置"@ja.
+kg:id_3 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "情報伝達体制の整備"@ja.
+kg:id_30 rdf:type cls:c_5403.
+cls:c_5403 rdfs:label "情報伝達体制"@ja.
+kg:id_3 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "相談窓口の設置"@ja.
+kg:id_31 rdf:type cls:c_1372.
+kg:id_3 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "物資の提供体制整備"@ja.
+kg:id_32 rdf:type cls:c_5404.
+cls:c_5404 rdfs:label "物資提供体制"@ja.
+kg:id_3 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "病院への移送体制整備"@ja.
+kg:id_33 rdf:type cls:c_5405.
+cls:c_5405 rdfs:label "移送体制整備"@ja.
+kg:id_3 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "設置運営マニュアルの作成"@ja.
+kg:id_34 rdf:type cls:c_5406.
+cls:c_5406 rdfs:label "運営マニュアル"@ja.
+kg:id_3 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "関係者が参加した訓練の実施"@ja.
+kg:id_35 rdf:type cls:c_5176.
+cls:c_5176 rdfs:label "訓練実施"@ja.
+kg:id_3 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "避難者を特化しながら振り分け"@ja.
+kg:id_36 rdf:type cls:c_5394.
+kg:id_3 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "手話通訳受講者やボランティアへの協力依頼"@ja.
+kg:id_37 rdf:type cls:c_5407.
+cls:c_5407 rdfs:label "協力要請"@ja.
+kg:id_3 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "市内で確保が難しい場合の他への要請"@ja.
+kg:id_38 rdf:type cls:c_5408.
+cls:c_5408 rdfs:label "外部要請"@ja.
+kg:id_3 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "災害時要援護者支援"@ja.
+kg:id_39 rdf:type cls:c_5101.
+kg:id_40 rdfs:label "水害時や地震時の避難場所と拠点的福祉避難所の記載"@ja.
+kg:id_40 rdf:type cls:c_5409.
+cls:c_5409 rdfs:label "避難情報記載"@ja.
+kg:id_39 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "障がい者台帳など既存情報の活用"@ja.
+kg:id_41 rdf:type cls:c_5410.
+cls:c_5410 rdfs:label "既存情報活用"@ja.
+kg:id_3 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "詳細データの内部的な積み上げ"@ja.
+kg:id_42 rdf:type cls:c_5411.
+cls:c_5411 rdfs:label "詳細情報整備"@ja.
+kg:id_3 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "近隣県や他市町村との協定の検討"@ja.
+kg:id_43 rdf:type cls:c_5412.
+cls:c_5412 rdfs:label "広域協定検討"@ja.
+kg:id_3 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "聴覚障がい者支援"@ja.
+kg:id_44 rdf:type cls:c_1569.
+cls:c_1569 rdfs:label "障がい者支援"@ja.
+kg:id_45 rdfs:label "福祉避難所で必要となる機器物品のリスト化"@ja.
+kg:id_45 rdf:type cls:c_5413.
+cls:c_5413 rdfs:label "必要物品整理"@ja.
+kg:id_44 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "業者との災害時協定締結"@ja.
+kg:id_46 rdf:type cls:c_5414.
+cls:c_5414 rdfs:label "災害協定締結"@ja.
+kg:id_44 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "必要なものの一定程度の市準備"@ja.
+kg:id_47 rdf:type cls:c_5415.
+cls:c_5415 rdfs:label "物品準備"@ja.
+kg:id_44 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "市内業者との連絡体制整備"@ja.
+kg:id_48 rdf:type cls:c_5416.
+cls:c_5416 rdfs:label "連絡体制整備"@ja.
+kg:id_44 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "食育推進計画"@ja.
+kg:id_49 rdf:type cls:c_5417.
+cls:c_5417 rdfs:label "食育計画"@ja.
+kg:id_50 rdfs:label "酒田市食育推進委員会を7月に立ち上げ12月をめどに新たな計画を策定"@ja.
+kg:id_50 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "食育推進"@ja.
+kg:id_51 rdf:type cls:c_5418.
+cls:c_5418 rdfs:label "食育推進"@ja.
+kg:id_52 rdfs:label "食育講演会の実施"@ja.
+kg:id_52 rdf:type cls:c_5419.
+cls:c_5419 rdfs:label "講演会実施"@ja.
+kg:id_51 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "庁舎ロビーでのパネル展示"@ja.
+kg:id_53 rdf:type cls:c_5420.
+cls:c_5420 rdfs:label "広報展示"@ja.
+kg:id_51 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "食事バランスガイド旬菜レシピ農産物旬暦の配布"@ja.
+kg:id_54 rdf:type cls:c_5421.
+cls:c_5421 rdfs:label "啓発資料配布"@ja.
+kg:id_51 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "食育出前講座の開催"@ja.
+kg:id_55 rdf:type cls:c_1252.
+cls:c_1252 rdfs:label "講座開催"@ja.
+kg:id_51 prop:contermeasure kg:id_55.
+kg:id_56 rdfs:label "幼稚園保育園小学生中学生を対象にした田植えや稲刈りなどの農業体験"@ja.
+kg:id_56 rdf:type cls:c_5422.
+cls:c_5422 rdfs:label "農業体験"@ja.
+kg:id_51 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "教育現場を中心に食育について一定の認知がある"@ja.
+kg:id_57 rdf:type cls:c_5423.
+cls:c_5423 rdfs:label "認知定着"@ja.
+kg:id_51 prop:effect kg:id_57.
+kg:id_58 rdfs:label "数値目標達成度の調査"@ja.
+kg:id_58 rdf:type cls:c_5424.
+cls:c_5424 rdfs:label "達成度調査"@ja.
+kg:id_49 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "若い女性にターゲットを絞ったPR"@ja.
+kg:id_59 rdf:type cls:c_5425.
+cls:c_5425 rdfs:label "対象別広報"@ja.
+kg:id_51 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "年代ごとにターゲットを絞った事業計画の作成"@ja.
+kg:id_60 rdf:type cls:c_5426.
+cls:c_5426 rdfs:label "対象別計画"@ja.
+kg:id_49 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "女性の意見を伺う機会の設置"@ja.
+kg:id_61 rdf:type cls:c_99.
+cls:c_99 rdfs:label "意見聴取"@ja.
+kg:id_49 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "家族団らんの日"@ja.
+kg:id_62 rdf:type cls:c_5427.
+cls:c_5427 rdfs:label "家族団らん推進"@ja.
+kg:id_63 rdfs:label "職員へ料理や食育話題を掲示し早く帰宅してもらう取り組み"@ja.
+kg:id_63 rdf:type cls:c_5428.
+cls:c_5428 rdfs:label "帰宅促進"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "毎週水曜日のノー残業デー"@ja.
+kg:id_64 rdf:type cls:c_5428.
+kg:id_62 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "19日に家族と一緒に食事をしようと積極的にアピール"@ja.
+kg:id_65 rdf:type cls:c_2354.
+cls:c_2354 rdfs:label "広報強化"@ja.
+kg:id_62 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "若い人や女性を含めた意見交換による大胆な施策の検討"@ja.
+kg:id_66 rdf:type cls:c_648.
+cls:c_648 rdfs:label "意見交換"@ja.
+kg:id_51 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "平成24年度からの実施に向けた事業化検討"@ja.
+kg:id_67 rdf:type cls:c_5429.
+cls:c_5429 rdfs:label "事業化検討"@ja.
+kg:id_49 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "酒田駅周辺整備"@ja.
+kg:id_68 rdf:type cls:c_5430.
+cls:c_5430 rdfs:label "駅周辺整備"@ja.
+kg:id_69 rdfs:label "現段階で1年の遅れ"@ja.
+kg:id_69 rdf:type cls:c_5431.
+cls:c_5431 rdfs:label "事業遅延"@ja.
+kg:id_68 prop:effect kg:id_69.
+kg:id_70 rdfs:label "JRとの協議に時間がかかっている"@ja.
+kg:id_70 rdf:type cls:c_5432.
+cls:c_5432 rdfs:label "協議長期化"@ja.
+kg:id_68 prop:cause kg:id_70.
+kg:id_71 rdfs:label "JR新潟支社との協議を精力的に進める"@ja.
+kg:id_71 rdf:type cls:c_5433.
+cls:c_5433 rdfs:label "事業協議"@ja.
+kg:id_68 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "ジャスコ跡地整備"@ja.
+kg:id_72 rdf:type cls:c_5434.
+cls:c_5434 rdfs:label "跡地整備"@ja.
+kg:id_73 rdfs:label "商業テナントがなかなか前に進まない"@ja.
+kg:id_73 rdf:type cls:c_5435.
+cls:c_5435 rdfs:label "テナント停滞"@ja.
+kg:id_72 prop:cause kg:id_73.
+kg:id_74 rdfs:label "民間商業テナント募集への最大限の努力"@ja.
+kg:id_74 rdf:type cls:c_5436.
+cls:c_5436 rdfs:label "テナント誘致"@ja.
+kg:id_72 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "一定の期限を設定し事業者側と今後の対応を話し合う"@ja.
+kg:id_75 rdf:type cls:c_5437.
+cls:c_5437 rdfs:label "期限設定"@ja.
+kg:id_72 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "老朽家屋問題"@ja.
+kg:id_76 rdf:type cls:c_5438.
+cls:c_5438 rdfs:label "老朽家屋問題"@ja.
+kg:id_77 rdfs:label "地域住民が不安を持つ"@ja.
+kg:id_77 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "住民不安"@ja.
+kg:id_76 prop:effect kg:id_77.
+kg:id_78 rdfs:label "所有者への働きかけ"@ja.
+kg:id_78 rdf:type cls:c_5439.
+cls:c_5439 rdfs:label "所有者働掛"@ja.
+kg:id_76 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "市役所が間に入って所有者と話をする"@ja.
+kg:id_79 rdf:type cls:c_5440.
+cls:c_5440 rdfs:label "行政仲介"@ja.
+kg:id_76 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "条例化の検討"@ja.
+kg:id_80 rdf:type cls:c_875.
+cls:c_875 rdfs:label "条例検討"@ja.
+kg:id_76 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "自助共助公助"@ja.
+kg:id_81 rdf:type cls:c_5441.
+cls:c_5441 rdfs:label "防災連携"@ja.
+kg:id_82 rdfs:label "大災害時は公助に時間を要する"@ja.
+kg:id_82 rdf:type cls:c_5442.
+cls:c_5442 rdfs:label "公助遅延"@ja.
+kg:id_81 prop:effect kg:id_82.
+kg:id_83 rdfs:label "自分の命は自分で守る"@ja.
+kg:id_83 rdf:type cls:c_5443.
+cls:c_5443 rdfs:label "自助"@ja.
+kg:id_81 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "地域や隣近所で助け合う"@ja.
+kg:id_84 rdf:type cls:c_5444.
+cls:c_5444 rdfs:label "共助"@ja.
+kg:id_81 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "自助共助公助の連携"@ja.
+kg:id_85 rdf:type cls:c_2071.
+cls:c_2071 rdfs:label "連携強化"@ja.
+kg:id_81 prop:contermeasure kg:id_85.
+kg:id_86 rdfs:label "自主防災組織"@ja.
+kg:id_86 rdf:type cls:c_3709.
+cls:c_3709 rdfs:label "自主防災組織"@ja.
+kg:id_87 rdfs:label "100％組織率を目指す"@ja.
+kg:id_87 rdf:type cls:c_5445.
+cls:c_5445 rdfs:label "組織化"@ja.
+kg:id_86 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "駅周辺整備"@ja.
+kg:id_88 rdf:type cls:c_5430.
+kg:id_89 rdfs:label "駅周辺の全体的なまちづくり構想の説明不足"@ja.
+kg:id_89 rdf:type cls:c_84.
+cls:c_84 rdfs:label "説明不足"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "全体的なまちづくり構想も含めてJRと協議"@ja.
+kg:id_90 rdf:type cls:c_5446.
+cls:c_5446 rdfs:label "全体協議"@ja.
+kg:id_88 prop:contermeasure kg:id_90.
+kg:id_91 rdfs:label "災害時の情報共有"@ja.
+kg:id_91 rdf:type cls:c_2546.
+cls:c_2546 rdfs:label "災害情報共有"@ja.
+kg:id_92 rdfs:label "市民が不安な夜を過ごした"@ja.
+kg:id_92 rdf:type cls:c_5343.
+cls:c_5343 rdfs:label "市民不安"@ja.
+kg:id_91 prop:effect kg:id_92.
+kg:id_93 rdfs:label "情報による現状把握が9割を解決する"@ja.
+kg:id_93 rdf:type cls:c_5398.
+kg:id_91 prop:effect kg:id_93.
+kg:id_94 rdfs:label "行政だけではない民間を含めたネットワークの構築"@ja.
+kg:id_94 rdf:type cls:c_5447.
+cls:c_5447 rdfs:label "情報網構築"@ja.
+kg:id_91 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "中通り商店街の支援活動"@ja.
+kg:id_95 rdf:type cls:c_5448.
+cls:c_5448 rdfs:label "支援活動"@ja.
+kg:id_96 rdfs:label "全国防災ネットワークを生かした南三陸町への支援物資供給拠点化"@ja.
+kg:id_96 rdf:type cls:c_5449.
+cls:c_5449 rdfs:label "物資拠点化"@ja.
+kg:id_95 prop:contermeasure kg:id_96.
+kg:id_97 rdfs:label "南三陸町支援"@ja.
+kg:id_97 rdf:type cls:c_5450.
+cls:c_5450 rdfs:label "被災地支援"@ja.
+kg:id_98 rdfs:label "今最も必要な物資を十数回届け炊き出しを行う"@ja.
+kg:id_98 rdf:type cls:c_5451.
+cls:c_5451 rdfs:label "物資支援"@ja.
+kg:id_97 prop:contermeasure kg:id_98.
+kg:id_99 rdfs:label "商店街支援活動"@ja.
+kg:id_99 rdf:type cls:c_5448.
+kg:id_100 rdfs:label "1つの商店街での物資調達力には限界がある"@ja.
+kg:id_100 rdf:type cls:c_5452.
+cls:c_5452 rdfs:label "調達限界"@ja.
+kg:id_99 prop:effect kg:id_100.
+kg:id_101 rdfs:label "震災対策連絡会議"@ja.
+kg:id_101 rdf:type cls:c_5453.
+cls:c_5453 rdfs:label "対策連絡会議"@ja.
+kg:id_102 rdfs:label "民間を含めた災害情報共有の場の開催"@ja.
+kg:id_102 rdf:type cls:c_5454.
+cls:c_5454 rdfs:label "情報共有会議"@ja.
+kg:id_101 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "コミュニティFM"@ja.
+kg:id_103 rdf:type cls:c_5455.
+cls:c_5455 rdfs:label "地域放送"@ja.
+kg:id_104 rdfs:label "災害時の有効な情報入手手段として活用"@ja.
+kg:id_104 rdf:type cls:c_5456.
+cls:c_5456 rdfs:label "情報手段"@ja.
+kg:id_103 prop:contermeasure kg:id_104.
+kg:id_105 rdfs:label "地域の情報やライフライン情報を得るために多くの市民が聞き入った"@ja.
+kg:id_105 rdf:type cls:c_5457.
+cls:c_5457 rdfs:label "地域情報提供"@ja.
+kg:id_103 prop:effect kg:id_105.
+kg:id_106 rdfs:label "災害バイク"@ja.
+kg:id_106 rdf:type cls:c_5458.
+cls:c_5458 rdfs:label "災害バイク"@ja.
+kg:id_107 rdfs:label "消防団や防災コミュニティセンターやボランティアと連携した設置"@ja.
+kg:id_107 rdf:type cls:c_5459.
+cls:c_5459 rdfs:label "連携設置"@ja.
+kg:id_106 prop:contermeasure kg:id_107.
+kg:id_108 rdfs:label "災害協定"@ja.
+kg:id_108 rdf:type cls:c_5460.
+cls:c_5460 rdfs:label "災害協定"@ja.
+kg:id_109 rdfs:label "遠隔地との協定締結"@ja.
+kg:id_109 rdf:type cls:c_5461.
+cls:c_5461 rdfs:label "遠隔協定"@ja.
+kg:id_108 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "MICE推進"@ja.
+kg:id_110 rdf:type cls:c_2282.
+cls:c_2282 rdfs:label "観光戦略"@ja.
+kg:id_111 rdfs:label "地域ビジネスとしての観光戦略の強化"@ja.
+kg:id_111 rdf:type cls:c_5462.
+cls:c_5462 rdfs:label "地域経済強化"@ja.
+kg:id_110 prop:contermeasure kg:id_111.
+kg:id_112 rdfs:label "中通り商店街の活動へのバックアップ"@ja.
+kg:id_112 rdf:type cls:c_3169.
+cls:c_3169 rdfs:label "活動支援"@ja.
+kg:id_97 prop:contermeasure kg:id_112.
+kg:id_113 rdfs:label "燃料物流医療機関受け入れ施設電力関係の情報共有ができた"@ja.
+kg:id_113 rdf:type cls:c_156.
+cls:c_156 rdfs:label "情報共有"@ja.
+kg:id_101 prop:effect kg:id_113.
+kg:id_114 rdfs:label "必要に応じた開催"@ja.
+kg:id_114 rdf:type cls:c_1196.
+cls:c_1196 rdfs:label "会議開催"@ja.
+kg:id_101 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "市民生活にかかわる最新情報を速やかに提供できた"@ja.
+kg:id_115 rdf:type cls:c_5463.
+cls:c_5463 rdfs:label "迅速情報提供"@ja.
+kg:id_103 prop:effect kg:id_115.
+kg:id_116 rdfs:label "今後さらに活用し得るツールとして工夫を重ねる"@ja.
+kg:id_116 rdf:type cls:c_5464.
+cls:c_5464 rdfs:label "活用強化"@ja.
+kg:id_103 prop:contermeasure kg:id_116.
+kg:id_117 rdfs:label "災害時情報伝達"@ja.
+kg:id_117 rdf:type cls:c_1458.
+cls:c_1458 rdfs:label "災害情報伝達"@ja.
+kg:id_118 rdfs:label "防災行政無線とFM放送とコミュニティセンターや支所との連携"@ja.
+kg:id_118 rdf:type cls:c_5465.
+cls:c_5465 rdfs:label "手段連携"@ja.
+kg:id_117 prop:contermeasure kg:id_118.
+kg:id_119 rdfs:label "伝達手段の拡充"@ja.
+kg:id_119 rdf:type cls:c_5466.
+cls:c_5466 rdfs:label "手段拡充"@ja.
+kg:id_117 prop:contermeasure kg:id_119.
+kg:id_120 rdfs:label "電気交通ごみ避難所義援金救援物資受け付けなどの情報提供"@ja.
+kg:id_120 rdf:type cls:c_5467.
+cls:c_5467 rdfs:label "生活情報提供"@ja.
+kg:id_103 prop:contermeasure kg:id_120.
+kg:id_121 rdfs:label "停電時や地域限定情報が必要なとき役割が非常に大きい"@ja.
+kg:id_121 rdf:type cls:c_5468.
+cls:c_5468 rdfs:label "重要情報源"@ja.
+kg:id_103 prop:effect kg:id_121.
+kg:id_122 rdfs:label "災害バイク隊"@ja.
+kg:id_122 rdf:type cls:c_5458.
+kg:id_123 rdfs:label "先進事例を勉強し効果を検証したうえで前向きに検討"@ja.
+kg:id_123 rdf:type cls:c_1039.
+cls:c_1039 rdfs:label "導入検討"@ja.
+kg:id_122 prop:contermeasure kg:id_123.
+kg:id_124 rdfs:label "平時から交流のある地域との協定締結"@ja.
+kg:id_124 rdf:type cls:c_5469.
+cls:c_5469 rdfs:label "交流地域協定"@ja.
+kg:id_108 prop:contermeasure kg:id_124.
+kg:id_125 rdfs:label "沿岸と内陸部の組み合わせ"@ja.
+kg:id_125 rdf:type cls:c_5470.
+cls:c_5470 rdfs:label "地域分散協定"@ja.
+kg:id_108 prop:contermeasure kg:id_125.
+kg:id_126 rdfs:label "石巻大崎新庄酒田の4市での防災協定検討"@ja.
+kg:id_126 rdf:type cls:c_5412.
+kg:id_108 prop:contermeasure kg:id_126.
+kg:id_127 rdfs:label "受け入れ施設の規模の状況により大規模会議を受け入れ効果を上げるまでに至っていない"@ja.
+kg:id_127 rdf:type cls:c_5471.
+cls:c_5471 rdfs:label "受入制約"@ja.
+kg:id_110 prop:cause kg:id_127.
+kg:id_128 rdfs:label "100人から200人程度の各種会合等の受け入れ態勢強化"@ja.
+kg:id_128 rdf:type cls:c_5472.
+cls:c_5472 rdfs:label "受入強化"@ja.
+kg:id_110 prop:contermeasure kg:id_128.
+kg:id_129 rdfs:label "山形県の広域商談会の酒田開催"@ja.
+kg:id_129 rdf:type cls:c_5473.
+cls:c_5473 rdfs:label "会合開催"@ja.
+kg:id_110 prop:contermeasure kg:id_129.
+kg:id_130 rdfs:label "商工会議所など関係団体との情報交換協議"@ja.
+kg:id_130 rdf:type cls:c_5474.
+cls:c_5474 rdfs:label "関係協議"@ja.
+kg:id_110 prop:contermeasure kg:id_130.
+kg:id_131 rdfs:label "民間と行政の役割や収支やインバウンド対策の検討"@ja.
+kg:id_131 rdf:type cls:c_5475.
+cls:c_5475 rdfs:label "事業検討"@ja.
+kg:id_110 prop:contermeasure kg:id_131.
+kg:id_132 rdfs:label "津波ハザードマップ見直し"@ja.
+kg:id_132 rdf:type cls:c_5476.
+cls:c_5476 rdfs:label "津波対策"@ja.
+kg:id_133 rdfs:label "9月中を目標に作成"@ja.
+kg:id_133 rdf:type cls:c_5477.
+cls:c_5477 rdfs:label "地図見直し"@ja.
+kg:id_132 prop:contermeasure kg:id_133.
+kg:id_134 rdfs:label "コミュニティセンターごとに地域住民と避難場所避難経路を再点検"@ja.
+kg:id_134 rdf:type cls:c_5478.
+cls:c_5478 rdfs:label "避難再点検"@ja.
+kg:id_132 prop:contermeasure kg:id_134.
+kg:id_135 rdfs:label "津波避難対策"@ja.
+kg:id_135 rdf:type cls:c_5479.
+cls:c_5479 rdfs:label "津波避難対策"@ja.
+kg:id_136 rdfs:label "避難ビル所有者への協力依頼"@ja.
+kg:id_136 rdf:type cls:c_5407.
+kg:id_135 prop:contermeasure kg:id_136.
+kg:id_137 rdfs:label "浸水想定地域で未組織自治会が7自治会ある"@ja.
+kg:id_137 rdf:type cls:c_5480.
+cls:c_5480 rdfs:label "未組織地域"@ja.
+kg:id_86 prop:effect kg:id_137.
+kg:id_138 rdfs:label "自主防災資機材整備"@ja.
+kg:id_138 rdf:type cls:c_5481.
+cls:c_5481 rdfs:label "防災資機材整備"@ja.
+kg:id_139 rdfs:label "要望状況に応じた補正対応"@ja.
+kg:id_139 rdf:type cls:c_5482.
+cls:c_5482 rdfs:label "補正対応"@ja.
+kg:id_138 prop:contermeasure kg:id_139.
+kg:id_140 rdfs:label "防災資機材備蓄"@ja.
+kg:id_140 rdf:type cls:c_5483.
+cls:c_5483 rdfs:label "防災資機材備蓄"@ja.
+kg:id_141 rdfs:label "コミュニティセンターへの発電機ガスボンベ炊飯装置テント等の備蓄"@ja.
+kg:id_141 rdf:type cls:c_5484.
+cls:c_5484 rdfs:label "資機材備蓄"@ja.
+kg:id_140 prop:contermeasure kg:id_141.
+kg:id_142 rdfs:label "量販店や農協との災害協定による流通備蓄活用"@ja.
+kg:id_142 rdf:type cls:c_5485.
+cls:c_5485 rdfs:label "流通備蓄活用"@ja.
+kg:id_140 prop:contermeasure kg:id_142.
+kg:id_143 rdfs:label "津波避難ビル"@ja.
+kg:id_143 rdf:type cls:c_5486.
+cls:c_5486 rdfs:label "津波避難ビル"@ja.
+kg:id_144 rdfs:label "現在の5カ所指定からさらに増やす"@ja.
+kg:id_144 rdf:type cls:c_5487.
+cls:c_5487 rdfs:label "追加指定"@ja.
+kg:id_143 prop:contermeasure kg:id_144.
+kg:id_145 rdfs:label "津波避難経路"@ja.
+kg:id_145 rdf:type cls:c_5488.
+cls:c_5488 rdfs:label "津波避難経路"@ja.
+kg:id_146 rdfs:label "液状化想定地点を加味した設定"@ja.
+kg:id_146 rdf:type cls:c_5489.
+cls:c_5489 rdfs:label "避難経路設定"@ja.
+kg:id_145 prop:contermeasure kg:id_146.
+kg:id_147 rdfs:label "防災行政無線"@ja.
+kg:id_147 rdf:type cls:c_5490.
+cls:c_5490 rdfs:label "防災行政無線"@ja.
+kg:id_148 rdfs:label "震度4以上の地震や津波警報注意報時の直ちに放送"@ja.
+kg:id_148 rdf:type cls:c_5491.
+cls:c_5491 rdfs:label "緊急放送"@ja.
+kg:id_147 prop:contermeasure kg:id_148.
+kg:id_149 rdfs:label "土日夜間は消防本部通信指令による対応"@ja.
+kg:id_149 rdf:type cls:c_5492.
+cls:c_5492 rdfs:label "夜間対応"@ja.
+kg:id_147 prop:contermeasure kg:id_149.
+kg:id_150 rdfs:label "浸水想定区域で届かない場所の検証と必要に応じた増設増強"@ja.
+kg:id_150 rdf:type cls:c_3696.
+cls:c_3696 rdfs:label "設備増強"@ja.
+kg:id_147 prop:contermeasure kg:id_150.
+kg:id_151 rdfs:label "農産物放射能検査"@ja.
+kg:id_151 rdf:type cls:c_5493.
+cls:c_5493 rdfs:label "放射能検査"@ja.
+kg:id_152 rdfs:label "県が主体となり県農協中央会と協議し検査を実施"@ja.
+kg:id_152 rdf:type cls:c_1194.
+cls:c_1194 rdfs:label "検査実施"@ja.
+kg:id_151 prop:contermeasure kg:id_152.
+kg:id_153 rdfs:label "野菜や原乳は週1回の重点検査"@ja.
+kg:id_153 rdf:type cls:c_5494.
+cls:c_5494 rdfs:label "重点検査"@ja.
+kg:id_151 prop:contermeasure kg:id_153.
+kg:id_154 rdfs:label "その他主要品目も可能な限り回数を増やして検査"@ja.
+kg:id_154 rdf:type cls:c_2760.
+cls:c_2760 rdfs:label "検査強化"@ja.
+kg:id_151 prop:contermeasure kg:id_154.
+kg:id_155 rdfs:label "酒田地域の農産物放射能検査"@ja.
+kg:id_155 rdf:type cls:c_5493.
+kg:id_156 rdfs:label "イチゴ6回土壌1回豚肉1回ですべて不検出"@ja.
+kg:id_156 rdf:type cls:c_3635.
+cls:c_3635 rdfs:label "安全確認"@ja.
+kg:id_155 prop:effect kg:id_156.
+kg:id_157 rdfs:label "県による費用負担"@ja.
+kg:id_157 rdf:type cls:c_813.
+cls:c_813 rdfs:label "費用負担"@ja.
+kg:id_151 prop:contermeasure kg:id_157.
+kg:id_158 rdfs:label "農産物風評被害対策"@ja.
+kg:id_158 rdf:type cls:c_5495.
+cls:c_5495 rdfs:label "風評被害対策"@ja.
+kg:id_159 rdfs:label "風評被害の事実確認と迅速な是正要請"@ja.
+kg:id_159 rdf:type cls:c_5496.
+cls:c_5496 rdfs:label "事実確認"@ja.
+kg:id_158 prop:contermeasure kg:id_159.
+kg:id_160 rdfs:label "主要取引先などでの安全PRイベント実施"@ja.
+kg:id_160 rdf:type cls:c_5497.
+cls:c_5497 rdfs:label "安全広報"@ja.
+kg:id_158 prop:contermeasure kg:id_160.
+kg:id_161 rdfs:label "災害時要援護者安否確認"@ja.
+kg:id_161 rdf:type cls:c_5498.
+cls:c_5498 rdfs:label "要援護者安否確認"@ja.
+kg:id_162 rdfs:label "自治会長への安否確認要請"@ja.
+kg:id_162 rdf:type cls:c_5499.
+cls:c_5499 rdfs:label "安否確認要請"@ja.
+kg:id_161 prop:contermeasure kg:id_162.
+kg:id_163 rdfs:label "民生委員による見守り対象者の安否確認"@ja.
+kg:id_163 rdf:type cls:c_5500.
+cls:c_5500 rdfs:label "安否確認"@ja.
+kg:id_161 prop:contermeasure kg:id_163.
+kg:id_164 rdfs:label "翌日午後4時ごろまでに安否確認完了"@ja.
+kg:id_164 rdf:type cls:c_5501.
+cls:c_5501 rdfs:label "確認完了"@ja.
+kg:id_161 prop:effect kg:id_164.
+kg:id_165 rdfs:label "職員による自治会長や民児協会長宅の直接訪問"@ja.
+kg:id_165 rdf:type cls:c_5502.
+cls:c_5502 rdfs:label "直接訪問"@ja.
+kg:id_161 prop:contermeasure kg:id_165.
+kg:id_166 rdfs:label "地域包括支援センターや居宅介護支援事業所による自主的訪問"@ja.
+kg:id_166 rdf:type cls:c_5503.
+cls:c_5503 rdfs:label "訪問確認"@ja.
+kg:id_161 prop:contermeasure kg:id_166.
+kg:id_167 rdfs:label "災害時要援護者避難支援"@ja.
+kg:id_167 rdf:type cls:c_5504.
+cls:c_5504 rdfs:label "要援護者避難支援"@ja.
+kg:id_168 rdfs:label "近所の支援者による避難支援"@ja.
+kg:id_168 rdf:type cls:c_5505.
+cls:c_5505 rdfs:label "近隣支援"@ja.
+kg:id_167 prop:contermeasure kg:id_168.
+kg:id_169 rdfs:label "民生委員による安否確認支援"@ja.
+kg:id_169 rdf:type cls:c_5506.
+cls:c_5506 rdfs:label "安否確認支援"@ja.
+kg:id_167 prop:contermeasure kg:id_169.
+kg:id_170 rdfs:label "支援者が要援護者宅を訪問し必要に応じて避難支援"@ja.
+kg:id_170 rdf:type cls:c_5507.
+cls:c_5507 rdfs:label "訪問避難支援"@ja.
+kg:id_167 prop:contermeasure kg:id_170.
+kg:st_1 rdfs:label "阿部ひとみ議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "福祉避難所の設置と運営を早急に進めるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "災害時に配慮が必要な人の避難環境整備が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "受け入れ態勢が整っていなかったのは残念"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "要援護者情報を事前に把握すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "受け入れ可能施設の把握が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "拠点施設を福祉避難所として位置づけるべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "身近な避難所内にも福祉避難所空間を確保すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "速やかな開設運営のため事前体制整備が必要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "横断的な協議会組織が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "情報収集と迅速対応のため相談体制を整えるべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "大規模災害では優先順位をつけた対応が必要"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "ニーズに応じた避難所配置が重要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "支援ボランティアを事前確保すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "阿部寿一市長"@ja.
+kg:st_2 rdfs:type cls:st_17.
+cls:st_17 rdfs:label "市長"@ja.
+kg:op_14 prop:content "相当程度把握は進んでおり今後も整備充実を進める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "要援護者情報を台帳で網羅している"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "今後さらに情報整備を進めたい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "福祉避難所は基本的にバリアフリーである必要がある"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "必要設備として整備が必要"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "必要設備として整備が必要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "必要設備として整備が必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "地域密着の防災コミュニティセンターを候補に検討する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "大規模災害時は多様な施設活用が必要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "運営には人的体制整備が必要"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "運営には情報伝達機能が必要"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "平時から体制整備が必要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "運営上必要な機能を平時から整えるべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "平時から万が一に備えて体制整備が必要"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "まずマニュアル作成を早急に検討する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "マニュアル作成後に訓練実施を進めたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "落ち着いた段階ではニーズに応じた振り分けも検討する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "災害時協力を得られるよう再度依頼したい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "市内だけで難しいときは他にも要請する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "大石薫健康福祉部長"@ja.
+kg:st_3 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_33 prop:content "台帳でスムーズな避難につなげる仕組みをつくっている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "台帳登録外の人にも既存情報を活用して対応する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "できるだけ詳細なデータにしていきたい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "今回の大規模災害を教訓に検討を進める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "必要品目を整理しすぐ手配できる仕組みを整えるべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "円滑に機器対応できる体制づくりが必要"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "体の一部として使うものなど必要物品の準備を詰めたい"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "市内業者からいつでも取り扱える体制を早急に詰めるべき"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "白崎好行農林水産部長"@ja.
+kg:st_4 rdfs:type cls:st_18.
+kg:op_41 prop:content "新たな食育推進計画を策定したい"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_4.
+kg:op_42 prop:content "食育の認知向上に取り組んできた"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "食育月間に合わせて啓発してきた"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "啓発物品配布で知識普及を図ってきた"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "出前講座で食育普及を進めてきた"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "教育現場を中心に食育の認知を広げてきた"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "食育という言葉は市民の間に定着してきている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "達成度を調査し次期計画検討材料にする"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+kg:op_49 prop:content "若い女性向けのPRは非常に有効"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+kg:op_50 prop:content "今まで以上にわかりやすく取り組みやすい計画を検討したい"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "食育計画のプランニングに女性意見を反映したい"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_4.
+kg:op_52 prop:content "家族と一緒に食事をとることを促している"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_4.
+kg:op_53 prop:content "早く帰って家族と食事する取り組みを行っている"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_4.
+kg:op_54 prop:content "家族だんらんの日をより積極的に進めたい"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_4.
+kg:op_55 prop:content "大胆な意見も踏まえて取り組みやすい施策を検討する"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_4.
+kg:op_56 prop:content "よい事業は次期推進計画で実施していきたい"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "後藤仁議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_57 prop:content "タイムリミットを過ぎることを心配している"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_5.
+kg:op_58 prop:content "相手方のある事業で交渉に若干の時間がかかる"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "なるべく早く事業化を図りたい"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "テナント難航なら公共が腹をくくる時期に来ている"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_5.
+kg:op_61 prop:content "まずは民間事業者側の動きを見守り支援する"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_2.
+kg:op_62 prop:content "タイムリミットを見据え必要なら次の段階を協議する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_2.
+kg:op_63 prop:content "地域で安心して暮らせる仕組みを公が構築すべき"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_5.
+kg:op_64 prop:content "現行法制度では地道に所有者に働きかけるしかない"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_2.
+kg:op_65 prop:content "近隣住民だけでは限界がある場合は市が間に入る"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_2.
+kg:op_66 prop:content "全国の動向も見ながら条例化を目指して検討したい"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "加藤裕総務部長"@ja.
+kg:st_6 rdfs:type cls:st_18.
+kg:op_67 prop:content "被災直後は公的支援をほとんど期待できない"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_6.
+kg:op_68 prop:content "自助が被害を最小限に抑える基本"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_6.
+kg:op_69 prop:content "共助が重要"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_6.
+kg:op_70 prop:content "お互いに連携していくことが重要"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_6.
+kg:op_71 prop:content "共助強化のため100％を目指したい"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_6.
+kg:op_72 prop:content "JR側に十分説明し切れていなかったことが課題"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_6.
+kg:op_73 prop:content "全体構想を含めて協議に当たる必要がある"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "市村浩一議員"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_74 prop:content "停電時に情報が得られず不安が大きかった"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_7.
+kg:op_75 prop:content "災害時は情報が極めて大きな役割を果たす"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_7.
+kg:op_76 prop:content "民間を含めた情報ネットワークが大切"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_7.
+kg:op_77 prop:content "民間ネットワークが迅速に大きな役割を果たした"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_7.
+kg:op_78 prop:content "被災地のニーズに応じた支援が行われた"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_7.
+kg:op_79 prop:content "長期化すると地域内支援ネットワーク構築が必要"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_7.
+kg:op_80 prop:content "非常に大きな効果があり継続すべき"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_7.
+kg:op_81 prop:content "ラジオは被災地で有効な情報手段となった"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_7.
+kg:op_82 prop:content "停電時の重要な情報源だったはず"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_7.
+kg:op_83 prop:content "情報収集と救援のため設置を提案する"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_7.
+kg:op_84 prop:content "広域災害では近隣協定が機能不全となるため遠隔地協定が必要"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_7.
+kg:op_85 prop:content "交流人口の拡大による消費を地域内にとどめ雇用創出につなげるべき"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_7.
+kg:op_86 prop:content "市としても要請に応じて支援し側面から後押しする"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_2.
+kg:op_87 prop:content "各団体で認識が深まり大変効果があった"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_2.
+kg:op_88 prop:content "情報交換の必要があるときには開催してよい"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_2.
+kg:op_89 prop:content "地場に密着したFMとして大変活躍した"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_2.
+kg:op_90 prop:content "反省点も踏まえ今後さらに活用していきたい"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_2.
+kg:op_91 prop:content "複数の伝達手段を組み合わせて正確な情報を伝えるべき"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_2.
+kg:op_92 prop:content "いち早く正確な情報伝達体制を整備したい"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_2.
+kg:op_93 prop:content "市民が知りたい知らせたい情報を重視して提供した"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_2.
+kg:op_94 prop:content "今後も一層活用したい"@ja.
+kg:op_94 rdf:type cls:opinion.
+kg:op_94 prop:speaker kg:st_2.
+kg:op_95 prop:content "有効なら設置を前向きに検討したい"@ja.
+kg:op_95 rdf:type cls:opinion.
+kg:op_95 prop:speaker kg:st_2.
+kg:op_96 prop:content "常時連携がとれ平時交流もある地域が適切"@ja.
+kg:op_96 rdf:type cls:opinion.
+kg:op_96 prop:speaker kg:st_2.
+kg:op_97 prop:content "津波被害想定を踏まえ土地柄の違う地域と結ぶ必要がある"@ja.
+kg:op_97 rdf:type cls:opinion.
+kg:op_97 prop:speaker kg:st_2.
+kg:op_98 prop:content "道路整備観光連携スポーツ交流のつながりを生かして協定を考えたい"@ja.
+kg:op_98 rdf:type cls:opinion.
+kg:op_98 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "小野直樹商工観光部長"@ja.
+kg:st_8 rdfs:type cls:st_18.
+kg:op_99 prop:content "現状では大規模コンベンション受け入れに制約がある"@ja.
+kg:op_99 rdf:type cls:opinion.
+kg:op_99 prop:speaker kg:st_8.
+kg:op_100 prop:content "地域規模に合った受け入れ強化が必要"@ja.
+kg:op_100 rdf:type cls:opinion.
+kg:op_100 prop:speaker kg:st_8.
+kg:op_101 prop:content "300人規模商談会の開催を交流拡大につなげる"@ja.
+kg:op_101 rdf:type cls:opinion.
+kg:op_101 prop:speaker kg:st_8.
+kg:op_102 prop:content "先進例を参考に実現可能性を探りたい"@ja.
+kg:op_102 rdf:type cls:opinion.
+kg:op_102 prop:speaker kg:st_8.
+kg:op_103 prop:content "実現に向けた可能性を探っていきたい"@ja.
+kg:op_103 rdf:type cls:opinion.
+kg:op_103 prop:speaker kg:st_8.
+kg:op_104 prop:content "県の浸水予測区域をもとに見直しを進める"@ja.
+kg:op_104 rdf:type cls:opinion.
+kg:op_104 prop:speaker kg:st_2.
+kg:op_105 prop:content "地域との話し合いで具体的に見直す"@ja.
+kg:op_105 rdf:type cls:opinion.
+kg:op_105 prop:speaker kg:st_2.
+kg:op_106 prop:content "必要に応じ新たな避難ビル指定を進める"@ja.
+kg:op_106 rdf:type cls:opinion.
+kg:op_106 prop:speaker kg:st_2.
+kg:op_107 prop:content "浸水想定区域での組織化を進める必要がある"@ja.
+kg:op_107 rdf:type cls:opinion.
+kg:op_107 prop:speaker kg:st_2.
+kg:op_108 prop:content "大震災を受け要望が増えれば補正対応も考える"@ja.
+kg:op_108 rdf:type cls:opinion.
+kg:op_108 prop:speaker kg:st_2.
+kg:op_109 prop:content "市として資機材備蓄を行っている"@ja.
+kg:op_109 rdf:type cls:opinion.
+kg:op_109 prop:speaker kg:st_2.
+kg:op_110 prop:content "米や水は流通備蓄から確保する想定"@ja.
+kg:op_110 rdf:type cls:opinion.
+kg:op_110 prop:speaker kg:st_2.
+kg:op_111 prop:content "地域との話し合いを踏まえ追加指定を進める"@ja.
+kg:op_111 rdf:type cls:opinion.
+kg:op_111 prop:speaker kg:st_2.
+kg:op_112 prop:content "液状化地点の把握を進め避難経路設定に反映する"@ja.
+kg:op_112 rdf:type cls:opinion.
+kg:op_112 prop:speaker kg:st_2.
+kg:op_113 prop:content "危機管理室から避難のお願いを放送する"@ja.
+kg:op_113 rdf:type cls:opinion.
+kg:op_113 prop:speaker kg:st_2.
+kg:op_114 prop:content "休日夜間も放送対応できる体制にしている"@ja.
+kg:op_114 rdf:type cls:opinion.
+kg:op_114 prop:speaker kg:st_2.
+kg:op_115 prop:content "音声が届かない場所を検証し必要があれば増強する"@ja.
+kg:op_115 rdf:type cls:opinion.
+kg:op_115 prop:speaker kg:st_2.
+kg:op_116 prop:content "県主導で検査体制を進めている"@ja.
+kg:op_116 rdf:type cls:opinion.
+kg:op_116 prop:speaker kg:st_2.
+kg:op_117 prop:content "重点品目は頻度を高めて検査している"@ja.
+kg:op_117 rdf:type cls:opinion.
+kg:op_117 prop:speaker kg:st_2.
+kg:op_118 prop:content "主要品目は可能な限り回数を増やしている"@ja.
+kg:op_118 rdf:type cls:opinion.
+kg:op_118 prop:speaker kg:st_2.
+kg:op_119 prop:content "現時点では安全性が確認されている"@ja.
+kg:op_119 rdf:type cls:opinion.
+kg:op_119 prop:speaker kg:st_2.
+kg:op_120 prop:content "検査費用は県が負担している"@ja.
+kg:op_120 rdf:type cls:opinion.
+kg:op_120 prop:speaker kg:st_2.
+kg:op_121 prop:content "風評が出た場合はいち早く確認し是正を求める"@ja.
+kg:op_121 rdf:type cls:opinion.
+kg:op_121 prop:speaker kg:st_2.
+kg:op_122 prop:content "庄内の農産物の安全をPRする取り組みに協力する"@ja.
+kg:op_122 rdf:type cls:opinion.
+kg:op_122 prop:speaker kg:st_2.
+kg:op_123 prop:content "名簿登録者の安否確認を自治会長に要請した"@ja.
+kg:op_123 rdf:type cls:opinion.
+kg:op_123 prop:speaker kg:st_3.
+kg:op_124 prop:content "民生委員も自主的に安否確認を行った"@ja.
+kg:op_124 rdf:type cls:opinion.
+kg:op_124 prop:speaker kg:st_3.
+kg:op_125 prop:content "重層的な確認により安全確認ができた"@ja.
+kg:op_125 rdf:type cls:opinion.
+kg:op_125 prop:speaker kg:st_3.
+kg:op_126 prop:content "電話不通時は職員が直接訪問して確認した"@ja.
+kg:op_126 rdf:type cls:opinion.
+kg:op_126 prop:speaker kg:st_3.
+kg:op_127 prop:content "関係機関も自主的に見守りを行った"@ja.
+kg:op_127 rdf:type cls:opinion.
+kg:op_127 prop:speaker kg:st_3.
+kg:op_128 prop:content "支援者が要援護者の避難支援に当たる仕組みとしている"@ja.
+kg:op_128 rdf:type cls:opinion.
+kg:op_128 prop:speaker kg:st_3.
+kg:op_129 prop:content "民生委員が日ごろの活動の中で支援している"@ja.
+kg:op_129 rdf:type cls:opinion.
+kg:op_129 prop:speaker kg:st_3.
+kg:op_130 prop:content "地震発生時は支援者訪問による支援を行う仕組み"@ja.
+kg:op_130 rdf:type cls:opinion.
+kg:op_130 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "取り組みに向かう段階にこのたびの大震災に見舞われてしまいました いつ発生するやも予測のつかない状況の中、福祉避難所の設置、運営については早急に進めていかなければならない"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "情報入手や行動、判断に大きなハンディを負いながらの、避難所生活が困難と思われる高齢者や障がい者、妊婦の方のための福祉避難所"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "車いすでの避難者の方がいらしたそうですが、施設の受け入れの態勢が整っていなかったために別の避難所へ行かれたというような非常に残念な情報もあります"@ja.
+<< kg:id_7 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "それぞれの体の状況、介助者の状況、緊急時の連絡先など、可能な限りの状況の調査をし、データを確保しておく必要がある"@ja.
+<< kg:id_3 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "緊急入所などの可能な施設の把握も必要となります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "老人施設や障がい者センター、保健センターや支援学校などの拠点的な施設"@ja.
+<< kg:id_3 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "身近な指定避難所の中に福祉避難所の空間を確保できる施設"@ja.
+<< kg:id_3 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "あらかじめ福祉避難所担当の係を決めておくこと"@ja.
+<< kg:id_3 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "福祉部局を中心に支援団体、福祉施設などの関係者、保健師、医師、看護師などの医療関係者、民生委員、コミュニティセンターなどをメンバーとする、プロジェクトチームとなる協議会などが必要"@ja.
+<< kg:id_3 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "情報収集や迅速な対応を図るため、そして災害弱者からの相談に対するワンストップサービスの提供の点でも、事前に体制を整える必要がある"@ja.
+<< kg:id_3 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "東日本大震災のような大規模災害におきましては、避難所のスペースや支援物資が限られた中で、介護者の有無や障がいの種類、程度に応じて優先順位をつけて対応しなければならない"@ja.
+<< kg:id_3 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "要援護者のニーズを把握して適切に対応できるよう、福祉避難所の場所をそれぞれのニーズによって振り分けること"@ja.
+<< kg:id_3 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "手話通訳や点訳、音訳のボランティアの人材を確保し、リストアップしておくことなども重要"@ja.
+<< kg:id_18 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "万が一の災害時に避難に援助を必要とする方の台帳登録を進めておりました"@ja.
+<< kg:id_18 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "この台帳の中には、要援護者の年齢などの基本情報のほか、親族などの緊急の連絡先、身体の状況、担当民生委員などの情報なども網羅されております"@ja.
+<< kg:id_3 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "これからももっと、この台帳などの整備充実などは進めていきたい"@ja.
+<< kg:id_3 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "福祉避難所ということを整理する場合には、基本的にはバリアフリーである必要があります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "スロープ、手すり、障がい者用トイレなどが例えば必要な設備"@ja.
+<< kg:id_3 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "スロープ、手すり、障がい者用トイレなどが例えば必要な設備"@ja.
+<< kg:id_3 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "スロープ、手すり、障がい者用トイレなどが例えば必要な設備"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "市の施設ではコミュニティセンターが福祉避難所として位置づける１つの候補 当面はコミュニティセンターを福祉避難所の第一の候補"@ja.
+<< kg:id_3 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "市その他大きな体育館などを間仕切りしてそういうふうにするという、福祉避難所的に使うという工夫も必要になるかもしれません"@ja.
+<< kg:id_3 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "実際の福祉避難所の運営に際しては、保健師などの支援スタッフの配置"@ja.
+<< kg:id_3 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "情報伝達、相談窓口の設置、物資の提供、病院への移送などの業務を行う必要があります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "情報伝達、相談窓口の設置、物資の提供、病院への移送などの業務を行う必要があります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "情報伝達、相談窓口の設置、物資の提供、病院への移送などの業務を行う必要があります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "情報伝達、相談窓口の設置、物資の提供、病院への移送などの業務を行う必要があります"@ja.
+<< kg:id_3 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "まず最初にこの福祉避難所の設置運営についてのマニュアルの作成"@ja.
+<< kg:id_3 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "マニュアル作成後、関係者が参加した訓練などを実施するよう早急に検討を進めていきたい"@ja.
+<< kg:id_3 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "避難者を少し特化しながら振り分けたらどうかというような御指摘もまことにごもっとも"@ja.
+<< kg:id_3 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "災害時、これらの方々に最大限の御協力をいただけるよう 改めて万が一の場合の協力を依頼する"@ja.
+<< kg:id_3 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "市内だけでは確保が難しいというときには他への要請というようなことも"@ja.
+<< kg:id_39 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "水害の場合はどこの場所に避難をします、あるいは地震の場合はどこに避難をします、そこの拠点的な福祉避難所はどこになりますということも記載をする"@ja.
+<< kg:id_3 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "障がい者の台帳なり、市のほうで情報を持っておりますので、これにつきましては その情報を提供できますので、そういったものを活用して、福祉避難所への避難の呼びかけ"@ja.
+<< kg:id_3 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "できるだけ詳細なデータになるように内部的に積み上げ、いろいろなデータの積み上げを図ってまいりたい"@ja.
+<< kg:id_3 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "他市町村等への避難をする場合の関係団体等の協定については、これについてはまだ全く取り組んでいない 今回の大規模な災害等を教訓として検討を進めてまいります"@ja.
+<< kg:id_44 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "どういったものが必要かという必要品目のリスト化を図って、すぐに手配できる仕組みを整えてまいりたい"@ja.
+<< kg:id_44 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "その取り扱いをする業者と災害時の協定を締結するなど、円滑に対応できるような体制づくりは検討していく必要がある"@ja.
+<< kg:id_44 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "必要なものについては一定程度市で準備をしたり"@ja.
+<< kg:id_44 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "市内の業者のところにあるのであれば、それをいつでも連絡し合ってきちんと取り扱いができるような、そういった取り組みについてもやはり早急に詰めてまいりたい"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "酒田市食育推進委員会を７月に立ち上げ、12月をめどに新たな計画を策定したい"@ja.
+<< kg:id_51 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "今まで食育講演会の実施"@ja.
+<< kg:id_51 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "毎年６月の食育月間に合わせた庁舎ロビーでのパネル展示"@ja.
+<< kg:id_51 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "啓発物品として食事バランスガイド、旬菜レシピ、農産物旬暦などを配布"@ja.
+<< kg:id_51 prop:contermeasure kg:id_55 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "食育出前講座の開催"@ja.
+<< kg:id_51 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "幼稚園、保育園、小学生、中学生を対象に田植え、稲刈りなどの農業体験"@ja.
+<< kg:id_51 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "教育現場を中心に食育についての一定の認知はいただいている 市民の間にも食育という言葉は定着してきている"@ja.
+<< kg:id_49 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "数値目標などの達成度合いについて調査をし、今後の策定の検討の材料とさせていただきたい"@ja.
+<< kg:id_51 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "若い女性にターゲットを絞ってＰＲしていくことは非常に有効である"@ja.
+<< kg:id_49 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "年代ごとにターゲットを絞った事業計画を作成するなど、今まで以上に市民からわかりやすく取り組みやすい計画を検討していきたい"@ja.
+<< kg:id_49 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "食育計画のプランニングのために、女性の方々などの意見を伺う機会を設ける"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "庁内の掲示板のほうに しゅんの食材を使った料理などを掲示板に載せながら、職員の方々にその料理をつくっていただくなり早く帰っていただくというふうなことでも今取り組んでおります"@ja.
+<< kg:id_62 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "市役所としましては、毎週水曜日ノー残業デーというふうなことで取り組んでおります"@ja.
+<< kg:id_62 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "19日につきましては 家族だんらんの日ということをもう少し積極的に進める意味で できるだけ早く帰って家族と一緒に食事をしようというふうなことも少し積極的にアピールしていきたい"@ja.
+<< kg:id_51 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "農林水産部内に女性を含めて若い人の中で食育推進をする上でどんなことができるかということで 今、いろいろ意見交換をしております そういう中で、結構いろいろな大胆な意見もございます"@ja.
+<< kg:id_49 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "いい事業につきましては今回の推進計画の策定の中で、平成24年度からの実施というふうなことで検討していきたい"@ja.
+<< kg:id_68 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "このスケジュール計画を見たときに、間違いなく現段階で１年はおくれているというような状況"@ja.
+<< kg:id_68 prop:cause kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "相手方のある事業でありますので、交渉などに若干の時間がかかる"@ja.
+<< kg:id_68 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "ＪＲの新潟支社との協議を進めているところでございます なるべく早く事業化を図りたい"@ja.
+<< kg:id_72 prop:cause kg:id_73 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "最後に商業テナントがなかなか前に進まない"@ja.
+<< kg:id_72 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "民間商業テナントを入れるということで最大限の努力をしている中 まずは 私たち自身その事業者側の動きを見守りながら、その支援のバックアップ体制を組む"@ja.
+<< kg:id_72 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "一定の期限を設定しながら、民間事業者側と期限を設定しながら、その時点で次に進むためには、では市は何をすべきか、事業者側は何をすべきかということを一回話し合う"@ja.
+<< kg:id_76 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "地域として非常に不安を持っている、地域住民として不安を持っている"@ja.
+<< kg:id_76 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "現在の法制度の中では 地道に所有者に働きかけるしかない"@ja.
+<< kg:id_76 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "近隣の住民では限界があるということであれば、市役所が間に入ってしっかりその話をする"@ja.
+<< kg:id_76 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "条例化を考えている市や県もあるようでありますので、市としても条例化を目指してさまざまな検討を重ねたい"@ja.
+<< kg:id_81 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "大災害時におきましては やはりその被害地域が広範囲になると 当然公助として動けるというのは大分時間を要する 被災直後であればほとんどその公的な支援というのはもう期待できない"@ja.
+<< kg:id_81 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "やはり自分の命は自分で守るというその自助の部分"@ja.
+<< kg:id_81 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "地域や隣近所で助け合うという共助の部分"@ja.
+<< kg:id_81 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "さらには公助、公の力というのはお互いに連携していくことが重要"@ja.
+<< kg:id_86 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "100％自主防災組織率を目指すといったようなことが１つの方向性"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "駅、これは周辺も含めての全体的なまちづくり構想の考え方というのが、これまで必ずしも十分にＪＲ側に説明し切れていなかった"@ja.
+<< kg:id_88 prop:contermeasure kg:id_90 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "現時点でそういう駅周辺の全体的なまちづくり構想ということも含めて協議に当たらなければならない"@ja.
+<< kg:id_91 prop:effect kg:id_92 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "停電のため唯一の情報源であるテレビの情報把握ができず、市民の皆さんも一晩ではありましたが不安な夜を過ごしました"@ja.
+<< kg:id_91 prop:effect kg:id_93 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "その情報による現状把握が９割を解決すると言われております"@ja.
+<< kg:id_91 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "その現状を把握するための情報収集をするにも、行政だけではない民間を含めたネットワークの構築が大切"@ja.
+<< kg:id_95 prop:contermeasure kg:id_96 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "中通り商店街では全国の商店街で組織する全国防災ネットワークを生かし、今回被災地である南三陸町に全国から送られた支援物資の供給拠点として大きな役割を果たしております"@ja.
+<< kg:id_97 prop:contermeasure kg:id_98 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "被災地と連絡をとり、今最も必要な物資を震災以来十数回にわたって届け、炊き出しなども行ってまいりました"@ja.
+<< kg:id_99 prop:effect kg:id_100 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "期間が長引くと被災地が要求する今最も必要とする物資を手配するには、１つの商店街での物資の調達力にも限界がある"@ja.
+<< kg:id_101 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "民間を含めた災害ネットワークとして、震災対策連絡会議が２回開催された 酒田市における災害情報の共有としては非常に大きな効果があった"@ja.
+<< kg:id_103 prop:contermeasure kg:id_104 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "今回の震災で、被災地ではラジオが有効な情報入手手段となった"@ja.
+<< kg:id_103 prop:effect kg:id_105 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "停電で情報源であるはずのテレビが映らず、情報が伝わらない状況下に、地域の情報やライフライン情報などを得るために多くの市民が聞き入ったはず"@ja.
+<< kg:id_106 prop:contermeasure kg:id_107 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "酒田市においても消防団単位もしくは防災コミュニティセンター、さらにはボランティアと連携して、災害バイクを設置してはいかがでしょうか"@ja.
+<< kg:id_108 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "近隣自治体が結んでいた協定は、今回の震災のように被害が広域の場合には機能不全を起こしたため、そのため遠隔地との協定が注目されている"@ja.
+<< kg:id_110 prop:contermeasure kg:id_111 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "その戦略的な交流の拡大によって生まれる消費をしっかりと地域内にとどめ、それをきっちりと地域の産業が受けとめて、安定した雇用を地域内に創出していく"@ja.
+<< kg:id_97 prop:contermeasure kg:id_112 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "中通り商店街の皆さんに非常に頑張っていただいた その活動を 市役所としても いろいろな要請があったときにバックアップをする"@ja.
+<< kg:id_101 prop:effect kg:id_113 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "燃料の状況、物流の状況、そして医療機関や被災者の受け入れ施設での取り組みの状況などについてさまざまな情報共有ができました また、電力関係についても現状の報告をいただいた それぞれで認識が深まった ということで、大変な効果があった"@ja.
+<< kg:id_101 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "情報交換の必要があるというようなときには応じて開催することは当然あっていい"@ja.
+<< kg:id_103 prop:effect kg:id_115 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "コミュニティＦＭ、地場に密着したＦＭ放送として大変な今回は活躍をいただいた 市民生活にかかわる最新情報を速やかに提供できた"@ja.
+<< kg:id_103 prop:contermeasure kg:id_116 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "十分今後も活用し得るツールだということはわかった さらにいろいろな工夫を重ねていきたい"@ja.
+<< kg:id_117 prop:contermeasure kg:id_118 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "防災行政無線、ＦＭ、それからコミセンや支所との連携、こういうようなところが大変大事"@ja.
+<< kg:id_117 prop:contermeasure kg:id_119 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "これからも伝達手段を拡充しながら、いち早く正確な情報が伝えられるような体制の整備をしていきたい"@ja.
+<< kg:id_103 prop:contermeasure kg:id_120 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "電気の関係、交通の関係、ごみの関係とか、市民生活にかかわる最新情報、それから避難所、避難者の状況、義援金とか救援物資の受け付けなどのことについて情報提供"@ja.
+<< kg:id_103 prop:effect kg:id_121 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_94;
+    prop:text-txt_contents "特に停電時、テレビに頼れないとき、それから地域限定の情報が必要なとき、やはりコミュニティＦＭの役割は非常に大きい"@ja.
+<< kg:id_122 prop:contermeasure kg:id_123 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_95;
+    prop:text-txt_contents "先進事例というのもあるんだろうと思いますので、そういうことを勉強しながら、その効果などを検証し、有効だということになれば、設置について前向きに検討をしてみたい"@ja.
+<< kg:id_108 prop:contermeasure kg:id_124 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_96;
+    prop:text-txt_contents "平時でもいろいろな交流があるところ、もしくは交流が可能なところというようなところが、やはり一番そういう協定を結ぶについても適切"@ja.
+<< kg:id_108 prop:contermeasure kg:id_125 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_97;
+    prop:text-txt_contents "沿岸部と沿岸部で姉妹都市を結んでいても津波被害などを想定した場合には問題があるわけですから、沿岸と内陸部とか、そういうような形での取り組みが必要"@ja.
+<< kg:id_108 prop:contermeasure kg:id_126 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_98;
+    prop:text-txt_contents "石巻、大崎、新庄、酒田の間で防災協定などを来年度ぐらいに結ぶことを考えようではないかという御提案を酒田市のほうからさせていただいていた"@ja.
+<< kg:id_110 prop:cause kg:id_127 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_99;
+    prop:text-txt_contents "受け入れ施設の規模の状況などによりまして、大規模な会議を受け入れ、効果を上げるまでには至っていない"@ja.
+<< kg:id_110 prop:contermeasure kg:id_128 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_100;
+    prop:text-txt_contents "地域の規模が大体比較的小さい、100人から200人程度の各種会合等の受け入れ態勢を強化していく必要がある"@ja.
+<< kg:id_110 prop:contermeasure kg:id_129 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_101;
+    prop:text-txt_contents "ことし10月にございます山形県の広域商談会 これを当地の酒田で実施していただく これは300人規模の商談"@ja.
+<< kg:id_110 prop:contermeasure kg:id_130 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_102;
+    prop:text-txt_contents "まずは商工会議所などの関係団体と先進例をもっともっと参照にしながら、情報交換、協議を進めたい"@ja.
+<< kg:id_110 prop:contermeasure kg:id_131 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_103;
+    prop:text-txt_contents "民間と行政のそれぞれの役割、収支やインバウンド対策など検討しまして、実現に向けた可能性を探っていきたい"@ja.
+<< kg:id_132 prop:contermeasure kg:id_133 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_104;
+    prop:text-txt_contents "ハザードマップについては 目標は９月中を目標"@ja.
+<< kg:id_132 prop:contermeasure kg:id_134 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_105;
+    prop:text-txt_contents "浸水予測区域にあるコミセンごとに地域の皆様と避難場所、避難経路などについて再点検をする"@ja.
+<< kg:id_135 prop:contermeasure kg:id_136 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_106;
+    prop:text-txt_contents "避難ビルを新たにお願いしなければならないときには、市のほうでお願いをしていく"@ja.
+<< kg:id_86 prop:effect kg:id_137 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_107;
+    prop:text-txt_contents "浸水想定地域での未組織自治会は７自治会"@ja.
+<< kg:id_138 prop:contermeasure kg:id_139 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_108;
+    prop:text-txt_contents "ことしも大震災を受けてさらに要望が出てくるとすれば、その要望状況に応じて補正などの対応などもする考え"@ja.
+<< kg:id_140 prop:contermeasure kg:id_141 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_109;
+    prop:text-txt_contents "各コミセンの防災資機材の資機材庫の中に、発電機、ガスボンベ、炊飯装置、テント等々の資機材を備蓄しております"@ja.
+<< kg:id_140 prop:contermeasure kg:id_142 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_110;
+    prop:text-txt_contents "災害協定を各量販店や農協などとも結んでおりますので、それらの流通備蓄の中から米や水などは確保できる"@ja.
+<< kg:id_143 prop:contermeasure kg:id_144 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_111;
+    prop:text-txt_contents "現在は津波避難ビルとして５カ所の指定 さらにふやしていくことを考えている"@ja.
+<< kg:id_145 prop:contermeasure kg:id_146 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_112;
+    prop:text-txt_contents "液状化の想定される地点などについて、その避難経路の設定時に加味していきたい"@ja.
+<< kg:id_147 prop:contermeasure kg:id_148 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_113;
+    prop:text-txt_contents "震度４以上の地震、津波警報、注意報が発令された場合は直ちに危機管理室のほうから避難の指示といいますか、お願いというような形での放送"@ja.
+<< kg:id_147 prop:contermeasure kg:id_149 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_114;
+    prop:text-txt_contents "土日、夜間などについては、消防本部通信指令のほうにお願いをして対応"@ja.
+<< kg:id_147 prop:contermeasure kg:id_150 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_115;
+    prop:text-txt_contents "十分届かないところか、音声が届かない場所があるか等々については、その検証をしていかなければならない 必要があれば当然増設、増強"@ja.
+<< kg:id_151 prop:contermeasure kg:id_152 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_116;
+    prop:text-txt_contents "検査の体制は県が主体となって、県の農協中央会と協議しながら検査を実施している"@ja.
+<< kg:id_151 prop:contermeasure kg:id_153 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_117;
+    prop:text-txt_contents "国の重点品目である野菜や原乳については週１回"@ja.
+<< kg:id_151 prop:contermeasure kg:id_154 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_118;
+    prop:text-txt_contents "その他の品目についても、主要品目について可能な限り回数をふやして検査"@ja.
+<< kg:id_155 prop:effect kg:id_156 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_119;
+    prop:text-txt_contents "本地域ではイチゴ６回、土壌１回、豚肉１回が検査済みでありまして、すべて放射線物質は不検出"@ja.
+<< kg:id_151 prop:contermeasure kg:id_157 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_120;
+    prop:text-txt_contents "県が当然主体となってということでございますので、県が負担をする"@ja.
+<< kg:id_158 prop:contermeasure kg:id_159 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_121;
+    prop:text-txt_contents "風評被害というのが少しでも出てきたような場合は、いち早くそのような事実を確認した上で是正をお願いしていく"@ja.
+<< kg:id_158 prop:contermeasure kg:id_160 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_122;
+    prop:text-txt_contents "庄内の農産物は安全ですよと 農地、副産物安全ですよというようなＰＲイベントなどについても、主要取引先などで実施することも検討"@ja.
+<< kg:id_161 prop:contermeasure kg:id_162 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_123;
+    prop:text-txt_contents "要援護者名簿登録者1,061人 この方につきまして自治会長に安否確認を要請いたしました"@ja.
+<< kg:id_161 prop:contermeasure kg:id_163 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_124;
+    prop:text-txt_contents "民生委員による自主的な見守り対象者につきましても、地区民生委員、児童委員協議会会長を通じて安否確認を行った"@ja.
+<< kg:id_161 prop:effect kg:id_164 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_125;
+    prop:text-txt_contents "どちらのほうも翌日の午後４時ごろまでには安否を確認することができた"@ja.
+<< kg:id_161 prop:contermeasure kg:id_165 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_126;
+    prop:text-txt_contents "電話がつながらないということもございましたので、職員が自治会長あるいはその地区、民児協の会長宅を直接訪問し状況を確認"@ja.
+<< kg:id_161 prop:contermeasure kg:id_166 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_127;
+    prop:text-txt_contents "地域包括支援センターや居宅介護支援事業所なども自主的に担当する要援護者の訪問等も行っております"@ja.
+<< kg:id_167 prop:contermeasure kg:id_168 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_128;
+    prop:text-txt_contents "支援者となっている御近所の方が高齢者等の要援護者の避難支援に当たることとしております"@ja.
+<< kg:id_167 prop:contermeasure kg:id_169 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_129;
+    prop:text-txt_contents "民生委員の方々も日ごろの活動の中で要援護者の安否確認、こういったことを支援"@ja.
+<< kg:id_167 prop:contermeasure kg:id_170 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_130;
+    prop:text-txt_contents "支援者が要援護者宅を訪問し、安否確認を行うとともに必要に応じて避難支援を行う"@ja.
+}

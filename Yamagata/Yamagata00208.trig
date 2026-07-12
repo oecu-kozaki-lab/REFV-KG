@@ -1,0 +1,1202 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00208> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "長沼温泉ぽっぽの湯"@ja.
+kg:id_1 rdf:type cls:c_11882.
+cls:c_11882 rdfs:label "温泉施設"@ja.
+kg:id_2 rdfs:label "利用者数の減少"@ja.
+kg:id_2 rdf:type cls:c_663.
+cls:c_663 rdfs:label "利用者減少"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "灯油価格の高騰"@ja.
+kg:id_3 rdf:type cls:c_11883.
+cls:c_11883 rdfs:label "燃料費増"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "日本海山形県沖地震による設備故障"@ja.
+kg:id_4 rdf:type cls:c_681.
+cls:c_681 rdfs:label "設備故障"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "令和元年度単年度収支約800万円の赤字"@ja.
+kg:id_5 rdf:type cls:c_11884.
+cls:c_11884 rdfs:label "経営赤字"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "利用料金制での運営が大変厳しい状況"@ja.
+kg:id_6 rdf:type cls:c_3102.
+cls:c_3102 rdfs:label "運営困難"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "庁内横断での対応策の検討"@ja.
+kg:id_7 rdf:type cls:c_6558.
+cls:c_6558 rdfs:label "対応検討"@ja.
+kg:id_1 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "地元住民への丁寧な説明を行いながら検討"@ja.
+kg:id_8 rdf:type cls:c_87.
+cls:c_87 rdfs:label "住民説明"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "利用料金制の廃止による公営化"@ja.
+kg:id_9 rdf:type cls:c_7309.
+cls:c_7309 rdfs:label "公営化"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "健康増進施設等を目的とした保養施設への切替え"@ja.
+kg:id_10 rdf:type cls:c_7777.
+cls:c_7777 rdfs:label "施設転換"@ja.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "くしびき温泉ゆ～Ｔｏｗｎ"@ja.
+kg:id_11 rdf:type cls:c_11882.
+kg:id_12 rdfs:label "源泉ポンプ落下事故"@ja.
+kg:id_12 rdf:type cls:c_11885.
+cls:c_11885 rdfs:label "設備事故"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_11 prop:cause kg:id_2.
+kg:id_13 rdfs:label "約３か月の休業"@ja.
+kg:id_13 rdf:type cls:c_11886.
+cls:c_11886 rdfs:label "休業"@ja.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "令和元年度単年度収支約936万円の赤字"@ja.
+kg:id_14 rdf:type cls:c_11884.
+kg:id_11 prop:effect kg:id_14.
+kg:id_15 rdfs:label "利用料金制での運営が困難な状況"@ja.
+kg:id_15 rdf:type cls:c_3102.
+kg:id_11 prop:effect kg:id_15.
+kg:id_11 prop:contermeasure kg:id_7.
+kg:id_11 prop:contermeasure kg:id_9.
+kg:id_11 prop:contermeasure kg:id_10.
+kg:id_16 rdfs:label "かたくり温泉ぼんぼ"@ja.
+kg:id_16 rdf:type cls:c_11882.
+kg:id_17 rdfs:label "灯油価格の高騰による燃料費支出の増加"@ja.
+kg:id_17 rdf:type cls:c_11883.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "光熱水費の年々の増嵩"@ja.
+kg:id_18 rdf:type cls:c_11295.
+cls:c_11295 rdfs:label "光熱費増"@ja.
+kg:id_16 prop:cause kg:id_18.
+kg:id_19 rdfs:label "施設修繕費等による経営圧迫"@ja.
+kg:id_19 rdf:type cls:c_2113.
+cls:c_2113 rdfs:label "修繕費増"@ja.
+kg:id_16 prop:cause kg:id_19.
+kg:id_20 rdfs:label "新型コロナウイルス感染拡大による利用者減少"@ja.
+kg:id_20 rdf:type cls:c_1168.
+cls:c_1168 rdfs:label "感染拡大"@ja.
+kg:id_16 prop:cause kg:id_20.
+kg:id_21 rdfs:label "令和元年度単年度決算約144万円の赤字"@ja.
+kg:id_21 rdf:type cls:c_11884.
+kg:id_16 prop:effect kg:id_21.
+kg:id_22 rdfs:label "年間利用者数対前年比約30％減少見込み"@ja.
+kg:id_22 rdf:type cls:c_663.
+kg:id_16 prop:effect kg:id_22.
+kg:id_23 rdfs:label "経営の継続が困難な状況"@ja.
+kg:id_23 rdf:type cls:c_3102.
+kg:id_16 prop:effect kg:id_23.
+kg:id_24 rdfs:label "今回の補正予算で支援"@ja.
+kg:id_24 rdf:type cls:c_1007.
+cls:c_1007 rdfs:label "財政支援"@ja.
+kg:id_16 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "これまでと同様の支援を継続"@ja.
+kg:id_25 rdf:type cls:c_2313.
+cls:c_2313 rdfs:label "支援継続"@ja.
+kg:id_16 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "鶴岡駅前周辺の浸水"@ja.
+kg:id_26 rdf:type cls:c_1490.
+cls:c_1490 rdfs:label "浸水被害"@ja.
+kg:id_27 rdfs:label "既存暗渠や側溝断面が小さく流下能力が不足"@ja.
+kg:id_27 rdf:type cls:c_4728.
+cls:c_4728 rdfs:label "排水能力不足"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "駅前と国道112号アンダーの冠水被害"@ja.
+kg:id_28 rdf:type cls:c_11887.
+cls:c_11887 rdfs:label "冠水被害"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "雨水排水路の詳細設計と改善準備"@ja.
+kg:id_29 rdf:type cls:c_11888.
+cls:c_11888 rdfs:label "排水路設計"@ja.
+kg:id_26 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "国道112号アンダーの排水対策の検討"@ja.
+kg:id_30 rdf:type cls:c_7731.
+cls:c_7731 rdfs:label "排水対策"@ja.
+kg:id_26 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "宝田地区工業団地周辺の浸水"@ja.
+kg:id_31 rdf:type cls:c_1490.
+kg:id_32 rdfs:label "都市化に伴う雨水排水量の増加"@ja.
+kg:id_32 rdf:type cls:c_11889.
+cls:c_11889 rdfs:label "排水量増"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "各企業の敷地内の浸水"@ja.
+kg:id_33 rdf:type cls:c_11890.
+cls:c_11890 rdfs:label "敷地浸水"@ja.
+kg:id_31 prop:effect kg:id_33.
+kg:id_34 rdfs:label "茅原第２排水区の工事着手"@ja.
+kg:id_34 rdf:type cls:c_6122.
+cls:c_6122 rdfs:label "工事着手"@ja.
+kg:id_31 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "日和田排水区の幹線排水路と青龍寺川排水口の改修"@ja.
+kg:id_35 rdf:type cls:c_2891.
+cls:c_2891 rdfs:label "排水路改修"@ja.
+kg:id_31 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "商工会議所や企業団体からの要望を踏まえた公共下水道対策"@ja.
+kg:id_36 rdf:type cls:c_11891.
+cls:c_11891 rdfs:label "下水道対策"@ja.
+kg:id_31 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "藤島川の氾濫被害"@ja.
+kg:id_37 rdf:type cls:c_11892.
+cls:c_11892 rdfs:label "氾濫被害"@ja.
+kg:id_38 rdfs:label "豪雨による河川増水"@ja.
+kg:id_38 rdf:type cls:c_5192.
+cls:c_5192 rdfs:label "河川増水"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "避難勧告の発令"@ja.
+kg:id_39 rdf:type cls:c_11893.
+cls:c_11893 rdfs:label "避難勧告"@ja.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "住宅など建物の浸水"@ja.
+kg:id_40 rdf:type cls:c_11894.
+cls:c_11894 rdfs:label "建物浸水"@ja.
+kg:id_37 prop:effect kg:id_40.
+kg:id_41 rdfs:label "農作物の冠水"@ja.
+kg:id_41 rdf:type cls:c_11895.
+cls:c_11895 rdfs:label "農地冠水"@ja.
+kg:id_37 prop:effect kg:id_41.
+kg:id_42 rdfs:label "護岸の強靱化工事"@ja.
+kg:id_42 rdf:type cls:c_11896.
+cls:c_11896 rdfs:label "護岸強化"@ja.
+kg:id_37 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "河床しゅんせつ工事"@ja.
+kg:id_43 rdf:type cls:c_11897.
+cls:c_11897 rdfs:label "河床浚渫"@ja.
+kg:id_37 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "支障木の伐採"@ja.
+kg:id_44 rdf:type cls:c_11898.
+cls:c_11898 rdfs:label "樹木伐採"@ja.
+kg:id_37 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "京田川の氾濫被害"@ja.
+kg:id_45 rdf:type cls:c_11892.
+kg:id_45 prop:cause kg:id_38.
+kg:id_45 prop:effect kg:id_39.
+kg:id_45 prop:effect kg:id_40.
+kg:id_45 prop:effect kg:id_41.
+kg:id_46 rdfs:label "河床しゅんせつ"@ja.
+kg:id_46 rdf:type cls:c_11897.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "護岸整備による川幅拡大"@ja.
+kg:id_47 rdf:type cls:c_11899.
+cls:c_11899 rdfs:label "護岸整備"@ja.
+kg:id_45 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "長沼地区の浸水被害"@ja.
+kg:id_48 rdf:type cls:c_1490.
+kg:id_49 rdfs:label "毎年のような豪雨と排水能力不足"@ja.
+kg:id_49 rdf:type cls:c_4728.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "住民が強い雨のたびに不安を抱える"@ja.
+kg:id_50 rdf:type cls:c_3679.
+cls:c_3679 rdfs:label "不安"@ja.
+kg:id_48 prop:effect kg:id_50.
+kg:id_51 rdfs:label "農業地域防災・減災事業による排水路整備"@ja.
+kg:id_51 rdf:type cls:c_7424.
+cls:c_7424 rdfs:label "排水路整備"@ja.
+kg:id_48 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "幹線水路と道路側溝の大断面化"@ja.
+kg:id_52 rdf:type cls:c_11900.
+cls:c_11900 rdfs:label "水路拡幅"@ja.
+kg:id_48 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "排水口の藤島川から京田川への付け替え"@ja.
+kg:id_53 rdf:type cls:c_11901.
+cls:c_11901 rdfs:label "排水先変更"@ja.
+kg:id_48 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "避難所開設時の混乱"@ja.
+kg:id_54 rdf:type cls:c_2130.
+cls:c_2130 rdfs:label "避難所混乱"@ja.
+kg:id_55 rdfs:label "受付の混雑"@ja.
+kg:id_55 rdf:type cls:c_11902.
+cls:c_11902 rdfs:label "受付混雑"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "食事の提供の遅れ"@ja.
+kg:id_56 rdf:type cls:c_11903.
+cls:c_11903 rdfs:label "食事遅延"@ja.
+kg:id_54 prop:cause kg:id_56.
+kg:id_57 rdfs:label "雑魚寝による密状態"@ja.
+kg:id_57 rdf:type cls:c_11904.
+cls:c_11904 rdfs:label "密集"@ja.
+kg:id_54 prop:cause kg:id_57.
+kg:id_58 rdfs:label "避難所の居住性低下"@ja.
+kg:id_58 rdf:type cls:c_11905.
+cls:c_11905 rdfs:label "居住性低下"@ja.
+kg:id_54 prop:effect kg:id_58.
+kg:id_59 rdfs:label "アルファ化米の配備"@ja.
+kg:id_59 rdf:type cls:c_4712.
+cls:c_4712 rdfs:label "食料備蓄"@ja.
+kg:id_54 prop:contermeasure kg:id_59.
+kg:id_60 rdfs:label "折り畳みアルミマットの手配"@ja.
+kg:id_60 rdf:type cls:c_11906.
+cls:c_11906 rdfs:label "寝具配備"@ja.
+kg:id_54 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "段ボールベッドの手配"@ja.
+kg:id_61 rdf:type cls:c_11907.
+cls:c_11907 rdfs:label "ベッド配備"@ja.
+kg:id_54 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "近隣施設やホテル旅館への分散避難"@ja.
+kg:id_62 rdf:type cls:c_8368.
+cls:c_8368 rdfs:label "分散避難"@ja.
+kg:id_54 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "山形県鶴岡市風力発電事業"@ja.
+kg:id_63 rdf:type cls:c_170.
+cls:c_170 rdfs:label "風力発電事業"@ja.
+kg:id_64 rdfs:label "民間事業者による計画"@ja.
+kg:id_64 rdf:type cls:c_11908.
+cls:c_11908 rdfs:label "民間計画"@ja.
+kg:id_63 prop:cause kg:id_64.
+kg:id_65 rdfs:label "日本遺産や出羽三山のストーリーへの甚大な影響の懸念"@ja.
+kg:id_65 rdf:type cls:c_11909.
+cls:c_11909 rdfs:label "文化影響懸念"@ja.
+kg:id_63 prop:effect kg:id_65.
+kg:id_66 rdfs:label "市民の相当な反発が予想される"@ja.
+kg:id_66 rdf:type cls:c_86.
+cls:c_86 rdfs:label "住民反発"@ja.
+kg:id_63 prop:effect kg:id_66.
+kg:id_67 rdfs:label "風力発電施設設置ガイドラインに基づく住民説明等の要請"@ja.
+kg:id_67 rdf:type cls:c_11910.
+cls:c_11910 rdfs:label "説明要請"@ja.
+kg:id_63 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "環境アセスメント各段階での市意見書提出"@ja.
+kg:id_68 rdf:type cls:c_1671.
+cls:c_1671 rdfs:label "意見書提出"@ja.
+kg:id_63 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "事業者に対する地元や関係各所への丁寧な説明の要求"@ja.
+kg:id_69 rdf:type cls:c_1005.
+cls:c_1005 rdfs:label "説明要求"@ja.
+kg:id_63 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "フォトモンタージュの作成要請"@ja.
+kg:id_70 rdf:type cls:c_9506.
+cls:c_9506 rdfs:label "資料作成"@ja.
+kg:id_63 prop:contermeasure kg:id_70.
+kg:id_71 rdfs:label "ゾーニングを含めたガイドラインの改定検討"@ja.
+kg:id_71 rdf:type cls:c_11911.
+cls:c_11911 rdfs:label "指針改定"@ja.
+kg:id_63 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "事業者からの事業の取下げを望む"@ja.
+kg:id_72 rdf:type cls:c_1291.
+cls:c_1291 rdfs:label "計画撤回"@ja.
+kg:id_63 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "避難行動要支援者名簿の運用"@ja.
+kg:id_73 rdf:type cls:c_11912.
+cls:c_11912 rdfs:label "名簿運用"@ja.
+kg:id_74 rdfs:label "避難先に関する情報の錯綜"@ja.
+kg:id_74 rdf:type cls:c_8779.
+cls:c_8779 rdfs:label "情報錯綜"@ja.
+kg:id_73 prop:cause kg:id_74.
+kg:id_75 rdfs:label "自治会役員と連絡がつかなかったこと"@ja.
+kg:id_75 rdf:type cls:c_11913.
+cls:c_11913 rdfs:label "連絡不通"@ja.
+kg:id_73 prop:cause kg:id_75.
+kg:id_76 rdfs:label "町内会との連携に課題が残った"@ja.
+kg:id_76 rdf:type cls:c_11914.
+cls:c_11914 rdfs:label "連携課題"@ja.
+kg:id_73 prop:effect kg:id_76.
+kg:id_77 rdfs:label "名簿提供の時期や方法の見直し"@ja.
+kg:id_77 rdf:type cls:c_10247.
+cls:c_10247 rdfs:label "運用見直し"@ja.
+kg:id_73 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "避難所の情報不足"@ja.
+kg:id_78 rdf:type cls:c_155.
+cls:c_155 rdfs:label "情報不足"@ja.
+kg:id_79 rdfs:label "避難所開設運営への比重が大きく情報提供まで至らなかったこと"@ja.
+kg:id_79 rdf:type cls:c_11915.
+cls:c_11915 rdfs:label "情報提供不足"@ja.
+kg:id_78 prop:cause kg:id_79.
+kg:id_80 rdfs:label "避難者が最新情報を得られない状況"@ja.
+kg:id_80 rdf:type cls:c_155.
+kg:id_78 prop:effect kg:id_80.
+kg:id_81 rdfs:label "各避難所へのラジオ配置"@ja.
+kg:id_81 rdf:type cls:c_11916.
+cls:c_11916 rdfs:label "ラジオ配備"@ja.
+kg:id_78 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "避難所開設時の配置職員の１名増員"@ja.
+kg:id_82 rdf:type cls:c_2758.
+cls:c_2758 rdfs:label "人員増強"@ja.
+kg:id_78 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "庁舎から避難所へのファクスによる定期情報配信"@ja.
+kg:id_83 rdf:type cls:c_3062.
+cls:c_3062 rdfs:label "情報配信"@ja.
+kg:id_78 prop:contermeasure kg:id_83.
+kg:id_84 rdfs:label "災害時情報発信の不足"@ja.
+kg:id_84 rdf:type cls:c_2353.
+cls:c_2353 rdfs:label "情報発信不足"@ja.
+kg:id_85 rdfs:label "市民への迅速かつ手軽な情報提供手段の不足"@ja.
+kg:id_85 rdf:type cls:c_11917.
+cls:c_11917 rdfs:label "発信手段不足"@ja.
+kg:id_84 prop:cause kg:id_85.
+kg:id_86 rdfs:label "市民にとって必要な情報提供がなされていない状況"@ja.
+kg:id_86 rdf:type cls:c_155.
+kg:id_84 prop:effect kg:id_86.
+kg:id_87 rdfs:label "フェイスブックでの情報発信"@ja.
+kg:id_87 rdf:type cls:c_8625.
+cls:c_8625 rdfs:label "SNS発信"@ja.
+kg:id_84 prop:contermeasure kg:id_87.
+kg:id_88 rdfs:label "ツイッターやインスタグラムやＬＩＮＥの活用検討"@ja.
+kg:id_88 rdf:type cls:c_11918.
+cls:c_11918 rdfs:label "媒体活用"@ja.
+kg:id_84 prop:contermeasure kg:id_88.
+kg:id_89 rdfs:label "避難所へのタブレットやパソコン配備の検討"@ja.
+kg:id_89 rdf:type cls:c_2665.
+cls:c_2665 rdfs:label "端末配備"@ja.
+kg:id_84 prop:contermeasure kg:id_89.
+kg:id_90 rdfs:label "大規模災害時の人員不足"@ja.
+kg:id_90 rdf:type cls:c_1145.
+cls:c_1145 rdfs:label "人員不足"@ja.
+kg:id_91 rdfs:label "現場と避難所のマンパワー不足"@ja.
+kg:id_91 rdf:type cls:c_759.
+cls:c_759 rdfs:label "人手不足"@ja.
+kg:id_90 prop:cause kg:id_91.
+kg:id_92 rdfs:label "避難所運営や情報連携が十分に回らない状況"@ja.
+kg:id_92 rdf:type cls:c_11919.
+cls:c_11919 rdfs:label "運営停滞"@ja.
+kg:id_90 prop:effect kg:id_92.
+kg:id_93 rdfs:label "消防団ＯＢ団員による連携役の活用"@ja.
+kg:id_93 rdf:type cls:c_11920.
+cls:c_11920 rdfs:label "連携役活用"@ja.
+kg:id_90 prop:contermeasure kg:id_93.
+kg:id_94 rdfs:label "平時からの意見交換と役割確認"@ja.
+kg:id_94 rdf:type cls:c_11921.
+cls:c_11921 rdfs:label "役割確認"@ja.
+kg:id_90 prop:contermeasure kg:id_94.
+kg:id_95 rdfs:label "消防団ＯＢ団員の増員"@ja.
+kg:id_95 rdf:type cls:c_3099.
+cls:c_3099 rdfs:label "人員確保"@ja.
+kg:id_90 prop:contermeasure kg:id_95.
+kg:id_96 rdfs:label "荘内病院の経営悪化"@ja.
+kg:id_96 rdf:type cls:c_11922.
+cls:c_11922 rdfs:label "病院経営悪化"@ja.
+kg:id_97 rdfs:label "新型コロナ感染症の影響による収益減"@ja.
+kg:id_97 rdf:type cls:c_6771.
+cls:c_6771 rdfs:label "収益減"@ja.
+kg:id_96 prop:cause kg:id_97.
+kg:id_98 rdfs:label "控除対象外消費税の負担増"@ja.
+kg:id_98 rdf:type cls:c_3959.
+cls:c_3959 rdfs:label "税負担増"@ja.
+kg:id_96 prop:cause kg:id_98.
+kg:id_99 rdfs:label "令和元年度純損失約2億4,866万円"@ja.
+kg:id_99 rdf:type cls:c_11884.
+kg:id_96 prop:effect kg:id_99.
+kg:id_100 rdfs:label "累積欠損金128億9,679万2,000円"@ja.
+kg:id_100 rdf:type cls:c_11923.
+cls:c_11923 rdfs:label "累積欠損"@ja.
+kg:id_96 prop:effect kg:id_100.
+kg:id_101 rdfs:label "院内感染対策の強化と一般患者診療の維持"@ja.
+kg:id_101 rdf:type cls:c_2142.
+cls:c_2142 rdfs:label "感染対策"@ja.
+kg:id_96 prop:contermeasure kg:id_101.
+kg:id_102 rdfs:label "診療報酬加算の取得と経費見直し"@ja.
+kg:id_102 rdf:type cls:c_6007.
+cls:c_6007 rdfs:label "収支改善"@ja.
+kg:id_96 prop:contermeasure kg:id_102.
+kg:id_103 rdfs:label "コロナ感染症専用病床の空床補償料の申請"@ja.
+kg:id_103 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_96 prop:contermeasure kg:id_103.
+kg:id_104 rdfs:label "荘内病院の病床稼働率低下"@ja.
+kg:id_104 rdf:type cls:c_11924.
+cls:c_11924 rdfs:label "病床稼働低下"@ja.
+kg:id_105 rdfs:label "インフルエンザ等の季節性感染症患者が少なかったこと"@ja.
+kg:id_105 rdf:type cls:c_11925.
+cls:c_11925 rdfs:label "感染症減少"@ja.
+kg:id_104 prop:cause kg:id_105.
+kg:id_106 rdfs:label "新型コロナ感染症発生による受診行動への影響"@ja.
+kg:id_106 rdf:type cls:c_2236.
+cls:c_2236 rdfs:label "受診控え"@ja.
+kg:id_104 prop:cause kg:id_106.
+kg:id_107 rdfs:label "令和元年度病床稼働率76.9％"@ja.
+kg:id_107 rdf:type cls:c_9854.
+cls:c_9854 rdfs:label "稼働率低下"@ja.
+kg:id_104 prop:effect kg:id_107.
+kg:id_108 rdfs:label "今年4月から7月の入院延べ患者数約18.3％減少"@ja.
+kg:id_108 rdf:type cls:c_11926.
+cls:c_11926 rdfs:label "入院減少"@ja.
+kg:id_104 prop:effect kg:id_108.
+kg:id_109 rdfs:label "手術前等の患者スクリーニング検査"@ja.
+kg:id_109 rdf:type cls:c_2760.
+cls:c_2760 rdfs:label "検査強化"@ja.
+kg:id_104 prop:contermeasure kg:id_109.
+kg:id_110 rdfs:label "ＰＣＲ検査体制不足"@ja.
+kg:id_110 rdf:type cls:c_11927.
+cls:c_11927 rdfs:label "検査体制不足"@ja.
+kg:id_111 rdfs:label "希望者がＰＣＲ検査を受けられる医療機関や体制の確保が課題"@ja.
+kg:id_111 rdf:type cls:c_11928.
+cls:c_11928 rdfs:label "体制未整備"@ja.
+kg:id_110 prop:cause kg:id_111.
+kg:id_112 rdfs:label "感染リスク低減策の実施が難しい状況"@ja.
+kg:id_112 rdf:type cls:c_11929.
+cls:c_11929 rdfs:label "対策困難"@ja.
+kg:id_110 prop:effect kg:id_112.
+kg:id_113 rdfs:label "庄内地域におけるＰＣＲ検査体制の整備検討"@ja.
+kg:id_113 rdf:type cls:c_4663.
+cls:c_4663 rdfs:label "体制整備"@ja.
+kg:id_110 prop:contermeasure kg:id_113.
+kg:id_114 rdfs:label "唾液による検査の導入検討"@ja.
+kg:id_114 rdf:type cls:c_11930.
+cls:c_11930 rdfs:label "検査導入"@ja.
+kg:id_110 prop:contermeasure kg:id_114.
+kg:id_115 rdfs:label "地球温暖化対策の必要性"@ja.
+kg:id_115 rdf:type cls:c_699.
+cls:c_699 rdfs:label "温暖化対策"@ja.
+kg:id_116 rdfs:label "人間活動による温室効果ガス増加"@ja.
+kg:id_116 rdf:type cls:c_4085.
+cls:c_4085 rdfs:label "温室効果ガス"@ja.
+kg:id_115 prop:cause kg:id_116.
+kg:id_117 rdfs:label "二酸化炭素排出"@ja.
+kg:id_117 rdf:type cls:c_11931.
+cls:c_11931 rdfs:label "二酸化炭素"@ja.
+kg:id_115 prop:cause kg:id_117.
+kg:id_118 rdfs:label "猛暑や豪雨の増加"@ja.
+kg:id_118 rdf:type cls:c_2542.
+cls:c_2542 rdfs:label "異常気象"@ja.
+kg:id_115 prop:effect kg:id_118.
+kg:id_119 rdfs:label "鶴岡市地域エネルギービジョンに基づく再生可能エネルギー導入推進"@ja.
+kg:id_119 rdf:type cls:c_718.
+cls:c_718 rdfs:label "再エネ導入"@ja.
+kg:id_115 prop:contermeasure kg:id_119.
+kg:id_120 rdfs:label "公共施設への太陽光発電設備導入"@ja.
+kg:id_120 rdf:type cls:c_3825.
+cls:c_3825 rdfs:label "太陽光発電"@ja.
+kg:id_115 prop:contermeasure kg:id_120.
+kg:id_121 rdfs:label "クールチョイスによる意識啓発"@ja.
+kg:id_121 rdf:type cls:c_1075.
+cls:c_1075 rdfs:label "意識啓発"@ja.
+kg:id_115 prop:contermeasure kg:id_121.
+kg:id_122 rdfs:label "ごみ焼却施設の廃熱利用発電と電力の地産地消"@ja.
+kg:id_122 rdf:type cls:c_10680.
+cls:c_10680 rdfs:label "廃熱発電"@ja.
+kg:id_115 prop:contermeasure kg:id_122.
+kg:st_1 rdfs:label "商工観光部長佐藤正胤"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "利用料金制での運営は大変厳しい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "小野由夫議員"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_2 prop:content "現状のままでは継続は困難"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "利用料金制での運営は大変厳しい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "副市長山口朗"@ja.
+kg:st_3 rdfs:type cls:st_2.
+kg:op_4 prop:content "施設の老朽化や設備の故障の影響が大きい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "資本金を食い潰しており立て直しは無理"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "今後の運営の在り方と方向性の見直しが必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "施設の老朽化や経営予測や財政負担を総合的に検討する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "地元住民の強い要望により設置された施設なので丁寧に進める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "公設民営の会社では認められず最小限の方法で存続すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "健康増進を目的とした保養施設へ切り替えることも一つの方法"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "設備の故障による影響が大きい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "利用料金制での運営が困難"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "現状のままでは経営継続は困難"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "方向性の見直しの早急な検討が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "老朽化や経営状況や財政負担を総合的に検討する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "株式会社として経営が無理なら解散し別の形で存続を図るべき"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "縮小してコミュニティセンター方式で存続する方法しかない"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "朝日庁舎支所長土田浩和"@ja.
+kg:st_4 rdfs:type cls:st_2.
+kg:op_18 prop:content "組合は経費節減に努めているが大幅な赤字が見込まれる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "地域住民が一体となった経営が持続できるよう支援する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "経営の継続が困難な状況にある"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "石井清則議員"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_21 prop:content "住民が自主的に運営を続ける組合への支援をしたい思いも分かる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "地域住民が一体となった経営が持続できるよう支援する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_4.
+kg:op_23 prop:content "当面はこれまでと同様の支援を継続したい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "駅前開発計画にも影響があり真剣に考える時期"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "建設部長村上良一"@ja.
+kg:st_6 rdfs:type cls:st_2.
+kg:op_25 prop:content "国の協力を得て早期実現を目指す"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_6.
+kg:op_26 prop:content "下流部対策も含め早期実現を目指す"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "多くの企業及び従業員に悪影響を与えた"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "10年間の予定で工事を実施している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_6.
+kg:op_29 prop:content "来年度から３か年で工事を実施する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "事業の一層の推進に努める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_6.
+kg:op_31 prop:content "強い雨が降るたびに住民は不安を抱える"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "治水能力の向上と流下能力の回復が期待される"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_6.
+kg:op_33 prop:content "毎年状況が読めるのに何とかならないのかという声がある"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "耐えられない心境だと察せられる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "県事業の完了を目指して進める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:op_36 prop:content "対策効果の高い場所から順次整備する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_6.
+kg:op_37 prop:content "流下能力の改善を図る計画"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "危機管理監早坂進"@ja.
+kg:st_7 rdfs:type cls:st_2.
+kg:op_38 prop:content "課題として整理している"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_7.
+kg:op_39 prop:content "改善対応を進める"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_7.
+kg:op_40 prop:content "分散避難の具体的整理を急ぐ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_7.
+kg:op_41 prop:content "食事の迅速な提供に対応する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_7.
+kg:op_42 prop:content "避難所の居住性向上を図る"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_7.
+kg:op_43 prop:content "地方創生臨時交付金等を活用して対応する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_7.
+kg:op_44 prop:content "密対策として具体的な整理を急ぐ"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "市民部長五十嵐浩一"@ja.
+kg:st_8 rdfs:type cls:st_2.
+kg:op_45 prop:content "市が推進しているものではない"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_8.
+kg:op_46 prop:content "有形無形の文化財やストーリーに甚大な影響を及ぼす懸念がある"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_8.
+kg:op_47 prop:content "出羽三山の山岳信仰と大きくかけ離れた計画"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_5.
+kg:op_48 prop:content "庁内説明会で懸念事項として伝えた"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_8.
+kg:op_49 prop:content "住民への十分な説明や専門家意見聴取を要請する"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_8.
+kg:op_50 prop:content "市が意見を申し述べる機会がある"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_8.
+kg:op_51 prop:content "フォトモンタージュも含め十分な説明が必要"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_8.
+kg:op_52 prop:content "景観への影響を検討するため必要"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_8.
+kg:op_53 prop:content "良好な景観を保存するため検討する"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_8.
+kg:op_54 prop:content "市民の混乱や地元合意形成の問題から取下げを望む"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "健康福祉部長渡邉健"@ja.
+kg:st_9 rdfs:type cls:st_2.
+kg:op_55 prop:content "自治会との連携に課題が残った"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_9.
+kg:op_56 prop:content "手渡すことができなかった"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_9.
+kg:op_57 prop:content "安全かつ迅速な避難支援のため重層的な支援体制づくりが急務"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_9.
+kg:op_58 prop:content "早急に具体策を提示したい"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "藤島庁舎支所長武田壮一"@ja.
+kg:st_10 rdfs:type cls:st_2.
+kg:op_59 prop:content "避難所運営に比重がかかり情報提供まで至らなかった"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_10.
+kg:st_11 rdfs:label "黒井浩之議員"@ja.
+kg:st_11 rdfs:type cls:st_16.
+kg:op_60 prop:content "帰宅のタイミングがつかめず困っていた"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_11.
+kg:op_61 prop:content "まずラジオを配置したい"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_10.
+kg:op_62 prop:content "情報提供体制を強化する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_10.
+kg:op_63 prop:content "避難者へ常に最新情報を提供できるようにする"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_10.
+kg:op_64 prop:content "避難情報発令後に何の情報発信もないように感じた"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_11.
+kg:op_65 prop:content "ＳＮＳ情報が役立ったという声があった"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_11.
+kg:op_66 prop:content "避難勧告等や公共交通機関情報を発信している"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_7.
+kg:op_67 prop:content "今後も迅速かつ手軽な情報提供に取り組む"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_7.
+kg:op_68 prop:content "まずはファクスでの情報共有から取り組む"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_7.
+kg:op_69 prop:content "自治会役員は地元を走り回っていて避難所まで手が回らない"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_11.
+kg:op_70 prop:content "自治会と消防団と避難所と災害対策本部をつなぐ人がいなかった"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "消防長大川治"@ja.
+kg:st_12 rdfs:type cls:st_2.
+kg:op_71 prop:content "災害時の地域防災組織と消防団の連携役を担うのが現実的"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_12.
+kg:op_72 prop:content "地域の防災訓練で検証し連携強化につなげる"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_12.
+kg:op_73 prop:content "マンパワーの確保に努める"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_12.
+kg:st_13 rdfs:label "荘内病院事務部長佐藤光治"@ja.
+kg:st_13 rdfs:type cls:st_2.
+kg:op_74 prop:content "４月５月の収益は大きく減収した"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_13.
+kg:op_75 prop:content "実質的収支の結果に影響している"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_13.
+kg:st_14 rdfs:label "草島進一議員"@ja.
+kg:st_14 rdfs:type cls:st_16.
+kg:op_76 prop:content "赤字体質となっているのではないか"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_14.
+kg:op_77 prop:content "まずは一般診療を維持する"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_13.
+kg:op_78 prop:content "収支改善に全力で取り組む"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_13.
+kg:op_79 prop:content "財源確保に努める"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_13.
+kg:op_80 prop:content "受診控えが病床稼働率低下につながった"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_13.
+kg:op_81 prop:content "100床以上空いている"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_14.
+kg:op_82 prop:content "感染防止対策を強化して一般診療を維持する"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_13.
+kg:op_83 prop:content "制度創設には医療機関確保や体制整備の課題がある"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_9.
+kg:st_15 rdfs:label "秋葉雄議員"@ja.
+kg:st_15 rdfs:type cls:st_16.
+kg:op_84 prop:content "地元に感染を広げない方策が必要"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_15.
+kg:op_85 prop:content "庄内保健所や鶴岡地区医師会と検討を進める"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_9.
+kg:op_86 prop:content "新たな技術開発にも注視しながら検討する"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_9.
+kg:op_87 prop:content "産業や生態系や健康や災害への影響が懸念される"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_8.
+kg:op_88 prop:content "地域に根差した再生可能エネルギーの導入により地球温暖化対策を推進する"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_8.
+kg:op_89 prop:content "市民一人一人の意識や地域社会全体の意識を変えていくことが重要"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_8.
+kg:op_90 prop:content "売電と公共施設供給を一体として進める"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "平成30年度に利用者数が19万人台に落ち込んだことに加え、温泉の加温に必要な灯油価格の高騰により、年間約200万円の赤字決算となっております"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "温泉の加温に必要な灯油価格の高騰により、年間約200万円の赤字決算となっております"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "昨年度においては、日本海山形県沖地震の影響から設備故障が相次ぎ休業日が増加、令和元年度の単年度収支で約800万円の赤字となっている状況でございます"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "令和元年度の単年度収支で約800万円の赤字となっている状況でございます"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "ゆぽか以外の２施設については利用客数の減少などを主な原因として利用料金制での運営が大変厳しい状況でございます"@ja.
+<< kg:id_1 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "庁内横断での対応策を検討する庁内会議を立ち上げ、その会議で検討した素案について議会への説明を行いまして、第２回目以降の行財政改革推進委員会において御意見を頂戴してまいりたいと考えております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "ぽっぽの湯、ゆ～Ｔｏｗｎともに地元住民の強い要望により設置された施設でございますので、地元住民などへの丁寧な説明を行いながら検討を進めてまいります"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "利用料金制の廃止による公営化、健康増進施設等を目的とした保養施設への切替えなども含め、様々な選択肢を視野に指定管理者である各運営会社との協議を踏まえ、十分な検証、検討を行い"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "公設民営をコミュニティ方式の公設公営に切り替え、最小限の管理運営にて健康増進などを目的とした保養施設に切り替えることも一つの方法であり"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "平成30年度は源泉ポンプ落下事故により約３か月の休業を余儀なくされ"@ja.
+<< kg:id_11 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "令和元年度は約12万人と回復を見せたものの、源泉ポンプ落下事故前と比較をいたしますと約２万人の利用者が減少し"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:text-txt_contents "平成30年度は源泉ポンプ落下事故により約３か月の休業を余儀なくされ"@ja.
+<< kg:id_11 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "昨年、令和元年度単年度収支では約936万円の赤字が出ております"@ja.
+<< kg:id_11 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "ぽっぽの湯と櫛引地域のくしびき温泉ゆ～Ｔｏｗｎの２施設については、利用料金制での運営が困難な状況になっております"@ja.
+<< kg:id_11 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "施設の老朽化の度合いや経営状況の予測、市の財政負担の見通しなど総合的な検討を行うため、庁内横断での対応策を検討する庁内会議を立ち上げ"@ja.
+<< kg:id_11 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "利用料金制の廃止による公営化、健康増進施設等を目的とした保養施設への切替えなども含め、様々な選択肢を視野に"@ja.
+<< kg:id_11 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "健康増進施設等を目的とした保養施設への切替えなども含め、様々な選択肢を視野に"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "灯油価格の高騰による燃料費支出の増加に加え、光熱水費が年々増嵩している傾向があり"@ja.
+<< kg:id_16 prop:cause kg:id_18 >>
+    prop:text-txt_contents "光熱水費が年々増嵩している傾向があり"@ja.
+<< kg:id_16 prop:cause kg:id_19 >>
+    prop:text-txt_contents "施設修繕費等が経営を圧迫し"@ja.
+<< kg:id_16 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "新型コロナウイルス感染拡大防止を図るため、指定管理施設の３温泉に合わせた形で４月初旬より約１か月半の間休業し、さらには営業再開後も利用者数は回復せず、新型コロナウイルス感染症の収束が見えない中で、年間の利用者数は対前年比で約30％減少する見込みとなっております"@ja.
+<< kg:id_16 prop:effect kg:id_21 >>
+    prop:text-txt_contents "令和元年度単年度決算では約144万円の赤字となっております"@ja.
+<< kg:id_16 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "年間の利用者数は対前年比で約30％減少する見込みとなっております"@ja.
+<< kg:id_16 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "組合は法人、あるいは個人事業主に当たらないとして国の持続化給付金も受けることができず、経営の継続が困難な状況にあります"@ja.
+<< kg:id_16 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "今後も地域住民が一体となった経営が持続できるよう、今回の補正予算で支援を行うものとしたものでございます"@ja.
+<< kg:id_16 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "当面はこれまでと同様の支援を継続してまいりたいと考えております"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "駅前から東側の大道堰と交差するまでの約340メートル区間と、それから国道112号線とＪＲ羽越本線が交差する大宝寺地区の２か所で既存暗渠ですとか、側溝断面が小さいために流下能力が不足し"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "鶴岡駅駅前と国道112号アンダーに冠水被害が発生しているということが明らかになっております"@ja.
+<< kg:id_26 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "平成29年度より国道112号の管理者と協議を進めておりまして、雨水排水路の詳細設計を実施し、改善に向けた準備、検討を行っております"@ja.
+<< kg:id_26 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "国道112号アンダーの冠水被害の対策について調査に基づいて検討を進めていただいております"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:text-txt_contents "平成30年に都市化に伴い雨水の排水量が増加したことに対応するため、事業計画を見直しております"@ja.
+<< kg:id_31 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "７月27日から28日の豪雨によって各企業の敷地内の浸水により、多くの企業及び従業員に悪影響を与えました"@ja.
+<< kg:id_31 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "今年度から茅原第２排水区の下流となる東側から順次工事に着手し、10年間の予定で工事を実施しているところでございます"@ja.
+<< kg:id_31 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "今年度、幹線排水路と青龍寺川の排水口を改修するため詳細設計を行っているところでございまして、来年度からの３か年の予定で排水路と排水口の整備工事を実施し"@ja.
+<< kg:id_31 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "平成28年度に商工会議所から広範囲な調査の実施についての要望、鶴岡中央工業団地管理組合環境部会や鶴岡市企業懇談会などを通じましては、雨水対策の早期解決の要望をいただいているところでございます"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:text-txt_contents "７月27日から28日の豪雨により河川が増水し"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "藤島川沿いの藤島元町地区、柳久瀬町内会、京田川沿いの三和町内会、鷺畑町内会、千原町内会、藤島関根町内会に避難勧告が発令され"@ja.
+<< kg:id_37 prop:effect kg:id_40 >>
+    prop:text-txt_contents "住宅など建物の浸水、農作物の冠水など多くの被害が報告されております"@ja.
+<< kg:id_37 prop:effect kg:id_41 >>
+    prop:text-txt_contents "住宅など建物の浸水、農作物の冠水など多くの被害が報告されております"@ja.
+<< kg:id_37 prop:contermeasure kg:id_42 >>
+    prop:text-txt_contents "コンクリートブロックによる護岸の強靱化工事"@ja.
+<< kg:id_37 prop:contermeasure kg:id_43 >>
+    prop:text-txt_contents "川の流れを妨げる土砂が堆積している河床のしゅんせつ工事などが県の河川事業により進められております"@ja.
+<< kg:id_37 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "今年度は堆積土を掘削する河床しゅんせつ、河川内の樹木伐採などを実施しております"@ja.
+<< kg:id_45 prop:cause kg:id_38 >>
+    prop:text-txt_contents "７月27日から28日の豪雨により河川が増水し"@ja.
+<< kg:id_45 prop:effect kg:id_39 >>
+    prop:text-txt_contents "京田川沿いの三和町内会、鷺畑町内会、千原町内会、藤島関根町内会に避難勧告が発令され"@ja.
+<< kg:id_45 prop:effect kg:id_40 >>
+    prop:text-txt_contents "住宅など建物の浸水、農作物の冠水など多くの被害が報告されております"@ja.
+<< kg:id_45 prop:effect kg:id_41 >>
+    prop:text-txt_contents "住宅など建物の浸水、農作物の冠水など多くの被害が報告されております"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:text-txt_contents "京田川の三和地区におきましては、河床しゅんせつ"@ja.
+<< kg:id_45 prop:contermeasure kg:id_47 >>
+    prop:text-txt_contents "護岸整備により川幅を拡大する河川整備事業が平成23年から令和５年までの予定で進められております"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "特に下流の長沼地区においては毎年状況が読めるのに何とかならないのかという地域の声を"@ja.
+<< kg:id_48 prop:effect kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "そこに住んでいる住民にすれば、強い雨が降るたびに不安を抱える、耐えられない心境であると十分察せられます"@ja.
+<< kg:id_48 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "令和５年度の完了を目指して農業地域防災・減災事業により、長沼集落から京田川までの約1.4キロの排水路の整備となっております"@ja.
+<< kg:id_48 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "集落内を流れる幹線水路と道路側溝など約1.2キロで大断面の水路に交換するとともに"@ja.
+<< kg:id_48 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "排水口をこれまで藤島川に排水しておりましたけれども、より低い場所を流れる京田川に付け替えるということで、流下能力の改善を図る計画としております"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "避難所開設初期におきまして受付が込み合ったこと"@ja.
+<< kg:id_54 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "食事の提供が遅れたこと"@ja.
+<< kg:id_54 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "広瀬地域活動センターをはじめ、ほかの場所でも雑魚寝などによる密状態が生じたともお聞きしております"@ja.
+<< kg:id_54 prop:effect kg:id_58 >>
+    prop:text-txt_contents "避難所に求められたものとして、居住性を高めるためのアルミマットの配備等がございました"@ja.
+<< kg:id_54 prop:contermeasure kg:id_59 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "食事の迅速な提供といたしましては、食料備蓄品としてのアルファ化米の配備"@ja.
+<< kg:id_54 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "避難所の居住性向上につきましては折り畳みアルミマット"@ja.
+<< kg:id_54 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "段ボールベッド等の手配、これらを地方創生臨時交付金等の有効資金を活用しながら対応してまいりたい"@ja.
+<< kg:id_54 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "避難所の密対策といたしましては、近隣施設、それからホテル、旅館等への分散避難の具体的な整理を急いでまいりたいと存じます"@ja.
+<< kg:id_63 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "このたびの風力発電事業につきましてはあくまでも民間事業者による民間事業者の計画であり、この計画を市が推進しているものではございません"@ja.
+<< kg:id_63 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_46;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "このたびの事業想定区域に風力発電施設が建設されることになれば、既に日本遺産に認定されている有形・無形の文化財や、そのストーリーに対して甚大な影響を及ぼすのではないかという懸念を持っているところでございます"@ja.
+<< kg:id_63 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "市側から事業実施想定区域が山岳信仰の重要な場所であり、日本遺産の指定を受けている出羽三山に近接すること、こういったことから市民の相当な反発が予想されるなどの懸念事項を伝えるとともに"@ja.
+<< kg:id_63 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "風力発電施設の設置等に係るガイドラインに基づき、住民への十分な説明や専門家からの意見聴取などについて適切な対応を要請する"@ja.
+<< kg:id_63 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "計画段階環境配慮書、次の環境影響評価方法書、そして環境影響評価準備書、この各段階において市の意見書を山形県に提出することで意見を申し述べる機会がございます"@ja.
+<< kg:id_63 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "事業者に対しましては引き続き地元や関係各所への丁寧な説明を求めていきたいと考えております"@ja.
+<< kg:id_63 prop:contermeasure kg:id_70 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "景観への影響を検討するためにフォトモンタージュの作成を要請したところでございます"@ja.
+<< kg:id_63 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "良好な景観を保存するため、ゾーニングを含めたガイドラインの改定を検討してまいりたいと考えております"@ja.
+<< kg:id_63 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "この段階で事業者からの事業の取下げを望むものではありますが"@ja.
+<< kg:id_73 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "マリカの避難所が開設されなかったことなど、避難先に関する情報が錯綜し"@ja.
+<< kg:id_73 prop:cause kg:id_75 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "自治会役員と連絡がつかず、手渡すことができなかった"@ja.
+<< kg:id_73 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "鶴岡地域の市街地の１つの学区においては提供することができず、町内会との連携に課題が残りました"@ja.
+<< kg:id_73 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "名簿提供の時期や提供方法など、課題の共有を図るとともに、円滑な避難支援に向けて検討を進めており、早急に具体策を提示してまいりたいと存じます"@ja.
+<< kg:id_78 prop:cause kg:id_79 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "避難所開設・運営に比重がかかり、避難者への河川水位や雨量などの情報提供までは至っていない状況でございました"@ja.
+<< kg:id_78 prop:effect kg:id_80 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "避難者への河川水位や雨量などの情報提供までは至っていない状況でございました"@ja.
+<< kg:id_78 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "今後は各避難所にまずラジオを配置したいというふうに思います"@ja.
+<< kg:id_78 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "避難所開設時には、配置職員を１名増員したいと考えております"@ja.
+<< kg:id_78 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "河川水位や雨量などの有用な情報は、庁舎から定期的にファクスを配信して、避難所職員に伝え、避難者へは常に最新の情報を提供できるよう努めてまいりたい"@ja.
+<< kg:id_84 prop:cause kg:id_85 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "災害時における市からの情報は、発生時の避難情報発令があり、その後、避難解除を出すまで何の情報発信もないように思われます"@ja.
+<< kg:id_84 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "市民にとって必要な情報提供がなされていないように感じました"@ja.
+<< kg:id_84 prop:contermeasure kg:id_87 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "このたびの大雨では、避難勧告等の発令や公共交通機関の情報を市ホームページと連動し、市の公式フェイスブックでも発信しております"@ja.
+<< kg:id_84 prop:contermeasure kg:id_88 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "ツイッターやインスタグラム、ＬＩＮＥなどが県や他市でも活用され、災害情報なども発信されているということから、今後も市民への迅速かつ手軽な情報につきまして取り組んでまいりたいと存じます"@ja.
+<< kg:id_84 prop:contermeasure kg:id_89 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "タブレットやパソコンの配備につきましては、施設の設備環境、それから経費負担の関係もございますので、まずは当面できるところからといたしまして、避難所となる地域活動センター等へのファクスでの情報共有、こういったことなどから取り組み始めてまいりたいと存じます"@ja.
+<< kg:id_90 prop:cause kg:id_91 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "このたび痛切に感じたのは、やはり現場と避難所にマンパワーが足りないということです"@ja.
+<< kg:id_90 prop:effect kg:id_92 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "自治会から自治振興会に集まってくる地区の最新情報を避難所や災害対策本部、消防団につなげる人がいない。逆に避難経路の安全確保のために道路の冠水や閉鎖の状況を自治会に伝える人がいませんでした"@ja.
+<< kg:id_90 prop:contermeasure kg:id_93 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "現在、本市消防団には大規模災害における支援活動や災害時の情報収集、伝達などの活動を行うことを任務としているＯＢ団員が各方面隊、分団に在籍しております。まさにこの消防団ＯＢが災害時の地域の防災組織と消防団の連携役を担うことが現実的であると考えております"@ja.
+<< kg:id_90 prop:contermeasure kg:id_94 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "平時から意見交換の機会を設け、それぞれが課題を整理して役割を確認するとともに、地域の防災訓練において検証し、大規模災害時の連携強化につなげたいと考えております"@ja.
+<< kg:id_90 prop:contermeasure kg:id_95 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "今後もＯＢ団員の増員を図りつつ、大規模災害時における住民への避難伝達や避難誘導を含め、方面隊、分団を超えた消防団の応援体制を確立するなど、マンパワーの確保にも努めてまいります"@ja.
+<< kg:id_96 prop:cause kg:id_97 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "令和２年度の現状については、新型コロナ感染症の影響もあり、４月、５月の収益は大きく減収しました"@ja.
+<< kg:id_96 prop:cause kg:id_98 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "近年続けての消費税率引上げに伴い、医業外費用のうち控除対象外消費税の負担が増えており、実質的収支の結果に影響していると捉えております"@ja.
+<< kg:id_96 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "令和元年度決算では、万円単位で申し上げますと、２億6,071万円の純損失のうち荘内病院の純損失は２億4,866万円であります"@ja.
+<< kg:id_96 prop:effect kg:id_100 >>
+    prop:text-txt_contents "累積欠損金は128億9,679万2,000円となった"@ja.
+<< kg:id_96 prop:contermeasure kg:id_101 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "まずは、院内の感染対策を強化して、一般患者診療の維持に努め"@ja.
+<< kg:id_96 prop:contermeasure kg:id_102 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "併せて診療報酬の加算の取得や経費の見直しに取り組む"@ja.
+<< kg:id_96 prop:contermeasure kg:id_103 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "国からのコロナ感染症専用病床に対する空床補償料なども申請し、財源の確保に努めてまいります"@ja.
+<< kg:id_104 prop:cause kg:id_105 >>
+    prop:text-txt_contents "これは、インフルエンザ等の季節性感染症の患者が少なかったことや"@ja.
+<< kg:id_104 prop:cause kg:id_106 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "国内で新型コロナ感染症が発生したことが受診行動に影響を与え、結果として病床稼働率の低下につながったものと捉えております"@ja.
+<< kg:id_104 prop:effect kg:id_107 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "元年度稼働病床利用率が76.9％"@ja.
+<< kg:id_104 prop:effect kg:id_108 >>
+    prop:text-txt_contents "今年４月から７月までの入院延べ患者数は３万9,898人で、前年度同期に比べ8,962人、約18.3％の減少となっており"@ja.
+<< kg:id_104 prop:contermeasure kg:id_109 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "手術前等の患者のスクリーニング検査を行うなど、感染防止対策を強化し、一般診療を維持できるよう努めてまいりたい"@ja.
+<< kg:id_110 prop:cause kg:id_111 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "制度創設の前提となる希望者がＰＣＲ検査を受けることができる医療機関の確保や体制、宿泊施設の借上げなどの課題があるものと認識しております"@ja.
+<< kg:id_110 prop:effect kg:id_112 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "本市で同様の方策、制度を実施するに当たりましては、制度創設の前提となる希望者がＰＣＲ検査を受けることができる医療機関の確保や体制、宿泊施設の借上げなどの課題があるものと認識しております"@ja.
+<< kg:id_110 prop:contermeasure kg:id_113 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "庄内地域におけるＰＣＲ検査体制の整備や唾液による検査の導入など、検査体制の強化について、庄内保健所や鶴岡地区医師会と検討を進めているところでございまして"@ja.
+<< kg:id_110 prop:contermeasure kg:id_114 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "唾液による検査の導入など、検査体制の強化について"@ja.
+<< kg:id_115 prop:cause kg:id_116 >>
+    prop:text-txt_contents "地球温暖化の原因は、人間活動による温室効果ガスの増加である可能性が高いとされています"@ja.
+<< kg:id_115 prop:cause kg:id_117 >>
+    prop:text-txt_contents "温室効果ガス別の地球温暖化へ与える影響としては、二酸化炭素が76％を占めております"@ja.
+<< kg:id_115 prop:effect kg:id_118 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "今後さらに猛暑や豪雨が増え、産業や生態系など広い分野への影響、また健康への影響や大雨による災害の発生などが懸念をされております"@ja.
+<< kg:id_115 prop:contermeasure kg:id_119 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "平成25年度策定の鶴岡市地域エネルギービジョンに基づき、地域に根差した再生可能エネルギーの導入を推進することにより、地球温暖化対策を積極的に推進することとしております"@ja.
+<< kg:id_115 prop:contermeasure kg:id_120 >>
+    prop:text-txt_contents "鶴岡第四中学校などへの太陽光発電設備の導入などにより、公共施設から排出される温室効果ガスの削減に努めているところであります"@ja.
+<< kg:id_115 prop:contermeasure kg:id_121 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "平成30年度には、クールチョイスに賛同し、市民の皆様に対して脱炭素社会づくりに貢献する製品の買換え、公共交通機関の利用、３Ｒの実施などを呼びかけてまいりました"@ja.
+<< kg:id_115 prop:contermeasure kg:id_122 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "新たなごみ焼却施設においては、ごみの焼却に伴い発生する廃熱を利用して発電を行うエネルギー回収型の施設整備に取り組んでおり、この電力を構内で使用するほか、余剰電力については、売電と市内小・中学校等公共施設への供給を一体として電力の地産地消事業の取組を進めております"@ja.
+}

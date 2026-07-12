@@ -1,0 +1,347 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00031> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "釧路湿原の乾燥化"@ja.
+kg:id_1 rdf:type cls:c_14588.
+cls:c_14588 rdfs:label "湿原乾燥化"@ja.
+kg:id_2 rdfs:label "太陽光発電施設の進出"@ja.
+kg:id_2 rdf:type cls:c_14496.
+cls:c_14496 rdfs:label "太陽光発電開発"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "湿原の乾燥化に拍車がかかる"@ja.
+kg:id_3 rdf:type cls:c_14588.
+kg:id_2 prop:effect kg:id_3.
+kg:id_4 rdfs:label "タンチョウやキタサンショウウオの生息地への悪影響"@ja.
+kg:id_4 rdf:type cls:c_14589.
+cls:c_14589 rdfs:label "生息地悪影響"@ja.
+kg:id_2 prop:effect kg:id_4.
+kg:id_5 rdfs:label "希少生物の生息地を避けるよう事業者に呼びかける"@ja.
+kg:id_5 rdf:type cls:c_14590.
+cls:c_14590 rdfs:label "設置回避要請"@ja.
+kg:id_2 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "釧路市"@ja.
+kg:id_6 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_7 rdfs:label "条例づくりに着手"@ja.
+kg:id_7 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_6 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "環境団体が土地の買い取りを進める"@ja.
+kg:id_8 rdf:type cls:c_14509.
+cls:c_14509 rdfs:label "土地取得"@ja.
+kg:id_2 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "釧路湿原の乱開発"@ja.
+kg:id_9 rdf:type cls:c_14565.
+cls:c_14565 rdfs:label "乱開発"@ja.
+kg:id_10 rdfs:label "トラスト運動で土地を購入し管理する"@ja.
+kg:id_10 rdf:type cls:c_14591.
+cls:c_14591 rdfs:label "土地保全"@ja.
+kg:id_9 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "湿原へのメガソーラー増殖"@ja.
+kg:id_11 rdf:type cls:c_14496.
+kg:id_12 rdfs:label "国立公園区域外の周辺丘陵地や南部湿原の買い取り"@ja.
+kg:id_12 rdf:type cls:c_14509.
+kg:id_11 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "市街化調整区域でも太陽光発電施設が作られること"@ja.
+kg:id_13 rdf:type cls:c_14592.
+cls:c_14592 rdfs:label "太陽光発電設置"@ja.
+kg:id_14 rdfs:label "建築基準法上の建物ではないため設置できる"@ja.
+kg:id_14 rdf:type cls:c_14593.
+cls:c_14593 rdfs:label "制度上許容"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "南部湿原の太陽光発電施設建設"@ja.
+kg:id_15 rdf:type cls:c_14594.
+cls:c_14594 rdfs:label "太陽光発電建設"@ja.
+kg:id_16 rdfs:label "キタサンショウウオ、タンチョウ、チュウヒの生息地と重なる"@ja.
+kg:id_16 rdf:type cls:c_14504.
+cls:c_14504 rdfs:label "生息地重複"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "太陽光発電事業の予定地"@ja.
+kg:id_17 rdf:type cls:c_14595.
+cls:c_14595 rdfs:label "開発予定地"@ja.
+kg:id_18 rdfs:label "キタサンショウウオの生息適地と重なり合う"@ja.
+kg:id_18 rdf:type cls:c_14504.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "太陽光発電事業の予定地との重なり"@ja.
+kg:id_19 rdf:type cls:c_14504.
+kg:id_20 rdfs:label "照井滋晴が南部湿原の土地2カ所を購入"@ja.
+kg:id_20 rdf:type cls:c_14509.
+kg:id_19 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "原野商法"@ja.
+kg:id_21 rdf:type cls:c_14596.
+cls:c_14596 rdfs:label "原野商法"@ja.
+kg:id_22 rdfs:label "土地を手放したい地権者の増加"@ja.
+kg:id_22 rdf:type cls:c_14597.
+cls:c_14597 rdfs:label "地権者増加"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "地権者からトラストサルン釧路への相談増加"@ja.
+kg:id_23 rdf:type cls:c_892.
+cls:c_892 rdfs:label "相談増加"@ja.
+kg:id_21 prop:effect kg:id_23.
+kg:id_24 rdfs:label "実際には道路も区画もないのに宅地のように見える土地がある"@ja.
+kg:id_24 rdf:type cls:c_14598.
+cls:c_14598 rdfs:label "土地表示不備"@ja.
+kg:id_21 prop:effect kg:id_24.
+kg:id_25 rdfs:label "不要な土地を手放したい人の多さ"@ja.
+kg:id_25 rdf:type cls:c_14599.
+cls:c_14599 rdfs:label "不要土地問題"@ja.
+kg:id_26 rdfs:label "相続土地国庫帰属制度への相談件数が2万3000件を超える"@ja.
+kg:id_26 rdf:type cls:c_892.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "市町村が不要土地を受け取らないこと"@ja.
+kg:id_27 rdf:type cls:c_14600.
+cls:c_14600 rdfs:label "不要土地不受領"@ja.
+kg:id_28 rdfs:label "管理コストと管理責任が半永久的に続く"@ja.
+kg:id_28 rdf:type cls:c_12423.
+cls:c_12423 rdfs:label "管理負担"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "個人や親族に土地の管理や利用が任され続ける"@ja.
+kg:id_29 rdf:type cls:c_14601.
+cls:c_14601 rdfs:label "個人管理継続"@ja.
+kg:id_27 prop:effect kg:id_29.
+kg:id_30 rdfs:label "不要だが環境価値のある土地の問題"@ja.
+kg:id_30 rdf:type cls:c_14602.
+cls:c_14602 rdfs:label "環境価値土地"@ja.
+kg:id_31 rdfs:label "民間団体と自治体が協力連携して活動する"@ja.
+kg:id_31 rdf:type cls:c_2967.
+cls:c_2967 rdfs:label "官民連携"@ja.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "太陽光発電施設の設置"@ja.
+kg:id_32 rdf:type cls:c_14592.
+kg:id_33 rdfs:label "自然と共生する太陽光発電施設の設置に関するガイドラインの施行"@ja.
+kg:id_33 rdf:type cls:c_14603.
+cls:c_14603 rdfs:label "指針施行"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "希少生物の生息適地を明示し設置回避を呼びかける"@ja.
+kg:id_34 rdf:type cls:c_14590.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "市内の太陽光発電施設が96施設から631施設に増加"@ja.
+kg:id_35 rdf:type cls:c_9123.
+cls:c_9123 rdfs:label "施設増加"@ja.
+kg:id_2 prop:effect kg:id_35.
+kg:id_36 rdfs:label "出力1000kW以上のメガソーラーが22カ所に増加"@ja.
+kg:id_36 rdf:type cls:c_9123.
+kg:id_2 prop:effect kg:id_36.
+kg:id_37 rdfs:label "ガイドラインの条例への格上げを検討"@ja.
+kg:id_37 rdf:type cls:c_1684.
+kg:id_2 prop:contermeasure kg:id_37.
+kg:st_1 rdfs:label "元環境省自然環境局長でIUCN日本委員会会長の渡邉綱男"@ja.
+kg:st_1 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_1 prop:content "湿原を守りたい地域の声が太陽光発電を問題視する市民運動につながっている"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "太陽光発電を問題視する市民運動につながっている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "国、北海道、市町村、環境団体でつくる協議会"@ja.
+kg:st_2 rdfs:type cls:st_145.
+cls:st_145 rdfs:label "協議会"@ja.
+kg:op_3 prop:content "希少生物の生息地を避けるよう事業者に呼びかけている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "希少生物の生息地を避けるよう事業者に呼びかける"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "釧路市と市議会"@ja.
+kg:st_3 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_5 prop:content "ガイドラインの条例への格上げを検討中"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "NPO法人トラストサルン釧路"@ja.
+kg:st_4 rdfs:type cls:st_158.
+cls:st_158 rdfs:label "環境団体"@ja.
+kg:op_6 prop:content "メガソーラーを押しとどめる手段として土地取得を進めている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:op_7 prop:content "湿原保護基金への寄付を募り土地を取得している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "メガソーラーを押しとどめる手段として買い取りを進めてきた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "NPO法人環境把握推進ネットワークPEG理事長の照井滋晴"@ja.
+kg:st_5 rdfs:type cls:st_158.
+kg:op_9 prop:content "生息適地と予定地が重なっていることがわかり関係者を慌てさせた"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "生息適地と予定地の重なりが判明したため土地を購入した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "近くにメガソーラーの建設予定地があり自分の金で購入した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "不動産会社ハウスドゥ！釧路中央店店長の佐伯友哉"@ja.
+kg:st_6 rdfs:type cls:st_200.
+cls:st_200 rdfs:label "不動産業者"@ja.
+kg:op_12 prop:content "ほかの不動産屋で断られた土地所有者からの連絡が入るようになった"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "NPO法人トラストサルン釧路理事長の黒澤信道"@ja.
+kg:st_7 rdfs:type cls:st_158.
+kg:op_13 prop:content "昨年1年間だけで10件の相談があり多くが原野商法で買った土地だった"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_7.
+kg:op_14 prop:content "原野なのに図面だけを見せて売ったのではないかと疑問を示す"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "東京財団研究員の吉原祥子"@ja.
+kg:st_8 rdfs:type cls:st_105.
+cls:st_105 rdfs:label "研究者"@ja.
+kg:op_15 prop:content "全国で不要な土地を手放したい人は多い"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_8.
+kg:op_16 prop:content "使い道のない土地を受け取ると火災や不法投棄や土砂災害時の管理責任を問われる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_8.
+kg:op_17 prop:content "中長期的には現状を変えなくてはいけない"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_8.
+kg:op_18 prop:content "自然環境保全のために土地の買い取りを進める民間団体と自治体の協力連携が有効"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "釧路市"@ja.
+kg:st_9 rdfs:type cls:st_11.
+kg:op_19 prop:content "希少生物の生息適地への設置を避けるよう呼びかけている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "釧路市と釧路湿原自然再生協議会"@ja.
+kg:st_10 rdfs:type cls:st_11.
+kg:op_20 prop:content "ホームページで生息適地を明示し設置回避を求めている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_10.
+kg:op_21 prop:content "ガイドラインの条例への格上げを検討している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "太陽光発電施設の進出に歯止めがかからず条例化を検討している"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "太陽光発電施設の進出に歯止めをかけるため条例化を検討中"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "日本最大のラムサール条約登録湿地、釧路湿原で太陽光発電施設の進出が続く。絶滅危惧種で天然記念物のタンチョウやキタサンショウウオが住む湿原の乾燥化に拍車がかかるとの懸念が高まる。"@ja.
+<< kg:id_2 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "日本最大のラムサール条約登録湿地、釧路湿原で太陽光発電施設の進出が続く。絶滅危惧種で天然記念物のタンチョウやキタサンショウウオが住む湿原の乾燥化に拍車がかかるとの懸念が高まる。"@ja.
+<< kg:id_2 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "絶滅危惧種で天然記念物のタンチョウやキタサンショウウオが住む湿原の乾燥化に拍車がかかるとの懸念が高まる。"@ja.
+<< kg:id_2 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "国、北海道、市町村、環境団体でつくる協議会は希少生物の生息地を避けるよう事業者に呼びかけ"@ja.
+<< kg:id_6 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "釧路市は条例づくりに着手した。"@ja.
+<< kg:id_2 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "そんななか、環境団体が土地の買い取りを進めている。"@ja.
+<< kg:id_9 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "NPO法人・トラストサルン釧路は、市民が自然環境の保護などを目的に土地を購入し管理するトラスト運動に取り組み、これまでに59カ所、約607ヘクタールの土地を取得した。"@ja.
+<< kg:id_11 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "このため、国立公園区域外の周辺丘陵地や南部湿原を対象に買い取りを進めてきた。地道に続けてきた活動が、昨年あたりから脚光を浴びている。数年前から釧路湿原に増殖するメガソーラーを押しとどめる手段として注目されているのだ。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:text-txt_contents "開発が抑制されている市街化調整区域になっているが、太陽光発電施設が次々に作られている。建築基準法上の建物ではないため設置できるからだ。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "南部湿原一帯には、環境省のレッドリストで絶滅危惧種のキタサンショウウオ、タンチョウ、猛禽類のチュウヒの生息が確認されている。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "南部湿原のキタサンショウウオの生息適地と太陽光発電事業の予定地が重なり合っていることがわかったからだ。"@ja.
+<< kg:id_19 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "2023年12月、照井さんは南部湿原の土地2カ所、計4627㎡を購入した。「近くにメガソーラーの建設予定地があり、比較的まとまった大きさの土地だったので。所有者さんがさまざまな費用を払っても損をしない価格帯で、自分の金で購入しました」"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "原野商法で取得した土地『手放したい』人々も"@ja.
+<< kg:id_21 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "このケース以外にも、地権者からの連絡が増えている。黒澤理事長は「昨年1年間だけで、10件ありました。うち4件は買い取り、6件は寄贈を受けました。ほとんどが、原野商法が盛んなころに買った土地についての相談でした」と話す。"@ja.
+<< kg:id_21 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "実際には道路も区画もなく、ただ湿原が続いているのだという。"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "登記手続きが済んだ土地で、不要なものを国が引き取る制度で、2023年4月にスタートしたが、2024年3月までに相談件数が2万3000件を超えた。"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "なぜ市町村は不要土地を受け取らないのだろうか。「管理コストと管理責任が半永久的に続いていくからです。"@ja.
+<< kg:id_27 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "しかし、中長期的には、土地の管理や利用を個人や財産を継いだ親族にまかせている現状を変えなくてはいけない。"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "吉原さんは「自然環境保全のために土地の買い取りを進める民間の団体と自治体が何らかの形で協力、連携して活動するなどの方法が有効ではないか」と指摘している。"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "釧路市には、2023年7月に施行された「自然と共生する太陽光発電施設の設置に関するガイドライン」がある。"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "また、市と釧路湿原自然再生協議会はそれぞれ、ホームページで希少生物の生息適地を明示し、そこへの設置を避けるよう発電事業者に呼びかけてきた。"@ja.
+<< kg:id_2 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "しかし、市内の太陽光発電施設は2014年6月には96施設だったが、2023年12月には631施設と6.6倍に増えた。"@ja.
+<< kg:id_2 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "このうち出力1000kW以上のメガソーラーは22カ所。太陽光発電施設の進出に歯止めがかからない。"@ja.
+<< kg:id_2 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "市と市議会は現在、ガイドラインの条例への格上げを検討中だ。"@ja.
+}

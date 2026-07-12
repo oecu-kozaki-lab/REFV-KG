@@ -1,0 +1,87 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00043> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "釧路湿原国立公園周辺のメガソーラー建設計画"@ja.
+kg:id_1 rdf:type cls:c_12240.
+cls:c_12240 rdfs:label "開発計画"@ja.
+kg:id_2 rdfs:label "事業者に計画の大幅な見直しを働きかけること"@ja.
+kg:id_2 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "湿原を活用した体験学習の強化"@ja.
+kg:id_3 rdf:type cls:c_14665.
+cls:c_14665 rdfs:label "体験学習強化"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "メガソーラー建設"@ja.
+kg:id_4 rdf:type cls:c_6284.
+cls:c_6284 rdfs:label "開発事業"@ja.
+kg:id_5 rdfs:label "オジロワシが営巣する周辺予定地への立ち入り禁止"@ja.
+kg:id_5 rdf:type cls:c_11303.
+cls:c_11303 rdfs:label "立入禁止"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "事業者が一部で建設を断念する方針"@ja.
+kg:id_6 rdf:type cls:c_14645.
+cls:c_14645 rdfs:label "建設断念"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:st_1 rdfs:label "釧路市内で子どもへの環境教育を行っている市民グループなど5団体"@ja.
+kg:st_1 rdfs:type cls:st_73.
+cls:st_73 rdfs:label "市民団体"@ja.
+kg:op_1 prop:content "市に事業者への計画大幅見直しの働きかけを求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "鶴間秀典市長"@ja.
+kg:st_2 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_2 prop:content "要望をしっかり受け止めたい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "市民団体「釧路鳥取てらこや」など"@ja.
+kg:st_3 rdfs:type cls:st_73.
+kg:op_3 prop:content "市と市教育委員会に湿原を活用した体験学習の強化を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "釧路湿原国立公園周辺の大規模太陽光発電所（メガソーラー）の建設計画を巡り、釧路市内で子どもへの環境教育を行っている市民グループなど5団体が28日、事業者に計画の大幅な見直しを働きかけることなどを市に求める要望書を鶴間秀典市長に提出した。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "要望書は市民団体「釧路鳥取てらこや」（大越拓也代表）などが提出。市と市教育委員会に対し、事業者に計画見直しを働きかけることや、湿原を活用した体験学習の強化など、5項目を求めた。"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:text-txt_contents "市教委は国の天然記念物オジロワシが営巣する周辺の予定地に関し、文化財保護法に基づいて立ち入り禁止を通告し"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:text-txt_contents "市教委は国の天然記念物オジロワシが営巣する周辺の予定地に関し、文化財保護法に基づいて立ち入り禁止を通告し、事業者は一部で建設を断念する方針。"@ja.
+}

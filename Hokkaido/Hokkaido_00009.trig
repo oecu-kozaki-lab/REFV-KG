@@ -1,0 +1,153 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00009> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "生物多様性の喪失"@ja.
+kg:id_1 rdf:type cls:c_14401.
+cls:c_14401 rdfs:label "生物多様性の喪失"@ja.
+kg:id_2 rdfs:label "本事業に関する下記のような懸念"@ja.
+kg:id_2 rdf:type cls:c_14231.
+cls:c_14231 rdfs:label "懸念"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "自然環境面での多大な影響"@ja.
+kg:id_3 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "広範囲の土地の改変"@ja.
+kg:id_4 rdf:type cls:c_13216.
+cls:c_13216 rdfs:label "土地改変"@ja.
+kg:id_5 rdfs:label "工事用道路の新設"@ja.
+kg:id_5 rdf:type cls:c_14393.
+cls:c_14393 rdfs:label "道路新設"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "立木の伐採"@ja.
+kg:id_6 rdf:type cls:c_13215.
+cls:c_13215 rdfs:label "森林伐採"@ja.
+kg:id_6 prop:cause kg:id_5.
+kg:id_7 rdfs:label "同地域の森林が失われること"@ja.
+kg:id_7 rdf:type cls:c_13255.
+cls:c_13255 rdfs:label "森林喪失"@ja.
+kg:id_8 rdfs:label "自然林の連続性が失われること"@ja.
+kg:id_8 rdf:type cls:c_14402.
+cls:c_14402 rdfs:label "連続性喪失"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "本地域への建設計画"@ja.
+kg:id_9 rdf:type cls:c_8845.
+cls:c_8845 rdfs:label "建設計画"@ja.
+kg:id_10 rdfs:label "自然環境保全上行うべきではない"@ja.
+kg:id_10 rdf:type cls:c_14403.
+cls:c_14403 rdfs:label "不適切"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "自然保護上の問題"@ja.
+kg:id_11 rdf:type cls:c_14404.
+cls:c_14404 rdfs:label "自然保護問題"@ja.
+kg:id_12 rdfs:label "余市特別保護地区を事業想定範囲内に含めたこと"@ja.
+kg:id_12 rdf:type cls:c_14405.
+cls:c_14405 rdfs:label "保護区包含"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "事業実施想定範囲"@ja.
+kg:id_13 rdf:type cls:c_404.
+cls:c_404 rdfs:label "事業区域"@ja.
+kg:id_14 rdfs:label "余市鳥獣保護区および余市特別保護地区の除外"@ja.
+kg:id_14 rdf:type cls:c_14406.
+cls:c_14406 rdfs:label "保護区除外"@ja.
+kg:id_13 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "本事業"@ja.
+kg:id_15 rdf:type cls:c_1.
+cls:c_1 rdfs:label "事業"@ja.
+kg:id_16 rdfs:label "事業計画の中止"@ja.
+kg:id_16 rdf:type cls:c_13085.
+cls:c_13085 rdfs:label "計画中止"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "事業実施想定区域の抜本的な見直し"@ja.
+kg:id_17 rdf:type cls:c_353.
+cls:c_353 rdfs:label "計画見直し"@ja.
+kg:id_15 prop:contermeasure kg:id_17.
+kg:st_1 rdfs:label "公益財団法人 日本自然保護協会"@ja.
+kg:st_1 rdfs:type cls:st_148.
+cls:st_148 rdfs:label "自然保護団体"@ja.
+kg:op_1 prop:content "事業計画を中止するか事業実施想定区域の抜本的な見直しが必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "事業計画を中止するか事業実施想定区域の抜本的な見直しが必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "本地域に建設を計画した事業者の見識が問われる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "余市鳥獣保護区および余市特別保護地区を事業実施想定範囲から除外すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "森林に生息する鳥獣の保護を目的とした区域は除外すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "生物多様性の喪失など自然環境面での多大な影響が予測されるため中止が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "生物多様性の喪失など自然環境面での多大な影響が予測されるため抜本的な見直しが必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:text-txt_contents "そのため、風力発電機を設置するためには、工事用道路を新設する必要があり、広範囲の土地の改変および立木の伐採が予想される。"@ja.
+<< kg:id_6 prop:cause kg:id_5 >>
+    prop:text-txt_contents "そのため、風力発電機を設置するためには、工事用道路を新設する必要があり、広範囲の土地の改変および立木の伐採が予想される。"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:text-txt_contents "同地域の森林が失われることで、自然林の連続性が失われることが懸念される。"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "このような自然環境面で重要な森林を広範囲に開発する行為は、自然環境保全上、行うべきではなく、そもそも本地域に建設を計画した事業者の見識が問われる。"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "特に特別保護地区を事業想定範囲内に含めたことは、自然保護上の問題が大きい。"@ja.
+<< kg:id_13 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "森林に生息する鳥獣の保護を目的とした余市鳥獣保護区および余市特別保護地区を事業実施想定範囲からは除外すべきである。"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+<< kg:id_15 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+}

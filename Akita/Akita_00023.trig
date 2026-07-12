@@ -1,0 +1,312 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00023> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "騒音"@ja.
+kg:id_1 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_2 rdfs:label "夏季に窓の開放時間が長い地域で影響が懸念される"@ja.
+kg:id_2 rdf:type cls:c_11422.
+cls:c_11422 rdfs:label "影響懸念"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "秋季に加え夏季にも調査を実施する"@ja.
+kg:id_3 rdf:type cls:c_269.
+cls:c_269 rdfs:label "調査実施"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "水の濁り"@ja.
+kg:id_4 rdf:type cls:c_2094.
+cls:c_2094 rdfs:label "水質悪化"@ja.
+kg:id_5 rdfs:label "風力発電機基礎の設置や海底ケーブルの敷設に伴う海底土砂の巻き上げ"@ja.
+kg:id_5 rdf:type cls:c_13722.
+cls:c_13722 rdfs:label "土砂巻上げ"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "工事中に対象事業実施区域及びその周辺へ影響する"@ja.
+kg:id_6 rdf:type cls:c_13723.
+cls:c_13723 rdfs:label "周辺影響"@ja.
+kg:id_4 prop:effect kg:id_6.
+kg:id_7 rdfs:label "海底の底質や流向流速を把握し調査地点の追加や見直しを行う"@ja.
+kg:id_7 rdf:type cls:c_202.
+cls:c_202 rdfs:label "調査評価"@ja.
+kg:id_4 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "海域に生息する魚類等への影響"@ja.
+kg:id_8 rdf:type cls:c_13724.
+cls:c_13724 rdfs:label "水生動物影響"@ja.
+kg:id_9 rdfs:label "事業の実施に伴う魚類等の遊泳動物やその卵・稚仔等への影響"@ja.
+kg:id_9 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "ハタハタサケサクラマスアユ等を予測対象種として選定し生息状況を把握する"@ja.
+kg:id_10 rdf:type cls:c_13136.
+cls:c_13136 rdfs:label "生息調査"@ja.
+kg:id_8 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "海域に生育する海草藻類等への影響"@ja.
+kg:id_11 rdf:type cls:c_13725.
+cls:c_13725 rdfs:label "海生植物影響"@ja.
+kg:id_12 rdfs:label "事業の実施"@ja.
+kg:id_12 rdf:type cls:c_468.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "現地調査の測線を防波堤の方向に延長し生育状況を把握する"@ja.
+kg:id_13 rdf:type cls:c_13726.
+cls:c_13726 rdfs:label "生育調査"@ja.
+kg:id_11 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "景観への影響"@ja.
+kg:id_14 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_15 rdfs:label "眺望点からの風力発電機の可視領域"@ja.
+kg:id_15 rdf:type cls:c_13727.
+cls:c_13727 rdfs:label "可視領域"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "可視領域を考慮して必要に応じ調査地点を追加する"@ja.
+kg:id_16 rdf:type cls:c_13583.
+cls:c_13583 rdfs:label "調査追加"@ja.
+kg:id_14 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "動物植物の生息環境や生態系全体への影響"@ja.
+kg:id_17 rdf:type cls:c_225.
+cls:c_225 rdfs:label "生態系影響"@ja.
+kg:id_18 rdfs:label "建設予定地周辺に希少種が生息していること"@ja.
+kg:id_18 rdf:type cls:c_13256.
+cls:c_13256 rdfs:label "希少種生息"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "希少種を含む動物植物の生息環境や生態系全体に影響を与えるおそれ"@ja.
+kg:id_19 rdf:type cls:c_225.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "環境影響調査の実施に当たり十分に配慮する"@ja.
+kg:id_20 rdf:type cls:c_13391.
+cls:c_13391 rdfs:label "影響回避"@ja.
+kg:id_17 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "工事時の騒音"@ja.
+kg:id_21 rdf:type cls:c_13728.
+cls:c_13728 rdfs:label "工事騒音"@ja.
+kg:id_22 rdfs:label "基礎杭等の打設"@ja.
+kg:id_22 rdf:type cls:c_13729.
+cls:c_13729 rdfs:label "杭打設"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "騒音に関する項目を評価項目として選定する必要性を検討し調査予測評価を行う"@ja.
+kg:id_23 rdf:type cls:c_202.
+kg:id_21 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "風力発電設備の騒音"@ja.
+kg:id_24 rdf:type cls:c_13730.
+cls:c_13730 rdfs:label "設備騒音"@ja.
+kg:id_25 rdfs:label "非常に不快に感じる人が多く風車設置後に生活上の心理的影響や人の感覚閾値等建物等への物的影響が生じるおそれ"@ja.
+kg:id_25 rdf:type cls:c_356.
+cls:c_356 rdfs:label "生活影響"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "設置後の影響を調査し現況と予測値を比較し専門家の意見を聴取する"@ja.
+kg:id_26 rdf:type cls:c_202.
+kg:id_24 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "工事時の振動"@ja.
+kg:id_27 rdf:type cls:c_13731.
+cls:c_13731 rdfs:label "工事振動"@ja.
+kg:id_27 prop:cause kg:id_22.
+kg:id_28 rdfs:label "振動に関する項目を評価項目として選定する必要性を検討し調査予測評価を行う"@ja.
+kg:id_28 rdf:type cls:c_202.
+kg:id_27 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "濁水"@ja.
+kg:id_29 rdf:type cls:c_2094.
+kg:id_30 rdfs:label "風車基礎および海底ケーブル工事"@ja.
+kg:id_30 rdf:type cls:c_13538.
+cls:c_13538 rdfs:label "工事実施"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "周辺への影響"@ja.
+kg:id_31 rdf:type cls:c_13723.
+kg:id_29 prop:effect kg:id_31.
+kg:id_32 rdfs:label "周辺への影響を最小限にとどめるよう配慮し調査予測評価を行う"@ja.
+kg:id_32 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_29 prop:contermeasure kg:id_32.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "秋季に加え夏季の調査実施も検討すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地域特性を踏まえ夏季調査を追加すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "海底の底質や流向流速を把握して適切に予測評価すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "必要に応じて調査地点の追加や見直しを行うべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "調査地点を追加見直しして適切に予測評価すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "専門家の助言を踏まえ魚種を選定し生息状況を把握して予測評価すべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "対象魚種を具体化して調査すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "現地調査範囲を防波堤方向に延長して生育状況を把握すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "海草藻類の生育状況を適切に把握すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "可視領域を考慮して調査地点を追加すべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "生活環境からの景観を適切に調査予測評価すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "秋田市長"@ja.
+kg:st_2 rdfs:type cls:st_33.
+kg:op_12 prop:content "対象事業実施区域内の動物植物の生息環境や生態系全体へ影響が及ばないよう配慮すべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "希少種を踏まえ生態系全体への影響回避に配慮すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "生息環境と生態系全体への十分な配慮が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "工事騒音を評価項目として選定する必要性を検討すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "工事騒音を適切に調査予測評価すべき"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "設置後の影響を調査し現況と比較しながら専門家の意見も踏まえ評価すべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "低周波音を含め最新知見で評価すべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "工事振動を評価項目として選定する必要性を検討すべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "工事振動を適切に調査予測評価すべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "周辺影響を最小限にとどめるよう配慮して調査予測評価すべき"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "周辺への影響を最小限に抑えるべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "濁水の周辺影響を抑える対応が必要"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "施設の稼働に伴う騒音及び超低周波音の調査時期について、夏季において窓の開放時間が長い地域特性を考慮し、秋季の調査に加え、夏季においても調査の実施を検討すること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "施設の稼働に伴う騒音及び超低周波音の調査時期について、夏季において窓の開放時間が長い地域特性を考慮し、秋季の調査に加え、夏季においても調査の実施を検討すること。"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "風力発電機基礎の設置や海底ケーブルの敷設に伴い海底土砂の巻き上げ等が発生するおそれがあることから、対象事業実施区域及びその周辺における海底の底質の状況や流向・流速を可能な限り把握した上で、工事中の水の濁りの影響について、必要に応じて調査地点の追加や見直しを検討する等、適切に予測及び評価すること。"@ja.
+<< kg:id_4 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "対象事業実施区域及びその周辺における海底の底質の状況や流向・流速を可能な限り把握した上で、工事中の水の濁りの影響について、必要に応じて調査地点の追加や見直しを検討する等、適切に予測及び評価すること。"@ja.
+<< kg:id_4 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "対象事業実施区域及びその周辺における海底の底質の状況や流向・流速を可能な限り把握した上で、工事中の水の濁りの影響について、必要に応じて調査地点の追加や見直しを検討する等、適切に予測及び評価すること。"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "事業の実施に伴う魚類等の遊泳動物やその卵・稚仔等の海域に生息する動物への影響について、専門家等の助言を踏まえ、ハタハタ、サケ、サクラマス及びアユ等の魚種を予測対象種として選定し、可能な限り生息状況を把握した上で、適切に予測及び評価すること。"@ja.
+<< kg:id_8 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "専門家等の助言を踏まえ、ハタハタ、サケ、サクラマス及びアユ等の魚種を予測対象種として選定し、可能な限り生息状況を把握した上で、適切に予測及び評価すること。"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "事業の実施に伴う海域に生育する植物への影響について、必要に応じて現地調査の測線を防波堤の方向に延長する等、海草藻類の生育状況を適切に把握すること。"@ja.
+<< kg:id_11 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "必要に応じて現地調査の測線を防波堤の方向に延長する等、海草藻類の生育状況を適切に把握すること。"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "対象事業実施区域周辺の日常的な生活環境からの景観について、眺望点からの風力発電機の可視領域を考慮し、必要に応じて調査地点を追加する等、適切に調査、予測及び評価すること。"@ja.
+<< kg:id_14 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "眺望点からの風力発電機の可視領域を考慮し、必要に応じて調査地点を追加する等、適切に調査、予測及び評価すること。"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "建設予定地の南西側にある土崎港地区付近の調査では、植物に関しては、イソスミレ「セソミスミレ（県ＥＮ）」、エゾウキヤガラ（県ＶＵ）、ハタガヤ（県ＶＵ）などの希少種の生息が確認されている。... 建設予定地付近の陸上の状況とほぼ同じと考えられることから、環境影響調査の実施に当たっては、対象事業実施区域内の動物、植物の生息環境や生態系全体へ影響を与えないよう、十分に配慮すること。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "対象事業実施区域内の動物、植物の生息環境や生態系全体へ影響を与えないよう、十分に配慮すること。"@ja.
+<< kg:id_17 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "環境影響調査の実施に当たっては、対象事業実施区域内の動物、植物の生息環境や生態系全体へ影響を与えないよう、十分に配慮すること。"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "工事の実施に当たり、基礎杭等の打設を行うことから、工事の実施の際の騒音に関する項目を評価項目として選定する必要がないか検討し、適切に調査、予測および評価を行うこと。"@ja.
+<< kg:id_21 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "工事の実施の際の騒音に関する項目を評価項目として選定する必要がないか検討し、適切に調査、予測および評価を行うこと。"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "風力発電設備については、他の設備と比較し、騒音レベルが低くても非常に不快に感じる人が多いとされていることから、風車設置後の影響について適切に調査、予測および評価を行うこと。特に低周波音については、環境基準等が設定されていないことから、生活する上での心理的影響、人の感覚閾値等や建物等への物的影響について、国内外の最新の科学的知見等を踏まえて調査を行い、現況と風車設置後の予測値を比較検討すること。また、評価に当たっては、専門家の意見を十分に聴取すること。"@ja.
+<< kg:id_24 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "風車設置後の影響について適切に調査、予測および評価を行うこと。特に低周波音については、環境基準等が設定されていないことから、生活する上での心理的影響、人の感覚閾値等や建物等への物的影響について、国内外の最新の科学的知見等を踏まえて調査を行い、現況と風車設置後の予測値を比較検討すること。また、評価に当たっては、専門家の意見を十分に聴取すること。"@ja.
+<< kg:id_27 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "工事の実施に当たり、基礎杭等の打設を行うことから、工事の実施の際の振動に関する項目を評価項目として選定する必要がないか検討し、適切に調査、予測および評価を行うこと。"@ja.
+<< kg:id_27 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "工事の実施の際の振動に関する項目を評価項目として選定する必要がないか検討し、適切に調査、予測および評価を行うこと。"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "風車基礎および海底ケーブル工事時に濁水の発生が考えられることから、周辺への影響を最小限にとどめるよう配慮し、適切に調査、予測および評価を行うこと。"@ja.
+<< kg:id_29 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "風車基礎および海底ケーブル工事時に濁水の発生が考えられることから、周辺への影響を最小限にとどめるよう配慮し、適切に調査、予測および評価を行うこと。"@ja.
+<< kg:id_29 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "周辺への影響を最小限にとどめるよう配慮し、適切に調査、予測および評価を行うこと。"@ja.
+}

@@ -1,0 +1,197 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00023> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電所の建設計画の大幅縮小"@ja.
+kg:id_1 rdf:type cls:c_88.
+cls:c_88 rdfs:label "風力発電計画"@ja.
+kg:id_2 rdfs:label "自然保護団体や地元などからの反対の声"@ja.
+kg:id_2 rdf:type cls:c_1290.
+cls:c_1290 rdfs:label "反対意見"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "計画区域に手つかずの自然林や鳥獣保護区が含まれていたこと"@ja.
+kg:id_3 rdf:type cls:c_14529.
+cls:c_14529 rdfs:label "自然保護地域"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "仁木町などが計画地から外された"@ja.
+kg:id_4 rdf:type cls:c_14530.
+cls:c_14530 rdfs:label "計画地除外"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "最大64基の風車を18基に縮小した"@ja.
+kg:id_5 rdf:type cls:c_14531.
+cls:c_14531 rdfs:label "設備縮小"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "発電出力最大26万8800キロワットを7万5600キロワットに縮小した"@ja.
+kg:id_6 rdf:type cls:c_14532.
+cls:c_14532 rdfs:label "出力縮小"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "計画地を古平町と余市町に絞った"@ja.
+kg:id_7 rdf:type cls:c_14533.
+cls:c_14533 rdfs:label "計画地絞込"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "風力発電所の建設計画"@ja.
+kg:id_8 rdf:type cls:c_88.
+kg:id_9 rdfs:label "仁木町などを計画地から外す"@ja.
+kg:id_9 rdf:type cls:c_14530.
+kg:id_8 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "余市町内にある鳥獣保護区を外す"@ja.
+kg:id_10 rdf:type cls:c_14534.
+cls:c_14534 rdfs:label "保護区域除外"@ja.
+kg:id_8 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "計画を大幅に縮小する"@ja.
+kg:id_11 rdf:type cls:c_14535.
+cls:c_14535 rdfs:label "計画縮小"@ja.
+kg:id_8 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "最大64基の風車を18基に減らす"@ja.
+kg:id_12 rdf:type cls:c_14531.
+kg:id_8 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "発電出力を26万8800キロワットから7万5600キロワットに減らす"@ja.
+kg:id_13 rdf:type cls:c_14532.
+kg:id_8 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "計画地を古平町と余市町に絞る"@ja.
+kg:id_14 rdf:type cls:c_14533.
+kg:id_8 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "仁木町について今後別の事業として実現の可能性を探る"@ja.
+kg:id_15 rdf:type cls:c_14536.
+cls:c_14536 rdfs:label "事業可能性"@ja.
+kg:id_8 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "風力発電所の建設"@ja.
+kg:id_16 rdf:type cls:c_14537.
+cls:c_14537 rdfs:label "風力発電所建設"@ja.
+kg:id_17 rdfs:label "脱炭素社会の実現に向けて再生可能エネルギー熱が高まっていること"@ja.
+kg:id_17 rdf:type cls:c_14538.
+cls:c_14538 rdfs:label "再エネ需要"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "全国各地で風力発電所の建設が進む"@ja.
+kg:id_18 rdf:type cls:c_14539.
+cls:c_14539 rdfs:label "建設拡大"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "地元の同意を得られず計画を撤回する逆風が強まる"@ja.
+kg:id_19 rdf:type cls:c_1291.
+cls:c_1291 rdfs:label "計画撤回"@ja.
+kg:id_8 prop:effect kg:id_19.
+kg:id_20 rdfs:label "双日が後志地方の事業中止を発表した"@ja.
+kg:id_20 rdf:type cls:c_2176.
+cls:c_2176 rdfs:label "事業中止"@ja.
+kg:id_8 prop:effect kg:id_20.
+kg:st_1 rdfs:label "自然保護団体や地元"@ja.
+kg:st_1 rdfs:type cls:st_167.
+cls:st_167 rdfs:label "地域住民"@ja.
+kg:op_1 prop:content "計画に反対する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "日本自然保護協会"@ja.
+kg:st_2 rdfs:type cls:st_148.
+cls:st_148 rdfs:label "自然保護団体"@ja.
+kg:op_2 prop:content "事業の中止または計画の抜本的な見直しを求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "日本自然保護協会の若松伸彦博士"@ja.
+kg:st_3 rdfs:type cls:st_197.
+cls:st_197 rdfs:label "自然保護専門家"@ja.
+kg:op_3 prop:content "自然環境上重要な場所は外れていると一定の評価をする"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "自然環境上重要な場所は外れていると一定の評価をする"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "事業の中止または計画の抜本的な見直しを求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "関西電力"@ja.
+kg:st_4 rdfs:type cls:st_188.
+cls:st_188 rdfs:label "電力会社"@ja.
+kg:op_6 prop:content "仁木町では別事業として実現可能性を引き続き探る"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "地元"@ja.
+kg:st_5 rdfs:type cls:st_167.
+kg:op_7 prop:content "同意しないことで計画撤回につながる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "双日"@ja.
+kg:st_6 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_8 prop:content "後志地方で計画していた事業を中止する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_6.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "自然保護団体や地元などから反対の声が出ていたのを受けて"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "事業の想定区域に手つかずの自然林や鳥獣保護区が含まれていることなどから、事業の中止あるいは計画の抜本的な見直しを求めていた"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:text-txt_contents "ハイマツなどの自然林が広がる仁木町などを計画地から外した"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "最大64基の風車をつくる計画を同18基と当初計画の約3分の1に縮小する方針だ"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "当初計画していた発電出力最大26万8800キロワットを同7万5600キロワットに縮小する方針だ"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:text-txt_contents "古平や余市両町と仁木町、共和町の4町にまたがる計画地も古平、余市に絞り進める計画だ"@ja.
+<< kg:id_8 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "ハイマツなどの自然林が広がる仁木町などを計画地から外した"@ja.
+<< kg:id_8 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "関電によると、余市町内にある鳥獣保護区も外したという"@ja.
+<< kg:id_8 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "計画の大幅な縮小を盛り込んだ"@ja.
+<< kg:id_8 prop:contermeasure kg:id_12 >>
+    prop:text-txt_contents "最大64基の風車をつくる計画を同18基と当初計画の約3分の1に縮小する方針だ"@ja.
+<< kg:id_8 prop:contermeasure kg:id_13 >>
+    prop:text-txt_contents "当初計画していた発電出力最大26万8800キロワットを同7万5600キロワットに縮小する方針だ"@ja.
+<< kg:id_8 prop:contermeasure kg:id_14 >>
+    prop:text-txt_contents "古平や余市両町と仁木町、共和町の4町にまたがる計画地も古平、余市に絞り進める計画だ"@ja.
+<< kg:id_8 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "関電は今回の見直しで計画地から外れた仁木町については、今後別の事業として実現の可能性を引き続き探るとしている"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:text-txt_contents "脱炭素社会の実現に向けて再生可能エネルギー熱が高まっているのを背景に全国各地で風力発電所の建設が進む"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:text-txt_contents "脱炭素社会の実現に向けて再生可能エネルギー熱が高まっているのを背景に全国各地で風力発電所の建設が進む"@ja.
+<< kg:id_8 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "地元の同意を得られず計画を撤回するなど「逆風」も強まる"@ja.
+<< kg:id_8 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "北海道内では総合商社の双日（東京都）が今年6月、関電の計画地と同じ後志地方にある小樽市と余市町にまたがる山間地で計画していた事業の中止を発表した"@ja.
+}

@@ -1,0 +1,532 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Shimane/00030> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "保安林の解除"@ja.
+kg:id_1 rdf:type cls:c_14234.
+cls:c_14234 rdfs:label "許認可"@ja.
+kg:id_2 rdfs:label "保安内の土地への風力発電機等の設置"@ja.
+kg:id_2 rdf:type cls:c_303.
+cls:c_303 rdfs:label "施設設置"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "土地の開発面積"@ja.
+kg:id_3 rdf:type cls:c_14235.
+cls:c_14235 rdfs:label "開発規模"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "一定の重要流域の有無"@ja.
+kg:id_4 rdf:type cls:c_14236.
+cls:c_14236 rdfs:label "流域条件"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "農林水産大臣の許可が必要"@ja.
+kg:id_5 rdf:type cls:c_14237.
+cls:c_14237 rdfs:label "行政許可"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電事業"@ja.
+kg:id_6 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_7 rdfs:label "事業に起因する災害による被害"@ja.
+kg:id_7 rdf:type cls:c_6931.
+cls:c_6931 rdfs:label "災害被害"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "風力発電所の維持管理"@ja.
+kg:id_8 rdf:type cls:c_1892.
+cls:c_1892 rdfs:label "施設管理"@ja.
+kg:id_9 rdfs:label "周辺事業所の設置と常時勤務による監視体制の構築"@ja.
+kg:id_9 rdf:type cls:c_14238.
+cls:c_14238 rdfs:label "監視体制"@ja.
+kg:id_8 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "月次点検と年次点検の実施"@ja.
+kg:id_10 rdf:type cls:c_1897.
+cls:c_1897 rdfs:label "定期点検"@ja.
+kg:id_8 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "強風や地震発生時の臨時点検"@ja.
+kg:id_11 rdf:type cls:c_14239.
+cls:c_14239 rdfs:label "臨時点検"@ja.
+kg:id_8 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "環境影響評価法の手続き"@ja.
+kg:id_12 rdf:type cls:c_12993.
+cls:c_12993 rdfs:label "環境手続"@ja.
+kg:id_13 rdfs:label "住民や地方公共団体の意見を踏まえた事業計画の作成"@ja.
+kg:id_13 rdf:type cls:c_402.
+cls:c_402 rdfs:label "事業計画"@ja.
+kg:id_12 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "風力事業で新設する道路"@ja.
+kg:id_14 rdf:type cls:c_1485.
+cls:c_1485 rdfs:label "道路整備"@ja.
+kg:id_15 rdfs:label "山林が施業しやすくなる"@ja.
+kg:id_15 rdf:type cls:c_14240.
+cls:c_14240 rdfs:label "森林施業"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "林業の活性化"@ja.
+kg:id_16 rdf:type cls:c_1917.
+cls:c_1917 rdfs:label "産業振興"@ja.
+kg:id_17 rdfs:label "新規雇用の創出"@ja.
+kg:id_17 rdf:type cls:c_1113.
+cls:c_1113 rdfs:label "雇用創出"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "人材育成"@ja.
+kg:id_18 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "発電所の運営"@ja.
+kg:id_19 rdf:type cls:c_2118.
+cls:c_2118 rdfs:label "施設運営"@ja.
+kg:id_20 rdfs:label "多くの雇用の創出"@ja.
+kg:id_20 rdf:type cls:c_1113.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "維持管理業務等の地元業者への発注"@ja.
+kg:id_21 rdf:type cls:c_14102.
+cls:c_14102 rdfs:label "地域発注"@ja.
+kg:id_22 rdfs:label "地域の雇用機会創出"@ja.
+kg:id_22 rdf:type cls:c_1113.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "経済振興"@ja.
+kg:id_23 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_21 prop:effect kg:id_23.
+kg:id_24 rdfs:label "地域での取組"@ja.
+kg:id_24 rdf:type cls:c_4.
+cls:c_4 rdfs:label "地域貢献"@ja.
+kg:id_25 rdfs:label "非常用蓄電池の提供"@ja.
+kg:id_25 rdf:type cls:c_14103.
+cls:c_14103 rdfs:label "物資提供"@ja.
+kg:id_24 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "清掃活動への参加"@ja.
+kg:id_26 rdf:type cls:c_14241.
+cls:c_14241 rdfs:label "清掃活動"@ja.
+kg:id_24 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "祭事・ボランティアへの参加"@ja.
+kg:id_27 rdf:type cls:c_14242.
+cls:c_14242 rdfs:label "地域参加"@ja.
+kg:id_24 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "獣害対策事業への寄付"@ja.
+kg:id_28 rdf:type cls:c_14104.
+cls:c_14104 rdfs:label "寄付"@ja.
+kg:id_24 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "企業版ふるさと納税"@ja.
+kg:id_29 rdf:type cls:c_2260.
+cls:c_2260 rdfs:label "納税"@ja.
+kg:id_24 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "発電所見学"@ja.
+kg:id_30 rdf:type cls:c_14105.
+cls:c_14105 rdfs:label "見学機会"@ja.
+kg:id_24 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "次世代を担う子供たちへの支援"@ja.
+kg:id_31 rdf:type cls:c_14106.
+cls:c_14106 rdfs:label "子ども支援"@ja.
+kg:id_32 rdfs:label "奨学金の支給"@ja.
+kg:id_32 rdf:type cls:c_14107.
+cls:c_14107 rdfs:label "奨学金"@ja.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "ランドセル購入費用補助"@ja.
+kg:id_33 rdf:type cls:c_14243.
+cls:c_14243 rdfs:label "就学補助"@ja.
+kg:id_31 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "再生可能エネルギーに関する学習コンテンツ付ノートの無償配布"@ja.
+kg:id_34 rdf:type cls:c_2366.
+cls:c_2366 rdfs:label "学習支援"@ja.
+kg:id_31 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "風車の景色"@ja.
+kg:id_35 rdf:type cls:c_66.
+cls:c_66 rdfs:label "景観"@ja.
+kg:id_36 rdfs:label "イベント参加者が景色を楽しめる"@ja.
+kg:id_36 rdf:type cls:c_14244.
+cls:c_14244 rdfs:label "景観価値"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "風力発電所の設置"@ja.
+kg:id_37 rdf:type cls:c_303.
+kg:id_38 rdfs:label "地元業者の新たな業務の創出"@ja.
+kg:id_38 rdf:type cls:c_11631.
+cls:c_11631 rdfs:label "業務創出"@ja.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "プロジェクトファイナンス"@ja.
+kg:id_39 rdf:type cls:c_1230.
+cls:c_1230 rdfs:label "資金調達"@ja.
+kg:id_40 rdfs:label "金融機関からの要請による土地契約上の一定条項の盛り込み"@ja.
+kg:id_40 rdf:type cls:c_14245.
+cls:c_14245 rdfs:label "契約条項"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "土地契約上の条項"@ja.
+kg:id_41 rdf:type cls:c_14245.
+kg:id_42 rdfs:label "事業の継続性の担保・補強"@ja.
+kg:id_42 rdf:type cls:c_9015.
+cls:c_9015 rdfs:label "事業継続"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "撤去費用の積み立て"@ja.
+kg:id_43 rdf:type cls:c_14082.
+cls:c_14082 rdfs:label "費用積立"@ja.
+kg:id_44 rdfs:label "事業計画への盛り込み"@ja.
+kg:id_44 rdf:type cls:c_402.
+kg:id_43 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "保安林解除"@ja.
+kg:id_45 rdf:type cls:c_14234.
+kg:id_46 rdfs:label "調整池や排水施設等の規模を国や県の関係機関との協議と指示のもと決定"@ja.
+kg:id_46 rdf:type cls:c_12426.
+cls:c_12426 rdfs:label "排水施設"@ja.
+kg:id_45 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "管理道"@ja.
+kg:id_47 rdf:type cls:c_14246.
+cls:c_14246 rdfs:label "管理道"@ja.
+kg:id_48 rdfs:label "原則として林業事業者と共用"@ja.
+kg:id_48 rdf:type cls:c_9034.
+cls:c_9034 rdfs:label "共同利用"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "管理道部分"@ja.
+kg:id_49 rdf:type cls:c_14246.
+kg:id_50 rdfs:label "保安林内作業許可の申請"@ja.
+kg:id_50 rdf:type cls:c_14247.
+cls:c_14247 rdfs:label "作業許可"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "下流域の治水"@ja.
+kg:id_51 rdf:type cls:c_9748.
+cls:c_9748 rdfs:label "治水対策"@ja.
+kg:id_52 rdfs:label "森林法に基づく協議と河川協議を踏まえた計画"@ja.
+kg:id_52 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_51 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "保安林解除・林地開発許可"@ja.
+kg:id_53 rdf:type cls:c_14234.
+kg:id_54 rdfs:label "下流域の流量を超えない計画"@ja.
+kg:id_54 rdf:type cls:c_14115.
+cls:c_14115 rdfs:label "流量管理"@ja.
+kg:id_53 prop:contermeasure kg:id_54.
+kg:id_55 rdfs:label "濁水の下流流出"@ja.
+kg:id_55 rdf:type cls:c_580.
+cls:c_580 rdfs:label "濁水対策"@ja.
+kg:id_56 rdfs:label "現地調査と河川管理者との協議を踏まえた防災措置"@ja.
+kg:id_56 rdf:type cls:c_14116.
+cls:c_14116 rdfs:label "防災措置"@ja.
+kg:id_55 prop:contermeasure kg:id_56.
+kg:id_57 rdfs:label "石流"@ja.
+kg:id_57 rdf:type cls:c_832.
+cls:c_832 rdfs:label "土砂災害"@ja.
+kg:id_58 rdfs:label "森林法・河川法・地すべり等防止法・砂防及びその他条例に則った協議と計画策定"@ja.
+kg:id_58 rdf:type cls:c_627.
+kg:id_57 prop:contermeasure kg:id_58.
+kg:id_59 rdfs:label "迅速化"@ja.
+kg:id_59 rdf:type cls:c_14248.
+cls:c_14248 rdfs:label "迅速化"@ja.
+kg:id_45 prop:effect kg:id_59.
+kg:id_60 rdfs:label "再生可能エネルギー推進"@ja.
+kg:id_60 rdf:type cls:c_8947.
+cls:c_8947 rdfs:label "再エネ推進"@ja.
+kg:id_61 rdfs:label "森林破壊"@ja.
+kg:id_61 rdf:type cls:c_14249.
+cls:c_14249 rdfs:label "森林破壊"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:id_62 rdfs:label "経産省が進める再エネビジネスのための出来レースと受け止められる"@ja.
+kg:id_62 rdf:type cls:c_14250.
+cls:c_14250 rdfs:label "出来レース"@ja.
+kg:id_45 prop:effect kg:id_62.
+kg:st_1 rdfs:label "ジャパン・リニューアブル・エナジー株式会社"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "風力発電機設置には保安林解除が必要と説明"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "解除審査では開発面積の観点から審査されると説明"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "重要流域の有無が解除審査の技術的基準になると説明"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "重要流域に該当する場合は大臣許可が必要と説明"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "事業起因の災害と判明した被害は補償する考えを示す"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "異常時に即時対応できる体制を構築していると説明"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "保安規程に基づき定期点検を実施していると説明"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "強風や地震時には臨時点検を行うと説明"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "意見を踏まえて環境保全の観点からよりよい事業計画を作ると説明"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "新設道路の活用で管理不足の山林が施業しやすくなったと説明"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "林業活性化は新規雇用創出につながると考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "林業活性化は人材育成にもつながると考える"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "発電所運営により多くの雇用が生まれていると説明"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "地元業者への発注が雇用機会創出につながると説明"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "地元業者への発注が地域経済の振興につながると説明"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "地域向け施策として非常用蓄電池を提供していると説明"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "地域向け施策として清掃活動に参加していると説明"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "地域向け施策として祭事やボランティアに参加していると説明"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "地域向け施策として獣害対策事業へ寄付していると説明"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地域向け施策として企業版ふるさと納税を実施していると説明"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "地域向け施策として発電所見学を実施していると説明"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "高校生や高専生向けの奨学基金を設立して支援していると説明"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "子ども支援としてランドセル購入費用を補助していると説明"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "学習支援として再エネ学習ノートを無償配布していると説明"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "イベント参加者"@ja.
+kg:st_2 rdfs:type cls:st_74.
+cls:st_74 rdfs:label "参加者"@ja.
+kg:op_25 prop:content "八森山の風車の景色を楽しめた"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "設置により受変電設備管理や除雪など新たな業務が生まれると説明"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "金融機関の要請で土地契約に一定条項が必要になると説明"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "条項は事業継続性を担保し補強する目的と説明"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "ガイドラインを参考に撤去費用の積み立てを事業計画に盛り込むと説明"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "調整池や排水施設の規模は関係機関との協議と指示で決めると説明"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "管理道は原則として林業事業者と共用する方針を示す"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "管理道部分は保安林内作業許可を申請予定と説明"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "下流域治水は森林法と河川協議を踏まえて計画すると説明"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "許可取得には下流域の流量を超えない計画が必要と説明"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "濁水対策として調査結果と河川協議を踏まえ防災措置を講じると説明"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "石流対策は関係法令に則り行政協議と専門家審査を経て計画すると説明"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "記事作成者"@ja.
+kg:st_3 rdfs:type cls:st_185.
+cls:st_185 rdfs:label "記事作成者"@ja.
+kg:op_37 prop:content "国の再エネ推進で手続きが簡略化され保安林解除が迅速化しているとみる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "再エネ推進が森林破壊を進めるとの問題意識を示す"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "保安林解除は再エネビジネスのための出来レースにしか思えない"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "保安内の土地に風力発電機等を設置すは、保安林の指定の解除が必要であり"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "解除に当たっては、土地の開発面積といった観点からの審査に加え"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "一定の重要流域の有無等の技術的基準よる厳格な審査がなされます"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "保安林の指定の解除に当たって農林水産大臣の許可が必要となる重要流域の該当要件の一つとして"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "弊社および第三者の調査の結果、事業に起因する災害であると判明した場合には、生じた被害に対し補償をさせていただく考えです"@ja.
+<< kg:id_8 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "発電所の周辺において事業所を設置し、子会社である JRE オペレーションズ株式会社の職員等が常時勤務し、日常的な遠隔監視を実施して発電所の運転状況を常時把握しており、異常発生時にも即時対応できる体制を構築しております"@ja.
+<< kg:id_8 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "点検に関しては、月次点検と年次点検を電気事業法第 42 条に定められた保安規程に基づき実施しております"@ja.
+<< kg:id_8 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "また、強風や地震などが発生した場合には臨時点検も実施しております"@ja.
+<< kg:id_12 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "その結果を公表して住民の皆様、地方公共団体などからご意見をいただき、それらを踏まえて、環境保全の観点から、よりよい事業計画を作り上げていくことであり"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "風力事業で新設する道路を道として地元の森林組合に活用してもらうことで、これまで管理が行き届いていなかった山林が施業しやすくなったとお聞きしております"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "林業の活性化が新規雇用の創出や人材育成に繋がるものと考えております"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "林業の活性化が新規雇用の創出や人材育成に繋がるものと考えております"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "発電所の運営により多くの雇用が創出されております"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "維持管理業務等を地元業者に発注することにより、地域の雇用機会創出と経済振興にもつながっております"@ja.
+<< kg:id_21 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "維持管理業務等を地元業者に発注することにより、地域の雇用機会創出と経済振興にもつながっております"@ja.
+<< kg:id_24 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "これまでの事例として、非常用蓄電池の提供"@ja.
+<< kg:id_24 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "清掃活動の参加"@ja.
+<< kg:id_24 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "祭事・ポランティアへの参加"@ja.
+<< kg:id_24 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "獣害対策事業への寄付"@ja.
+<< kg:id_24 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "企業版ふるさと納税"@ja.
+<< kg:id_24 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "発電所見学等様々な施策を実施しております"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "奨学金の支給(高校生、高専生向け奨学基金の設立)"@ja.
+<< kg:id_31 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "ランドセル購入費用補助"@ja.
+<< kg:id_31 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "再生可能エネルギーに関する学習コンテンツ付ノートの無償配布等を実施しております"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "その際に八森山の風車の景色を楽しめたといったコメントもります"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風力発電所の設置による経済効果については、受変電設管理業務、除除雪管理棟維持(清掃、廃棄物理、浄化槽点地元業者の新たな業務として創出されております"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "プロジェクトファイナンスにより資金調達を行っている場合は、金融機関からの要請により土地契約上で一定の条項を盛り込むことが必要になり"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "当該条項は、万一電事業者が破綻した場合でも金融機関はこれを代替して事業を遂行うにすることを目的としたものであり、事業の継続性を担保・補強するものです"@ja.
+<< kg:id_43 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "撤去費用の積み立て方法については、資源エネルギー庁の「事業計画策定ガイドライン(風力発電)」および「廃棄等費用積立ガイドライン(2023 年 4 月改定)」を参考に事業計画に盛り込んでまいります"@ja.
+<< kg:id_45 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "保安林解除にあたり、調整池や排水施設等の規模についても、国や県の関係機関との協議および指示のもと決定してまいります"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "管理道については、地権者様の意向によるなどの例外を除き、原則として業事業者と共用して行く方針です"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "その場合、管理道部分は保安内作業許可を申請する予定です"@ja.
+<< kg:id_51 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "下流域の治水対策については、森林法に基づく協議において、河)の協議も必要になってまいりますので、当該協議を踏まえて計画いたします"@ja.
+<< kg:id_53 prop:contermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "保林解除・林地開発許可を取得するためには、審査基準に則り下流域の流を超えない計画とすることが求められております"@ja.
+<< kg:id_55 prop:contermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "環境影響評価法に基づく現地調査を踏まえた予測・評価の結果および森林法に基く河川管理者との協議を踏まえた開発計画とすることで、濁水が下流い防災措置を講じてまいります"@ja.
+<< kg:id_57 prop:contermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "石流の対策については、森林法、河川法、地すべり等防止法、砂防注びその他条例等に則り、関係行政と協議を行い、専門家による審査て十分に対策された計画を策定してまいります"@ja.
+<< kg:id_45 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "しかし、国は再エネを推進するために、より手続きを簡略化してきた背景があります。↓↓ 保安林解除を迅速化？森林破壊進める再生可能エネルギー"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "保安林解除を迅速化？森林破壊進める再生可能エネルギー"@ja.
+<< kg:id_45 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "保安林の解除自体、経産省が進める再エネビジネスのための出来レースにしか思えません"@ja.
+}

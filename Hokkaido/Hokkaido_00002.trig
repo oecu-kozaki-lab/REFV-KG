@@ -1,0 +1,266 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00002> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "大型の風力発電設備"@ja.
+kg:id_1 rdf:type cls:c_13833.
+cls:c_13833 rdfs:label "風力設備"@ja.
+kg:id_2 rdfs:label "工場から設置場所までの搬送"@ja.
+kg:id_2 rdf:type cls:c_14344.
+cls:c_14344 rdfs:label "設備搬送"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "風力発電"@ja.
+kg:id_3 rdf:type cls:c_999.
+cls:c_999 rdfs:label "風力発電"@ja.
+kg:id_4 rdfs:label "年平均風速5～6mの風が安定的に吹くこと"@ja.
+kg:id_4 rdf:type cls:c_14345.
+cls:c_14345 rdfs:label "安定風況"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "風力発電の出力変動"@ja.
+kg:id_5 rdf:type cls:c_13238.
+cls:c_13238 rdfs:label "出力変動"@ja.
+kg:id_6 rdfs:label "北海道電力の系統運用に対する負荷"@ja.
+kg:id_6 rdf:type cls:c_14346.
+cls:c_14346 rdfs:label "系統負荷"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "必要以上に充放電量が多いこと"@ja.
+kg:id_7 rdf:type cls:c_14347.
+cls:c_14347 rdfs:label "過剰充放電"@ja.
+kg:id_8 rdfs:label "変換ロスが大きくなって売電量が減る"@ja.
+kg:id_8 rdf:type cls:c_14348.
+cls:c_14348 rdfs:label "売電減少"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "必要な時に充電量や空き容量が十分にないこと"@ja.
+kg:id_9 rdf:type cls:c_11724.
+cls:c_11724 rdfs:label "容量不足"@ja.
+kg:id_10 rdfs:label "技術要件を逸脱してしまい、電力連系から解列されて売電できない"@ja.
+kg:id_10 rdf:type cls:c_14349.
+cls:c_14349 rdfs:label "売電不能"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "リエネ松前風力発電所"@ja.
+kg:id_11 rdf:type cls:c_410.
+cls:c_410 rdfs:label "風力発電所"@ja.
+kg:id_12 rdfs:label "蓄電池システムの併設"@ja.
+kg:id_12 rdf:type cls:c_14350.
+cls:c_14350 rdfs:label "蓄電池併設"@ja.
+kg:id_11 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "風車"@ja.
+kg:id_13 rdf:type cls:c_13896.
+cls:c_13896 rdfs:label "風車"@ja.
+kg:id_14 rdfs:label "小型のエレベーターの装備"@ja.
+kg:id_14 rdf:type cls:c_14351.
+cls:c_14351 rdfs:label "昇降設備"@ja.
+kg:id_13 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "風車と蓄電池の連係"@ja.
+kg:id_15 rdf:type cls:c_14352.
+cls:c_14352 rdfs:label "発電連係"@ja.
+kg:id_16 rdfs:label "ACリンク方式で合成出力を北海道電力の系統に送電"@ja.
+kg:id_16 rdf:type cls:c_14353.
+cls:c_14353 rdfs:label "系統送電"@ja.
+kg:id_15 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "蓄電池への入出力で短周期変動を平滑化し長周期変動を平準化"@ja.
+kg:id_17 rdf:type cls:c_14354.
+cls:c_14354 rdfs:label "出力平滑化"@ja.
+kg:id_5 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "一定の変動率内に出力変動を抑えた発電計画を策定して北海道電力に提出"@ja.
+kg:id_18 rdf:type cls:c_390.
+cls:c_390 rdfs:label "発電計画"@ja.
+kg:id_5 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "蓄電池を充放電制御する"@ja.
+kg:id_19 rdf:type cls:c_14355.
+cls:c_14355 rdfs:label "充放電制御"@ja.
+kg:id_5 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "北海道電力の技術要件に対応した制御"@ja.
+kg:id_20 rdf:type cls:c_14356.
+cls:c_14356 rdfs:label "要件対応制御"@ja.
+kg:id_5 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "短周期の出力変動"@ja.
+kg:id_21 rdf:type cls:c_13238.
+kg:id_22 rdfs:label "風車と蓄電池の合成出力の変化速度を発電所定格出力の毎分1％以下に緩和"@ja.
+kg:id_22 rdf:type cls:c_14357.
+cls:c_14357 rdfs:label "変化速度抑制"@ja.
+kg:id_21 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "長周期の出力変動"@ja.
+kg:id_23 rdf:type cls:c_13238.
+kg:id_24 rdfs:label "指定時間帯ごとに合成出力の変動方向を制御"@ja.
+kg:id_24 rdf:type cls:c_14358.
+cls:c_14358 rdfs:label "変動方向制御"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "7～10時に合成出力を減少させない"@ja.
+kg:id_25 rdf:type cls:c_14359.
+cls:c_14359 rdfs:label "出力維持"@ja.
+kg:id_23 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "11時30分～13時30分に増減させない"@ja.
+kg:id_26 rdf:type cls:c_14359.
+kg:id_23 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "16～19時に減少させない"@ja.
+kg:id_27 rdf:type cls:c_14359.
+kg:id_23 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "20～23時に増加させない"@ja.
+kg:id_28 rdf:type cls:c_14359.
+kg:id_23 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "発電計画の達成"@ja.
+kg:id_29 rdf:type cls:c_8901.
+cls:c_8901 rdfs:label "計画達成"@ja.
+kg:id_30 rdfs:label "リアルタイムでの充放電制御"@ja.
+kg:id_30 rdf:type cls:c_14355.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "必要になりそうな蓄電池の充電量や空き容量を事前に予想して備えた運転"@ja.
+kg:id_31 rdf:type cls:c_14360.
+cls:c_14360 rdfs:label "予測運転"@ja.
+kg:id_29 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "FIT制度の終了"@ja.
+kg:id_32 rdf:type cls:c_14361.
+cls:c_14361 rdfs:label "制度終了"@ja.
+kg:id_33 rdfs:label "FITに依存しない再エネ事業の在り方を本格的に検討"@ja.
+kg:id_33 rdf:type cls:c_14362.
+cls:c_14362 rdfs:label "事業再検討"@ja.
+kg:id_32 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "地域に独自に配電網を敷設して住民に安価な再エネ電力を送る"@ja.
+kg:id_34 rdf:type cls:c_14363.
+cls:c_14363 rdfs:label "地域配電"@ja.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "地域で独立したマイクログリッドのような仕組みを視野に入れる"@ja.
+kg:id_35 rdf:type cls:c_8969.
+cls:c_8969 rdfs:label "地域電力網"@ja.
+kg:id_32 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "リエネ松前風力発電所の蓄電池システム"@ja.
+kg:id_36 rdf:type cls:c_14364.
+cls:c_14364 rdfs:label "蓄電池システム"@ja.
+kg:id_37 rdfs:label "地域グリッドの形成に貴重な知見を蓄積できる"@ja.
+kg:id_37 rdf:type cls:c_14365.
+cls:c_14365 rdfs:label "知見蓄積"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "再エネ開発とその運営"@ja.
+kg:id_38 rdf:type cls:c_4057.
+cls:c_4057 rdfs:label "再エネ事業"@ja.
+kg:id_39 rdfs:label "地域社会の活性化"@ja.
+kg:id_39 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "再エネ事業のブランド戦略"@ja.
+kg:id_40 rdf:type cls:c_14366.
+cls:c_14366 rdfs:label "ブランド戦略"@ja.
+kg:id_41 rdfs:label "思いを社外とともに社内にもいっそう浸透させる"@ja.
+kg:id_41 rdf:type cls:c_14367.
+cls:c_14367 rdfs:label "意識浸透"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "再エネ事業"@ja.
+kg:id_42 rdf:type cls:c_4057.
+kg:id_43 rdfs:label "地域活性化につながる方向を探る"@ja.
+kg:id_43 rdf:type cls:c_1287.
+kg:id_42 prop:contermeasure kg:id_43.
+kg:st_1 rdfs:label "東急不動産 西田恵介・統括部長"@ja.
+kg:st_1 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "松前町の人たちに安い電気を提供したい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地域や社会を活性化する形で再エネ事業を発展させたい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "再エネ開発と運営を通じて地域社会を活性化したい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "東急不動産 インフラ・インダストリー事業本部 西田恵介・統括部長"@ja.
+kg:st_2 rdfs:type cls:st_1.
+kg:op_4 prop:content "ブランド戦略で再エネ事業への思いを社内外に浸透させたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "再エネ事業でも地域活性化と事業拡大の両立を目指す"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "大型の風力発電設備は、工場から設置場所までの搬送が課題になる"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "地上30m以上の上空には、年平均風速5～6mの風が安定的に吹き、風力発電の適地としても知られ"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:text-txt_contents "変動する風力発電の出力を蓄電池への入出力で補うことで、秒単位の短周期変動を平滑化しつつ、時間単位の長周期変動を平準化することで、北電の系統運用に対する負荷を軽減している"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:text-txt_contents "必要以上に充放電量が多くなると、変換ロスが大きくなって売電量が減ってしまう"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:text-txt_contents "必要な時に充電量や空き容量が十分にないと、技術要件を逸脱してしまい、電力連系から解列されて売電できない"@ja.
+<< kg:id_11 prop:contermeasure kg:id_12 >>
+    prop:text-txt_contents "北海道初の蓄電池システムを併設した風力発電所でもある"@ja.
+<< kg:id_13 prop:contermeasure kg:id_14 >>
+    prop:text-txt_contents "このクラスの大型風車になると、タワー下からナセルまで、点検・保守の度に階段で上るのは体力的に限界になってくる。そこで、小型のエレベーターが装備されている"@ja.
+<< kg:id_15 prop:contermeasure kg:id_16 >>
+    prop:text-txt_contents "風車と蓄電池の連係は、風車からの交流と蓄電池からの交流を合わせた合成出力を北海道電力の系統に送電する「ACリンク」という方式になる"@ja.
+<< kg:id_5 prop:contermeasure kg:id_17 >>
+    prop:text-txt_contents "変動する風力発電の出力を蓄電池への入出力で補うことで、秒単位の短周期変動を平滑化しつつ、時間単位の長周期変動を平準化する"@ja.
+<< kg:id_5 prop:contermeasure kg:id_18 >>
+    prop:text-txt_contents "事前に一定の変動率内に出力変動を抑えた発電計画（送電計画）を策定して北電に提出しておき"@ja.
+<< kg:id_5 prop:contermeasure kg:id_19 >>
+    prop:text-txt_contents "それに沿うように蓄電池を充放電制御する"@ja.
+<< kg:id_5 prop:contermeasure kg:id_20 >>
+    prop:text-txt_contents "今回稼働した「リエネ松前風力発電所」では、北海道電力が2016年4月に出した「風力発電設備の出力変動緩和対策に関する技術要件」に対応したものだ"@ja.
+<< kg:id_21 prop:contermeasure kg:id_22 >>
+    prop:text-txt_contents "短周期変動では、風車と蓄電池の合成出力の変化速度を「発電所定格出力の毎分1％以下」に緩和することを求めている"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:text-txt_contents "長周期の出力変動の緩和対策では、以下4つの指定時間帯において、合成出力の変動方向を制御することを求めている"@ja.
+<< kg:id_23 prop:contermeasure kg:id_25 >>
+    prop:text-txt_contents "具体的には、「7～10時に（合成出力を）減少させない」"@ja.
+<< kg:id_23 prop:contermeasure kg:id_26 >>
+    prop:text-txt_contents "「11時30分～13時30分に増減させない」"@ja.
+<< kg:id_23 prop:contermeasure kg:id_27 >>
+    prop:text-txt_contents "「16～19時に減少させない」"@ja.
+<< kg:id_23 prop:contermeasure kg:id_28 >>
+    prop:text-txt_contents "「20～23時に増加させない」"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:text-txt_contents "計画した出力ロードを達成するためには、リアルタイムでの充放電制御に加え"@ja.
+<< kg:id_29 prop:contermeasure kg:id_31 >>
+    prop:text-txt_contents "その時々に必要になりそうな蓄電池の充電量や空き容量を事前に予想しておき、それに備えた運転も必要になる"@ja.
+<< kg:id_32 prop:contermeasure kg:id_33 >>
+    prop:text-txt_contents "同社では、すでにFIT制度の終了を睨み、FITに依存しない再エネ事業の在り方を本格的に検討しているという"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "その選択肢には、地域に独自に配電網を敷設して、住民に安価な再エネ電力を送ったり"@ja.
+<< kg:id_32 prop:contermeasure kg:id_35 >>
+    prop:text-txt_contents "地域で独立したマイクログリッドのような仕組みも視野に入っているという"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "「リエネ松前風力発電所」の蓄電池システムは、地域グリッドの形成に貴重な知見を蓄積できる"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "同社の狙いは、単に再エネ比率を高めるだけでなく「再エネ開発とその運営を通じて、地域社会を活性化したい」という思いがある"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "西田恵介・統括部長は、「再エネ事業のブランド戦略を通じて、こうした思いを社外とともに、社内にもいっそう浸透させていきたい」と言う"@ja.
+<< kg:id_42 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "再エネ事業でも、うまく地域活性化につながる方向を探りたい、そうした社会ニーズの中に次の事業拡大の可能性もある"@ja.
+}

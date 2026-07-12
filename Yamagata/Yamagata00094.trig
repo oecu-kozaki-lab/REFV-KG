@@ -1,0 +1,563 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00094> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "避難生活の長期化"@ja.
+kg:id_1 rdf:type cls:c_5338.
+cls:c_5338 rdfs:label "避難生活"@ja.
+kg:id_2 rdfs:label "福島第一原発の事故による収束と復興のめどの不透明さ"@ja.
+kg:id_2 rdf:type cls:c_5339.
+cls:c_5339 rdfs:label "復興見通し不透明"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "原子力発電所の事故による影響"@ja.
+kg:id_3 rdf:type cls:c_5340.
+cls:c_5340 rdfs:label "原発事故影響"@ja.
+kg:id_4 rdfs:label "庄内地方への放射性物質の飛来への懸念"@ja.
+kg:id_4 rdf:type cls:c_5341.
+cls:c_5341 rdfs:label "放射性物質飛来懸念"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "放射線量の測定情報の不足"@ja.
+kg:id_5 rdf:type cls:c_5342.
+cls:c_5342 rdfs:label "測定情報不足"@ja.
+kg:id_6 rdfs:label "市民の不安"@ja.
+kg:id_6 rdf:type cls:c_5343.
+cls:c_5343 rdfs:label "市民不安"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "酒田市"@ja.
+kg:id_7 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_8 rdfs:label "放射線量の独自計測"@ja.
+kg:id_8 rdf:type cls:c_5344.
+cls:c_5344 rdfs:label "放射線計測"@ja.
+kg:id_7 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "節電対策"@ja.
+kg:id_9 rdf:type cls:c_5345.
+cls:c_5345 rdfs:label "節電対策"@ja.
+kg:id_7 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "酒田市の施設"@ja.
+kg:id_10 rdf:type cls:c_3474.
+cls:c_3474 rdfs:label "公共施設"@ja.
+kg:id_11 rdfs:label "休館せず利用に支障のない範囲で節電"@ja.
+kg:id_11 rdf:type cls:c_5346.
+cls:c_5346 rdfs:label "施設節電"@ja.
+kg:id_10 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "危機管理室で被災者対応を継続"@ja.
+kg:id_12 rdf:type cls:c_5347.
+cls:c_5347 rdfs:label "被災者対応"@ja.
+kg:id_7 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "被災地で中止となったスポーツや文化イベントの受け入れ状況把握"@ja.
+kg:id_13 rdf:type cls:c_5348.
+cls:c_5348 rdfs:label "受入需要把握"@ja.
+kg:id_7 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "被災者の新生活"@ja.
+kg:id_14 rdf:type cls:c_5349.
+cls:c_5349 rdfs:label "被災者生活"@ja.
+kg:id_15 rdfs:label "生活必需品の確保が必要"@ja.
+kg:id_15 rdf:type cls:c_5350.
+cls:c_5350 rdfs:label "生活必需品確保"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "避難者への生活必需品支援"@ja.
+kg:id_16 rdf:type cls:c_5351.
+cls:c_5351 rdfs:label "生活必需品支援"@ja.
+kg:id_7 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "避難者ニーズの変化"@ja.
+kg:id_17 rdf:type cls:c_5352.
+cls:c_5352 rdfs:label "避難者需要変化"@ja.
+kg:id_18 rdfs:label "被災地の情報提供への需要の高まり"@ja.
+kg:id_18 rdf:type cls:c_5353.
+cls:c_5353 rdfs:label "情報提供需要"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "津波対策の見直し"@ja.
+kg:id_19 rdf:type cls:c_5354.
+cls:c_5354 rdfs:label "津波対策見直し"@ja.
+kg:id_7 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "市民とともに津波対策を見直す"@ja.
+kg:id_20 rdf:type cls:c_5354.
+kg:id_7 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "基幹系情報システム更新業務の提案参加が1社のみとなったこと"@ja.
+kg:id_21 rdf:type cls:c_5355.
+cls:c_5355 rdfs:label "提案参加不足"@ja.
+kg:id_22 rdfs:label "本市からおおむね1時間程度の場所に事務所を有する条件と1社の事務手続ミス"@ja.
+kg:id_22 rdf:type cls:c_5356.
+cls:c_5356 rdfs:label "参加条件と手続不備"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "酒田市基幹系情報システム更新業務"@ja.
+kg:id_23 rdf:type cls:c_5357.
+cls:c_5357 rdfs:label "情報システム更新"@ja.
+kg:id_24 rdfs:label "公募型プロポーザル方式の採用"@ja.
+kg:id_24 rdf:type cls:c_5358.
+cls:c_5358 rdfs:label "公募型選定"@ja.
+kg:id_23 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "酒田市基幹系情報システム更新業務の選定委員会"@ja.
+kg:id_25 rdf:type cls:c_5359.
+cls:c_5359 rdfs:label "選定委員会"@ja.
+kg:id_26 rdfs:label "外部委員を含まない庁内7名体制"@ja.
+kg:id_26 rdf:type cls:c_5360.
+cls:c_5360 rdfs:label "内部委員体制"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "宮野浦小学校改修工事の低価格受注"@ja.
+kg:id_27 rdf:type cls:c_5361.
+cls:c_5361 rdfs:label "低価格受注"@ja.
+kg:id_28 rdfs:label "下請業者へのしわ寄せや人件費抑制の懸念"@ja.
+kg:id_28 rdf:type cls:c_5362.
+cls:c_5362 rdfs:label "下請負担懸念"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "低入札価格調査制度の運用"@ja.
+kg:id_29 rdf:type cls:c_5363.
+cls:c_5363 rdfs:label "低入札調査制度"@ja.
+kg:id_7 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "公契約制度の国への早期確立要望"@ja.
+kg:id_30 rdf:type cls:c_5364.
+cls:c_5364 rdfs:label "公契約制度要望"@ja.
+kg:id_7 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "大震災発生直後の酒田市"@ja.
+kg:id_31 rdf:type cls:c_5365.
+cls:c_5365 rdfs:label "災害直後対応"@ja.
+kg:id_32 rdfs:label "非常用電源用燃油確保と避難所開設と安否確認"@ja.
+kg:id_32 rdf:type cls:c_5366.
+cls:c_5366 rdfs:label "応急対応"@ja.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "被災地支援と被災者受け入れ施設の登録"@ja.
+kg:id_33 rdf:type cls:c_5367.
+cls:c_5367 rdfs:label "被災者受入対応"@ja.
+kg:id_7 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "工業団地や空き工場の無償提供"@ja.
+kg:id_34 rdf:type cls:c_5368.
+cls:c_5368 rdfs:label "企業移転支援"@ja.
+kg:id_7 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "地域防災計画の見直し"@ja.
+kg:id_35 rdf:type cls:c_5369.
+cls:c_5369 rdfs:label "防災計画見直し"@ja.
+kg:id_7 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "震災時でも市役所業務を継続できる体制の検討"@ja.
+kg:id_36 rdf:type cls:c_5370.
+cls:c_5370 rdfs:label "業務継続体制"@ja.
+kg:id_7 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "地域新エネルギービジョン見直しとエネルギー拠点強化"@ja.
+kg:id_37 rdf:type cls:c_5371.
+cls:c_5371 rdfs:label "エネルギー戦略見直し"@ja.
+kg:id_7 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "瓦れき処理の遅れ"@ja.
+kg:id_38 rdf:type cls:c_5372.
+cls:c_5372 rdfs:label "災害廃棄物処理遅延"@ja.
+kg:id_39 rdfs:label "有価物としての認識と処理場所や処理体制の不足"@ja.
+kg:id_39 rdf:type cls:c_5373.
+cls:c_5373 rdfs:label "処理体制不足"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "住民が通常の生活に戻れない"@ja.
+kg:id_40 rdf:type cls:c_5374.
+cls:c_5374 rdfs:label "生活再建遅延"@ja.
+kg:id_38 prop:effect kg:id_40.
+kg:id_41 rdfs:label "酒田港"@ja.
+kg:id_41 rdf:type cls:c_1924.
+cls:c_1924 rdfs:label "港湾"@ja.
+kg:id_42 rdfs:label "東北復興のため瓦れき処理で役割を果たせる部分への協力"@ja.
+kg:id_42 rdf:type cls:c_5375.
+cls:c_5375 rdfs:label "災害廃棄物処理協力"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "法律上移動できない汚染物質の搬入"@ja.
+kg:id_43 rdf:type cls:c_5376.
+cls:c_5376 rdfs:label "汚染物質搬入"@ja.
+kg:id_44 rdfs:label "酒田港への搬入はあり得ない"@ja.
+kg:id_44 rdf:type cls:c_5377.
+cls:c_5377 rdfs:label "搬入不可"@ja.
+kg:id_43 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "物流が太平洋側に一極集中していること"@ja.
+kg:id_45 rdf:type cls:c_5378.
+cls:c_5378 rdfs:label "物流一極集中"@ja.
+kg:id_46 rdfs:label "災害に対する東北全体の脆弱性"@ja.
+kg:id_46 rdf:type cls:c_5379.
+cls:c_5379 rdfs:label "災害脆弱性"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "東北の復興"@ja.
+kg:id_47 rdf:type cls:c_5380.
+cls:c_5380 rdfs:label "復興施策"@ja.
+kg:id_48 rdfs:label "日本海側と太平洋側をつなぐ道路や分散型拠点整備"@ja.
+kg:id_48 rdf:type cls:c_5381.
+cls:c_5381 rdfs:label "分散型基盤整備"@ja.
+kg:id_47 prop:contermeasure kg:id_48.
+kg:st_1 rdfs:label "市原栄子議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "被災地調査や情報提供を行う対策室を別に立ち上げるべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "放射性物質の飛来対策も予算化すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "県の公表が少なく市民が不安であり市独自計測も検討すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "酒田市独自ででも計測する考えを持つべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "阿部寿一市長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_5 prop:content "県の対策を見きわめ測定機器も入手困難なため補正予算に盛り込まなかった"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "一時的でなく持続できる節電にすべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "照明の間引きや未使用機器の電源断で持続可能な節電を行う"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "施設の開館時間や休館の考え方を明確にすべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "文化やスポーツに親しむ機会を確保し休館は考えていない"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "被災地調査や情報提供等を行う対策室を別に立ち上げるべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "状況が流動的で全体把握している危機管理室で対応する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "酒田市で受け入れるなどのニーズ調査に取り組むべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "関係の競技団体や文化団体を通じて状況把握に努めている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "自立した生活に必要な物資調達への支援が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "市営住宅等への入居時に照明器具やガステーブルを設置し家電提供や善意の物資もつないでいる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "ニーズ調査で情報提供需要が最も高く全避難者世帯へ週1回郵送している"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "防災対策立ち上げのための予算を今回補正で組むべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "専門家の意見や県のハザードマップ見直しを踏まえ随時予算化する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "防災対策の見直しや施設利用は市民を巻き込んだ議論を行うべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地域ごとの避難先を市民の意見を伺いながら考えていく"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "1時間圏内条件は公正な選定条件か疑問でプロポーザルの意味が薄い"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "迅速対応のため1時間程度の拠点要件を設けたが結果的に1社は手続ミスで参加できなかった"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "加藤裕総務部長"@ja.
+kg:st_3 rdfs:type cls:st_18.
+cls:st_18 rdfs:label "部長"@ja.
+kg:op_23 prop:content "要件を満たす業者は3社程度見込みだったが最終的に審査対象は1社になった"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "専門性が高い事業は外部専門家を委員に入れ透明性を確保すべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "3社程度の提案を想定し公正中立な判断ができるとして採用した"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "外部専門家を参加させ合議制で透明性を示すべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "今回は外部委員は含まないが今後の検討課題"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "低入札価格が下請負担や労働条件悪化につながるため公契約条例を検討すべき"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "最低制限価格を定め低入札価格調査基準を明確化すべき"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "平成10年から基準価格を下回る場合に調査する制度で運用している"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "酒田市でも公契約条例制定を検討すべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "公契約制度は国の制度として確立されるべきで国に早期確立を求めている"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "高橋千代夫議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_33 prop:content "初期対応が通常危機管理か特別対応かを検証すべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "長時間停電のおそれに対応し燃油確保やコミュニティセンター開設などを行った"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "酒田市独自の支援策や受け入れ体制を検証すべき"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "受け入れ可能施設をリストアップし県に登録し避難者にも個別対応した"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "被災企業へより積極的に広告や直接アプローチを行うべき"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "ホームページ掲載に加え商工会議所や金融機関等を通じて周知強化する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "小野直樹商工観光部長"@ja.
+kg:st_5 rdfs:type cls:st_18.
+kg:op_39 prop:content "本社や親会社に調査し優遇制度も紹介しながら積極的に働きかけたい"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_5.
+kg:op_40 prop:content "津波だけでなく土砂崩れや河川はんらんや断層帯の知見も取り入れるべき"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "国と県の見直しに整合をとりつつ津波対策は先行して早期事業化を検討する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "行政としてBCPを作成する必要がある"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "市役所業務が止まらないよう全庁で必要な対応を継続検討している"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:op_44 prop:content "太陽光やバイオや小水力や火力増設を含め新エネルギー戦略を推進すべき"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "原子力を含む国民的議論を見据えつつ共同発電所の増強などを要望している"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "瓦れき処理が遅れている要因と課題を明らかにすべき"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "有価物認識や膨大な量に対する処理場所と体制確保が課題"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "住民が望むのは瓦れきの早期撤去であり国県の指導のもと体制確立が必要"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "酒田港を利用した災害廃棄物処理の進捗と安全対策を明らかにすべき"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+kg:op_50 prop:content "具体化すれば東北復興のため酒田港として協力する対応になる"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "汚染物質搬入への市民不安に対し安全対策を明確にすべき"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_4.
+kg:op_52 prop:content "法律上移動できない汚染物質が酒田港へ搬入されることは絶対にない"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "日本海側の重要性を再認識し日本海国土軸を提唱すべき"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_4.
+kg:op_54 prop:content "日本海側と太平洋側の双方から物流が入る構造にすべき"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "日本海側と太平洋側が本気で話し合う機会を多く持つべき"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_4.
+kg:op_56 prop:content "道路やエネルギー拠点を分散配置し東北を一つとして発展させる施策を訴える"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "今回の災害は地震、津波の自然災害にあわせ福島第一原発の事故が重なり、収束、そしてその後の復興のめどについては不透明であるとしか言いようがありません。この中で避難生活が長期化することも言われています"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "原子力発電所の事故による影響が庄内地方にも出てくるのではないかということが市民の中では大きく懸念されています"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "県の放射線量の測定についても庄内地方の報道は少なく、また農産物については、主力品種については県のホームページにて公表されておりますが、水道や空気中などについてはほとんど公表されていない、不安でたまらないという市民からの声も出ています"@ja.
+<< kg:id_7 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "今回の放射線量の測定について、今後酒田市独自ででも計測をするこのようなお考えはないか、お尋ねいたします。 私たちのほうでも独自に調査することを考えないわけではなかったわけでありますけれども、県の対策を一つ見きわめたほうがいいだろうという判断、さらには放射能の測定機器でありますが、今のところはなかなか入手困難というような状況があるようでございますので、現在のところはこのような放射能の測定というような形での本市の対応については、この補正予算には盛り込まなかったわけでございます"@ja.
+<< kg:id_7 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今後、電力の不足に対応することや防災対策についても必要となっております。市としての節電対策についてどのように対応していくお考えがあるのかお尋ねしたいと思います。 照明の間引きとか、それからパソコン、プリンターなどについて使用していないものについては電源を落とすようにというようなことなどがメーンとなっております。そういう意味では相当無理をしてこの社会実験に協力したというよりは、できる範囲内で最大のことをやったということでございますので、何とか持続可能な節電対策だというふうに思っております"@ja.
+<< kg:id_10 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "酒田市の施設の開館時間や休館についてどのように考えておられるのか、考えをお尋ねいたします。 文化施設、スポーツ施設などについては、もう完全に休館をしてしまうというんであれば、それはそれで節電の効果は高くなるのは当然のことであります。しかしやはり私たちとしてはもちろん節電には協力をいたしますけれども、市民の皆さんの文化やスポーツに親しむ機会を最大限確保しながら、やはりどこまで節電に協力できるのかというようなことを志すべきだろうと思っております。したがって、これらの施設においても電源を小まめに切るとか、利用に支障のない照明を落とすなどの努力はいたしてまいりますが、今のところは幅広く市民の皆さんにこのような施設の利用をしていただきたいというふうに思っておりますので、休館までは今のところは考えていないところでございます"@ja.
+<< kg:id_7 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "現在危機管理室で行っている被災者関連の事業にあわせて、被災地の調査や情報の提供等を行う対策室を別に立ち上げるべきだと考えます。 今のところは、まだまだ混乱状況といいますか、被災地の状況などもいろいろ流動的でございます。それから震災直後からさまざまな状況をトータル全体として把握しているのが危機管理室でございますので、今のところはそういう別の組織を置くのではなくて、危機管理室のほうで対応をさせたいと思っております"@ja.
+<< kg:id_7 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "被災地で予定されていたスポーツや文化的イベントなど、やむなく中止せざるを得ない大会や行事についての受け入れを酒田市で行うなどのニーズ調査も取り組んでいくべきではないかと考えますが、所見を伺います。 関係の競技団体や文化団体などを通じて、そのような状況の把握には努めているところでございます"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "自立した家庭を持つためには、それなりに生活の物資が必要となります。そういった物品の調達についてはどのように支援をし、生活を支えていかれるお考えをお持ちなのかお尋ねいたします"@ja.
+<< kg:id_7 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "新しい生活を本市でスタートするために生活必需品などが必要なことは当然なことでございますが、本市としての支援としては、例えば市営住宅とか雇用促進住宅へ入居される場合には、必要最低限の備品ということで、照明器具やガステーブルなどは本市において設置をさせていただいております。また赤十字社からの家電セットの提供も受け入れたり、市民からの善意の提供などもその避難者のほうにおつなぎするなど可能な限りの対応をさせていただいているところであります"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "震災発生から３カ月でありますので、本市への避難者のニーズも変わってきているというのはそのとおりだというふうに思います。ニーズ調査によれば、やはり被災地の情報提供ということが一番ニーズが高かったというふうに聞いております。そういうことから市では私たちが把握している避難者全世帯に週１回、郵送によってその情報提供をさせていただいているという状況であります"@ja.
+<< kg:id_7 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "私は今回の補正でその防災対策の立ち上げのための予算を組むべきであったと考えます。 今回の東日本の大震災においても想定を超えるというようなものとか、それから河川を津波がさかのぼるとか、いろいろな通常のハザードマップでは余り想定していなかった事案も出てきていること間違いないというふうに思います。そこできちんとその津波についてもう一度専門家の意見を聞きながら見直す必要があるというふうに私は思っております。 そういうような段取りで今いるところでございますので、改めて今回は予算化しなかったわけでありますが、県でのハザードマップの見直しでありますとか、さまざまな提案が出てきた段階において予算化、随時やっていくというような考え方でいるところであります"@ja.
+<< kg:id_7 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "防災対策の見直しや市施設の利用についてなど、こういった問題については市民を巻き込んだ議論を行うべきと考えますが、所見を伺います。 その地域地域においてどこに避難したらいいのかというようなことを市民の皆さんとともに考えていく、調べていくということが大事だというようなことで、地元に入って市民の皆さんの御意見を伺いながら、津波対策などについてはしっかりと見直しをしていく考えでございます"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "提案参加資格では、本市からおおむね１時間程度の場所に事務所を有しとなっています。 実際の応募についても２社しかなく、さらに１社は提案資格がなかった、つまり今回契約する１社だけの応募となっているのが実態ではないでしょうか。 実際の作業を考えていった場合に、更新の作業とか運用や報酬、いろんな場面で早急な対応が必要なわけであります。そういう意味では、おおむね１時間程度の場所に拠点となる事務所があることというようなことを要件に入れさせていただきました。 結果的に１社がその業者側の事務手続ミスで参加いただけなくなったというようなことになったようであります"@ja.
+<< kg:id_23 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "今回の請負契約は、公募型のプロポーザル方式による随意契約となっておりますが、この方式の採用については、広く全国から提案を求めていくとありましたが、 提案参加資格を満たす業者は、おおむね３社程度あるというようなことで把握をしており、３社による提案を受ければ公正、中立な判断ができるだろうというようなことでこの方式を採用させていただいたところであります"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "選定委員会については総務部長を委員長として、それぞれ関係の深い課長を委員とする計７名で選定委員会を組織しております。外部委員は含まれておりません。 外部委員は含まれておりませんが、この方式について実際専門的な知識がさらに必要な場面が出てきた場合は、学識経験者などの外部委員を採用することも今後の検討課題ではないかというふうに思っております"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "元請側が下請業者に本来負担する必要のない費用を一方的に負担させている例など、低価格受注による下請業者へのしわ寄せの例を紹介しています。さらに人件費の抑制などの問題も言われています"@ja.
+<< kg:id_7 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "酒田市では今までは最低制限価格制度を設けておりましたが、平成10年からは低入札価格の調査制度ということで運用を変えてございます。この制度は基準価格を設定をいたしまして、入札価格がその価格を下回った場合に調査を実施するものでございます"@ja.
+<< kg:id_7 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "酒田市においても公契約条例の制定を検討すべきと考えます。 低入札、低落札ということを防止する意味でも、公契約制度、公契約法の制定というようなことを御提案がありましたが、確かに勉強はさせていただいておりますが、このような制度はできれば国の制度として確立することがあるべき姿ではないかというようなことで、国に対してこのような制度の早期の確立をお願いしているところでございます"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "震災直後から全市域にわたりの長時間、というのは結果的には比較的早く回復したんですが、回復の見込がなかなか立たない長期間の停電となるおそれがあったわけでありますので、まずはどうしても電力を確保しなければならないところで、非常用電源を持っている施設などについて発電用燃油の確保、それからコミュニティセンター、まだ寒い時期でありましたので、コミュニティセンターなどを避難所として開設をしたり、それからひとり暮らし世帯などへの無事確認、全世帯をやらせていただきましたし、また市役所に比較的早く発電機を設置をして、テレビ視聴でありますとか携帯電話の充電を支援をするというような対応をさせていただきました"@ja.
+<< kg:id_7 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "被災者の受け入れについては、親子スポーツ会館ほか本市で受け入れるとすればどのような施設でどこまで受けられるのかということをすべてリストアップをして、県のほうに登録をさせていただきました。 民間といいますか市民の皆さんのところに来られた世帯についても、親戚、知人などを頼って避難された方についても、広報などで御登録いただけませんかという周知を行って、登録いただけた世帯については戸別訪問をしてニーズ調査をさせていただいたりをしております"@ja.
+<< kg:id_7 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "京田西工業団地、空き工場・空きオフィスの無償提供などについては、 今後月１回のペースで会合が開かれ、国や被災地へさまざまな施策の提言をすると伺っております。 ホームページなどでお知らせするほか、今後は少しずつその被災地の企業に直接当たることも検討しておりますし、また商工会議所とか本市立地企業など、それから金融機関などを通じて、本市の取り組みなどが被災企業などに届くような形での取り組みを強化していきたいと思っております。 またそのときには無償提供のほかにも、もっともっとすぐれた優遇制度がありますので、その辺の制度を紹介をしながら積極的に働きかけたいと思っておるところでございます"@ja.
+<< kg:id_7 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "酒田市防災計画の改定を予定しているようですが、そのスケジュールはどのように考えているのでありましょうか。 国のほうでも秋ごろまでに防災基本計画を見直し、それに基づいて県が見直しをする、市はそれに整合性をとる形での見直しというような形に考えているわけであります。 しかし本市においては海を有する海岸部を有する市でございますので、他に先駆けてこれらの見直しとは別に、津波対策ということできめ細かな計画調査などをやっていかなければならないと思っております"@ja.
+<< kg:id_7 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "民間企業でも取り入れ始めているＢＣＰを行政として作成する必要があるのではと思うのであります。 市役所の業務がとまるなどというようなことがあってはいけませんので、このたびの震災のことなども踏まえて、どのような対応がさらに必要なのかということを今現在も継続的に関係課、庁舎内全部課でそのあたりのことについては検討を深めているところでございます"@ja.
+<< kg:id_7 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "酒田市地域新エネルギービジョンを見直し、企業立地促進法に基づく基本計画を生かした新エネルギーの拠点づくりを構築する必要性があると考えるのであります。 一定の落ち着きを取り戻した段階において、本市にある酒田共同発電所の増強などについて関係機関に要望をさせていただいたりしております"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "瓦れき処理が遅れているという見方もされていると聞くのでありますが、 一つは議員の質問のほうにもあったようですが、有価物としての認識があるというようなこと、それから瓦れきの量が正直申し上げて簡単に処理できるような量ではないので、そういう意味では処理する場所もそうですが、そういう力というか体制についても十分確保できているのだろうかというような課題がある"@ja.
+<< kg:id_38 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "その地域の住民が望んでいるのは、やはりいち早く瓦れきを撤去して通常の生活に戻りたいということだと思います"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "酒田港を拠点に瓦れき処理をすることの提案がされているようであります。 このような対策がより具体化する中で、酒田港として役割が果たせる部分があるとすれば、それは東北の復興のためですので、当然そのような協力をするというような対応になってくるのではないかというふうに思っております"@ja.
+<< kg:id_43 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_51;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "法律上移動のできないことになっている汚染物質を酒田港へ搬入されるのかと心配される向きもあるようですが、 法律上移動できない汚染物質を酒田港へ搬入するということは、法律上移動できないのでありますから絶対にあり得ないわけであります"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_53;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "効率を優先した一極集中の弱点もよく見えたはずです。 物流がすべて太平洋側から入るというような状況では極めて災害に対して弱いと言わざるを得ない"@ja.
+<< kg:id_47 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_55;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "日本海側からも入り太平洋側からも入る、そして両者をつなぐ道路が必要だというようなことをしっかり言っていかなければならないし、エネルギーについても一極に拠点を置くのではなくて、何カ所かに分けて拠点を置くというような形での復興をしていかなければならないだろう。 東北を一つとして発展させていくために必要な施策として訴えていきたい"@ja.
+}

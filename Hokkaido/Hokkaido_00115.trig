@@ -1,0 +1,734 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00115> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "大規模停電時の電力供給問題"@ja.
+kg:id_1 rdf:type cls:c_15310.
+cls:c_15310 rdfs:label "電力供給問題"@ja.
+kg:id_2 rdfs:label "松前町地域マイクログリッド構築マスタープランの策定"@ja.
+kg:id_2 rdf:type cls:c_627.
+cls:c_627 rdfs:label "計画策定"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "松前町地域マイクログリッド構築"@ja.
+kg:id_3 rdf:type cls:c_15311.
+cls:c_15311 rdfs:label "マイクログリッド構築"@ja.
+kg:id_4 rdfs:label "安定した電力供給"@ja.
+kg:id_4 rdf:type cls:c_14424.
+cls:c_14424 rdfs:label "電力安定供給"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "全国的な先進事例としての期待"@ja.
+kg:id_5 rdf:type cls:c_9059.
+cls:c_9059 rdfs:label "先進事例"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "町内で発電した電力で町内全域の平常時電力を賄う可能性"@ja.
+kg:id_6 rdf:type cls:c_15312.
+cls:c_15312 rdfs:label "電力自給可能性"@ja.
+kg:id_3 prop:effect kg:id_6.
+kg:id_7 rdfs:label "安価で効率的な電気の地産地消の実現"@ja.
+kg:id_7 rdf:type cls:c_15313.
+cls:c_15313 rdfs:label "地産地消実現"@ja.
+kg:id_3 prop:effect kg:id_7.
+kg:id_8 rdfs:label "洋上風力発電事業"@ja.
+kg:id_8 rdf:type cls:c_3025.
+cls:c_3025 rdfs:label "洋上風力発電事業"@ja.
+kg:id_9 rdfs:label "国の促進区域の指定が必要"@ja.
+kg:id_9 rdf:type cls:c_9861.
+cls:c_9861 rdfs:label "区域指定"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "洋上風力発電の誘致"@ja.
+kg:id_10 rdf:type cls:c_15314.
+cls:c_15314 rdfs:label "洋上風力誘致"@ja.
+kg:id_11 rdfs:label "経済効果や産業振興策などの活性化が図られる見込み"@ja.
+kg:id_11 rdf:type cls:c_7105.
+cls:c_7105 rdfs:label "産業活性化"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "固定資産税の増収が見込まれる"@ja.
+kg:id_12 rdf:type cls:c_3558.
+cls:c_3558 rdfs:label "税収増加"@ja.
+kg:id_10 prop:cause kg:id_12.
+kg:id_13 rdfs:label "将来の著しい人口減少に対応する産業全般の活性化とビジネスチャンス拡大を目指す必要"@ja.
+kg:id_13 rdf:type cls:c_7105.
+kg:id_10 prop:cause kg:id_13.
+kg:id_14 rdfs:label "国の促進区域の指定を受けるための情報提供の手続を進める"@ja.
+kg:id_14 rdf:type cls:c_7190.
+cls:c_7190 rdfs:label "手続推進"@ja.
+kg:id_10 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "松前さくら漁業協同組合の理事会の承認"@ja.
+kg:id_15 rdf:type cls:c_15315.
+cls:c_15315 rdfs:label "関係者承認"@ja.
+kg:id_10 prop:cause kg:id_15.
+kg:id_16 rdfs:label "再生可能エネルギー事業"@ja.
+kg:id_16 rdf:type cls:c_15316.
+cls:c_15316 rdfs:label "再生可能エネルギー事業"@ja.
+kg:id_17 rdfs:label "日本のエネルギー自給率の向上"@ja.
+kg:id_17 rdf:type cls:c_8592.
+cls:c_8592 rdfs:label "自給率向上"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "環境への貢献"@ja.
+kg:id_18 rdf:type cls:c_15317.
+cls:c_15317 rdfs:label "環境貢献"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "町の地域振興"@ja.
+kg:id_19 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "地域振興"@ja.
+kg:id_10 prop:effect kg:id_19.
+kg:id_20 rdfs:label "産業の持続化"@ja.
+kg:id_20 rdf:type cls:c_15318.
+cls:c_15318 rdfs:label "産業持続化"@ja.
+kg:id_10 prop:effect kg:id_20.
+kg:id_21 rdfs:label "自治体財政の厳しさ"@ja.
+kg:id_21 rdf:type cls:c_2052.
+cls:c_2052 rdfs:label "財政難"@ja.
+kg:id_22 rdfs:label "過疎"@ja.
+kg:id_22 rdf:type cls:c_15319.
+cls:c_15319 rdfs:label "過疎"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "少子高齢化"@ja.
+kg:id_23 rdf:type cls:c_1146.
+cls:c_1146 rdfs:label "少子高齢化"@ja.
+kg:id_21 prop:cause kg:id_23.
+kg:id_24 rdfs:label "自治体存続のための財源確保"@ja.
+kg:id_24 rdf:type cls:c_689.
+cls:c_689 rdfs:label "財源確保"@ja.
+kg:id_25 rdfs:label "町や村を支えていくために財源が必要"@ja.
+kg:id_25 rdf:type cls:c_15320.
+cls:c_15320 rdfs:label "財源必要性"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "文献調査受け入れ判断"@ja.
+kg:id_26 rdf:type cls:c_15321.
+cls:c_15321 rdfs:label "受入判断"@ja.
+kg:id_27 rdfs:label "国からの交付金の魅力"@ja.
+kg:id_27 rdf:type cls:c_15322.
+cls:c_15322 rdfs:label "交付金魅力"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "町財政の弱さ"@ja.
+kg:id_28 rdf:type cls:c_2052.
+kg:id_29 rdfs:label "自主財源比率が低い"@ja.
+kg:id_29 rdf:type cls:c_15323.
+cls:c_15323 rdfs:label "自主財源不足"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "交付税に頼る財源構造"@ja.
+kg:id_30 rdf:type cls:c_15324.
+cls:c_15324 rdfs:label "依存財源構造"@ja.
+kg:id_28 prop:cause kg:id_30.
+kg:id_31 rdfs:label "令和３年度以降の交付税減少"@ja.
+kg:id_31 rdf:type cls:c_2743.
+cls:c_2743 rdfs:label "交付税減少"@ja.
+kg:id_32 rdfs:label "国勢調査で千人規模の人口減少見込み"@ja.
+kg:id_32 rdf:type cls:c_705.
+cls:c_705 rdfs:label "人口減少"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "大型風力発電施設"@ja.
+kg:id_33 rdf:type cls:c_535.
+cls:c_535 rdfs:label "風力発電施設"@ja.
+kg:id_34 rdfs:label "固定資産税１億１千万円ほどの増収"@ja.
+kg:id_34 rdf:type cls:c_3558.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "大型風力発電施設による税収"@ja.
+kg:id_35 rdf:type cls:c_15325.
+cls:c_15325 rdfs:label "風力発電税収"@ja.
+kg:id_36 rdfs:label "恒久的な財源にはなりにくい"@ja.
+kg:id_36 rdf:type cls:c_15326.
+cls:c_15326 rdfs:label "財源非恒久性"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "洋上風力発電"@ja.
+kg:id_37 rdf:type cls:c_1754.
+cls:c_1754 rdfs:label "洋上風力発電"@ja.
+kg:id_38 rdfs:label "かなりの固定資産税増収が期待できる"@ja.
+kg:id_38 rdf:type cls:c_3558.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "次から次へと更新され長期的な財源になり得る見込み"@ja.
+kg:id_39 rdf:type cls:c_15327.
+cls:c_15327 rdfs:label "長期財源可能性"@ja.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "ぜひ成功させていきたい"@ja.
+kg:id_40 rdf:type cls:c_15328.
+cls:c_15328 rdfs:label "成功推進"@ja.
+kg:id_37 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "テレワーク誘致"@ja.
+kg:id_41 rdf:type cls:c_15329.
+cls:c_15329 rdfs:label "テレワーク誘致"@ja.
+kg:id_42 rdfs:label "受け皿となる施設整備"@ja.
+kg:id_42 rdf:type cls:c_1935.
+cls:c_1935 rdfs:label "施設整備"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "東急不動産と連携した企業版テレワークや企業合宿の誘致"@ja.
+kg:id_43 rdf:type cls:c_15330.
+cls:c_15330 rdfs:label "連携誘致"@ja.
+kg:id_41 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "遊休農地の活用不足"@ja.
+kg:id_44 rdf:type cls:c_15331.
+cls:c_15331 rdfs:label "農地活用不足"@ja.
+kg:id_45 rdfs:label "平坦な土地が少ない"@ja.
+kg:id_45 rdf:type cls:c_15332.
+cls:c_15332 rdfs:label "土地不足"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "農地所有者が多数いて集約しづらい"@ja.
+kg:id_46 rdf:type cls:c_3465.
+cls:c_3465 rdfs:label "所有分散"@ja.
+kg:id_44 prop:cause kg:id_46.
+kg:id_47 rdfs:label "畑作農業が商業的に発達してこなかった"@ja.
+kg:id_47 rdf:type cls:c_15333.
+cls:c_15333 rdfs:label "農業未発達"@ja.
+kg:id_44 prop:cause kg:id_47.
+kg:id_48 rdfs:label "遊休農地の活用"@ja.
+kg:id_48 rdf:type cls:c_15334.
+cls:c_15334 rdfs:label "農地活用"@ja.
+kg:id_49 rdfs:label "肉牛の放牧地として利用"@ja.
+kg:id_49 rdf:type cls:c_15335.
+cls:c_15335 rdfs:label "放牧利用"@ja.
+kg:id_48 prop:contermeasure kg:id_49.
+kg:id_50 rdfs:label "やる気のある農家への支援"@ja.
+kg:id_50 rdf:type cls:c_15336.
+cls:c_15336 rdfs:label "農家支援"@ja.
+kg:id_48 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "まちづくりの原動力になり得る"@ja.
+kg:id_51 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "地域活性化"@ja.
+kg:id_16 prop:effect kg:id_51.
+kg:id_52 rdfs:label "リエネ松前風力発電所の蓄電施設がある"@ja.
+kg:id_52 rdf:type cls:c_15337.
+cls:c_15337 rdfs:label "蓄電施設"@ja.
+kg:id_3 prop:cause kg:id_52.
+kg:id_53 rdfs:label "マイクログリッド構築の課題"@ja.
+kg:id_53 rdf:type cls:c_15338.
+cls:c_15338 rdfs:label "マイクログリッド課題"@ja.
+kg:id_54 rdfs:label "技術面の課題"@ja.
+kg:id_54 rdf:type cls:c_11350.
+cls:c_11350 rdfs:label "技術課題"@ja.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "マイクログリッド構築"@ja.
+kg:id_55 rdf:type cls:c_15311.
+kg:id_56 rdfs:label "自営線の配置が不要となりコストが格段に安くなる"@ja.
+kg:id_56 rdf:type cls:c_15339.
+cls:c_15339 rdfs:label "コスト低減"@ja.
+kg:id_55 prop:effect kg:id_56.
+kg:id_57 rdfs:label "世界的にも画期的"@ja.
+kg:id_57 rdf:type cls:c_9059.
+kg:id_55 prop:effect kg:id_57.
+kg:id_58 rdfs:label "マイクログリッド構築成功"@ja.
+kg:id_58 rdf:type cls:c_15340.
+cls:c_15340 rdfs:label "マイクログリッド成功"@ja.
+kg:id_59 rdfs:label "平常時の電気も送電できる"@ja.
+kg:id_59 rdf:type cls:c_15341.
+cls:c_15341 rdfs:label "平常時送電"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "リエネ松前風力発電所"@ja.
+kg:id_60 rdf:type cls:c_410.
+cls:c_410 rdfs:label "風力発電所"@ja.
+kg:id_61 rdfs:label "一般家庭約３万世帯をカバーできる発電能力"@ja.
+kg:id_61 rdf:type cls:c_14724.
+cls:c_14724 rdfs:label "発電能力"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:id_62 rdfs:label "再生可能エネルギー推進体制"@ja.
+kg:id_62 rdf:type cls:c_2230.
+cls:c_2230 rdfs:label "推進体制"@ja.
+kg:id_63 rdfs:label "政策部門の充実と事務体制の整備"@ja.
+kg:id_63 rdf:type cls:c_4663.
+cls:c_4663 rdfs:label "体制整備"@ja.
+kg:id_62 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "東急不動産との協定と全面的なバックアップ"@ja.
+kg:id_64 rdf:type cls:c_1826.
+cls:c_1826 rdfs:label "事業支援"@ja.
+kg:id_16 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "促進協議会の立ち上げ"@ja.
+kg:id_65 rdf:type cls:c_3315.
+cls:c_3315 rdfs:label "協議体設置"@ja.
+kg:id_16 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "Ｉターン・Ｕターン受け入れ"@ja.
+kg:id_66 rdf:type cls:c_15342.
+cls:c_15342 rdfs:label "移住受入"@ja.
+kg:id_67 rdfs:label "松前町就職サポートセンターでの対応充実"@ja.
+kg:id_67 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "就労支援"@ja.
+kg:id_66 prop:contermeasure kg:id_67.
+kg:id_68 rdfs:label "Ｕターンによる親の看取り"@ja.
+kg:id_68 rdf:type cls:c_15343.
+cls:c_15343 rdfs:label "親族介護帰郷"@ja.
+kg:id_69 rdfs:label "福祉の観点から有効"@ja.
+kg:id_69 rdf:type cls:c_15344.
+cls:c_15344 rdfs:label "福祉有効性"@ja.
+kg:id_68 prop:effect kg:id_69.
+kg:id_70 rdfs:label "Ｕターン・Ｉターン"@ja.
+kg:id_70 rdf:type cls:c_1235.
+cls:c_1235 rdfs:label "移住促進"@ja.
+kg:id_71 rdfs:label "空家活用による一石二鳥の効果"@ja.
+kg:id_71 rdf:type cls:c_9125.
+cls:c_9125 rdfs:label "空家活用"@ja.
+kg:id_70 prop:effect kg:id_71.
+kg:id_72 rdfs:label "地域特産品づくり"@ja.
+kg:id_72 rdf:type cls:c_2860.
+cls:c_2860 rdfs:label "特産品開発"@ja.
+kg:id_73 rdfs:label "積極的にやりたい人への支援"@ja.
+kg:id_73 rdf:type cls:c_1206.
+cls:c_1206 rdfs:label "事業者支援"@ja.
+kg:id_72 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "商品開発"@ja.
+kg:id_74 rdf:type cls:c_7228.
+cls:c_7228 rdfs:label "商品開発"@ja.
+kg:id_75 rdfs:label "スマイル応援補助金の活用"@ja.
+kg:id_75 rdf:type cls:c_7544.
+cls:c_7544 rdfs:label "補助金活用"@ja.
+kg:id_74 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "商品開発・コーディネート"@ja.
+kg:id_76 rdf:type cls:c_7228.
+kg:id_77 rdfs:label "地域おこし協力隊の活用"@ja.
+kg:id_77 rdf:type cls:c_10742.
+cls:c_10742 rdfs:label "人材活用"@ja.
+kg:id_76 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "人口減少"@ja.
+kg:id_78 rdf:type cls:c_705.
+kg:id_79 rdfs:label "雇用の場の確保が難しい"@ja.
+kg:id_79 rdf:type cls:c_5164.
+cls:c_5164 rdfs:label "雇用不足"@ja.
+kg:id_78 prop:cause kg:id_79.
+kg:id_80 rdfs:label "人口流出"@ja.
+kg:id_80 rdf:type cls:c_2557.
+cls:c_2557 rdfs:label "人口流出"@ja.
+kg:id_81 rdfs:label "正規採用の場が少ない"@ja.
+kg:id_81 rdf:type cls:c_15345.
+cls:c_15345 rdfs:label "正規雇用不足"@ja.
+kg:id_80 prop:cause kg:id_81.
+kg:id_82 rdfs:label "Ｉターン・Ｕターン者の移住促進"@ja.
+kg:id_82 rdf:type cls:c_1235.
+kg:id_83 rdfs:label "移住できる環境づくりを目指す"@ja.
+kg:id_83 rdf:type cls:c_1104.
+cls:c_1104 rdfs:label "環境整備"@ja.
+kg:id_82 prop:contermeasure kg:id_83.
+kg:st_1 rdfs:label "松前町長石山英雄"@ja.
+kg:st_1 rdfs:type cls:st_33.
+cls:st_33 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "災害に強いまちづくりを目指し取り組みを進める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "東京大学大学院准教授"@ja.
+kg:st_2 rdfs:type cls:st_105.
+cls:st_105 rdfs:label "研究者"@ja.
+kg:op_2 prop:content "全国的な先進事例として期待し成功させたい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "解決できる見込みがあり事業性は高い"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "ぜひ成功させたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "将来は町内で発電した電力で全域を賄うことも可能とみている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "電気の地産地消の実現を期待している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "促進区域の指定を受けなければ事業を進められない"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "誘致により産業活性化やビジネスチャンス拡大を目指す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "将来の財源確保につながると見込む"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "人口減少に対応するため誘致を進める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "まずは国の促進区域指定に向けた手続を進める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "利害関係者の承認を得て誘致に進む"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "町の風況を活かし日本のエネルギー自給率向上に貢献する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "環境への貢献を図る"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "町の地域振興につなげたい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "産業の持続化を図るため誘致を推進する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "梶谷康介議員"@ja.
+kg:st_3 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_17 prop:content "全国の自治体が過疎のもとで苦慮している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "少子高齢化が財政運営を厳しくしている"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "財源確保が寿都町や神恵内村の判断背景にある"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "財源確保は首長にとって大変重要だ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "交付金は各自治体の首長にとって大きな魅力がある"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "自主財源の確保が重要課題だ"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "交付税の減額は財政の死活問題になる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "交付税の減少は避けられない見通しだ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "一定期間は効果的な財源となる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "償却資産なので永久的な財源にはならない"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "償却資産の性質上恒久的な財源ではない"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "誘致が決まればかなりの増収が期待できる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "国の再エネ推進姿勢から長期的財源になり得る"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "町の財源確保のためにも成功させたい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "まずは施設整備がなければ呼び込む材料として難しい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "東急不動産と連携し企業版テレワーク等の可能性を模索する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "平坦な土地が少ないことが難しさを生んでいる"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "所有者が多く集約しづらいことが課題だ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "歴史的に畑作農業が商業的発達をしてこなかった"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "肉牛の改良センター拡大に合わせ放牧地利用を考える"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "相談があればいろんな角度から支援する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "町の構造を変える起点になれるよう環境づくりを進めたい"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "福原英夫議員"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_39 prop:content "蓄電施設の存在が事業を押し進める大きな要因だ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "一番の課題は技術面だ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "課題は技術的なもので解決できる見込みだ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "送電網利用でコスト低減が期待できる"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "再生可能エネルギーを使ったマイクログリッドは画期的だ"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "成功すれば平常時送電も可能になる"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "町内全域の電力を賄うのに余りある能力がある"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:op_46 prop:content "専門性を持つ事務体制が必要だ"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "町全体を見た政策部門の充実を図りたい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "東急不動産の全面的な支援を受けながら進めている"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "町民の理解を深めるため促進協議会を立ち上げたい"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "現在は就職サポートセンター機能の充実で対応する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "家族が面倒を見ることは最善で福祉の観点から有効だ"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "実現すれば一石二鳥の効果が期待できる"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "イチゴや野菜栽培などに取り組みたい人がいれば支援する"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_1.
+kg:op_54 prop:content "最大30万円の補助事業を活用してほしい"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "ニーズがあれば地域おこし協力隊活用を検討する"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "人口減少の最大のネックは雇用の場の確保だ"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_1.
+kg:op_57 prop:content "正規採用の場が少ないことが町外流出につながっている"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_1.
+kg:op_58 prop:content "受け入れ環境を整えるよう努力する"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_1.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "東急不動産株式会社が所有するリエネ松前風力発電所の大型蓄電施設を活用し、大規模停電時（ブラックアウト）のバックアップと効率的な電力の供給を目指して、今年度に経済産業省のモデル事業として採択を受け、松前町と東急不動産株式会社の共同申請により、松前町地域マイクログリッド構築マスタープランの策定に取り組んでいるところでございます"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "安定した電力の供給や変電所への独立した接続など課題は多くありますが、解決できる見込みであり、事業性は高いとされ"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "全国的にも先進事例として期待されており、ぜひ成功させたいと前向きなお話もいただきました"@ja.
+<< kg:id_3 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "将来、松前町内全域の平常時の電力も、町内で発電した電力で賄うことも可能であり"@ja.
+<< kg:id_3 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "安価で効率的な電気の地産地消の実現も期待できることから"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "洋上風力発電は、海洋再生可能エネルギー発電設備の整備に係る海域の利用の促進に関する法律（平成３０年法律第８９号）に基づいて実施され、国の促進区域の指定を受けなければ事業を進めることができないこととなっております"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "洋上風力発電の誘致による経済効果や漁業をはじめとする産業振興策などの活性化が図られ"@ja.
+<< kg:id_10 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "固定資産税の増収も見込まれることなどから"@ja.
+<< kg:id_10 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "将来の著しい人口減少に対応する産業全般の活性化やビジネスチャンスの拡大を目指し、洋上風力発電の誘致に向け"@ja.
+<< kg:id_10 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "まずは、国の促進区域の指定を受けるための情報提供の手続を進めることとしたところでございます"@ja.
+<< kg:id_10 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "利害関係者である松前さくら漁業協同組合の理事会の承認もいただいたことで"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "当町の風況を活かし、日本のエネルギー自給率の向上"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "環境への貢献"@ja.
+<< kg:id_10 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "町の地域振興"@ja.
+<< kg:id_10 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "産業の持続化を図るため、洋上風力発電の誘致の取り組みを推進するものであります"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "自分達の町を支えていくためには、過疎、あるいは少子高齢化、そうしたもののもとに非常に苦慮してる状態だと思います"@ja.
+<< kg:id_21 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "自分達の町を支えていくためには、過疎、あるいは少子高齢化、そうしたもののもとに非常に苦慮してる状態だと思います"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "自分達の町や村がこれから存続していくために、どうしてもそのための財源を確保しなければいけない"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "この文献調査、あるいは概要調査にあたるなどの国からの交付金というのは、大変な魅力を感ずる財源である"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "自主財源比率が２０％と低く、依存財源の比率が８０％"@ja.
+<< kg:id_28 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "ほとんど交付税に頼っているのが現実であります。交付税に頼らざるを得ない財源構造が、私どもの松前町の最大の弱点"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "今年は、交付税算定の基礎となる国勢調査の年でもありました。千人規模で減少する見込みであるというふうに捉えているところであります。令和３年度以降の交付税の減少は避けられない見通し"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "現在大型風力発電施設で今年、令和２年に１億１千万ほどの増収があったところであります"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "これは、償却資産でありまして、年々資産価値がなくなるというふうなことの繰り返しになるわけであります。一定期間には、効果な財源とはなりますけども、恒久的にっていうふうなことになると、償却資産の性質上、そういうふうにならざるを得ない"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "洋上風力については建設費も膨大で、誘致がもし決まれば固定資産税もかなりの増収が期待できる"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "大規模発電を有する洋上風力につきましては、私どもは、次から次へと更新されていく可能性が高いんではないかというふうに思っておりまして、その観点から見ますと、長期的な財源になり得る見込みもある"@ja.
+<< kg:id_37 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "町の財源の確保ということからいきましても、ぜひ成功はさせていきたいなというふうに思っているところであります"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "まずは受け皿の整備、いわゆる施設の整備がなければ、呼び込む材料としては難しい"@ja.
+<< kg:id_41 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "東急不動産と連携しながら企業版テレワークや企業合宿の誘致の可能性を現在模索していくこととしておりまして"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "平坦な土地が松前には少ないというふうに思っているところでありまして"@ja.
+<< kg:id_44 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "農地の所有者が多数いると、所有者がたくさんいる。ですから、集約しづらい部分もある"@ja.
+<< kg:id_44 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "松前の農業の歴史を見ますと、やっぱり、畑作農業にしても商業的な発達はしてこなかった"@ja.
+<< kg:id_48 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "やっぱり遊休の農地は放牧地にするとか、そういうような方法はあるというふうに考えております"@ja.
+<< kg:id_48 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "やる気のある人が私どもの方に相談していただければ、いろんな角度から支援はできる"@ja.
+<< kg:id_16 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "再生可能エネルギー事業はまちづくりの原動力になるのかというふうな表題でございます。正しく、なれるような環境づくりに向かって進めてまいりたい"@ja.
+<< kg:id_3 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "松前町には東急不動産の蓄電施設があるっていうことが大きい意味合いがある"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "現状の課題につきましては、技術的なものばかりで、解決できる見込みである旨も確認されておりまして"@ja.
+<< kg:id_55 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "北海道電力ネットワークが管理する送電網を利用して、電気を送ることで自営線の配置が不用となり、コストも格段と安くなる"@ja.
+<< kg:id_55 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "風力発電、いわゆる再生可能エネルギーを使ったマイクログリッドは、世界的にも画期的である"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "マイクログリッド構築が成功した場合には、現在は災害の、議員ご指摘のようにブラックアウト時のバックアップの想定でありますけども、これは理論的には、最終的には平常時の電気も送電できることとなる"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "現に、今現在リエネ松前風力発電所では、一般家庭の約３万世帯をカバーできる能力があります。松前町全域の電力を賄うのに余りある能力"@ja.
+<< kg:id_62 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "町全体を見た中で政策部門の充実を図ってまいりたい"@ja.
+<< kg:id_16 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "現在町では洋上風力の指定促進、指定を受けるために、促進区域の指定を受けるために、いろいろ東急不動産には本当に全面的なバックアップをいただきながら進めております"@ja.
+<< kg:id_16 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "今後は然るべき時期には、仮称でありますけど、町内に促進協議会のようなものを立ち上げて、情報の共有や建設的な意見をもらいながら進めて行ければな"@ja.
+<< kg:id_66 prop:contermeasure kg:id_67 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "現在のところは、この就職サポートセンターでの対応の一層の充実を図ることによって解消してまいりたい"@ja.
+<< kg:id_68 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "Ｕターンで親の面倒を見に帰って来ることは、福祉の観点からは有効なことである"@ja.
+<< kg:id_70 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "このような形で実現が可能となれば、一石二鳥の効果は十分期待できる"@ja.
+<< kg:id_72 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "イチゴや野菜の栽培、更には漬け物の商品開発を考えてみては、とのご提案でありますけども、私は積極的にやりたい人がいればですね、町としては支援をしていきたい"@ja.
+<< kg:id_74 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "商品開発等につきましては、スマイル応援補助金等、最大３０万の補助事業もありますので、積極的に活用していただければ"@ja.
+<< kg:id_76 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "産業団体等で地域おこし隊協力を活用して商品開発をしたいというニーズがあるのであれば、検討できなくはない"@ja.
+<< kg:id_78 prop:cause kg:id_79 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "人口減少の最大のネックとなるのは、やっぱり雇用の場の確保"@ja.
+<< kg:id_80 prop:cause kg:id_81 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "正規職員の、正規採用の場が少ないことが町外への人口流出に繋がっている"@ja.
+<< kg:id_82 prop:contermeasure kg:id_83 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "受け入れ環境が整えるよう、今後も努力して、Ｉターン、Ｕターン者が町に移住できる環境づくりを目指してまいりたい"@ja.
+}

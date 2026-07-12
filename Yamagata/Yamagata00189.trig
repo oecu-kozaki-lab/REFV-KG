@@ -1,0 +1,312 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00189> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新型コロナウイルス感染症拡大"@ja.
+kg:id_1 rdf:type cls:c_1168.
+cls:c_1168 rdfs:label "感染拡大"@ja.
+kg:id_2 rdfs:label "地域経済や市民生活への影響"@ja.
+kg:id_2 rdf:type cls:c_10708.
+cls:c_10708 rdfs:label "地域経済への影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "地域経済や市民生活を支援する施策への最優先の取組"@ja.
+kg:id_3 rdf:type cls:c_1217.
+cls:c_1217 rdfs:label "生活支援"@ja.
+kg:id_1 prop:contermeasure kg:id_3.
+kg:id_4 rdfs:label "コロナ禍"@ja.
+kg:id_4 rdf:type cls:c_1350.
+cls:c_1350 rdfs:label "感染症流行"@ja.
+kg:id_5 rdfs:label "地域経済への影響"@ja.
+kg:id_5 rdf:type cls:c_10708.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "経済的な影響を受けた事業者への各種の応援補助金の迅速な交付"@ja.
+kg:id_6 rdf:type cls:c_1206.
+cls:c_1206 rdfs:label "事業者支援"@ja.
+kg:id_4 prop:contermeasure kg:id_6.
+kg:id_7 rdfs:label "本市内での消費を喚起するキャッシュレス決済導入促進キャンペーンの実施"@ja.
+kg:id_7 rdf:type cls:c_2309.
+cls:c_2309 rdfs:label "消費喚起"@ja.
+kg:id_4 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "米の需要減少"@ja.
+kg:id_8 rdf:type cls:c_1179.
+cls:c_1179 rdfs:label "需要減少"@ja.
+kg:id_4 prop:cause kg:id_8.
+kg:id_9 rdfs:label "米価下落"@ja.
+kg:id_9 rdf:type cls:c_1178.
+cls:c_1178 rdfs:label "価格下落"@ja.
+kg:id_10 rdfs:label "コロナ禍により生じた米の需要減少"@ja.
+kg:id_10 rdf:type cls:c_1179.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "次期作に向けた営農意欲の維持向上を図るための種子購入代金の支援"@ja.
+kg:id_11 rdf:type cls:c_3857.
+cls:c_3857 rdfs:label "営農支援"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "コロナ禍後"@ja.
+kg:id_12 rdf:type cls:c_10709.
+cls:c_10709 rdfs:label "感染症収束後"@ja.
+kg:id_13 rdfs:label "稼ぐ観光地域づくりの推進"@ja.
+kg:id_13 rdf:type cls:c_1423.
+cls:c_1423 rdfs:label "観光振興"@ja.
+kg:id_12 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "庄内空港の定期便搭乗者数が約10万人まで落ち込んだ"@ja.
+kg:id_14 rdf:type cls:c_3858.
+cls:c_3858 rdfs:label "交通需要減少"@ja.
+kg:id_4 prop:effect kg:id_14.
+kg:id_15 rdfs:label "ブルーインパルスによる庄内上空での展示飛行"@ja.
+kg:id_15 rdf:type cls:c_10710.
+cls:c_10710 rdfs:label "展示飛行"@ja.
+kg:id_4 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "新型コロナウイルスワクチン接種"@ja.
+kg:id_16 rdf:type cls:c_1348.
+cls:c_1348 rdfs:label "予防接種"@ja.
+kg:id_17 rdfs:label "インターネット コールセンター 予約代行など多様な予約方法の構築"@ja.
+kg:id_17 rdf:type cls:c_3859.
+cls:c_3859 rdfs:label "予約体制整備"@ja.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "市による集団接種と医療機関での個別接種の組合せ"@ja.
+kg:id_18 rdf:type cls:c_1446.
+cls:c_1446 rdfs:label "接種体制整備"@ja.
+kg:id_16 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "新型コロナウイルス感染症の影響の長期化"@ja.
+kg:id_19 rdf:type cls:c_10711.
+cls:c_10711 rdfs:label "影響長期化"@ja.
+kg:id_20 rdfs:label "子育て世帯の生活への影響"@ja.
+kg:id_20 rdf:type cls:c_10712.
+cls:c_10712 rdfs:label "生活への影響"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "子育て世帯生活支援特別給付金として児童１人につき５万円の支給"@ja.
+kg:id_21 rdf:type cls:c_3862.
+cls:c_3862 rdfs:label "生活給付"@ja.
+kg:id_19 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "子育て世帯への臨時特別給付金として児童１人につき10万円の支給"@ja.
+kg:id_22 rdf:type cls:c_3862.
+kg:id_19 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "住民税非課税世帯等を対象とする１世帯当たり10万円の臨時特別給付金の支給"@ja.
+kg:id_23 rdf:type cls:c_3862.
+kg:id_19 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "生理用品を準備することが困難な状況"@ja.
+kg:id_24 rdf:type cls:c_3482.
+cls:c_3482 rdfs:label "生活困窮"@ja.
+kg:id_25 rdfs:label "生理用品の無償配布"@ja.
+kg:id_25 rdf:type cls:c_10713.
+cls:c_10713 rdfs:label "物資配布"@ja.
+kg:id_24 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "物価高騰等"@ja.
+kg:id_26 rdf:type cls:c_757.
+cls:c_757 rdfs:label "物価高騰"@ja.
+kg:id_27 rdfs:label "障がい福祉サービスを提供する法人や介護保険事業所 法人立保育所等の運営経費の負担増"@ja.
+kg:id_27 rdf:type cls:c_2831.
+cls:c_2831 rdfs:label "運営負担増"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "障がい福祉サービスを提供する法人や介護保険事業所 法人立保育所等への支援"@ja.
+kg:id_28 rdf:type cls:c_10714.
+cls:c_10714 rdfs:label "事業運営支援"@ja.
+kg:id_26 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "不妊治療の公的医療保険適用後の自己負担"@ja.
+kg:id_29 rdf:type cls:c_3866.
+cls:c_3866 rdfs:label "医療費負担"@ja.
+kg:id_30 rdfs:label "助成制度の創設"@ja.
+kg:id_30 rdf:type cls:c_2030.
+cls:c_2030 rdfs:label "助成制度"@ja.
+kg:id_29 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "オミクロン株対応"@ja.
+kg:id_31 rdf:type cls:c_3868.
+cls:c_3868 rdfs:label "変異株対応"@ja.
+kg:id_32 rdfs:label "新型コロナウイルスワクチン接種に係る経費の計上"@ja.
+kg:id_32 rdf:type cls:c_1348.
+kg:id_31 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "新型コロナウイルス感染症のクラスター発生"@ja.
+kg:id_33 rdf:type cls:c_3869.
+cls:c_3869 rdfs:label "集団感染"@ja.
+kg:id_34 rdfs:label "感染拡大防止のための施設の借り上げと提供"@ja.
+kg:id_34 rdf:type cls:c_3871.
+cls:c_3871 rdfs:label "施設提供"@ja.
+kg:id_33 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "新型コロナウイルス感染防止"@ja.
+kg:id_35 rdf:type cls:c_2217.
+cls:c_2217 rdfs:label "感染防止"@ja.
+kg:id_36 rdfs:label "総合文化センター等の施設への機器の設置"@ja.
+kg:id_36 rdf:type cls:c_3872.
+cls:c_3872 rdfs:label "機器設置"@ja.
+kg:id_35 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "新型コロナウイルス感染症の感染拡大"@ja.
+kg:id_37 rdf:type cls:c_1168.
+kg:id_38 rdfs:label "飛島連絡所待合室内への体表温測定機能ターミナルの設置"@ja.
+kg:id_38 rdf:type cls:c_3872.
+kg:id_37 prop:contermeasure kg:id_38.
+kg:st_1 rdfs:label "丸山至市長"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "社会経済活動との両立に向け地域経済や市民生活の支援を最優先に進めた"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "影響を受けた事業者へ迅速に補助金を交付した"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "市内消費を喚起するためキャッシュレス決済導入促進キャンペーンを実施した"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "大幅な米価下落への緊急対策として種子購入代金を支援した"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "観光誘客支援や観光資源の磨き上げで稼ぐ観光地域づくりを進めた"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "開港30周年記念と医療従事者への感謝を表す展示飛行を実施した"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "円滑な接種のため多様な予約方法を整備した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "酒田地区医師会十全堂 酒田地区歯科医師会 酒田地区薬剤師会 日本海総合病院"@ja.
+kg:st_2 rdfs:type cls:st_118.
+cls:st_118 rdfs:label "医療機関"@ja.
+kg:op_8 prop:content "協力して集団接種と個別接種を組み合わせた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "子育て世帯の生活支援として児童1人当たり5万円を支給した"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "子育て世帯への臨時特別給付として児童1人当たり10万円を支給した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "住民税非課税世帯等に1世帯当たり10万円を支給した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "困難な状況にある方へ生理用品を無償配布した"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "運営経費の負担軽減と安定したサービス提供のため支援した"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "県内初の助成制度で子どもを望む方々の負担軽減を図る"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "国の方針に基づきオミクロン株対応ワクチン接種を進める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "医療 介護施設でクラスターが発生した場合に施設を借り上げ提供する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "施設での感染防止のため機器を設置する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "感染拡大対策として飛島連絡所待合室に体表温測定機能ターミナルを設置する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "世界的に猛威を振るう新型コロナウイルス感染症拡大の防止に細心の注意を払い、社会経済活動との両立に向け、地域経済や市民生活を支援する施策について最優先に取り組んでまいりました"@ja.
+<< kg:id_1 prop:contermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "世界的に猛威を振るう新型コロナウイルス感染症拡大の防止に細心の注意を払い、社会経済活動との両立に向け、地域経済や市民生活を支援する施策について最優先に取り組んでまいりました"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:text-txt_contents "コロナ禍が地域経済に与える影響を最小限に抑えるため"@ja.
+<< kg:id_4 prop:contermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "コロナ禍が地域経済に与える影響を最小限に抑えるため、経済的な影響を受けた事業者に対して各種の応援補助金を迅速に交付した"@ja.
+<< kg:id_4 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "コロナ禍が地域経済に与える影響を最小限に抑えるため、経済的な影響を受けた事業者に対して各種の応援補助金を迅速に交付したほか、本市内での消費を喚起するキャッシュレス決済導入促進キャンペーンを実施しました"@ja.
+<< kg:id_4 prop:cause kg:id_8 >>
+    prop:text-txt_contents "コロナ禍により生じた米の需要減少"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "コロナ禍により生じた米の需要減少による大幅な米価下落"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "コロナ禍により生じた米の需要減少による大幅な米価下落への緊急対策として、次期作に向けた営農意欲の維持向上を図るため、種子購入代金を支援しました"@ja.
+<< kg:id_12 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "コロナ禍後の稼ぐ観光地域づくりを推進するため、酒田観光戦略推進協議会が中心となり、観光誘客に取り組む民間事業者や団体を支援するとともに、観光資源の磨き上げや観光プロモーションに取り組みました"@ja.
+<< kg:id_4 prop:effect kg:id_14 >>
+    prop:text-txt_contents "庄内空港においては、コロナ禍の影響を受けて、令和３年の定期便搭乗者数は約10万人まで落ち込みました"@ja.
+<< kg:id_4 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "庄内空港においては、コロナ禍の影響を受けて、令和３年の定期便搭乗者数は約10万人まで落ち込みましたが、令和３年10月に、開港30周年を記念するとともに、新型コロナウイルス感染症と日々向き合っておられる医療従事者などの皆様に感謝の気持ちを表すために、航空自衛隊第４航空団第11飛行隊ブルーインパルスが庄内上空で展示飛行を行いました"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "新型コロナウイルスワクチンの円滑な接種を実施するため、インターネット、コールセンター、予約代行など、多様な予約方法を構築しました"@ja.
+<< kg:id_16 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "酒田地区医師会十全堂、酒田地区歯科医師会、酒田地区薬剤師会及び日本海総合病院から協力いただき、市による集団接種と医療機関での個別接種を組み合わせ"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:text-txt_contents "新型コロナウイルス感染症の影響が長期化する中、子育て世帯の生活を支援し"@ja.
+<< kg:id_19 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "新型コロナウイルス感染症の影響が長期化する中、子育て世帯の生活を支援し、子供たちの未来を拓く観点から、子育て世帯生活支援特別給付金として児童１人につき５万円を"@ja.
+<< kg:id_19 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "子育て世帯への臨時特別給付金として児童１人につき10万円をそれぞれ支給しました"@ja.
+<< kg:id_19 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "住民税非課税世帯等を対象とする臨時特別給付金として、１世帯当たり10万円を支給しました"@ja.
+<< kg:id_24 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "生理用品を準備することが困難な状況にある方を対象に、無償で生理用品を配布しました"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:text-txt_contents "障がい福祉サービスを提供する法人や介護保険事業所、法人立保育所等に対し、物価高騰等による運営経費の負担を軽減し"@ja.
+<< kg:id_26 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "障がい福祉サービスを提供する法人や介護保険事業所、法人立保育所等に対し、物価高騰等による運営経費の負担を軽減し、安定したサービスの提供が行えるよう支援する経費を計上しております"@ja.
+<< kg:id_29 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "県内では初めて、不妊治療の公的医療保険適用後の自己負担に対する助成制度を創設して、子供を望む方々のさらなる負担軽減を図る予算を計上しております"@ja.
+<< kg:id_31 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "国の方針に基づき、オミクロン株対応のワクチン接種に係る経費等を計上しております"@ja.
+<< kg:id_33 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "医療・介護施設において新型コロナウイルス感染症のクラスターが発生した場合に、感染拡大防止のための施設を借り上げの上、提供する経費等を増額しております"@ja.
+<< kg:id_35 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "総合文化センター等の施設に、新型コロナウイルスの感染防止のための機器を設置する経費を計上しております"@ja.
+<< kg:id_37 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "新型コロナウイルス感染症の感染拡大対策のため、飛島連絡所待合室内に体表温測定機能ターミナルを設置する経費を計上するものであります"@ja.
+}

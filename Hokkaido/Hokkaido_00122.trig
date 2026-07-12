@@ -1,0 +1,883 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00122> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "帯状疱疹"@ja.
+kg:id_1 rdf:type cls:c_1345.
+cls:c_1345 rdfs:label "感染症"@ja.
+kg:id_2 rdfs:label "子どもの頃にかかった水疱瘡が体内で長期間潜伏感染し免疫力が低下すること"@ja.
+kg:id_2 rdf:type cls:c_15705.
+cls:c_15705 rdfs:label "免疫低下"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "加齢による免疫力低下"@ja.
+kg:id_3 rdf:type cls:c_15705.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "コロナ禍でのストレスによる免疫低下の可能性"@ja.
+kg:id_4 rdf:type cls:c_15705.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "新型コロナ発症"@ja.
+kg:id_5 rdf:type cls:c_1345.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "５０代から７０代に発症のピークがある"@ja.
+kg:id_6 rdf:type cls:c_15706.
+cls:c_15706 rdfs:label "発症傾向"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "８０歳までに約３人に１人が発症する"@ja.
+kg:id_7 rdf:type cls:c_15707.
+cls:c_15707 rdfs:label "発症率"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "強い痛みや合併症を伴う"@ja.
+kg:id_8 rdf:type cls:c_1322.
+cls:c_1322 rdfs:label "健康被害"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "重症化すると日常生活に支障を来す恐れがある"@ja.
+kg:id_9 rdf:type cls:c_1773.
+cls:c_1773 rdfs:label "生活支障"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "約２割が後遺症として神経痛を残す"@ja.
+kg:id_10 rdf:type cls:c_15708.
+cls:c_15708 rdfs:label "後遺症"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "長期にわたり苦しむ患者がいる"@ja.
+kg:id_11 rdf:type cls:c_1322.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "高齢者医療の削減にも役立つと期待される"@ja.
+kg:id_12 rdf:type cls:c_15709.
+cls:c_15709 rdfs:label "医療負担"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "患者が増加することが予想される"@ja.
+kg:id_13 rdf:type cls:c_1189.
+cls:c_1189 rdfs:label "患者増加"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "コロナ禍で患者が増える傾向にある"@ja.
+kg:id_14 rdf:type cls:c_1189.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "顔の三叉神経付近の発症では後遺症が重くなる可能性がある"@ja.
+kg:id_15 rdf:type cls:c_15708.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "生活の質が低下する"@ja.
+kg:id_16 rdf:type cls:c_15710.
+cls:c_15710 rdfs:label "生活の質低下"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "予防のための周知を実施する"@ja.
+kg:id_17 rdf:type cls:c_779.
+cls:c_779 rdfs:label "周知活動"@ja.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "ワクチン接種を推奨する"@ja.
+kg:id_18 rdf:type cls:c_1348.
+cls:c_1348 rdfs:label "予防接種"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "町立病院での生ワクチン予防接種の周知を強化する"@ja.
+kg:id_19 rdf:type cls:c_779.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "ワクチンによる予防を行う"@ja.
+kg:id_20 rdf:type cls:c_1348.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "ワクチンの普及を促す"@ja.
+kg:id_21 rdf:type cls:c_4843.
+cls:c_4843 rdfs:label "普及促進"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "接種費用の一部助成制度を検討する"@ja.
+kg:id_22 rdf:type cls:c_15711.
+cls:c_15711 rdfs:label "助成検討"@ja.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "助成実施を前向きに検討する"@ja.
+kg:id_23 rdf:type cls:c_15711.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "健康寿命の延長の観点から積極的に検討する"@ja.
+kg:id_24 rdf:type cls:c_15711.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "漁業の衰退"@ja.
+kg:id_25 rdf:type cls:c_14421.
+cls:c_14421 rdfs:label "産業衰退"@ja.
+kg:id_26 rdfs:label "イカ資源の枯渇による回遊不良"@ja.
+kg:id_26 rdf:type cls:c_9313.
+cls:c_9313 rdfs:label "資源減少"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "マグロの漁獲枠の問題"@ja.
+kg:id_27 rdf:type cls:c_3193.
+cls:c_3193 rdfs:label "制度制約"@ja.
+kg:id_25 prop:cause kg:id_27.
+kg:id_28 rdfs:label "海洋環境の変化などによる水産資源の減少"@ja.
+kg:id_28 rdf:type cls:c_9313.
+kg:id_25 prop:cause kg:id_28.
+kg:id_29 rdfs:label "松前町の漁船漁業経営が維持できない壊滅的な状況"@ja.
+kg:id_29 rdf:type cls:c_15712.
+cls:c_15712 rdfs:label "経営危機"@ja.
+kg:id_25 prop:effect kg:id_29.
+kg:id_30 rdfs:label "漁業協同組合の経営が厳しい"@ja.
+kg:id_30 rdf:type cls:c_754.
+cls:c_754 rdfs:label "経営悪化"@ja.
+kg:id_25 prop:effect kg:id_30.
+kg:id_31 rdfs:label "サケ類養殖に道南全体で取り組むための組織を立ち上げる"@ja.
+kg:id_31 rdf:type cls:c_809.
+cls:c_809 rdfs:label "連携組織"@ja.
+kg:id_25 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "渡島・檜山管内水産振興連絡会議を設立する"@ja.
+kg:id_32 rdf:type cls:c_809.
+kg:id_25 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "サクラマスの海中養殖試験を実施する"@ja.
+kg:id_33 rdf:type cls:c_15713.
+cls:c_15713 rdfs:label "養殖試験"@ja.
+kg:id_25 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "漁業者が失敗を恐れず挑戦する気運をつくる"@ja.
+kg:id_34 rdf:type cls:c_9794.
+cls:c_9794 rdfs:label "挑戦支援"@ja.
+kg:id_25 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "養殖コンブ着業者の伸び悩み"@ja.
+kg:id_35 rdf:type cls:c_629.
+cls:c_629 rdfs:label "担い手不足"@ja.
+kg:id_36 rdfs:label "手間がかかり人手が必要"@ja.
+kg:id_36 rdf:type cls:c_630.
+cls:c_630 rdfs:label "労働力不足"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "着業者が増えない"@ja.
+kg:id_37 rdf:type cls:c_629.
+kg:id_35 prop:effect kg:id_37.
+kg:id_38 rdfs:label "新規着業や規模拡大を支援する"@ja.
+kg:id_38 rdf:type cls:c_1826.
+cls:c_1826 rdfs:label "事業支援"@ja.
+kg:id_35 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "漁協が事業主体となって養殖コンブを直営する"@ja.
+kg:id_39 rdf:type cls:c_7899.
+cls:c_7899 rdfs:label "事業運営"@ja.
+kg:id_35 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "ウニ資源の不安"@ja.
+kg:id_40 rdf:type cls:c_15714.
+cls:c_15714 rdfs:label "資源不安"@ja.
+kg:id_41 rdfs:label "種ウニを町外へ販売していること"@ja.
+kg:id_41 rdf:type cls:c_15715.
+cls:c_15715 rdfs:label "資源流出"@ja.
+kg:id_40 prop:cause kg:id_41.
+kg:id_42 rdfs:label "将来の資源枯渇への不安"@ja.
+kg:id_42 rdf:type cls:c_15716.
+cls:c_15716 rdfs:label "資源枯渇"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "ウニの深浅移殖を継続する"@ja.
+kg:id_43 rdf:type cls:c_1914.
+cls:c_1914 rdfs:label "資源管理"@ja.
+kg:id_40 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "ナマコ資源の低下"@ja.
+kg:id_44 rdf:type cls:c_15717.
+cls:c_15717 rdfs:label "資源低下"@ja.
+kg:id_45 rdfs:label "イワシ大漁漂着による被害"@ja.
+kg:id_45 rdf:type cls:c_15542.
+cls:c_15542 rdfs:label "環境被害"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "館浜地区の港内資源が全滅した"@ja.
+kg:id_46 rdf:type cls:c_15718.
+cls:c_15718 rdfs:label "資源喪失"@ja.
+kg:id_44 prop:effect kg:id_46.
+kg:id_47 rdfs:label "ナマコ魚礁を設置し放流効果向上実証試験を行う"@ja.
+kg:id_47 rdf:type cls:c_15719.
+cls:c_15719 rdfs:label "放流試験"@ja.
+kg:id_44 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "3年間ナマコ放流を継続する"@ja.
+kg:id_48 rdf:type cls:c_15720.
+cls:c_15720 rdfs:label "放流継続"@ja.
+kg:id_44 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "アワビ養殖の停滞"@ja.
+kg:id_49 rdf:type cls:c_7519.
+cls:c_7519 rdfs:label "産業停滞"@ja.
+kg:id_50 rdfs:label "韓国産養殖アワビとの競合による価格低迷"@ja.
+kg:id_50 rdf:type cls:c_3323.
+cls:c_3323 rdfs:label "価格低迷"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "取り組み漁業者が少ない"@ja.
+kg:id_51 rdf:type cls:c_629.
+kg:id_49 prop:effect kg:id_51.
+kg:id_52 rdfs:label "福島町の取り組みを参考に付加価値化を検討する"@ja.
+kg:id_52 rdf:type cls:c_15721.
+cls:c_15721 rdfs:label "付加価値化"@ja.
+kg:id_49 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "ヒグマ被害"@ja.
+kg:id_53 rdf:type cls:c_849.
+cls:c_849 rdfs:label "獣害"@ja.
+kg:id_54 rdfs:label "北海道全域でヒグマ被害が発生していること"@ja.
+kg:id_54 rdf:type cls:c_1763.
+cls:c_1763 rdfs:label "被害発生"@ja.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "人を恐れないクマが人の近くに住みたがること"@ja.
+kg:id_55 rdf:type cls:c_15722.
+cls:c_15722 rdfs:label "生息変化"@ja.
+kg:id_53 prop:cause kg:id_55.
+kg:id_56 rdfs:label "コンポストや墓地のお供え物がヒグマを引き寄せること"@ja.
+kg:id_56 rdf:type cls:c_15723.
+cls:c_15723 rdfs:label "誘引要因"@ja.
+kg:id_53 prop:cause kg:id_56.
+kg:id_57 rdfs:label "白神地区で町民2名が襲われ負傷した"@ja.
+kg:id_57 rdf:type cls:c_2109.
+cls:c_2109 rdfs:label "人的被害"@ja.
+kg:id_53 prop:effect kg:id_57.
+kg:id_58 rdfs:label "畑作業や墓参りに戸惑いが生じている"@ja.
+kg:id_58 rdf:type cls:c_15724.
+cls:c_15724 rdfs:label "行動制約"@ja.
+kg:id_53 prop:effect kg:id_58.
+kg:id_59 rdfs:label "農作物被害や家庭菜園継続への不安がある"@ja.
+kg:id_59 rdf:type cls:c_1740.
+cls:c_1740 rdfs:label "生活不安"@ja.
+kg:id_53 prop:effect kg:id_59.
+kg:id_60 rdfs:label "白神地区を重点に広報活動と注意喚起を行う"@ja.
+kg:id_60 rdf:type cls:c_1141.
+cls:c_1141 rdfs:label "注意喚起"@ja.
+kg:id_53 prop:contermeasure kg:id_60.
+kg:id_61 rdfs:label "箱罠を設置する"@ja.
+kg:id_61 rdf:type cls:c_8497.
+cls:c_8497 rdfs:label "捕獲対策"@ja.
+kg:id_53 prop:contermeasure kg:id_61.
+kg:id_62 rdfs:label "ハンターによる朝夕の見回りを強化する"@ja.
+kg:id_62 rdf:type cls:c_15725.
+cls:c_15725 rdfs:label "巡回強化"@ja.
+kg:id_53 prop:contermeasure kg:id_62.
+kg:id_63 rdfs:label "畑作業や墓参りでは早朝夕方を避け鈴やラジオを携帯する"@ja.
+kg:id_63 rdf:type cls:c_15726.
+cls:c_15726 rdfs:label "行動回避"@ja.
+kg:id_53 prop:contermeasure kg:id_63.
+kg:id_64 rdfs:label "電気柵を活用する"@ja.
+kg:id_64 rdf:type cls:c_15727.
+cls:c_15727 rdfs:label "防護対策"@ja.
+kg:id_53 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "若手ハンターを会計年度任用職員として雇用し育成する"@ja.
+kg:id_65 rdf:type cls:c_703.
+cls:c_703 rdfs:label "人材育成"@ja.
+kg:id_53 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "折戸浜キャンプ場利用自粛"@ja.
+kg:id_66 rdf:type cls:c_15728.
+cls:c_15728 rdfs:label "施設利用制限"@ja.
+kg:id_67 rdfs:label "ヒグマの出没"@ja.
+kg:id_67 rdf:type cls:c_849.
+kg:id_66 prop:cause kg:id_67.
+kg:id_68 rdfs:label "利用者がトイレを使えず不便が生じた"@ja.
+kg:id_68 rdf:type cls:c_4060.
+cls:c_4060 rdfs:label "利用不便"@ja.
+kg:id_66 prop:effect kg:id_68.
+kg:id_69 rdfs:label "注意看板と職員警察による注意喚起を行う"@ja.
+kg:id_69 rdf:type cls:c_1141.
+kg:id_66 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "８月豪雨時の避難混乱"@ja.
+kg:id_70 rdf:type cls:c_4705.
+cls:c_4705 rdfs:label "避難混乱"@ja.
+kg:id_71 rdfs:label "夜間の大雨と前例の少ない全町避難指示"@ja.
+kg:id_71 rdf:type cls:c_2991.
+cls:c_2991 rdfs:label "避難困難"@ja.
+kg:id_70 prop:cause kg:id_71.
+kg:id_72 rdfs:label "レベル4避難指示の理解不足"@ja.
+kg:id_72 rdf:type cls:c_836.
+cls:c_836 rdfs:label "理解不足"@ja.
+kg:id_70 prop:cause kg:id_72.
+kg:id_73 rdfs:label "避難所が遠く移動できなかったこと"@ja.
+kg:id_73 rdf:type cls:c_2991.
+kg:id_70 prop:cause kg:id_73.
+kg:id_74 rdfs:label "避難対象者に対し避難者は106人にとどまった"@ja.
+kg:id_74 rdf:type cls:c_15729.
+cls:c_15729 rdfs:label "避難不足"@ja.
+kg:id_70 prop:effect kg:id_74.
+kg:id_75 rdfs:label "住民が避難所を間違えたり移動をためらった"@ja.
+kg:id_75 rdf:type cls:c_4705.
+kg:id_70 prop:effect kg:id_75.
+kg:id_76 rdfs:label "町内8箇所に避難所を開設する"@ja.
+kg:id_76 rdf:type cls:c_5386.
+cls:c_5386 rdfs:label "避難所開設"@ja.
+kg:id_70 prop:contermeasure kg:id_76.
+kg:id_77 rdfs:label "町内会と連携した避難体制を構築する"@ja.
+kg:id_77 rdf:type cls:c_1240.
+cls:c_1240 rdfs:label "連携体制"@ja.
+kg:id_70 prop:contermeasure kg:id_77.
+kg:id_78 rdfs:label "北海道地域防災マスターを育成する"@ja.
+kg:id_78 rdf:type cls:c_703.
+kg:id_70 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "各町内会で自主防災組織を設立する"@ja.
+kg:id_79 rdf:type cls:c_1034.
+cls:c_1034 rdfs:label "組織整備"@ja.
+kg:id_70 prop:contermeasure kg:id_79.
+kg:id_80 rdfs:label "地域コミュニティを活かした避難誘導を進める"@ja.
+kg:id_80 rdf:type cls:c_10618.
+cls:c_10618 rdfs:label "避難誘導"@ja.
+kg:id_70 prop:contermeasure kg:id_80.
+kg:st_1 rdfs:label "町長 石山英雄"@ja.
+kg:st_1 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_1 prop:content "高齢化率の高い町では健康で生きがいと幸福感を持って生活できる支援が重要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "３番 沼山雄平"@ja.
+kg:st_2 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_2 prop:content "高齢化率の高い町では他自治体よりリスクが高い"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "コロナ禍で状況が明らかに変わっており現状を重く受け止めるべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "新型コロナ流行で帯状疱疹増加に拍車がかかることを危惧する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "高齢者に多い疾患として町にとって重要な課題"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "住民に広く周知すべき疾患である"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "重症化すると日常生活に支障を来す恐れがある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "後遺症を含め生活の質の低下につながる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "発症者の5人に1人が後遺症になるため軽視できない"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "国立感染研究所サイトで紹介された奈良県立医科大学皮膚科 浅田秀夫氏"@ja.
+kg:st_3 rdfs:type cls:st_37.
+cls:st_37 rdfs:label "専門家"@ja.
+kg:op_10 prop:content "合併症や神経痛で長期に苦しむ患者も少なくない"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "予防の普及は高齢者医療費の抑制にもつながる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "高齢化の進行で今後さらに患者増加が見込まれる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "報道される増加傾向を踏まえ予防強化が必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "早い診断と治療が重要で発症しない予防が最善"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "長い痛みとの闘いとなり生活満足度を大きく損なう"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "町民の健康促進と元気な高齢者づくりのため周知を進めたい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "予防効果が高いなら積極的に接種を推奨すべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "予防接種は効果的であり推奨する立場をとる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "町内で接種可能な体制をもっと周知したい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "ワクチンによる予防が重要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "予防可能な疾患として広く周知しワクチン普及を進めるべき"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "高額な接種費用が障壁であり50歳以上町民への助成制度を急ぐべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "重要性と必要性を理解しており前向きに検討する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "健康寿命の延長になるなら積極的に検討すべき"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "町民の反応も踏まえ健康寿命延長に資するなら積極的に進めたい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "６番 近江武"@ja.
+kg:st_4 rdfs:type cls:st_16.
+kg:op_26 prop:content "このままでは漁船漁業経営が維持できない"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:op_27 prop:content "回遊があっても漁獲枠の問題で出漁できない"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "水産資源減少は道南全体の課題で情報共有と連携が必要"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "基幹産業の更なる衰退を強く危惧する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "漁協も厳しい立場にあり支える施策が必要"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "渡島町村会会長として町長が率先し道や国に働きかけるべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "渡島檜山で連携し水産振興連絡会議の趣旨を理解して取り組みたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "市町村長が構成員となり水産振興の情報共有と課題協議を進めるべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "鴨津川や旧大島中学校体育館なども活用し養殖に取り組むべき"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_4.
+kg:op_35 prop:content "今後の試験経過や他町の状況を見て本格導入を判断する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "官主導より漁業者自らの挑戦を町が応援する形が望ましい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "安定した漁業経営に資するが人手不足が大きな課題"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "９番 梶谷康介"@ja.
+kg:st_5 rdfs:type cls:st_16.
+kg:op_38 prop:content "先へ進まない原因を改善しなければならない"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_5.
+kg:op_39 prop:content "新しく着業する人や規模拡大したい人の実現を支援したい"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "漁業者任せでなく組合直営も考えるべき"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:op_41 prop:content "新たな視点として組合直営も選択肢になる"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "町外販売より町内放流を優先した方が将来のためになる"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_5.
+kg:op_43 prop:content "現在の収入だけでなく将来の資源確保を重視すべき"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_5.
+kg:op_44 prop:content "重要魚種であり生産向上のため継続が必要"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "資源回復には長期的対応が必要"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "水産課長 渡辺孝行"@ja.
+kg:st_6 rdfs:type cls:st_47.
+cls:st_47 rdfs:label "行政職"@ja.
+kg:op_46 prop:content "港内のナマコとアワビは全て全滅した"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_6.
+kg:op_47 prop:content "弘前大学の協力を得て魚礁効果を確認し他漁港にも広げたい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "4年目以降の回復を見据えて継続放流する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_6.
+kg:op_49 prop:content "採算の合わない大きな理由になっている"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "現在は2名のみが取り組む状況"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "価格競争に負けるだけで終わらず創意工夫が必要"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_5.
+kg:op_52 prop:content "福島町のアワビカレーなどの取り組みを注目し参考にしたい"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "全道的な課題として継続的な警戒が必要"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "４番 宮本理恵子"@ja.
+kg:st_7 rdfs:type cls:st_16.
+kg:op_54 prop:content "今のクマは人や音に慣れており対策が難しい"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_7.
+kg:op_55 prop:content "餌となるものを持ち込まないことが重要"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "町民は畑作業や墓参りにも不安を抱いている"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_7.
+kg:op_57 prop:content "町民から行ってよいのか戸惑いの声がある"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:op_58 prop:content "高齢者が畑をやめるか悩むほど深刻"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_7.
+kg:op_59 prop:content "再被害防止のため重点的に注意喚起を続ける"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_1.
+kg:op_60 prop:content "問題個体の捕獲に向けて設置を続ける"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:op_61 prop:content "白神地区を重点に見回りを継続する"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_1.
+kg:op_62 prop:content "人の存在を知らせヒグマを近づけないことが大切"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_1.
+kg:op_63 prop:content "希望者への電気柵支援や勉強会が必要"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_7.
+kg:op_64 prop:content "電気柵は確実に効果があり北海道に財政支援を要望している"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_1.
+kg:op_65 prop:content "担い手確保が難しいため現在雇用している若手の育成を進める"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_1.
+kg:op_66 prop:content "被害防止のため遊泳やキャンプの自粛をお願いした"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_1.
+kg:op_67 prop:content "自粛要請ならトイレは開けてほしかったという声が多い"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_7.
+kg:op_68 prop:content "来年も状況が続くならより意を持った対応が必要"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_1.
+kg:st_8 rdfs:label "２番 飯田幸仁"@ja.
+kg:st_8 rdfs:type cls:st_16.
+kg:op_69 prop:content "町民は避難指示で動揺し戸惑った"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_8.
+kg:op_70 prop:content "住民が避難情報の意味を十分理解していなかった"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_8.
+kg:op_71 prop:content "移動困難者を想定した地域連携が必要"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_8.
+kg:op_72 prop:content "避難所までの移動や判断に地域差と課題があった"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_8.
+kg:op_73 prop:content "町と町内会の連絡や平時の周知に課題がある"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_8.
+kg:op_74 prop:content "土砂災害警戒情報発表で災害対策本部を設置し避難所開設を行った"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_1.
+kg:op_75 prop:content "町内会ごとのマニュアルや助け合い体制が必要"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_8.
+kg:op_76 prop:content "地域と町内会と常に連携する体制づくりが必要"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_1.
+kg:op_77 prop:content "各町内会や議員も受講し防災リーダー育成を進めたい"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_1.
+kg:op_78 prop:content "防災マスター受講を契機に自主防災組織の設立を図るべき"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_1.
+kg:op_79 prop:content "災害時こそコミュニティが必要で町内会と密な連絡が重要"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "帯状疱疹につきましては、子どもの頃にかかった水疱瘡が体内で長期間潜伏感染し、免疫力が低下した際に、帯状疱疹として発症する"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "どうしても高齢になると免疫力が低下するために、現在日本では８０歳までに約３人に１人が発症すると言われており"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "コロナ禍で多くの人が行動制限やステイホームで強いられるなどし、ストレスを抱え込んだことは患者の増加に繋がった可能性がある"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "コロナ発症者は、非発症者に比べ、帯状疱疹の発症リスクが１５％高く、コロナ発症で入院した人では２１％も高かった"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "特に５０代から７０代にかけてピークになるとも言われております"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "現在日本では８０歳までに約３人に１人が発症すると言われており"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "中には帯状疱疹後、神経痛として１ヶ月以上も強い痛みや合併症を伴ったり"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "重症化すると日常生活に支障を来す恐れもある"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "２割ほどの方が後遺症として神経痛を残すという疾病"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "現在でも様々な合併症や帯状疱疹の神経痛により、長期にわたり苦しむ患者も少なくなく"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "高齢者医療の削減にも役立つものと期待している"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "高齢化が進行している我が国においては、今後ますます患者の増加が予想される"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "コロナ禍の中で帯状疱疹の患者が増える傾向にあるなどの報道がされています"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "この帯状疱疹、特に顔の三叉神経付近による発症は、とにかく早い診断と治療が求められるそうです。遅れた分、後遺症も重くなると言われます"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "痛み、不快感は食欲を奪い、日常生活からは笑顔も消え、気分は晴れない日が多く、生活の質は低下していった"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "町民の健康促進等、元気な高齢者を育むためにも、更に予防のための周知を実施してまいりたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "ワクチンの予防接種については、大変効果的であると認識をしております"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "現在町内では町立病院の方で、平成２８年３月から接種可能となった生ワクチンによる予防接種を実施しておりますので、それらの更なる周知も含めて対応していきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "ワクチンによる予防が重要である"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "帯状疱疹が予防可能な疾患であることを広く知ってもらいたい、ワクチンの普及を促すことが必要と考えられる"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "帯状疱疹予防接種費用の一部助成につきましては、一部の自治体や健康保険組合でも一部を助成をしているところがあるように見受けられます"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "ワクチン接種の重要性や必要性は十二分に理解をしておりますので、前向きに検討をしていきたい"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "健康寿命の延長になるのであれば、積極的に検討してまいりたいというふうに思いますし、そうすべきだというふうに思っております"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "イカの資源の枯渇による、回遊が全く悪いためです"@ja.
+<< kg:id_25 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "マグロは例年と比べて、かなりの回遊が見られているということですが、漁獲枠の問題がクリアされず、出漁したくてもできない"@ja.
+<< kg:id_25 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "近年海洋環境の変化などから全国的に水産資源の減少により、水産業界は大変厳しい状況が続いて"@ja.
+<< kg:id_25 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "このままでは、松前町の漁船漁業経営が維持できない、壊滅的な状況にあります"@ja.
+<< kg:id_25 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "大変厳しい経営になっている、漁業経営になってるというふうに思いますし、漁業協同組合の方も大変厳しい立場になっている"@ja.
+<< kg:id_25 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "道南全体でサケの養殖に取り組み、渡島、檜山の市と町がお互いに情報を共有して、そして連携しながら道南を活性化させたい"@ja.
+<< kg:id_25 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "渡島・檜山管内水産振興連絡会議を設立するための会議を予定している"@ja.
+<< kg:id_25 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_34;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "令和３年度より、漁港静穏域を利用したサクラマスの海中養殖事業展開をしてきている"@ja.
+<< kg:id_25 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "漁業者が失敗を怖れずに挑戦していくと。そのために町長、こういうことやりたいという話をいただければ、応援はしていきたい"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "手間がかかる、人手がかかるというのが一つ大きな課題"@ja.
+<< kg:id_35 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "これからどんどん着業者が増えてくれればなというふうに思っているところであります"@ja.
+<< kg:id_35 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "新しい着業する、更には規模を拡大したいと思いのある方は、ぜひその実現に向けて取り組んでいただければなあと思いますし、支援はしてまいりたい"@ja.
+<< kg:id_35 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "組合が事業主体になって養殖コンブ、労働力を確保しながらっての一つの選択肢になる"@ja.
+<< kg:id_40 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "稚ウニを、いわゆる種ウニですね、種、小さなウニをそのままストレートで販売してる"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "将来の資源の枯渇に対しては、十分意を持って臨んでいる"@ja.
+<< kg:id_40 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "これからも継続して深浅移殖は続けてまいりたい"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "港の中のナマコだとかアワビだとか、これについては全て全滅でございました"@ja.
+<< kg:id_44 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "港の中のナマコだとかアワビだとか、これについては全て全滅でございました"@ja.
+<< kg:id_44 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "放流漁港底面、底へのナマコ魚礁設置による放流効果向上実証試験"@ja.
+<< kg:id_44 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "来年以降はナマコの放流とアワビの放流、これを３年間継続する"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "韓国産の養殖アワビとの競合があるというふうなことで、価格の低迷が続いておりまして、採算の合わない一つの大きな理由"@ja.
+<< kg:id_49 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "現在は残念ながら２名の方が取り組まれております"@ja.
+<< kg:id_49 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_51;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "福島町の取り組みもしっかりと現状を把握しながら、参考にできるものがあれば参考にしていきたい"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "北海道全域にわたりまして、ヒグマによる被害が発生している"@ja.
+<< kg:id_53 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "人に慣れてるクマは慣れれれば慣れるほど人の近くに住みたがる"@ja.
+<< kg:id_53 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "畑のコンポストや墓地にお供えを残すと、ヒグマを引き寄せる危険が大きくなります"@ja.
+<< kg:id_53 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "７月１５日、白神地区において、畑作業中に２名の方が襲われて負傷をしている"@ja.
+<< kg:id_53 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "町民からは畑作業や墓参りなどに行っても良いのかどうか、戸惑いの声も聞こえてきております"@ja.
+<< kg:id_53 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "自分はやりたいけども本州にいる子どもさん方が、もう畑やめれって、クマ出るんだもの"@ja.
+<< kg:id_53 prop:contermeasure kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "白神地区を重点に広報活動を行い、住民の方々に注意喚起を、呼びかけを行ってきた"@ja.
+<< kg:id_53 prop:contermeasure kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "問題のヒグマを捕獲するために、箱罠を２箇所設置するとともに"@ja.
+<< kg:id_53 prop:contermeasure kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "ハンターによる朝夕の見回りを強化しながら警戒をしてきている"@ja.
+<< kg:id_53 prop:contermeasure kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "畑作業や墓参りにつきましては、ヒグマの行動が活発な朝、早朝や夕方を避けて、鈴やラジオなどの鳴り物を携帯し、ヒグマを近付けないことが大事"@ja.
+<< kg:id_53 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_63;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "電気柵は確実に効きます。間違いなく効果あります"@ja.
+<< kg:id_53 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "有害鳥獣駆除を担う若手ハンター１名を町の会計年度任用職員として雇用しておりまして"@ja.
+<< kg:id_66 prop:cause kg:id_67 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "あの付近には度々出没しておりまして、被害防止のために遊泳やキャンプの自粛をお願いしておりました"@ja.
+<< kg:id_66 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "あくまでも自粛要請なら、トイレだけは開けてもらいたかったっていう声が多かった"@ja.
+<< kg:id_66 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "ヒグマの出没をお知らせする注意看板や、警察署、更には町の職員による注意喚起を行った"@ja.
+<< kg:id_70 prop:cause kg:id_71 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "町民の皆さんもちょっと前例のない大雨の中での発令に、結構動揺したり、ちょっとした騒ぎになってございます"@ja.
+<< kg:id_70 prop:cause kg:id_72 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "元々の避難指示、レベル４というレベルがどういうレベルだったのか未知識だった"@ja.
+<< kg:id_70 prop:cause kg:id_73 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "移動できない方、あるいは移動できなかった方。避難所が遠くて移動できなかった"@ja.
+<< kg:id_70 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "避難された方は、１０６人の方が避難をしてございます"@ja.
+<< kg:id_70 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "地震の時の避難所だと思って行ったら、実は大雨の避難所が違ってた"@ja.
+<< kg:id_70 prop:contermeasure kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "２０時に町内全域の土砂災害警戒区域に居住している方、崖や沢の近くなど、土砂災害の発生しやすい地区に居住している方を対象に避難指示を発令し、町内８箇所に避難所を開設"@ja.
+<< kg:id_70 prop:contermeasure kg:id_77 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_75;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "町と地域、町内会とは、やっぱり常に連携とるというふうな体制づくりが必要"@ja.
+<< kg:id_70 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "北海道地域防災マスターの育成は取り組んでいかなければならない課題"@ja.
+<< kg:id_70 prop:contermeasure kg:id_79 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "各町内会での自主防災組織の設立や、職員の人材育成を図りながら、システムの構築を図っていかなければならない"@ja.
+<< kg:id_70 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "災害時こそ、やはりコミュニティが必要なのではないか"@ja.
+}

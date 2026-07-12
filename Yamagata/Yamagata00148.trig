@@ -1,0 +1,728 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00148> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "米価下落"@ja.
+kg:id_1 rdf:type cls:c_1178.
+cls:c_1178 rdfs:label "価格下落"@ja.
+kg:id_2 rdfs:label "令和2年産米の持ち越し"@ja.
+kg:id_2 rdf:type cls:c_8506.
+cls:c_8506 rdfs:label "在庫持ち越し"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "令和4年の作付への影響"@ja.
+kg:id_3 rdf:type cls:c_8507.
+cls:c_8507 rdfs:label "作付影響"@ja.
+kg:id_3 prop:cause kg:id_2.
+kg:id_4 rdfs:label "米の需給調整"@ja.
+kg:id_4 rdf:type cls:c_8508.
+cls:c_8508 rdfs:label "需給調整"@ja.
+kg:id_5 rdfs:label "米の国内消費量の減少"@ja.
+kg:id_5 rdf:type cls:c_2951.
+cls:c_2951 rdfs:label "消費減少"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "飼料用米や加工用米への転換の呼びかけ"@ja.
+kg:id_6 rdf:type cls:c_8509.
+cls:c_8509 rdfs:label "生産転換"@ja.
+kg:id_6 prop:cause kg:id_5.
+kg:id_7 rdfs:label "水稲が基幹産業である本町の農業の発展"@ja.
+kg:id_7 rdf:type cls:c_8510.
+cls:c_8510 rdfs:label "農業発展"@ja.
+kg:id_8 rdfs:label "請願に基づく意見書の提出"@ja.
+kg:id_8 rdf:type cls:c_1671.
+cls:c_1671 rdfs:label "意見書提出"@ja.
+kg:id_7 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "移住相談会の開催や移住体験の困難"@ja.
+kg:id_9 rdf:type cls:c_8511.
+cls:c_8511 rdfs:label "移住施策の困難"@ja.
+kg:id_10 rdfs:label "コロナ禍"@ja.
+kg:id_10 rdf:type cls:c_1350.
+cls:c_1350 rdfs:label "感染症流行"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "町独自の移住オンラインセミナーの開催"@ja.
+kg:id_11 rdf:type cls:c_8512.
+cls:c_8512 rdfs:label "オンライン施策"@ja.
+kg:id_9 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "寝具の貸出を行わないこと"@ja.
+kg:id_12 rdf:type cls:c_8513.
+cls:c_8513 rdfs:label "貸出制限"@ja.
+kg:id_13 rdfs:label "今年度の一部制限"@ja.
+kg:id_13 rdf:type cls:c_8514.
+cls:c_8514 rdfs:label "運営制限"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "トイレ開設作業の遅れ"@ja.
+kg:id_14 rdf:type cls:c_8515.
+cls:c_8515 rdfs:label "作業遅延"@ja.
+kg:id_15 rdfs:label "天候によるヘリでの管理物資荷上げ作業の遅れ"@ja.
+kg:id_15 rdf:type cls:c_8516.
+cls:c_8516 rdfs:label "物資輸送遅延"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "多くの登山者での賑わい"@ja.
+kg:id_16 rdf:type cls:c_8517.
+cls:c_8517 rdfs:label "観光活況"@ja.
+kg:id_17 rdfs:label "コロナ禍の影響による登山への関心の高まり"@ja.
+kg:id_17 rdf:type cls:c_8518.
+cls:c_8518 rdfs:label "余暇関心の高まり"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "登山者の安全確保"@ja.
+kg:id_18 rdf:type cls:c_1225.
+cls:c_1225 rdfs:label "安全確保"@ja.
+kg:id_19 rdfs:label "山岳関係者の協力のもとでの安全確保"@ja.
+kg:id_19 rdf:type cls:c_8519.
+cls:c_8519 rdfs:label "関係者協力"@ja.
+kg:id_18 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "海水浴場の開設準備"@ja.
+kg:id_20 rdf:type cls:c_8520.
+cls:c_8520 rdfs:label "施設開設準備"@ja.
+kg:id_21 rdfs:label "新型コロナウイルス感染症の推移と近隣自治体等の動向"@ja.
+kg:id_21 rdf:type cls:c_8521.
+cls:c_8521 rdfs:label "感染状況"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "大きな事故等なく海水浴場運営を終えたこと"@ja.
+kg:id_22 rdf:type cls:c_8522.
+cls:c_8522 rdfs:label "施設運営の安定"@ja.
+kg:id_23 rdfs:label "通常の安全管理と感染症対策への尽力"@ja.
+kg:id_23 rdf:type cls:c_5832.
+cls:c_5832 rdfs:label "安全管理"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "新型コロナウイルス感染症対応地方創生臨時交付金事業"@ja.
+kg:id_24 rdf:type cls:c_896.
+cls:c_896 rdfs:label "支援事業"@ja.
+kg:id_25 rdfs:label "新型コロナウイルスの感染拡大防止と地域経済や住民生活の支援の必要性"@ja.
+kg:id_25 rdf:type cls:c_8523.
+cls:c_8523 rdfs:label "生活経済支援の必要"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "緊急経済支援助成金事業"@ja.
+kg:id_26 rdf:type cls:c_877.
+cls:c_877 rdfs:label "助成事業"@ja.
+kg:id_27 rdfs:label "地域産業と地域経済の維持の必要性"@ja.
+kg:id_27 rdf:type cls:c_8524.
+cls:c_8524 rdfs:label "地域経済維持の必要"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "観光宿泊業や飲食業等の事業者への助成金交付"@ja.
+kg:id_28 rdf:type cls:c_1206.
+cls:c_1206 rdfs:label "事業者支援"@ja.
+kg:id_26 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "キャッシュレス決済導入促進支援事業の早期終了"@ja.
+kg:id_29 rdf:type cls:c_8525.
+cls:c_8525 rdfs:label "事業早期終了"@ja.
+kg:id_30 rdfs:label "キャンペーン特典付与額が当初予算を大幅に超える見込み"@ja.
+kg:id_30 rdf:type cls:c_8526.
+cls:c_8526 rdfs:label "需要超過"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "マイナンバーカード申請率の低迷"@ja.
+kg:id_31 rdf:type cls:c_8527.
+cls:c_8527 rdfs:label "申請低迷"@ja.
+kg:id_32 rdfs:label "県平均を下回る低い状況の継続"@ja.
+kg:id_32 rdf:type cls:c_8528.
+cls:c_8528 rdfs:label "低水準継続"@ja.
+kg:id_31 prop:effect kg:id_32.
+kg:id_33 rdfs:label "夜間の申請・交付窓口の開設"@ja.
+kg:id_33 rdf:type cls:c_8529.
+cls:c_8529 rdfs:label "窓口拡充"@ja.
+kg:id_31 prop:contermeasure kg:id_33.
+kg:id_34 rdfs:label "ＧＡＰ研修の書面実施"@ja.
+kg:id_34 rdf:type cls:c_8530.
+cls:c_8530 rdfs:label "書面研修"@ja.
+kg:id_35 rdfs:label "新型コロナウイルス感染症の影響"@ja.
+kg:id_35 rdf:type cls:c_1350.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "遊佐町民俗芸能公演会の中止"@ja.
+kg:id_36 rdf:type cls:c_1174.
+cls:c_1174 rdfs:label "催事中止"@ja.
+kg:id_37 rdfs:label "新型コロナウイルス感染症拡大防止"@ja.
+kg:id_37 rdf:type cls:c_8531.
+cls:c_8531 rdfs:label "感染拡大防止"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "YouTube遊佐町公式チャンネルでの動画配信の協議"@ja.
+kg:id_38 rdf:type cls:c_8074.
+cls:c_8074 rdfs:label "動画配信"@ja.
+kg:id_36 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "学校行事の延期や縮小開催"@ja.
+kg:id_39 rdf:type cls:c_4468.
+cls:c_4468 rdfs:label "行事延期"@ja.
+kg:id_40 rdfs:label "新型コロナウイルス感染症への対応"@ja.
+kg:id_40 rdf:type cls:c_1097.
+cls:c_1097 rdfs:label "感染症対応"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "学校運営"@ja.
+kg:id_41 rdf:type cls:c_8532.
+cls:c_8532 rdfs:label "学校運営"@ja.
+kg:id_42 rdfs:label "日々の感染症対策に留意しながらの運営"@ja.
+kg:id_42 rdf:type cls:c_1191.
+cls:c_1191 rdfs:label "感染症対策"@ja.
+kg:id_41 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "遊佐町ワンデーウォーク2021の開催断念"@ja.
+kg:id_43 rdf:type cls:c_8533.
+cls:c_8533 rdfs:label "開催断念"@ja.
+kg:id_44 rdfs:label "山形県の新型コロナウイルス感染拡大防止特別集中期間への対応"@ja.
+kg:id_44 rdf:type cls:c_8534.
+cls:c_8534 rdfs:label "感染拡大防止対応"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "新庁舎での行政デジタル化推進"@ja.
+kg:id_45 rdf:type cls:c_2173.
+cls:c_2173 rdfs:label "行政デジタル化"@ja.
+kg:id_46 rdfs:label "新型コロナウイルス感染症によりデジタル化の動きが加速"@ja.
+kg:id_46 rdf:type cls:c_1350.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "デジタル環境整備"@ja.
+kg:id_47 rdf:type cls:c_8535.
+cls:c_8535 rdfs:label "デジタル環境整備"@ja.
+kg:id_48 rdfs:label "健康や福祉、教育、防災、交通など様々な分野でICT活用が必要"@ja.
+kg:id_48 rdf:type cls:c_8536.
+cls:c_8536 rdfs:label "ICT活用の必要"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "行政デジタル化"@ja.
+kg:id_49 rdf:type cls:c_2173.
+kg:id_50 rdfs:label "ICT推進室による課題整理と方針検討"@ja.
+kg:id_50 rdf:type cls:c_8537.
+cls:c_8537 rdfs:label "方針検討"@ja.
+kg:id_49 prop:contermeasure kg:id_50.
+kg:id_51 rdfs:label "高齢者など電子機器が苦手な方への十分な対策"@ja.
+kg:id_51 rdf:type cls:c_1327.
+cls:c_1327 rdfs:label "利用支援"@ja.
+kg:id_49 prop:contermeasure kg:id_51.
+kg:id_52 rdfs:label "デジタル技術を活用した次世代を支える子供たちへの政策実現"@ja.
+kg:id_52 rdf:type cls:c_8538.
+cls:c_8538 rdfs:label "次世代支援"@ja.
+kg:id_49 prop:contermeasure kg:id_52.
+kg:id_53 rdfs:label "防災や災害対策でのコミュニケーションツール導入"@ja.
+kg:id_53 rdf:type cls:c_8539.
+cls:c_8539 rdfs:label "防災ICT導入"@ja.
+kg:id_49 prop:contermeasure kg:id_53.
+kg:id_54 rdfs:label "コロナ禍での移住施策の困難"@ja.
+kg:id_54 rdf:type cls:c_8511.
+kg:id_55 rdfs:label "首都圏等での移住相談会開催や来町移住体験が困難"@ja.
+kg:id_55 rdf:type cls:c_8540.
+cls:c_8540 rdfs:label "移住活動の困難"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_56 rdfs:label "新型コロナウイルス感染症対策緊急経済支援助成金事業"@ja.
+kg:id_56 rdf:type cls:c_877.
+kg:id_57 rdfs:label "地域経済の維持"@ja.
+kg:id_57 rdf:type cls:c_8410.
+cls:c_8410 rdfs:label "地域経済維持"@ja.
+kg:id_56 prop:effect kg:id_57.
+kg:id_58 rdfs:label "キャッシュレス決済導入促進支援事業"@ja.
+kg:id_58 rdf:type cls:c_8541.
+cls:c_8541 rdfs:label "決済促進事業"@ja.
+kg:id_59 rdfs:label "146,219,381円のキャッシュレス決済利用と27,563,654円の特典付与"@ja.
+kg:id_59 rdf:type cls:c_8542.
+cls:c_8542 rdfs:label "決済利用拡大"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "岩ガキ資源の減少"@ja.
+kg:id_60 rdf:type cls:c_7434.
+cls:c_7434 rdfs:label "水産資源減少"@ja.
+kg:id_61 rdfs:label "漁獲量の増大により資源回復が追いつかないこと"@ja.
+kg:id_61 rdf:type cls:c_8543.
+cls:c_8543 rdfs:label "過剰漁獲"@ja.
+kg:id_60 prop:cause kg:id_61.
+kg:id_62 rdfs:label "磯焼け"@ja.
+kg:id_62 rdf:type cls:c_8228.
+cls:c_8228 rdfs:label "磯焼け"@ja.
+kg:id_60 prop:cause kg:id_62.
+kg:id_63 rdfs:label "流砂堆積による磯場の漁場の消失"@ja.
+kg:id_63 rdf:type cls:c_8234.
+cls:c_8234 rdfs:label "漁場消失"@ja.
+kg:id_60 prop:cause kg:id_63.
+kg:id_64 rdfs:label "砂堆積状況の測量調査"@ja.
+kg:id_64 rdf:type cls:c_269.
+cls:c_269 rdfs:label "調査実施"@ja.
+kg:id_60 prop:contermeasure kg:id_64.
+kg:id_65 rdfs:label "堆積の影響がなるべく受けない地点への増殖礁設置"@ja.
+kg:id_65 rdf:type cls:c_8235.
+cls:c_8235 rdfs:label "増殖礁設置"@ja.
+kg:id_60 prop:contermeasure kg:id_65.
+kg:id_66 rdfs:label "漁獲量の調整など資源管理"@ja.
+kg:id_66 rdf:type cls:c_1914.
+cls:c_1914 rdfs:label "資源管理"@ja.
+kg:id_60 prop:contermeasure kg:id_66.
+kg:id_67 rdfs:label "岩ガキ漁場回復"@ja.
+kg:id_67 rdf:type cls:c_8544.
+cls:c_8544 rdfs:label "漁場回復"@ja.
+kg:id_68 rdfs:label "岩盤清掃の実証実験"@ja.
+kg:id_68 rdf:type cls:c_8545.
+cls:c_8545 rdfs:label "岩盤清掃"@ja.
+kg:id_67 prop:contermeasure kg:id_68.
+kg:id_69 rdfs:label "蓄養技術開発の研究"@ja.
+kg:id_69 rdf:type cls:c_8546.
+cls:c_8546 rdfs:label "技術開発"@ja.
+kg:id_67 prop:contermeasure kg:id_69.
+kg:id_70 rdfs:label "紙資源使用量の削減"@ja.
+kg:id_70 rdf:type cls:c_8547.
+cls:c_8547 rdfs:label "紙使用削減"@ja.
+kg:id_71 rdfs:label "裏紙の二次使用"@ja.
+kg:id_71 rdf:type cls:c_8548.
+cls:c_8548 rdfs:label "用紙再利用"@ja.
+kg:id_70 prop:contermeasure kg:id_71.
+kg:id_72 rdfs:label "使用済み封筒の二次使用"@ja.
+kg:id_72 rdf:type cls:c_8549.
+cls:c_8549 rdfs:label "封筒再利用"@ja.
+kg:id_70 prop:contermeasure kg:id_72.
+kg:id_73 rdfs:label "廃棄文書の再生業者への引渡し"@ja.
+kg:id_73 rdf:type cls:c_8550.
+cls:c_8550 rdfs:label "文書再資源化"@ja.
+kg:id_70 prop:contermeasure kg:id_73.
+kg:id_74 rdfs:label "文書システムの導入"@ja.
+kg:id_74 rdf:type cls:c_8551.
+cls:c_8551 rdfs:label "文書システム"@ja.
+kg:id_70 prop:contermeasure kg:id_74.
+kg:id_75 rdfs:label "議会におけるタブレット端末の導入"@ja.
+kg:id_75 rdf:type cls:c_8552.
+cls:c_8552 rdfs:label "端末導入"@ja.
+kg:id_70 prop:contermeasure kg:id_75.
+kg:id_76 rdfs:label "職員体制の不足"@ja.
+kg:id_76 rdf:type cls:c_1145.
+cls:c_1145 rdfs:label "人員不足"@ja.
+kg:id_77 rdfs:label "担当部署だけでは対応し切れない業務の発生"@ja.
+kg:id_77 rdf:type cls:c_8553.
+cls:c_8553 rdfs:label "業務過多"@ja.
+kg:id_76 prop:effect kg:id_77.
+kg:id_78 rdfs:label "他部署からの応援"@ja.
+kg:id_78 rdf:type cls:c_8554.
+cls:c_8554 rdfs:label "応援体制"@ja.
+kg:id_76 prop:contermeasure kg:id_78.
+kg:id_79 rdfs:label "専門的知識を持った職員の確保"@ja.
+kg:id_79 rdf:type cls:c_8555.
+cls:c_8555 rdfs:label "専門人材確保"@ja.
+kg:id_80 rdfs:label "保健師や保育士や管理栄養士など資格職の採用"@ja.
+kg:id_80 rdf:type cls:c_8556.
+cls:c_8556 rdfs:label "資格職採用"@ja.
+kg:id_79 prop:contermeasure kg:id_80.
+kg:id_81 rdfs:label "技術職員の募集"@ja.
+kg:id_81 rdf:type cls:c_8557.
+cls:c_8557 rdfs:label "技術職募集"@ja.
+kg:id_79 prop:contermeasure kg:id_81.
+kg:id_82 rdfs:label "障がい者雇用の募集"@ja.
+kg:id_82 rdf:type cls:c_4906.
+cls:c_4906 rdfs:label "障害者雇用"@ja.
+kg:id_79 prop:contermeasure kg:id_82.
+kg:id_83 rdfs:label "地域おこし協力隊の任期満了後の定着"@ja.
+kg:id_83 rdf:type cls:c_1547.
+cls:c_1547 rdfs:label "人材定着"@ja.
+kg:id_84 rdfs:label "起業等支援事業による起業経費補助"@ja.
+kg:id_84 rdf:type cls:c_8558.
+cls:c_8558 rdfs:label "起業支援"@ja.
+kg:id_83 prop:contermeasure kg:id_84.
+kg:id_85 rdfs:label "町事業の委託やイベントスタッフや各会議構成委員としての参画"@ja.
+kg:id_85 rdf:type cls:c_8559.
+cls:c_8559 rdfs:label "参画機会"@ja.
+kg:id_83 prop:contermeasure kg:id_85.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdfs:type cls:st_16.
+cls:st_16 rdfs:label "議員"@ja.
+kg:op_1 prop:content "持ち越しにより3年産米の米価下落や4年の作付への影響を懸念"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "持ち越しにより3年産米の米価下落や4年の作付への影響を懸念"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "全国で米の消費が毎年減少している状況を説明"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "消費減少を背景に転換の呼びかけが行われたと説明"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "意見書提出は本町農業の発展に寄与すると考える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "副町長"@ja.
+kg:st_2 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_6 prop:content "コロナ禍で従来の移住施策が難しくなったためオンライン化した"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "困難な状況に対応してオンラインセミナーを開催した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "制限はあったが営業はできたと報告"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "天候の影響で荷上げが遅れたが無事開設できた"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "登山への関心の高まりで多くの登山者が訪れている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "関係者の協力で安全確保に努めている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "感染状況や近隣動向を見ながら開設準備を進めた"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "運営関係者の安全管理と感染症対策の尽力で無事終了した"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "感染拡大防止と地域経済支援のため交付金事業を実施した"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "地域産業と地域経済の維持のため助成金を交付した"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "事業者への助成で地域経済の維持に努めた"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "利用が想定を大きく上回ったため早期終了した"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "申請率が県平均を下回っており改善が必要"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "申請率改善のため夜間窓口を開設した"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "感染症の影響で書面研修に切り替えた"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "教育長"@ja.
+kg:st_3 rdfs:type cls:st_57.
+cls:st_57 rdfs:label "教育行政"@ja.
+kg:op_21 prop:content "感染拡大防止のため公演会中止を決定した"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "代替として動画配信で広く周知する方針"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "感染症対応で各種行事が延期や縮小となった"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "感染症対策に注意しながら学校運営を続ける"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "特別集中期間への対応で開催を断念した"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "時田町長"@ja.
+kg:st_4 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_26 prop:content "感染症を契機に行政のデジタル化対応が急務になった"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:op_27 prop:content "町民生活の各分野でICT活用が必要であり整備が急務"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "ICT推進室を中心に課題整理と方針検討を進めている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "全ての町民が恩恵を感じられる取組にする考え"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "子供たちに夢を与える政策にデジタル技術を活用する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "避難所運営など防災面でのICT導入を進める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "従来の移住施策が実施困難になった"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "助成金交付により地域経済の維持に努めた"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "利用が非常に多く予算を超える見込みとなった"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "岩ガキ資源減少の主因の一つは資源回復を上回る漁獲"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "磯焼けが資源減少要因になっている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "流砂堆積で磯場の漁場が失われている"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "県や水産研究所と連携して調査を進めている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "影響の少ない地点への増殖礁設置に取り組んでいる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "資源管理を県全体で取り組む必要がある"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "県が漁場回復に向けた実証実験を進めている"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_4.
+kg:op_42 prop:content "県が蓄養技術開発の研究を進めている"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "環境配慮行動として裏紙利用を継続している"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "封筒の再利用を進めている"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "廃棄文書の再資源化に取り組んでいる"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "新庁舎移転を機にハード面から削減を進めている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "議会のペーパーレス化も紙削減策として進めている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "ワクチン接種や新庁舎引っ越しなどで人手不足を実感している"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+kg:op_49 prop:content "応援体制で業務に対処している"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+kg:op_50 prop:content "専門資格を持つ職員はこれまでも採用してきた"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "土木技術職員の採用が急務で募集を継続している"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_4.
+kg:op_52 prop:content "障がい者雇用も急務として募集している"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_4.
+kg:op_53 prop:content "任期後も町で活動できるよう起業支援を行っている"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_4.
+kg:op_54 prop:content "元隊員のスキルと移住者視点を町づくりに生かしたい"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "請願の趣旨にあるように令和２年産米が秋以降に持ち越されれば、３年産米の米価下落や令和４年の作付にも影響することが予測されます"@ja.
+<< kg:id_3 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "請願の趣旨にあるように令和２年産米が秋以降に持ち越されれば、３年産米の米価下落や令和４年の作付にも影響することが予測されます"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "米の国内消費量は、全国レベルで年間10万トンずつ減っている状況にあるようです"@ja.
+<< kg:id_6 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "そのような背景もあり、令和３年産米については38都道府県で飼料用米や加工用米への転換を呼びかけた経過があります"@ja.
+<< kg:id_7 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "請願に基づき意見書を提出することは、水稲が基幹産業でもあります本町の農業の発展に寄与するものと考えます"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "コロナ禍により、従来行っていた首都圏等での移住相談会の開催、来町いただいての移住体験が困難となっていることから、８月14日に、ＷＥＢ会議システムＺＯＯＭを用いた町独自の移住オンラインセミナーを開催しました"@ja.
+<< kg:id_9 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "コロナ禍により、従来行っていた首都圏等での移住相談会の開催、来町いただいての移住体験が困難となっていることから、８月14日に、ＷＥＢ会議システムＺＯＯＭを用いた町独自の移住オンラインセミナーを開催しました"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今年度は、寝具の貸出は行わずシュラフを持参いただくなどの一部制限はありましたが営業することができました"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "トイレについても、天候によりヘリによる管理物資の荷上げ作業が若干遅くなりましたが、無事開設することができました"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "コロナ禍の影響もあり登山への関心が高く、多くの登山者で賑っています"@ja.
+<< kg:id_18 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "山岳関係者の協力のもと登山者の安全確保に努めています"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "海水浴場については、新型コロナウイルス感染症の推移、近隣自治体等の動向を注視しつつ開設準備を進め"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "運営に関わった皆様からの通常の安全管理、感染症対策にご尽力いただき、大きな事故等も無く無事に終えることができました"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "町では、新型コロナウイルスの感染拡大の防止及び感染拡大の影響を受けている地域経済や住民生活の支援を通じた地方創生に資する事業として、令和３年度は総額１億8,125万6,000円におよぶ12の事業を盛り込んだ、地方創生臨時交付金実施計画を国に提出しました"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "地域産業、地域経済の維持を図るため、７月15日から新型コロナウイルス感染症対策の緊急経済支援として観光宿泊業、飲食業、小売業、建設業、製造業、生活関連サービス業等の事業者を対象に、緊急経済支援助成金の申請を受け付けました"@ja.
+<< kg:id_26 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "８月26日までに231件、3,264万4,000円の交付を行い、地域経済の維持に努めました"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "付与額が当初の予算を大幅に超える見込みとなったため、８月31日で早期終了しました"@ja.
+<< kg:id_31 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "マイナンバーカードの当町の申請は７月31日現在で、3,788件（27.7％）と県平均（38.4％）を下回る低い状況が続いています"@ja.
+<< kg:id_31 prop:contermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "その改善を図るため、９月より、毎月第二・第四火曜日は、午後７時30分まで夜間の申請・交付窓口を開設しました"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "今年度は、新型コロナウイルス感染症の影響により、６月30日に書面でのＧＡＰ研修を実施しています"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "新型コロナウイルス感染症拡大防止のため、昨年度と同様に生涯学習センターホールを会場とした遊佐町民俗芸能公演会を中止とすることにしました"@ja.
+<< kg:id_36 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "その代替として、各団体の演舞をＹｏｕＴｕｂｅ「遊佐町公式チャンネル」にて公開し、民俗芸能をより広く周知していくための動画配信について協議しました"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "新型コロナウイルス感染症への対応で、各種行事は延期や縮小開催となったものもあります"@ja.
+<< kg:id_41 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "今後も、日々の感染症対策に留意しながらの学校運営が続くものと思われます"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "山形県の新型コロナウイルス『感染拡大防止特別集中期間』に対応し開催を断念しました"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "昨今の新型コロナウイルス感染症により、その動きがさらに加速しております"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "行政事務に限らず、町民生活に直結する健康や福祉、教育、防災、エネルギー、交通、環境など、様々な分野でＩＣＴ化を活用し、力強い地域社会と快適な町民生活を実現するため、デジタル環境を整備していくことが急務となっております"@ja.
+<< kg:id_49 prop:contermeasure kg:id_50 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "この４月からこれまでの情報統計係をＩＣＴ推進室という名称に変え、行政のデジタル化に関する国や県からの情報窓口としての業務や、町としての取り組むべき課題を整理し、今後の方針を検討してまいりました"@ja.
+<< kg:id_49 prop:contermeasure kg:id_51 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "１つ目には、高齢者など電子機器が苦手とされる方への十分な対策を取るなど全ての町民が恩恵を感じられる取組にすること"@ja.
+<< kg:id_49 prop:contermeasure kg:id_52 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "２つ目としては、町の施策の柱である子供たちに夢をにも通じる、デジタル技術を活用した次世代を支える子供たちへの政策を実現すること"@ja.
+<< kg:id_49 prop:contermeasure kg:id_53 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "３つ目として、災害時に開設される避難所の運営に必要なコミュニケーションツールの導入など、防災、災害対策の取組であります"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "コロナ禍により、従来行っていた首都圏等での移住相談会の開催、来町いただいての移住体験が困難となっていることから"@ja.
+<< kg:id_56 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "８月26日までに231件、3,264万4,000円の交付を行い、地域経済の維持に努めました"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "８月26日まで146,219,381円のキャッシュレス決済の利用があり、キャンペーン特典の付与額が27,563,654円となりました"@ja.
+<< kg:id_60 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "岩ガキ資源の減少は、遊佐町のみならず山形県全体の課題となっており、その主な要因として漁獲量の増大により資源回復が追いつかないことや、磯焼けや流砂堆積による磯場の漁場の消失などが挙げられます"@ja.
+<< kg:id_60 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "岩ガキ資源の減少は、遊佐町のみならず山形県全体の課題となっており、その主な要因として漁獲量の増大により資源回復が追いつかないことや、磯焼けや流砂堆積による磯場の漁場の消失などが挙げられます"@ja.
+<< kg:id_60 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "岩ガキ資源の減少は、遊佐町のみならず山形県全体の課題となっており、その主な要因として漁獲量の増大により資源回復が追いつかないことや、磯焼けや流砂堆積による磯場の漁場の消失などが挙げられます"@ja.
+<< kg:id_60 prop:contermeasure kg:id_64 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "流砂堆積などの環境変化は、抜本的な対策が甚だ困難であることから、砂堆積状況の測量調査を実施し"@ja.
+<< kg:id_60 prop:contermeasure kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "堆積の影響がなるべく受けない地点へ増殖礁を設置する事業に県、水産研究所とともに取り組んでおります"@ja.
+<< kg:id_60 prop:contermeasure kg:id_66 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "今後漁獲量の調整など資源管理についても県全体で取り組む必要があると考えております"@ja.
+<< kg:id_67 prop:contermeasure kg:id_68 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "山形県では資源管理の視点から岩ガキの漁場回復に向け、岩盤清掃の実証実験や蓄養技術開発の研究を実施しております"@ja.
+<< kg:id_67 prop:contermeasure kg:id_69 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "山形県では資源管理の視点から岩ガキの漁場回復に向け、岩盤清掃の実証実験や蓄養技術開発の研究を実施しております"@ja.
+<< kg:id_70 prop:contermeasure kg:id_71 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "我が町では以前よりＬＡＳ―Ｅ監査における環境配慮行動の一環として、裏紙、使用済み封筒の二次使用、廃棄文書の再生業者への引渡しなど、様々な取組を実施してまいりました"@ja.
+<< kg:id_70 prop:contermeasure kg:id_72 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "我が町では以前よりＬＡＳ―Ｅ監査における環境配慮行動の一環として、裏紙、使用済み封筒の二次使用、廃棄文書の再生業者への引渡しなど、様々な取組を実施してまいりました"@ja.
+<< kg:id_70 prop:contermeasure kg:id_73 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "我が町では以前よりＬＡＳ―Ｅ監査における環境配慮行動の一環として、裏紙、使用済み封筒の二次使用、廃棄文書の再生業者への引渡しなど、様々な取組を実施してまいりました"@ja.
+<< kg:id_70 prop:contermeasure kg:id_74 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "このたび新庁舎移転に当たりましては、それに加え文書システムの導入、議会におけるタブレット端末の導入等、ハード面での新規導入によりさらなる事務用紙使用量の削減を図っております"@ja.
+<< kg:id_70 prop:contermeasure kg:id_75 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "このたび新庁舎移転に当たりましては、それに加え文書システムの導入、議会におけるタブレット端末の導入等、ハード面での新規導入によりさらなる事務用紙使用量の削減を図っております"@ja.
+<< kg:id_76 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "今年度は特に新型コロナウイルス感染症に対するワクチン接種などでの対応、そして東京2020オリンピック・パラリンピックに関する聖火リレーなどへの対応、そして新庁舎が完成したことによる引っ越し等、担当部署だけでは対応し切れない業務が数多くあったと思います"@ja.
+<< kg:id_76 prop:contermeasure kg:id_78 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "こうしたときには他部署からの応援もらいながら対処しているところでございます"@ja.
+<< kg:id_79 prop:contermeasure kg:id_80 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "専門的な資格を持った職員ということではこれまでも保健師や保育士、管理栄養士など、住所要件を取らずに採用を行ってきたところであります"@ja.
+<< kg:id_79 prop:contermeasure kg:id_81 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "土木に関する技術職員の採用と障がい者雇用が町としては急務となっており、ここ数年募集は行っているところです"@ja.
+<< kg:id_79 prop:contermeasure kg:id_82 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "土木に関する技術職員の採用と障がい者雇用が町としては急務となっており、ここ数年募集は行っているところです"@ja.
+<< kg:id_83 prop:contermeasure kg:id_84 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "我が町では、令和元年度から隊員が任期満了後に起業する際の経費を補助する起業等支援事業を行っており、これまで４名の元隊員がこの制度を活用して起業しております"@ja.
+<< kg:id_83 prop:contermeasure kg:id_85 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "元隊員からは、起業した事業者の立場として町の事業の一部を委託等により担っていただいたり、個人としてイベントスタッフ、各会議構成委員として参加いただいているケースもあります。今後もスキルや移住者の視点を生かしながら、町づくりに参画いただければと考えております"@ja.
+}

@@ -1,0 +1,567 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00149> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "太陽光発電事業"@ja.
+kg:id_1 rdf:type cls:c_552.
+cls:c_552 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "鶴居村美しい景観等と太陽光発電事業との共生に関する条例の制定"@ja.
+kg:id_2 rdf:type cls:c_1684.
+cls:c_1684 rdfs:label "条例制定"@ja.
+kg:id_1 prop:contermeasure kg:id_2.
+kg:id_3 rdfs:label "景観への影響"@ja.
+kg:id_3 rdf:type cls:c_224.
+cls:c_224 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "自然環境への影響"@ja.
+kg:id_4 rdf:type cls:c_348.
+cls:c_348 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "生活環境への影響"@ja.
+kg:id_5 rdf:type cls:c_356.
+cls:c_356 rdfs:label "生活影響"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "周辺地域に著しい影響を及ぼすおそれ"@ja.
+kg:id_6 rdf:type cls:c_2704.
+cls:c_2704 rdfs:label "地域影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "土砂災害その他自然災害が発生するおそれ"@ja.
+kg:id_7 rdf:type cls:c_9646.
+cls:c_9646 rdfs:label "災害危険"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "抑制区域の指定"@ja.
+kg:id_8 rdf:type cls:c_9861.
+cls:c_9861 rdfs:label "区域指定"@ja.
+kg:id_1 prop:contermeasure kg:id_8.
+kg:id_9 rdfs:label "急傾斜地崩壊危険区域を事業区域に含まない"@ja.
+kg:id_9 rdf:type cls:c_14439.
+cls:c_14439 rdfs:label "危険区域"@ja.
+kg:id_1 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "地すべり防止区域を事業区域に含まない"@ja.
+kg:id_10 rdf:type cls:c_14439.
+kg:id_1 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "土砂災害警戒区域を事業区域に含まない"@ja.
+kg:id_11 rdf:type cls:c_14439.
+kg:id_1 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "土砂災害特別警戒区域を事業区域に含まない"@ja.
+kg:id_12 rdf:type cls:c_14439.
+kg:id_1 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "河川区域を事業区域に含まない"@ja.
+kg:id_13 rdf:type cls:c_16314.
+cls:c_16314 rdfs:label "河川区域"@ja.
+kg:id_1 prop:contermeasure kg:id_13.
+kg:id_14 rdfs:label "河川保全区域を事業区域に含まない"@ja.
+kg:id_14 rdf:type cls:c_16314.
+kg:id_1 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "砂防指定地を事業区域に含まない"@ja.
+kg:id_15 rdf:type cls:c_8302.
+cls:c_8302 rdfs:label "保全区域"@ja.
+kg:id_1 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "農業振興地域内の農用地区域を事業区域に含まない"@ja.
+kg:id_16 rdf:type cls:c_16315.
+cls:c_16315 rdfs:label "農用区域"@ja.
+kg:id_1 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "保安林を事業区域に含まない"@ja.
+kg:id_17 rdf:type cls:c_8302.
+kg:id_1 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "国立公園を事業区域に含まない"@ja.
+kg:id_18 rdf:type cls:c_16316.
+cls:c_16316 rdfs:label "保護区域"@ja.
+kg:id_1 prop:contermeasure kg:id_18.
+kg:id_19 rdfs:label "国指定史跡名勝天然記念物所在地を事業区域に含まない"@ja.
+kg:id_19 rdf:type cls:c_16317.
+cls:c_16317 rdfs:label "文化財区域"@ja.
+kg:id_1 prop:contermeasure kg:id_19.
+kg:id_20 rdfs:label "鳥獣保護区を事業区域に含まない"@ja.
+kg:id_20 rdf:type cls:c_16316.
+kg:id_1 prop:contermeasure kg:id_20.
+kg:id_21 rdfs:label "重点道路沿道区域を事業区域に含まない"@ja.
+kg:id_21 rdf:type cls:c_16318.
+cls:c_16318 rdfs:label "景観区域"@ja.
+kg:id_1 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "景観との調和及び環境の保全に関する施設基準の設定"@ja.
+kg:id_22 rdf:type cls:c_16319.
+cls:c_16319 rdfs:label "施設基準"@ja.
+kg:id_1 prop:contermeasure kg:id_22.
+kg:id_23 rdfs:label "防災上の措置に関する施設基準の設定"@ja.
+kg:id_23 rdf:type cls:c_16320.
+cls:c_16320 rdfs:label "防災基準"@ja.
+kg:id_1 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "安全性の確保に関する施設基準の設定"@ja.
+kg:id_24 rdf:type cls:c_16321.
+cls:c_16321 rdfs:label "安全基準"@ja.
+kg:id_1 prop:contermeasure kg:id_24.
+kg:id_25 rdfs:label "廃止後に行う措置に関する施設基準の設定"@ja.
+kg:id_25 rdf:type cls:c_16322.
+cls:c_16322 rdfs:label "廃止措置"@ja.
+kg:id_1 prop:contermeasure kg:id_25.
+kg:id_26 rdfs:label "擁壁の設置"@ja.
+kg:id_26 rdf:type cls:c_16323.
+cls:c_16323 rdfs:label "擁壁設置"@ja.
+kg:id_1 prop:contermeasure kg:id_26.
+kg:id_27 rdfs:label "擁壁の安定計算と排水措置"@ja.
+kg:id_27 rdf:type cls:c_16324.
+cls:c_16324 rdfs:label "排水措置"@ja.
+kg:id_1 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "法面構造の措置"@ja.
+kg:id_28 rdf:type cls:c_16325.
+cls:c_16325 rdfs:label "法面措置"@ja.
+kg:id_1 prop:contermeasure kg:id_28.
+kg:id_29 rdfs:label "植生工等による法面保護"@ja.
+kg:id_29 rdf:type cls:c_16326.
+cls:c_16326 rdfs:label "法面保護"@ja.
+kg:id_1 prop:contermeasure kg:id_29.
+kg:id_30 rdfs:label "堅固で耐久性を有する排水施設と沈砂池の設置"@ja.
+kg:id_30 rdf:type cls:c_16324.
+kg:id_1 prop:contermeasure kg:id_30.
+kg:id_31 rdfs:label "容易に望見できる斜面地では勾配おおむね30度以下の箇所に設置"@ja.
+kg:id_31 rdf:type cls:c_233.
+cls:c_233 rdfs:label "景観配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "水面設置時のモジュール面積割合をおおむね50パーセント以下とする"@ja.
+kg:id_32 rdf:type cls:c_233.
+kg:id_1 prop:contermeasure kg:id_32.
+kg:id_33 rdfs:label "反射光が周辺の環境に重大な影響を及ぼすおそれ"@ja.
+kg:id_33 rdf:type cls:c_16327.
+cls:c_16327 rdfs:label "反射影響"@ja.
+kg:id_1 prop:effect kg:id_33.
+kg:id_34 rdfs:label "低反射性モジュール又は位置傾斜角度への十分な配慮"@ja.
+kg:id_34 rdf:type cls:c_16328.
+cls:c_16328 rdfs:label "反射対策"@ja.
+kg:id_1 prop:contermeasure kg:id_34.
+kg:id_35 rdfs:label "周囲の景観に調和した色彩とする"@ja.
+kg:id_35 rdf:type cls:c_233.
+kg:id_1 prop:contermeasure kg:id_35.
+kg:id_36 rdfs:label "経年変化により景観上の支障が生じない材料の使用"@ja.
+kg:id_36 rdf:type cls:c_16329.
+cls:c_16329 rdfs:label "耐久材料"@ja.
+kg:id_1 prop:contermeasure kg:id_36.
+kg:id_37 rdfs:label "架台基礎の地盤定着"@ja.
+kg:id_37 rdf:type cls:c_16330.
+cls:c_16330 rdfs:label "基礎安定"@ja.
+kg:id_1 prop:contermeasure kg:id_37.
+kg:id_38 rdfs:label "モジュールの脱落又は浮き上がりを防ぐ安全な架台への取付け"@ja.
+kg:id_38 rdf:type cls:c_16331.
+cls:c_16331 rdfs:label "安全設置"@ja.
+kg:id_1 prop:contermeasure kg:id_38.
+kg:id_39 rdfs:label "腐食腐朽摩耗しにくい材料又は防止措置をした材料の使用"@ja.
+kg:id_39 rdf:type cls:c_16329.
+kg:id_1 prop:contermeasure kg:id_39.
+kg:id_40 rdfs:label "設置工事着手60日前までの届出"@ja.
+kg:id_40 rdf:type cls:c_16332.
+cls:c_16332 rdfs:label "事前届出"@ja.
+kg:id_1 prop:contermeasure kg:id_40.
+kg:id_41 rdfs:label "必要な指導助言及び勧告"@ja.
+kg:id_41 rdf:type cls:c_16333.
+cls:c_16333 rdfs:label "指導勧告"@ja.
+kg:id_1 prop:contermeasure kg:id_41.
+kg:id_42 rdfs:label "周辺関係者等への事業計画説明"@ja.
+kg:id_42 rdf:type cls:c_5718.
+cls:c_5718 rdfs:label "説明実施"@ja.
+kg:id_1 prop:contermeasure kg:id_42.
+kg:id_43 rdfs:label "周辺関係者等の理解を得る努力"@ja.
+kg:id_43 rdf:type cls:c_4449.
+cls:c_4449 rdfs:label "理解促進"@ja.
+kg:id_1 prop:contermeasure kg:id_43.
+kg:id_44 rdfs:label "常時安全かつ良好な状態となるよう維持管理"@ja.
+kg:id_44 rdf:type cls:c_231.
+cls:c_231 rdfs:label "維持管理"@ja.
+kg:id_1 prop:contermeasure kg:id_44.
+kg:id_45 rdfs:label "廃止30日前までの届出"@ja.
+kg:id_45 rdf:type cls:c_16281.
+cls:c_16281 rdfs:label "廃止届出"@ja.
+kg:id_1 prop:contermeasure kg:id_45.
+kg:id_46 rdfs:label "自然環境及び景観等の回復に努めるよう求める"@ja.
+kg:id_46 rdf:type cls:c_16334.
+cls:c_16334 rdfs:label "環境回復"@ja.
+kg:id_1 prop:contermeasure kg:id_46.
+kg:id_47 rdfs:label "立入調査等の実施"@ja.
+kg:id_47 rdf:type cls:c_16335.
+cls:c_16335 rdfs:label "立入調査"@ja.
+kg:id_1 prop:contermeasure kg:id_47.
+kg:id_48 rdfs:label "勧告に従わない事業者の内容公表"@ja.
+kg:id_48 rdf:type cls:c_16336.
+cls:c_16336 rdfs:label "内容公表"@ja.
+kg:id_1 prop:contermeasure kg:id_48.
+kg:id_49 rdfs:label "希少種の生息地マップの参照"@ja.
+kg:id_49 rdf:type cls:c_16298.
+cls:c_16298 rdfs:label "生息地配慮"@ja.
+kg:id_1 prop:contermeasure kg:id_49.
+kg:st_1 rdfs:label "鶴居村"@ja.
+kg:st_1 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "地域と共生して調和のとれた太陽光発電事業を促進する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "景観との調和を重視する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "自然環境への配慮を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "住民の生活環境への適正な配慮を求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "著しい影響のおそれがある区域では抑制が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "災害のおそれがある区域への設置を抑制する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "村長"@ja.
+kg:st_2 rdfs:type cls:st_29.
+cls:st_29 rdfs:label "首長"@ja.
+kg:op_7 prop:content "必要がある区域を抑制区域として指定できる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "急傾斜地崩壊危険区域での事業を抑制する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "地すべり防止区域での事業を抑制する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "土砂災害警戒区域での事業を抑制する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "土砂災害特別警戒区域での事業を抑制する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "河川区域での事業を抑制する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "河川保全区域での事業を抑制する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "砂防指定地での事業を抑制する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "農用地区域での事業を抑制する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "保安林での事業を抑制する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "国立公園での事業を抑制する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "文化財所在地での事業を抑制する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "鳥獣保護区での事業を抑制する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "重点道路沿道区域での事業を抑制する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "地域との共生のため施設基準を定める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "防災上の措置を施設基準に含める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "安全性確保を施設基準に含める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "廃止後の措置を施設基準に含める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "崖が生じる場合は擁壁設置を求める"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "擁壁の安定性確認と水抜穴等の設置を求める"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "小段や排水施設の設置など適切な法面措置を求める"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "雨水や風化による浸食防止を求める"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "排水施設の堅固性と土砂流出防止を求める"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "見えやすい斜面地での景観配慮を求める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "水面景観への配慮を求める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "反射光の重大な影響を避けるべきだ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "反射光対策として低反射性や設置角度配慮を求める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "付属設備を含め景観に調和した色彩を求める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "景観上支障のない材料使用を求める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "沈下や転倒を防ぐ基礎を求める"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "モジュールの脱落防止を求める"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "耐久性確保のため劣化しにくい材料を求める"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "着手前の届出を義務付ける"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "届出に対して指導助言勧告ができる"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "事業前に周辺関係者への説明を義務付ける"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "事業者"@ja.
+kg:st_3 rdfs:type cls:st_1.
+cls:st_1 rdfs:label "事業者"@ja.
+kg:op_42 prop:content "周辺関係者の理解を得るよう努めるべきだ"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:op_43 prop:content "安全で良好な状態の維持管理を義務付ける"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "廃止前の届出を義務付ける"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "施設廃止後は自然環境や景観の回復を求める"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "条例施行に必要な限度で調査を実施する"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "正当な理由なく勧告に従わない場合は公表する"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "釧路自然再生協議会"@ja.
+kg:st_4 rdfs:type cls:st_145.
+cls:st_145 rdfs:label "協議会"@ja.
+kg:op_48 prop:content "事業計画策定時に希少種の生息地への配慮を求める"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+<< kg:id_1 prop:contermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "村では地域と共生して調和のとれた太陽光発電事業を促進するために鶴居村美しい景観等と太陽光発電事業との共生に関する条例を制定しました。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "太陽光発電施設が及ぼす景観、自然環境及び生活環境等を考慮し"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "太陽光発電施設が及ぼす景観、自然環境及び生活環境等を考慮し"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "住民の生活環境等についての適正な配慮に関する基本的な事項を定め"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "その他太陽光発電事業により、周辺地域に著しい影響を及ぼすおそれがある区域"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "土砂災害その他自然災害が発生するおそれがある区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "村長は、次に掲げる区域のうち必要があると認めるものを、太陽光発電事業を抑制する区域として指定し、事業者に対し事業区域に含まないよう求めることができます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "急傾斜地崩壊危険区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "地すべり防止区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "土砂災害警戒区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "土砂災害特別警戒区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "河川区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "河川保全区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "砂防指定地"@ja.
+<< kg:id_1 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "農業振興地域内の農用地区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "保安林"@ja.
+<< kg:id_1 prop:contermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "国立公園（特別地域及び普通地域）"@ja.
+<< kg:id_1 prop:contermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "国指定史跡名勝天然記念物所在地"@ja.
+<< kg:id_1 prop:contermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "鳥獣保護区"@ja.
+<< kg:id_1 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "重点道路沿道区域"@ja.
+<< kg:id_1 prop:contermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "村長は、太陽光発電施設と地域が共生を図るため、次のとおり施設基準を定めます。（1）太陽光発電施設と事業区域の周辺地域の景観との調和及び事業区域内の環境の保全に関すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "（2）太陽光発電施設の設置に係る防災上の措置に関すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "（3）太陽光発電施設の安全性の確保に関すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "（4）太陽光発電施設の廃止後において行う措置に関すること"@ja.
+<< kg:id_1 prop:contermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "切土等により崖（勾配が30度を超える土地をいう。）が生ずる場合は、当該崖の表面が擁壁で覆われていること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "ア 安定計算により、その安定性が確かめられたものであること。イ 当該擁壁の裏面の排水を良くするための水抜穴及び透水層が設けられたものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "当該法面の構造が、小段又は排水施設の設置その他の措置が適切に行われているものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "事業区域内の法面が雨水、風化等により浸食されないよう植生工等による法面保護が行われていること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "事業区域内の排水施設は、堅固で耐久性を有するとともに、維持管理の容易な構造であること。また、必要がある場合には、土砂の流出を防止するための沈砂池が適切に設置されたものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "主要な道路、市街地等から容易に望見できる斜面地においては、太陽光発電施設は、勾配がおおむね30度以下の箇所に設置されていること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "ため池等の水面に設置する太陽光発電施設にあっては、太陽光電池モジュールの水平投影面積の当該水面の面積に対する割合が、おおむね50パーセント以下であること。"@ja.
+<< kg:id_1 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "太陽電池モジュールは、その反射光が周辺の環境に重大な影響を及ぼすことがないよう"@ja.
+<< kg:id_1 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "ア 低反射性のものであること。イ 位置、傾斜角度等について、十分に配慮して設置されるものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "太陽光発電施設に係る太陽電池モジュール、パワーコンディショナー、分電盤及びフェンス等各種付属設備は、周囲の景観に調和した色彩とすること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "太陽電池モジュールを支持する架台等は、経年変化により景観上の支障が生じない材料が使用されたものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "太陽電池モジュールを支持する架台の基礎は、上部構造が構造上支障のある沈下、浮き上がり、転倒又は横移動を生じないよう、地盤に定着されたものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "太陽電池モジュールは、荷重又は体力によって、脱落又は浮き上がりが生じないよう、構造耐力上安全である架台に取り付けられたものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "特に腐食、腐朽又は摩耗のおそれのあるものは、腐食、腐朽若しくは摩損しにくい材料又は有効なさび止め、防腐若しくは摩損防止のための措置をした材料が使用されたものであること。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "設置工事に着手しようとする60日前までに村に届け出ることを義務付けます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "この届出に対し、村長は必要な指導、助言及び勧告をすることができます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "事業に先立ち周辺関係者等に対し、あらかじめ事業計画に関する説明等を義務付けます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "事業者は、事業の内容について周辺関係者等の理解が得られるよう努めなければなりません。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "事業区域内を常時安全かつ良好な状態となるよう維持管理することを義務付けます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "太陽光発電施設を廃止しようとするときは、廃止しようとする日の30日前までに村に届け出ることを義務付けます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "施設廃止の届出がされた場合、村長は、自然環境、景観等の回復に努めるよう求めることができます。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "この条例の施行に関し必要な限度において、調査等を実施することがあります。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "勧告を受けた事業者が、正当な理由なく勧告に従わない場合、村長はその内容を公表します。"@ja.
+<< kg:id_1 prop:contermeasure kg:id_49 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "釧路自然再生協議会では、太陽光発電事業計画策定にあたって配慮すべき希少種の生息地マップを公開しております。村内で太陽光発電事業を計画される方は、同マップを参考にしていただければと思います。"@ja.
+}

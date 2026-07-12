@@ -1,0 +1,135 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Yamagata/00005> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "工事の実施"@ja.
+kg:id_1 rdf:type cls:c_106.
+cls:c_106 rdfs:label "工事"@ja.
+kg:id_2 rdfs:label "大気質（窒素酸化物、粉じん等）"@ja.
+kg:id_2 rdf:type cls:c_107.
+cls:c_107 rdfs:label "大気環境"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "騒音"@ja.
+kg:id_3 rdf:type cls:c_108.
+cls:c_108 rdfs:label "騒音"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "振動"@ja.
+kg:id_4 rdf:type cls:c_109.
+cls:c_109 rdfs:label "振動"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "水の濁り"@ja.
+kg:id_5 rdf:type cls:c_110.
+cls:c_110 rdfs:label "水環境"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "有害物質"@ja.
+kg:id_6 rdf:type cls:c_111.
+cls:c_111 rdfs:label "有害物質"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "動物"@ja.
+kg:id_7 rdf:type cls:c_112.
+cls:c_112 rdfs:label "動物"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "植物"@ja.
+kg:id_8 rdf:type cls:c_113.
+cls:c_113 rdfs:label "植物"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "生態系"@ja.
+kg:id_9 rdf:type cls:c_114.
+cls:c_114 rdfs:label "生態系"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "人と自然とのふれあい活動の場"@ja.
+kg:id_10 rdf:type cls:c_115.
+cls:c_115 rdfs:label "自然活動場"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "産業廃棄物"@ja.
+kg:id_11 rdf:type cls:c_116.
+cls:c_116 rdfs:label "廃棄物"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "残土"@ja.
+kg:id_12 rdf:type cls:c_117.
+cls:c_117 rdfs:label "残土"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "土地又は工作物の存在及び供用"@ja.
+kg:id_13 rdf:type cls:c_118.
+cls:c_118 rdfs:label "施設供用"@ja.
+kg:id_14 rdfs:label "騒音・超低周波音"@ja.
+kg:id_14 rdf:type cls:c_108.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "風車の影"@ja.
+kg:id_15 rdf:type cls:c_119.
+cls:c_119 rdfs:label "影"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_13 prop:effect kg:id_7.
+kg:id_13 prop:effect kg:id_8.
+kg:id_13 prop:effect kg:id_9.
+kg:id_16 rdfs:label "景観"@ja.
+kg:id_16 rdf:type cls:c_66.
+cls:c_66 rdfs:label "景観"@ja.
+kg:id_13 prop:effect kg:id_16.
+kg:id_13 prop:effect kg:id_10.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質、動物"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質、動物、植物"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質、動物、植物、生態系"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質、動物、植物、生態系、人と自然とのふれあい活動の場"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質、動物、植物、生態系、人と自然とのふれあい活動の場、産業廃棄物"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:text-txt_contents "（工事の実施）・大気質（窒素酸化物、粉じん等）、騒音、振動、水の濁り、有害物質、動物、植物、生態系、人と自然とのふれあい活動の場、産業廃棄物、残土"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音、風車の影"@ja.
+<< kg:id_13 prop:effect kg:id_7 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音、風車の影、動物"@ja.
+<< kg:id_13 prop:effect kg:id_8 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音、風車の影、動物、植物"@ja.
+<< kg:id_13 prop:effect kg:id_9 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音、風車の影、動物、植物、生態系"@ja.
+<< kg:id_13 prop:effect kg:id_16 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音、風車の影、動物、植物、生態系、景観"@ja.
+<< kg:id_13 prop:effect kg:id_10 >>
+    prop:text-txt_contents "（土地又は工作物の存在及び供用）・騒音・超低周波音、風車の影、動物、植物、生態系、景観、人と自然とのふれあい活動の場"@ja.
+}

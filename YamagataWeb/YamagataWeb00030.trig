@@ -1,0 +1,175 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/YamagataWeb/00030> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "米沢市の再エネゾーニングマップ"@ja.
+kg:id_1 rdf:type cls:c_13290.
+cls:c_13290 rdfs:label "ゾーニング計画"@ja.
+kg:id_2 rdfs:label "環境省のおススメのエリア名を採用していること"@ja.
+kg:id_2 rdf:type cls:c_13291.
+cls:c_13291 rdfs:label "区域名称の採用"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "米沢市の63%が建設可能なエリアになる"@ja.
+kg:id_3 rdf:type cls:c_13292.
+cls:c_13292 rdfs:label "建設可能区域"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "禁止区域が無いこと"@ja.
+kg:id_4 rdf:type cls:c_13293.
+cls:c_13293 rdfs:label "禁止区域の欠如"@ja.
+kg:id_5 rdfs:label "事業者がハードルをクリアすれば何でもできてしまう"@ja.
+kg:id_5 rdf:type cls:c_13294.
+cls:c_13294 rdfs:label "開発許容状態"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電施設問題"@ja.
+kg:id_6 rdf:type cls:c_13295.
+cls:c_13295 rdfs:label "発電施設問題"@ja.
+kg:id_7 rdfs:label "米沢市がJR東日本エネルギー開発の風力発電施設問題から何も学んでいないこと"@ja.
+kg:id_7 rdf:type cls:c_13296.
+cls:c_13296 rdfs:label "教訓不活用"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "斜平山の促進可能エリア選定"@ja.
+kg:id_8 rdf:type cls:c_13297.
+cls:c_13297 rdfs:label "区域選定"@ja.
+kg:id_9 rdfs:label "市民の憩いの場や歴史的な宝が開発対象になる"@ja.
+kg:id_9 rdf:type cls:c_13298.
+cls:c_13298 rdfs:label "保全対象の開発"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "栗子山風力発電建設予定地の促進可能エリア選定"@ja.
+kg:id_10 rdf:type cls:c_13297.
+kg:id_11 rdfs:label "米沢市が風況だけで杓子定規にエリアを設定していること"@ja.
+kg:id_11 rdf:type cls:c_13299.
+cls:c_13299 rdfs:label "画一的設定"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "米沢市の姿勢"@ja.
+kg:id_12 rdf:type cls:c_13300.
+cls:c_13300 rdfs:label "行政姿勢"@ja.
+kg:id_13 rdfs:label "2050年カーボンニュートラル達成を急いでいること"@ja.
+kg:id_13 rdf:type cls:c_13301.
+cls:c_13301 rdfs:label "目標達成の急行"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "米沢市"@ja.
+kg:id_14 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_15 rdfs:label "再エネゾーニングマップの素案についてパブリックコメントを募集する"@ja.
+kg:id_15 rdf:type cls:c_2464.
+cls:c_2464 rdfs:label "意見募集"@ja.
+kg:id_14 prop:contermeasure kg:id_15.
+kg:id_16 rdfs:label "意見や質問を受け付ける"@ja.
+kg:id_16 rdf:type cls:c_163.
+cls:c_163 rdfs:label "意見受付"@ja.
+kg:id_14 prop:contermeasure kg:id_16.
+kg:id_17 rdfs:label "条例を作って禁止区域を制定する"@ja.
+kg:id_17 rdf:type cls:c_13302.
+cls:c_13302 rdfs:label "禁止区域の制定"@ja.
+kg:id_14 prop:contermeasure kg:id_17.
+kg:st_1 rdfs:label "米沢の子供の未来と豊かな自然を考える会"@ja.
+kg:st_1 rdfs:type cls:st_73.
+cls:st_73 rdfs:label "市民団体"@ja.
+kg:op_1 prop:content "米沢市の独自性がなく疑問が残る"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "建設可能エリアが広すぎることを懸念している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "禁止区域がない現状に強い危機感を示す"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "過去の問題が活かされていないと批判する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "斜平山は保全すべき場所であり開発に反対する懸念を示す"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "イヌワシや土砂災害の懸念を無視した選定だと問題視する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "達成を急ぐあまり何でも受け入れる姿勢に疑問を呈する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "市民は意見や質問を米沢市に伝えるべきだと呼びかける"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "米沢市環境課に気持ちを届けるよう市民に呼びかける"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "禁止区域の制定を要望する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "米沢市"@ja.
+kg:st_2 rdfs:type cls:st_11.
+cls:st_11 rdfs:label "自治体"@ja.
+kg:op_11 prop:content "制定は難しいとの認識を示す"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "これは、環境省のおススメのエリア名。米沢市の独自性はありません。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "その他エリアも含めれば、米沢市の63%が建設可能なエリアになります。"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "そもそも、禁止区域が、無い！水源地であろうが、地質が悪かろうが、急斜面であろうが、貴重種が存在しようが、ハードルが上がるだけで、事業者がこの場所を選定し、ハードルさえクリアすれば何でもできてしまう。"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "JR東日本エネルギー開発の風力発電施設問題から何も学んでいない、と言う驚愕の説明会でした。"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "風力発電の促進可能エリアに、斜平山(なでらやま)が選定されていました。斜平山は、愛宕の火祭りや市民登山など、米沢市民の憩いの場。上杉鷹山公が雨乞いの儀式を行った愛宕神社もあり、歴史的米沢市の宝です。"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "栗子山風力発電建設予定地だったところも、イヌワシや土砂災害の懸念であれだけ揉めたのに、なんと！こちらも促進可能エリアになってる！米沢市は、風況だけで杓子定規にエリアを設定しているのが分かります。"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "現在の米沢市の姿勢は、2050年にはカーボンニュートラルをゼロにする。その達成の為には時間がない！急げ！とにかく急げ！目指せゼロカーボン！達成の為に！"@ja.
+<< kg:id_14 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今回の説明会の再エネゾーニングマップは「素案」の段階です。私達市民は、まだ意見や質問を米沢市に伝える事ができます。近く、パブリックコメントも募集するそうです。"@ja.
+<< kg:id_14 prop:contermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "いつでも意見、質問できるそうですので、皆さんの気持ちを是非、米沢市環境課に届けてください。"@ja.
+<< kg:id_14 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "説明会では、条例作って、禁止区域を制定してほしい、と言う要望に対し、「難しい」でした。"@ja.
+}

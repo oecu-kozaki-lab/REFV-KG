@@ -1,0 +1,121 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Hokkaido/00051> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "人材不足に悩む企業と町民のマッチング"@ja.
+kg:id_1 rdf:type cls:c_14741.
+cls:c_14741 rdfs:label "雇用仲介"@ja.
+kg:id_2 rdfs:label "人材不足"@ja.
+kg:id_2 rdf:type cls:c_807.
+cls:c_807 rdfs:label "人材不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "最新の求人情報を求職者に届けることの課題"@ja.
+kg:id_3 rdf:type cls:c_176.
+cls:c_176 rdfs:label "情報提供"@ja.
+kg:id_4 rdfs:label "求人情報は定員が埋まるなどして取り下げや内容変更が多いこと"@ja.
+kg:id_4 rdf:type cls:c_14742.
+cls:c_14742 rdfs:label "求人情報の変動"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "スムーズに進める必要が生じている"@ja.
+kg:id_5 rdf:type cls:c_14743.
+cls:c_14743 rdfs:label "円滑化"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "求人情報のLINE・HP発信"@ja.
+kg:id_6 rdf:type cls:c_82.
+cls:c_82 rdfs:label "情報発信"@ja.
+kg:id_7 rdfs:label "最新情報を見られるようになった"@ja.
+kg:id_7 rdf:type cls:c_14744.
+cls:c_14744 rdfs:label "最新情報の閲覧"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "松前町"@ja.
+kg:id_8 rdf:type cls:c_909.
+cls:c_909 rdfs:label "自治体"@ja.
+kg:id_9 rdfs:label "就職相談などを行う松前町就職サポートセンターのサテライトオフィスとしてJOBステーションを開設"@ja.
+kg:id_9 rdf:type cls:c_4332.
+cls:c_4332 rdfs:label "就労支援拠点"@ja.
+kg:id_8 prop:contermeasure kg:id_9.
+kg:id_10 rdfs:label "7月から求人情報をホームページや無料通信アプリLINEで発信"@ja.
+kg:id_10 rdf:type cls:c_14745.
+cls:c_14745 rdfs:label "求人情報の発信"@ja.
+kg:id_8 prop:contermeasure kg:id_10.
+kg:id_11 rdfs:label "町の公式LINEで求人情報や短期・単発アルバイトの情報を配信"@ja.
+kg:id_11 rdf:type cls:c_14745.
+kg:id_8 prop:contermeasure kg:id_11.
+kg:id_12 rdfs:label "毎週火、木曜に更新"@ja.
+kg:id_12 rdf:type cls:c_14746.
+cls:c_14746 rdfs:label "情報更新"@ja.
+kg:id_8 prop:contermeasure kg:id_12.
+kg:id_13 rdfs:label "松前町産業振興課の田中建一参事"@ja.
+kg:id_13 rdf:type cls:c_14747.
+cls:c_14747 rdfs:label "自治体職員"@ja.
+kg:id_14 rdfs:label "町内に潜在している求職者の掘り起こしにつなげる"@ja.
+kg:id_14 rdf:type cls:c_14748.
+cls:c_14748 rdfs:label "求職者の掘り起こし"@ja.
+kg:id_13 prop:contermeasure kg:id_14.
+kg:id_15 rdfs:label "高校生の短期アルバイトの情報の場にする"@ja.
+kg:id_15 rdf:type cls:c_14749.
+cls:c_14749 rdfs:label "短期雇用情報"@ja.
+kg:id_13 prop:contermeasure kg:id_15.
+kg:st_1 rdfs:label "松前町産業振興課の田中建一参事"@ja.
+kg:st_1 rdfs:type cls:st_60.
+cls:st_60 rdfs:label "自治体職員"@ja.
+kg:op_1 prop:content "町内の潜在求職者の掘り起こしにつなげたい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "イベント手伝いなど高校生向け短期アルバイト情報の場にしたい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "人材不足に悩む企業と町民のマッチングをスムーズに進めようと"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "求人情報は定員が埋まるなどして取り下げや内容変更が多く、最新の求人情報をどのように求職者に届けるかが課題だった"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "人材不足に悩む企業と町民のマッチングをスムーズに進めようと"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:text-txt_contents "毎週火、木曜に更新し、最新情報を見られるようになった"@ja.
+<< kg:id_8 prop:contermeasure kg:id_9 >>
+    prop:text-txt_contents "町は就職相談などを行う「松前町就職サポートセンター」のサテライトオフィスとして、多目的スペース「テノハ松前」の別館に「JOBステーション」を開設し"@ja.
+<< kg:id_8 prop:contermeasure kg:id_10 >>
+    prop:text-txt_contents "7月から求人情報をホームページ（HP）や無料通信アプリLINEで発信している"@ja.
+<< kg:id_8 prop:contermeasure kg:id_11 >>
+    prop:text-txt_contents "町の公式LINEで求人情報や短期・単発アルバイトの情報を配信"@ja.
+<< kg:id_8 prop:contermeasure kg:id_12 >>
+    prop:text-txt_contents "毎週火、木曜に更新し、最新情報を見られるようになった"@ja.
+<< kg:id_13 prop:contermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "町産業振興課の田中建一参事は「町内に潜在している求職者の掘り起こしにつなげたい。"@ja.
+<< kg:id_13 prop:contermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "ゆくゆくはイベントの手伝いなど高校生の短期アルバイトの情報の場にもなれば"@ja.
+}

@@ -1,0 +1,282 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/Akita/00018> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:contermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電機の位置変更"@ja.
+kg:id_1 rdf:type cls:c_13702.
+cls:c_13702 rdfs:label "設備変更"@ja.
+kg:id_2 rdfs:label "環境影響の予測及び評価の再実施が必要となる可能性"@ja.
+kg:id_2 rdf:type cls:c_13703.
+cls:c_13703 rdfs:label "再評価必要性"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "事業の実施"@ja.
+kg:id_3 rdf:type cls:c_468.
+cls:c_468 rdfs:label "事業実施"@ja.
+kg:id_4 rdfs:label "工事施工業者等への指導と環境保全措置の確実な履行"@ja.
+kg:id_4 rdf:type cls:c_370.
+cls:c_370 rdfs:label "保全措置"@ja.
+kg:id_3 prop:contermeasure kg:id_4.
+kg:id_5 rdfs:label "最新の知見や技術等の導入による環境影響の低減"@ja.
+kg:id_5 rdf:type cls:c_429.
+cls:c_429 rdfs:label "影響低減"@ja.
+kg:id_3 prop:contermeasure kg:id_5.
+kg:id_6 rdfs:label "工事中及び供用後の環境保全上の問題"@ja.
+kg:id_6 rdf:type cls:c_533.
+cls:c_533 rdfs:label "環境問題"@ja.
+kg:id_7 rdfs:label "速やかな調査と関係機関との協議の上での適切な措置"@ja.
+kg:id_7 rdf:type cls:c_600.
+cls:c_600 rdfs:label "適切措置"@ja.
+kg:id_6 prop:contermeasure kg:id_7.
+kg:id_8 rdfs:label "施設の稼働"@ja.
+kg:id_8 rdf:type cls:c_563.
+cls:c_563 rdfs:label "施設稼働"@ja.
+kg:id_9 rdfs:label "夜間に最大8デシベル増加する騒音"@ja.
+kg:id_9 rdf:type cls:c_13704.
+cls:c_13704 rdfs:label "騒音増加"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "夜間騒音の増加"@ja.
+kg:id_10 rdf:type cls:c_13704.
+kg:id_11 rdfs:label "周辺住民からの苦情発生"@ja.
+kg:id_11 rdf:type cls:c_13549.
+cls:c_13549 rdfs:label "住民苦情"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "施設の稼働に伴う騒音及び超低周波音の予測"@ja.
+kg:id_12 rdf:type cls:c_13705.
+cls:c_13705 rdfs:label "騒音予測"@ja.
+kg:id_13 rdfs:label "事後調査の実施が必要となる不確実性"@ja.
+kg:id_13 rdf:type cls:c_17.
+cls:c_17 rdfs:label "事後調査"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "風力発電機のブレード及びタワーの搬送と住居地域での積替え"@ja.
+kg:id_14 rdf:type cls:c_13706.
+cls:c_13706 rdfs:label "資材搬送"@ja.
+kg:id_15 rdfs:label "積替え作業に伴う騒音の影響"@ja.
+kg:id_15 rdf:type cls:c_354.
+cls:c_354 rdfs:label "騒音影響"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "積替え作業に伴う騒音"@ja.
+kg:id_16 rdf:type cls:c_354.
+kg:id_17 rdfs:label "周辺住民の理解を得る努力と影響低減への十分な配慮"@ja.
+kg:id_17 rdf:type cls:c_429.
+kg:id_16 prop:contermeasure kg:id_17.
+kg:id_18 rdfs:label "積替え作業に伴う振動の影響"@ja.
+kg:id_18 rdf:type cls:c_13707.
+cls:c_13707 rdfs:label "振動影響"@ja.
+kg:id_14 prop:cause kg:id_18.
+kg:id_19 rdfs:label "積替え作業に伴う振動"@ja.
+kg:id_19 rdf:type cls:c_13707.
+kg:id_19 prop:contermeasure kg:id_17.
+kg:id_20 rdfs:label "事後調査の実施"@ja.
+kg:id_20 rdf:type cls:c_17.
+kg:id_21 rdfs:label "専門家等の助言を得た適切な調査時期の設定と調査回数の増加"@ja.
+kg:id_21 rdf:type cls:c_13104.
+cls:c_13104 rdfs:label "調査強化"@ja.
+kg:id_20 prop:contermeasure kg:id_21.
+kg:id_22 rdfs:label "バットストライク及びバードストライク"@ja.
+kg:id_22 rdf:type cls:c_13708.
+cls:c_13708 rdfs:label "鳥獣衝突"@ja.
+kg:id_23 rdfs:label "発生状況や渡り経路の変化の程度の適切な把握"@ja.
+kg:id_23 rdf:type cls:c_12097.
+cls:c_12097 rdfs:label "状況把握"@ja.
+kg:id_22 prop:contermeasure kg:id_23.
+kg:id_24 rdfs:label "対象事業実施区域内の植生自然度の高い森林の存在"@ja.
+kg:id_24 rdf:type cls:c_13709.
+cls:c_13709 rdfs:label "森林存在"@ja.
+kg:id_25 rdfs:label "風力発電機の設置範囲や新たな取付道路の樹木伐採を最小限にとどめる必要"@ja.
+kg:id_25 rdf:type cls:c_13667.
+cls:c_13667 rdfs:label "伐採抑制"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "植生自然度の高い森林"@ja.
+kg:id_26 rdf:type cls:c_13710.
+cls:c_13710 rdfs:label "森林"@ja.
+kg:id_27 rdfs:label "風力発電機の設置範囲や新たな取付道路の樹木伐採を最小限にとどめる"@ja.
+kg:id_27 rdf:type cls:c_13667.
+kg:id_26 prop:contermeasure kg:id_27.
+kg:id_28 rdfs:label "対象事業実施区域の一部が森林法に基づく土砂流出防備保安林"@ja.
+kg:id_28 rdf:type cls:c_13160.
+cls:c_13160 rdfs:label "保安林"@ja.
+kg:id_29 rdfs:label "当該区域での樹木伐採を回避する必要"@ja.
+kg:id_29 rdf:type cls:c_13689.
+cls:c_13689 rdfs:label "伐採回避"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "土砂流出防備保安林"@ja.
+kg:id_30 rdf:type cls:c_13160.
+kg:id_31 rdfs:label "当該区域での樹木伐採の回避"@ja.
+kg:id_31 rdf:type cls:c_13689.
+kg:id_30 prop:contermeasure kg:id_31.
+kg:id_32 rdfs:label "ハコネシケチシダとエゾノスズランの移植"@ja.
+kg:id_32 rdf:type cls:c_13711.
+cls:c_13711 rdfs:label "希少種移植"@ja.
+kg:id_33 rdfs:label "適切な移植先や移植方法の選定を慎重に実施する必要"@ja.
+kg:id_33 rdf:type cls:c_13712.
+cls:c_13712 rdfs:label "慎重実施"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "専門家等の助言を得た適切な移植先や移植方法の選定と慎重な実施"@ja.
+kg:id_34 rdf:type cls:c_13712.
+kg:id_32 prop:contermeasure kg:id_34.
+kg:st_1 rdfs:label "秋田県知事"@ja.
+kg:st_1 rdfs:type cls:st_2.
+cls:st_2 rdfs:label "行政"@ja.
+kg:op_1 prop:content "位置が変更された場合は予測と評価を再度行い結果を評価書に反映すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "施工業者への指導を徹底し環境保全措置を確実に履行すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "可能な範囲で最新の知見や技術を導入し環境影響をさらに低減すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "予測できない問題が生じた場合は速やかに調査し関係機関と協議して適切に対応すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "施設稼働により夜間騒音が増える地点があるため苦情発生時に迅速対応すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "苦情が発生した場合は原因を調査し適切な措置を講じるべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "騒音や超低周波音の予測は不確実性が大きいため事後調査を実施すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "搬送と積替えで騒音影響が懸念されるため住民理解を得ながら十分に低減配慮すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "作業時は住民理解を得るよう努め騒音影響を十分低減すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "搬送と積替えで振動影響が懸念されるため住民理解を得ながら十分に低減配慮すべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "作業時は住民理解を得るよう努め振動影響を十分低減すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "動物調査では専門家の助言を得て時期設定や回数増加を行うべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "バットストライクとバードストライクの発生状況や渡り経路の変化を適切に把握すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "自然度の高い森林があるため伐採を最小限に抑え環境保全措置を確実に講じるべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "自然度の高い森林への影響を避けるため設置範囲と道路整備に伴う伐採を最小限にすべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "保安林指定区域では樹木伐採を回避すべき"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "保安林区域での伐採は避けるべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "移植事例や知見が乏しいため専門家の助言を得て慎重に移植すべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "移植は専門家助言を踏まえ適切な移植先と方法を選び慎重に行うべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "風力発電機の位置が変更となる可能性があることから、確定後、必要に応じて環境影響についての予測及び評価を再度行い、その結果を評価書に反映すること。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "事業の実施に当たっては、工事施工業者等への指導に努め、環境保全措置の確実な履行を確保すること。"@ja.
+<< kg:id_3 prop:contermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "また、最新の知見や技術等を可能な範囲で導入することにより、一層の環境影響の低減に努めること。"@ja.
+<< kg:id_6 prop:contermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "現段階で予測し得ない環境保全上の問題が工事中及び供用後に生じた場合は、速やかに調査を行い、関係機関と協議の上、適切な措置を講じること。"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "現況値の騒音レベルが比較的小さい住居地域において、施設の稼働により夜間に最大8デシベル増加すると予測される地点がある"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "施設の稼働に伴い周辺住民から苦情が発生した場合は、速やかに原因を調査し、適切な措置を講じること。"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "施設の稼働に伴う騒音及び超低周波音の予測については、発生源からの騒音の放射特性や伝搬過程における気象条件、地形の影響等、不確実性が大きい要因があることから、事後調査を実施すること。"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "風力発電機のブレード及びタワーは、対象事業実施区域に搬送し、住居地域で積替える計画であることから、積替え作業に伴う騒音の影響が懸念される。"@ja.
+<< kg:id_16 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "このため、作業の実施に当たっては、周辺住民の理解を得るよう努めるとともに、影響を低減するよう十分に配慮すること。"@ja.
+<< kg:id_14 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "風力発電機のブレード及びタワーは、対象事業実施区域に搬送し、住居地域で積替える計画であることから、積替え作業に伴う振動の影響が懸念される。"@ja.
+<< kg:id_19 prop:contermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "このため、作業の実施に当たっては、周辺住民の理解を得るよう努めるとともに、影響を低減するよう十分に配慮すること。"@ja.
+<< kg:id_20 prop:contermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "事後調査の実施に当たっては、専門家等の助言を得ながら適切な調査時期を設定するとともに、必要に応じて調査回数を増やす等して"@ja.
+<< kg:id_22 prop:contermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "バットストライク、バードストライクの発生状況や、渡り経路の変化の程度を適切に把握すること。"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "対象事業実施区域内にはブナ等の二次林をはじめ植生自然度の高い森林が存在することから、風力発電機の設置範囲や新たな取付道路の樹木伐採は最小限にとどめる等、環境保全措置を確実に講じること。"@ja.
+<< kg:id_26 prop:contermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "風力発電機の設置範囲や新たな取付道路の樹木伐採は最小限にとどめる等、環境保全措置を確実に講じること。"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "対象事業実施区域の一部が森林法（昭和26年法律第249号）に基づく土砂流出防備保安林に指定されていることから、当該区域は樹木伐採を回避すること。"@ja.
+<< kg:id_30 prop:contermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "当該区域は樹木伐採を回避すること。"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "移植を行うハコネシケチシダとエゾノスズランは、移植に関する事例や知見がほとんどないことから、専門家等の助言を得ながら適切な移植先や移植方法を選定し、慎重に実施すること。"@ja.
+<< kg:id_32 prop:contermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "専門家等の助言を得ながら適切な移植先や移植方法を選定し、慎重に実施すること。"@ja.
+}

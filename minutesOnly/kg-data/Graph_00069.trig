@@ -1,0 +1,561 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00069> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "十里塚地区の風力発電"@ja.
+kg:id_1 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_2 rdfs:label "建設断念"@ja.
+kg:id_2 rdf:type cls:c_1887.
+cls:c_1887 rdfs:label "建設中止"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "再生可能エネルギー"@ja.
+kg:id_3 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_4 rdfs:label "電力の出力が不安定"@ja.
+kg:id_4 rdf:type cls:c_1888.
+cls:c_1888 rdfs:label "出力不安定"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "太陽光発電"@ja.
+kg:id_5 rdf:type cls:c_932.
+cls:c_932 rdfs:label "太陽光発電"@ja.
+kg:id_6 rdfs:label "天候に左右される"@ja.
+kg:id_6 rdf:type cls:c_1539.
+cls:c_1539 rdfs:label "天候依存"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "新エネルギーの導入量過大"@ja.
+kg:id_7 rdf:type cls:c_1889.
+cls:c_1889 rdfs:label "エネルギー導入"@ja.
+kg:id_8 rdfs:label "安定供給が不安定な状況に陥る"@ja.
+kg:id_8 rdf:type cls:c_1890.
+cls:c_1890 rdfs:label "供給不安定"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "新エネルギー"@ja.
+kg:id_9 rdf:type cls:c_1869.
+cls:c_1869 rdfs:label "新エネルギー"@ja.
+kg:id_10 rdfs:label "需要と供給のバランスを考える"@ja.
+kg:id_10 rdf:type cls:c_1891.
+cls:c_1891 rdfs:label "需給調整"@ja.
+kg:id_9 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "新エネルギーと火力発電"@ja.
+kg:id_11 rdf:type cls:c_579.
+cls:c_579 rdfs:label "電源構成"@ja.
+kg:id_12 rdfs:label "バランスの議論を将来的課題にする"@ja.
+kg:id_12 rdf:type cls:c_1892.
+cls:c_1892 rdfs:label "バランス議論"@ja.
+kg:id_11 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "ゼロ・エミッション電源の比率"@ja.
+kg:id_13 rdf:type cls:c_1893.
+cls:c_1893 rdfs:label "電源比率"@ja.
+kg:id_14 rdfs:label "2020年度に50％以上にする"@ja.
+kg:id_14 rdf:type cls:c_1894.
+cls:c_1894 rdfs:label "比率目標"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "新エネルギー普及"@ja.
+kg:id_15 rdf:type cls:c_1895.
+cls:c_1895 rdfs:label "新エネルギー普及"@ja.
+kg:id_16 rdfs:label "全量買い取り制度を導入する"@ja.
+kg:id_16 rdf:type cls:c_1473.
+cls:c_1473 rdfs:label "買取制度"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "公共産業分野の新エネルギー導入"@ja.
+kg:id_17 rdf:type cls:c_1889.
+kg:id_18 rdfs:label "導入の拡大"@ja.
+kg:id_18 rdf:type cls:c_765.
+cls:c_765 rdfs:label "導入拡大"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "酒田市"@ja.
+kg:id_19 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_20 rdfs:label "学校のグリーンニューディール政策で太陽光やサッシ入れかえに取り組む"@ja.
+kg:id_20 rdf:type cls:c_1896.
+cls:c_1896 rdfs:label "省エネ施策"@ja.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "スマートシティ・スマートコミュニティ"@ja.
+kg:id_21 rdf:type cls:c_1897.
+cls:c_1897 rdfs:label "環境配慮型都市"@ja.
+kg:id_22 rdfs:label "最新技術でエネルギー効率を高め省資源化を徹底した環境配慮型のまちづくりを行う"@ja.
+kg:id_22 rdf:type cls:c_1898.
+cls:c_1898 rdfs:label "効率向上"@ja.
+kg:id_21 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "山形県などと連携し新しい取り組みに手を挙げ国に働きかける"@ja.
+kg:id_23 rdf:type cls:c_704.
+cls:c_704 rdfs:label "広域連携"@ja.
+kg:id_19 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "新しい太陽光発電製品"@ja.
+kg:id_24 rdf:type cls:c_1899.
+cls:c_1899 rdfs:label "太陽光発電設備"@ja.
+kg:id_25 rdfs:label "曇りの日でも効率よく発電できる"@ja.
+kg:id_25 rdf:type cls:c_1900.
+cls:c_1900 rdfs:label "発電効率向上"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "日本海側や東北でも太陽光発電の可能性を秘めている"@ja.
+kg:id_26 rdf:type cls:c_1901.
+cls:c_1901 rdfs:label "導入可能性"@ja.
+kg:id_24 prop:effect kg:id_26.
+kg:id_27 rdfs:label "電力の過剰供給になるとあんばいが悪い"@ja.
+kg:id_27 rdf:type cls:c_1902.
+cls:c_1902 rdfs:label "過剰供給"@ja.
+kg:id_5 prop:effect kg:id_27.
+kg:id_28 rdfs:label "新エネルギー導入"@ja.
+kg:id_28 rdf:type cls:c_1889.
+kg:id_29 rdfs:label "余剰電力が生まれる"@ja.
+kg:id_29 rdf:type cls:c_1903.
+cls:c_1903 rdfs:label "余剰電力"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "余剰電力を新規進出企業の電力源として活用する"@ja.
+kg:id_30 rdf:type cls:c_1904.
+cls:c_1904 rdfs:label "電力活用"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "東北で核となる先進的な新エネルギーモデル都市を目指す"@ja.
+kg:id_31 rdf:type cls:c_1905.
+cls:c_1905 rdfs:label "モデル都市"@ja.
+kg:id_19 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "学校の太陽光発電"@ja.
+kg:id_32 rdf:type cls:c_932.
+kg:id_33 rdfs:label "学校だけでなく地域でも使う"@ja.
+kg:id_33 rdf:type cls:c_1906.
+cls:c_1906 rdfs:label "地域利用"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "既存の公共施設や社会インフラと太陽光発電"@ja.
+kg:id_34 rdf:type cls:c_1907.
+cls:c_1907 rdfs:label "公共施設"@ja.
+kg:id_35 rdfs:label "地域のエネルギー供給拠点にする"@ja.
+kg:id_35 rdf:type cls:c_1908.
+cls:c_1908 rdfs:label "供給拠点"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "自然エネルギーの導入を積極的に促す"@ja.
+kg:id_36 rdf:type cls:c_1496.
+cls:c_1496 rdfs:label "導入促進"@ja.
+kg:id_28 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "新エネルギーと酒田共同火力との関係"@ja.
+kg:id_37 rdf:type cls:c_579.
+kg:id_38 rdfs:label "検討時期が来たらバランスをしっかり検討する"@ja.
+kg:id_38 rdf:type cls:c_1909.
+cls:c_1909 rdfs:label "バランス検討"@ja.
+kg:id_37 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "新エネルギーの実証実験や先進事例を勉強する"@ja.
+kg:id_39 rdf:type cls:c_1910.
+cls:c_1910 rdfs:label "事例研究"@ja.
+kg:id_19 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "酒田港"@ja.
+kg:id_40 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "港湾"@ja.
+kg:id_41 rdfs:label "エネルギー・環境のモデル港として国に事業導入を提案する"@ja.
+kg:id_41 rdf:type cls:c_1911.
+cls:c_1911 rdfs:label "モデル港"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "リサイクルの一大拠点であること"@ja.
+kg:id_42 rdf:type cls:c_1912.
+cls:c_1912 rdfs:label "リサイクル拠点"@ja.
+kg:id_40 prop:cause kg:id_42.
+kg:id_43 rdfs:label "共同火力発電や風力発電やバイオマスや小水力発電の可能性があること"@ja.
+kg:id_43 rdf:type cls:c_1913.
+cls:c_1913 rdfs:label "エネルギー資源"@ja.
+kg:id_40 prop:cause kg:id_43.
+kg:id_44 rdfs:label "公共施設の太陽光発電"@ja.
+kg:id_44 rdf:type cls:c_1907.
+kg:id_45 rdfs:label "日中の消費電力の補完機能として活用する"@ja.
+kg:id_45 rdf:type cls:c_1914.
+cls:c_1914 rdfs:label "補完電源"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "売電や充電は今のところ考えていない"@ja.
+kg:id_46 rdf:type cls:c_1915.
+cls:c_1915 rdfs:label "売電見送り"@ja.
+kg:id_44 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "大きな施設の新エネルギー活用"@ja.
+kg:id_47 rdf:type cls:c_862.
+cls:c_862 rdfs:label "エネルギー活用"@ja.
+kg:id_48 rdfs:label "農事電力や施設園芸の熱源光源として活用する"@ja.
+kg:id_48 rdf:type cls:c_1916.
+cls:c_1916 rdfs:label "農業利用"@ja.
+kg:id_47 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "酒田市への企業立地"@ja.
+kg:id_49 rdf:type cls:c_1249.
+cls:c_1249 rdfs:label "企業立地"@ja.
+kg:id_50 rdfs:label "クリーンエネルギー導入のメリットを訴える"@ja.
+kg:id_50 rdf:type cls:c_1917.
+cls:c_1917 rdfs:label "導入訴求"@ja.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "障がい者雇用が進まないこと"@ja.
+kg:id_51 rdf:type cls:c_1918.
+cls:c_1918 rdfs:label "障がい者雇用停滞"@ja.
+kg:id_52 rdfs:label "企業が特例子会社制度などをほとんど知らない"@ja.
+kg:id_52 rdf:type cls:c_1919.
+cls:c_1919 rdfs:label "制度認知不足"@ja.
+kg:id_51 prop:cause kg:id_52.
+kg:id_53 rdfs:label "障がい者雇用拡大"@ja.
+kg:id_53 rdf:type cls:c_1920.
+cls:c_1920 rdfs:label "障がい者雇用"@ja.
+kg:id_54 rdfs:label "企業に情報提供し勉強会を重ねる"@ja.
+kg:id_54 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_53 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "公共施設の太陽光発電導入"@ja.
+kg:id_55 rdf:type cls:c_47.
+cls:c_47 rdfs:label "太陽光発電導入"@ja.
+kg:id_56 rdfs:label "屋根面や壁面を民間電力事業者に部分開放する"@ja.
+kg:id_56 rdf:type cls:c_1921.
+cls:c_1921 rdfs:label "民間開放"@ja.
+kg:id_55 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "新庁舎"@ja.
+kg:id_57 rdf:type cls:c_1922.
+cls:c_1922 rdfs:label "庁舎"@ja.
+kg:id_58 rdfs:label "災害時に自家発電し周囲地域の災害対応に使う"@ja.
+kg:id_58 rdf:type cls:c_1923.
+cls:c_1923 rdfs:label "災害対応"@ja.
+kg:id_57 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "防雪さくの活用"@ja.
+kg:id_59 rdf:type cls:c_1924.
+cls:c_1924 rdfs:label "公共設備"@ja.
+kg:id_60 rdfs:label "太陽光パネルを設置する"@ja.
+kg:id_60 rdf:type cls:c_1925.
+cls:c_1925 rdfs:label "太陽光設置"@ja.
+kg:id_59 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "防雪さくの太陽光発電活用"@ja.
+kg:id_61 rdf:type cls:c_1924.
+kg:id_62 rdfs:label "メガソーラー並みの発電ができる"@ja.
+kg:id_62 rdf:type cls:c_1926.
+cls:c_1926 rdfs:label "大規模発電"@ja.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "酒田地域"@ja.
+kg:id_63 rdf:type cls:c_1927.
+cls:c_1927 rdfs:label "地域"@ja.
+kg:id_64 rdfs:label "共同火力発電があり送電網が整備されている"@ja.
+kg:id_64 rdf:type cls:c_1928.
+cls:c_1928 rdfs:label "送電網整備"@ja.
+kg:id_63 prop:cause kg:id_64.
+kg:id_65 rdfs:label "メガソーラーを新しく据える環境として良い"@ja.
+kg:id_65 rdf:type cls:c_1929.
+cls:c_1929 rdfs:label "導入適地"@ja.
+kg:id_63 prop:effect kg:id_65.
+kg:id_66 rdfs:label "太陽光発電の普及"@ja.
+kg:id_66 rdf:type cls:c_1930.
+cls:c_1930 rdfs:label "太陽光発電普及"@ja.
+kg:id_67 rdfs:label "中古市場が形成されている"@ja.
+kg:id_67 rdf:type cls:c_1931.
+cls:c_1931 rdfs:label "中古市場"@ja.
+kg:id_66 prop:effect kg:id_67.
+kg:id_68 rdfs:label "将来リサイクル事業につながる"@ja.
+kg:id_68 rdf:type cls:c_1932.
+cls:c_1932 rdfs:label "リサイクル事業"@ja.
+kg:id_66 prop:effect kg:id_68.
+kg:id_69 rdfs:label "酒田港リサイクルポート"@ja.
+kg:id_69 rdf:type cls:c_1084.
+kg:id_70 rdfs:label "太陽光パネルのリサイクル工場を誘致する"@ja.
+kg:id_70 rdf:type cls:c_1933.
+cls:c_1933 rdfs:label "工場誘致"@ja.
+kg:id_69 prop:countermeasure kg:id_70.
+kg:st_1 rdfs:label "質問議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "景観面だけでなく別の観点も含めて考える必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "供給面で需要と供給のバランスを改めて考えるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "酒田市長"@ja.
+kg:st_2 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_3 prop:content "エネルギー供給の不安定性を抱えているのは間違いない"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "導入が難しい部分はある"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "新エネと火力のバランスを行政課題として議論してほしい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "供給面を含めて再検討が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "行政内で議論がないため将来的課題として扱ってほしい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "当面は自然エネルギー導入を優先し後に検討すべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "酒田市も県と連携して手を挙げ国へ提案するぐらい取り組んでほしい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "こちらから提案するつもりで国へ働きかけてほしい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "日本海側や東北でも発電の可能性を広げる技術だ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "従来不向きとされた地域でも導入可能性が高まる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "不安定電力の増加時は余剰電力の扱いが課題になる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "余剰電力の扱い方を考える必要がある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "産業振興と結びつけて新エネ導入を考えるべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "酒田市が新しいエネルギーをうまく回す先進モデル都市になってほしい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "発電した電力を地域利用する発想も必要"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "公共施設を地域エネルギー供給拠点として活用できる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "当面は補完的エネルギーとして導入促進を優先すべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "本格的に一翼を担う時期に議論すべき"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "実証実験も含めて先進事例を学びたい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "酒田港をモデル港として位置づけ国にアピールすべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "全国各国から注目される港である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "エネルギー分野の多様な資源を持つ地域だ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "現時点では売電より補完利用が中心"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "コスト面から現時点では売電のメリットが小さい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "将来は農業分野での活用も想定できる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "クリーンエネルギー活用を企業誘致の強みにできる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "企業への情報提供と勉強会で誤解を解くべき"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "障がい者雇用に関する誤解を解き拡大の道を探るべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "公物管理を民間に部分開放する考え方があってよい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "庁舎自体に地域支援機能を持たせる発想が必要"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "防雪さくを使えばメガソーラー並みの発電も可能という面白い発想だ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "地域特有の公共物が大規模発電資源になり得る"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "メガソーラー導入に適した環境がある"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "太陽光事業の可能性が広がる地域条件がある"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "早期導入設備の更新が市場を生んでいる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "太陽光発電は新しい産業創出にもつながる"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "エネルギー環境モデル港の具体策として誘致目標を掲げるべき"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "先日、十里塚地区の風力発電は県の判断、市の判断も入ったと思いますが、県の最終的な判断で建設断念ということになりましたけれども、そのときに景観面が非常に議論されたわけでありますが、また違った面での考え方も必要なのかなというふうに思いました"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "再生可能エネルギーというものは、非常に電力の出力が不安定であります"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "例えば太陽光であれば、晴れの日はばんばん発電するわけですが、雨や雪になれば発電はなかなかできないという、そういった意味では安定しない出力なわけです"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "この新エネルギーが導入量が過大になると、例えばこの地域でいえば酒田共同火力発電で発電している電力との関係で、非常に安定供給という意味では、不安定な状況に陥ってしまうという課題があるわけです"@ja.
+<< kg:id_9 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "その供給という面で、需要と供給のバランスという面では、考えなくてはならないことなんだなというのを改めて私は考えました"@ja.
+<< kg:id_11 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "この新エネルギーと、現にある火力発電とのバランスをどのように図っていくのか、恐らく私が見聞きしている中では、今の酒田市、あるいは山形県においても、行政の中でそういったことの議論はないのではないかなというふうに思いますので、ぜひともそういった議論を将来的な課題としていただきたいなという思いで"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "この温室効果ガスを発生しない、ゼロ・エミッション電源の比率を2020年度には50％以上にするんだと"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:text-txt_contents "しかも全量買い取り制度を導入していくんだということで、方向性が示されております"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:text-txt_contents "特に、公共産業分野における導入の拡大というものがうたわれており"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:text-txt_contents "酒田市においても学校のグリーンニューディール政策によりまして、太陽光であるとかサッシの入れかえなどさまざまな取り組みがなされている"@ja.
+<< kg:id_21 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "いわゆるスマートシティ、スマートコミュニティという概念で、最新技術を駆使してエネルギー効率を高め、省資源化を徹底した環境配慮型のまちづくりをやるんだ"@ja.
+<< kg:id_19 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "本市においても、山形県などと連携しながら、こういった新しい取り組みにぜひ手を挙げていただきたい。むしろこちらから提案するぐらいのつもりで国に対して働きかけをしていただきたい"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "特に化合物系の開発をされている企業の方からお話をお聞きしましたら、何でも、曇りの日でも効率よく発電する、そういった能力がある発電設備だそうであります"@ja.
+<< kg:id_24 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "これまで日本海側、特に東北などでは太陽光発電は向かないと言われていた中でも、こういった新しい製品でどんどん発電する可能性を秘めている"@ja.
+<< kg:id_5 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "例えば太陽光発電が電力の過剰供給になってしまうと、非常にあんばいが悪いわけであります"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "新エネを導入すれば当然のごとく余剰電力というものが生まれます"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "例えばリサイクルポートなど、新しく進出されてくる企業の皆さんの電力源としてそれを活用するであるとか、そういった産業振興と結びつけた新エネの導入というものを考えなくてはならない"@ja.
+<< kg:id_19 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "ぜひともこの酒田市がこの東北で核になってそういった新しいエネルギーをうまく回していく、そういう先進的なモデル都市にぜひなっていければ"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "学校で発電した電力を学校だけで使うのではなくて、その地域でも使うということ、そういったものにも考えがいってもいいのではないか"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "既存の公共施設、あるいは社会インフラとこの太陽光発電が結びつくことによって、その地域のエネルギーを供給する拠点になるという考え方も、あってもいいのではないかな"@ja.
+<< kg:id_28 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "当面は私はやはり、補完的なエネルギーではあるけれども、自然エネルギーの導入を積極的に促すということをまず力を入れるべき"@ja.
+<< kg:id_37 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "その後に議員御指摘のようなことについても、検討する時期が来たらしっかり検討する"@ja.
+<< kg:id_19 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "まずこの実証実験なども含めて、しっかりと勉強、先進事例を勉強してみたいな"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "エネルギー、環境のモデル港というような感じで酒田港を位置づけていただいて、そこに国のほうでもいろんな事業を導入してもらうというようなことなども、アピールすべきいい材料をこの地域は持っている"@ja.
+<< kg:id_40 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "酒田というのは当然のことながら、酒田港及び酒田周辺を見てみますと、一つはリサイクルの一大拠点であること、これは間違いない"@ja.
+<< kg:id_40 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "共同火力発電、そして風力発電、さらには今度は共同火力発電のほうでバイオマスの一部取り入れも考えようとか、そんな話もなっているし、小水力発電も今後の課題としてある"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "それ以外の公共施設については、今のところは日中の消費電力などの補完機能というような感じで考えております"@ja.
+<< kg:id_44 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "現在のところ、まだまだ電力会社から供給を受けたほうがコスト的なメリットもあるということなもんですから、今のところは、そういう充電をしたり、また売電まで考えていくというようなことは考えていない"@ja.
+<< kg:id_47 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "将来、大きな施設ができてきて、売電も視野に入れてということになった場合に、１つはさっき申し上げたような、場所にもよりますが、農事電力ということは考えられる、施設園芸などでの熱源に考えていく、光源に考えていくということは、想定はできる"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "そのときに本市に立地することはメリットですよなんていうようなことを訴えるようなところまでいけるように、考え方を持っていかなければならない"@ja.
+<< kg:id_51 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "例えば工業団地で経営されているような企業の皆さんなどにお話を聞いても、ほとんど知らないんです"@ja.
+<< kg:id_53 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "ぜひ、そういった情報提供をしながら、勉強会を重ねながら、障がい者の雇用の拡大の道というものを取り組んでいただきたい"@ja.
+<< kg:id_55 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "屋根面とか壁の面を電力会社にお願いする、公物管理を民間に部分開放するという考え方があってもいいんだと思うんです"@ja.
+<< kg:id_57 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "新しい庁舎自身が、役所の皆さんのための職場スペースをつくるんだということじゃなくて、災害時には災害対策本部になるわけですから、施設そのものが自家発電しますと。周囲何軒、あるいは周囲にこの地域のエリアは市役所の自家発電で災害対応が即座にできますというような発想だってある"@ja.
+<< kg:id_59 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "防雪さく、これは冬の間、雪や風をさえぎるという役割で、非常にこの地域特有の公共物でありますが、民間の方で太陽光発電をやられている方の発想、夏でも折りたたんで、面的には残りますよね、そこに太陽パネルを据えませんかという話です"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "今この酒田市内にある防雪さくで、メガソーラー並みの発電ができるそうです"@ja.
+<< kg:id_63 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "この地域は共同火力発電が北港にありますから、非常に送電網としてはしっかりしたものが整備されています"@ja.
+<< kg:id_63 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "そういった意味では、メガソーラーを新しく据えるにしても、非常に環境としてはいい地域なんです"@ja.
+<< kg:id_66 prop:effect kg:id_67 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "今太陽光発電の市場は中古市場だそうです。早くから導入された太陽光発電が新しいものに入れかわって、その古いものは中古市場に流れている"@ja.
+<< kg:id_66 prop:effect kg:id_68 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "もう10年もすると、それがリサイクル事業につながっていくと"@ja.
+<< kg:id_69 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "ぜひこのリサイクルポートの中で太陽光パネルのリサイクル工場を誘致するという目標も掲げられる"@ja.
+}

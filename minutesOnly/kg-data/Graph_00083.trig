@@ -1,0 +1,417 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00083> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電施設整備推進事業"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "景観上の問題"@ja.
+kg:id_2 rdf:type cls:c_189.
+cls:c_189 rdfs:label "景観問題"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "市民との合意形成の進め方の不十分さ"@ja.
+kg:id_3 rdf:type cls:c_2244.
+cls:c_2244 rdfs:label "合意形成不足"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "大規模風力発電事業"@ja.
+kg:id_4 rdf:type cls:c_218.
+kg:id_5 rdfs:label "全国的に環境への負荷に関する問題が出ていること"@ja.
+kg:id_5 rdf:type cls:c_1095.
+cls:c_1095 rdfs:label "環境負荷"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "風力発電施設の設置"@ja.
+kg:id_6 rdf:type cls:c_2196.
+cls:c_2196 rdfs:label "施設設置"@ja.
+kg:id_7 rdfs:label "透明性の高い環境アセスが確保される"@ja.
+kg:id_7 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "住民の理解が進む"@ja.
+kg:id_8 rdf:type cls:c_2245.
+cls:c_2245 rdfs:label "住民理解"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "環境と調和した健全な立地が促進される"@ja.
+kg:id_9 rdf:type cls:c_2246.
+cls:c_2246 rdfs:label "適正立地"@ja.
+kg:id_6 prop:effect kg:id_9.
+kg:id_10 rdfs:label "自主アセス"@ja.
+kg:id_10 rdf:type cls:c_806.
+kg:id_11 rdfs:label "関係省庁の勧告や審査の過程を経ない"@ja.
+kg:id_11 rdf:type cls:c_2247.
+cls:c_2247 rdfs:label "審査不足"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "住民を納得させられる評価書になり得ない"@ja.
+kg:id_12 rdf:type cls:c_2248.
+cls:c_2248 rdfs:label "住民納得不足"@ja.
+kg:id_10 prop:effect kg:id_12.
+kg:id_13 rdfs:label "事業利益を市民に還元することにとらわれ過ぎていること"@ja.
+kg:id_13 rdf:type cls:c_2249.
+cls:c_2249 rdfs:label "利益偏重"@ja.
+kg:id_1 prop:cause kg:id_13.
+kg:id_14 rdfs:label "1円でも高い買取価格のうちに建設してしまおうとすること"@ja.
+kg:id_14 rdf:type cls:c_2250.
+cls:c_2250 rdfs:label "拙速建設"@ja.
+kg:id_1 prop:cause kg:id_14.
+kg:id_15 rdfs:label "冷静に検討していく時間をなくす"@ja.
+kg:id_15 rdf:type cls:c_2251.
+cls:c_2251 rdfs:label "検討不足"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "将来に禍根を残す"@ja.
+kg:id_16 rdf:type cls:c_2252.
+cls:c_2252 rdfs:label "将来負担"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "行政が法定アセスをやらずに進めること"@ja.
+kg:id_17 rdf:type cls:c_197.
+cls:c_197 rdfs:label "事業推進"@ja.
+kg:id_18 rdfs:label "容認できない"@ja.
+kg:id_18 rdf:type cls:c_2253.
+cls:c_2253 rdfs:label "容認不能"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "本市"@ja.
+kg:id_19 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_20 rdfs:label "環境省に判断を仰ぐ"@ja.
+kg:id_20 rdf:type cls:c_2254.
+cls:c_2254 rdfs:label "判断要請"@ja.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "山形県と酒田市の動向"@ja.
+kg:id_21 rdf:type cls:c_2255.
+cls:c_2255 rdfs:label "行政動向"@ja.
+kg:id_22 rdfs:label "全国的にアセスを行っている業者や民間事業者に注目されている"@ja.
+kg:id_22 rdf:type cls:c_2256.
+cls:c_2256 rdfs:label "社会注目"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "自治体がやろうとしている事業"@ja.
+kg:id_23 rdf:type cls:c_2257.
+cls:c_2257 rdfs:label "自治体事業"@ja.
+kg:id_24 rdfs:label "全国的に模範となるような事業展開をしていく"@ja.
+kg:id_24 rdf:type cls:c_2258.
+cls:c_2258 rdfs:label "模範的展開"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "山形県知事が全国に発信した卒原発を実行していくことへの足かせになりかねない"@ja.
+kg:id_25 rdf:type cls:c_2259.
+cls:c_2259 rdfs:label "政策阻害"@ja.
+kg:id_1 prop:effect kg:id_25.
+kg:id_26 rdfs:label "当局"@ja.
+kg:id_26 rdf:type cls:c_1938.
+cls:c_1938 rdfs:label "行政機関"@ja.
+kg:id_27 rdfs:label "危機意識を持って自覚していく"@ja.
+kg:id_27 rdf:type cls:c_2260.
+cls:c_2260 rdfs:label "危機意識"@ja.
+kg:id_26 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "環境影響評価を法律によらない自主アセスで進めようとすること"@ja.
+kg:id_28 rdf:type cls:c_2261.
+cls:c_2261 rdfs:label "自主評価"@ja.
+kg:id_1 prop:cause kg:id_28.
+kg:id_29 rdfs:label "本来の論点での議論が進んでいないこと"@ja.
+kg:id_29 rdf:type cls:c_2262.
+cls:c_2262 rdfs:label "議論不足"@ja.
+kg:id_1 prop:cause kg:id_29.
+kg:id_30 rdfs:label "対外的にも注目されている問題であること"@ja.
+kg:id_30 rdf:type cls:c_2256.
+kg:id_1 prop:cause kg:id_30.
+kg:id_31 rdfs:label "このまま進めていくことには賛成できない"@ja.
+kg:id_31 rdf:type cls:c_2263.
+cls:c_2263 rdfs:label "反対"@ja.
+kg:id_1 prop:effect kg:id_31.
+kg:id_32 rdfs:label "議第23号平成25年度酒田市一般会計予算"@ja.
+kg:id_32 rdf:type cls:c_2264.
+cls:c_2264 rdfs:label "予算案"@ja.
+kg:id_33 rdfs:label "反対する"@ja.
+kg:id_33 rdf:type cls:c_2263.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "総合型GIS"@ja.
+kg:id_34 rdf:type cls:c_715.
+cls:c_715 rdfs:label "情報公開"@ja.
+kg:id_35 rdfs:label "山形新幹線庄内延伸、旧ジャスコ跡地の再開発、風力発電施設の建設、津波浸水ハザードマップ、市の道路網図、農業振興地域土地利用計画図などをホームページ上に公開する"@ja.
+kg:id_35 rdf:type cls:c_2265.
+cls:c_2265 rdfs:label "地理情報公開"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "防災強化事業"@ja.
+kg:id_36 rdf:type cls:c_485.
+cls:c_485 rdfs:label "防災事業"@ja.
+kg:id_37 rdfs:label "小中学校に飲料水や食料、おむつや粉ミルクを備蓄する"@ja.
+kg:id_37 rdf:type cls:c_2266.
+cls:c_2266 rdfs:label "物資備蓄"@ja.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "次世代中心経営体育成支援"@ja.
+kg:id_38 rdf:type cls:c_2267.
+cls:c_2267 rdfs:label "農業支援"@ja.
+kg:id_39 rdfs:label "集落営農組織の法人化を後押しする"@ja.
+kg:id_39 rdf:type cls:c_2268.
+cls:c_2268 rdfs:label "法人化支援"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "園芸特産化支援センター"@ja.
+kg:id_40 rdf:type cls:c_2267.
+kg:id_41 rdfs:label "米に頼らない産地形成を目指し特産品目の選定・技術指導を行う"@ja.
+kg:id_41 rdf:type cls:c_2269.
+cls:c_2269 rdfs:label "産地育成"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "県漁業組合飛島支所での氷不足"@ja.
+kg:id_42 rdf:type cls:c_2270.
+cls:c_2270 rdfs:label "漁業問題"@ja.
+kg:id_43 rdfs:label "プレハブ式冷凍施設への補助"@ja.
+kg:id_43 rdf:type cls:c_2271.
+cls:c_2271 rdfs:label "冷凍施設支援"@ja.
+kg:id_42 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "プレステージ・インターナショナルに対する企業誘致"@ja.
+kg:id_44 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_45 rdfs:label "雇用拡大につながる事業としてオペレーター席数に応じて1席当たり30万円を交付"@ja.
+kg:id_45 rdf:type cls:c_2272.
+cls:c_2272 rdfs:label "雇用支援"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "駅前と大通り商店街のアーケード老朽化"@ja.
+kg:id_46 rdf:type cls:c_1016.
+cls:c_1016 rdfs:label "施設老朽化"@ja.
+kg:id_47 rdfs:label "アーケード撤去"@ja.
+kg:id_47 rdf:type cls:c_2273.
+cls:c_2273 rdfs:label "施設撤去"@ja.
+kg:id_46 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "LEDの街路灯整備"@ja.
+kg:id_48 rdf:type cls:c_2274.
+cls:c_2274 rdfs:label "街路灯整備"@ja.
+kg:id_49 rdfs:label "整備費用の支援"@ja.
+kg:id_49 rdf:type cls:c_2275.
+cls:c_2275 rdfs:label "費用支援"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "通院医療費無料化"@ja.
+kg:id_50 rdf:type cls:c_2276.
+cls:c_2276 rdfs:label "医療支援"@ja.
+kg:id_51 rdfs:label "未就学児までを対象にしていたものを小学3年生まで拡大"@ja.
+kg:id_51 rdf:type cls:c_2277.
+cls:c_2277 rdfs:label "対象拡大"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "英語で発信できる子供育成事業"@ja.
+kg:id_52 rdf:type cls:c_2278.
+cls:c_2278 rdfs:label "教育事業"@ja.
+kg:id_53 rdfs:label "年中幼児から小学4年生までを対象にする"@ja.
+kg:id_53 rdf:type cls:c_2279.
+cls:c_2279 rdfs:label "対象設定"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "空き家対策"@ja.
+kg:id_54 rdf:type cls:c_2280.
+cls:c_2280 rdfs:label "空き家対策"@ja.
+kg:id_55 rdfs:label "空き家・空き地の売買、賃貸借のネットワークを構築し空き家の抑制と利活用を進める"@ja.
+kg:id_55 rdf:type cls:c_2281.
+cls:c_2281 rdfs:label "流通促進"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:st_1 rdfs:label "後藤泉議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "景観上の問題について納得のいく議論になっていないと批判"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "市民との合意形成の進め方が不十分であると指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "環境省"@ja.
+kg:st_2 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_3 prop:content "環境負荷の問題があるため法対象事業への追加が必要とする"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "法対象とすることで透明性の高い環境アセスが確保されると説明"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "法対象化により住民理解の進展を見込む"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "法対象化により環境と調和した立地促進につながるとする"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "法律によらない自主アセスでは審査過程を経ない点を問題視"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "自主アセスでは住民を納得させる評価書にならないと批判"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "市民還元を重視し過ぎて冷静な検討を欠いていると懸念"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "高い買取価格のうちに急いで建設しようとしていると批判"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "拙速な建設が冷静な検討時間を失わせると懸念"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "拙速な事業推進は将来に禍根を残すと危惧"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "行政自ら法定アセスを行わず進めることは容認できないと反対"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "問題が指摘されている以上、環境省に判断を仰ぐべきと主張"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "この問題は全国の関連業者や民間事業者から注目されていると指摘"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "自治体事業として全国の模範となる進め方をすべきと求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "不適切な事業推進は卒原発実行の足かせになり得ると警告"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "当局はこの問題の重要性について危機意識を持つべきと求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "法律によらない自主アセスで進めることを反対理由とする"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "本来の論点に関する議論不足を反対理由とする"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "対外的に注目される問題である点も踏まえ慎重対応を求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "現状のまま事業を進めることに反対"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "風力発電施設整備推進事業を理由に予算案に反対"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "本来の論点でありました景観上の問題と市民との合意形成の進め方についても、私は納得のいく議論とはまだまだ言えるものではないと思っております"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本来の論点でありました景観上の問題と市民との合意形成の進め方についても、私は納得のいく議論とはまだまだ言えるものではないと思っております"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "環境省が、大規模風力発電事業では全国的に環境への負荷に関する問題が出ていることで、風力発電施設の設置を法の対象事業として追加すべきとし"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "法対象とすることで透明性の高い環境アセスが確保され、住民の理解が進み、環境と調和した健全な立地が促進される"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "法対象とすることで透明性の高い環境アセスが確保され、住民の理解が進み、環境と調和した健全な立地が促進される"@ja.
+<< kg:id_6 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "法対象とすることで透明性の高い環境アセスが確保され、住民の理解が進み、環境と調和した健全な立地が促進される"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "法律によらない自主アセスでは、関係省庁の勧告や審査の過程を経ないものとなり"@ja.
+<< kg:id_10 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "住民を納得させられる評価書にはなり得ないものだと思います"@ja.
+<< kg:id_1 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "本市が目的の一つに挙げている事業利益を市民に還元するということに余りにもとらわれ過ぎて"@ja.
+<< kg:id_1 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "１円でも高い買取価格のうちに建設してしまおうとすることが"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "１円でも高い買取価格のうちに建設してしまおうとすることが逆に冷静に検討していく時間をなくし"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "将来に禍根を残すことにならないか大変危惧されるものです"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "行政みずからが国が求めている法定アセスをやらなくてもよいと判断して進めようとすることは、一議会人としてもとても容認できるものではありません"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "本来ならば指摘されている問題があるのですから、判断を仰ぐべきではないでしょうか"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "山形県と酒田市の動向は、全国的にもアセスを行っている業者やこれから風力発電事業をやろうとしている民間事業者にも注目されつつある問題だと聞いています"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "自治体がやろうとしている事業であります。全国的に模範となるような事業展開をしていくべきと思います"@ja.
+<< kg:id_1 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "山形県知事が全国に発信した卒原発を実行していくことへの足かせにもなりかねません"@ja.
+<< kg:id_26 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "それくらいに重要な問題だということを当局がみずから危機意識を持って自覚していくべきです"@ja.
+<< kg:id_1 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "本予算案の環境影響評価をあくまでも法律によらない自主アセスで進めようとすること"@ja.
+<< kg:id_1 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "また、本来の論点での議論が進んでいないこと"@ja.
+<< kg:id_1 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "さらに、対外的にも注目されている問題であることを踏まえ"@ja.
+<< kg:id_1 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "風力発電施設整備推進事業をこのまま進めていくことには賛成できるものではありません"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "よって、議第23号平成25年度酒田市一般会計予算には反対いたします"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:text-txt_contents "山形新幹線庄内延伸、旧ジャスコ跡地の再開発、風力発電施設の建設、津波浸水ハザードマップ、市の道路網図、農業振興地域土地利用計画図などをホームページ上に公開する総合型ＧＩＳ"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:text-txt_contents "小中学校に飲料水や食料、おむつや粉ミルクを備蓄する防災強化事業"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:text-txt_contents "集落営農組織の法人化を後押しする次世代中心経営体育成支援"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:text-txt_contents "米に頼らない産地形成を目指し園芸特産化支援センターを置いて特産品目の選定・技術指導を行う"@ja.
+<< kg:id_42 prop:countermeasure kg:id_43 >>
+    prop:text-txt_contents "県漁業組合飛島支所での氷不足を解消するためプレハブ式冷凍施設への補助"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:text-txt_contents "今回、企業誘致をしていただくプレステージ・インターナショナルに対し、雇用拡大につながる事業として、オペレーター席数に応じて１席当たり30万円を交付"@ja.
+<< kg:id_46 prop:countermeasure kg:id_47 >>
+    prop:text-txt_contents "老朽化が問題になっていた駅前と大通り商店街のアーケード撤去"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:text-txt_contents "ＬＥＤの街路灯整備費用の支援"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:text-txt_contents "未就学児までを対象にしていた通院医療費の無料化を小学３年生まで拡大"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:text-txt_contents "年中幼児から小学４年生までを対象にした英語で発信できる子供育成事業"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:text-txt_contents "空き家、空き地の売買、賃貸借のネットワークを構築し、昨年７月に施行した市空き家等の適正管理に関する条例を踏まえ、空き家の抑制、利活用を進める"@ja.
+}

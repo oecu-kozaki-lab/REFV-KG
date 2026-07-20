@@ -1,0 +1,327 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00080> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電施設設備の事業費増額"@ja.
+kg:id_1 rdf:type cls:c_943.
+cls:c_943 rdfs:label "事業費増額"@ja.
+kg:id_2 rdfs:label "風力発電施設設備の検討に伴う事業費の計上"@ja.
+kg:id_2 rdf:type cls:c_2174.
+cls:c_2174 rdfs:label "事業費計上"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "県が県立自然公園内での風力発電設置を認めなかったこと"@ja.
+kg:id_3 rdf:type cls:c_2175.
+cls:c_2175 rdfs:label "設置不許可"@ja.
+kg:id_4 rdfs:label "環境審議会や景観審議会でさまざまな意見が出て論議を尽くしたこと"@ja.
+kg:id_4 rdf:type cls:c_2176.
+cls:c_2176 rdfs:label "審議"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "東日本大震災以降の風力発電事業参入"@ja.
+kg:id_5 rdf:type cls:c_2177.
+cls:c_2177 rdfs:label "事業参入"@ja.
+kg:id_6 rdfs:label "電力事情と国の政策の変化"@ja.
+kg:id_6 rdf:type cls:c_2178.
+cls:c_2178 rdfs:label "政策変化"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "県立自然公園における風力発電施設の基本方針見直し"@ja.
+kg:id_7 rdf:type cls:c_2179.
+cls:c_2179 rdfs:label "方針見直し"@ja.
+kg:id_8 rdfs:label "東日本大震災と福島第一原子力発電所事故以来の再生可能エネルギーへの国民的関心の高まり"@ja.
+kg:id_8 rdf:type cls:c_2180.
+cls:c_2180 rdfs:label "関心高まり"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "市民にとって自治体の風力発電事業参入が予期せぬニュースとなったこと"@ja.
+kg:id_9 rdf:type cls:c_2177.
+kg:id_10 rdfs:label "唐突だという受けとめが広がったこと"@ja.
+kg:id_10 rdf:type cls:c_2181.
+cls:c_2181 rdfs:label "唐突感"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "安定した電力供給ができないこと"@ja.
+kg:id_11 rdf:type cls:c_2182.
+cls:c_2182 rdfs:label "電力不安定"@ja.
+kg:id_12 rdfs:label "市民の生活に資する電力とならないこと"@ja.
+kg:id_12 rdf:type cls:c_2183.
+cls:c_2183 rdfs:label "生活貢献不足"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "蓄電設備がないこと"@ja.
+kg:id_13 rdf:type cls:c_2184.
+cls:c_2184 rdfs:label "蓄電設備不足"@ja.
+kg:id_14 rdfs:label "安定した電力供給の成功が難しいこと"@ja.
+kg:id_14 rdf:type cls:c_2185.
+cls:c_2185 rdfs:label "安定供給困難"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "風力発電事業への参入"@ja.
+kg:id_15 rdf:type cls:c_2177.
+kg:id_16 rdfs:label "初期投資にかなりの経費がかかること"@ja.
+kg:id_16 rdf:type cls:c_2186.
+cls:c_2186 rdfs:label "高額投資"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "役所の職員が片手間で運営すること"@ja.
+kg:id_17 rdf:type cls:c_2187.
+cls:c_2187 rdfs:label "運営体制不足"@ja.
+kg:id_18 rdfs:label "安定供給や採算確保が難しいこと"@ja.
+kg:id_18 rdf:type cls:c_2185.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "収益を生み出せないこと"@ja.
+kg:id_19 rdf:type cls:c_2188.
+cls:c_2188 rdfs:label "収益不足"@ja.
+kg:id_20 rdfs:label "市民の税金を使って参入することを説明できないこと"@ja.
+kg:id_20 rdf:type cls:c_2189.
+cls:c_2189 rdfs:label "説明困難"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "事業が成功すること"@ja.
+kg:id_21 rdf:type cls:c_2190.
+cls:c_2190 rdfs:label "事業成功"@ja.
+kg:id_22 rdfs:label "市民の期待にこたえること"@ja.
+kg:id_22 rdf:type cls:c_2191.
+cls:c_2191 rdfs:label "期待充足"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "採算がとれないこと"@ja.
+kg:id_23 rdf:type cls:c_578.
+cls:c_578 rdfs:label "採算不足"@ja.
+kg:id_24 rdfs:label "赤字になる心配があること"@ja.
+kg:id_24 rdf:type cls:c_2192.
+cls:c_2192 rdfs:label "赤字懸念"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "買い取り価格が下がること"@ja.
+kg:id_25 rdf:type cls:c_2193.
+cls:c_2193 rdfs:label "価格低下"@ja.
+kg:id_26 rdfs:label "採算悪化への懸念"@ja.
+kg:id_26 rdf:type cls:c_2194.
+cls:c_2194 rdfs:label "採算悪化"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "市の風力発電施設建設"@ja.
+kg:id_27 rdf:type cls:c_1088.
+cls:c_1088 rdfs:label "施設建設"@ja.
+kg:id_28 rdfs:label "事前に景観審議会や環境審議会へ取り組みたい旨を報告すること"@ja.
+kg:id_28 rdf:type cls:c_2195.
+cls:c_2195 rdfs:label "事前報告"@ja.
+kg:id_27 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "環境影響評価を事前に実施して環境への影響を調査すること"@ja.
+kg:id_29 rdf:type cls:c_1129.
+cls:c_1129 rdfs:label "環境影響評価"@ja.
+kg:id_27 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "景観への配慮を検討した上で事業実施の可否を判断すること"@ja.
+kg:id_30 rdf:type cls:c_1128.
+cls:c_1128 rdfs:label "景観配慮"@ja.
+kg:id_27 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "市の風力発電施設設置"@ja.
+kg:id_31 rdf:type cls:c_2196.
+cls:c_2196 rdfs:label "施設設置"@ja.
+kg:id_32 rdfs:label "十里塚の自治会や宮野浦のコミュニティ振興会へ説明すること"@ja.
+kg:id_32 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_31 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "市報などを活用して市民へ適切な情報提供を行うこと"@ja.
+kg:id_33 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_31 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "固定価格買取制度が適用される期間内に事業に取り組むこと"@ja.
+kg:id_34 rdf:type cls:c_2197.
+cls:c_2197 rdfs:label "期間内実施"@ja.
+kg:id_27 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "市の風力発電施設事業"@ja.
+kg:id_35 rdf:type cls:c_2198.
+cls:c_2198 rdfs:label "施設事業"@ja.
+kg:id_36 rdfs:label "メンテナンスを除く収入を地元や市民に還元すること"@ja.
+kg:id_36 rdf:type cls:c_1306.
+cls:c_1306 rdfs:label "利益還元"@ja.
+kg:id_35 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "環境影響評価の結果前に進む判断になれば事業計画を執行すること"@ja.
+kg:id_37 rdf:type cls:c_2199.
+cls:c_2199 rdfs:label "計画執行"@ja.
+kg:id_35 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "将来コストと買い取り価格の見合いが合わなければやめる判断をすること"@ja.
+kg:id_38 rdf:type cls:c_31.
+cls:c_31 rdfs:label "事業中止"@ja.
+kg:id_35 prop:countermeasure kg:id_38.
+kg:st_1 rdfs:label "議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "審議会を開かずに進めるのか市民にわかりやすい説明が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "過去に設置が認められなかった経過を踏まえ今回は審議会を開くべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "再生可能エネルギー導入は歓迎するが環境影響や採算判断の説明が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市長"@ja.
+kg:st_2 rdf:type cls:st_27.
+cls:st_27 rdfs:label "市長"@ja.
+kg:op_4 prop:content "県の方針見直しも受けて取り組みを進めるべきと判断している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "市民には唐突に受けとめられており丁寧な説明が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "安定供給できなければ市民生活に役立つ電力にならない"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "稚内の事例では蓄電設備がなければ成功しないと判断されていた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "初期投資が大きく回収年数や赤字リスクを明らかにすべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "素人の片手間では難しく運営のプロを育てる必要がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "収益が出なければ税金投入を市民に説明できない"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "多くの市民は成功を期待しており期待に応えるべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "赤字リスクがないか見通しを示すべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "買い取り価格低下時は踏みとどまる判断も必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "建設に当たり事前に審議会へ報告している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "環境アセスメントを行い影響を調査した上で可否を判断する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "景観への配慮を含めて事業実施の可否を判断する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "地元団体には市が設置する考えを既に説明している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "市民にも市報などで適切な情報提供を進める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "固定価格買取制度の期間内なら採算性を確保できると見ている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "回収後の収入は地元や市民へ還元したい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "買い取り価格が大幅に下がらず環境影響評価で問題なければ計画を進める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "20年後30年後に採算が合わなければやめる判断もあり得る"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "増額の主なものの一つが、風力発電施設設備の検討に伴う事業費の計上となっています。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "県立自然公園内での風力発電については、これまで２回、環境審議会や景観審議会で審議をしてきた経過があります。さまざまな意見が出て論議を尽くしてきた結果として、県が設置を認めなかったと認識しています"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "昨年の東日本大震災以来、電力事情は変わりましたし、国の政策も変わってきております。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "東日本大震災、福島第一原子力発電所の事故以来、再生可能エネルギーに対する国民的な関心が高まっていることから、県立自然公園における風力発電施設に関する基本方針も県のほうでも見直しをされております。こういうようなことも受けて、しっかりと私たちもこの取り組みを進めるべきだという判断に今立っているところであります。"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "自治体の風力発電事業参入は、市民にとって予期せぬニュースだったようです。...すごく唐突だなと受けとめている人が多いのです。"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "常に安定した電力を供給できるようにしないと、市民の生活に資する電力とならないのではないかと思います。"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "安定した電力を供給するために巨大な蓄電設備が併設されていて、実験設備としての配慮がなされていることです。ＮＥＤＯの構想の中でかなりの経費がかかっても、蓄電設備がなければ成功しないとの判断でした。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "本市がこれから参入しようとする事業は、初期投資にかなりの経費がかかると思います。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "大変失礼ながら、役所の職員という素人が片手間でできるものではないと思うのです。"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "収益を生み出さなければ、市民の税金を使って参入することを説明できないと思うのですが"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "多くの市民は何としても成功してほしいと思っているというふうに受けとめています。ですから市民の期待にこたえなければならないのですから"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "赤字になる心配はないのでしょうか"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "電力の価格が当初より下がることも懸念されますが、採算はとれるとの判断でしょうか。...どこかで買い取り価格が下がったりしてまずいと思ったときに、踏みとどまることもあると考えていいのでしょうか"@ja.
+<< kg:id_27 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "取り組むに当たって事前に景観審議会や環境審議会などについて、この取り組みたい旨のことを報告をさせていただいております。"@ja.
+<< kg:id_27 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "環境影響評価を事前に実施することによって環境に与える影響を調査し"@ja.
+<< kg:id_27 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "景観への配慮などを検討した上で事業実施の可否を判断していきたい"@ja.
+<< kg:id_31 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "もう既に十里塚の自治会でありますとか、宮野浦のコミュニティ振興会に対し、市がみずから風力発電施設を設置をする考えにあるということの説明をさせていただいております。"@ja.
+<< kg:id_31 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "今後も市報などを活用しながら、適切な情報提供に努めてまいりたいと思っております。"@ja.
+<< kg:id_27 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "採算については固定価格買取制度というものもございますので、今この制度が適用される期間内に事業に取り組むことによって、これはもちろん計画上のものでございますが、採算性は確保できる"@ja.
+<< kg:id_35 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "メンテナンスを除けば収入がかなりの額に上ってくると思っておりますので、そのことについては地元、また市民の皆さんにしっかりと還元をしていく"@ja.
+<< kg:id_35 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "この事業計画、環境影響評価の結果、前に進むという判断になれば、それはそのまま事業計画として執行してまいりたい"@ja.
+<< kg:id_35 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "20年後、30年後の話をあえて言えば、そのときはその事業の更新等でコストとその買い取り価格の見合いが合わなければ、それはやめるという判断は当然あってしかるべき"@ja.
+}

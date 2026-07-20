@@ -1,0 +1,440 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00100> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "市営住宅砂越粕町団地の防風フェンスが飛ばされた物損事故"@ja.
+kg:id_1 rdf:type cls:c_2501.
+cls:c_2501 rdfs:label "物損事故"@ja.
+kg:id_2 rdfs:label "台風21号の強風"@ja.
+kg:id_2 rdf:type cls:c_2502.
+cls:c_2502 rdfs:label "強風"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "物損事故"@ja.
+kg:id_3 rdf:type cls:c_2503.
+cls:c_2503 rdfs:label "物的被害"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "一般会計予算補正"@ja.
+kg:id_4 rdf:type cls:c_2039.
+cls:c_2039 rdfs:label "予算補正"@ja.
+kg:id_5 rdfs:label "額の確定に伴う国・県に対する償還金の増額"@ja.
+kg:id_5 rdf:type cls:c_2504.
+cls:c_2504 rdfs:label "償還金増額"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "国の第一次補正予算の成立"@ja.
+kg:id_6 rdf:type cls:c_2505.
+cls:c_2505 rdfs:label "国予算成立"@ja.
+kg:id_4 prop:cause kg:id_6.
+kg:id_7 rdfs:label "一般会計予算を7億4,935万5,000円増額"@ja.
+kg:id_7 rdf:type cls:c_942.
+cls:c_942 rdfs:label "予算増額"@ja.
+kg:id_4 prop:effect kg:id_7.
+kg:id_8 rdfs:label "小中学校児童・生徒の熱中症"@ja.
+kg:id_8 rdf:type cls:c_2506.
+cls:c_2506 rdfs:label "熱中症"@ja.
+kg:id_9 rdfs:label "学校空調設備整備事業費の計上"@ja.
+kg:id_9 rdf:type cls:c_2507.
+cls:c_2507 rdfs:label "空調整備"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "低所得世帯の生活困難"@ja.
+kg:id_10 rdf:type cls:c_2508.
+cls:c_2508 rdfs:label "生活困難"@ja.
+kg:id_11 rdfs:label "灯油等購入費助成事業費の計上"@ja.
+kg:id_11 rdf:type cls:c_1628.
+cls:c_1628 rdfs:label "生活支援"@ja.
+kg:id_10 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "更生医療利用者の増加"@ja.
+kg:id_12 rdf:type cls:c_2166.
+cls:c_2166 rdfs:label "利用者増加"@ja.
+kg:id_13 rdfs:label "自立支援医療給付事業費の増額"@ja.
+kg:id_13 rdf:type cls:c_2509.
+cls:c_2509 rdfs:label "給付費増額"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "生活保護世帯による医療費及び介護サービス利用の増加"@ja.
+kg:id_14 rdf:type cls:c_2510.
+cls:c_2510 rdfs:label "利用増加"@ja.
+kg:id_15 rdfs:label "生活保護扶助事業費の増額"@ja.
+kg:id_15 rdf:type cls:c_2511.
+cls:c_2511 rdfs:label "扶助費増額"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "酒田市斎場の上半期の稼働実績"@ja.
+kg:id_16 rdf:type cls:c_2512.
+cls:c_2512 rdfs:label "稼働実績"@ja.
+kg:id_17 rdfs:label "斎場管理運営事業費の増額"@ja.
+kg:id_17 rdf:type cls:c_2513.
+cls:c_2513 rdfs:label "運営費増額"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "工事仕様の見直し"@ja.
+kg:id_18 rdf:type cls:c_2514.
+cls:c_2514 rdfs:label "仕様見直し"@ja.
+kg:id_19 rdfs:label "勤労者福祉センター改修事業費の請差減額"@ja.
+kg:id_19 rdf:type cls:c_2479.
+cls:c_2479 rdfs:label "事業費減額"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "火災受電盤の問題"@ja.
+kg:id_20 rdf:type cls:c_2515.
+cls:c_2515 rdfs:label "設備不具合"@ja.
+kg:id_21 rdfs:label "火災受電盤の交換に係る経費の計上"@ja.
+kg:id_21 rdf:type cls:c_980.
+cls:c_980 rdfs:label "設備更新"@ja.
+kg:id_20 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "異常気象による農作物被害"@ja.
+kg:id_22 rdf:type cls:c_1275.
+cls:c_1275 rdfs:label "農作物被害"@ja.
+kg:id_23 rdfs:label "この夏の高温渇水"@ja.
+kg:id_23 rdf:type cls:c_2516.
+cls:c_2516 rdfs:label "高温渇水"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "大雨被害"@ja.
+kg:id_24 rdf:type cls:c_1012.
+cls:c_1012 rdfs:label "豪雨被害"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "異常気象農作物被害対策資金利子補給事業費の計上"@ja.
+kg:id_25 rdf:type cls:c_1585.
+cls:c_1585 rdfs:label "利子補給"@ja.
+kg:id_22 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "農林水産物等災害対策事業費の計上"@ja.
+kg:id_26 rdf:type cls:c_2517.
+cls:c_2517 rdfs:label "災害対策"@ja.
+kg:id_22 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "県の追加補助"@ja.
+kg:id_27 rdf:type cls:c_2518.
+cls:c_2518 rdfs:label "追加補助"@ja.
+kg:id_28 rdfs:label "森林病害虫等対策事業費の増額"@ja.
+kg:id_28 rdf:type cls:c_943.
+cls:c_943 rdfs:label "事業費増額"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "実施希望者の増加"@ja.
+kg:id_29 rdf:type cls:c_2519.
+cls:c_2519 rdfs:label "希望者増加"@ja.
+kg:id_30 rdfs:label "危険ブロック塀等撤去支援事業費の増額"@ja.
+kg:id_30 rdf:type cls:c_943.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "八幡地域の常禅寺地区及び平田地域の岩花地区の災害"@ja.
+kg:id_31 rdf:type cls:c_1209.
+cls:c_1209 rdfs:label "災害"@ja.
+kg:id_32 rdfs:label "農業用施設災害復旧事業費の増額"@ja.
+kg:id_32 rdf:type cls:c_2520.
+cls:c_2520 rdfs:label "災害復旧"@ja.
+kg:id_31 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "市道上青沢海ケ沢線の災害"@ja.
+kg:id_33 rdf:type cls:c_1209.
+kg:id_34 rdfs:label "公共土木施設災害復旧事業費の増額"@ja.
+kg:id_34 rdf:type cls:c_2520.
+kg:id_33 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "過年度負担金の確定"@ja.
+kg:id_35 rdf:type cls:c_2485.
+cls:c_2485 rdfs:label "負担金確定"@ja.
+kg:id_36 rdfs:label "国民健康保険特別会計予算補正"@ja.
+kg:id_36 rdf:type cls:c_2039.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "一般被保険者保険税還付金、加算金及び償還金の増額"@ja.
+kg:id_37 rdf:type cls:c_2521.
+cls:c_2521 rdfs:label "還付金増額"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "介護サービス利用者の増加"@ja.
+kg:id_38 rdf:type cls:c_2166.
+kg:id_39 rdfs:label "介護保険特別会計予算補正"@ja.
+kg:id_39 rdf:type cls:c_2039.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "地域密着型介護サービス給付費の増額"@ja.
+kg:id_40 rdf:type cls:c_2509.
+kg:id_38 prop:effect kg:id_40.
+kg:id_41 rdfs:label "居宅介護福祉用具購入費の増額"@ja.
+kg:id_41 rdf:type cls:c_2509.
+kg:id_38 prop:effect kg:id_41.
+kg:id_42 rdfs:label "居宅介護サービス計画給付費の増額"@ja.
+kg:id_42 rdf:type cls:c_2509.
+kg:id_38 prop:effect kg:id_42.
+kg:id_43 rdfs:label "高額介護サービス費等の増額"@ja.
+kg:id_43 rdf:type cls:c_2509.
+kg:id_38 prop:effect kg:id_43.
+kg:id_44 rdfs:label "市・県民税の申告"@ja.
+kg:id_44 rdf:type cls:c_2522.
+cls:c_2522 rdfs:label "税申告"@ja.
+kg:id_45 rdfs:label "簡易な申告書様式の追加"@ja.
+kg:id_45 rdf:type cls:c_2523.
+cls:c_2523 rdfs:label "様式追加"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "下水道の供用開始区域"@ja.
+kg:id_46 rdf:type cls:c_2524.
+cls:c_2524 rdfs:label "供用区域"@ja.
+kg:id_47 rdfs:label "課税区域として追加"@ja.
+kg:id_47 rdf:type cls:c_2525.
+cls:c_2525 rdfs:label "課税区域"@ja.
+kg:id_46 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "市議会議員選挙における選挙運動用ビラ作成"@ja.
+kg:id_48 rdf:type cls:c_2526.
+cls:c_2526 rdfs:label "選挙運動"@ja.
+kg:id_49 rdfs:label "公営化"@ja.
+kg:id_49 rdf:type cls:c_2527.
+cls:c_2527 rdfs:label "公営化"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "印鑑登録証明書の申請"@ja.
+kg:id_50 rdf:type cls:c_2528.
+cls:c_2528 rdfs:label "証明申請"@ja.
+kg:id_51 rdfs:label "庁舎内端末機を利用した申請を可能にする"@ja.
+kg:id_51 rdf:type cls:c_2529.
+cls:c_2529 rdfs:label "端末申請"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "まつやま会館"@ja.
+kg:id_52 rdf:type cls:c_1907.
+cls:c_1907 rdfs:label "公共施設"@ja.
+kg:id_53 rdfs:label "廃館"@ja.
+kg:id_53 rdf:type cls:c_2435.
+cls:c_2435 rdfs:label "廃止"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "建築基準法の一部改正"@ja.
+kg:id_54 rdf:type cls:c_741.
+cls:c_741 rdfs:label "法改正"@ja.
+kg:id_55 rdfs:label "認定申請手数料の追加"@ja.
+kg:id_55 rdf:type cls:c_2530.
+cls:c_2530 rdfs:label "手数料追加"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_56 rdfs:label "円能寺・沖地区経営体育成基盤整備事業の実施"@ja.
+kg:id_56 rdf:type cls:c_2379.
+cls:c_2379 rdfs:label "基盤整備"@ja.
+kg:id_57 rdfs:label "受益者から分担金を徴収"@ja.
+kg:id_57 rdf:type cls:c_2531.
+cls:c_2531 rdfs:label "分担金徴収"@ja.
+kg:id_56 prop:effect kg:id_57.
+kg:id_58 rdfs:label "平成30年度酒田市防災行政無線デジタル化整備工事"@ja.
+kg:id_58 rdf:type cls:c_792.
+cls:c_792 rdfs:label "工事"@ja.
+kg:id_59 rdfs:label "屋外拡声子局1局を既存の位置から移設する必要が生じたこと"@ja.
+kg:id_59 rdf:type cls:c_2532.
+cls:c_2532 rdfs:label "移設必要"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "請負金額の変更"@ja.
+kg:id_60 rdf:type cls:c_2533.
+cls:c_2533 rdfs:label "契約変更"@ja.
+kg:id_58 prop:effect kg:id_60.
+kg:st_1 rdfs:label "丸山至市長"@ja.
+kg:st_1 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "一般会計予算を増額する補正を説明"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "国の補正予算成立を受けて対応経費を計上"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "予算総額を増額する内容を説明"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "熱中症対策として学校空調設備整備事業費を計上"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "低所得世帯への生活支援として助成事業費を計上"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "利用者増により事業費を増額"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "医療費と介護サービス利用の増加により扶助事業費を増額"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "稼働実績に基づき事業費を増額"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "仕様見直しにより請差を減額"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "受電盤交換の経費を計上"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "高温渇水への対策費を新たに計上"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "大雨被害への対策費を新たに計上"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "異常気象被害への利子補給事業費を計上"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "災害対策事業費を新たに計上"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "県の追加補助に伴い事業費を増額"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "希望者増により支援事業費を増額"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "国の災害査定を受けて災害復旧事業費を増額"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "補助採択見込みにより災害復旧事業費を増額"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "過年度負担金の確定に伴う補正を説明"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "歳出で還付金等を増額"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "利用者増加による補正を説明"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "利用者増加により給付費を増額"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "利用者増加により購入費を増額"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "利用者増加により計画給付費を増額"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "利用者増加により高額介護サービス費等を増額"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "市営住宅砂越粕町団地の防風フェンスが台風21号の強風で飛ばされた"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:text-txt_contents "防風フェンスが台風21号の強風で飛ばされたことによる物損事故"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "このたびの補正は、額の確定に伴う国・県に対する償還金の増額"@ja.
+<< kg:id_4 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "国の第一次補正予算の成立を受けて"@ja.
+<< kg:id_4 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "一般会計予算を７億4,935万5,000円増額し、予算総額を534億4,383万3,000円とする"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "小中学校児童・生徒の熱中症対策として、学校空調設備整備事業費を新たに計上しております"@ja.
+<< kg:id_10 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "低所得世帯への生活支援として灯油等購入費助成事業費を新たに計上"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "更生医療利用者の増により自立支援医療給付事業費を"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "生活保護世帯による医療費及び介護サービス利用の増により、生活保護扶助事業費をそれぞれ増額"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "酒田市斎場の上半期の稼働実績に基づき、斎場管理運営事業費を増額しております"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "工事仕様の見直しにより請差を減額"@ja.
+<< kg:id_20 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "火災受電盤の交換に係る経費を計上しております"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "この夏の高温渇水、大雨被害等に対して"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "この夏の高温渇水、大雨被害等に対して"@ja.
+<< kg:id_22 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "異常気象農作物被害対策資金利子補給事業費を新たに計上しております"@ja.
+<< kg:id_22 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "農林水産物等災害対策事業費を新たに計上しております"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "県の追加補助に伴い、森林病害虫等対策事業費を増額しております"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "実施希望者の増により、危険ブロック塀等撤去支援事業費を増額しております"@ja.
+<< kg:id_31 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "八幡地域の常禅寺地区及び平田地域の岩花地区に係る国の災害査定を受けて、農業用施設災害復旧事業費を"@ja.
+<< kg:id_33 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "市道上青沢海ケ沢線の補助採択見込みにより、公共土木施設災害復旧事業費をそれぞれ増額しております"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "このたびの補正は、過年度負担金の確定等に伴うもので"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "歳出では一般被保険者保険税還付金、加算金及び償還金を増額しております"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "このたびの補正は、介護サービス利用者の増加によるもので"@ja.
+<< kg:id_38 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "地域密着型介護サービス給付費、居宅介護福祉用具購入費、居宅介護サービス計画給付費、高額介護サービス費等をそれぞれ増額しております"@ja.
+<< kg:id_38 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "地域密着型介護サービス給付費、居宅介護福祉用具購入費、居宅介護サービス計画給付費、高額介護サービス費等をそれぞれ増額しております"@ja.
+<< kg:id_38 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "地域密着型介護サービス給付費、居宅介護福祉用具購入費、居宅介護サービス計画給付費、高額介護サービス費等をそれぞれ増額しております"@ja.
+<< kg:id_38 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "地域密着型介護サービス給付費、居宅介護福祉用具購入費、居宅介護サービス計画給付費、高額介護サービス費等をそれぞれ増額しております"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:text-txt_contents "市・県民税の申告について、簡易な申告書様式を追加するため、所要の改正を行う"@ja.
+<< kg:id_46 prop:countermeasure kg:id_47 >>
+    prop:text-txt_contents "新たに下水道の供用が開始された区域を課税区域として追加する"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:text-txt_contents "市議会議員選挙における選挙運動用ビラの作成を公営とするため"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:text-txt_contents "市が庁舎内に設置する端末機を利用して申請できるようにするため"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:text-txt_contents "まつやま会館を廃館するため"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:text-txt_contents "建築基準法の一部改正に伴い、認定申請手数料を新たに追加する"@ja.
+<< kg:id_56 prop:effect kg:id_57 >>
+    prop:text-txt_contents "円能寺・沖地区経営体育成基盤整備事業の実施に伴い、その受益者から分担金を徴収する"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:text-txt_contents "整備対象設備のうち屋外拡声子局１局を既存の位置から移設する必要が生じたことにより"@ja.
+<< kg:id_58 prop:effect kg:id_60 >>
+    prop:text-txt_contents "請負金額を変更するため、議会の議決を求めるものであります"@ja.
+}

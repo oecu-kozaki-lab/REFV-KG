@@ -1,0 +1,287 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00131> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "環境面の問題"@ja.
+kg:id_1 rdf:type cls:c_1101.
+cls:c_1101 rdfs:label "環境問題"@ja.
+kg:id_2 rdfs:label "採石事業などの開発行為"@ja.
+kg:id_2 rdf:type cls:c_3210.
+cls:c_3210 rdfs:label "開発行為"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "月光川の清流を守る基本条例"@ja.
+kg:id_3 rdf:type cls:c_3211.
+cls:c_3211 rdfs:label "環境条例"@ja.
+kg:id_4 rdfs:label "制定"@ja.
+kg:id_4 rdf:type cls:c_3212.
+cls:c_3212 rdfs:label "制定"@ja.
+kg:id_3 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "環境基本条例"@ja.
+kg:id_5 rdf:type cls:c_3211.
+kg:id_5 prop:countermeasure kg:id_4.
+kg:id_6 rdfs:label "遊佐町の健全な水環境を保全するための条例"@ja.
+kg:id_6 rdf:type cls:c_3211.
+kg:id_6 prop:countermeasure kg:id_4.
+kg:id_7 rdfs:label "洋上風力発電事業"@ja.
+kg:id_7 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_8 rdfs:label "超低周波を含む騒音"@ja.
+kg:id_8 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "景観に与える影響"@ja.
+kg:id_9 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_7 prop:effect kg:id_9.
+kg:id_10 rdfs:label "地下湧水脈に与える影響"@ja.
+kg:id_10 rdf:type cls:c_3213.
+cls:c_3213 rdfs:label "地下水影響"@ja.
+kg:id_7 prop:effect kg:id_10.
+kg:id_11 rdfs:label "予防管理原則の徹底"@ja.
+kg:id_11 rdf:type cls:c_2799.
+cls:c_2799 rdfs:label "予防管理"@ja.
+kg:id_7 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "協定の締結"@ja.
+kg:id_12 rdf:type cls:c_489.
+cls:c_489 rdfs:label "協定締結"@ja.
+kg:id_7 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "住民への丁寧な説明"@ja.
+kg:id_13 rdf:type cls:c_3214.
+cls:c_3214 rdfs:label "説明"@ja.
+kg:id_7 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "地球温暖化"@ja.
+kg:id_14 rdf:type cls:c_587.
+cls:c_587 rdfs:label "地球温暖化"@ja.
+kg:id_15 rdfs:label "産業革命からの人間の生産活動"@ja.
+kg:id_15 rdf:type cls:c_3215.
+cls:c_3215 rdfs:label "生産活動"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "世界の平均気温が1度上昇"@ja.
+kg:id_16 rdf:type cls:c_41.
+cls:c_41 rdfs:label "気温上昇"@ja.
+kg:id_14 prop:effect kg:id_16.
+kg:id_17 rdfs:label "2100年頃には2.6度から4.8度上昇"@ja.
+kg:id_17 rdf:type cls:c_41.
+kg:id_14 prop:effect kg:id_17.
+kg:id_18 rdfs:label "気温上昇"@ja.
+kg:id_18 rdf:type cls:c_41.
+kg:id_19 rdfs:label "気象変動の影響を大きく回避"@ja.
+kg:id_19 rdf:type cls:c_1125.
+cls:c_1125 rdfs:label "気候影響"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "2050年度までにCO2排出量を実質ゼロにすること"@ja.
+kg:id_20 rdf:type cls:c_769.
+cls:c_769 rdfs:label "排出削減"@ja.
+kg:id_21 rdfs:label "気温上昇を1.5度に抑える"@ja.
+kg:id_21 rdf:type cls:c_3216.
+cls:c_3216 rdfs:label "気温抑制"@ja.
+kg:id_20 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "取り返しのつかないことになり得る"@ja.
+kg:id_22 rdf:type cls:c_3217.
+cls:c_3217 rdfs:label "深刻事態"@ja.
+kg:id_14 prop:effect kg:id_22.
+kg:id_23 rdfs:label "洋上風力発電計画"@ja.
+kg:id_23 rdf:type cls:c_318.
+cls:c_318 rdfs:label "発電計画"@ja.
+kg:id_24 rdfs:label "対話や関連する調査の検討"@ja.
+kg:id_24 rdf:type cls:c_3218.
+cls:c_3218 rdfs:label "対話調査"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "子供たちやいろいろな職域の方の意見を吸い上げて対応"@ja.
+kg:id_25 rdf:type cls:c_82.
+cls:c_82 rdfs:label "意見聴取"@ja.
+kg:id_23 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "酒田との連携を密にして進める"@ja.
+kg:id_26 rdf:type cls:c_292.
+cls:c_292 rdfs:label "地域連携"@ja.
+kg:id_23 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "カーボンニュートラル"@ja.
+kg:id_27 rdf:type cls:c_42.
+cls:c_42 rdfs:label "脱炭素"@ja.
+kg:id_28 rdfs:label "世界が向かっている目標に一歩でも近づく"@ja.
+kg:id_28 rdf:type cls:c_3219.
+cls:c_3219 rdfs:label "目標接近"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "立ち止まらせること"@ja.
+kg:id_29 rdf:type cls:c_3220.
+cls:c_3220 rdfs:label "抑制"@ja.
+kg:id_14 prop:countermeasure kg:id_29.
+kg:st_1 rdfs:label "環境審議会"@ja.
+kg:st_1 rdf:type cls:st_64.
+cls:st_64 rdfs:label "審議会"@ja.
+kg:op_1 prop:content "騒音の影響は低減ではなく回避を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "景観への影響は低減ではなく回避を求める"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "地下水脈図による可視化を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "遊佐町"@ja.
+kg:st_2 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_4 prop:content "基本方針として予防管理原則の徹底を求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "基本方針として協定の締結を求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "基本方針として住民への丁寧な説明を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "東京大学教授江守さん"@ja.
+kg:st_3 rdf:type cls:st_24.
+cls:st_24 rdfs:label "専門家"@ja.
+kg:op_7 prop:content "人間の生産活動が地球温暖化につながっていると述べる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "東京大学准教授松本真由美先生"@ja.
+kg:st_4 rdf:type cls:st_24.
+kg:op_8 prop:content "人為活動で世界の平均気温が1度上昇したと述べる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "このままでは2100年頃に気温が2.6度から4.8度上昇すると述べる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "東京大学教授江守さん東京大学准教授松本真由美先生環境省の上田さん"@ja.
+kg:st_5 rdf:type cls:st_24.
+kg:op_10 prop:content "1.5度に抑えれば気象変動の影響を大きく回避できるとする"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "2050年度までの実質ゼロが必要とする"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "何もしなければ深刻な事態になると警告する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "町民と鶴岡市酒田市両市の住民118人で組織された洋上風力発電を考える会の準備会"@ja.
+kg:st_6 rdf:type cls:st_59.
+cls:st_59 rdfs:label "住民団体"@ja.
+kg:op_13 prop:content "法定協議会に意見反映と対話や関連調査の検討を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "発言者"@ja.
+kg:st_7 rdf:type cls:st_17.
+cls:st_17 rdfs:label "発言者"@ja.
+kg:op_14 prop:content "子供たちや多様な職域の意見を吸い上げて対応すべきと考える"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_7.
+kg:op_15 prop:content "酒田と連携して進めるべきと主張する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "時田町長"@ja.
+kg:st_8 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_16 prop:content "カーボンニュートラルという世界目標に近づくべきと発言する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_8.
+kg:op_17 prop:content "立ち止まるべきは洋上風力計画ではなく地球温暖化だと考える"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "昭和の時代から採石事業などの開発行為が続きました。その事業が進む中で、環境面の問題が発生したことも事実であります。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "それらへの対応と過程の中で、月光川の清流を守る基本条例、環境基本条例、遊佐町の健全な水環境を保全するための条例などが制定されました。"@ja.
+<< kg:id_5 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "それらへの対応と過程の中で、月光川の清流を守る基本条例、環境基本条例、遊佐町の健全な水環境を保全するための条例などが制定されました。"@ja.
+<< kg:id_6 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "それらへの対応と過程の中で、月光川の清流を守る基本条例、環境基本条例、遊佐町の健全な水環境を保全するための条例などが制定されました。"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "環境審議会からの意見については、環境が懸念される超低周波を含む騒音や景観に与える影響について、影響を低減させるのではなく、人それぞれに身体的、精神的な感じ方に差があるため、影響を回避することを求められています。"@ja.
+<< kg:id_7 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "環境審議会からの意見については、環境が懸念される超低周波を含む騒音や景観に与える影響について、影響を低減させるのではなく、人それぞれに身体的、精神的な感じ方に差があるため、影響を回避することを求められています。"@ja.
+<< kg:id_7 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "また、地下湧水脈に与える影響については、地下水脈図による可視化が求められております。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "町の方針としては、環境審議会において承認いただいた予防管理原則の徹底や協定の締結及び住民への丁寧な説明を求めるなど、５つの基本方針について述べさせていただきました。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "町の方針としては、環境審議会において承認いただいた予防管理原則の徹底や協定の締結及び住民への丁寧な説明を求めるなど、５つの基本方針について述べさせていただきました。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "町の方針としては、環境審議会において承認いただいた予防管理原則の徹底や協定の締結及び住民への丁寧な説明を求めるなど、５つの基本方針について述べさせていただきました。"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "18世紀後半から始まった産業革命からの人間の生産活動が地球の温暖化にもつながっていると。"@ja.
+<< kg:id_14 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "人為活動で世界の平均気温が１度上昇したと。"@ja.
+<< kg:id_14 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "このままでは2100年頃には2.6度から4.8度上昇するのではないかということも述べられております。"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "気温上昇を1.5度に抑えることができれば、気象変動の影響を大きく回避されると。"@ja.
+<< kg:id_20 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "そのためには2050年度までにＣＯ２排出量を実質ゼロにする必要があると。"@ja.
+<< kg:id_14 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "何もしなければ取り返しのつかないことになり得るのだということで述べております。"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "その要望書の中身をちょっと見させていただきますと、24日の日に初会合がありました。遊佐町沖における協議会、法定協議会ということを指すと思いますが、それに意見を反映させていただきたいと。２つ目が、対話や関連する調査の検討を願いたいという、そういう趣旨の内容のようでございました。"@ja.
+<< kg:id_23 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "子供たちの意見、それからいろいろな職域の方の意見、そういうものをやっぱり吸い上げて対応していくべきかなと、そのようには思います。"@ja.
+<< kg:id_23 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "いいことも悪いことも含めて酒田との連携を密にしていくべきではないかということで意見を申し上げたところでございます。"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "その際にもカーボンニュートラルという世界が向かっている目標に一歩でも近づくべきであるというような趣旨の発言を記録で見させていただきました。"@ja.
+<< kg:id_14 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "洋上風力発電計画については立ち止まって考えるべきであると、そのようなことも発言される方もいらっしゃいますが、私は地球温暖化を立ち止まらせることが一つの今の私たちに課されたものかなと、そう考えております。"@ja.
+}

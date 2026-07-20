@@ -1,0 +1,354 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00125> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電"@ja.
+kg:id_1 rdf:type cls:c_1093.
+cls:c_1093 rdfs:label "発電設備"@ja.
+kg:id_2 rdfs:label "風速による発電量の変動"@ja.
+kg:id_2 rdf:type cls:c_1423.
+cls:c_1423 rdfs:label "出力変動"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "強風時の発電停止"@ja.
+kg:id_3 rdf:type cls:c_3082.
+cls:c_3082 rdfs:label "運転停止"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "落雷による故障リスク"@ja.
+kg:id_4 rdf:type cls:c_3083.
+cls:c_3083 rdfs:label "故障リスク"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "地震による停止"@ja.
+kg:id_5 rdf:type cls:c_3082.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風車"@ja.
+kg:id_6 rdf:type cls:c_1093.
+kg:id_7 rdfs:label "低周波音や機械音の発生"@ja.
+kg:id_7 rdf:type cls:c_2586.
+cls:c_2586 rdfs:label "騒音発生"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "近隣住宅の騒音問題"@ja.
+kg:id_8 rdf:type cls:c_2023.
+cls:c_2023 rdfs:label "騒音問題"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "風力発電施設から発生する音"@ja.
+kg:id_9 rdf:type cls:c_3084.
+cls:c_3084 rdfs:label "施設騒音"@ja.
+kg:id_10 rdfs:label "健康被害との明確な関連は未確認"@ja.
+kg:id_10 rdf:type cls:c_3085.
+cls:c_3085 rdfs:label "関連未確認"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "風力発電施設から発生する超低周波音"@ja.
+kg:id_11 rdf:type cls:c_3084.
+kg:id_12 rdfs:label "人間の知覚感覚以下"@ja.
+kg:id_12 rdf:type cls:c_3086.
+cls:c_3086 rdfs:label "知覚以下"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "低周波領域で卓越していない"@ja.
+kg:id_13 rdf:type cls:c_3087.
+cls:c_3087 rdfs:label "卓越なし"@ja.
+kg:id_9 prop:effect kg:id_13.
+kg:id_14 rdfs:label "集落住民の体調悪化の疑い"@ja.
+kg:id_14 rdf:type cls:c_2287.
+cls:c_2287 rdfs:label "健康不安"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "健康被害とも考えられる事態の発生"@ja.
+kg:id_15 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "風力発電施設の近隣集落"@ja.
+kg:id_16 rdf:type cls:c_3088.
+cls:c_3088 rdfs:label "近隣集落"@ja.
+kg:id_17 rdfs:label "住民の健康調査による実態把握"@ja.
+kg:id_17 rdf:type cls:c_3089.
+cls:c_3089 rdfs:label "健康調査"@ja.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "風力発電施設"@ja.
+kg:id_18 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_19 rdfs:label "地元説明会の実施"@ja.
+kg:id_19 rdf:type cls:c_687.
+cls:c_687 rdfs:label "説明会実施"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "環境影響調査とアセスメントの実施"@ja.
+kg:id_20 rdf:type cls:c_736.
+cls:c_736 rdfs:label "環境調査"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "事業者"@ja.
+kg:id_21 rdf:type cls:c_3090.
+cls:c_3090 rdfs:label "事業者"@ja.
+kg:id_22 rdfs:label "環境保全協定の締結"@ja.
+kg:id_22 rdf:type cls:c_3091.
+cls:c_3091 rdfs:label "保全協定"@ja.
+kg:id_21 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "健康被害事案"@ja.
+kg:id_23 rdf:type cls:c_79.
+kg:id_24 rdfs:label "事業者と町の情報共有と連携"@ja.
+kg:id_24 rdf:type cls:c_423.
+cls:c_423 rdfs:label "情報共有"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "必要に応じた調査要請の検討"@ja.
+kg:id_25 rdf:type cls:c_3092.
+cls:c_3092 rdfs:label "調査要請"@ja.
+kg:id_23 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "関係住民との良好な関係構築への誠実な対応"@ja.
+kg:id_26 rdf:type cls:c_3093.
+cls:c_3093 rdfs:label "住民対応"@ja.
+kg:id_21 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "設置前後の低周波や騒音の調査と集落への報告"@ja.
+kg:id_27 rdf:type cls:c_2595.
+cls:c_2595 rdfs:label "騒音調査"@ja.
+kg:id_18 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "被害発生時"@ja.
+kg:id_28 rdf:type cls:c_1775.
+cls:c_1775 rdfs:label "被害発生"@ja.
+kg:id_29 rdfs:label "発生原因の排除と改善がない場合の運転縮小や停止の協議"@ja.
+kg:id_29 rdf:type cls:c_3094.
+cls:c_3094 rdfs:label "運転協議"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "周辺住民への明らかな損害"@ja.
+kg:id_30 rdf:type cls:c_1937.
+cls:c_1937 rdfs:label "住民被害"@ja.
+kg:id_31 rdfs:label "必要な措置の実施"@ja.
+kg:id_31 rdf:type cls:c_3095.
+cls:c_3095 rdfs:label "必要措置"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "健康被害の訴え"@ja.
+kg:id_32 rdf:type cls:c_79.
+kg:id_33 rdfs:label "被害者への聞き取りによる事実確認"@ja.
+kg:id_33 rdf:type cls:c_3096.
+cls:c_3096 rdfs:label "事実確認"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "事実確認結果を踏まえた対応の検討"@ja.
+kg:id_34 rdf:type cls:c_737.
+cls:c_737 rdfs:label "対応検討"@ja.
+kg:id_32 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "騒音"@ja.
+kg:id_35 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_1 prop:cause kg:id_35.
+kg:id_36 rdfs:label "低周波"@ja.
+kg:id_36 rdf:type cls:c_1934.
+cls:c_1934 rdfs:label "低周波音"@ja.
+kg:id_1 prop:cause kg:id_36.
+kg:id_37 rdfs:label "住民の体調不良"@ja.
+kg:id_37 rdf:type cls:c_3097.
+cls:c_3097 rdfs:label "体調不良"@ja.
+kg:id_38 rdfs:label "風力発電が疑われている"@ja.
+kg:id_38 rdf:type cls:c_1093.
+kg:id_37 prop:cause kg:id_38.
+kg:st_1 rdfs:label "斎藤弥志夫君"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "風速で発電量が左右される点を課題として指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "台風時は危険のため発電できないと説明"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "落雷による故障リスクが高い点を問題視"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "地震の影響で停止しやすい点を問題として挙げる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "低周波音や機械音の発生が懸念されると指摘"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "近隣住宅で騒音問題になるおそれを指摘"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "環境省の検討会"@ja.
+kg:st_2 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_7 prop:content "健康被害との明確な関連を示す知見は確認されていない"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "環境省の検討会報告書"@ja.
+kg:st_3 rdf:type cls:st_34.
+cls:st_34 rdfs:label "報告書"@ja.
+kg:op_8 prop:content "超低周波音は音圧レベルが高くなく人の知覚感覚以下と示す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "他の環境騒音と比べて低周波領域で特に卓越していないと示す"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "近隣集落で体調不良や手術に至った例があり風力発電が原因ではないかとの疑いがあると述べる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "騒音や体調不良があり健康被害の可能性があるため実態把握が必要と主張"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "近隣集落の健康調査を行い実態を把握すべきと求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "町長 時田博機君"@ja.
+kg:st_4 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_13 prop:content "事業者は町や集落区長の求めにより環境保全協定を締結して対応してきたと説明"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "事案発生時は事業者と町が情報提供し合い連携して実態把握に努めるべきと述べる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "必要であれば調査要請も検討する考えを示す"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "協定書に基づき関係住民と良好な関係を築くよう事業者に求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "地域生活課長 畠中良一君"@ja.
+kg:st_5 rdf:type cls:st_4.
+kg:op_17 prop:content "現状把握のため設置前後や必要時に低周波や騒音を調査し集落へ報告する協定内容を説明"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "被害時は原因排除に努め改善がなければ運転縮小や停止も協議する協定内容を説明"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "周辺住民に明らかな損害があれば速やかに必要な措置を講じる協定内容を説明"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_5.
+kg:op_20 prop:content "健康被害を受けている人がいるならまず聞き取りを行い事実確認すべきと述べる"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "聞き取り結果を受けて今後の対応を検討すると述べる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "騒音が健康不安の一因ではないかとみている"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "低周波が健康不安の原因候補だが明確でないと述べる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "住民の間で風力発電が原因ではないかとの疑いがあると説明"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "デメリットとしては、風の力で発電しているので、どうしても風速によって発電量に影響が出てしまうことがあります。風が弱ければ当然発電量が落ちてしまい"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "また台風のような強い風のときにも危険なために発電することができません"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "落雷によって故障するリスクも高く"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "地震の影響で停止してしまう確率も高いのが問題であります"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "また、風車によって低周波音や機械音が発生することがあって"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "近隣住宅の騒音問題になることがあります"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "風力発電施設から発生する音と健康被害の関係については、国内外で様々な研究がなされていますが、風力発電から発生する超低周波音、低周波音と健康影響について、現段階において明らかな関連を示す知見は確認されておりません"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "環境省の検討会報告書によれば、日本の風力発電から発生する音の実測調査では、風力発電施設から発生する超低周波音は音圧レベルがそれほど高くなく、人間の知覚感覚以下であることが分かりました"@ja.
+<< kg:id_9 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "また、環境騒音を比較した結果、風力発電施設から発生する音は低周波領域で卓越があるわけではありませんでした"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "風力発電機の近くの集落の人で騒音が気になったり、体調が悪くなって手術したという人が中にはいますが、風力発電の影響がどの程度あるのかないのかについては分かりません。この人の場合は、親子で体調を崩したということで、風力発電が原因になっているのではないかとかなり疑っているようでございました。近所にも体調が悪い人がいるということです"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "原因が風力発電にだけあるのか不明ですが、騒音がうるさいとか体調がよくないという健康被害とも考えられる事態が発生していることから、風力発電機の近隣の集落の皆さんの健康調査をして実態を把握する必要があると考えます"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "風力発電機の近隣の集落の皆さんの健康調査をして実態を把握する必要があると考えます"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:text-txt_contents "風力発電施設の工事を行う前に地元で説明会や環境影響調査、アセスメントを行って"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:text-txt_contents "風力発電施設の工事を行う前に地元で説明会や環境影響調査、アセスメントを行って"@ja.
+<< kg:id_21 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "これらの施設を稼働する際、事業者は町または集落区長の求めにより事前に環境の保全に関する協定を結ぶことに努めており、遊佐風力発電所、遊佐日向川風力発電所、西遊佐風力発電所もそれぞれ事前の平成22年３月、平成21年10月、平成27年11月に協定を締結し、環境の保全上の支障防止に対応してきております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "今後そのような事案があった際には事業者への情報を提供し、また事業者からの情報提供により相互に連携して実態の把握に努めなければなりません"@ja.
+<< kg:id_23 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "必要であればそのための調査要請も検討していくことを考えなければならないと思っております"@ja.
+<< kg:id_21 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "事業者に対して、協定書に基づく関係住民との良好な関係を構築するため、誠実に対応していくことを引き続き求めてまいります"@ja.
+<< kg:id_18 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "施設から発生する低周波、騒音等の現状把握のため、設置前、設置後、必要に応じて低周波、騒音等の調査を行い集落へ報告すること"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "被害が発生した場合は直ちに発生原因の排除に努め、改善が見られない場合は施設の運転の縮小や停止を含め、運転方法について協議をすること"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "周辺住民に明らかな損害を与えた場合は速やかに誠意を持って必要な措置を講じること"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "健康被害を受けている方がいらっしゃるとすれば、まずは健康被害を受けている方からの聞き取りをさせていただきまして、被害の状況についての事実を確認する必要があるかと思います"@ja.
+<< kg:id_32 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "その結果を受けまして、対応等について検討させていただきたいというふうに思ってございます"@ja.
+<< kg:id_1 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "実際風力発電機がどの程度原因になって、どのように体調が悪くなっているのかみたいな、その辺の原因は明確でないようです"@ja.
+<< kg:id_1 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "まず、風力発電の騒音とか低周波ではないかと思われる環境被害"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "あの発電機が原因ではないかみたいな、疑っているような面もあるみたいです"@ja.
+}

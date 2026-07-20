@@ -1,0 +1,440 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00078> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "福島第一原発の事故"@ja.
+kg:id_1 rdf:type cls:c_2029.
+cls:c_2029 rdfs:label "原発事故"@ja.
+kg:id_2 rdfs:label "国民に大きなショックを与える"@ja.
+kg:id_2 rdf:type cls:c_2127.
+cls:c_2127 rdfs:label "国民の衝撃"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "政府全体で国全体でのエネルギー政策の見直しを迫る"@ja.
+kg:id_3 rdf:type cls:c_2070.
+cls:c_2070 rdfs:label "政策見直し"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "放射能"@ja.
+kg:id_4 rdf:type cls:c_2128.
+cls:c_2128 rdfs:label "放射能"@ja.
+kg:id_5 rdfs:label "国民の不安や心配を招く"@ja.
+kg:id_5 rdf:type cls:c_2129.
+cls:c_2129 rdfs:label "国民不安"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "放射能へのいたずらな恐怖"@ja.
+kg:id_6 rdf:type cls:c_2130.
+cls:c_2130 rdfs:label "放射能不安"@ja.
+kg:id_7 rdfs:label "地域住民や福島の皆さんへの正しい応援にならない"@ja.
+kg:id_7 rdf:type cls:c_2131.
+cls:c_2131 rdfs:label "支援不全"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "原子力発電の再開"@ja.
+kg:id_8 rdf:type cls:c_2132.
+cls:c_2132 rdfs:label "原発再開"@ja.
+kg:id_9 rdfs:label "万全な安全対策を講じる"@ja.
+kg:id_9 rdf:type cls:c_2133.
+cls:c_2133 rdfs:label "安全対策"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "安定した安価で適正な価格の電力が得られないこと"@ja.
+kg:id_10 rdf:type cls:c_1117.
+cls:c_1117 rdfs:label "電力不足"@ja.
+kg:id_11 rdfs:label "産業が国際競争力を得られない"@ja.
+kg:id_11 rdf:type cls:c_2134.
+cls:c_2134 rdfs:label "競争力低下"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "原子力がとまっていること"@ja.
+kg:id_12 rdf:type cls:c_764.
+cls:c_764 rdfs:label "原発停止"@ja.
+kg:id_13 rdfs:label "火力発電がかなりのウエートを占めている"@ja.
+kg:id_13 rdf:type cls:c_1237.
+cls:c_1237 rdfs:label "火力依存"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "イランでのさまざまな紛争"@ja.
+kg:id_14 rdf:type cls:c_1435.
+cls:c_1435 rdfs:label "国際紛争"@ja.
+kg:id_15 rdfs:label "イランからの石油が入らなくなっている"@ja.
+kg:id_15 rdf:type cls:c_2135.
+cls:c_2135 rdfs:label "石油供給停滞"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "イランからの石油が入らなくなっていること"@ja.
+kg:id_16 rdf:type cls:c_2135.
+kg:id_17 rdfs:label "国際石油市場が高騰している"@ja.
+kg:id_17 rdf:type cls:c_2136.
+cls:c_2136 rdfs:label "石油高騰"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "原子力に依存できないこと"@ja.
+kg:id_18 rdf:type cls:c_764.
+kg:id_19 rdfs:label "LNGや石炭が非常に高上がりになっていく"@ja.
+kg:id_19 rdf:type cls:c_2137.
+cls:c_2137 rdfs:label "燃料費増"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "産業界"@ja.
+kg:id_20 rdf:type cls:c_2138.
+cls:c_2138 rdfs:label "産業界"@ja.
+kg:id_21 rdfs:label "省エネを進める"@ja.
+kg:id_21 rdf:type cls:c_2139.
+cls:c_2139 rdfs:label "省エネ推進"@ja.
+kg:id_20 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "市民"@ja.
+kg:id_22 rdf:type cls:c_2140.
+cls:c_2140 rdfs:label "市民"@ja.
+kg:id_23 rdfs:label "自然エネルギーの活用を積極的に図る"@ja.
+kg:id_23 rdf:type cls:c_2141.
+cls:c_2141 rdfs:label "自然エネ活用"@ja.
+kg:id_22 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "太陽光発電"@ja.
+kg:id_24 rdf:type cls:c_932.
+cls:c_932 rdfs:label "太陽光発電"@ja.
+kg:id_25 rdfs:label "補助制度を導入し啓発活動をすることで導入促進を図る"@ja.
+kg:id_25 rdf:type cls:c_1496.
+cls:c_1496 rdfs:label "導入促進"@ja.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "小水力発電"@ja.
+kg:id_26 rdf:type cls:c_2142.
+cls:c_2142 rdfs:label "小水力発電"@ja.
+kg:id_27 rdfs:label "土地改良区でモデル的に取り組みながら普及を目指す"@ja.
+kg:id_27 rdf:type cls:c_1870.
+cls:c_1870 rdfs:label "普及促進"@ja.
+kg:id_26 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "風力発電"@ja.
+kg:id_28 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_29 rdfs:label "庄内海岸が立地の適地である"@ja.
+kg:id_29 rdf:type cls:c_2143.
+cls:c_2143 rdfs:label "立地適地"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "具体的な条件整備を含め整備できるところを整備する"@ja.
+kg:id_30 rdf:type cls:c_2144.
+cls:c_2144 rdfs:label "整備推進"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "自然エネルギー"@ja.
+kg:id_31 rdf:type cls:c_2145.
+cls:c_2145 rdfs:label "自然エネルギー"@ja.
+kg:id_32 rdfs:label "可能な限り取り入れる"@ja.
+kg:id_32 rdf:type cls:c_1496.
+kg:id_31 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "市"@ja.
+kg:id_33 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_34 rdfs:label "市としてのエネルギー政策の見直し作業を新年度行う"@ja.
+kg:id_34 rdf:type cls:c_2070.
+kg:id_33 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "県目標に貢献できるよう計画整備と事業展開を進める"@ja.
+kg:id_35 rdf:type cls:c_2144.
+kg:id_28 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "自然エネルギーの安定供給の難しさ"@ja.
+kg:id_36 rdf:type cls:c_2146.
+cls:c_2146 rdfs:label "自然エネ不安定"@ja.
+kg:id_37 rdfs:label "やむを得ず他の電源に頼る状況がある"@ja.
+kg:id_37 rdf:type cls:c_2147.
+cls:c_2147 rdfs:label "他電源依存"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "いろんな話が風評になること"@ja.
+kg:id_38 rdf:type cls:c_2148.
+cls:c_2148 rdfs:label "風評"@ja.
+kg:id_39 rdfs:label "市民全体が萎縮するような状況をつくる"@ja.
+kg:id_39 rdf:type cls:c_2149.
+cls:c_2149 rdfs:label "市民萎縮"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "放射能を受けること"@ja.
+kg:id_40 rdf:type cls:c_2150.
+cls:c_2150 rdfs:label "放射能被曝"@ja.
+kg:id_41 rdfs:label "甲状腺がんを含め内臓に蓄積される"@ja.
+kg:id_41 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "放射能によるDNA損傷"@ja.
+kg:id_42 rdf:type cls:c_2151.
+cls:c_2151 rdfs:label "DNA損傷"@ja.
+kg:id_43 rdfs:label "細胞分裂ができなくなり死亡につながる"@ja.
+kg:id_43 rdf:type cls:c_2152.
+cls:c_2152 rdfs:label "死亡危険"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "周辺状況を再調査して適地を見極める"@ja.
+kg:id_44 rdf:type cls:c_2098.
+cls:c_2098 rdfs:label "適地調査"@ja.
+kg:id_28 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "宮海地区沿岸部が事業性の高い適地である"@ja.
+kg:id_45 rdf:type cls:c_2143.
+kg:id_28 prop:cause kg:id_45.
+kg:id_46 rdfs:label "宮野浦 十里塚地区沿岸部が事業性の高い適地である"@ja.
+kg:id_46 rdf:type cls:c_2143.
+kg:id_28 prop:cause kg:id_46.
+kg:id_47 rdfs:label "自治体枠の活用を含め県と一緒に事業展開を検討する"@ja.
+kg:id_47 rdf:type cls:c_242.
+cls:c_242 rdfs:label "事業検討"@ja.
+kg:id_28 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "風力発電の収入活用"@ja.
+kg:id_48 rdf:type cls:c_2153.
+cls:c_2153 rdfs:label "発電収入"@ja.
+kg:id_49 rdfs:label "バイオ燃料の生産に使用する"@ja.
+kg:id_49 rdf:type cls:c_2154.
+cls:c_2154 rdfs:label "燃料生産"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "自然エネルギーの利用"@ja.
+kg:id_50 rdf:type cls:c_2155.
+cls:c_2155 rdfs:label "自然エネ利用"@ja.
+kg:id_51 rdfs:label "これからを先取りする状況にある"@ja.
+kg:id_51 rdf:type cls:c_2156.
+cls:c_2156 rdfs:label "先行取組"@ja.
+kg:id_50 prop:effect kg:id_51.
+kg:id_52 rdfs:label "エネルギー政策"@ja.
+kg:id_52 rdf:type cls:c_808.
+cls:c_808 rdfs:label "エネルギー政策"@ja.
+kg:id_53 rdfs:label "もっと前進して一つの流れを築く"@ja.
+kg:id_53 rdf:type cls:c_569.
+cls:c_569 rdfs:label "政策推進"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:st_1 rdfs:label "答弁者"@ja.
+kg:st_1 rdf:type cls:st_55.
+cls:st_55 rdfs:label "答弁者"@ja.
+kg:op_1 prop:content "重大事故であり国民に大きな衝撃を与えたと考える"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "事故を受けてエネルギー政策全体の見直しが必要になったと考える"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "放射能をいたずらに恐れるのでなく正しい理解が必要だと考える"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_4 prop:content "見えない放射能に目をつむらず強く訴えることが重要だと考える"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "見えないから怖いだけでは被災地への適切な支援にならないと考える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "再開するなら万全の安全対策が必要だと考える"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "安定的で適正価格の電力がなければ産業競争力を維持できないと考える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "原子力停止により火力依存が高まっていると考える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "国際情勢の不安定化が石油供給に影響していると考える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "石油供給の停滞が国際石油価格の高騰を招いていると考える"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "原子力を使えないため燃料費負担が増していると考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "産業界で省エネを進めることが重要課題だと考える"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "市民も省エネに加えて自然エネルギー活用を進めるべきだと考える"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "補助制度と啓発活動で太陽光発電の導入を促進したいと考える"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "小水力は土地改良区でのモデル事業から普及を進めるのが現実的だと考える"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "風況調査から庄内海岸が風力発電の適地だと考える"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "条件整備を進めて整備可能な場所から風力発電を進める方針だと考える"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "地域の自然条件を生かして自然エネルギーをできる限り導入すべきだと考える"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "国や県の見直しに合わせて市のエネルギー政策も見直す考えだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "県の自然エネルギー目標に貢献できるよう風力発電を計画的に進めたいと考える"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "自然エネルギーだけでは安定供給が難しく現状では制約があるとみている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "風評で市民全体が萎縮する状況を生んではならないと考える"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "放射能は体内に取り込まれると健康被害につながるおそれがあると考える"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "放射能でDNAが傷つくと深刻な健康被害や死亡につながると懸念する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "風力発電は周辺状況を再調査し適地をさらに見極めるべきだと考える"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "加藤裕総務部長"@ja.
+kg:st_3 rdf:type cls:st_23.
+cls:st_23 rdfs:label "行政担当者"@ja.
+kg:op_26 prop:content "県の中間報告では宮海地区沿岸部が事業性の高い適地とされていると説明する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "県の中間報告では宮野浦 十里塚地区沿岸部も事業性の高い適地とされていると説明する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "自治体枠の活用も視野に県と連携して事業化を検討したいと考える"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "風力発電収入を活用してバイオ燃料生産や荒れた山への対応に回す手法は参考になると考える"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "自然エネルギーの利用は今後を先取りする重要な取り組みだと考える"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "自然エネルギーを軸にエネルギー政策をさらに前進させるべきだと要望する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "福島第一原発の事故というのは国民にとって大きなショックを与え"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "政府全体で国全体でのエネルギー政策の見直しを迫るというような重大な事故"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "放射能の関係が一番国民の皆さん、心配をしている"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "ただ目に見えないから怖いだけでは、ただいたずらに地域住民もしくは一番影響を受け苦労している福島の皆さんに対して、正しい応援にはならない"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "再開ということになったら万全な安全対策を講じていただきたい"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "そういう電力などが得られなくては、国際競争力を産業自体が得られない"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "原子力に依存できないということから、火力発電がかなりのウエートを占めている"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "イランでのさまざまな紛争のもと、イランからの石油が入らなくなっている"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "イランからの石油が入らなくなっているわけで、国際石油市場が高騰しております"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "その上でＬＮＧとか石炭というものが非常に高上がりになっていく傾向にある"@ja.
+<< kg:id_20 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "産業界において省エネを進めていただくということは大事な課題"@ja.
+<< kg:id_22 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "私たち市民としても今までの省エネ活動に加えて、自然エネルギーの活用を積極的に図っていく"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "太陽光発電等があるわけですが、このことについては当然のことながら私たちも補助制度などをしっかり導入し、啓発活動をすることによってその導入促進を図っていきたい"@ja.
+<< kg:id_26 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "モデル的に取り組みながら普及を目指していきたい"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "県の調査によっても風況調査などをしても、庄内浜というか庄内海岸が最も立地の適地だ"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "具体的な条件整備なども含めて、さらに整備できるところについては整備をしていくという方針"@ja.
+<< kg:id_31 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "可能な限り自然豊かなこの地域でもございますので、自然エネルギーを取り入れる"@ja.
+<< kg:id_33 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "市としてのエネルギー政策の見直し作業も新年度やっていきたい"@ja.
+<< kg:id_28 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "なるべく貢献できるような形での計画整備、そして事業展開というふうにしていきたい"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "電気量のその状況が安定供給するためには、まだやむを得ないその状況にもある"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "いろんな話が風評になって、市民全体が萎縮するような状況はつくり上げてはならない"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "食べ物とかそういうものを摂取したときにいろんな状況がつくり出される、そして甲状腺がんも含めて内臓の状況に入っていく、蓄積される"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "ＤＮＡを傷つけてしまう、そうするとそのＤＮＡが傷つけられると、人間の体はもう細胞は分裂しなくなるし、そのまま死亡につながる"@ja.
+<< kg:id_28 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "風力発電の周辺のその状況をもう一度検査というか調査をして、どこがいいのか"@ja.
+<< kg:id_28 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "一番事業性が高い"@ja.
+<< kg:id_28 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "それから宮野浦、十里塚地区の沿岸部、こちらも同じように10km程度といったようなエリアを一番事業性が高い"@ja.
+<< kg:id_28 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "自治体風力といいますか、自治体枠といいますか、こんなところも活用したような形でどんな形の事業展開ができるのか、ここは県と一緒になって勉強を続けてまいりたい"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "その収入を利用してバイオ燃料の要するに荒れている山の状況はそのまましておけないということで、それに回して、バイオ燃料の生産に使用している"@ja.
+<< kg:id_50 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "この自然エネルギーを利用するということは非常に私はこれからの先取りする状況にはある"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "このエネルギー政策に対してもっと前進して、一つの流れを築いていただけるよう、私のほうから強く要望したい"@ja.
+}

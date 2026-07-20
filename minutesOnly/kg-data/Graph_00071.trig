@@ -1,0 +1,537 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00071> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "普通建設事業費の拡大"@ja.
+kg:id_1 rdf:type cls:c_1948.
+cls:c_1948 rdfs:label "公共投資"@ja.
+kg:id_2 rdfs:label "地元経済に与える好影響"@ja.
+kg:id_2 rdf:type cls:c_106.
+cls:c_106 rdfs:label "経済効果"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "大型の予算編成"@ja.
+kg:id_3 rdf:type cls:c_403.
+cls:c_403 rdfs:label "予算編成"@ja.
+kg:id_4 rdfs:label "１月の補正による平成23年度への繰り越し事業と予算"@ja.
+kg:id_4 rdf:type cls:c_1949.
+cls:c_1949 rdfs:label "繰越事業"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "大胆で積極的な予算づくり"@ja.
+kg:id_5 rdf:type cls:c_403.
+kg:id_6 rdfs:label "合併特例法あるいは過疎法等の裏づけ"@ja.
+kg:id_6 rdf:type cls:c_1950.
+cls:c_1950 rdfs:label "制度支援"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "本来の景気回復にほど遠い状況"@ja.
+kg:id_7 rdf:type cls:c_1951.
+cls:c_1951 rdfs:label "景気停滞"@ja.
+kg:id_8 rdfs:label "市税がまだ低水準で推移していること"@ja.
+kg:id_8 rdf:type cls:c_1952.
+cls:c_1952 rdfs:label "税収低迷"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "予算"@ja.
+kg:id_9 rdf:type cls:c_818.
+cls:c_818 rdfs:label "予算"@ja.
+kg:id_10 rdfs:label "合併特例債"@ja.
+kg:id_10 rdf:type cls:c_1953.
+cls:c_1953 rdfs:label "起債"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "過疎債"@ja.
+kg:id_11 rdf:type cls:c_1953.
+kg:id_9 prop:cause kg:id_11.
+kg:id_12 rdfs:label "特例交付金"@ja.
+kg:id_12 rdf:type cls:c_1954.
+cls:c_1954 rdfs:label "交付金"@ja.
+kg:id_9 prop:cause kg:id_12.
+kg:id_13 rdfs:label "市民の心の不安"@ja.
+kg:id_13 rdf:type cls:c_1955.
+cls:c_1955 rdfs:label "市民不安"@ja.
+kg:id_14 rdfs:label "合併後の動揺と混乱"@ja.
+kg:id_14 rdf:type cls:c_1956.
+cls:c_1956 rdfs:label "合併混乱"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "新酒田市の一体感の醸成"@ja.
+kg:id_15 rdf:type cls:c_1957.
+cls:c_1957 rdfs:label "一体感醸成"@ja.
+kg:id_16 rdfs:label "各施策の推進に大きな効果"@ja.
+kg:id_16 rdf:type cls:c_1958.
+cls:c_1958 rdfs:label "施策効果"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "新市の一体感の醸成という市長の掲げた旗印"@ja.
+kg:id_17 rdf:type cls:c_1957.
+kg:id_18 rdfs:label "市民の心の結集"@ja.
+kg:id_18 rdf:type cls:c_1959.
+cls:c_1959 rdfs:label "市民結集"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "これまでのまちづくりに役立ったこと"@ja.
+kg:id_19 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "閉塞感"@ja.
+kg:id_20 rdf:type cls:c_1960.
+cls:c_1960 rdfs:label "閉塞感"@ja.
+kg:id_21 rdfs:label "景気の低迷"@ja.
+kg:id_21 rdf:type cls:c_1961.
+cls:c_1961 rdfs:label "景気低迷"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "少子化"@ja.
+kg:id_22 rdf:type cls:c_478.
+cls:c_478 rdfs:label "少子化"@ja.
+kg:id_20 prop:cause kg:id_22.
+kg:id_23 rdfs:label "高齢化"@ja.
+kg:id_23 rdf:type cls:c_262.
+cls:c_262 rdfs:label "高齢化"@ja.
+kg:id_20 prop:cause kg:id_23.
+kg:id_24 rdfs:label "人口減少社会の到来"@ja.
+kg:id_24 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_20 prop:cause kg:id_24.
+kg:id_25 rdfs:label "先行き不透明なことによる将来への不安"@ja.
+kg:id_25 rdf:type cls:c_1962.
+cls:c_1962 rdfs:label "将来不安"@ja.
+kg:id_20 prop:cause kg:id_25.
+kg:id_26 rdfs:label "閉塞感の脱却"@ja.
+kg:id_26 rdf:type cls:c_1963.
+cls:c_1963 rdfs:label "閉塞感解消"@ja.
+kg:id_27 rdfs:label "安心と開放感を得ること"@ja.
+kg:id_27 rdf:type cls:c_1964.
+cls:c_1964 rdfs:label "安心感"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "力を合わせて同じ方向に進んでいこうという意識"@ja.
+kg:id_28 rdf:type cls:c_1965.
+cls:c_1965 rdfs:label "協働意識"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "平成23年度も多くの事業を展開して活性化や振興を図る計画"@ja.
+kg:id_29 rdf:type cls:c_1966.
+cls:c_1966 rdfs:label "事業計画"@ja.
+kg:id_30 rdfs:label "基本に据える柱を設けること"@ja.
+kg:id_30 rdf:type cls:c_1967.
+cls:c_1967 rdfs:label "基本方針"@ja.
+kg:id_29 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "今後の事業の展開"@ja.
+kg:id_31 rdf:type cls:c_688.
+cls:c_688 rdfs:label "事業展開"@ja.
+kg:id_32 rdfs:label "市民がわかりやすい酒田市の今後のまちづくりのビジョンを示すこと"@ja.
+kg:id_32 rdf:type cls:c_1968.
+cls:c_1968 rdfs:label "まちづくりビジョン"@ja.
+kg:id_31 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "市民にまちづくりのビジョンを明確に示すこと"@ja.
+kg:id_33 rdf:type cls:c_1968.
+kg:id_31 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "合併の総仕上げ"@ja.
+kg:id_34 rdf:type cls:c_1969.
+cls:c_1969 rdfs:label "合併推進"@ja.
+kg:id_35 rdfs:label "高く掲げた旗印を示すこと"@ja.
+kg:id_35 rdf:type cls:c_1970.
+cls:c_1970 rdfs:label "旗印"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "現在の経済や雇用情勢"@ja.
+kg:id_36 rdf:type cls:c_1971.
+cls:c_1971 rdfs:label "経済雇用"@ja.
+kg:id_37 rdfs:label "まちづくりビジョンをしっかりと示すこと"@ja.
+kg:id_37 rdf:type cls:c_1968.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "本市の総力を結集すること"@ja.
+kg:id_38 rdf:type cls:c_1972.
+cls:c_1972 rdfs:label "総力結集"@ja.
+kg:id_36 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "酒田のまちづくり"@ja.
+kg:id_39 rdf:type cls:c_256.
+cls:c_256 rdfs:label "まちづくり"@ja.
+kg:id_40 rdfs:label "新エネルギーを柱にすること"@ja.
+kg:id_40 rdf:type cls:c_1869.
+cls:c_1869 rdfs:label "新エネルギー"@ja.
+kg:id_39 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "リサイクルを柱にすること"@ja.
+kg:id_41 rdf:type cls:c_1973.
+cls:c_1973 rdfs:label "リサイクル"@ja.
+kg:id_39 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "酒田"@ja.
+kg:id_42 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_43 rdfs:label "エコタウンを目指すこと"@ja.
+kg:id_43 rdf:type cls:c_1974.
+cls:c_1974 rdfs:label "エコタウン"@ja.
+kg:id_42 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "酒田港の今後の戦略と産業構造の整備"@ja.
+kg:id_44 rdf:type cls:c_1975.
+cls:c_1975 rdfs:label "港湾戦略"@ja.
+kg:id_45 rdfs:label "エコタウン構想を旗印に取り組むこと"@ja.
+kg:id_45 rdf:type cls:c_1976.
+cls:c_1976 rdfs:label "エコタウン構想"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "港を利用した物流"@ja.
+kg:id_46 rdf:type cls:c_1977.
+cls:c_1977 rdfs:label "港湾物流"@ja.
+kg:id_47 rdfs:label "数多くの関連企業の進出"@ja.
+kg:id_47 rdf:type cls:c_301.
+cls:c_301 rdfs:label "企業進出"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "酒田港周辺"@ja.
+kg:id_48 rdf:type cls:c_1978.
+cls:c_1978 rdfs:label "港湾地域"@ja.
+kg:id_49 rdfs:label "港を利用した物流が盛んになっていること"@ja.
+kg:id_49 rdf:type cls:c_1979.
+cls:c_1979 rdfs:label "物流活性化"@ja.
+kg:id_48 prop:effect kg:id_49.
+kg:id_50 rdfs:label "あらゆる分野のリサイクル産業の立地"@ja.
+kg:id_50 rdf:type cls:c_1980.
+cls:c_1980 rdfs:label "産業立地"@ja.
+kg:id_51 rdfs:label "これをさらに前面に押し出す戦略"@ja.
+kg:id_51 rdf:type cls:c_1981.
+cls:c_1981 rdfs:label "推進戦略"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "船の解体やリサイクル産業の立地"@ja.
+kg:id_52 rdf:type cls:c_1982.
+cls:c_1982 rdfs:label "資源循環産業"@ja.
+kg:id_53 rdfs:label "国際条約を批准する動き"@ja.
+kg:id_53 rdf:type cls:c_1983.
+cls:c_1983 rdfs:label "国際条約"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "それらの企業を育成したり誘致すること"@ja.
+kg:id_54 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_52 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "航空機の解体やリサイクル"@ja.
+kg:id_55 rdf:type cls:c_1982.
+kg:id_56 rdfs:label "可能性を探ってみる価値があること"@ja.
+kg:id_56 rdf:type cls:c_1984.
+cls:c_1984 rdfs:label "事業可能性"@ja.
+kg:id_55 prop:effect kg:id_56.
+kg:id_57 rdfs:label "あらゆる分野のリサイクル"@ja.
+kg:id_57 rdf:type cls:c_1973.
+kg:id_58 rdfs:label "市が先導的に役割を果たしていく体制"@ja.
+kg:id_58 rdf:type cls:c_211.
+cls:c_211 rdfs:label "推進体制"@ja.
+kg:id_57 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "酒田市"@ja.
+kg:id_59 rdf:type cls:c_1927.
+cls:c_1927 rdfs:label "地域"@ja.
+kg:id_60 rdfs:label "風力発電の適地であること"@ja.
+kg:id_60 rdf:type cls:c_1985.
+cls:c_1985 rdfs:label "風力適地"@ja.
+kg:id_59 prop:cause kg:id_60.
+kg:id_61 rdfs:label "波力発電の実験が行われたこと"@ja.
+kg:id_61 rdf:type cls:c_1986.
+cls:c_1986 rdfs:label "実証実績"@ja.
+kg:id_59 prop:cause kg:id_61.
+kg:id_62 rdfs:label "新エネルギーの可能性を秘めた地域であること"@ja.
+kg:id_62 rdf:type cls:c_1987.
+cls:c_1987 rdfs:label "新エネルギー可能性"@ja.
+kg:id_59 prop:effect kg:id_62.
+kg:id_63 rdfs:label "新エネルギーの開発と実証"@ja.
+kg:id_63 rdf:type cls:c_1988.
+cls:c_1988 rdfs:label "新エネルギー開発"@ja.
+kg:id_64 rdfs:label "一大拠点につくり上げること"@ja.
+kg:id_64 rdf:type cls:c_1989.
+cls:c_1989 rdfs:label "拠点化"@ja.
+kg:id_63 prop:countermeasure kg:id_64.
+kg:st_1 rdfs:label "後藤孝也議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "普通建設事業費の拡大は地元経済への好影響が期待できる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "繰り越し事業と予算により今までにない大型予算になっている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "合併特例法や過疎法の裏づけで積極的な予算編成が可能になった"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "市税は1％増でも低水準で、本格的な景気回復には至っていない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "予算は合併特例債などに依存している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "予算は過疎債などに依存している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "予算は特例交付金などに依存している"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "合併後は市民の不安や混乱があった"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "一体感の醸成は施策推進に大きく役立った"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "一体感の旗印は市民の心を結集させた"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "一体感の醸成はこれまでのまちづくりに有効だった"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "日本全体の景気低迷が閉塞感を生んでいる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "少子化が閉塞感の一因になっている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "高齢化が閉塞感の一因になっている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "人口減少社会の到来が閉塞感を強めている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "将来不安が閉塞感の直接的な要因だ"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "閉塞感を脱却すれば安心と開放感につながる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "閉塞感の解消は市民の協働意識を高める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "事業展開には基本となる柱が必要だ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "事業効果を高めるには分かりやすいまちづくりビジョンが必要だ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "市民に希望と安心感を持って参加してもらうため明確なビジョンを示すべきだ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "合併の総仕上げには市民が共有できる旗印が必要だ"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "経済や雇用の転換には明確なまちづくりビジョンが必要だ"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "経済と雇用の発展には市の総力結集が必要だ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "平政会"@ja.
+kg:st_2 rdf:type cls:st_60.
+cls:st_60 rdfs:label "政治団体"@ja.
+kg:op_25 prop:content "酒田のまちづくりビジョンの柱に新エネルギーを据えるべきだ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "酒田のまちづくりビジョンの柱にリサイクルを据えるべきだ"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "酒田はエコタウンを目指すべきだ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "酒田港戦略と産業構造整備はエコタウン構想を軸に進めるべきだ"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "関連企業の進出で港湾物流が活発になっている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "酒田港周辺では企業進出により物流が活発化している"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "既存の下地を前面に出しリサイクル産業立地につなげる戦略が必要だ"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "船の解体・リサイクルは国際条約の動きで可能性が広がる"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "船舶リサイクル関連企業の育成や誘致を検討すべきだ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "航空機リサイクルにも検討する価値がある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "リサイクル分野では市が先導役となる体制が必要だ"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "酒田市は風力発電に適した地域だ"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "酒田市では波力発電の実験実績がある"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "酒田市は多様な新エネルギーの可能性を持つ地域だ"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "地域資源を土台に新エネルギー開発と実証の拠点化を進めるべきだ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "投資的経費の増の中で、普通建設事業費の拡大は地元経済に与える好影響を期待するものであります。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "中身については１月の補正による平成23年度への繰り越し事業と予算を見れば、今までにない大型の予算編成であると思っております。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "合併特例法あるいは過疎法等の裏づけにより、大胆で積極的な予算づくりができたものだと思っております。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "基礎的な財源であります市税については１％増を見込んでいるものの、まだ低水準で推移しており、本来の景気回復にはほど遠い感があります。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "合併特例債、過疎債あるいは特例交付金などでしのいでいる予算であることは間違いないところだと思います。"@ja.
+<< kg:id_9 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "合併特例債、過疎債あるいは特例交付金などでしのいでいる予算であることは間違いないところだと思います。"@ja.
+<< kg:id_9 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "合併特例債、過疎債あるいは特例交付金などでしのいでいる予算であることは間違いないところだと思います。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "合併後の市民の心の不安や、動揺と混乱の中で、市長の掲げた新酒田市の一体感の醸成、これは市民一人一人の心の中に溶け込み、これまでの各施策の推進に大きな効果を与えてきたと思っているところであります。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "市長の掲げた新酒田市の一体感の醸成、これは市民一人一人の心の中に溶け込み、これまでの各施策の推進に大きな効果を与えてきたと思っているところであります。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "新市の一体感の醸成という市長の掲げた旗印は、市民の心の結集という大きな効果を生み出し、これまでのまちづくりに役立ってきたものだと思っております。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "新市の一体感の醸成という市長の掲げた旗印は、市民の心の結集という大きな効果を生み出し、これまでのまちづくりに役立ってきたものだと思っております。"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "今、日本全体が景気の低迷、少子化、高齢化、そして人口減少社会の到来など、先行き不透明なことによる将来への不安が閉塞感を生み出していると考えるのであります。"@ja.
+<< kg:id_20 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今、日本全体が景気の低迷、少子化、高齢化、そして人口減少社会の到来など、先行き不透明なことによる将来への不安が閉塞感を生み出していると考えるのであります。"@ja.
+<< kg:id_20 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "今、日本全体が景気の低迷、少子化、高齢化、そして人口減少社会の到来など、先行き不透明なことによる将来への不安が閉塞感を生み出していると考えるのであります。"@ja.
+<< kg:id_20 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "今、日本全体が景気の低迷、少子化、高齢化、そして人口減少社会の到来など、先行き不透明なことによる将来への不安が閉塞感を生み出していると考えるのであります。"@ja.
+<< kg:id_20 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今、日本全体が景気の低迷、少子化、高齢化、そして人口減少社会の到来など、先行き不透明なことによる将来への不安が閉塞感を生み出していると考えるのであります。"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "閉塞感を脱却すれば、安心と開放感を得て、力を合わせて同じ方向に進んでいこうという意識につながってくると思うところであります。"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "閉塞感を脱却すれば、安心と開放感を得て、力を合わせて同じ方向に進んでいこうという意識につながってくると思うところであります。"@ja.
+<< kg:id_29 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "平成23年度も多くの事業を展開して、活性化や振興を図る計画でありますが、基本に据える柱が必要であると考えております。"@ja.
+<< kg:id_31 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "市民がわかりやすい酒田市の今後のまちづくりのビジョンがあって、効果を発揮するものであります。"@ja.
+<< kg:id_31 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "新酒田市は一人一人がまちづくりを理解し、将来に希望と安心感と期待を持ってまちづくりに参加しなければならなくなるようなまちづくりのビジョンを市民に明確に示して、堂々と今後の事業を展開すべきときだと思うところであります。"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "合併の総仕上げというテーマの中で、市民一人一人が、酒田はこういうまちづくりを今後目指していくのかと理解し、力を結集してもらわなければなりません。そういった高く掲げた旗印が今必要なときであります。"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "現在の経済や雇用情勢を転換し、発展させるために、まちづくりビジョンをしっかりと示し、それに向かって本市の総力を結集しなければならないときだと考えるところであります。"@ja.
+<< kg:id_36 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "現在の経済や雇用情勢を転換し、発展させるために、まちづくりビジョンをしっかりと示し、それに向かって本市の総力を結集しなければならないときだと考えるところであります。"@ja.
+<< kg:id_39 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "平政会においても、政策提言の柱に酒田のまちづくりビジョンをしっかりと掲げるべきだと申し上げてまいりました。新エネルギー、リサイクルを柱にして、酒田はエコタウンを目指すべきだと具体的に例を挙げて提言しております。"@ja.
+<< kg:id_39 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "平政会においても、政策提言の柱に酒田のまちづくりビジョンをしっかりと掲げるべきだと申し上げてまいりました。新エネルギー、リサイクルを柱にして、酒田はエコタウンを目指すべきだと具体的に例を挙げて提言しております。"@ja.
+<< kg:id_42 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "新エネルギー、リサイクルを柱にして、酒田はエコタウンを目指すべきだと具体的に例を挙げて提言しております。"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "エコタウン構想を旗印に、酒田港の今後の戦略、産業構造の整備に取り組むべきだと申し上げてきたわけであります。"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "リサイクルポートに指定された酒田港の周辺には、今、数多くの関連企業が進出し、港を利用した物流が盛んになってきております。"@ja.
+<< kg:id_48 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "リサイクルポートに指定された酒田港の周辺には、今、数多くの関連企業が進出し、港を利用した物流が盛んになってきております。"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "下地は既にでき上がっております。これをさらに前面に押し出して、あらゆる分野のリサイクル産業の立地につなげていく戦略が必要であります。"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "例えば船の解体、リサイクルについて、国際条約を批准する動きがあるようであります。"@ja.
+<< kg:id_52 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "それらの企業を育成したり誘致することも考えられるのであります。"@ja.
+<< kg:id_55 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "航空機の解体やリサイクルも秋田県では検討に入っているようであります。可能性を探ってみる価値はあると思うわけであります。"@ja.
+<< kg:id_57 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "あらゆる分野のリサイクルについて、市が先導的に役割を果たしていく体制が必要だと思っております。"@ja.
+<< kg:id_59 prop:cause kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "酒田市は風力発電の適地であり、波力発電の実験も行われたところだと聞いております。"@ja.
+<< kg:id_59 prop:cause kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "酒田市は風力発電の適地であり、波力発電の実験も行われたところだと聞いております。"@ja.
+<< kg:id_59 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "最上川の放流をした小水力発電やバイオエネルギー、そして太陽光発電等、可能性を秘めた地域であります。"@ja.
+<< kg:id_63 prop:countermeasure kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "これらを土台にして、新エネルギーの開発と実証の一大拠点につくり上げることが必要であります。"@ja.
+}

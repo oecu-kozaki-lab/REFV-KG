@@ -1,0 +1,1213 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00021> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "豪雨による災害"@ja.
+kg:id_1 rdf:type cls:c_603.
+cls:c_603 rdfs:label "水害"@ja.
+kg:id_2 rdfs:label "河川の氾濫"@ja.
+kg:id_2 rdf:type cls:c_604.
+cls:c_604 rdfs:label "河川氾濫"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "支障木"@ja.
+kg:id_3 rdf:type cls:c_605.
+cls:c_605 rdfs:label "支障木"@ja.
+kg:id_2 prop:cause kg:id_3.
+kg:id_4 rdfs:label "橋桁や堤防の決壊"@ja.
+kg:id_4 rdf:type cls:c_606.
+cls:c_606 rdfs:label "河川施設被害"@ja.
+kg:id_5 rdfs:label "支障木が流れ出し橋桁にとどまり流れをせき止めること"@ja.
+kg:id_5 rdf:type cls:c_607.
+cls:c_607 rdfs:label "河川閉塞"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "氾濫"@ja.
+kg:id_6 rdf:type cls:c_604.
+kg:id_7 rdfs:label "支障木が非常に多く流れ出し川をせき止めること"@ja.
+kg:id_7 rdf:type cls:c_607.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "激甚災害"@ja.
+kg:id_8 rdf:type cls:c_608.
+cls:c_608 rdfs:label "重大災害"@ja.
+kg:id_9 rdfs:label "支障木が川をせき止めること"@ja.
+kg:id_9 rdf:type cls:c_607.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "米沢の河川災害リスク"@ja.
+kg:id_10 rdf:type cls:c_609.
+cls:c_609 rdfs:label "河川災害危険"@ja.
+kg:id_11 rdfs:label "河川に鬱蒼と支障木が生い茂っていること"@ja.
+kg:id_11 rdf:type cls:c_610.
+cls:c_610 rdfs:label "支障木繁茂"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "大量の支障木が豪雨によって上流から押し流され橋々を次々とせき止めること"@ja.
+kg:id_12 rdf:type cls:c_607.
+kg:id_6 prop:cause kg:id_12.
+kg:id_13 rdfs:label "万里橋から相生橋の間の氾濫"@ja.
+kg:id_13 rdf:type cls:c_604.
+kg:id_14 rdfs:label "周辺地域の浸水被害"@ja.
+kg:id_14 rdf:type cls:c_611.
+cls:c_611 rdfs:label "浸水被害"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "市立病院の浸水"@ja.
+kg:id_15 rdf:type cls:c_612.
+cls:c_612 rdfs:label "施設浸水"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "三友堂病院の浸水"@ja.
+kg:id_16 rdf:type cls:c_612.
+kg:id_13 prop:effect kg:id_16.
+kg:id_17 rdfs:label "命をつなぐ道路の決壊"@ja.
+kg:id_17 rdf:type cls:c_613.
+cls:c_613 rdfs:label "道路被害"@ja.
+kg:id_13 prop:effect kg:id_17.
+kg:id_18 rdfs:label "橋桁の崩落"@ja.
+kg:id_18 rdf:type cls:c_614.
+cls:c_614 rdfs:label "橋梁被害"@ja.
+kg:id_6 prop:effect kg:id_18.
+kg:id_19 rdfs:label "支障木問題"@ja.
+kg:id_19 rdf:type cls:c_615.
+cls:c_615 rdfs:label "支障木問題"@ja.
+kg:id_20 rdfs:label "支障木の伐採撤去による河川の整備"@ja.
+kg:id_20 rdf:type cls:c_616.
+cls:c_616 rdfs:label "河川整備"@ja.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "県管理河川の治水対策"@ja.
+kg:id_21 rdf:type cls:c_617.
+cls:c_617 rdfs:label "治水対策"@ja.
+kg:id_22 rdfs:label "一級河川最上川河川改修事業の早期着工"@ja.
+kg:id_22 rdf:type cls:c_618.
+cls:c_618 rdfs:label "河川改修"@ja.
+kg:id_21 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "県管理河川の計画的な治水対策の促進"@ja.
+kg:id_23 rdf:type cls:c_619.
+cls:c_619 rdfs:label "治水推進"@ja.
+kg:id_21 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "栗子山風力発電事業の災害リスク"@ja.
+kg:id_24 rdf:type cls:c_620.
+cls:c_620 rdfs:label "開発災害危険"@ja.
+kg:id_25 rdfs:label "急峻な尾根沿いに最大10か所ものヤードを切り開き道路でつなぐ計画"@ja.
+kg:id_25 rdf:type cls:c_621.
+cls:c_621 rdfs:label "造成計画"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "地滑りリスク"@ja.
+kg:id_26 rdf:type cls:c_622.
+cls:c_622 rdfs:label "地滑り危険"@ja.
+kg:id_27 rdfs:label "栗子峠近辺が第1級の地滑り地帯であること"@ja.
+kg:id_27 rdf:type cls:c_623.
+cls:c_623 rdfs:label "地滑り地帯"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "一帯が典型的な地滑り地帯で地下の火山活動が続いていること"@ja.
+kg:id_28 rdf:type cls:c_623.
+kg:id_26 prop:cause kg:id_28.
+kg:id_29 rdfs:label "土砂災害の危険性"@ja.
+kg:id_29 rdf:type cls:c_624.
+cls:c_624 rdfs:label "土砂災害危険"@ja.
+kg:id_30 rdfs:label "地滑りの可能性がある区域であること"@ja.
+kg:id_30 rdf:type cls:c_625.
+cls:c_625 rdfs:label "地滑り区域"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "洪水"@ja.
+kg:id_31 rdf:type cls:c_626.
+cls:c_626 rdfs:label "洪水"@ja.
+kg:id_32 rdfs:label "人の手が入っていなかった山に開発が行われ山が保水力を失うこと"@ja.
+kg:id_32 rdf:type cls:c_627.
+cls:c_627 rdfs:label "山地開発"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "土砂災害"@ja.
+kg:id_33 rdf:type cls:c_53.
+cls:c_53 rdfs:label "土砂災害"@ja.
+kg:id_33 prop:cause kg:id_32.
+kg:id_34 rdfs:label "水源の枯渇"@ja.
+kg:id_34 rdf:type cls:c_628.
+cls:c_628 rdfs:label "水源枯渇"@ja.
+kg:id_35 rdfs:label "山の開発により地下浸透せず保水力を失うこと"@ja.
+kg:id_35 rdf:type cls:c_629.
+cls:c_629 rdfs:label "保水力低下"@ja.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "生態系への影響"@ja.
+kg:id_36 rdf:type cls:c_51.
+cls:c_51 rdfs:label "生態系影響"@ja.
+kg:id_37 rdfs:label "山の開発"@ja.
+kg:id_37 rdf:type cls:c_627.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "通行止め判断"@ja.
+kg:id_38 rdf:type cls:c_630.
+cls:c_630 rdfs:label "通行規制判断"@ja.
+kg:id_39 rdfs:label "地滑りや土砂災害が起きる可能性が高いこと"@ja.
+kg:id_39 rdf:type cls:c_624.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "水質汚濁"@ja.
+kg:id_40 rdf:type cls:c_631.
+cls:c_631 rdfs:label "水質汚濁"@ja.
+kg:id_41 rdfs:label "水窪ダム及び周辺道路への被害"@ja.
+kg:id_41 rdf:type cls:c_632.
+cls:c_632 rdfs:label "水源被害"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "土砂流出"@ja.
+kg:id_42 rdf:type cls:c_633.
+cls:c_633 rdfs:label "土砂流出"@ja.
+kg:id_42 prop:effect kg:id_41.
+kg:id_43 rdfs:label "摺上川ダムと3市3町40万人の生活用水への被害"@ja.
+kg:id_43 rdf:type cls:c_634.
+cls:c_634 rdfs:label "生活用水被害"@ja.
+kg:id_40 prop:effect kg:id_43.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "栗子山風力発電事業"@ja.
+kg:id_44 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_45 rdfs:label "風力発電機組立てヤード及び管理用道路の配置や構造の見直し"@ja.
+kg:id_45 rdf:type cls:c_635.
+cls:c_635 rdfs:label "配置見直し"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "盛土やのり面の範囲を極力削減すること"@ja.
+kg:id_46 rdf:type cls:c_636.
+cls:c_636 rdfs:label "造成抑制"@ja.
+kg:id_44 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "イヌワシへの影響"@ja.
+kg:id_47 rdf:type cls:c_637.
+cls:c_637 rdfs:label "希少鳥類影響"@ja.
+kg:id_48 rdfs:label "風力発電の建設予定地がイヌワシの営巣地近辺にあること"@ja.
+kg:id_48 rdf:type cls:c_638.
+cls:c_638 rdfs:label "営巣地近接"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "イヌワシの生息環境リスク"@ja.
+kg:id_49 rdf:type cls:c_639.
+cls:c_639 rdfs:label "希少鳥類危険"@ja.
+kg:id_50 rdfs:label "事業実施区域近傍でイヌワシが営巣している蓋然性が高いこと"@ja.
+kg:id_50 rdf:type cls:c_640.
+cls:c_640 rdfs:label "営巣可能性"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "事業の取りやめを含めた抜本的な事業計画の見直し"@ja.
+kg:id_51 rdf:type cls:c_271.
+cls:c_271 rdfs:label "計画見直し"@ja.
+kg:id_44 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "適切な保全措置及び対策を講じること"@ja.
+kg:id_52 rdf:type cls:c_641.
+cls:c_641 rdfs:label "保全措置"@ja.
+kg:id_44 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "本市及び山形県の意見を真摯に受け止め環境保全及び災害対策等への対応を適切に行うこと"@ja.
+kg:id_53 rdf:type cls:c_642.
+cls:c_642 rdfs:label "環境保全対応"@ja.
+kg:id_44 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "希少猛禽類への影響"@ja.
+kg:id_54 rdf:type cls:c_637.
+kg:id_55 rdfs:label "希少猛禽類に対する保全措置を具体的かつ厳密に求めること"@ja.
+kg:id_55 rdf:type cls:c_641.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "鳥類への影響"@ja.
+kg:id_56 rdf:type cls:c_643.
+cls:c_643 rdfs:label "鳥類影響"@ja.
+kg:id_57 rdfs:label "山形県の独自調査結果を踏まえ鳥類の保全措置を適切かつ誠実に行うこと"@ja.
+kg:id_57 rdf:type cls:c_641.
+kg:id_56 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "支障木伐採の優先順位低下"@ja.
+kg:id_58 rdf:type cls:c_644.
+cls:c_644 rdfs:label "伐採優先度低下"@ja.
+kg:id_59 rdfs:label "河道の閉塞率が9％で高くないこと"@ja.
+kg:id_59 rdf:type cls:c_645.
+cls:c_645 rdfs:label "低閉塞率"@ja.
+kg:id_58 prop:cause kg:id_59.
+kg:id_60 rdfs:label "河道閉塞率だけでなく河川環境や市街地性や河川緑地の有無を総合的に判断して支障木伐採を進めること"@ja.
+kg:id_60 rdf:type cls:c_646.
+cls:c_646 rdfs:label "総合判断伐採"@ja.
+kg:id_19 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "景観悪化"@ja.
+kg:id_61 rdf:type cls:c_647.
+cls:c_647 rdfs:label "景観悪化"@ja.
+kg:id_62 rdfs:label "支障木の繁茂"@ja.
+kg:id_62 rdf:type cls:c_610.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "土砂堆積及び支障木の繁茂を抑制する流下能力向上対策"@ja.
+kg:id_63 rdf:type cls:c_648.
+cls:c_648 rdfs:label "流下能力向上"@ja.
+kg:id_21 prop:countermeasure kg:id_63.
+kg:id_64 rdfs:label "河床低下を防止し河岸等の河川管理施設を保護する流路保全対策"@ja.
+kg:id_64 rdf:type cls:c_649.
+cls:c_649 rdfs:label "流路保全"@ja.
+kg:id_21 prop:countermeasure kg:id_64.
+kg:id_65 rdfs:label "クマタカの生息への影響"@ja.
+kg:id_65 rdf:type cls:c_637.
+kg:id_66 rdfs:label "調査道が切られ人が入ること"@ja.
+kg:id_66 rdf:type cls:c_650.
+cls:c_650 rdfs:label "人為攪乱"@ja.
+kg:id_65 prop:cause kg:id_66.
+kg:id_67 rdfs:label "気候変動による災厄"@ja.
+kg:id_67 rdf:type cls:c_651.
+cls:c_651 rdfs:label "気候災害"@ja.
+kg:id_68 rdfs:label "地球温暖化"@ja.
+kg:id_68 rdf:type cls:c_587.
+cls:c_587 rdfs:label "地球温暖化"@ja.
+kg:id_67 prop:cause kg:id_68.
+kg:id_69 rdfs:label "台風10号の最大風速増加"@ja.
+kg:id_69 rdf:type cls:c_652.
+cls:c_652 rdfs:label "暴風強化"@ja.
+kg:id_70 rdfs:label "気候変動"@ja.
+kg:id_70 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_69 prop:cause kg:id_70.
+kg:id_71 rdfs:label "豪雨"@ja.
+kg:id_71 rdf:type cls:c_653.
+cls:c_653 rdfs:label "豪雨"@ja.
+kg:id_68 prop:effect kg:id_71.
+kg:id_72 rdfs:label "台風"@ja.
+kg:id_72 rdf:type cls:c_654.
+cls:c_654 rdfs:label "台風"@ja.
+kg:id_68 prop:effect kg:id_72.
+kg:id_73 rdfs:label "海面上昇"@ja.
+kg:id_73 rdf:type cls:c_655.
+cls:c_655 rdfs:label "海面上昇"@ja.
+kg:id_68 prop:effect kg:id_73.
+kg:id_74 rdfs:label "高潮"@ja.
+kg:id_74 rdf:type cls:c_656.
+cls:c_656 rdfs:label "高潮"@ja.
+kg:id_68 prop:effect kg:id_74.
+kg:id_75 rdfs:label "熱中症などの健康被害"@ja.
+kg:id_75 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_68 prop:effect kg:id_75.
+kg:id_76 rdfs:label "食糧不足"@ja.
+kg:id_76 rdf:type cls:c_657.
+cls:c_657 rdfs:label "食糧不足"@ja.
+kg:id_68 prop:effect kg:id_76.
+kg:id_77 rdfs:label "水不足"@ja.
+kg:id_77 rdf:type cls:c_658.
+cls:c_658 rdfs:label "水不足"@ja.
+kg:id_68 prop:effect kg:id_77.
+kg:id_68 prop:effect kg:id_36.
+kg:id_78 rdfs:label "インフラの機能停止"@ja.
+kg:id_78 rdf:type cls:c_659.
+cls:c_659 rdfs:label "機能停止"@ja.
+kg:id_68 prop:effect kg:id_78.
+kg:id_79 rdfs:label "脱炭素を図る取組"@ja.
+kg:id_79 rdf:type cls:c_42.
+cls:c_42 rdfs:label "脱炭素"@ja.
+kg:id_68 prop:countermeasure kg:id_79.
+kg:id_80 rdfs:label "脱炭素先行地域計画の市民理解不足"@ja.
+kg:id_80 rdf:type cls:c_660.
+cls:c_660 rdfs:label "市民理解不足"@ja.
+kg:id_81 rdfs:label "市民に何をすればよいか分からないまま時が経過してきたこと"@ja.
+kg:id_81 rdf:type cls:c_661.
+cls:c_661 rdfs:label "周知不足"@ja.
+kg:id_80 prop:cause kg:id_81.
+kg:id_82 rdfs:label "アンケート結果の反応の弱さ"@ja.
+kg:id_82 rdf:type cls:c_662.
+cls:c_662 rdfs:label "反応低調"@ja.
+kg:id_83 rdfs:label "説明不足で内容が伝わっていないこと"@ja.
+kg:id_83 rdf:type cls:c_663.
+cls:c_663 rdfs:label "説明不足"@ja.
+kg:id_82 prop:cause kg:id_83.
+kg:id_84 rdfs:label "住民説明会の開催がアンケートの後だったこと"@ja.
+kg:id_84 rdf:type cls:c_664.
+cls:c_664 rdfs:label "説明時期不適切"@ja.
+kg:id_82 prop:cause kg:id_84.
+kg:id_85 rdfs:label "脱炭素先行地域事業"@ja.
+kg:id_85 rdf:type cls:c_272.
+cls:c_272 rdfs:label "脱炭素事業"@ja.
+kg:id_86 rdfs:label "地域経済の活性化"@ja.
+kg:id_86 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_85 prop:effect kg:id_86.
+kg:id_87 rdfs:label "雇用拡大"@ja.
+kg:id_87 rdf:type cls:c_665.
+cls:c_665 rdfs:label "雇用拡大"@ja.
+kg:id_85 prop:effect kg:id_87.
+kg:id_88 rdfs:label "若者の定着"@ja.
+kg:id_88 rdf:type cls:c_415.
+cls:c_415 rdfs:label "若者定着"@ja.
+kg:id_85 prop:effect kg:id_88.
+kg:id_89 rdfs:label "少子化問題"@ja.
+kg:id_89 rdf:type cls:c_666.
+cls:c_666 rdfs:label "少子化問題"@ja.
+kg:id_90 rdfs:label "魅力的な働く場が少なく若者が定着しにくいこと"@ja.
+kg:id_90 rdf:type cls:c_225.
+cls:c_225 rdfs:label "雇用不足"@ja.
+kg:id_89 prop:cause kg:id_90.
+kg:id_91 rdfs:label "脱炭素の取組推進"@ja.
+kg:id_91 rdf:type cls:c_257.
+cls:c_257 rdfs:label "脱炭素推進"@ja.
+kg:id_92 rdfs:label "地場産業化"@ja.
+kg:id_92 rdf:type cls:c_667.
+cls:c_667 rdfs:label "地場産業化"@ja.
+kg:id_91 prop:effect kg:id_92.
+kg:id_93 rdfs:label "シティプロモーションへの発展"@ja.
+kg:id_93 rdf:type cls:c_455.
+cls:c_455 rdfs:label "地域発信"@ja.
+kg:id_91 prop:effect kg:id_93.
+kg:id_94 rdfs:label "若者が集まる流れ"@ja.
+kg:id_94 rdf:type cls:c_668.
+cls:c_668 rdfs:label "若者流入"@ja.
+kg:id_91 prop:effect kg:id_94.
+kg:id_95 rdfs:label "栗子山風力発電施設建設"@ja.
+kg:id_95 rdf:type cls:c_669.
+cls:c_669 rdfs:label "風力発電建設"@ja.
+kg:id_96 rdfs:label "イヌワシの生息環境保全上の問題"@ja.
+kg:id_96 rdf:type cls:c_670.
+cls:c_670 rdfs:label "生息環境問題"@ja.
+kg:id_95 prop:effect kg:id_96.
+kg:id_97 rdfs:label "市民の反対意見の増加"@ja.
+kg:id_97 rdf:type cls:c_671.
+cls:c_671 rdfs:label "反対意見"@ja.
+kg:id_95 prop:effect kg:id_97.
+kg:id_98 rdfs:label "土砂災害の危険性への懸念"@ja.
+kg:id_98 rdf:type cls:c_672.
+cls:c_672 rdfs:label "土砂災害懸念"@ja.
+kg:id_95 prop:effect kg:id_98.
+kg:id_99 rdfs:label "低周波音による健康被害の懸念"@ja.
+kg:id_99 rdf:type cls:c_673.
+cls:c_673 rdfs:label "健康被害懸念"@ja.
+kg:id_95 prop:effect kg:id_99.
+kg:id_100 rdfs:label "脱炭素先行地域計画の風力発電"@ja.
+kg:id_100 rdf:type cls:c_674.
+cls:c_674 rdfs:label "風力発電導入"@ja.
+kg:id_101 rdfs:label "本地域において風力のポテンシャルが非常に高いこと"@ja.
+kg:id_101 rdf:type cls:c_675.
+cls:c_675 rdfs:label "高風況"@ja.
+kg:id_100 prop:cause kg:id_101.
+kg:id_102 rdfs:label "より多くの需要家に再エネ電源を供給できること"@ja.
+kg:id_102 rdf:type cls:c_676.
+cls:c_676 rdfs:label "再エネ供給拡大"@ja.
+kg:id_100 prop:effect kg:id_102.
+kg:id_103 rdfs:label "費用対効果が高い事業になること"@ja.
+kg:id_103 rdf:type cls:c_677.
+cls:c_677 rdfs:label "費用対効果向上"@ja.
+kg:id_100 prop:effect kg:id_103.
+kg:id_104 rdfs:label "ゾーニング調査で適地を絞り込むこと"@ja.
+kg:id_104 rdf:type cls:c_678.
+cls:c_678 rdfs:label "適地選定"@ja.
+kg:id_100 prop:countermeasure kg:id_104.
+kg:id_105 rdfs:label "発電した電力を100％市内で利用する自給自足型とすること"@ja.
+kg:id_105 rdf:type cls:c_679.
+cls:c_679 rdfs:label "域内利用"@ja.
+kg:id_100 prop:countermeasure kg:id_105.
+kg:id_106 rdfs:label "地元や市民との合意形成を進めること"@ja.
+kg:id_106 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_100 prop:countermeasure kg:id_106.
+kg:id_107 rdfs:label "脱炭素先行地域計画"@ja.
+kg:id_107 rdf:type cls:c_680.
+cls:c_680 rdfs:label "計画運用"@ja.
+kg:id_108 rdfs:label "不測の事態時には計画の変更案提出や評価委員の諮問評価を経て変更手続を行うこと"@ja.
+kg:id_108 rdf:type cls:c_681.
+cls:c_681 rdfs:label "計画変更手続"@ja.
+kg:id_107 prop:countermeasure kg:id_108.
+kg:id_109 rdfs:label "住民の理解を得ながら調査検証をしっかり行い計画に沿って事業を進めること"@ja.
+kg:id_109 rdf:type cls:c_682.
+cls:c_682 rdfs:label "住民理解確保"@ja.
+kg:id_107 prop:countermeasure kg:id_109.
+kg:id_110 rdfs:label "風力発電の地質リスク把握不足"@ja.
+kg:id_110 rdf:type cls:c_683.
+cls:c_683 rdfs:label "地質把握不足"@ja.
+kg:id_111 rdfs:label "ゾーニングが適地を示すことを目的としており詳しい地質調査までは行わないこと"@ja.
+kg:id_111 rdf:type cls:c_684.
+cls:c_684 rdfs:label "調査範囲限定"@ja.
+kg:id_110 prop:cause kg:id_111.
+kg:id_112 rdfs:label "低周波音による健康被害懸念"@ja.
+kg:id_112 rdf:type cls:c_673.
+kg:id_113 rdfs:label "事業者がアセスの中で検証し住民に説明し合意を得ること"@ja.
+kg:id_113 rdf:type cls:c_685.
+cls:c_685 rdfs:label "説明合意"@ja.
+kg:id_112 prop:countermeasure kg:id_113.
+kg:id_114 rdfs:label "脱炭素先行地域事業の住民周知"@ja.
+kg:id_114 rdf:type cls:c_686.
+cls:c_686 rdfs:label "住民周知"@ja.
+kg:id_115 rdfs:label "説明会とアンケートを実施すること"@ja.
+kg:id_115 rdf:type cls:c_687.
+cls:c_687 rdfs:label "説明会実施"@ja.
+kg:id_114 prop:countermeasure kg:id_115.
+kg:id_116 rdfs:label "脱炭素先行地域事業の横展開"@ja.
+kg:id_116 rdf:type cls:c_688.
+cls:c_688 rdfs:label "事業展開"@ja.
+kg:id_117 rdfs:label "先行地域以外では環境省のほかの補助メニューも使い前倒しして横展開を始めること"@ja.
+kg:id_117 rdf:type cls:c_689.
+cls:c_689 rdfs:label "補助活用拡大"@ja.
+kg:id_116 prop:countermeasure kg:id_117.
+kg:id_118 rdfs:label "その段階で住民に説明すること"@ja.
+kg:id_118 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_116 prop:countermeasure kg:id_118.
+kg:id_119 rdfs:label "太陽光PPAの普及"@ja.
+kg:id_119 rdf:type cls:c_690.
+cls:c_690 rdfs:label "太陽光普及"@ja.
+kg:id_120 rdfs:label "NTT-MEが今回の実験を踏まえ東北エリアに展開すること"@ja.
+kg:id_120 rdf:type cls:c_691.
+cls:c_691 rdfs:label "広域展開"@ja.
+kg:id_119 prop:countermeasure kg:id_120.
+kg:id_121 rdfs:label "4地区以外にも早めに横展開できるよう連携してお願いすること"@ja.
+kg:id_121 rdf:type cls:c_692.
+cls:c_692 rdfs:label "地域拡大"@ja.
+kg:id_119 prop:countermeasure kg:id_121.
+kg:id_122 rdfs:label "PPA利用料金の上昇"@ja.
+kg:id_122 rdf:type cls:c_693.
+cls:c_693 rdfs:label "料金上昇"@ja.
+kg:id_123 rdfs:label "横展開時には交付金が入らないこと"@ja.
+kg:id_123 rdf:type cls:c_694.
+cls:c_694 rdfs:label "補助終了"@ja.
+kg:id_122 prop:cause kg:id_123.
+kg:id_124 rdfs:label "太陽光パネル廃棄時の負担"@ja.
+kg:id_124 rdf:type cls:c_695.
+cls:c_695 rdfs:label "設備廃棄負担"@ja.
+kg:id_125 rdfs:label "NTT-MEが費用負担して撤去し丸紅を通じてリユース等の出口処理を行うこと"@ja.
+kg:id_125 rdf:type cls:c_696.
+cls:c_696 rdfs:label "撤去処理"@ja.
+kg:id_124 prop:countermeasure kg:id_125.
+kg:id_126 rdfs:label "脱炭素先行地域計画の風力発電への懸念"@ja.
+kg:id_126 rdf:type cls:c_697.
+cls:c_697 rdfs:label "風力発電懸念"@ja.
+kg:id_127 rdfs:label "地域と向き合いきちんと説明し環境アセスメントをより慎重に行うこと"@ja.
+kg:id_127 rdf:type cls:c_698.
+cls:c_698 rdfs:label "慎重評価"@ja.
+kg:id_126 prop:countermeasure kg:id_127.
+kg:id_128 rdfs:label "脱炭素の取組"@ja.
+kg:id_128 rdf:type cls:c_257.
+kg:id_129 rdfs:label "今を生きている世代としての責任"@ja.
+kg:id_129 rdf:type cls:c_699.
+cls:c_699 rdfs:label "世代責任"@ja.
+kg:id_128 prop:cause kg:id_129.
+kg:id_130 rdfs:label "太陽光とバイオマスと場合によっては風力を組み合わせること"@ja.
+kg:id_130 rdf:type cls:c_700.
+cls:c_700 rdfs:label "電源組合せ"@ja.
+kg:id_128 prop:countermeasure kg:id_130.
+kg:id_131 rdfs:label "粘り強く取り組むこと"@ja.
+kg:id_131 rdf:type cls:c_701.
+cls:c_701 rdfs:label "継続推進"@ja.
+kg:id_128 prop:countermeasure kg:id_131.
+kg:id_132 rdfs:label "米沢の価値を上げること"@ja.
+kg:id_132 rdf:type cls:c_702.
+cls:c_702 rdfs:label "地域価値向上"@ja.
+kg:id_128 prop:effect kg:id_132.
+kg:id_133 rdfs:label "置賜全体の脱炭素を米沢が引っ張ること"@ja.
+kg:id_133 rdf:type cls:c_703.
+cls:c_703 rdfs:label "広域牽引"@ja.
+kg:id_128 prop:countermeasure kg:id_133.
+kg:id_134 rdfs:label "飯豊町や川西町や高畠町など周辺自治体を巻き込んだ形で進めること"@ja.
+kg:id_134 rdf:type cls:c_704.
+cls:c_704 rdfs:label "広域連携"@ja.
+kg:id_128 prop:countermeasure kg:id_134.
+kg:st_1 rdfs:label "遠藤隆一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "豪雨災害の多くは河川氾濫による被害だと指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "支障木が氾濫の大きな要因になっていると訴える"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "支障木が橋に引っかかり決壊を招く仕組みを説明"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "被災地では支障木の流出と閉塞が氾濫につながっていると述べる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "支障木の閉塞が大きな災害に直結すると警告"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "米沢の河川は支障木が多く危険な状態だと指摘"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "大量の支障木流出で下流の橋が閉塞し氾濫すると懸念"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "この区間で氾濫すれば周辺地域が真っ先に被害を受けると警告"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "氾濫時に市立病院が浸水すると懸念"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "氾濫時に三友堂病院も浸水すると懸念"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "医療拠点につながる道路の決壊を危惧"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "相生橋は老朽化しており氾濫時に崩落の恐れがあると指摘"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "防災の最優先策は支障木の伐採撤去だと主張"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "最上川河川改修事業の早期着工の進捗確認を求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "県管理河川の計画的治水対策を進めるよう求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "急峻地での大規模造成計画は無謀だと批判"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "研究でも一帯が地滑り地帯とされていると指摘"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "地下火山活動を伴う地滑り地帯で危険性が高いと述べる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市民"@ja.
+kg:st_2 rdf:type cls:st_22.
+cls:st_22 rdfs:label "市民"@ja.
+kg:op_19 prop:content "土砂災害の危険性を住民説明会で問題視"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "事業者の認識は曖昧で不誠実だと批判"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "山の開発で保水力が失われ洪水が起こると懸念"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "山の開発が土砂災害を誘発すると懸念"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "開発で地下浸透が減り水源枯渇につながると懸念"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "山の開発が生態系に深刻な影響を及ぼすと懸念"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "雨量基準引下げは地滑り危険性が高い判断を意味すると指摘"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "水質汚濁や土砂流出で水窪ダムと周辺道路へ被害が及ぶと懸念"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "土砂流出が水窪ダムや周辺道路に重大な影響を及ぼすと懸念"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "福島側の生活用水にも広範囲な被害が及ぶと警告"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "土砂流出で福島側の広域水源に深刻な影響が出ると懸念"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "山形県知事"@ja.
+kg:st_3 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_30 prop:content "土砂災害防止のため配置や構造の見直しを求める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "盛土とのり面を極力減らすよう求める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "希少猛禽類の生息地に風力発電が建設されようとしていると問題視"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "イヌワシ営巣の可能性が高く予測評価の不確実性も高いと指摘"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "イヌワシ保全の観点から事業取りやめも含む抜本見直しを求める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "希少猛禽類や土砂災害への影響を懸念し保全措置を求める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "佐藤明彦市民環境部長"@ja.
+kg:st_4 rdf:type cls:st_23.
+cls:st_23 rdfs:label "行政担当者"@ja.
+kg:op_36 prop:content "県知事意見書は市の意見を十分反映していると評価"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "事業者に環境保全と災害対策への適切な対応を求め続ける"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "市長意見と県知事意見で希少猛禽類保全を厳格に求めていると説明"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "県独自調査を踏まえた誠実な鳥類保全を事業者に求める"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "吉田晋平建設部長"@ja.
+kg:st_5 rdf:type cls:st_23.
+kg:op_40 prop:content "閉塞率が高い河川が優先されるため当該区間の優先順位は低くなると説明"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:op_41 prop:content "閉塞率だけでなく周辺環境も含めて県に伐採を申し入れている"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_5.
+kg:op_42 prop:content "支障木で景観が悪く観光客の印象も悪いと指摘"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "来年度は支障木伐採を明確に要望すべきだと求める"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "計画的な治水対策の推進を求める"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "調査道開設で神経質なクマタカが既に逃げたのではないかと懸念"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "髙橋英夫議員"@ja.
+kg:st_6 rdf:type cls:st_9.
+kg:op_46 prop:content "地球温暖化が各地の災厄を強めていると指摘"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "イギリスの研究チーム"@ja.
+kg:st_7 rdf:type cls:st_10.
+cls:st_10 rdfs:label "研究者"@ja.
+kg:op_47 prop:content "気候変動で台風10号の最大風速が増した可能性があると分析"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "ネイサン・スパークス博士"@ja.
+kg:st_8 rdf:type cls:st_24.
+cls:st_24 rdfs:label "専門家"@ja.
+kg:op_48 prop:content "人間が温暖化を進める限り台風は激化し続けると述べる"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_8.
+kg:op_49 prop:content "温暖化の影響は豪雨として現れていると述べる"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_6.
+kg:op_50 prop:content "温暖化が台風被害を強めていると指摘"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_6.
+kg:op_51 prop:content "温暖化は海面上昇も招くと述べる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_6.
+kg:op_52 prop:content "温暖化の影響として高潮を挙げる"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_6.
+kg:op_53 prop:content "温暖化は健康被害ももたらすと指摘"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_6.
+kg:op_54 prop:content "温暖化の影響は食糧不足にも及ぶと述べる"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_6.
+kg:op_55 prop:content "温暖化により水不足が起こり得ると指摘"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_6.
+kg:op_56 prop:content "温暖化は生態系にも影響すると述べる"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_6.
+kg:op_57 prop:content "温暖化の影響はインフラ停止にも及ぶと指摘"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_6.
+kg:op_58 prop:content "脱炭素は人類の生死に関わる重要課題だと強調"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_6.
+kg:op_59 prop:content "市民に役割が伝わらないまま施策だけが進んできたと指摘"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_6.
+kg:op_60 prop:content "アンケートは説明不足のまま実施され内容理解が不十分だったと見る"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_6.
+kg:op_61 prop:content "説明会がアンケート後だった順番の問題が大きいと指摘"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_6.
+kg:op_62 prop:content "脱炭素事業は地域経済活性化につながる視点が重要と述べる"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_6.
+kg:op_63 prop:content "脱炭素事業は雇用拡大にもつながると期待"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_6.
+kg:op_64 prop:content "脱炭素の地場産業化で若者定着が進むと期待"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_6.
+kg:op_65 prop:content "米沢の少子化要因として働く場の不足を指摘"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_6.
+kg:op_66 prop:content "脱炭素推進の仕事が地場産業になれば米沢は変わると述べる"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_6.
+kg:op_67 prop:content "脱炭素の取組はシティプロモーションにも発展すると期待"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_6.
+kg:op_68 prop:content "脱炭素産業で若者が集まる流れをつくれると期待"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_6.
+kg:op_69 prop:content "イヌワシ営巣地の可能性から事業中止を含む見直しを求める"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_3.
+kg:st_9 rdfs:label "参加者"@ja.
+kg:st_9 rdf:type cls:st_25.
+cls:st_25 rdfs:label "参加者"@ja.
+kg:op_70 prop:content "住民説明会で反対意見が相次いだ"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "多くの市民"@ja.
+kg:st_10 rdf:type cls:st_22.
+kg:op_71 prop:content "土砂災害の危険性を強く懸念している"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_10.
+kg:op_72 prop:content "低周波音による健康被害を懸念している"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_10.
+kg:op_73 prop:content "地域の高い風力ポテンシャルから有効な再エネ手法と考える"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_4.
+kg:op_74 prop:content "風力を組み合わせるとより多くの需要家へ電力供給が可能になると説明"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_4.
+kg:op_75 prop:content "風力導入で費用対効果が高まると説明"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_4.
+kg:op_76 prop:content "ゾーニング調査で適地を選定していく方針を示す"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_4.
+kg:op_77 prop:content "市内利用を前提とした自給自足型で進めると説明"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_4.
+kg:op_78 prop:content "事業内容を丁寧に説明し合意形成を前提に進めると述べる"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_4.
+kg:op_79 prop:content "原則変更不可だが特別な理由があれば変更手続は可能と説明"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_4.
+kg:op_80 prop:content "住民理解を得つつ調査検証し着実に進める方針を示す"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_4.
+kg:op_81 prop:content "ゾーニングだけで適地判断できるのか不安を示す"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_6.
+kg:op_82 prop:content "詳しい地質調査は今後の法アセスや自主アセスで事業者が行うと説明"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_4.
+kg:op_83 prop:content "低周波音はアセスで検証し住民説明と合意形成を図ると述べる"@ja.
+kg:op_83 rdf:type cls:opinion.
+kg:op_83 prop:speaker kg:st_4.
+kg:op_84 prop:content "申請前に実現性調整が必要なため説明会とアンケートを実施してきたと説明"@ja.
+kg:op_84 rdf:type cls:opinion.
+kg:op_84 prop:speaker kg:st_4.
+kg:op_85 prop:content "先行地域外にも補助制度を使って前倒しで広げたいと説明"@ja.
+kg:op_85 rdf:type cls:opinion.
+kg:op_85 prop:speaker kg:st_4.
+kg:op_86 prop:content "横展開時には住民説明を行う方針を示す"@ja.
+kg:op_86 rdf:type cls:opinion.
+kg:op_86 prop:speaker kg:st_4.
+kg:op_87 prop:content "NTT-MEは実証を踏まえ東北へ展開したい考えだと説明"@ja.
+kg:op_87 rdf:type cls:opinion.
+kg:op_87 prop:speaker kg:st_4.
+kg:op_88 prop:content "4地区外にも早期展開できるよう働きかけると説明"@ja.
+kg:op_88 rdf:type cls:opinion.
+kg:op_88 prop:speaker kg:st_4.
+kg:op_89 prop:content "横展開時は交付金がないため料金が若干上がる可能性があると説明"@ja.
+kg:op_89 rdf:type cls:opinion.
+kg:op_89 prop:speaker kg:st_4.
+kg:op_90 prop:content "やめる場合もNTT-MEが費用を取らず撤去し出口処理まで進めると説明"@ja.
+kg:op_90 rdf:type cls:opinion.
+kg:op_90 prop:speaker kg:st_4.
+kg:st_11 rdfs:label "近藤洋介市長"@ja.
+kg:st_11 rdf:type cls:st_2.
+kg:op_91 prop:content "民間計画と異なり地域と向き合い説明責任と慎重なアセスを徹底すると述べる"@ja.
+kg:op_91 rdf:type cls:opinion.
+kg:op_91 prop:speaker kg:st_11.
+kg:op_92 prop:content "再生可能エネルギー導入は現世代の責任だと明言"@ja.
+kg:op_92 rdf:type cls:opinion.
+kg:op_92 prop:speaker kg:st_11.
+kg:op_93 prop:content "エネルギーのベストミックスで低炭素脱炭素の米沢をつくると述べる"@ja.
+kg:op_93 rdf:type cls:opinion.
+kg:op_93 prop:speaker kg:st_11.
+kg:op_94 prop:content "採択結果にかかわらず脱炭素は粘り強く進めるべきと強調"@ja.
+kg:op_94 rdf:type cls:opinion.
+kg:op_94 prop:speaker kg:st_11.
+kg:op_95 prop:content "脱炭素の実践が米沢の価値向上につながると確信を示す"@ja.
+kg:op_95 rdf:type cls:opinion.
+kg:op_95 prop:speaker kg:st_11.
+kg:op_96 prop:content "米沢が置賜全体の脱炭素を牽引する意気込みを示す"@ja.
+kg:op_96 rdf:type cls:opinion.
+kg:op_96 prop:speaker kg:st_11.
+kg:op_97 prop:content "周辺自治体も巻き込む広域的な脱炭素推進を目指すと述べる"@ja.
+kg:op_97 rdf:type cls:opinion.
+kg:op_97 prop:speaker kg:st_11.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "近年、豪雨による災害は、季節・地域を問わず頻発化、激甚化しています。その多くは河川の氾濫によって広範囲に甚大な被害を及ぼしているものですが"@ja.
+<< kg:id_2 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "その氾濫の一つの大きな要因となっているのが支障木です"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "支障木が流れ出し、橋桁にとどまり流れをせき止めて、圧力がかかり橋桁や堤防を決壊させます"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "支障木が非常に多く流れ出し、川をせき止めて、それが氾濫、大きな激甚災害につながっている"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "支障木が非常に多く流れ出し、川をせき止めて、それが氾濫、大きな激甚災害につながっている"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "米沢では現在、河川に鬱蒼と支障木が生い茂り、まるでジャングルの様相となっています"@ja.
+<< kg:id_6 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "そのような大量の支障木が豪雨によって上流から押し流された場合を想定するに、相生橋、そして住之江橋から下流の橋々を次々とせき止めて氾濫に至ることは容易に想像できることです"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "もしも、万里橋から相生橋の間で氾濫が起きれば、真っ先にその周辺地域はもちろん"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "市立病院、三友堂病院は浸水"@ja.
+<< kg:id_13 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "市立病院、三友堂病院は浸水"@ja.
+<< kg:id_13 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "命をつなぐ道路は決壊と、甚大な被害が予想されます"@ja.
+<< kg:id_6 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "加えて、相生橋は現在老朽化のために架け替え工事の検討が進められているほどで、ひとたび氾濫し、支障木によってせき止められた圧力が一気にかかれば、橋桁の崩落も予想されます"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "防災において最優先すべきは、支障木の伐採撤去による河川の整備と思われます"@ja.
+<< kg:id_21 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "本市重要事業要望書にもある一級河川最上川河川改修事業の早期着工について"@ja.
+<< kg:id_21 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "県管理河川の計画的な治水対策の促進についての進捗についてお聞かせください"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "栗子連山のあのように急峻な尾根沿いに最大10か所もの50メートル四方のヤードを切り開き、それを道路でつなぐという計画は全くの無謀で、想像を絶するとしか言い表しようがありません"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "栗子峠近辺の地質については、福島大学の八島教授らが1995年、第１級の地滑り地帯と結論づけており"@ja.
+<< kg:id_26 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "名古屋大学の研究者らは、この一帯は典型的な地滑り地帯で、地下の火山活動が続いていると日本火山学会において報告しています"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "住民説明会においても、事業者側からは、市民から土砂災害の危険性について問われると「地滑りの可能性がある区域であることは認識しているが、そうした区域は避けて地質調査を行った上で設計を進める」などと回答しました"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "今まで人の手が入っていなかった山に開発が行われれば、山は保水力を失い、洪水や土砂災害"@ja.
+<< kg:id_33 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "今まで人の手が入っていなかった山に開発が行われれば、山は保水力を失い、洪水や土砂災害"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "地下浸透せずに水源の枯渇"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "生態系への影響など、環境や私たち人間に深刻な問題が脅威となって襲いかかってくる"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "これが何を意味するのかは明白です。地滑りや土砂災害が起きる可能性が高いという判断にほかなりません"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "本計画において危惧される水質汚濁、土砂流出の影響については、置賜全域の水源でもある水窪ダム及び周辺道路"@ja.
+<< kg:id_42 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "本計画において危惧される水質汚濁、土砂流出の影響については、置賜全域の水源でもある水窪ダム及び周辺道路"@ja.
+<< kg:id_40 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "福島側には３市３町40万人もの生活用水を蓄える摺上川ダムと、被害は広範囲に及び、取り返しのつかない状況となる可能性が極めて高いと思います"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "福島側には３市３町40万人もの生活用水を蓄える摺上川ダムと、被害は広範囲に及び、取り返しのつかない状況となる可能性が極めて高いと思います"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "県知事意見書では、土砂災害の防止として、近年、記録的短時間大雨が全国的に頻発していることから、風力発電機組立てヤード及び管理用道路について、配置や構造を見直し"@ja.
+<< kg:id_44 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "盛土やのり面の範囲を極力削減することと明記されました"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "米沢にも、今では全国に僅か300羽ほどと言われる絶滅危惧種で希少猛禽類のイヌワシ、そしてクマタカが生息していますが、そこに今まさに風力発電が建設されようとしている"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "県知事意見書では、イヌワシ等希少猛禽類の生息及び生息環境保全として、準備書及び県独自調査から事業実施区域近傍でのイヌワシが営巣している蓋然性が高いとし、イヌワシに関する予測及び評価の不確実性が非常に高く"@ja.
+<< kg:id_44 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "イヌワシの生息及び生息環境の保全の見地から、事業の取りやめも含め抜本的な事業計画の見直しを行うことと明記されました"@ja.
+<< kg:id_44 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "山形県知事の意見書については、希少猛禽類や土砂災害等に対する影響を懸念しており、適切な保全措置及び対策を講じるよう求めております"@ja.
+<< kg:id_44 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "事業者には本市及び山形県の意見を真摯に受け止めた上で、環境保全及び災害対策等への対応を適切に行っていただくよう今後も求めてまいります"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "環境影響評価法に基づく米沢市長及び山形県知事意見において、希少猛禽類に対する保全措置を具体的かつ厳密に求めております"@ja.
+<< kg:id_56 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "事業者には本市及び山形県の意見及び山形県の独自調査結果を真摯に受け止めた上で、鳥類の保全措置を適切かつ誠実に行っていただくよう今後も求めてまいりたい"@ja.
+<< kg:id_58 prop:cause kg:id_59 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "これから災害を引き起こす可能性があるというのが河道の閉塞率が高い河川となってございますので、そういった意味では優先順位は低くなる"@ja.
+<< kg:id_19 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "河道閉塞率だけで判断するのではなく、やはり河川河川の環境であったり、市街地にあるであったり、脇に河川緑地があると、そういったところをいろいろ総合的に判断して、支障木伐採についてお願いしたい"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "駅から降りてきた観光客の方があそこを通ったときに、何だここはという非常に景観も悪いところでございます"@ja.
+<< kg:id_21 prop:countermeasure kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "土砂堆積及び支障木の繁茂を抑制する流下能力向上対策"@ja.
+<< kg:id_21 prop:countermeasure kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "河床低下を防止し河岸等の河川管理施設を保護する流路保全対策といった計画的な治水対策の推進"@ja.
+<< kg:id_65 prop:cause kg:id_66 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "クマタカの生態というものは非常に神経質で、人が入れば巣の子供を置いて親が逃げていくような生態でございます。もう既に調査道が切られてしまって、そうしたクマタカがもう既に逃げてしまっているのではないか"@ja.
+<< kg:id_67 prop:cause kg:id_68 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "地球温暖化、気候変動による災厄は地球上あちこちで猛威を振るっています"@ja.
+<< kg:id_69 prop:cause kg:id_70 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_47;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "イギリスの研究チームは30日、気候変動によって台風10号の最大風速が7.5％増した可能性があるとの暫定的な分析結果を発表し、チームのネイサン・スパークス博士は「人間が気候を温暖化させる限り、台風は激化し続ける」と述べています"@ja.
+<< kg:id_68 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "地球温暖化による気候変動の影響は、豪雨や台風以外にも"@ja.
+<< kg:id_68 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "地球温暖化による気候変動の影響は、豪雨や台風以外にも"@ja.
+<< kg:id_68 prop:effect kg:id_73 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "海面上昇・高潮"@ja.
+<< kg:id_68 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "海面上昇・高潮"@ja.
+<< kg:id_68 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "熱中症などの健康被害"@ja.
+<< kg:id_68 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "食糧不足"@ja.
+<< kg:id_68 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "水不足"@ja.
+<< kg:id_68 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "生態系への影響"@ja.
+<< kg:id_68 prop:effect kg:id_78 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "インフラの機能停止"@ja.
+<< kg:id_68 prop:countermeasure kg:id_79 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "地球温暖化を抑止するために脱炭素を図る取組は、明日の人類の生死に関わる重要な課題と言えます"@ja.
+<< kg:id_80 prop:cause kg:id_81 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "市民の側からは、ではそのために市民は何をすればいいのか、それが分からない、伝わらないまま時が経過してきたのではないでしょうか"@ja.
+<< kg:id_82 prop:cause kg:id_83 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "その印象は、説明不足で内容が伝わっていない状態での反応が大半というものです"@ja.
+<< kg:id_82 prop:cause kg:id_84 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "住民説明会の開催がアンケートの後という順番の問題も大きかったのだと思います"@ja.
+<< kg:id_85 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "脱炭素先行地域の事業は地域経済の活性化"@ja.
+<< kg:id_85 prop:effect kg:id_87 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "雇用拡大"@ja.
+<< kg:id_85 prop:effect kg:id_88 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "若者の定着にも発展する事業"@ja.
+<< kg:id_89 prop:cause kg:id_90 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "米沢の少子化問題の要因の一つは、魅力的な働く場が少なく、若者が定着しにくいという点がある"@ja.
+<< kg:id_91 prop:effect kg:id_92 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "脱炭素の取組推進の仕事が地場産業となり"@ja.
+<< kg:id_91 prop:effect kg:id_93 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "シティプロモーションにも発展して"@ja.
+<< kg:id_91 prop:effect kg:id_94 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "若者が集まるという流れになれば、米沢は変わります"@ja.
+<< kg:id_95 prop:effect kg:id_96 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "建設予定地の周辺がイヌワシの営巣地になっている可能性が高いとして、生息環境保全の必要性から事業中止を含めた計画の抜本的見直しを求めました"@ja.
+<< kg:id_95 prop:effect kg:id_97 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "同社は８月４日、５日に市民全体を対象にした住民説明会を開催しましたが、参加者からは反対の意見が相次ぎました"@ja.
+<< kg:id_95 prop:effect kg:id_98 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "多くの市民が、イヌワシの問題以外にも、土砂災害の危険性"@ja.
+<< kg:id_95 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "低周波音による健康被害の懸念"@ja.
+<< kg:id_100 prop:cause kg:id_101 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "風力については、本地域におきましては非常にポテンシャルが高いことから、再エネ導入の手法として非常に有効と考えており"@ja.
+<< kg:id_100 prop:effect kg:id_102 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "風力発電を組み合わせることで、交付金の範囲の中において、より多くの需要家に再エネ電源を供給することが可能となり"@ja.
+<< kg:id_100 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "費用対効果が高い事業になると考えております"@ja.
+<< kg:id_100 prop:countermeasure kg:id_104 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "現在行っているゾーニング調査におきまして適地を絞り込んでいく"@ja.
+<< kg:id_100 prop:countermeasure kg:id_105 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "発電した電力は100％市内で利用する自給自足型であること"@ja.
+<< kg:id_100 prop:countermeasure kg:id_106 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "地元や市民との合意形成は今後進めていくこととしており、しっかりと事業内容を説明し、合意形成を図ることを前提として進めてまいります"@ja.
+<< kg:id_107 prop:countermeasure kg:id_108 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "不測の事態により特別な理由で変更せざるを得ない状況の場合は、計画の変更案の提出や評価委員からの諮問・評価等の多くのプロセスを経ることにはなりますが、変更手続を行うことは可能"@ja.
+<< kg:id_107 prop:countermeasure kg:id_109 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "住民の皆様の理解を得ながら、調査・検証をしっかり行い、計画に沿った形で着実に事業を進めてまいります"@ja.
+<< kg:id_110 prop:cause kg:id_111 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_81;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "前提条件として適地をまずはゾーニングによって示すというところを目的としておりますので、今御質問のあった地質ですとか、そういった詳しいところまでは行うものではございませんので、それにつきましては今後、法アセス、あるいは自主アセスの中で事業者がしっかりとやっていく"@ja.
+<< kg:id_112 prop:countermeasure kg:id_113 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_83;
+    prop:text-txt_contents "そういった健康被害を訴えられる方もいらっしゃいますので、そこにつきましては事業者が実施するアセスの中でしっかりと検証を行い、住民の方に説明しながら、合意を得た上で進めていく"@ja.
+<< kg:id_114 prop:countermeasure kg:id_115 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_84;
+    prop:text-txt_contents "説明会とアンケートについてはしっかりとやってきたところでございまして、説明会については12月に開催しておりますので、できる限りにおいて地区の方にしっかりと情報を届ける努力はさせていただいた"@ja.
+<< kg:id_116 prop:countermeasure kg:id_117 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_85;
+    prop:text-txt_contents "先行地域以外の部分については、そういったものを使いながら前倒しして横展開を始めていく"@ja.
+<< kg:id_116 prop:countermeasure kg:id_118 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_86;
+    prop:text-txt_contents "その際にはしっかりとその段階で住民の方に御説明もさせていただきたい"@ja.
+<< kg:id_119 prop:countermeasure kg:id_120 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_87;
+    prop:text-txt_contents "ＮＴＴ－ＭＥが今回の実験を踏まえまして東北エリアに展開を将来的にはしていきたいという思いで参画されております"@ja.
+<< kg:id_119 prop:countermeasure kg:id_121 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_88;
+    prop:text-txt_contents "早めに４地区以外のところにも横展開できるように連携してお願いしてまいりたい"@ja.
+<< kg:id_122 prop:cause kg:id_123 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_89;
+    prop:text-txt_contents "今回のモデル事業については交付金が入りますので、それなりの使用料という形で設定する予定にしております。今後横展開したときには若干料金が変わってくる、上がってくるということは想定されます"@ja.
+<< kg:id_124 prop:countermeasure kg:id_125 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_90;
+    prop:text-txt_contents "やめるという形になった場合については、ＮＴＴ－ＭＥが費用はいただかないでそこでやめるという形を今のところは想定しているところでございます。また、やめた場合のパネルについては、ＮＴＴが丸紅を通じてリユースしていくような廃棄の出口処理のところまで今のところしっかりと合意を取りながら進めている"@ja.
+<< kg:id_126 prop:countermeasure kg:id_127 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_91;
+    prop:text-txt_contents "我々はですから、地元の自治体が絡む事業ですから、地域と向き合うのは当然でありますし、きちんとした説明、さらには環境アセスメントもより慎重に行う"@ja.
+<< kg:id_128 prop:cause kg:id_129 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_92;
+    prop:text-txt_contents "やはり再生可能エネルギーというのは、今を生きている我々の世代としての責任だと思っていますので、これは何としてもやらなければいけない"@ja.
+<< kg:id_128 prop:countermeasure kg:id_130 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_93;
+    prop:text-txt_contents "エネルギーのベストミックスといいましょうか、太陽光もバイオマスも、場合によっては風力も、いろんなものの知恵を出して低炭素、脱炭素の米沢をつくっていく"@ja.
+<< kg:id_128 prop:countermeasure kg:id_131 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_94;
+    prop:text-txt_contents "大事なのは、やはり脱炭素という取組は粘り強くやることが、何であれやらなければいけないし、やることが米沢の価値を上げると確信を持っています"@ja.
+<< kg:id_128 prop:effect kg:id_132 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_95;
+    prop:text-txt_contents "やることが米沢の価値を上げると確信を持っています"@ja.
+<< kg:id_128 prop:countermeasure kg:id_133 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_96;
+    prop:text-txt_contents "置賜の中核市米沢として置賜全体の脱炭素を引っ張るのだと、そういうぐらいの意気込みで脱炭素の取組というのを我々はしなければいけない"@ja.
+<< kg:id_128 prop:countermeasure kg:id_134 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_97;
+    prop:text-txt_contents "飯豊町や川西町や高畠町、こういった周辺の自治体も巻き込んだ形の脱炭素の取組を我々米沢は引っ張るのだ"@ja.
+}

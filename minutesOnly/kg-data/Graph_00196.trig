@@ -1,0 +1,1015 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00196> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "看護師不足"@ja.
+kg:id_1 rdf:type cls:c_355.
+cls:c_355 rdfs:label "人材不足"@ja.
+kg:id_2 rdfs:label "地元定着率が比較的低い傾向"@ja.
+kg:id_2 rdf:type cls:c_4351.
+cls:c_4351 rdfs:label "定着率低下"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "妊娠などの機会の離職"@ja.
+kg:id_3 rdf:type cls:c_4352.
+cls:c_4352 rdfs:label "離職"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "その後復職が進まないこと"@ja.
+kg:id_4 rdf:type cls:c_4353.
+cls:c_4353 rdfs:label "復職停滞"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "慢性的な不足状態"@ja.
+kg:id_5 rdf:type cls:c_4354.
+cls:c_4354 rdfs:label "不足状態"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "絶対数的な不足"@ja.
+kg:id_6 rdf:type cls:c_4354.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "本市"@ja.
+kg:id_7 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_8 rdfs:label "鶴岡市立看護専門学校の運営"@ja.
+kg:id_8 rdf:type cls:c_4355.
+cls:c_4355 rdfs:label "教育機関運営"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "鶴岡准看護学院に対する運営助成"@ja.
+kg:id_9 rdf:type cls:c_4356.
+cls:c_4356 rdfs:label "運営助成"@ja.
+kg:id_7 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "看護師の配置状況などの調査を定期的に進める"@ja.
+kg:id_10 rdf:type cls:c_1939.
+cls:c_1939 rdfs:label "実態調査"@ja.
+kg:id_7 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "県と連携を図りながら看護師確保のための施策を進める"@ja.
+kg:id_11 rdf:type cls:c_4357.
+cls:c_4357 rdfs:label "連携施策"@ja.
+kg:id_7 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "荘内看護専門学校"@ja.
+kg:id_12 rdf:type cls:c_3467.
+cls:c_3467 rdfs:label "教育機関"@ja.
+kg:id_13 rdfs:label "校舎の老朽化"@ja.
+kg:id_13 rdf:type cls:c_1016.
+cls:c_1016 rdfs:label "施設老朽化"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "看護師育成確保のために早期の建てかえが必要な状況"@ja.
+kg:id_14 rdf:type cls:c_4358.
+cls:c_4358 rdfs:label "建替必要"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "荘内病院の近隣地を移転候補地として検討"@ja.
+kg:id_15 rdf:type cls:c_4359.
+cls:c_4359 rdfs:label "移転検討"@ja.
+kg:id_12 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "新校舎建設を2023年度以降に進める"@ja.
+kg:id_16 rdf:type cls:c_4360.
+cls:c_4360 rdfs:label "校舎建設"@ja.
+kg:id_12 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "他の看護学校の視察"@ja.
+kg:id_17 rdf:type cls:c_878.
+cls:c_878 rdfs:label "視察"@ja.
+kg:id_12 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "看護師養成に係る情報収集"@ja.
+kg:id_18 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_12 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "整備構想の策定準備"@ja.
+kg:id_19 rdf:type cls:c_4361.
+cls:c_4361 rdfs:label "構想策定"@ja.
+kg:id_12 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "改定後の教育カリキュラムを踏まえた整備構想の策定"@ja.
+kg:id_20 rdf:type cls:c_4361.
+kg:id_12 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "地域医療の充実"@ja.
+kg:id_21 rdf:type cls:c_4362.
+cls:c_4362 rdfs:label "地域医療"@ja.
+kg:id_22 rdfs:label "医師看護師の充実"@ja.
+kg:id_22 rdf:type cls:c_4363.
+cls:c_4363 rdfs:label "医療人材"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "地球温暖化問題"@ja.
+kg:id_23 rdf:type cls:c_1101.
+cls:c_1101 rdfs:label "環境問題"@ja.
+kg:id_24 rdfs:label "温室効果ガス排出の抑制が必要"@ja.
+kg:id_24 rdf:type cls:c_2691.
+cls:c_2691 rdfs:label "排出抑制"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "東日本大震災による原子力発電所の事故"@ja.
+kg:id_25 rdf:type cls:c_2029.
+cls:c_2029 rdfs:label "原発事故"@ja.
+kg:id_26 rdfs:label "エネルギーの安定供給の脆弱性の経験"@ja.
+kg:id_26 rdf:type cls:c_4364.
+cls:c_4364 rdfs:label "供給脆弱性"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "国家"@ja.
+kg:id_27 rdf:type cls:c_1238.
+cls:c_1238 rdfs:label "国"@ja.
+kg:id_28 rdfs:label "省エネルギーの推進"@ja.
+kg:id_28 rdf:type cls:c_2139.
+cls:c_2139 rdfs:label "省エネ推進"@ja.
+kg:id_27 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "再生可能エネルギー普及拡大"@ja.
+kg:id_29 rdf:type cls:c_1312.
+cls:c_1312 rdfs:label "再エネ推進"@ja.
+kg:id_27 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "エネルギー政策の転換"@ja.
+kg:id_30 rdf:type cls:c_3149.
+cls:c_3149 rdfs:label "政策転換"@ja.
+kg:id_27 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "再生可能エネルギー設備の導入拡大"@ja.
+kg:id_31 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_7 prop:countermeasure kg:id_31.
+kg:id_7 prop:countermeasure kg:id_28.
+kg:id_32 rdfs:label "一般家庭や市内事業者への設備導入補助金制度の実施"@ja.
+kg:id_32 rdf:type cls:c_4171.
+cls:c_4171 rdfs:label "導入補助"@ja.
+kg:id_7 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "公共施設"@ja.
+kg:id_33 rdf:type cls:c_1907.
+cls:c_1907 rdfs:label "公共施設"@ja.
+kg:id_34 rdfs:label "災害時の非常用電源の配備"@ja.
+kg:id_34 rdf:type cls:c_101.
+cls:c_101 rdfs:label "非常用電源"@ja.
+kg:id_33 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "学校施設等13施設"@ja.
+kg:id_35 rdf:type cls:c_1907.
+kg:id_36 rdfs:label "太陽光発電設備の導入"@ja.
+kg:id_36 rdf:type cls:c_932.
+cls:c_932 rdfs:label "太陽光発電"@ja.
+kg:id_35 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "沿岸地の避難路やコミュニティセンター公園など134カ所"@ja.
+kg:id_37 rdf:type cls:c_1907.
+kg:id_38 rdfs:label "太陽光発電によるLED街灯の設置"@ja.
+kg:id_38 rdf:type cls:c_4365.
+cls:c_4365 rdfs:label "街灯設置"@ja.
+kg:id_37 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "4施設"@ja.
+kg:id_39 rdf:type cls:c_1907.
+kg:id_40 rdfs:label "太陽光発電設備と蓄電池の整備"@ja.
+kg:id_40 rdf:type cls:c_4366.
+cls:c_4366 rdfs:label "蓄電設備"@ja.
+kg:id_39 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "櫛引地域"@ja.
+kg:id_41 rdf:type cls:c_1927.
+cls:c_1927 rdfs:label "地域"@ja.
+kg:id_42 rdfs:label "鶴岡バイオマス発電所の稼働"@ja.
+kg:id_42 rdf:type cls:c_3178.
+cls:c_3178 rdfs:label "バイオマス発電"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "鶴岡浄化センター内"@ja.
+kg:id_43 rdf:type cls:c_4367.
+cls:c_4367 rdfs:label "施設"@ja.
+kg:id_44 rdfs:label "消化ガス発電事業の稼働"@ja.
+kg:id_44 rdf:type cls:c_4339.
+cls:c_4339 rdfs:label "ガス発電"@ja.
+kg:id_43 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "板井川"@ja.
+kg:id_45 rdf:type cls:c_1927.
+kg:id_46 rdfs:label "小水力発電事業の稼働"@ja.
+kg:id_46 rdf:type cls:c_2142.
+cls:c_2142 rdfs:label "小水力発電"@ja.
+kg:id_45 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "湯野浜地区"@ja.
+kg:id_47 rdf:type cls:c_1927.
+kg:id_48 rdfs:label "湯野浜温泉未利用熱活用事業"@ja.
+kg:id_48 rdf:type cls:c_4368.
+cls:c_4368 rdfs:label "熱利用事業"@ja.
+kg:id_47 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "平成30年度省エネ大賞で資源エネルギー庁長官賞を受賞"@ja.
+kg:id_49 rdf:type cls:c_4370.
+cls:c_4370 rdfs:label "受賞評価"@ja.
+kg:id_48 prop:effect kg:id_49.
+kg:id_50 rdfs:label "三瀬地区"@ja.
+kg:id_50 rdf:type cls:c_1927.
+kg:id_51 rdfs:label "木質バイオマス活用事業への支援"@ja.
+kg:id_51 rdf:type cls:c_2769.
+cls:c_2769 rdfs:label "事業支援"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "山の保全と木材の活用と再生可能エネルギーの推進と地域活性化の同時解決"@ja.
+kg:id_52 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_50 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "クールチョイスの普及啓発"@ja.
+kg:id_53 rdf:type cls:c_2309.
+cls:c_2309 rdfs:label "普及啓発"@ja.
+kg:id_7 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "二酸化炭素排出"@ja.
+kg:id_54 rdf:type cls:c_4371.
+cls:c_4371 rdfs:label "排出"@ja.
+kg:id_55 rdfs:label "節電の実施呼びかけ"@ja.
+kg:id_55 rdf:type cls:c_4372.
+cls:c_4372 rdfs:label "節電"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "グリーンカーテンの実施呼びかけ"@ja.
+kg:id_56 rdf:type cls:c_979.
+cls:c_979 rdfs:label "省エネ行動"@ja.
+kg:id_54 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "公共交通の利用促進"@ja.
+kg:id_57 rdf:type cls:c_4373.
+cls:c_4373 rdfs:label "公共交通利用"@ja.
+kg:id_54 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "再生可能エネルギー由来の電力数値が増加"@ja.
+kg:id_58 rdf:type cls:c_765.
+cls:c_765 rdfs:label "導入拡大"@ja.
+kg:id_7 prop:effect kg:id_58.
+kg:id_59 rdfs:label "約1万キロワットの増加"@ja.
+kg:id_59 rdf:type cls:c_4374.
+cls:c_4374 rdfs:label "電力増加"@ja.
+kg:id_60 rdfs:label "年間で約1万3000世帯分をカバーする電力"@ja.
+kg:id_60 rdf:type cls:c_4375.
+cls:c_4375 rdfs:label "供給電力"@ja.
+kg:id_59 prop:effect kg:id_60.
+kg:id_61 rdfs:label "着実に成果が上がっている"@ja.
+kg:id_61 rdf:type cls:c_4376.
+cls:c_4376 rdfs:label "成果"@ja.
+kg:id_7 prop:effect kg:id_61.
+kg:id_62 rdfs:label "北海道胆振東部地震"@ja.
+kg:id_62 rdf:type cls:c_1209.
+cls:c_1209 rdfs:label "災害"@ja.
+kg:id_63 rdfs:label "大規模停電の発生"@ja.
+kg:id_63 rdf:type cls:c_95.
+cls:c_95 rdfs:label "大規模停電"@ja.
+kg:id_62 prop:effect kg:id_63.
+kg:id_64 rdfs:label "地域ごとに自立した電源を備える分散型電源設備の必要性が教訓"@ja.
+kg:id_64 rdf:type cls:c_4377.
+cls:c_4377 rdfs:label "分散電源必要"@ja.
+kg:id_62 prop:effect kg:id_64.
+kg:id_65 rdfs:label "地域資源の活用"@ja.
+kg:id_65 rdf:type cls:c_2078.
+cls:c_2078 rdfs:label "地域資源活用"@ja.
+kg:id_7 prop:countermeasure kg:id_65.
+kg:id_66 rdfs:label "再生可能エネルギー設備の円滑な導入"@ja.
+kg:id_66 rdf:type cls:c_266.
+kg:id_7 prop:countermeasure kg:id_66.
+kg:id_67 rdfs:label "省エネルギーを推進"@ja.
+kg:id_67 rdf:type cls:c_2139.
+kg:id_7 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "小水力発電事業の可能性をさらに調査"@ja.
+kg:id_68 rdf:type cls:c_572.
+cls:c_572 rdfs:label "可能性調査"@ja.
+kg:id_7 prop:countermeasure kg:id_68.
+kg:id_69 rdfs:label "市内4カ所の適地"@ja.
+kg:id_69 rdf:type cls:c_4378.
+cls:c_4378 rdfs:label "適地"@ja.
+kg:id_70 rdfs:label "自立分散型の電源配備と防災減災地域振興につながる取り組みの検討"@ja.
+kg:id_70 rdf:type cls:c_799.
+cls:c_799 rdfs:label "導入検討"@ja.
+kg:id_69 prop:countermeasure kg:id_70.
+kg:id_71 rdfs:label "小水力発電"@ja.
+kg:id_71 rdf:type cls:c_2142.
+kg:id_72 rdfs:label "利用可能量が比較的多い"@ja.
+kg:id_72 rdf:type cls:c_4379.
+cls:c_4379 rdfs:label "資源量"@ja.
+kg:id_71 prop:effect kg:id_72.
+kg:id_73 rdfs:label "低コストの水力発電システム"@ja.
+kg:id_73 rdf:type cls:c_1093.
+cls:c_1093 rdfs:label "発電設備"@ja.
+kg:id_74 rdfs:label "価格が従来の3分の1"@ja.
+kg:id_74 rdf:type cls:c_4380.
+cls:c_4380 rdfs:label "低価格"@ja.
+kg:id_73 prop:effect kg:id_74.
+kg:id_75 rdfs:label "これまで採算性が見込めない用水路や上下水道施設等でも可能性"@ja.
+kg:id_75 rdf:type cls:c_1901.
+cls:c_1901 rdfs:label "導入可能性"@ja.
+kg:id_73 prop:effect kg:id_75.
+kg:id_76 rdfs:label "風力発電事業への取り組み"@ja.
+kg:id_76 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_7 prop:countermeasure kg:id_76.
+kg:id_77 rdfs:label "風力発電事業"@ja.
+kg:id_77 rdf:type cls:c_128.
+kg:id_78 rdfs:label "環境アセスメント評価書の完成"@ja.
+kg:id_78 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_77 prop:countermeasure kg:id_78.
+kg:id_79 rdfs:label "市民への縦覧"@ja.
+kg:id_79 rdf:type cls:c_715.
+cls:c_715 rdfs:label "情報公開"@ja.
+kg:id_77 prop:countermeasure kg:id_79.
+kg:id_80 rdfs:label "工事着工を平成31年4月めどに予定"@ja.
+kg:id_80 rdf:type cls:c_4381.
+cls:c_4381 rdfs:label "工事着手"@ja.
+kg:id_77 prop:countermeasure kg:id_80.
+kg:id_81 rdfs:label "2020年12月ごろの運転開始見込み"@ja.
+kg:id_81 rdf:type cls:c_926.
+cls:c_926 rdfs:label "運転開始"@ja.
+kg:id_77 prop:countermeasure kg:id_81.
+kg:id_82 rdfs:label "騒音など環境配慮の課題が多く進展が図られない状況"@ja.
+kg:id_82 rdf:type cls:c_4382.
+cls:c_4382 rdfs:label "環境課題"@ja.
+kg:id_77 prop:effect kg:id_82.
+kg:id_83 rdfs:label "洋上風力発電の研究を深める必要"@ja.
+kg:id_83 rdf:type cls:c_4383.
+cls:c_4383 rdfs:label "研究"@ja.
+kg:id_7 prop:countermeasure kg:id_83.
+kg:id_84 rdfs:label "洋上風力発電"@ja.
+kg:id_84 rdf:type cls:c_175.
+cls:c_175 rdfs:label "洋上風力発電"@ja.
+kg:id_85 rdfs:label "漁業に与える影響"@ja.
+kg:id_85 rdf:type cls:c_280.
+cls:c_280 rdfs:label "漁業影響"@ja.
+kg:id_84 prop:effect kg:id_85.
+kg:id_86 rdfs:label "景観に与える影響"@ja.
+kg:id_86 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_84 prop:effect kg:id_86.
+kg:id_87 rdfs:label "鳥類等に与える影響"@ja.
+kg:id_87 rdf:type cls:c_746.
+cls:c_746 rdfs:label "生態影響"@ja.
+kg:id_84 prop:effect kg:id_87.
+kg:id_88 rdfs:label "送電線への接続における空き容量の確保"@ja.
+kg:id_88 rdf:type cls:c_2540.
+cls:c_2540 rdfs:label "送電制約"@ja.
+kg:id_84 prop:effect kg:id_88.
+kg:id_89 rdfs:label "加茂地区より南は岩礁が多い"@ja.
+kg:id_89 rdf:type cls:c_4384.
+cls:c_4384 rdfs:label "地形条件"@ja.
+kg:id_7 prop:cause kg:id_89.
+kg:id_90 rdfs:label "設置場所が湯野浜地区より北に限定される制約"@ja.
+kg:id_90 rdf:type cls:c_4385.
+cls:c_4385 rdfs:label "立地制約"@ja.
+kg:id_84 prop:effect kg:id_90.
+kg:id_91 rdfs:label "県"@ja.
+kg:id_91 rdf:type cls:c_4386.
+cls:c_4386 rdfs:label "都道府県"@ja.
+kg:id_92 rdfs:label "山形県地域協調型洋上風力発電研究検討会議の立ち上げ"@ja.
+kg:id_92 rdf:type cls:c_4387.
+cls:c_4387 rdfs:label "検討会議"@ja.
+kg:id_91 prop:countermeasure kg:id_92.
+kg:id_93 rdfs:label "遊佐沿岸域検討部会の設置"@ja.
+kg:id_93 rdf:type cls:c_4388.
+cls:c_4388 rdfs:label "検討部会"@ja.
+kg:id_91 prop:countermeasure kg:id_93.
+kg:id_94 rdfs:label "導入の可能性や課題について情報収集と協議"@ja.
+kg:id_94 rdf:type cls:c_239.
+kg:id_91 prop:countermeasure kg:id_94.
+kg:id_95 rdfs:label "市"@ja.
+kg:id_95 rdf:type cls:c_117.
+kg:id_96 rdfs:label "洋上風力発電の動向を注視"@ja.
+kg:id_96 rdf:type cls:c_4389.
+cls:c_4389 rdfs:label "動向注視"@ja.
+kg:id_95 prop:countermeasure kg:id_96.
+kg:id_97 rdfs:label "大型風力発電"@ja.
+kg:id_97 rdf:type cls:c_128.
+kg:id_98 rdfs:label "景観の問題"@ja.
+kg:id_98 rdf:type cls:c_4390.
+cls:c_4390 rdfs:label "景観課題"@ja.
+kg:id_97 prop:effect kg:id_98.
+kg:id_99 rdfs:label "風切り音"@ja.
+kg:id_99 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_97 prop:effect kg:id_99.
+kg:id_100 rdfs:label "低周波"@ja.
+kg:id_100 rdf:type cls:c_2288.
+cls:c_2288 rdfs:label "低周波"@ja.
+kg:id_97 prop:effect kg:id_100.
+kg:id_101 rdfs:label "大型化による建設コストの増大"@ja.
+kg:id_101 rdf:type cls:c_4391.
+cls:c_4391 rdfs:label "建設費増加"@ja.
+kg:id_97 prop:effect kg:id_101.
+kg:id_102 rdfs:label "レンズ風車"@ja.
+kg:id_102 rdf:type cls:c_4392.
+cls:c_4392 rdfs:label "風力発電設備"@ja.
+kg:id_103 rdfs:label "発電量が約3倍になる"@ja.
+kg:id_103 rdf:type cls:c_3207.
+cls:c_3207 rdfs:label "発電増加"@ja.
+kg:id_102 prop:effect kg:id_103.
+kg:id_104 rdfs:label "風車そのものを大きくする必要がない"@ja.
+kg:id_104 rdf:type cls:c_3318.
+cls:c_3318 rdfs:label "小型化"@ja.
+kg:id_102 prop:effect kg:id_104.
+kg:id_105 rdfs:label "複数設置で大型風車に匹敵する出力が得られる"@ja.
+kg:id_105 rdf:type cls:c_4393.
+cls:c_4393 rdfs:label "高出力"@ja.
+kg:id_102 prop:effect kg:id_105.
+kg:id_106 rdfs:label "風切り音を低減する"@ja.
+kg:id_106 rdf:type cls:c_4394.
+cls:c_4394 rdfs:label "騒音低減"@ja.
+kg:id_102 prop:effect kg:id_106.
+kg:id_107 rdfs:label "バードストライクがほぼない"@ja.
+kg:id_107 rdf:type cls:c_3069.
+cls:c_3069 rdfs:label "鳥類保護"@ja.
+kg:id_102 prop:effect kg:id_107.
+kg:id_108 rdfs:label "洋上実証実験"@ja.
+kg:id_108 rdf:type cls:c_2109.
+cls:c_2109 rdfs:label "実証実験"@ja.
+kg:id_109 rdfs:label "レンズ風車と太陽光や波力潮力の同時実証"@ja.
+kg:id_109 rdf:type cls:c_4395.
+cls:c_4395 rdfs:label "複合実証"@ja.
+kg:id_108 prop:countermeasure kg:id_109.
+kg:id_110 rdfs:label "浮体の下で魚の養殖試験"@ja.
+kg:id_110 rdf:type cls:c_4396.
+cls:c_4396 rdfs:label "養殖試験"@ja.
+kg:id_108 prop:countermeasure kg:id_110.
+kg:st_1 rdfs:label "17番小野寺佳克議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "看護師不足の一因として地元定着率の低さを挙げる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "妊娠などを機に離職が起きているとみている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "離職後の復職が進まないことも不足の要因とみている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "看護師不足は慢性的な状態にあると受けとめている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "増加傾向でも絶対数は不足していると受けとめている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "健康福祉部長齋藤功"@ja.
+kg:st_2 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_6 prop:content "市として看護師確保のため看護専門学校を運営している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "准看護学院への運営助成で看護師確保を支えている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "地域包括ケア推進室で配置状況調査を定期的に進める方針"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "県と連携して看護師確保施策を進めたい考えを示す"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "荘内病院事務部長土屋清光"@ja.
+kg:st_3 rdf:type cls:st_40.
+kg:op_10 prop:content "校舎老朽化が進み早期建てかえが必要な状況と説明する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "老朽化により看護師育成確保のため早期建てかえが必要と述べる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "病院近隣地への移転を候補として検討している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "新校舎建設は2023年度以降になる見通しを示す"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "来年度に他校視察を行う予定と述べる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "看護師養成に関する情報収集を進める予定と述べる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "その後整備構想の策定準備を進める考えを示す"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "教育カリキュラム改定を踏まえて施設設備変更も含めた整備構想を策定する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "地域医療の充実は医師と看護師の充実にかかっていると述べる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "地球温暖化問題を背景に温室効果ガス排出抑制が必要と述べる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "原発事故でエネルギー安定供給の脆弱性を経験したと述べる"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "国家を挙げて省エネルギー推進が進められていると述べる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "国家を挙げて再生可能エネルギー普及拡大が進められていると述べる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "国家レベルでエネルギー政策転換が進められていると述べる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "市民部長白幡俊"@ja.
+kg:st_4 rdf:type cls:st_40.
+kg:op_24 prop:content "市は再生可能エネルギー設備の導入拡大に取り組んできた"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "市は省エネルギー推進に取り組んできた"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "平成25年度から設備導入補助金制度を実施している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:op_27 prop:content "公共施設では非常用電源の配備を進めている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "基金活用で学校施設など13施設に太陽光発電設備を導入した"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "134カ所に太陽光発電によるLED街灯を設置した"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "防災補助事業を活用し4施設へ太陽光発電設備と蓄電池を整備した"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "櫛引地域でバイオマス発電所が稼働していると説明する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "浄化センター内で消化ガス発電事業が稼働していると説明する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_4.
+kg:op_33 prop:content "板井川で小水力発電事業が稼働していると説明する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "湯野浜地区で未利用熱活用事業が稼働したと説明する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_4.
+kg:op_35 prop:content "同事業は国内でも高い評価を受けていると述べる"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "木質バイオマス活用事業に取り組む三瀬地区を支援している"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "複数の地域課題を同時解決する取り組みを進めている"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "地球温暖化防止対策としてクールチョイスの普及啓発を進めている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "二酸化炭素排出抑制のため節電を呼びかけている"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "二酸化炭素排出抑制のためグリーンカーテン実施を呼びかけている"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "二酸化炭素排出抑制のため公共交通利用を促進している"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_4.
+kg:op_42 prop:content "再生可能エネルギー由来電力は大きく増加していると評価する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_4.
+kg:op_43 prop:content "増加分は年間約1万3000世帯分を賄える規模と説明する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "市の直接間接の支援を含め着実に成果が上がっていると評価する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "地震では大規模停電が発生したことを教訓としている"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "分散型電源設備の必要性に配慮すべきと考えている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "今後も地域資源活用を進める方針を示す"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+kg:op_48 prop:content "今後も再生可能エネルギー設備の円滑な導入を進める方針を示す"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+kg:op_49 prop:content "今後も省エネルギーを推進する方針を示す"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+kg:op_50 prop:content "新年度は小水力発電事業の可能性をさらに調査する"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_4.
+kg:op_51 prop:content "4カ所の適地を対象に防災減災や地域振興につながる取り組みを検討する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_4.
+kg:op_52 prop:content "小水力は利用可能量が比較的多く期待している"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "低コスト化で小水力導入の可能性が広がると期待する"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_1.
+kg:op_54 prop:content "採算性が低かった場所でも導入可能性が出るとみている"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "風力発電は大いに推進すべきで期待している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "風力発電事業は環境アセスメント最終段階にあると説明する"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_4.
+kg:op_57 prop:content "評価書完成後に市民へ縦覧を行う予定と説明する"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_4.
+kg:op_58 prop:content "工事着工は平成31年4月をめどに予定している"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_4.
+kg:op_59 prop:content "最終的な運転開始は2020年12月ごろの見込みと説明する"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_4.
+kg:op_60 prop:content "風力発電は騒音など環境配慮の課題で進展しにくいと感じている"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:op_61 prop:content "環境上の課題が少ないとされる洋上風力発電の研究を深める必要があると述べる"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_1.
+kg:op_62 prop:content "洋上風力発電には漁業への影響という課題があると述べる"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_4.
+kg:op_63 prop:content "洋上風力発電には景観への影響という課題があると述べる"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_4.
+kg:op_64 prop:content "洋上風力発電には鳥類等への影響という課題があると述べる"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_4.
+kg:op_65 prop:content "送電線接続の空き容量確保も課題と述べる"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_4.
+kg:op_66 prop:content "南側海域は岩礁が多く洋上風力に不向きと説明する"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_4.
+kg:op_67 prop:content "地質条件により設置場所が限定されると説明する"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_4.
+kg:op_68 prop:content "県主導で研究検討会議が立ち上がっていると説明する"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_4.
+kg:op_69 prop:content "遊佐沿岸域検討部会を設置し導入可能性と課題を協議している"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_4.
+kg:op_70 prop:content "洋上風力発電の導入可能性と課題の情報収集協議が行われている"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_4.
+kg:op_71 prop:content "市として洋上風力発電の動向を注視していく考えを示す"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_4.
+kg:op_72 prop:content "風力発電には景観上の課題があると述べる"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_1.
+kg:op_73 prop:content "風切り音が課題と述べる"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_1.
+kg:op_74 prop:content "低周波も課題と述べる"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_1.
+kg:op_75 prop:content "大型化で発電量は増えるが建設コストも大きくなると述べる"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_1.
+kg:op_76 prop:content "レンズ風車は発電量を約3倍にできると紹介する"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_1.
+kg:op_77 prop:content "大型化せずに発電効率を高められる点を評価している"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_1.
+kg:op_78 prop:content "複数設置で大型風車並みの出力が得られると紹介する"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_1.
+kg:op_79 prop:content "風切り音を低減できる点を紹介する"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_1.
+kg:op_80 prop:content "鳥への衝突がほぼない点を紹介する"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_1.
+kg:op_81 prop:content "複数エネルギーを組み合わせた実証実験が行われていると紹介する"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_1.
+kg:op_82 prop:content "漁業者の理解を深めるため養殖試験も行われたと紹介する"@ja.
+kg:op_82 rdf:type cls:opinion.
+kg:op_82 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "この看護師不足の原因に、先ほどもありましたけれども、地元定着率が比較的低い傾向であったり"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "妊娠などの機会に離職されて"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "その後復職が進まないというようなことをよく聞きます"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "慢性的に不足しているということでありました"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "増加傾向であるけれども、絶対数的に不足しているんだろうなと受けとめました"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本市の看護師確保対策といたしましては、鶴岡市立看護専門学校の運営"@ja.
+<< kg:id_7 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "鶴岡准看護学院に対する運営助成を行っております"@ja.
+<< kg:id_7 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "来年度設置いたします地域包括ケア推進室における業務としまして、看護師の配置状況などの調査を定期的に進めます"@ja.
+<< kg:id_7 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "県と連携を図りながら看護師確保のための施策を進めてまいりたい"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "校舎の老朽化が進みまして"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "看護師育成、確保のために早期の建てかえが必要な状況となっております"@ja.
+<< kg:id_12 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "荘内病院の近隣地を移転候補地として検討しているところでございます"@ja.
+<< kg:id_12 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "荘内看護専門学校の新校舎建設は2023年度以降になるものと考えております"@ja.
+<< kg:id_12 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "来年度は他の看護学校の視察でありますとか"@ja.
+<< kg:id_12 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "看護師養成に係る情報収集を予定しており"@ja.
+<< kg:id_12 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "その後整備構想の策定準備を行ってまいりたい"@ja.
+<< kg:id_12 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "改定後の内容を十分踏まえながら、学校の施設設備の変更も含めた整備構想を策定してまいりたい"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "地域医療の充実、これを図るにはやっぱり何といってもマンパワーであります医師、看護師の充実にかかってくる"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "地球温暖化問題から温室効果ガス排出の抑制のため"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "東日本大震災による原子力発電所の事故によってエネルギーの安定供給の脆弱性などの経験から"@ja.
+<< kg:id_27 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "省エネルギーの推進"@ja.
+<< kg:id_27 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "再生可能エネルギー普及拡大など、国家を挙げてエネルギー政策の転換が推し進められております"@ja.
+<< kg:id_27 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "国家を挙げてエネルギー政策の転換が推し進められております"@ja.
+<< kg:id_7 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "本市では、再生可能エネルギー設備の導入拡大と省エネルギーの推進に取り組んでまいりました"@ja.
+<< kg:id_7 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "本市では、再生可能エネルギー設備の導入拡大と省エネルギーの推進に取り組んでまいりました"@ja.
+<< kg:id_7 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "平成25年度より一般家庭や市内事業者への設備導入補助金制度を実施しております"@ja.
+<< kg:id_33 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "公共施設への設備導入につきましては、災害時の非常用電源の配備を進めております"@ja.
+<< kg:id_35 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "学校施設等13施設で太陽光発電設備の導入"@ja.
+<< kg:id_37 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "沿岸地の避難路やコミュニティセンター、公園など134カ所に太陽光発電によりますＬＥＤ街灯を設置"@ja.
+<< kg:id_39 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "さらに４施設へ太陽光発電設備と蓄電池を整備しております"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "平成27年度、櫛引地域におきまして鶴岡バイオマス発電所"@ja.
+<< kg:id_43 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "鶴岡浄化センター内において消化ガス発電事業が稼働しております"@ja.
+<< kg:id_45 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "平成29年７月には赤川地区共同管理委員会によります小水力発電事業が板井川において稼働しており"@ja.
+<< kg:id_47 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "昨年度湯野浜地区で稼働いたしました湯野浜温泉未利用熱活用事業がございます"@ja.
+<< kg:id_48 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "平成30年度省エネ大賞において資源エネルギー庁長官省を受賞するという国内でも高い評価を受けております"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "木質バイオマス活用事業に取り組んでいる三瀬地区の支援"@ja.
+<< kg:id_50 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "山の保全と木材の活用、再生可能エネルギーの推進、地域活性化といった課題の同時解決に取り組んでいる"@ja.
+<< kg:id_7 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "地球温暖化防止対策の国民運動であるクールチョイスの普及啓発"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "二酸化炭素排出を抑える目的で節電"@ja.
+<< kg:id_54 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "グリーンカーテンの実施"@ja.
+<< kg:id_54 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "公共交通の利用促進等を呼びかけてまいりました"@ja.
+<< kg:id_7 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "平成26年４月時点の本市の数値が3,720キロワットとなっており、平成30年９月末時点では１万4,001キロワットまで増加しております"@ja.
+<< kg:id_59 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "この約１万キロワットという数値は、環境省が公表しております換算数値を使用しますと年間で約１万3,000世帯分をカバーする電力となります"@ja.
+<< kg:id_7 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "着実に成果が上がっているものと評価しているところでございます"@ja.
+<< kg:id_62 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "北海道胆振東部地震では大規模停電が発生し"@ja.
+<< kg:id_62 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "地域ごとに自立した電源を備えるという分散型の電源設備の必要性が教訓とされております"@ja.
+<< kg:id_7 prop:countermeasure kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "引き続き地域資源の活用や"@ja.
+<< kg:id_7 prop:countermeasure kg:id_66 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "再生可能エネルギー設備の円滑な導入"@ja.
+<< kg:id_7 prop:countermeasure kg:id_67 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "省エネルギーを推進してまいります"@ja.
+<< kg:id_7 prop:countermeasure kg:id_68 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "小水力発電事業の可能性をさらに調査してまいります"@ja.
+<< kg:id_69 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "この適地４カ所を対象としまして、自立分散型の電源配備と防災、減災、地域振興につながるような取り組みを検討してまいりたい"@ja.
+<< kg:id_71 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "小水力の利用可能量というのが比較的多いという状況だったと思います"@ja.
+<< kg:id_73 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "価格も従来の３分の１"@ja.
+<< kg:id_73 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "これまで採算性が見込めないような小水力の用水路や、ただいまも説明あったかと思います上下水道施設等々にも今度可能なのかな"@ja.
+<< kg:id_7 prop:countermeasure kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "本市の再生可能エネルギーの賦存量が太陽光に続いて利用可能量では最大の風力発電は大いに推進するべき"@ja.
+<< kg:id_77 prop:countermeasure kg:id_78 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "現在環境アセスメントの最終段階である評価書が間もなく完成する"@ja.
+<< kg:id_77 prop:countermeasure kg:id_79 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "この評価書の完成後、市民の皆様に対しまして縦覧を行うこととなります"@ja.
+<< kg:id_77 prop:countermeasure kg:id_80 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "工事着工は平成31年４月をめどに予定されておりまして"@ja.
+<< kg:id_77 prop:countermeasure kg:id_81 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "最終的な運転開始は2020年12月ごろになると見込まれている"@ja.
+<< kg:id_77 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "一般的に風力発電事業においては騒音など環境配慮の課題が多くて、なかなか進展が図られない状況にある"@ja.
+<< kg:id_7 prop:countermeasure kg:id_83 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "環境上の課題が少ないとされる洋上風力発電についても今後研究を深める必要がある"@ja.
+<< kg:id_84 prop:effect kg:id_85 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "具体的には漁業や景観、鳥類等に与える影響"@ja.
+<< kg:id_84 prop:effect kg:id_86 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "具体的には漁業や景観、鳥類等に与える影響"@ja.
+<< kg:id_84 prop:effect kg:id_87 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "具体的には漁業や景観、鳥類等に与える影響"@ja.
+<< kg:id_84 prop:effect kg:id_88 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "送電線への接続における空き容量の確保などが挙げられます"@ja.
+<< kg:id_7 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "本市においては、加茂地区より南は岩礁が多く不向き"@ja.
+<< kg:id_84 prop:effect kg:id_90 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "設置する場合は湯野浜地区より北に限定されるなどの制約もございます"@ja.
+<< kg:id_91 prop:countermeasure kg:id_92 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "現在県が主導いたしまして、山形県地域協調型洋上風力発電研究・検討会議が立ち上げられておりまして"@ja.
+<< kg:id_91 prop:countermeasure kg:id_93 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "遊佐町沿岸を想定海域として遊佐沿岸域検討部会を設置するなど"@ja.
+<< kg:id_91 prop:countermeasure kg:id_94 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "導入の可能性や課題について情報収集と協議がなされております"@ja.
+<< kg:id_95 prop:countermeasure kg:id_96 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "市としましても注視してまいりたいと存じます"@ja.
+<< kg:id_97 prop:effect kg:id_98 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "風力発電は、一般的に景観の問題"@ja.
+<< kg:id_97 prop:effect kg:id_99 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "風切り音、そして低周波など、そういったことが課題"@ja.
+<< kg:id_97 prop:effect kg:id_100 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "風切り音、そして低周波など、そういったことが課題"@ja.
+<< kg:id_97 prop:effect kg:id_101 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "大型化することによって発電量も多くなるということから、建設コストも大きくなる"@ja.
+<< kg:id_102 prop:effect kg:id_103 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "風車の羽根の外側にリング、輪っかですね、を設置することで発電量が約３倍になる"@ja.
+<< kg:id_102 prop:effect kg:id_104 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "風車そのものを大きくする必要がなく"@ja.
+<< kg:id_102 prop:effect kg:id_105 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "１つの支柱に３つとか５つなど複数設置することによって、大型風車に匹敵する出力が得られる"@ja.
+<< kg:id_102 prop:effect kg:id_106 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "風切り音はもちろん低減しますし"@ja.
+<< kg:id_102 prop:effect kg:id_107 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "輪っかが鳥にも見えるということから、バードストライクもほぼない"@ja.
+<< kg:id_108 prop:countermeasure kg:id_109 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "洋上ではこのレンズ風車と太陽光や波力、潮力なども同時に実証実験を行っておりまして"@ja.
+<< kg:id_108 prop:countermeasure kg:id_110 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_82;
+    prop:text-txt_contents "浮体の下では必要な電力を賄いながら魚の養殖試験も行った"@ja.
+}

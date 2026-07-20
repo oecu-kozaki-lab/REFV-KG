@@ -1,0 +1,470 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00163> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "本市の再生可能エネルギー導入"@ja.
+kg:id_1 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_2 rdfs:label "十里塚風力発電所の運転開始"@ja.
+kg:id_2 rdf:type cls:c_3827.
+cls:c_3827 rdfs:label "風力発電所"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "下水道汚泥の消化ガスを利用した発電"@ja.
+kg:id_3 rdf:type cls:c_3288.
+cls:c_3288 rdfs:label "バイオガス発電"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "木質ペレットを燃料とするバイオマス発電所の稼働"@ja.
+kg:id_4 rdf:type cls:c_3178.
+cls:c_3178 rdfs:label "バイオマス発電"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "酒田北港地区の太陽光発電所の稼働"@ja.
+kg:id_5 rdf:type cls:c_3828.
+cls:c_3828 rdfs:label "太陽光発電所"@ja.
+kg:id_1 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "花王酒田工場への自家消費型太陽光発電設備の設置"@ja.
+kg:id_6 rdf:type cls:c_1899.
+cls:c_1899 rdfs:label "太陽光発電設備"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "八幡地区の小水力発電所の稼働"@ja.
+kg:id_7 rdf:type cls:c_3829.
+cls:c_3829 rdfs:label "小水力発電所"@ja.
+kg:id_1 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "畜産系バイオマスを利用したバイオガス発電設備の併設"@ja.
+kg:id_8 rdf:type cls:c_3288.
+kg:id_1 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "電力の低炭素化への寄与"@ja.
+kg:id_9 rdf:type cls:c_1446.
+cls:c_1446 rdfs:label "低炭素化"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "地域経済の循環への寄与"@ja.
+kg:id_10 rdf:type cls:c_812.
+cls:c_812 rdfs:label "地域経済循環"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "エネルギー代金の域外流出"@ja.
+kg:id_11 rdf:type cls:c_3830.
+cls:c_3830 rdfs:label "資金流出"@ja.
+kg:id_12 rdfs:label "エネルギー代金の支払い"@ja.
+kg:id_12 rdf:type cls:c_3831.
+cls:c_3831 rdfs:label "エネルギー支払"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "約69億円の域外流出"@ja.
+kg:id_13 rdf:type cls:c_3830.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "本市の電気代金収支黒字"@ja.
+kg:id_14 rdf:type cls:c_3832.
+cls:c_3832 rdfs:label "電気料金黒字"@ja.
+kg:id_15 rdfs:label "酒田共同火力発電株式会社を初めとした発電事業者の多くの立地"@ja.
+kg:id_15 rdf:type cls:c_3833.
+cls:c_3833 rdfs:label "発電事業者"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "約56億円の流入"@ja.
+kg:id_16 rdf:type cls:c_3834.
+cls:c_3834 rdfs:label "資金流入"@ja.
+kg:id_14 prop:effect kg:id_16.
+kg:id_17 rdfs:label "自治体の新電力設立"@ja.
+kg:id_17 rdf:type cls:c_3835.
+cls:c_3835 rdfs:label "新電力設立"@ja.
+kg:id_18 rdfs:label "公共施設の電気料金の削減"@ja.
+kg:id_18 rdf:type cls:c_3836.
+cls:c_3836 rdfs:label "電気料金削減"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "エネルギーの地産地消"@ja.
+kg:id_19 rdf:type cls:c_103.
+cls:c_103 rdfs:label "地産地消"@ja.
+kg:id_17 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "地域経済の循環"@ja.
+kg:id_20 rdf:type cls:c_812.
+kg:id_17 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "地域の低炭素化"@ja.
+kg:id_21 rdf:type cls:c_1446.
+kg:id_17 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "公共施設の電気料金削減"@ja.
+kg:id_22 rdf:type cls:c_3836.
+kg:id_23 rdfs:label "入札の実施"@ja.
+kg:id_23 rdf:type cls:c_3837.
+cls:c_3837 rdfs:label "入札実施"@ja.
+kg:id_22 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "電気の供給契約入札で地域電源の要件を付け加える"@ja.
+kg:id_24 rdf:type cls:c_3838.
+cls:c_3838 rdfs:label "地域電源要件"@ja.
+kg:id_19 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "地域経済循環が地域内で完結しないこと"@ja.
+kg:id_25 rdf:type cls:c_3839.
+cls:c_3839 rdfs:label "地域経済循環不足"@ja.
+kg:id_26 rdfs:label "新電力業務を市外の会社に依頼すること"@ja.
+kg:id_26 rdf:type cls:c_3840.
+cls:c_3840 rdfs:label "市外委託"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "自治体新電力設立"@ja.
+kg:id_27 rdf:type cls:c_3835.
+kg:id_28 rdfs:label "地域が主体となった企業をつくり自治体が出資する"@ja.
+kg:id_28 rdf:type cls:c_3841.
+cls:c_3841 rdfs:label "地域主体企業"@ja.
+kg:id_27 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "新電力会社の経営安定"@ja.
+kg:id_29 rdf:type cls:c_2958.
+cls:c_2958 rdfs:label "経営安定"@ja.
+kg:id_30 rdfs:label "安定的かつ長期にわたって電力の調達先や顧客を確保する"@ja.
+kg:id_30 rdf:type cls:c_3842.
+cls:c_3842 rdfs:label "取引先確保"@ja.
+kg:id_29 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "新電力会社の破綻"@ja.
+kg:id_31 rdf:type cls:c_1431.
+cls:c_1431 rdfs:label "事業破綻"@ja.
+kg:id_32 rdfs:label "全国的な寒波による電力需要の高まりと電力市場価格の高騰"@ja.
+kg:id_32 rdf:type cls:c_1236.
+cls:c_1236 rdfs:label "需給逼迫"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "新電力会社の経営圧迫"@ja.
+kg:id_33 rdf:type cls:c_1434.
+cls:c_1434 rdfs:label "経営圧迫"@ja.
+kg:id_34 rdfs:label "ロシアのウクライナ侵攻による原油や液化天然ガス相場の高騰"@ja.
+kg:id_34 rdf:type cls:c_3843.
+cls:c_3843 rdfs:label "燃料価格高騰"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "新電力会社"@ja.
+kg:id_35 rdf:type cls:c_3844.
+cls:c_3844 rdfs:label "新電力会社"@ja.
+kg:id_36 rdfs:label "メリットとリスクが背中合わせで存在する"@ja.
+kg:id_36 rdf:type cls:c_3845.
+cls:c_3845 rdfs:label "利点とリスク"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "酒田市による新電力会社設立"@ja.
+kg:id_37 rdf:type cls:c_3835.
+kg:id_38 rdfs:label "そう簡単な話ではない"@ja.
+kg:id_38 rdf:type cls:c_3846.
+cls:c_3846 rdfs:label "困難性"@ja.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "民間事業者主体の新電力会社設立"@ja.
+kg:id_39 rdf:type cls:c_3835.
+kg:id_40 rdfs:label "洋上風力発電導入のタイミングで酒田市内に本社機能を置く形で検討する"@ja.
+kg:id_40 rdf:type cls:c_3847.
+cls:c_3847 rdfs:label "民間主体会社"@ja.
+kg:id_39 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "新電力会社設立の検討"@ja.
+kg:id_41 rdf:type cls:c_3848.
+cls:c_3848 rdfs:label "新電力設立検討"@ja.
+kg:id_42 rdfs:label "酒田天然ガス株式会社との公民連携"@ja.
+kg:id_42 rdf:type cls:c_1458.
+cls:c_1458 rdfs:label "公民連携"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "酒田港の再生可能エネルギー導入"@ja.
+kg:id_43 rdf:type cls:c_44.
+kg:id_44 rdfs:label "酒田港カーボンニュートラルポート形成方針の素案をまとめる"@ja.
+kg:id_44 rdf:type cls:c_3849.
+cls:c_3849 rdfs:label "港湾計画"@ja.
+kg:id_43 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "カーボンニュートラルポート形成計画の策定に向けた議論"@ja.
+kg:id_45 rdf:type cls:c_118.
+cls:c_118 rdfs:label "計画策定"@ja.
+kg:id_43 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "酒田市のゼロカーボン宣言"@ja.
+kg:id_46 rdf:type cls:c_3239.
+cls:c_3239 rdfs:label "宣言"@ja.
+kg:id_47 rdfs:label "酒田共同火力発電所とともに宣言する"@ja.
+kg:id_47 rdf:type cls:c_1462.
+cls:c_1462 rdfs:label "共同宣言"@ja.
+kg:id_46 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "ゼロカーボン宣言"@ja.
+kg:id_48 rdf:type cls:c_3239.
+kg:id_49 rdfs:label "実質的な効果が立証されていない"@ja.
+kg:id_49 rdf:type cls:c_3850.
+cls:c_3850 rdfs:label "効果不明"@ja.
+kg:id_48 prop:effect kg:id_49.
+kg:id_50 rdfs:label "酒田共同火力発電所への配慮"@ja.
+kg:id_50 rdf:type cls:c_3851.
+cls:c_3851 rdfs:label "企業配慮"@ja.
+kg:id_51 rdfs:label "企業の存続意義と固定資産税収の重要性"@ja.
+kg:id_51 rdf:type cls:c_3852.
+cls:c_3852 rdfs:label "雇用と税収"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "地域新電力の活用"@ja.
+kg:id_52 rdf:type cls:c_3853.
+cls:c_3853 rdfs:label "地域新電力活用"@ja.
+kg:id_53 rdfs:label "再生可能エネルギー事業者から電気を買い取り企業に売る"@ja.
+kg:id_53 rdf:type cls:c_3854.
+cls:c_3854 rdfs:label "再エネ電力供給"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "企業の酒田進出意欲"@ja.
+kg:id_54 rdf:type cls:c_3855.
+cls:c_3855 rdfs:label "企業進出意欲"@ja.
+kg:id_55 rdfs:label "風力発電など再生可能エネルギーの存在"@ja.
+kg:id_55 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "地域新電力の検討"@ja.
+kg:id_56 rdf:type cls:c_3856.
+cls:c_3856 rdfs:label "新電力検討"@ja.
+kg:id_57 rdfs:label "今後の将来を見極めながら検討を進めて選択する"@ja.
+kg:id_57 rdf:type cls:c_3857.
+cls:c_3857 rdfs:label "継続検討"@ja.
+kg:id_56 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "自治体単独での新電力事業参入"@ja.
+kg:id_58 rdf:type cls:c_3858.
+cls:c_3858 rdfs:label "新電力事業参入"@ja.
+kg:id_59 rdfs:label "かなり厳しい"@ja.
+kg:id_59 rdf:type cls:c_3846.
+kg:id_58 prop:effect kg:id_59.
+kg:st_1 rdfs:label "議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "本市の再生可能エネルギーを推進する必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "本市の再生可能エネルギーを推進する必要がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市担当者"@ja.
+kg:st_2 rdf:type cls:st_102.
+cls:st_102 rdfs:label "市担当者"@ja.
+kg:op_3 prop:content "再生可能エネルギー導入は電力の低炭素化に寄与していると認識している"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "再生可能エネルギー導入は地域経済の循環に寄与していると認識している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "約69億円が域外流出していると指摘する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "発電事業者の立地により地域全体の電気代金収支が黒字になっていると理解している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "自治体新電力設立の意味の一つは公共施設の電気料金削減にある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "自治体新電力設立の意味の一つはエネルギーの地産地消にある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "自治体新電力設立の意味の一つは地域経済の循環にある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "自治体新電力設立の意味の一つは地域の低炭素化にある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "新電力を設立しなくても入札で安い電気を調達できる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "新電力を設立しなくても入札条件で地域電源を求めれば足りる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "市外企業に任せると経済的価値が市外に流れる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "行政課題解決には地域主体の企業設立と自治体出資が前提になる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "新電力は調達先と顧客の長期安定確保が大前提だ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "寒波による需給逼迫と市場価格高騰で破綻した新電力会社があった"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "世界的な燃料価格高騰が新電力の調達コストを押し上げ経営を圧迫する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "新電力には利点と経営リスクが併存している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "低炭素化だけを目的に基礎自治体が新電力設立に取り組むのは容易ではない"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "洋上風力導入時に市内本社の民間主体新電力は検討余地がある"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "酒田天然ガス株式会社との公民連携で前進する道を模索できる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "大壁洋平議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_22 prop:content "酒田共同火力発電所を応援し存続を後押しするため一緒にゼロカーボン宣言すべきだ"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "丸山至市長"@ja.
+kg:st_4 rdf:type cls:st_27.
+cls:st_27 rdfs:label "市長"@ja.
+kg:op_23 prop:content "ゼロカーボン宣言はしたくなく再生可能エネルギー循環都市の宣言で包含的に応援したい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "ゼロカーボン宣言の実質的効果は示されていない"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "雇用や税収を踏まえ企業存続への心情的配慮が必要だ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "地域新電力で再エネ電力を企業に供給し企業立地につなげるべきだ"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "酒田に来たい企業は再生可能エネルギーを重視している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_5 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_28 prop:content "新電力事業者の将来を見極めつつ検討を継続すべきだ"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "エネルギー相場などを踏まえると自治体単独で進むのは厳しい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "昨年４月からは、これは酒田市の直営という形で十里塚風力発電所の運転を開始しております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "昨年９月からは、市のクリーンセンターにおいて、下水道汚泥の分解過程で発生する消化ガスを利用して発電をしており、固定価格買取制度によりまして売電をしているところでございます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "海外から輸入する木質ペレットなどを燃料とする50メガワットのバイオマス発電所が稼働をしております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "同じ酒田北港地区では約28メガワットの太陽光発電所も稼働中でありまして、いずれもこれらは売電をしているという状況でございます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "花王株式会社では、酒田工場にグループ最大規模となる自家消費型の太陽光発電設備を設置しておりまして、昨年６月から運用をしております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "八幡地区では、山形県が整備をして日向川土地改良区が管理・運営します小水力発電所が平成30年より稼働しておりまして、これも固定価格買取制度により売電をしているという状況です"@ja.
+<< kg:id_1 prop:countermeasure kg:id_8 >>
+    prop:text-txt_contents "株式会社鳥海高原デーリィファームでは、現在建設中の畜舎に畜産系バイオマス、牛のふん尿ですね、これを利用したバイオガス発電設備を併設して、牧場内の自家消費として活用する予定でございます"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "その意味ではこの電力の低炭素化ですとか、地域経済の循環にも寄与をしているものと認識をしております"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "その意味ではこの電力の低炭素化ですとか、地域経済の循環にも寄与をしているものと認識をしております"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "本市ではエネルギー代金の支払いによりまして、約69億円を域外に流出しているという分析結果になっているところでございます"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "本市ではエネルギー代金の支払いによりまして、約69億円を域外に流出しているという分析結果になっているところでございます"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これは、本市には酒田共同火力発電株式会社を初めとした発電事業者、新法、電気事業法で言うと、今で言う発電事業者と定義づけされているこの発電事業者が多く立地しているために、地域全体としての電気代金の収支が黒字になっている地域だと理解できるわけでございまして"@ja.
+<< kg:id_14 prop:effect kg:id_16 >>
+    prop:text-txt_contents "本市は逆に約56億円が流入をしているまちでございます"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "１つは、我々の持っている公共施設の電気料金を削減する、どのように安く抑えるかということ"@ja.
+<< kg:id_17 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "２つ目は、エネルギーの地産地消、これはお話にもありましたけれども、地元で作ったエネルギーを地元で消費するという意味でのエネルギーの地産地消"@ja.
+<< kg:id_17 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "３つ目が、先ほどのエネルギー収支の69億円のところに出てきましたけれども、地域経済の循環、地元でお金を回すということ"@ja.
+<< kg:id_17 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "４つ目として、地域の低炭素化。この４つの行政課題に取り組む上で、この自治体が新電力に出資をして設立してエネルギーの地産地消をやるという意味がここにあるわけでございます"@ja.
+<< kg:id_22 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "公共施設の電力料金の削減について言えば、特段自治体の新電力を設立しなくても、入札を実施すれば大手電力や新電力から安い電気を引き出すことができます"@ja.
+<< kg:id_19 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "これも電気の供給契約の入札をする際に、条件として地域電源という要件を付け加えればそれで足りる話でございます"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "市外の会社にそれをお願いしたのでは、基本的には経済的な価値は全部市外に流れるということになります"@ja.
+<< kg:id_27 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "自治体新電力を設立して、先ほど申し上げました４つの行政課題を解決するためには、やはり地域外の企業に丸投げをするということではなくて、地域が主体となったそういう企業をつくって、そこに自治体が出資をして回すということが前提として必要になってくる"@ja.
+<< kg:id_29 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "その企業ができたとしても、この新しい電力会社というのは企業活動でございますから、安定的かつ長期にわたって電力の調達先や顧客を確保することが、これも大前提として必要になってくる"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "一昨年の年末頃には、全国的な寒波によりまして電力需要が高まったこともございました。需給バランスが逼迫をして、電力の市場価格が高騰したことから破綻した新電力会社があったことは記憶に新しいところでございます"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "現在はロシアのウクライナ侵攻の影響を受けまして、世界的に原油ですとか液化天然ガスの相場が高騰し続けております。そういう環境の中でいきますと、新電力会社の電力調達コスト、これがさらに経営を圧迫してくる事態"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "このように、新電力にはメリットとリスクが背中合わせで存在をしております"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "地域の低炭素化という目的だけでこの基礎自治体である酒田市がそういった新電力会社を設立する、そういった活動に取り組むということはそう簡単な話ではない"@ja.
+<< kg:id_39 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "例えば洋上風力発電など、この大型の再生可能エネルギーが地域に導入されるタイミングで、酒田市内に本社機能を置くことを前提にした民間事業者主体の新電力会社設立については検討する余地がある"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "地域には酒田天然ガス株式会社が企業として存在をしておりますので、公民連携という形でこういったところと連携をして、何か前に進む道を模索するということは可能ではないかな"@ja.
+<< kg:id_43 prop:countermeasure kg:id_44 >>
+    prop:text-txt_contents "本市と国土交通省、山形県及び地元企業が連結をして、酒田港カーボンニュートラルポート形成方針の素案をまとめたところでございます"@ja.
+<< kg:id_43 prop:countermeasure kg:id_45 >>
+    prop:text-txt_contents "来年度はカーボンニュートラルポート形成計画という形の計画書の策定に向けて、さらに深めた議論をするべく今、関係者間で調整を進めているところでございます"@ja.
+<< kg:id_46 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "私は酒田共同火力発電所とともにゼロカーボン宣言をしたらどうだということをちょっと考えているんですけれども、所見を伺います。そこは見解の相違ですね。私はそれはやりたくないということで、ゼロカーボン宣言したからといって、実質的などこか効果があるところ、じゃ立証してみなさいよと言えば、誰も出てこないわけです。私どもはやはりそういう心情的なことを考えて、再生可能エネルギー循環都市という宣言をもって、そういったものを包含した概念で応援していきたい"@ja.
+<< kg:id_48 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "ゼロカーボン宣言したからといって、実質的などこか効果があるところ、じゃ立証してみなさいよと言えば、誰も出てこないわけです"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "酒田市は２億5,000万円ほどの固定資産税も頂いているわけでございまして、やはり企業としての存続ということの意義は大変重要だと思っておりましたので、そういう面からはゼロカーボンということはやはりちょっと心情的に配慮しなきゃいけない"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "やはりその地域新電力を使って、酒田市だけではなく酒田地域に住むその再生可能エネルギー事業者から電気を買い取って、企業に売っていく。企業立地にここで再生可能エネルギー100％の電気を使えますよと"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "酒田に行きたいという企業はこの風力発電とかそういった再生可能エネルギーを目当てに来ているところがたくさんあります"@ja.
+<< kg:id_56 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "やはり新電力の事業者というものは、私自身としては今後の将来どのようになるかということはしっかりと見きわめて、検討をやめるのではなくて、しっかりと検討を進めながら選択をしていく"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "いわゆるそのエネルギーの相場とか、そういった概念も出てきますので、自治体単独で向かうというところはかなり厳しいのではないかと思っております"@ja.
+}

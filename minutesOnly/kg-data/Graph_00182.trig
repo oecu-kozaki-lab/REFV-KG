@@ -1,0 +1,647 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00182> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "（仮称）山形県鶴岡市風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "民間事業者による民間事業者の計画"@ja.
+kg:id_2 rdf:type cls:c_4079.
+cls:c_4079 rdfs:label "民間事業計画"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "（仮称）山形県鶴岡市風力発電事業への市の関与の限定"@ja.
+kg:id_3 rdf:type cls:c_4080.
+cls:c_4080 rdfs:label "行政関与の限定"@ja.
+kg:id_4 rdfs:label "事業計画地に市の土地もほとんどないこと"@ja.
+kg:id_4 rdf:type cls:c_4081.
+cls:c_4081 rdfs:label "公有地の少なさ"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "市が推進しているとの誤認や問合せの発生"@ja.
+kg:id_5 rdf:type cls:c_4082.
+cls:c_4082 rdfs:label "誤認と問合せ"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "羽黒山の眺望への懸念"@ja.
+kg:id_6 rdf:type cls:c_4083.
+cls:c_4083 rdfs:label "眺望への懸念"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "市民の相当な反発の予想"@ja.
+kg:id_7 rdf:type cls:c_4084.
+cls:c_4084 rdfs:label "住民の反発"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "景観への影響"@ja.
+kg:id_8 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "出羽三山信仰や山岳信仰への不適切な評価"@ja.
+kg:id_9 rdf:type cls:c_4085.
+cls:c_4085 rdfs:label "文化評価の不足"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "森林伐採と整地による山上の大規模改変"@ja.
+kg:id_10 rdf:type cls:c_4086.
+cls:c_4086 rdfs:label "地形改変"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "今後の水害や土砂災害増加の原因"@ja.
+kg:id_11 rdf:type cls:c_4087.
+cls:c_4087 rdfs:label "水害土砂災害"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "水不足の悩みの増加"@ja.
+kg:id_12 rdf:type cls:c_658.
+cls:c_658 rdfs:label "水不足"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "日本遺産の有形無形の文化財やストーリーへの甚大な影響"@ja.
+kg:id_13 rdf:type cls:c_4088.
+cls:c_4088 rdfs:label "文化遺産影響"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "市民の間の混乱"@ja.
+kg:id_14 rdf:type cls:c_4060.
+cls:c_4060 rdfs:label "市民の混乱"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "祈りの風景の破壊"@ja.
+kg:id_15 rdf:type cls:c_4089.
+cls:c_4089 rdfs:label "聖地景観の破壊"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "貴重なブナ林などの伐採"@ja.
+kg:id_16 rdf:type cls:c_4090.
+cls:c_4090 rdfs:label "森林伐採"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "中下流域への波及と川への水の流入量変化"@ja.
+kg:id_17 rdf:type cls:c_4091.
+cls:c_4091 rdfs:label "水流変化"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "コミュニティパワー原則に反する植民地型開発行為"@ja.
+kg:id_18 rdf:type cls:c_4092.
+cls:c_4092 rdfs:label "地域還元の不足"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "住民への十分な説明や専門家からの意見聴取などについて適切な対応を要請"@ja.
+kg:id_19 rdf:type cls:c_4093.
+cls:c_4093 rdfs:label "説明と意見聴取"@ja.
+kg:id_1 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "環境アセスメント各段階で市の意見書を山形県に提出"@ja.
+kg:id_20 rdf:type cls:c_4094.
+cls:c_4094 rdfs:label "意見書の提出"@ja.
+kg:id_1 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "農地法 景観法 建築基準法などに基づく手続"@ja.
+kg:id_21 rdf:type cls:c_4095.
+cls:c_4095 rdfs:label "法令手続"@ja.
+kg:id_1 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "フォトモンタージュの作成要請"@ja.
+kg:id_22 rdf:type cls:c_4096.
+cls:c_4096 rdfs:label "景観資料の作成"@ja.
+kg:id_1 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "地元や関係各所への丁寧な説明を求める"@ja.
+kg:id_23 rdf:type cls:c_4097.
+cls:c_4097 rdfs:label "丁寧な説明"@ja.
+kg:id_1 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "計画段階環境配慮書への一般意見"@ja.
+kg:id_24 rdf:type cls:c_4098.
+cls:c_4098 rdfs:label "一般意見"@ja.
+kg:id_25 rdfs:label "方法書で全ての意見への事業者の対応方針を明記"@ja.
+kg:id_25 rdf:type cls:c_4099.
+cls:c_4099 rdfs:label "対応方針の明記"@ja.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "事業者からの事業の取下げを望む"@ja.
+kg:id_26 rdf:type cls:c_4100.
+cls:c_4100 rdfs:label "事業取下げ"@ja.
+kg:id_1 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "景観審議会 環境審議会 文化財保護審議会の意見を踏まえ市の意見書を提出"@ja.
+kg:id_27 rdf:type cls:c_4101.
+cls:c_4101 rdfs:label "審議会意見の反映"@ja.
+kg:id_1 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "出羽三山に関わる地域の風力発電"@ja.
+kg:id_28 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_29 rdfs:label "ゾーニングを含めたガイドラインの改定"@ja.
+kg:id_29 rdf:type cls:c_4102.
+cls:c_4102 rdfs:label "規制指針の改定"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "景観条例に基づく届出に対する審査 指導等による良好な景観の維持"@ja.
+kg:id_30 rdf:type cls:c_4103.
+cls:c_4103 rdfs:label "景観維持"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "学校から学童保育所への児童の引渡しの課題"@ja.
+kg:id_31 rdf:type cls:c_4104.
+cls:c_4104 rdfs:label "児童引渡し課題"@ja.
+kg:id_32 rdfs:label "学童保育所等の受入れ体制には準備を要すること"@ja.
+kg:id_32 rdf:type cls:c_4105.
+cls:c_4105 rdfs:label "受入準備"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "学校と学童保育所等の連絡やルール確認の不足"@ja.
+kg:id_33 rdf:type cls:c_4106.
+cls:c_4106 rdfs:label "連絡確認の不足"@ja.
+kg:id_31 prop:cause kg:id_33.
+kg:id_34 rdfs:label "７月の大雨時の学校から学童保育所への児童引渡し"@ja.
+kg:id_34 rdf:type cls:c_4107.
+cls:c_4107 rdfs:label "児童引渡し"@ja.
+kg:id_35 rdfs:label "学校と学童保育所の認識のずれ"@ja.
+kg:id_35 rdf:type cls:c_4108.
+cls:c_4108 rdfs:label "認識のずれ"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "早い段階で連絡を入れ学校と学童が相談して決めていく"@ja.
+kg:id_36 rdf:type cls:c_4109.
+cls:c_4109 rdfs:label "連絡と協議"@ja.
+kg:id_34 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "学校統廃合後に子供たちの声が聞こえなくなった状況"@ja.
+kg:id_37 rdf:type cls:c_4110.
+cls:c_4110 rdfs:label "地域の静寂化"@ja.
+kg:id_38 rdfs:label "学校の統廃合による廃校"@ja.
+kg:id_38 rdf:type cls:c_4111.
+cls:c_4111 rdfs:label "学校廃止"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "学校統廃合後の地域"@ja.
+kg:id_39 rdf:type cls:c_4112.
+cls:c_4112 rdfs:label "統廃合後地域"@ja.
+kg:id_40 rdfs:label "放課後子ども教室の実施と検討"@ja.
+kg:id_40 rdf:type cls:c_4113.
+cls:c_4113 rdfs:label "子どもの居場所"@ja.
+kg:id_39 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "地域と学校のつながりの弱さ"@ja.
+kg:id_41 rdf:type cls:c_4114.
+cls:c_4114 rdfs:label "地域学校連携の弱さ"@ja.
+kg:id_42 rdfs:label "避難所開設に向けた事前協議や避難訓練の実施"@ja.
+kg:id_42 rdf:type cls:c_4115.
+cls:c_4115 rdfs:label "事前協議と訓練"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "１人１台端末の家庭活用の課題"@ja.
+kg:id_43 rdf:type cls:c_4116.
+cls:c_4116 rdfs:label "端末活用課題"@ja.
+kg:id_44 rdfs:label "通信環境が整っていない家庭があること"@ja.
+kg:id_44 rdf:type cls:c_4117.
+cls:c_4117 rdfs:label "通信環境不足"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "就学援助費を受給している家庭へモバイルＷｉ－Ｆｉルーター等を貸与"@ja.
+kg:id_45 rdf:type cls:c_4118.
+cls:c_4118 rdfs:label "通信機器貸与"@ja.
+kg:id_43 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "地域における人と人とのつながりの弱まり"@ja.
+kg:id_46 rdf:type cls:c_4119.
+cls:c_4119 rdfs:label "地域つながりの弱化"@ja.
+kg:id_47 rdfs:label "少子高齢社会の到来 価値観の多様化 帰属意識の低下"@ja.
+kg:id_47 rdf:type cls:c_260.
+cls:c_260 rdfs:label "社会変化"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "独り暮らし高齢者や高齢者のみ世帯の不安"@ja.
+kg:id_48 rdf:type cls:c_4120.
+cls:c_4120 rdfs:label "高齢者不安"@ja.
+kg:id_49 rdfs:label "独り暮らし高齢者や高齢者のみ世帯の増加"@ja.
+kg:id_49 rdf:type cls:c_4121.
+cls:c_4121 rdfs:label "高齢者世帯増加"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "地域コミュニティ活動"@ja.
+kg:id_50 rdf:type cls:c_4122.
+cls:c_4122 rdfs:label "地域活動"@ja.
+kg:id_51 rdfs:label "新たなつながりの形成と気にかけ合う関係性の発生"@ja.
+kg:id_51 rdf:type cls:c_4123.
+cls:c_4123 rdfs:label "新たなつながり"@ja.
+kg:id_50 prop:effect kg:id_51.
+kg:id_52 rdfs:label "住民主体の通いの場の取組"@ja.
+kg:id_52 rdf:type cls:c_4124.
+cls:c_4124 rdfs:label "通いの場"@ja.
+kg:id_50 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "健康なまちづくりとコミュニティ"@ja.
+kg:id_53 rdf:type cls:c_4125.
+cls:c_4125 rdfs:label "地域づくり"@ja.
+kg:id_54 rdfs:label "既存施設を有効活用した交流の場の創出"@ja.
+kg:id_54 rdf:type cls:c_4126.
+cls:c_4126 rdfs:label "交流の場"@ja.
+kg:id_53 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "既存の枠組みや手法にとらわれないサービス提供と施設運営"@ja.
+kg:id_55 rdf:type cls:c_4127.
+cls:c_4127 rdfs:label "柔軟な運営"@ja.
+kg:id_53 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "地球温暖化"@ja.
+kg:id_56 rdf:type cls:c_587.
+cls:c_587 rdfs:label "地球温暖化"@ja.
+kg:id_57 rdfs:label "人間活動による温室効果ガスの増加"@ja.
+kg:id_57 rdf:type cls:c_38.
+cls:c_38 rdfs:label "温室効果ガス"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "石油や石炭など化石燃料の燃焼によって排出される二酸化炭素"@ja.
+kg:id_58 rdf:type cls:c_4128.
+cls:c_4128 rdfs:label "二酸化炭素"@ja.
+kg:id_56 prop:cause kg:id_58.
+kg:id_59 rdfs:label "局所的な大雨による水害や土砂災害"@ja.
+kg:id_59 rdf:type cls:c_4087.
+kg:id_56 prop:effect kg:id_59.
+kg:id_60 rdfs:label "猛暑日の増加による熱中症患者の増加"@ja.
+kg:id_60 rdf:type cls:c_4129.
+cls:c_4129 rdfs:label "熱中症増加"@ja.
+kg:id_56 prop:effect kg:id_60.
+kg:id_61 rdfs:label "21世紀末の山形県の気温約4.7度上昇"@ja.
+kg:id_61 rdf:type cls:c_41.
+cls:c_41 rdfs:label "気温上昇"@ja.
+kg:id_56 prop:effect kg:id_61.
+kg:id_62 rdfs:label "猛暑や豪雨の増加 産業や生態系 健康 災害への影響"@ja.
+kg:id_62 rdf:type cls:c_1125.
+cls:c_1125 rdfs:label "気候影響"@ja.
+kg:id_56 prop:effect kg:id_62.
+kg:id_63 rdfs:label "脱炭素社会の実現"@ja.
+kg:id_63 rdf:type cls:c_3421.
+cls:c_3421 rdfs:label "脱炭素社会"@ja.
+kg:id_64 rdfs:label "化石燃料から再生可能エネルギーへのシフト"@ja.
+kg:id_64 rdf:type cls:c_4130.
+cls:c_4130 rdfs:label "再生可能エネルギー転換"@ja.
+kg:id_63 prop:countermeasure kg:id_64.
+kg:id_65 rdfs:label "地球温暖化対策"@ja.
+kg:id_65 rdf:type cls:c_987.
+cls:c_987 rdfs:label "温暖化対策"@ja.
+kg:id_66 rdfs:label "鶴岡市地域エネルギービジョンに基づく地域に根差した再生可能エネルギーの導入推進"@ja.
+kg:id_66 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_65 prop:countermeasure kg:id_66.
+kg:id_67 rdfs:label "荘内病院などの省エネルギー診断や設備改修スキームの検討"@ja.
+kg:id_67 rdf:type cls:c_4131.
+cls:c_4131 rdfs:label "省エネルギー改修"@ja.
+kg:id_65 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "鶴岡第四中学校などへの太陽光発電設備の導入"@ja.
+kg:id_68 rdf:type cls:c_47.
+cls:c_47 rdfs:label "太陽光発電導入"@ja.
+kg:id_65 prop:countermeasure kg:id_68.
+kg:id_69 rdfs:label "クールチョイスによる製品買換え 公共交通機関利用 ３Ｒの呼びかけ"@ja.
+kg:id_69 rdf:type cls:c_4132.
+cls:c_4132 rdfs:label "脱炭素行動"@ja.
+kg:id_65 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "ごみ焼却施設の廃熱利用発電と電力の地産地消"@ja.
+kg:id_70 rdf:type cls:c_4133.
+cls:c_4133 rdfs:label "廃熱発電"@ja.
+kg:id_65 prop:countermeasure kg:id_70.
+kg:id_71 rdfs:label "持続可能な社会の形成"@ja.
+kg:id_71 rdf:type cls:c_3153.
+cls:c_3153 rdfs:label "持続可能社会"@ja.
+kg:id_72 rdfs:label "環境と調和し地域に豊かさをもたらすエネルギー導入と利用"@ja.
+kg:id_72 rdf:type cls:c_4134.
+cls:c_4134 rdfs:label "調和型エネルギー"@ja.
+kg:id_71 prop:countermeasure kg:id_72.
+kg:id_73 rdfs:label "生活環境 自然環境 景観の保全に配慮したガイドライン策定"@ja.
+kg:id_73 rdf:type cls:c_4135.
+cls:c_4135 rdfs:label "保全配慮指針"@ja.
+kg:id_71 prop:countermeasure kg:id_73.
+kg:st_1 rdfs:label "石井清則議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "市が推進しているとの誤解を招きやすい事業名だと指摘する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "市の土地を避けられれば議決もなく事業が進む可能性が大きいと懸念する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "市が事業者と一緒に進めていると誤解する人が多いと述べる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "鶴岡市市民部長五十嵐浩一"@ja.
+kg:st_2 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_4 prop:content "羽黒山に隣接しているため眺望を含めて懸念があると事業者に伝えた"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "出羽三山に近接するため市民の相当な反発が予想されると述べる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "住民理解のためにはフォトモンタージュを公開すべきだと求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "出羽三山の歴史や生活への理解ができておらず適切な評価が行われていないと感じる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "山の上に最大40か所もの大規模な伐採整地が生じる計画だと懸念する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "水源涵養機能の低下により水害と土砂災害が増えると推測する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "水源涵養機能が失われれば流域農家の水不足が増えると想定する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "風力発電施設が建設されれば日本遺産の文化財群やストーリーに甚大な影響を及ぼす懸念があると述べる"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "反対署名活動が起きるなど市民の間に混乱が生じていると認識する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "草島進一議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_13 prop:content "出羽三山地域の神域と祈りの風景が破壊されかねないとして断固反対する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "工事道路新設や林道拡幅で再生困難な貴重なブナ林の伐採が避けられないと指摘する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "上流部の開発行為が中下流域へ波及し水の流入量を変化させる可能性があると懸念する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "地域の意思決定や利益還元を欠く植民地型開発だと批判する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "ガイドラインに基づき住民説明や専門家意見聴取を要請すると説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "配慮書 方法書 準備書の各段階で市の意見を申し述べる機会があると説明する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "住民にしっかり説明して理解を得るなら市を通して公開すべき資料だと求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地元への事業内容の説明が十分でないため引き続き丁寧な説明を求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "市民の心配事を事業者に伝える機会なので意見提出を呼びかける"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "風車を一本たりとも建設させず絶対に阻止すべきだと主張する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "月山 出羽三山地域全体で禁止区域設定など規制すべきだと求める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "田中宏議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_24 prop:content "災害時の引渡しルールを全学校で明確にすべきだと求める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "学校と学童の認識のずれをなくす徹底を求める"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "現場では担い手不足の中で学童側が安全確保に苦心したと指摘する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "鶴岡市教育長布川敦"@ja.
+kg:st_5 rdf:type cls:st_106.
+cls:st_106 rdfs:label "教育行政"@ja.
+kg:op_27 prop:content "災害時の引渡し方法を改めて学校と学童で相談して決めるよう指示したいと述べる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_5.
+kg:op_28 prop:content "子供と地域の絆を育むため放課後子ども教室の活用を問う"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "地域の子供の居場所づくりとして放課後子ども教室を引き続き地域と協議して進める"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:op_30 prop:content "校内だけでなく自宅学習にも活用してこそ個別最適な学びにつながると述べる"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "健康福祉部長渡邉健"@ja.
+kg:st_6 rdf:type cls:st_12.
+kg:op_31 prop:content "地域のつながりが弱まり課題が複雑化していると認識する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_6.
+kg:op_32 prop:content "通いの場は住民の居場所だけでなく地域の支え合いの仕組みになると評価する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_6.
+kg:op_33 prop:content "高齢者だけでなく柔らかな社会のつながりをつくる場として重視すべきだと述べる"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "日帰り温泉など既存施設も活用し交流の場を創出することが重要だと述べる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_6.
+kg:op_35 prop:content "行政の縦割りを脱し公民共創で取り組むべきだと主張する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:st_7 rdfs:label "中沢洋議員"@ja.
+kg:st_7 rdf:type cls:st_9.
+kg:op_36 prop:content "具体的な対策を行動に移す必要があると訴える"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_7.
+kg:op_37 prop:content "本市でも温暖化の影響が日常生活で強く感じられるようになったと述べる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_7.
+kg:op_38 prop:content "今後さらに猛暑や豪雨が増え広い分野への影響が懸念されると述べる"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "次の世代へ持続可能な社会を残すため再生可能エネルギーへの転換が必要だと述べる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_7.
+kg:op_40 prop:content "本市の豊富な自然資源を最大限に生かし地球温暖化対策を積極的に進めると述べる"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "余剰電力の売電と市内小中学校等への供給を一体で進めると説明する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "鶴岡市長皆川治"@ja.
+kg:st_8 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_42 prop:content "環境と調和した再生可能エネルギーへの移行とエネルギー自給率の増加が重要だと述べる"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "このたびの風力発電事業につきましてはあくまでも民間事業者による民間事業者の計画であり、この計画を市が推進しているものではございません"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "事業計画地には市の土地もほとんどないため、事業の中で市の土地を避けられてしまえば、議会としての議決等も全くないまま事業が進んでいく可能性が大きいと感じています"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "事業名を聞いたり見たりすると、市が推進している、または市と事業者が一緒に行っているなど間違った認識を持っている方も多くおり、それに関する問合せも私のところに届いております"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "その際に羽黒山に隣接しているということで眺望を含めて懸念がありますよという旨を伝えております"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "事業実施想定区域が山岳信仰の重要な場所であり、日本遺産の指定を受けている出羽三山に近接すること、こういったことから市民の相当な反発が予想される"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "景観への影響を検討するためにフォトモンタージュの作成を要請したところでございます"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "出羽三山の山岳信仰が山や自然そのものを神としてあがめて、さらにそこで共生し、1,400年もの間続いてきた、そのことを考えると重要な視点ではないかなと考えておりますし、配慮書の作成に当たり調べたのであれば、その歴史や生活に対する理解ができていない、出羽三山に対する適切な評価が行われていないというふうに感じています"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "それだけ大きな範囲で森林伐採し整地された土地が山の上に最大40か所もできる、そんな計画になっています"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "現在でも計画地周辺では土砂崩れが起こり、下流では毎年のように水害が起こっている中で、今後の水害、土砂災害増加の原因になり得ると容易に推測されます"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "毎年のように水不足に悩む流域の農家の方々からも連絡がありました。やはり水源涵養機能が失われますと、水不足の悩みも増えるのではないかと想定できます"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "このたびの事業想定区域に風力発電施設が建設されることになれば、既に日本遺産に認定されている有形・無形の文化財や、そのストーリーに対して甚大な影響を及ぼすのではないかという懸念を持っているところでございます"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "この事業計画につきましては、現在反対の署名活動が行われるなど、市民の間に混乱が起きていること"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "月山の中腹、出羽三山神社の近くに風車がずらりと並ぶ景観になる可能性があります。建設予定地は、出羽三山地域の神域であります。日本遺産に登録された羽黒山伏の修験道の聖地であり、訪れる方々の心のよりどころであり、そのかけがえのない祈りの風景が破壊されかねないこと"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "工事搬出用道路を新たに造り、林道を拡幅するためには、一度失うと再生できない貴重なブナ林などの伐採が避けられないこと"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "事業地域は近年豪雨水害が頻発している藤島川、今野川、京田川の上流部であり、上流部の開発行為が中・下流域へ波及する。土地の改変により、川への水の流入量が変化する可能性があること"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "地域によるオーナーシップ、地域による意思決定、地域への利益還元を規定したコミュニティパワーの３原則というのがありますが、この事業がコミュニティパワー原則から見れば、それに完全に反する植民地型開発行為であること"@ja.
+<< kg:id_1 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "市が定めております風力発電施設の設置等に係るガイドラインに基づき、住民への十分な説明や専門家からの意見聴取などについて適切な対応を要請する"@ja.
+<< kg:id_1 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "計画段階環境配慮書、次の環境影響評価方法書、そして環境影響評価準備書、この各段階において市の意見書を山形県に提出することで意見を申し述べる機会がございます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_21 >>
+    prop:text-txt_contents "事業地に農地があれば農地法や農業振興地域の整備に関する法律、景観については景観法、建築物については建築基準法に基づく手続などがあり、それらは市が窓口とはなります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "景観への影響を検討するためにフォトモンタージュの作成を要請したところでございます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "市としては地元に対する事業内容の説明がまだ十分でない、フォトモンタージュの件も含めてまだ十分行われていないということもありますので、事業者に対しましては引き続き地元や関係各所への丁寧な説明を求めていきたいと考えております"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "これら一般の方々から提出された意見につきましては、事業者側において取りまとめが行われ、環境アセスメントの次の段階、環境影響評価方法書において、全ての意見に対する事業者の対応方針が明記されることになります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "この段階で事業者からの事業の取下げを望むものではあります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_27 >>
+    prop:text-txt_contents "今月17日には景観審議会、18日には環境審議会、文化財保護審議会を開催する予定でおりますので、専門家の方々からも御意見を伺いながら、市の意見書を提出してまいりたいと考えております"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "市といたしましては、先日の５番加藤議員の一般質問への答弁のとおり、良好な景観を保存するため、ゾーニングを含めたガイドラインの改定を検討してまいりたいと考えております"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:text-txt_contents "景観計画において風力発電設備等の立地を制限する区域を定め、景観条例に基づく届出に対する審査、指導等を行うことで、良好な景観を維持することとしている事例もございます"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "課題といたしましては、学童保育所等の受入れ体制には準備を要することから、早い段階で連絡を入れること"@ja.
+<< kg:id_31 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "付添いにつきましては学校と学童保育所等で連絡を図りながらルールを確認しておくことなどがございます"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "７月の大雨の際、学校から学童保育所への児童の引渡しについて、認識のずれがあった事例もあるように聞いております"@ja.
+<< kg:id_34 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "早い段階で連絡を入れることは確認しておりますので、今後災害時にどのように引き渡すかにつきまして、改めて学校と学童が相談して決めていくことを指示したい"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "学校の統廃合によって廃校となった地区において子供たちの声が聞こえなくなったというようなお声を伺います"@ja.
+<< kg:id_39 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "放課後子ども教室の実施を検討中でありますので、引き続き地域の皆様と協議をしてまいりたい"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:text-txt_contents "特に避難所に指定されている学校につきましては学校と地域による避難所開設に向けた事前協議や避難訓練を実施しているところがございます"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "課題といたしましては、通信環境が整っていない家庭もございます"@ja.
+<< kg:id_43 prop:countermeasure kg:id_45 >>
+    prop:text-txt_contents "就学援助費を受給している家庭へモバイルＷｉ－Ｆｉルーター等をお貸しする等の準備を進めようとしているところでございます"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "少子高齢社会の到来、価値観の多様化、帰属意識の低下等により、地域における人と人とのつながりは弱くなってきており、また地域が抱える課題は複雑化、多様化してきております"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:text-txt_contents "独り暮らし高齢者や高齢者のみ世帯が増加する中、これからも住み慣れた地域で自分らしく安心して暮らし続けるためには人と人とのつながり、地域とのつながりが大変重要になっております"@ja.
+<< kg:id_50 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "地域住民が出会い、お互いを知る場や学び合う機会を設けるなどの取組を通じて新たなつながりができ、地域住民同士の気にかけ合う関係性が生まれている事例も見られているところでございます"@ja.
+<< kg:id_50 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "住民主体の通いの場の取組などは、住民の居場所としてだけではなく、地域の支え合いの仕組みとしてコミュニティの活性化に寄与していくものと考えております"@ja.
+<< kg:id_53 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "日帰り温泉など既存施設も有効に活用しながら、そのような場を創出することが大変重要であると存じます"@ja.
+<< kg:id_53 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "既存の枠組みや手法にとらわれず、地域の活性化と市民の活力、元気、希望につながるようなサービスの提供と交流の場としての施設運営の持続可能性を両立できるよう取り組んでまいりたい"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "地球温暖化の原因は、人間活動による温室効果ガスの増加である可能性が高いとされています"@ja.
+<< kg:id_56 prop:cause kg:id_58 >>
+    prop:text-txt_contents "石油や石炭など、化石燃料の燃焼によって大気中に排出される二酸化炭素が最大の温暖化の原因と言えます"@ja.
+<< kg:id_56 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "本市においても、局所的な大雨による水害や土砂災害、猛暑日の増加による熱中症患者の増加など、温暖化の影響が日常生活においても強く感じられるようになってきました"@ja.
+<< kg:id_56 prop:effect kg:id_60 >>
+    prop:text-txt_contents "猛暑日の増加による熱中症患者の増加"@ja.
+<< kg:id_56 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "21世紀末の山形県の気温は、平成31年２月時点の年間平均気温が11.7度に対し、21世紀末には約4.7度上昇し、年間平均気温が16.4度"@ja.
+<< kg:id_56 prop:effect kg:id_62 >>
+    prop:text-txt_contents "今後さらに猛暑や豪雨が増え、産業や生態系など広い分野への影響、また健康への影響や大雨による災害の発生などが懸念をされております"@ja.
+<< kg:id_63 prop:countermeasure kg:id_64 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "政府は、脱炭素社会を実現するためのポイントとして、化石燃料から再生可能エネルギーへのシフトを上げております"@ja.
+<< kg:id_65 prop:countermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "平成25年度策定の鶴岡市地域エネルギービジョンに基づき、地域に根差した再生可能エネルギーの導入を推進することにより、地球温暖化対策を積極的に推進することとしております"@ja.
+<< kg:id_65 prop:countermeasure kg:id_67 >>
+    prop:text-txt_contents "荘内病院などの省エネルギー診断や設備改修スキームの検討"@ja.
+<< kg:id_65 prop:countermeasure kg:id_68 >>
+    prop:text-txt_contents "鶴岡第四中学校などへの太陽光発電設備の導入などにより、公共施設から排出される温室効果ガスの削減に努めているところであります"@ja.
+<< kg:id_65 prop:countermeasure kg:id_69 >>
+    prop:text-txt_contents "クールチョイスに賛同し、市民の皆様に対して脱炭素社会づくりに貢献する製品の買換え、公共交通機関の利用、３Ｒの実施などを呼びかけてまいりました"@ja.
+<< kg:id_65 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "ごみの焼却に伴い発生する廃熱を利用して発電を行うエネルギー回収型の施設整備に取り組んでおり、この電力を構内で使用するほか、余剰電力については、売電と市内小・中学校等公共施設への供給を一体として電力の地産地消事業の取組を進めております"@ja.
+<< kg:id_71 prop:countermeasure kg:id_72 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "環境と調和し、地域に豊かさをもたらすエネルギーの導入と利用、エネルギー施策を推進する上で大変重要と考えております"@ja.
+<< kg:id_71 prop:countermeasure kg:id_73 >>
+    prop:text-txt_contents "市全体や周辺における生活環境、自然環境、景観の保全に配慮して、事業者と市民の皆様の相互理解の下に環境に与える影響に配慮した持続可能な社会の形成に努めるという観点から、ガイドライン等を策定いたしまして対応しているところでございます"@ja.
+}

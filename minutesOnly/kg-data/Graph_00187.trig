@@ -1,0 +1,325 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00187> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風車建設後のクマタカの生息"@ja.
+kg:id_1 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_2 rdfs:label "クマタカの成鳥や若鳥の生息が確認されている"@ja.
+kg:id_2 rdf:type cls:c_4230.
+cls:c_4230 rdfs:label "鳥類の生息"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "風車建設"@ja.
+kg:id_3 rdf:type cls:c_128.
+kg:id_4 rdfs:label "風車近傍でコウモリ類の死骸が2例確認された"@ja.
+kg:id_4 rdf:type cls:c_4231.
+cls:c_4231 rdfs:label "コウモリの死骸"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "ニッポンユビナガコウモリではない死骸が1例確認された"@ja.
+kg:id_5 rdf:type cls:c_4231.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "コシノコバイモの生育地が改変対象となった"@ja.
+kg:id_6 rdf:type cls:c_4232.
+cls:c_4232 rdfs:label "植物の生育地"@ja.
+kg:id_3 prop:effect kg:id_6.
+kg:id_7 rdfs:label "コシノコバイモを含む対象種5種を事業区域周辺に移植や播種した"@ja.
+kg:id_7 rdf:type cls:c_4233.
+cls:c_4233 rdfs:label "希少種保全"@ja.
+kg:id_3 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "コシノコバイモの移植"@ja.
+kg:id_8 rdf:type cls:c_4234.
+cls:c_4234 rdfs:label "植物の移植"@ja.
+kg:id_9 rdfs:label "57個体のうち66.7％から75％が生育し開花も見られた"@ja.
+kg:id_9 rdf:type cls:c_4235.
+cls:c_4235 rdfs:label "植物の生育"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "環境アセス"@ja.
+kg:id_10 rdf:type cls:c_748.
+cls:c_748 rdfs:label "環境配慮"@ja.
+kg:id_11 rdfs:label "風車の設置数を9基から5基に減らし位置を変更した"@ja.
+kg:id_11 rdf:type cls:c_594.
+cls:c_594 rdfs:label "配置変更"@ja.
+kg:id_10 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "風力発電所の低周波音"@ja.
+kg:id_12 rdf:type cls:c_1934.
+cls:c_1934 rdfs:label "低周波音"@ja.
+kg:id_13 rdfs:label "睡眠障害やめまいや頭痛や耳鳴りが生じるおそれ"@ja.
+kg:id_13 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "耳の中の前庭への刺激"@ja.
+kg:id_14 rdf:type cls:c_4236.
+cls:c_4236 rdfs:label "身体刺激"@ja.
+kg:id_12 prop:cause kg:id_14.
+kg:id_15 rdfs:label "不眠症の有病率が約5倍になる"@ja.
+kg:id_15 rdf:type cls:c_4237.
+cls:c_4237 rdfs:label "不眠症"@ja.
+kg:id_12 prop:effect kg:id_15.
+kg:id_16 rdfs:label "4メガワット風車"@ja.
+kg:id_16 rdf:type cls:c_3386.
+cls:c_3386 rdfs:label "風車"@ja.
+kg:id_17 rdfs:label "2キロメートルの隔離距離を確保する"@ja.
+kg:id_17 rdf:type cls:c_4238.
+cls:c_4238 rdfs:label "隔離距離"@ja.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "6メガワット風車"@ja.
+kg:id_18 rdf:type cls:c_3386.
+kg:id_19 rdfs:label "2.5キロメートルの隔離距離を確保する"@ja.
+kg:id_19 rdf:type cls:c_4238.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "加茂の風車計画"@ja.
+kg:id_20 rdf:type cls:c_66.
+cls:c_66 rdfs:label "風力発電計画"@ja.
+kg:id_21 rdfs:label "39名の不眠症リスクが生じる"@ja.
+kg:id_21 rdf:type cls:c_4237.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "1680人が入眠妨害のおそれがある"@ja.
+kg:id_22 rdf:type cls:c_4239.
+cls:c_4239 rdfs:label "入眠妨害"@ja.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "矢引の風車計画"@ja.
+kg:id_23 rdf:type cls:c_66.
+kg:id_24 rdfs:label "71人の不眠症リスクが生じる"@ja.
+kg:id_24 rdf:type cls:c_4237.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "744人が入眠時に気になるレベルとなる"@ja.
+kg:id_25 rdf:type cls:c_4239.
+kg:id_23 prop:effect kg:id_25.
+kg:id_26 rdfs:label "風車と民家の距離600メートル"@ja.
+kg:id_26 rdf:type cls:c_4240.
+cls:c_4240 rdfs:label "風車距離"@ja.
+kg:id_27 rdfs:label "大型風車では健康影響が出てしかるべきとの懸念"@ja.
+kg:id_27 rdf:type cls:c_79.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "風車の稼働"@ja.
+kg:id_28 rdf:type cls:c_4241.
+cls:c_4241 rdfs:label "風車の稼働"@ja.
+kg:id_29 rdfs:label "低周波音の参照値41デシベルを超過する箇所があった"@ja.
+kg:id_29 rdf:type cls:c_4242.
+cls:c_4242 rdfs:label "参照値超過"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "風車の低周波音"@ja.
+kg:id_30 rdf:type cls:c_1934.
+kg:id_31 rdfs:label "事業者による継続調査と地元自治会への定期的聞き取りを行う"@ja.
+kg:id_31 rdf:type cls:c_1136.
+cls:c_1136 rdfs:label "継続調査"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "矢引と加茂の風車計画"@ja.
+kg:id_32 rdf:type cls:c_66.
+kg:id_33 rdfs:label "市民と行政と事業者のリスクコミュニケーションの協議の場を設置する"@ja.
+kg:id_33 rdf:type cls:c_2058.
+cls:c_2058 rdfs:label "協議の場"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "風車の低周波音問題"@ja.
+kg:id_34 rdf:type cls:c_4243.
+cls:c_4243 rdfs:label "低周波音問題"@ja.
+kg:id_35 rdfs:label "予防原則に基づき一人でも健康被害を引き起こさないよう対応する"@ja.
+kg:id_35 rdf:type cls:c_4244.
+cls:c_4244 rdfs:label "予防対応"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "地域外大手企業による風力発電開発"@ja.
+kg:id_36 rdf:type cls:c_4245.
+cls:c_4245 rdfs:label "域外企業開発"@ja.
+kg:id_37 rdfs:label "数百億円という売電収益がほとんど地域外へ流出する"@ja.
+kg:id_37 rdf:type cls:c_4246.
+cls:c_4246 rdfs:label "収益流出"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "地域外企業による再エネ事業"@ja.
+kg:id_38 rdf:type cls:c_4247.
+cls:c_4247 rdfs:label "域外企業事業"@ja.
+kg:id_39 rdfs:label "地域や地元出資の事業を促進する"@ja.
+kg:id_39 rdf:type cls:c_4248.
+cls:c_4248 rdfs:label "地域主導事業"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "再エネ施設の導入"@ja.
+kg:id_40 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_41 rdfs:label "再エネ税や自治体還元ルールや協定締結条例を検討する"@ja.
+kg:id_41 rdf:type cls:c_4249.
+cls:c_4249 rdfs:label "地域還元制度"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:st_1 rdfs:label "草島進一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "市のホームページなどで事業者の事後調査報告書の詳細を開示してほしい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "コウモリへの影響を市としても独自に調査して確認してほしい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "植生の改変について市としても独自に調査して確認してほしい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "低周波音と健康被害のリスクは絶対無視できない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "国内の疫学調査で健康影響が示されている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "北海道大学大学院環境工学田鎖順太助教"@ja.
+kg:st_2 rdf:type cls:st_10.
+cls:st_10 rdfs:label "研究者"@ja.
+kg:op_6 prop:content "睡眠障害などの苦情に関する参照値を下回るには2キロメートルの隔離距離が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "加茂計画の6メガワット風車では最低でも2.5キロメートルの隔離距離が必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "加茂計画の不眠症リスク試算は絶対無視できない"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "大山地区全体まで影響圏内に入り入眠妨害のおそれがある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "三瀬の風車との相乗効果で由良や三瀬の住民に影響を与えかねない"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "600メートルは健康影響を考慮した数値ではなく十分な隔離距離を検討すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "事業者"@ja.
+kg:st_3 rdf:type cls:st_21.
+cls:st_21 rdfs:label "事業者"@ja.
+kg:op_12 prop:content "工事前とおおむね同程度で風車稼働の影響は小さいと考える"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "鶴岡市市民部長伊藤慶也"@ja.
+kg:st_4 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_13 prop:content "数値のみで判断せず継続調査と聞き取りを行いガイドライン見直しの必要性を検討する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "行政が主導して協議の場をきちんと設置すべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "少数の訴えでも無視せず予防原則で対応すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "外部大手企業に搾取される植民地型事業になりかねない"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "地域外企業による事業は抑制的にし地域にお金が循環する事業を促進すべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "地域還元率が低い地域外事業者に一定額の還元ルールを設けるべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "他市の先進事例の情報収集に努め調査研究を進める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "供用開始後の調査についてはイヌワシは確認されず、クマタカについては、成鳥や若鳥が確認されていると報告がございます。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "ニッポンユビナガコウモリにつきましては、風車の近傍でコウモリ類の２例の死骸が確認されております。"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:text-txt_contents "もう一例はニッポンユビナガコウモリではない旨の報告がございます。"@ja.
+<< kg:id_3 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "建設地は鶴岡市の当該地域が北限であるコシノコバイモの生息地でありました。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "工事前に事業区域に多くの個体が見られたコシノコバイモを含めた対象種５種を事業区域周辺に移植や種をまいております。"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:text-txt_contents "57個体を移植したコシノコバイモの生育状況については、移植後66.7％から75％が生育し、開花も見られ"@ja.
+<< kg:id_10 prop:countermeasure kg:id_11 >>
+    prop:text-txt_contents "環境アセスの環境配慮として、設置数が９基から５基となり、位置の変更などを行った経過があったと思います。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風車の近くの住民が睡眠障害や目まい、頭痛、耳鳴りなどを生じる"@ja.
+<< kg:id_12 prop:cause kg:id_14 >>
+    prop:text-txt_contents "医学的にも低周波音は耳の中の前庭という部分を刺激し、圧迫感や振動感で睡眠障害を引き起こしたり、目まい、頭痛などの原因と考えられる"@ja.
+<< kg:id_12 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "風車による低周波音、屋外騒音レベル41デシベルから45デシベルの暴露で不眠症の有病率が約５倍になっており"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "発電出力４メガワットの風車１基であっても、中心周波数80ヘルツのレベルが睡眠障害など心身に係る苦情に関する環境省参照値の41デシベルを下回るためには、２キロメートルの隔離距離が必要"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今般、加茂地区で計画されている６メガワットの風車では、最低でも2.5キロメートルの隔離距離が必要との試算結果"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "６メガワット風車８基だと、加茂、油戸、菱津などで、疫学研究に基づく推定値で39名不眠症リスクが生じる。"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "１万6,808人に影響し、そのうち10人に１人、1,680人が「眠りに入る入眠時、気になる」と回答する入眠妨害の音圧レベル"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "三瀬八森山５基の隣に、矢引に計画されている4.2メガワット風車７基を建てると、由良、三瀬、矢引周辺で71人の不眠症リスクが生じる。"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:text-txt_contents "参照値には7,440名が影響下となり、744人が「入眠時気になる」、入眠妨害のレベル"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "大型風車で距離600メートルでは健康影響が出てしかるべきという状況でないかと懸念する。"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "環境省において参照としている値41デシベルを超過する箇所もございましたが、工事前の風車近傍での低周波音とおおむね同程度であることから、風車の稼働による影響は小さいものと考えられる"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "事業者による継続しての調査や定期的に地元自治会に聞き取りするとともに、国が示す指針などの動向を注視しながら、本市のガイドラインの見直しの必要性について検討してまいりたい"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "矢引と加茂の計画に対してこの数値を事業者にきちんと示していただき、市民と行政と、そして事業者のリスクコミュニケーションの協議の場、これを行政としてきちんと主導して設置することを求めたい"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "一人でも睡眠障害などの健康被害を引き起こしてはならない、これを鉄則にしていただきたい。"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "東京の外部大手企業などによる開発では、数百億円という売電収益はほとんど全て外に流出する"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "地域外企業による事業については抑制的にし、確実に地域にお金が循環する、地域や地元出資の事業を促進させる必要がある"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "風力発電の開発などで地域企業が主導し、地域金融が関わるコミュニティパワーに誘導するための再エネ税のようなものが検討できないか、また圧倒的に地域還元率が低い地域外事業者に対しては、自治体へ還元する一定額のルールを設け、協定締結を行うなどの条例制定ができないか"@ja.
+}

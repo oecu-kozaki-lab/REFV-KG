@@ -1,0 +1,707 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00046> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業収益の還元"@ja.
+kg:id_1 rdf:type cls:c_1250.
+cls:c_1250 rdfs:label "事業収益還元"@ja.
+kg:id_2 rdfs:label "供用開始後の収入状況を踏まえた収益見通しの不確実性"@ja.
+kg:id_2 rdf:type cls:c_1251.
+cls:c_1251 rdfs:label "収益不確実性"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "6月から9月までは季節風の風況が悪く発電量が大幅に低下する見込み"@ja.
+kg:id_3 rdf:type cls:c_1252.
+cls:c_1252 rdfs:label "発電量低下"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "落雷など自然災害を受ける可能性がある"@ja.
+kg:id_4 rdf:type cls:c_1253.
+cls:c_1253 rdfs:label "災害リスク"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "4月5月の売電収入は8130万円で順調な滑り出し"@ja.
+kg:id_5 rdf:type cls:c_1068.
+cls:c_1068 rdfs:label "売電収入"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電事業"@ja.
+kg:id_6 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_7 rdfs:label "20年間で売電収入約65億3000万円と収益約4億2000万円を想定"@ja.
+kg:id_7 rdf:type cls:c_1254.
+cls:c_1254 rdfs:label "事業収益"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "市民還元を急がないと話題性や宣伝効果を逃す"@ja.
+kg:id_8 rdf:type cls:c_140.
+cls:c_140 rdfs:label "理解促進"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "市民還元により洋上風力やカーボンニュートラルへの理解が高まる"@ja.
+kg:id_9 rdf:type cls:c_140.
+kg:id_6 prop:effect kg:id_9.
+kg:id_10 rdfs:label "収益を風力発電事業地域未来創造基金に積み立て地域振興事業等に充てる"@ja.
+kg:id_10 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "基金積立"@ja.
+kg:id_6 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "広報などで事業の経過や今後の展開を情報提供する"@ja.
+kg:id_11 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_6 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "スポーツ施設の老朽化"@ja.
+kg:id_12 rdf:type cls:c_1016.
+cls:c_1016 rdfs:label "施設老朽化"@ja.
+kg:id_13 rdfs:label "1990年代に建設時期が集中している"@ja.
+kg:id_13 rdf:type cls:c_1256.
+cls:c_1256 rdfs:label "建設時期集中"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "修繕や維持管理が追いつかない状況"@ja.
+kg:id_14 rdf:type cls:c_1257.
+cls:c_1257 rdfs:label "維持管理不足"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "財政調整基金を活用し早急に集中的に対応する"@ja.
+kg:id_15 rdf:type cls:c_1258.
+cls:c_1258 rdfs:label "基金活用"@ja.
+kg:id_12 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "光ケ丘野球場の劣化"@ja.
+kg:id_16 rdf:type cls:c_914.
+cls:c_914 rdfs:label "施設劣化"@ja.
+kg:id_17 rdfs:label "暗渠の老朽化"@ja.
+kg:id_17 rdf:type cls:c_1259.
+cls:c_1259 rdfs:label "排水設備老朽化"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "雨漏りの浸透箇所が特定できない"@ja.
+kg:id_18 rdf:type cls:c_1260.
+cls:c_1260 rdfs:label "漏水原因不明"@ja.
+kg:id_16 prop:cause kg:id_18.
+kg:id_19 rdfs:label "ロッカールームで雨漏りが多数発生している"@ja.
+kg:id_19 rdf:type cls:c_1261.
+cls:c_1261 rdfs:label "雨漏り"@ja.
+kg:id_16 prop:effect kg:id_19.
+kg:id_20 rdfs:label "排水不十分により事務室が浸水する"@ja.
+kg:id_20 rdf:type cls:c_1262.
+cls:c_1262 rdfs:label "浸水"@ja.
+kg:id_16 prop:effect kg:id_20.
+kg:id_21 rdfs:label "建物内がカビ臭い"@ja.
+kg:id_21 rdf:type cls:c_1263.
+cls:c_1263 rdfs:label "衛生悪化"@ja.
+kg:id_16 prop:effect kg:id_21.
+kg:id_22 rdfs:label "グラウンドの土や野外照明施設が劣化している"@ja.
+kg:id_22 rdf:type cls:c_1264.
+cls:c_1264 rdfs:label "設備劣化"@ja.
+kg:id_16 prop:effect kg:id_22.
+kg:id_23 rdfs:label "外野芝に雑草が多く野球をしていて危ない"@ja.
+kg:id_23 rdf:type cls:c_1265.
+cls:c_1265 rdfs:label "利用危険"@ja.
+kg:id_16 prop:effect kg:id_23.
+kg:id_24 rdfs:label "排水不良で内野が砂漠化し始めている"@ja.
+kg:id_24 rdf:type cls:c_1266.
+cls:c_1266 rdfs:label "競技環境悪化"@ja.
+kg:id_16 prop:effect kg:id_24.
+kg:id_25 rdfs:label "熱中症対策上の問題から大会日程を入れにくい"@ja.
+kg:id_25 rdf:type cls:c_1267.
+cls:c_1267 rdfs:label "大会運営支障"@ja.
+kg:id_16 prop:effect kg:id_25.
+kg:id_26 rdfs:label "光ケ丘野球場"@ja.
+kg:id_26 rdf:type cls:c_1268.
+cls:c_1268 rdfs:label "スポーツ施設"@ja.
+kg:id_27 rdfs:label "本市の野球競技のために絶対的に必要な施設"@ja.
+kg:id_27 rdf:type cls:c_1269.
+cls:c_1269 rdfs:label "重要施設"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "熊の出没増加"@ja.
+kg:id_28 rdf:type cls:c_1270.
+cls:c_1270 rdfs:label "動物出没増加"@ja.
+kg:id_29 rdfs:label "孟宗竹が不良で熊がより民家近くまで食べに来ている"@ja.
+kg:id_29 rdf:type cls:c_1271.
+cls:c_1271 rdfs:label "餌不足"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "熊の出没"@ja.
+kg:id_30 rdf:type cls:c_1272.
+cls:c_1272 rdfs:label "動物出没"@ja.
+kg:id_31 rdfs:label "餌場ができている"@ja.
+kg:id_31 rdf:type cls:c_1273.
+cls:c_1273 rdfs:label "餌場形成"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "人家近く30メートルから50メートル以内に熊が現れ住民の不安感危機感が強まっている"@ja.
+kg:id_32 rdf:type cls:c_63.
+cls:c_63 rdfs:label "住民不安"@ja.
+kg:id_30 prop:effect kg:id_32.
+kg:id_33 rdfs:label "乳児や子どものいる家庭では深刻な不安がある"@ja.
+kg:id_33 rdf:type cls:c_1274.
+cls:c_1274 rdfs:label "生活不安"@ja.
+kg:id_30 prop:effect kg:id_33.
+kg:id_34 rdfs:label "孟宗竹を47本ほど食べられる被害がある"@ja.
+kg:id_34 rdf:type cls:c_1275.
+cls:c_1275 rdfs:label "農作物被害"@ja.
+kg:id_30 prop:effect kg:id_34.
+kg:id_35 rdfs:label "収穫されない柿を除去して餌場をなくす"@ja.
+kg:id_35 rdf:type cls:c_1276.
+cls:c_1276 rdfs:label "餌場除去"@ja.
+kg:id_30 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "人里と山の間に緩衝帯をつくる"@ja.
+kg:id_36 rdf:type cls:c_1277.
+cls:c_1277 rdfs:label "緩衝帯整備"@ja.
+kg:id_30 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "熊対策用として緩衝帯を事業化する"@ja.
+kg:id_37 rdf:type cls:c_1277.
+kg:id_30 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "山と人里の間に火や煙の出る施設を設け熊に人里の境界を認識させる"@ja.
+kg:id_38 rdf:type cls:c_1278.
+cls:c_1278 rdfs:label "境界対策"@ja.
+kg:id_30 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "カーボンニュートラル時代の産業振興"@ja.
+kg:id_39 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_40 rdfs:label "温暖化対応が経済成長の機会となる"@ja.
+kg:id_40 rdf:type cls:c_1279.
+cls:c_1279 rdfs:label "成長機会"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "酒田工場の水素関連研究"@ja.
+kg:id_41 rdf:type cls:c_1280.
+cls:c_1280 rdfs:label "技術開発"@ja.
+kg:id_42 rdfs:label "水素吸蔵合金により水素を効率的に大量貯蔵できる"@ja.
+kg:id_42 rdf:type cls:c_1281.
+cls:c_1281 rdfs:label "大量貯蔵"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "市内の水素関連産業"@ja.
+kg:id_43 rdf:type cls:c_1282.
+cls:c_1282 rdfs:label "関連産業"@ja.
+kg:id_44 rdfs:label "小規模ながら水素サプライチェーンが構成されている"@ja.
+kg:id_44 rdf:type cls:c_1283.
+cls:c_1283 rdfs:label "産業連携"@ja.
+kg:id_43 prop:effect kg:id_44.
+kg:id_45 rdfs:label "酒田港の基地港湾指定"@ja.
+kg:id_45 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_46 rdfs:label "遊佐沖250メガワット想定で経済波及効果約186億円"@ja.
+kg:id_46 rdf:type cls:c_106.
+cls:c_106 rdfs:label "経済効果"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "遊佐沖250メガワット想定で雇用創出効果1586人"@ja.
+kg:id_47 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_45 prop:effect kg:id_47.
+kg:id_48 rdfs:label "遊佐沖250メガワット想定で税収増大効果約2億4800万円"@ja.
+kg:id_48 rdf:type cls:c_184.
+cls:c_184 rdfs:label "税収増加"@ja.
+kg:id_45 prop:effect kg:id_48.
+kg:id_49 rdfs:label "酒田沖事業も進めば遊佐沖と同等以上の効果が見込まれる"@ja.
+kg:id_49 rdf:type cls:c_106.
+kg:id_45 prop:effect kg:id_49.
+kg:id_50 rdfs:label "酒田港の活用"@ja.
+kg:id_50 rdf:type cls:c_601.
+cls:c_601 rdfs:label "港湾活用"@ja.
+kg:id_51 rdfs:label "臨港道路送電線高速道路インターチェンジが近接している"@ja.
+kg:id_51 rdf:type cls:c_1284.
+cls:c_1284 rdfs:label "交通利便"@ja.
+kg:id_50 prop:cause kg:id_51.
+kg:id_52 rdfs:label "港湾区域内に広大な未利用地がある"@ja.
+kg:id_52 rdf:type cls:c_1285.
+cls:c_1285 rdfs:label "未利用地"@ja.
+kg:id_50 prop:cause kg:id_52.
+kg:id_53 rdfs:label "酒田港"@ja.
+kg:id_53 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "港湾"@ja.
+kg:id_54 rdfs:label "山形県と連携して基地港湾指定を目指す"@ja.
+kg:id_54 rdf:type cls:c_1286.
+cls:c_1286 rdfs:label "指定推進"@ja.
+kg:id_53 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "カーボンニュートラルポート形成に向け企業立地土地利用地域振興を検討する"@ja.
+kg:id_55 rdf:type cls:c_1287.
+cls:c_1287 rdfs:label "拠点形成"@ja.
+kg:id_53 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "基金等の活用を企業に促し脱炭素化を後押しする"@ja.
+kg:id_56 rdf:type cls:c_1288.
+cls:c_1288 rdfs:label "企業支援"@ja.
+kg:id_53 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "生涯活躍のまち構想"@ja.
+kg:id_57 rdf:type cls:c_384.
+cls:c_384 rdfs:label "地域構想"@ja.
+kg:id_58 rdfs:label "地域の実情や特性に応じたまちづくりにより地域活性化が期待される"@ja.
+kg:id_58 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "対象を全世代に拡大し誰もが居場所と役割を持ち活躍できるコミュニティづくりを進める"@ja.
+kg:id_59 rdf:type cls:c_1289.
+cls:c_1289 rdfs:label "コミュニティ形成"@ja.
+kg:id_57 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "移住者が地域活動に主体的に参加し地域と交流する取組を目指す"@ja.
+kg:id_60 rdf:type cls:c_1290.
+cls:c_1290 rdfs:label "地域交流"@ja.
+kg:id_57 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "多世代で多様な人材が交流し活躍するコミュニティづくりが成功要素"@ja.
+kg:id_61 rdf:type cls:c_1291.
+cls:c_1291 rdfs:label "多世代交流"@ja.
+kg:id_57 prop:effect kg:id_61.
+kg:id_62 rdfs:label "早期に入居移住者を確保し安定的に循環させることが課題"@ja.
+kg:id_62 rdf:type cls:c_1292.
+cls:c_1292 rdfs:label "入居者確保"@ja.
+kg:id_57 prop:effect kg:id_62.
+kg:id_63 rdfs:label "市の構想と事業者提案をすり合わせ事業計画をブラッシュアップする"@ja.
+kg:id_63 rdf:type cls:c_1293.
+cls:c_1293 rdfs:label "計画調整"@ja.
+kg:id_57 prop:countermeasure kg:id_63.
+kg:id_64 rdfs:label "光丘文庫"@ja.
+kg:id_64 rdf:type cls:c_1294.
+cls:c_1294 rdfs:label "文化施設"@ja.
+kg:id_65 rdfs:label "建物や書籍資料は文化財として相当価値がある"@ja.
+kg:id_65 rdf:type cls:c_1295.
+cls:c_1295 rdfs:label "文化財価値"@ja.
+kg:id_64 prop:effect kg:id_65.
+kg:id_66 rdfs:label "老朽化により平成29年に蔵書を移転して休館した"@ja.
+kg:id_66 rdf:type cls:c_1296.
+cls:c_1296 rdfs:label "休館"@ja.
+kg:id_64 prop:effect kg:id_66.
+kg:id_67 rdfs:label "閉館したままで劣化の進行が懸念されている"@ja.
+kg:id_67 rdf:type cls:c_1297.
+cls:c_1297 rdfs:label "劣化懸念"@ja.
+kg:id_64 prop:effect kg:id_67.
+kg:id_68 rdfs:label "蔵書をデジタルアーカイブ化しネットで検索できるようにした"@ja.
+kg:id_68 rdf:type cls:c_1298.
+cls:c_1298 rdfs:label "資料デジタル化"@ja.
+kg:id_64 prop:countermeasure kg:id_68.
+kg:id_69 rdfs:label "専門家の詳細調査の上で保存活用計画を策定する"@ja.
+kg:id_69 rdf:type cls:c_1299.
+cls:c_1299 rdfs:label "保存計画"@ja.
+kg:id_64 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "応急的な処置も含めて建物劣化防止を検討する"@ja.
+kg:id_70 rdf:type cls:c_1300.
+cls:c_1300 rdfs:label "劣化防止"@ja.
+kg:id_64 prop:countermeasure kg:id_70.
+kg:st_1 rdfs:label "後藤仁議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "1年間待たず一部でも今年度から市民還元すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域創生部長佐々木好信"@ja.
+kg:st_2 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_2 prop:content "自然条件や災害リスクがあり慌てず還元の在り方を考えるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "風況変動があるため収益見通しは慎重に見るべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "自然災害リスクがあるため拙速な還元は避けるべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "供用開始後は順調なスタートを切っている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "長期的には一定の売電収入と収益を見込んでいる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "スピード感ある還元は市民理解と宣伝効果につながる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "今年度から還元すれば今後の洋上風力への市民理解を高められる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "収益は基金に積み立て広く市民還元できる事業に活用する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "市民周知は広報で丁寧に進める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "同時期建設のため改修時期も集中する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "老朽化対策が後手に回っている懸念がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "改修の平準化は難しいため基金で集中的に対応すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "排水設備の老朽化が施設悪化を招いている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "補修しても原因箇所が分からず改善しにくい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "ロッカールームの雨漏りは早急な対応が必要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "大雨時の浸水が継続している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "利用環境が悪化している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "施設全体の老朽化が進んでいる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "公認審判員で活躍している方"@ja.
+kg:st_3 rdf:type cls:st_45.
+cls:st_45 rdfs:label "利用者"@ja.
+kg:op_20 prop:content "外野芝の雑草混在は競技上危険"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "排水不良がグラウンド状態悪化につながっている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "高野連"@ja.
+kg:st_4 rdf:type cls:st_46.
+cls:st_46 rdfs:label "競技団体"@ja.
+kg:op_22 prop:content "休養場所が不足し大会開催に二の足を踏んでいる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_4.
+kg:op_23 prop:content "市の野球競技を支える重要施設として早急な改善が必要"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "地元の人"@ja.
+kg:st_5 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_24 prop:content "今年は孟宗竹不良で熊が人家近くまで来ている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "熊と人のすみ分けには餌場をつくらないことが重要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "近年は人家近くでの出没が増え住民不安が強まっている"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "熊出没を相談した住民"@ja.
+kg:st_6 rdf:type cls:st_5.
+kg:op_27 prop:content "乳児が散歩する地域に熊が出るのは看過できない"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:op_28 prop:content "毎年のことだが孟宗竹被害が出ている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "未収穫柿の除去は具体的な餌場対策として有効"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "熊対策用の緩衝帯を事業化して整備すべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "地域の草刈り負担を踏まえ緩衝帯整備を事業化すべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "煙や火の臭いを使った境界対策も検討すべき"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "阿部秀徳議員"@ja.
+kg:st_7 rdf:type cls:st_9.
+kg:op_33 prop:content "カーボンニュートラルは新しい成長戦略として捉えるべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "副市長矢口明子"@ja.
+kg:st_8 rdf:type cls:st_40.
+kg:op_34 prop:content "市内企業には水素分野で実用化が期待される技術がある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_8.
+kg:op_35 prop:content "市内には水素利活用の基礎となる産業連携がある"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_8.
+kg:op_36 prop:content "基地港湾指定は大きな経済波及効果を期待できる"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_8.
+kg:op_37 prop:content "洋上風力は雇用創出にもつながる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_8.
+kg:op_38 prop:content "税収増加も期待される"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_8.
+kg:op_39 prop:content "酒田沖でも同等以上の波及効果が期待できる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_8.
+kg:op_40 prop:content "酒田港はインフラ面で優位性がある"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "広大な未利用地は他港にない優位性である"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "県と連携して基地港湾指定を進める"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_8.
+kg:op_43 prop:content "港湾を軸に企業立地と地域振興を一体で進める"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_8.
+kg:op_44 prop:content "グリーンイノベーション基金などを活用して企業の取組を支援する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_8.
+kg:op_45 prop:content "生涯活躍のまちは地方創生に資する取組である"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_8.
+kg:op_46 prop:content "高齢者中心から全世代型へ見直して進める"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_8.
+kg:op_47 prop:content "移住コミュニティと地域の接続を重視している"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_8.
+kg:op_48 prop:content "先進事例ではごちゃまぜ型の多世代交流が有効である"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_8.
+kg:op_49 prop:content "事業継続には入居者確保と循環が鍵になる"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_8.
+kg:op_50 prop:content "基本協定締結に向け計画を磨き上げる"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_8.
+kg:op_51 prop:content "建物も書籍も高い文化的価値があると認識している"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_7.
+kg:op_52 prop:content "老朽化で休館となり建物の今後が懸念される"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_7.
+kg:op_53 prop:content "建物の劣化進行を心配している"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_7.
+kg:op_54 prop:content "デジタルアーカイブは資料活用の面で効果がある"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_7.
+kg:op_55 prop:content "専門調査と保存活用計画の策定を早く進めるべき"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_7.
+kg:op_56 prop:content "時間がかかるなら応急措置も検討すべき"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "運転初年度であることから予測の不確実性の程度が大きいということで、現時点では算出ができないという状況でございます。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "６月から９月までは季節風の風況が悪いということから、発電量が大幅に低下するだろうと見込んでございます。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "この風力発電事業につきましては、様々な自然の状況によって変化があったり、あるいは落雷とか、そういう自然の災害を受ける可能性が含まれている事業でございます。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "４月、５月の２か月間の実績でございますけれども、売電量で約334万キロワットアワー、収入で8,130万円となってございます。対予算では予算額の約３億2,800万円に対しまして24.8％となっておりまして、順調な滑り出しができたというところでございます。"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "固定価格買取制度、ＦＩＴの制度が適用される20年間で、売電収入を約65億3,000万円、収益を約４億2,000万円と想定しているところでございます。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "私はこういう市民還元だとかというものは、話題性だとかスピード感というのもひとつ大事だと思うんです。"@ja.
+<< kg:id_6 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "今後の洋上風力、カーボンニュートラルへの市民の理解を高めていく事業になるので"@ja.
+<< kg:id_6 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "事業の収益につきましては、風力発電事業地域未来創造基金、こちらのほうに積立てをして、広く市民に還元できるようにと地域振興事業等に充てることとしております。"@ja.
+<< kg:id_6 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "広報などでしっかりと情報提供させていただきながら、事業の経過、今後の展開などについて説明をさせていただければと思っているところでございます。"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "建設年度が同時期に集中し、施設を維持する中で修繕や維持管理など追いつかない状況ではないでしょうか。"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "施設を維持する中で修繕や維持管理など追いつかない状況ではないでしょうか。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "老朽化による施設改修は時期が集中してしまう。これは自然の成り行きだと思います。この施設改修を平準化するのは、私は難しいため財政調整基金を活用し、早急に集中的に対応していくべきと考えます"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "非常に暗渠がもう老朽化していまして"@ja.
+<< kg:id_16 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "その雨漏りは今始まった話じゃないんだと。何とか直そうと思って、市のほうからもやっていただいているけれども、なかなかその浸透がどこからか分からない"@ja.
+<< kg:id_16 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "光ケ丘野球場のロッカールームには青いバケツが三、四個置かれ、雨漏りがしている箇所が多数見られる。"@ja.
+<< kg:id_16 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "施設全体の排水も不十分で、事務室には、昨年はここまで、一昨年の豪雨ではここまで浸水したという浸水の跡が明確に残っております。"@ja.
+<< kg:id_16 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "建物の中もカビ臭い状況にあります。"@ja.
+<< kg:id_16 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "グラウンドの土や野外照明施設の劣化"@ja.
+<< kg:id_16 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "外野の芝に雑草が非常に混在して、しっかり刈り取っているときは影響ないんだけれども、雑草ですので、油断をすると、芝と雑草の伸びが違いますので、非常に野球をしていて危ない"@ja.
+<< kg:id_16 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "大雨降るとみんな事務室だとかに水が入ってくる。そのことによって、常にダイヤモンドに砂をまくので、非常にダイヤモンド、内野ですね。内野のゾーンも砂漠化し始めている"@ja.
+<< kg:id_16 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "高野連としては、なかなか光ケ丘野球場で大会のスケジュールを入れるのに二の足を踏んでいる状況もあるんです"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "光ケ丘野球場は本市の野球競技のためには絶対的に必要な施設と考えます"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "今年の場合は、孟宗竹が不良なんだそうです。不良ですので、より近い民家近くまで熊が孟宗竹を食べに来ている"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "熊と住民、人間がすみ分けるには、餌場をつくらないことだと聞きました。"@ja.
+<< kg:id_30 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "近年は熊が人家近く、30メートルから50メートル以内に熊が現れているという情報も多く、地元住民の不安感、危機感が強まっている"@ja.
+<< kg:id_30 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "うちには乳児がいるんだと。そして、地域を散歩すると。そんな地域でいいのかと"@ja.
+<< kg:id_30 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "裏山すぐ、その家も30メートルぐらいと言っていましたけれども、孟宗竹を今年も47本ほど食べられた"@ja.
+<< kg:id_30 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "内藤小容子さんが収穫されない柿の除去をして、餌場をなくし"@ja.
+<< kg:id_30 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "緩衝帯をつくる、餌場をなくすというそういう答え、答弁がありました。"@ja.
+<< kg:id_30 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "ただきれいにするんじゃなくて、熊対策用としての緩衝帯を事業化して、それをつくっていく。私はそんな施策もあっていいのかなと思います。"@ja.
+<< kg:id_30 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "トーチカ的なものを山と人里の間に何か所かつくりまして、そこで火をおこす。...煙、火の臭いを察知させて、熊からここからは人里だよねというような対策というものは考えられないものでしょうか。"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "2050年カーボンニュートラルに伴うグリーン成長戦略は従来の発想を転換し、温暖化への対応を経済成長の機会と捉える時代の新しい成長戦略であります。"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "吸蔵合金に吸収させた形で貯蔵すると、通常のガス状の場合に比べて約1000分の１にまで体積を圧縮できるため、効率的に大量貯蔵が可能となります。"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "小規模ながらも水素サプライチェーンが構成されている状況であります。"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "経済波及効果は約186億円"@ja.
+<< kg:id_45 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "雇用創出効果は1,586人"@ja.
+<< kg:id_45 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "税収増大効果は県税、市町村税を合わせて約２億4,800万円"@ja.
+<< kg:id_45 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "仮に酒田沖の事業も進めば、その効果は遊佐沖と同等以上と考えられます。"@ja.
+<< kg:id_50 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "酒田港、臨港道路、送電線などのインフラもできてございますし、高速道路、インターチェンジも近接している"@ja.
+<< kg:id_50 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "港湾区域内の広大な未利用地、これもございます。"@ja.
+<< kg:id_53 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "山形県と連携して、酒田港の基地港湾指定を目指してまいります。"@ja.
+<< kg:id_53 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "酒田港におけるカーボンニュートラルポート形成に向けまして、洋上風力発電の基地港湾、それからカーボンニュートラルポート、これらを見据えた企業の立地、...企業の特性に沿った臨海部の土地利用、...発電事業運営期間における地域振興、これらについて検討を行うことにしております。"@ja.
+<< kg:id_53 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "市としましては、こうした基金等の活用を企業に促していくことによりまして、企業の脱炭素化に向けた取組を後押ししていきたいと考えております。"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "地域の実情や特性に応じたまちづくり施策として取り組むことで、地域が活性化することが期待されております"@ja.
+<< kg:id_57 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "新たな生涯活躍のまちは、対象を全世代に拡大し、都市部からの人の流れをつくり、誰もが居場所と役割を持ち、活躍できるコミュニティづくりを推進する施策の一つとして位置づけられました。"@ja.
+<< kg:id_57 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "移住者が地域活動に主体的に参加するなど、当該拠点を通じて地域と交流し、スムーズに地域に溶け込み活躍することにより、町が活性化していく取組を目指すことにしております。"@ja.
+<< kg:id_57 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "多世代で多様な人材が交流し活躍する「ごちゃまぜ」と称されるコミュニティづくりや、地域コミュニティとの関係性を重視した取組が成功の要素と捉えております。"@ja.
+<< kg:id_57 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "課題は、しっかりとこの事業をＰＲし、いかに早期に入居移住者を確保し、その後も安定的に入居者が循環していく事業にしていくことができるかということであります。"@ja.
+<< kg:id_57 prop:countermeasure kg:id_63 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "今後、事業予定者とは市の構想と事業者の提案をすり合わせる協議を行い、事業計画のブラッシュアップを行い、基本協定締結を目指してまいります。"@ja.
+<< kg:id_64 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "建物や書籍、資料は文化財として相当価値があるのではないかと考えます"@ja.
+<< kg:id_64 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "老朽化に伴い、平成29年、2017年に蔵書を移転して休館。"@ja.
+<< kg:id_64 prop:effect kg:id_67 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "建物は平成29年に閉館したままで、劣化の進行も懸念されております。"@ja.
+<< kg:id_64 prop:countermeasure kg:id_68 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "蔵書はデジタルアーカイブを進めてネットで検索できるようにしました"@ja.
+<< kg:id_64 prop:countermeasure kg:id_69 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "専門家の詳細な調査を行った上で、保存活用計画の策定が必要であり"@ja.
+<< kg:id_64 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "まずはちょっと劣化を防ぐ上で、応急的な処置も必要なのかなと思った次第でございました。"@ja.
+}

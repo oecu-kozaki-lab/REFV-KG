@@ -1,0 +1,361 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00095> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "原発に頼らない社会づくり"@ja.
+kg:id_1 rdf:type cls:c_2445.
+cls:c_2445 rdfs:label "社会づくり"@ja.
+kg:id_2 rdfs:label "東日本大震災後"@ja.
+kg:id_2 rdf:type cls:c_2200.
+cls:c_2200 rdfs:label "震災後"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "やまがた新電力の設立"@ja.
+kg:id_3 rdf:type cls:c_2446.
+cls:c_2446 rdfs:label "電力会社設立"@ja.
+kg:id_4 rdfs:label "来年４月に電力供給を開始"@ja.
+kg:id_4 rdf:type cls:c_2447.
+cls:c_2447 rdfs:label "電力供給開始"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "県有施設70カ所程度に販売する見込み"@ja.
+kg:id_5 rdf:type cls:c_2448.
+cls:c_2448 rdfs:label "施設販売"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "一般家庭6,000世帯の消費量に相当"@ja.
+kg:id_6 rdf:type cls:c_2449.
+cls:c_2449 rdfs:label "電力供給量"@ja.
+kg:id_3 prop:effect kg:id_6.
+kg:id_7 rdfs:label "山形県"@ja.
+kg:id_7 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_8 rdfs:label "再生可能エネルギーを買い取り販売する地域電力会社「やまがた新電力」を設立"@ja.
+kg:id_8 rdf:type cls:c_2446.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "再生可能エネルギーの導入に取り組む"@ja.
+kg:id_9 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_7 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "電力の地産地消を進める"@ja.
+kg:id_10 rdf:type cls:c_2450.
+cls:c_2450 rdfs:label "地産地消推進"@ja.
+kg:id_7 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "災害対応力の向上を目指す"@ja.
+kg:id_11 rdf:type cls:c_2451.
+cls:c_2451 rdfs:label "防災力向上"@ja.
+kg:id_7 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "地域経済の活性化を目指す"@ja.
+kg:id_12 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_7 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "山形県エネルギー戦略"@ja.
+kg:id_13 rdf:type cls:c_1993.
+cls:c_1993 rdfs:label "エネルギー戦略"@ja.
+kg:id_14 rdfs:label "県内の電力使用量に対する再生可能エネルギーの比率を2010年の２％から2030年に25％まで引き上げる目標を掲げる"@ja.
+kg:id_14 rdf:type cls:c_1495.
+cls:c_1495 rdfs:label "導入目標"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "洋上風力発電への取り組みを進めていく"@ja.
+kg:id_15 rdf:type cls:c_2452.
+cls:c_2452 rdfs:label "風力導入"@ja.
+kg:id_7 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "本市"@ja.
+kg:id_16 rdf:type cls:c_1927.
+cls:c_1927 rdfs:label "地域"@ja.
+kg:id_17 rdfs:label "導入地域として期待されている"@ja.
+kg:id_17 rdf:type cls:c_2453.
+cls:c_2453 rdfs:label "導入期待"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "再生可能エネルギーの導入に向けた重要拠点としての役割を担い始めている"@ja.
+kg:id_18 rdf:type cls:c_2454.
+cls:c_2454 rdfs:label "導入拠点"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "酒田共同火力発電所"@ja.
+kg:id_19 rdf:type cls:c_2455.
+cls:c_2455 rdfs:label "発電所"@ja.
+kg:id_20 rdfs:label "本市のみならず県内の電力供給に大きく貢献"@ja.
+kg:id_20 rdf:type cls:c_2456.
+cls:c_2456 rdfs:label "電力供給貢献"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "固定価格買取制度の施行"@ja.
+kg:id_21 rdf:type cls:c_2457.
+cls:c_2457 rdfs:label "制度施行"@ja.
+kg:id_22 rdfs:label "再生可能エネルギーの導入が加速化"@ja.
+kg:id_22 rdf:type cls:c_2458.
+cls:c_2458 rdfs:label "再エネ加速"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "庄内地域エネルギー戦略推進協議会で県や他市町、民間事業者と情報や課題を共有する"@ja.
+kg:id_23 rdf:type cls:c_423.
+cls:c_423 rdfs:label "情報共有"@ja.
+kg:id_7 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "メタンハイドレートや洋上風力に関する勉強会に参画し情報収集や意見交換を行う"@ja.
+kg:id_24 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_16 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "県と市"@ja.
+kg:id_25 rdf:type cls:c_2459.
+cls:c_2459 rdfs:label "自治体連携"@ja.
+kg:id_26 rdfs:label "商工部門や所管部門が連携協力してバイオマス発電を誘致"@ja.
+kg:id_26 rdf:type cls:c_2460.
+cls:c_2460 rdfs:label "発電誘致"@ja.
+kg:id_25 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "県と連携し原発に頼らない社会づくりに取り組む"@ja.
+kg:id_27 rdf:type cls:c_2445.
+kg:id_16 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "県と連携し低炭素社会づくりに取り組む"@ja.
+kg:id_28 rdf:type cls:c_1446.
+cls:c_1446 rdfs:label "低炭素化"@ja.
+kg:id_16 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "安定供給、経済効率性、環境適合、安全性の全てを満たすエネルギーが存在しない"@ja.
+kg:id_29 rdf:type cls:c_2461.
+cls:c_2461 rdfs:label "適正電源不在"@ja.
+kg:id_16 prop:cause kg:id_29.
+kg:id_30 rdfs:label "電力供給"@ja.
+kg:id_30 rdf:type cls:c_94.
+cls:c_94 rdfs:label "電力供給"@ja.
+kg:id_31 rdfs:label "各エネルギー源の特性を踏まえて活用するベストミックスを重視"@ja.
+kg:id_31 rdf:type cls:c_2462.
+cls:c_2462 rdfs:label "電源活用"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "県"@ja.
+kg:id_32 rdf:type cls:c_117.
+kg:id_33 rdfs:label "大規模事業の県内展開の促進を掲げる"@ja.
+kg:id_33 rdf:type cls:c_2463.
+cls:c_2463 rdfs:label "大規模導入"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "地域分散型導入の促進を掲げる"@ja.
+kg:id_34 rdf:type cls:c_2464.
+cls:c_2464 rdfs:label "分散導入"@ja.
+kg:id_32 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "酒田市再生可能エネルギービジョンにより県の方向性と整合性を図りながら取り組みを進める"@ja.
+kg:id_35 rdf:type cls:c_2465.
+cls:c_2465 rdfs:label "計画推進"@ja.
+kg:id_16 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "洋上風力発電事業を進める"@ja.
+kg:id_36 rdf:type cls:c_2452.
+kg:id_16 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "住宅用太陽光発電設備の設置に対する補助を行う"@ja.
+kg:id_37 rdf:type cls:c_2466.
+cls:c_2466 rdfs:label "設置補助"@ja.
+kg:id_16 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "災害等非常時にも利用可能な再生可能エネルギー設備を防災拠点へ設置する"@ja.
+kg:id_38 rdf:type cls:c_2467.
+cls:c_2467 rdfs:label "防災設備設置"@ja.
+kg:id_16 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "市民生活に身近なところでのエネルギー資源の蓄積に取り組む"@ja.
+kg:id_39 rdf:type cls:c_2468.
+cls:c_2468 rdfs:label "資源蓄積"@ja.
+kg:id_16 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "国や県、企業と連携協力し持続可能な社会づくりに貢献する"@ja.
+kg:id_40 rdf:type cls:c_2469.
+cls:c_2469 rdfs:label "持続社会貢献"@ja.
+kg:id_16 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "地方創生における総合戦略"@ja.
+kg:id_41 rdf:type cls:c_2470.
+cls:c_2470 rdfs:label "総合戦略"@ja.
+kg:id_42 rdfs:label "市民への周知と協力を呼びかける"@ja.
+kg:id_42 rdf:type cls:c_2471.
+cls:c_2471 rdfs:label "周知協力"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "若い世代を取り込み企画していく"@ja.
+kg:id_43 rdf:type cls:c_2472.
+cls:c_2472 rdfs:label "若者参画"@ja.
+kg:id_41 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "次世代エネルギー政策"@ja.
+kg:id_44 rdf:type cls:c_808.
+cls:c_808 rdfs:label "エネルギー政策"@ja.
+kg:id_45 rdfs:label "地球温暖化対策や省エネ、分散型エネルギー社会に向けた環境エネルギー政策に取り組む"@ja.
+kg:id_45 rdf:type cls:c_2473.
+cls:c_2473 rdfs:label "環境対策"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "さまざまな次世代エネルギー政策に積極的に取り組む"@ja.
+kg:id_46 rdf:type cls:c_569.
+cls:c_569 rdfs:label "政策推進"@ja.
+kg:id_44 prop:countermeasure kg:id_46.
+kg:st_1 rdfs:label "中川崇企画振興部長"@ja.
+kg:st_1 rdf:type cls:st_67.
+cls:st_67 rdfs:label "行政職"@ja.
+kg:op_1 prop:content "県は震災後に再生可能エネルギーを主とした施策を進めている"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "県は原発に頼らない社会をつくるため再生可能エネルギー施策を進めている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "本市は地域特性を生かした事業化が今後も進むと認識している"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "石炭火力の重要性は引き続き変わらないと考えている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "今後も地域特性を生かした事業化が進むと認識している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "県や他市町、民間事業者と情報や課題を共有している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "情報収集や担当官との意見交換を随時行っている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "県と市が連携協力して誘致に取り組んできた"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "今後も県と連携し将来の世代のため取り組みたい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "地球温暖化の影響を抑えるため低炭素社会づくりに取り組みたい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "全てを満たす夢のようなエネルギーは現在存在しない"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "安定供給、低コスト、環境配合をバランスよく実現するにはベストミックスが重要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "それぞれの役割を踏まえて連携協力し持続可能な社会づくりに積極的に貢献したい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "６番（進藤晃議員）"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_14 prop:content "総合戦略には市民一体となった取り組みが必要であり市民への周知と協力を呼びかけるべき"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "次世代を担う若い世代をどんどん取り込みいろんな企画を進めてほしい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "次世代エネルギー政策に積極的に取り組むことが重要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "10年から20年後の豊かな社会生活実現のため積極的に取り組んでほしい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "山形県では、東日本大震災後、全国に先駆けて策定した山形県エネルギー戦略に基づき、原発に頼らない社会をつくっていくために再生可能エネルギーを主としたエネルギー施策に取り組んでいるところでございます。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "全国の自治体による特定規模電気事業者の設立は初めてで、電力小売が全面自由化される来年４月に電力供給を開始するとしています。"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:text-txt_contents "事業開始当初は、県内の再生エネルギー事業者13社の17発電所から電力を買い取り、県有施設70カ所程度に販売する見込みで、一般家庭6,000世帯の消費量に相当するとしています。"@ja.
+<< kg:id_3 prop:effect kg:id_6 >>
+    prop:text-txt_contents "事業開始当初は、県内の再生エネルギー事業者13社の17発電所から電力を買い取り、県有施設70カ所程度に販売する見込みで、一般家庭6,000世帯の消費量に相当するとしています。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:text-txt_contents "山形県は再生可能エネルギーを買い取り、販売する地域電力会社「やまがた新電力」を９月29日に設立しました。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "山形県は、電力の売買のほか、再生可能エネルギーの導入にも取り組み、電力の地産地消、災害対応力の向上、地域経済の活性化を目指すとしており"@ja.
+<< kg:id_7 prop:countermeasure kg:id_10 >>
+    prop:text-txt_contents "山形県は、電力の売買のほか、再生可能エネルギーの導入にも取り組み、電力の地産地消、災害対応力の向上、地域経済の活性化を目指すとしており"@ja.
+<< kg:id_7 prop:countermeasure kg:id_11 >>
+    prop:text-txt_contents "山形県は、電力の売買のほか、再生可能エネルギーの導入にも取り組み、電力の地産地消、災害対応力の向上、地域経済の活性化を目指すとしており"@ja.
+<< kg:id_7 prop:countermeasure kg:id_12 >>
+    prop:text-txt_contents "山形県は、電力の売買のほか、再生可能エネルギーの導入にも取り組み、電力の地産地消、災害対応力の向上、地域経済の活性化を目指すとしており"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "2012年に策定した山形県エネルギー戦略においては、県内の電力使用量に対する再生可能エネルギーの比率を2010年の２％から2030年には25％まで引き上げる目標を掲げています。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_15 >>
+    prop:text-txt_contents "山形県は、こうした戦略の中、陸上風力発電にとどまらず、洋上風力発電への取り組みを進めていく方針で"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:text-txt_contents "本市はその導入地域としても期待されています。"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "本市においては、陸上風力から太陽光、将来的には洋上風力や波力発電の実現まで、山形県の海上物流のみならず、再生可能エネルギーの導入に向けた重要拠点としての役割も担い始めています。"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "この酒田共同火力発電所は、季節や天候、昼夜に左右されないベースロード電源として、本市のみならず県内の電力供給に大きく貢献しているところでございます。"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "固定価格買取制度の施行後、再生可能エネルギーの導入が加速化しておりますが、今後も地域特性を生かした事業化が進んでいくものと認識をしているところでございます。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "再生エネルギーに関しましては、庄内地域エネルギー戦略推進協議会において、県や他市町、民間事業者と情報や課題を共有しているほか"@ja.
+<< kg:id_16 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "メタンハイドレートや洋上風力に関する勉強会に参画をしまして、情報収集や担当官の意見交換なども随時行っているところでございます。"@ja.
+<< kg:id_25 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "先ほどのバイオマス発電の立地に当たりましては、県と市それぞれの商工部門や所管部門が連携、協力して誘致に取り組んできたということもございます。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "今後も県と連携をしながら、将来の世代のため原発に頼らない社会づくり、地球温暖化の影響を抑えるための低炭素社会づくりに取り組んでまいりたいと考えております。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "今後も県と連携をしながら、将来の世代のため原発に頼らない社会づくり、地球温暖化の影響を抑えるための低炭素社会づくりに取り組んでまいりたいと考えております。"@ja.
+<< kg:id_16 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "安定供給、経済効率性、環境適合、そして安全性が重要であるとされておりまして、その全てを満たす夢のようなエネルギーにつきましては、残念ながら現在は存在しないところでございます。"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "このため、特に電力供給におきましては、安定供給、低コスト、環境配合等をバランスよく実現できる供給構造を実現すべく、各エネルギー源の電源として特性を踏まえて活用すること、いわゆるベストミックスが重要とされているところでございます。"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:text-txt_contents "県では、先ほど申し上げたエネルギー戦略の中で、安全で持続可能なエネルギー源である再生可能エネルギーの導入拡大等を目指していくこととしており、このための政策展開の２つの視点として、１つは大規模事業の県内展開の促進"@ja.
+<< kg:id_32 prop:countermeasure kg:id_34 >>
+    prop:text-txt_contents "もう一つは地域分散型導入の促進を掲げております。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_35 >>
+    prop:text-txt_contents "本市におきましても、平成25年度に策定をした酒田市再生可能エネルギービジョンによりまして、この県の方向性と整合性を図りながら取り組みを進めております。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_36 >>
+    prop:text-txt_contents "具体的には、大規模事業の県内展開促進につきましては、洋上風力発電事業"@ja.
+<< kg:id_16 prop:countermeasure kg:id_37 >>
+    prop:text-txt_contents "家庭及び事業所、公共施設への導入促進の観点から、住宅用太陽光発電設備の設置に対する補助や"@ja.
+<< kg:id_16 prop:countermeasure kg:id_38 >>
+    prop:text-txt_contents "災害等非常時にも利用可能な再生可能エネルギー設備の防災拠点への設置を進めており"@ja.
+<< kg:id_16 prop:countermeasure kg:id_39 >>
+    prop:text-txt_contents "まずは市民生活により身近なところでのエネルギー資源の蓄積という施策に取り組んでいるところでございます。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今後も、再生エネルギーを中心とした次世代エネルギーに対する国や県等の制度や取り組みについて、情報収集等に努めながら国や県、企業、そして本市と、それぞれが担う役割を踏まえた上で、連携、協力しながら持続可能な社会づくりのために積極的に貢献してまいりたいと考えているところでございます。"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "地方創生における総合戦略には市民一体となった取り組みが必要であると思いますし、そのためにも市民への周知と協力を呼びかけ"@ja.
+<< kg:id_41 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "ぜひ今後ともそういった次世代を担う、酒田をこれから築き上げていただく若い世代。先ほども申し上げましたけれども、やはり自分で企画して実行していった後の達成感だったり、みんなでやったというような築く意識が高まるような、そういった形で若い世代の人たちをどんどん取り込んでいただいて、いろんな企画をしていただければなと思っております。"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "次世代エネルギーについては、今後、地球温暖化対策や省エネ、分散型エネルギー社会に向けた環境エネルギー政策に取り組むことは大変重要であり"@ja.
+<< kg:id_44 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "本市の10年から20年後の豊かな社会生活実現のために、さまざまな次世代エネルギー政策に積極的に取り組んでいただけますよう意見を申し上げて、終わります。"@ja.
+}

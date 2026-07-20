@@ -1,0 +1,286 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00068> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地域産業の活性化"@ja.
+kg:id_1 rdf:type cls:c_1864.
+cls:c_1864 rdfs:label "地域産業活性化"@ja.
+kg:id_2 rdfs:label "木材バイオマスエネルギーの活用"@ja.
+kg:id_2 rdf:type cls:c_1865.
+cls:c_1865 rdfs:label "再生可能エネルギー活用"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "風力発電施設ガイドラインの活用"@ja.
+kg:id_3 rdf:type cls:c_1865.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "太陽光発電等の導入施策"@ja.
+kg:id_4 rdf:type cls:c_1866.
+cls:c_1866 rdfs:label "再生可能エネルギー導入施策"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "リサイクルポートへのリサイクル・新エネルギー関連産業の企業の進出"@ja.
+kg:id_5 rdf:type cls:c_301.
+cls:c_301 rdfs:label "企業進出"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "民間事業者による風力発電施設の建設の継続"@ja.
+kg:id_6 rdf:type cls:c_1867.
+cls:c_1867 rdfs:label "発電施設建設"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "木質ペレットストーブの改良や商品化"@ja.
+kg:id_7 rdf:type cls:c_1868.
+cls:c_1868 rdfs:label "製品開発"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "新エネルギー"@ja.
+kg:id_8 rdf:type cls:c_1869.
+cls:c_1869 rdfs:label "新エネルギー"@ja.
+kg:id_9 rdfs:label "一般家庭への太陽光発電の普及促進"@ja.
+kg:id_9 rdf:type cls:c_1870.
+cls:c_1870 rdfs:label "普及促進"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "新エネルギー推進体制の未整備"@ja.
+kg:id_10 rdf:type cls:c_1871.
+cls:c_1871 rdfs:label "推進体制未整備"@ja.
+kg:id_11 rdfs:label "酒田新エネルギー機構が未設置で設立に至っていない状況"@ja.
+kg:id_11 rdf:type cls:c_1872.
+cls:c_1872 rdfs:label "組織未設置"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "新エネルギービジョンの見直し"@ja.
+kg:id_12 rdf:type cls:c_1873.
+cls:c_1873 rdfs:label "ビジョン見直し"@ja.
+kg:id_13 rdfs:label "地球温暖化などの環境問題に対する市民の関心の高まり"@ja.
+kg:id_13 rdf:type cls:c_1874.
+cls:c_1874 rdfs:label "市民関心の高まり"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "市民団体や民間事業者を中心に新エネルギーの導入が着々と進んでいること"@ja.
+kg:id_14 rdf:type cls:c_1875.
+cls:c_1875 rdfs:label "導入進展"@ja.
+kg:id_12 prop:cause kg:id_14.
+kg:id_15 rdfs:label "国におけるエネルギー施策の変化"@ja.
+kg:id_15 rdf:type cls:c_1876.
+cls:c_1876 rdfs:label "施策変化"@ja.
+kg:id_12 prop:cause kg:id_15.
+kg:id_16 rdfs:label "環境基本計画の見直し作業"@ja.
+kg:id_16 rdf:type cls:c_271.
+cls:c_271 rdfs:label "計画見直し"@ja.
+kg:id_12 prop:cause kg:id_16.
+kg:id_17 rdfs:label "新エネルギー推進体制"@ja.
+kg:id_17 rdf:type cls:c_1877.
+cls:c_1877 rdfs:label "新エネルギー推進体制"@ja.
+kg:id_18 rdfs:label "推進体制を改めて検討する"@ja.
+kg:id_18 rdf:type cls:c_1878.
+cls:c_1878 rdfs:label "体制検討"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "新エネルギー導入"@ja.
+kg:id_19 rdf:type cls:c_1156.
+cls:c_1156 rdfs:label "新エネルギー導入"@ja.
+kg:id_20 rdfs:label "地域エネルギー導入検討協議会の設立"@ja.
+kg:id_20 rdf:type cls:c_476.
+cls:c_476 rdfs:label "協議会設立"@ja.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "木質バイオマスを燃料とするペレットストーブの研究開発"@ja.
+kg:id_21 rdf:type cls:c_1280.
+cls:c_1280 rdfs:label "技術開発"@ja.
+kg:id_19 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "波力発電の実証実験の誘致の検討"@ja.
+kg:id_22 rdf:type cls:c_1879.
+cls:c_1879 rdfs:label "実証実験誘致"@ja.
+kg:id_19 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "新エネルギービジョン"@ja.
+kg:id_23 rdf:type cls:c_1880.
+cls:c_1880 rdfs:label "新エネルギービジョン"@ja.
+kg:id_24 rdfs:label "策定後の内容が薄く実体として何もしていないとの評価"@ja.
+kg:id_24 rdf:type cls:c_1881.
+cls:c_1881 rdfs:label "実施不足評価"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "平成22年度から見直しに着手する"@ja.
+kg:id_25 rdf:type cls:c_1882.
+cls:c_1882 rdfs:label "見直し着手"@ja.
+kg:id_23 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "省エネ環境対策を意識した建物"@ja.
+kg:id_26 rdf:type cls:c_1883.
+cls:c_1883 rdfs:label "環境配慮建築"@ja.
+kg:id_27 rdfs:label "法的整備や機器技術の進歩"@ja.
+kg:id_27 rdf:type cls:c_1884.
+cls:c_1884 rdfs:label "制度整備"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "公営住宅の環境配慮仕様"@ja.
+kg:id_28 rdf:type cls:c_1885.
+cls:c_1885 rdfs:label "公営住宅環境配慮仕様"@ja.
+kg:id_29 rdfs:label "イニシャルコストだけでなくトータルコスト判断を加えた仕様書にする"@ja.
+kg:id_29 rdf:type cls:c_1886.
+cls:c_1886 rdfs:label "総コスト判断"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:st_1 rdfs:label "関井美喜男議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "地域産業の活性化につながったか大いに疑問が残る"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地域産業の活性化につながったか大いに疑問が残る"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "地域産業の活性化につながったか大いに疑問が残る"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "平向與志雄企画調整部長"@ja.
+kg:st_2 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_4 prop:content "導入による産業活性化の成果として企業進出が出ている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "方針だけでなく成果が出ており現在も進行中である"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "地域エネルギー導入検討協議会の取り組みとして商品化が図られている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "国の補助制度に市単独補助を加算して普及促進に努めている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "現在も機構は設置されておらず設立には至っていない"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "環境問題への関心の高まりを踏まえ見直しが必要と考える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "導入の進展を踏まえ見直しが必要と考える"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "国のエネルギー施策の変化もあり見直しが必要と考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "環境基本計画の見直しにあわせてビジョンも見直す考えである"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "ビジョン見直しの中で推進体制も改めて検討していく"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "県やJAや製造業者と協議会を設立して調査研究を進めた"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "木質バイオマス利用の研究開発に取り組んできた"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "国県庄内2市1町で情報交換を始めている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "平成16年以降の内容は薄く何もしていないのが実体だと感じる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "平成22年度から着手し可能なら同年度中に環境基本計画との整合を取り改定したい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "環境と省エネは行政として避けて通れず建物のあり方に反映すべきだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "環境配慮には初期費用がかかっても総コストで判断できる仕様にすべきだ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "ビジョンの基本方針によれば、木材バイオマスエネルギーの活用や風力発電施設ガイドラインの活用、さらには太陽光発電等の導入施策が掲げられておりました"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "ビジョンの基本方針によれば、木材バイオマスエネルギーの活用や風力発電施設ガイドラインの活用、さらには太陽光発電等の導入施策が掲げられておりました"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "ビジョンの基本方針によれば、木材バイオマスエネルギーの活用や風力発電施設ガイドラインの活用、さらには太陽光発電等の導入施策が掲げられておりました"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "まずは、リサイクルポートへのリサイクル・新エネルギー関連産業の企業の進出がございます"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "ガイドラインの制定等によりまして、民間事業者による風力発電施設の建設が続いているところでございます"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "地域エネルギー導入検討協議会の取り組みもございまして、木質ペレットストーブの改良や商品化が図られているという事例もございます"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "国の補助制度に市単独で補助を加算しまして、一般家庭への太陽光発電の普及促進にも努めているところでございます"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "現在も、この酒田新エネルギー機構については設置はされてございません。設立には至っていない状況でございます"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "地球温暖化などの環境問題に対する市民の関心の高まり"@ja.
+<< kg:id_12 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "市民団体の皆さん、また民間事業者を中心に新エネルギーの導入が着々と進んでいること"@ja.
+<< kg:id_12 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "国におけるエネルギー施策も変わってきているという状況もございます"@ja.
+<< kg:id_12 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "市では環境基本計画を見直し作業中ということでもございます。これにあわせまして新エネルギービジョンについても見直しが必要というふうに考えてございます"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "その中で推進体制についても改めて検討してまいりたいというふうな考え方でございます"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "県やＪＡ庄内みどりとＪＡそでうら、また木質ペレット製造業者などとともに、地域エネルギー導入検討協議会を設立いたしまして"@ja.
+<< kg:id_19 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "木質バイオマスを燃料とするペレットストーブの研究開発を行ってきた事例がございます"@ja.
+<< kg:id_19 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "現在、波力発電の実証実験の誘致などの検討におきまして、国・県及び庄内２市１町で情報交換を始めているという状況にもございます"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "新エネルギービジョンに係る内容というのは、非常にやはりこの平成16年以降、策定後、私は薄いとはっきり言わせていただきたいというふうに思います。言葉として不適切かもしれませんが、何もしていないというのが実体だというふうに私は感じております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "平成22年度から着手してまいりたいというふうに思ってございます。できれば平成22年度中に環境基本計画との整合性をとりながら改定してまいりたい"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "法的にもいろんな整備がされますし、機器あるいはいろんな技術的なものも日進月歩であります"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "この環境部分を意識して何かをやろうとすると、当然イニシャルはかかるんですよ。ですけれども、そのトータル的なコストでどうなのかという判断材料もぜひ加えていただいた内容で、これからは公営住宅もあるべきだ"@ja.
+}

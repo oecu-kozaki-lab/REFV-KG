@@ -1,0 +1,305 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00031> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市の人口減少"@ja.
+kg:id_1 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "死亡者数が多く出生数が少ない自然減"@ja.
+kg:id_2 rdf:type cls:c_897.
+cls:c_897 rdfs:label "自然減"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "就職や進学に伴う高校卒業時から20代前半の市外流出"@ja.
+kg:id_3 rdf:type cls:c_898.
+cls:c_898 rdfs:label "若者流出"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "就職希望の新規高等学校卒業者の県内定着率の低さ"@ja.
+kg:id_4 rdf:type cls:c_898.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "20代前半の女性が戻ってこないことによる女性の社会減"@ja.
+kg:id_5 rdf:type cls:c_899.
+cls:c_899 rdfs:label "女性流出"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "人口減少のスピードの加速"@ja.
+kg:id_6 rdf:type cls:c_900.
+cls:c_900 rdfs:label "進行加速"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "令和2年度中に人口10万人を切る見込み"@ja.
+kg:id_7 rdf:type cls:c_97.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "酒田市"@ja.
+kg:id_8 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_9 rdfs:label "第1期総合戦略の4つの基本目標に基づく人口減少抑制施策"@ja.
+kg:id_9 rdf:type cls:c_901.
+cls:c_901 rdfs:label "人口対策"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "地域資源を生かした産業振興や創業支援や農業及び水産業の振興"@ja.
+kg:id_10 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_8 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "付加価値の高い成長産業の集積と再生可能エネルギー等の導入促進"@ja.
+kg:id_11 rdf:type cls:c_168.
+kg:id_8 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "日本一女性が働きやすいまちの実現による人口減少の抑制"@ja.
+kg:id_12 rdf:type cls:c_902.
+cls:c_902 rdfs:label "女性就労支援"@ja.
+kg:id_8 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "東北公益文科大学との大学まちづくりによる定住促進事業"@ja.
+kg:id_13 rdf:type cls:c_396.
+cls:c_396 rdfs:label "定住促進"@ja.
+kg:id_8 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "森林環境譲与税"@ja.
+kg:id_14 rdf:type cls:c_903.
+cls:c_903 rdfs:label "税制度"@ja.
+kg:id_15 rdfs:label "横代地区をモデルとした森林境界の明確化調査"@ja.
+kg:id_15 rdf:type cls:c_904.
+cls:c_904 rdfs:label "境界調査"@ja.
+kg:id_14 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "森林管理権の集積計画作成に向けた意向調査の準備"@ja.
+kg:id_16 rdf:type cls:c_905.
+cls:c_905 rdfs:label "意向調査"@ja.
+kg:id_14 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "浜田・若竹統合保育園の構造材への酒田産木材の利用促進"@ja.
+kg:id_17 rdf:type cls:c_906.
+cls:c_906 rdfs:label "木材利用"@ja.
+kg:id_14 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "国有林伐採後の森林管理"@ja.
+kg:id_18 rdf:type cls:c_907.
+cls:c_907 rdfs:label "森林管理"@ja.
+kg:id_19 rdfs:label "再造林の実施状況を注視し庄内森林管理署と協議すること"@ja.
+kg:id_19 rdf:type cls:c_908.
+cls:c_908 rdfs:label "再造林協議"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "やまがた木育"@ja.
+kg:id_20 rdf:type cls:c_909.
+cls:c_909 rdfs:label "環境教育"@ja.
+kg:id_21 rdfs:label "保育園や小中学校等の森林整備活動の支援"@ja.
+kg:id_21 rdf:type cls:c_910.
+cls:c_910 rdfs:label "森林活動支援"@ja.
+kg:id_20 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "観光施設の看板"@ja.
+kg:id_22 rdf:type cls:c_911.
+cls:c_911 rdfs:label "施設管理"@ja.
+kg:id_23 rdfs:label "職員による定期的な点検を行っていないこと"@ja.
+kg:id_23 rdf:type cls:c_912.
+cls:c_912 rdfs:label "点検不足"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "施設維持管理のばらつき"@ja.
+kg:id_24 rdf:type cls:c_911.
+kg:id_25 rdfs:label "施設の所管部署ごとに対応が異なること"@ja.
+kg:id_25 rdf:type cls:c_913.
+cls:c_913 rdfs:label "管理差"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "公園施設の劣化や事故"@ja.
+kg:id_26 rdf:type cls:c_914.
+cls:c_914 rdfs:label "施設劣化"@ja.
+kg:id_27 rdfs:label "健全度調査と毎月点検と専門業者による年1回点検"@ja.
+kg:id_27 rdf:type cls:c_915.
+cls:c_915 rdfs:label "点検実施"@ja.
+kg:id_26 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "観光施設や公園施設の維持管理"@ja.
+kg:id_28 rdf:type cls:c_911.
+kg:id_29 rdfs:label "酒田市施設点検マニュアルに準じた点検の徹底"@ja.
+kg:id_29 rdf:type cls:c_916.
+cls:c_916 rdfs:label "点検徹底"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "統一マニュアルの作成を含めた検討"@ja.
+kg:id_30 rdf:type cls:c_917.
+cls:c_917 rdfs:label "点検標準化"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "予防型の維持管理体制への転換"@ja.
+kg:id_31 rdf:type cls:c_918.
+cls:c_918 rdfs:label "予防保全"@ja.
+kg:id_28 prop:countermeasure kg:id_31.
+kg:st_1 rdfs:label "阿部勉企画部長"@ja.
+kg:st_1 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_1 prop:content "自然減が年間1000人を超え人口減少を加速させていると認識"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "社会減の主因は若年層の就職・進学による転出と認識"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "県内定着率の低さが本市の特徴的な人口減少要因と説明"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "20代前半女性の社会減が本市の大きな要因と認識"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "人口減少の進行は加速していると認識"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "このままでは令和2年度中に10万人を下回る見通し"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "持続可能な酒田の実現に向け総合戦略で施策に取り組んできた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "産業振興などの施策が新規就業者数目標の達成につながったと考える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "産業振興と地域経済活性化を重点施策として進める考え"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "若い女性が暮らして活躍したいと思えるまちづくりで人口減少を抑制する考え"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "大学の魅力向上と地域産業人材の輩出で若者定住につなげる考え"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "竹越攻征農林水産部長"@ja.
+kg:st_2 rdf:type cls:st_12.
+kg:op_12 prop:content "まずはモデル地区で森林境界の明確化を進める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "来年度は意向調査に向けた準備にも税を活用したい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "保育園構造材への活用で地元木材利用を促進する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "下流域住民との意思疎通不足を踏まえ再造林を注視し管理署と話し合う考え"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "子どもと親が森林について学ぶ大切な機会として継続支援したい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "伊藤優建設部長"@ja.
+kg:st_3 rdf:type cls:st_12.
+kg:op_17 prop:content "管理台帳はあるが定期点検まではできていない"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "各施設の維持管理は部署ごとにばらばらで対応に差がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "点検結果に基づき補修や緊急対応を実施している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "各課対応ではあるがまずは点検を徹底したい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "異動や管理者交代があっても同じ視点で点検できるようにしたい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "破損や事故を未然に防ぐ体制へ転換したい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "自然動態については、平成24年以降、毎年、死亡者数が1,500人台である一方、出生数は平成27年から600人台を維持してきましたが、平成30年に500人台に減少したことから、自然減が年間1,000人を超える状況となっております。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本市の人口減少、特に社会減、転出超過している社会減につきましては、高校卒業時から20代前半にかけての年齢層の就職や進学に伴う市外への流出が主な要因と認識しております。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "特徴的なこととして、就職を希望する新規高等学校卒業者の県内定着率が他地域と比べまして低いことが挙げられます。例えば、直近の平成31年３月卒のハローワーク酒田管内の県内定着率は63.7％で、県内８つあるハローワークのうち最下位であり、県全体の県内定着率79.2％をマイナス15.5ポイント下回っております。"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "問題なのは、20代前半の女性が社会減になっていること、これが本市において社会減の大きな要因であると認識しております。"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "人口減少のスピードは加速してきており"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "このまま人口減少が進みますと、令和２年度中には人口10万人を切ることが見込まれております。"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "人口減少を抑制し、将来にわたり持続可能な酒田を実現するため、平成27年をスタートとする第１期総合戦略を策定し、「働きたいがかなう酒田をつくる」、「酒田への新しい人の流れをつくる」、「結婚・出産・子育ての希望がかなう酒田をつくる」、「つながりと安心にあふれた住み続けたい酒田をつくる」という４つの基本目標を掲げ、その数値目標を達成するための施策に取り組んでまいりました。"@ja.
+<< kg:id_8 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "地域資源を生かした産業振興、創業支援、農業及び水産業の振興などに関する施策の取り組みが目標達成につながったものと考えております。"@ja.
+<< kg:id_8 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "一つは、地域資源を生かした付加価値の高い成長産業の集積、産業振興の視点から環境や漁業に配慮した再生可能エネルギー等の導入を促進し、関連する企業集積や港湾整備による地域経済の活性化"@ja.
+<< kg:id_8 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "もう一つは、若い世代の女性が本市で暮らして活躍したいと思うような魅力ある町を目指し、また、１億総活躍社会に向けて、行政・企業・地域・家庭が連携・協力して、日本一女性が働きやすいまちを実現することにより、人口減少の抑制をすることです。"@ja.
+<< kg:id_8 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "その一つに、東北公益文科大学との大学まちづくりによる定住促進事業がございます。この事業は、東北公益文科大学が酒田市内外から入学者を確保できるよう魅力ある大学とするための施策を実行するとともに、本市産業界が求める人材を輩出することにより若者の定住につなげ、人口減少の抑制につなげることを考えているものでございます。"@ja.
+<< kg:id_14 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "本市の今年度の取り組み状況につきましては、山のほうの森林境界が不明確な部分がございますので、横代地区の皆様に御協力いただけるということで、ここをモデル地区に、まずは森林境界の明確化を図る調査というものを行っております。"@ja.
+<< kg:id_14 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "来年度につきましては、ことしの横代での調査を踏まえながら、最終的には森林管理権の集積計画をつくっていかなければいけませんので、意向調査に向けて準備をしていきたいと思っておりまして、こうしたことにも税金使途というのは使っていきたいと思っております。"@ja.
+<< kg:id_14 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "あわせて、来年は、浜田・若竹統合保育園（仮称）の構造材に充てることとなっておりますので、こうしたところで酒田産木材の利用促進にも活用させていただきたいと思っております。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "今後しっかり再造林されることというのがどうなるのかというのは注視させていただくとともに、もう少し庄内森林管理署と話をしてまいりたいと思っておるところでございます。"@ja.
+<< kg:id_20 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "本市におきましても、光ケ丘のボランティア活動ですとか、砂防林を育てようとか、万里の松原の活動とか、私も参加しておりますけれども、こうしたところで保育園、小中学校等の森林整備の活動というのを支援しております。...お子さんと一緒に森林について学んでいただくというのは非常に大切な機会だろうと思っておりますので、引き続きしっかり取り組んでまいりたいと思っております。"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "観光案内板につきましては、管理台帳の整備はしております。ただ、職員による定期的な点検までは行っていない状況でございます。"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "このように、各施設の維持管理の状況につきましては施設の所管部署でばらばらであって、その対応には実際、差がある現状でございます。"@ja.
+<< kg:id_26 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "公園施設につきましては、都市公園を対象とした健全度調査を実施しております。...また、公園内の遊具や水飲み、フェンス、トイレなどにつきましては、職員が毎月１回点検を行っております。特に遊具につきましては、平成30年４月１日から年１回の専門業者による点検が義務づけられてございます。"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "まずは、各課個別の対応とはなりますが、建築物などを対象としまして、昨年作成しました酒田市施設点検マニュアルに準じまして、看板やフェンスなどの工作物の点検をまずは徹底してまいりたいと思います。"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "部署が違っても、職員の異動や、例えば施設管理者が交代になった場合などでも、同じ視点で点検が行えるよう、統一マニュアルの作成も含めて検討してまいりたいと思ってございます。"@ja.
+<< kg:id_28 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "酒田市公共施設等総合管理計画の基本的な考え方に基づきまして、破損、それから事故などを未然に防ぐ予防型の維持管理体制への転換をこれからは見据えていきたいなと考えております。"@ja.
+}

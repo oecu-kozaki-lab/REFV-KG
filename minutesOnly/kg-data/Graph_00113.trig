@@ -1,0 +1,430 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00113> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "自然エネルギーを利用した発電"@ja.
+kg:id_1 rdf:type cls:c_2690.
+cls:c_2690 rdfs:label "再生可能エネルギー発電"@ja.
+kg:id_2 rdfs:label "二酸化炭素の排出を抑制"@ja.
+kg:id_2 rdf:type cls:c_2691.
+cls:c_2691 rdfs:label "排出抑制"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "環境への負荷を少なくする"@ja.
+kg:id_3 rdf:type cls:c_2692.
+cls:c_2692 rdfs:label "環境負荷軽減"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "自然エネルギー施設の設備投資"@ja.
+kg:id_4 rdf:type cls:c_407.
+cls:c_407 rdfs:label "設備投資"@ja.
+kg:id_5 rdfs:label "遊佐町にとって大いに期待できる"@ja.
+kg:id_5 rdf:type cls:c_2693.
+cls:c_2693 rdfs:label "地域への期待"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "大きな雇用が生まれない"@ja.
+kg:id_6 rdf:type cls:c_225.
+cls:c_225 rdfs:label "雇用不足"@ja.
+kg:id_4 prop:effect kg:id_6.
+kg:id_7 rdfs:label "大規模な自然エネルギー事業"@ja.
+kg:id_7 rdf:type cls:c_2694.
+cls:c_2694 rdfs:label "再生可能エネルギー事業"@ja.
+kg:id_8 rdfs:label "町税としての固定資産税のうち償却資産が占める割合が大きくなる"@ja.
+kg:id_8 rdf:type cls:c_2695.
+cls:c_2695 rdfs:label "固定資産税増加"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "課税初年度にかなりの大きな税収となる"@ja.
+kg:id_9 rdf:type cls:c_184.
+cls:c_184 rdfs:label "税収増加"@ja.
+kg:id_7 prop:effect kg:id_9.
+kg:id_10 rdfs:label "土地の評価額の下落"@ja.
+kg:id_10 rdf:type cls:c_2696.
+cls:c_2696 rdfs:label "資産価値下落"@ja.
+kg:id_11 rdfs:label "固定資産税の認定額が5億円台となる"@ja.
+kg:id_11 rdf:type cls:c_2697.
+cls:c_2697 rdfs:label "固定資産税減少"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "家屋の建築の減少"@ja.
+kg:id_12 rdf:type cls:c_2698.
+cls:c_2698 rdfs:label "建築減少"@ja.
+kg:id_12 prop:cause kg:id_11.
+kg:id_13 rdfs:label "風力発電設備の稼働開始"@ja.
+kg:id_13 rdf:type cls:c_2699.
+cls:c_2699 rdfs:label "発電設備稼働"@ja.
+kg:id_14 rdfs:label "固定資産税が6億円台を回復する"@ja.
+kg:id_14 rdf:type cls:c_2700.
+cls:c_2700 rdfs:label "固定資産税回復"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "償却資産が定率で毎年減価すること"@ja.
+kg:id_15 rdf:type cls:c_2701.
+cls:c_2701 rdfs:label "資産減価"@ja.
+kg:id_16 rdfs:label "税額も年を追って減る"@ja.
+kg:id_16 rdf:type cls:c_2643.
+cls:c_2643 rdfs:label "税額減少"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "税額も年を追って減ること"@ja.
+kg:id_17 rdf:type cls:c_2643.
+kg:id_18 rdfs:label "税収に大きな影響を及ぼす"@ja.
+kg:id_18 rdf:type cls:c_2702.
+cls:c_2702 rdfs:label "税収影響"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "固定資産税"@ja.
+kg:id_19 rdf:type cls:c_2644.
+cls:c_2644 rdfs:label "固定資産税"@ja.
+kg:id_20 rdfs:label "一般財源化される"@ja.
+kg:id_20 rdf:type cls:c_171.
+cls:c_171 rdfs:label "一般財源"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "税収としてふえた部分が基準財政収入額として算入されること"@ja.
+kg:id_21 rdf:type cls:c_184.
+kg:id_22 rdfs:label "一定額について交付税の交付額から減額される"@ja.
+kg:id_22 rdf:type cls:c_2703.
+cls:c_2703 rdfs:label "交付税減額"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "自然エネルギー施設からの税収"@ja.
+kg:id_23 rdf:type cls:c_2704.
+cls:c_2704 rdfs:label "再生可能エネルギー税収"@ja.
+kg:id_24 rdfs:label "町民に還元できるよう有効に活用できる基金を創設する"@ja.
+kg:id_24 rdf:type cls:c_920.
+cls:c_920 rdfs:label "基金創設"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "山形県"@ja.
+kg:id_25 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_26 rdfs:label "山形県再生可能エネルギー等導入促進事業等基金条例を制定する"@ja.
+kg:id_26 rdf:type cls:c_2705.
+cls:c_2705 rdfs:label "基金条例制定"@ja.
+kg:id_25 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "山形県再生可能エネルギー等導入促進事業等基金条例"@ja.
+kg:id_27 rdf:type cls:c_2706.
+cls:c_2706 rdfs:label "基金条例"@ja.
+kg:id_28 rdfs:label "再生可能エネルギー導入を促進する事業を実施する"@ja.
+kg:id_28 rdf:type cls:c_2707.
+cls:c_2707 rdfs:label "導入促進事業"@ja.
+kg:id_27 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "県が設置した発電設備等の維持管理及び更新に係る事業を実施する"@ja.
+kg:id_29 rdf:type cls:c_2708.
+cls:c_2708 rdfs:label "設備維持更新"@ja.
+kg:id_27 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "本町"@ja.
+kg:id_30 rdf:type cls:c_117.
+kg:id_31 rdfs:label "県の基金事業を活用して八ツ面川沿いの街灯を整備する"@ja.
+kg:id_31 rdf:type cls:c_305.
+cls:c_305 rdfs:label "施設整備"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "県の基金事業を活用して防災センターの太陽光発電を整備する"@ja.
+kg:id_32 rdf:type cls:c_534.
+cls:c_534 rdfs:label "発電設備整備"@ja.
+kg:id_30 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "ふらっとや各まちづくりセンターへの整備を計画する"@ja.
+kg:id_33 rdf:type cls:c_2709.
+cls:c_2709 rdfs:label "施設整備計画"@ja.
+kg:id_30 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "庄内町"@ja.
+kg:id_34 rdf:type cls:c_117.
+kg:id_35 rdfs:label "風力発電基金を創設する"@ja.
+kg:id_35 rdf:type cls:c_920.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "庄内町の風力発電基金"@ja.
+kg:id_36 rdf:type cls:c_1475.
+cls:c_1475 rdfs:label "基金"@ja.
+kg:id_37 rdfs:label "風力発電施設の管理運営等に充てる"@ja.
+kg:id_37 rdf:type cls:c_2710.
+cls:c_2710 rdfs:label "施設管理運営"@ja.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "遊佐町エネルギー基本計画の町民参加型再生可能エネルギー事業プロジェクト"@ja.
+kg:id_38 rdf:type cls:c_1966.
+cls:c_1966 rdfs:label "事業計画"@ja.
+kg:id_39 rdfs:label "町民や事業者が主体的にかかわり町民出資等による事業展開を検討する"@ja.
+kg:id_39 rdf:type cls:c_2711.
+cls:c_2711 rdfs:label "住民参加事業"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "町民や事業者が主体的にかかわる取り組み"@ja.
+kg:id_40 rdf:type cls:c_2712.
+cls:c_2712 rdfs:label "住民参加"@ja.
+kg:id_41 rdfs:label "地域経済の活性化を進める"@ja.
+kg:id_41 rdf:type cls:c_599.
+cls:c_599 rdfs:label "地域経済活性化"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "経済的な恩恵が地域にもたらされる"@ja.
+kg:id_42 rdf:type cls:c_300.
+cls:c_300 rdfs:label "地域還元"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "将来にわたりエネルギー施設の運営などに還元されていく"@ja.
+kg:id_43 rdf:type cls:c_2713.
+cls:c_2713 rdfs:label "施設運営還元"@ja.
+kg:id_40 prop:effect kg:id_43.
+kg:id_44 rdfs:label "自然エネルギーによる町税収入"@ja.
+kg:id_44 rdf:type cls:c_2704.
+kg:id_45 rdfs:label "一般会計歳入歳出予算で各種助成事業に係る経費にしっかり対応する"@ja.
+kg:id_45 rdf:type cls:c_2714.
+cls:c_2714 rdfs:label "助成事業対応"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "貴重な町の財源"@ja.
+kg:id_46 rdf:type cls:c_1326.
+cls:c_1326 rdfs:label "財源"@ja.
+kg:id_47 rdfs:label "定住促進のため投資できるよう有効活用する"@ja.
+kg:id_47 rdf:type cls:c_2715.
+cls:c_2715 rdfs:label "定住促進活用"@ja.
+kg:id_46 prop:countermeasure kg:id_47.
+kg:st_1 rdfs:label "赤塚英一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "環境に優しいエネルギーとして今後も産業の一端を担うと期待する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田町長"@ja.
+kg:st_2 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_2 prop:content "地球に優しく地球に負荷をかけないエネルギー導入の先鞭をつけるべきだ"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "環境に優しいエネルギーとして今後も産業の一端を担うと期待する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "地球に優しく地球に負荷をかけないエネルギー導入の先鞭をつけるべきだ"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "設備投資は町にとって期待できる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "人口減少に悩む町として雇用が生まれないのはもどかしい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "町民"@ja.
+kg:st_3 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_7 prop:content "税収は入るが雇用につながらず若者を町内で働かせにくい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "自然エネルギー事業により固定資産税収への寄与が大きくなった"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "課税初年度はかなり大きな税収となっている"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "土地評価額の下落で固定資産税収の先行きに危惧があった"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "家屋建築の減少で固定資産税収の先行きに危惧があった"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "風力発電設備の稼働開始で6億円台を回復できた"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "償却資産は毎年減価するため税収減の影響を持つ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "税額減少は税収に大きな影響を及ぼす"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "固定資産税は目的税ではなく一般財源として扱われる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "増収分の一定額は交付税で減額される仕組みだ"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "税収を町民還元できるよう基金創設を考えるべきだ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "県では交付金を財源に基金条例を制定している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "基金は再生可能エネルギー導入促進事業に活用されている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "基金は発電設備等の維持管理や更新にも使われている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "県の基金事業を活用して街灯整備を進めた"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "県の基金事業を活用して防災センターの太陽光発電を整備した"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "今後も施設整備を進める考えだ"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "庄内町では特別会計を財源に風力発電基金を創設している"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "基金は風力発電施設の管理運営に充てられている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "町民や事業者が主体的に関わる事業展開を目指している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "町民参加型の取り組みで地域経済の活性化を進めたい"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "経済的な恩恵を地域にもたらすことを目指している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "将来にわたり施設運営などへの還元を目指している"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "当面は一般会計で各種助成事業に対応する考えだ"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "財源を有効活用し定住促進に投資できる町でありたい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "若者定住や雇用創出につながる施策に税収を使うべきだ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "副町長"@ja.
+kg:st_4 rdf:type cls:st_72.
+cls:st_72 rdfs:label "副首長"@ja.
+kg:op_33 prop:content "今後の投資や政策課題に備えられるよう基金の考え方を持つべきだ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "このような風力や太陽光などの自然エネルギーを利用した発電は、二酸化炭素の排出を抑制し、環境への負荷を少なくするなど、環境に優しいエネルギーとしてこれからも産業の一端を担うことでしょう"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "このような風力や太陽光などの自然エネルギーを利用した発電は、二酸化炭素の排出を抑制し、環境への負荷を少なくするなど、環境に優しいエネルギーとしてこれからも産業の一端を担うことでしょう"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "遊佐町にとってもこのような設備投資は大いに期待できるものでしょう"@ja.
+<< kg:id_4 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "投資の期待は大きいものの、人口減少に悩む遊佐町としては、ここに大きな雇用が生まれないことはもどかしいものではないでしょうか。やはりあそこでは金は入ってくるけれども、雇用にもつながらないのだよねと。うちの若いの町内で勤めさせたいのだけれども、大きい企業来るといって手たたいて喜んでいても、やはり太陽光発電だったり風力発電というのは非常に雇用につながらない"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "結果として大規模な自然エネルギー事業がもたらす町税としての固定資産税のうちの償却資産が占める割合が大きくなりまして"@ja.
+<< kg:id_7 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "課税初年度においてはかなりの大きな税収となっております"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "平成21年度から土地の評価額の下落や家屋の建築の減少などにより５億円台となり"@ja.
+<< kg:id_12 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "平成21年度から土地の評価額の下落や家屋の建築の減少などにより５億円台となり"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "平成24年度における風力発電設備の稼働開始とともに６億円台を回復することができました"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "この償却資産は定率で毎年減価するため、税額も年を追って減ることとなり"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "税額も年を追って減ることとなり、税収に大きな影響を及ぼすという面もあわせ持っております"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "普通税の性格を持つ固定資産税は、入湯税や都市計画税などの特定のものに使われる目的税と違い、あくまでも一般財源化される仕組みであります"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "交付税上の扱いとしては基準財政収入額として、いわゆる収入として算入されますので、税収としてふえた部分のうち一定額については逆に交付税の交付額から減額される仕組みになっております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "この風力や太陽光などの自然エネルギーを利用した再生可能エネルギー施設からの税収を町民に還元できるよう、有効に活用できるような基金の創設を考えるべきと思い"@ja.
+<< kg:id_25 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "山形県では環境省からの交付金を財源として、平成23年度に山形県再生可能エネルギー等導入促進事業等基金条例を制定し"@ja.
+<< kg:id_27 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "太陽光、その他の再生可能エネルギー源を利用したエネルギーの導入を促進するための事業や県が設置した発電設備等の維持管理及び更新に係る事業を実施するとしています"@ja.
+<< kg:id_27 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "太陽光、その他の再生可能エネルギー源を利用したエネルギーの導入を促進するための事業や県が設置した発電設備等の維持管理及び更新に係る事業を実施するとしています"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "本町においてもこの県の基金事業を活用して、八ツ面川沿いの街灯、防災センターの太陽光発電を整備してまいりました"@ja.
+<< kg:id_30 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "本町においてもこの県の基金事業を活用して、八ツ面川沿いの街灯、防災センターの太陽光発電を整備してまいりました"@ja.
+<< kg:id_30 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今後もふらっとや各まちづくりセンターへの整備を計画しているところであります"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "庄内町では風力発電事業特別会計で定める額を財源として風力発電基金を創設し"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "風力発電施設の管理運営等に充てております"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "遊佐町エネルギー基本計画の町民参加型再生可能エネルギー事業プロジェクトでは、町民や事業者が主体的にかかわり、連携して町民出資等による事業展開を検討していくこととしており"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "この取り組みが地域経済の活性化を進め"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "経済的な恩恵が地域にもたらされ"@ja.
+<< kg:id_40 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "将来にわたりエネルギー施設の運営などに還元されていくことを目指しているところです"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "当面各種助成事業に係る経費については、一般会計歳入歳出予算でしっかり対応してまいらなければと考えます"@ja.
+<< kg:id_46 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "また財源の増を図りながら、貴重な町の財源の有効な活用を定住促進のため、それらに投資できるような町であり続けたいと考えております。ここで入ってくる税収を例えばそういう雇用の部分であったり、例えば若者定住にかかわるような施策に使えるようにしたりだとか、町営アパートなりそういう若者定住のためのアパートを建設するための資金だったり、そういうところに使っていけば、いろんな形で直接、間接を問わず町民に還元しているのだという部分が出てくれば、これはお互いメリットがあるのかなと私考えておりましたので。これからのいろんな投資、政策、課題、これに財源としてしっかり備えていけるような状況"@ja.
+}

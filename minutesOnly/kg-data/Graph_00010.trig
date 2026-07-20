@@ -1,0 +1,402 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00010> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "町税"@ja.
+kg:id_1 rdf:type cls:c_198.
+cls:c_198 rdfs:label "地方税"@ja.
+kg:id_2 rdfs:label "人口減や高齢化による就業人口の減少"@ja.
+kg:id_2 rdf:type cls:c_199.
+cls:c_199 rdfs:label "就業人口減少"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "水産物の水揚げの減少"@ja.
+kg:id_3 rdf:type cls:c_200.
+cls:c_200 rdfs:label "水産業低迷"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "総所得金額の増加が見込めず大変厳しい状況"@ja.
+kg:id_4 rdf:type cls:c_201.
+cls:c_201 rdfs:label "財政悪化"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "固定資産税の増収が見込まれる"@ja.
+kg:id_5 rdf:type cls:c_184.
+cls:c_184 rdfs:label "税収増加"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "松前町地域マイクログリッド構築"@ja.
+kg:id_6 rdf:type cls:c_202.
+cls:c_202 rdfs:label "地域電力事業"@ja.
+kg:id_7 rdfs:label "リエネ松前風力発電所を活用するマスタープランを作成"@ja.
+kg:id_7 rdf:type cls:c_118.
+cls:c_118 rdfs:label "計画策定"@ja.
+kg:id_6 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "洋上風力発電誘致"@ja.
+kg:id_8 rdf:type cls:c_175.
+cls:c_175 rdfs:label "洋上風力発電"@ja.
+kg:id_9 rdfs:label "国の促進区域の指定を受けるため北海道へ情報提供を提出"@ja.
+kg:id_9 rdf:type cls:c_203.
+cls:c_203 rdfs:label "指定申請"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "関係機関と連携して進める"@ja.
+kg:id_10 rdf:type cls:c_204.
+cls:c_204 rdfs:label "連携推進"@ja.
+kg:id_8 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "松前の風が大きな財産"@ja.
+kg:id_11 rdf:type cls:c_205.
+cls:c_205 rdfs:label "地域資源"@ja.
+kg:id_8 prop:cause kg:id_11.
+kg:id_12 rdfs:label "共同漁業権の滅失に伴う漁業環境の問題"@ja.
+kg:id_12 rdf:type cls:c_206.
+cls:c_206 rdfs:label "漁業環境問題"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "共同漁業権の滅失に伴う漁業補償の問題"@ja.
+kg:id_13 rdf:type cls:c_207.
+cls:c_207 rdfs:label "漁業補償問題"@ja.
+kg:id_8 prop:effect kg:id_13.
+kg:id_14 rdfs:label "騒音のデメリット"@ja.
+kg:id_14 rdf:type cls:c_208.
+cls:c_208 rdfs:label "生活環境問題"@ja.
+kg:id_8 prop:effect kg:id_14.
+kg:id_15 rdfs:label "低周波のデメリット"@ja.
+kg:id_15 rdf:type cls:c_208.
+kg:id_8 prop:effect kg:id_15.
+kg:id_16 rdfs:label "経済効果は大変大きい"@ja.
+kg:id_16 rdf:type cls:c_106.
+cls:c_106 rdfs:label "経済効果"@ja.
+kg:id_8 prop:effect kg:id_16.
+kg:id_17 rdfs:label "いろんなビジネスチャンスが生まれてくる要素"@ja.
+kg:id_17 rdf:type cls:c_134.
+cls:c_134 rdfs:label "事業機会"@ja.
+kg:id_8 prop:effect kg:id_17.
+kg:id_18 rdfs:label "まちづくりの一つの核になっていく"@ja.
+kg:id_18 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_8 prop:effect kg:id_18.
+kg:id_19 rdfs:label "実現には7年から10年かかる"@ja.
+kg:id_19 rdf:type cls:c_209.
+cls:c_209 rdfs:label "長期事業"@ja.
+kg:id_8 prop:effect kg:id_19.
+kg:id_20 rdfs:label "連絡会議を開催し各種団体に計画概要を説明"@ja.
+kg:id_20 rdf:type cls:c_210.
+cls:c_210 rdfs:label "説明実施"@ja.
+kg:id_8 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "組合員にも丁寧に説明していく"@ja.
+kg:id_21 rdf:type cls:c_210.
+kg:id_8 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "地元が一丸となって進めている状況を国にアピールする"@ja.
+kg:id_22 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_8 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "松前町洋上風力発電推進協議会のような組織を立ち上げる"@ja.
+kg:id_23 rdf:type cls:c_192.
+cls:c_192 rdfs:label "推進組織"@ja.
+kg:id_8 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "早期に形が見える着工できるような体制づくり"@ja.
+kg:id_24 rdf:type cls:c_211.
+cls:c_211 rdfs:label "推進体制"@ja.
+kg:id_8 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "一日も早い実現に向けた取り組み"@ja.
+kg:id_25 rdf:type cls:c_212.
+cls:c_212 rdfs:label "早期実現"@ja.
+kg:id_8 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "町民に情報をきちんと提供する"@ja.
+kg:id_26 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_8 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "町内の気運が高まった時に推進する"@ja.
+kg:id_27 rdf:type cls:c_214.
+cls:c_214 rdfs:label "気運醸成"@ja.
+kg:id_8 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "低周波や騒音など多様な意見に丁寧に対応する"@ja.
+kg:id_28 rdf:type cls:c_215.
+cls:c_215 rdfs:label "意見対応"@ja.
+kg:id_8 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "実現に向け業界各位の気運の盛り上がりを図る"@ja.
+kg:id_29 rdf:type cls:c_214.
+kg:id_8 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "丁寧かつ積極的に取り組む"@ja.
+kg:id_30 rdf:type cls:c_197.
+cls:c_197 rdfs:label "事業推進"@ja.
+kg:id_8 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "特別委員会を設ける"@ja.
+kg:id_31 rdf:type cls:c_192.
+kg:id_8 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "再生可能エネルギー推進"@ja.
+kg:id_32 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_33 rdfs:label "東急不動産株式会社と共同で調査等を進める"@ja.
+kg:id_33 rdf:type cls:c_217.
+cls:c_217 rdfs:label "共同調査"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:st_1 rdfs:label "松前町"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "再生可能エネルギー推進のため実現に向けた調査を共同で進める予定"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "７番工藤松子君"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "東急不動産との共同を1社に限らず数社連携にした方がよい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "松前町長"@ja.
+kg:st_3 rdf:type cls:st_4.
+kg:op_3 prop:content "北海道に対して情報をどんどん発信している"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "区域設定をスピード感を持って進めるべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "円滑に国の指定が受けられるよう連携して進める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "松前の風を地域の大きな資産として捉えて進めたい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_7 prop:content "最も懸念されるのは共同漁業権の滅失に伴う漁業環境の問題"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "最も懸念されるのは共同漁業権の滅失に伴う漁業補償の問題"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "町内の経済団体"@ja.
+kg:st_5 rdf:type cls:st_13.
+cls:st_13 rdfs:label "経済団体"@ja.
+kg:op_9 prop:content "騒音などのデメリットに十分配慮して実現してほしい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "町民から多様な意見が寄せられることを承知し丁寧に対応したい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "低周波などのデメリットに十分配慮して実現してほしい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "低周波や騒音について町民に丁寧に対応したい"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "町の将来施策の観点から経済効果が大きいのでぜひ実現してほしい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "経済的な効果も多岐にわたってある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "人口減少の特効薬ではないがビジネスチャンスが生まれる要素は十分ある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "洋上風力発電はまちづくりの核になると捉えている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "10年先では長すぎるためできるだけ早期に実現する必要がある"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "時間は要するが早期に形が見える体制づくりを進めたい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "影響を受ける団体に計画概要を説明するため連絡会議を開催した"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "さくら漁業協同組合組合長"@ja.
+kg:st_6 rdf:type cls:st_14.
+cls:st_14 rdfs:label "漁業者"@ja.
+kg:op_20 prop:content "今後さらに丁寧に組合員へ説明していく"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:op_21 prop:content "より早く促進するには地元が一丸となっている状況のアピールが重要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "松前町全体の課題として推進協議会のような組織が必要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_4.
+kg:op_23 prop:content "促進協議会的なものを立ち上げ町の気運づくりを進めたい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "時間はかかるが早期に形が見え着工できる体制づくりを目指す"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "一日も早い実現に向けた取り組みが必要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "町民皆さんに問いかけ十分な話し合いをすべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "町民に情報はきちんと提供したい"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "町長主導ではなく町内の気運が高まることを大前提に推進したい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "低周波や騒音など町民の多様な意見に丁寧に対応したい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "実現には業界各位の気運の盛り上がりが大事"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "実現に向け丁寧に積極的に取り組む"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "議員として海洋風力の特別委員会を設けてもよいと考える"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "1社ではなく数社で提携し連携プレーで進めた方がよい"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "東急不動産とは地域マイクログリッド構想を全国に先駆けて共同で進めている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "人口減や高齢化による就業人口の減少"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "更には水産物の水揚げの減少などにより"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:text-txt_contents "総所得金額の増加が見込めず大変厳しい状況にあります"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "風力発電施設の建設により固定資産税の増収が見込まれる"@ja.
+<< kg:id_6 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "再生可能エネルギーの推進のため、リエネ松前風力発電所を活用する松前町地域マイクログリッド構築マスタープランを令和２年度に作成し、本年度は、その実現に向けた調査等を東急不動産株式会社と共同で進める予定でおります"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "洋上風力発電誘致に係る「国の促進区域の指定」を受けるための情報提供を去る２月１８日に北海道へ提出したところであります"@ja.
+<< kg:id_8 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "円滑に国の指定が受けられるよう関係機関と連携して進めてまいります"@ja.
+<< kg:id_8 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本当に松前の風が大きな財産になってくれてるというふうな実態を、きちんと捉えながら進めてまいりたい"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "洋上風力を誘致するのに一番懸念されるのは、共同漁業権の滅失に伴う漁業環境"@ja.
+<< kg:id_8 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "共同漁業権の滅失に伴う漁業環境と漁業補償の問題"@ja.
+<< kg:id_8 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "デメリット、これは騒音だとか低周波の関係だと思うんですが"@ja.
+<< kg:id_8 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "デメリット、これは騒音だとか低周波の関係だと思うんですが"@ja.
+<< kg:id_8 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "経済効果は大変大きいと思うので、ぜひ実現してほしい"@ja.
+<< kg:id_8 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "いろんなビジネスチャンスが生まれてくる要素も十分あるんだろうな"@ja.
+<< kg:id_8 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "まちづくりの一つの核になっていくというふうな捉え方をしているところであります"@ja.
+<< kg:id_8 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "洋上風力発電実現には、７年から１０年かかる"@ja.
+<< kg:id_8 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "影響を受ける町内の各種団体に計画の概要を説明するために、連絡協議会を開催し"@ja.
+<< kg:id_8 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "いろいろこれから、更に丁寧に組合員にも説明していきます"@ja.
+<< kg:id_8 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "国に対して、地元が一丸となって進めているという状況を私は、やっぱりアピールする必要がある"@ja.
+<< kg:id_8 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_22;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "例えば、松前町洋上風力発電推進協議会とか、そういう組織をね、挙げて松前町全体の課題として、やっぱりやる必要があると思います。私どもも基本的には先ほど、２月の９日に開催されたような構成員、まだ増えるんだろうと思いますが、洋上風力発電の促進協議会的なものを立ち上げまして、町の気運づくりも進めてまいりたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "しっかりと早期に形が見える、着工できるような体制づくりを目指して進めて行きたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "一日も早い実現に向けた取り組みが必要だというふうに思っております"@ja.
+<< kg:id_8 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "町民皆さんにね、やはり問いかけたらいいんでないかなあと思ったんです。やはり、そのこのところの十分な話し合いっていうのが大事かなと思ったもんですから。町民の皆さんには、情報はきちんと提供したいと思いますし"@ja.
+<< kg:id_8 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "まずもって町長がやるからやるんじゃなくて、町内の気運が高まるということが大前提でありますので、その気運が高まった時には、きちんと推進してまいりたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "低周波、騒音等々、町民の皆様からいろんな、多様な意見が寄せられるということも十分承知しておりますので、町と致しましては丁寧に対応していきたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "洋上風力発電の実現に向けた、業界各位の皆様方の、気運の盛り上がりが大事だというふうに思っているところであります"@ja.
+<< kg:id_8 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "本当に実現に向けまして、丁寧に、更には積極的に取り組んでまいりたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "私は、議員としてでも、この自然エネルギーの関係の、海洋風力の特別委員会をしてもいいなあという気持ちがあります"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "本年度は、その実現に向けた調査等を東急不動産株式会社と共同で進める予定でおります。１社でなく数社で、やはり提携した方がいいんでないかな"@ja.
+}

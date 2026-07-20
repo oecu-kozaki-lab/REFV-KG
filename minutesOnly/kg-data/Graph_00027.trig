@@ -1,0 +1,87 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00027> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "再生可能エネルギー循環都市の形成"@ja.
+kg:id_1 rdf:type cls:c_810.
+cls:c_810 rdfs:label "都市形成"@ja.
+kg:id_2 rdfs:label "2050年カーボンニュートラルの実現に貢献するため"@ja.
+kg:id_2 rdf:type cls:c_811.
+cls:c_811 rdfs:label "脱炭素実現"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "再生可能エネルギーの導入"@ja.
+kg:id_3 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "地域経済の好循環"@ja.
+kg:id_4 rdf:type cls:c_812.
+cls:c_812 rdfs:label "地域経済循環"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "酒田港カーボンニュートラルポートの形成"@ja.
+kg:id_5 rdf:type cls:c_813.
+cls:c_813 rdfs:label "港湾形成"@ja.
+kg:id_6 rdfs:label "国・山形県、地元企業と連携して進める"@ja.
+kg:id_6 rdf:type cls:c_248.
+cls:c_248 rdfs:label "官民連携"@ja.
+kg:id_5 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "次世代エネルギーの導入を見据える"@ja.
+kg:id_7 rdf:type cls:c_814.
+cls:c_814 rdfs:label "次世代エネルギー導入"@ja.
+kg:id_5 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "洋上風力発電事業"@ja.
+kg:id_8 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_9 rdfs:label "基地港湾の指定"@ja.
+kg:id_9 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "風力発電事業"@ja.
+kg:id_10 rdf:type cls:c_1.
+kg:id_11 rdfs:label "特別会計予算の総額を４億3,530万8,000円とする"@ja.
+kg:id_11 rdf:type cls:c_816.
+cls:c_816 rdfs:label "予算措置"@ja.
+kg:id_10 prop:countermeasure kg:id_11.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "2050年カーボンニュートラルの実現に貢献するため、再生可能エネルギーの導入により地域経済の好循環を実現する再生可能エネルギー循環都市の形成を目指します"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "再生可能エネルギーの導入により地域経済の好循環を実現する再生可能エネルギー循環都市の形成を目指します"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "再生可能エネルギーの導入により地域経済の好循環を実現する"@ja.
+<< kg:id_5 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "酒田港カーボンニュートラルポートの形成に向けて、国・山形県、地元企業と連携して進めます"@ja.
+<< kg:id_5 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "次世代エネルギーの導入を見据えた酒田港カーボンニュートラルポートの形成に向けて"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:text-txt_contents "洋上風力発電事業の拠点となる基地港湾の指定"@ja.
+<< kg:id_10 prop:countermeasure kg:id_11 >>
+    prop:text-txt_contents "議第23号については、風力発電事業特別会計予算の総額を４億3,530万8,000円とするものであります"@ja.
+}

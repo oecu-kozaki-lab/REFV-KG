@@ -1,0 +1,256 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00185> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "大型風力発電の計画"@ja.
+kg:id_1 rdf:type cls:c_66.
+cls:c_66 rdfs:label "風力発電計画"@ja.
+kg:id_2 rdfs:label "加茂地区近郊が風力発電事業に適しているかどうか判断するための風況調査の実施"@ja.
+kg:id_2 rdf:type cls:c_3246.
+cls:c_3246 rdfs:label "風況調査"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "加茂地域の景観や環境への影響"@ja.
+kg:id_3 rdf:type cls:c_190.
+cls:c_190 rdfs:label "環境影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "高館山自然休養林や上池・下池の渡り鳥や動植物などの自然環境への影響"@ja.
+kg:id_4 rdf:type cls:c_190.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "近隣住民の生活への不安"@ja.
+kg:id_5 rdf:type cls:c_1274.
+cls:c_1274 rdfs:label "生活不安"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "近隣住民の健康への不安"@ja.
+kg:id_6 rdf:type cls:c_2287.
+cls:c_2287 rdfs:label "健康不安"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "風力発電が建設されるとの受け止めが広がること"@ja.
+kg:id_7 rdf:type cls:c_4196.
+cls:c_4196 rdfs:label "建設認識"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "利益が東京本社側に回ること"@ja.
+kg:id_8 rdf:type cls:c_4140.
+cls:c_4140 rdfs:label "利益流出"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "環境影響配慮書・方法書・準備書の作成段階で地元住民や関係者に説明を行う"@ja.
+kg:id_9 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_1 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "景観への配慮を事業者に意見する"@ja.
+kg:id_10 rdf:type cls:c_1128.
+cls:c_1128 rdfs:label "景観配慮"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "環境への影響の回避や低減を図る"@ja.
+kg:id_11 rdf:type cls:c_748.
+cls:c_748 rdfs:label "環境配慮"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "市に対して風況調査前または環境アセスメント手続開始６か月前までに事前説明を行う"@ja.
+kg:id_12 rdf:type cls:c_4197.
+cls:c_4197 rdfs:label "事前説明"@ja.
+kg:id_1 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "想定事業区域から２キロ以内の住民自治組織、住民、周辺地権者、市指定者に対して事前に説明会を実施する"@ja.
+kg:id_13 rdf:type cls:c_687.
+cls:c_687 rdfs:label "説明会実施"@ja.
+kg:id_1 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "具体的な資料を提示して住民との合意形成を図る"@ja.
+kg:id_14 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_1 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "市民への早期の段階で事業概要を公表する"@ja.
+kg:id_15 rdf:type cls:c_1100.
+cls:c_1100 rdfs:label "情報公表"@ja.
+kg:id_1 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "ラムサール条約の登録要件を守る"@ja.
+kg:id_16 rdf:type cls:c_4198.
+cls:c_4198 rdfs:label "条約遵守"@ja.
+kg:id_1 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "市民の合意と理解を得て地域内循環ができる再生可能エネルギーを目指す"@ja.
+kg:id_17 rdf:type cls:c_1447.
+cls:c_1447 rdfs:label "地域循環"@ja.
+kg:id_1 prop:countermeasure kg:id_17.
+kg:st_1 rdfs:label "市民部長（五十嵐浩一）"@ja.
+kg:st_1 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_1 prop:content "計画は適地判断のための風況調査段階だと説明する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "９番（菅井巌議員）"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "日本遺産の加茂地域の景観や環境への影響を懸念する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "参加者"@ja.
+kg:st_3 rdf:type cls:st_25.
+cls:st_25 rdfs:label "参加者"@ja.
+kg:op_3 prop:content "生活環境や日本遺産への影響について質問する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "高館山やラムサール条約登録湿地の自然環境への影響を懸念する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "高館山や渡り鳥など自然環境への影響について質問する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "環境への影響の回避や低減を事業者に求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "住民の生活への不安を懸念する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "生活環境への影響について質問する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "住民の健康への不安を懸念する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "生活環境への影響について質問する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "住民の多くが建設されるものだと受け止めていると指摘する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "地元業者ではなく最終的な利益が東京本社に回る点を問題視する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "事業者は今後の各段階で地元住民や関係者へ説明すべきだと述べる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "市として景観への配慮を事業者に求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "市として環境影響の回避や低減を事業者に求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "事業者は早い段階で市へ事前説明を行うべきだと述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "対象範囲を広げて事前説明会を実施し合意形成を図るべきだと述べる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "具体的資料の提示と住民合意の形成を強く求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "市民の合意と理解を得た再生可能エネルギーを目指すべきだと述べる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "地域の一部だけでなく市内全域や県内にも早く情報提供すべきだと求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "市民への早期公表が図られるよう求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "ラムサール条約の登録要件は守らなければならないと述べる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "市民の合意と地域内循環を重視した再生可能エネルギーを目指すべきだと主張する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "加茂地区近郊が風力発電事業に適しているかどうか判断をするために、今後の風況調査の実施について説明することを目的に"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "このたびの事業計画によって、北前船の関係で日本遺産になっている加茂地域の景観や環境"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "高館山自然休養林やラムサール条約の上池・下池の渡り鳥や動植物などの自然環境への影響"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "近隣にお住まいの住民の皆さんの生活や健康への不安"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "近隣にお住まいの住民の皆さんの生活や健康への不安"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "中には、やっぱり受け止めは、風力発電ができるものだという認識を多くの方々がお持ちになったという感触もあります"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "地元の業者ではありません。本社が東京、そしてこれらのところに最終的に利益が回っていくということになります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今後事業者からは環境影響配慮書・方法書・準備書の作成段階で、地元住民、関係者に対して説明を行うこととされております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "本市としても事業者に対して景観への配慮、環境への影響の回避や低減を図るよう意見してまいります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "本市としても事業者に対して景観への配慮、環境への影響の回避や低減を図るよう意見してまいります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "ガイドラインでは風況調査前または環境アセスメント手続開始６か月前のいずれか早い時期まで、市に対して事前説明を行うこととしております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "風力発電施設の想定事業区域から２キロ以内の範囲に含まれる住民自治組織、住民及び周辺地権者並びに市が指定する者に対して事前に説明会を実施し"@ja.
+<< kg:id_1 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "具体的な資料を提示し、合意形成を図るものとしており、市民への早期の段階での事業概要の公表や事業計画に対する住民との合意形成が図られるよう強く求めてまいります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "市民への早期の段階での事業概要の公表や事業計画に対する住民との合意形成が図られるよう強く求めてまいります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "ラムサール条約の登録の要件については守っていかなければならないというふうに考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "やはり市民の合意、そして市民に理解させて、そして地域内循環ができる、こうした再生可能エネルギーを目指すべきだと思います"@ja.
+}

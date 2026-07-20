@@ -1,0 +1,258 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00159> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "業況の回復傾向"@ja.
+kg:id_1 rdf:type cls:c_3739.
+cls:c_3739 rdfs:label "業況"@ja.
+kg:id_2 rdfs:label "回復傾向にあると回答されたところが16.8％にとどまっている"@ja.
+kg:id_2 rdf:type cls:c_3740.
+cls:c_3740 rdfs:label "回復の限定"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "売上げの回復状況"@ja.
+kg:id_3 rdf:type cls:c_3741.
+cls:c_3741 rdfs:label "売上げ"@ja.
+kg:id_4 rdfs:label "コロナ前の水準より売上げが増加しているという回答が18.8％にとどまっている"@ja.
+kg:id_4 rdf:type cls:c_3740.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "戻っているところと戻っていないところの二極化が鮮明になってきている"@ja.
+kg:id_5 rdf:type cls:c_3742.
+cls:c_3742 rdfs:label "二極化"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "ＰａｙＰａｙ活用"@ja.
+kg:id_6 rdf:type cls:c_3743.
+cls:c_3743 rdfs:label "決済施策"@ja.
+kg:id_7 rdfs:label "域内の消費喚起に非常に効果があった"@ja.
+kg:id_7 rdf:type cls:c_1052.
+cls:c_1052 rdfs:label "消費喚起"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "市外への配送が異常値を示し域外からの外貨獲得に非常に効果がある"@ja.
+kg:id_8 rdf:type cls:c_3744.
+cls:c_3744 rdfs:label "外貨獲得"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "他地域から消費を吸い取り酒田市だけが独り勝ちになる可能性がある"@ja.
+kg:id_9 rdf:type cls:c_3745.
+cls:c_3745 rdfs:label "地域間競合"@ja.
+kg:id_6 prop:effect kg:id_9.
+kg:id_10 rdfs:label "今後もう少し分析をしながら本当にやるべきかどうかを検討する"@ja.
+kg:id_10 rdf:type cls:c_3746.
+cls:c_3746 rdfs:label "実施検討"@ja.
+kg:id_6 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "工業団地整備"@ja.
+kg:id_11 rdf:type cls:c_1839.
+cls:c_1839 rdfs:label "工業団地"@ja.
+kg:id_12 rdfs:label "酒田北港南側に土砂を入れて37ヘクタールの工業団地をつくろうとしている"@ja.
+kg:id_12 rdf:type cls:c_3747.
+cls:c_3747 rdfs:label "団地整備"@ja.
+kg:id_11 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "洋上風力機器の大型化"@ja.
+kg:id_13 rdf:type cls:c_3748.
+cls:c_3748 rdfs:label "設備大型化"@ja.
+kg:id_14 rdfs:label "工業団地で実際に使ってもらえる面積や活用状況が不透明になっている"@ja.
+kg:id_14 rdf:type cls:c_3749.
+cls:c_3749 rdfs:label "利用不透明"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "立地希望企業の具体的な事業計画をベースに県と相談し工業立地を進める"@ja.
+kg:id_15 rdf:type cls:c_3750.
+cls:c_3750 rdfs:label "立地推進"@ja.
+kg:id_11 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "コロナの影響"@ja.
+kg:id_16 rdf:type cls:c_1377.
+cls:c_1377 rdfs:label "感染症影響"@ja.
+kg:id_17 rdfs:label "事業者によって大変影響があるところと全然影響がないところがある"@ja.
+kg:id_17 rdf:type cls:c_3751.
+cls:c_3751 rdfs:label "影響格差"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "神社仏閣を担当している大工は向こうに全然行けず仕事が全然ない"@ja.
+kg:id_18 rdf:type cls:c_3752.
+cls:c_3752 rdfs:label "仕事不足"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "売上げは減っているが銀行からの貸付けがなく応援金の対象にならない事業者がいる"@ja.
+kg:id_19 rdf:type cls:c_3753.
+cls:c_3753 rdfs:label "支援対象外"@ja.
+kg:id_16 prop:effect kg:id_19.
+kg:id_20 rdfs:label "ダンスのサークルは密集密接のため全然仕事ができない"@ja.
+kg:id_20 rdf:type cls:c_3754.
+cls:c_3754 rdfs:label "活動停滞"@ja.
+kg:id_16 prop:effect kg:id_20.
+kg:id_21 rdfs:label "会議のリモート化やテレワークにより出張費が年間8,000円になるなど影響がない事業者もいる"@ja.
+kg:id_21 rdf:type cls:c_580.
+cls:c_580 rdfs:label "影響軽微"@ja.
+kg:id_16 prop:effect kg:id_21.
+kg:id_22 rdfs:label "国・県・市が様々な支援を幅広くいろいろな事業者に目を向けて対応する"@ja.
+kg:id_22 rdf:type cls:c_2804.
+cls:c_2804 rdfs:label "支援対応"@ja.
+kg:id_16 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "県と連携し事業者からの相談に対応する"@ja.
+kg:id_23 rdf:type cls:c_3755.
+cls:c_3755 rdfs:label "相談対応"@ja.
+kg:id_11 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "洋上風力の基地港湾"@ja.
+kg:id_24 rdf:type cls:c_1087.
+cls:c_1087 rdfs:label "基地港湾"@ja.
+kg:id_25 rdfs:label "酒田市の未来に可能性がある"@ja.
+kg:id_25 rdf:type cls:c_1359.
+cls:c_1359 rdfs:label "発展可能性"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:st_1 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_1 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_1 prop:content "アンケート結果では業況回復は限定的で、詳細は集計後に改めて報告する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "売上げ回復には差があり、状況の二極化が鮮明になっている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "補助制度や利用促進策の活用状況により事業者間の格差が広がっている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "ＰａｙＰａｙは金額面でも域内消費喚起でも高い効果があった"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "外部来訪者の消費と発送増加により域外からの外貨獲得効果が確認できる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "近隣地域の消費を酒田に呼び込むため周辺地域に負担をかけるおそれがある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "効果と周辺地域への影響を見極めるため継続実施の是非を分析して判断する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "県と連携して新たな工業団地整備と活用を協議している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "洋上風力関連の条件変化により当初想定どおりの土地利用が難しくなる可能性がある"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "具体的な立地需要があれば県と相談し京田西拡張なども含めて迅速に対応したい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "齋藤直議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_11 prop:content "事業者間で影響の差が大きく実情に応じた幅広い支援が必要である"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "特殊業務の事業者では移動制約により深刻な仕事不足が起きている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "支援制度の要件に合わず困っている事業者にも目を向けるべきである"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "密集を伴う業種では活動停止に近い深刻な影響が続いている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "リモート化に適応した事業者ではコロナの影響がほとんどない場合もある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "影響の有無が分かれるため幅広い事業者に配慮した支援継続を求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "工業団地については県と連携しながら事業者相談に応じてほしい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "洋上風力の基地港湾化は酒田市の将来展望を広げる可能性がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "300件ほどの回答をいただいておりまして、業況が回復傾向にあると回答されたところが16.8％にとどまっているという状況でございます。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "コロナ前の水準より売上げが増加しているという回答につきましては、18.8％というところでございました。"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "国・県・市の様々な補助制度など、あるいは利用促進の動きとか、そういったことを活用して、戻っているところ、それから戻っていないところ、かなり厳しいなというところ、ここの二極化が鮮明になってきているのかなと思ってございます"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "ＰａｙＰａｙにつきましてでございます。金額もそうでございますし、域内の消費喚起という面では、非常に効果のあったということは、皆さん御承知の状況だと思います。"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "通常であれば、市内の配送が当然なんだけれども、市外への配送が異常値を示していたと。これはやはり外からのお客様が酒田にお越しいただいて、そこで消費をして、ＰａｙＰａｙを活用していただいて、そこに発送する分量がもう異常値を示したと、今までにないような。これはある意味、やはり域外からの外貨獲得という意味では、非常に効果のあるということでございます"@ja.
+<< kg:id_6 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "私たち一緒に生活圏を形成しているところからの消費を酒田に呼び込んでしまうという、これは非常にもろ刃のやいばというか、酒田市だけが独り勝ちになってほかの地域からの消費をどんどん吸い取ってしまう。"@ja.
+<< kg:id_6 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これは、今後ちょっともう少し分析をしながら、本当にやるべきかどうかというところは検討しなければいけないなと思っているところでございます。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "酒田北港の国際ターミナルから少し南側に入ったところを今、土砂を入れ込んで、そこに37ヘクタールの工業団地をつくろうというようなことで、そこの活用について、今、県と話をしているところでございます。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "洋上風力の基地港の指定もございますし、そういったところで洋上風力のその機器の大型化が進んでいるものですから、私たちが当初考えていたのは、半分ぐらいは使えるのかななんていうふうに思っていたところですけれども、それがどのくらい実際事業者の皆さんから使っていただける状況になるかというのは、今後の成り行きを見ていかなければいけないというところでございます。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "こういう計画なんだよということがあれば、そこのお話をベースにしながら、例えば京田西を拡張できないかとか、それ以外の工業団地につきましても、何かそういうことができないかと、そういう事業者の意向があれば、これも制度の問題もあります。ただ、やりたいんだなんていうことではなくて、事業計画をしっかりと立てていただいて、このくらいの規模で、このくらいでやりたいんだよということが私たちのほうに届くのであれば、あるいは私たちも探しますけれども、そういったことで事業のめどがあるということなれば、それは大至急、県などと相談をしながら、工業団地というか、工業の立地について相談をしていきたいとは思っているところでございます。"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "昨年度から、このコロナの関係であちらこちらの事業者の皆さんからお話を聞くと、本当に大変影響があるというところもありまして、...ただ一方、全然影響がないというところもありまして、...そういう意味では、本当に影響のあるところ、ないところが出てきているんだなと、改めて思ったところであります"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "神社仏閣などを担当している大工さんは、特にこちらのほう特殊な仕事なものですから、コロナの関係でもう向こうに全然行けないんだということで、もう仕事が全然ないというところで大変困っているんだというお話も聞きます"@ja.
+<< kg:id_16 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "去年出した応援金、市で出した１人上限５万円の20人で100万円というやつは、銀行からの貸付けがないと、それも借り入れないという、対象がないんだよという話がありまして、売上げは減っているんですけれども、まずは、まだ何とか銀行らからの貸付けがなく頑張っているんだというところもありました。"@ja.
+<< kg:id_16 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "私も知っているようなダンスのサークルですけれども、そこも特に密集、密接のようなところなものですから、そこもなかなかもう全然仕事ができないと、そんな形で困っておりました。"@ja.
+<< kg:id_16 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "うちはもうコロナの影響は全然ないんだと。特に、今、会議とかもリモートだとか、そういうテレワークとかやっているので、出張費は、直、この間、年間8,000円だよと、そんな話も言っておりました。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今後も国・県・市も様々な支援を幅広くいろいろな事業者に目を向けていただいて、対応していただければありがたいなと思っております。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "工業団地であります。こちらも、県とも連携しながらでありますけれども、事業者からの相談があったらいろいろ連携しながら対応していただければありがたいなと思っています"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "先ほど部長からも話がありました洋上風力の基地港湾という形でもありましたので、今後のそういう酒田市の未来は、可能性はあるんだなと私は思っております"@ja.
+}

@@ -1,0 +1,143 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00143> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "遊佐町沖洋上風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_781.
+cls:c_781 rdfs:label "洋上風力発電事業"@ja.
+kg:id_2 rdfs:label "促進区域指定の案の公告及び縦覧"@ja.
+kg:id_2 rdf:type cls:c_3365.
+cls:c_3365 rdfs:label "公告縦覧"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "発電事業者の公募に向けた公募占用指針の策定"@ja.
+kg:id_3 rdf:type cls:c_1443.
+cls:c_1443 rdfs:label "指針策定"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "遊佐町沖洋上風力発電事業計画"@ja.
+kg:id_4 rdf:type cls:c_781.
+kg:id_5 rdfs:label "調査等特別委員会の設置"@ja.
+kg:id_5 rdf:type cls:c_2717.
+cls:c_2717 rdfs:label "委員会設置"@ja.
+kg:id_4 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "特別委員会委員長と副委員長の互選"@ja.
+kg:id_6 rdf:type cls:c_3366.
+cls:c_3366 rdfs:label "委員選出"@ja.
+kg:id_4 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "洋上風力発電施設"@ja.
+kg:id_7 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_8 rdfs:label "固定資産税の増収"@ja.
+kg:id_8 rdf:type cls:c_107.
+cls:c_107 rdfs:label "税収増"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "償却資産"@ja.
+kg:id_9 rdf:type cls:c_3367.
+cls:c_3367 rdfs:label "資産"@ja.
+kg:id_10 rdfs:label "期間の経過とともに課税標準額が下がる"@ja.
+kg:id_10 rdf:type cls:c_3368.
+cls:c_3368 rdfs:label "課税額減少"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "税収増"@ja.
+kg:id_11 rdf:type cls:c_107.
+kg:id_12 rdfs:label "交付税がそのまま同額カットされるわけではない"@ja.
+kg:id_12 rdf:type cls:c_2703.
+cls:c_2703 rdfs:label "交付税減額"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "25％が実質的な町の増収分"@ja.
+kg:id_13 rdf:type cls:c_3369.
+cls:c_3369 rdfs:label "町税増収"@ja.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "洋上風力発電"@ja.
+kg:id_14 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_15 rdfs:label "わがまち特例の適用"@ja.
+kg:id_15 rdf:type cls:c_3370.
+cls:c_3370 rdfs:label "税制特例"@ja.
+kg:id_14 prop:countermeasure kg:id_15.
+kg:st_1 rdfs:label "議長（髙橋冠治君）"@ja.
+kg:st_1 rdf:type cls:st_73.
+cls:st_73 rdfs:label "議会関係者"@ja.
+kg:op_1 prop:content "質疑と討論を省略し原案どおり決定したい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "発言者"@ja.
+kg:st_2 rdf:type cls:st_52.
+cls:st_52 rdfs:label "関係者"@ja.
+kg:op_2 prop:content "今後20年間は償却資産にかかる固定資産税がかなり増収すると理解する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "町民課長"@ja.
+kg:st_3 rdf:type cls:st_23.
+cls:st_23 rdfs:label "行政担当者"@ja.
+kg:op_3 prop:content "償却資産は経年で課税標準額が下がる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "税額増加分がそのまま交付税削減になるわけではない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "法定普通税の25％が実質的な町の増収分になる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "風力発電は町条例附則10条の2第9項の特例に該当する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:text-txt_contents "９月１日から９月15日にかけて、再エネ海域利用法に基づき、国により促進区域指定の案の公告及び縦覧が行われております。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "促進区域に指定された後は、発電事業者の公募に向け、公募占用指針の策定など行われる予定です。"@ja.
+<< kg:id_4 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "日程第７、発議第６号遊佐町沖洋上風力発電事業計画に係る調査等特別委員会の設置についてを議題といたします。お諮りいたします。本件につきましては、さきの全員協議会で協議しており、この際質疑、討論を省略し、原案のとおり決定したいと思いますので、これにご異議ございませんか。"@ja.
+<< kg:id_4 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "遊佐町沖洋上風力発電事業計画に係る調査等特別委員会の委員長、副委員長が互選されましたので、その結果を報告いたします。"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "今後20年間の期間についてはやっぱり償却資産にかかる固定資産税がかなり増収するものと理解します。"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "償却資産というものは、期間の経過とともに課税標準額が下がってまいります。"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "税収が増えれば国からの交付税が減るのではないかというような懸念がありましたが、税額増えた分そのまま交付税がカットされるというようなことではありませんで"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "交付税を算定する場合の固定資産税を含む法定普通税、こちら原則として75％が基準財政収入額に算入され、残りの25％は留保分というふうになりますので、こちらの25％が実質的な町の増収分として考えられます。"@ja.
+<< kg:id_14 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "風力発電についても、再生可能エネルギー発電施設というところで、わがまち特例という特例がありまして、こちらのほうは町条例の附則10条の２第９項に風力発電については20キロワット以上のものが該当するということでありますので、洋上風力発電については、事業者さんから言われているのが最低20万キロワットでペイできるというようなことですので、こちらのほうには該当することになります。"@ja.
+}

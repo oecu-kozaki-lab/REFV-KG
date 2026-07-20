@@ -1,0 +1,633 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00015> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "有望な区域への整理に進めず国の促進区域指定が道半ばになる"@ja.
+kg:id_2 rdf:type cls:c_381.
+cls:c_381 rdfs:label "区域指定の遅れ"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "想定される準備を予断を許さず進める"@ja.
+kg:id_3 rdf:type cls:c_382.
+cls:c_382 rdfs:label "準備推進"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "系統暫定確保に係る事前調査対象区域の指定待ち"@ja.
+kg:id_4 rdf:type cls:c_383.
+cls:c_383 rdfs:label "区域指定待ち"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "マイクログリッド構想"@ja.
+kg:id_5 rdf:type cls:c_384.
+cls:c_384 rdfs:label "地域構想"@ja.
+kg:id_6 rdfs:label "結果的に縮小された"@ja.
+kg:id_6 rdf:type cls:c_385.
+cls:c_385 rdfs:label "構想縮小"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "電力供給のバランスや電力会社との関係"@ja.
+kg:id_7 rdf:type cls:c_386.
+cls:c_386 rdfs:label "事業環境"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "一区画でも町内で試せる土台で結果を見ながら進め方を検討する"@ja.
+kg:id_8 rdf:type cls:c_387.
+cls:c_387 rdfs:label "実証推進"@ja.
+kg:id_5 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "RE100まつまえ"@ja.
+kg:id_9 rdf:type cls:c_384.
+kg:id_10 rdfs:label "国や電力会社との関係で思う方向に進まない心配がある"@ja.
+kg:id_10 rdf:type cls:c_388.
+cls:c_388 rdfs:label "事業停滞の懸念"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "脱炭素先行区域として環境省に申請する"@ja.
+kg:id_11 rdf:type cls:c_389.
+cls:c_389 rdfs:label "区域申請"@ja.
+kg:id_9 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "財源確保には一定の計画が必要"@ja.
+kg:id_12 rdf:type cls:c_390.
+cls:c_390 rdfs:label "計画必要"@ja.
+kg:id_9 prop:cause kg:id_12.
+kg:id_13 rdfs:label "高齢者福祉事業"@ja.
+kg:id_13 rdf:type cls:c_391.
+cls:c_391 rdfs:label "福祉事業"@ja.
+kg:id_14 rdfs:label "高齢化率が52％を超え今後も上昇する可能性がある"@ja.
+kg:id_14 rdf:type cls:c_262.
+cls:c_262 rdfs:label "高齢化"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "健康寿命の延伸や生きがいづくりや社会参加につながる"@ja.
+kg:id_15 rdf:type cls:c_392.
+cls:c_392 rdfs:label "健康増進"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "福祉高齢者対策全体で対話とコミュニティの体制づくりを進める"@ja.
+kg:id_16 rdf:type cls:c_335.
+cls:c_335 rdfs:label "体制整備"@ja.
+kg:id_13 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "デジタル化施策"@ja.
+kg:id_17 rdf:type cls:c_393.
+cls:c_393 rdfs:label "行政施策"@ja.
+kg:id_18 rdfs:label "町民がDX GX SXの意味や恩恵を理解できないまま進むおそれがある"@ja.
+kg:id_18 rdf:type cls:c_394.
+cls:c_394 rdfs:label "理解不足"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "計画ができ次第町民と議会に理解してもらう機会をつくる"@ja.
+kg:id_19 rdf:type cls:c_395.
+cls:c_395 rdfs:label "説明機会"@ja.
+kg:id_17 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "移住定住の推進"@ja.
+kg:id_20 rdf:type cls:c_396.
+cls:c_396 rdfs:label "定住促進"@ja.
+kg:id_21 rdfs:label "少子高齢化と過疎化で人口が減少している"@ja.
+kg:id_21 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "東急不動産頼みで他力本願かつ消極的に見える"@ja.
+kg:id_22 rdf:type cls:c_397.
+cls:c_397 rdfs:label "外部依存"@ja.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "町から東急不動産にテレワーク拠点整備を依頼する"@ja.
+kg:id_23 rdf:type cls:c_398.
+cls:c_398 rdfs:label "拠点整備要請"@ja.
+kg:id_20 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "町税の伸び悩み"@ja.
+kg:id_24 rdf:type cls:c_399.
+cls:c_399 rdfs:label "税収"@ja.
+kg:id_25 rdfs:label "人口減少や高齢化による就業人口の減少"@ja.
+kg:id_25 rdf:type cls:c_199.
+cls:c_199 rdfs:label "就業人口減少"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "水産物の水揚げの低迷"@ja.
+kg:id_26 rdf:type cls:c_400.
+cls:c_400 rdfs:label "水産低迷"@ja.
+kg:id_24 prop:cause kg:id_26.
+kg:id_27 rdfs:label "総所得金額の増加が見込めない"@ja.
+kg:id_27 rdf:type cls:c_401.
+cls:c_401 rdfs:label "所得停滞"@ja.
+kg:id_24 prop:effect kg:id_27.
+kg:id_28 rdfs:label "町民所得の向上"@ja.
+kg:id_28 rdf:type cls:c_402.
+cls:c_402 rdfs:label "所得向上"@ja.
+kg:id_29 rdfs:label "所得向上を願って毎年予算編成を行う"@ja.
+kg:id_29 rdf:type cls:c_403.
+cls:c_403 rdfs:label "予算編成"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "地方債の活用"@ja.
+kg:id_30 rdf:type cls:c_404.
+cls:c_404 rdfs:label "財政運営"@ja.
+kg:id_31 rdfs:label "過疎対策債や辺地対策債を有効に利用する"@ja.
+kg:id_31 rdf:type cls:c_405.
+cls:c_405 rdfs:label "地方債活用"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "将来の自主財源確保につながる事業へ先行投資する"@ja.
+kg:id_32 rdf:type cls:c_406.
+cls:c_406 rdfs:label "先行投資"@ja.
+kg:id_30 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "固定資産税収"@ja.
+kg:id_33 rdf:type cls:c_399.
+kg:id_34 rdfs:label "風力発電に関わる固定資産税の増加"@ja.
+kg:id_34 rdf:type cls:c_407.
+cls:c_407 rdfs:label "設備投資"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "償却資産のため年々減少する"@ja.
+kg:id_35 rdf:type cls:c_408.
+cls:c_408 rdfs:label "税収減少"@ja.
+kg:id_33 prop:effect kg:id_35.
+kg:id_36 rdfs:label "コロナ禍"@ja.
+kg:id_36 rdf:type cls:c_220.
+cls:c_220 rdfs:label "感染症流行"@ja.
+kg:id_37 rdfs:label "町内経済が相当疲弊した"@ja.
+kg:id_37 rdf:type cls:c_409.
+cls:c_409 rdfs:label "地域経済の疲弊"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "新しい日常をつくるスタートの年としてバランスの良い予算を編成する"@ja.
+kg:id_38 rdf:type cls:c_403.
+kg:id_36 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "洋上風力発電の促進区域指定の遅れ"@ja.
+kg:id_39 rdf:type cls:c_381.
+kg:id_40 rdfs:label "送電に係る系統確保の見込みがとれない"@ja.
+kg:id_40 rdf:type cls:c_410.
+cls:c_410 rdfs:label "系統確保難"@ja.
+kg:id_39 prop:cause kg:id_40.
+kg:id_41 rdfs:label "有望な区域に整理されても最短1年後でなければ促進区域指定はない"@ja.
+kg:id_41 rdf:type cls:c_411.
+cls:c_411 rdfs:label "指定長期化"@ja.
+kg:id_39 prop:effect kg:id_41.
+kg:id_42 rdfs:label "現状では予断を許さない"@ja.
+kg:id_42 rdf:type cls:c_412.
+cls:c_412 rdfs:label "不確実性"@ja.
+kg:id_39 prop:effect kg:id_42.
+kg:id_43 rdfs:label "町の姿が大きく変わる可能性がある"@ja.
+kg:id_43 rdf:type cls:c_413.
+cls:c_413 rdfs:label "地域変化"@ja.
+kg:id_1 prop:effect kg:id_43.
+kg:id_44 rdfs:label "安い電力販売と流通コストの減少が期待される"@ja.
+kg:id_44 rdf:type cls:c_414.
+cls:c_414 rdfs:label "費用低減"@ja.
+kg:id_1 prop:effect kg:id_44.
+kg:id_45 rdfs:label "新たな雇用の創出が期待される"@ja.
+kg:id_45 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_1 prop:effect kg:id_45.
+kg:id_46 rdfs:label "地元に残る若者の増加が期待される"@ja.
+kg:id_46 rdf:type cls:c_415.
+cls:c_415 rdfs:label "若者定着"@ja.
+kg:id_1 prop:effect kg:id_46.
+kg:id_47 rdfs:label "交流人口の増加と地域の誇りの創出が期待される"@ja.
+kg:id_47 rdf:type cls:c_416.
+cls:c_416 rdfs:label "交流増加"@ja.
+kg:id_1 prop:effect kg:id_47.
+kg:id_48 rdfs:label "公共施設の脱炭素化や公用車のEV化や充電インフラ整備を進める"@ja.
+kg:id_48 rdf:type cls:c_417.
+cls:c_417 rdfs:label "脱炭素整備"@ja.
+kg:id_1 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "地域エネルギー会社の立ち上げを目指す"@ja.
+kg:id_49 rdf:type cls:c_418.
+cls:c_418 rdfs:label "事業会社設立"@ja.
+kg:id_1 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "RE100企業誘致や再エネ関連事業の立ち上げや人材育成やUターン促進を進める"@ja.
+kg:id_50 rdf:type cls:c_419.
+cls:c_419 rdfs:label "産業育成"@ja.
+kg:id_1 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "工事着工により建設事務所や宿泊や作業員受入れなど町内経済効果が見込まれる"@ja.
+kg:id_51 rdf:type cls:c_420.
+cls:c_420 rdfs:label "地域経済効果"@ja.
+kg:id_1 prop:effect kg:id_51.
+kg:id_52 rdfs:label "設置後に関連企業の進出が想定される"@ja.
+kg:id_52 rdf:type cls:c_301.
+cls:c_301 rdfs:label "企業進出"@ja.
+kg:id_1 prop:effect kg:id_52.
+kg:id_53 rdfs:label "関連企業を積極的に受け入れる整備を進める"@ja.
+kg:id_53 rdf:type cls:c_421.
+cls:c_421 rdfs:label "受入整備"@ja.
+kg:id_1 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "松前港の利活用や必要な改良の協議を進める"@ja.
+kg:id_54 rdf:type cls:c_422.
+cls:c_422 rdfs:label "輸送困難"@ja.
+kg:id_1 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "風車や資機材が大型で陸路搬送が困難"@ja.
+kg:id_55 rdf:type cls:c_124.
+cls:c_124 rdfs:label "協議会設置"@ja.
+kg:id_1 prop:cause kg:id_55.
+kg:id_56 rdfs:label "町独自の推進協議会を組織化する予定"@ja.
+kg:id_56 rdf:type cls:c_423.
+cls:c_423 rdfs:label "情報共有"@ja.
+kg:id_1 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "法定協議会と町独自協議会で情報の風通しを良くする"@ja.
+kg:id_57 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_1 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "町民の理解と合意を得ながら進める"@ja.
+kg:id_58 rdf:type cls:c_210.
+cls:c_210 rdfs:label "説明実施"@ja.
+kg:id_1 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "時期が来たら議会と町民に具体的に示す"@ja.
+kg:id_59 rdf:type cls:c_424.
+cls:c_424 rdfs:label "地域衰退"@ja.
+kg:id_1 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "人口減少"@ja.
+kg:id_60 rdf:type cls:c_425.
+cls:c_425 rdfs:label "寄附制度"@ja.
+kg:id_61 rdfs:label "町の活力や気力が失われ町並みの空洞化や空き地増加や産業基盤の弱体化が進む"@ja.
+kg:id_61 rdf:type cls:c_426.
+cls:c_426 rdfs:label "寄附増加"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:id_62 rdfs:label "ふるさと納税"@ja.
+kg:id_62 rdf:type cls:c_425.
+kg:id_63 rdfs:label "令和4年度は前年度対比29.0％の増となった"@ja.
+kg:id_63 rdf:type cls:c_427.
+cls:c_427 rdfs:label "大口寄附"@ja.
+kg:id_62 prop:effect kg:id_63.
+kg:id_64 rdfs:label "令和2年度の大口寄附1件1000万円が比較に影響した"@ja.
+kg:id_64 rdf:type cls:c_428.
+cls:c_428 rdfs:label "受付拡大"@ja.
+kg:id_62 prop:cause kg:id_64.
+kg:id_65 rdfs:label "インターネット寄附サイトを6サイトに拡大する"@ja.
+kg:id_65 rdf:type cls:c_428.
+kg:id_62 prop:countermeasure kg:id_65.
+kg:id_66 rdfs:label "令和5年度からふるなびとまいなびを増やす予定"@ja.
+kg:id_62 prop:countermeasure kg:id_66.
+kg:st_1 rdfs:label "梶谷康介君"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "町内再エネ活用や企業誘致の起爆剤として期待していたが縮小は残念"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "外部要因で構想どおり進まない懸念がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "石山英雄君"@ja.
+kg:st_2 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_3 prop:content "小規模でも実証を進め結果を見て今後を判断する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "構想は評価するが制度や事業者都合で頓挫しないか不安"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "財源確保と事業推進のため先行区域指定を目指すべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "計画がなければ財源確保が難しく事業が進めにくい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "高齢化が進む中で生きがいと社会参加を支えるべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "高齢者が対話とコミュニティを持てる体制づくりが重要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "健康寿命延伸と生きがいづくりを意識して施策展開する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "町民に目的と効果をわかりやすく説明し理解と協力を得るべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "計画策定後に説明機会を設け理解促進を図る"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "人口減少下で持続可能な町づくりのため移住定住策が重要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "企業依存だけでなく町独自の方針も示すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "町の要請でテレワーク機能整備を進めている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "現状は理解するが将来の所得向上策を示してほしい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "景気回復期待だけでなく所得向上施策が必要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "所得が伸びない厳しい状況で予算編成している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "継続的な予算編成で所得向上を目指している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "交付税措置のある有利な起債を使うべき"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "現在対応だけでなく将来の所得向上や財源確保に資する投資が必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "一時的な増収に頼らず町民所得向上が基本であるべき"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "風力関連固定資産税は将来減るため恒常財源にはなりにくい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "コロナで地域経済と町民生活が大きく疲弊した"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "経済と福祉健康の両面を意識した予算にした"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "系統確保の見通しが立たないことが前進しない主因"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "促進区域指定は早くても令和6年度で時間を要する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "期待はあるが現段階では不確実性が高い"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "脱炭素と再エネは町が変わるスタートになる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "町民に安価な電力と物流面の効果をもたらしたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "雇用創出が地域の将来に重要"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "職種拡大で若者定着につなげたい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "地域の誇りを生む事業にしたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "脱炭素の具体策を着実に進めるべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_2.
+kg:op_34 prop:content "再エネ電力と公的サービスを担う地域エネルギー会社が必要"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_2.
+kg:op_35 prop:content "再エネを軸に企業誘致と人材循環を図りたい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_2.
+kg:op_36 prop:content "工事段階でも宿泊など地域経済への波及が期待できる"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_2.
+kg:op_37 prop:content "新産業や関連産業の誘致は雇用増など町民メリットにつながる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_2.
+kg:op_38 prop:content "町民メリットがある企業は積極的に受け入れるべき"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "調査や維持管理の拠点として松前港活用を検討すべき"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_2.
+kg:op_40 prop:content "大型化で港湾機能の重要性が高い"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_2.
+kg:op_41 prop:content "町や漁協や産業団体や町内会連合会で独自協議会をつくる考え"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "法定と独自の二層体制で課題共有と意見反映を行うべき"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "町民の理解がなければ事業は進まない"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "福原英夫君"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_44 prop:content "進捗の見える化を進め町民不安を減らすべき"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "具体的に示せる時期が来たら説明する"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "人口減少が地域活力と産業基盤を大きく損なっている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_3.
+kg:op_47 prop:content "令和2年度の特別な大口寄附が年度比較を押し上げていた"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "客層の異なる複数サイト運営が周知拡大に有効"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "上位サイト追加で寄附拡大を狙う"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "未だに有望な区域への整理に進めず、国の促進区域の指定には道半ばという状況にあります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "予断を許さずに想定される準備を進めてまいります"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "北海道の五つの区域が、系統暫定確保に係る事前調査対象区域に指定され、調査が順調に進めば夏頃までには有望な区域に整理される可能性が高い"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "残念ながら、このマイクログリット構想も結果的に縮小されましたよね"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "電力供給のバランスとか、いろんな電力会社との関係、そうしたものが絡んでね、今回の縮小になったってこと理解してます"@ja.
+<< kg:id_5 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "何とかそれでも試せる、マイクログリットとして一区画でもいいから、町内で試せる土台ができてきていると思っておりますので、その結果を見ながら今後の進め方を検討してまいりたい"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "また国との、あるいは電力会社とのいろんな形の中で思ってるような、そういう方向に進まない心配が考えられる"@ja.
+<< kg:id_9 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "まずその意味でも、脱炭素の先行区域を松前町として、環境省の方に手を挙げて申請をしているところであります"@ja.
+<< kg:id_9 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "きちんと計画をつくっていかないと、財源の確保の後、いろんな事業を展開するにおいても財源の確保が大変難しくなります"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "当町は高齢化率５２％を超え、更にこれからも上昇する可能性がある"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "健康寿命が延びてほしいこと。更には、いろんな事業を行う中で、いきがいづくりもしてほしいし、それから、やっぱり大事なのはですね、人との対話、コミュニティをとれるような、そういう体制づくり"@ja.
+<< kg:id_13 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "人との対話、コミュニティをとれるような、そういう体制づくりを福祉高齢者対策全体に、そんな願いを込めながら、施策を展開していきたい"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "町民の方理解できないと思うんですよ。ですから、せっかく町民のためにこういう施策を考えてくださっても、何のために自分達がどういう恩恵あるんだろうかということもわからないままに、事が進んじゃいけない"@ja.
+<< kg:id_17 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "でき次第、できましたら町民の皆さんにも議会の皆さんもご理解していただく、その機会はつくっていきたい"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "こういう少子高齢化、過疎化の中で人口はどんどん減って行く"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "東急さんのお力を借りて、今回新しく松城にそういう会社の事務所を建てる時に、たまたまできる施設を利用してっていう考え方、私はいささか他力本願で消極的じゃないのかな"@ja.
+<< kg:id_20 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "ここのテレワークについては町の方から東急さんにお願い致しました。こういうことできませんかというふうなことをお話させていただいたら、東急さんの方では何とかできますよというふうなお答えいただきました"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "人口減少や高齢化による就業人口の減少"@ja.
+<< kg:id_24 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "更には水産物の水揚げの低迷などにより、景気の持ち直しが期待されるものの、総所得金額の増加が見込めず"@ja.
+<< kg:id_24 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "総所得金額の増加が見込めず"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "所得向上願った中での毎年予算編成をさせていただいている"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "優先して交付税措置のある過疎対策債、更には辺地対策債を有効に利用していく"@ja.
+<< kg:id_30 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "将来の町民の所得の向上、あるいは町の財源に繋がるような施策にも先行投資していくことが必要でないのかな"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "微かに伸びてる部分は固定資産税ですよね、いわゆる風力発電に関わる固定資産税"@ja.
+<< kg:id_33 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "これは償却資産ですから、年々これは減じて行きます"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "この間、やっぱりコロナで心身ともに町民の皆さんもコロナとの戦いで、現在も感染予防対策に徹底していただいてますけども"@ja.
+<< kg:id_36 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "迎えました令和の５年度につきましては、新しい日常をつくりあげるスタートの年になるんだというふうな思いで予算編成に臨んできた"@ja.
+<< kg:id_39 prop:cause kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "それに前に進めないのは、やっぱり議員承知のことだと思うんですが、送電に係る系統確保の見込みがとれないことが大変大きくて"@ja.
+<< kg:id_39 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "有望な区域に整理されても、最短でも１年後でなければ促進区域の指定はないものと考えている"@ja.
+<< kg:id_39 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "現状では予断を許さないという状況"@ja.
+<< kg:id_1 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "大きく町が変わる可能性のあるところだというふうに認識して、執行方針を作成させていただきました"@ja.
+<< kg:id_1 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "町民の皆さんに安い電力販売と、流通コストの減少を図れれば"@ja.
+<< kg:id_1 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "更には、新たな雇用の創出を見たい"@ja.
+<< kg:id_1 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "職種の拡大による、地元に残る若者が増加していただければ"@ja.
+<< kg:id_1 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "最後には、交流人口の増加、それから地域の誇りを創出する"@ja.
+<< kg:id_1 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "公共施設の脱炭素化、公用車のＥＶ化、それから充電、インフラ等の着実な整備"@ja.
+<< kg:id_1 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "地域エネルギー会社、これは再エネ電力だけでなくて、公的サービス提供等も展開できる地域エネルギー会社などの立ち上げ"@ja.
+<< kg:id_1 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "ＲＥ１００企業誘致、それから再エネ関連事業の立ち上げ、人材育成、Ｕターン促進等々"@ja.
+<< kg:id_1 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "洋上風力の工事着工することによりまして、例えば建設事務所を建てるとか、それから宿泊場所はどうするか、作業員の宿泊はどうするのか"@ja.
+<< kg:id_1 prop:effect kg:id_52 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "もし設置して風力ができた場合に、その後に企業が入ってくるっていうことも想定しなければならない"@ja.
+<< kg:id_1 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "積極的に受け入れる整備は必要になるというふうに考えてるところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "松前港の利用につきましては、既存施設での対応が可能であるのか、改良が必要なのか、そういう必要な個所もあるのかなどの協議も進めて行きたい"@ja.
+<< kg:id_1 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "風車、一辺のブレイドの長さが１００メートルになるというふうなことで、大変大型化をしているところであります。その状況からしても、陸路での搬送は困難であります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "町独自の推進協議会を組織化をする予定は考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "法定協議会と町の単独の推進協議会を組織することで、情報の風通しをよくして、町に対する課題なども協議できる"@ja.
+<< kg:id_1 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "町民の皆さんが合意、理解してもらうことがなければこの事業進みません"@ja.
+<< kg:id_1 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "時期が来ましたら、議会の皆さん、更には、町民の皆さんに具体的に示せる時期が今来るというふうに思っております"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "この急激な人口減少、このことによってやはり町の活力、気力、町民のですね、それが失われたり、町並みの空洞化でなく空き地が多くなりました。それと産業基盤が急激に弱体しました"@ja.
+<< kg:id_62 prop:effect kg:id_63 >>
+    prop:text-txt_contents "合計で４千１３２万５千８７３円の、前年度対比で２９．０％の増という状況になっております"@ja.
+<< kg:id_62 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "令和２年度にさくらの里づくりに関する事業に、１件１千万円の大口の寄付があったことが影響している"@ja.
+<< kg:id_62 prop:countermeasure kg:id_65 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "全部で６サイトにより運営をしているところであります"@ja.
+<< kg:id_62 prop:countermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "令和５年度からランキング上位のふるなびとまいなびを増やす予定で今考えているところでございます"@ja.
+}

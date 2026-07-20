@@ -1,0 +1,413 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00180> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電計画"@ja.
+kg:id_1 rdf:type cls:c_318.
+cls:c_318 rdfs:label "発電計画"@ja.
+kg:id_2 rdfs:label "風況条件"@ja.
+kg:id_2 rdf:type cls:c_3100.
+cls:c_3100 rdfs:label "自然条件"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "社会インフラ整備状況"@ja.
+kg:id_3 rdf:type cls:c_4052.
+cls:c_4052 rdfs:label "社会基盤"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "法令等の制約の有無"@ja.
+kg:id_4 rdf:type cls:c_4053.
+cls:c_4053 rdfs:label "法的制約"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "環境保全上留意が必要な施設及び住宅"@ja.
+kg:id_5 rdf:type cls:c_3683.
+cls:c_3683 rdfs:label "生活環境"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "県が公表している適地調査の結果"@ja.
+kg:id_6 rdf:type cls:c_431.
+cls:c_431 rdfs:label "調査結果"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "風力発電事業"@ja.
+kg:id_7 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_8 rdfs:label "自然環境に大きな影響を及ぼすことがある"@ja.
+kg:id_8 rdf:type cls:c_2440.
+cls:c_2440 rdfs:label "自然環境"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "生活環境に大きな影響を及ぼすことがある"@ja.
+kg:id_9 rdf:type cls:c_3683.
+kg:id_7 prop:effect kg:id_9.
+kg:id_10 rdfs:label "騒音"@ja.
+kg:id_10 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_7 prop:effect kg:id_10.
+kg:id_11 rdfs:label "振動"@ja.
+kg:id_11 rdf:type cls:c_4054.
+cls:c_4054 rdfs:label "振動"@ja.
+kg:id_7 prop:effect kg:id_11.
+kg:id_12 rdfs:label "低周波音"@ja.
+kg:id_12 rdf:type cls:c_88.
+kg:id_7 prop:effect kg:id_12.
+kg:id_13 rdfs:label "水質"@ja.
+kg:id_13 rdf:type cls:c_4055.
+cls:c_4055 rdfs:label "水環境"@ja.
+kg:id_7 prop:effect kg:id_13.
+kg:id_14 rdfs:label "動植物や生態系"@ja.
+kg:id_14 rdf:type cls:c_4056.
+cls:c_4056 rdfs:label "生態系"@ja.
+kg:id_7 prop:effect kg:id_14.
+kg:id_15 rdfs:label "景観"@ja.
+kg:id_15 rdf:type cls:c_4057.
+cls:c_4057 rdfs:label "景観"@ja.
+kg:id_7 prop:effect kg:id_15.
+kg:id_16 rdfs:label "人と自然との触れ合いの活動の場"@ja.
+kg:id_16 rdf:type cls:c_4058.
+cls:c_4058 rdfs:label "利用空間"@ja.
+kg:id_7 prop:effect kg:id_16.
+kg:id_17 rdfs:label "突然の計画に対する戸惑い"@ja.
+kg:id_17 rdf:type cls:c_4059.
+cls:c_4059 rdfs:label "住民の戸惑い"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "具体的な説明が聞かれなかったことへの不満"@ja.
+kg:id_18 rdf:type cls:c_663.
+cls:c_663 rdfs:label "説明不足"@ja.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "市民の間に混乱が生じている"@ja.
+kg:id_19 rdf:type cls:c_4060.
+cls:c_4060 rdfs:label "市民の混乱"@ja.
+kg:id_1 prop:effect kg:id_19.
+kg:id_20 rdfs:label "風力発電"@ja.
+kg:id_20 rdf:type cls:c_4033.
+cls:c_4033 rdfs:label "発電"@ja.
+kg:id_21 rdfs:label "地球温暖化防止に貢献"@ja.
+kg:id_21 rdf:type cls:c_4061.
+cls:c_4061 rdfs:label "温暖化防止"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "二酸化炭素を出さない"@ja.
+kg:id_22 rdf:type cls:c_871.
+cls:c_871 rdfs:label "低炭素性"@ja.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "エネルギー効率が高い"@ja.
+kg:id_23 rdf:type cls:c_776.
+cls:c_776 rdfs:label "高効率"@ja.
+kg:id_20 prop:effect kg:id_23.
+kg:id_24 rdfs:label "関連産業の振興が期待される"@ja.
+kg:id_24 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_20 prop:effect kg:id_24.
+kg:id_25 rdfs:label "一般の方々地方公共団体などから意見を聴取する"@ja.
+kg:id_25 rdf:type cls:c_82.
+cls:c_82 rdfs:label "意見聴取"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "主要な眺望点の眺望方向や主な眺望対象利用状況を踏まえて風力発電機の配置を検討する"@ja.
+kg:id_26 rdf:type cls:c_4062.
+cls:c_4062 rdfs:label "配置検討"@ja.
+kg:id_1 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "一般の方々や住民や専門家地方公共団体などの意見を取り入れるよう努める"@ja.
+kg:id_27 rdf:type cls:c_719.
+cls:c_719 rdfs:label "意見反映"@ja.
+kg:id_1 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "鶴岡市"@ja.
+kg:id_28 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_29 rdfs:label "風力発電施設の設置等に係るガイドラインを定める"@ja.
+kg:id_29 rdf:type cls:c_1443.
+cls:c_1443 rdfs:label "指針策定"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "生活環境や自然環境景観等の保全の観点で遵守すべき事項を明らかにする"@ja.
+kg:id_30 rdf:type cls:c_4063.
+cls:c_4063 rdfs:label "保全基準"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "事業者と市民の相互理解の下で事業が行われるよう指導する"@ja.
+kg:id_31 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_28 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "事業実施想定区域に隣接する集落の住民に対する説明会を優先的に行う"@ja.
+kg:id_32 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_1 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "今年の秋から風況調査を実施する"@ja.
+kg:id_33 rdf:type cls:c_3246.
+cls:c_3246 rdfs:label "風況調査"@ja.
+kg:id_1 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "環境影響評価方法書の縦覧を行う"@ja.
+kg:id_34 rdf:type cls:c_4064.
+cls:c_4064 rdfs:label "資料縦覧"@ja.
+kg:id_1 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "環境影響評価に係る調査予測評価を行う"@ja.
+kg:id_35 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_1 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "環境影響評価準備書を作成する"@ja.
+kg:id_36 rdf:type cls:c_2294.
+cls:c_2294 rdfs:label "評価書作成"@ja.
+kg:id_1 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "環境影響評価書にまとめる"@ja.
+kg:id_37 rdf:type cls:c_2294.
+kg:id_1 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "森林法に基づく林地開発許可など各種許認可の手続を行う"@ja.
+kg:id_38 rdf:type cls:c_4065.
+cls:c_4065 rdfs:label "許認可手続"@ja.
+kg:id_1 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "景観審議会環境審議会文化財保護審議会を開催して意見を取りまとめ県に提出する"@ja.
+kg:id_39 rdf:type cls:c_2889.
+cls:c_2889 rdfs:label "意見提出"@ja.
+kg:id_28 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "地域の説明会を先行して行うよう事業者にお願いする"@ja.
+kg:id_40 rdf:type cls:c_54.
+kg:id_28 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "順次説明会を開催していくよう事業者にお願いする"@ja.
+kg:id_41 rdf:type cls:c_54.
+kg:id_28 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "各段階で専門家や市民の意見を伺い市としての意見を提出する"@ja.
+kg:id_42 rdf:type cls:c_2889.
+kg:id_28 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "事業者から事業の取下げをしてほしい"@ja.
+kg:id_43 rdf:type cls:c_797.
+cls:c_797 rdfs:label "事業撤回"@ja.
+kg:id_1 prop:countermeasure kg:id_43.
+kg:st_1 rdfs:label "26番本間信一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "県が適地と示したことは重要でお墨つきと受け止める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "鶴岡市市長皆川治"@ja.
+kg:st_2 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_2 prop:content "重大な懸念を持っている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "重大な懸念を持っている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "鶴岡市市民部長五十嵐浩一"@ja.
+kg:st_3 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_4 prop:content "環境保全のため配慮すべき事項として調査検討が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "環境保全のため配慮すべき事項として調査検討が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "環境保全のため配慮すべき事項として調査検討が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "環境保全のため配慮すべき事項として調査検討が必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "立地場所に大きな問題があると捉える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "立地場所に大きな問題があると捉える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "住民は突然の計画に戸惑っている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "具体的説明不足への不満がある"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "反対署名活動もあり市民の間に混乱が生じていると認識する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "導入可能性を検討し導入を図る考えである"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "環境と調和し地域に豊かさをもたらす再生可能エネルギーとして位置づける"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "導入可能性について検討を進め導入を図る"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "関連産業の振興が期待されるため導入可能性を検討する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "意見を踏まえてよりよい事業計画をつくり上げる手続である"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "地域の特性をよく知る住民や専門家の意見を取り入れるべきとする"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "地域住民の理解を得るため住民と話し合うことが重要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地元との合意形成に大きな問題がある"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "説明対象集落はまだ少なく説明が不足している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "専門分野の審議会の意見を伺い市の意見書として県に提出する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "重要な場所なので地域説明会の先行を求めた"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "説明会開催義務はない段階だが順次開催するよう求めている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "多様な意見を聞き住民の声を意見書として出してほしい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "立地場所と地元合意形成に問題があり取下げを求めたい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "風況条件、社会インフラ整備状況、法令等の制約の有無、環境保全上留意が必要な施設及び住宅の４つを考慮して設定した"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "風況条件、社会インフラ整備状況、法令等の制約の有無、環境保全上留意が必要な施設及び住宅の４つを考慮して設定した"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "風況条件、社会インフラ整備状況、法令等の制約の有無、環境保全上留意が必要な施設及び住宅の４つを考慮して設定した"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:text-txt_contents "風況条件、社会インフラ整備状況、法令等の制約の有無、環境保全上留意が必要な施設及び住宅の４つを考慮して設定した"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業者のほうからは、県が公表している適地調査の結果も事業実施想定区域を設定するための検討材料の一つになっている"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "大規模な建設工事が想定され、自然環境や生活環境などに大きな影響を及ぼすことがある"@ja.
+<< kg:id_7 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "大規模な建設工事が想定され、自然環境や生活環境などに大きな影響を及ぼすことがある"@ja.
+<< kg:id_7 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_7 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_7 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_7 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_7 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_7 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_7 prop:effect kg:id_16 >>
+    prop:text-txt_contents "環境保全のために配慮すべき事項となる騒音や振動、低周波音、水質、動植物や生態系、景観、人と自然との触れ合いの活動の場等について文献調査等による検討結果をまとめる"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "突然の計画に対する戸惑い"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "具体的な説明が聞かれなかったことへの不満等もあり"@ja.
+<< kg:id_1 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "反対の署名活動なども行われている状況でございまして、市民の間にも混乱が生じている"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "二酸化炭素を出さない地球温暖化防止に貢献し、クリーンエネルギーとして注目されている風力発電"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "二酸化炭素を出さない地球温暖化防止に貢献し、クリーンエネルギーとして注目されている風力発電"@ja.
+<< kg:id_20 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "風力発電につきましてもエネルギー効率が高く"@ja.
+<< kg:id_20 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "関連産業の振興も期待される"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "一般の方々、地方公共団体などから意見を聴取し、その意見を踏まえて環境の保全の観点からよりよい事業計画をつくり上げていくための手続"@ja.
+<< kg:id_1 prop:countermeasure kg:id_26 >>
+    prop:text-txt_contents "景観においては、主要な眺望点の眺望方向や主な眺望対象、眺望点の利用状況を踏まえて風力発電機の配置を検討する"@ja.
+<< kg:id_1 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "一般の方々や地域の特性をよく知る住民や専門家、地方公共団体などの意見を取り入れるよう努めることとされております"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:text-txt_contents "鶴岡市における風力発電施設の設置等に係るガイドラインを定め"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:text-txt_contents "生活環境や自然環境、景観等の保全の観点で遵守すべき事項を明らかにするとともに"@ja.
+<< kg:id_28 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "事業者と市民の相互理解の下、事業が行われるよう指導している"@ja.
+<< kg:id_1 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "まずは事業実施想定区域に隣接する集落の住民に対する説明会の開催を優先的に行う"@ja.
+<< kg:id_1 prop:countermeasure kg:id_33 >>
+    prop:text-txt_contents "今年の秋から風況調査を実施する予定"@ja.
+<< kg:id_1 prop:countermeasure kg:id_34 >>
+    prop:text-txt_contents "年末から年明け頃に環境影響評価方法書の縦覧が予定"@ja.
+<< kg:id_1 prop:countermeasure kg:id_35 >>
+    prop:text-txt_contents "その後、事業者において環境影響評価に係る調査、予測、評価が行われ"@ja.
+<< kg:id_1 prop:countermeasure kg:id_36 >>
+    prop:text-txt_contents "その結果が環境影響評価準備書として作成をされて"@ja.
+<< kg:id_1 prop:countermeasure kg:id_37 >>
+    prop:text-txt_contents "最終的に環境影響評価書にまとめ"@ja.
+<< kg:id_1 prop:countermeasure kg:id_38 >>
+    prop:text-txt_contents "森林法に基づく林地開発許可など、各種関係法令等に基づく許認可の手続も必要"@ja.
+<< kg:id_28 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "それぞれの専門分野の審議会に御意見を伺った上で市の意見として取りまとめして県に提出をする"@ja.
+<< kg:id_28 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "市としては、重要な場所でもあるので、まず地域の説明会を先行していただくようにお願いした"@ja.
+<< kg:id_28 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "順次開催していくように、これはお願いをしているところでございます"@ja.
+<< kg:id_28 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "それぞれの場面において必要な専門家の方々、市民の方々に御意見を伺いながら、市としての意見を提出してまいりたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "私としては、この段階で事業者から事業の取下げをしてほしい"@ja.
+}

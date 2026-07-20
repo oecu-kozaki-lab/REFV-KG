@@ -1,0 +1,400 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00132> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "遊佐沖洋上風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "平成30年の県検討会議部会の設置"@ja.
+kg:id_2 rdf:type cls:c_3221.
+cls:c_3221 rdfs:label "会議体設置"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "2050年カーボンニュートラル実現に向けた政府方針"@ja.
+kg:id_3 rdf:type cls:c_3222.
+cls:c_3222 rdfs:label "政府方針"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "2030年まで46％の二酸化炭素削減目標"@ja.
+kg:id_4 rdf:type cls:c_761.
+cls:c_761 rdfs:label "削減目標"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "再エネの主力電源化に向けた切り札という位置づけ"@ja.
+kg:id_5 rdf:type cls:c_3223.
+cls:c_3223 rdfs:label "政策位置づけ"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "庄内沖の風況のよさ"@ja.
+kg:id_6 rdf:type cls:c_3053.
+cls:c_3053 rdfs:label "立地適性"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "再エネ海域利用法に基づく有望な区域への選定"@ja.
+kg:id_7 rdf:type cls:c_2860.
+cls:c_2860 rdfs:label "区域選定"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "山形県の再生可能エネルギー主力電源化と地域活性化のエネルギー戦略"@ja.
+kg:id_8 rdf:type cls:c_1993.
+cls:c_1993 rdfs:label "エネルギー戦略"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "持続可能性への疑問"@ja.
+kg:id_9 rdf:type cls:c_3224.
+cls:c_3224 rdfs:label "持続性懸念"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "技術的対応への不安"@ja.
+kg:id_10 rdf:type cls:c_3225.
+cls:c_3225 rdfs:label "技術不安"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "実用化のめどが立っていない新技術を前提にする無責任さ"@ja.
+kg:id_11 rdf:type cls:c_3226.
+cls:c_3226 rdfs:label "政策批判"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "地域外や外国の資本による利益流出の懸念"@ja.
+kg:id_12 rdf:type cls:c_3227.
+cls:c_3227 rdfs:label "利益流出懸念"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "雇用創出効果"@ja.
+kg:id_13 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "酒田港の基地港湾化による地域活性化"@ja.
+kg:id_14 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "漁業への影響懸念"@ja.
+kg:id_15 rdf:type cls:c_3228.
+cls:c_3228 rdfs:label "漁業影響懸念"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "サケなど遡河性魚種への影響懸念"@ja.
+kg:id_16 rdf:type cls:c_2296.
+cls:c_2296 rdfs:label "生態影響懸念"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "ジオパークへの悪影響への疑問"@ja.
+kg:id_17 rdf:type cls:c_3229.
+cls:c_3229 rdfs:label "景観影響懸念"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "世界ジオパーク認定"@ja.
+kg:id_18 rdf:type cls:c_3230.
+cls:c_3230 rdfs:label "認定制度"@ja.
+kg:id_19 rdfs:label "風車を理由に認定されないことはないという認識"@ja.
+kg:id_19 rdf:type cls:c_3231.
+cls:c_3231 rdfs:label "認定支障なし"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "町民の意見対立の深まり"@ja.
+kg:id_20 rdf:type cls:c_2612.
+cls:c_2612 rdfs:label "意見対立"@ja.
+kg:id_1 prop:effect kg:id_20.
+kg:id_21 rdfs:label "風車の設置基準ガイドラインの作成と公開を県に求める"@ja.
+kg:id_21 rdf:type cls:c_3232.
+cls:c_3232 rdfs:label "基準策定要求"@ja.
+kg:id_1 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "予防管理原則の徹底を公募選定事業者に求める"@ja.
+kg:id_22 rdf:type cls:c_3233.
+cls:c_3233 rdfs:label "予防管理要求"@ja.
+kg:id_1 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "協定の締結を求める"@ja.
+kg:id_23 rdf:type cls:c_3234.
+cls:c_3234 rdfs:label "協定締結要求"@ja.
+kg:id_1 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "住民への丁寧な説明を国県事業者に求める"@ja.
+kg:id_24 rdf:type cls:c_2800.
+cls:c_2800 rdfs:label "説明要求"@ja.
+kg:id_1 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "サケなど遡河性魚種の調査を行う"@ja.
+kg:id_25 rdf:type cls:c_2292.
+cls:c_2292 rdfs:label "生態調査"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "漁業者との協調共生を図る"@ja.
+kg:id_26 rdf:type cls:c_3235.
+cls:c_3235 rdfs:label "漁業共生"@ja.
+kg:id_1 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "サケの回遊域とされる沿岸近くを避けた設置を求める"@ja.
+kg:id_27 rdf:type cls:c_3236.
+cls:c_3236 rdfs:label "設置回避要求"@ja.
+kg:id_1 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "吹浦地区を対象海域に入れないよう県に申し入れる"@ja.
+kg:id_28 rdf:type cls:c_3237.
+cls:c_3237 rdfs:label "区域除外要求"@ja.
+kg:id_1 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "町民の疑問不安解消のため説明会開催を国県事業者に求める"@ja.
+kg:id_29 rdf:type cls:c_3238.
+cls:c_3238 rdfs:label "説明会要求"@ja.
+kg:id_1 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "法定協議会を開催回数や期間にこだわらず継続する"@ja.
+kg:id_30 rdf:type cls:c_237.
+cls:c_237 rdfs:label "協議継続"@ja.
+kg:id_1 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "事業者選定後も法定協議会を継続する"@ja.
+kg:id_31 rdf:type cls:c_237.
+kg:id_1 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "遊佐町"@ja.
+kg:id_32 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_33 rdfs:label "カーボンニュートラル宣言をしていく"@ja.
+kg:id_33 rdf:type cls:c_3239.
+cls:c_3239 rdfs:label "宣言"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "田んぼや森林のCO2吸収量を見える化する"@ja.
+kg:id_34 rdf:type cls:c_3240.
+cls:c_3240 rdfs:label "見える化"@ja.
+kg:id_32 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "木を植え緑の保全を進める"@ja.
+kg:id_35 rdf:type cls:c_475.
+cls:c_475 rdfs:label "環境保全"@ja.
+kg:id_32 prop:countermeasure kg:id_35.
+kg:st_1 rdfs:label "町長"@ja.
+kg:st_1 rdf:type cls:st_85.
+cls:st_85 rdfs:label "自治体代表"@ja.
+kg:op_1 prop:content "政府方針に沿い事業推進は必要との認識を示す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "2030年目標達成には現段階で洋上風力が重要とみる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "洋上風力は主力電源化の切り札との位置づけを踏まえる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "風況のよさから遊佐町沖は適地と受け止める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "有望な区域選定を受け法定協議会に臨んだ"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "県のエネルギー戦略に基づく取組と説明する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "質問議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_7 prop:content "耐用年数と占用期間から持続可能とは言えないと疑問視する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "台風や地震など日本特有の環境に対応できるか不安を示す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "未確立技術を前提にした政策全体を無責任と批判する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "域外資本主導では利益が地域外へ流出すると懸念する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "県内全体で2800人の雇用創出が見込まれると説明する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "基地港湾化を通じた地域活性化を期待する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "県漁協など法定協議会委員"@ja.
+kg:st_3 rdf:type cls:st_61.
+cls:st_61 rdfs:label "漁業関係者"@ja.
+kg:op_13 prop:content "地域漁業との協調と漁業影響への丁寧な協議を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "工事や振動でサケの稚魚や回帰に悪影響が出ると懸念する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "洋上風力が回る海域で世界ジオパークを目指せるのか疑問を示す"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "副町長"@ja.
+kg:st_4 rdf:type cls:st_85.
+kg:op_16 prop:content "風車は世界ジオパーク認定の妨げにならないと説明する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "洋上風力を巡り町内の意見対立が深まっているとみる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "県管理海域であるため県による基準設定を求めるべきとする"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "リスクを事後対応でなく事前に防ぐ姿勢を前面に出したいと述べる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地域リスク最小化のため協定が必要と考える"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "町民への説明は基本方針に明確に位置づけるべきとみる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "サケなどの調査を行い影響を丁寧に検討すべきと求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "漁業者の経済的リスクを取り除くことを重視する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "サケの通る沿岸域はできれば避けるべきと述べる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "漁港や海水浴場など利用実態がある吹浦地区は避けるべきとする"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "あらゆる機会を通じて説明会開催を求めていく考えを示す"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "性急に結論を出さず継続的に議論すべきとする"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "選定後も要望や課題を協議し続ける必要があるとする"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "宣言だけでなく見える化と数値目標が必要と考える"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "まず現状を見える化し数値を出すべきと述べる"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "町全体で植林と緑の保全を推奨したいと述べる"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "平成30年、県検討会議部会が設置されてこの事業は始まりました。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "政府では「2050年カーボンニュートラル」の実現のため、当面2030年まで46％の二酸化炭素削減を目指しています。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "政府では「2050年カーボンニュートラル」の実現のため、当面2030年まで46％の二酸化炭素削減を目指しています。"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "大規模発電が可能となる洋上風力発電は、再エネの主力電源化に向けた切り札と位置づけられ"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "庄内沖もその風況のよさから遊佐町沖についても昨年９月に「再エネ海域利用法」に基づく「有望な区域」に整備されたところであります。"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "遊佐町沖についても昨年９月に「再エネ海域利用法」に基づく「有望な区域」に整備されたところであります。"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "山形県が進める洋上風力発電促進導入に取り組む背景には、再生可能エネルギーの主力電源化による地球温暖化対策とエネルギー自給率の向上並びに県内産業の振興及び地域活性化を図る県のエネルギー戦略があり"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "この事業はＳＤＧｓ的に見るとどうなのだろうということであります。風車の耐用年数は20年、海域の占用期間は30年という事業を、こういう事業を持続可能性があると言えるのだろうかというその疑問であります。"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "欧州等の立地状況と比べて冬季の季節風、台風、地震など環境の差が大きいが、技術的に対応できるのだろうか"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "私が思うのは実用化のめども立っていない新技術を前提にする無責任というのがあります。"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地域外や外国の資本による乱開発を防止することは、利益が域外に流出することを防ぎ"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "30年の長期に見た場合に、建設時の建設・製造、稼働後の保守メンテナンスに関する事業、最終的に撤去する際の事業など、県内全体で2,800人の雇用創出効果があると見込まれた"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "それについては、当然酒田港の基地港湾化による地域の活性化というものを想定しているものと受け止めております。"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "法定協議会では国や県、町、そして県漁協など12委員が参加し、開催され、意見や質疑の時間において地域漁業との協調・共生についてや、漁業への影響懸念があることから"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "果たしてサケが、まず稚魚が海に出られるだろうかと。また、戻ってこれるだろうか。"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "こんな洋上風力がくるくる回っているようなところで、それは海なわけですけれども、そういうところでジオパークなんて言えるのだろうかという疑問が最近感じております。"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "その風車を理由にして世界ジオパークに認定にならないということはないということでしたので、私も安心しております"@ja.
+<< kg:id_1 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "今その洋上風力発電については、町内様々な意見があります。部分的にかもしれませんが、いわゆるその意見対立がちょっと深まっているという部分を見受ける"@ja.
+<< kg:id_1 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "風車の騒音、影の影響など様々な課題をクリアするための風車の設置基準（ガイドライン）の作成と公開を県に求めたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "あらかじめ防ぐという考えの下、予防管理原則の徹底を公募選定事業者に求めたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "予防管理原則の徹底、協定の締結及び住民への丁寧な説明など「基本方針」について申し述べさせていただいた"@ja.
+<< kg:id_1 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "議会より議決をいただいた過疎地域持続的発展計画にある住民への丁寧な説明を国、県、公募参加意向のある事業者に求めたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "サケなどの遡河性魚種の調査お願い等、今後も丁寧な協議をしていただきたいとの意見が出されております。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "地域漁業との協調・共生についてや、漁業への影響懸念があることから"@ja.
+<< kg:id_1 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "サケは回遊するちっちゃいときに沿岸を通るのだという話が伝えられてきております。ということは１キロ、２キロ以上、２キロまでより外側に設置をしていただくという"@ja.
+<< kg:id_1 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "吹浦地区には地域を入れないでくださいということは、県に対して再三申し上げておりました。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "今後ともあらゆる機会を通し、町民の疑問、不安が解消されるよう説明会の開催等山形県や国、事業者に求めていきたいと考えております。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "遊佐沖については開催回数、期間にこだわることなく議論していくことを確認をしております。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "議論が決まって事業者が選定してからも、法定協議会はしっかり続いていくのだという確認も行われております。"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "遊佐町においても持続可能な未来づくりと地球温暖化防止に向け、カーボンニュートルの宣言をしていきたいと考えております"@ja.
+<< kg:id_32 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "やっぱり見える化をしっかりして、数値を出していこうではないかということであります。"@ja.
+<< kg:id_32 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "町としても、やっぱり木を植えるということについてもっともっと町全体で推奨しながら、そしてやっぱり緑の保全を"@ja.
+}

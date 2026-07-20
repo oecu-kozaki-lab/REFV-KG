@@ -1,0 +1,373 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00188> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "（仮称）ＪＲＥ加茂風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "ラムサール条約登録湿地に近傍していること"@ja.
+kg:id_2 rdf:type cls:c_4250.
+cls:c_4250 rdfs:label "湿地近接"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "景観への影響"@ja.
+kg:id_3 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "クマタカなどの猛禽類の生息・営巣への影響懸念"@ja.
+kg:id_4 rdf:type cls:c_643.
+cls:c_643 rdfs:label "鳥類影響"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "渡り鳥や鳥類への影響懸念"@ja.
+kg:id_5 rdf:type cls:c_643.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "バードストライクへの影響懸念"@ja.
+kg:id_6 rdf:type cls:c_643.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "鳥の営巣や餌場への影響懸念"@ja.
+kg:id_7 rdf:type cls:c_643.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "複数の風力発電事業の集中による累積的影響懸念"@ja.
+kg:id_8 rdf:type cls:c_4251.
+cls:c_4251 rdfs:label "累積影響"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "環境アセスメント手続開始６か月前の届出が守られていなかったこと"@ja.
+kg:id_9 rdf:type cls:c_744.
+cls:c_744 rdfs:label "手続不備"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "ラムサール条約登録湿地への影響"@ja.
+kg:id_10 rdf:type cls:c_4252.
+cls:c_4252 rdfs:label "湿地影響"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "自然環境への影響"@ja.
+kg:id_11 rdf:type cls:c_25.
+cls:c_25 rdfs:label "自然環境影響"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_1 prop:effect kg:id_3.
+kg:id_12 rdfs:label "地域住民の夢を打ち砕くこと"@ja.
+kg:id_12 rdf:type cls:c_4253.
+cls:c_4253 rdfs:label "住民失望"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "事業者の負担増加"@ja.
+kg:id_13 rdf:type cls:c_4254.
+cls:c_4254 rdfs:label "負担増加"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "地域との混乱"@ja.
+kg:id_14 rdf:type cls:c_4255.
+cls:c_4255 rdfs:label "地域混乱"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "事業者に対して中止を求める"@ja.
+kg:id_15 rdf:type cls:c_4256.
+cls:c_4256 rdfs:label "中止要求"@ja.
+kg:id_1 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "国や県や専門家と協議し慎重に検討する"@ja.
+kg:id_16 rdf:type cls:c_4257.
+cls:c_4257 rdfs:label "協議検討"@ja.
+kg:id_1 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "地元の自然保護団体の意見も十分に確認するなど情報を集める"@ja.
+kg:id_17 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_1 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "地域住民への説明会に環境課職員が同席し意見把握に努める"@ja.
+kg:id_18 rdf:type cls:c_4258.
+cls:c_4258 rdfs:label "住民意見把握"@ja.
+kg:id_1 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "ラムサール条約登録湿地をガイドラインに明記することを検討する"@ja.
+kg:id_19 rdf:type cls:c_4259.
+cls:c_4259 rdfs:label "指針明記"@ja.
+kg:id_1 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "調査の継続を求める"@ja.
+kg:id_20 rdf:type cls:c_2831.
+cls:c_2831 rdfs:label "調査継続"@ja.
+kg:id_1 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "事業を進めるなら十分な調査を行い環境保全に配慮する"@ja.
+kg:id_21 rdf:type cls:c_736.
+cls:c_736 rdfs:label "環境調査"@ja.
+kg:id_1 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "法アセス等の手続の中で幅広い意見をいただき地元住民に丁寧に説明する"@ja.
+kg:id_22 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_1 prop:countermeasure kg:id_22.
+kg:st_1 rdfs:label "尾形昌彦議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "調査結果を踏まえておらず具体性に欠け納得できない"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "鶴岡市民部長"@ja.
+kg:st_2 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_2 prop:content "湿地近傍で鳥類や生態系への影響が懸念されるため中止申入れに至った"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "皆川治市長"@ja.
+kg:st_3 rdf:type cls:st_4.
+kg:op_3 prop:content "重要な生態系のため事前に慎重に判断する必要がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "景観部分の基準が不明確で判断根拠が分かりにくい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "良好な景観を形成する区域に相当すると判断した"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "猛禽類の保護の必要性について助言を受け懸念した"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "調査もない中で影響を語るのはおかしい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "鳥類への影響が強く懸念されると説明した"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "環境省野生生物課担当"@ja.
+kg:st_4 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_9 prop:content "事業を進めるなら鳥類の生息状況への影響を適切に評価すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:op_10 prop:content "バードストライクの懸念を踏まえ中止判断した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "営巣や餌場への影響が強く懸念されると説明した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "環境保全に配慮した評価が重要とした"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "飛来ルートや餌場への移動への累積的影響を懸念した"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "一定エリアに複数事業が集中する累積的影響を重く見た"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "ガイドライン遵守を指摘した"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "届出日の扱いを含め市の対応に問題があった可能性がある"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "国際的に価値のある湿地への影響が強く懸念される"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "ラムサール登録湿地近傍での整備は疑問がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "自然環境への影響が懸念される"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "自然環境や生態系の保護保全を優先した"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "良好な景観を形成する区域への影響を懸念した"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "景観基準が曖昧なまま影響を理由にしている"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "請願者である加茂地区の住民"@ja.
+kg:st_5 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_23 prop:content "条件が許せば事業を進めてほしい地域住民の夢が打ち砕かれた"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "アセス手続が進むほど事業者の負担が大きくなる前提で判断されたと指摘した"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "ガイドラインに明確に示していないことが混乱の元凶だ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "予防的措置の観点から手続開始前に中止を求めた"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "中止申入れは正しい判断とはいえない"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "国県専門家の助言を受けながら慎重に検討した"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "環境省野生生物課"@ja.
+kg:st_6 rdf:type cls:st_33.
+kg:op_29 prop:content "自然保護団体の意見確認など情報収集が必要と助言した"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "説明会への同席で住民意見の把握に努めた"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "行政が直接住民の声を拾う主体的努力が足りない"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "今回の事案を踏まえガイドライン明記を含め検討したい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:st_7 rdfs:label "加茂地区の住民"@ja.
+kg:st_7 rdf:type cls:st_5.
+kg:op_33 prop:content "中止申入れの撤回と調査継続を求める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_7.
+kg:op_34 prop:content "地域住民の思いや要望を踏まえ調査を前提に方向性を判断すべき"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "進めるなら適切な環境評価と環境保全配慮が重要"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "環境省見解は中止ではなく十分な調査を求めるものと理解する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:st_8 rdfs:label "山形県"@ja.
+kg:st_8 rdf:type cls:st_33.
+kg:op_37 prop:content "進めるなら調査と住民への丁寧な説明が必要との趣旨を示した"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_8.
+kg:op_38 prop:content "県も中止ではなく調査と説明を求めていると受け止める"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "市が中止を申し入れた理由としては大きく２点、ラムサール条約登録湿地に近いことによる影響、景観への影響が挙げられています"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "市が中止を申し入れた理由としては大きく２点、ラムサール条約登録湿地に近いことによる影響、景観への影響が挙げられています"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "当該事業予定地周辺には絶滅危惧種１Ｂ類のクマタカなどの猛禽類の生息・営巣地が確認されており、保護の必要性などについて助言をいただいております"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "ラムサール条約登録湿地大山上池・下池や渡り鳥や猛禽類など鳥類への影響"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "国際的に価値のあるラムサール条約登録湿地が近傍しており、バードストライクや鳥の営巣、餌場などへの影響が強く懸念されること"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "バードストライクや鳥の営巣、餌場などへの影響が強く懸念されること"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "一定の地域に複数の風力発電事業が集中する場合には飛来ルートや餌場への移動などについて累積的な影響が懸念されること"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "ガイドラインに規定しております環境アセスメント手続開始６か月前に届出書を提出することが守られておらず、本市ガイドラインを遵守するよう指摘しております"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "国際的に価値のあるラムサール条約登録湿地が近傍しており"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "自然環境・景観への影響が懸念されると考えております"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "自然環境・景観への影響が懸念されると考えております"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今回の中止申入れは調査の上で条件が許せば風力発電事業を行ってほしいと考える地域住民の夢を打ち砕くものとなりました"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "これから３月にこの環境影響評価方法書が出てくると伺っており、そこが進んでいくとやはり事業者側にとっても非常に負担になってくる"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "やはりそのガイドラインに明確に示していないということが今回、この混乱を招いている元凶だと思います"@ja.
+<< kg:id_1 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "このため、予防的措置の観点も含め、３月上旬に予定されておりました環境影響評価法の手続開始前の２月１日に、事業者に対して中止を求めたものでございます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "本市といたしましては、当該事業計画の事前相談を受けて以降、国や県との協議や自然環境に詳しい方々にも相談し、助言をいただきながら慎重に検討してまいりました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "地元の自然保護団体の意見も十分に確認するなど情報を集める必要があると助言をいただきました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "市のガイドラインに基づき事業者が開催する地域住民への説明会に環境課の職員が同席するなど、住民の意見の把握に努めてまいりました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "このたびの事案も踏まえまして、ラムサール条約の登録湿地につきましては、ガイドラインに明記することも含めましてしっかり検討していきたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "加茂地区の住民から（仮称）ＪＲＥ加茂風力発電事業に対する鶴岡市の中止申し入れの撤回と調査の継続を求める請願が出されました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "当該事業が進められるのであれば鳥類の生息状況への影響など、事業者において事業による環境評価を適切に評価し、その結果を踏まえて環境保全について配慮がなされることが重要と考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_37;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "今後は、法アセス等の手続の中で幅広い意見をいただくなど情報を共有して地元住民に丁寧な説明をしていただきたい"@ja.
+}

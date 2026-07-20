@@ -1,0 +1,462 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00155> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "年間売電収入の見通し"@ja.
+kg:id_1 rdf:type cls:c_1068.
+cls:c_1068 rdfs:label "売電収入"@ja.
+kg:id_2 rdfs:label "運転初年度で予測の不確実性の程度が大きいこと"@ja.
+kg:id_2 rdf:type cls:c_3699.
+cls:c_3699 rdfs:label "予測不確実性"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "6月から9月の発電量の大幅低下"@ja.
+kg:id_3 rdf:type cls:c_1252.
+cls:c_1252 rdfs:label "発電量低下"@ja.
+kg:id_4 rdfs:label "季節風の風況が悪いこと"@ja.
+kg:id_4 rdf:type cls:c_3700.
+cls:c_3700 rdfs:label "風況悪化"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "風力発電事業収益の還元の慎重判断"@ja.
+kg:id_5 rdf:type cls:c_3701.
+cls:c_3701 rdfs:label "還元慎重判断"@ja.
+kg:id_6 rdfs:label "自然条件や落雷などで事業収益が変動する可能性"@ja.
+kg:id_6 rdf:type cls:c_3702.
+cls:c_3702 rdfs:label "収益変動可能性"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "スポーツ施設の修繕や維持管理が追いつかない状況"@ja.
+kg:id_7 rdf:type cls:c_3703.
+cls:c_3703 rdfs:label "施設管理停滞"@ja.
+kg:id_8 rdfs:label "建設年度が同時期に集中していること"@ja.
+kg:id_8 rdf:type cls:c_1256.
+cls:c_1256 rdfs:label "建設時期集中"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "施設改修時期の集中"@ja.
+kg:id_9 rdf:type cls:c_3704.
+cls:c_3704 rdfs:label "改修時期集中"@ja.
+kg:id_10 rdfs:label "1990年代にスポーツ施設の建設時期が集中したこと"@ja.
+kg:id_10 rdf:type cls:c_1256.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "光ケ丘野球場の雨漏り"@ja.
+kg:id_11 rdf:type cls:c_1261.
+cls:c_1261 rdfs:label "雨漏り"@ja.
+kg:id_12 rdfs:label "浸透箇所が分からず修繕が進まないこと"@ja.
+kg:id_12 rdf:type cls:c_3705.
+cls:c_3705 rdfs:label "修繕停滞"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "光ケ丘野球場の浸水"@ja.
+kg:id_13 rdf:type cls:c_1262.
+cls:c_1262 rdfs:label "浸水"@ja.
+kg:id_14 rdfs:label "施設全体の排水が不十分で暗渠が老朽化していること"@ja.
+kg:id_14 rdf:type cls:c_3706.
+cls:c_3706 rdfs:label "排水不良"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "光ケ丘野球場外野の危険性"@ja.
+kg:id_15 rdf:type cls:c_3707.
+cls:c_3707 rdfs:label "危険状態"@ja.
+kg:id_16 rdfs:label "外野の芝に雑草が混在し芝と雑草の伸びが違うこと"@ja.
+kg:id_16 rdf:type cls:c_3708.
+cls:c_3708 rdfs:label "雑草混在"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "光ケ丘野球場内野の砂漠化"@ja.
+kg:id_17 rdf:type cls:c_3709.
+cls:c_3709 rdfs:label "内野劣化"@ja.
+kg:id_18 rdfs:label "浸水のたびにダイヤモンドに砂をまくこと"@ja.
+kg:id_18 rdf:type cls:c_3710.
+cls:c_3710 rdfs:label "砂散布"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "光ケ丘野球場で大会開催をためらう状況"@ja.
+kg:id_19 rdf:type cls:c_3711.
+cls:c_3711 rdfs:label "大会開催停滞"@ja.
+kg:id_20 rdfs:label "熱中症対策に必要なクーラー付きの休養室が不足していること"@ja.
+kg:id_20 rdf:type cls:c_3712.
+cls:c_3712 rdfs:label "休養室不足"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "熊の目撃増加感"@ja.
+kg:id_21 rdf:type cls:c_3713.
+cls:c_3713 rdfs:label "熊目撃増加"@ja.
+kg:id_22 rdfs:label "孟宗竹が不良で熊がより民家近くまで食べに来ていること"@ja.
+kg:id_22 rdf:type cls:c_1271.
+cls:c_1271 rdfs:label "餌不足"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "地元住民の不安感と危機感の強まり"@ja.
+kg:id_23 rdf:type cls:c_63.
+cls:c_63 rdfs:label "住民不安"@ja.
+kg:id_24 rdfs:label "熊が人家近く30メートルから50メートル以内に現れていること"@ja.
+kg:id_24 rdf:type cls:c_3714.
+cls:c_3714 rdfs:label "熊接近"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "熊と人とのすみ分け困難"@ja.
+kg:id_25 rdf:type cls:c_3715.
+cls:c_3715 rdfs:label "すみ分け困難"@ja.
+kg:id_26 rdfs:label "餌場があること"@ja.
+kg:id_26 rdf:type cls:c_3716.
+cls:c_3716 rdfs:label "餌場"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "年間売電収入の方向性不明"@ja.
+kg:id_27 rdf:type cls:c_3717.
+cls:c_3717 rdfs:label "方向性不明"@ja.
+kg:id_28 rdfs:label "現時点で年間売電収入の見通しを算出できない"@ja.
+kg:id_28 rdf:type cls:c_3718.
+cls:c_3718 rdfs:label "算出不能"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "季節風の風況悪化"@ja.
+kg:id_29 rdf:type cls:c_3700.
+kg:id_30 rdfs:label "発電量が大幅に低下する見込み"@ja.
+kg:id_30 rdf:type cls:c_1252.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "ロッカールームに青いバケツが三、四個置かれている"@ja.
+kg:id_31 rdf:type cls:c_3719.
+cls:c_3719 rdfs:label "応急対応"@ja.
+kg:id_11 prop:effect kg:id_31.
+kg:id_32 rdfs:label "光ケ丘野球場の排水不良"@ja.
+kg:id_32 rdf:type cls:c_3706.
+kg:id_33 rdfs:label "事務室に浸水の跡が明確に残っている"@ja.
+kg:id_33 rdf:type cls:c_3720.
+cls:c_3720 rdfs:label "浸水痕"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "光ケ丘野球場の環境悪化"@ja.
+kg:id_34 rdf:type cls:c_3426.
+cls:c_3426 rdfs:label "環境悪化"@ja.
+kg:id_35 rdfs:label "建物の中がカビ臭い状況にある"@ja.
+kg:id_35 rdf:type cls:c_3721.
+cls:c_3721 rdfs:label "カビ臭"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "光ケ丘野球場の老朽化"@ja.
+kg:id_36 rdf:type cls:c_1016.
+cls:c_1016 rdfs:label "施設老朽化"@ja.
+kg:id_37 rdfs:label "グラウンドの土や野外照明施設が劣化し外野芝に雑草が多い"@ja.
+kg:id_37 rdf:type cls:c_914.
+cls:c_914 rdfs:label "施設劣化"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "光ケ丘野球場の冷房不足"@ja.
+kg:id_38 rdf:type cls:c_3722.
+cls:c_3722 rdfs:label "冷房不足"@ja.
+kg:id_39 rdfs:label "熱中症で倒れた人を休ませる場所がない"@ja.
+kg:id_39 rdf:type cls:c_3723.
+cls:c_3723 rdfs:label "休養場所不足"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "光ケ丘野球場の施設不備"@ja.
+kg:id_40 rdf:type cls:c_3724.
+cls:c_3724 rdfs:label "施設不備"@ja.
+kg:id_41 rdfs:label "高野連が大会スケジュールを入れるのに二の足を踏んでいる"@ja.
+kg:id_41 rdf:type cls:c_3711.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "熊の出没"@ja.
+kg:id_42 rdf:type cls:c_3725.
+cls:c_3725 rdfs:label "熊出没"@ja.
+kg:id_43 rdfs:label "乳児を含む家族が地域を散歩することに強い不安を感じる"@ja.
+kg:id_43 rdf:type cls:c_1274.
+cls:c_1274 rdfs:label "生活不安"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "孟宗竹が47本ほど食べられる農的被害が出る"@ja.
+kg:id_44 rdf:type cls:c_1275.
+cls:c_1275 rdfs:label "農作物被害"@ja.
+kg:id_42 prop:effect kg:id_44.
+kg:id_45 rdfs:label "人家近くで熊と遭遇する人が増えている"@ja.
+kg:id_45 rdf:type cls:c_3726.
+cls:c_3726 rdfs:label "遭遇増加"@ja.
+kg:id_42 prop:effect kg:id_45.
+kg:id_46 rdfs:label "風力発電事業"@ja.
+kg:id_46 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_47 rdfs:label "風力発電事業地域未来創造基金に積み立てて地域振興事業等に充てる"@ja.
+kg:id_47 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "基金積立"@ja.
+kg:id_46 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "今後の予算編成の際に具体的な使途を決定する"@ja.
+kg:id_48 rdf:type cls:c_3727.
+cls:c_3727 rdfs:label "使途決定"@ja.
+kg:id_46 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "広報などで事業の経過や今後の展開を情報提供する"@ja.
+kg:id_49 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_46 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "スポーツ施設の老朽化"@ja.
+kg:id_50 rdf:type cls:c_1016.
+kg:id_51 rdfs:label "財政調整基金を活用し早急に集中的に対応する"@ja.
+kg:id_51 rdf:type cls:c_1258.
+cls:c_1258 rdfs:label "基金活用"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "収穫されない柿を除去して餌場をなくす"@ja.
+kg:id_52 rdf:type cls:c_1276.
+cls:c_1276 rdfs:label "餌場除去"@ja.
+kg:id_42 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "除去した柿を利用して渋柿をつくる活動を研究する"@ja.
+kg:id_53 rdf:type cls:c_3728.
+cls:c_3728 rdfs:label "農産活用"@ja.
+kg:id_42 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "緩衝帯を事業化して山と人里の間につくる"@ja.
+kg:id_54 rdf:type cls:c_1277.
+cls:c_1277 rdfs:label "緩衝帯整備"@ja.
+kg:id_42 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "山と人里の境界に火や煙を用いた施設を設け熊に人里を認識させる"@ja.
+kg:id_55 rdf:type cls:c_3729.
+cls:c_3729 rdfs:label "境界施設"@ja.
+kg:id_42 prop:countermeasure kg:id_55.
+kg:st_1 rdfs:label "後藤仁議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "1年間模様を見るのではなく今年度から還元事業を実施すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域創生部長 佐々木好信"@ja.
+kg:st_2 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_2 prop:content "慌てて還元するより還元の在り方をじっくり考えるべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "老朽化による施設改修は時期が集中し平準化は難しい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "財政調整基金を活用し早急に集中的に対応すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "野球場管理の人"@ja.
+kg:st_3 rdf:type cls:st_94.
+cls:st_94 rdfs:label "施設管理者"@ja.
+kg:op_5 prop:content "雨漏りは以前から続き直そうとしても浸透箇所が分からない"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "浸水や排水不良を長く放置すべきではない"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "公認審判員で活躍している方"@ja.
+kg:st_4 rdf:type cls:st_95.
+cls:st_95 rdfs:label "審判員"@ja.
+kg:op_7 prop:content "外野の芝に雑草が混在し野球をしていて危ない"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "排水不良が内野の状態悪化を招いている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "高野連"@ja.
+kg:st_5 rdf:type cls:st_46.
+cls:st_46 rdfs:label "競技団体"@ja.
+kg:op_9 prop:content "熱中症対策上休ませる場所が足りず大会日程を入れるのに二の足を踏む"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "地元の人"@ja.
+kg:st_6 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_10 prop:content "今年は孟宗竹が不良で熊が今までより人家近くまで来ている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_6.
+kg:op_11 prop:content "住民ごとの立場に寄り添った対応マニュアルが必要"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "熊と住民がすみ分けるには餌場をつくらないことが基本"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "施設の老朽化が目立ち早急な対応が必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "浸水被害が繰り返され施設環境が悪化している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "小学校スポ少の父兄の女性"@ja.
+kg:st_7 rdf:type cls:st_49.
+cls:st_49 rdfs:label "保護者"@ja.
+kg:op_15 prop:content "ベンチに入ってロッカールームの状況やカビ臭さに驚いた"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_7.
+kg:op_16 prop:content "自慢だった野球場が負のイメージになることを危惧する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "休養場所不足が大会運営上の支障になっている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "施設条件から大会開催判断をためらっている"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:st_8 rdfs:label "熊が裏山50メートルぐらいに出たと話した住民"@ja.
+kg:st_8 rdf:type cls:st_5.
+kg:op_19 prop:content "乳児がいる中で熊が近くに出る地域では安心して暮らせない"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "裏山近くの住民"@ja.
+kg:st_9 rdf:type cls:st_5.
+kg:op_20 prop:content "毎年のことだが孟宗竹を食べられる被害が出ている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_9.
+kg:op_21 prop:content "今までと違い人家近くでの遭遇が増え対応の見直しが必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "収益は基金に積み立て広く市民に還元する方針"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "収益が原資であることを踏まえ使途は今後決定する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "市民理解のため広報でしっかり情報提供する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "改修時期の集中に対し基金を活用して集中的に対応すべき"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:st_10 rdfs:label "地域おこし協力隊 内藤小容子さん"@ja.
+kg:st_10 rdf:type cls:st_96.
+cls:st_96 rdfs:label "地域協力員"@ja.
+kg:op_26 prop:content "収穫されない柿を除去し餌場をなくす活動を研究している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_10.
+kg:op_27 prop:content "除去した柿を活用する方法も研究している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_10.
+kg:op_28 prop:content "熊対策用として緩衝帯を整備する施策があってよい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "もみ殻焼却などで煙や火の臭いを出し境界を示す対策を検討してほしい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "運転初年度であることから予測の不確実性の程度が大きいということで、現時点では算出ができないという状況でございます"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "６月から９月までは季節風の風況が悪いということから、発電量が大幅に低下するだろうと見込んでございます"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "この風力発電事業につきましては、様々な自然の状況によって変化があったり、あるいは落雷とか、そういう自然の災害を受ける可能性が含まれている事業でございます"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "建設年度が同時期に集中し、施設を維持する中で修繕や維持管理など追いつかない状況ではないでしょうか"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "同時期に建設時期が集中していることから、老朽化による施設改修は時期が集中してしまう"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "これは、その雨漏りは今始まった話じゃないんだと。何とか直そうと思って、市のほうからもやっていただいているけれども、なかなかその浸透がどこからか分からない"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "施設全体の排水も不十分で、事務室には、昨年はここまで、一昨年の豪雨ではここまで浸水したという浸水の跡が明確に残っております。あと、非常に暗渠がもう老朽化していまして、先ほど言いましたとおり、大雨降るとみんな事務室だとかに水が入ってくる"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "外野の芝に雑草が非常に混在して、しっかり刈り取っているときは影響ないんだけれども、雑草ですので、油断をすると、芝と雑草の伸びが違いますので、非常に野球をしていて危ないと"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "そのことによって、常にダイヤモンドに砂をまくので、非常にダイヤモンド、内野ですね。内野のゾーンも砂漠化し始めている"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "高野連のほうからは、最近の高校野球も暑い中で試合をやりますので、熱中症対策が非常に重要になって、光ケ丘野球場にはクーラーが１部屋か、２部屋かな。事務室とアナウンス室だったかな。２つしか入っていないので、熱中症で２人、３人と倒れると、その人を休ませる場所もないんだと。だから、高野連としては、なかなか光ケ丘野球場で大会のスケジュールを入れるのに二の足を踏んでいる状況もある"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "今年の場合は、孟宗竹が不良なんだそうです。不良ですので、より近い民家近くまで熊が孟宗竹を食べに来ている"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "近年は熊が人家近く、30メートルから50メートル以内に熊が現れているという情報も多く、地元住民の不安感、危機感が強まっていると感じるところでございます"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "熊と住民、人間がすみ分けるには、餌場をつくらないことだと聞きました"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:text-txt_contents "現時点では算出ができないという状況でございます"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:text-txt_contents "発電量が大幅に低下するだろうと見込んでございます"@ja.
+<< kg:id_11 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "光ケ丘野球場のロッカールームには青いバケツが三、四個置かれ、雨漏りがしている箇所が多数見られる"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "事務室には、昨年はここまで、一昨年の豪雨ではここまで浸水したという浸水の跡が明確に残っております"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "建物の中もカビ臭い状況にあります"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "グラウンドの土や野外照明施設の劣化、外野の芝にも雑草が多くみられる"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "熱中症で２人、３人と倒れると、その人を休ませる場所もないんだと"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "高野連としては、なかなか光ケ丘野球場で大会のスケジュールを入れるのに二の足を踏んでいる状況もある"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "うちには乳児がいるんだと。そして、地域を散歩すると。そんな地域でいいのかと"@ja.
+<< kg:id_42 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "裏山すぐ、その家も30メートルぐらいと言っていましたけれども、孟宗竹を今年も47本ほど食べられた"@ja.
+<< kg:id_42 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "今までは遭遇していなかった人たちも人家近くで熊と遭遇し始めているというような状況もあると聞いておりました"@ja.
+<< kg:id_46 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "事業の収益につきましては、風力発電事業地域未来創造基金、こちらのほうに積立てをして、広く市民に還元できるようにと地域振興事業等に充てることとしております"@ja.
+<< kg:id_46 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "具体的な使途については未定でございますけれども、風力発電事業の収益が原資であるということを踏まえて、今後の予算編成の際に決定していきたい"@ja.
+<< kg:id_46 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "広報などでしっかりと情報提供させていただきながら、事業の経過、今後の展開などについて説明をさせていただければと思っている"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "この施設改修を平準化するのは、私は難しいため財政調整基金を活用し、早急に集中的に対応していくべきと考えます"@ja.
+<< kg:id_42 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "平田の東陽地区の地域おこし協力隊の内藤小容子さんが収穫されない柿の除去をして、餌場をなくし"@ja.
+<< kg:id_42 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "その柿を利用して渋柿をつくるという活動も昨年から研究しているようでございます"@ja.
+<< kg:id_42 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "熊対策用としての緩衝帯を事業化して、それをつくっていく。私はそんな施策もあっていいのかなと思います"@ja.
+<< kg:id_42 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "トーチカ的なものを山と人里の間に何か所かつくりまして、そこで火をおこす。農作業のためのもみ殻をその境界線周辺で焼却するような施設をつくって、やはり煙、火の臭いを察知させて、熊からここからは人里だよねというような対策というものは考えられないものでしょうか"@ja.
+}

@@ -1,0 +1,387 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00001> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "（仮称）伊達・千歳ウィンドファーム事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "イヌワシとクマタカの生息が確認されている地域で風力発電事業を遂行すること"@ja.
+kg:id_2 rdf:type cls:c_2.
+cls:c_2 rdfs:label "希少猛禽類生息地での事業実施"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "道南地域のイヌワシ個体群の絶滅"@ja.
+kg:id_3 rdf:type cls:c_3.
+cls:c_3 rdfs:label "猛禽類個体群の絶滅"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "重要野鳥生息地（IBA）の支笏・洞爺とA3エリアを含む区域で風車を建設すること"@ja.
+kg:id_4 rdf:type cls:c_4.
+cls:c_4 rdfs:label "重要野鳥生息地での風車建設"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "野鳥の生息への影響"@ja.
+kg:id_5 rdf:type cls:c_5.
+cls:c_5 rdfs:label "野鳥生息への影響"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "IBAおよび陸域版センシティビティマップのA3エリアを少なくとも除外する"@ja.
+kg:id_6 rdf:type cls:c_6.
+cls:c_6 rdfs:label "重要野鳥生息地の除外"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "自然度が高く重要な森林群落を広範囲に伐採すること"@ja.
+kg:id_7 rdf:type cls:c_7.
+cls:c_7 rdfs:label "重要森林の伐採"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "重要な植物群落と植物種への影響"@ja.
+kg:id_8 rdf:type cls:c_8.
+cls:c_8 rdfs:label "重要植物群落への影響"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "支笏洞爺国立公園の眺望への重大な影響"@ja.
+kg:id_9 rdf:type cls:c_9.
+cls:c_9 rdfs:label "景観への重大影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "計画段階環境配慮書段階で計画を中止する"@ja.
+kg:id_10 rdf:type cls:c_10.
+cls:c_10 rdfs:label "計画中止"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "（仮称）川崎ウィンドファーム事業"@ja.
+kg:id_11 rdf:type cls:c_1.
+kg:id_11 prop:cause kg:id_2.
+kg:id_12 rdfs:label "同地域のイヌワシ個体群の絶滅"@ja.
+kg:id_12 rdf:type cls:c_3.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "重要野鳥生息地（IBA）の蔵王・船形とA3エリアを含む区域で風車を建設すること"@ja.
+kg:id_13 rdf:type cls:c_4.
+kg:id_11 prop:cause kg:id_13.
+kg:id_11 prop:effect kg:id_5.
+kg:id_11 prop:countermeasure kg:id_6.
+kg:id_14 rdfs:label "自然度の高い森林群落を広範囲に伐採すること"@ja.
+kg:id_14 rdf:type cls:c_7.
+kg:id_11 prop:cause kg:id_14.
+kg:id_11 prop:effect kg:id_8.
+kg:id_15 rdfs:label "土砂災害リスクの増大"@ja.
+kg:id_15 rdf:type cls:c_11.
+cls:c_11 rdfs:label "土砂災害リスク増大"@ja.
+kg:id_11 prop:effect kg:id_15.
+kg:id_16 rdfs:label "事業計画を中止するか事業実施想定区域の抜本的な見直しを行う"@ja.
+kg:id_16 rdf:type cls:c_10.
+kg:id_11 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "（仮称）古平・仁木・余市ウィンドファーム事業"@ja.
+kg:id_17 rdf:type cls:c_1.
+kg:id_18 rdfs:label "自然度9と10のエリアで工事用道路新設と広範囲の土地改変および立木の伐採を行うこと"@ja.
+kg:id_18 rdf:type cls:c_7.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "自然林の連続性の喪失"@ja.
+kg:id_19 rdf:type cls:c_12.
+cls:c_12 rdfs:label "自然林連続性の喪失"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "余市鳥獣保護区および余市特別保護地区を事業実施想定範囲に含めること"@ja.
+kg:id_20 rdf:type cls:c_13.
+cls:c_13 rdfs:label "保護区域の事業対象化"@ja.
+kg:id_17 prop:cause kg:id_20.
+kg:id_21 rdfs:label "余市鳥獣保護区および余市特別保護地区を事業実施想定範囲から除外する"@ja.
+kg:id_21 rdf:type cls:c_14.
+cls:c_14 rdfs:label "保護区域の除外"@ja.
+kg:id_17 prop:countermeasure kg:id_21.
+kg:id_17 prop:countermeasure kg:id_16.
+kg:id_22 rdfs:label "（仮称）小樽・赤井川ウィンドファーム事業"@ja.
+kg:id_22 rdf:type cls:c_1.
+kg:id_23 rdfs:label "自然度9の森林で大規模な工事用道路新設と土地改変および立木の伐採を行うこと"@ja.
+kg:id_23 rdf:type cls:c_7.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "ノスリの渡り経路やオジロワシ繁殖・クマタカ生息可能性がある地域で風車を建設すること"@ja.
+kg:id_24 rdf:type cls:c_15.
+cls:c_15 rdfs:label "鳥類生息地での風車建設"@ja.
+kg:id_22 prop:cause kg:id_24.
+kg:id_25 rdfs:label "鳥類がバードストライクの危険に晒されること"@ja.
+kg:id_25 rdf:type cls:c_16.
+cls:c_16 rdfs:label "鳥類衝突リスク"@ja.
+kg:id_22 prop:effect kg:id_25.
+kg:id_26 rdfs:label "勝納川最上流部の水源涵養保安林の指定を解除し大規模な伐採を行うこと"@ja.
+kg:id_26 rdf:type cls:c_17.
+cls:c_17 rdfs:label "保安林解除と伐採"@ja.
+kg:id_22 prop:cause kg:id_26.
+kg:id_27 rdfs:label "奥沢水源地への影響"@ja.
+kg:id_27 rdf:type cls:c_18.
+cls:c_18 rdfs:label "水源への影響"@ja.
+kg:id_22 prop:effect kg:id_27.
+kg:id_28 rdfs:label "勝納川の氾濫リスクの増大"@ja.
+kg:id_28 rdf:type cls:c_19.
+cls:c_19 rdfs:label "氾濫リスク増大"@ja.
+kg:id_22 prop:effect kg:id_28.
+kg:id_22 prop:countermeasure kg:id_16.
+kg:id_29 rdfs:label "（仮称）夕張ウィンドファーム事業"@ja.
+kg:id_29 rdf:type cls:c_1.
+kg:id_30 rdfs:label "高さ100mを超える可能性が高い風力発電機を栗山町の田園景観地域に建設すること"@ja.
+kg:id_30 rdf:type cls:c_20.
+cls:c_20 rdfs:label "景観地域での風車建設"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "栗山町の田園景観への悪影響"@ja.
+kg:id_31 rdf:type cls:c_21.
+cls:c_21 rdfs:label "田園景観への悪影響"@ja.
+kg:id_29 prop:effect kg:id_31.
+kg:id_32 rdfs:label "栗山町景観計画の指針に最大限配慮して事業を実施する"@ja.
+kg:id_32 rdf:type cls:c_22.
+cls:c_22 rdfs:label "景観指針への配慮"@ja.
+kg:id_29 prop:countermeasure kg:id_32.
+kg:st_1 rdfs:label "公益財団法人日本自然保護協会"@ja.
+kg:st_1 rdf:type cls:st_1.
+cls:st_1 rdfs:label "自然保護団体"@ja.
+kg:op_1 prop:content "計画段階環境配慮書段階で計画を中止すべきである"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "イヌワシ保全の取り組みに逆行すると懸念する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "IBAとA3エリアは少なくとも除外すべきである"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "バードストライクによる影響を強く懸念する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "IBAとA3エリアの除外を求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "自然環境保全上行うべきではない"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "重要な森林群落への影響を懸念する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "国立公園への影響は回避又は十分に低減できない可能性が高い"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "生物多様性の喪失などの甚大な影響が予測されるため中止を求める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "事業計画を中止するか抜本的な見直しが必要である"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "イヌワシ保全の取り組みに逆行すると懸念する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "IBAとA3エリアは少なくとも除外すべきである"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "バードストライクによる生存への影響を懸念する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "バードストライク回避のため除外を求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "自然環境保全上行うべきではない"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "蔵王山の植物群落への影響を懸念する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "下流部の各渓流での土砂災害リスクを高めることを懸念する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "多大な影響が予測されるため中止または抜本的見直しが必要である"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "重要な森林を広範囲に開発する行為は行うべきではない"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "同地域の森林が失われることを懸念する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "自然保護上の問題が大きい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "鳥獣保護区と特別保護地区の除外を求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "多大な影響が予測されるため中止または抜本的見直しが必要である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "自然度の高い森林の広範囲な伐採は行うべきではない"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "同地域で事業を計画すべきではない"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "鳥類への衝突リスクを懸念する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "保安林を解除しての事業は行うべきではない"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "市民の水源への影響を懸念する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "氾濫リスクを高める可能性を懸念する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "多大な影響が予測されるため中止または抜本的見直しが必要である"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "栗山町の田園景観に悪影響を及ぼしてはならない"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "美しい田園景観への悪影響を懸念する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "景観計画の指針に最大限配慮すべきである"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "事業実施想定範囲では、「絶滅のおそれのある野生動植物の種の保存に関する法律」（種の保存法）において国内希少野生動植物種に指定されているイヌワシとクマタカの生息が確認されている。本事業の遂行は、生息が確認されている同地域のイヌワシの生息環境を脅かし、生息個体を発電施設への衝突事故の可能性にさらすことになり、道南地域のイヌワシ個体群の絶滅に繋がることが強く懸念される。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本事業の遂行は、生息が確認されている同地域のイヌワシの生息環境を脅かし、生息個体を発電施設への衝突事故の可能性にさらすことになり、道南地域のイヌワシ個体群の絶滅に繋がることが強く懸念される。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "事業実施想定範囲は（公財）日本野鳥の会が定めた重要野鳥生息地（IBA）の支笏・洞爺に該当し、さらに、環境省作成の陸域版センシティビティマップにおける注意喚起メッシュ図では、風車の建設には注意を要するエリア（A3）が含まれており、風車によるバードストライクなどによって、野鳥の生息への影響が強く懸念される。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風車によるバードストライクなどによって、野鳥の生息への影響が強く懸念される。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "このようなことから、本事業実施想定区域からIBAおよび陸域版センシティビティマップのA３のエリアは少なくとも除外するべきである。"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "風力発電機を設置するためには、土地の改変および立木の伐採を伴う工事用道路の新設を大規模に行う必要がある。このような自然度が高く重要な森林群落を広範囲に伐採することは、自然環境保全上、行うべきではない。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "特定植物群落「支笏湖自然林」が事業実施想定区域の半分近い面積を占めている。また事業実施想定範囲には、風力発電機の設置想定範囲の尾根部を中心に植生自然度９のササ－ダケカンバ群落やエゾイタヤ－シナノキ群落などが広範囲に分布し、対象事業実施想定範囲のほぼ全域が保安林に指定されている。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "当該国立公園の区域内及びその近傍に風力発電設備等を設置した場合、これらの利用施設及び主要な眺望点から、眺望する際の重大な影響を回避又は十分に低減できない可能性が極めて高い。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での甚大な影響が予測されることから、計画段階環境配慮書段階で計画を中止すべきである。"@ja.
+<< kg:id_11 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "事業実施想定範囲では、「絶滅のおそれのある野生動植物の種の保存に関する法律」（種の保存法）において国内希少野生動植物種に指定されているイヌワシとクマタカの生息が確認されている。本事業の遂行は、生息が確認されている同地域のイヌワシの生息環境を脅かし、生息個体を発電施設への衝突事故の可能性にさらすことになり、同地域のイヌワシ個体群の絶滅に繋がることが強く懸念される。"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "本事業の遂行は、生息が確認されている同地域のイヌワシの生息環境を脅かし、生息個体を発電施設への衝突事故の可能性にさらすことになり、同地域のイヌワシ個体群の絶滅に繋がることが強く懸念される。"@ja.
+<< kg:id_11 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "事業実施想定範囲の、（公財）日本野鳥の会が定めた重要野鳥生息地（IBA）の蔵王・船形に該当し、さらに、環境省作成の陸域版センシティビティマップにおける注意喚起メッシュ図では、風車の建設には注意を要するエリア（A3）が含まれており、野鳥の生息への影響が強く懸念される。"@ja.
+<< kg:id_11 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "風車によるバードストライクなどによって、生存に影響が懸念されることから、本事業実施想定区域からIBAおよび陸域版センシティビティマップのA３のエリアは少なくとも除外するべきである。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "本事業実施想定区域からIBAおよび陸域版センシティビティマップのA３のエリアは少なくとも除外するべきである。"@ja.
+<< kg:id_11 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "本事業実施想定区域には既設の林道は存在しないため、風力発電機を設置するためには、土地の改変および立木の伐採を伴う工事用道路の新設を大規模に行う必要がある。このような自然度が高く重要な森林群落が広範囲に伐採されることは、自然環境保全上、行うべきではない。"@ja.
+<< kg:id_11 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "特定植物群落「蔵王山の植物群落」が事業実施想定区域の高標高域の半分近い面積を占めており、植生自然度９のチシマザサ－ブナ群団となっている。"@ja.
+<< kg:id_11 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "上流部の立石山の尾根上で大規模な土地改変や伐採行為を行うことは、下流部の各渓流での土砂災害リスクを高めることが懸念される。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "事業実施想定範囲には、風力発電機の設置想定範囲の尾根部を中心に植生自然度９のエゾイタヤ－シナノキ群落などが広範囲に分布し、一部の稜線東側の風背斜面には植生自然度１０の高径草原群落が分布する。そのため、風力発電機を設置するためには、工事用道路を新設する必要があり、広範囲の土地の改変および立木の伐採が予想される。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "事業実施想定範囲は、自然林が広範囲に分布する西側の積丹半島中央部と東側の余市岳との間に位置し、同地域の森林が失われることで、自然林の連続性が失われることが懸念される。"@ja.
+<< kg:id_17 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "事業実施想定範囲内には、稲倉石山東側の余市鳥獣保護区および余市特別保護地区が含まれる。特に特別保護地区を事業想定範囲内に含めたことは、自然保護上の問題が大きい。"@ja.
+<< kg:id_17 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "森林に生息する鳥獣の保護を目的とした余市鳥獣保護区および余市特別保護地区を事業実施想定範囲からは除外すべきである。"@ja.
+<< kg:id_17 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "風力発電機設置するためには、土地の改変および立木の伐採を伴う工事用道路の新設を大規模に行う必要がある。このような自然度の高い森林の広範囲な伐採行為は、自然環境保全上、行うべきではない。"@ja.
+<< kg:id_22 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "当該地域はノスリなどの渡り鳥の春季の経路となっている。また表4.3.3-11表（２）の専門家等へのヒアリング結果に示されているように、オジロワシの繁殖やクマタカの生息の可能性がある。風車が建設されればこのような鳥類がバードストライクの危険に晒されることになるため、同地域で事業を計画すべきではない。"@ja.
+<< kg:id_22 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風車が建設されればこのような鳥類がバードストライクの危険に晒されることになるため、同地域で事業を計画すべきではない。"@ja.
+<< kg:id_22 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "本事業実施のために、勝納川の最上流部の水源涵養保安林の指定を解除し、大規模な伐採を行うことは、市民の水源である奥沢水源地への影響だけでなく、勝納川の氾濫リスクを高める可能性があり、保安林を解除しての事業は行うべきではない。"@ja.
+<< kg:id_22 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "本事業実施のために、勝納川の最上流部の水源涵養保安林の指定を解除し、大規模な伐採を行うことは、市民の水源である奥沢水源地への影響だけでなく、勝納川の氾濫リスクを高める可能性があり、保安林を解除しての事業は行うべきではない。"@ja.
+<< kg:id_22 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "本事業実施のために、勝納川の最上流部の水源涵養保安林の指定を解除し、大規模な伐採を行うことは、市民の水源である奥沢水源地への影響だけでなく、勝納川の氾濫リスクを高める可能性があり、保安林を解除しての事業は行うべきではない。"@ja.
+<< kg:id_22 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "本事業は下記のような懸念があり、生物多様性の喪失などの自然環境面での多大な影響が予測されることから、事業計画を中止するか、事業実施想定区域の抜本的な見直しが必要である。"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "本計画で建設予定の風力発電機は4200～6100kW級であり、高さは100mを超える可能性が高い。栗山町は緩やかに連なる丘陵の森林を背景に、すそ野に美しい田園景観が広がっている。"@ja.
+<< kg:id_29 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "「栗山町景観計画」は、その美しい田園景観を後世に引き継いでいくために策定されたものであり、風力発電機建設が栗山町の田園景観に悪影響を及ぼしてはならない。"@ja.
+<< kg:id_29 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "このようなことから、風力発電機の設置にあたっては、「栗山町景観計画」の指針に最大限配慮して事業を実施すべきである。"@ja.
+}

@@ -1,0 +1,580 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00029> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "職員の契約事務の失念"@ja.
+kg:id_1 rdf:type cls:c_820.
+cls:c_820 rdfs:label "事務不備"@ja.
+kg:id_2 rdfs:label "担当職員が契約事務を失念し報告義務を怠ったこと"@ja.
+kg:id_2 rdf:type cls:c_821.
+cls:c_821 rdfs:label "職務怠慢"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "上司によるチェック機能が十分に果たされていなかったこと"@ja.
+kg:id_3 rdf:type cls:c_822.
+cls:c_822 rdfs:label "監督不備"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "職員懲戒審査委員会の設置"@ja.
+kg:id_4 rdf:type cls:c_823.
+cls:c_823 rdfs:label "審査体制"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "担当職員を戒告処分とすること"@ja.
+kg:id_5 rdf:type cls:c_824.
+cls:c_824 rdfs:label "懲戒処分"@ja.
+kg:id_1 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "課長職を訓告処分とすること"@ja.
+kg:id_6 rdf:type cls:c_824.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "主幹職を口頭による厳重注意とすること"@ja.
+kg:id_7 rdf:type cls:c_824.
+kg:id_1 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "町長及び副町長の給料月額10分の1を減額すること"@ja.
+kg:id_8 rdf:type cls:c_825.
+cls:c_825 rdfs:label "給与減額"@ja.
+kg:id_1 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "綱紀の厳正な保持についてを職員に通知すること"@ja.
+kg:id_9 rdf:type cls:c_826.
+cls:c_826 rdfs:label "服務徹底"@ja.
+kg:id_1 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "松前町職員不祥事防止行動指針の策定"@ja.
+kg:id_10 rdf:type cls:c_827.
+cls:c_827 rdfs:label "行動指針"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "海上自衛隊松前警備所白神支所の廃止"@ja.
+kg:id_11 rdf:type cls:c_828.
+cls:c_828 rdfs:label "施設廃止"@ja.
+kg:id_12 rdfs:label "防衛計画大綱等による組織と業務の適正化"@ja.
+kg:id_12 rdf:type cls:c_829.
+cls:c_829 rdfs:label "組織適正化"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "国外任務等の急増"@ja.
+kg:id_13 rdf:type cls:c_830.
+cls:c_830 rdfs:label "任務増加"@ja.
+kg:id_11 prop:cause kg:id_13.
+kg:id_14 rdfs:label "募集環境が厳しく人員確保がままならない現状"@ja.
+kg:id_14 rdf:type cls:c_831.
+cls:c_831 rdfs:label "人員不足"@ja.
+kg:id_11 prop:cause kg:id_14.
+kg:id_15 rdfs:label "町勢に与える影響が大きい"@ja.
+kg:id_15 rdf:type cls:c_832.
+cls:c_832 rdfs:label "地域影響"@ja.
+kg:id_11 prop:effect kg:id_15.
+kg:id_16 rdfs:label "海洋秩序の維持への支障"@ja.
+kg:id_16 rdf:type cls:c_833.
+cls:c_833 rdfs:label "治安支障"@ja.
+kg:id_11 prop:effect kg:id_16.
+kg:id_17 rdfs:label "他国船籍の往来による不安と脅威への抑止力の低下"@ja.
+kg:id_17 rdf:type cls:c_834.
+cls:c_834 rdfs:label "抑止低下"@ja.
+kg:id_11 prop:effect kg:id_17.
+kg:id_18 rdfs:label "海上自衛隊函館基地隊司令及び松前警備所長への要望書提出"@ja.
+kg:id_18 rdf:type cls:c_835.
+cls:c_835 rdfs:label "要望提出"@ja.
+kg:id_11 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "松前警備所全体における人員の確保を強く要望すること"@ja.
+kg:id_19 rdf:type cls:c_836.
+cls:c_836 rdfs:label "人員要望"@ja.
+kg:id_11 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "人口の減少"@ja.
+kg:id_20 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_21 rdfs:label "産業の衰退や活力の減退"@ja.
+kg:id_21 rdf:type cls:c_424.
+cls:c_424 rdfs:label "地域衰退"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "産業の衰退"@ja.
+kg:id_22 rdf:type cls:c_99.
+cls:c_99 rdfs:label "産業衰退"@ja.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "活力の減退"@ja.
+kg:id_23 rdf:type cls:c_837.
+cls:c_837 rdfs:label "活力低下"@ja.
+kg:id_20 prop:effect kg:id_23.
+kg:id_24 rdfs:label "再生可能エネルギーという松前の強みを活かした新しい産業の風を取り入れること"@ja.
+kg:id_24 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_20 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "東急不動産との協定締結"@ja.
+kg:id_25 rdf:type cls:c_489.
+cls:c_489 rdfs:label "協定締結"@ja.
+kg:id_26 rdfs:label "風力発電事業の円滑な推進"@ja.
+kg:id_26 rdf:type cls:c_197.
+cls:c_197 rdfs:label "事業推進"@ja.
+kg:id_25 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "松前町総合計画の実現に向けた協力"@ja.
+kg:id_27 rdf:type cls:c_838.
+cls:c_838 rdfs:label "計画協力"@ja.
+kg:id_25 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "災害に強いまちづくりの推進"@ja.
+kg:id_28 rdf:type cls:c_839.
+cls:c_839 rdfs:label "防災推進"@ja.
+kg:id_25 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "地域貢献や地方再生及び地域活性化に資する取り組みを進めること"@ja.
+kg:id_29 rdf:type cls:c_840.
+cls:c_840 rdfs:label "地域活性"@ja.
+kg:id_25 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "少子人口歯止め対策"@ja.
+kg:id_30 rdf:type cls:c_841.
+cls:c_841 rdfs:label "少子化対策"@ja.
+kg:id_31 rdfs:label "歳入全体の多くを地方交付税に依存する財政構造"@ja.
+kg:id_31 rdf:type cls:c_842.
+cls:c_842 rdfs:label "財政依存"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "既存分野で財源を増やすことが難しいこと"@ja.
+kg:id_32 rdf:type cls:c_843.
+cls:c_843 rdfs:label "財源不足"@ja.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "風力発電等の再生可能エネルギー施設の誘致"@ja.
+kg:id_33 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_30 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "ふるさと納税の活用"@ja.
+kg:id_34 rdf:type cls:c_844.
+cls:c_844 rdfs:label "寄附活用"@ja.
+kg:id_30 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "企業版ふるさと納税の活用"@ja.
+kg:id_35 rdf:type cls:c_844.
+kg:id_30 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "事務事業の見直し"@ja.
+kg:id_36 rdf:type cls:c_845.
+cls:c_845 rdfs:label "業務見直"@ja.
+kg:id_30 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "若い世代の意見を反映した総合戦略の作成"@ja.
+kg:id_37 rdf:type cls:c_846.
+cls:c_846 rdfs:label "戦略策定"@ja.
+kg:id_30 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "移住定住"@ja.
+kg:id_38 rdf:type cls:c_152.
+cls:c_152 rdfs:label "移住定住"@ja.
+kg:id_39 rdfs:label "来ていただける環境づくり"@ja.
+kg:id_39 rdf:type cls:c_517.
+cls:c_517 rdfs:label "環境整備"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "地域ぐるみで迎え入れる体制づくり"@ja.
+kg:id_40 rdf:type cls:c_847.
+cls:c_847 rdfs:label "受入体制"@ja.
+kg:id_38 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "特徴のある移住定住対策をとること"@ja.
+kg:id_41 rdf:type cls:c_848.
+cls:c_848 rdfs:label "施策推進"@ja.
+kg:id_38 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "人口減少"@ja.
+kg:id_42 rdf:type cls:c_97.
+kg:id_43 rdfs:label "食い止めるのが容易ではないこと"@ja.
+kg:id_43 rdf:type cls:c_849.
+cls:c_849 rdfs:label "改善困難"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "一歩ずつ着実に前に進む努力"@ja.
+kg:id_44 rdf:type cls:c_850.
+cls:c_850 rdfs:label "継続努力"@ja.
+kg:id_42 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "産業の再生"@ja.
+kg:id_45 rdf:type cls:c_851.
+cls:c_851 rdfs:label "産業再生"@ja.
+kg:id_46 rdfs:label "簡単ではなく時間がかかること"@ja.
+kg:id_46 rdf:type cls:c_852.
+cls:c_852 rdfs:label "再生困難"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "対応していくこと"@ja.
+kg:id_47 rdf:type cls:c_853.
+cls:c_853 rdfs:label "対応推進"@ja.
+kg:id_45 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "後継者不足"@ja.
+kg:id_48 rdf:type cls:c_854.
+cls:c_854 rdfs:label "後継者不足"@ja.
+kg:id_49 rdfs:label "人づくりと後継者づくりのための課の設置を検討すること"@ja.
+kg:id_49 rdf:type cls:c_296.
+cls:c_296 rdfs:label "組織設置"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "松前の畜産の火を消さないこと"@ja.
+kg:id_50 rdf:type cls:c_855.
+cls:c_855 rdfs:label "畜産維持"@ja.
+kg:id_51 rdfs:label "肉牛改良センター事業を進めること"@ja.
+kg:id_51 rdf:type cls:c_856.
+cls:c_856 rdfs:label "畜産振興"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "漁業の厳しい状況"@ja.
+kg:id_52 rdf:type cls:c_857.
+cls:c_857 rdfs:label "漁業不振"@ja.
+kg:id_53 rdfs:label "イカ漁の不漁"@ja.
+kg:id_53 rdf:type cls:c_858.
+cls:c_858 rdfs:label "不漁"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "マグロの漁獲規制"@ja.
+kg:id_54 rdf:type cls:c_859.
+cls:c_859 rdfs:label "漁獲規制"@ja.
+kg:id_52 prop:cause kg:id_54.
+kg:id_55 rdfs:label "組合が経営改善に足踏みしている状況"@ja.
+kg:id_55 rdf:type cls:c_860.
+cls:c_860 rdfs:label "経営停滞"@ja.
+kg:id_52 prop:cause kg:id_55.
+kg:id_56 rdfs:label "漁業法改正と合わせて漁業改革を進めること"@ja.
+kg:id_56 rdf:type cls:c_861.
+cls:c_861 rdfs:label "漁業改革"@ja.
+kg:id_52 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "再生可能エネルギーの活用"@ja.
+kg:id_57 rdf:type cls:c_862.
+cls:c_862 rdfs:label "エネルギー活用"@ja.
+kg:id_58 rdfs:label "風力発電事業者との協定を進めること"@ja.
+kg:id_58 rdf:type cls:c_863.
+cls:c_863 rdfs:label "協定推進"@ja.
+kg:id_57 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "外部資本を活用しながら町内産業との調和を図ること"@ja.
+kg:id_59 rdf:type cls:c_864.
+cls:c_864 rdfs:label "産業調和"@ja.
+kg:id_57 prop:countermeasure kg:id_59.
+kg:st_1 rdfs:label "町長"@ja.
+kg:st_1 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_1 prop:content "法令遵守と服務規律を徹底し再発防止に全力で取り組む"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "法令遵守と服務規律を徹底し再発防止に全力で取り組む"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "公務員倫理の確保を徹底する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "倫理保持と公正な職務執行を図る"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "廃止の真意を確認した"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "やむを得ない措置との回答を受けた"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "やむを得ない措置との回答を受けた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "家族を含めると町勢への影響が大きいと懸念する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "町長・議会議長連盟"@ja.
+kg:st_2 rdf:type cls:st_36.
+cls:st_36 rdfs:label "連盟"@ja.
+kg:op_9 prop:content "海上自衛隊の重要性を訴えた"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "不安と脅威への抑止力として海上自衛隊は重要だと訴えた"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "松前警備所全体における人員確保を強く要望した"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "町勢への影響や抑止力の観点から人員確保を求めた"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "将来の町の衰退を危惧している"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "人口減少が産業の衰退につながると危惧している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "人口減少が活力の減退につながると危惧している"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "再生可能エネルギーを活用して町の発展と産業振興を図りたい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "東急不動産株式会社"@ja.
+kg:st_3 rdf:type cls:st_37.
+cls:st_37 rdfs:label "企業"@ja.
+kg:op_17 prop:content "風力発電を活かした松前町の発展を共に目指したい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "大企業との連携による地域振興策に大きな期待を持つ"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "町の発展と地域振興に期待している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地域貢献と地域活性化への協力を期待している"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "既存分野で財源を増やすことは大変難しい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "現状では財源を増やすのは難しいと認識している"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "歳入増収策として可能性を感じている"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "5番 福原英夫君"@ja.
+kg:st_4 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_24 prop:content "自然エネルギーは財源確保策として重要だ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "努力すればふるさと納税は増やせる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "ふるさと納税にも可能性がある"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "松前町を支援してくれる企業があるはずだ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "効率的な運用で住む価値を高めるべきだ"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "若い世代の意見を反映した戦略にしたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "政策づくりと受け入れ環境整備が必要だ"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "地域ぐるみの受け入れ体制が必要だ"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "職員の知恵を借りて特徴ある対策を取りたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "容易ではないが一歩ずつ前に進む努力が必要だ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "着実に前進することが大事だ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "厳しいが何もしないわけにはいかない"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "何もしないことにはならないので対応する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "機構改革と合わせて検討したい"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "新たな一次産業の活性化に期待し命がけで成功させたい"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "漁業は大変厳しい状況にある"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "漁業は厳しい一面がある"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "組合の現状も大きく影響している"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "大胆な経営改善のきっかけとして漁業改革を進めようとしている"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "産業に新しい風を取り入れ波及効果を与えたい"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "町内産業との調和を図り波及効果を与えたい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "担当職員が契約事務を失念し、報告義務を怠るなど"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "また上司によるチェック機能が十分に果たされていなかったことが確認されたところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "副町長を委員長とする「職員懲戒審査委員会」を設置したところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "１２月１日付けで担当職員を「戒告」"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "関係職員である指揮監督する課長職を「訓告」"@ja.
+<< kg:id_1 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "指導する主幹職を口頭による「厳重注意」とする処分を行ったところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_8 >>
+    prop:text-txt_contents "町長及び副町長の令和２年１月分の給料月額１０分の１を減額する改正条例を別途提案しております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "再発防止策としまして、１１月２９日付けて「服務規律の確保を徹底し、公務員倫理の確保に努める。」ことを目的に『綱紀の厳正な保持について』を職員に通知し"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "更には同日付けで「全職員が全体の奉仕者として公益の利益のために、倫理保持及び公正な職務の執行を図る。」ことを目的に『松前町職員不祥事防止行動指針』を策定したところであります"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "防衛計画大綱等による組織、業務の適正化"@ja.
+<< kg:id_11 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "国外任務等急増の一方で"@ja.
+<< kg:id_11 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "募集環境が厳しく、人員確保がままならない現状であり、やむを得ない措置である旨の回答を受けました"@ja.
+<< kg:id_11 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "その家族を含めると町勢に与える影響が大きいため"@ja.
+<< kg:id_11 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "海洋秩序の維持や"@ja.
+<< kg:id_11 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "他国船籍の往来による不安と脅威に対する抑止力としての海上自衛隊の重要性を訴えるとともに"@ja.
+<< kg:id_11 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "１１月１２日に海上自衛隊函館基地隊司令及び松前警備所長へ、１１月１４日には大湊地方総監へ、町長、議会議長連盟での要望書を手渡し"@ja.
+<< kg:id_11 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "松前警備所全体における人員の確保を強く要望してきたところであります"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "将来、人口の減少を起因とする産業の衰退や活力の減退が危惧されており"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "人口の減少を起因とする産業の衰退"@ja.
+<< kg:id_20 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "人口の減少を起因とする産業の衰退や活力の減退が危惧されており"@ja.
+<< kg:id_20 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "再生可能エネルギーという松前の強みを活かした新しい産業の風を取り入れることで、町の発展及び産業振興の活性化への協力が図られ"@ja.
+<< kg:id_25 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "「風力発電を活かした松前町の発展」を共に目指し、もって風力発電事業の円滑な推進を図るため、松前町と協定を結びたい旨の提案を受けました"@ja.
+<< kg:id_25 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "協定の主な内容は、風力発電事業の円滑な推進と松前町総合計画の実現に向けた協力を軸に"@ja.
+<< kg:id_25 prop:countermeasure kg:id_28 >>
+    prop:text-txt_contents "今後、災害に強いまちづくりの推進"@ja.
+<< kg:id_25 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "地域貢献や地方再生及び地域活性化に資する取り組みを誠意を持って進めることとしております"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "歳入全体の５０％強が、歳入一般財源の８０％を占める地方交付税が主に、いわゆる歳入構造になっているところでありまして"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "既存分野での財源を増やすことは、現状の部分では、財源を増やすことは大変難しい"@ja.
+<< kg:id_30 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "松前町の強みを生かして、歳入の増収を図る策とすれば、風力発電等の再生可能エネルギー施設の誘致については、可能性を感じているところであります"@ja.
+<< kg:id_30 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "そんなことで、風力発電。それともう一つはふるさと納税です"@ja.
+<< kg:id_30 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "やはりふるさと納税とこの企業版ふるさと納税、この２本"@ja.
+<< kg:id_30 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "もう一つは、やはり大きいのは事務事業の見直しです"@ja.
+<< kg:id_30 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "大事なのは、若い世代の意見を反映した戦略としていきたいというふうに思っております"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "まず、政策をつくり上げまして、来ていただける環境づくりも必要でしょうし"@ja.
+<< kg:id_38 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "地域ぐるみで迎え入れる体制も必要だろうなというふうに思っているところであります"@ja.
+<< kg:id_38 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "本当に職員の知恵を借りながら、少し特徴のある移住定住の対策がとれればなというふうに思っているところであります"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "一方では人口減少を食い止めるのも容易ではないけども、一歩ずつ着実に前に進む努力が必要だというふうに思っております"@ja.
+<< kg:id_42 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "一歩ずつ着実に前に進む努力が必要だ"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "本当に産業の再生は簡単ではないというふうに思っておりますし、時間もかかってきましたし、これからもかかるんだろうなというふうに思っております"@ja.
+<< kg:id_45 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "しかし、何もしないってことにはなりませんので、この対応はしてまいりたいというふうに思っております"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "人づくり、更には後継者づくりのために課の設置の話がございました"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "松前の畜産の火を消さないために、この事業を進めておりますので、命がけでこれは成功させたいなというふうに思っているところであります"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "イカ漁の不漁"@ja.
+<< kg:id_52 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "マグロの漁獲規制など厳しい一面があるものの"@ja.
+<< kg:id_52 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "組合が経営改善に、今現状足踏みをしている状況も大きく影響しておりますが"@ja.
+<< kg:id_52 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "大胆な経営改善のために、組合も漁業法の改正と合わせまして、漁業改革を進めるきっかけを今つくろうとして、努力しているところであります"@ja.
+<< kg:id_57 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "再生可能エネルギーにつきましては、議員もおっしゃっておりましたけども、風力発電事業者との協定も進めいく中で"@ja.
+<< kg:id_57 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "産業に新しい風を取り入れて、外部資本を活用しながら、町内産業との調和を図り、波及効果を与えられるように取り組みも進めたいというふうに思っております"@ja.
+}

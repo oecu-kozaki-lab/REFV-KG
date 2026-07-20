@@ -1,0 +1,866 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00061> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "人口減少"@ja.
+kg:id_1 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "デジタル関連企業の集積"@ja.
+kg:id_2 rdf:type cls:c_891.
+cls:c_891 rdfs:label "企業集積"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "産学官共創の連携協定の締結"@ja.
+kg:id_3 rdf:type cls:c_1695.
+cls:c_1695 rdfs:label "連携協定"@ja.
+kg:id_2 prop:cause kg:id_3.
+kg:id_4 rdfs:label "テレワークに適した環境整備の評価"@ja.
+kg:id_4 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_2 prop:cause kg:id_4.
+kg:id_5 rdfs:label "デジタル変革の取組への注目"@ja.
+kg:id_5 rdf:type cls:c_1696.
+cls:c_1696 rdfs:label "取組注目"@ja.
+kg:id_2 prop:cause kg:id_5.
+kg:id_6 rdfs:label "丸山前市長によるトップセールスの継続"@ja.
+kg:id_6 rdf:type cls:c_1697.
+cls:c_1697 rdfs:label "誘致活動"@ja.
+kg:id_2 prop:cause kg:id_6.
+kg:id_7 rdfs:label "デジタル技術を学ぶ若い人材の多さを積極的にアピールする"@ja.
+kg:id_7 rdf:type cls:c_1698.
+cls:c_1698 rdfs:label "人材訴求"@ja.
+kg:id_2 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "市役所業務のデジタル化"@ja.
+kg:id_8 rdf:type cls:c_1699.
+cls:c_1699 rdfs:label "行政DX"@ja.
+kg:id_9 rdfs:label "IT企業へのアウトソーシングの検討"@ja.
+kg:id_9 rdf:type cls:c_353.
+cls:c_353 rdfs:label "業務委託"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "市役所業務の見直しや効率化"@ja.
+kg:id_10 rdf:type cls:c_1692.
+cls:c_1692 rdfs:label "業務効率化"@ja.
+kg:id_11 rdfs:label "RPAやkintoneやAI-OCRや会議録生成ツールやChatGPTの活用"@ja.
+kg:id_11 rdf:type cls:c_1053.
+cls:c_1053 rdfs:label "デジタル活用"@ja.
+kg:id_10 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "洋上風力発電プロジェクト"@ja.
+kg:id_12 rdf:type cls:c_1243.
+cls:c_1243 rdfs:label "洋上風力"@ja.
+kg:id_13 rdfs:label "県と連携し基地港湾整備等を進める"@ja.
+kg:id_13 rdf:type cls:c_1105.
+cls:c_1105 rdfs:label "行政連携"@ja.
+kg:id_12 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "酒田市沖での洋上風力発電プロジェクト"@ja.
+kg:id_14 rdf:type cls:c_1243.
+kg:id_15 rdfs:label "山形県と連携し地元関係者と協議を進め有望な区域への選定を目指す"@ja.
+kg:id_15 rdf:type cls:c_1161.
+cls:c_1161 rdfs:label "関係者協議"@ja.
+kg:id_14 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "洋上風力発電の導入"@ja.
+kg:id_16 rdf:type cls:c_1243.
+kg:id_17 rdfs:label "副知事トップの推進体制の整備"@ja.
+kg:id_17 rdf:type cls:c_211.
+cls:c_211 rdfs:label "推進体制"@ja.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "酒田港の基地港湾指定"@ja.
+kg:id_18 rdf:type cls:c_125.
+cls:c_125 rdfs:label "港湾整備"@ja.
+kg:id_19 rdfs:label "酒田港港湾計画の一部変更手続を進める"@ja.
+kg:id_19 rdf:type cls:c_68.
+cls:c_68 rdfs:label "計画変更"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "観光で外貨を稼ぐこと"@ja.
+kg:id_20 rdf:type cls:c_448.
+cls:c_448 rdfs:label "観光振興"@ja.
+kg:id_21 rdfs:label "観光コンテンツの存在が不可欠"@ja.
+kg:id_21 rdf:type cls:c_1700.
+cls:c_1700 rdfs:label "観光資源"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "外貨を稼ぐ観光"@ja.
+kg:id_22 rdf:type cls:c_448.
+kg:id_23 rdfs:label "夜間ライトアップと宿泊促進と泊食分離"@ja.
+kg:id_23 rdf:type cls:c_1701.
+cls:c_1701 rdfs:label "滞在促進"@ja.
+kg:id_22 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "美酒美食のまち酒田として食コンテンツをPRする"@ja.
+kg:id_24 rdf:type cls:c_1702.
+cls:c_1702 rdfs:label "食観光PR"@ja.
+kg:id_22 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "酒田DMOによる着地型旅行商品等の造成"@ja.
+kg:id_25 rdf:type cls:c_1703.
+cls:c_1703 rdfs:label "旅行商品造成"@ja.
+kg:id_22 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "美酒美食のまち酒田の推進"@ja.
+kg:id_26 rdf:type cls:c_1704.
+cls:c_1704 rdfs:label "食観光推進"@ja.
+kg:id_27 rdfs:label "湊町酒田の酒と食を愉しむ夕べの実施"@ja.
+kg:id_27 rdf:type cls:c_1705.
+cls:c_1705 rdfs:label "体験企画"@ja.
+kg:id_26 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "料亭コラボランチの実施"@ja.
+kg:id_28 rdf:type cls:c_1705.
+kg:id_26 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "市内20代限定カウンター寿司デビュー応援企画の実施"@ja.
+kg:id_29 rdf:type cls:c_1705.
+kg:id_26 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "米粉の一大産地化"@ja.
+kg:id_30 rdf:type cls:c_1706.
+cls:c_1706 rdfs:label "米粉産地化"@ja.
+kg:id_31 rdfs:label "すぐに酒田市へ製粉工場を誘致するのは難しい"@ja.
+kg:id_31 rdf:type cls:c_1707.
+cls:c_1707 rdfs:label "工場誘致困難"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "米粉用米の作付減少"@ja.
+kg:id_32 rdf:type cls:c_1708.
+cls:c_1708 rdfs:label "作付減少"@ja.
+kg:id_33 rdfs:label "飼料用米のほうが国の交付金を含めた生産者の収入が多いこと"@ja.
+kg:id_33 rdf:type cls:c_1709.
+cls:c_1709 rdfs:label "収入格差"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "米粉用米の作付増加"@ja.
+kg:id_34 rdf:type cls:c_1710.
+cls:c_1710 rdfs:label "作付増加"@ja.
+kg:id_35 rdfs:label "この事業により増える可能性は小さい"@ja.
+kg:id_35 rdf:type cls:c_1711.
+cls:c_1711 rdfs:label "増加困難"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "米粉産地化"@ja.
+kg:id_36 rdf:type cls:c_1706.
+kg:id_37 rdfs:label "国の支援制度の動向と農家所得への効果を注視し可能性を検証する"@ja.
+kg:id_37 rdf:type cls:c_1712.
+cls:c_1712 rdfs:label "可能性検証"@ja.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "米粉の輸出"@ja.
+kg:id_38 rdf:type cls:c_1713.
+cls:c_1713 rdfs:label "輸出振興"@ja.
+kg:id_39 rdfs:label "海外のグルテンフリー市場調査や製粉会社とのマッチング活動"@ja.
+kg:id_39 rdf:type cls:c_1714.
+cls:c_1714 rdfs:label "市場調査"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "現時点ですぐに輸出される状況にはなりにくい"@ja.
+kg:id_40 rdf:type cls:c_1715.
+cls:c_1715 rdfs:label "輸出困難"@ja.
+kg:id_38 prop:effect kg:id_40.
+kg:id_41 rdfs:label "仕事と家事・育児・介護等の両立"@ja.
+kg:id_41 rdf:type cls:c_1716.
+cls:c_1716 rdfs:label "両立支援"@ja.
+kg:id_42 rdfs:label "家庭内のケア労働を家族全員でシェアする"@ja.
+kg:id_42 rdf:type cls:c_1717.
+cls:c_1717 rdfs:label "家事分担"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "保育・介護などのサービスを充実させる"@ja.
+kg:id_43 rdf:type cls:c_1718.
+cls:c_1718 rdfs:label "サービス充実"@ja.
+kg:id_41 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "長時間労働の是正と休暇を取りやすい職場づくり"@ja.
+kg:id_44 rdf:type cls:c_1719.
+cls:c_1719 rdfs:label "職場改革"@ja.
+kg:id_41 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "家庭内の家事・育児シェア"@ja.
+kg:id_45 rdf:type cls:c_1717.
+kg:id_46 rdfs:label "家事シェアのススメの配布や講座実施"@ja.
+kg:id_46 rdf:type cls:c_1720.
+cls:c_1720 rdfs:label "啓発活動"@ja.
+kg:id_45 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "結婚新生活支援補助金交付家庭に家事育児参加促進講座の受講を義務づける"@ja.
+kg:id_47 rdf:type cls:c_1721.
+cls:c_1721 rdfs:label "講座受講"@ja.
+kg:id_45 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "若い年代の意識改革が大きく進んでいる"@ja.
+kg:id_48 rdf:type cls:c_1722.
+cls:c_1722 rdfs:label "意識変化"@ja.
+kg:id_45 prop:effect kg:id_48.
+kg:id_49 rdfs:label "仕事と育児の両立困難"@ja.
+kg:id_49 rdf:type cls:c_1723.
+cls:c_1723 rdfs:label "両立困難"@ja.
+kg:id_50 rdfs:label "障がい児福祉サービスの預かり時間が短いことや通院通所の必要"@ja.
+kg:id_50 rdf:type cls:c_1724.
+cls:c_1724 rdfs:label "支援不足"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "仕事と保育の両立"@ja.
+kg:id_51 rdf:type cls:c_1716.
+kg:id_52 rdfs:label "はまなし学園の預かり時間延長"@ja.
+kg:id_52 rdf:type cls:c_1725.
+cls:c_1725 rdfs:label "預かり延長"@ja.
+kg:id_51 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "働きやすい職場環境"@ja.
+kg:id_53 rdf:type cls:c_1726.
+cls:c_1726 rdfs:label "職場環境"@ja.
+kg:id_54 rdfs:label "リーダーの会賛同企業や一般事業主行動計画策定企業やえるぼし取得企業を増やす"@ja.
+kg:id_54 rdf:type cls:c_1727.
+cls:c_1727 rdfs:label "認定企業"@ja.
+kg:id_53 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "男性の育児休業取得"@ja.
+kg:id_55 rdf:type cls:c_1728.
+cls:c_1728 rdfs:label "育休取得"@ja.
+kg:id_56 rdfs:label "取得率が0.1％から21.6％に上昇し意識が大きく変わってきている"@ja.
+kg:id_56 rdf:type cls:c_1729.
+cls:c_1729 rdfs:label "取得増加"@ja.
+kg:id_55 prop:effect kg:id_56.
+kg:id_57 rdfs:label "空き家等の増加"@ja.
+kg:id_57 rdf:type cls:c_1730.
+cls:c_1730 rdfs:label "空き家増加"@ja.
+kg:id_57 prop:cause kg:id_1.
+kg:id_58 rdfs:label "相続放棄等により所有者の把握が困難であること"@ja.
+kg:id_58 rdf:type cls:c_1731.
+cls:c_1731 rdfs:label "所有者不明"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "所有者不明の空き家等の解消"@ja.
+kg:id_59 rdf:type cls:c_1732.
+cls:c_1732 rdfs:label "空き家解消"@ja.
+kg:id_60 rdfs:label "相続財産管理人選任申立ての活用"@ja.
+kg:id_60 rdf:type cls:c_1733.
+cls:c_1733 rdfs:label "財産管理"@ja.
+kg:id_59 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "相続財産管理人選任申立て"@ja.
+kg:id_61 rdf:type cls:c_1733.
+kg:id_62 rdfs:label "10件は売却解体され一定の成果を得た"@ja.
+kg:id_62 rdf:type cls:c_1734.
+cls:c_1734 rdfs:label "解体売却"@ja.
+kg:id_61 prop:effect kg:id_62.
+kg:id_63 rdfs:label "相続財産管理人選任申立ての活用件数が少ないこと"@ja.
+kg:id_63 rdf:type cls:c_1735.
+cls:c_1735 rdfs:label "活用不足"@ja.
+kg:id_64 rdfs:label "相続状況把握に時間を要し高額な予納金が必要なこと"@ja.
+kg:id_64 rdf:type cls:c_1736.
+cls:c_1736 rdfs:label "費用負担"@ja.
+kg:id_63 prop:cause kg:id_64.
+kg:id_65 rdfs:label "買物弱者対策"@ja.
+kg:id_65 rdf:type cls:c_1737.
+cls:c_1737 rdfs:label "買物支援"@ja.
+kg:id_66 rdfs:label "帰りの便が見つけにくく不便である"@ja.
+kg:id_66 rdf:type cls:c_1738.
+cls:c_1738 rdfs:label "交通不便"@ja.
+kg:id_65 prop:effect kg:id_66.
+kg:id_67 rdfs:label "交通事業者と協議し運行内容の変更を検討する"@ja.
+kg:id_67 rdf:type cls:c_1739.
+cls:c_1739 rdfs:label "運行見直し"@ja.
+kg:id_65 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "よろずや琢成での買物代行サービス"@ja.
+kg:id_68 rdf:type cls:c_1740.
+cls:c_1740 rdfs:label "買物代行"@ja.
+kg:id_65 prop:countermeasure kg:id_68.
+kg:id_69 rdfs:label "田沢おたすけ隊での買物代行及び付添支援サービス"@ja.
+kg:id_69 rdf:type cls:c_1737.
+kg:id_65 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "サポートする側の人員確保や体制整備が課題"@ja.
+kg:id_70 rdf:type cls:c_334.
+cls:c_334 rdfs:label "体制不足"@ja.
+kg:id_65 prop:cause kg:id_70.
+kg:id_71 rdfs:label "庁内プロジェクトチームで検討する"@ja.
+kg:id_71 rdf:type cls:c_1508.
+cls:c_1508 rdfs:label "庁内連携"@ja.
+kg:id_65 prop:countermeasure kg:id_71.
+kg:id_72 rdfs:label "スポーツの推進"@ja.
+kg:id_72 rdf:type cls:c_1741.
+cls:c_1741 rdfs:label "スポーツ推進"@ja.
+kg:id_73 rdfs:label "ラン＆ウオークイベントの周知実施"@ja.
+kg:id_73 rdf:type cls:c_1742.
+cls:c_1742 rdfs:label "運動機会"@ja.
+kg:id_72 prop:countermeasure kg:id_73.
+kg:id_74 rdfs:label "スポーツ機会の創出"@ja.
+kg:id_74 rdf:type cls:c_1742.
+kg:id_75 rdfs:label "ニュースポーツ大会の開催"@ja.
+kg:id_75 rdf:type cls:c_1743.
+cls:c_1743 rdfs:label "大会開催"@ja.
+kg:id_74 prop:countermeasure kg:id_75.
+kg:id_76 rdfs:label "酒田市モルック大会の開催"@ja.
+kg:id_76 rdf:type cls:c_1743.
+kg:id_74 prop:countermeasure kg:id_76.
+kg:id_77 rdfs:label "健康づくり"@ja.
+kg:id_77 rdf:type cls:c_1744.
+cls:c_1744 rdfs:label "健康づくり"@ja.
+kg:id_78 rdfs:label "ウォーキングの推奨とウォーキングマップ掲載"@ja.
+kg:id_78 rdf:type cls:c_1745.
+cls:c_1745 rdfs:label "歩行促進"@ja.
+kg:id_77 prop:countermeasure kg:id_78.
+kg:id_79 rdfs:label "さかた健康マイレージ事業や運動教室の実施"@ja.
+kg:id_79 rdf:type cls:c_1746.
+cls:c_1746 rdfs:label "運動支援"@ja.
+kg:id_77 prop:countermeasure kg:id_79.
+kg:id_80 rdfs:label "プロジェクト30-30"@ja.
+kg:id_80 rdf:type cls:c_181.
+cls:c_181 rdfs:label "財政健全化"@ja.
+kg:id_81 rdfs:label "財政調整基金残高30億円確保と市債発行上限額抑制による公債費削減"@ja.
+kg:id_81 rdf:type cls:c_404.
+cls:c_404 rdfs:label "財政運営"@ja.
+kg:id_80 prop:countermeasure kg:id_81.
+kg:id_82 rdfs:label "令和9年度には収支均衡し基金全体での積み増しが図られる見込み"@ja.
+kg:id_82 rdf:type cls:c_1747.
+cls:c_1747 rdfs:label "収支均衡"@ja.
+kg:id_80 prop:effect kg:id_82.
+kg:id_83 rdfs:label "イベント・交流事業の見直し"@ja.
+kg:id_83 rdf:type cls:c_1748.
+cls:c_1748 rdfs:label "事業見直し"@ja.
+kg:id_84 rdfs:label "様々な意見がある"@ja.
+kg:id_84 rdf:type cls:c_1749.
+cls:c_1749 rdfs:label "意見多様"@ja.
+kg:id_83 prop:effect kg:id_84.
+kg:id_85 rdfs:label "事業内容や実施手法を見直し持続可能な形で再構築する"@ja.
+kg:id_85 rdf:type cls:c_1750.
+cls:c_1750 rdfs:label "事業再構築"@ja.
+kg:id_83 prop:countermeasure kg:id_85.
+kg:id_86 rdfs:label "公共施設修繕の不足"@ja.
+kg:id_86 rdf:type cls:c_1751.
+cls:c_1751 rdfs:label "修繕不足"@ja.
+kg:id_87 rdfs:label "急激な人口減少に見合わない公共施設を抱えていること"@ja.
+kg:id_87 rdf:type cls:c_1752.
+cls:c_1752 rdfs:label "施設過多"@ja.
+kg:id_86 prop:cause kg:id_87.
+kg:id_88 rdfs:label "財政健全化"@ja.
+kg:id_88 rdf:type cls:c_181.
+kg:id_89 rdfs:label "慢性的な財源不足と基金繰入れ依存"@ja.
+kg:id_89 rdf:type cls:c_843.
+cls:c_843 rdfs:label "財源不足"@ja.
+kg:id_88 prop:cause kg:id_89.
+kg:id_90 rdfs:label "目的志向の酒田市役所"@ja.
+kg:id_90 rdf:type cls:c_1753.
+cls:c_1753 rdfs:label "組織運営"@ja.
+kg:id_91 rdfs:label "風通しのよい職場環境の整備"@ja.
+kg:id_91 rdf:type cls:c_1726.
+kg:id_90 prop:countermeasure kg:id_91.
+kg:id_92 rdfs:label "コミュニケーションが活発で支え合いチャレンジを後押しする組織像を目指す"@ja.
+kg:id_92 rdf:type cls:c_1754.
+cls:c_1754 rdfs:label "組織風土"@ja.
+kg:id_90 prop:countermeasure kg:id_92.
+kg:id_93 rdfs:label "各部署の仕事の目的を職員全員で共有する"@ja.
+kg:id_93 rdf:type cls:c_1755.
+cls:c_1755 rdfs:label "目的共有"@ja.
+kg:id_90 prop:countermeasure kg:id_93.
+kg:id_94 rdfs:label "市役所の究極の目的ではなく制約条件であり前提条件である"@ja.
+kg:id_94 rdf:type cls:c_1756.
+cls:c_1756 rdfs:label "前提条件"@ja.
+kg:id_88 prop:effect kg:id_94.
+kg:id_95 rdfs:label "人口減少が様々な問題を引き起こしていること"@ja.
+kg:id_95 rdf:type cls:c_490.
+cls:c_490 rdfs:label "地域課題"@ja.
+kg:id_96 rdfs:label "酒田市の大きな課題である"@ja.
+kg:id_96 rdf:type cls:c_97.
+kg:id_95 prop:cause kg:id_96.
+kg:id_97 rdfs:label "人口減少を抑制しながら豊かに安心して暮らせるまちを創ること"@ja.
+kg:id_97 rdf:type cls:c_256.
+cls:c_256 rdfs:label "まちづくり"@ja.
+kg:id_98 rdfs:label "コミュニティ振興会や経済団体などで理念を丁寧に繰り返し説明する"@ja.
+kg:id_98 rdf:type cls:c_1757.
+cls:c_1757 rdfs:label "理念共有"@ja.
+kg:id_97 prop:countermeasure kg:id_98.
+kg:id_99 rdfs:label "職員からの提案を引き出すためトップは方向性と目的を示す"@ja.
+kg:id_99 rdf:type cls:c_1758.
+cls:c_1758 rdfs:label "トップ方針"@ja.
+kg:id_97 prop:countermeasure kg:id_99.
+kg:st_1 rdfs:label "矢口明子市長"@ja.
+kg:st_1 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "若者に人気で所得水準も高いデジタル産業の集積は人口減少対策として重要と考える"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "後藤仁議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "市役所業務のデジタル処理を進めてIT企業へのアウトソーシングを拡大すべきだ"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "佐藤猛議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_3 prop:content "デジタル関連企業は地域経済に魅力がある一方で誘致競争が激しく支援体制整備が必要だ"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "NTTデータやNTT東日本等との連携協定に基づく取組が進出継続につながったと分析する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "全国第2位の環境評価が企業進出の後押しになったとみている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "Digi田甲子園優勝などで本市のデジタル変革が注目され進出が続いた"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "前市長のトップセールス継続が企業進出につながったと考える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "小中学生から社会人まで若いデジタル人材が多い地域であることを企業誘致に生かしたい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "市役所の仕事をデジタル処理しIT企業へもっと外部委託すべきだ"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "まずは業務の見直しと切り出し可能な業務の整理を全庁横断的に進める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "各種デジタルツールの導入で業務効率化に一定の効果があり今後さらに活用を進める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "県との関係構築を進めながら基地港湾整備等を進める必要がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "県との連携が大変重要であり県主導の推進体制と連携して進める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "県と連携し漁業者や地域住民と協議し有望区域選定を目指している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "県主導で取組を一層推進する体制が整備された"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "県が港湾計画変更を進めており令和6年度の基地港湾指定を見込んでいる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "観光客がお金を使ってでも楽しみたいと思えるコンテンツが必要だ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "夜間滞在を延ばし宿泊と飲食店利用につなげる泊食分離で観光消費額拡大を図ってきた"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "酒田の食はコストパフォーマンスと味が優れており全国に誇れる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "酒田のラーメンや酒田フレンチや日本酒を押し出し美酒美食のまちとしてPRする"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "美酒美食を観光素材として積極的に活用し着地型旅行商品を造成してほしい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "若者の第一歩を後押しし将来の常連化とSNS発信につなげたい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "関東や秋田にも工場があり直ちに誘致するのは難しい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "飼料用米の収入が多いことが米粉用米減少の要因だと考える"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "米粉専用品種限定ではえぬきが対象外のため作付増は見込みにくい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "新たな支援制度の動向を見ながら将来の米粉産地としての可能性を検証する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "輸出先ニーズの把握とマッチングを経て輸出可能になると考える"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "酒田港の活用メリットが乏しく地元米だけで必要量供給も難しいためすぐの輸出は難しい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "家事や育児や介護の負担を家庭内で偏らせず分担することが重要だ"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "保育や介護サービスの拡充が両立しやすい環境に必要だ"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "職場改革として長時間労働是正と休暇取得しやすい環境が重要だ"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "パンフレット配布や各種講座で家事育児シェアの啓発を進めてきた"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "新婚家庭に講座受講を義務づけ関心の有無にかかわらずきっかけづくりをしている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "マタニティ教室で既に夫婦で家事分担しているという声が多く若年層の意識改革は進んでいる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "障がい児や医療的ケア児の保護者は預かり時間の短さや通院等で両立に困難を感じている"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "試行的に預かり時間を延長し今後さらに保育園並みまで延長したい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "働きやすさの指標となる企業を増やすことが重要で引き続き促進する"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "男性の育児への意識は大きく変わってきているとみている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "空き家増加の要因として人口減少がある"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "所有者把握の困難さも空き家増加の要因だ"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "この制度は景観改善と資産流動化に有効で市街地でも導入を進めるべきだ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_2.
+kg:op_42 prop:content "予算増額を検討し制度の積極活用を考えたい"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "活用11件のうち10件で売却や解体がなされ成果があった"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "時間と予納金負担のため毎年1件程度にとどまっている"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:op_45 prop:content "買物目線では帰りの便が不便という問題があると感じている"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_1.
+kg:op_46 prop:content "提言書やアンケートや新施設供用開始を踏まえ運行内容変更を検討する"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "地域独自の助け合い活動は大変重要だと考える"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "地域独自の助け合い活動は大変重要だと考える"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "支える側の人員確保と体制整備が課題だと把握している"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "庁内プロジェクトチームの具体的イメージを示すべきだ"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_3.
+kg:op_51 prop:content "買物弱者対策は庁内各課が連携して取り組むべき課題としてプロジェクトチームを立ち上げる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "働く世代のスポーツ実施率向上と健康増進機会創出のため実施している"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "健康づくり事業をもっとPRすべきだ"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "市広報やホームページでウォーキングの効果やマップを紹介している"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "市民のために使える一般財源を確保するための方策として実施している"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "予算抑制が市民活動の意欲を損ねているのではないか"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "市単独事業の削減で市民の参加意欲をそぐことがあってはならない"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_3.
+kg:op_58 prop:content "投資的経費が大幅に増えなければ令和9年度にはおおむね収支均衡になる見込みだ"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_1.
+kg:op_59 prop:content "事業休止について様々な意見があることは承知している"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_1.
+kg:op_60 prop:content "単に再開するのではなく改善点を検討し持続可能な事業へ再構築する"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:op_61 prop:content "全ての施設に適切な修繕を行えない状況があり公共施設全体の見直しが不可欠だ"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_1.
+kg:op_62 prop:content "このままでは基金が枯渇し新たな行政需要に対応できなくなるおそれがある"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_1.
+kg:op_63 prop:content "定年延長職員等を含め分断を起こさないよう風通しのよい職場づくりが大切だ"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_1.
+kg:op_64 prop:content "意見を言いやすく支え合い挑戦を評価する組織を目指す"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_1.
+kg:op_65 prop:content "仕事の目的を共有すれば自分の役割が分かり組織づくりにつながる"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_1.
+kg:op_66 prop:content "究極の目的は地域課題解決と市民生活向上であり財政健全化はその前提条件だ"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_1.
+kg:op_67 prop:content "急激な人口減少が様々な問題を起こしていることを丁寧に伝えたい"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_1.
+kg:op_68 prop:content "今後さまざまな機会で人口減少を前提としたまちづくりの考えを繰り返し伝えていく"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_1.
+kg:op_69 prop:content "トップは方向性と目的を示し具体策は職員からの提案を待ちたい"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_1.
+kg:op_70 prop:content "市長の考え方で組織を把握し部課長がやりがいのある市役所をつくってほしい"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_2.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "デジタル関連の業種は若者に人気があり、所得水準も高く、場所を選ばずに仕事ができるため、都会の仕事を本市でもできるなど、本市の大きな課題であります人口減少の対策として重要なものと位置づけております"@ja.
+<< kg:id_2 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "本市におきましては、ほかの自治体に先駆けて株式会社ＮＴＴデータ、それからＮＴＴ東日本株式会社、それから東北公益文科大学、そして、酒田市がデジタル人財の育成等を目的に、産学官共創の連携協定を締結し、様々な取組を展開してまいりました"@ja.
+<< kg:id_2 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "令和３年９月に全国285の市と区を対象に日本経済新聞社が行ったテレワークに適した環境整備等の分析調査においても、全国第２位の環境であると"@ja.
+<< kg:id_2 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "令和４年度夏のＤｉｇｉ田甲子園で優勝するなど、本市のデジタル変革の取組が注目されたこと"@ja.
+<< kg:id_2 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "丸山前市長によるトップセールスを継続して行った結果として、デジタル関連企業の本市への進出が続いたと考えております"@ja.
+<< kg:id_2 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "本市の強みは、ジュニアドクター鳥海塾で学んでいる小学校高学年からサンロクＩＴ女子のような社会人まで、デジタル技術を学んでいる若い人材がたくさんいる地域だということを積極的にアピールをして、企業誘致につなげていきたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "私は、市役所の仕事をデジタル処理することでＩＴ企業へのアウトソーシングすることをもっとすべきじゃないかと。市役所そのものがＩＴ企業と結びついてグレードアップしていく、そんな新しい市役所像について、どのようにお考えかお伺いします。 御質問がありましたアウトソーシングにつきましては、市役所内の業務の見直しや洗い出しを行った上で、実際にデジタル関連企業が請け負えるような形にできるかの確認、整理が必要と考えております"@ja.
+<< kg:id_10 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "近年、市役所の業務については、人がパソコン上で日常的に行っている作業を、人が実行するのと同じ形で自動化するＲＰＡや、あるいは市民手続をオンライン化するツールであるｋｉｎｔｏｎｅなどを活用することにより、デジタル化を進めてきた経緯があります。 これまで取り組んできたものとしては、先ほど申し上げたＲＰＡやｋｉｎｔｏｎｅに加え、議会をはじめとしたペーパーレス化、それから、書類の文字をデータ化するＡＩ－ＯＣＲ、それから、音声データを文字データに変換する会議録生成ツールなどの導入があります。 また、本年７月からはＣｈａｔＧＰＴをはじめとする対話型生成ＡＩを職員が活用できる環境を整えておりまして"@ja.
+<< kg:id_12 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "洋上風力発電プロジェクトについては、県との関係性、私はこれが一番大事ではないかと。県との関係を構築しながら、基地港湾整備等を進めていく必要があると考えております 私も県との連携が大変大事だと考えております"@ja.
+<< kg:id_14 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "酒田市沖での洋上風力発電プロジェクトについては、酒田沿岸域検討部会の事務局である山形県と連携をしながら、漁業者や地域住民の代表者等の地元関係者との協議を進め、有望な区域への選定を目指して、令和５年５月に県から国に情報提供をしたところであります"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "山形県は、洋上風力発電の導入に向けた再エネ政策、産業振興、漁業振興、港湾整備、地域企画・調整に資する取組を各部が一体となり強力に展開していくため、副知事トップの下で、５名の関係部長等を洋上風力推進監として構成する推進体制を整備したところでありまして、県主導で取組をより一層推進しようとしているところであります"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "山形県が酒田港港湾計画に海洋再生可能エネルギー発電設備の設置及び維持管理の拠点を形成する区域を新たに位置づけるための一部変更手続を進めておりまして、今年９月８日に開催された山形県地方港湾審議会において、計画変更が承認されたところであります。 つまり令和６年度に酒田港は基地港湾に指定され、その整備に着手していくことになるのではないかと考えております"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "観光で外貨を稼ぐためには、当然のことながら、観光客が酒田に来て、お金を使ってでも楽しみたいと思ってもらえる観光コンテンツの存在が不可欠であります"@ja.
+<< kg:id_22 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "本市は、これまで観光消費額を拡大させるため、観光施設の夜間のライトアップをして夜間の滞在時間を延ばしてもらい、そして、宿泊をしてもらう。そして、宿泊施設以外の飲食店でおいしいお酒と食事をしていただくことによって飲食業の支援をするという、泊食分離という考え方に基づいて取り組んでまいりました"@ja.
+<< kg:id_22 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "酒田市の食文化は、全く私も同じ思いでありまして、手頃な値段でおいしく、おしゃれで、そして量も多い、どのお店に入っても全く外れがない、このような地域はほかにないと思っております。 文化庁100年フードに認定された酒田のラーメン、それから酒田フレンチ、日本酒も含めた食に関するコンテンツを押し出して、美酒美食のまち酒田として、これからＰＲしてまいります"@ja.
+<< kg:id_22 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "酒田ＤＭＯには、本市において欠かすことのできないコンテンツである美酒美食を観光素材として積極的に活用して、着地型旅行商品等を造成していただきたい"@ja.
+<< kg:id_26 prop:countermeasure kg:id_27 >>
+    prop:text-txt_contents "これまで美酒美食のまち酒田を推進する活動としては、酒田市が誇る地酒と食材を存分に味わっていただくツアーとして、湊町酒田の酒と食を愉しむ夕べを酒田ＤＭＯが行っております"@ja.
+<< kg:id_26 prop:countermeasure kg:id_28 >>
+    prop:text-txt_contents "また、今年の６月には、料亭の味を気軽に味わう料亭コラボランチも実施しております"@ja.
+<< kg:id_26 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "この11月には、市内の20代の若者を対象に、本格的な握りずしをリーズナブルに楽しむ機会を提供する、市内20代限定カウンター寿司デビュー応援企画も行う予定であります。本格的な握りずしや料亭は敷居が高いと思う若者の第一歩を後押しして、将来の常連となっていただく、そして、お店や食事の評価について、豊富な発信力を持つ若い世代からＳＮＳで発信してもらうことが目的であります"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "関東のほか秋田にも工場があることから、すぐに酒田市に誘致するというのは難しいかなと考えております"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "本市では米粉用米の作付面積が減少しており、逆に飼料用米の作付面積が増加傾向にあります。これは、飼料用米のほうが国の交付金を含めた生産者の収入が多いということが要因だと考えております"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "米粉用米に係るコメ新市場開拓等促進事業の対象は米粉専用品種に限定されており、実需者が求めておりますはえぬきは対象外であることから、この事業により米粉用米の作付が増える可能性は小さいと考えております"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "まずは、国が示す米粉用米への新たな支援制度の動向や、それに伴う農家所得への効果などを注視して、将来の米粉産地としての可能性を検証してまいりたい"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "米粉の輸出は、輸出先のニーズを的確に把握し、戦略的に実施することが重要だと考えております。例えば、海外のグルテンフリー市場の調査や製粉会社とのマッチング活動などを経て、輸出が可能になると考えております"@ja.
+<< kg:id_38 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "酒田港の活用メリットに少し乏しいかなと考えております。本市では、飼料用米の作付面積が増加傾向にある中で、地元の米だけで市内企業が必要とする米粉を供給することは難しい状況にありますので、現時点ですぐに米粉が輸出されるという状況にはなりにくいかなと考えております"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "まずは、両立しやすい環境になるための３つの条件を申し上げます。１つ目は、家庭内の家事・育児・介護などのケア労働を家族全員でシェアすること"@ja.
+<< kg:id_41 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "２つ目は、保育・介護などのサービスを充実させること"@ja.
+<< kg:id_41 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "３つ目は、職場における長時間労働の是正と育児・介護等による休暇を取りやすい職場とすること、この３つが重要だと考えております"@ja.
+<< kg:id_45 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "例えば、「家事シェアのススメ」というパンフレットを作成し、ウィズ講座や出前講座、これから出産予定の夫婦が参加するマタニティ教室、それから、婚姻届や出生届の際にも１階の窓口で配布をしてまいりました"@ja.
+<< kg:id_45 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "結婚新生活支援の補助金交付を受けた新婚家庭には家事育児参加促進講座の受講を義務づけまして、関心の有無にかかわらず、これからの新生活での家事・育児シェアを考えるきっかけづくりとしていただいております"@ja.
+<< kg:id_45 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "その結果、例えば、マタニティ教室では、既に家事は夫婦で分担しております、という声が多数寄せられておりまして、若い年代の方々の意識改革は大きく進んでいると考えております"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "障がい児あるいは医療的ケア児の保護者は、通院や通所のために仕事を休まざるを得ないことや障がい児福祉サービスの預かり時間が短いなど、仕事と育児の両立に困難を感じていると伺っております"@ja.
+<< kg:id_51 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "児童発達支援センターはまなし学園では、これまで預かり時間が午前８時半から午後５時15分までであったものを、令和５年度から試行として午前７時半から午後６時半まで延長しております。今後、試行期間中の課題を検証して、保育園や認定こども園と同程度まで預かり時間を延長し、仕事と保育の両立を図っていきたい"@ja.
+<< kg:id_53 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "日本一女性が働きやすいまち宣言に賛同するリーダーの会の賛同企業、それから、一般事業主行動計画を策定する企業、そして、働きやすさの指標となる国の認定制度であるえるぼし取得企業といった企業を増やしていくことが重要だと考えておりますので、引き続き促進してまいります"@ja.
+<< kg:id_55 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "令和４年度山形県男女共同参画白書によりますと、男性の育児休業取得率が平成17年には0.1％だったのに対し、令和４年には21.6％にまで伸び、男性の育児への意識は大きく変わってきていることがうかがえます"@ja.
+<< kg:id_57 prop:cause kg:id_1 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "空き家等の件数は、今後も増加することが予想されますが、その要因としては、人口減少のほか"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "その要因としては、人口減少のほか、相続放棄等により所有者の把握が困難であることが上げられます"@ja.
+<< kg:id_59 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_41;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "酒田市では、所有者不明の空き家等の解消を目的として相続財産管理人選任申立てを活用して問題を解決してまいりました。 所有者不明の空き家等の解消を図り、空き家の利活用を促進するためにも、予算の増額を検討して、今後のこれらの制度の積極的な活用を考えていきたいと思います"@ja.
+<< kg:id_61 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "令和４年度までに活用した件数は、中心市街地を中心に11件でありました。そのうち10件は売却、解体がなされ、一定の成果を得ております"@ja.
+<< kg:id_63 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "相続財産管理人選任申立てにつきましては、相続状況の把握に多くの時間を要することに加え、高額な予納金、100万円程度ですが、納付する必要がありますことから、予算面からも毎年１件程度の申立てにとどまっております"@ja.
+<< kg:id_65 prop:effect kg:id_66 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "買物目線で考えた場合には、やはり帰りの便がなかなか見つけにくい、不便であるという問題があると感じております"@ja.
+<< kg:id_65 prop:countermeasure kg:id_67 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "今後は、市議会からの提言書、アンケート調査の結果、酒田商業高校跡地における民間施設の供用開始といった事情などを踏まえ、交通事業者とも協議をしながら、運行内容の変更について検討していきたい"@ja.
+<< kg:id_65 prop:countermeasure kg:id_68 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "買物弱者の対策としては、琢成学区コミュニティ振興会で実施しているよろずや琢成での買物代行サービス"@ja.
+<< kg:id_65 prop:countermeasure kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "田沢コミュニティ振興会で実施している田沢おたすけ隊での買物代行及び付添支援サービスといった有償ボランティア活動が行われておりまして、このような地域独自の助け合いや支え合いの活動は大変重要なものと考えております"@ja.
+<< kg:id_65 prop:cause kg:id_70 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "一方で、サポートする側の人員確保や体制の整備も課題であると伺っております"@ja.
+<< kg:id_65 prop:countermeasure kg:id_71 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_50;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "このたび、庁内に設けるプロジェクトチームの中で、それも含めて検討していきたいと考えております。 組織横断の取組としては、市長所信表明の中で申し上げましたが、まずは、買物弱者対策を庁内各課が連携して取り組むべき課題であると捉え、プロジェクトチームを挙げて取り組んでまいります"@ja.
+<< kg:id_72 prop:countermeasure kg:id_73 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "働く世代を対象にしたスポーツ実施率の向上、それから、コロナ禍における健康増進に取り組む機会の創出を目的としてスポーツの推進に取り組んでおります。スマートフォンのアプリを活用した民間主催のラン＆ウオークイベントを、市民及び市内企業へ周知して実施をしております"@ja.
+<< kg:id_74 prop:countermeasure kg:id_75 >>
+    prop:text-txt_contents "誰もが楽しめるスポーツ機会の創出としては、平成30年度からニュースポーツ大会を開催しておりまして"@ja.
+<< kg:id_74 prop:countermeasure kg:id_76 >>
+    prop:text-txt_contents "モルック競技の普及に取り組む酒田米菓株式会社モルック部と酒田市スポーツ推進委員会が共催で、令和４年度に酒田市モルック大会を初めて開催し、小学生から80代まで123名から御参加をいただきました"@ja.
+<< kg:id_77 prop:countermeasure kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "さらには、気軽にできる健康づくりとして、市民にウォーキングを勧めております。市の広報でウォーキングの効果を紹介するとともに、市のホームページにウォーキングマップも掲載しております"@ja.
+<< kg:id_77 prop:countermeasure kg:id_79 >>
+    prop:text-txt_contents "このほかにも、健康診査後の健康づくりを応援するさかた健康マイレージ事業や、中町にぎわい健康プラザを会場に、運動による生活習慣の改善を促す特定保健指導運動教室や糖尿病高血圧予防教室、さらには一般市民の健康づくりとして、中高年女性向けの美ＢＯＤＹ体幹トレーニング教室や中高年男性向けの男性の運動教室なども実施しております"@ja.
+<< kg:id_80 prop:countermeasure kg:id_81 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "令和５年度から実施しているプロジェクト３０－３０は、財政調整基金の残高30億円を確保し、市債発行上限額を年間30億円、５年間で150億円以下に抑制することにより、公債費を削減するものであります。公債費の削減により、市民のために使える一般財源を確保するための方策として実施するものであります"@ja.
+<< kg:id_80 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "この実現により、先般示させていただきました中期財政計画では、令和９年度には収支の均衡、つまり基金全体での積み増しが図られるようになると見込んでおります"@ja.
+<< kg:id_83 prop:effect kg:id_84 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "特にイベント・交流事業の見直しのために一旦休止した事業があることについて様々な御意見があることは承知をいたしております"@ja.
+<< kg:id_83 prop:countermeasure kg:id_85 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "今までと同じことを再開するのではなく、事業内容や実施手法の見直しで改善できることはないかを検討した上で、持続可能な形で事業を再構築しようとするものでございます"@ja.
+<< kg:id_86 prop:cause kg:id_87 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "しかし、急激な人口減少に見合わない公共施設を抱えているという状況がございまして、なかなか全ての施設に修繕を適切に行うことができない状況がございますので、やはり公共施設全体の見直しが不可欠であるかなと考えております"@ja.
+<< kg:id_88 prop:cause kg:id_89 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "慢性的な財源不足により毎年基金繰入れに頼った予算編成が続いており、このままでは基金が枯渇し、新たな行政需要に対応できなくなるおそれがあるため"@ja.
+<< kg:id_90 prop:countermeasure kg:id_91 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "大切な視点は、これらの職員の分断が起きないように、日頃から風通しのよい職場環境を整備することだと考えております"@ja.
+<< kg:id_90 prop:countermeasure kg:id_92 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "具体的には、意見や相談を気兼ねなく言えるコミュニケーションが活発な職場、２つ目が支え合い、尊重し、助け合いや思いやりがある職場、３つ目がチャレンジする姿勢を評価し後押しする職場ということでございます"@ja.
+<< kg:id_90 prop:countermeasure kg:id_93 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "各部署の仕事の目的を部署内の職員全員で共有することも大事だと考えております。何のために仕事をしているのか、この仕事は市民の幸せにどうつながっているのか、そういう目的を共有すれば、自分は何をすべきなのか、自分の役割がみんな分かると考えております"@ja.
+<< kg:id_88 prop:effect kg:id_94 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "財政健全化自体は市役所の究極の目的ではございません。これは、究極の目的達成のために守らなければならない制約条件であり、前提条件であると私は位置づけております。究極の目的は、地域課題の解決、市民生活の向上、つまり市民のウェルビーイングの向上であります"@ja.
+<< kg:id_95 prop:cause kg:id_96 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "急激な人口減少が様々な問題を引き起こしていること、ですから、酒田市は人口減少をできる限り抑制する施策とともに、人口がたとえ減少しても、豊かに安心して暮らせるまちをつくるんだと"@ja.
+<< kg:id_97 prop:countermeasure kg:id_98 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "今後はさらに増えると思いますので、例えば、コミュニティ振興会、経済団体など様々なお話の機会があると思います。その際、急激な人口減少が様々な問題を引き起こしていること、ですから、酒田市は人口減少をできる限り抑制する施策とともに、人口がたとえ減少しても、豊かに安心して暮らせるまちをつくるんだと。令和の時代は、残念ながら、昭和や平成の時代とは違うんだ、ということを丁寧に、繰り返し繰り返しお話ししてまいりたい"@ja.
+<< kg:id_97 prop:countermeasure kg:id_99 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_69;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "私の思いとしましては、市長、あるいは組織のトップは、方向性を示す、目的を示す、その上で手段、具体的な施策については、ぜひ職員のほうから考えてもらいたいという思いがあります"@ja.
+}

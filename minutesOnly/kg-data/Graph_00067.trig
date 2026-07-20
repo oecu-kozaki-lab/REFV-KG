@@ -1,0 +1,231 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00067> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "化石燃料の先行き不安"@ja.
+kg:id_1 rdf:type cls:c_1852.
+cls:c_1852 rdfs:label "資源不安"@ja.
+kg:id_2 rdfs:label "エネルギー資源の争奪"@ja.
+kg:id_2 rdf:type cls:c_1853.
+cls:c_1853 rdfs:label "資源争奪"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "国際紛争"@ja.
+kg:id_3 rdf:type cls:c_1435.
+cls:c_1435 rdfs:label "国際紛争"@ja.
+kg:id_3 prop:cause kg:id_2.
+kg:id_4 rdfs:label "中国の発展停滞"@ja.
+kg:id_4 rdf:type cls:c_1854.
+cls:c_1854 rdfs:label "発展停滞"@ja.
+kg:id_5 rdfs:label "エネルギー問題と公害問題を解決できないこと"@ja.
+kg:id_5 rdf:type cls:c_1855.
+cls:c_1855 rdfs:label "環境・エネルギー問題"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "エネルギー問題"@ja.
+kg:id_6 rdf:type cls:c_755.
+cls:c_755 rdfs:label "エネルギー問題"@ja.
+kg:id_7 rdfs:label "中国のこれ以上の発展ができない状況"@ja.
+kg:id_7 rdf:type cls:c_1854.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "公害問題"@ja.
+kg:id_8 rdf:type cls:c_1101.
+cls:c_1101 rdfs:label "環境問題"@ja.
+kg:id_8 prop:effect kg:id_7.
+kg:id_9 rdfs:label "酒田市"@ja.
+kg:id_9 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_10 rdfs:label "火力発電所の整備"@ja.
+kg:id_10 rdf:type cls:c_763.
+cls:c_763 rdfs:label "火力発電"@ja.
+kg:id_9 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "風力発電の導入"@ja.
+kg:id_11 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_9 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "リサイクルされた素材の燃料化"@ja.
+kg:id_12 rdf:type cls:c_1856.
+cls:c_1856 rdfs:label "資源燃料化"@ja.
+kg:id_9 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "バイオマスによる燃料の生成"@ja.
+kg:id_13 rdf:type cls:c_1857.
+cls:c_1857 rdfs:label "バイオ燃料"@ja.
+kg:id_9 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "雑草からのエタノール生成技術の実用化"@ja.
+kg:id_14 rdf:type cls:c_1858.
+cls:c_1858 rdfs:label "燃料化技術"@ja.
+kg:id_9 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "ペレット燃料の活用"@ja.
+kg:id_15 rdf:type cls:c_1859.
+cls:c_1859 rdfs:label "固形燃料"@ja.
+kg:id_9 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "循環型のエネルギー産業"@ja.
+kg:id_16 rdf:type cls:c_1860.
+cls:c_1860 rdfs:label "エネルギー産業"@ja.
+kg:id_17 rdfs:label "リーディング産業になる可能性が高い"@ja.
+kg:id_17 rdf:type cls:c_1861.
+cls:c_1861 rdfs:label "基幹産業化"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "火力発電所と風力発電の存在"@ja.
+kg:id_18 rdf:type cls:c_1862.
+cls:c_1862 rdfs:label "発電基盤"@ja.
+kg:id_16 prop:cause kg:id_18.
+kg:id_16 prop:cause kg:id_12.
+kg:id_16 prop:cause kg:id_13.
+kg:id_19 rdfs:label "雑草からのエタノール生成技術"@ja.
+kg:id_19 rdf:type cls:c_1858.
+kg:id_16 prop:cause kg:id_19.
+kg:id_20 rdfs:label "山林のペレット燃料資源"@ja.
+kg:id_20 rdf:type cls:c_1863.
+cls:c_1863 rdfs:label "燃料資源"@ja.
+kg:id_16 prop:cause kg:id_20.
+kg:st_1 rdfs:label "発言者"@ja.
+kg:st_1 rdf:type cls:st_17.
+cls:st_17 rdfs:label "発言者"@ja.
+kg:op_1 prop:content "化石燃料の先行きには常に不安がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "国際紛争の多くはエネルギー資源の争奪が原因だとみている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "中国はエネルギーと公害問題を解決しなければこれ以上発展できない状況にある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "エネルギー問題は中国の今後の発展を制約する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "公害問題は中国の今後の発展を制約する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "酒田市には既に火力発電所がある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "酒田市には既に風力発電がある"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "リサイクル素材の燃料化は有望だとみている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "バイオマス燃料の生成は有望だとみている"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "雑草からのエタノール生成技術は実用化が時間の問題だとみている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "山林はペレット燃料の宝庫であり活用余地が大きい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "循環型のエネルギー産業がリーディング産業になる可能性は非常に高い"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "既存の発電基盤が循環型エネルギー産業の可能性を高めている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "リサイクル素材の燃料化が循環型エネルギー産業の成立要素になる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "バイオマス燃料の生成が循環型エネルギー産業の成立要素になる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "エタノール生成技術が循環型エネルギー産業の成立要素になる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "山林資源が循環型エネルギー産業の成立要素になる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "化石燃料の先行きは常に不安があります。国際紛争のもとはエネルギー資源の争奪によるものがほとんど"@ja.
+<< kg:id_3 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "国際紛争のもとはエネルギー資源の争奪によるものがほとんど"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "隣国の13億の国民を擁する中国は、エネルギーと公害問題を解決しなければ、これ以上の発展ができないという状況にもあります"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "中国は、エネルギーと公害問題を解決しなければ、これ以上の発展ができないという状況"@ja.
+<< kg:id_8 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "中国は、エネルギーと公害問題を解決しなければ、これ以上の発展ができないという状況"@ja.
+<< kg:id_9 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "酒田市には既に火力発電所、風力発電があり"@ja.
+<< kg:id_9 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "酒田市には既に火力発電所、風力発電があり"@ja.
+<< kg:id_9 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "リサイクルされた素材の燃料化"@ja.
+<< kg:id_9 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "バイオマスによる燃料の生成"@ja.
+<< kg:id_9 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "雑草からエタノールが生成される基本技術も発表されており、実用化は時間の問題と言われております"@ja.
+<< kg:id_9 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "山林はペレット燃料の宝庫です"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "これらのことから、リーディング産業に循環型のエネルギー産業がなる要素が非常に高い"@ja.
+<< kg:id_16 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "酒田市には既に火力発電所、風力発電があり"@ja.
+<< kg:id_16 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "リサイクルされた素材の燃料化"@ja.
+<< kg:id_16 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "バイオマスによる燃料の生成"@ja.
+<< kg:id_16 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "雑草からエタノールが生成される基本技術も発表されており"@ja.
+<< kg:id_16 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "山林はペレット燃料の宝庫です"@ja.
+}

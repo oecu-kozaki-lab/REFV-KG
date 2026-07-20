@@ -1,0 +1,448 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00023> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "山形県後期高齢者医療広域連合規約の変更"@ja.
+kg:id_1 rdf:type cls:c_740.
+cls:c_740 rdfs:label "条例改正"@ja.
+kg:id_2 rdfs:label "高齢者の医療の確保に関する法律の一部改正による被保険者証等の廃止"@ja.
+kg:id_2 rdf:type cls:c_741.
+cls:c_741 rdfs:label "法改正"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "米沢市個人番号利用等条例の一部改正"@ja.
+kg:id_3 rdf:type cls:c_740.
+kg:id_4 rdfs:label "利用特定個人情報の提供に関する命令の施行及び児童手当法・生活保護法の一部改正"@ja.
+kg:id_4 rdf:type cls:c_741.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "米沢市立病院使用料及び手数料条例の一部改正"@ja.
+kg:id_5 rdf:type cls:c_740.
+kg:id_6 rdfs:label "米沢市立病院第1駐車場の供用開始"@ja.
+kg:id_6 rdf:type cls:c_742.
+cls:c_742 rdfs:label "施設供用"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "米沢市国民健康保険条例の一部改正"@ja.
+kg:id_7 rdf:type cls:c_740.
+kg:id_8 rdfs:label "国民健康保険法の一部改正"@ja.
+kg:id_8 rdf:type cls:c_741.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "（仮称）栗子山風力発電事業"@ja.
+kg:id_9 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_10 rdfs:label "事業の推進方法に多くの問題点を抱えていること"@ja.
+kg:id_10 rdf:type cls:c_743.
+cls:c_743 rdfs:label "事業問題"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "景観法上必要な手続をせずに風況観測用の作業道が整備された問題"@ja.
+kg:id_11 rdf:type cls:c_744.
+cls:c_744 rdfs:label "手続不備"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:id_12 rdfs:label "環境影響評価準備書や住民説明会議事録の公開などに関する事業者対応の不十分さ"@ja.
+kg:id_12 rdf:type cls:c_745.
+cls:c_745 rdfs:label "対応不備"@ja.
+kg:id_9 prop:effect kg:id_12.
+kg:id_13 rdfs:label "イヌワシの営巣や重要な狩り場への影響懸念"@ja.
+kg:id_13 rdf:type cls:c_746.
+cls:c_746 rdfs:label "生態影響"@ja.
+kg:id_9 prop:effect kg:id_13.
+kg:id_14 rdfs:label "ツキノワグマやイノシシが市街地に出没する可能性への懸念"@ja.
+kg:id_14 rdf:type cls:c_746.
+kg:id_9 prop:effect kg:id_14.
+kg:id_15 rdfs:label "事業の白紙撤回を求める"@ja.
+kg:id_15 rdf:type cls:c_31.
+cls:c_31 rdfs:label "事業中止"@ja.
+kg:id_9 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "山形県知事や国の意見や勧告に請願内容を十分反映する"@ja.
+kg:id_16 rdf:type cls:c_719.
+cls:c_719 rdfs:label "意見反映"@ja.
+kg:id_9 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "米沢の自然に合った再生可能エネルギーを活用する"@ja.
+kg:id_17 rdf:type cls:c_747.
+cls:c_747 rdfs:label "再エネ活用"@ja.
+kg:id_9 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "生態系・生物多様性や地質などの環境に配慮し場所や規模を設定する"@ja.
+kg:id_18 rdf:type cls:c_748.
+cls:c_748 rdfs:label "環境配慮"@ja.
+kg:id_9 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "事業者が住民に調査・予測・評価を説明し理解を得る"@ja.
+kg:id_19 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_9 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "事業計画及び対応が著しく妥当性を欠くこと"@ja.
+kg:id_20 rdf:type cls:c_749.
+cls:c_749 rdfs:label "計画不当"@ja.
+kg:id_9 prop:cause kg:id_20.
+kg:id_21 rdfs:label "大規模な土地改変による水環境・水生生物・生態系への影響懸念"@ja.
+kg:id_21 rdf:type cls:c_190.
+cls:c_190 rdfs:label "環境影響"@ja.
+kg:id_9 prop:effect kg:id_21.
+kg:id_22 rdfs:label "谷筋の大規模盛土や地滑り地形による土砂災害の懸念"@ja.
+kg:id_22 rdf:type cls:c_750.
+cls:c_750 rdfs:label "災害懸念"@ja.
+kg:id_9 prop:effect kg:id_22.
+kg:id_23 rdfs:label "本事業の取りやめも含めた抜本的な事業計画の見直し"@ja.
+kg:id_23 rdf:type cls:c_271.
+cls:c_271 rdfs:label "計画見直し"@ja.
+kg:id_9 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "地域住民等への丁寧かつ十分な説明と修正内容の公表"@ja.
+kg:id_24 rdf:type cls:c_54.
+kg:id_9 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "土地の改変を最小限に抑制する"@ja.
+kg:id_25 rdf:type cls:c_751.
+cls:c_751 rdfs:label "土地改変抑制"@ja.
+kg:id_9 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "土砂の崩落や流出による水環境・動植物への影響を回避または低減する"@ja.
+kg:id_26 rdf:type cls:c_752.
+cls:c_752 rdfs:label "環境影響低減"@ja.
+kg:id_9 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "イヌワシなど重要鳥類への影響を回避または低減する措置を講ずる"@ja.
+kg:id_27 rdf:type cls:c_753.
+cls:c_753 rdfs:label "生態影響低減"@ja.
+kg:id_9 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "風力発電の推進"@ja.
+kg:id_28 rdf:type cls:c_754.
+cls:c_754 rdfs:label "発電推進"@ja.
+kg:id_29 rdfs:label "日本のエネルギー自給率の低さと化石燃料依存度の高さと再生可能エネルギー普及の遅れ"@ja.
+kg:id_29 rdf:type cls:c_755.
+cls:c_755 rdfs:label "エネルギー問題"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "CO2排出削減とクリーンな再生可能エネルギーへの転換"@ja.
+kg:id_30 rdf:type cls:c_487.
+cls:c_487 rdfs:label "脱炭素化"@ja.
+kg:id_28 prop:effect kg:id_30.
+kg:id_31 rdfs:label "原油価格や円安の影響を受けにくい電力供給"@ja.
+kg:id_31 rdf:type cls:c_756.
+cls:c_756 rdfs:label "安定供給"@ja.
+kg:id_28 prop:effect kg:id_31.
+kg:id_32 rdfs:label "エネルギーの地産地消による効率的な電力利用"@ja.
+kg:id_32 rdf:type cls:c_103.
+cls:c_103 rdfs:label "地産地消"@ja.
+kg:id_28 prop:effect kg:id_32.
+kg:id_33 rdfs:label "企業誘致や新産業団地への電力供給"@ja.
+kg:id_33 rdf:type cls:c_94.
+cls:c_94 rdfs:label "電力供給"@ja.
+kg:id_28 prop:effect kg:id_33.
+kg:id_34 rdfs:label "地球温暖化を止め人の命や財産と自然環境を守ることにつながる"@ja.
+kg:id_34 rdf:type cls:c_475.
+cls:c_475 rdfs:label "環境保全"@ja.
+kg:id_28 prop:effect kg:id_34.
+kg:st_1 rdfs:label "反対した委員"@ja.
+kg:st_1 rdf:type cls:st_29.
+cls:st_29 rdfs:label "反対者"@ja.
+kg:op_1 prop:content "現行の保険証廃止とマイナ保険証一本化に反対"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "委員"@ja.
+kg:st_2 rdf:type cls:st_30.
+cls:st_30 rdfs:label "委員"@ja.
+kg:op_2 prop:content "現行の保険証で十分対応できるためマイナ保険証一本化に反対"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "マイナ保険証の登録率に比べ利用率が低い理由を確認"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "登録していない人や身体的理由で登録が難しい人への対応を確認"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "当局"@ja.
+kg:st_3 rdf:type cls:st_31.
+cls:st_31 rdfs:label "当局"@ja.
+kg:op_5 prop:content "利用率は登録者のうち医療機関等を受診した割合であり数値に乖離がある"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "認知症や障がいのある方など登録が難しい場合は資格確認書を交付する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "請願者"@ja.
+kg:st_4 rdf:type cls:st_32.
+cls:st_32 rdfs:label "請願者"@ja.
+kg:op_7 prop:content "事業は白紙撤回すべき"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "参考人"@ja.
+kg:st_5 rdf:type cls:st_8.
+cls:st_8 rdfs:label "参考人"@ja.
+kg:op_8 prop:content "市が指摘内容を調べ不備を明らかにした対応に感謝"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_5.
+kg:op_9 prop:content "事業者の対応は不十分で市長の白紙撤回要求に感謝"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "大型風力は一律反対ではないが生態系や生物多様性に配慮し場所や規模の設定が重要"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "参考人及び紹介議員"@ja.
+kg:st_6 rdf:type cls:st_8.
+kg:op_11 prop:content "事業区域近傍でイヌワシが営巣している蓋然性が高く尾根一帯は重要な狩り場"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "採択賛成の委員"@ja.
+kg:st_7 rdf:type cls:st_30.
+kg:op_12 prop:content "イヌワシへの影響など自然環境や生態系の破壊が懸念される"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "請願反対討論の山村明議員"@ja.
+kg:st_8 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_13 prop:content "地球温暖化を放置することこそ貴重な動植物の絶滅をもたらす"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_8.
+kg:op_14 prop:content "因果関係は証明できないが住民の懸念に調査と説明が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_6.
+kg:op_15 prop:content "市長が事業者に白紙撤回を求めるべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:st_9 rdfs:label "米沢市長"@ja.
+kg:st_9 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_16 prop:content "事業者に事業の白紙撤回を要求"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_9.
+kg:op_17 prop:content "市民の不安と不信が広がっており事業中止を求める請願は妥当"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_7.
+kg:op_18 prop:content "大規模開発で自然環境や生態系の破壊が懸念されるため採択すべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_7.
+kg:st_10 rdfs:label "不採択意見の委員"@ja.
+kg:st_10 rdf:type cls:st_30.
+kg:op_19 prop:content "懸念事項を伝えて計画改善で対応可能であり中止を求める必要はない"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_10.
+kg:op_20 prop:content "知事や国の意見や勧告に請願内容を十分反映してほしい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "米沢牛のふんを使ったバイオマス発電のような地域に合う再エネ活用が望ましい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "気候変動対策と生物多様性保全を両立し場所や規模の設定が重要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "懸念事項について住民の理解と合意を得る過程が重要"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:st_11 rdfs:label "提出者 佐野洋平議員"@ja.
+kg:st_11 rdf:type cls:st_9.
+kg:op_24 prop:content "請願者及び市議会の意見を尊重した対応を国に求める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "賛成討論の髙橋千夏議員"@ja.
+kg:st_12 rdf:type cls:st_9.
+kg:op_25 prop:content "現段階で賛成要素は見当たらず白紙撤回を求める意見書は合理的"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_12.
+kg:st_13 rdfs:label "髙橋千夏議員"@ja.
+kg:st_13 rdf:type cls:st_9.
+kg:op_26 prop:content "風力発電推進を優先するあまり自然環境や生態系への配慮を看過している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_13.
+kg:op_27 prop:content "知事意見でも土砂災害の懸念が示されている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_13.
+kg:st_14 rdfs:label "山村明議員"@ja.
+kg:st_14 rdf:type cls:st_9.
+kg:op_28 prop:content "災害リスクは備えながら建築を行うべきで風力発電だけを否定すべきではない"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_14.
+kg:st_15 rdfs:label "山形県知事"@ja.
+kg:st_15 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_29 prop:content "事業の取りやめも含め抜本的な見直しが必要"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_15.
+kg:st_16 rdfs:label "経済産業大臣"@ja.
+kg:st_16 rdf:type cls:st_33.
+kg:op_30 prop:content "関係機関と十分調整し地域住民に丁寧で十分な説明を行うべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_16.
+kg:op_31 prop:content "現状計画での土地改変は最小限に抑えるべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_16.
+kg:op_32 prop:content "土砂崩落や流出による環境影響を回避または極力低減すべき"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_16.
+kg:op_33 prop:content "透明性と客観性を確保し重要鳥類への影響回避策を講ずるべき"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_16.
+kg:op_34 prop:content "風力発電を増やすことは理にかなっている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_14.
+kg:op_35 prop:content "地球温暖化を止めるため再生可能エネルギーたる風力発電は有効で必要"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_14.
+kg:op_36 prop:content "化石燃料輸入頼みより再生可能エネルギー普及を進めるべき"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_14.
+kg:op_37 prop:content "近くで発電し近くで使うことは非常に効率的"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_14.
+kg:op_38 prop:content "進出企業に電力を供給できる取組として風力発電は必要"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_14.
+kg:op_39 prop:content "風力発電は人の命や財産、暮らし、自然環境を守ることにつながる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_14.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "高齢者の医療の確保に関する法律の一部改正により被保険者証等が廃止されることに伴い、山形県後期高齢者医療広域連合規約を変更する"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "行政手続における特定の個人を識別するための番号の利用等に関する法律第19条第８号に基づく利用特定個人情報の提供に関する命令の施行並びに児童手当法及び生活保護法の一部改正に伴い、所要の改正を行おうとする"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "米沢市立病院第１駐車場の供用開始に伴い、所要の改正を行おうとする"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "国民健康保険法の一部改正に伴い、所要の改正を行うとともに、規定の整備を図ろうとする"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "（仮称）栗子山風力発電事業が事業の推進方法に多くの問題点を抱えていることから、事業を白紙撤回すべきである"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "事業者が景観法上必要な手続をせずに風況観測用の作業道を整備したことが本市議会の一般質問で明らかになる"@ja.
+<< kg:id_9 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "環境影響評価準備書や住民説明会の議事録の公開などに関する事業者の対応が不十分であったため、米沢市長から事業者に対し事業の白紙撤回を求めていただいた"@ja.
+<< kg:id_9 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "事業実施区域近傍においてイヌワシが営巣している蓋然性が高いとされており、また、日本イヌワシ研究会から県知事に提出された意見書では、風力発電機を設置する計画の尾根一帯がイヌワシの重要な狩り場だと指摘されている"@ja.
+<< kg:id_9 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "風車の建設により環境が変化し、ツキノワグマやイノシシが市街地に出没する可能性がある"@ja.
+<< kg:id_9 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "米沢市長が事業者に対し事業の白紙撤回を要求"@ja.
+<< kg:id_9 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "山形県知事や国が事業に関する意見や勧告において、この請願内容を十分に反映することを求め"@ja.
+<< kg:id_9 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "米沢牛のふんを使ったバイオマス発電のように米沢の自然に合った再生可能エネルギーの活用ができればよい"@ja.
+<< kg:id_9 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "気候変動対策と生物多様性の保全を両立することが大事であり、生態系・生物多様性に配慮し、地質などの環境を含め、場所や規模を設定することが重要"@ja.
+<< kg:id_9 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "事業者には、調査・予測及び評価等を行い、住民に説明し理解を得ることが求められており、このような懸念事項についても住民の理解と合意を得ていく過程は重要"@ja.
+<< kg:id_9 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_24;
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "事業の実施に向けた事業者による計画及び対応が著しく妥当性を欠くことから、請願者及び本市議会の意見を尊重した対応を求めて、国に対し意見書を提出しようとする"@ja.
+<< kg:id_9 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "本事業による大規模な土地の改変による水環境、水生生物の生息・生育環境、生態系等への影響の懸念"@ja.
+<< kg:id_9 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_13;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "谷筋の大規模盛土の土砂崩壊による土石流の発生や対象事業実施区域内に地滑り地形が存在することから、本工事に伴う地滑りの発生など、土砂災害の懸念"@ja.
+<< kg:id_9 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_15;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "本事業の取りやめも含め、抜本的な事業計画の見直しを行うこととしました"@ja.
+<< kg:id_9 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "関係地方公共団体、関係機関等と調整を十分に行い、地域住民等に対し、丁寧かつ十分な説明を行うとともに、修正内容を公表すること"@ja.
+<< kg:id_9 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "現状計画での土地の改変を最小限に抑制すること"@ja.
+<< kg:id_9 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "土砂の崩落または流出による水環境及び動植物の生息・生育環境への影響を回避し、または極力低減すること"@ja.
+<< kg:id_9 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_16;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "本事業によるイヌワシなどへの影響を回避し、または極力低減するためのもろもろの措置を講ずること"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "日本のエネルギー事情の問題点は、１つ、エネルギー自給率の低いこと、２つ、化石燃料依存度の高さ、３つ、再生可能エネルギーの普及の遅れであります"@ja.
+<< kg:id_28 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "日本は今、ＣＯ２（二酸化炭素）の排出を削減し、クリーンな再生可能エネルギーに大きく転換していかなければなりません"@ja.
+<< kg:id_28 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "原油価格が上がったり為替が円安になってもコストが変わらない再生可能エネルギーの普及をするべきであります"@ja.
+<< kg:id_28 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "近くで発電をして近くで電気を使うのは非常に効率的です。エネルギーの地産地消は、すごく有効なのです"@ja.
+<< kg:id_28 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "米沢市は企業誘致に備えて、進出企業に電力を供給できる取組をしておかなければなりません"@ja.
+<< kg:id_28 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_14;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "地球温暖化を止めることが人の命や財産、暮らしを守ることであり、自然環境や絶滅の危機にある動物を守ることにつながります。そのために、再生可能エネルギーたる風力発電は有効で必要なものです"@ja.
+}

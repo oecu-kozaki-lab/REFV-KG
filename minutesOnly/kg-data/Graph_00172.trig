@@ -1,0 +1,477 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00172> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "地域の特性に即した振興策を早めに検討する"@ja.
+kg:id_2 rdf:type cls:c_1361.
+cls:c_1361 rdfs:label "地域振興策"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "新しい産業が生み出される可能性"@ja.
+kg:id_3 rdf:type cls:c_1523.
+cls:c_1523 rdfs:label "産業創出"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "災害に強いまちづくりに大きく貢献できる"@ja.
+kg:id_4 rdf:type cls:c_1421.
+cls:c_1421 rdfs:label "防災強化"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "企業誘致に大きく貢献できる"@ja.
+kg:id_5 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "地域内で活用する仕組みを整える"@ja.
+kg:id_6 rdf:type cls:c_3972.
+cls:c_3972 rdfs:label "活用仕組み"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "再生可能エネルギー"@ja.
+kg:id_7 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_8 rdfs:label "広い土地が必要"@ja.
+kg:id_8 rdf:type cls:c_1538.
+cls:c_1538 rdfs:label "土地需要"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "天候に左右される"@ja.
+kg:id_9 rdf:type cls:c_1539.
+cls:c_1539 rdfs:label "天候依存"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "優良企業の誘致や産業集積を進める"@ja.
+kg:id_10 rdf:type cls:c_268.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "研究機関の進出を進める"@ja.
+kg:id_11 rdf:type cls:c_882.
+cls:c_882 rdfs:label "研究機関誘致"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "市民が再生可能エネルギーを利用できる仕組みづくりを進める"@ja.
+kg:id_12 rdf:type cls:c_3972.
+kg:id_1 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "漁業や地域と共存共栄する地域振興策を協議する"@ja.
+kg:id_13 rdf:type cls:c_1361.
+kg:id_1 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "情報収集を進める"@ja.
+kg:id_14 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_1 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "法定協議会や検討部会で議論を重ねる"@ja.
+kg:id_15 rdf:type cls:c_801.
+cls:c_801 rdfs:label "協議"@ja.
+kg:id_1 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "地域新電力会社を経由して市内事業者に供給する"@ja.
+kg:id_16 rdf:type cls:c_94.
+cls:c_94 rdfs:label "電力供給"@ja.
+kg:id_1 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "ＲＥ100産業団地を整備する"@ja.
+kg:id_17 rdf:type cls:c_1514.
+cls:c_1514 rdfs:label "産業団地整備"@ja.
+kg:id_1 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "新たな産業を創出できる"@ja.
+kg:id_18 rdf:type cls:c_1523.
+kg:id_1 prop:effect kg:id_18.
+kg:id_19 rdfs:label "企業誘致につながる"@ja.
+kg:id_19 rdf:type cls:c_268.
+kg:id_1 prop:effect kg:id_19.
+kg:id_20 rdfs:label "台風や地震等の災害で電力系統が寸断する"@ja.
+kg:id_20 rdf:type cls:c_1209.
+cls:c_1209 rdfs:label "災害"@ja.
+kg:id_1 prop:cause kg:id_20.
+kg:id_21 rdfs:label "発電した電力が流せなくなる場合がある"@ja.
+kg:id_21 rdf:type cls:c_3973.
+cls:c_3973 rdfs:label "送電停止"@ja.
+kg:id_1 prop:effect kg:id_21.
+kg:id_22 rdfs:label "停電時に避難所等へ供給することは技術的に難しい"@ja.
+kg:id_22 rdf:type cls:c_1527.
+cls:c_1527 rdfs:label "供給困難"@ja.
+kg:id_1 prop:effect kg:id_22.
+kg:id_23 rdfs:label "平常時に電気自動車等へ蓄電して災害時に避難所等へ配備する"@ja.
+kg:id_23 rdf:type cls:c_3974.
+cls:c_3974 rdfs:label "蓄電供給"@ja.
+kg:id_1 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "水素や燃料アンモニアの受入れ供給拠点の可能性を検討する"@ja.
+kg:id_24 rdf:type cls:c_3975.
+cls:c_3975 rdfs:label "拠点検討"@ja.
+kg:id_1 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "水素・燃料アンモニア供給拠点整備"@ja.
+kg:id_25 rdf:type cls:c_3976.
+cls:c_3976 rdfs:label "供給拠点整備"@ja.
+kg:id_26 rdfs:label "港周辺主要企業の潜在ニーズが不透明"@ja.
+kg:id_26 rdf:type cls:c_1530.
+cls:c_1530 rdfs:label "需要不透明"@ja.
+kg:id_25 prop:cause kg:id_26.
+kg:id_27 rdfs:label "非常にリスクが大きい設備投資となる"@ja.
+kg:id_27 rdf:type cls:c_3977.
+cls:c_3977 rdfs:label "投資リスク"@ja.
+kg:id_25 prop:cause kg:id_27.
+kg:id_28 rdfs:label "具体的な議論に至っていない"@ja.
+kg:id_28 rdf:type cls:c_1531.
+cls:c_1531 rdfs:label "議論停滞"@ja.
+kg:id_25 prop:effect kg:id_28.
+kg:id_29 rdfs:label "水素ステーション設置"@ja.
+kg:id_29 rdf:type cls:c_319.
+cls:c_319 rdfs:label "設備設置"@ja.
+kg:id_30 rdfs:label "採算に見合った需要量の確保が課題"@ja.
+kg:id_30 rdf:type cls:c_1438.
+cls:c_1438 rdfs:label "需要確保"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "かかり増し経費の製品単価への転嫁が課題"@ja.
+kg:id_31 rdf:type cls:c_3978.
+cls:c_3978 rdfs:label "費用転嫁"@ja.
+kg:id_29 prop:cause kg:id_31.
+kg:id_32 rdfs:label "水素等の拠点整備"@ja.
+kg:id_32 rdf:type cls:c_163.
+cls:c_163 rdfs:label "拠点整備"@ja.
+kg:id_33 rdfs:label "インフラ整備の投資規模が非常に大きい"@ja.
+kg:id_33 rdf:type cls:c_1535.
+cls:c_1535 rdfs:label "大規模投資"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "地域振興策に水素等の拠点整備を組み込むのは困難"@ja.
+kg:id_34 rdf:type cls:c_933.
+cls:c_933 rdfs:label "導入困難"@ja.
+kg:id_1 prop:effect kg:id_34.
+kg:id_35 rdfs:label "県と連携して酒田港港湾脱炭素化推進計画への位置づけや方向性を検討する"@ja.
+kg:id_35 rdf:type cls:c_307.
+cls:c_307 rdfs:label "計画検討"@ja.
+kg:id_32 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "水素などの次世代エネルギー"@ja.
+kg:id_36 rdf:type cls:c_1536.
+cls:c_1536 rdfs:label "次世代エネルギー"@ja.
+kg:id_37 rdfs:label "将来の産業振興を考えると魅力的である"@ja.
+kg:id_37 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "導入に向けた課題が多い"@ja.
+kg:id_38 rdf:type cls:c_1452.
+cls:c_1452 rdfs:label "導入課題"@ja.
+kg:id_36 prop:effect kg:id_38.
+kg:id_39 rdfs:label "水素等に関連した地域振興"@ja.
+kg:id_39 rdf:type cls:c_1361.
+kg:id_40 rdfs:label "県と連携して議論していく"@ja.
+kg:id_40 rdf:type cls:c_1788.
+cls:c_1788 rdfs:label "連携協議"@ja.
+kg:id_39 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "漁業支援対策を行う"@ja.
+kg:id_41 rdf:type cls:c_1647.
+cls:c_1647 rdfs:label "漁業支援"@ja.
+kg:id_1 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "地域の産業振興につなげる"@ja.
+kg:id_42 rdf:type cls:c_168.
+kg:id_1 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "雇用の創出につながる"@ja.
+kg:id_43 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_1 prop:effect kg:id_43.
+kg:id_44 rdfs:label "住民生活の支援につながる"@ja.
+kg:id_44 rdf:type cls:c_1628.
+cls:c_1628 rdfs:label "生活支援"@ja.
+kg:id_1 prop:effect kg:id_44.
+kg:id_1 prop:countermeasure kg:id_17.
+kg:id_45 rdfs:label "電力の地産地消"@ja.
+kg:id_45 rdf:type cls:c_1904.
+cls:c_1904 rdfs:label "電力活用"@ja.
+kg:id_46 rdfs:label "企業誘致で来やすい条件を付けられる"@ja.
+kg:id_46 rdf:type cls:c_268.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "地産地消の電力を検討する"@ja.
+kg:id_47 rdf:type cls:c_1904.
+kg:id_45 prop:countermeasure kg:id_47.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "地域振興策は早めに対応し地域の特性に即して検討すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "新産業創出が期待できる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "電力を優先的に使えれば災害に強いまちづくりに貢献できる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "電力を優先的に使えれば企業誘致に貢献できる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "洋上風力発電の電力を地域内で活用する仕組みが必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "本市"@ja.
+kg:st_2 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_6 prop:content "再生可能エネルギー地域の魅力を生かし優良企業誘致と産業集積を求める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "研究機関の進出を地域振興策として重視する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "市民に分かりやすいメリットとして利用の仕組みづくりが重要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "漁業や地域と共存共栄する振興策の情報収集と議論を進める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "実現性や波及効果や海外事例を含め情報収集したい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "最新の知見を確認しながら将来像を議論する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "地域新電力会社経由で市内事業者への供給は可能と認識している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "ＲＥ100産業団地整備で新産業創出や企業誘致を図れる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "ＲＥ100産業団地整備は新たな産業創出につながる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "ＲＥ100産業団地整備は企業誘致につながる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "災害で系統が寸断すると発電電力を流せない場合がある"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "停電時に洋上風力の電力を避難所へ供給するのは技術的に難しい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "平常時の蓄電と災害時の避難所配備は方法として考えられる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "洋上風力の先を見据え水素や燃料アンモニア拠点の可能性検討は必要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "主要企業の潜在ニーズが不透明で具体化していない"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "設備投資リスクが大きく具体的議論に至っていない"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "ニーズ不透明と高リスクで具体的議論に進んでいない"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "需要量確保が課題になる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "追加経費の価格転嫁にも課題がある"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "投資規模が大きく地域振興策への組込みは困難"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "水素等拠点整備は洋上風力の地域振興策に組み込むのは難しい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "長期的視点で県と連携し計画への位置づけと方向性を検討したい"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "次世代エネルギーは将来の産業振興の観点で魅力がある"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "魅力はあるが導入課題が多い"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "県と連携して水素等に関連した地域振興策を議論する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "海を利用するため地域振興では漁業支援対策が第一に重要"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "地域産業の振興につながるべき"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "雇用創出につながる地域振興を期待する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "住民生活の支援につながることを期待する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "再生可能エネルギーで賄えるＲＥ100産業団地が望ましい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "地産地消電力を企業が使えれば企業誘致の条件として有利"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "ふるさと納税の返礼品の例も踏まえ地産地消の電力を考えてほしい"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "早めの対応により地域の特性に即した振興策を検討すべきと考えます"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "本市での洋上風力発電においては、新しい産業が生み出される可能性"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "地産地消として電力を優先的に使用できるのであれば、災害に強いまちづくりや企業誘致においても、大きく貢献できるものと思われます"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "地産地消として電力を優先的に使用できるのであれば、災害に強いまちづくりや企業誘致においても、大きく貢献できるものと思われます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "エネルギーの地産地消の観点から、洋上風力発電で得た電力を地域内で活用する仕組みが必要であると思われます"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "再生可能エネルギーには、風力のほか、太陽光、水力、地熱、バイオマスなどありますが、広い土地が必要であったり"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:text-txt_contents "再生可能エネルギーには、風力のほか、太陽光、水力、地熱、バイオマスなどありますが、広い土地が必要であったり、天候に左右されるなど、様々な課題があります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本市では、多様な再生可能エネルギー発電所が立地する地域としての魅力を生かした優良企業の誘致や産業集積"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "それから研究機関の進出"@ja.
+<< kg:id_1 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "市民が再生可能エネルギーを利用できる仕組みづくりなど、市民に分かりやすいメリットをもたらす地域振興策を洋上風力発電事業者に求めていくことが重要だと考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "多くの海域で、今、漁業や地域と共存共栄する地域振興策を含めて、公募で選定された発電事業者と地元関係者が協議している段階であります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "そのため、地域振興策の実現性や波及効果、議論の経過、そして海外事例なども含めて、本市では情報収集していきたいと考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "本地域の将来像について、地域協調型洋上風力発電研究・検討会議酒田沿岸域検討部会や法定協議会で議論を重ねてまいります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "洋上風力発電の電力の一部を、地域新電力会社を経由して、市内の事業者に供給することは可能だと認識しております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "常に発電量と消費量を一致させるＲＥ100産業団地、それを整備することで、新たな産業や企業誘致をすることも考えられます"@ja.
+<< kg:id_1 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "それを整備することで、新たな産業や企業誘致をすることも考えられます"@ja.
+<< kg:id_1 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "それを整備することで、新たな産業や企業誘致をすることも考えられます"@ja.
+<< kg:id_1 prop:cause kg:id_20 >>
+    prop:text-txt_contents "台風や地震等の災害で電力系統が寸断した場合"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "台風や地震等の災害で電力系統が寸断した場合、発電した電力が流せなくなる場合も想定されます"@ja.
+<< kg:id_1 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "停電時に洋上風力発電の電力を避難所等に供給することは、技術的に難しいと考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "平常時に電気自動車等に蓄電をしておき、災害時に避難所等に配備する方法などは考えられると思います"@ja.
+<< kg:id_1 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "洋上風力発電の先を見据えて水素や燃料アンモニアの受入れ、供給拠点の可能性について検討していくことは必要であります"@ja.
+<< kg:id_25 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "現時点で港周辺で経済活動を行う主要企業の潜在ニーズは不透明であり"@ja.
+<< kg:id_25 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "非常にリスクが大きい設備投資となることから"@ja.
+<< kg:id_25 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "供給拠点の整備について具体的な議論には至っておりません"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "採算に見合った需要量の確保"@ja.
+<< kg:id_29 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "かかり増し経費の製品単価への転嫁などにも課題があります"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "水素等の拠点整備となると、インフラ整備の投資規模が非常に大きくなり"@ja.
+<< kg:id_1 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "洋上風力発電事業の地域振興策に組み込むのは困難だと考えられる"@ja.
+<< kg:id_32 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "より長期的な視点で県と連携して、酒田港港湾脱炭素化推進計画への位置づけや、方向性を検討していきたいと考えております"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "水素などの次世代エネルギーは将来の産業振興を考えると魅力的ではあるものの"@ja.
+<< kg:id_36 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "導入に向けた課題も多いので"@ja.
+<< kg:id_39 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "引き続き、県と連携して確認し、水素等に関連した地域振興策を議論していきたいと思います"@ja.
+<< kg:id_1 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "海を利用するわけですので、一番は漁業支援対策というのもあるんだと思っております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "その次に、地域の産業における振興"@ja.
+<< kg:id_1 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "それから雇用の創出"@ja.
+<< kg:id_1 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "住民生活の支援につながればいいなと思っております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "ＲＥ100産業団地ということで、再生可能エネルギーで賄えるような団地があればいいんだろうなと思っております"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "地産地消で供給した電力というのが企業で使ってもらえれば、企業誘致としてはすごく来やすい条件がつけられるのかなと思っておりました"@ja.
+<< kg:id_45 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "ふるさと納税の返礼品として電力もやっているというところもあったので、ぜひその辺は地産地消の電力というところを考えていただきたいと思っております"@ja.
+}

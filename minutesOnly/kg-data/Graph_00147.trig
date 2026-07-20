@@ -1,0 +1,394 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00147> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電促進区域の指定"@ja.
+kg:id_1 rdf:type cls:c_194.
+cls:c_194 rdfs:label "区域指定"@ja.
+kg:id_2 rdfs:label "再エネ海域利用法第８条で定められた基準に適合すると認められたこと"@ja.
+kg:id_2 rdf:type cls:c_3469.
+cls:c_3469 rdfs:label "法適合"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "法定協議会で促進区域指定に異存ない旨の意見が取りまとめられたこと"@ja.
+kg:id_3 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "公衆の縦覧と関係行政機関の長への協議と関係県知事及び協議会への意見聴取を行ったこと"@ja.
+kg:id_4 rdf:type cls:c_3470.
+cls:c_3470 rdfs:label "手続実施"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "洋上風力発電に適した区域の選定"@ja.
+kg:id_5 rdf:type cls:c_2860.
+cls:c_2860 rdfs:label "区域選定"@ja.
+kg:id_6 rdfs:label "気象海象その他の自然的条件が適当で出力が相当程度見込まれること"@ja.
+kg:id_6 rdf:type cls:c_3100.
+cls:c_3100 rdfs:label "自然条件"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "航路及び港湾の利用保全と管理に支障を及ぼさず発電設備を適切に配置できること"@ja.
+kg:id_7 rdf:type cls:c_3471.
+cls:c_3471 rdfs:label "配置可能"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "促進区域と一体で利用できる基地港湾が必要であること"@ja.
+kg:id_8 rdf:type cls:c_3472.
+cls:c_3472 rdfs:label "港湾利用"@ja.
+kg:id_5 prop:cause kg:id_8.
+kg:id_9 rdfs:label "系統接続の見込みがあること"@ja.
+kg:id_9 rdf:type cls:c_3473.
+cls:c_3473 rdfs:label "系統接続"@ja.
+kg:id_5 prop:cause kg:id_9.
+kg:id_10 rdfs:label "漁業に支障を及ぼさないと見込まれること"@ja.
+kg:id_10 rdf:type cls:c_3474.
+cls:c_3474 rdfs:label "漁業共存"@ja.
+kg:id_5 prop:cause kg:id_10.
+kg:id_11 rdfs:label "ほかの法律における海域及び水域と重複しないこと"@ja.
+kg:id_11 rdf:type cls:c_3475.
+cls:c_3475 rdfs:label "法的非重複"@ja.
+kg:id_5 prop:cause kg:id_11.
+kg:id_12 rdfs:label "洋上風力発電事業"@ja.
+kg:id_12 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_13 rdfs:label "漁業などへの影響"@ja.
+kg:id_13 rdf:type cls:c_280.
+cls:c_280 rdfs:label "漁業影響"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "地元経済に大きな影響を与えること"@ja.
+kg:id_14 rdf:type cls:c_949.
+cls:c_949 rdfs:label "地域経済影響"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "遊佐町沖の促進区域指定"@ja.
+kg:id_15 rdf:type cls:c_194.
+kg:id_16 rdfs:label "近年にない大きな前進"@ja.
+kg:id_16 rdf:type cls:c_518.
+cls:c_518 rdfs:label "事業進展"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "青森県と山形県で初の洋上風力発電事業が具体的に動き出すこと"@ja.
+kg:id_17 rdf:type cls:c_3476.
+cls:c_3476 rdfs:label "事業開始"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "地元企業が基地港湾造成や砕石供給や基礎工事や陸上変電所土木工事に参入できる可能性"@ja.
+kg:id_18 rdf:type cls:c_3477.
+cls:c_3477 rdfs:label "地元参入"@ja.
+kg:id_12 prop:effect kg:id_18.
+kg:id_19 rdfs:label "視察団の増加と湾岸エリアの活気と観光宿泊食事予約の増加"@ja.
+kg:id_19 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_12 prop:effect kg:id_19.
+kg:id_20 rdfs:label "健康被害への不安の声"@ja.
+kg:id_20 rdf:type cls:c_2287.
+cls:c_2287 rdfs:label "健康不安"@ja.
+kg:id_12 prop:effect kg:id_20.
+kg:id_21 rdfs:label "景観への懸念"@ja.
+kg:id_21 rdf:type cls:c_1765.
+cls:c_1765 rdfs:label "景観懸念"@ja.
+kg:id_12 prop:effect kg:id_21.
+kg:id_22 rdfs:label "稼働まで７年程度を要する見込み"@ja.
+kg:id_22 rdf:type cls:c_3478.
+cls:c_3478 rdfs:label "長期稼働準備"@ja.
+kg:id_12 prop:effect kg:id_22.
+kg:id_23 rdfs:label "能代市の洋上風力発電事業"@ja.
+kg:id_23 rdf:type cls:c_218.
+kg:id_24 rdfs:label "市民の健康被害はないこと"@ja.
+kg:id_24 rdf:type cls:c_3479.
+cls:c_3479 rdfs:label "健康無害"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "景観は問題ではないこと"@ja.
+kg:id_25 rdf:type cls:c_3480.
+cls:c_3480 rdfs:label "景観問題なし"@ja.
+kg:id_23 prop:effect kg:id_25.
+kg:id_26 rdfs:label "法定協議会で関係漁業団体等と協議すること"@ja.
+kg:id_26 rdf:type cls:c_136.
+cls:c_136 rdfs:label "協議実施"@ja.
+kg:id_12 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "発電事業者による漁業振興共生策を通じて共存共栄を図ること"@ja.
+kg:id_27 rdf:type cls:c_3481.
+cls:c_3481 rdfs:label "共生推進"@ja.
+kg:id_12 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "今後漁業影響調査を行うこと"@ja.
+kg:id_28 rdf:type cls:c_1102.
+cls:c_1102 rdfs:label "影響調査"@ja.
+kg:id_12 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "発電事業者が事前の環境影響評価により調査とシミュレーションを行うこと"@ja.
+kg:id_29 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_12 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "法定協議会意見取りまとめの留意点や環境配慮事項を遵守すること"@ja.
+kg:id_30 rdf:type cls:c_3482.
+cls:c_3482 rdfs:label "事項遵守"@ja.
+kg:id_12 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "町が国や県と連携して事業完了まで責任を持って見守ること"@ja.
+kg:id_31 rdf:type cls:c_3483.
+cls:c_3483 rdfs:label "行政監督"@ja.
+kg:id_12 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "異常発生時の運転停止措置を含めた協定を締結すること"@ja.
+kg:id_32 rdf:type cls:c_3484.
+cls:c_3484 rdfs:label "安全協定"@ja.
+kg:id_12 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "地元企業の育成や雇用確保等の取組を求めること"@ja.
+kg:id_33 rdf:type cls:c_3485.
+cls:c_3485 rdfs:label "地域育成"@ja.
+kg:id_12 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "県が酒田港風力発電事業者協議会と連携し地元企業向けセミナーを開催すること"@ja.
+kg:id_34 rdf:type cls:c_3486.
+cls:c_3486 rdfs:label "参入支援"@ja.
+kg:id_12 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "産業界の組織立ち上げと活性化を進めること"@ja.
+kg:id_35 rdf:type cls:c_3487.
+cls:c_3487 rdfs:label "組織形成"@ja.
+kg:id_12 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "日沿道に関する動画発信"@ja.
+kg:id_36 rdf:type cls:c_3488.
+cls:c_3488 rdfs:label "広報活動"@ja.
+kg:id_37 rdfs:label "必要に応じて町がプロモーションビデオ作成を検討すること"@ja.
+kg:id_37 rdf:type cls:c_3489.
+cls:c_3489 rdfs:label "動画検討"@ja.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "地元から技術者を養成しメンテナンス等の事業参入を進めること"@ja.
+kg:id_38 rdf:type cls:c_3490.
+cls:c_3490 rdfs:label "技術者養成"@ja.
+kg:id_12 prop:countermeasure kg:id_38.
+kg:st_1 rdfs:label "斎藤弥志夫議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "事務手続に問題はなく事業者選定に臨める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "漁業関係者を含め十分な協議を経て進んだ"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "促進区域になるための下地がつくられた"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "促進区域に指定されたことで漁業関係の問題はクリアできるだろう"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "遊佐町長"@ja.
+kg:st_2 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_5 prop:content "漁業に全く影響がないことはあり得ない"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "酒田港風力発電事業者協議会会長"@ja.
+kg:st_3 rdf:type cls:st_90.
+cls:st_90 rdfs:label "事業者団体"@ja.
+kg:op_6 prop:content "地域経済活性化につなげたい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "画期的なことである"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "青森県知事"@ja.
+kg:st_4 rdf:type cls:st_2.
+kg:op_8 prop:content "洋上風力を新たな産業として全県に広がる事業に育成したい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "山形県知事"@ja.
+kg:st_5 rdf:type cls:st_2.
+kg:op_9 prop:content "地道な取組が実を結び今後も県の発展につながるよう地域と連携して取り組む"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "地元企業の参入を増やすことがポイントだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "能代観光協会"@ja.
+kg:st_6 rdf:type cls:st_91.
+cls:st_91 rdfs:label "観光団体"@ja.
+kg:op_11 prop:content "課題はあるが前向きなまちづくりの取組が増えている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_6.
+kg:op_12 prop:content "不安の払拭に努めたい"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "不安の払拭に努めたい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "能代市エネルギー産業政策課"@ja.
+kg:st_7 rdf:type cls:st_92.
+cls:st_92 rdfs:label "行政部局"@ja.
+kg:op_14 prop:content "市民の理解は進んでおり健康被害はない"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_7.
+kg:op_15 prop:content "景観は主観の問題であり問題ではない"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_7.
+kg:op_16 prop:content "振興策や共生策を前提に洋上風力との共生の道を決断した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "影響がないと判断されることで建設に着手するべきだ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "発電事業者は留意事項を遵守することになる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "町として責任を持って見守りを続ける"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "町としての対応をしっかり行いたい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "地域生活課長"@ja.
+kg:st_8 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_21 prop:content "メンテナンス等の事業が地元にできるよう目指したい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_8.
+kg:op_22 prop:content "町としても協力していきたい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "山形県内でもこうした組織が立ち上がることを期待し町として協力したい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "パーキングエリアタウン計画等の発信も含め必要に応じて検討したい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "地元に根差した形で技術者養成に力を入れてほしい"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "商工会等と勉強会を進め地元で事業ができる形を目指したい"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "以上の結果、再エネ海域利用法第８条で定められた基準に適合すると認められたため、２区域について、10月３日付で促進区域の指定を行ったものであります。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "それぞれ本年３月29日と７月28日に、法定協議会において各区域を促進区域として指定することについて異存ない旨の意見が取りまとめられ"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "９月１日から15日までの２週間、公衆の縦覧に供しました。また、再エネ海域利用法に基づいて、農水省、環境省、防衛省等の関係行政機関の長への協議、山形県知事、青森県知事及び当該区域における協議会への意見聴取を行いました。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "１、気象、海象その他の自然的条件が適当であり、発電設備を設置すればその出力の量が相当程度に見込まれることが定められています。"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:text-txt_contents "２、航路及び港湾の利用、保全と管理に支障を及ぼすことなく発電設備を適切に配置することが可能であることが定められています。"@ja.
+<< kg:id_5 prop:cause kg:id_8 >>
+    prop:text-txt_contents "３、当該区域と当該区域以外との港湾を一体的に利用することが可能であること。促進区域と一体で利用できる基地港湾が必要。"@ja.
+<< kg:id_5 prop:cause kg:id_9 >>
+    prop:text-txt_contents "４、発電設備と電気事業者が維持し、運用する電線路との電気的な接続が適切に確保されることが見込まれること（系統接続の見込みがあること）。"@ja.
+<< kg:id_5 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "５、漁業に支障を及ぼさないと見込まれること。協議会において関係漁業団体等と協議し、当該区域における漁業への支障の有無を確認し、漁業に支障があると見込まれる場合には促進区域の指定は行わないということになっております。"@ja.
+<< kg:id_5 prop:cause kg:id_11 >>
+    prop:text-txt_contents "６、促進区域の指定基準として、ほかの法律における海域及び水域と重複しないことが定められています。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "洋上風力発電は海域を利用することによる漁業などへの影響はもちろん、部材の多さや事業規模の大きさから、地元経済にも大きな影響を与えることが予想され"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "洋上風力発電は海域を利用することによる漁業などへの影響はもちろん、部材の多さや事業規模の大きさから、地元経済にも大きな影響を与えることが予想され"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "関係者による協議の場として設けられた協議会の調整を経て、今般、遊佐町沖が指定されたことは画期的なことでありまして、近年にない大きな前進です。"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "年内にも運営事業者を決める公募が始まり、青森、山形両県にとって初となる洋上風力発電事業が具体的に動き出します。青森県知事は洋上風力を新たな産業と受け止め、全県に広がる事業として育成に取り組みたいと語り、山形県知事は地道な取組が実を結び、大変喜ばしい、今後も県の発展につながるよう地域と連携して取り組むとのコメントを発表しております。"@ja.
+<< kg:id_12 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "地元企業は、基地港湾の造成、風車の基礎に使う砕石の供給、基礎工事、陸上変電所の土木工事などに参入できる可能性があります。"@ja.
+<< kg:id_12 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "能代観光協会は、洋上風力発電事業が始まってから、まちは視察団の増加、湾岸エリアの活気、プラス観光の増加、宿泊、食事予約の増加が見込まれる変化が起こっていると説明していて"@ja.
+<< kg:id_12 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "遊佐町沖が促進区域に指定されたことを受けて、町長はようやく事業が本格的にスタートする、超低周波音の影響や景観など、事業に対する多くの心配や不安の声も寄せられている、そうした不安の払拭に努めたいと"@ja.
+<< kg:id_12 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "遊佐町沖が促進区域に指定されたことを受けて、町長はようやく事業が本格的にスタートする、超低周波音の影響や景観など、事業に対する多くの心配や不安の声も寄せられている"@ja.
+<< kg:id_12 prop:effect kg:id_22 >>
+    prop:text-txt_contents "他地域の先行事例などを参考にすると、事業者の決定後、調査や設計などを経て、稼働まで７年程度が見込まれるということであります。"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "能代市のエネルギー産業政策課の話では、エネルギーのまちづくりを目指す能代市の方針に市民の理解は進んでおり、不安に思われることがある健康被害はないということであります"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "景観についても主観がどうであるかであって、問題ではないということでありました。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_26 >>
+    prop:text-txt_contents "協議会において関係漁業団体等と協議し、当該区域における漁業への支障の有無を確認し"@ja.
+<< kg:id_12 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "法定協議会の意見取りまとめの中でも示している発電事業者による漁業振興・共生策等を通じて、発電事業者と共存共栄が実現可能であるかという観点で判断されています。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_28 >>
+    prop:text-txt_contents "なお、漁業への影響に関しては、今後漁業影響調査が行われることで詳細に示されていくこととなると思っております。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "今後、発電事業者が実施する事前の環境影響評価により調査、シミュレーション等をしっかり行った上で影響がないと判断されることで、建設に着手することとなっております。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "そうした際の対応については、法定協議会意見取りまとめの中において様々な留意点、環境配慮事項として、しっかり記載されておりますので、当然発電事業者においては留意事項を遵守することになっております"@ja.
+<< kg:id_12 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "町としても国や県と連携して、事業完了まで責任を持って見守りを続けるものと考えております。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "発電事業者と異常発生時の運転停止措置を含めた協定締結など、町としての対応もしっかり行っていきたいと考えております。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "法定協議会意見取りまとめの中で、地域振興策として地元企業の育成や雇用確保等の取組も求められています。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "県では酒田港風力発電事業者協議会と連携し、地元企業向けのセミナーを開催しておりますし、地元でも先行区域に学ぶ研修会を行っております。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今後、山形県内においてもこうした組織が立ち上がり、産業界が活性化していくものと期待をしておりますし、その際は町としても協力をしていきたいと考えております。"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "ご提案のありました町が日沿道に関するプロモーションビデオを作成しアピールしていくことについては、現時点ではまだそこまで考えが及んでおりませんが、今遊佐町パーキングエリアタウン計画等あるわけですから、それら等の発信等も含めて、議員おっしゃるとおりに、必要に応じて検討してまいりたいと、このように考えております。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風力発電にある程度特化したような科目を勉強するような、そういう意味での技術者の養成に、そういう場面があったら地元からできるだけ多くそういう人を出せるように計らっていただきたいと思います。...いろいろと勉強会を進めて、そういうメンテナンス等の事業が地元に少しでもできるような形を目指していきたいというふうに思っているところであります。"@ja.
+}

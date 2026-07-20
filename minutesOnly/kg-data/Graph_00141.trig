@@ -1,0 +1,538 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00141> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "ゼロカーボンシティ宣言の時期"@ja.
+kg:id_1 rdf:type cls:c_3337.
+cls:c_3337 rdfs:label "宣言時期"@ja.
+kg:id_2 rdfs:label "具体的取組が進まない宣言先行自治体が多いこと"@ja.
+kg:id_2 rdf:type cls:c_3338.
+cls:c_3338 rdfs:label "取組停滞"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "エネルギー基本計画の改定時期"@ja.
+kg:id_3 rdf:type cls:c_2498.
+cls:c_2498 rdfs:label "計画改定"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "地域脱炭素移行・再エネ推進交付金の活用検討"@ja.
+kg:id_4 rdf:type cls:c_3339.
+cls:c_3339 rdfs:label "補助金活用"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "地産地消エネルギー協議会の設立が動き出したこと"@ja.
+kg:id_5 rdf:type cls:c_476.
+cls:c_476 rdfs:label "協議会設立"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "遊佐町沖の洋上風力発電事業の進行"@ja.
+kg:id_6 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "環境省補助事業で宣言が採択要件または有利条件となること"@ja.
+kg:id_7 rdf:type cls:c_3340.
+cls:c_3340 rdfs:label "補助要件"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "ゼロカーボンシティ宣言"@ja.
+kg:id_8 rdf:type cls:c_3239.
+cls:c_3239 rdfs:label "宣言"@ja.
+kg:id_9 rdfs:label "宣言しても具体的取組に悩み実際何も進まない自治体がある"@ja.
+kg:id_9 rdf:type cls:c_3338.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "環境省補助事業で採択要件となる"@ja.
+kg:id_10 rdf:type cls:c_3340.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "補助を有利に受けられる"@ja.
+kg:id_11 rdf:type cls:c_3341.
+cls:c_3341 rdfs:label "補助優位"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "議会と町が歩調を合わせる"@ja.
+kg:id_12 rdf:type cls:c_3342.
+cls:c_3342 rdfs:label "連携"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "宣言だけでは直ちに実行力は生じない"@ja.
+kg:id_13 rdf:type cls:c_3343.
+cls:c_3343 rdfs:label "実行力不足"@ja.
+kg:id_8 prop:effect kg:id_13.
+kg:id_14 rdfs:label "教育的効果により住民意識を高める"@ja.
+kg:id_14 rdf:type cls:c_3344.
+cls:c_3344 rdfs:label "意識啓発"@ja.
+kg:id_8 prop:effect kg:id_14.
+kg:id_15 rdfs:label "将来に何でも容認したと受け取られるおそれ"@ja.
+kg:id_15 rdf:type cls:c_3345.
+cls:c_3345 rdfs:label "誤用懸念"@ja.
+kg:id_8 prop:effect kg:id_15.
+kg:id_16 rdfs:label "カーボンニュートラル"@ja.
+kg:id_16 rdf:type cls:c_42.
+cls:c_42 rdfs:label "脱炭素"@ja.
+kg:id_17 rdfs:label "ゼロカーボンシティ宣言を行う"@ja.
+kg:id_17 rdf:type cls:c_3239.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "地域脱炭素移行・再エネ推進交付金を活用する"@ja.
+kg:id_18 rdf:type cls:c_3339.
+kg:id_16 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "エネルギー基本計画を改定する"@ja.
+kg:id_19 rdf:type cls:c_2498.
+kg:id_16 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "地産地消エネルギー協議会を設立する"@ja.
+kg:id_20 rdf:type cls:c_476.
+kg:id_16 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "遊佐町沖の洋上風力発電事業を進める"@ja.
+kg:id_21 rdf:type cls:c_218.
+kg:id_16 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "ゼロカーボンシティ宣言後の取組"@ja.
+kg:id_22 rdf:type cls:c_3346.
+cls:c_3346 rdfs:label "宣言後取組"@ja.
+kg:id_23 rdfs:label "町民へ宣言内容を伝え実際の二酸化炭素排出削減に活用する"@ja.
+kg:id_23 rdf:type cls:c_686.
+cls:c_686 rdfs:label "住民周知"@ja.
+kg:id_22 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "地球温暖化対策"@ja.
+kg:id_24 rdf:type cls:c_987.
+cls:c_987 rdfs:label "温暖化対策"@ja.
+kg:id_25 rdfs:label "温室効果ガスの削減が必要な異常気象の恒常化"@ja.
+kg:id_25 rdf:type cls:c_2729.
+cls:c_2729 rdfs:label "異常気象"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "遊佐町沖洋上風力発電事業"@ja.
+kg:id_26 rdf:type cls:c_218.
+kg:id_27 rdfs:label "経済的効果への強い期待"@ja.
+kg:id_27 rdf:type cls:c_106.
+cls:c_106 rdfs:label "経済効果"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "景観への影響"@ja.
+kg:id_28 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "超低周波への懸念"@ja.
+kg:id_29 rdf:type cls:c_1773.
+cls:c_1773 rdfs:label "健康懸念"@ja.
+kg:id_26 prop:effect kg:id_29.
+kg:id_30 rdfs:label "送電網整備が進む"@ja.
+kg:id_30 rdf:type cls:c_1928.
+cls:c_1928 rdfs:label "送電網整備"@ja.
+kg:id_26 prop:effect kg:id_30.
+kg:id_31 rdfs:label "再生可能エネルギー導入で火力発電の出力調整機能の重要性が増す"@ja.
+kg:id_31 rdf:type cls:c_3347.
+cls:c_3347 rdfs:label "調整力重要"@ja.
+kg:id_26 prop:effect kg:id_31.
+kg:id_32 rdfs:label "遊佐町沖洋上風力発電事業への情報の提示不足"@ja.
+kg:id_32 rdf:type cls:c_2033.
+cls:c_2033 rdfs:label "情報不足"@ja.
+kg:id_33 rdfs:label "適切な情報提供がされていない部分が多いこと"@ja.
+kg:id_33 rdf:type cls:c_3348.
+cls:c_3348 rdfs:label "情報提供不足"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "事業の影響が非常に広く多岐にわたること"@ja.
+kg:id_34 rdf:type cls:c_3349.
+cls:c_3349 rdfs:label "影響広範"@ja.
+kg:id_32 prop:cause kg:id_34.
+kg:id_35 rdfs:label "30年先50年先まで見据える必要がある"@ja.
+kg:id_35 rdf:type cls:c_3350.
+cls:c_3350 rdfs:label "長期影響"@ja.
+kg:id_26 prop:effect kg:id_35.
+kg:id_36 rdfs:label "目の前の影響も考える必要がある"@ja.
+kg:id_36 rdf:type cls:c_3351.
+cls:c_3351 rdfs:label "短期影響"@ja.
+kg:id_26 prop:effect kg:id_36.
+kg:id_37 rdfs:label "偏らない全ての情報を提示する"@ja.
+kg:id_37 rdf:type cls:c_1767.
+cls:c_1767 rdfs:label "情報提示"@ja.
+kg:id_26 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "次期議会で十分な議論ができるよう要望書を提出する"@ja.
+kg:id_38 rdf:type cls:c_1817.
+cls:c_1817 rdfs:label "要望書提出"@ja.
+kg:id_26 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "遊佐町沖洋上風力発電事業への情報の提示を求める要望書"@ja.
+kg:id_39 rdf:type cls:c_3352.
+cls:c_3352 rdfs:label "要望書"@ja.
+kg:id_40 rdfs:label "町民の判断材料になる"@ja.
+kg:id_40 rdf:type cls:c_3353.
+cls:c_3353 rdfs:label "判断材料"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "町や執行部に泥を塗ると受け取られるおそれ"@ja.
+kg:id_41 rdf:type cls:c_3354.
+cls:c_3354 rdfs:label "不信招来"@ja.
+kg:id_39 prop:effect kg:id_41.
+kg:id_42 rdfs:label "文面次第で誤解を招く"@ja.
+kg:id_42 rdf:type cls:c_3355.
+cls:c_3355 rdfs:label "誤解"@ja.
+kg:id_39 prop:effect kg:id_42.
+kg:id_43 rdfs:label "文書を練り推敲してから出す"@ja.
+kg:id_43 rdf:type cls:c_3356.
+cls:c_3356 rdfs:label "文書推敲"@ja.
+kg:id_39 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "議員が町民からの質問に十分答えられる資料を持っていないこと"@ja.
+kg:id_44 rdf:type cls:c_3357.
+cls:c_3357 rdfs:label "資料不足"@ja.
+kg:id_39 prop:cause kg:id_44.
+kg:id_45 rdfs:label "電気の量が不足していることへの懸念"@ja.
+kg:id_45 rdf:type cls:c_3358.
+cls:c_3358 rdfs:label "電力不足懸念"@ja.
+kg:id_26 prop:cause kg:id_45.
+kg:id_46 rdfs:label "クリーンエネルギーで電気の安定供給を図る"@ja.
+kg:id_46 rdf:type cls:c_756.
+cls:c_756 rdfs:label "安定供給"@ja.
+kg:id_26 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "一般論としてのゼロカーボンシティ宣言以上の重みがある"@ja.
+kg:id_47 rdf:type cls:c_3359.
+cls:c_3359 rdfs:label "宣言の重み"@ja.
+kg:id_26 prop:effect kg:id_47.
+kg:st_1 rdfs:label "髙橋冠治議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "もっと早く宣言できなかったのかと疑問を示す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域生活課長 太田智光君"@ja.
+kg:st_2 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_2 prop:content "宣言だけ先行しても実効性が伴わないため時期を見極めたと説明する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "計画改定のタイミングに合わせて宣言時期を設定していたと説明する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "補助金活用を見据え宣言を前倒ししたと説明する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "地域での具体的な取組体制が整い始めたことを理由に挙げる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "脱炭素関連事業が進んでいる今が宣言の好機だと説明する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "齋藤武議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_7 prop:content "洋上風力が進む遊佐町では宣言に一般論以上の重みがあるとみる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "補助事業採択で有利になるため今回の議会で宣言する意義があると説明する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "宣言だけでは実効性が伴わない例が全国にあると指摘する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "補助金申請上の要件になるため実務上の効果があるとみる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "補助制度で優位に働く可能性があると説明する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "議会も同意し歩調を合わせる形になると受け止める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "宣言自体に即時の実行力はないが意味はあると述べる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "宣言を積み重ねることで意識啓発につながると評価する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "宣言への同意が後に別の事業の免罪符のように使われることを懸念する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "菅原和幸議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_16 prop:content "宣言はスタートラインであり今後の政策展開につなげるべきだと賛成する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "施設改修とあわせて国補助金の活用を検討している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "宣言と一体で計画改定を進める考えを示す"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "地域のエネルギー地産地消を進める体制づくりを進めている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "斎藤弥志夫議員"@ja.
+kg:st_5 rdf:type cls:st_9.
+kg:op_20 prop:content "将来の電力不足対応として洋上風力は効果的で事業をまとめるべきだと考える"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "宣言後は町民周知と実際の排出削減へのつなぎ方が重要だと述べる"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:st_6 rdfs:label "遊佐町沖洋上風力発電事業計画に係る調査等特別委員会"@ja.
+kg:st_6 rdf:type cls:st_6.
+cls:st_6 rdfs:label "委員会"@ja.
+kg:op_22 prop:content "異常気象が続く中で温室効果ガス削減の必要性は広く共有されていると整理する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "酒田市議会建設経済常任委員会"@ja.
+kg:st_7 rdf:type cls:st_6.
+kg:op_23 prop:content "基地港湾整備と経済波及効果に強い期待を示す"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_7.
+kg:op_24 prop:content "町民にとって幅広いメリットが期待されると整理する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:st_8 rdfs:label "遊佐沖洋上風力発電を考える会"@ja.
+kg:st_8 rdf:type cls:st_59.
+cls:st_59 rdfs:label "住民団体"@ja.
+kg:op_25 prop:content "離岸距離や景観への不安と疑問を示す"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_8.
+kg:op_26 prop:content "風車完成後の景観影響は避けられず認めた上で議論すべきだと考える"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "超低周波を含む影響に疑問を示している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "東北電力ネットワーク株式会社"@ja.
+kg:st_9 rdf:type cls:st_21.
+cls:st_21 rdfs:label "事業者"@ja.
+kg:op_28 prop:content "送電網整備を着実に進めていると説明した"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_9.
+kg:st_10 rdfs:label "酒田共同火力発電株式会社"@ja.
+kg:st_10 rdf:type cls:st_21.
+kg:op_29 prop:content "再エネ導入後も火力発電の調整機能は重要になると示した"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_10.
+kg:st_11 rdfs:label "赤塚英一議員"@ja.
+kg:st_11 rdf:type cls:st_9.
+kg:op_30 prop:content "議会で判断するための情報が十分でないと考えている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_11.
+kg:op_31 prop:content "大事業で影響範囲が広いため多面的な情報提示が必要だと主張する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_11.
+kg:op_32 prop:content "長期的影響も含めて議論すべきだと訴える"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_11.
+kg:op_33 prop:content "長期だけでなく足元の影響も判断材料にすべきと述べる"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_11.
+kg:op_34 prop:content "賛否を判断するため良い面も悪い面も全て示してほしいと求める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_11.
+kg:op_35 prop:content "次の議会でより十分な議論ができるよう今のうちに情報提示を求めるべきと考える"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_11.
+kg:op_36 prop:content "情報提示は多くの町民の判断材料になると考える"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "阿部満吉議員"@ja.
+kg:st_12 rdf:type cls:st_9.
+kg:op_37 prop:content "これまでの説明会努力を否定し町に泥を塗る文面だと懸念し取り下げを求める"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_12.
+kg:op_38 prop:content "公文書は誰が読んでも分かる内容でなければならず現文面は誤解を招くおそれがあると指摘する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "重要案件なので知恵を寄せ合い全会一致を目指せる文書に練るべきと提案する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "正式文書として読める文章に直す段取りを取るべきと求める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_12.
+kg:op_41 prop:content "表現に不備があり再度推敲してまとめたほうがよいと考える"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_5.
+kg:op_42 prop:content "住民からの要望や質問に答えるためにも資料不足を解消したいと述べる"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_11.
+kg:op_43 prop:content "電気代上昇の背景に電力不足があるとみて安定供給策として洋上風力を評価する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_5.
+kg:op_44 prop:content "将来の電力不足に対応するためクリーンエネルギーとして洋上風力を進めるべきと考える"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_5.
+kg:op_45 prop:content "洋上風力開発が進む現実の中では宣言の意味がより重いと受け止める"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "表明した自治体の中では地域として宣言はしたものの、では何を具体的に取り組めばいいのかというところで悩まれている、実際何も進んでいないという自治体も、山形県内のみならず、全国多々ある"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "本町の計画で当初の計画では今年度末、令和５年度末にカーボンニュートラル、ゼロカーボンシティ宣言をする予定を当初しておりました。といいますのは今年度、令和５年度、エネルギー基本計画の改定を行うというところがございます"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "現状の状況として地域脱炭素移行・再エネ推進交付金という国の補助金もございますが、そういう補助金の活用、今現在遊楽里、あぽん西浜等の改修計画の中で、そういう補助金の活用も今視野に入れて検討している"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "今年度のエネルギー基本計画の改定の中で地産地消、エネルギー協議会というものも今設立というところで動き出し始めているという状況"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "先日の法定協議会で意見の取りまとめが終わりました遊佐町沖の洋上風力発電事業も進んでいるというような、脱炭素に向けた様々な取組が進行している"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "これから環境省の補助事業の採択を受ける中で、ゼロカーボンシティ宣言というものが採択要件であったり、有利に補助を受けられるという状況がございましたので、今回この議会においての宣言ということにさせてもらった"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "表明した自治体の中では地域として宣言はしたものの、では何を具体的に取り組めばいいのかというところで悩まれている、実際何も進んでいないという自治体も、山形県内のみならず、全国多々ある"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "ゼロカーボンシティ宣言というものが採択要件であったり"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "有利に補助を受けられるという状況がございました"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "まずは議会も同意するということで歩調を合わせるということになります"@ja.
+<< kg:id_8 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "ゼロカーボンシティが宣言されたから直ちに実行力が生じるかというとそれはない"@ja.
+<< kg:id_8 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "教育的効果も含めれば、こういうことを少しずつ積み重ねて皆さんの意識を高めていくということが大事"@ja.
+<< kg:id_8 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "何かの折にあのとき議会はゼロカーボンシティ宣言に同意したではないかというような話になってしまっては、これは本来のゼロカーボンシティの宣言の趣旨から外れてくる"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "町として全力で取り組むことを決意し、全町民の名においてゼロカーボンシティを目指す"@ja.
+<< kg:id_16 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "地域脱炭素移行・再エネ推進交付金という国の補助金もございますが、そういう補助金の活用、今現在遊楽里、あぽん西浜等の改修計画の中で、そういう補助金の活用も今視野に入れて検討している"@ja.
+<< kg:id_16 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "今年度、令和５年度、エネルギー基本計画の改定を行う"@ja.
+<< kg:id_16 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "地産地消、エネルギー協議会というものも今設立というところで動き出し始めている"@ja.
+<< kg:id_16 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "遊佐町沖の洋上風力発電事業も進んでいるというような、脱炭素に向けた様々な取組が進行している"@ja.
+<< kg:id_22 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "どういうふうに町民の皆さんにこの宣言をしたということを伝えて、そしてそれを実際の遊佐町の、本当の意味で二酸化炭素の排出を減らすというところでどういうふうに使っていくかというのがむしろ大事"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "異常気象が恒常化する昨今、温室効果ガスの削減の必要性は衆目のほぼ一致するところ"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_23;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "酒田市議会からは酒田港の洋上風力発電の基地港湾への指定に伴う港湾整備と、経済的波及効果に強い期待が示された。経済界からは当該事業の経済的効果に強い期待が寄せられており、町民にとって幅広いメリットも期待される"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "離岸距離や景観への影響について関心が高い。確かに風車完成後、程度は別にせよ景観への影響は排除できない。考える会のメンバーからは離岸距離、景観、超低周波、事業の進め方などを巡り疑問点が示された"@ja.
+<< kg:id_26 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "考える会のメンバーからは離岸距離、景観、超低周波、事業の進め方などを巡り疑問点が示された"@ja.
+<< kg:id_26 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "東北電力ネットワーク（株）から、送電網の整備を着実に進めている旨、情報を得た"@ja.
+<< kg:id_26 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "酒田共同火力発電（株）からは、再生可能エネルギーの導入により、出力調整がしやすい火力発電の存在意義が相対的に重要になるであろうことが示された"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "当議会においてもこれまで議論を進めてきましたが、その議論の中でも適切な情報提供がされていない部分が多々あると思っています"@ja.
+<< kg:id_32 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "これだけの大事業ではその影響は非常に広く、多岐にわたるものです。30年先、50年先といった長いスパンで考えなければならないことではありますが、また目の前の影響も当然考えなければなりません"@ja.
+<< kg:id_26 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "30年先、50年先といった長いスパンで考えなければならない"@ja.
+<< kg:id_26 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "また目の前の影響も当然考えなければなりません"@ja.
+<< kg:id_26 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "できるだけ多くの偏らない情報を提示していただくことが重要だと考えます。全ての情報を出してください。いいも悪いも全てをまないたの上に上げて皆さんで議論、検討しましょうね"@ja.
+<< kg:id_26 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "次期議会においては十分な議論ができるように遊佐町沖洋上風力発電事業への情報の提示を求める要望書を提案するものです"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "多くの町民の方々の判断材料にもなります"@ja.
+<< kg:id_39 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "この文面であると今まで苦労してくれた町長なり執行部側の説明会は何だったのか。それは、大変町に対して泥を塗るような意見書の提出だと思います"@ja.
+<< kg:id_39 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "受け取った人がこれを読んで、すんなりこういうことを遊佐町議会として言っているのだということが分かることはやっぱり必要だと思う。やはりそれ以上にその文章の書き方というのは相当気を遣わないと、いろいろそれこそ文字どおり誤解を招く"@ja.
+<< kg:id_39 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "やはり文書を練って、推敲して出すと。ちゃんと推敲した文章をつくり直すというお考えはないでしょうか。もう一回推敲して書いたほうがいいのではないか"@ja.
+<< kg:id_39 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "我々議会に対してもいろんな形でいろんな要望が来ています。ご質問も皆さんのところには個別に来ているかと思いますけれども、それに対して十分私は答えられるだけの資料がなかったのが事実でございました"@ja.
+<< kg:id_26 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "電気代がまた大分上がったりしているのです。何で上がるのかと、これ短絡的な考えなのですけれども、電気の量が不足しているのではないか"@ja.
+<< kg:id_26 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "将来の電力不足にやっぱり対応するためにも電気の安定供給は必要だと、私はこのように考えております。できるだけクリーンエネルギーでそれを達成すべきである"@ja.
+<< kg:id_26 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "遊佐町においては現実的には洋上風力発電が開発、設置が進められている中において、一般論としてのゼロカーボンシティ宣言以上の重みがあるのではないかな"@ja.
+}

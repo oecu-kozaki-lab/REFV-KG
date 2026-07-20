@@ -1,0 +1,396 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00003> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地球温暖化による気候変動"@ja.
+kg:id_1 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_2 rdfs:label "石油や石炭などの化石燃料を燃やすことで排出される二酸化炭素"@ja.
+kg:id_2 rdf:type cls:c_38.
+cls:c_38 rdfs:label "温室効果ガス"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "森林破壊"@ja.
+kg:id_3 rdf:type cls:c_39.
+cls:c_39 rdfs:label "森林破壊"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "1946年の統計開始以降最も厳しい暑さ"@ja.
+kg:id_4 rdf:type cls:c_40.
+cls:c_40 rdfs:label "高温化"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "北海道7地点の2023年夏の平均気温が平年より3.17度高い"@ja.
+kg:id_5 rdf:type cls:c_41.
+cls:c_41 rdfs:label "気温上昇"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "100年当たり1.38度の割合で気温が上昇"@ja.
+kg:id_6 rdf:type cls:c_41.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "カーボンニュートラルの達成"@ja.
+kg:id_7 rdf:type cls:c_42.
+cls:c_42 rdfs:label "脱炭素"@ja.
+kg:id_1 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "森林の整備・保全"@ja.
+kg:id_8 rdf:type cls:c_43.
+cls:c_43 rdfs:label "森林保全"@ja.
+kg:id_1 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "太陽光発電等の再生可能エネルギーの導入"@ja.
+kg:id_9 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_1 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "林業人材育成"@ja.
+kg:id_10 rdf:type cls:c_45.
+cls:c_45 rdfs:label "人材育成"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "私有林整備への支援"@ja.
+kg:id_11 rdf:type cls:c_46.
+cls:c_46 rdfs:label "森林整備支援"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "縦型太陽光パネルの実証"@ja.
+kg:id_12 rdf:type cls:c_47.
+cls:c_47 rdfs:label "太陽光発電導入"@ja.
+kg:id_1 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "ウィンドファーム設置"@ja.
+kg:id_13 rdf:type cls:c_48.
+cls:c_48 rdfs:label "風力発電施設"@ja.
+kg:id_14 rdfs:label "健康被害への不安"@ja.
+kg:id_14 rdf:type cls:c_49.
+cls:c_49 rdfs:label "健康被害不安"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "自然景観や眺望景観への影響"@ja.
+kg:id_15 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "動植物の生息環境や生態系への影響"@ja.
+kg:id_16 rdf:type cls:c_51.
+cls:c_51 rdfs:label "生態系影響"@ja.
+kg:id_13 prop:effect kg:id_16.
+kg:id_17 rdfs:label "バードストライク"@ja.
+kg:id_17 rdf:type cls:c_52.
+cls:c_52 rdfs:label "鳥類被害"@ja.
+kg:id_13 prop:effect kg:id_17.
+kg:id_18 rdfs:label "土砂災害"@ja.
+kg:id_18 rdf:type cls:c_53.
+cls:c_53 rdfs:label "土砂災害"@ja.
+kg:id_13 prop:effect kg:id_18.
+kg:id_19 rdfs:label "地域住民への丁寧な説明と誠意ある対応"@ja.
+kg:id_19 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_13 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "地域住民にとって理解しやすい図書とすること"@ja.
+kg:id_20 rdf:type cls:c_55.
+cls:c_55 rdfs:label "資料整備"@ja.
+kg:id_13 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "地域住民の生活環境に対する影響の回避又は十分な低減"@ja.
+kg:id_21 rdf:type cls:c_56.
+cls:c_56 rdfs:label "生活環境保全"@ja.
+kg:id_13 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "自然景観や眺望景観への影響調査と十分な検証"@ja.
+kg:id_22 rdf:type cls:c_57.
+cls:c_57 rdfs:label "景観影響調査"@ja.
+kg:id_13 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "動植物の生息環境や生態系への影響調査"@ja.
+kg:id_23 rdf:type cls:c_58.
+cls:c_58 rdfs:label "生態系調査"@ja.
+kg:id_13 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "バードストライクの十分な検証"@ja.
+kg:id_24 rdf:type cls:c_59.
+cls:c_59 rdfs:label "鳥類被害検証"@ja.
+kg:id_13 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "事業終了後の発電設備の撤去及び処分の適切実施"@ja.
+kg:id_25 rdf:type cls:c_60.
+cls:c_60 rdfs:label "設備撤去"@ja.
+kg:id_13 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "設備撤去後の跡地への植林など原状回復"@ja.
+kg:id_26 rdf:type cls:c_61.
+cls:c_61 rdfs:label "原状回復"@ja.
+kg:id_13 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "土砂災害を招かないよう十分に検証すること"@ja.
+kg:id_27 rdf:type cls:c_62.
+cls:c_62 rdfs:label "災害防止"@ja.
+kg:id_13 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "銀山地区を含む南部エリアでの風力発電施設の設置"@ja.
+kg:id_28 rdf:type cls:c_48.
+kg:id_29 rdfs:label "地域住民の不安"@ja.
+kg:id_29 rdf:type cls:c_63.
+cls:c_63 rdfs:label "住民不安"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "北海道知事を通じて関西電力に好ましくない旨を伝える"@ja.
+kg:id_30 rdf:type cls:c_64.
+cls:c_64 rdfs:label "反対意見表明"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "陳情第2号"@ja.
+kg:id_31 rdf:type cls:c_65.
+cls:c_65 rdfs:label "陳情"@ja.
+kg:id_32 rdfs:label "事業主関西電力株式会社による古平・仁木・余市ウィンドファーム事業計画"@ja.
+kg:id_32 rdf:type cls:c_66.
+cls:c_66 rdfs:label "風力発電計画"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "不採択"@ja.
+kg:id_33 rdf:type cls:c_67.
+cls:c_67 rdfs:label "不採択"@ja.
+kg:id_31 prop:effect kg:id_33.
+kg:id_34 rdfs:label "仁木町エリアが事業計画から除外されたこと"@ja.
+kg:id_34 rdf:type cls:c_68.
+cls:c_68 rdfs:label "計画変更"@ja.
+kg:id_31 prop:cause kg:id_34.
+kg:st_1 rdfs:label "仁木町長佐藤聖一郎"@ja.
+kg:st_1 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "カーボンニュートラルの達成が重要と認識している"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "カーボンニュートラルの達成が重要と認識している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "気候変動が身近に感じられるようになっている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "気候変動が身近に感じられるようになっている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "気候変動が身近に感じられるようになっている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "重要なものと認識している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "推進すべきものと考えている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "推進すべきものと考えている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "森林環境譲与税を活用して実施している"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "森林環境譲与税を活用して実施している"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "国の支援制度を活用した先進的な取組を実施している"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域住民"@ja.
+kg:st_2 rdf:type cls:st_3.
+cls:st_3 rdfs:label "地域住民"@ja.
+kg:op_12 prop:content "超低周波を含む低周波や風車の影による健康被害を懸念している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "仁木町"@ja.
+kg:st_3 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_13 prop:content "良好な景観を阻害しないよう十分な検証を求めている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "動植物への影響調査を求めている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "十分な検証を求めている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "土砂災害を招かないよう十分な検証を求めている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "地域住民の理解が得られるよう求めている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "関西電力に説明会を補足する機会を設けるよう促したい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "理解しやすい資料作成を求めている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "健康被害への不安を踏まえ生活環境への影響回避を求めている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "良好な景観を阻害しないよう検証を求めている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "生態系への影響調査を求めている"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "十分な検証を求めている"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "撤去と処分の適切な実施を求めている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "原状回復の方法の調査予測評価を求めている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "土砂災害防止の観点から検証を求めている"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "銀山地区の保育所に通っている保護者の方々をはじめ地域の皆さま"@ja.
+kg:st_4 rdf:type cls:st_3.
+kg:op_27 prop:content "風力発電施設の建設に不安があり反対を要請した"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "仁木町民"@ja.
+kg:st_5 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_28 prop:content "なし崩し的に検討が開始されることを心配している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "地域の方々が不安を抱いている以上賛成できず意見書に記載して伝えたい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "総務経済常任委員会"@ja.
+kg:st_6 rdf:type cls:st_6.
+cls:st_6 rdfs:label "委員会"@ja.
+kg:op_30 prop:content "仁木町エリアが事業計画から除外され陳情趣旨に沿って審査し得ないため不採択とした"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_6.
+kg:op_31 prop:content "委員会で審議するのは難しいと考えた"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_6.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地球温暖化による気候変動は、石油や石炭などの化石燃料を燃やすことで排出される二酸化炭素や、森林破壊などが原因とされており"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地球温暖化による気候変動は、石油や石炭などの化石燃料を燃やすことで排出される二酸化炭素や、森林破壊などが原因とされており"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "本年６月から８月の気温は1946年の統計開始以降、最も厳しい暑さに見舞われました"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "北海道７地点の2023年夏の平均気温は平年より3.17度も高く"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "長期的にみても100年当たり1.38度の割合で気温が上昇するなど"@ja.
+<< kg:id_1 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "二酸化炭素の排出量を実質ゼロにする「カーボンニュートラル」を達成することが重要なものと認識しております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "その上で、森林の整備・保全や、太陽光発電等の再生可能エネルギーの導入を推進すべきものと考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "その上で、森林の整備・保全や、太陽光発電等の再生可能エネルギーの導入を推進すべきものと考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "森林環境譲与税を活用した林業人材育成や私有林整備への支援"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "森林環境譲与税を活用した林業人材育成や私有林整備への支援"@ja.
+<< kg:id_1 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "国の支援制度を活用した縦型太陽光パネルの実証等、先進的な取組を実施しており"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "本事業により発生する超低周波を含む低周波や風車の影により健康被害が地域住民より不安の声が寄せられている"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "自然景観や眺望景観に与える影響を調査し、良好な景観を阻害することのないように十分に検証すること"@ja.
+<< kg:id_13 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "動植物の生息環境や生態系に与える影響を調査し"@ja.
+<< kg:id_13 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "特にバードストライク等についても十分に検証すること"@ja.
+<< kg:id_13 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "土砂災害を招くことがないよう十分に検証すること"@ja.
+<< kg:id_13 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "本事業について地域住民の理解が得られるよう丁寧な説明と誠意ある対応に努めること"@ja.
+<< kg:id_13 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "地域住民にとって理解しやすい図書となるよう努めること"@ja.
+<< kg:id_13 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "地域住民の生活環境に対する影響を回避又は十分に低減するように努めること"@ja.
+<< kg:id_13 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "自然景観や眺望景観に与える影響を調査し、良好な景観を阻害することのないように十分に検証すること"@ja.
+<< kg:id_13 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "動植物の生息環境や生態系に与える影響を調査し"@ja.
+<< kg:id_13 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "特にバードストライク等についても十分に検証すること"@ja.
+<< kg:id_13 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "事業終了後の発電設備の撤去及び処分の適切実施"@ja.
+<< kg:id_13 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "当該設備撤去後における跡地への植林など原状回復に復するための方法等について調査・予測及び評価を行うこと"@ja.
+<< kg:id_13 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "土砂災害を招くことがないよう十分に検証すること"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "風力発電施設が建設されることに対する不安をですね、真摯に私にお話ししていただいた経過がございます。 なし崩し的に検討が開始されるのではないかと心配されている町民の声もたくさんあるかと存じます"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "つきましては今後、知事からの求められる方法書に対する意見書におきまして、このことを記載し、北海道知事を通じて関西電力にお伝えしたい"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:text-txt_contents "事業主・関西電力株式会社による「（仮称）古平・仁木・余市ウィンドファーム事業」計画に全面反対し、白紙撤回を求め提出された当該事業に反対する陳情"@ja.
+<< kg:id_31 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "当該事業計画から仁木町エリアが除外されたことに伴い、陳情趣旨に沿って審査し得ない事案であり、不採択とせざるを得ないと考える"@ja.
+<< kg:id_31 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "元々の事業内容から仁木町が除外されたことから委員会で審議するのは難しいと考えるので、陳情には反対する"@ja.
+}

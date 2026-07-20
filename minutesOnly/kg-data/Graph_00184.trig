@@ -1,0 +1,505 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00184> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "気候変動"@ja.
+kg:id_1 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_2 rdfs:label "世界中に様々な悪影響"@ja.
+kg:id_2 rdf:type cls:c_4164.
+cls:c_4164 rdfs:label "悪影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "再生可能エネルギーへのシフト"@ja.
+kg:id_3 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_4 rdfs:label "地球温暖化による気候変動"@ja.
+kg:id_4 rdf:type cls:c_37.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "ごみ焼却施設"@ja.
+kg:id_5 rdf:type cls:c_4165.
+cls:c_4165 rdfs:label "廃棄物処理施設"@ja.
+kg:id_6 rdfs:label "廃熱利用による発電"@ja.
+kg:id_6 rdf:type cls:c_4133.
+cls:c_4133 rdfs:label "廃熱発電"@ja.
+kg:id_5 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "余剰電力の市内小・中学校など市有施設への供給"@ja.
+kg:id_7 rdf:type cls:c_94.
+cls:c_94 rdfs:label "電力供給"@ja.
+kg:id_5 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "災害時のライフライン確保"@ja.
+kg:id_8 rdf:type cls:c_4166.
+cls:c_4166 rdfs:label "ライフライン確保"@ja.
+kg:id_9 rdfs:label "小・中学校や市体育施設等への太陽光発電設備や蓄電池の設置"@ja.
+kg:id_9 rdf:type cls:c_4167.
+cls:c_4167 rdfs:label "再エネ設備設置"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "西郷コミセン、朝日中学校、羽黒庁舎へのペレットボイラー設置"@ja.
+kg:id_10 rdf:type cls:c_4167.
+kg:id_8 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "三瀬地区の地産地消"@ja.
+kg:id_11 rdf:type cls:c_3330.
+cls:c_3330 rdfs:label "エネルギー地産地消"@ja.
+kg:id_12 rdfs:label "地区内で生産したまきのコミュニティセンターまきボイラー、まきストーブ利用"@ja.
+kg:id_12 rdf:type cls:c_4168.
+cls:c_4168 rdfs:label "木質燃料利用"@ja.
+kg:id_11 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "湯野浜温泉のエネルギー活用"@ja.
+kg:id_13 rdf:type cls:c_862.
+cls:c_862 rdfs:label "エネルギー活用"@ja.
+kg:id_14 rdfs:label "源泉の余熱を利用した旅館・ホテルへの温水供給設備整備"@ja.
+kg:id_14 rdf:type cls:c_4169.
+cls:c_4169 rdfs:label "余熱利用"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "再生可能エネルギーの導入促進"@ja.
+kg:id_15 rdf:type cls:c_4170.
+cls:c_4170 rdfs:label "再エネ導入促進"@ja.
+kg:id_16 rdfs:label "太陽光発電やまきストーブなどの木質バイオマス導入への補助"@ja.
+kg:id_16 rdf:type cls:c_4171.
+cls:c_4171 rdfs:label "導入補助"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "再生可能エネルギーの地産地消の推進"@ja.
+kg:id_17 rdf:type cls:c_3330.
+kg:id_17 prop:cause kg:id_8.
+kg:id_18 rdfs:label "地域経済循環の活性化"@ja.
+kg:id_18 rdf:type cls:c_599.
+cls:c_599 rdfs:label "地域経済活性化"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "ゼロカーボンの推進"@ja.
+kg:id_19 rdf:type cls:c_257.
+cls:c_257 rdfs:label "脱炭素推進"@ja.
+kg:id_17 prop:cause kg:id_19.
+kg:id_20 rdfs:label "八森山風力発電"@ja.
+kg:id_20 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_21 rdfs:label "年間約3690万キロワットアワーの発電量"@ja.
+kg:id_21 rdf:type cls:c_4172.
+cls:c_4172 rdfs:label "発電量"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "一般家庭1万250世帯分の電力量"@ja.
+kg:id_22 rdf:type cls:c_94.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "鶴岡市の世帯の約21％の電力量"@ja.
+kg:id_23 rdf:type cls:c_94.
+kg:id_20 prop:effect kg:id_23.
+kg:id_24 rdfs:label "八森山風力発電による電力活用"@ja.
+kg:id_24 rdf:type cls:c_1904.
+cls:c_1904 rdfs:label "電力活用"@ja.
+kg:id_25 rdfs:label "市関連施設を中心とした地産地消への取組"@ja.
+kg:id_25 rdf:type cls:c_3330.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "市役所や企業の再生可能エネルギー利用促進"@ja.
+kg:id_26 rdf:type cls:c_3152.
+cls:c_3152 rdfs:label "再エネ利用促進"@ja.
+kg:id_27 rdfs:label "ＲＥ100の啓蒙"@ja.
+kg:id_27 rdf:type cls:c_2309.
+cls:c_2309 rdfs:label "普及啓発"@ja.
+kg:id_26 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "地域の風を地域で使う取組"@ja.
+kg:id_28 rdf:type cls:c_4173.
+cls:c_4173 rdfs:label "地域内電力利用"@ja.
+kg:id_29 rdfs:label "八森山風力発電の電力を市の公共施設や市内企業等で利用"@ja.
+kg:id_29 rdf:type cls:c_4174.
+cls:c_4174 rdfs:label "電力利用"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "ゼロカーボンシティの構築"@ja.
+kg:id_30 rdf:type cls:c_4175.
+cls:c_4175 rdfs:label "脱炭素都市"@ja.
+kg:id_31 rdfs:label "削減目標の見直しを含めた取組強化"@ja.
+kg:id_31 rdf:type cls:c_3759.
+cls:c_3759 rdfs:label "取組強化"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "再生可能エネルギーの地産地消は喫緊の課題"@ja.
+kg:id_32 rdf:type cls:c_3330.
+kg:id_30 prop:cause kg:id_32.
+kg:id_33 rdfs:label "再生可能エネルギーの地産地消推進"@ja.
+kg:id_33 rdf:type cls:c_3330.
+kg:id_34 rdfs:label "地域新電力の設置検討"@ja.
+kg:id_34 rdf:type cls:c_202.
+cls:c_202 rdfs:label "地域電力事業"@ja.
+kg:id_33 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "ＲＥ100の取組"@ja.
+kg:id_35 rdf:type cls:c_3333.
+cls:c_3333 rdfs:label "再エネ利用"@ja.
+kg:id_36 rdfs:label "ブランドイメージの向上"@ja.
+kg:id_36 rdf:type cls:c_4176.
+cls:c_4176 rdfs:label "ブランド向上"@ja.
+kg:id_35 prop:effect kg:id_36.
+kg:id_37 rdfs:label "ビジネスチャンスの拡大"@ja.
+kg:id_37 rdf:type cls:c_108.
+cls:c_108 rdfs:label "事業機会拡大"@ja.
+kg:id_35 prop:effect kg:id_37.
+kg:id_38 rdfs:label "本市内の企業のＲＥ100対応"@ja.
+kg:id_38 rdf:type cls:c_4177.
+cls:c_4177 rdfs:label "企業の再エネ対応"@ja.
+kg:id_39 rdfs:label "取り組むメリットの発生"@ja.
+kg:id_39 rdf:type cls:c_4178.
+cls:c_4178 rdfs:label "導入メリット"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "八森山風力発電の余剰電力活用"@ja.
+kg:id_40 rdf:type cls:c_4179.
+cls:c_4179 rdfs:label "余剰電力活用"@ja.
+kg:id_41 rdfs:label "友好都市やつながりのある自治体、関係する企業での利用"@ja.
+kg:id_41 rdf:type cls:c_4180.
+cls:c_4180 rdfs:label "域外利用"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "関係人口、交流人口の拡大"@ja.
+kg:id_42 rdf:type cls:c_4181.
+cls:c_4181 rdfs:label "交流拡大"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "電力の地産地消推進"@ja.
+kg:id_43 rdf:type cls:c_4182.
+cls:c_4182 rdfs:label "電力地産地消"@ja.
+kg:id_44 rdfs:label "発電事業者、電力事業者、個人、企業の理解が必要"@ja.
+kg:id_44 rdf:type cls:c_4183.
+cls:c_4183 rdfs:label "関係者理解"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "メリットとデメリットのＰＲ、調査・研究"@ja.
+kg:id_45 rdf:type cls:c_4184.
+cls:c_4184 rdfs:label "広報調査"@ja.
+kg:id_43 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "市の産業発展"@ja.
+kg:id_46 rdf:type cls:c_258.
+cls:c_258 rdfs:label "産業発展"@ja.
+kg:id_47 rdfs:label "大企業の取引先や発注先が再生可能エネルギーへの取組状況で決まる時代"@ja.
+kg:id_47 rdf:type cls:c_4185.
+cls:c_4185 rdfs:label "再エネ対応要請"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "企業への情報提供を含む対策や対応"@ja.
+kg:id_48 rdf:type cls:c_1288.
+cls:c_1288 rdfs:label "企業支援"@ja.
+kg:id_46 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "再生可能エネルギーのふるさと納税返礼品活用"@ja.
+kg:id_49 rdf:type cls:c_1544.
+cls:c_1544 rdfs:label "返礼品活用"@ja.
+kg:id_50 rdfs:label "八森山風力発電の電気の返礼品化検討"@ja.
+kg:id_50 rdf:type cls:c_4186.
+cls:c_4186 rdfs:label "電力返礼品化"@ja.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "余剰電力量や小売事業者、需要を含む調査・研究"@ja.
+kg:id_51 rdf:type cls:c_2059.
+cls:c_2059 rdfs:label "調査研究"@ja.
+kg:id_49 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "トラッキング付非化石証書の取得手続と金銭的負担"@ja.
+kg:id_52 rdf:type cls:c_3194.
+cls:c_3194 rdfs:label "手続負担"@ja.
+kg:id_49 prop:cause kg:id_52.
+kg:id_53 rdfs:label "寄附者の手続が煩雑になる可能性"@ja.
+kg:id_53 rdf:type cls:c_4187.
+cls:c_4187 rdfs:label "手続煩雑化"@ja.
+kg:id_49 prop:cause kg:id_53.
+kg:id_54 rdfs:label "企業版ふるさと納税の活用"@ja.
+kg:id_54 rdf:type cls:c_4188.
+cls:c_4188 rdfs:label "企業版納税活用"@ja.
+kg:id_55 rdfs:label "再生可能エネルギー事業者への働きかけ"@ja.
+kg:id_55 rdf:type cls:c_4189.
+cls:c_4189 rdfs:label "事業者働きかけ"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "再生可能エネルギー施設設置地域への還元"@ja.
+kg:id_56 rdf:type cls:c_300.
+cls:c_300 rdfs:label "地域還元"@ja.
+kg:id_57 rdfs:label "企業版ふるさと納税を活用した地方創生事業の在り方の検討"@ja.
+kg:id_57 rdf:type cls:c_4190.
+cls:c_4190 rdfs:label "還元策検討"@ja.
+kg:id_56 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "再生可能エネルギー施設"@ja.
+kg:id_58 rdf:type cls:c_4191.
+cls:c_4191 rdfs:label "再エネ施設"@ja.
+kg:id_59 rdfs:label "地域の景観や環境、音や影などを含む住民活動への影響"@ja.
+kg:id_59 rdf:type cls:c_4192.
+cls:c_4192 rdfs:label "住民生活影響"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "迷惑施設となる可能性"@ja.
+kg:id_60 rdf:type cls:c_4193.
+cls:c_4193 rdfs:label "迷惑施設化"@ja.
+kg:id_58 prop:effect kg:id_60.
+kg:id_61 rdfs:label "再生可能エネルギー施設の地域還元"@ja.
+kg:id_61 rdf:type cls:c_300.
+kg:id_62 rdfs:label "企業版ふるさと納税を財源に施設設置地域へメリットを与える仕組みづくり"@ja.
+kg:id_62 rdf:type cls:c_4194.
+cls:c_4194 rdfs:label "還元仕組み"@ja.
+kg:id_61 prop:countermeasure kg:id_62.
+kg:id_63 rdfs:label "風力発電事業のメリット最大化"@ja.
+kg:id_63 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_64 rdfs:label "風力発電の最大限のメリットを住民が享受できる仕組みづくり"@ja.
+kg:id_64 rdf:type cls:c_4195.
+cls:c_4195 rdfs:label "住民利益還元"@ja.
+kg:id_63 prop:countermeasure kg:id_64.
+kg:st_1 rdfs:label "石塚慶議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "地球温暖化による気候変動は深刻で持続可能な未来のため再生可能エネルギーへのシフトを急ぐべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "エネルギー分野では再生可能エネルギーへの転換を急ぐべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市民部長五十嵐浩一"@ja.
+kg:st_2 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_3 prop:content "拠点避難施設への再生可能エネルギー設備導入を進めている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "家庭や事業所への補助で導入促進を図っている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "地産地消は災害対応の観点から重要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "地域経済循環の活性化のため地産地消を進めるべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "ゼロカーボンの実現に向け地産地消は重要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "まずは市関連施設を中心に地産地消に取り組むべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "一般家庭だけでなく市役所や企業にもＲＥ100を啓蒙すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "八森山の電力を公共施設や市内企業で使えればゼロカーボンに大きく貢献する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "ゼロカーボンシティ宣言を踏まえ取組をさらに強化する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "実現のためには機会を逃さず取り組む必要がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "地域経済への貢献も見据え地域新電力を含む取組を検討する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "ＲＥ100は企業価値向上につながる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "ＲＥ100はビジネスチャンス拡大の目的で進められている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "サプライチェーン全体で再エネ100％が求められるため市内企業にもメリットが生じる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "余剰電力は友好都市や関係企業での利用も考えられる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "余剰電力活用は関係人口や交流人口の拡大につながる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "関係者の理解形成とメリット・デメリットの周知が必要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "メリットとデメリットをＰＲし調査研究を進める必要がある"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "市内企業が取引機会を確保するため再エネ対応支援が必要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "市として情報提供を含めた支援策を考える必要がある"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "八森山風力発電の稼働に合わせ返礼品として活用すべき"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "総務部長佐藤光治"@ja.
+kg:st_3 rdf:type cls:st_40.
+kg:op_24 prop:content "余剰電力の見込みや事業者参画可能性、需要を調べ活用可能性を検討する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "返礼品化には産地証明手続と費用負担が課題になる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "寄附者の契約手続が煩雑にならない制度設計が重要"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "地域外企業に本制度による寄附を検討するよう働きかける"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "寄附を施設設置地域に還元する仕組みも含め検討したい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "再生可能エネルギー施設は住民生活に影響を与えるため配慮と還元策が必要"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "本来環境に優しいはずの施設が迷惑施設にならないようにすべき"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "施設設置地域に財源面のメリットを与える仕組みが必要"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "発電して売電して終わりではなく住民が利益を受けられる仕組みをつくるべき"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地球温暖化による気候変動は、世界中に様々な悪影響を与えております。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地球温暖化による気候変動は、世界中に様々な悪影響を与えております。 我々一人一人もＳＤＧｓなどを意識し、持続可能な未来について考えるべきだと思いますし、特にエネルギーについては具体的に再生可能エネルギーへのシフトが急がれるところです。"@ja.
+<< kg:id_5 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "今年４月に稼働いたしましたごみ焼却施設では、ごみの焼却により発生する廃熱を利用して、約6,700世帯分の消費電力に相当する年間約2,000万キロワットアワーの発電能力を有する施設となっております。"@ja.
+<< kg:id_5 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "残りの３分の２の余剰電力につきましては売電を行い、その電力を市内小・中学校など市有施設に供給することで電力の地産地消に取り組んでおります。"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "災害時において拠点避難施設となります小・中学校や市体育施設等に太陽光発電設備や蓄電池の設置を進めており"@ja.
+<< kg:id_8 prop:countermeasure kg:id_10 >>
+    prop:text-txt_contents "西郷コミセン、朝日中学校、羽黒庁舎にはペレットボイラーを設置するなど、市有施設への再生可能エネルギーの導入を進めております。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_12 >>
+    prop:text-txt_contents "三瀬地区において地区内で生産したまきをコミュニティセンターのまきボイラー、まきストーブに利用する取組"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "湯野浜温泉では源泉の余熱を利用した旅館・ホテルへの温水供給設備の整備を行っており"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "太陽光発電やまきストーブなどの木質バイオマスを導入する家庭や事業所に対して、平成25年度から昨年度まで374件の補助を行い、再生可能エネルギーの導入促進を図っております。"@ja.
+<< kg:id_17 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "再生可能エネルギーの地産地消の推進につきましては、災害時のライフラインの確保のため"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "インフラの強化、または地域経済循環の活性化、ゼロカーボンの推進などを目的に"@ja.
+<< kg:id_17 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "インフラの強化、または地域経済循環の活性化、ゼロカーボンの推進などを目的に"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:text-txt_contents "予定では年間約3,690万キロワットアワーの発電量となり"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:text-txt_contents "これは一般家庭１万250世帯分"@ja.
+<< kg:id_20 prop:effect kg:id_23 >>
+    prop:text-txt_contents "鶴岡市の世帯の約21％の電力量となります。"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "ぜひ、まずは市関連の施設を中心に地産地消に取り組めないのか所見を伺います。"@ja.
+<< kg:id_26 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "一般家庭はもちろんのこと、市役所も含め企業に対してもＲＥ100などを啓蒙しながら"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "八森山の風力発電による電力を市の公共施設や市内の企業等で利用することが可能となれば、市が目指すゼロカーボンシティに大きく貢献できるものと考えております。"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "本年４月17日に本市もゼロカーボンシティ宣言を行ったことを踏まえ、削減目標の見直しを含めて、さらに取組を強化してまいります。"@ja.
+<< kg:id_30 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "ゼロカーボンシティの構築に向けて再生可能エネルギーの地産地消の取組は喫緊の課題であり、その実現のためには、あらゆる機会を逃がさずに取り組んでいかなければならないと考えております。"@ja.
+<< kg:id_33 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "先進自治体では、地域新電力の設置により雇用の創出など、地域経済への貢献を図っている事例もございますので、本市においてもどのような取組ができるか、環境の分野だけではなく庁内の関係する分野と連携しながら検討を進めてまいります。"@ja.
+<< kg:id_35 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "ＲＥ100につきましては、企業が自らの事業の使用電力を100％再生可能エネルギーで賄うことを目指すものでありまして、ブランドイメージの向上"@ja.
+<< kg:id_35 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "こういったことでビジネスチャンスを拡大する目的で積極的に取組をされております。"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "サプライチェーンと呼ばれる原料調達から販売までの全工程に関係する事業者全てが再生可能エネルギー100％を達成しなければならないため、本市内の企業においても取り組むメリットが生じてくるものと考えております。"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "その余剰電力が発生した場合には、議員おっしゃられるように、友好都市、またはつながりのある自治体、関係する企業から御利用いただくということも考えられます"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "このことによって関係人口、交流人口の拡大にもつながるものと考えております。"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "電力の地産地消を進めるためには、風力による発電など電力を生産する発電事業者、また、その電力を販売する電力事業者、それから電力を購入する個人、企業、こういった皆様の理解が必要となります"@ja.
+<< kg:id_43 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "生じるメリット、それからデメリット、こういったものについてもＰＲ、調査・研究をしていかなければならないと考えられます。"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "その再生可能エネルギーへの取組状況で大企業の取引先や仕事の発注先が決まるというような時代になってきているということだと思います。"@ja.
+<< kg:id_46 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "本市の産業の発展のためにも、市としてもそういった部分に様々な情報も含めて対策や対応を考える必要があると思います"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "八森山風力発電の稼働に合わせて、ぜひ返礼品としての活用も必要じゃないかというふうに考えます"@ja.
+<< kg:id_49 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "まず活用可能な余剰電力がどれぐらい発生するのか、見込めるのか、そうした情報を集めてまいりたいと存じます。 また、ふるさと納税事業に参画いただける意欲的な小売事業者があるかどうかについても情報を集めていく必要があると捉えております。 返礼品としての需要も見定めながら、活用の可能性について調査・研究を進めてまいりたいと存じます。"@ja.
+<< kg:id_49 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "トラッキング付非化石証書と呼ばれる、いわゆる電気の産地を証明する証書の取得手続が必要となります。この手続には金銭的な負担が伴うため"@ja.
+<< kg:id_49 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "寄附者の方にあっては電気の小売事業者と新たに契約を交わす際、その契約書の書面上に電気の産地を証明する必要がありますので、市と小売事業者が連携をして寄附者の手続が煩雑にならないように、しっかりとした制度設計が重要になる"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "本市で再生可能エネルギー事業を実施する事業者など関係の深い地域外企業に対して、本制度による寄附について検討していただくよう働きかけてまいります。"@ja.
+<< kg:id_56 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "寄附がその設置地域に還元されることも含めた地方創生事業の在り方や、この仕組みについても改めて検討してまいりたいと考えております。"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "再生可能エネルギーの場合、風車を筆頭に、地域の景観や環境、音や影なども含めて、様々住民活動に影響を与えながら建設・稼働されることが多い"@ja.
+<< kg:id_58 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "その施設が迷惑施設となるパターンが風力に限らずかなりあるというふうに認識しております。 本来は環境に優しいはずのエネルギーが迷惑施設にならないようにしないといけない"@ja.
+<< kg:id_61 prop:countermeasure kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "企業版ふるさと納税を財源に、そういった再生可能エネルギーの施設設置地域に財源にメリットを与えられるような仕組みをつくる必要がある"@ja.
+<< kg:id_63 prop:countermeasure kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "単純に風力を回して発電して、電気を売って、はい終わりというふうにならないようにするべきだと思います。風力発電事業の最大限のメリットを住民が享受できるように"@ja.
+}

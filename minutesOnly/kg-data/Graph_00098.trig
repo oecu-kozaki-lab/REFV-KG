@@ -1,0 +1,197 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00098> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "今回の補正"@ja.
+kg:id_1 rdf:type cls:c_2039.
+cls:c_2039 rdfs:label "予算補正"@ja.
+kg:id_2 rdfs:label "決算見込みによる事業費の調整"@ja.
+kg:id_2 rdf:type cls:c_2476.
+cls:c_2476 rdfs:label "事業費調整"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "国の補正予算に伴う補正"@ja.
+kg:id_3 rdf:type cls:c_2039.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "歳入歳出の決算見込みにより生じた財源を後年度の財源不足に備えようとする基金積立金の増額"@ja.
+kg:id_4 rdf:type cls:c_2477.
+cls:c_2477 rdfs:label "基金積立増"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "基金管理事業費の増額"@ja.
+kg:id_5 rdf:type cls:c_943.
+cls:c_943 rdfs:label "事業費増額"@ja.
+kg:id_6 rdfs:label "税収の増"@ja.
+kg:id_6 rdf:type cls:c_107.
+cls:c_107 rdfs:label "税収増"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "事業の決算見込み等により生じた財源"@ja.
+kg:id_7 rdf:type cls:c_2478.
+cls:c_2478 rdfs:label "財源発生"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "風力発電施設整備推進事業費の減額"@ja.
+kg:id_8 rdf:type cls:c_2479.
+cls:c_2479 rdfs:label "事業費減額"@ja.
+kg:id_9 rdfs:label "決算見込み"@ja.
+kg:id_9 rdf:type cls:c_2480.
+cls:c_2480 rdfs:label "決算見込"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "生活保護扶助事業費の増額"@ja.
+kg:id_10 rdf:type cls:c_943.
+kg:id_10 prop:cause kg:id_9.
+kg:id_11 rdfs:label "機構集積協力金交付事業費の増額"@ja.
+kg:id_11 rdf:type cls:c_943.
+kg:id_12 rdfs:label "交付対象地域等の増加"@ja.
+kg:id_12 rdf:type cls:c_2481.
+cls:c_2481 rdfs:label "対象増加"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "土地改良負担事業費の増額"@ja.
+kg:id_13 rdf:type cls:c_943.
+kg:id_14 rdfs:label "国の補正予算"@ja.
+kg:id_14 rdf:type cls:c_2482.
+cls:c_2482 rdfs:label "国補正予算"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "インバウンド推進事業費の新たな計上"@ja.
+kg:id_15 rdf:type cls:c_2174.
+cls:c_2174 rdfs:label "事業費計上"@ja.
+kg:id_16 rdfs:label "国の東北観光復興対策交付金の活用"@ja.
+kg:id_16 rdf:type cls:c_364.
+cls:c_364 rdfs:label "交付金活用"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "外国クルーズ船受入環境整備事業費の新たな計上"@ja.
+kg:id_17 rdf:type cls:c_2174.
+kg:id_17 prop:cause kg:id_16.
+kg:id_18 rdfs:label "除雪機械整備事業費の減額"@ja.
+kg:id_18 rdf:type cls:c_2479.
+kg:id_19 rdfs:label "事業費の確定"@ja.
+kg:id_19 rdf:type cls:c_2422.
+cls:c_2422 rdfs:label "事業費確定"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "県施行街路整備事業費の減額"@ja.
+kg:id_20 rdf:type cls:c_2479.
+kg:id_20 prop:cause kg:id_19.
+kg:id_21 rdfs:label "酒田地区広域行政組合分賦金の増額"@ja.
+kg:id_21 rdf:type cls:c_2483.
+cls:c_2483 rdfs:label "分担金増額"@ja.
+kg:id_22 rdfs:label "消防庁舎の解体"@ja.
+kg:id_22 rdf:type cls:c_2484.
+cls:c_2484 rdfs:label "施設解体"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "松山小学校改修事業費の新たな計上"@ja.
+kg:id_23 rdf:type cls:c_2174.
+kg:id_23 prop:cause kg:id_14.
+kg:id_24 rdfs:label "公共土木施設災害復旧事業費の減額"@ja.
+kg:id_24 rdf:type cls:c_2479.
+kg:id_25 rdfs:label "県施行急傾斜地崩壊対策事業負担金の確定"@ja.
+kg:id_25 rdf:type cls:c_2485.
+cls:c_2485 rdfs:label "負担金確定"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "公債費元金の増額"@ja.
+kg:id_26 rdf:type cls:c_2486.
+cls:c_2486 rdfs:label "償還費増額"@ja.
+kg:id_27 rdfs:label "市債の繰上償還の実施"@ja.
+kg:id_27 rdf:type cls:c_2425.
+cls:c_2425 rdfs:label "繰上償還"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "基金積立金の増額"@ja.
+kg:id_28 rdf:type cls:c_2477.
+kg:id_1 prop:effect kg:id_28.
+kg:id_29 rdfs:label "税収の増や事業の決算見込み等により生じた財源"@ja.
+kg:id_29 rdf:type cls:c_2478.
+kg:id_30 rdfs:label "財政調整基金及び市債管理基金等への積立"@ja.
+kg:id_30 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "基金積立"@ja.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "直営風力発電事業の実施"@ja.
+kg:id_31 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_32 rdfs:label "原子力発電に頼らない社会の構築への貢献"@ja.
+kg:id_32 rdf:type cls:c_1304.
+cls:c_1304 rdfs:label "社会貢献"@ja.
+kg:id_31 prop:effect kg:id_32.
+kg:id_33 rdfs:label "事業利益の市民還元"@ja.
+kg:id_33 rdf:type cls:c_1474.
+cls:c_1474 rdfs:label "市民還元"@ja.
+kg:id_31 prop:effect kg:id_33.
+kg:id_34 rdfs:label "再生可能エネルギーの活用"@ja.
+kg:id_34 rdf:type cls:c_862.
+cls:c_862 rdfs:label "エネルギー活用"@ja.
+kg:id_34 prop:countermeasure kg:id_31.
+kg:id_35 rdfs:label "環境影響評価等の手続に取り組む"@ja.
+kg:id_35 rdf:type cls:c_2487.
+cls:c_2487 rdfs:label "評価手続"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "今回の補正は、決算見込みによる事業費の調整、国の補正予算に伴う補正及び歳入歳出の決算見込みにより生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "今回の補正は、決算見込みによる事業費の調整、国の補正予算に伴う補正及び歳入歳出の決算見込みにより生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります。"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "今回の補正は、決算見込みによる事業費の調整、国の補正予算に伴う補正及び歳入歳出の決算見込みにより生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "歳出では、税収の増や事業の決算見込み等により生じた財源を財政調整基金及び市債管理基金等に積み立てるための基金管理事業費の増額"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:text-txt_contents "歳出では、税収の増や事業の決算見込み等により生じた財源を財政調整基金及び市債管理基金等に積み立てるための基金管理事業費の増額"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "決算見込みによる風力発電施設整備推進事業費の減額"@ja.
+<< kg:id_10 prop:cause kg:id_9 >>
+    prop:text-txt_contents "決算見込みによる生活保護扶助事業費の増額"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "交付対象地域等の増加による機構集積協力金交付事業費"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:text-txt_contents "国の補正予算に伴う土地改良負担事業費の増額"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:text-txt_contents "国の東北観光復興対策交付金を活用したインバウンド推進事業費の新たな計上"@ja.
+<< kg:id_17 prop:cause kg:id_16 >>
+    prop:text-txt_contents "国の東北観光復興対策交付金を活用した外国クルーズ船受入環境整備事業費の新たな計上"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "事業費の確定による除雪機械整備事業費及び県施行街路整備事業費の減額"@ja.
+<< kg:id_20 prop:cause kg:id_19 >>
+    prop:text-txt_contents "事業費の確定による除雪機械整備事業費及び県施行街路整備事業費の減額"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "消防庁舎の解体に伴う酒田地区広域行政組合分賦金の増額"@ja.
+<< kg:id_23 prop:cause kg:id_14 >>
+    prop:text-txt_contents "国の補正予算に伴う松山小学校改修事業費の新たな計上"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:text-txt_contents "県施行急傾斜地崩壊対策事業負担金の確定に伴う公共土木施設災害復旧事業費の減額"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "市債の繰上償還を実施するためなどによる公債費元金の増額"@ja.
+<< kg:id_1 prop:effect kg:id_28 >>
+    prop:text-txt_contents "歳入歳出の決算見込みにより生じた財源を後年度の財源不足に備えようとする基金積立金の増額が主なものであります。"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:text-txt_contents "税収の増や事業の決算見込み等により生じた財源を財政調整基金及び市債管理基金等に積み立てる"@ja.
+<< kg:id_31 prop:effect kg:id_32 >>
+    prop:text-txt_contents "直営風力発電事業の実施により、原子力発電に頼らない社会の構築への貢献"@ja.
+<< kg:id_31 prop:effect kg:id_33 >>
+    prop:text-txt_contents "直営風力発電事業の実施により、原子力発電に頼らない社会の構築への貢献、事業利益の市民還元を図っていく"@ja.
+<< kg:id_34 prop:countermeasure kg:id_31 >>
+    prop:text-txt_contents "再生可能エネルギーの活用については、直営風力発電事業の実施により"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:text-txt_contents "引き続き環境影響評価等の手続に取り組んでまいります。"@ja.
+}

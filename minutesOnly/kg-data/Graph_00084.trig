@@ -1,0 +1,574 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00084> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "福島原発事故"@ja.
+kg:id_1 rdf:type cls:c_2282.
+cls:c_2282 rdfs:label "原子力事故"@ja.
+kg:id_2 rdfs:label "山形県内への避難生活と福島との二重生活"@ja.
+kg:id_2 rdf:type cls:c_2283.
+cls:c_2283 rdfs:label "避難生活"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "先の見えない将来的な出口が見えない不安"@ja.
+kg:id_3 rdf:type cls:c_1274.
+cls:c_1274 rdfs:label "生活不安"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "震災後の復興"@ja.
+kg:id_4 rdf:type cls:c_2284.
+cls:c_2284 rdfs:label "復興"@ja.
+kg:id_5 rdfs:label "復興が一向に進まない"@ja.
+kg:id_5 rdf:type cls:c_2285.
+cls:c_2285 rdfs:label "復興停滞"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "風力発電"@ja.
+kg:id_6 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_7 rdfs:label "低周波の風評による土地価値低下への不安"@ja.
+kg:id_7 rdf:type cls:c_2286.
+cls:c_2286 rdfs:label "資産価値不安"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "健康被害への不安"@ja.
+kg:id_8 rdf:type cls:c_2287.
+cls:c_2287 rdfs:label "健康不安"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "低周波"@ja.
+kg:id_9 rdf:type cls:c_2288.
+cls:c_2288 rdfs:label "低周波"@ja.
+kg:id_10 rdfs:label "目に見えず体験もないことによる不安"@ja.
+kg:id_10 rdf:type cls:c_2289.
+cls:c_2289 rdfs:label "不安"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "低周波の調査報告を具体的な数値で開示して周知する"@ja.
+kg:id_11 rdf:type cls:c_2290.
+cls:c_2290 rdfs:label "情報開示"@ja.
+kg:id_6 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "設置後も騒音と低周波の調査観測を続け定期報告する"@ja.
+kg:id_12 rdf:type cls:c_1136.
+cls:c_1136 rdfs:label "継続調査"@ja.
+kg:id_6 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "風力発電事業"@ja.
+kg:id_13 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_14 rdfs:label "自主アセスで取り組む"@ja.
+kg:id_14 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "調査項目と回数を増加させる"@ja.
+kg:id_15 rdf:type cls:c_2291.
+cls:c_2291 rdfs:label "調査強化"@ja.
+kg:id_13 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "大気質調査を追加する"@ja.
+kg:id_16 rdf:type cls:c_736.
+cls:c_736 rdfs:label "環境調査"@ja.
+kg:id_13 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "工事中の振動調査を追加する"@ja.
+kg:id_17 rdf:type cls:c_736.
+kg:id_13 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "風車の影の調査を追加する"@ja.
+kg:id_18 rdf:type cls:c_736.
+kg:id_13 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "動物調査の時期と回数を増やす"@ja.
+kg:id_19 rdf:type cls:c_2292.
+cls:c_2292 rdfs:label "生態調査"@ja.
+kg:id_13 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "植物調査の時期と回数を増やす"@ja.
+kg:id_20 rdf:type cls:c_2292.
+kg:id_13 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "景観調査の回数を増やす"@ja.
+kg:id_21 rdf:type cls:c_2293.
+cls:c_2293 rdfs:label "景観調査"@ja.
+kg:id_13 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "環境影響評価方法書を作成し公表して広く意見を聞く"@ja.
+kg:id_22 rdf:type cls:c_82.
+cls:c_82 rdfs:label "意見聴取"@ja.
+kg:id_13 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "調査予測評価を1年間かけて行う"@ja.
+kg:id_23 rdf:type cls:c_1135.
+cls:c_1135 rdfs:label "調査評価"@ja.
+kg:id_13 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "準備書と評価書を作成する"@ja.
+kg:id_24 rdf:type cls:c_2294.
+cls:c_2294 rdfs:label "評価書作成"@ja.
+kg:id_13 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "騒音や低周波音への懸念"@ja.
+kg:id_25 rdf:type cls:c_2295.
+cls:c_2295 rdfs:label "騒音懸念"@ja.
+kg:id_13 prop:effect kg:id_25.
+kg:id_26 rdfs:label "鳥類など動物への影響への懸念"@ja.
+kg:id_26 rdf:type cls:c_2296.
+cls:c_2296 rdfs:label "生態影響懸念"@ja.
+kg:id_13 prop:effect kg:id_26.
+kg:id_27 rdfs:label "節目ごとに説明会を行い疑問や要望を聞きながら対応する"@ja.
+kg:id_27 rdf:type cls:c_2297.
+cls:c_2297 rdfs:label "説明対応"@ja.
+kg:id_13 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "広報特集や説明会で市民意見を聞く"@ja.
+kg:id_28 rdf:type cls:c_82.
+kg:id_13 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "建設費約27億円から30億円"@ja.
+kg:id_29 rdf:type cls:c_2298.
+cls:c_2298 rdfs:label "建設費"@ja.
+kg:id_13 prop:effect kg:id_29.
+kg:id_30 rdfs:label "毎年1億円以上の支出が必要"@ja.
+kg:id_30 rdf:type cls:c_2299.
+cls:c_2299 rdfs:label "維持費"@ja.
+kg:id_13 prop:effect kg:id_30.
+kg:id_31 rdfs:label "20年間で最大20億円程度の収益見込み"@ja.
+kg:id_31 rdf:type cls:c_2300.
+cls:c_2300 rdfs:label "収益見込み"@ja.
+kg:id_13 prop:effect kg:id_31.
+kg:id_32 rdfs:label "固定価格買取制度"@ja.
+kg:id_32 rdf:type cls:c_1473.
+cls:c_1473 rdfs:label "買取制度"@ja.
+kg:id_33 rdfs:label "買取価格が毎年度見直される"@ja.
+kg:id_33 rdf:type cls:c_2301.
+cls:c_2301 rdfs:label "価格見直し"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "大規模太陽光の買取価格引き下げが検討されている"@ja.
+kg:id_34 rdf:type cls:c_2302.
+cls:c_2302 rdfs:label "価格引下げ"@ja.
+kg:id_32 prop:effect kg:id_34.
+kg:id_35 rdfs:label "現行制度下では20年間の採算上のリスクはない見込み"@ja.
+kg:id_35 rdf:type cls:c_2303.
+cls:c_2303 rdfs:label "採算安定"@ja.
+kg:id_32 prop:effect kg:id_35.
+kg:id_36 rdfs:label "再生可能エネルギー関連産業"@ja.
+kg:id_36 rdf:type cls:c_1418.
+cls:c_1418 rdfs:label "再エネ産業"@ja.
+kg:id_37 rdfs:label "県と連携した技術研修や取り組みを検討する"@ja.
+kg:id_37 rdf:type cls:c_2304.
+cls:c_2304 rdfs:label "連携検討"@ja.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "洋上風力"@ja.
+kg:id_38 rdf:type cls:c_1243.
+cls:c_1243 rdfs:label "洋上風力"@ja.
+kg:id_39 rdfs:label "導入に必要な技術の確立が進められている"@ja.
+kg:id_39 rdf:type cls:c_2305.
+cls:c_2305 rdfs:label "技術確立"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "将来的な構想として勉強していく"@ja.
+kg:id_40 rdf:type cls:c_2306.
+cls:c_2306 rdfs:label "調査検討"@ja.
+kg:id_38 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "ハウス暖房への自然エネルギー活用"@ja.
+kg:id_41 rdf:type cls:c_2064.
+cls:c_2064 rdfs:label "自然エネルギー活用"@ja.
+kg:id_42 rdfs:label "イニシャルコストが壁で有効な方法が確立されていない"@ja.
+kg:id_42 rdf:type cls:c_1452.
+cls:c_1452 rdfs:label "導入課題"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "先進事例を関係機関とともに勉強する"@ja.
+kg:id_43 rdf:type cls:c_2306.
+kg:id_41 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "蓄電池併設型風力発電"@ja.
+kg:id_44 rdf:type cls:c_2307.
+cls:c_2307 rdfs:label "蓄電池併設型風力発電"@ja.
+kg:id_45 rdfs:label "非常用電源としての活用には技術的課題と電気事業法上の課題がある"@ja.
+kg:id_45 rdf:type cls:c_2308.
+cls:c_2308 rdfs:label "制度課題"@ja.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "エネルギービジョン"@ja.
+kg:id_46 rdf:type cls:c_808.
+cls:c_808 rdfs:label "エネルギー政策"@ja.
+kg:id_47 rdfs:label "ごみ減量化やバイオディーゼル利用や太陽光発電助成やペレットストーブ助成や緑のカーテンコンテストで啓発する"@ja.
+kg:id_47 rdf:type cls:c_2309.
+cls:c_2309 rdfs:label "普及啓発"@ja.
+kg:id_46 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "小中学校の太陽光発電施設"@ja.
+kg:id_48 rdf:type cls:c_2310.
+cls:c_2310 rdfs:label "学校太陽光発電"@ja.
+kg:id_49 rdfs:label "発電状況を表示して再生可能エネルギーを身近に理解できるようにする"@ja.
+kg:id_49 rdf:type cls:c_140.
+cls:c_140 rdfs:label "理解促進"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "風力発電施設建設ガイドライン"@ja.
+kg:id_50 rdf:type cls:c_2311.
+cls:c_2311 rdfs:label "建設指針"@ja.
+kg:id_51 rdfs:label "有識者や市民の意見を聞きながら平成25年度中に見直す"@ja.
+kg:id_51 rdf:type cls:c_1946.
+cls:c_1946 rdfs:label "見直し"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "太陽光発電設備のある小学校"@ja.
+kg:id_52 rdf:type cls:c_2310.
+kg:id_53 rdfs:label "蓄電池を併設して避難所機能を高める可能性を検討する"@ja.
+kg:id_53 rdf:type cls:c_2312.
+cls:c_2312 rdfs:label "機能強化検討"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "風力発電機種"@ja.
+kg:id_54 rdf:type cls:c_2313.
+cls:c_2313 rdfs:label "風力発電機種"@ja.
+kg:id_55 rdfs:label "羽の形状改良など騒音対策低周波対策が進んだ機種を考慮して選定する"@ja.
+kg:id_55 rdf:type cls:c_2314.
+cls:c_2314 rdfs:label "機種選定"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "風力発電事業終了後の施設"@ja.
+kg:id_56 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_57 rdfs:label "その時代のエネルギー政策の動向を見ながら判断する"@ja.
+kg:id_57 rdf:type cls:c_2315.
+cls:c_2315 rdfs:label "方針判断"@ja.
+kg:id_56 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "酒田港での洋上風力や波力活用"@ja.
+kg:id_58 rdf:type cls:c_2316.
+cls:c_2316 rdfs:label "港湾再エネ活用"@ja.
+kg:id_59 rdfs:label "関係者協議会の場で対外的に積極的に働きかける"@ja.
+kg:id_59 rdf:type cls:c_2317.
+cls:c_2317 rdfs:label "働きかけ"@ja.
+kg:id_58 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "住宅地からどの程度離すべきかを検討し市民にわかりやすく説明する"@ja.
+kg:id_60 rdf:type cls:c_2318.
+cls:c_2318 rdfs:label "距離基準"@ja.
+kg:id_50 prop:countermeasure kg:id_60.
+kg:st_1 rdfs:label "酒田在住の避難者の皆さん"@ja.
+kg:st_1 rdf:type cls:st_62.
+cls:st_62 rdfs:label "避難者"@ja.
+kg:op_1 prop:content "いつ帰れるかわからず震災復興が進まないことに不安と歯がゆさがある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "先の見えない不安の中で生活している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "田中斉議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_3 prop:content "被災者の願いに反して復興が進んでいない"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "地元の意見"@ja.
+kg:st_3 rdf:type cls:st_3.
+cls:st_3 rdfs:label "地域住民"@ja.
+kg:op_4 prop:content "低周波の風評で土地の価値がさらに下がることを懸念している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "市民"@ja.
+kg:st_4 rdf:type cls:st_22.
+cls:st_22 rdfs:label "市民"@ja.
+kg:op_5 prop:content "健康被害が本当にないのか不安に感じている"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_4.
+kg:op_6 prop:content "低周波は見えず実感もないため不安を強めやすい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "具体的な数値の開示と周知で不安解消を図るべきだ"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "設置後も継続調査と定期報告が必要だ"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "市長"@ja.
+kg:st_5 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_9 prop:content "事業主体と事業目的が違うため自主アセスで進める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_5.
+kg:op_10 prop:content "十分な調査を行うため調査項目と回数を増やした"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "環境影響評価のため大気質調査を追加する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "工事中の影響把握のため振動調査を追加する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:op_13 prop:content "風車の影の影響を確認するため調査を追加する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "動物への影響把握を強化するため調査回数を増やす"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:op_15 prop:content "植物への影響把握を強化するため調査回数を増やす"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_5.
+kg:op_16 prop:content "景観への影響を丁寧に確認するため調査回数を増やす"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "方法書を公表して広く意見を聴取する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "1年間かけて調査と予測評価を行う"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "調査後に準備書と評価書を作成する予定だ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "地元自治会"@ja.
+kg:st_6 rdf:type cls:st_63.
+cls:st_63 rdfs:label "地域組織"@ja.
+kg:op_20 prop:content "騒音や低周波音への懸念があるためしっかり調査してほしい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:op_21 prop:content "鳥類など動物への影響を懸念している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "不安や懸念の解消のため節目ごとに説明会を開く"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "広報や説明会を通じて市民意見を聴取していく"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:st_7 rdfs:label "総務部長兼総務課長"@ja.
+kg:st_7 rdf:type cls:st_40.
+kg:op_24 prop:content "建設には約27億円から30億円程度を見込んでいる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_7.
+kg:op_25 prop:content "元利償還とメンテナンスで毎年1億円以上の支出が必要だ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_7.
+kg:op_26 prop:content "計画どおりなら20年間で最大20億円程度の収益を見込む"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:op_27 prop:content "買取価格は毎年度見直される制度だ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:op_28 prop:content "設置コスト低下により太陽光の買取価格引き下げが検討されている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_7.
+kg:op_29 prop:content "20年間の買取保証があるため現行制度下では採算リスクは小さいと見ている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_7.
+kg:op_30 prop:content "県と連携して技術研修などの取り組みを検討したい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_7.
+kg:op_31 prop:content "実証運転を通じて洋上風力導入に必要な技術確立が進むと見ている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_7.
+kg:op_32 prop:content "洋上風力は将来的な構想として勉強していきたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_7.
+kg:op_33 prop:content "初期費用が高く有効な方法はまだ確立されていない"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_7.
+kg:op_34 prop:content "先進事例があれば関係機関とともに学びたい"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_7.
+kg:op_35 prop:content "特定施設への給電には技術面と制度面の課題があり実現には時間がかかる"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_7.
+kg:op_36 prop:content "各施策を通じて新エネルギー活用の大切さを伝えてきた"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_7.
+kg:op_37 prop:content "児童生徒が発電状況を見て再生可能エネルギーを身近に理解できるようにしている"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_7.
+kg:st_8 rdfs:label "市民部長"@ja.
+kg:st_8 rdf:type cls:st_40.
+kg:op_38 prop:content "有識者と市民の意見を踏まえて年度内に見直す予定だ"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_8.
+kg:op_39 prop:content "災害時に有効であり可能な取り組みを勉強したい"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_8.
+kg:op_40 prop:content "騒音や低周波対策が進んだ機種を考慮して選定する"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_7.
+kg:op_41 prop:content "20年後の扱いは将来のエネルギー政策の動向を見て判断する"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_7.
+kg:op_42 prop:content "関係者による協議会の場も活用し積極的に働きかけたい"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_7.
+kg:op_43 prop:content "住宅地からの距離の指針を検討し市民にわかりやすく説明する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_7.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "福島原発事故の放射能汚染から幼い子供を守るために家族で酒田に避難し、２年経過した今も仕事の関係で福島との二重生活を余儀なくされた方たちが酒田で避難生活を送っている現実もあります"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "家族全員の顔がそろう週末を待ちわび、幼い子供たちとともに、先の見えない、将来的な出口が見えない不安とたたかっております"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "被災者の願いや思いとは裏腹に、震災後の復興は一向に進んでおりません"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "地元の意見としては、津波浸水域で土地評価が下がった上に、低周波の風評でさらに価値が下がるのではないか"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "あるいは健康被害は本当にないのかあるのか"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "低周波は目に見えませんし、よくわかりません。実際に体験したこともないので、一層不安になるものだと思います"@ja.
+<< kg:id_6 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "低周波の調査報告を具体的な数値を開示して周知すれば解決できることと思います"@ja.
+<< kg:id_6 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "設置後であっても、騒音、低周波の調査観測を続けて、定期的な報告が当然必要なのだと思います"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "事業主体と事業目的が違うので自主アセスで取り組むとの説明"@ja.
+<< kg:id_13 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "県の環境審議会自然環境部会における十分な調査を行うようにとの意見を参考にしたこと、それから地元自治会からも騒音などに対する調査をしっかりやってもらいたいというふうな意見がありましたので、調査の項目、回数などを増加させたもの"@ja.
+<< kg:id_13 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "その主な増加の要因としては、大気質"@ja.
+<< kg:id_13 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "工事中の振動調査"@ja.
+<< kg:id_13 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "風車の影の調査の追加"@ja.
+<< kg:id_13 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "動物調査の時期、回数の増加、これは年２回から項目によっては年12回へ増やしております"@ja.
+<< kg:id_13 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "植物調査の時期の回数の増加、これも年１回から年４回へ"@ja.
+<< kg:id_13 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "景観調査の回数の増加、これも年１回から２回"@ja.
+<< kg:id_13 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "今後、環境影響評価方法書を作成し、公表し、それについて広く意見を聞いていきます"@ja.
+<< kg:id_13 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "その後、調査、予測評価を１年間かけて行って"@ja.
+<< kg:id_13 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "準備書、評価書の作成を行っていく予定"@ja.
+<< kg:id_13 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "地元自治会からも騒音などに対する調査をしっかりやってもらいたいというふうな意見"@ja.
+<< kg:id_13 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "騒音、低周波音に対する懸念、あるいは鳥類など動物への影響"@ja.
+<< kg:id_13 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "不安、懸念を解消するため、節目ごとに説明会を行って、疑問や要望をお聞きしながら対応していきたい"@ja.
+<< kg:id_13 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "これまで市民向けには２月１日号の広報で特集をさせていただいております。また、今週の10日には説明会を開催させていただいておりますので、これからも環境アセスメントなど定められたタイミングがありますので、そのタイミングで市民の意見をお聞きしてまいりたい"@ja.
+<< kg:id_13 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "建設に当たって約27億円から30億円程度の費用を見込んでおります"@ja.
+<< kg:id_13 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "ランニングコストとしては、建設費の元利償還に加え、メンテナンス等を含めると、毎年１億円以上の支出が必要"@ja.
+<< kg:id_13 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "この事業の収益については、計画どおり進んだ場合、20年間で最大20億円程度の収益が見込まれる"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "この制度につきましては、買取価格が毎年度見直されることになっております"@ja.
+<< kg:id_32 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "大規模太陽光につきましては、設置コストが下がったことにより、来年度からは買取価格も下がるというようなことが検討される"@ja.
+<< kg:id_32 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "現行制度は事業性を担保する制度であり、20年間の買取期間が保証されているということですから、現行制度の中で進むとすれば、この20年間、採算上のリスクはないのではないか"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "県でも現在、技術研修も開催しているというふうにお聞きしておりますので、今後、県と連携した取り組みについて検討してまいりたい"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "今後、稼働を通してデータを取り、沖合洋上風力発電の導入に必要な技術の確立を目指す"@ja.
+<< kg:id_38 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "洋上風力については今後、将来的な構想として勉強していきたい"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "ハウスの暖房については、現時点ではイニシャルコストが壁となって、有効な方法が確立されていない現状"@ja.
+<< kg:id_41 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "化石燃料以外のものを熱源に使っている先進事例などがあれば、関係機関とともに勉強してまいりたい"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "現在このような実例はございませんし、また技術的な課題に加えて電気事業法上の課題もございますから、こうした実現についてはまだまだ時間がかかる"@ja.
+<< kg:id_46 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "具体的には、ごみの減量化や食用油のバイオディーゼル燃料への利用、あるいは住宅用太陽光発電施設やペレットストーブ設置への助成、また緑のカーテンコンテストなどの取り組みを行い、同時に市民の皆さんへの啓発にも努めてきた"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "児童生徒の皆さんにも発電の状況がわかるように表示をして、再生可能エネルギーが身近なものとして理解できるようにしている"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "その過程で有識者ですとか市民の皆様からも御意見を伺いながら、平成25年度中に見直しを行う予定"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "本市の太陽光発電設備のある小学校に蓄電池を併設して避難所機能を高めてはとの御提案でございましたけれども、災害時の機能としては有効であると考えますので、防災拠点再生可能エネルギー導入促進事業を初め、どのような取り組みが可能であるか勉強してまいりたい"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "羽の形状の改良などによって騒音などの対策が進められているというふうに聞いております。今後導入する機種については、こうしたことも考慮しながら選定を行っていきたい"@ja.
+<< kg:id_56 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "事業終了後の方向性につきましては、その時代のエネルギー政策の動向など、そうした状況を見ながら判断してまいりたい"@ja.
+<< kg:id_58 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "国・県等の行政機関や港湾利用者、輸送業者などの関係者による協議会が組織される予定となっておりますので、そのような場にも呼びかけをしながら、対外的に積極的に働きかけていきたい"@ja.
+<< kg:id_50 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "風車建設の指針として、住宅地からどの程度離すべきなのか、こういったことをさらに検討して、またそれについては市民の皆さんにわかりやすく説明するように努めていきたい"@ja.
+}

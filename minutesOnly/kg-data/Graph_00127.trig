@@ -1,0 +1,343 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00127> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地元集落との協定根拠の不明確さ"@ja.
+kg:id_1 rdf:type cls:c_3107.
+cls:c_3107 rdfs:label "協定根拠の不明確"@ja.
+kg:id_2 rdfs:label "条例上に明記されていなかったこと"@ja.
+kg:id_2 rdf:type cls:c_3108.
+cls:c_3108 rdfs:label "条例未明記"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "条例改正"@ja.
+kg:id_3 rdf:type cls:c_740.
+cls:c_740 rdfs:label "条例改正"@ja.
+kg:id_4 rdfs:label "集落とも協定を結べるように明文化すること"@ja.
+kg:id_4 rdf:type cls:c_3109.
+cls:c_3109 rdfs:label "協定根拠の明確化"@ja.
+kg:id_3 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "事業者と地元の協定締結に応じない場合"@ja.
+kg:id_5 rdf:type cls:c_3110.
+cls:c_3110 rdfs:label "協定不成立"@ja.
+kg:id_6 rdfs:label "町が調整に入る必要が生じる"@ja.
+kg:id_6 rdf:type cls:c_3111.
+cls:c_3111 rdfs:label "行政調整"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "小型風力発電の稼働直後"@ja.
+kg:id_7 rdf:type cls:c_3112.
+cls:c_3112 rdfs:label "発電施設の稼働"@ja.
+kg:id_8 rdfs:label "騒音の発生"@ja.
+kg:id_8 rdf:type cls:c_2586.
+cls:c_2586 rdfs:label "騒音発生"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "小型風力発電の騒音発生"@ja.
+kg:id_9 rdf:type cls:c_2586.
+kg:id_10 rdfs:label "地元の方々から苦情が出た"@ja.
+kg:id_10 rdf:type cls:c_3113.
+cls:c_3113 rdfs:label "住民苦情"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "事業者が騒音装置を設置すること"@ja.
+kg:id_11 rdf:type cls:c_3068.
+cls:c_3068 rdfs:label "騒音対策"@ja.
+kg:id_9 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "迷惑施設の隣接移転"@ja.
+kg:id_12 rdf:type cls:c_3114.
+cls:c_3114 rdfs:label "施設移転"@ja.
+kg:id_13 rdfs:label "隣接地の関係者が環境に対する不安を拭い切れない"@ja.
+kg:id_13 rdf:type cls:c_3115.
+cls:c_3115 rdfs:label "環境不安"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "関係者が事業者との力関係の差で直接掛け合えない"@ja.
+kg:id_14 rdf:type cls:c_3116.
+cls:c_3116 rdfs:label "住民の交渉困難"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "町民の声が届きにくいこと"@ja.
+kg:id_15 rdf:type cls:c_3117.
+cls:c_3117 rdfs:label "住民意見の反映困難"@ja.
+kg:id_16 rdfs:label "地元の声を協定に反映させる根拠が明確でなかったこと"@ja.
+kg:id_16 rdf:type cls:c_3107.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "条例改正案"@ja.
+kg:id_17 rdf:type cls:c_3118.
+cls:c_3118 rdfs:label "条例改正案"@ja.
+kg:id_18 rdfs:label "文章表現や制度設計が不十分で解釈や運用に疑義が生じるおそれ"@ja.
+kg:id_18 rdf:type cls:c_3119.
+cls:c_3119 rdfs:label "制度不備"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "民間同士の協定が関係住民に重い負担となり地域の亀裂を生むおそれ"@ja.
+kg:id_19 rdf:type cls:c_3120.
+cls:c_3120 rdfs:label "住民負担"@ja.
+kg:id_17 prop:effect kg:id_19.
+kg:id_20 rdfs:label "環境審議会での事前検討を欠いた手続上の不十分さが残る"@ja.
+kg:id_20 rdf:type cls:c_744.
+cls:c_744 rdfs:label "手続不備"@ja.
+kg:id_17 prop:effect kg:id_20.
+kg:id_21 rdfs:label "議第86号が否決された"@ja.
+kg:id_21 rdf:type cls:c_3121.
+cls:c_3121 rdfs:label "議案否決"@ja.
+kg:id_17 prop:effect kg:id_21.
+kg:id_22 rdfs:label "スクールバス取得"@ja.
+kg:id_22 rdf:type cls:c_3122.
+cls:c_3122 rdfs:label "バス取得"@ja.
+kg:id_23 rdfs:label "新型コロナウイルス感染症対策として密を避ける必要"@ja.
+kg:id_23 rdf:type cls:c_3123.
+cls:c_3123 rdfs:label "感染対策"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "小学校統合後にも使用される"@ja.
+kg:id_24 rdf:type cls:c_3124.
+cls:c_3124 rdfs:label "統合後利用"@ja.
+kg:id_22 prop:effect kg:id_24.
+kg:id_25 rdfs:label "スクールバス中型2台を購入整備すること"@ja.
+kg:id_25 rdf:type cls:c_3125.
+cls:c_3125 rdfs:label "車両整備"@ja.
+kg:id_22 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "広畑橋下部工工事の契約変更"@ja.
+kg:id_26 rdf:type cls:c_3126.
+cls:c_3126 rdfs:label "工事契約変更"@ja.
+kg:id_27 rdfs:label "掘削中にマイナス5メートル付近から岩盤が発生したこと"@ja.
+kg:id_27 rdf:type cls:c_3127.
+cls:c_3127 rdfs:label "岩盤発生"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "岩盤破砕や掘削運搬の経費が増加した"@ja.
+kg:id_28 rdf:type cls:c_3128.
+cls:c_3128 rdfs:label "工事費増加"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "請負契約の一部変更による増工対応"@ja.
+kg:id_29 rdf:type cls:c_3129.
+cls:c_3129 rdfs:label "増工対応"@ja.
+kg:id_26 prop:countermeasure kg:id_29.
+kg:st_1 rdfs:label "地域生活課長 畠中良一君"@ja.
+kg:st_1 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_1 prop:content "協定根拠が不明確だったため条例で明文化すべきと説明"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "5番 齋藤武議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "改正理由が根拠明文化だけでは不十分で立法事実の検討が足りないと指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "2番 那須正幸君"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_3 prop:content "町民の安心安全のため今後も地元協定の対応継続を求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "地元リスク管理のため事業者と地元が協定締結できるよう追加すると説明"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "町長 時田博機君"@ja.
+kg:st_4 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_5 prop:content "地域の声を協定に反映させるため条例上の根拠を明確にしたいと述べる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_4.
+kg:op_6 prop:content "条文案は不十分で無防備であり慎重な制度設計が必要と反対"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "4番 佐藤光保議員"@ja.
+kg:st_5 rdf:type cls:st_9.
+kg:op_7 prop:content "委任規定を根拠にする説明は不十分で改正案に反対"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_5.
+kg:op_8 prop:content "力関係があり当事者だけでは事業者に働きかけられない場合の町の対応を問題提起"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_5.
+kg:op_9 prop:content "事案発生時は町が調整に入り協定の実効性を支えると説明"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "協定に基づき騒音発生時に迅速な対応ができた実例として説明"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "地元から苦情が寄せられたことで協定の重要性が確認できたと説明"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "協定に基づき事業者がすぐ騒音対策装置を設置したと説明"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "相談者は隣接移転に強い不安があり事業者に直接言えないと訴えていると紹介"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "住民は力関係の差から事業者に話しに行けない現実があると問題提起"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:op_15 prop:content "町民の声が届きにくい実情を受けて根拠明確化が必要と述べる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "条文の位置付けや表現が不適切で無防備な規定になっていると反対"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "関係住民が結ぶ協定は苦渋の防衛ラインであり制度的手当てがないと危険と反対"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "重要改正なのに環境審議会での事前審議が必要だったと反対"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "教育委員会教育課長 髙橋善之君"@ja.
+kg:st_6 rdf:type cls:st_12.
+kg:op_19 prop:content "更新増車による密対策が購入目的と説明"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:op_20 prop:content "統合関連利用もあるとして取得に反対"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "統合に関連する取得ではないかと追及"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "統合時には当然使うことになると説明"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:op_23 prop:content "密対策として2台取得すると説明"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_6.
+kg:op_24 prop:content "歩いて環境になじむ教育を損ない学校統合を進める手段にもなるとして反対"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "当初は玉石混じり土を想定したが掘削途中で岩盤が出たため増工になったと説明"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "前年も同様であり当初設計が甘いのではないかと疑問を呈する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "9番 阿部満吉議員"@ja.
+kg:st_7 rdf:type cls:st_9.
+kg:op_27 prop:content "同様の増額が繰り返されており積算の甘さを指摘して反対"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:op_28 prop:content "岩盤取壊しと運搬費増で契約変更が必要になったと説明"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "工事費の増額が容易な入札方式になっていると問題視"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_7.
+kg:op_30 prop:content "増額補正を繰り返すより入札方式見直しと職員のスキル向上が必要と反対"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_7.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地元集落との協定の根拠についてこれまで不明だったということで、なかったということで、今回明文化するための条例改正をお願いするものでございます。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "開発地となります地元のリスク管理のためということで、集落とも協定を結べるようにということで改正を今回お願いするものでございます。"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "何らかの事案が発生した場合につきましては、町が調整に入ることになります。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "稼働直後、騒音が発生して地元の方々から苦情をいただきました。"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "稼働直後、騒音が発生して地元の方々から苦情をいただきました。"@ja.
+<< kg:id_9 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "その協定に基づきまして、事業者さんのほうからすぐに騒音装置設置していただきまして、対応をさせていただいたところでございます。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "どうしてもここの隣にいる私の相談者はそういう環境に対する不安が拭い切れないと、こういうケースです。"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "現実の力関係がすごく差がありまして、あの人のところにこういう話をしに行くのはとてもできないというふうなケースです。"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "なかなか地元の声がやっぱり届かないのだなという思いしていましたし、実は高瀬地区でも１つ産廃の施設を造るときにも、町は一生懸命間に入って事業者との説明会、７回かな、あのときは。"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今回上程された条例案、つまり条例改正案は、主に次の３つの理由により不適当だと考えます。まず１つは、文章表現の見地からです。"@ja.
+<< kg:id_17 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "民間同士の協定は大変デリケートなものですが、今回の条例ではその辺りの手当てがなされていません。"@ja.
+<< kg:id_17 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "やはり事前に環境審議会で検討すべきだと考えます。"@ja.
+<< kg:id_17 prop:effect kg:id_21 >>
+    prop:text-txt_contents "挙手少数です。よって、本件は否決されました。"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "スクールバスの更新、増車による密対策を目的とした購入整備であります。"@ja.
+<< kg:id_22 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "予定しております統合時に使用するバスの台数は、現状の台数よりも多い台数でございますので、当然使うことになるということでございます。"@ja.
+<< kg:id_22 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_23;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "本件で取得するスクールバス中型２台につきましては、新型コロナウイルス感染症対応地方創生臨時交付金を財源とした事業によるものでございまして、スクールバスの更新、増車による密対策を目的とした購入整備であります。"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "フーチングまでの床掘り深さ、ＧＬよりマイナス10メーターとなりますけれども、ＧＬマイナス５メーター付近より岩盤が発生しております。"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "この岩盤についての取壊し、大型ブレーカーによる岩盤の破砕取壊し、そしてこの岩盤取壊しの岩の掘削運搬に係る経費が増したということで、このような形で増工となったものでございます。"@ja.
+<< kg:id_26 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "次に、議第89号橋梁長寿命化修繕計画事業広畑橋下部工工事に係る請負契約の一部変更についての件を議題といたします。"@ja.
+}

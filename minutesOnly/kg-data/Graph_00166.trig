@@ -1,0 +1,133 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00166> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田港の基地港湾の指定"@ja.
+kg:id_1 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_2 rdfs:label "指定に向けた努力"@ja.
+kg:id_2 rdf:type cls:c_1286.
+cls:c_1286 rdfs:label "指定推進"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "酒田港の洋上風力発電基地港湾指定"@ja.
+kg:id_3 rdf:type cls:c_815.
+kg:id_4 rdfs:label "弾みがつく"@ja.
+kg:id_4 rdf:type cls:c_1547.
+cls:c_1547 rdfs:label "進展"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "酒田市沖想定海域の議論の進展"@ja.
+kg:id_5 rdf:type cls:c_3872.
+cls:c_3872 rdfs:label "議論進展"@ja.
+kg:id_3 prop:cause kg:id_5.
+kg:id_6 rdfs:label "歳入確保"@ja.
+kg:id_6 rdf:type cls:c_1333.
+cls:c_1333 rdfs:label "歳入確保"@ja.
+kg:id_7 rdfs:label "個人版ふるさと納税"@ja.
+kg:id_7 rdf:type cls:c_3873.
+cls:c_3873 rdfs:label "寄付制度"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "企業版ふるさと納税"@ja.
+kg:id_8 rdf:type cls:c_3873.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "ガバメントクラウドファンディング"@ja.
+kg:id_9 rdf:type cls:c_3874.
+cls:c_3874 rdfs:label "資金調達"@ja.
+kg:id_6 prop:cause kg:id_9.
+kg:id_10 rdfs:label "未利用財産の売払い"@ja.
+kg:id_10 rdf:type cls:c_1071.
+cls:c_1071 rdfs:label "資産売却"@ja.
+kg:id_6 prop:cause kg:id_10.
+kg:id_11 rdfs:label "風力発電事業による売電収入"@ja.
+kg:id_11 rdf:type cls:c_1068.
+cls:c_1068 rdfs:label "売電収入"@ja.
+kg:id_6 prop:cause kg:id_11.
+kg:id_12 rdfs:label "ネーミングライツを含む新たな広告収入"@ja.
+kg:id_12 rdf:type cls:c_3875.
+cls:c_3875 rdfs:label "広告収入"@ja.
+kg:id_6 prop:cause kg:id_12.
+kg:st_1 rdfs:label "酒田市"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "再生可能エネルギー循環都市の実現に向けて指定を目指す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "新たな意識で取り組む"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "新たな意識で取り組む"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "新たな意識で取り組む"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "新たな意識で取り組む"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "新たな意識で取り組む"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "新たな意識で取り組む"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "再生可能エネルギー循環都市の実現を目指し、山形県が進める遊佐町沖と酒田市沖の洋上風力発電事業の拠点となる酒田港の基地港湾の指定に向け、努力します"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "山形県地域協調型洋上風力発電研究・検討会議の中で酒田市沖想定海域の議論が進み、今後、酒田港の洋上風力発電基地港湾指定にも弾みがつきます"@ja.
+<< kg:id_3 prop:cause kg:id_5 >>
+    prop:text-txt_contents "山形県地域協調型洋上風力発電研究・検討会議の中で酒田市沖想定海域の議論が進み、今後、酒田港の洋上風力発電基地港湾指定にも弾みがつきます"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "個人版ふるさと納税、企業版ふるさと納税、ガバメントクラウドファンディング、未利用財産の売払い、風力発電事業による売電収入、ネーミングライツを含む新たな広告収入などの歳入確保に、市職員全員が意識を新たに取り組みます"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "個人版ふるさと納税、企業版ふるさと納税、ガバメントクラウドファンディング、未利用財産の売払い、風力発電事業による売電収入、ネーミングライツを含む新たな広告収入などの歳入確保に、市職員全員が意識を新たに取り組みます"@ja.
+<< kg:id_6 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "個人版ふるさと納税、企業版ふるさと納税、ガバメントクラウドファンディング、未利用財産の売払い、風力発電事業による売電収入、ネーミングライツを含む新たな広告収入などの歳入確保に、市職員全員が意識を新たに取り組みます"@ja.
+<< kg:id_6 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "個人版ふるさと納税、企業版ふるさと納税、ガバメントクラウドファンディング、未利用財産の売払い、風力発電事業による売電収入、ネーミングライツを含む新たな広告収入などの歳入確保に、市職員全員が意識を新たに取り組みます"@ja.
+<< kg:id_6 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "個人版ふるさと納税、企業版ふるさと納税、ガバメントクラウドファンディング、未利用財産の売払い、風力発電事業による売電収入、ネーミングライツを含む新たな広告収入などの歳入確保に、市職員全員が意識を新たに取り組みます"@ja.
+<< kg:id_6 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "個人版ふるさと納税、企業版ふるさと納税、ガバメントクラウドファンディング、未利用財産の売払い、風力発電事業による売電収入、ネーミングライツを含む新たな広告収入などの歳入確保に、市職員全員が意識を新たに取り組みます"@ja.
+}

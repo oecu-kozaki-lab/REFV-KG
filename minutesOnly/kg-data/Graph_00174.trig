@@ -1,0 +1,234 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00174> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "市民への説明・周知不足"@ja.
+kg:id_1 rdf:type cls:c_663.
+cls:c_663 rdfs:label "説明不足"@ja.
+kg:id_2 rdfs:label "洋上風力発電事業への理解醸成や機運向上が十分に進んでいないこと"@ja.
+kg:id_2 rdf:type cls:c_394.
+cls:c_394 rdfs:label "理解不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "酒田市沖洋上風力発電事業"@ja.
+kg:id_3 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_4 rdfs:label "国による再エネ海域利用法に基づく有望区域指定"@ja.
+kg:id_4 rdf:type cls:c_194.
+cls:c_194 rdfs:label "区域指定"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "住民説明会の令和６年度見送り"@ja.
+kg:id_5 rdf:type cls:c_3980.
+cls:c_3980 rdfs:label "説明会見送り"@ja.
+kg:id_6 rdfs:label "洋上風力発電事業のメリット・デメリットの把握と整理を優先すべき判断"@ja.
+kg:id_6 rdf:type cls:c_3981.
+cls:c_3981 rdfs:label "情報整理"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "地域の理解醸成や機運の高まりを確認しながら段階的に進める必要"@ja.
+kg:id_7 rdf:type cls:c_1506.
+cls:c_1506 rdfs:label "理解醸成"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "地域経済の活性化"@ja.
+kg:id_8 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_3 prop:effect kg:id_8.
+kg:id_9 rdfs:label "働きたいがかなう酒田の実現"@ja.
+kg:id_9 rdf:type cls:c_3982.
+cls:c_3982 rdfs:label "就業機会"@ja.
+kg:id_3 prop:effect kg:id_9.
+kg:id_10 rdfs:label "酒田港の基地港湾指定"@ja.
+kg:id_10 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_11 rdfs:label "酒田市沖の洋上風力発電導入ありきとの誤解による議論停滞のおそれ"@ja.
+kg:id_11 rdf:type cls:c_1531.
+cls:c_1531 rdfs:label "議論停滞"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "県との連携"@ja.
+kg:id_12 rdf:type cls:c_1105.
+cls:c_1105 rdfs:label "行政連携"@ja.
+kg:id_3 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "酒田港基地港湾指定"@ja.
+kg:id_13 rdf:type cls:c_815.
+kg:id_14 rdfs:label "県と連携して国に働きかけること"@ja.
+kg:id_14 rdf:type cls:c_3983.
+cls:c_3983 rdfs:label "国要請"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "全体会議・酒田部会・法定協議会で具体的な議論を進めること"@ja.
+kg:id_15 rdf:type cls:c_1501.
+cls:c_1501 rdfs:label "協議推進"@ja.
+kg:id_3 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "再生可能エネルギーに関する理解醸成を図ること"@ja.
+kg:id_16 rdf:type cls:c_1506.
+kg:id_3 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "洋上風力発電の果たす役割を市民に伝えること"@ja.
+kg:id_17 rdf:type cls:c_1056.
+cls:c_1056 rdfs:label "情報発信"@ja.
+kg:id_3 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "酒田市沖の地域振興策の案の検討"@ja.
+kg:id_18 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_3 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "地球沸騰化対策の必要性と再生可能エネルギーへの期待を啓発するセミナーの開催"@ja.
+kg:id_19 rdf:type cls:c_1720.
+cls:c_1720 rdfs:label "啓発活動"@ja.
+kg:id_3 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "洋上風力発電についての勉強会を複数回開催すること"@ja.
+kg:id_20 rdf:type cls:c_3206.
+cls:c_3206 rdfs:label "学習機会"@ja.
+kg:id_3 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "法定協議会等で議論が進んだ段階で住民説明会につなげること"@ja.
+kg:id_21 rdf:type cls:c_433.
+cls:c_433 rdfs:label "説明会開催"@ja.
+kg:id_3 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "市民に向けて丁寧な情報発信を行うこと"@ja.
+kg:id_22 rdf:type cls:c_1056.
+kg:id_13 prop:countermeasure kg:id_22.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_17.
+cls:st_17 rdfs:label "発言者"@ja.
+kg:op_1 prop:content "市民への説明と周知が足りず、市主導の取組が必要だと指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "酒田市当局"@ja.
+kg:st_2 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_2 prop:content "メリットとデメリットを整理した上で説明会を行うべきと判断"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "地域の理解状況を見ながら段階的に住民説明会につなげるべきと判断"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "地域経済の活性化につながる事業として期待"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "雇用や就業機会の実現に資する取組として位置付け"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "基地港湾指定が導入前提との誤解を招き議論が停滞しないよう配慮が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "事業推進には県との連携が非常に重要だと認識"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "基地港湾指定に向けて県と連携した国への働きかけが重要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "県主導の会議体と新たな法定協議会で具体的議論を進める考え"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "まず再生可能エネルギー全般への理解醸成を進める必要がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "市民に洋上風力発電の役割を伝えながら機運醸成を進める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "地域振興策の案を重ねて検討する必要がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "市民向けに地球沸騰化対策と再エネの必要性を啓発するセミナーを実施予定"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "洋上風力発電に関する勉強会を複数回開いて理解醸成に努める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "具体的な議論が進んだ後に住民説明会へ移行する流れを想定"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "誤解による議論停滞を防ぐため市民への丁寧な情報発信に努める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "しかし、市民への説明、周知が足りていないのではないかと考えております。"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "酒田市沖の洋上風力発電事業においては、昨年10月、国から再エネ海域利用法に基づいて有望区域に指定されました。"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "県と議論を重ねる中で、洋上風力発電事業についてのメリット、デメリットをしっかり把握し、整理した上で行うほうが良いのではないか"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "本地域の理解醸成や機運の高まりの進捗を確認しながら、段階的に住民説明会へつなげていくべきではないかという判断に至りまして、開催を令和６年度に見送ることといたしました。"@ja.
+<< kg:id_3 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "経済が活性化し「働きたい」がかなう酒田、①として、酒田市沖洋上風力発電事業及び酒田港基地港湾指定に向けた取り組みについて"@ja.
+<< kg:id_3 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "経済が活性化し「働きたい」がかなう酒田"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "酒田港の基地港湾指定が酒田市沖の洋上風力発電導入ありきと誤解を招いて、その結果、議論が停滞することのないように"@ja.
+<< kg:id_3 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "この事業を進める上で、県との連携は大変重要だと認識をいたしているところでございます。"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "酒田港の基地港湾の指定に向けて、県と連携して国に働きかけることも重要と考えます。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "山形県主導で進められていく全体会議と酒田部会、それに加えて、新たに令和６年度に開催を検討する再エネ海域利用法に基づく法定協議会の中で具体的な議論が展開されていくと考えております。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "本市の役割としては、本市の再生可能エネルギーに関する理解醸成を図り"@ja.
+<< kg:id_3 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "その上で洋上風力発電の果たす役割を市民にお伝えしながら、機運醸成、機運向上に向けた取組"@ja.
+<< kg:id_3 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "酒田市沖の地域振興策の案の検討を重ねていく必要があると認識しております。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "１つ目として、地球沸騰化対策の必要性と、その施策として再生可能エネルギーへの期待を啓発するセミナー"@ja.
+<< kg:id_3 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "２つ目として、主力電源化の切り札として期待される洋上風力発電についての勉強会を複数回開催し、本市における理解醸成に努めてまいります。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "法定協議会等で議論が進み、より具体的な話ができるようなったときに、洋上風力発電の住民説明会につなげていく流れを想定しております。"@ja.
+<< kg:id_13 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "市民に向けて丁寧な情報発信に努めてまいりたいと思います。"@ja.
+}

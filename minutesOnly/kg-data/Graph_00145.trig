@@ -1,0 +1,255 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00145> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力事業"@ja.
+kg:id_1 rdf:type cls:c_3429.
+cls:c_3429 rdfs:label "風力事業"@ja.
+kg:id_2 rdfs:label "モンタージュ写真の作成"@ja.
+kg:id_2 rdf:type cls:c_3430.
+cls:c_3430 rdfs:label "景観資料作成"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "映像作成による可視化"@ja.
+kg:id_3 rdf:type cls:c_3067.
+cls:c_3067 rdfs:label "景観可視化"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "ドローンを使った撮影"@ja.
+kg:id_4 rdf:type cls:c_3431.
+cls:c_3431 rdfs:label "撮影実施"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "区域が定まったこと"@ja.
+kg:id_5 rdf:type cls:c_3432.
+cls:c_3432 rdfs:label "区域確定"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "区域が明確でなかったこと"@ja.
+kg:id_6 rdf:type cls:c_3433.
+cls:c_3433 rdfs:label "区域不明確"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "町民の不安"@ja.
+kg:id_7 rdf:type cls:c_63.
+cls:c_63 rdfs:label "住民不安"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "家屋が松林で守られるかどうかの確認必要性"@ja.
+kg:id_8 rdf:type cls:c_3434.
+cls:c_3434 rdfs:label "確認必要"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "町への意見の増加"@ja.
+kg:id_9 rdf:type cls:c_3435.
+cls:c_3435 rdfs:label "意見増加"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "情報公開の明確化"@ja.
+kg:id_10 rdf:type cls:c_715.
+cls:c_715 rdfs:label "情報公開"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "除雪経費"@ja.
+kg:id_11 rdf:type cls:c_3436.
+cls:c_3436 rdfs:label "除雪経費"@ja.
+kg:id_12 rdfs:label "雪の量や降雪状況の変動"@ja.
+kg:id_12 rdf:type cls:c_3437.
+cls:c_3437 rdfs:label "降雪変動"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "短期間の大雪による排雪作業の増加"@ja.
+kg:id_13 rdf:type cls:c_3438.
+cls:c_3438 rdfs:label "排雪増加"@ja.
+kg:id_11 prop:cause kg:id_13.
+kg:id_14 rdfs:label "6000万円の補正予算計上"@ja.
+kg:id_14 rdf:type cls:c_2593.
+cls:c_2593 rdfs:label "予算計上"@ja.
+kg:id_11 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "住宅リフォーム支援金"@ja.
+kg:id_15 rdf:type cls:c_3439.
+cls:c_3439 rdfs:label "住宅支援金"@ja.
+kg:id_16 rdfs:label "予算上限到達による申請停止"@ja.
+kg:id_16 rdf:type cls:c_3440.
+cls:c_3440 rdfs:label "申請停止"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "1000万円の補正予算計上"@ja.
+kg:id_17 rdf:type cls:c_2593.
+kg:id_15 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "定住促進住宅建設整備支援事業補助金"@ja.
+kg:id_18 rdf:type cls:c_3441.
+cls:c_3441 rdfs:label "住宅補助金"@ja.
+kg:id_19 rdfs:label "500万円の補正予算計上"@ja.
+kg:id_19 rdf:type cls:c_2593.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:st_1 rdfs:label "那須正幸委員"@ja.
+kg:st_1 rdf:type cls:st_30.
+cls:st_30 rdfs:label "委員"@ja.
+kg:op_1 prop:content "業者決定前提でフォトモンタージュを作るのか確認を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域生活課長 太田智光君"@ja.
+kg:st_2 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_2 prop:content "区域が定まったため区域内で現実的な想定のモンタージュ写真を作成したい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "町長 時田博機君"@ja.
+kg:st_3 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_3 prop:content "町の責任として実際の映像や写真で状況を示し確認すべきだと考える"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "行かない人でも見られるよう映像作成は有効な方法だと考える"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "町民の不安払拭にはもっと早い情報提供が望ましかったと考える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "ドローン活用で海上や上空からの見え方を確認できると考える"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "ドローン使用を含めて50万円の予算でどこまでできるのか確認を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "区域確定を受けて現実的な想定のモンタージュ作成が可能になったと説明する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "以前は業者決定後でなければ出せないと説明されていたのになぜ状況が変わったのか疑問を示す"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "これまでは区域や規模感が不明確で町として作成を計画してこなかったと説明する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "映像や写真で示すことが町の責任だと考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "情報公開が不十分だと理解が得られにくくなると懸念する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "風力施設から見た場合に家屋が松林で守られるか確認する必要があると述べる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "町が資料を出すことで今後さらに多くの意見が寄せられると見る"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "理解促進には明確な情報公開が必要だと主張する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "年度ごとの雪の状況で除雪経費は大きく変動すると説明する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "短期間の降雪集中で通常除雪に加え排雪や道幅確保が必要になると説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "昨年度実績と近年実績を踏まえて6000万円を算出したと説明する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "渋谷敏委員"@ja.
+kg:st_4 rdf:type cls:st_30.
+kg:op_19 prop:content "当初予算に対して補正額が大きく違和感があるため算出根拠の説明を求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "8月末時点で予算ほぼ満額となり申請を停止していると説明する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "例年同様に9月補正で1000万円を追加すると説明する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_2.
+kg:op_22 prop:content "8月末までの申請状況と今後の見通しを踏まえ500万円を要求したと説明する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "これにつきましては、洋上風力の事業に関わる本町におけるモンタージュ写真、３枚、４枚程度になりますか。町のほうで今後作成したいということでの補正予算のお願いであります。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "それでは、映像で行かない人でも見れるというのは、映像作ってみるというのが一つのアイデアかな。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "高さ250メーターぐらいでドローン飛ばしてみれば、しっかりと海から見たときの遊佐町の様子がまずは見れるのではないかと。"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "３月の末日の法定協議会の意見取りまとめを踏まえまして、今般９月１日から国による公告も出たところでありますが、本町遊佐町沖のいわゆる区域が定まっておりますので"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "これまでモンタージュ写真というもの、町民の方からもそういうものを明示して説明をというようなお願いもいただいていたところですが、区域も明確でないというところとか、事業所によっては設置する規模感も違いますので、町としては準備といいますか、作成を計画してこなかったところでありますけれども"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "町民の方からもそういうものを明示して説明をというようなお願いもいただいていたところですが"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "果たして遊佐町の家屋が、いわゆる洋上風力から見た高さ250メーターぐらいのところから見たときに、家屋がしっかり松林で守られるかどうか、その辺しっかり確認する必要が当然あるのだと思っています。"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "やはり町で出すということはそれだけやはりいろいろな意見がこれからも多分町には寄せられるのかなと私は思います。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "やはり物事は明確に情報の公開をしていかないと、なかなか理解できるところも理解できなくなってくるのかなとは思っております。"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "除雪経費については、その年度その年度でかなりの増減がございます。"@ja.
+<< kg:id_11 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "昨年度のように全体的にはあまり大雪だった印象ではないわけですけれども、短期間すごく雪が降ったりすると、通常の道路の排雪のほかに両脇にたまったものを排雪しなければならない。道幅を確保するための除雪等々"@ja.
+<< kg:id_11 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "今年度につきましては、昨年度の実績を踏まえ、それ以上ということでありますが、近年の実績額を踏まえて、今回6,000万円という金額を算出したところでございます。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "８月末の段階では136件、補助確定額としては3,998万円ということで、８月の下旬で申請を今止めているというような状況であります。"@ja.
+<< kg:id_15 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "今年度についても例年同様、９月補正において1,000万円の補正をさせていただくということでございます。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "定住促進住宅建設整備支援事業補助金につきましては、今年度は、今回は500万円という補正予算のお願いでございます。"@ja.
+}

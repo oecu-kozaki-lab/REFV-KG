@@ -1,0 +1,495 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00030> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地球温暖化"@ja.
+kg:id_1 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_2 rdfs:label "化石燃料の消費による温室効果ガスの大量排出"@ja.
+kg:id_2 rdf:type cls:c_757.
+cls:c_757 rdfs:label "温室効果ガス排出"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "記録的な猛暑"@ja.
+kg:id_3 rdf:type cls:c_758.
+cls:c_758 rdfs:label "猛暑"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "西日本豪雨"@ja.
+kg:id_4 rdf:type cls:c_759.
+cls:c_759 rdfs:label "豪雨災害"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "台風19号"@ja.
+kg:id_5 rdf:type cls:c_865.
+cls:c_865 rdfs:label "台風災害"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "東日本各地を襲った豪雨"@ja.
+kg:id_6 rdf:type cls:c_759.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "気候変動の加速への懸念"@ja.
+kg:id_7 rdf:type cls:c_866.
+cls:c_866 rdfs:label "気候変動の加速"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "産業革命以後の地球の気温上昇を1.5℃に抑える"@ja.
+kg:id_8 rdf:type cls:c_867.
+cls:c_867 rdfs:label "気温上昇抑制"@ja.
+kg:id_1 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "温室効果ガス排出"@ja.
+kg:id_9 rdf:type cls:c_757.
+kg:id_10 rdfs:label "2030年時点で150億t減らす"@ja.
+kg:id_10 rdf:type cls:c_769.
+cls:c_769 rdfs:label "排出削減"@ja.
+kg:id_9 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "環境政策の大きな強化"@ja.
+kg:id_11 rdf:type cls:c_868.
+cls:c_868 rdfs:label "環境政策強化"@ja.
+kg:id_9 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "日本の火力発電割合の高さ"@ja.
+kg:id_12 rdf:type cls:c_869.
+cls:c_869 rdfs:label "火力発電依存"@ja.
+kg:id_13 rdfs:label "福島第一原発事故後に原発の稼動がゼロとなり火力発電で補う必要があったこと"@ja.
+kg:id_13 rdf:type cls:c_764.
+cls:c_764 rdfs:label "原発停止"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "太陽光発電や風力発電等の再生可能エネルギーの導入拡大"@ja.
+kg:id_14 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_12 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "酒田港周辺における再生可能エネルギー発電施設"@ja.
+kg:id_15 rdf:type cls:c_870.
+cls:c_870 rdfs:label "再生可能エネルギー発電施設"@ja.
+kg:id_16 rdfs:label "二酸化炭素をほとんど排出しない"@ja.
+kg:id_16 rdf:type cls:c_871.
+cls:c_871 rdfs:label "低炭素性"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "酒田港メガソーラーパーク"@ja.
+kg:id_17 rdf:type cls:c_768.
+cls:c_768 rdfs:label "太陽光発電施設"@ja.
+kg:id_18 rdfs:label "年間1万6497tの二酸化炭素排出削減効果"@ja.
+kg:id_18 rdf:type cls:c_872.
+cls:c_872 rdfs:label "二酸化炭素削減"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "酒田港周辺の発電施設"@ja.
+kg:id_19 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_20 rdfs:label "新エネルギー産業の集積地となりつつある"@ja.
+kg:id_20 rdf:type cls:c_873.
+cls:c_873 rdfs:label "産業集積"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "本市"@ja.
+kg:id_21 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_22 rdfs:label "豊富な自然エネルギーや再生可能エネルギーを活用した安全安心で維持可能なエネルギーミックスの推進"@ja.
+kg:id_22 rdf:type cls:c_874.
+cls:c_874 rdfs:label "エネルギーミックス推進"@ja.
+kg:id_21 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "水素"@ja.
+kg:id_23 rdf:type cls:c_773.
+cls:c_773 rdfs:label "水素"@ja.
+kg:id_24 rdfs:label "使用時にCO2を排出しないクリーンなエネルギー"@ja.
+kg:id_24 rdf:type cls:c_774.
+cls:c_774 rdfs:label "クリーンエネルギー"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "燃料電池と組み合わせると高いエネルギー効率を実現できる"@ja.
+kg:id_25 rdf:type cls:c_875.
+cls:c_875 rdfs:label "高効率エネルギー"@ja.
+kg:id_23 prop:effect kg:id_25.
+kg:id_26 rdfs:label "水素社会の実現"@ja.
+kg:id_26 rdf:type cls:c_771.
+cls:c_771 rdfs:label "水素社会"@ja.
+kg:id_27 rdfs:label "供給インフラの整備や需要の拡大に時間を要していること"@ja.
+kg:id_27 rdf:type cls:c_876.
+cls:c_876 rdfs:label "インフラ整備不足"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "一般の理解が進んでいないこと"@ja.
+kg:id_28 rdf:type cls:c_394.
+cls:c_394 rdfs:label "理解不足"@ja.
+kg:id_26 prop:cause kg:id_28.
+kg:id_29 rdfs:label "水素エネルギーに関するセミナーの開催"@ja.
+kg:id_29 rdf:type cls:c_877.
+cls:c_877 rdfs:label "セミナー開催"@ja.
+kg:id_21 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "先進地の視察"@ja.
+kg:id_30 rdf:type cls:c_878.
+cls:c_878 rdfs:label "視察"@ja.
+kg:id_21 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "水素を活用する社会環境の整備及びサプライチェーンの構築につながる取り組みの支援"@ja.
+kg:id_31 rdf:type cls:c_879.
+cls:c_879 rdfs:label "水素活用支援"@ja.
+kg:id_21 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "水素技術の開発研究及び先進的モデル確立に向けた実証実験の促進を国や県に要望"@ja.
+kg:id_32 rdf:type cls:c_880.
+cls:c_880 rdfs:label "実証実験要望"@ja.
+kg:id_21 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "メタンハイドレート"@ja.
+kg:id_33 rdf:type cls:c_777.
+cls:c_777 rdfs:label "メタンハイドレート"@ja.
+kg:id_34 rdfs:label "小さな体積からたくさんのエネルギーを生み出すことが可能"@ja.
+kg:id_34 rdf:type cls:c_881.
+cls:c_881 rdfs:label "高エネルギー資源"@ja.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "石炭や石油より排出するCO2が約30％少ない"@ja.
+kg:id_35 rdf:type cls:c_871.
+kg:id_33 prop:effect kg:id_35.
+kg:id_36 rdfs:label "日本のエネルギー面での安全保障に大きく貢献する"@ja.
+kg:id_36 rdf:type cls:c_780.
+cls:c_780 rdfs:label "エネルギー安全保障"@ja.
+kg:id_33 prop:effect kg:id_36.
+kg:id_37 rdfs:label "CO2の排出削減に大きく貢献する"@ja.
+kg:id_37 rdf:type cls:c_872.
+kg:id_33 prop:effect kg:id_37.
+kg:id_38 rdfs:label "メタンハイドレートの研究機関誘致"@ja.
+kg:id_38 rdf:type cls:c_882.
+cls:c_882 rdfs:label "研究機関誘致"@ja.
+kg:id_39 rdfs:label "実用化の見通しがいまだ立っていないこと"@ja.
+kg:id_39 rdf:type cls:c_883.
+cls:c_883 rdfs:label "実用化不透明"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "海洋エネルギー資源開発促進日本海連合の取り組みを通じた情報収集"@ja.
+kg:id_40 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_21 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "洋上風力発電の導入"@ja.
+kg:id_41 rdf:type cls:c_884.
+cls:c_884 rdfs:label "洋上風力発電導入"@ja.
+kg:id_42 rdfs:label "海域の占用に関する統一的なルールがないこと"@ja.
+kg:id_42 rdf:type cls:c_885.
+cls:c_885 rdfs:label "制度未整備"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "先行利用者との調整の枠組みが存在しないこと"@ja.
+kg:id_43 rdf:type cls:c_886.
+cls:c_886 rdfs:label "調整枠組み不足"@ja.
+kg:id_41 prop:cause kg:id_43.
+kg:id_44 rdfs:label "洋上風力発電"@ja.
+kg:id_44 rdf:type cls:c_175.
+cls:c_175 rdfs:label "洋上風力発電"@ja.
+kg:id_45 rdfs:label "関連産業への波及効果"@ja.
+kg:id_45 rdf:type cls:c_887.
+cls:c_887 rdfs:label "産業波及"@ja.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "地元産業によい影響"@ja.
+kg:id_46 rdf:type cls:c_888.
+cls:c_888 rdfs:label "地域産業効果"@ja.
+kg:id_44 prop:effect kg:id_46.
+kg:id_47 rdfs:label "庄内沿岸海域"@ja.
+kg:id_47 rdf:type cls:c_889.
+cls:c_889 rdfs:label "沿岸海域"@ja.
+kg:id_48 rdfs:label "年平均風速が7m以上で洋上風力発電の事業化の目安を超えていること"@ja.
+kg:id_48 rdf:type cls:c_890.
+cls:c_890 rdfs:label "適地条件"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "洋上風力発電事業"@ja.
+kg:id_49 rdf:type cls:c_781.
+cls:c_781 rdfs:label "洋上風力発電事業"@ja.
+kg:id_50 rdfs:label "関連企業集積が図られる"@ja.
+kg:id_50 rdf:type cls:c_891.
+cls:c_891 rdfs:label "企業集積"@ja.
+kg:id_49 prop:effect kg:id_50.
+kg:id_51 rdfs:label "新たな雇用が生まれる"@ja.
+kg:id_51 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_49 prop:effect kg:id_51.
+kg:id_52 rdfs:label "促進区域の指定に向けた積極的な取り組み"@ja.
+kg:id_52 rdf:type cls:c_892.
+cls:c_892 rdfs:label "促進区域指定"@ja.
+kg:id_44 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "酒田沖の洋上風力発電"@ja.
+kg:id_53 rdf:type cls:c_175.
+kg:id_54 rdfs:label "漁業者の理解を重要と位置づけ県とより一層連携する"@ja.
+kg:id_54 rdf:type cls:c_447.
+cls:c_447 rdfs:label "関係者連携"@ja.
+kg:id_53 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "漁業権を守る"@ja.
+kg:id_55 rdf:type cls:c_893.
+cls:c_893 rdfs:label "漁業権保護"@ja.
+kg:id_49 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "漁業への不測の制約や損害が発生した際の対応を取りまとめる"@ja.
+kg:id_56 rdf:type cls:c_894.
+cls:c_894 rdfs:label "損害対応"@ja.
+kg:id_49 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "現行の漁業への影響を継続してモニタリングする"@ja.
+kg:id_57 rdf:type cls:c_784.
+cls:c_784 rdfs:label "影響監視"@ja.
+kg:id_49 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "風車の足元を漁礁として活用する"@ja.
+kg:id_58 rdf:type cls:c_785.
+cls:c_785 rdfs:label "漁礁活用"@ja.
+kg:id_49 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "30年以降も漁礁として守る"@ja.
+kg:id_59 rdf:type cls:c_895.
+cls:c_895 rdfs:label "漁礁保全"@ja.
+kg:id_49 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "関連するインフラ整備を国・県に要望する"@ja.
+kg:id_60 rdf:type cls:c_896.
+cls:c_896 rdfs:label "インフラ整備要望"@ja.
+kg:id_49 prop:countermeasure kg:id_60.
+kg:st_1 rdfs:label "進藤晃議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "再生可能エネルギーの導入を進める必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "国連報告書"@ja.
+kg:st_2 rdf:type cls:st_34.
+cls:st_34 rdfs:label "報告書"@ja.
+kg:op_2 prop:content "平均気温上昇を2℃未満に抑えるには削減が必要と指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "各国に環境政策の大きな強化が求められる"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "積極的な自然エネルギーの活用が求められる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "エネルギーミックスの構築による集積地になりつつある"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "阿部勉企画部長"@ja.
+kg:st_3 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_6 prop:content "自然エネルギーを活用しエネルギーミックスを推進する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "供給インフラ整備と需要拡大に時間がかかっている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "一般の理解が進んでいないのが現状である"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "企業の水素利用理解を深めるためセミナー開催を支援したい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "先進地視察を通じて社会環境整備とサプライチェーン構築につなげたい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "水素活用の社会環境整備とサプライチェーン構築を支援する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "国や県への要望を継続する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "商業化されればエネルギー安全保障に大きく貢献する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "商業化されればCO2排出削減にも大きく貢献する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "実用化の見通しが立たず地方への研究機関誘致は難しい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "実証実験の進展を注視し情報収集に努める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "関連産業への波及効果が期待される"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "地元産業によい影響を与える可能性がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "庄内沿岸域は洋上風力の適地である"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "関連企業集積が期待される"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "新たな雇用が生まれることが期待される"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "遊佐町沿岸にとどまらず県内全ての海域へ広めるべき"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "漁業者の理解を最重要として県と連携する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "漁業権を守ることが想定される取り組みである"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "漁業への制約や損害発生時の対応整理が必要である"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "風車設置後の変化を継続的に確認すべきである"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "漁業に活用してもらうため足元を漁礁として使う案がある"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "占用期間後も漁礁として守る案が議論されている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "港湾、送電網、道路などの整備を国県に要望する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地球温暖化は、産業革命以降の急速な化石燃料の消費による二酸化炭素やメタンなどの温室効果ガスの大量排出が原因とされており"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:text-txt_contents "昨年の記録的な猛暑"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:text-txt_contents "西日本豪雨"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:text-txt_contents "台風19号"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:text-txt_contents "その後の東日本各地を襲った豪雨による異常気象は地球温暖化による大きな災害となっており"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:text-txt_contents "世界規模での異常気象から気候変動の加速が懸念されています"@ja.
+<< kg:id_1 prop:countermeasure kg:id_8 >>
+    prop:text-txt_contents "パリ協定において先進国のほか途上国も加わり、産業革命以後の地球の気温上昇を1.5℃に抑えることを目指すとしています"@ja.
+<< kg:id_9 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "世界の平均気温の上昇を産業革命前に比べ２℃未満に抑えるには、2030年の時点で温室効果ガスを150億ｔ減らす必要があると指摘しています"@ja.
+<< kg:id_9 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "各国に対して環境政策の大きな強化が求められるものと思われます"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:text-txt_contents "日本で火力発電の割合が高いのは、福島第一原発の事故の後原発の稼動がゼロとなり、火力発電で補う必要があったことが影響しています"@ja.
+<< kg:id_12 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "太陽光発電や風力発電等の再生可能エネルギーの導入拡大をさらに進めることが重要であり、積極的な自然エネルギーの活用が求められるものと思われます"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:text-txt_contents "再生可能エネルギーによる発電施設は、持続可能な低炭素社会の実現に向け、地球温暖化の原因となる二酸化炭素をほとんど排出しないすぐれたエネルギー施設として注目をされています"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:text-txt_contents "年間１万6,497ｔの二酸化炭素排出削減効果があるとされ"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "酒田港周辺における発電施設は、安全性、環境への負荷、コスト、施設運用など、電気の安定供給を図るため多様なエネルギー源を組み合わせて電源構成を最適化するエネルギーミックスの構築による新エネルギー産業の集積地となりつつあります"@ja.
+<< kg:id_21 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本市においては、豊富な自然エネルギーや再生可能エネルギーがあることから、これらを活用し、安全安心で維持可能なエネルギーミックスを推進してまいります"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:text-txt_contents "水素は、使用時にＣＯ２を排出しないクリーンなエネルギーである"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:text-txt_contents "燃料電池と組み合わせると高いエネルギー効率を実現することができます"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "供給インフラの整備や需要の拡大等に時間を要しており"@ja.
+<< kg:id_26 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "一般の理解が進んでいないのが現状と考えられます"@ja.
+<< kg:id_21 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "水素エネルギーに関するセミナーの開催"@ja.
+<< kg:id_21 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "先進地の視察などを通じまして"@ja.
+<< kg:id_21 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "水素を活用する社会環境の整備及びサプライチェーンの構築につながる取り組みを支援していきたい"@ja.
+<< kg:id_21 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "水素技術の開発研究及び先進的モデルの確立に向けた実証実験の促進について、国や県に対しまして要望を継続してまいります"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:text-txt_contents "小さな体積からたくさんのエネルギーを生み出すことが可能です"@ja.
+<< kg:id_33 prop:effect kg:id_35 >>
+    prop:text-txt_contents "燃焼した場合の排出するＣＯ２は、石炭や石油を燃やすよりも約30％ほど少ない"@ja.
+<< kg:id_33 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "商業化されれば、世界情勢に左右されることのない、日本のエネルギー面での安全保障やＣＯ２の排出削減にも大きく貢献するものと思われます"@ja.
+<< kg:id_33 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "商業化されれば、世界情勢に左右されることのない、日本のエネルギー面での安全保障やＣＯ２の排出削減にも大きく貢献するものと思われます"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "実用化の見通しはいまだ立っておらず、地方への研究機関の誘致は難しいと考えているところでございます"@ja.
+<< kg:id_21 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "本市としましては、実証実験等進展を注視するなど、今後も連合の取り組みを通じ、情報収集に努めてまいります"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:text-txt_contents "これまで、海域の占用に関する統一的なルールがないこと"@ja.
+<< kg:id_41 prop:cause kg:id_43 >>
+    prop:text-txt_contents "先行利用者との調整の枠組みが存在しないことへの課題解決に向けて成立した法律"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "関連産業への波及効果や地元産業によい影響を与える可能性もあり"@ja.
+<< kg:id_44 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "地元産業によい影響を与える可能性もあり"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "庄内沿岸海域の風速が年平均で７ｍ以上となっており、洋上風力発電の事業化の目安とされる風速を超えていることから、庄内の沿岸域は、洋上風力の適地とされております"@ja.
+<< kg:id_49 prop:effect kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "洋上風力発電事業が進むことで、関連します企業集積も図られ"@ja.
+<< kg:id_49 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "新たな雇用も生まれることが期待されます"@ja.
+<< kg:id_44 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "促進区域の指定に向けた積極的な取り組みを行うとともに、遊佐町沿岸海域にとどまらず、酒田・鶴岡沖の県内全ての海域へと広め、再生可能エネルギーの拡大を図るべき"@ja.
+<< kg:id_53 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "酒田沖の一般海域における洋上風力発電の促進区域指定に向けましては、直接的な影響を受けます漁業者の理解を何よりも重要と位置づけまして、県とより一層の連携を図ってまいりたい"@ja.
+<< kg:id_49 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "まずは漁業権を守るんだということ"@ja.
+<< kg:id_49 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "漁業への不測の制約、損害が発生した際の対応をどうするのかといった取りまとめ"@ja.
+<< kg:id_49 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風車が建ったことで変化があるのかどうかといった、継続したモニタリングを進める"@ja.
+<< kg:id_49 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "足元を漁礁として使っていただく取り組み"@ja.
+<< kg:id_49 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "30年以降も漁礁として守っていくというような、そういった案が遊佐部会の中で議論されています"@ja.
+<< kg:id_49 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "洋上風力発電事業にあわせまして、関連するインフラの整備についてもしっかりと国・県に対して要望をしてまいりたい"@ja.
+}

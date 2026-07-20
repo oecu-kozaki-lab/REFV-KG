@@ -1,0 +1,125 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00135> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "全国洋上風力発電市町村連絡協議会への加入"@ja.
+kg:id_1 rdf:type cls:c_3279.
+cls:c_3279 rdfs:label "協議会加入"@ja.
+kg:id_2 rdfs:label "先進地の情報交換と情報収集"@ja.
+kg:id_2 rdf:type cls:c_3280.
+cls:c_3280 rdfs:label "情報交換"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "漁業と共生した水産振興に関する情報交換"@ja.
+kg:id_3 rdf:type cls:c_3012.
+cls:c_3012 rdfs:label "水産振興"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "地域産業の振興に関する情報交換"@ja.
+kg:id_4 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "補正予算の議決後に正会員会費3万円を納入する必要"@ja.
+kg:id_5 rdf:type cls:c_3281.
+cls:c_3281 rdfs:label "会費納入"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "本町を含む洋上風力発電に取り組もうとする自治体に声かけがあったこと"@ja.
+kg:id_6 rdf:type cls:c_3282.
+cls:c_3282 rdfs:label "参加要請"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "正式に会員となる"@ja.
+kg:id_7 rdf:type cls:c_3283.
+cls:c_3283 rdfs:label "会員化"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "今後参加自治体が増える見込み"@ja.
+kg:id_8 rdf:type cls:c_3284.
+cls:c_3284 rdfs:label "参加増加"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:st_1 rdfs:label "７番 菅原和幸委員"@ja.
+kg:st_1 rdf:type cls:st_30.
+cls:st_30 rdfs:label "委員"@ja.
+kg:op_1 prop:content "多様な意見を持つ地域の人もいるため、協議会に入って情報を得ることに期待する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域生活課長 太田智光君"@ja.
+kg:st_2 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_2 prop:content "法定協議会を進める中で先進地の情報交換や学ぶべき点が多く参考になるため参加を決定した"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "協議会で漁業と共生した水産振興などの情報交換を進めることが重要だとみている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "協議会で地域産業振興に関する情報交換を行うことに期待している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "補正予算の議決後に会費を納入して正式会員になる認識を示した"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "協議会発足時に本町を含む有望区域や洋上風力発電に取り組む自治体へ参加の呼びかけがあったと説明した"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "会費納入後に正式会員になるとの認識を示した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "促進区域以外でも参加表明自治体があり、今後さらに増える見通しを事務局から聞いている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "やはりグリーン戦略につながる先端技術や先行事例を学ぶと。それから、先日の法定協議会でも話題となったようですが、漁業と共生した水産振興、それから地域産業の振興等、これもこの中で情報交換しようというようなことがあるようです。... この協議会に入っていただいて、いろいろ情報を得るということに期待をしたいと思います。... 今後、本町も法定協議会が進めていく中で、いろいろ先進地の情報交換、情報を得たり、いろいろ学ぶべきところ、それを踏まえて本町として考えていくべきところ、いろいろ参考になる面が多々あるという判断の下、参加をするという決定をしたところでございます。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "先日の法定協議会でも話題となったようですが、漁業と共生した水産振興、それから地域産業の振興等、これもこの中で情報交換しようというようなことがあるようです。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "先日の法定協議会でも話題となったようですが、漁業と共生した水産振興、それから地域産業の振興等、これもこの中で情報交換しようというようなことがあるようです。"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "今回の補正予算の議決をいただいて、この３万円ですが、協議会の正会員の会費が３万円ということでございますので、今回補正予算において議決をいただいた後に納入することによって正式に会員ということになるものだと認識しております。"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "この協議会発足時、声かけということで本町を含む有望な区域ですとか、その他国内で洋上風力発電に今取り組もうとしているような自治体全てにお声かけをしているというふうに伺っております。"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "今回補正予算において議決をいただいた後に納入することによって正式に会員ということになるものだと認識しております。"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "８月末の段階ではありますが、ここの協議会に参加をするというその促進区域以外の自治体、本町を含めて、もう２つ自治体、表明しているところがあると、これからも増えるであろうという事務局のお話がございました。"@ja.
+}

@@ -1,0 +1,340 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00091> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "講演会や行事の後援拒否"@ja.
+kg:id_1 rdf:type cls:c_2387.
+cls:c_2387 rdfs:label "後援拒否"@ja.
+kg:id_2 rdfs:label "政治的中立の壁"@ja.
+kg:id_2 rdf:type cls:c_2388.
+cls:c_2388 rdfs:label "政治的中立"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "国論を二分するテーマの扱い"@ja.
+kg:id_3 rdf:type cls:c_2389.
+cls:c_2389 rdfs:label "論争的主題"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "人口減少の抑制"@ja.
+kg:id_4 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_5 rdfs:label "新幹線が通っているかどうか"@ja.
+kg:id_5 rdf:type cls:c_2390.
+cls:c_2390 rdfs:label "鉄道整備"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "FG導入への慎重姿勢"@ja.
+kg:id_6 rdf:type cls:c_2391.
+cls:c_2391 rdfs:label "導入慎重"@ja.
+kg:id_7 rdfs:label "氷点下地域での運用への憂慮"@ja.
+kg:id_7 rdf:type cls:c_2392.
+cls:c_2392 rdfs:label "寒冷地運用"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "電流の交換の問題"@ja.
+kg:id_8 rdf:type cls:c_1424.
+cls:c_1424 rdfs:label "技術課題"@ja.
+kg:id_6 prop:cause kg:id_8.
+kg:id_9 rdfs:label "羽越本線の高速化"@ja.
+kg:id_9 rdf:type cls:c_2393.
+cls:c_2393 rdfs:label "鉄道高速化"@ja.
+kg:id_10 rdfs:label "新潟駅での同一ホーム乗りかえの実現"@ja.
+kg:id_10 rdf:type cls:c_2394.
+cls:c_2394 rdfs:label "乗換改善"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "車両の更新"@ja.
+kg:id_11 rdf:type cls:c_2395.
+cls:c_2395 rdfs:label "車両更新"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:id_12 rdfs:label "曲線や分岐器の改良"@ja.
+kg:id_12 rdf:type cls:c_2396.
+cls:c_2396 rdfs:label "線路改良"@ja.
+kg:id_9 prop:effect kg:id_12.
+kg:id_13 rdfs:label "新幹線沿線化"@ja.
+kg:id_13 rdf:type cls:c_2397.
+cls:c_2397 rdfs:label "鉄道沿線化"@ja.
+kg:id_14 rdfs:label "人口減少の振り幅の差"@ja.
+kg:id_14 rdf:type cls:c_2398.
+cls:c_2398 rdfs:label "人口格差"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "沿線都市と非沿線都市の格差拡大"@ja.
+kg:id_15 rdf:type cls:c_2399.
+cls:c_2399 rdfs:label "地域格差"@ja.
+kg:id_13 prop:effect kg:id_15.
+kg:id_16 rdfs:label "新幹線と相まったまちづくり"@ja.
+kg:id_16 rdf:type cls:c_1328.
+cls:c_1328 rdfs:label "地域整備"@ja.
+kg:id_17 rdfs:label "都市づくりの効果"@ja.
+kg:id_17 rdf:type cls:c_2400.
+cls:c_2400 rdfs:label "まちづくり効果"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "酒田市"@ja.
+kg:id_18 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_19 rdfs:label "羽越本線高速化の要望"@ja.
+kg:id_19 rdf:type cls:c_2401.
+cls:c_2401 rdfs:label "高速化要望"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "鉄道技術や高速鉄道整備の情報収集"@ja.
+kg:id_20 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "正しい情報提供"@ja.
+kg:id_21 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_18 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "市政の運営方針に反しないもののみ後援"@ja.
+kg:id_22 rdf:type cls:c_2402.
+cls:c_2402 rdfs:label "後援方針"@ja.
+kg:id_18 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "政治的な問題でも多様な意見を聞く機会のサポート"@ja.
+kg:id_23 rdf:type cls:c_2403.
+cls:c_2403 rdfs:label "議論機会支援"@ja.
+kg:id_18 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "政党所属議員の講演会を事業内容で総合判断して後援"@ja.
+kg:id_24 rdf:type cls:c_2404.
+cls:c_2404 rdfs:label "後援判断"@ja.
+kg:id_18 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "山形新幹線庄内延伸等の趣旨に合致する講演会への後援許可"@ja.
+kg:id_25 rdf:type cls:c_2405.
+cls:c_2405 rdfs:label "後援許可"@ja.
+kg:id_18 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "ふるさと納税で良識をもった対応"@ja.
+kg:id_26 rdf:type cls:c_2406.
+cls:c_2406 rdfs:label "良識対応"@ja.
+kg:id_18 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "ふるさと納税の増加"@ja.
+kg:id_27 rdf:type cls:c_2407.
+cls:c_2407 rdfs:label "納税増加"@ja.
+kg:id_28 rdfs:label "返礼品への期待"@ja.
+kg:id_28 rdf:type cls:c_2408.
+cls:c_2408 rdfs:label "返礼期待"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "返礼品の違い"@ja.
+kg:id_29 rdf:type cls:c_2409.
+cls:c_2409 rdfs:label "返礼差異"@ja.
+kg:id_27 prop:cause kg:id_29.
+kg:id_30 rdfs:label "返礼品競争"@ja.
+kg:id_30 rdf:type cls:c_2410.
+cls:c_2410 rdfs:label "返礼競争"@ja.
+kg:id_31 rdfs:label "見返りを求める納税への疑問"@ja.
+kg:id_31 rdf:type cls:c_2411.
+cls:c_2411 rdfs:label "納税疑問"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "特典競争化"@ja.
+kg:id_32 rdf:type cls:c_2412.
+cls:c_2412 rdfs:label "特典競争"@ja.
+kg:id_30 prop:effect kg:id_32.
+kg:st_1 rdfs:label "千葉大学の新藤名誉教授"@ja.
+kg:st_1 rdf:type cls:st_10.
+cls:st_10 rdfs:label "研究者"@ja.
+kg:op_1 prop:content "国論を二分するテーマの講演会やイベントを拒否する動きが自治体で広がっているとみる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "国論を二分するテーマを理由に拒否する傾向が各自治体で広がっていると指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "11番 斎藤周議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_3 prop:content "新幹線が通るだけで人口が増えるかのような説明は市民にすべきでない"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "氷点下地域の問題も解決しようと思えば解決できるのではないかとみる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "電流交換の課題も技術的に解決可能ではないかと考える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "西澤義和企画振興部長"@ja.
+kg:st_3 rdf:type cls:st_67.
+cls:st_67 rdfs:label "行政職"@ja.
+kg:op_6 prop:content "同一ホーム乗りかえは平成33年開業に向けてめどが立っていると説明"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "車両リニューアルは平成25年度から順次切り替わると説明"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "曲線や分岐器の改良は高速化の要素だが進捗は十分でないと説明"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "新幹線沿線都市と非沿線都市では人口減少の差が現実に生じていると説明"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "整備新幹線沿線とそうでない都市の格差は広がる傾向にあるとみる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "新幹線そのものではなく、まちづくりと組み合わさることで効果が出ると考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "同一ホーム乗りかえや車両更新などの事業が進むよう要望していると説明"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "フリーゲージトレインを含めて継続的に情報収集に努める考えを示す"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "新幹線の有無だけで人口が増えるかのような説明は避けるべきだと求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "人口減少に関して正しく情報提供していきたいと述べる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "太田豊総務部長"@ja.
+kg:st_4 rdf:type cls:st_67.
+kg:op_16 prop:content "市政の運営方針に反しないものを後援し、反するものは後援しない考えを維持すると説明"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "法政大学の五十嵐仁教授"@ja.
+kg:st_5 rdf:type cls:st_10.
+kg:op_17 prop:content "市は賛否両論を聞き考える機会を率先して提供し自主的な催しを支援すべきとする"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "市政に反する内容でも後援し、市も議論に参加する懐の深さが必要だと主張"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "政党所属議員の事業でも一律不許可にせず事業内容を含め総合的に判断していると説明"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "市の推進施策に合致するため丸山和也氏の講演会を後援したと説明"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "特産品返礼は過度にならないよう良識ある対応が求められると理解している"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "寄附はお礼の品を期待して行われる側面が非常に強いとみる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "米沢牛の有無の違いが寄附額の差につながっていると指摘"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "青森県"@ja.
+kg:st_6 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_24 prop:content "自治体間でお礼品の提供合戦になっており見返りを求める納税に疑問を投げかけている"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:op_25 prop:content "お礼品を巡る競争になっていくことに疑問を投げかける自治体が出てきていると指摘"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "最近、世論を二分するような講演会や行事の後援を拒否する自治体が出てきました。政治的中立の壁であります。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地方行政に詳しい千葉大学の新藤名誉教授によれば、特に国論を二分するテーマを取り上げた講演会やイベントについて、拒否する動きが各自治体で広がっていると感じる。"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "20年後、30年後を見据えて、人口の抑制に効果があるということで、決して平成18年３月に出された結論、そのままくみするということではないということですけれども、...新幹線が通っている通っていないというだけで、人口の減り方に違いが出るということでは決してないと。"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "ＪＲ東日本は慎重だという話でした。氷点下の地域には憂慮という話があるようですけれども、氷点下のところで開いたり閉じたりできないんじゃないかということもありました"@ja.
+<< kg:id_6 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "電流の交換ということもあって、なかなかＦＧについては慎重な話がありました。"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "羽越本線の高速化というのは、三つの要素から構成されていまして、一つ目は新潟駅の同一ホームでの乗りかえ、...１点目の同一ホームの乗りかえというのは、...平成33年に実施といいますか、開業できるように、そのめどが立っている"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "二つ目は車両の更新、...２点目は、羽越線の車両のリニューアルという形になりますが、平成25年度から、順次切りかわっていくということであります。"@ja.
+<< kg:id_9 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "３つ目は高速化の改良、これは曲線の改良、あるいは分岐器、ポイントの改良、こういった点であります。...曲線の改良とか、あるいは分岐器の改良といった点については、なかなか進んでいない状況であります"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "秋田新幹線沿線の都市と、そうでない都市を比較した場合に、平成２年と平成20年の比較をした場合に、10ポイント以上、人口減少の振り幅に差が生じている"@ja.
+<< kg:id_13 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "整備新幹線についても同様に、整備新幹線沿線の都市と、そうでない都市の格差というのは広がる傾向にある"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "新幹線が通れば全て解決するというわけではありませんけれども、新幹線と相まったまちづくりとか都市づくりというのが効果を奏しているのではないかなと考えます。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "これらの事業については、進捗するように、要望をしているという形になります。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "フリーゲージトレインを含めての情報の収集がありましたが、鉄道技術の革新であったり、あるいは高速鉄道の整備であったり、こういう情報については、絶えず、市としてもアンテナを張って収集に努めてまいりたいと思います。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "そういうことも正しく市民に情報提供していただきたい、これは強く意見として申し上げたいと思います。...正しく情報提供していきたいと思います"@ja.
+<< kg:id_18 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "私のほうとしては、市政の運営方針に反しないものについて後援をしていく、反するものについては後援をしないという考え方をかえる考えは持っておりません。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "法政大学の五十嵐仁教授によると、市は政治的な問題について、賛成、反対、いろんな意見を聞いて、考える機会を率先して提供し、そのための自主的な催しはサポートすべきだということを書いているんです。ですから、市政に反する内容だとしても、きちんと後援して、そして、その後援に飛び込んでいって、酒田市も飛び込んでいって、酒田市の意見もきちんと述べて、そして議論を巻き起こすという懐の深さというものが、私は必要ではないかと思う"@ja.
+<< kg:id_18 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "市としましては、政党に属する議員が開催する事業につきましても、一律に政治的な事業として不許可するものではなく、その事業内容なども含めて、総合的に判断しているところでございます。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "本市が推進しております山形新幹線庄内延伸、新庄酒田地域高規格道路整備促進の趣旨に合致することから、後援を許可したものでございます。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "適切に良識をもって対応してくださいというコメントが付されたものという内容になっております。...特産品の返礼等の対応については良識ある行動をということで、過度にならないようにという意味合いで通知をされたものと理解をしているところでございます。"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "要するに、期待したけれども、牛肉がなかった。近辺を調べてみたらあった。これで申し込んでいると見えるんです。だから、お礼を期待してという側面が非常に強いと思うんです。"@ja.
+<< kg:id_27 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "米沢はお礼の品物に米沢牛がないんです。白鷹町と飯豊町にはお礼の品物に米沢牛があるんです。この違いなんです。"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "青森県は、全国の自治体間でお礼品の提供合戦になっている。見返りを求める納税はどうなのかと疑問を投げかけている"@ja.
+<< kg:id_30 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "やはりお礼品の競争になっていくことについて、疑問を投げかける自治体が出てきているんです。"@ja.
+}

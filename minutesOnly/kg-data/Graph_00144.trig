@@ -1,0 +1,777 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00144> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "遊佐沖洋上風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "遊佐町のこれからに大きく影響する"@ja.
+kg:id_2 rdf:type cls:c_832.
+cls:c_832 rdfs:label "地域影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "国の事業として進められていること"@ja.
+kg:id_3 rdf:type cls:c_3371.
+cls:c_3371 rdfs:label "国主導"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "超低周波による健康被害"@ja.
+kg:id_4 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_5 rdfs:label "洋上風力発電"@ja.
+kg:id_5 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "最新の科学的知見に基づき対策をあらかじめ検討する"@ja.
+kg:id_6 rdf:type cls:c_3372.
+cls:c_3372 rdfs:label "事前対策"@ja.
+kg:id_4 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "被害発生時に影響を最小限にするよう対処する"@ja.
+kg:id_7 rdf:type cls:c_3373.
+cls:c_3373 rdfs:label "影響緩和"@ja.
+kg:id_4 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "洋上風力発電事業"@ja.
+kg:id_8 rdf:type cls:c_1.
+kg:id_9 rdfs:label "自然環境に関するリスク"@ja.
+kg:id_9 rdf:type cls:c_3374.
+cls:c_3374 rdfs:label "環境リスク"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "住民の健康に関するリスク"@ja.
+kg:id_10 rdf:type cls:c_3375.
+cls:c_3375 rdfs:label "健康リスク"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "漁業者の経済的なリスク"@ja.
+kg:id_11 rdf:type cls:c_3376.
+cls:c_3376 rdfs:label "経済リスク"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "事前の調査や検討を行う"@ja.
+kg:id_12 rdf:type cls:c_3377.
+cls:c_3377 rdfs:label "事前調査"@ja.
+kg:id_8 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "発生時に影響を最小限にとどめ速やかに対処できる体制を整える"@ja.
+kg:id_13 rdf:type cls:c_3378.
+cls:c_3378 rdfs:label "対応体制"@ja.
+kg:id_8 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "風車騒音"@ja.
+kg:id_14 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_5 prop:cause kg:id_14.
+kg:id_15 rdfs:label "周辺の音"@ja.
+kg:id_15 rdf:type cls:c_3379.
+cls:c_3379 rdfs:label "環境音"@ja.
+kg:id_16 rdfs:label "睡眠に重要な環境因子である"@ja.
+kg:id_16 rdf:type cls:c_3380.
+cls:c_3380 rdfs:label "睡眠因子"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "音が大きくなること"@ja.
+kg:id_17 rdf:type cls:c_3381.
+cls:c_3381 rdfs:label "騒音増大"@ja.
+kg:id_18 rdfs:label "睡眠障害"@ja.
+kg:id_18 rdf:type cls:c_3382.
+cls:c_3382 rdfs:label "睡眠障害"@ja.
+kg:id_17 prop:effect kg:id_18.
+kg:id_19 rdfs:label "疾患リスクが大きくなる"@ja.
+kg:id_19 rdf:type cls:c_3383.
+cls:c_3383 rdfs:label "疾患リスク"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "風力発電による耳に聞こえない超低周波音を含む騒音"@ja.
+kg:id_20 rdf:type cls:c_3384.
+cls:c_3384 rdfs:label "風力騒音"@ja.
+kg:id_21 rdfs:label "睡眠障害や健康被害への強い不安"@ja.
+kg:id_21 rdf:type cls:c_2287.
+cls:c_2287 rdfs:label "健康不安"@ja.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "風力発電"@ja.
+kg:id_22 rdf:type cls:c_128.
+kg:id_23 rdfs:label "21名の健康被害"@ja.
+kg:id_23 rdf:type cls:c_79.
+kg:id_22 prop:effect kg:id_23.
+kg:id_24 rdfs:label "風力発電による健康被害"@ja.
+kg:id_24 rdf:type cls:c_79.
+kg:id_25 rdfs:label "風力だめーじサポートの会の設立"@ja.
+kg:id_25 rdf:type cls:c_3385.
+cls:c_3385 rdfs:label "支援組織"@ja.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "既存風車"@ja.
+kg:id_26 rdf:type cls:c_3386.
+cls:c_3386 rdfs:label "風車"@ja.
+kg:id_27 rdfs:label "健康被害"@ja.
+kg:id_27 rdf:type cls:c_79.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "電波障害"@ja.
+kg:id_28 rdf:type cls:c_2839.
+cls:c_2839 rdfs:label "電波障害"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "動物等の異変"@ja.
+kg:id_29 rdf:type cls:c_3387.
+cls:c_3387 rdfs:label "動物異変"@ja.
+kg:id_26 prop:effect kg:id_29.
+kg:id_30 rdfs:label "第５回学習会"@ja.
+kg:id_30 rdf:type cls:c_3388.
+cls:c_3388 rdfs:label "学習会"@ja.
+kg:id_31 rdfs:label "211名の参加"@ja.
+kg:id_31 rdf:type cls:c_2712.
+cls:c_2712 rdfs:label "住民参加"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "住民の一番の心配は健康被害のおそれ"@ja.
+kg:id_32 rdf:type cls:c_2287.
+kg:id_5 prop:effect kg:id_32.
+kg:id_33 rdfs:label "今計画されている洋上風力発電の規模"@ja.
+kg:id_33 rdf:type cls:c_3389.
+cls:c_3389 rdfs:label "風力発電規模"@ja.
+kg:id_34 rdfs:label "既存風車との複合的影響による健康被害の増加のおそれ"@ja.
+kg:id_34 rdf:type cls:c_79.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "アンケート調査や疫学的調査を行う"@ja.
+kg:id_35 rdf:type cls:c_3089.
+cls:c_3089 rdfs:label "健康調査"@ja.
+kg:id_8 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "健康被害の把握漏れ"@ja.
+kg:id_36 rdf:type cls:c_3390.
+cls:c_3390 rdfs:label "被害把握漏れ"@ja.
+kg:id_37 rdfs:label "口に出せない方もいること"@ja.
+kg:id_37 rdf:type cls:c_3391.
+cls:c_3391 rdfs:label "被害潜在"@ja.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "予防原則の考え方に立った生活環境や健康の把握"@ja.
+kg:id_38 rdf:type cls:c_3392.
+cls:c_3392 rdfs:label "健康把握"@ja.
+kg:id_39 rdfs:label "町が自ら調べ重大な影響への対処可能性や回復可能性を見極める"@ja.
+kg:id_39 rdf:type cls:c_3393.
+cls:c_3393 rdfs:label "影響評価"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "健康被害の発生"@ja.
+kg:id_40 rdf:type cls:c_3394.
+cls:c_3394 rdfs:label "健康被害発生"@ja.
+kg:id_41 rdfs:label "被害者が風力発電と健康被害の因果関係を証明しなければ救済されない"@ja.
+kg:id_41 rdf:type cls:c_3395.
+cls:c_3395 rdfs:label "立証負担"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "住み慣れた場所で安心して生活できないことや眠れないことによる大きな心身の負担"@ja.
+kg:id_42 rdf:type cls:c_3396.
+cls:c_3396 rdfs:label "心身負担"@ja.
+kg:id_40 prop:effect kg:id_42.
+kg:id_43 rdfs:label "全国的な風力発電による健康被害"@ja.
+kg:id_43 rdf:type cls:c_3397.
+cls:c_3397 rdfs:label "風力健康被害"@ja.
+kg:id_44 rdfs:label "遊佐町でも健康被害が起きない根拠はない"@ja.
+kg:id_44 rdf:type cls:c_3398.
+cls:c_3398 rdfs:label "発生可能性"@ja.
+kg:id_43 prop:effect kg:id_44.
+kg:id_45 rdfs:label "洋上風力発電事業者の選定と建設の進行"@ja.
+kg:id_45 rdf:type cls:c_3399.
+cls:c_3399 rdfs:label "事業進行"@ja.
+kg:id_46 rdfs:label "健康被害発生後の対応では遅い"@ja.
+kg:id_46 rdf:type cls:c_3400.
+cls:c_3400 rdfs:label "事後対応遅延"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "住民が健康で安心して暮らせる環境を守る責務"@ja.
+kg:id_47 rdf:type cls:c_3401.
+cls:c_3401 rdfs:label "生活環境保全責務"@ja.
+kg:id_48 rdfs:label "事業想定会議を設定した県と町"@ja.
+kg:id_48 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "環境影響リスクへの対応"@ja.
+kg:id_49 rdf:type cls:c_3402.
+cls:c_3402 rdfs:label "環境リスク対応"@ja.
+kg:id_50 rdfs:label "地元自治体から協議を受けたとき選定事業者は協議に応じる"@ja.
+kg:id_50 rdf:type cls:c_3403.
+cls:c_3403 rdfs:label "事業者協議"@ja.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "洋上風力発電事業に伴うリスクや不安"@ja.
+kg:id_51 rdf:type cls:c_3404.
+cls:c_3404 rdfs:label "風力発電事業リスク"@ja.
+kg:id_52 rdfs:label "事業者と協定を結ぶ"@ja.
+kg:id_52 rdf:type cls:c_489.
+cls:c_489 rdfs:label "協定締結"@ja.
+kg:id_51 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "対応するための組織づくりをする"@ja.
+kg:id_53 rdf:type cls:c_3405.
+cls:c_3405 rdfs:label "対応組織"@ja.
+kg:id_51 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "現在の風車による健康被害"@ja.
+kg:id_54 rdf:type cls:c_79.
+kg:id_55 rdfs:label "町としてアンケート調査をしない"@ja.
+kg:id_55 rdf:type cls:c_3406.
+cls:c_3406 rdfs:label "調査不実施"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "町独自の健康調査を行わないこと"@ja.
+kg:id_56 rdf:type cls:c_3407.
+cls:c_3407 rdfs:label "健康調査不実施"@ja.
+kg:id_57 rdfs:label "町として被害を把握していないこと"@ja.
+kg:id_57 rdf:type cls:c_3408.
+cls:c_3408 rdfs:label "被害未把握"@ja.
+kg:id_56 prop:cause kg:id_57.
+kg:id_58 rdfs:label "海岸線地域で全く問題ないという声も多く聞いていること"@ja.
+kg:id_58 rdf:type cls:c_3409.
+cls:c_3409 rdfs:label "問題なし認識"@ja.
+kg:id_56 prop:cause kg:id_58.
+kg:id_59 rdfs:label "現在の風車による健康被害がないとの判断"@ja.
+kg:id_59 rdf:type cls:c_3410.
+cls:c_3410 rdfs:label "健康被害否定"@ja.
+kg:id_60 rdfs:label "西遊佐地区から実際そういう方はいらっしゃらないとの報告"@ja.
+kg:id_60 rdf:type cls:c_3411.
+cls:c_3411 rdfs:label "住民報告"@ja.
+kg:id_59 prop:cause kg:id_60.
+kg:id_61 rdfs:label "住民の健康被害への町独自調査を行わないこと"@ja.
+kg:id_61 rdf:type cls:c_3407.
+kg:id_62 rdfs:label "国がまだ影響が分からないとしていること"@ja.
+kg:id_62 rdf:type cls:c_3412.
+cls:c_3412 rdfs:label "国見解"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "予算的に非常に大きな金額になること"@ja.
+kg:id_63 rdf:type cls:c_3413.
+cls:c_3413 rdfs:label "予算制約"@ja.
+kg:id_61 prop:cause kg:id_63.
+kg:id_64 rdfs:label "洋上風力発電による健康影響への対応"@ja.
+kg:id_64 rdf:type cls:c_3414.
+cls:c_3414 rdfs:label "健康影響対応"@ja.
+kg:id_65 rdfs:label "国の環境アセスでしっかり調べ町と住民に情報提供してもらう"@ja.
+kg:id_65 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_64 prop:countermeasure kg:id_65.
+kg:id_66 rdfs:label "相談窓口"@ja.
+kg:id_66 rdf:type cls:c_1050.
+cls:c_1050 rdfs:label "相談窓口"@ja.
+kg:id_67 rdfs:label "選定事業者決定後に設置を検討する"@ja.
+kg:id_67 rdf:type cls:c_3415.
+cls:c_3415 rdfs:label "設置検討"@ja.
+kg:id_66 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "相談窓口の設置時期が未定"@ja.
+kg:id_68 rdf:type cls:c_3416.
+cls:c_3416 rdfs:label "窓口設置未定"@ja.
+kg:id_69 rdfs:label "いつ事業者が決定するか現段階ではまだ分からないこと"@ja.
+kg:id_69 rdf:type cls:c_3417.
+cls:c_3417 rdfs:label "事業者未定"@ja.
+kg:id_68 prop:cause kg:id_69.
+kg:id_70 rdfs:label "公開して議論し一定のルールをつくる"@ja.
+kg:id_70 rdf:type cls:c_2057.
+cls:c_2057 rdfs:label "公開協議"@ja.
+kg:id_8 prop:countermeasure kg:id_70.
+kg:id_71 rdfs:label "予防原則をしっかりやる"@ja.
+kg:id_71 rdf:type cls:c_3418.
+cls:c_3418 rdfs:label "予防原則"@ja.
+kg:id_8 prop:countermeasure kg:id_71.
+kg:id_72 rdfs:label "リスクの最小化を図る"@ja.
+kg:id_72 rdf:type cls:c_3312.
+cls:c_3312 rdfs:label "リスク最小化"@ja.
+kg:id_8 prop:countermeasure kg:id_72.
+kg:id_73 rdfs:label "協定を締結する"@ja.
+kg:id_73 rdf:type cls:c_489.
+kg:id_8 prop:countermeasure kg:id_73.
+kg:id_74 rdfs:label "カーボンニュートラルを推進する"@ja.
+kg:id_74 rdf:type cls:c_257.
+cls:c_257 rdfs:label "脱炭素推進"@ja.
+kg:id_8 prop:countermeasure kg:id_74.
+kg:id_75 rdfs:label "リスク発生"@ja.
+kg:id_75 rdf:type cls:c_3419.
+cls:c_3419 rdfs:label "リスク発生"@ja.
+kg:id_76 rdfs:label "必要なら事業を止めなければならない"@ja.
+kg:id_76 rdf:type cls:c_3420.
+cls:c_3420 rdfs:label "事業停止"@ja.
+kg:id_75 prop:countermeasure kg:id_76.
+kg:id_77 rdfs:label "再エネ海域利用法に基づいて手順を踏んで進めてきたこと"@ja.
+kg:id_77 rdf:type cls:c_807.
+cls:c_807 rdfs:label "法手続"@ja.
+kg:id_8 prop:cause kg:id_77.
+kg:id_78 rdfs:label "洋上風力の導入推進"@ja.
+kg:id_78 rdf:type cls:c_2452.
+cls:c_2452 rdfs:label "風力導入"@ja.
+kg:id_79 rdfs:label "世界的な脱炭素とカーボンニュートラル社会の実現"@ja.
+kg:id_79 rdf:type cls:c_3421.
+cls:c_3421 rdfs:label "脱炭素社会"@ja.
+kg:id_78 prop:cause kg:id_79.
+kg:id_80 rdfs:label "住民の皆様の不安の払拭に努める"@ja.
+kg:id_80 rdf:type cls:c_3422.
+cls:c_3422 rdfs:label "不安払拭"@ja.
+kg:id_8 prop:countermeasure kg:id_80.
+kg:id_81 rdfs:label "事業完了や撤去まで責任を持って関わる"@ja.
+kg:id_81 rdf:type cls:c_3423.
+cls:c_3423 rdfs:label "事業責任"@ja.
+kg:id_8 prop:countermeasure kg:id_81.
+kg:id_82 rdfs:label "陸上風力発電"@ja.
+kg:id_82 rdf:type cls:c_128.
+kg:id_83 rdfs:label "テレビが映らなくなった"@ja.
+kg:id_83 rdf:type cls:c_2896.
+cls:c_2896 rdfs:label "受信障害"@ja.
+kg:id_82 prop:effect kg:id_83.
+kg:id_84 rdfs:label "陸上風力発電によるテレビ受信障害"@ja.
+kg:id_84 rdf:type cls:c_2896.
+kg:id_85 rdfs:label "協定に基づいて止めてもらう"@ja.
+kg:id_85 rdf:type cls:c_3420.
+kg:id_84 prop:countermeasure kg:id_85.
+kg:id_86 rdfs:label "事業者が共同アンテナを個人負担ゼロで整備する"@ja.
+kg:id_86 rdf:type cls:c_3424.
+cls:c_3424 rdfs:label "共同アンテナ"@ja.
+kg:id_84 prop:countermeasure kg:id_86.
+kg:id_87 rdfs:label "カーボンニュートラルを進めないこと"@ja.
+kg:id_87 rdf:type cls:c_3425.
+cls:c_3425 rdfs:label "脱炭素停滞"@ja.
+kg:id_88 rdfs:label "地球の痛みが元に戻らない"@ja.
+kg:id_88 rdf:type cls:c_3426.
+cls:c_3426 rdfs:label "環境悪化"@ja.
+kg:id_87 prop:effect kg:id_88.
+kg:id_89 rdfs:label "日本海の海水の上昇"@ja.
+kg:id_89 rdf:type cls:c_3427.
+cls:c_3427 rdfs:label "海水温上昇"@ja.
+kg:id_90 rdfs:label "サケ放流事業の継続が難しくなるおそれ"@ja.
+kg:id_90 rdf:type cls:c_3428.
+cls:c_3428 rdfs:label "事業継続困難"@ja.
+kg:id_89 prop:effect kg:id_90.
+kg:st_1 rdfs:label "駒井江美子議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "町民みんなで選択した事業ではなく進め方に疑問がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "国の事業だからと進む進め方に疑問がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "時田博機町長"@ja.
+kg:st_2 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_3 prop:content "被害が予測できる場合は最新の科学的知見に基づき対策を検討すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "被害が起こらないよう事前対策を講じたい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "仮に被害が発生した場合も影響最小化で対処したい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "自然環境リスクも含めて最小化を図るべき"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "住民の健康リスクへの対処体制を整えたい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "漁業者の経済面も含めたリスク対応が必要"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "リスク発生をなくすため事前調査と検討が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "影響最小化と迅速対応の体制整備を進めたい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "風車騒音と健康影響を懸念している"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "厚生労働省"@ja.
+kg:st_3 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_12 prop:content "周辺の音と睡眠の関係を認めている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "科学的知見上、音の増大は睡眠障害につながる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "睡眠障害は疾患リスク増大につながる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "住民"@ja.
+kg:st_4 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_15 prop:content "超低周波音を含む騒音による睡眠障害や健康被害を強く不安視している"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "由利本荘・にかほ市の風力発電を考える会"@ja.
+kg:st_5 rdf:type cls:st_66.
+cls:st_66 rdfs:label "市民団体"@ja.
+kg:op_16 prop:content "数年かけて21名の被害を把握した"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "健康被害者支援のための組織が設立されている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "鳥海山沖洋上風力発電を考える会に寄せた住民"@ja.
+kg:st_6 rdf:type cls:st_5.
+kg:op_18 prop:content "既存風車による健康被害を訴えている"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_6.
+kg:op_19 prop:content "既存風車による電波障害を訴えている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:op_20 prop:content "既存風車による動物等の異変を訴えている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:op_21 prop:content "学習会に多くの住民が参加して関心の高さが示された"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "多くのアンケート回答者"@ja.
+kg:st_7 rdf:type cls:st_5.
+kg:op_22 prop:content "最も心配しているのは健康被害のおそれである"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_7.
+kg:op_23 prop:content "陸上風車より大規模で複合影響による健康被害増加を懸念している"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "地域住民の健康と暮らしを守るため事前調査を強く要望する"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "苦情が届いていないだけで被害がないとは言えない"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "町が主体的に調べて対処可能性を確認すべき"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "被害者に大きな立証負担が生じる"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "地域住民に大きな心身の負担を強いる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "遊佐町だけ健康被害が起きないとは言えない"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "建設後ではなく事前対応が必要である"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "責務は事業者だけでなく県と町にも第一義的にある"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:st_8 rdfs:label "太田智光地域生活課長"@ja.
+kg:st_8 rdf:type cls:st_19.
+cls:st_19 rdfs:label "自治体職員"@ja.
+kg:op_32 prop:content "法定協議会の取りまとめに基づき事業者と協議できるようにする"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_8.
+kg:op_33 prop:content "選定事業者が決まったら事業についての協定を結ぶ想定である"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_8.
+kg:op_34 prop:content "リスクや不安に対応する窓口や組織づくりを想定している"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_8.
+kg:op_35 prop:content "全く問題ないという声も多く把握しており現時点で調査予定はない"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_8.
+kg:op_36 prop:content "町では被害の把握がなく独自調査は予定していない"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_8.
+kg:op_37 prop:content "問題ないという地域の声も多いため調査予定はない"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_8.
+kg:op_38 prop:content "地区確認の結果として実際の被害者はいないと報告を受けている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_2.
+kg:op_39 prop:content "国が影響不明としている以上町が独自調査する考えはない"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_8.
+kg:op_40 prop:content "独自調査は費用負担が大きい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_8.
+kg:op_41 prop:content "国の調査結果の提供を求めている"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_8.
+kg:op_42 prop:content "窓口体制は事業者決定後に県も含めて検討する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_8.
+kg:op_43 prop:content "事業者決定時期が不明なため設置時期も答えられない"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_8.
+kg:op_44 prop:content "法定協議会に臨む基本方針として公開とルールづくりを重視する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_2.
+kg:op_45 prop:content "予防原則を基本方針として主張してきた"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "リスク最小化を基本方針としている"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_2.
+kg:op_47 prop:content "事業者との協定締結が必要と考えている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_2.
+kg:op_48 prop:content "カーボンニュートラル推進も基本方針の一つである"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_2.
+kg:op_49 prop:content "町民を守るため必要時は停止も協定に盛り込むべき"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_2.
+kg:op_50 prop:content "国の法律に基づく事業として進んでいると認識している"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_2.
+kg:op_51 prop:content "脱炭素社会実現の手段として町も協力すべきと考える"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "引き続き住民不安の払拭に努める"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "撤去まで含め責任を持って関わる考えである"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "協定に基づいて停止させ共同アンテナ整備で対応した"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "実際の障害時には協定を活用して停止対応した"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "事業者負担で共同アンテナ整備を行った"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "できるところからカーボンゼロを進める必要がある"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "海水温上昇は町の事業継続にも重大な懸念である"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "遊佐町のこれからに大きく影響する事業なのに遊佐町の住民がみんなで考えて洋上風力と選択したわけではありません"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "それでも国の事業だからと事業が進んでいっています"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "洋上風力についても同じことであります。超低周波による健康被害等、被害が多少なりとも予測できる場合においては"@ja.
+<< kg:id_4 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "被害が起こらないよう最新の科学的知見に基づき対策をあらかじめ検討しておく"@ja.
+<< kg:id_4 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "仮に被害が発生した場合においてもその影響を最小限にするよう対処していきたい"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "リスクにつきましては、自然環境に関するもののリスク"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "住民の健康に関するもののリスク"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "漁業者の経済的なことなど、内水面も含めて様々なことが考えられる"@ja.
+<< kg:id_8 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "リスク発生をなくするための事前の調査や検討"@ja.
+<< kg:id_8 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "発生しても影響を最小限にとどめ、速やかに対処できるような体制を整えるよう"@ja.
+<< kg:id_5 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "環境省では、風車騒音と健康影響の明らかな関連を示す知見は得られていないとしています"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "厚労省は周辺の音が睡眠には重要な環境因子であると、周辺の音と睡眠の関係を認めています"@ja.
+<< kg:id_17 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "音が大きくなれば睡眠障害となり"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "疾患リスクが大きくなるということは多くの科学的知見があります"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "住民は、風力発電による耳に聞こえない超低周波音を含む騒音による睡眠障害や健康被害について強い不安を抱いています"@ja.
+<< kg:id_22 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "由利本荘・にかほ市の風力発電を考える会が数年かけて21名の被害を把握し"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "風力発電による健康被害者を支援するため、風力だめーじサポートの会も昨年に設立されています"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "遊佐町でも、既存風車による健康被害や電波障害、動物等の異変を訴える声が鳥海山沖洋上風力発電を考える会に直接、間接に寄せられているそうです"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "既存風車による健康被害や電波障害、動物等の異変を訴える声"@ja.
+<< kg:id_26 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "既存風車による健康被害や電波障害、動物等の異変を訴える声"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "その考える会が今年７月９日に酒田市で開催した第５回学習会には211名の参加があり"@ja.
+<< kg:id_5 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "やはり住民の一番の心配は健康被害のおそれだったとのことです"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今計画されている洋上風力発電の規模は、陸上風車とは比べ物にならない大きさです。既存風車との複合的影響による健康被害が増えるのではないかと心配されます"@ja.
+<< kg:id_8 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "町には、せめて地域住民の健康と暮らしを守るために、まずアンケート調査や疫学的調査をされるよう強く要望します"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "役場に苦情等が届いていないから健康被害はないというのではなく、口に出せない方もいるということを前提にしてください"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "町が自ら調べ、重大な影響が生じたときにそれに対処できるかどうか、回復可能なのかどうかを見極めることがとても大事だと考えます"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "健康被害が生じたとき、被害者は風力発電と健康被害の因果関係を証明しなければ救済されません"@ja.
+<< kg:id_40 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "住み慣れた場所なのに安心して生活できない、眠れないなどの大きな心身の負担を地域住民に強いることになります"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "全国的に風力発電による健康被害があちこちに出ている中で、遊佐町だけは健康被害は起きないという根拠はないと思います"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "事業者の選定が決定して建設が進み、万が一健康被害が発生してしまってからの対応では遅いのです"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "住民が健康で安心して暮らせる環境を守る責務はもちろん事業者にもありますが、第一には事業想定会議を設定した県、町にあるはずです"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "環境影響リスクへの対応に関して地元自治体から協議を受けたときは、選定事業者は協議に応じること"@ja.
+<< kg:id_51 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "選定事業者が決まりましたら事業についての協定を結ぶ"@ja.
+<< kg:id_51 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "そういうリスクとか不安に対しての窓口といいますか、そういうものに対応するための組織づくりをするということを想定しての文言"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "町としてそういうアンケート調査をしようというような予定は今のところしておりません"@ja.
+<< kg:id_56 prop:cause kg:id_57 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "町としてはそこについて把握していないということもございますし"@ja.
+<< kg:id_56 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "地域の中でも海岸線の地域の中で全く問題ないという声も多く聞いているところもあります"@ja.
+<< kg:id_59 prop:cause kg:id_60 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "実際はそういう方はいらっしゃらないという報告を西遊佐地区からはいただいております"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "国がまだ影響が分からないと言っている以上、町が独自に調べるというふうには考えておりません"@ja.
+<< kg:id_61 prop:cause kg:id_63 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "非常に多分恐らく予算的にもすごい金額になるでしょうし"@ja.
+<< kg:id_64 prop:countermeasure kg:id_65 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "これからの調査の中でもそういうところもしっかり調べていただいて、そういう情報をしっかり町にも提供いただいて、住民に提供していただきたい"@ja.
+<< kg:id_66 prop:countermeasure kg:id_67 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "これから選定事業者が決まりまして、その後にいろいろと協議を進めていくことになると思いますので、県も含めてでありますが、どのような体制が望ましいのか、どういう窓口体制にするのかというのはその後の検討になると思います"@ja.
+<< kg:id_68 prop:cause kg:id_69 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "いつ事業者が決定するか現段階ではまだ分かっておりませんので、いつというのはちょっと今の段階ではお答えできません"@ja.
+<< kg:id_8 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "１つ目としては、やっぱり公開して、議論をして一定のルールつくりましょうということ"@ja.
+<< kg:id_8 prop:countermeasure kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "２つ目は予防原則しっかりやりましょう"@ja.
+<< kg:id_8 prop:countermeasure kg:id_72 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "３つ目はリスクの最小化"@ja.
+<< kg:id_8 prop:countermeasure kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "４つ目がやっぱり協定締結しなければねということ"@ja.
+<< kg:id_8 prop:countermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "５つ目はやっぱりカーボンニュートラルの推進について"@ja.
+<< kg:id_75 prop:countermeasure kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "リスクが発生したら、いよいよなったら止めなければならないことも当然必要でありましょうし、やっぱり町民を守るというのが私の役目です"@ja.
+<< kg:id_8 prop:cause kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "国が定めた法律に基づいて、再エネ海域利用法に基づいて、それについて手順を踏んで進めてきている"@ja.
+<< kg:id_78 prop:cause kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "世界的な脱炭素に向けた動きの中で、国はカーボンニュートラル社会の実現のための手段として洋上風力の導入を進めており"@ja.
+<< kg:id_8 prop:countermeasure kg:id_80 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "引き続き住民の皆様の不安の払拭に努め"@ja.
+<< kg:id_8 prop:countermeasure kg:id_81 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "そして事業完了、撤去のことまで責任を持ってしっかり関わっていく所存であります"@ja.
+<< kg:id_82 prop:effect kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "協定に基づいて止めてもらいました。止めて、事業者によって共同アンテナをその集落、見えないところ全部、いわゆる個人負担ゼロでやってもらいました"@ja.
+<< kg:id_84 prop:countermeasure kg:id_85 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "協定に基づいて止めてもらいました"@ja.
+<< kg:id_84 prop:countermeasure kg:id_86 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "事業者によって共同アンテナをその集落、見えないところ全部、いわゆる個人負担ゼロでやってもらいました"@ja.
+<< kg:id_87 prop:effect kg:id_88 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "やっぱりカーボンニュートラル、できるところからカーボンゼロ進めないと地球の痛みが元に戻らない"@ja.
+<< kg:id_89 prop:effect kg:id_90 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "特にサケを放流する我が町では、日本海の海水の上昇が止まりそうにないということが本当心配されます。事業の継続が難しくなるのではないか"@ja.
+}

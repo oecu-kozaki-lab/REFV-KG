@@ -1,0 +1,356 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00073> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "津波浸水想定区域内への対応"@ja.
+kg:id_1 rdf:type cls:c_1998.
+cls:c_1998 rdfs:label "津波浸水域対応"@ja.
+kg:id_2 rdfs:label "ハザードマップの見直し"@ja.
+kg:id_2 rdf:type cls:c_1999.
+cls:c_1999 rdfs:label "ハザードマップ見直し"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "自主防災組織強化"@ja.
+kg:id_3 rdf:type cls:c_2000.
+cls:c_2000 rdfs:label "自主防災組織強化"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "津波発生時の避難"@ja.
+kg:id_4 rdf:type cls:c_2001.
+cls:c_2001 rdfs:label "津波避難"@ja.
+kg:id_5 rdfs:label "避難経路と到達時間の想定"@ja.
+kg:id_5 rdf:type cls:c_2002.
+cls:c_2002 rdfs:label "避難経路想定"@ja.
+kg:id_4 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "液状化現象"@ja.
+kg:id_6 rdf:type cls:c_2003.
+cls:c_2003 rdfs:label "液状化"@ja.
+kg:id_7 rdfs:label "避難経路に選べない"@ja.
+kg:id_7 rdf:type cls:c_2004.
+cls:c_2004 rdfs:label "避難経路不適"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "高齢者・身障者の避難"@ja.
+kg:id_8 rdf:type cls:c_2005.
+cls:c_2005 rdfs:label "要援護者避難"@ja.
+kg:id_9 rdfs:label "緊急時の連絡体制と救援方法の整備"@ja.
+kg:id_9 rdf:type cls:c_2006.
+cls:c_2006 rdfs:label "連絡救援体制"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "東日本大震災"@ja.
+kg:id_10 rdf:type cls:c_2007.
+cls:c_2007 rdfs:label "大震災"@ja.
+kg:id_11 rdfs:label "60歳以上の死者がほぼ半数を占めた"@ja.
+kg:id_11 rdf:type cls:c_2008.
+cls:c_2008 rdfs:label "高齢者被害"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "海岸浸食"@ja.
+kg:id_12 rdf:type cls:c_1130.
+cls:c_1130 rdfs:label "海岸浸食"@ja.
+kg:id_13 rdfs:label "日本海特有の冬季波浪"@ja.
+kg:id_13 rdf:type cls:c_2009.
+cls:c_2009 rdfs:label "冬季波浪"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "海岸線が30ｍほどえぐりとられた"@ja.
+kg:id_14 rdf:type cls:c_2010.
+cls:c_2010 rdfs:label "海岸線後退"@ja.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "庄内浜の景観が脅かされる"@ja.
+kg:id_15 rdf:type cls:c_647.
+cls:c_647 rdfs:label "景観悪化"@ja.
+kg:id_12 prop:effect kg:id_15.
+kg:id_16 rdfs:label "浸食防止策への取り組み"@ja.
+kg:id_16 rdf:type cls:c_2011.
+cls:c_2011 rdfs:label "浸食防止策"@ja.
+kg:id_12 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "海岸浸食対策事業"@ja.
+kg:id_17 rdf:type cls:c_2012.
+cls:c_2012 rdfs:label "海岸浸食対策"@ja.
+kg:id_18 rdfs:label "遊佐町と宮海の人工リーフ整備"@ja.
+kg:id_18 rdf:type cls:c_2013.
+cls:c_2013 rdfs:label "人工リーフ整備"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "大規模災害時の通信"@ja.
+kg:id_19 rdf:type cls:c_2014.
+cls:c_2014 rdfs:label "災害時通信"@ja.
+kg:id_20 rdfs:label "回線のパンク"@ja.
+kg:id_20 rdf:type cls:c_2015.
+cls:c_2015 rdfs:label "回線混雑"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "大規模災害時の通信障害"@ja.
+kg:id_21 rdf:type cls:c_2016.
+cls:c_2016 rdfs:label "通信障害"@ja.
+kg:id_22 rdfs:label "携帯は使い物にならない"@ja.
+kg:id_22 rdf:type cls:c_2017.
+cls:c_2017 rdfs:label "携帯不能"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "緊急連絡先の拡充"@ja.
+kg:id_23 rdf:type cls:c_2018.
+cls:c_2018 rdfs:label "緊急連絡体制"@ja.
+kg:id_24 rdfs:label "防災無線の増設"@ja.
+kg:id_24 rdf:type cls:c_2019.
+cls:c_2019 rdfs:label "防災無線増設"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "津波警報伝達"@ja.
+kg:id_25 rdf:type cls:c_2020.
+cls:c_2020 rdfs:label "津波警報伝達"@ja.
+kg:id_26 rdfs:label "数分以内で伝わる緊急性が求められる"@ja.
+kg:id_26 rdf:type cls:c_2021.
+cls:c_2021 rdfs:label "迅速伝達"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "防災無線の配置"@ja.
+kg:id_27 rdf:type cls:c_2022.
+cls:c_2022 rdfs:label "防災無線配置"@ja.
+kg:id_28 rdfs:label "近いほど騒音の問題が生じる"@ja.
+kg:id_28 rdf:type cls:c_2023.
+cls:c_2023 rdfs:label "騒音問題"@ja.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "由良地区の防災無線機開発"@ja.
+kg:id_29 rdf:type cls:c_2024.
+cls:c_2024 rdfs:label "防災無線整備"@ja.
+kg:id_30 rdfs:label "双方向で一斉同報可能な無線機の導入検討"@ja.
+kg:id_30 rdf:type cls:c_2025.
+cls:c_2025 rdfs:label "双方向無線導入"@ja.
+kg:id_29 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "停電時の通信途絶"@ja.
+kg:id_31 rdf:type cls:c_2026.
+cls:c_2026 rdfs:label "停電時通信途絶"@ja.
+kg:id_32 rdfs:label "電池で継続使用できる無線機の活用"@ja.
+kg:id_32 rdf:type cls:c_2027.
+cls:c_2027 rdfs:label "電池式無線活用"@ja.
+kg:id_31 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "風評被害"@ja.
+kg:id_33 rdf:type cls:c_2028.
+cls:c_2028 rdfs:label "風評被害"@ja.
+kg:id_34 rdfs:label "福島第一原子力発電所の水素爆発"@ja.
+kg:id_34 rdf:type cls:c_2029.
+cls:c_2029 rdfs:label "原発事故"@ja.
+kg:id_33 prop:cause kg:id_34.
+kg:id_35 rdfs:label "世界じゅうが震撼した"@ja.
+kg:id_35 rdf:type cls:c_2030.
+cls:c_2030 rdfs:label "社会的混乱"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "福島第一原子力発電所の事故"@ja.
+kg:id_36 rdf:type cls:c_2029.
+kg:id_37 rdfs:label "中国人の多くが帰国したまま戻っていない"@ja.
+kg:id_37 rdf:type cls:c_2031.
+cls:c_2031 rdfs:label "外国人帰国"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "アメリカ大使館が成田空港まで退避支援を行った"@ja.
+kg:id_38 rdf:type cls:c_2032.
+cls:c_2032 rdfs:label "退避支援"@ja.
+kg:id_36 prop:effect kg:id_38.
+kg:id_39 rdfs:label "情報不足"@ja.
+kg:id_39 rdf:type cls:c_2033.
+cls:c_2033 rdfs:label "情報不足"@ja.
+kg:id_40 rdfs:label "韓国で学校が休校となった"@ja.
+kg:id_40 rdf:type cls:c_2034.
+cls:c_2034 rdfs:label "過剰反応"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "風評被害対策"@ja.
+kg:id_41 rdf:type cls:c_2035.
+cls:c_2035 rdfs:label "風評被害対策"@ja.
+kg:id_42 rdfs:label "農産物の放射線検査"@ja.
+kg:id_42 rdf:type cls:c_2036.
+cls:c_2036 rdfs:label "放射線検査"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "内部被曝"@ja.
+kg:id_43 rdf:type cls:c_2037.
+cls:c_2037 rdfs:label "内部被曝"@ja.
+kg:id_44 rdfs:label "人体に長く大きな被害をもたらす"@ja.
+kg:id_44 rdf:type cls:c_2038.
+cls:c_2038 rdfs:label "人体被害"@ja.
+kg:id_43 prop:effect kg:id_44.
+kg:st_1 rdfs:label "田中斉議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "自主防災組織の点検とあわせて見直す必要がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "単独でできない自治会は隣接自治会と共同で柔軟に運用すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "実際に歩いて避難完了時間を把握するのが望ましい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "液状化想定地点の把握が必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "要援護者への連絡方法と安否確認の役割分担を明確にすべき"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "高齢者は体力や介護状態のため避難が間に合わない危険が高い"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地元の漁業関係者"@ja.
+kg:st_2 rdf:type cls:st_61.
+cls:st_61 rdfs:label "漁業関係者"@ja.
+kg:op_7 prop:content "海岸線の浸食が進んでいる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "今年は昨年より浸食が大きいように見える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "景観保全の面からも浸食対策が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "海岸保全と津波緩衝のため浸食防止策に取り組む必要がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "震災時に携帯電話が使えなくなることを学んだ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "正しい情報を公共機関が速やかに伝えることが重要"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "酒田に合った快適で聞き取りやすい仕組みを検討すべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "避難勧告や退避命令は迅速な放送手順が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "設置場所の工夫で影響を緩和できる可能性がある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "地域情報共有と災害時の連絡手段として有効"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "避難所や屋外でも継続して情報を受け取れる点が有用"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "事故後も政府と東電の発表が信用されていない"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "国外でも日本の安全情報への不信が続いている"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "各国が独自に危険判断して行動した"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "正しい情報が出ない限り過剰反応は続く"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "外部被曝より口から入る内部被曝への対策が重要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "防災計画の見直しについてでございますが、（１）津波浸水想定区域内への対応、その１つとして、ハザードマップの見直し作業"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "防災計画の見直しについてでございますが、（１）津波浸水想定区域内への対応、その１つとして、ハザードマップの見直し作業、それと自主防災組織強化の動向についてお尋ねします"@ja.
+<< kg:id_4 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "津波発生時の避難経路等、到達時間までの距離を、どの程度で完了できるか想定しておく必要があると思います。実際に歩いてみれば一番いい"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "特に砂丘地では多いんですが、液状化現象が想定されるところは避難経路には選べない"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "高齢者・身障者の避難対応についてでございます。緊急時の連絡体制、救援方法について"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "東日本大震災の死者１万5,434人のうち、60歳以上の方の死者は7,241名で47％、ほぼ半数を占めております。体力的な問題や、要介護状態で避難が間に合わなかった結果かと思います"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "日本海特有の冬季波浪で宮野浦の風力発電所付近から南へ続く部分が、ちょうどテトラポットがあるわけですが、それがとめていたところが急に30ｍほど海岸線がえぐりとられております"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "それがとめていたところが急に30ｍほど海岸線がえぐりとられております。まして、ことしの冬季波浪が強かったためか、海岸線が昨年よりも相当大きくえぐられたふうに見えます"@ja.
+<< kg:id_12 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "海岸線の浸食が進めば庄内浜の景観も脅かされるわけで"@ja.
+<< kg:id_12 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "海岸線の保全とあわせて、津波緩衝策として浸食防止策に取り組む必要があるかと思います"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:text-txt_contents "平成22年から26年までの県の社会資本総合整備計画の中で、海岸浸食対策事業として、遊佐町と宮海の人工リーフ２カ所が行われております"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "地震などの大規模な災害が発生すれば回線がパンクして、まず携帯は使い物にならないということを３月の震災のときに学びました"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "地震などの大規模な災害が発生すれば回線がパンクして、まず携帯は使い物にならないということを３月の震災のときに学びました。混乱の中で、その後の情報が誤った情報が広まることもあり、公共機関が正しい情報を速やかに伝えることが重要になるかと思います"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "緊急連絡先の拡充についてでございますが、防災無線の増設、今後の強化策"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "津波警報については数分以内で伝わる緊急性が求められる世界だと思います"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "防災無線を市街地に置くということになりますと、必ず近くのところは、遠いほどやはり音は小さくなるわけで、近いほど、うちがふえるほどということも想定されます"@ja.
+<< kg:id_29 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "由良の自治会で今ちょうどいろいろな防災無線機の、今まで有線放送で30年近くやってきたんですが、それが老朽化したというところで、鶴岡市の業務用無線メーカーのケンウッドと、酒田市の情報システム会社のキューブワン情報と、地産地消でそういったものができないかというところで今取り組んでいる事例がございました"@ja.
+<< kg:id_31 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "停電になっても電池がもつかぎりはずっと避難所に行っても聞ける、畑に行っても船に乗っても十分、３kmぐらいは平気で届くそうなので"@ja.
+<< kg:id_33 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "福島第一原子力発電所で水素爆発が起きて、世界じゅうが震撼しました。日本政府と東電の発表を信用していない状態がいまだに続いている現状でございます"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:text-txt_contents "福島第一原子力発電所で水素爆発が起きて、世界じゅうが震撼しました"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "中国人のほとんどは水素爆発直後に帰国したまま戻っておりませんし"@ja.
+<< kg:id_36 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "アメリカにおいては80km圏内では危険だとして、仙台に政府専用のバスをアメリカ大使館が向かわせ、運賃は後払いでいいからと成田空港まで送って日本を脱出したという報道を聞いております"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "４月８日、この地区の小学校の入学式の日の報道によれば、韓国ではちょうど雨が、原発の事故以降初めて雨が降ったものですから、126校の小学校、その他の学校が校長の判断で休校となり、韓国の神経質な報道なりとり方は各国でも問題にはなっておりますが、ただ、正しい情報が出ない限りはこういった状況は続くと思います"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:text-txt_contents "最後に３番目、風評被害対策の今後の取り組みについてでございますが、農産物の放射線検査についてでございます"@ja.
+<< kg:id_43 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "外部被曝より口から入る内部被曝が人体には長く大きな被害をもたらすことになります"@ja.
+}

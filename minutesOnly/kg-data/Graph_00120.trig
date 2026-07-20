@@ -1,0 +1,291 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00120> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電の重要性"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "コロナによりエネルギーの自給自足が望ましいこと"@ja.
+kg:id_2 rdf:type cls:c_2857.
+cls:c_2857 rdfs:label "自給志向"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "洋上風力発電事業"@ja.
+kg:id_3 rdf:type cls:c_218.
+kg:id_4 rdfs:label "相当程度の公共投資が必要になる"@ja.
+kg:id_4 rdf:type cls:c_1948.
+cls:c_1948 rdfs:label "公共投資"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "山形県が主導で実施"@ja.
+kg:id_5 rdf:type cls:c_2858.
+cls:c_2858 rdfs:label "行政主導"@ja.
+kg:id_3 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "地球温暖化対策"@ja.
+kg:id_6 rdf:type cls:c_2473.
+cls:c_2473 rdfs:label "環境対策"@ja.
+kg:id_7 rdfs:label "再生可能エネルギーの主力電源化"@ja.
+kg:id_7 rdf:type cls:c_2859.
+cls:c_2859 rdfs:label "主力電源化"@ja.
+kg:id_6 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "エネルギー自給率の向上"@ja.
+kg:id_8 rdf:type cls:c_2757.
+cls:c_2757 rdfs:label "自給率向上"@ja.
+kg:id_9 rdfs:label "自然エネルギーを活用した再生可能エネルギーの開発や促進、地域導入"@ja.
+kg:id_9 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "県内産業の振興"@ja.
+kg:id_10 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_10 prop:countermeasure kg:id_9.
+kg:id_11 rdfs:label "地域活性化"@ja.
+kg:id_11 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_11 prop:countermeasure kg:id_9.
+kg:id_12 rdfs:label "平成29年度より可能性に係る気象調査を実施"@ja.
+kg:id_12 rdf:type cls:c_2044.
+cls:c_2044 rdfs:label "調査実施"@ja.
+kg:id_3 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "町民説明会の実施"@ja.
+kg:id_13 rdf:type cls:c_687.
+cls:c_687 rdfs:label "説明会実施"@ja.
+kg:id_3 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "地域部会と全体会での検討会を重ねる"@ja.
+kg:id_14 rdf:type cls:c_136.
+cls:c_136 rdfs:label "協議実施"@ja.
+kg:id_3 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "洋上風力の計画"@ja.
+kg:id_15 rdf:type cls:c_318.
+cls:c_318 rdfs:label "発電計画"@ja.
+kg:id_16 rdfs:label "景観や騒音などの環境への影響が懸念される"@ja.
+kg:id_16 rdf:type cls:c_190.
+cls:c_190 rdfs:label "環境影響"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "漁業振興に関わる"@ja.
+kg:id_17 rdf:type cls:c_168.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "遊佐沖の洋上風力発電事業"@ja.
+kg:id_18 rdf:type cls:c_218.
+kg:id_19 rdfs:label "有望区域に選定されれば法定協議会を設置"@ja.
+kg:id_19 rdf:type cls:c_124.
+cls:c_124 rdfs:label "協議会設置"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "促進地域の指定に向け協議を進める"@ja.
+kg:id_20 rdf:type cls:c_1501.
+cls:c_1501 rdfs:label "協議推進"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "洋上風力発電の有望区域の選定"@ja.
+kg:id_21 rdf:type cls:c_2860.
+cls:c_2860 rdfs:label "区域選定"@ja.
+kg:id_22 rdfs:label "新型コロナウイルスの影響"@ja.
+kg:id_22 rdf:type cls:c_1377.
+cls:c_1377 rdfs:label "感染症影響"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "洋上風力発電の有望区域の選定が5月頃から6月頃に遅れる"@ja.
+kg:id_23 rdf:type cls:c_2861.
+cls:c_2861 rdfs:label "選定遅延"@ja.
+kg:id_22 prop:effect kg:id_23.
+kg:id_24 rdfs:label "法定協議会設置後の会議開催が不透明になる"@ja.
+kg:id_24 rdf:type cls:c_2862.
+cls:c_2862 rdfs:label "会議不透明"@ja.
+kg:id_22 prop:effect kg:id_24.
+kg:id_25 rdfs:label "洋上風力発電事業の事業化検討"@ja.
+kg:id_25 rdf:type cls:c_242.
+cls:c_242 rdfs:label "事業検討"@ja.
+kg:id_26 rdfs:label "参加希望業者が共同で現地の風況調査と海域調査を実施"@ja.
+kg:id_26 rdf:type cls:c_2044.
+kg:id_25 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "調査内容を6月の広報お知らせ号で周知する"@ja.
+kg:id_27 rdf:type cls:c_2863.
+cls:c_2863 rdfs:label "情報周知"@ja.
+kg:id_3 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "地域の合意形成を重視する"@ja.
+kg:id_28 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_3 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "地域振興と産業振興につながることが期待される"@ja.
+kg:id_29 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_3 prop:effect kg:id_29.
+kg:id_30 rdfs:label "町民がよかったと思える結果につながることが期待される"@ja.
+kg:id_30 rdf:type cls:c_2864.
+cls:c_2864 rdfs:label "住民利益"@ja.
+kg:id_3 prop:effect kg:id_30.
+kg:id_31 rdfs:label "自然災害の多発"@ja.
+kg:id_31 rdf:type cls:c_2865.
+cls:c_2865 rdfs:label "自然災害"@ja.
+kg:id_32 rdfs:label "気候変動"@ja.
+kg:id_32 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "世界中で自然災害が多発する"@ja.
+kg:id_33 rdf:type cls:c_2865.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "日本"@ja.
+kg:id_34 rdf:type cls:c_1238.
+cls:c_1238 rdfs:label "国"@ja.
+kg:id_35 rdfs:label "毎年のように豪雨や台風など大きな自然災害が発生している"@ja.
+kg:id_35 rdf:type cls:c_2865.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "脱炭素社会の実現"@ja.
+kg:id_36 rdf:type cls:c_487.
+cls:c_487 rdfs:label "脱炭素化"@ja.
+kg:id_37 rdfs:label "気候変動に起因する自然災害の多発"@ja.
+kg:id_37 rdf:type cls:c_2865.
+kg:id_36 prop:cause kg:id_37.
+kg:id_38 rdfs:label "再生可能エネルギーへの移行"@ja.
+kg:id_38 rdf:type cls:c_2866.
+cls:c_2866 rdfs:label "エネルギー移行"@ja.
+kg:id_39 rdfs:label "積極的に取り組む必要がある"@ja.
+kg:id_39 rdf:type cls:c_2867.
+cls:c_2867 rdfs:label "取組必要"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "コロナを踏まえ洋上風力発電の重要性は高まる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "財源がスムーズに出せるか心配している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "遊佐部会"@ja.
+kg:st_2 rdf:type cls:st_63.
+cls:st_63 rdfs:label "地域組織"@ja.
+kg:op_3 prop:content "景観や騒音などの環境への影響について検討してきた"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "漁業振興等について検討してきた"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "県からの情報を伝える答弁者"@ja.
+kg:st_3 rdf:type cls:st_55.
+cls:st_55 rdfs:label "答弁者"@ja.
+kg:op_5 prop:content "有望区域の選定は当初より遅れ6月頃になる見込み"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "今後の会議開催は不透明な状況である"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "答弁者"@ja.
+kg:st_4 rdf:type cls:st_55.
+kg:op_7 prop:content "地域の合意形成が本当に大事で重要だ"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "事業が地域振興と産業振興につながるよう県に進めてほしい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "町民がよかったと思える結果につながるよう進めてほしい"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:op_10 prop:content "脱炭素社会の実現は待ったなしの課題だ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_4.
+kg:op_11 prop:content "再生可能エネルギーへの移行に積極的に取り組む必要がある"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "そういう再生可能エネルギー、これの重要性がコロナによって、エネルギーもやっぱり自給自足というふうなことが望ましいということがありまして、これからその洋上風力発電の重要性が高まる"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "これは相当程度の公共投資になりますので、その財源がスムーズに出るべきところから出せるのかということが心配あります"@ja.
+<< kg:id_3 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "洋上風力発電事業につきましては、山形県が主導で実施してございます"@ja.
+<< kg:id_6 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "再生可能エネルギーの主力電源化によります地球温暖化対策"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:text-txt_contents "エネルギー自給率の向上、そして県内産業の振興、地域活性化を図るエネルギー戦略の下、自然エネルギーを活用した再生可能エネルギーの開発や促進、地域導入を進めてございます"@ja.
+<< kg:id_10 prop:countermeasure kg:id_9 >>
+    prop:text-txt_contents "県内産業の振興、地域活性化を図るエネルギー戦略の下、自然エネルギーを活用した再生可能エネルギーの開発や促進、地域導入を進めてございます"@ja.
+<< kg:id_11 prop:countermeasure kg:id_9 >>
+    prop:text-txt_contents "地域活性化を図るエネルギー戦略の下、自然エネルギーを活用した再生可能エネルギーの開発や促進、地域導入を進めてございます"@ja.
+<< kg:id_3 prop:countermeasure kg:id_12 >>
+    prop:text-txt_contents "県では、平成29年度より可能性に係ります気象調査を実施いたしまして"@ja.
+<< kg:id_3 prop:countermeasure kg:id_13 >>
+    prop:text-txt_contents "平成30年度から令和元年度、２か年におきまして町民説明会"@ja.
+<< kg:id_3 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "そして地域部会、また全体会におきまして検討会これまで重ねてきてございます"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "洋上風力の計画の可否や景観、騒音などの環境への影響、また漁業振興等について検討を行ってきた"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "洋上風力の計画の可否や景観、騒音などの環境への影響、また漁業振興等について検討を行ってきた"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:text-txt_contents "今後遊佐沖が有望区域に選定されれば、法定協議会の設置がなされ"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:text-txt_contents "促進地域の指定に向け協議がなされていくことになると思います"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "新型コロナウイルスの影響によりまして、洋上風力発電の有望区域の選定"@ja.
+<< kg:id_22 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "当初は５月頃ということでございましたけれども、６月頃になるのではないかなというふうにお聞きしてございます"@ja.
+<< kg:id_22 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "法定協議会の設置が決定になった場合におきましても、今後の会議の開催は不透明な状況である"@ja.
+<< kg:id_25 prop:countermeasure kg:id_26 >>
+    prop:text-txt_contents "事業への参加希望の業者が共同で現地での風況調査、そして併せまして海域調査、この６月下旬より現地のほうで実施する"@ja.
+<< kg:id_3 prop:countermeasure kg:id_27 >>
+    prop:text-txt_contents "調査内容につきましては、この６月の広報お知らせ号で内容を皆様にお知らせしたい"@ja.
+<< kg:id_3 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "再生可能エネルギーとして期待される洋上風力発電事業につきましては、地域の合意形成が本当に大事だと思います。重要だと思います"@ja.
+<< kg:id_3 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "事業が地域振興、産業振興につながりますよう"@ja.
+<< kg:id_3 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "また町民の皆さんがよかったというふうな結果につながりますように"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:text-txt_contents "気候変動に起因する自然災害は世界中で多発してございます"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:text-txt_contents "気候変動に起因する自然災害は世界中で多発してございます"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:text-txt_contents "日本でも毎年のように豪雨や台風など大きな自然災害が発生している状況でございます"@ja.
+<< kg:id_36 prop:cause kg:id_37 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "気候変動に起因する自然災害は世界中で多発してございます。日本でも毎年のように豪雨や台風など大きな自然災害が発生している状況でございますので、脱炭素社会の実現は待ったなしの課題"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "再生可能エネルギーへの移行については積極的に取り組んでいく必要がある"@ja.
+}

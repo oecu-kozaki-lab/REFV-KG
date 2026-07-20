@@ -1,0 +1,191 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00079> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電施設整備推進事業費"@ja.
+kg:id_1 rdf:type cls:c_2157.
+cls:c_2157 rdfs:label "事業費"@ja.
+kg:id_2 rdfs:label "新たに計上"@ja.
+kg:id_2 rdf:type cls:c_2158.
+cls:c_2158 rdfs:label "新規計上"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "風力発電施設整備を検討するため"@ja.
+kg:id_3 rdf:type cls:c_445.
+cls:c_445 rdfs:label "施設整備検討"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "社会福祉総務費各種補助事業費"@ja.
+kg:id_4 rdf:type cls:c_2159.
+cls:c_2159 rdfs:label "補助事業費"@ja.
+kg:id_5 rdfs:label "県の補助採択など"@ja.
+kg:id_5 rdf:type cls:c_2160.
+cls:c_2160 rdfs:label "補助採択"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "増額"@ja.
+kg:id_6 rdf:type cls:c_2161.
+cls:c_2161 rdfs:label "増額"@ja.
+kg:id_4 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "放課後児童健全育成事業費"@ja.
+kg:id_7 rdf:type cls:c_2157.
+kg:id_8 rdfs:label "県の制度を活用し低所得世帯の学童保育利用に対する支援のため"@ja.
+kg:id_8 rdf:type cls:c_1039.
+cls:c_1039 rdfs:label "利用支援"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_7 prop:countermeasure kg:id_6.
+kg:id_9 rdfs:label "各種予防接種事業費"@ja.
+kg:id_9 rdf:type cls:c_2157.
+kg:id_10 rdfs:label "不活化ポリオワクチン接種の導入のため"@ja.
+kg:id_10 rdf:type cls:c_2162.
+cls:c_2162 rdfs:label "接種導入"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_9 prop:countermeasure kg:id_6.
+kg:id_11 rdfs:label "緊急雇用創出事業臨時特例基金事業"@ja.
+kg:id_11 rdf:type cls:c_2163.
+cls:c_2163 rdfs:label "基金事業"@ja.
+kg:id_12 rdfs:label "県補助事業の追加"@ja.
+kg:id_12 rdf:type cls:c_2164.
+cls:c_2164 rdfs:label "補助事業追加"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_11 prop:countermeasure kg:id_6.
+kg:id_13 rdfs:label "活力ある園芸産地創出支援事業費"@ja.
+kg:id_13 rdf:type cls:c_2165.
+cls:c_2165 rdfs:label "支援事業費"@ja.
+kg:id_14 rdfs:label "県の補助採択見込み"@ja.
+kg:id_14 rdf:type cls:c_2160.
+kg:id_13 prop:cause kg:id_14.
+kg:id_13 prop:countermeasure kg:id_6.
+kg:id_15 rdfs:label "農林水産業創意工夫プロジェクト支援事業費"@ja.
+kg:id_15 rdf:type cls:c_2165.
+kg:id_15 prop:cause kg:id_14.
+kg:id_15 prop:countermeasure kg:id_6.
+kg:id_16 rdfs:label "住宅リフォーム総合支援事業費"@ja.
+kg:id_16 rdf:type cls:c_2165.
+kg:id_17 rdfs:label "利用者増加"@ja.
+kg:id_17 rdf:type cls:c_2166.
+cls:c_2166 rdfs:label "利用者増加"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_16 prop:countermeasure kg:id_6.
+kg:id_18 rdfs:label "県支出金"@ja.
+kg:id_18 rdf:type cls:c_1326.
+cls:c_1326 rdfs:label "財源"@ja.
+kg:id_18 prop:countermeasure kg:id_6.
+kg:id_19 rdfs:label "繰入金"@ja.
+kg:id_19 rdf:type cls:c_1326.
+kg:id_19 prop:countermeasure kg:id_6.
+kg:id_20 rdfs:label "地方交付税"@ja.
+kg:id_20 rdf:type cls:c_2167.
+cls:c_2167 rdfs:label "交付税"@ja.
+kg:id_21 rdfs:label "額の確定"@ja.
+kg:id_21 rdf:type cls:c_2168.
+cls:c_2168 rdfs:label "額確定"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "減額"@ja.
+kg:id_22 rdf:type cls:c_2169.
+cls:c_2169 rdfs:label "減額"@ja.
+kg:id_20 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "風力発電施設環境影響評価調査業務委託料"@ja.
+kg:id_23 rdf:type cls:c_2170.
+cls:c_2170 rdfs:label "委託料"@ja.
+kg:id_24 rdfs:label "風力発電施設の検討を行うため"@ja.
+kg:id_24 rdf:type cls:c_445.
+kg:id_23 prop:cause kg:id_24.
+kg:id_23 prop:countermeasure kg:id_2.
+kg:id_25 rdfs:label "駅前有料建築物等公共施設分床取得費"@ja.
+kg:id_25 rdf:type cls:c_2171.
+cls:c_2171 rdfs:label "取得費"@ja.
+kg:id_25 prop:countermeasure kg:id_2.
+kg:id_26 rdfs:label "駅前広場等企画調査設計委託料"@ja.
+kg:id_26 rdf:type cls:c_2170.
+kg:id_26 prop:countermeasure kg:id_2.
+kg:id_27 rdfs:label "生活交通バス路線維持費補助金"@ja.
+kg:id_27 rdf:type cls:c_2172.
+cls:c_2172 rdfs:label "補助金"@ja.
+kg:id_28 rdfs:label "バス路線確保"@ja.
+kg:id_28 rdf:type cls:c_2173.
+cls:c_2173 rdfs:label "路線確保"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "限度額を変更"@ja.
+kg:id_29 rdf:type cls:c_2046.
+cls:c_2046 rdfs:label "限度額変更"@ja.
+kg:id_27 prop:countermeasure kg:id_29.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:text-txt_contents "総務費では、風力発電施設整備を検討するため、風力発電施設整備推進事業費を新たに計上しております。"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "総務費では、風力発電施設整備を検討するため、風力発電施設整備推進事業費を新たに計上しております。"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:text-txt_contents "民生費では、県の補助採択などに係る社会福祉総務費各種補助事業費"@ja.
+<< kg:id_4 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "民生費では、県の補助採択などに係る社会福祉総務費各種補助事業費、県の制度を活用し低所得世帯の学童保育利用に対する支援のための放課後児童健全育成事業費をそれぞれ増額しております。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "県の制度を活用し低所得世帯の学童保育利用に対する支援のための放課後児童健全育成事業費"@ja.
+<< kg:id_7 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "民生費では、県の補助採択などに係る社会福祉総務費各種補助事業費、県の制度を活用し低所得世帯の学童保育利用に対する支援のための放課後児童健全育成事業費をそれぞれ増額しております。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "衛生費では、不活化ポリオワクチン接種の導入のため、各種予防接種事業費を増額しております。"@ja.
+<< kg:id_9 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "衛生費では、不活化ポリオワクチン接種の導入のため、各種予防接種事業費を増額しております。"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "労働費では、県補助事業の追加に伴い、緊急雇用創出事業臨時特例基金事業を増額しております。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "労働費では、県補助事業の追加に伴い、緊急雇用創出事業臨時特例基金事業を増額しております。"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:text-txt_contents "農林水産業費では、県の補助採択見込みに伴い、活力ある園芸産地創出支援事業費、農林水産業創意工夫プロジェクト支援事業費をそれぞれ増額しております。"@ja.
+<< kg:id_13 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "農林水産業費では、県の補助採択見込みに伴い、活力ある園芸産地創出支援事業費、農林水産業創意工夫プロジェクト支援事業費をそれぞれ増額しております。"@ja.
+<< kg:id_15 prop:cause kg:id_14 >>
+    prop:text-txt_contents "農林水産業費では、県の補助採択見込みに伴い、活力ある園芸産地創出支援事業費、農林水産業創意工夫プロジェクト支援事業費をそれぞれ増額しております。"@ja.
+<< kg:id_15 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "農林水産業費では、県の補助採択見込みに伴い、活力ある園芸産地創出支援事業費、農林水産業創意工夫プロジェクト支援事業費をそれぞれ増額しております。"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:text-txt_contents "土木費では、利用者増加に伴い、住宅リフォーム総合支援事業費を増額しております。"@ja.
+<< kg:id_16 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "土木費では、利用者増加に伴い、住宅リフォーム総合支援事業費を増額しております。"@ja.
+<< kg:id_18 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "これに充当する財源といたしましては、県支出金、繰入金などを増額し"@ja.
+<< kg:id_19 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "これに充当する財源といたしましては、県支出金、繰入金などを増額し"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "額の確定に伴う地方交付税などを減額しております。"@ja.
+<< kg:id_20 prop:countermeasure kg:id_22 >>
+    prop:text-txt_contents "額の確定に伴う地方交付税などを減額しております。"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:text-txt_contents "債務負担行為補正については、風力発電施設の検討を行うため、風力発電施設環境影響評価調査業務委託料"@ja.
+<< kg:id_23 prop:countermeasure kg:id_2 >>
+    prop:text-txt_contents "債務負担行為補正については、風力発電施設の検討を行うため、風力発電施設環境影響評価調査業務委託料、駅前開発に係る駅前有料建築物等公共施設分床取得費、駅前広場等企画調査設計委託料について新たに計上し"@ja.
+<< kg:id_25 prop:countermeasure kg:id_2 >>
+    prop:text-txt_contents "債務負担行為補正については、風力発電施設の検討を行うため、風力発電施設環境影響評価調査業務委託料、駅前開発に係る駅前有料建築物等公共施設分床取得費、駅前広場等企画調査設計委託料について新たに計上し"@ja.
+<< kg:id_26 prop:countermeasure kg:id_2 >>
+    prop:text-txt_contents "債務負担行為補正については、風力発電施設の検討を行うため、風力発電施設環境影響評価調査業務委託料、駅前開発に係る駅前有料建築物等公共施設分床取得費、駅前広場等企画調査設計委託料について新たに計上し"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:text-txt_contents "バス路線確保に係る生活交通バス路線維持費補助金について限度額を変更しております。"@ja.
+<< kg:id_27 prop:countermeasure kg:id_29 >>
+    prop:text-txt_contents "バス路線確保に係る生活交通バス路線維持費補助金について限度額を変更しております。"@ja.
+}

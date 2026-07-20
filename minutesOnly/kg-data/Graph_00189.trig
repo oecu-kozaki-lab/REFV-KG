@@ -1,0 +1,448 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00189> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電"@ja.
+kg:id_1 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_2 rdfs:label "野鳥への悪影響"@ja.
+kg:id_2 rdf:type cls:c_4260.
+cls:c_4260 rdfs:label "野鳥被害"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "バードストライク"@ja.
+kg:id_3 rdf:type cls:c_4199.
+cls:c_4199 rdfs:label "鳥類衝突"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "飛来地の変更"@ja.
+kg:id_4 rdf:type cls:c_4261.
+cls:c_4261 rdfs:label "生息地変化"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "猛禽類への脅威"@ja.
+kg:id_5 rdf:type cls:c_4262.
+cls:c_4262 rdfs:label "生物脅威"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "巨大風車をラムサール湿地2キロに建てる計画"@ja.
+kg:id_6 rdf:type cls:c_3870.
+cls:c_3870 rdfs:label "開発計画"@ja.
+kg:id_7 rdfs:label "国際的に非難されかねない"@ja.
+kg:id_7 rdf:type cls:c_4263.
+cls:c_4263 rdfs:label "国際的非難"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "環境アセス上で開発業者が依頼する鳥類の調査"@ja.
+kg:id_8 rdf:type cls:c_736.
+cls:c_736 rdfs:label "環境調査"@ja.
+kg:id_9 rdfs:label "十分な調査ではない"@ja.
+kg:id_9 rdf:type cls:c_4264.
+cls:c_4264 rdfs:label "調査不足"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "アセスに踏み込むこと"@ja.
+kg:id_10 rdf:type cls:c_4265.
+cls:c_4265 rdfs:label "環境手続"@ja.
+kg:id_11 rdfs:label "事業をおおむね認めることになる"@ja.
+kg:id_11 rdf:type cls:c_4266.
+cls:c_4266 rdfs:label "事業容認"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "2021年10月の法改正による今回の計画"@ja.
+kg:id_12 rdf:type cls:c_741.
+cls:c_741 rdfs:label "法改正"@ja.
+kg:id_13 rdfs:label "配慮相談会での説明や意見受理が省かれ方法書段階に踏み込まれるリスク"@ja.
+kg:id_13 rdf:type cls:c_4267.
+cls:c_4267 rdfs:label "説明省略"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "環境保全上重要な地域を事前に避ける"@ja.
+kg:id_14 rdf:type cls:c_4268.
+cls:c_4268 rdfs:label "立地回避"@ja.
+kg:id_1 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "風力発電計画"@ja.
+kg:id_15 rdf:type cls:c_3870.
+kg:id_16 rdfs:label "市長の中止要請"@ja.
+kg:id_16 rdf:type cls:c_4269.
+cls:c_4269 rdfs:label "中止要請"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "ラムサール条約湿地"@ja.
+kg:id_17 rdf:type cls:c_4270.
+cls:c_4270 rdfs:label "保全地域"@ja.
+kg:id_18 rdfs:label "5キロメートルのバッファーゾーンを含めたゾーニングで規制することをガイドライン上に明記"@ja.
+kg:id_18 rdf:type cls:c_4271.
+cls:c_4271 rdfs:label "区域規制"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "ラムサール条約登録湿地"@ja.
+kg:id_19 rdf:type cls:c_4270.
+kg:id_20 rdfs:label "ゾーニング規制の検討"@ja.
+kg:id_20 rdf:type cls:c_4271.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "風車騒音"@ja.
+kg:id_21 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_22 rdfs:label "煩わしさの程度が上がる"@ja.
+kg:id_22 rdf:type cls:c_4272.
+cls:c_4272 rdfs:label "不快感"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "睡眠への影響のリスク増加"@ja.
+kg:id_23 rdf:type cls:c_4273.
+cls:c_4273 rdfs:label "睡眠影響"@ja.
+kg:id_21 prop:effect kg:id_23.
+kg:id_24 rdfs:label "風力発電施設の大型化や出力増大"@ja.
+kg:id_24 rdf:type cls:c_591.
+kg:id_25 rdfs:label "ガイドライン見直しの必要性を検討"@ja.
+kg:id_25 rdf:type cls:c_4274.
+cls:c_4274 rdfs:label "基準見直し"@ja.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "鶴岡八森山風力発電事業の風車騒音"@ja.
+kg:id_26 rdf:type cls:c_88.
+kg:id_27 rdfs:label "睡眠障害"@ja.
+kg:id_27 rdf:type cls:c_3382.
+cls:c_3382 rdfs:label "睡眠障害"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "アンケート調査等の検討"@ja.
+kg:id_28 rdf:type cls:c_1939.
+cls:c_1939 rdfs:label "実態調査"@ja.
+kg:id_26 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "三瀬矢引風力発電事業"@ja.
+kg:id_29 rdf:type cls:c_3870.
+kg:id_30 rdfs:label "鶴岡八森山風力発電事業との累積的な影響"@ja.
+kg:id_30 rdf:type cls:c_4251.
+cls:c_4251 rdfs:label "累積影響"@ja.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "騒音及び低周波音"@ja.
+kg:id_31 rdf:type cls:c_3057.
+cls:c_3057 rdfs:label "騒音被害"@ja.
+kg:id_29 prop:effect kg:id_31.
+kg:id_32 rdfs:label "風車の影などが学校等や周辺住民の生活環境への影響"@ja.
+kg:id_32 rdf:type cls:c_484.
+cls:c_484 rdfs:label "生活影響"@ja.
+kg:id_29 prop:effect kg:id_32.
+kg:id_33 rdfs:label "急傾斜地の崩落 地滑り 土石流の発生などの危険性"@ja.
+kg:id_33 rdf:type cls:c_84.
+cls:c_84 rdfs:label "災害危険"@ja.
+kg:id_29 prop:effect kg:id_33.
+kg:id_34 rdfs:label "ニッポンユビナガコウモリやクマタカ オオタカの生息への影響"@ja.
+kg:id_34 rdf:type cls:c_4275.
+cls:c_4275 rdfs:label "生息影響"@ja.
+kg:id_29 prop:effect kg:id_34.
+kg:id_35 rdfs:label "風力発電設備の配置の再検討"@ja.
+kg:id_35 rdf:type cls:c_635.
+cls:c_635 rdfs:label "配置見直し"@ja.
+kg:id_29 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "事業実施想定区域及び基数の削減を含む事業計画の見直し"@ja.
+kg:id_36 rdf:type cls:c_271.
+cls:c_271 rdfs:label "計画見直し"@ja.
+kg:id_29 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "風車規模の拡大"@ja.
+kg:id_37 rdf:type cls:c_3748.
+cls:c_3748 rdfs:label "設備大型化"@ja.
+kg:id_38 rdfs:label "地域住民の睡眠障害"@ja.
+kg:id_38 rdf:type cls:c_3382.
+kg:id_37 prop:effect kg:id_38.
+kg:id_39 rdfs:label "鳥類の渡りルートに対する累積的影響"@ja.
+kg:id_39 rdf:type cls:c_4251.
+kg:id_37 prop:effect kg:id_39.
+kg:id_40 rdfs:label "市のガイドライン"@ja.
+kg:id_40 rdf:type cls:c_4154.
+cls:c_4154 rdfs:label "指針"@ja.
+kg:id_41 rdfs:label "住民説明会の対象範囲や持ち方の検討"@ja.
+kg:id_41 rdf:type cls:c_3073.
+cls:c_3073 rdfs:label "説明改善"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "JREの姿勢"@ja.
+kg:id_42 rdf:type cls:c_4276.
+cls:c_4276 rdfs:label "事業者対応"@ja.
+kg:id_43 rdfs:label "加茂 大山の住民への説明がごく限られた人たちだけにしかされていない"@ja.
+kg:id_43 rdf:type cls:c_663.
+cls:c_663 rdfs:label "説明不足"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "市民有志の説明要請を拒む"@ja.
+kg:id_44 rdf:type cls:c_4277.
+cls:c_4277 rdfs:label "説明拒否"@ja.
+kg:id_42 prop:effect kg:id_44.
+kg:id_45 rdfs:label "ネーチャーポジティブの考え方"@ja.
+kg:id_45 rdf:type cls:c_4278.
+cls:c_4278 rdfs:label "環境理念"@ja.
+kg:id_46 rdfs:label "生物多様性と湿地の重要性を認識して取り組む"@ja.
+kg:id_46 rdf:type cls:c_4279.
+cls:c_4279 rdfs:label "保全取組"@ja.
+kg:id_45 prop:countermeasure kg:id_46.
+kg:st_1 rdfs:label "草島進一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "風車による野鳥への悪影響は十分想定できる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "自然を愛する全国の方々"@ja.
+kg:st_2 rdf:type cls:st_22.
+cls:st_22 rdfs:label "市民"@ja.
+kg:op_2 prop:content "市長の中止要請を大変評価している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "風車によるバードストライクが懸念される"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "飛来地の変更も十分想定できる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "猛禽類にとって特に脅威となる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "計画は完全に非常識で国際的非難を招きかねない"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "開発業者依頼の鳥類調査は決して十分ではない"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "アセスに進めば事業をおおむね認めることになりがちだ"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "説明や意見受理が省かれ方法書段階へ進むリスクがあった"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "予防原則として重要地域を事前に避けるべきだ"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "市長の中止要請は極めて妥当である"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "反対署名8,000名以上の方々 地元加茂 大山を含む多くの市民 野鳥研究の関係者 自然を愛する全国の方々"@ja.
+kg:st_3 rdf:type cls:st_22.
+kg:op_12 prop:content "市長の中止要請を大変評価している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "5キロのバッファーゾーンを設けガイドラインに明記すべきだ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "市民部長 伊藤慶也"@ja.
+kg:st_4 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_14 prop:content "国を通じて専門的知見を収集しながら検討したい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "静かな環境で35から40デシベル超過時に煩わしさが増す可能性がある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "睡眠への影響リスクが増加する可能性がある"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "風車騒音について国の動きを注視すべきだ"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "国の指針動向を注視しガイドライン見直しを検討したい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "現時点で地元自治会から睡眠障害の話は受けていない"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "自治会任せでなく市として悉皆調査を行うべきだ"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "地元自治会の意向を伺いながらアンケート調査等を検討したい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "累積的影響が懸念される"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_4.
+kg:op_23 prop:content "騒音や低周波音による影響が懸念される"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "風車の影などが学校や住民生活環境に影響することが懸念される"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "急傾斜地崩落や地滑り 土石流の危険性が懸念される"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "希少種の生息への影響が懸念される"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:op_27 prop:content "環境影響を回避または十分低減できない場合は配置の再検討を求めている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "区域や基数の削減を含む計画見直しを求めている"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "風車規模拡大に伴う睡眠障害への累積的影響を慎重に検討したい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:op_30 prop:content "鳥類の渡りルートへの累積的影響を慎重に検討したい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "環境審議会などの有識者の意見を伺いながら検討したい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "市民全体にオープンな説明を義務づけるようガイドラインを早急に見直すべきだ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "事業者説明は限定的で不十分だった"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "市民有志の説明要請を事業者が拒否した"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "市長 皆川治"@ja.
+kg:st_5 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_35 prop:content "ネーチャーポジティブへの理解を深め生物多様性と湿地の重要性を認識して取り組む"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_5.
+kg:op_36 prop:content "市長の決断はネーチャーポジティブの時代にふさわしい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "風車によるバードストライクや飛来地の変更などの影響は十分に想定できます。こうした日々の調査結果でも、風車による悪影響は十分想定できます。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "風車によるバードストライクや飛来地の変更などの影響は十分に想定できます。風車によるオジロワシのバードストライクは国内でも70例確認されており、猛禽類にとって特に脅威となっております。"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風車によるバードストライクや飛来地の変更などの影響は十分に想定できます。"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "風車によるオジロワシのバードストライクは国内でも70例確認されており、猛禽類にとって特に脅威となっております。"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "６メガワットもの巨大風車をラムサール湿地２キロに建てるなどという計画は完全に非常識で、国際的に非難されかねないということはしっかりと認識すべきであります。"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "環境アセス上で開発業者が依頼する鳥類の調査は、決して十分なものではなく"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "要するにアセスに踏み込めば、事業をおおむね認めることになるというのがよくある話とお伺いしております。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "2021年10月の法改正で、今回の計画では、配慮相談会での説明や意見受理が省かれ、いきなり方法書段階に踏み込まれるリスクもあったと思います。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "風力発電では、環境保全上重要な地域を事前に避けるべきという予防原則がバードライフ・インターナショナルでの勧告でもあり"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "予防的措置としてこのタイミングで判断された今般の市長の中止要請は極めて妥当であると評価をいたします。現在集まっている反対署名8,000名以上の方々、地元加茂、大山を含む多くの市民をはじめ、野鳥研究の関係者、自然を愛する全国の方々が大変評価されております。"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "改めてラムサール条約湿地を世界遺産に準じて、５キロメートルのバッファーゾーンを含めてゾーニングで規制することをガイドライン上に明記いただきたいと思います。"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "本市ガイドラインにおけるラムサール条約登録湿地からのゾーニング規制につきましては、引き続き国を通じて専門的知見等、情報収集に努めながら、検討してまいりたいと考えております。"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "国の指針では、静かな環境では風車騒音が35から40デシベルを超過すると、煩わしさの程度が上がり"@ja.
+<< kg:id_21 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "国の指針では、静かな環境では風車騒音が35から40デシベルを超過すると、煩わしさの程度が上がり、睡眠への影響のリスクを増加させる可能性があることが示唆されております。"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "本市においては、数値のみで判断するのではなく、年々風力発電施設の大型化や出力が増大している状況でございますので、国が示す指針などの動向を注視しながら、本市のガイドラインの見直しの必要性について検討してまいりたいと考えております。"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "鶴岡八森山風力発電事業における風車騒音に関する睡眠障害などにつきましては、現時点で地元自治会からはお話をいただいておりません。三瀬八森山の風車の関連については、これは自治会に尋ねていても駄目で、しっかりと市として悉皆調査をやっていただきたいと思います。"@ja.
+<< kg:id_26 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "アンケート調査等につきましては、地元自治会の意向を伺いながら検討してまいりたいと考えております。"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "現在稼働している鶴岡八森山風力発電事業との累積的な影響"@ja.
+<< kg:id_29 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "騒音及び低周波音"@ja.
+<< kg:id_29 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "風車の影などが学校等や周辺住民の生活環境への影響"@ja.
+<< kg:id_29 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "急傾斜地崩落危険区域における急傾斜地の崩落、それから地滑り、土石流の発生などの危険性"@ja.
+<< kg:id_29 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "県指定の三瀬葉山ニッポンユビナガコウモリや希少猛禽類のクマタカ、それからオオタカの生息への影響などが懸念される"@ja.
+<< kg:id_29 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "環境影響を回避、または十分に低減できない場合には、風力発電設備の配置の再検討"@ja.
+<< kg:id_29 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "事業実施想定区域及び基数の削減を含む事業計画の見直しを行うようを意見しているところです。"@ja.
+<< kg:id_37 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "風車規模の拡大に伴う地域住民の睡眠障害"@ja.
+<< kg:id_37 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "鳥類の渡りルートなどに対する累積的影響につきましても、国や県の助言をいただきながら慎重に検討してまいりたいと考えております。"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "市のガイドラインの件でございますけれども、ガイドラインで定める住民説明会の対象範囲や持ち方などにつきましても、今後環境審議会など、有識者からの御意見等も伺いながら検討してまいりたいと考えております。ガイドライン上でしっかりとオープンの形で市民全体に説明しなきゃいけないということをしっかり明記するというか、ガイドラインを今すぐにでも変えていただきたい。"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "例えば加茂、大山の住民にしっかりと説明をしてきたのかというと、ごくごく限られた人たちだけにしかしていない。"@ja.
+<< kg:id_42 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "市民有志で考える会というのをつくって、そういう企画をして、事業者を呼んで説明を請うたわけですけれども、全くそれを拒むという姿勢でありました。"@ja.
+<< kg:id_45 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "このネーチャーポジティブ、国の次期生物多様性国家戦略の中でも盛り込まれていくということでございますので、こうした考え方についても理解を深めまして、生物多様性、またこの湿地の重要性について、しっかり認識をして取り組んでいきたいというふうに思っております。今般の市長の決断というのは、このネーチャーポジティブの時代にふさわしい判断だと私は高く評価をしております。"@ja.
+}

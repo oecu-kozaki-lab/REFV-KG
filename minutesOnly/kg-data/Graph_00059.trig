@@ -1,0 +1,642 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00059> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地球温暖化による気候変動"@ja.
+kg:id_1 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_2 rdfs:label "産業革命以来の急速な進行"@ja.
+kg:id_2 rdf:type cls:c_1552.
+cls:c_1552 rdfs:label "温暖化進行"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "世界的物価高騰"@ja.
+kg:id_3 rdf:type cls:c_1553.
+cls:c_1553 rdfs:label "物価高騰"@ja.
+kg:id_4 rdfs:label "ロシアによるウクライナ侵攻"@ja.
+kg:id_4 rdf:type cls:c_1554.
+cls:c_1554 rdfs:label "武力侵攻"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "危機の時代"@ja.
+kg:id_5 rdf:type cls:c_1555.
+cls:c_1555 rdfs:label "危機時代"@ja.
+kg:id_5 prop:cause kg:id_1.
+kg:id_6 rdfs:label "新型コロナウイルス感染症"@ja.
+kg:id_6 rdf:type cls:c_220.
+cls:c_220 rdfs:label "感染症流行"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_5 prop:cause kg:id_4.
+kg:id_5 prop:cause kg:id_3.
+kg:id_7 rdfs:label "核兵器使用への現実的な恐怖"@ja.
+kg:id_7 rdf:type cls:c_1556.
+cls:c_1556 rdfs:label "核使用恐怖"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "不安要素"@ja.
+kg:id_8 rdf:type cls:c_1557.
+cls:c_1557 rdfs:label "不安要素"@ja.
+kg:id_9 rdfs:label "市民生活に大きな影響"@ja.
+kg:id_9 rdf:type cls:c_1558.
+cls:c_1558 rdfs:label "市民生活影響"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "本市の財政運営の厳しさ増大"@ja.
+kg:id_10 rdf:type cls:c_1559.
+cls:c_1559 rdfs:label "財政運営難"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "新型コロナウイルス感染症の感染拡大"@ja.
+kg:id_11 rdf:type cls:c_220.
+kg:id_12 rdfs:label "社会経済活動に大きな制約"@ja.
+kg:id_12 rdf:type cls:c_1560.
+cls:c_1560 rdfs:label "社会活動制約"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "イベントへの大きな影響"@ja.
+kg:id_13 rdf:type cls:c_1561.
+cls:c_1561 rdfs:label "行事影響"@ja.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "他地域との交流事業への大きな影響"@ja.
+kg:id_14 rdf:type cls:c_1562.
+cls:c_1562 rdfs:label "交流事業影響"@ja.
+kg:id_11 prop:effect kg:id_14.
+kg:id_15 rdfs:label "デジタル人材不足"@ja.
+kg:id_15 rdf:type cls:c_355.
+cls:c_355 rdfs:label "人材不足"@ja.
+kg:id_16 rdfs:label "東北公益文科大学と市内IT関連企業の協働によるデジタル人材育成"@ja.
+kg:id_16 rdf:type cls:c_45.
+cls:c_45 rdfs:label "人材育成"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "学生の学習意欲不足"@ja.
+kg:id_17 rdf:type cls:c_1563.
+cls:c_1563 rdfs:label "学習意欲不足"@ja.
+kg:id_18 rdfs:label "市内IT関連企業と学生の直接交流"@ja.
+kg:id_18 rdf:type cls:c_1564.
+cls:c_1564 rdfs:label "交流機会"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "東北公益文科大学の存続危機"@ja.
+kg:id_19 rdf:type cls:c_1565.
+cls:c_1565 rdfs:label "大学存続危機"@ja.
+kg:id_20 rdfs:label "18歳人口の急速な減少"@ja.
+kg:id_20 rdf:type cls:c_1566.
+cls:c_1566 rdfs:label "若年人口減少"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "地方の私立文系大学における学生確保の厳しさ"@ja.
+kg:id_21 rdf:type cls:c_1567.
+cls:c_1567 rdfs:label "学生確保難"@ja.
+kg:id_19 prop:cause kg:id_21.
+kg:id_22 rdfs:label "公立化を急ぐ"@ja.
+kg:id_22 rdf:type cls:c_1568.
+cls:c_1568 rdfs:label "公立化"@ja.
+kg:id_19 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "文化芸術振興の連携不足"@ja.
+kg:id_23 rdf:type cls:c_1569.
+cls:c_1569 rdfs:label "連携不足"@ja.
+kg:id_24 rdfs:label "文化政策課による市民団体の運営基盤づくり"@ja.
+kg:id_24 rdf:type cls:c_1570.
+cls:c_1570 rdfs:label "運営基盤強化"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "新たな団体の育成"@ja.
+kg:id_25 rdf:type cls:c_1571.
+cls:c_1571 rdfs:label "団体育成"@ja.
+kg:id_23 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "行政との連携体制の構築"@ja.
+kg:id_26 rdf:type cls:c_1572.
+cls:c_1572 rdfs:label "連携体制"@ja.
+kg:id_23 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "外部から専門的なスタッフを招いて配置"@ja.
+kg:id_27 rdf:type cls:c_1573.
+cls:c_1573 rdfs:label "専門人材配置"@ja.
+kg:id_23 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "部長級配置による部局横断的推進"@ja.
+kg:id_28 rdf:type cls:c_1574.
+cls:c_1574 rdfs:label "横断推進"@ja.
+kg:id_23 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "酒田港の基地港湾指定の遅れ"@ja.
+kg:id_29 rdf:type cls:c_1575.
+cls:c_1575 rdfs:label "港湾指定遅延"@ja.
+kg:id_30 rdfs:label "2つ以上の洋上風力海域の指定が必要"@ja.
+kg:id_30 rdf:type cls:c_1576.
+cls:c_1576 rdfs:label "海域指定要件"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "山形県沖の案件が遊佐町沖のみ"@ja.
+kg:id_31 rdf:type cls:c_1577.
+cls:c_1577 rdfs:label "海域案件不足"@ja.
+kg:id_29 prop:cause kg:id_31.
+kg:id_32 rdfs:label "洋上風力発電事業"@ja.
+kg:id_32 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_33 rdfs:label "地元経済への波及効果"@ja.
+kg:id_33 rdf:type cls:c_420.
+cls:c_420 rdfs:label "地域経済効果"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "エネルギー関連産業の集積"@ja.
+kg:id_34 rdf:type cls:c_873.
+cls:c_873 rdfs:label "産業集積"@ja.
+kg:id_32 prop:effect kg:id_34.
+kg:id_35 rdfs:label "漁業者への影響"@ja.
+kg:id_35 rdf:type cls:c_280.
+cls:c_280 rdfs:label "漁業影響"@ja.
+kg:id_32 prop:effect kg:id_35.
+kg:id_36 rdfs:label "周辺住民への景観影響"@ja.
+kg:id_36 rdf:type cls:c_1578.
+cls:c_1578 rdfs:label "住民影響"@ja.
+kg:id_32 prop:effect kg:id_36.
+kg:id_37 rdfs:label "未知の影響への懸念"@ja.
+kg:id_37 rdf:type cls:c_1579.
+cls:c_1579 rdfs:label "不明影響"@ja.
+kg:id_32 prop:effect kg:id_37.
+kg:id_38 rdfs:label "洋上風力発電事業の地域課題"@ja.
+kg:id_38 rdf:type cls:c_490.
+cls:c_490 rdfs:label "地域課題"@ja.
+kg:id_39 rdfs:label "漁業者や周辺住民など利害関係者との調整"@ja.
+kg:id_39 rdf:type cls:c_196.
+cls:c_196 rdfs:label "利害調整"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "地域振興策の検討"@ja.
+kg:id_40 rdf:type cls:c_1361.
+cls:c_1361 rdfs:label "地域振興策"@ja.
+kg:id_38 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "エネルギー関連産業集積の課題"@ja.
+kg:id_41 rdf:type cls:c_1580.
+cls:c_1580 rdfs:label "産業集積課題"@ja.
+kg:id_42 rdfs:label "企業誘致の課題"@ja.
+kg:id_42 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_41 prop:cause kg:id_42.
+kg:id_43 rdfs:label "工業用地確保の課題"@ja.
+kg:id_43 rdf:type cls:c_1581.
+cls:c_1581 rdfs:label "用地確保"@ja.
+kg:id_41 prop:cause kg:id_43.
+kg:id_44 rdfs:label "関係機関と連携して進める"@ja.
+kg:id_44 rdf:type cls:c_1582.
+cls:c_1582 rdfs:label "機関連携"@ja.
+kg:id_41 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "コロナ禍で影響を受ける事業所の資金繰り不安"@ja.
+kg:id_45 rdf:type cls:c_1583.
+cls:c_1583 rdfs:label "資金繰り不安"@ja.
+kg:id_46 rdfs:label "ゼロゼロ融資返済の本格化"@ja.
+kg:id_46 rdf:type cls:c_1584.
+cls:c_1584 rdfs:label "融資返済"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "利子補給と保証料補給"@ja.
+kg:id_47 rdf:type cls:c_1585.
+cls:c_1585 rdfs:label "利子補給"@ja.
+kg:id_45 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "返済期間延長制度の検討"@ja.
+kg:id_48 rdf:type cls:c_1586.
+cls:c_1586 rdfs:label "返済猶予"@ja.
+kg:id_45 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "原油価格・物価高騰"@ja.
+kg:id_49 rdf:type cls:c_1553.
+kg:id_50 rdfs:label "原油価格・物価高騰緊急支援補助金"@ja.
+kg:id_50 rdf:type cls:c_1587.
+cls:c_1587 rdfs:label "緊急補助"@ja.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "PayPayポイント還元キャンペーン実施の難しさ"@ja.
+kg:id_51 rdf:type cls:c_1588.
+cls:c_1588 rdfs:label "施策実施難"@ja.
+kg:id_52 rdfs:label "数億円から十数億円の予算が必要"@ja.
+kg:id_52 rdf:type cls:c_1589.
+cls:c_1589 rdfs:label "予算不足"@ja.
+kg:id_51 prop:cause kg:id_52.
+kg:id_53 rdfs:label "基地港湾指定に向けた課題"@ja.
+kg:id_53 rdf:type cls:c_1590.
+cls:c_1590 rdfs:label "港湾指定課題"@ja.
+kg:id_54 rdfs:label "2つの海域の早期案件形成の必要"@ja.
+kg:id_54 rdf:type cls:c_1591.
+cls:c_1591 rdfs:label "案件形成"@ja.
+kg:id_53 prop:cause kg:id_54.
+kg:id_55 rdfs:label "基地港湾に関する港湾計画変更の遅延"@ja.
+kg:id_55 rdf:type cls:c_1592.
+cls:c_1592 rdfs:label "計画遅延"@ja.
+kg:id_53 prop:cause kg:id_55.
+kg:id_56 rdfs:label "県による横断的取組の深化"@ja.
+kg:id_56 rdf:type cls:c_1593.
+cls:c_1593 rdfs:label "横断取組"@ja.
+kg:id_53 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "地域理解醸成の促進"@ja.
+kg:id_57 rdf:type cls:c_1506.
+cls:c_1506 rdfs:label "理解醸成"@ja.
+kg:id_53 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "基地港湾指定"@ja.
+kg:id_58 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_59 rdfs:label "地元企業への経済波及効果"@ja.
+kg:id_59 rdf:type cls:c_1594.
+cls:c_1594 rdfs:label "経済波及"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "交流人口の増加"@ja.
+kg:id_60 rdf:type cls:c_169.
+cls:c_169 rdfs:label "交流人口増"@ja.
+kg:id_58 prop:effect kg:id_60.
+kg:id_61 rdfs:label "市内宿泊施設等への波及効果"@ja.
+kg:id_61 rdf:type cls:c_1595.
+cls:c_1595 rdfs:label "宿泊需要増"@ja.
+kg:id_58 prop:effect kg:id_61.
+kg:id_62 rdfs:label "新たな産業形成"@ja.
+kg:id_62 rdf:type cls:c_1417.
+cls:c_1417 rdfs:label "産業形成"@ja.
+kg:id_58 prop:effect kg:id_62.
+kg:id_63 rdfs:label "再生可能エネルギーの導入拡大"@ja.
+kg:id_63 rdf:type cls:c_1596.
+cls:c_1596 rdfs:label "再エネ拡大"@ja.
+kg:id_58 prop:effect kg:id_63.
+kg:id_64 rdfs:label "関連産業による雇用創出"@ja.
+kg:id_64 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_58 prop:effect kg:id_64.
+kg:id_65 rdfs:label "定住人口の増加"@ja.
+kg:id_65 rdf:type cls:c_1597.
+cls:c_1597 rdfs:label "定住人口増"@ja.
+kg:id_58 prop:effect kg:id_65.
+kg:id_66 rdfs:label "酒田港が基地港湾に指定されない事態"@ja.
+kg:id_66 rdf:type cls:c_1598.
+cls:c_1598 rdfs:label "機会喪失"@ja.
+kg:id_67 rdfs:label "酒田にとって大きな機会の喪失"@ja.
+kg:id_67 rdf:type cls:c_1599.
+cls:c_1599 rdfs:label "地域機会損失"@ja.
+kg:id_66 prop:effect kg:id_67.
+kg:st_1 rdfs:label "学者"@ja.
+kg:st_1 rdf:type cls:st_10.
+cls:st_10 rdfs:label "研究者"@ja.
+kg:op_1 prop:content "現代を危機の時代と捉える"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "現代を危機の時代と捉える"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "現代を危機の時代と捉える"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "現代を危機の時代と捉える"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "現代を危機の時代と捉える"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "佐藤猛議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_6 prop:content "不安要素が市民生活に大きく影響していると認識する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "本市の財政運営も厳しさが増していると認識する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "丸山市長"@ja.
+kg:st_3 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_8 prop:content "感染拡大により社会経済活動が大きく制約された"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "様々なイベントが大きな影響を受けた"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "他地域との交流事業が大きな影響を受けた"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "地元大学と企業の協働で不足するデジタル人材の確保を期待する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "企業との直接交流で学習への動機づけ向上を図る"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "18歳人口減少で大学存続への危機感を持つ"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "地方私立文系大学の学生確保が一段と厳しくなるとみている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "大学存続のためまず公立化を急ぐべきだ"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "市民団体の運営基盤を強化する必要がある"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "新たな団体も育成し連携体制を構築したい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "団体と行政の連携を図る必要がある"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "専門スキルを補うため外部専門スタッフ配置が必要"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "部長級を配置し部局横断で進めたい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "基地港湾指定には2海域以上の指定が必要だ"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "現時点では遊佐町沖しか案件がない"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "風車建設や運用で地元経済への波及効果が見込まれる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "カーボンニュートラルポートとして関連産業集積が見込まれる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "海を生業とする漁業者への影響が懸念される"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "景観等による周辺住民への影響が懸念される"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:op_27 prop:content "未知の影響も懸念されている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:op_28 prop:content "地域の意見形成へ利害関係者との調整に協力する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "地域振興策の検討に協力したい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "関連産業集積には企業誘致が課題になる"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "工業用地の確保が課題になる"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "関係機関と連携して進めたい"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "市村浩一議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_33 prop:content "返済本格化で事業所は先行きを見通せない"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "中小企業・小規模事業者向けに利子補給と保証料補給を実施する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "返済期間を延長し返済額を低減させる制度を案内予定"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "幅広い業種向けに緊急支援補助金を実施してきた"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "必要額が大きく実施は難しいと判断している"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "県主導による2海域の早期案件形成が課題だ"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "港湾計画変更の遅延が課題だ"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:op_40 prop:content "県には組織横断的な取組の深化を求める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_3.
+kg:op_41 prop:content "県に主体的な地域理解醸成を求める"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_3.
+kg:op_42 prop:content "基地港湾整備や洋上風力建設で地元企業への波及を期待する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_3.
+kg:op_43 prop:content "建設や調査で交流人口増加が期待できる"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_3.
+kg:op_44 prop:content "宿泊施設などへの波及効果を期待する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "地域振興策により新たな産業形成が期待される"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_3.
+kg:op_46 prop:content "再生可能エネルギーの導入拡大が期待される"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_3.
+kg:op_47 prop:content "次世代エネルギー普及で関連産業の雇用創出が期待される"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_3.
+kg:op_48 prop:content "雇用創出により定住人口増加が期待される"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_3.
+kg:op_49 prop:content "基地港湾指定は令和の北前船時代とも言える大きなチャンスであり逃してはならない"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "産業革命以来、急速に進んだ地球温暖化による気候変動"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "大国ロシアによるウクライナ侵攻、それに伴う世界的物価高騰"@ja.
+<< kg:id_5 prop:cause kg:id_1 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "産業革命以来、急速に進んだ地球温暖化による気候変動、加えて、我が国では2019年より広がった新型コロナウイルス感染症、さらには21世紀のこの時代、あり得ないと思っていた大国ロシアによるウクライナ侵攻、それに伴う世界的物価高騰、核兵器使用への現実的な恐怖、現代を総称して危機の時代と呼ぶ学者も現れております"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "産業革命以来、急速に進んだ地球温暖化による気候変動、加えて、我が国では2019年より広がった新型コロナウイルス感染症、さらには21世紀のこの時代、あり得ないと思っていた大国ロシアによるウクライナ侵攻、それに伴う世界的物価高騰、核兵器使用への現実的な恐怖、現代を総称して危機の時代と呼ぶ学者も現れております"@ja.
+<< kg:id_5 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "産業革命以来、急速に進んだ地球温暖化による気候変動、加えて、我が国では2019年より広がった新型コロナウイルス感染症、さらには21世紀のこの時代、あり得ないと思っていた大国ロシアによるウクライナ侵攻、それに伴う世界的物価高騰、核兵器使用への現実的な恐怖、現代を総称して危機の時代と呼ぶ学者も現れております"@ja.
+<< kg:id_5 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "産業革命以来、急速に進んだ地球温暖化による気候変動、加えて、我が国では2019年より広がった新型コロナウイルス感染症、さらには21世紀のこの時代、あり得ないと思っていた大国ロシアによるウクライナ侵攻、それに伴う世界的物価高騰、核兵器使用への現実的な恐怖、現代を総称して危機の時代と呼ぶ学者も現れております"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "産業革命以来、急速に進んだ地球温暖化による気候変動、加えて、我が国では2019年より広がった新型コロナウイルス感染症、さらには21世紀のこの時代、あり得ないと思っていた大国ロシアによるウクライナ侵攻、それに伴う世界的物価高騰、核兵器使用への現実的な恐怖、現代を総称して危機の時代と呼ぶ学者も現れております"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これらの不安要素は市民生活に大きな影響を与え"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "さらに本市の財政運営もまた厳しさが増しているものと認識しております"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "新型コロナウイルス感染症の感染拡大によりまして社会経済活動に大きな制約を受けたところでございました"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "様々なイベントですとか、あるいは他地域との交流事業が非常に大きな影響を受けた"@ja.
+<< kg:id_11 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "様々なイベントですとか、あるいは他地域との交流事業が非常に大きな影響を受けた"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "東北公益文科大学と協働してデジタル人材を育成することによって、不足するデジタル人材を地元の大学から採用することが期待できる"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "市内のＩＴ関連企業と学生が直接交流することで、ＩＴ技術の職場での活用方法について理解を深めることによって、学生の学習に対する動機づけの向上を図る"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "18歳の人口は今後急速に減少していく中で"@ja.
+<< kg:id_19 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "地方の私立文系大学における学生確保は一段と厳しくなることが予想されておりまして、本市はそういった状況を考えると、この大学の存続そのものが危なくなる"@ja.
+<< kg:id_19 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "大学を存続させていくための手段として、まずは公立化を急ぐべきであると考えている"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "文化政策課から担っていただきたいなと思っているのは、文化芸術の振興に係る市民団体による運営基盤づくり"@ja.
+<< kg:id_23 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "既存の団体、それから新しいそういった団体の育成も含めて、この連携体制をしっかりと構築していく"@ja.
+<< kg:id_23 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "そういった団体と行政との連携を図る必要がある"@ja.
+<< kg:id_23 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "外部から専門的なスタッフを招いて配置をしながら"@ja.
+<< kg:id_23 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "内部的には部長級をしっかりそこに配置をしながら、歴史や文化や芸術を重視するまちづくりというものを部局横断的に進めていきたい"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "酒田港の基地港湾の指定に当たりましては、港湾法によりまして２つ以上の洋上風力の海域が指定されることが必要"@ja.
+<< kg:id_29 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "現時点での山形県沖の案件としては、令和３年９月に有望な区域に指定をされた遊佐町沖のみ"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "洋上風力発電事業での地元経済の波及効果といたしましては、風車建設やその建設された風車の運用"@ja.
+<< kg:id_32 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "カーボンニュートラルポートとしてのエネルギー関連産業の集積等も見込まれます"@ja.
+<< kg:id_32 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "海を生業とする漁業者への影響"@ja.
+<< kg:id_32 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "景観等による周辺住民への影響"@ja.
+<< kg:id_32 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "未知の影響も懸念されているというのが現状でございます"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "漁業者や周辺住民などの利害関係者との調整や地域振興策の検討等に協力をしていきたい"@ja.
+<< kg:id_38 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "地域振興策の検討等に協力をしていきたい"@ja.
+<< kg:id_41 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "エネルギー関連産業の集積を図るためには、企業誘致や工業用地の確保などの課題もある"@ja.
+<< kg:id_41 prop:cause kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "エネルギー関連産業の集積を図るためには、企業誘致や工業用地の確保などの課題もある"@ja.
+<< kg:id_41 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "関係機関とも連携して進めてまいりたい"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "コロナ禍での実質無利子・無担保融資、いわゆるゼロゼロ融資の返済も今年の夏頃に返済が本格化する見込みとあり、影響を受ける事業所にとっては先行きを見通せない状況"@ja.
+<< kg:id_45 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "中小企業・小規模事業者約550件に対する利子補給と保証料補給"@ja.
+<< kg:id_45 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "返済期間を延長し、１回当たりの返済額を低減させる制度を県が中心となって検討"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "幅広い業種向けに原油価格・物価高騰緊急支援補助金などの支援を実施してきた"@ja.
+<< kg:id_51 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "数億円から十数億円の予算が必要となることから、使える交付金が約２億円ということから考えると、なかなかこれは難しい"@ja.
+<< kg:id_53 prop:cause kg:id_54 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "基地港湾の指定に向けた課題といたしましては、山形県が主導する２つの海域の早期案件形成"@ja.
+<< kg:id_53 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "基地港湾に関する港湾計画の変更の遅延、これが課題として挙げられる"@ja.
+<< kg:id_53 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "海域先行利用者等に寄り添った県の組織をまたぐ横断的な取組の深化"@ja.
+<< kg:id_53 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "地域の理解醸成の促進を主体的に進めてもらうことが重要"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "短期的には基地港湾の整備や洋上風力の建設に関する地元企業への経済波及効果を期待しております"@ja.
+<< kg:id_58 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "建設や現地調査等で多くの交流人口が増加する"@ja.
+<< kg:id_58 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "市内宿泊施設等への波及効果も期待している"@ja.
+<< kg:id_58 prop:effect kg:id_62 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "洋上風力発電事業の地域振興策による新たな産業形成"@ja.
+<< kg:id_58 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "再生可能エネルギーの導入拡大"@ja.
+<< kg:id_58 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "水素などの次世代エネルギーが普及することで、関連産業による雇用が創出され"@ja.
+<< kg:id_58 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "本市への定住人口の増加が期待される"@ja.
+<< kg:id_66 prop:effect kg:id_67 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "この基地港湾指定は、私は、酒田にとって令和の北前船時代の到来と言っていいほど大きなチャンス"@ja.
+}

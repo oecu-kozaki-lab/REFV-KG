@@ -1,0 +1,531 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00019> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "第７６回松前さくらまつりの入込数増加"@ja.
+kg:id_1 rdf:type cls:c_520.
+cls:c_520 rdfs:label "集客増加"@ja.
+kg:id_2 rdfs:label "新型コロナウイルス感染症の法律上の位置づけが５類感染症に移行されてから初の大型連休を迎えたこと"@ja.
+kg:id_2 rdf:type cls:c_521.
+cls:c_521 rdfs:label "行動制限緩和"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "昨年よりまつり期間が１日長かったこと"@ja.
+kg:id_3 rdf:type cls:c_522.
+cls:c_522 rdfs:label "開催期間延長"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "期間を通して天候に恵まれたこと"@ja.
+kg:id_4 rdf:type cls:c_523.
+cls:c_523 rdfs:label "好天"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "桜の見頃が大型連休後半まで楽しめたこと"@ja.
+kg:id_5 rdf:type cls:c_524.
+cls:c_524 rdfs:label "見頃継続"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "にっぽん丸のクルーズツアー寄港見送り"@ja.
+kg:id_6 rdf:type cls:c_525.
+cls:c_525 rdfs:label "寄港見送り"@ja.
+kg:id_7 rdfs:label "風の影響"@ja.
+kg:id_7 rdf:type cls:c_526.
+cls:c_526 rdfs:label "気象条件"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "第５回脱炭素先行地域計画提案の応募見送り"@ja.
+kg:id_8 rdf:type cls:c_527.
+cls:c_527 rdfs:label "応募見送り"@ja.
+kg:id_9 rdfs:label "残りわずか２７ヶ所程度と狭き門であること"@ja.
+kg:id_9 rdf:type cls:c_528.
+cls:c_528 rdfs:label "採択困難"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "まだ１自治体も採択されていない都道府県が１１都県あり環境省が空白県に先行地域を設けたい意向があること"@ja.
+kg:id_10 rdf:type cls:c_529.
+cls:c_529 rdfs:label "採択方針"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "環境省の提案審査で事業の先進性とモデル性を最重要視する基準強化がなされたこと"@ja.
+kg:id_11 rdf:type cls:c_530.
+cls:c_530 rdfs:label "審査厳格化"@ja.
+kg:id_8 prop:cause kg:id_11.
+kg:id_12 rdfs:label "配電事業ライセンス取得で事業の採算性や技術的課題をクリアできず実現性が非常に困難と判断したこと"@ja.
+kg:id_12 rdf:type cls:c_531.
+cls:c_531 rdfs:label "事業実現困難"@ja.
+kg:id_8 prop:cause kg:id_12.
+kg:id_13 rdfs:label "提案書提出期限までに事業構築の精度と確実性が募集水準を満たすことは難しいと判断したこと"@ja.
+kg:id_13 rdf:type cls:c_532.
+cls:c_532 rdfs:label "提案準備不足"@ja.
+kg:id_8 prop:cause kg:id_13.
+kg:id_14 rdfs:label "地域電力会社による安価な電気供給の実現時期の遅れ"@ja.
+kg:id_14 rdf:type cls:c_533.
+cls:c_533 rdfs:label "供給遅延"@ja.
+kg:id_15 rdfs:label "地域電力会社設立後に新たな陸上風力や太陽光発電等を設置する必要があること"@ja.
+kg:id_15 rdf:type cls:c_534.
+cls:c_534 rdfs:label "発電設備整備"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "様々な障害があること"@ja.
+kg:id_16 rdf:type cls:c_535.
+cls:c_535 rdfs:label "事業障害"@ja.
+kg:id_14 prop:cause kg:id_16.
+kg:id_17 rdfs:label "再エネ発電事業者の計画が当初の予定と変わる場合があること"@ja.
+kg:id_17 rdf:type cls:c_536.
+cls:c_536 rdfs:label "事業計画変更"@ja.
+kg:id_14 prop:cause kg:id_17.
+kg:id_18 rdfs:label "漁業経営の成り立ちにくさ"@ja.
+kg:id_18 rdf:type cls:c_537.
+cls:c_537 rdfs:label "経営困難"@ja.
+kg:id_19 rdfs:label "１千万水揚げしても賃金や雇用費として５００万６００万を要すること"@ja.
+kg:id_19 rdf:type cls:c_538.
+cls:c_538 rdfs:label "人件費負担"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "核家族化が進み家内労働で支える従来の形が難しくなっていること"@ja.
+kg:id_20 rdf:type cls:c_539.
+cls:c_539 rdfs:label "家族労働縮小"@ja.
+kg:id_18 prop:cause kg:id_20.
+kg:id_21 rdfs:label "第７６回松前さくらまつり"@ja.
+kg:id_21 rdf:type cls:c_540.
+cls:c_540 rdfs:label "催事"@ja.
+kg:id_22 rdfs:label "入込数が前年比１８．２％増の９万１千人となり前年を上回った"@ja.
+kg:id_22 rdf:type cls:c_520.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "ハナモモの植樹祭開催"@ja.
+kg:id_23 rdf:type cls:c_541.
+cls:c_541 rdfs:label "植樹行事"@ja.
+kg:id_24 rdfs:label "松前公園に新たな名所として伊達花桃通りが誕生した"@ja.
+kg:id_24 rdf:type cls:c_542.
+cls:c_542 rdfs:label "観光名所形成"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "さくらまつり期間中の催し開催"@ja.
+kg:id_25 rdf:type cls:c_543.
+cls:c_543 rdfs:label "催事開催"@ja.
+kg:id_26 rdfs:label "賑わいを見せていた"@ja.
+kg:id_26 rdf:type cls:c_544.
+cls:c_544 rdfs:label "賑わい創出"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "ＲＥ１００まつまえ構想が途絶えるわけではない"@ja.
+kg:id_27 rdf:type cls:c_545.
+cls:c_545 rdfs:label "構想継続"@ja.
+kg:id_8 prop:effect kg:id_27.
+kg:id_28 rdfs:label "関連企業との連携や新しい連携先の開拓などの創意工夫により構想実現へ取り組みを進める"@ja.
+kg:id_28 rdf:type cls:c_204.
+cls:c_204 rdfs:label "連携推進"@ja.
+kg:id_8 prop:effect kg:id_28.
+kg:id_29 rdfs:label "松前沖洋上風力発電の促進区域指定に向けた取り組み"@ja.
+kg:id_29 rdf:type cls:c_546.
+cls:c_546 rdfs:label "区域指定推進"@ja.
+kg:id_30 rdfs:label "道内五つの有望な区域の中で協議が最も進んでいる状況にある"@ja.
+kg:id_30 rdf:type cls:c_547.
+cls:c_547 rdfs:label "協議進展"@ja.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "いち早い指定に向けた明るい兆しが見えてきている"@ja.
+kg:id_31 rdf:type cls:c_548.
+cls:c_548 rdfs:label "指定見通し"@ja.
+kg:id_29 prop:effect kg:id_31.
+kg:id_32 rdfs:label "再生可能エネルギーの促進"@ja.
+kg:id_32 rdf:type cls:c_549.
+cls:c_549 rdfs:label "再エネ促進"@ja.
+kg:id_33 rdfs:label "町民に安価な電気を供給できる"@ja.
+kg:id_33 rdf:type cls:c_550.
+cls:c_550 rdfs:label "安価供給"@ja.
+kg:id_32 prop:effect kg:id_33.
+kg:id_34 rdfs:label "企業誘致や産業の経営基盤の安定化を図る"@ja.
+kg:id_34 rdf:type cls:c_551.
+cls:c_551 rdfs:label "産業安定化"@ja.
+kg:id_32 prop:effect kg:id_34.
+kg:id_35 rdfs:label "電気料金の地域内循環を進める"@ja.
+kg:id_35 rdf:type cls:c_552.
+cls:c_552 rdfs:label "地域内循環"@ja.
+kg:id_32 prop:effect kg:id_35.
+kg:id_36 rdfs:label "洋上風力発電事業の促進区域指定"@ja.
+kg:id_36 rdf:type cls:c_194.
+cls:c_194 rdfs:label "区域指定"@ja.
+kg:id_37 rdfs:label "新しい雇用の場となる産業の創造に繋がる"@ja.
+kg:id_37 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "既存産業の維持活性化に繋がる"@ja.
+kg:id_38 rdf:type cls:c_96.
+cls:c_96 rdfs:label "産業活性化"@ja.
+kg:id_36 prop:effect kg:id_38.
+kg:id_39 rdfs:label "町民に不安が生じる可能性がある"@ja.
+kg:id_39 rdf:type cls:c_63.
+cls:c_63 rdfs:label "住民不安"@ja.
+kg:id_36 prop:effect kg:id_39.
+kg:id_40 rdfs:label "町民との脱炭素化推進"@ja.
+kg:id_40 rdf:type cls:c_257.
+cls:c_257 rdfs:label "脱炭素推進"@ja.
+kg:id_41 rdfs:label "省エネ機器の購入支援をスタートする"@ja.
+kg:id_41 rdf:type cls:c_553.
+cls:c_553 rdfs:label "購入支援"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "再エネ電気を発電売電する地域エネルギー会社を設立する"@ja.
+kg:id_42 rdf:type cls:c_554.
+cls:c_554 rdfs:label "会社設立"@ja.
+kg:id_32 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "ＲＥ１００まつまえ構想"@ja.
+kg:id_43 rdf:type cls:c_555.
+cls:c_555 rdfs:label "構想実現"@ja.
+kg:id_44 rdfs:label "地域内で再エネ電気を循環させる"@ja.
+kg:id_44 rdf:type cls:c_556.
+cls:c_556 rdfs:label "電力循環"@ja.
+kg:id_43 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "町民の理解と不安の解消に努めながら協議を進める"@ja.
+kg:id_45 rdf:type cls:c_140.
+cls:c_140 rdfs:label "理解促進"@ja.
+kg:id_36 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "次回以降も応募の可能性について検討する"@ja.
+kg:id_46 rdf:type cls:c_557.
+cls:c_557 rdfs:label "再応募検討"@ja.
+kg:id_8 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "ＲＥ１００まつまえ構想の実現"@ja.
+kg:id_47 rdf:type cls:c_555.
+kg:id_48 rdfs:label "関連企業との連携や新しい連携先の開拓などの創意工夫で取り組みを進める"@ja.
+kg:id_48 rdf:type cls:c_204.
+kg:id_47 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "当町の脱炭素化社会の実現と再生可能エネルギーの推進"@ja.
+kg:id_49 rdf:type cls:c_257.
+kg:id_50 rdfs:label "引き続き注力する"@ja.
+kg:id_50 rdf:type cls:c_558.
+cls:c_558 rdfs:label "継続注力"@ja.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "地域電力会社の設立"@ja.
+kg:id_51 rdf:type cls:c_554.
+kg:id_52 rdfs:label "今年度中に立ち上げる方向性を見い出す"@ja.
+kg:id_52 rdf:type cls:c_559.
+cls:c_559 rdfs:label "設立方針策定"@ja.
+kg:id_51 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "安価な電気供給の実現"@ja.
+kg:id_53 rdf:type cls:c_550.
+kg:id_54 rdfs:label "陸上風力や太陽光発電等を順次設置していく"@ja.
+kg:id_54 rdf:type cls:c_534.
+kg:id_53 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "脱炭素化の推進"@ja.
+kg:id_55 rdf:type cls:c_257.
+kg:id_56 rdfs:label "常に情報を手に入れながら取り組みを継続する"@ja.
+kg:id_56 rdf:type cls:c_560.
+cls:c_560 rdfs:label "情報収集継続"@ja.
+kg:id_55 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "漁業経営の安定化"@ja.
+kg:id_57 rdf:type cls:c_561.
+cls:c_561 rdfs:label "経営安定化"@ja.
+kg:id_58 rdfs:label "漁業者が共同で養殖コンブに取り組むなど新たな動きを進める"@ja.
+kg:id_58 rdf:type cls:c_562.
+cls:c_562 rdfs:label "共同養殖"@ja.
+kg:id_57 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "若い漁業者や年齢を重ねた漁業者が一緒に取り組める増養殖を松前さくら漁業協同組合と共に探求する"@ja.
+kg:id_59 rdf:type cls:c_563.
+cls:c_563 rdfs:label "増養殖推進"@ja.
+kg:id_57 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "脱炭素先行地域への再応募"@ja.
+kg:id_60 rdf:type cls:c_564.
+cls:c_564 rdfs:label "再応募"@ja.
+kg:id_61 rdfs:label "第６回があれば新たなモデル性と先進性のある取り組みを模索して応募する"@ja.
+kg:id_61 rdf:type cls:c_565.
+cls:c_565 rdfs:label "新規モデル模索"@ja.
+kg:id_60 prop:countermeasure kg:id_61.
+kg:id_62 rdfs:label "地域エネルギー会社の設立"@ja.
+kg:id_62 rdf:type cls:c_554.
+kg:id_63 rdfs:label "町と協力企業１社の共同出資でスタートする"@ja.
+kg:id_63 rdf:type cls:c_566.
+cls:c_566 rdfs:label "共同出資"@ja.
+kg:id_62 prop:countermeasure kg:id_63.
+kg:id_64 rdfs:label "地域エネルギー会社の持続的運営"@ja.
+kg:id_64 rdf:type cls:c_567.
+cls:c_567 rdfs:label "事業運営"@ja.
+kg:id_65 rdfs:label "将来的に町内事業者から出資を募り町の関与を徐々に減らして民間へ移行する"@ja.
+kg:id_65 rdf:type cls:c_568.
+cls:c_568 rdfs:label "民間移行"@ja.
+kg:id_64 prop:countermeasure kg:id_65.
+kg:id_66 rdfs:label "脱炭素再エネ政策の推進"@ja.
+kg:id_66 rdf:type cls:c_569.
+cls:c_569 rdfs:label "政策推進"@ja.
+kg:id_67 rdfs:label "脱炭素推進課を新設し４名体制で進める"@ja.
+kg:id_67 rdf:type cls:c_211.
+cls:c_211 rdfs:label "推進体制"@ja.
+kg:id_66 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "地域電力会社設立の検討"@ja.
+kg:id_68 rdf:type cls:c_570.
+cls:c_570 rdfs:label "設立検討"@ja.
+kg:id_69 rdfs:label "交付金がない場合を想定して売電会社として成り立つか採算性を精査する"@ja.
+kg:id_69 rdf:type cls:c_571.
+cls:c_571 rdfs:label "採算性精査"@ja.
+kg:id_68 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "小水力発電など様々な可能性にチャレンジし結果を踏まえて次に進む"@ja.
+kg:id_70 rdf:type cls:c_572.
+cls:c_572 rdfs:label "可能性調査"@ja.
+kg:id_68 prop:countermeasure kg:id_70.
+kg:id_71 rdfs:label "町民への理解促進"@ja.
+kg:id_71 rdf:type cls:c_140.
+kg:id_72 rdfs:label "町広報で情報掲載を続ける"@ja.
+kg:id_72 rdf:type cls:c_573.
+cls:c_573 rdfs:label "広報継続"@ja.
+kg:id_71 prop:countermeasure kg:id_72.
+kg:id_73 rdfs:label "地域電力会社設立への理解形成"@ja.
+kg:id_73 rdf:type cls:c_574.
+cls:c_574 rdfs:label "理解形成"@ja.
+kg:id_74 rdfs:label "松前町脱炭素再生可能エネルギー推進協議会で町内産業団体や金融機関等と協議する"@ja.
+kg:id_74 rdf:type cls:c_136.
+cls:c_136 rdfs:label "協議実施"@ja.
+kg:id_73 prop:countermeasure kg:id_74.
+kg:st_1 rdfs:label "町長若佐智弘君"@ja.
+kg:st_1 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_1 prop:content "配電事業ライセンスは厳しく技術的にも問題がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "安い電気の供給には早くても３年以上かかる場合がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "取り組み継続が必要で様々な障害がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "発電事業者の予定変更もあり得るため時期は変わり得る"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "漁業者"@ja.
+kg:st_2 rdf:type cls:st_18.
+cls:st_18 rdfs:label "生産者"@ja.
+kg:op_5 prop:content "人件費負担が重く家業として成り立ちにくい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "核家族化で従来の家内労働型の漁業経営は難しくなっている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "前年を上回る結果となった"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "見送りでも構想は継続し実現に向け取り組む"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "関連企業との連携や新規連携先開拓で構想実現を進める"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "町民に安い電気を届けたい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "好機を逃さず新しい雇用の場の創造に繋げたい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "町民の理解と不安解消に努めながら進める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "地域電力会社を今年度中に立ち上げる方向性を見いだしたい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "町民の理解と不安解消に努めながら進める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "第６回があれば手を挙げたい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "関連企業と情報共有しながら継続して取り組む"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "今年度中の立ち上げ方向を明確にしたい"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "会社設立後に新たな陸上風力や太陽光発電等を設置していく"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "情報を常に把握し一日でも早く町民に実感してもらいたい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "共同養殖など新たな動きを進めたい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "現状で何ができるかを漁協と継続的に探求する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "環境が整い次第第６回があれば応募したい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "当初は町と協力企業１社で始める想定である"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "将来的には民間へ移行し新しい産業と雇用を根付かせたい"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "交付金がない場合の採算性を様々な角度から精査している"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "小水力を含め様々な可能性を調査し結果を踏まえて進める"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "町内の産業団体等と内容理解と協議を重ねている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "この要因としては、新型コロナウイルス感染症の法律上の位置づけが「５類感染症」に移行されてから初の大型連休を迎えたことに加えて"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "昨年よりまつり期間が１日長かったこと"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "期間を通して天候に恵まれ"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:text-txt_contents "桜の見頃が大型連休後半まで楽しめたことで"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:text-txt_contents "「にっぽん丸」のクルーズツアーは、風の影響で寄港は叶いませんでした"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "これまでに７３ヶ所が採択され、残りわずか２７ヶ所程度と狭き門である"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:text-txt_contents "まだ１自治体も採択されていない都道府県が１１都県あることから、環境省としては積極的にこれらの空白県に先行地域を設けたいとの意向もあります"@ja.
+<< kg:id_8 prop:cause kg:id_11 >>
+    prop:text-txt_contents "環境省の提案審査は、全国の自治体に横展開を促し、脱炭素ドミノを起こすため、事業の先進性、モデル性を最重要視する基準強化がなされたところであります"@ja.
+<< kg:id_8 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "日本でまだ例のない「配電事業ライセンス」の取得を提案に盛り込むべく、関係機関及び関係省庁と協議し、助言を受けながら検討してまいりましたが、事業の採算性や技術的課題をクリアできず、実現性が非常に困難であるとの判断に至りました"@ja.
+<< kg:id_8 prop:cause kg:id_13 >>
+    prop:text-txt_contents "提案書提出期限までに事業構築の精度と確実性が募集水準を満たすことは難しいと判断し、第５回脱炭素先行地域計画提案の応募を見送ることとし"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "そういう地域電力会社を立ち上げてから、また自分達、その会社自体で新たな陸上風力、太陽光発電等を設置していくことになりますので、早くても３年か、もっとかかる場合もあります"@ja.
+<< kg:id_14 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "その取り組みを継続してやっていかなければ、様々な障害もありますし"@ja.
+<< kg:id_14 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "それぞれつくった再エネの発電事業者も、場合によっては当初の予定と変わることもあります"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "正直漁業者１千万、今の家族構成を見ますと１千万水揚げしても、やはり賃金、人を雇わなきゃなんない、それで５００万６００万賃金を要するのであれば、その事業は自分のところで家業として、一つとして成り立つかというと難しい問題があるというのが、これが漁業者の意見でございました"@ja.
+<< kg:id_18 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "今やはり核家族化が進みまして、こういう取り組みもなかなか難しいものがあります"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "さくらまつり期間中の入込数については、前年比１８．２％増の９万１千人となり、前年を上回る結果となりました"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:text-txt_contents "松前公園に新たな名所として「伊達花桃通り」が誕生しました"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:text-txt_contents "松前神楽・郷土芸能公開公演をはじめ、海上自衛隊大湊音楽隊による新町発足７０周年記念コンサート、藩屋敷こどもイベント、さくらスタンプラリーなど催しが行われ、賑わいを見せていました"@ja.
+<< kg:id_8 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "この見送りによって、再生可能エネルギーの地産地消を目指す「ＲＥ１００まつまえ構想」が途絶えるわけではなく"@ja.
+<< kg:id_8 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これまでどおり関連企業との連携や新しい連携先の開拓などの創意工夫により、構想の実現に向けて取り組みを進めてまいります"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:text-txt_contents "既に松前沖の法定協議会が２回開催され、道内五つの有望な区域の中で協議が最も進んでいる状況にあり"@ja.
+<< kg:id_29 prop:effect kg:id_31 >>
+    prop:text-txt_contents "いち早い指定に向けた明るい兆しも見えてきております"@ja.
+<< kg:id_32 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "町民の皆様に安価な電気を供給するとともに"@ja.
+<< kg:id_32 prop:effect kg:id_34 >>
+    prop:text-txt_contents "企業誘致や産業の経営基盤の安定化を図り"@ja.
+<< kg:id_32 prop:effect kg:id_35 >>
+    prop:text-txt_contents "電気料金の地域内循環を進めてまいります"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "この好機を逃すことなく、新しい雇用の場となる産業の創造"@ja.
+<< kg:id_36 prop:effect kg:id_38 >>
+    prop:text-txt_contents "既存産業の維持活性化に繋げるとともに"@ja.
+<< kg:id_36 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "町民の皆様のご理解並びに不安の解消に努めながら"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:text-txt_contents "町民の皆様と一緒に脱炭素化を推進する取り組みとして、省エネ機器の購入支援をスタートしております"@ja.
+<< kg:id_32 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今後は、再エネ電気を発電、売電する地域エネルギー会社を設立し"@ja.
+<< kg:id_43 prop:countermeasure kg:id_44 >>
+    prop:text-txt_contents "地域内で再エネ電気を循環させる「ＲＥ１００まつまえ」を実現させ"@ja.
+<< kg:id_36 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "洋上風力発電事業の促進区域指定に向け協議を進めておりますが、町民の皆様のご理解並びに不安の解消に努めながら"@ja.
+<< kg:id_8 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "機会があれば次回以降も応募の可能性について検討をしてまいります"@ja.
+<< kg:id_47 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "これまでどおり関連企業との連携や新しい連携先の開拓などの創意工夫により、構想の実現に向けて取り組みを進めてまいります"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:text-txt_contents "引き続き、当町の脱炭素化社会の実現と再生可能エネルギーの推進に注力してまいります"@ja.
+<< kg:id_51 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "地域電力会社を今年度中に何とか立ち上げる方向性をしっかりと見い出していきたいというふうに考えております"@ja.
+<< kg:id_53 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "その会社自体で新たな陸上風力、太陽光発電等を設置していくことになります"@ja.
+<< kg:id_55 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "常にそういう情報は常に手に入れて、そして、一日でも早く町民に実感していただけるような形をとりたいと思っております"@ja.
+<< kg:id_57 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "また最近は漁業者が共同で養殖コンブに取り組むとか、そういう新たな動きも出てございます"@ja.
+<< kg:id_57 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "残った若い漁業者、そしてある程度の年齢になってもそういう漁業者が一緒になって取り組んでいける、そういう増養殖に対して、私ども、松前さくら漁業協同組合と共に探求してまいりたいと"@ja.
+<< kg:id_60 prop:countermeasure kg:id_61 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "環境が整い次第、第６回があればそれに対して手を挙げていきたい"@ja.
+<< kg:id_62 prop:countermeasure kg:id_63 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "この地域電力会社は、当初は松前町と協力企業１社でのスタートと考えて今想定しております"@ja.
+<< kg:id_64 prop:countermeasure kg:id_65 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "将来的には町内事業者から出資を募り、町の関与を徐々に減らしながら民間へ移行し、新しい産業と雇用を地域に根付かしていきたいと考えております"@ja.
+<< kg:id_66 prop:countermeasure kg:id_67 >>
+    prop:text-txt_contents "本年１月に脱炭素推進課を新たに設置し、６月１日付の人事異動によりまして１名増員し、４名体制として脱炭素、再エネ政策を積極的に進めているところでございます"@ja.
+<< kg:id_68 prop:countermeasure kg:id_69 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "交付金のない場合の採択されないという場合を想定しての、今採算性について、様々な先ほど言ったものについての内容を精査しております"@ja.
+<< kg:id_68 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "小水力発電に関しても調査をさせていただいておるところでございますし、様々な可能性のあるものにとにかくチャレンジしながら、これに取り組んでいきたい"@ja.
+<< kg:id_71 prop:countermeasure kg:id_72 >>
+    prop:text-txt_contents "町広報の方にも町民向けに、既に１１回目の、６月号で１１回目となる情報掲載をしております"@ja.
+<< kg:id_73 prop:countermeasure kg:id_74 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "松前町脱炭素再生可能エネルギー推進協議会というものをつくっております。これに関しましては町内の産業団体、そして商工、観光、金融機関、そして建設、建築、管工事、このような協会、そしてまた北電の電力のネットワーク、また町、当然町も入りまして、こういうところで何度もこういうものについての内容の理解と協議を進めております"@ja.
+}

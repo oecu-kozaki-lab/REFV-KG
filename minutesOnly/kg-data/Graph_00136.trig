@@ -1,0 +1,271 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00136> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電の利用海域拡大"@ja.
+kg:id_1 rdf:type cls:c_3285.
+cls:c_3285 rdfs:label "海域拡大"@ja.
+kg:id_2 rdfs:label "脱炭素化の取組促進"@ja.
+kg:id_2 rdf:type cls:c_487.
+cls:c_487 rdfs:label "脱炭素化"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "遊佐町の洋上風力"@ja.
+kg:id_3 rdf:type cls:c_1243.
+cls:c_1243 rdfs:label "洋上風力"@ja.
+kg:id_4 rdfs:label "海岸線からの距離"@ja.
+kg:id_4 rdf:type cls:c_1497.
+cls:c_1497 rdfs:label "立地条件"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "利用海域拡大の方向が不明"@ja.
+kg:id_5 rdf:type cls:c_3286.
+cls:c_3286 rdfs:label "計画不明"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "海域拡大の内容に注目して考える"@ja.
+kg:id_6 rdf:type cls:c_307.
+cls:c_307 rdfs:label "計画検討"@ja.
+kg:id_3 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "遊佐沖洋上風力"@ja.
+kg:id_7 rdf:type cls:c_1243.
+kg:id_8 rdfs:label "公開質問状に誠意ある回答を出す"@ja.
+kg:id_8 rdf:type cls:c_3287.
+cls:c_3287 rdfs:label "回答対応"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "農業のバイオガス発電"@ja.
+kg:id_9 rdf:type cls:c_3288.
+cls:c_3288 rdfs:label "バイオガス発電"@ja.
+kg:id_10 rdfs:label "畜産の現状と畜舎の位置により適地がない"@ja.
+kg:id_10 rdf:type cls:c_2551.
+cls:c_2551 rdfs:label "適地不足"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "遊佐沖の海域設定"@ja.
+kg:id_11 rdf:type cls:c_3289.
+cls:c_3289 rdfs:label "海域設定"@ja.
+kg:id_12 rdfs:label "海域全域が洋上風力設置海域になるとは限らない"@ja.
+kg:id_12 rdf:type cls:c_3290.
+cls:c_3290 rdfs:label "設置範囲"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "地域の事情を踏まえて海域内で今後検討する"@ja.
+kg:id_13 rdf:type cls:c_3291.
+cls:c_3291 rdfs:label "地域考慮"@ja.
+kg:id_11 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "再エネ導入拡大"@ja.
+kg:id_14 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_15 rdfs:label "山形県の発電潜在能力の活用余地が大きく残る"@ja.
+kg:id_15 rdf:type cls:c_3292.
+cls:c_3292 rdfs:label "活用余地"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "気候危機対策"@ja.
+kg:id_16 rdf:type cls:c_3293.
+cls:c_3293 rdfs:label "気候危機対策"@ja.
+kg:id_17 rdfs:label "洋上風力など再生可能エネルギーを進める"@ja.
+kg:id_17 rdf:type cls:c_1312.
+cls:c_1312 rdfs:label "再エネ推進"@ja.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "再生可能エネルギー推進"@ja.
+kg:id_18 rdf:type cls:c_1312.
+kg:id_19 rdfs:label "原発再稼働と新増設で予算配分への不安が生じる"@ja.
+kg:id_19 rdf:type cls:c_3294.
+cls:c_3294 rdfs:label "予算不安"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "原発再稼働につながらない意識で進める"@ja.
+kg:id_20 rdf:type cls:c_3295.
+cls:c_3295 rdfs:label "推進方針"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "地域の事業者と金融機関が参画できるスキームをつくる"@ja.
+kg:id_21 rdf:type cls:c_3296.
+cls:c_3296 rdfs:label "参画制度"@ja.
+kg:id_18 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "地域に新たな企業が張りつき金融機関も利益を出せる"@ja.
+kg:id_22 rdf:type cls:c_3297.
+cls:c_3297 rdfs:label "地域利益"@ja.
+kg:id_18 prop:effect kg:id_22.
+kg:id_23 rdfs:label "住宅リフォーム支援金"@ja.
+kg:id_23 rdf:type cls:c_3298.
+cls:c_3298 rdfs:label "支援金"@ja.
+kg:id_24 rdfs:label "来年度も継続して予算計上したい"@ja.
+kg:id_24 rdf:type cls:c_3299.
+cls:c_3299 rdfs:label "予算継続"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "町民の省エネ意識向上につながる"@ja.
+kg:id_25 rdf:type cls:c_3300.
+cls:c_3300 rdfs:label "意識向上"@ja.
+kg:id_23 prop:effect kg:id_25.
+kg:st_1 rdfs:label "政府の総合海洋政策本部の有識者会議"@ja.
+kg:st_1 rdf:type cls:st_86.
+cls:st_86 rdfs:label "有識者会議"@ja.
+kg:op_1 prop:content "脱炭素化のため利用海域拡大を求める"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "佐藤光保議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "海岸線からの距離が問題だと指摘する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "奥方向か横方向か地点増加か不明なため注目して考えるべきだと求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "海域拡大の具体像に注目して検討するよう求める"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "考える会の公開質問状に誠意ある回答を望む"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "地域生活課長 太田智光君"@ja.
+kg:st_3 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_6 prop:content "期限までに町としての考え方をきちんと回答したい"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "町当局"@ja.
+kg:st_4 rdf:type cls:st_40.
+kg:op_7 prop:content "畜産の現状や畜舎位置のため適地が乏しいと検討した"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "漁業や地元意見によって海域全域が対象になるわけではないと説明する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "地域事情に応じて海域内で今後検討すると述べる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "活用余地を大きく残す現状であり注目されると評価する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "気候危機対策として必要だと同感を示す"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_5 rdfs:label "町長"@ja.
+kg:st_5 rdf:type cls:st_40.
+kg:op_12 prop:content "再生可能エネルギーを地域活性化と働き場づくりにつなげたい"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:op_13 prop:content "原発再稼働や新増設で洋上風力への予算が減る不安と不信がある"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "原発再稼働は福島事故被害者の苦しみを置き去りにする懸念がある"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "生活クラブ生協顧問 伊藤由理子前会長"@ja.
+kg:st_6 rdf:type cls:st_66.
+cls:st_66 rdfs:label "市民団体"@ja.
+kg:op_15 prop:content "再生可能エネルギー推進は原発再稼働につながらない意識で進めるべきだと述べる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_6.
+kg:op_16 prop:content "その認識を共有したと述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "地元事業者と地元金融機関が参画できる仕組みを県に求めている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "電力を取られるだけでなく地域企業や金融機関に利益が残る地域にしたい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "来年度も継続して予算計上したいと述べる"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "補助制度活用により町民の省エネ意識向上につながることを期待する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "脱炭素化の取組を促進するため、洋上風力発電の利用海域を拡大していくことも求めた"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "今遊佐町の洋上風力については、どうしても海岸線からの距離ということが問題となっております"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "拡大していくといっても奥のほうに拡大するのか、それとも横のほうに拡大するのか、もっと地点が増えるだけなのかということについては今のところ当然不明です"@ja.
+<< kg:id_3 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "これらのことにもぜひ注目して考えていっていただきたい"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "考える会から公開質問状が出ております。ぜひ誠意ある回答を出されるように私から望みます。現在その回答について内容を検討しているところでありますので、期限までにきちんと町としての考え方回答させていただきたい"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本町においてはいわゆる畜産の現状、現在畜舎が建ってあるような位置的なところもあって、なかなか適地がないのではないかというふうに検討した"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "必ずしも漁業等に不都合がある場合、地元からのいろいろご意見があれば必ずその海域全域が海域になるわけではないと、洋上風力が建つ海域ではない"@ja.
+<< kg:id_11 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "それぞれ地域の事情においてその海域の中で今後検討されていくというようなこともお話がありましたので、そこについてはこれから検討させていただくことになる"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "本県が持つ再エネの発電潜在能力の1.3％しか活用されていないという状況です。ともかく活用の余地を大きく残している現状だという記事でありました"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "気候危機のためにこういうことが必要になる。気候危機対策のためにこういうことが必要なのだということは同感なのですが やっぱり再生可能エネルギーに、やっぱりしっかりここで獲得をしながら、そして 仕事に戻ってこれるような環境づくり、活性化を図ることが地域として非常に必要なことだと思っています"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "原発の再稼働、７基を再稼働させると、新増設もあると。そういうふうになれば、当然限られたエネルギーに関する予算が果たして洋上風力にどのように回っていくのだろうという心配もあって、私はそういう不安というか、不信も持っております やっぱり新型の原発をつくるとか、原発再稼働するとかという話ししているときに、ああ、福島の人たちとか、事故あった人たちの苦しみとかはどこに行ってしまったのだろうという思いが非常に強くいたします"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "伊藤由理子前会長、顧問は決して原発の再稼働等につながってはいけない意識で向かわないと大変なことになりますよねということを共通認識として私もしたところであります"@ja.
+<< kg:id_18 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "地元の事業者、それから地元の金融機関等が参画できるスキームを山形県からつくってもらえないかということを発言してほしいということをもう既に申し上げております"@ja.
+<< kg:id_18 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "ただ電力取られてしまう地域でなくて、ここでも新たな企業が張りつく、そして事業として金融機関も利益を出せる、そんな地域にしていければなと思っているところです"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "当然継続して住宅リフォーム支援金の予算も計上していきたいと思っております"@ja.
+<< kg:id_23 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "その他町ですとか県の補助金制度も活用いただきながら、町民自ら省エネ等についての意識向上につながっていければいいのかなと思っているところであります"@ja.
+}

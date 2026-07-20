@@ -1,0 +1,309 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00017> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力発電"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "水産物資源への影響"@ja.
+kg:id_2 rdf:type cls:c_474.
+cls:c_474 rdfs:label "資源影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "漁場環境の保全"@ja.
+kg:id_3 rdf:type cls:c_475.
+cls:c_475 rdfs:label "環境保全"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "松前町"@ja.
+kg:id_4 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_5 rdfs:label "松前町脱炭素再生可能エネルギー推進協議会の設立"@ja.
+kg:id_5 rdf:type cls:c_476.
+cls:c_476 rdfs:label "協議会設立"@ja.
+kg:id_4 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "漁協が考える協調策の情報共有"@ja.
+kg:id_6 rdf:type cls:c_423.
+cls:c_423 rdfs:label "情報共有"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "法定協議会で専門家を交えた協議"@ja.
+kg:id_7 rdf:type cls:c_477.
+cls:c_477 rdfs:label "専門協議"@ja.
+kg:id_1 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "人口減少"@ja.
+kg:id_8 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_9 rdfs:label "少子化"@ja.
+kg:id_9 rdf:type cls:c_478.
+cls:c_478 rdfs:label "少子化"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "高齢化"@ja.
+kg:id_10 rdf:type cls:c_262.
+cls:c_262 rdfs:label "高齢化"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "行政サービスが行き届かない"@ja.
+kg:id_11 rdf:type cls:c_479.
+cls:c_479 rdfs:label "行政停滞"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "人材不足"@ja.
+kg:id_12 rdf:type cls:c_355.
+cls:c_355 rdfs:label "人材不足"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "コンパクトシティに向けた取り組み"@ja.
+kg:id_13 rdf:type cls:c_480.
+cls:c_480 rdfs:label "都市集約"@ja.
+kg:id_4 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "白神区間の通行止め"@ja.
+kg:id_14 rdf:type cls:c_481.
+cls:c_481 rdfs:label "通行止め"@ja.
+kg:id_15 rdfs:label "落石"@ja.
+kg:id_15 rdf:type cls:c_482.
+cls:c_482 rdfs:label "落石"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "越波"@ja.
+kg:id_16 rdf:type cls:c_483.
+cls:c_483 rdfs:label "越波"@ja.
+kg:id_14 prop:cause kg:id_16.
+kg:id_17 rdfs:label "様々な影響"@ja.
+kg:id_17 rdf:type cls:c_484.
+cls:c_484 rdfs:label "生活影響"@ja.
+kg:id_14 prop:effect kg:id_17.
+kg:id_18 rdfs:label "白神防災"@ja.
+kg:id_18 rdf:type cls:c_485.
+cls:c_485 rdfs:label "防災事業"@ja.
+kg:id_19 rdfs:label "特殊通行規制区間の解消"@ja.
+kg:id_19 rdf:type cls:c_486.
+cls:c_486 rdfs:label "規制解消"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "早期完成に向けた関係機関への要望"@ja.
+kg:id_20 rdf:type cls:c_174.
+cls:c_174 rdfs:label "要望活動"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "移住定住"@ja.
+kg:id_21 rdf:type cls:c_152.
+cls:c_152 rdfs:label "移住定住"@ja.
+kg:id_8 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "企業誘致"@ja.
+kg:id_22 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_8 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "新しい雇用の場の確保"@ja.
+kg:id_23 rdf:type cls:c_350.
+cls:c_350 rdfs:label "雇用確保"@ja.
+kg:id_8 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "脱炭素社会の実現"@ja.
+kg:id_24 rdf:type cls:c_487.
+cls:c_487 rdfs:label "脱炭素化"@ja.
+kg:id_25 rdfs:label "ゴミの減量化"@ja.
+kg:id_25 rdf:type cls:c_488.
+cls:c_488 rdfs:label "廃棄物削減"@ja.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "風力発電の円滑な推進と地域活性化"@ja.
+kg:id_26 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_27 rdfs:label "東急不動産との協定締結"@ja.
+kg:id_27 rdf:type cls:c_489.
+cls:c_489 rdfs:label "協定締結"@ja.
+kg:id_26 prop:countermeasure kg:id_27.
+kg:st_1 rdfs:label "三浦昭雄君"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "設置や稼働による水産物資源への影響を踏まえ協議会設置を急ぐべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "漁場環境保全のため町独自の協議会設置を急ぐべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "町長 石山英雄君"@ja.
+kg:st_2 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_3 prop:content "既に協議会を設立し発足している"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "推進協議会は調査や影響を協議する場ではなく協調策の情報共有の場と認識してほしい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "水産資源への影響は別途法定協議会で専門家を交えて話し合う考え"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "勇谷鷹宇君"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_6 prop:content "人口減少と少子高齢化が進む中で将来を見据えた取組が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "高齢化が進み人口減少に歯止めがかからないことを懸念"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "高齢者増加と人材不足で行政サービスが十分に届かなくなる不安がある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "人口比で行政側の人員が減り対応しきれない部分が出ると不安視"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "将来の暮らしや行政効率のため具体的議論を進めるべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "コンパクトシティ構想を計画と合わせて根付かせたい"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "特殊通行規制区間の解消に向け早期完成を目指す"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "越波などによる通行止め多発の解消が必要"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "住民や交通に影響が出ており早期完成が必要"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "住民の安心安全確保のため規制区間を解消したい"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "福島町と連携して予算確保と早期完成を積極的に要望する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "斉藤勝君"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_17 prop:content "十年ではなく七年程度で進めるようスピード感を求める"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "再生可能エネルギーの波及効果で人口減少に資する対策を図りたい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "再エネを活用して企業誘致を進め人口減少対策につなげたい"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "雇用の場を確保して人口減少対策を進めたい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "町長と職員が積極的に町民へ啓蒙してほしい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "町民が参加しやすい情報提供をしながら進めたい"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "東急不動産との協定内容の説明を求める"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "風力発電の円滑な推進と地域活性化に関する協定を締結した"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "洋上風力発電に関わる設置、稼働による水産物資源への影響"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "洋上風力発電に関わる設置、稼働による水産物資源への影響、漁場環境の保全など、町独自の協議会の設置を急ぐべきではないでしょうか"@ja.
+<< kg:id_4 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "先般、８月の２１日に、松前町脱炭素再生可能エネルギー推進協議会を設立、発足しているところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "この協議会につきましては、町の推進協議会になりまして、洋上風力発電の調査や影響などを協議する場ではなく、あくまでも漁協が考える協調策などを情報共有し、各団体にも理解を深めてもらうっていう場所である"@ja.
+<< kg:id_1 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "洋上風力の設置、稼働による水産資源への影響等につきましては、これは別途法定、これは法定協議会の場で、これは専門家も入りながら話し合われる"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "全国的に人口減、人口減少、少子化、高齢化に歯止めがかからない今、当町でもこれは例外ではありません"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "全国的に人口減、人口減少、少子化、高齢化に歯止めがかからない今、当町でもこれは例外ではありません"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "高齢者が多くなるという点で行政のサービス、これがなかなか行き届かない、人材不足"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "行政の方の人も増えない、逆に減ってるのかっていう、人口比でいくと多分減っていくんだと思うんです。そうするとやりきれない部分も出てきやしないかと、ちょっと不安がある"@ja.
+<< kg:id_4 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "住み続けたいまちづくりに繋がると、私は考えているコンパクトシティ実現に向けた考えです
+コンパクトシティに向けた取り組みも含めまして、いろいろな政策を検討していかなければならない"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "これまでにも落石や越波などにより通行止めが多発し、様々な影響を受けていたところであります"@ja.
+<< kg:id_14 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "これまでにも落石や越波などにより通行止めが多発し、様々な影響を受けていたところであります"@ja.
+<< kg:id_14 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "通行止めが多発し、様々な影響を受けていたところであります"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "まずもって、特殊通行規制区間を解消し、住民の安心安全を確保し、緊急輸送、交通に影響を及ぼすことのないよう、早期の完成に向け"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "早期の完成に向け、福島町と協力しながら関係機関への要望を、積極的にやっていきたい
+もう１０年じゃなくて７年で、スピード感をもってやれ"@ja.
+<< kg:id_8 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "移住定住、更には企業誘致、更には新しい雇用の場の確保などで人口減少に資する対策を図れるように努力していきたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "移住定住、更には企業誘致、更には新しい雇用の場の確保などで人口減少に資する対策を図れるように努力していきたい"@ja.
+<< kg:id_8 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "移住定住、更には企業誘致、更には新しい雇用の場の確保などで人口減少に資する対策を図れるように努力していきたい"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "町民ができる脱炭素とは何かというふうな、ゴミの減量化などなどであります
+町長から進んで、職員が積極的になって町民に啓蒙していくように努力してほしい"@ja.
+<< kg:id_26 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "東急不動産と協定を結んでおります
+令和元年の１２月にリエネ松前風力発電所を所有する東京の大手企業と風力発電の円滑な推進と、地域活性化などに関する協定を締結したところでございます"@ja.
+}

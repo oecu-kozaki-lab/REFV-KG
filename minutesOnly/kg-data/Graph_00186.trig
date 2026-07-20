@@ -1,0 +1,453 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00186> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "加茂地区風力発電所計画"@ja.
+kg:id_1 rdf:type cls:c_66.
+cls:c_66 rdfs:label "風力発電計画"@ja.
+kg:id_2 rdfs:label "バードストライクの発生"@ja.
+kg:id_2 rdf:type cls:c_4199.
+cls:c_4199 rdfs:label "鳥類衝突"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "生息地などの放棄"@ja.
+kg:id_3 rdf:type cls:c_4200.
+cls:c_4200 rdfs:label "生息地放棄"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "渡りルートの変更"@ja.
+kg:id_4 rdf:type cls:c_4201.
+cls:c_4201 rdfs:label "移動経路変更"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "飛行の障壁"@ja.
+kg:id_5 rdf:type cls:c_4202.
+cls:c_4202 rdfs:label "移動障壁"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "餌場としての利用の減少"@ja.
+kg:id_6 rdf:type cls:c_4203.
+cls:c_4203 rdfs:label "餌場利用減少"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "野鳥への大きな影響"@ja.
+kg:id_7 rdf:type cls:c_643.
+cls:c_643 rdfs:label "鳥類影響"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "鳥類への脅威"@ja.
+kg:id_8 rdf:type cls:c_4204.
+cls:c_4204 rdfs:label "鳥類脅威"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "条約湿地の鳥類への影響"@ja.
+kg:id_9 rdf:type cls:c_643.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "湿地への飛来ルートへの影響"@ja.
+kg:id_10 rdf:type cls:c_4205.
+cls:c_4205 rdfs:label "移動経路影響"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "水鳥などの減少"@ja.
+kg:id_11 rdf:type cls:c_4206.
+cls:c_4206 rdfs:label "鳥類減少"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "自然環境への影響"@ja.
+kg:id_12 rdf:type cls:c_25.
+cls:c_25 rdfs:label "自然環境影響"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "景観への影響"@ja.
+kg:id_13 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_13.
+kg:id_14 rdfs:label "モントルーレコード掲載の危惧"@ja.
+kg:id_14 rdf:type cls:c_4207.
+cls:c_4207 rdfs:label "保全地劣化懸念"@ja.
+kg:id_1 prop:effect kg:id_14.
+kg:id_15 rdfs:label "条約湿地から2キロから3.5キロに巨大風車8本を建設する計画"@ja.
+kg:id_15 rdf:type cls:c_4208.
+cls:c_4208 rdfs:label "大型風車建設"@ja.
+kg:id_1 prop:cause kg:id_15.
+kg:id_16 rdfs:label "渡りルート上に計画地があること"@ja.
+kg:id_16 rdf:type cls:c_4209.
+cls:c_4209 rdfs:label "渡り経路立地"@ja.
+kg:id_1 prop:cause kg:id_16.
+kg:id_17 rdfs:label "希少猛禽類の餌場に近接していること"@ja.
+kg:id_17 rdf:type cls:c_4210.
+cls:c_4210 rdfs:label "餌場近接"@ja.
+kg:id_1 prop:cause kg:id_17.
+kg:id_18 rdfs:label "クマタカの営巣地が建設予定地にあること"@ja.
+kg:id_18 rdf:type cls:c_4211.
+cls:c_4211 rdfs:label "営巣地立地"@ja.
+kg:id_1 prop:cause kg:id_18.
+kg:id_19 rdfs:label "イヌワシやオオワシやオジロワシが周辺で頻繁に見られること"@ja.
+kg:id_19 rdf:type cls:c_4212.
+cls:c_4212 rdfs:label "希少鳥類生息"@ja.
+kg:id_1 prop:cause kg:id_19.
+kg:id_20 rdfs:label "鳥類に関する適切な調査・予測及び評価を行う"@ja.
+kg:id_20 rdf:type cls:c_4213.
+cls:c_4213 rdfs:label "鳥類調査評価"@ja.
+kg:id_1 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "鳥類への影響を回避または極力低減する"@ja.
+kg:id_21 rdf:type cls:c_4214.
+cls:c_4214 rdfs:label "影響回避低減"@ja.
+kg:id_1 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "国や県にも確認しながら検討する"@ja.
+kg:id_22 rdf:type cls:c_1655.
+cls:c_1655 rdfs:label "関係機関連携"@ja.
+kg:id_1 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "専門家等に相談して慎重に判断する"@ja.
+kg:id_23 rdf:type cls:c_4215.
+cls:c_4215 rdfs:label "専門家相談"@ja.
+kg:id_1 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "住民説明会の動向を注視する"@ja.
+kg:id_24 rdf:type cls:c_4216.
+cls:c_4216 rdfs:label "説明会注視"@ja.
+kg:id_1 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "ラムサール条約湿地の5キロ半径バッファゾーンをガイドラインに加える"@ja.
+kg:id_25 rdf:type cls:c_4217.
+cls:c_4217 rdfs:label "保全区域設定"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "開発業者に計画中止を促す"@ja.
+kg:id_26 rdf:type cls:c_4218.
+cls:c_4218 rdfs:label "計画中止要請"@ja.
+kg:id_1 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "矢引計画段階で事業者にラムサール湿地周辺の調査を十分に行わせ資料を公開させる"@ja.
+kg:id_27 rdf:type cls:c_4219.
+cls:c_4219 rdfs:label "調査公開要求"@ja.
+kg:id_1 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "環境審議会に環境省担当者や有識者を招く"@ja.
+kg:id_28 rdf:type cls:c_4220.
+cls:c_4220 rdfs:label "専門家招致"@ja.
+kg:id_1 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "市民への説明会を行う"@ja.
+kg:id_29 rdf:type cls:c_4221.
+cls:c_4221 rdfs:label "市民説明"@ja.
+kg:id_1 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "説明会や審議会を完全公開し録画や配信を可能にする"@ja.
+kg:id_30 rdf:type cls:c_4222.
+cls:c_4222 rdfs:label "公開開催"@ja.
+kg:id_1 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "市独自の鳥類調査を行う"@ja.
+kg:id_31 rdf:type cls:c_4223.
+cls:c_4223 rdfs:label "独自調査"@ja.
+kg:id_1 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "アセス前に予防原則に基づいてガイドラインの制限区域を設定する"@ja.
+kg:id_32 rdf:type cls:c_4224.
+cls:c_4224 rdfs:label "制限区域設定"@ja.
+kg:id_1 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "生物多様性に十分配慮した取組を推進する"@ja.
+kg:id_33 rdf:type cls:c_4225.
+cls:c_4225 rdfs:label "保全配慮推進"@ja.
+kg:id_1 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "西茨新田湿地"@ja.
+kg:id_34 rdf:type cls:c_4226.
+cls:c_4226 rdfs:label "湿地"@ja.
+kg:id_35 rdfs:label "開発危機に直面している"@ja.
+kg:id_35 rdf:type cls:c_4227.
+cls:c_4227 rdfs:label "開発危機"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "市で取得して自然公園として保全活用する"@ja.
+kg:id_36 rdf:type cls:c_4228.
+cls:c_4228 rdfs:label "保全活用"@ja.
+kg:id_34 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "風力発電の開発業者にミチゲーションによる代替自然の回復を促す"@ja.
+kg:id_37 rdf:type cls:c_4229.
+cls:c_4229 rdfs:label "代替自然回復"@ja.
+kg:id_34 prop:countermeasure kg:id_37.
+kg:st_1 rdfs:label "日本野鳥の会山形支部"@ja.
+kg:st_1 rdf:type cls:st_1.
+cls:st_1 rdfs:label "自然保護団体"@ja.
+kg:op_1 prop:content "ハクチョウ類やガン・カモ類の渡りルートのため衝突の可能性がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "野鳥の会の方"@ja.
+kg:st_2 rdf:type cls:st_1.
+kg:op_2 prop:content "矢引計画より近く大型の風車でありバードストライクの可能性が格段に高まる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "越冬地が放棄される可能性がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "風車が飛行の障壁となり渡りルート変更の可能性がある"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "風車が飛行の障壁となる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "希少猛禽類の餌場利用が減少する可能性がある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "日本野鳥の会"@ja.
+kg:st_3 rdf:type cls:st_1.
+kg:op_7 prop:content "計画地は越冬する野鳥の集結・採餌区域に当たり大きな影響を与える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "どれほど野鳥に脅威となるか計り知れない"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "環境大臣及び経産大臣"@ja.
+kg:st_4 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_9 prop:content "衝突事故など鳥類への影響が懸念され適切な調査と評価が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "市"@ja.
+kg:st_5 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_10 prop:content "バードストライクや飛来ルートへの影響を国や県にも確認しながら検討する必要がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "水鳥の減少を含む影響を検討する必要がある"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "自然環境や景観への影響を精査する必要がある"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:op_13 prop:content "景観への影響も慎重に判断する必要がある"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "質問者"@ja.
+kg:st_6 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_14 prop:content "生態学的特徴を損なうおそれがありモントルーレコード掲載事例になりかねないと危惧する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_6.
+kg:op_15 prop:content "ラムサール登録湿地への影響をしっかり検討する必要がある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_5.
+kg:op_16 prop:content "矢引計画より近く大型のため鳥類リスクが高い"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "ハクチョウ類やガン・カモ類の渡りルートに当たる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "ミサゴやオオタカなど希少猛禽類が餌場として利用している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "衝突事故などが懸念されるため適切な調査と評価を求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "調査結果を踏まえ鳥類影響の回避または低減を要求する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "鳥類や湿地への影響を国や県と確認しながら検討する必要がある"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "住民同意や生態系や景観への影響を踏まえ専門家に相談して慎重に判断する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "まずは住民説明会の動向を注視する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "予防原則に立ち5キロ半径を設置不許可区域に加えるべきだ"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_6.
+kg:op_25 prop:content "開発業者に早期に計画中止を促す意思表明を行うべきだ"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_6.
+kg:op_26 prop:content "矢引段階で十分な調査と資料公開を要求すべきだ"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:op_27 prop:content "ラムサール条約湿地担当者と野鳥・風力発電に詳しい有識者を招いて審議すべきだ"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:op_28 prop:content "専門家と相談し必要な助言を受けたい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "ラムサール条約委員会や野鳥保護の立場で市民説明会を行うべきだ"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "専門家と相談し必要な助言を受けたい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:op_31 prop:content "多くの市民が関われるよう完全公開と録画配信を求める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_6.
+kg:op_32 prop:content "事業者任せでは不十分で市独自の調査が必要だ"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_6.
+kg:op_33 prop:content "ラムサール条約の趣旨を踏まえアセス前にゾーニングで判断すべきだ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "市長"@ja.
+kg:st_7 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_34 prop:content "国や県や専門家の意見を得て生物多様性に配慮した取組を進める必要がある"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_7.
+kg:op_35 prop:content "保全施策がないまま民有地として開発危機にさらされている"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:op_36 prop:content "市が取得し庄内の原生風景を生かした自然公園として保全活用すべきだ"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_6.
+kg:op_37 prop:content "民間資金活用も視野に代替自然回復などの地域貢献を促すべきだ"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "風力発電が鳥類に与える影響は、2020年３月末時点で、国内で580件発生しているバードストライクの問題"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "風力発電が鳥類に与える影響は、2020年３月末時点で、国内で580件発生しているバードストライクの問題、生息地などの放棄"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風力発電が鳥類に与える影響は、2020年３月末時点で、国内で580件発生しているバードストライクの問題、生息地などの放棄、渡りルートの変更など移動の障壁"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "風力発電が鳥類に与える影響は、2020年３月末時点で、国内で580件発生しているバードストライクの問題、生息地などの放棄、渡りルートの変更など移動の障壁"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "バードストライクや餌場としての利用が減少してしまう可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "日本野鳥の会からは、現在計画が進む矢引風力発電事業に対して、計画地は５キロ離れたラムサール条約湿地で越冬する野鳥たちが集結し、採餌する区域に当たり大きな影響を与えるとの意見書が提出され"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "さらに大型の風車の建設は、バードストライクの発生する可能性が格段に高くなることが懸念され、どれほど野鳥に脅威となるか計り知れないとの見解を野鳥の会の方からいただきました"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "環境大臣及び経産大臣意見でも想定区域の周辺には大山上池・下池が存在し、衝突事故など影響が懸念される鳥類に関する適切な調査・予測及び評価を行い"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "御指摘のバードストライクの発生や湿地への飛来ルートへの影響、水鳥などの減少、また自然環境への影響などについて国や県にも確認しながら検討していく必要がある"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "御指摘のバードストライクの発生や湿地への飛来ルートへの影響、水鳥などの減少、また自然環境への影響などについて国や県にも確認しながら検討していく必要がある"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "本市としても、県の注意書きを踏まえ、しっかり鳥類等自然環境や景観などへの影響について精査していく必要があると認識しております"@ja.
+<< kg:id_1 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "しっかり鳥類等自然環境や景観などへの影響について精査していく必要がある"@ja.
+<< kg:id_1 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_14;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "条約委員会が発行する生態学的特徴を損なうような変化が既に起こっている、また起こりつつある、起こるおそれがある条約湿地のリストであるモントルーレコードへ掲載される事例になるのではないかと危惧する"@ja.
+<< kg:id_1 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今般の計画は、条約湿地から２キロから3.5キロに８本、高さ最大で182メートル、出力6,000キロワットと三瀬の２倍の巨大な風車が立ち並ぶというものであります"@ja.
+<< kg:id_1 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "日本野鳥の会山形支部からは、ハクチョウ類、ガン・カモ類の渡りルートとなっているため"@ja.
+<< kg:id_1 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "ミサゴやオオタカ、オジロワシ、オオワシといった希少猛禽類が餌場として利用しており"@ja.
+<< kg:id_1 prop:cause kg:id_18 >>
+    prop:text-txt_contents "高館山と荒倉山の中間の建設予定地には、絶滅危惧ＩＢ類であるクマタカの営巣地があること"@ja.
+<< kg:id_1 prop:cause kg:id_19 >>
+    prop:text-txt_contents "秋頃から、いずれも国の天然記念物の絶滅危惧ＩＢ類イヌワシ、絶滅危惧２類のオオワシ・オジロワシが周辺で頻繁に見られるということを確認しました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "鳥類に関する適切な調査・予測及び評価を行い"@ja.
+<< kg:id_1 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "その結果を踏まえ、鳥類への影響を回避、または極力低減することと要求が行われております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "国や県にも確認しながら検討していく必要があると考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "住民の同意や鳥類などの生態系及び景観等への影響について、専門家等にも相談して慎重に判断していく必要があると考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "まずは現在事業者が風況調査と環境アセスメントの実施に係る住民同意を得るために住民説明会を開催しておりますので、この動向を注視してまいります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "予防原則に立ってラムサール条約湿地については、野鳥へ重大な影響が及ぶと考え得る５キロ半径のバッファゾーンを含めて設置を認めないとガイドラインに加えること"@ja.
+<< kg:id_1 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "開発業者に対しては計画中止を促すなど早期に意思表明を行うことを求めます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "市としては、この矢引の計画段階で事業者にラムサール湿地周辺の調査を十分に行わせ、その資料を公開することを要求すべきと考えます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "環境審議会に環境省のラムサール条約湿地の御担当と野鳥と風力発電の問題に精通した有識者を招き御審議いただくこと"@ja.
+<< kg:id_1 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "その方々から市民への説明会も行っていただくことを求めます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "今提案した説明会も、今後の業者の説明会も審議会も、多くの市民が関われるよう、完全公開、そして録画や配信などが可能な形での開催を求めます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "アセスに踏み込むなら、市独自の調査も必要です"@ja.
+<< kg:id_1 prop:countermeasure kg:id_32 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "国際的な保護区としてラムサール条約の趣旨を踏まえ、アセス前に予防原則に基づいてガイドラインの制限区域を設定する、言わばゾーニングで判断するということを大原則にしていただきたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "国や県、そして専門家にも十分御意見をいただいて、この生物多様性ということに十分配慮した取組を推進していく必要がある"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "現在も開発危機に直面する民有地のまま市としての保全施策が取られないままで経過してきました"@ja.
+<< kg:id_34 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "改めて市で取得するなどし、庄内の原生風景を生かした自然公園として保全・活用が図れないか"@ja.
+<< kg:id_34 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "例えば、風力発電の開発業者に対し、ミチゲーション手法で代替自然の回復といった地域貢献を促すなど民間資金の活用も視野に入れ"@ja.
+}

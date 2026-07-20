@@ -1,0 +1,802 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00154> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "マンホール蓋"@ja.
+kg:id_1 rdf:type cls:c_1193.
+cls:c_1193 rdfs:label "設備"@ja.
+kg:id_2 rdfs:label "40年以上の経過による老朽化"@ja.
+kg:id_2 rdf:type cls:c_1195.
+cls:c_1195 rdfs:label "老朽化"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "車両交通量の多さによる摩耗頻度の増加"@ja.
+kg:id_3 rdf:type cls:c_3667.
+cls:c_3667 rdfs:label "摩耗増加"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "経年劣化"@ja.
+kg:id_4 rdf:type cls:c_1195.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "スリップ事故"@ja.
+kg:id_5 rdf:type cls:c_1196.
+cls:c_1196 rdfs:label "事故"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "降雨降雪時の危険性増加"@ja.
+kg:id_6 rdf:type cls:c_1197.
+cls:c_1197 rdfs:label "危険増大"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "摩耗によるがたつき"@ja.
+kg:id_7 rdf:type cls:c_1198.
+cls:c_1198 rdfs:label "不具合"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "摩耗による騒音"@ja.
+kg:id_8 rdf:type cls:c_88.
+cls:c_88 rdfs:label "騒音"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "不法投棄"@ja.
+kg:id_9 rdf:type cls:c_1661.
+cls:c_1661 rdfs:label "不法投棄"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "転落"@ja.
+kg:id_10 rdf:type cls:c_3668.
+cls:c_3668 rdfs:label "転落"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "豪雨時の浮上"@ja.
+kg:id_11 rdf:type cls:c_3669.
+cls:c_3669 rdfs:label "浮上"@ja.
+kg:id_1 prop:effect kg:id_11.
+kg:id_12 rdfs:label "豪雨時の飛散"@ja.
+kg:id_12 rdf:type cls:c_3670.
+cls:c_3670 rdfs:label "飛散"@ja.
+kg:id_1 prop:effect kg:id_12.
+kg:id_13 rdfs:label "計画的な維持管理"@ja.
+kg:id_13 rdf:type cls:c_1224.
+cls:c_1224 rdfs:label "維持管理"@ja.
+kg:id_1 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "管渠及びマンホール鉄蓋の改築更新"@ja.
+kg:id_14 rdf:type cls:c_3671.
+cls:c_3671 rdfs:label "更新"@ja.
+kg:id_1 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "デザインマンホール蓋"@ja.
+kg:id_15 rdf:type cls:c_1193.
+kg:id_16 rdfs:label "市民や観光客を視覚的に楽しませる"@ja.
+kg:id_16 rdf:type cls:c_448.
+cls:c_448 rdfs:label "観光振興"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "観光振興としての高いPR性"@ja.
+kg:id_17 rdf:type cls:c_448.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "マンホールカード"@ja.
+kg:id_18 rdf:type cls:c_3672.
+cls:c_3672 rdfs:label "広報媒体"@ja.
+kg:id_19 rdfs:label "コレクターの増加"@ja.
+kg:id_19 rdf:type cls:c_3673.
+cls:c_3673 rdfs:label "愛好家増加"@ja.
+kg:id_18 prop:effect kg:id_19.
+kg:id_20 rdfs:label "マンホール女子と言われる愛好家の増加"@ja.
+kg:id_20 rdf:type cls:c_3673.
+kg:id_18 prop:effect kg:id_20.
+kg:id_21 rdfs:label "モバイルスタンプラリーへの活用"@ja.
+kg:id_21 rdf:type cls:c_3674.
+cls:c_3674 rdfs:label "観光活用"@ja.
+kg:id_15 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "QRコード付きマンホール蓋による観光案内"@ja.
+kg:id_22 rdf:type cls:c_1207.
+cls:c_1207 rdfs:label "観光案内"@ja.
+kg:id_15 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "ストーリー性を持ったデザインマンホール蓋を巡る観光振興"@ja.
+kg:id_23 rdf:type cls:c_448.
+kg:id_15 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "大きな災害"@ja.
+kg:id_24 rdf:type cls:c_1209.
+cls:c_1209 rdfs:label "災害"@ja.
+kg:id_25 rdfs:label "停電"@ja.
+kg:id_25 rdf:type cls:c_1210.
+cls:c_1210 rdfs:label "停電"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "断水"@ja.
+kg:id_26 rdf:type cls:c_1211.
+cls:c_1211 rdfs:label "断水"@ja.
+kg:id_24 prop:cause kg:id_26.
+kg:id_27 rdfs:label "給排水設備の損傷"@ja.
+kg:id_27 rdf:type cls:c_1212.
+cls:c_1212 rdfs:label "設備損傷"@ja.
+kg:id_24 prop:cause kg:id_27.
+kg:id_28 rdfs:label "水洗トイレが使用できなくなる"@ja.
+kg:id_28 rdf:type cls:c_3675.
+cls:c_3675 rdfs:label "設備停止"@ja.
+kg:id_24 prop:effect kg:id_28.
+kg:id_29 rdfs:label "避難所生活"@ja.
+kg:id_29 rdf:type cls:c_2283.
+cls:c_2283 rdfs:label "避難生活"@ja.
+kg:id_30 rdfs:label "不便で不潔なトイレ"@ja.
+kg:id_30 rdf:type cls:c_3676.
+cls:c_3676 rdfs:label "不衛生"@ja.
+kg:id_29 prop:cause kg:id_30.
+kg:id_31 rdfs:label "冷たい食事"@ja.
+kg:id_31 rdf:type cls:c_3677.
+cls:c_3677 rdfs:label "食事不良"@ja.
+kg:id_29 prop:cause kg:id_31.
+kg:id_32 rdfs:label "床での雑魚寝"@ja.
+kg:id_32 rdf:type cls:c_3678.
+cls:c_3678 rdfs:label "就寝不良"@ja.
+kg:id_29 prop:cause kg:id_32.
+kg:id_33 rdfs:label "水分や食事を控えてしまう"@ja.
+kg:id_33 rdf:type cls:c_3679.
+cls:c_3679 rdfs:label "健康行動抑制"@ja.
+kg:id_29 prop:effect kg:id_33.
+kg:id_34 rdfs:label "健康被害"@ja.
+kg:id_34 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_29 prop:effect kg:id_34.
+kg:id_35 rdfs:label "エコノミークラス症候群による死亡"@ja.
+kg:id_35 rdf:type cls:c_1218.
+cls:c_1218 rdfs:label "死亡"@ja.
+kg:id_29 prop:effect kg:id_35.
+kg:id_36 rdfs:label "簡易トイレ"@ja.
+kg:id_36 rdf:type cls:c_3680.
+cls:c_3680 rdfs:label "防災設備"@ja.
+kg:id_37 rdfs:label "収容人数や経過時間による数量不足の可能性"@ja.
+kg:id_37 rdf:type cls:c_1220.
+cls:c_1220 rdfs:label "不足可能性"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "仮設トイレ"@ja.
+kg:id_38 rdf:type cls:c_3680.
+kg:id_39 rdfs:label "調達までに時間を要する"@ja.
+kg:id_39 rdf:type cls:c_3681.
+cls:c_3681 rdfs:label "調達遅延"@ja.
+kg:id_38 prop:effect kg:id_39.
+kg:id_40 rdfs:label "くみ取り作業が必要"@ja.
+kg:id_40 rdf:type cls:c_3682.
+cls:c_3682 rdfs:label "維持負担"@ja.
+kg:id_38 prop:effect kg:id_40.
+kg:id_41 rdfs:label "マンホールトイレ"@ja.
+kg:id_41 rdf:type cls:c_3680.
+kg:id_42 rdfs:label "臭いの問題の低減"@ja.
+kg:id_42 rdf:type cls:c_1226.
+cls:c_1226 rdfs:label "衛生向上"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "日常使用している水洗トイレに近い環境を迅速に確保できる"@ja.
+kg:id_43 rdf:type cls:c_3683.
+cls:c_3683 rdfs:label "生活環境"@ja.
+kg:id_41 prop:effect kg:id_43.
+kg:id_44 rdfs:label "衛生的である"@ja.
+kg:id_44 rdf:type cls:c_3684.
+cls:c_3684 rdfs:label "衛生性"@ja.
+kg:id_41 prop:effect kg:id_44.
+kg:id_45 rdfs:label "トイレ清掃の負担軽減"@ja.
+kg:id_45 rdf:type cls:c_1063.
+cls:c_1063 rdfs:label "負担軽減"@ja.
+kg:id_41 prop:effect kg:id_45.
+kg:id_46 rdfs:label "要配慮者が使用しやすい"@ja.
+kg:id_46 rdf:type cls:c_3685.
+cls:c_3685 rdfs:label "利用容易"@ja.
+kg:id_41 prop:effect kg:id_46.
+kg:id_47 rdfs:label "避難所のトイレとしてすぐに使用開始できる"@ja.
+kg:id_47 rdf:type cls:c_3686.
+cls:c_3686 rdfs:label "即時利用"@ja.
+kg:id_41 prop:effect kg:id_47.
+kg:id_48 rdfs:label "好評だった"@ja.
+kg:id_48 rdf:type cls:c_3542.
+cls:c_3542 rdfs:label "高評価"@ja.
+kg:id_41 prop:effect kg:id_48.
+kg:id_49 rdfs:label "避難所として使用する学校などの敷地への設置"@ja.
+kg:id_49 rdf:type cls:c_3687.
+cls:c_3687 rdfs:label "設置"@ja.
+kg:id_41 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "避難所のトイレ環境"@ja.
+kg:id_50 rdf:type cls:c_3683.
+kg:id_51 rdfs:label "簡易トイレ 仮設トイレ マンホールトイレを被災状況と時間経過に応じて整備"@ja.
+kg:id_51 rdf:type cls:c_3688.
+cls:c_3688 rdfs:label "段階整備"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "脱炭素社会の実現"@ja.
+kg:id_52 rdf:type cls:c_3689.
+cls:c_3689 rdfs:label "社会目標"@ja.
+kg:id_53 rdfs:label "地球温暖化の影響による災害や異常気象の相次ぐ発生"@ja.
+kg:id_53 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_52 prop:cause kg:id_53.
+kg:id_54 rdfs:label "再生可能エネルギーの導入"@ja.
+kg:id_54 rdf:type cls:c_3690.
+cls:c_3690 rdfs:label "エネルギー施策"@ja.
+kg:id_55 rdfs:label "地域の活性化"@ja.
+kg:id_55 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_56 rdfs:label "持続可能な社会の形成"@ja.
+kg:id_56 rdf:type cls:c_3691.
+cls:c_3691 rdfs:label "持続可能性"@ja.
+kg:id_54 prop:effect kg:id_56.
+kg:id_57 rdfs:label "火力発電所の休止や廃止"@ja.
+kg:id_57 rdf:type cls:c_2455.
+cls:c_2455 rdfs:label "発電所"@ja.
+kg:id_58 rdfs:label "今年の夏の電力需給がここ数年で最も厳しい状況"@ja.
+kg:id_58 rdf:type cls:c_1236.
+cls:c_1236 rdfs:label "需給逼迫"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "再生可能エネルギー"@ja.
+kg:id_59 rdf:type cls:c_3692.
+cls:c_3692 rdfs:label "エネルギー"@ja.
+kg:id_60 rdfs:label "安定性を欠く"@ja.
+kg:id_60 rdf:type cls:c_3693.
+cls:c_3693 rdfs:label "不安定性"@ja.
+kg:id_59 prop:effect kg:id_60.
+kg:id_61 rdfs:label "非効率石炭火力"@ja.
+kg:id_61 rdf:type cls:c_1093.
+cls:c_1093 rdfs:label "発電設備"@ja.
+kg:id_62 rdfs:label "フェードアウト"@ja.
+kg:id_62 rdf:type cls:c_3694.
+cls:c_3694 rdfs:label "縮小"@ja.
+kg:id_61 prop:countermeasure kg:id_62.
+kg:id_63 rdfs:label "石炭火力"@ja.
+kg:id_63 rdf:type cls:c_1093.
+kg:id_64 rdfs:label "高効率化"@ja.
+kg:id_64 rdf:type cls:c_3695.
+cls:c_3695 rdfs:label "高効率化"@ja.
+kg:id_63 prop:countermeasure kg:id_64.
+kg:id_65 rdfs:label "酒田市"@ja.
+kg:id_65 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_66 rdfs:label "市直営の風力発電事業"@ja.
+kg:id_66 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_65 prop:countermeasure kg:id_66.
+kg:id_67 rdfs:label "環境 景観に配慮した再生可能エネルギー等の導入促進"@ja.
+kg:id_67 rdf:type cls:c_1496.
+cls:c_1496 rdfs:label "導入促進"@ja.
+kg:id_65 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "酒田市沖での洋上風力発電に向けた要望 協議"@ja.
+kg:id_68 rdf:type cls:c_1314.
+cls:c_1314 rdfs:label "導入協議"@ja.
+kg:id_65 prop:countermeasure kg:id_68.
+kg:id_69 rdfs:label "脱炭素社会の実現を目指す方向性をさらに明確に示す"@ja.
+kg:id_69 rdf:type cls:c_3696.
+cls:c_3696 rdfs:label "方針明確化"@ja.
+kg:id_65 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "カーボンニュートラル推進"@ja.
+kg:id_70 rdf:type cls:c_848.
+cls:c_848 rdfs:label "施策推進"@ja.
+kg:id_71 rdfs:label "地域の経済や雇用への影響"@ja.
+kg:id_71 rdf:type cls:c_1124.
+cls:c_1124 rdfs:label "経済影響"@ja.
+kg:id_70 prop:effect kg:id_71.
+kg:id_72 rdfs:label "石炭火力発電の削減"@ja.
+kg:id_72 rdf:type cls:c_3697.
+cls:c_3697 rdfs:label "発電削減"@ja.
+kg:id_73 rdfs:label "代替となる地域の雇用や産業のシフトを施策とセットで示す"@ja.
+kg:id_73 rdf:type cls:c_3515.
+cls:c_3515 rdfs:label "雇用対策"@ja.
+kg:id_72 prop:countermeasure kg:id_73.
+kg:id_74 rdfs:label "国や県 そして民間企業を巻き込んだ具体的なプランで臨む"@ja.
+kg:id_74 rdf:type cls:c_118.
+cls:c_118 rdfs:label "計画策定"@ja.
+kg:id_65 prop:countermeasure kg:id_74.
+kg:id_75 rdfs:label "酒田港"@ja.
+kg:id_75 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "港湾"@ja.
+kg:id_76 rdfs:label "酒田港基地港湾等カーボンニュートラルポート連携会議の立ち上げ"@ja.
+kg:id_76 rdf:type cls:c_1248.
+cls:c_1248 rdfs:label "連携会議"@ja.
+kg:id_75 prop:countermeasure kg:id_76.
+kg:id_77 rdfs:label "カーボンニュートラルポートの導入検討"@ja.
+kg:id_77 rdf:type cls:c_799.
+cls:c_799 rdfs:label "導入検討"@ja.
+kg:id_75 prop:countermeasure kg:id_77.
+kg:id_78 rdfs:label "洋上風力発電のための基地港湾指定に向けた整備"@ja.
+kg:id_78 rdf:type cls:c_125.
+cls:c_125 rdfs:label "港湾整備"@ja.
+kg:id_75 prop:countermeasure kg:id_78.
+kg:id_79 rdfs:label "港湾計画の変更要望"@ja.
+kg:id_79 rdf:type cls:c_68.
+cls:c_68 rdfs:label "計画変更"@ja.
+kg:id_75 prop:countermeasure kg:id_79.
+kg:id_80 rdfs:label "再生可能エネルギー関連企業の立地"@ja.
+kg:id_80 rdf:type cls:c_1249.
+cls:c_1249 rdfs:label "企業立地"@ja.
+kg:id_75 prop:effect kg:id_80.
+kg:id_81 rdfs:label "洋上風力発電事業の円滑な導入"@ja.
+kg:id_81 rdf:type cls:c_3698.
+cls:c_3698 rdfs:label "事業導入"@ja.
+kg:id_75 prop:effect kg:id_81.
+kg:id_82 rdfs:label "基地港湾の指定"@ja.
+kg:id_82 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_75 prop:effect kg:id_82.
+kg:id_83 rdfs:label "地域に雇用と経済効果を創出"@ja.
+kg:id_83 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_75 prop:effect kg:id_83.
+kg:st_1 rdfs:label "進藤晃議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "老朽化に対応する計画的な更新と安全性確保が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "交通量の多い箇所は耐用年数が短く更新管理が重要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "経年劣化を踏まえた計画的な更新が必要"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "安全性確保のためスリップ防止機能を維持すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "降雨降雪時に備え高いグリップ力の維持が必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "摩耗による不具合の防止が必要"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "騒音防止のため更新と維持管理が必要"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "ロック機能で不法投棄防止を図るべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "転落防止機能の確保が必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "豪雨時に備え浮上防止機能が必要"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "豪雨時の飛散防止機能を確保すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "老朽化対策として計画的な維持管理が求められる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "ストックマネジメント計画に基づく改築更新を進めるべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "観光振興や啓発に有効活用できる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "観光振興の手段として有効"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "カード配布は来訪促進につながる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "愛好家層の拡大が観光資源化を後押しする"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "デジタル化事業として観光振興と啓発につながる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "観光案内と下水道事業の周知に有効"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "感染リスクを抑えつつ観光振興と下水道事業の啓発につながる"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "災害時は通常の水洗トイレが使えなくなるため代替確保が重要"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "断水時に対応できるトイレ環境整備が必要"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "設備損傷を想定したトイレ対策が必要"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "避難所での快適なトイレ環境確保は命に関わる課題"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "避難所の大きな課題であり改善が必要"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "避難所環境改善の課題である"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "避難所の快適性確保が必要"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "トイレ環境の悪さが健康行動を阻害する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "快適なトイレ環境の確保は健康被害防止に重要"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "避難所のトイレ環境は命に関わる重要課題"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "簡易トイレだけでは不足のおそれがある"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "迅速なトイレ確保の観点で課題がある"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "維持管理負担がある"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:op_34 prop:content "衛生面で優れた避難所トイレになる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "避難所で快適なトイレ環境を迅速に確保できる"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "衛生性の高さから整備を検討すべき"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "避難所運営の負担軽減に有効"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "段差が少なく要配慮者に配慮した設備である"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "事前整備があれば災害時に即応できる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "実績からも有効性が確認されている"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:op_41 prop:content "避難所トイレ環境を切れ目なく整備するため導入検討が必要"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "各タイプの特性を踏まえ切れ目なく整備する必要がある"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "世界的な温暖化対策の流れを成長の機会として捉えるべき"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "エネルギー転換は地域活性化につなげるべき"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "丸山至市長"@ja.
+kg:st_2 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_45 prop:content "環境や景観に配慮し関連企業集積と地域経済活性化を進める"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_2.
+kg:op_46 prop:content "次世代につなぐ持続可能な社会づくりに重要"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "再生可能エネルギーへの移行に際して安定供給への配慮が必要"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "現時点では火力発電とのエネルギーミックスが必要"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "安定供給や地域の実情に配慮しつつ進める必要がある"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "石炭火力にも新技術導入の余地がある"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "環境に十分配慮しながら再生可能エネルギーを推進している"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+kg:op_52 prop:content "関連企業の集積や酒田港整備による地域経済活性化を図る"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_2.
+kg:op_53 prop:content "山形県など関係機関と連携し導入検討を進めている"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_2.
+kg:op_54 prop:content "カーボンニュートラルの方向性を明確化する時期にある"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_2.
+kg:op_55 prop:content "地域経済の維持発展に寄与する形で進めなければならない"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_2.
+kg:op_56 prop:content "地域が存続できる施策と一体で示されるべき"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_2.
+kg:op_57 prop:content "地域存続のため具体的プランが必要"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_2.
+kg:op_58 prop:content "酒田港におけるカーボンニュートラルポート形成実現に向け検討を始めた"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_2.
+kg:op_59 prop:content "山形県など関係機関と連携して進めたい"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_2.
+kg:op_60 prop:content "洋上風力発電事業促進に不可欠である"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_2.
+kg:op_61 prop:content "基地港湾指定の前提として港湾計画変更を進める"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_2.
+kg:op_62 prop:content "カーボンニュートラルポート形成の成果として期待する"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_2.
+kg:op_63 prop:content "基地港湾指定とあわせて事業推進を図る"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_2.
+kg:op_64 prop:content "洋上風力発電推進に向けた重要な成果である"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_2.
+kg:op_65 prop:content "カーボンニュートラルポート形成で地域発展につなげたい"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_2.
+kg:op_66 prop:content "港の発展が酒田市の発展につながる"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "しかし、下水道事業は施設及び管路が延長され、整備が進む一方で、40年以上もの経過から老朽化に対応するため、計画的な維持管理が求められており"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "このため、耐用年数について、車両交通量の多いところでは摩耗頻度も高いため15年、それ以外は経年劣化により30年が目安とされています"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "このため、耐用年数について、車両交通量の多いところでは摩耗頻度も高いため15年、それ以外は経年劣化により30年が目安とされています"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "本来マンホール蓋の紋様はスリップ防止機能であり、人や車両のスリップ事故を防止するため、安全性を確保しなければなりません"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "特に、降雨降雪時には危険性が増すことから、高いグリップ力を維持しなければならない"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "摩耗によるがたつきや騒音の防止"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "摩耗によるがたつきや騒音の防止"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "不法投棄や転落防止からのロック機能"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "不法投棄や転落防止からのロック機能"@ja.
+<< kg:id_1 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "豪雨時における浮上防止や飛散防止機能など"@ja.
+<< kg:id_1 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "豪雨時における浮上防止や飛散防止機能など"@ja.
+<< kg:id_1 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "40年以上もの経過から老朽化に対応するため、計画的な維持管理が求められており"@ja.
+<< kg:id_1 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "本市においては、平成29年に下水道ストックマネジメント計画を策定し、管渠及びマンホール鉄蓋の改築更新が行われています"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "最近では、各市町村の象徴となるデザインを凹凸で表現し、市民や観光客を視覚的に楽しませてくれるといった広告としても活用されています"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "また、観光振興としてもＰＲ性が高く、地域の自然あふれる風景や名所、御当地のゆるキャラのほか、最近では人気アニメなどを採用する自治体が増えています"@ja.
+<< kg:id_18 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "マンホール蓋の写真、位置情報、デザインの由来などを記載したマンホールカードを無料で配布しており、コレクターが増える中"@ja.
+<< kg:id_18 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "コレクターが増える中、マンホール女子と言われる愛好家も増えています"@ja.
+<< kg:id_15 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "そのほか、デザインマンホール蓋を利用したスマホ等によるモバイルスタンプラリーや"@ja.
+<< kg:id_15 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "ＱＲコードをつけたマンホール蓋による観光案内など、観光振興や下水道事業をより身近に知ってもらう手段として、マンホール蓋が有効に活用されています"@ja.
+<< kg:id_15 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "今後のウィズコロナ時代とともに、本市が推進するデジタル化事業の取組の一つとして、ストーリー性を持ったデザインマンホール蓋を巡る観光振興は、感染リスクを抑えつつ、下水道事業の啓発にもつながるものと思われます"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "特に、大きな災害が起きると停電、断水、給排水設備の損傷から水洗トイレは使用できなくなることがあります"@ja.
+<< kg:id_24 prop:cause kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "特に、大きな災害が起きると停電、断水、給排水設備の損傷から水洗トイレは使用できなくなることがあります"@ja.
+<< kg:id_24 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "特に、大きな災害が起きると停電、断水、給排水設備の損傷から水洗トイレは使用できなくなることがあります"@ja.
+<< kg:id_24 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "特に、大きな災害が起きると停電、断水、給排水設備の損傷から水洗トイレは使用できなくなることがあります"@ja.
+<< kg:id_29 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "やはりこれまでの避難所生活を顧みれば、不便で不潔なトイレ、冷たい食事、床での雑魚寝が課題であり"@ja.
+<< kg:id_29 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "やはりこれまでの避難所生活を顧みれば、不便で不潔なトイレ、冷たい食事、床での雑魚寝が課題であり"@ja.
+<< kg:id_29 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "やはりこれまでの避難所生活を顧みれば、不便で不潔なトイレ、冷たい食事、床での雑魚寝が課題であり"@ja.
+<< kg:id_29 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "避難所生活においては、トイレに行く回数を減らそうと水分や食事を控えてしまいがちになり"@ja.
+<< kg:id_29 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "加えて身体的な活動制限によって肉体的、精神的な疲労から健康被害につながるほか"@ja.
+<< kg:id_29 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "場合によってはエコノミークラス症候群で死亡するといった事例も過去にはあり"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "本市避難所には簡易トイレが備蓄され、発災後すぐに利用可能であるものの、収容人数や経過時間によって数量等に不足が生じる可能性があります"@ja.
+<< kg:id_38 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "協定を結んだ事業所からの仮設トイレの設置については、調達までに時間を要すると思われる"@ja.
+<< kg:id_38 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "ほか、くみ取り作業が必要となります"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "災害用マンホールトイレは、仮設のトイレ用配管に水をためることで臭いの問題を低減し"@ja.
+<< kg:id_41 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "日常使用している水洗トイレに近い環境を迅速に確保でき"@ja.
+<< kg:id_41 prop:effect kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "貯留槽やプールの水を利用し、汚水を下水道管路に流下させることができるため、衛生的であり"@ja.
+<< kg:id_41 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "衛生的であり、トイレ清掃の負担も軽減されます"@ja.
+<< kg:id_41 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "平面な場所に設置するため、入り口の段差を最小限にすることができ、要配慮者が使用しやすいなどのメリットもあります"@ja.
+<< kg:id_41 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "宮城県東松島市では、平成20年より管路施設の耐震化とマンホールトイレの設置が進められていたことから、東日本大震災の際は、避難所のトイレとしてすぐに使用が開始され"@ja.
+<< kg:id_41 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "東日本大震災の際は、避難所のトイレとしてすぐに使用が開始され、好評だったとされています"@ja.
+<< kg:id_41 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "避難所として使用する学校などの敷地に設置する災害用マンホールトイレは"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "簡易トイレ、仮設トイレ、マンホールトイレ、それぞれのタイプの特性を踏まえ、被災状況と時間の経過に応じて良好なトイレ環境を切れ目なく整備する必要があると考えます"@ja.
+<< kg:id_52 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "背景には、地球温暖化の影響による災害や異常気象が世界各地で相次いでいることから"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_44;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "再生可能エネルギーを中心としたエネルギー供給基盤を整備し、エネルギーの安定供給を図るとともに、地域の中にエネルギー源を分散配置することで、生活や産業活動に必要なエネルギーを地域の中から生み出し、産業の振興・地域活性化と、より安心して暮らせる持続可能な社会をつくり上げ"@ja.
+<< kg:id_54 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "より安心して暮らせる持続可能な社会をつくり上げ、次世代につなぐことを目指すとしています"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "政府によると、今年の夏の電力需給の見通しは、火力発電所の休止や廃止が相次いでいることから、ここ数年で最も厳しい状況にあるとしています"@ja.
+<< kg:id_59 prop:effect kg:id_60 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "安定性を欠く再生可能エネルギーからすれば、火力発電への依存度は、まだまだ高いものと思われます"@ja.
+<< kg:id_61 prop:countermeasure kg:id_62 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "安定供給や地域の実情に配慮しながら、非効率石炭火力のフェードアウト及び石炭火力の高効率化を着実に促進する必要があるとしています"@ja.
+<< kg:id_63 prop:countermeasure kg:id_64 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "安定供給や地域の実情に配慮しながら、非効率石炭火力のフェードアウト及び石炭火力の高効率化を着実に促進する必要があるとしています"@ja.
+<< kg:id_65 prop:countermeasure kg:id_66 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "具体的には、環境に十分配慮しながら市直営の風力発電事業に取り組んで、この４月から運転を開始しているところでございます"@ja.
+<< kg:id_65 prop:countermeasure kg:id_67 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "重点施策に、「環境・景観に配慮した再生可能エネルギー等の導入を促進し、関連する企業の集積や酒田港の整備を進めることによる地域経済の活性化」"@ja.
+<< kg:id_65 prop:countermeasure kg:id_68 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "山形県をはじめとする関係機関と洋上風力発電の導入に向けた要望・協議を重ね、今年度から酒田市沖での洋上風力発電に向けた検討が進んでいるところでございます"@ja.
+<< kg:id_65 prop:countermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "酒田市といたしましても、脱炭素社会の実現を目指す方向性をさらに明確に示す時期になっていると考えております"@ja.
+<< kg:id_70 prop:effect kg:id_71 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "１点目は、地域への経済波及、雇用への影響であります"@ja.
+<< kg:id_72 prop:countermeasure kg:id_73 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "例えば、国が石炭火力発電の削減を進めていくのであれば、同時にそれに替わる地域の雇用や産業のシフトなどについて、地域が存続できる施策とセットで示されなければならない"@ja.
+<< kg:id_65 prop:countermeasure kg:id_74 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "その上で、酒田市としても国や県、そして民間企業も巻き込んで、具体的なプランを持って臨む必要があるのではないかと考えております"@ja.
+<< kg:id_75 prop:countermeasure kg:id_76 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "今月の３日に、山形県とともに酒田港基地港湾等カーボンニュートラルポート連携会議という会議を立ち上げたところでございます。酒田港におけるカーボンニュートラルポートの形成実現に向けた方策の検討を始めた"@ja.
+<< kg:id_75 prop:countermeasure kg:id_77 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "酒田港でのカーボンニュートラルポート導入について、港湾管理者であります山形県をはじめとして、関係機関と連携をして検討をしてきたいなと"@ja.
+<< kg:id_75 prop:countermeasure kg:id_78 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "酒田港を洋上風力発電のための基地港湾、その指定に向けて整備を進めていくということが不可欠でございます"@ja.
+<< kg:id_75 prop:countermeasure kg:id_79 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "港湾管理者であります山形県知事に、この港湾計画、基地港湾の指定を受けるためには、その前提として港湾計画の変更がどうしても必要になってくるわけでございまして、この港湾計画の変更について、せんだって要望をし"@ja.
+<< kg:id_75 prop:effect kg:id_80 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "水素やアンモニア等の発電関連を含めた再生可能エネルギー関連企業の立地"@ja.
+<< kg:id_75 prop:effect kg:id_81 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "洋上風力発電事業の円滑な導入"@ja.
+<< kg:id_75 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "洋上風力発電事業の推進に向けた基地港湾の指定"@ja.
+<< kg:id_75 prop:effect kg:id_83 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_65;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "こういったことによって、この地域に雇用と経済効果、こういったものを創出していくこと、これが目指す成果だろうと考えております"@ja.
+}

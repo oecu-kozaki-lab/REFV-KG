@@ -1,0 +1,789 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00152> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地球温暖化"@ja.
+kg:id_1 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_2 rdfs:label "シベリアの永久凍土が溶け出す"@ja.
+kg:id_2 rdf:type cls:c_1107.
+cls:c_1107 rdfs:label "永久凍土融解"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "天然ガスが噴き出して温暖化に拍車をかける"@ja.
+kg:id_3 rdf:type cls:c_3632.
+cls:c_3632 rdfs:label "温暖化悪化"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "未知のウイルスの脅威"@ja.
+kg:id_4 rdf:type cls:c_1109.
+cls:c_1109 rdfs:label "感染症脅威"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "気候変動や異常気象"@ja.
+kg:id_5 rdf:type cls:c_37.
+kg:id_6 rdfs:label "世界的なエネルギーの転換"@ja.
+kg:id_6 rdf:type cls:c_1111.
+cls:c_1111 rdfs:label "エネルギー転換"@ja.
+kg:id_5 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "2050年カーボンニュートラル"@ja.
+kg:id_7 rdf:type cls:c_1112.
+cls:c_1112 rdfs:label "脱炭素目標"@ja.
+kg:id_8 rdfs:label "温室効果ガスの排出量をゼロにする"@ja.
+kg:id_8 rdf:type cls:c_3633.
+cls:c_3633 rdfs:label "排出ゼロ"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "石炭火力の高比率"@ja.
+kg:id_9 rdf:type cls:c_1310.
+cls:c_1310 rdfs:label "石炭火力"@ja.
+kg:id_10 rdfs:label "再生可能エネルギーの普及を進める方針に転換"@ja.
+kg:id_10 rdf:type cls:c_3634.
+cls:c_3634 rdfs:label "再エネ普及"@ja.
+kg:id_9 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "震災以降人口が40％減少した女川原発"@ja.
+kg:id_11 rdf:type cls:c_1115.
+cls:c_1115 rdfs:label "原子力発電所"@ja.
+kg:id_12 rdfs:label "安全対策工事の後に再稼働を予定"@ja.
+kg:id_12 rdf:type cls:c_1116.
+cls:c_1116 rdfs:label "再稼働"@ja.
+kg:id_11 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "酒田共同火力発電所の存続問題"@ja.
+kg:id_13 rdf:type cls:c_1118.
+cls:c_1118 rdfs:label "火力発電所"@ja.
+kg:id_14 rdfs:label "1990年代以前の非効率発電所であること"@ja.
+kg:id_14 rdf:type cls:c_3635.
+cls:c_3635 rdfs:label "発電非効率"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "3.11以降の電力不足"@ja.
+kg:id_15 rdf:type cls:c_1117.
+cls:c_1117 rdfs:label "電力不足"@ja.
+kg:id_16 rdfs:label "酒田共同火力発電所のフル操業"@ja.
+kg:id_16 rdf:type cls:c_3636.
+cls:c_3636 rdfs:label "火力発電稼働"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "非効率石炭火力"@ja.
+kg:id_17 rdf:type cls:c_1310.
+kg:id_18 rdfs:label "フェードアウトに向けた具体的なロードマップを示す"@ja.
+kg:id_18 rdf:type cls:c_1122.
+cls:c_1122 rdfs:label "廃止計画"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "エネルギー転換期"@ja.
+kg:id_19 rdf:type cls:c_1111.
+kg:id_20 rdfs:label "関係機関と連携を密にして今後の対応策や方針を考える"@ja.
+kg:id_20 rdf:type cls:c_3513.
+cls:c_3513 rdfs:label "対応方針"@ja.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "カーボンニュートラルの実現に向けた産業構造や社会構造の変革"@ja.
+kg:id_21 rdf:type cls:c_3637.
+cls:c_3637 rdfs:label "構造変革"@ja.
+kg:id_22 rdfs:label "議論を深める取組を進める"@ja.
+kg:id_22 rdf:type cls:c_3638.
+cls:c_3638 rdfs:label "議論推進"@ja.
+kg:id_21 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "2050年を見据えた酒田市の取組"@ja.
+kg:id_23 rdf:type cls:c_3639.
+cls:c_3639 rdfs:label "行政取組"@ja.
+kg:id_24 rdfs:label "総合計画の見直しの中で戦略と方針をまとめる"@ja.
+kg:id_24 rdf:type cls:c_3640.
+cls:c_3640 rdfs:label "戦略方針"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "エネルギー問題への対応"@ja.
+kg:id_25 rdf:type cls:c_808.
+cls:c_808 rdfs:label "エネルギー政策"@ja.
+kg:id_26 rdfs:label "商工港湾課に港湾・エネルギー振興室を新設し体制を強化する"@ja.
+kg:id_26 rdf:type cls:c_2938.
+cls:c_2938 rdfs:label "体制強化"@ja.
+kg:id_25 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "遊佐町沖洋上風力発電"@ja.
+kg:id_27 rdf:type cls:c_175.
+cls:c_175 rdfs:label "洋上風力発電"@ja.
+kg:id_28 rdfs:label "十六羅漢の景観と沿岸底引き網漁への配慮"@ja.
+kg:id_28 rdf:type cls:c_1128.
+cls:c_1128 rdfs:label "景観配慮"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "住民や漁業関係者に時間をかけて説明を重ね地域の合意形成を図る"@ja.
+kg:id_29 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_27 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "有望な区域への選定と法定協議会へのステップアップ"@ja.
+kg:id_30 rdf:type cls:c_2860.
+cls:c_2860 rdfs:label "区域選定"@ja.
+kg:id_27 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "比子の海岸浸食"@ja.
+kg:id_31 rdf:type cls:c_1130.
+cls:c_1130 rdfs:label "海岸浸食"@ja.
+kg:id_27 prop:cause kg:id_31.
+kg:id_32 rdfs:label "吹浦港の土砂堆積"@ja.
+kg:id_32 rdf:type cls:c_1131.
+cls:c_1131 rdfs:label "土砂堆積"@ja.
+kg:id_27 prop:cause kg:id_32.
+kg:id_33 rdfs:label "法定協議会の設置を国へ要請"@ja.
+kg:id_33 rdf:type cls:c_3641.
+cls:c_3641 rdfs:label "協議会設置要請"@ja.
+kg:id_27 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "景観に関する不安を踏まえ山形県が合成写真を作成して公表する予定"@ja.
+kg:id_34 rdf:type cls:c_3642.
+cls:c_3642 rdfs:label "景観不安対応"@ja.
+kg:id_27 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "鳥海山からの伏流水への影響について調査や予測及び評価を実施する"@ja.
+kg:id_35 rdf:type cls:c_3643.
+cls:c_3643 rdfs:label "地下水影響調査"@ja.
+kg:id_27 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "サケなどの漁業対象魚種への継続的な漁業影響調査を実施する"@ja.
+kg:id_36 rdf:type cls:c_3644.
+cls:c_3644 rdfs:label "漁業影響調査"@ja.
+kg:id_27 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "地域の合意形成"@ja.
+kg:id_37 rdf:type cls:c_138.
+kg:id_38 rdfs:label "民間事業者が丁寧に環境影響評価を実施し環境負荷の低減に努める"@ja.
+kg:id_38 rdf:type cls:c_1129.
+cls:c_1129 rdfs:label "環境影響評価"@ja.
+kg:id_37 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "酒田市沖洋上風力発電"@ja.
+kg:id_39 rdf:type cls:c_175.
+kg:id_40 rdfs:label "雇用や港湾振興や地域経済への好循環"@ja.
+kg:id_40 rdf:type cls:c_420.
+cls:c_420 rdfs:label "地域経済効果"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "地域住民や漁業者らと具体的な検討を始める"@ja.
+kg:id_41 rdf:type cls:c_3645.
+cls:c_3645 rdfs:label "具体検討"@ja.
+kg:id_39 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "丁寧な地元説明を重ね市民の機運醸成を図る"@ja.
+kg:id_42 rdf:type cls:c_3646.
+cls:c_3646 rdfs:label "説明推進"@ja.
+kg:id_39 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "十里塚の陸上風力発電"@ja.
+kg:id_43 rdf:type cls:c_1137.
+cls:c_1137 rdfs:label "陸上風力発電"@ja.
+kg:id_44 rdfs:label "コアジサシの営巣問題等の環境配慮対策を施す"@ja.
+kg:id_44 rdf:type cls:c_748.
+cls:c_748 rdfs:label "環境配慮"@ja.
+kg:id_43 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "酒田市沖への洋上風力発電事業の導入と基地港湾指定"@ja.
+kg:id_45 rdf:type cls:c_175.
+kg:id_46 rdfs:label "直接的な経済効果と第１次的及び第２次的な経済波及効果"@ja.
+kg:id_46 rdf:type cls:c_1139.
+cls:c_1139 rdfs:label "経済波及効果"@ja.
+kg:id_45 prop:effect kg:id_46.
+kg:id_47 rdfs:label "酒田市沖への洋上風力発電事業の導入"@ja.
+kg:id_47 rdf:type cls:c_175.
+kg:id_48 rdfs:label "一定の財政的なメリット"@ja.
+kg:id_48 rdf:type cls:c_1140.
+cls:c_1140 rdfs:label "財政効果"@ja.
+kg:id_47 prop:effect kg:id_48.
+kg:id_49 rdfs:label "酒田市沖の景観や環境への懸念"@ja.
+kg:id_49 rdf:type cls:c_3647.
+cls:c_3647 rdfs:label "景観環境懸念"@ja.
+kg:id_50 rdfs:label "景観や環境に配慮し漁業者など地域関係者の合意形成を図る"@ja.
+kg:id_50 rdf:type cls:c_138.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "洋上風力発電の売電単価引下げ"@ja.
+kg:id_51 rdf:type cls:c_1141.
+cls:c_1141 rdfs:label "売電単価引下げ"@ja.
+kg:id_52 rdfs:label "再エネ賦課金による国民負担の軽減"@ja.
+kg:id_52 rdf:type cls:c_1142.
+cls:c_1142 rdfs:label "国民負担軽減"@ja.
+kg:id_51 prop:effect kg:id_52.
+kg:id_53 rdfs:label "民間事業者の参入意欲の低下"@ja.
+kg:id_53 rdf:type cls:c_1143.
+cls:c_1143 rdfs:label "参入意欲低下"@ja.
+kg:id_51 prop:effect kg:id_53.
+kg:id_54 rdfs:label "地域振興策に向けられる資金不足"@ja.
+kg:id_54 rdf:type cls:c_3648.
+cls:c_3648 rdfs:label "地域資金不足"@ja.
+kg:id_51 prop:effect kg:id_54.
+kg:id_55 rdfs:label "基地港湾指定"@ja.
+kg:id_55 rdf:type cls:c_1087.
+cls:c_1087 rdfs:label "基地港湾"@ja.
+kg:id_56 rdfs:label "建設時や運転開始後の地域への大きな波及効果"@ja.
+kg:id_56 rdf:type cls:c_1145.
+cls:c_1145 rdfs:label "地域波及効果"@ja.
+kg:id_55 prop:effect kg:id_56.
+kg:id_57 rdfs:label "雇用や地元業界への経済波及効果"@ja.
+kg:id_57 rdf:type cls:c_1139.
+kg:id_55 prop:effect kg:id_57.
+kg:id_58 rdfs:label "酒田港の基地港湾指定"@ja.
+kg:id_58 rdf:type cls:c_966.
+cls:c_966 rdfs:label "基地港湾指定"@ja.
+kg:id_59 rdfs:label "酒田港の港湾計画に基地機能導入区域を位置づける"@ja.
+kg:id_59 rdf:type cls:c_1147.
+cls:c_1147 rdfs:label "港湾計画変更"@ja.
+kg:id_58 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "山形県による洋上風力発電整備に係る海洋利用の有望区域として国への手挙げ"@ja.
+kg:id_60 rdf:type cls:c_389.
+cls:c_389 rdfs:label "区域申請"@ja.
+kg:id_58 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "山形県による港湾計画の変更"@ja.
+kg:id_61 rdf:type cls:c_1147.
+kg:id_58 prop:countermeasure kg:id_61.
+kg:id_62 rdfs:label "酒田市沖の洋上風力発電事業導入"@ja.
+kg:id_62 rdf:type cls:c_884.
+cls:c_884 rdfs:label "洋上風力発電導入"@ja.
+kg:id_63 rdfs:label "関係者間の調整と地域の熱意をまとめ国への手続進展を先導する"@ja.
+kg:id_63 rdf:type cls:c_1149.
+cls:c_1149 rdfs:label "関係者調整"@ja.
+kg:id_62 prop:countermeasure kg:id_63.
+kg:id_64 rdfs:label "地域協調型洋上風力"@ja.
+kg:id_64 rdf:type cls:c_175.
+kg:id_65 rdfs:label "漁業者や地域住民の理解を得ながら進める"@ja.
+kg:id_65 rdf:type cls:c_574.
+cls:c_574 rdfs:label "理解形成"@ja.
+kg:id_64 prop:countermeasure kg:id_65.
+kg:id_66 rdfs:label "酒田沖での洋上風力発電"@ja.
+kg:id_66 rdf:type cls:c_175.
+kg:id_67 rdfs:label "国や山形県による丁寧な説明や意見交換"@ja.
+kg:id_67 rdf:type cls:c_1150.
+cls:c_1150 rdfs:label "説明対話"@ja.
+kg:id_66 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "洋上風力発電"@ja.
+kg:id_68 rdf:type cls:c_175.
+kg:id_69 rdfs:label "建設工事期間中や稼働開始以降の漁業への何らかの影響"@ja.
+kg:id_69 rdf:type cls:c_280.
+cls:c_280 rdfs:label "漁業影響"@ja.
+kg:id_68 prop:effect kg:id_69.
+kg:id_70 rdfs:label "洋上風力発電による漁業影響"@ja.
+kg:id_70 rdf:type cls:c_280.
+kg:id_71 rdfs:label "受忍の範囲やそれを上回る漁業振興策を議論する"@ja.
+kg:id_71 rdf:type cls:c_3649.
+cls:c_3649 rdfs:label "漁業振興策"@ja.
+kg:id_70 prop:countermeasure kg:id_71.
+kg:id_72 rdfs:label "遊佐沖の洋上風力発電"@ja.
+kg:id_72 rdf:type cls:c_175.
+kg:id_73 rdfs:label "風車の台座が魚礁として機能し漁業資源の増大効果の可能性"@ja.
+kg:id_73 rdf:type cls:c_3650.
+cls:c_3650 rdfs:label "魚礁効果"@ja.
+kg:id_72 prop:effect kg:id_73.
+kg:id_74 rdfs:label "工事に伴う漁業者の船の活用"@ja.
+kg:id_74 rdf:type cls:c_1152.
+cls:c_1152 rdfs:label "漁船活用"@ja.
+kg:id_72 prop:effect kg:id_74.
+kg:id_75 rdfs:label "酒田共同火力発電所の廃炉"@ja.
+kg:id_75 rdf:type cls:c_1119.
+cls:c_1119 rdfs:label "火力発電所廃止"@ja.
+kg:id_76 rdfs:label "酒田港の貨物量減少"@ja.
+kg:id_76 rdf:type cls:c_950.
+cls:c_950 rdfs:label "貨物量減少"@ja.
+kg:id_75 prop:effect kg:id_76.
+kg:id_77 rdfs:label "工業用水需要の減少"@ja.
+kg:id_77 rdf:type cls:c_3651.
+cls:c_3651 rdfs:label "用水需要減少"@ja.
+kg:id_75 prop:effect kg:id_77.
+kg:id_78 rdfs:label "準備段階を経て先を見通してから進める"@ja.
+kg:id_78 rdf:type cls:c_1155.
+cls:c_1155 rdfs:label "段階的廃止"@ja.
+kg:id_75 prop:countermeasure kg:id_78.
+kg:id_79 rdfs:label "火力発電に代わる次の新エネルギー"@ja.
+kg:id_79 rdf:type cls:c_1869.
+cls:c_1869 rdfs:label "新エネルギー"@ja.
+kg:id_80 rdfs:label "洋上の利用を含む新エネルギー展開を進める"@ja.
+kg:id_80 rdf:type cls:c_1459.
+cls:c_1459 rdfs:label "導入推進"@ja.
+kg:id_79 prop:countermeasure kg:id_80.
+kg:id_81 rdfs:label "洋上風力発電事業"@ja.
+kg:id_81 rdf:type cls:c_175.
+kg:id_82 rdfs:label "事前のアセスを共同で進めリスクとコストを減らす"@ja.
+kg:id_82 rdf:type cls:c_217.
+cls:c_217 rdfs:label "共同調査"@ja.
+kg:id_81 prop:countermeasure kg:id_82.
+kg:id_83 rdfs:label "酒田市が住民や漁業者ときちんと話し合い合意形成を進める"@ja.
+kg:id_83 rdf:type cls:c_138.
+kg:id_39 prop:countermeasure kg:id_83.
+kg:id_84 rdfs:label "酒田の課題を早く抽出し説明を尽くす"@ja.
+kg:id_84 rdf:type cls:c_1158.
+cls:c_1158 rdfs:label "課題説明"@ja.
+kg:id_39 prop:countermeasure kg:id_84.
+kg:id_85 rdfs:label "基地港湾整備"@ja.
+kg:id_85 rdf:type cls:c_1166.
+cls:c_1166 rdfs:label "基地港湾整備"@ja.
+kg:id_86 rdfs:label "現状では地盤の耐力が難しいこと"@ja.
+kg:id_86 rdf:type cls:c_3652.
+cls:c_3652 rdfs:label "地盤耐力不足"@ja.
+kg:id_85 prop:cause kg:id_86.
+kg:id_87 rdfs:label "何らかの工事を行う"@ja.
+kg:id_87 rdf:type cls:c_3653.
+cls:c_3653 rdfs:label "地盤強化工事"@ja.
+kg:id_85 prop:countermeasure kg:id_87.
+kg:id_88 rdfs:label "まず漁業者と地域の理解をしっかり得る"@ja.
+kg:id_88 rdf:type cls:c_574.
+kg:id_66 prop:countermeasure kg:id_88.
+kg:id_89 rdfs:label "洋上風力発電と漁業者の関係"@ja.
+kg:id_89 rdf:type cls:c_132.
+cls:c_132 rdfs:label "漁業振興"@ja.
+kg:id_90 rdfs:label "漁業者を主体にして酒田の漁業を発展させる振興策を考える"@ja.
+kg:id_90 rdf:type cls:c_3654.
+cls:c_3654 rdfs:label "主体的振興策"@ja.
+kg:id_89 prop:countermeasure kg:id_90.
+kg:id_91 rdfs:label "酒田の漁業振興"@ja.
+kg:id_91 rdf:type cls:c_132.
+kg:id_92 rdfs:label "養殖を望むのであれば検討する"@ja.
+kg:id_92 rdf:type cls:c_3655.
+cls:c_3655 rdfs:label "養殖検討"@ja.
+kg:id_91 prop:countermeasure kg:id_92.
+kg:id_93 rdfs:label "酒田市が真っ先に動き丁寧に合意形成を進める"@ja.
+kg:id_93 rdf:type cls:c_138.
+kg:id_39 prop:countermeasure kg:id_93.
+kg:st_1 rdfs:label "田中斉議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "温暖化による深刻な環境変化を懸念する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "温暖化の連鎖的悪化を危惧する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "人類が出会ったことのない未知のウイルスの脅威を危惧する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "世界的なエネルギー転換期を迎えていると認識する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "菅総理"@ja.
+kg:st_2 rdf:type cls:st_42.
+cls:st_42 rdfs:label "政府"@ja.
+kg:op_5 prop:content "2050年までに温室効果ガス排出量ゼロを宣言する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "経団連"@ja.
+kg:st_3 rdf:type cls:st_13.
+cls:st_13 rdfs:label "経済団体"@ja.
+kg:op_6 prop:content "その実現を支持する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "政府"@ja.
+kg:st_4 rdf:type cls:st_42.
+kg:op_7 prop:content "石炭火力の比率を下げて再生可能エネルギーの普及を進める方針に転換する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_4.
+kg:op_8 prop:content "地元合意の上で再稼働予定と説明する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "全国100基石炭火力廃炉報道で対象に挙げられた非効率発電所だと指摘する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "酒田共同火力発電所は電力不足を支えてきたと評価する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "丸山至市長"@ja.
+kg:st_5 rdf:type cls:st_27.
+cls:st_27 rdfs:label "市長"@ja.
+kg:op_11 prop:content "具体的なロードマップが示されると考えるが今後は不透明だと認識する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "国の動向を注視しながら関係機関と連携して対応策を考える必要があると述べる"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:op_13 prop:content "地域で起ころうとしている変革をどう捉えるか議論を深めたい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "2050年を見据えた取組方針をしっかり議論し戦略と方針をまとめたい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_5.
+kg:op_15 prop:content "新年度から体制を強化して取り組む"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_5.
+kg:op_16 prop:content "景観と漁業への配慮から想定海域が縮小されたと説明する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "住民や漁業関係者への丁寧な説明で合意形成が進んでいると述べる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "次の段階への選定に向けて活動していると説明する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "従前からの環境課題を抱えた中で取組が進められていると指摘する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "従前からの環境課題を抱えた中で取組が進められていると指摘する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "関係者間で一定の合意形成が図られたことを受け法定協議会設置を要請したと説明する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "景観不安への対応として合成写真公表を予定していると述べる"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "環境面では伏流水への影響調査を行う必要があると説明する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "事業開始前から終了後まで継続的なモニタリングを事業者に求めると述べる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "地域の合意形成には景観や環境への懸念に丁寧に対応することが重要だと述べる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_5.
+kg:op_26 prop:content "実現すれば地域経済への好循環が生まれると期待する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "酒田部会を設置し具体的な検討が始まると説明する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "一段階ずつ進むには丁寧な地元説明と市民の機運醸成が必要だと述べる"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "環境配慮対策を施してきたと説明する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "地域活性化に大きく寄与すると期待する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:op_31 prop:content "固定資産税収入増など一定の財政効果があると考える"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_5.
+kg:op_32 prop:content "景観や環境への配慮と地域関係者の合意形成が重要だと述べる"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_5.
+kg:op_33 prop:content "買取価格の低下で国民負担軽減が見込まれると説明する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_5.
+kg:op_34 prop:content "単価低下により事業者の参入意欲が下がる懸念があると述べる"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_5.
+kg:op_35 prop:content "地元に落ちるお金が少なくなる懸念を持っている"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_5.
+kg:op_36 prop:content "基地港湾は地域に大きな波及効果をもたらすと期待する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_5.
+kg:op_37 prop:content "雇用や地元業界への効果があると述べる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_5.
+kg:op_38 prop:content "基地港湾指定には港湾計画変更が必要だと述べる"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_5.
+kg:op_39 prop:content "指定に向けた初動として県の手挙げが重要だと述べる"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_5.
+kg:op_40 prop:content "港湾計画の変更を県にお願いしたいと述べる"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:op_41 prop:content "酒田市の役割は関係者調整と地域の総意形成だと述べる"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_5.
+kg:op_42 prop:content "漁業者や地域住民の理解を得ることが大前提だと述べる"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_5.
+kg:op_43 prop:content "これまで以上に丁寧な説明と意見交換をお願いしたい"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_5.
+kg:op_44 prop:content "漁業に全く影響が出ないことはないと認識する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_5.
+kg:op_45 prop:content "影響の受忍範囲とそれを上回る漁業振興策が重要だと述べる"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_5.
+kg:op_46 prop:content "魚礁効果による漁業資源増大の可能性が示唆されていると述べる"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_5.
+kg:op_47 prop:content "工事で漁業者の船が活用される例があると述べる"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_5.
+kg:op_48 prop:content "発電量減少は港の物流減少に連動すると懸念する"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "簡単になくしてもらっては困ると述べる"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "先を見通してからでなければ簡単に廃炉は受け入れられないと述べる"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "酒田の死活問題として新エネルギー展開をしっかり進めるべきだと述べる"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "遊佐のように共同で事前アセスを行いリスクとコストを減らすべきだと述べる"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_1.
+kg:op_53 prop:content "最も身近な行政として酒田市が真っ先に合意形成へ動くべきだと述べる"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_1.
+kg:op_54 prop:content "酒田の課題を明確にして説明することが合意形成に近づくと述べる"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "大沼康浩地域創生部長"@ja.
+kg:st_6 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_55 prop:content "現状では地盤耐力が難しく何らかの工事が必要だと述べる"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_6.
+kg:op_56 prop:content "地盤強化のため工事が必要だと述べる"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "竹越攻征農林水産部長"@ja.
+kg:st_7 rdf:type cls:st_28.
+kg:op_57 prop:content "振興策より先に漁業者と地域の理解を得ることが必要だと述べる"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:op_58 prop:content "風力に飲み込まれるのではなく漁業者主体の振興策が大事だと述べる"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_7.
+kg:op_59 prop:content "酒田の漁師が望むなら養殖も検討したいと述べる"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_7.
+kg:op_60 prop:content "地域と漁業者の合意形成へ酒田市が真っ先に動くのが一番だと述べる"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地球温暖化によってシベリアの永久凍土が溶け出して"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "天然ガスが噴き出して温暖化に拍車をかける"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "今まで氷の下で眠っていた大昔の、人類が出会ったことのない未知のウイルスの脅威も危惧されております"@ja.
+<< kg:id_5 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "気候変動や異常気象の対策の中で、世界的なエネルギーの転換期を迎えようとしております"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "菅総理は就任後初の所信表明の中で、2050年までに温室効果ガスの排出量をゼロにする2050年カーボンニュートラルを宣言し、経団連もその実現を、その後、支持を表明しております"@ja.
+<< kg:id_9 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "国内総発電量の32％は石炭火力ですが、政府はその比率を下げて再生可能エネルギーの普及を進める方針に転換し"@ja.
+<< kg:id_11 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "震災以降人口が40％減少した女川原発は地元合意がなされ、安全対策工事の後、2022年に再稼働を予定しております"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "昨年７月の全国100基石炭火力廃炉の報道で対象に挙げられた、いわゆる1990年代以前の非効率発電所であります"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "10年前の３月、3.11以降、フル操業で電力不足を支えてきました"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "今後につきましては、非効率石炭火力のフェードアウトに向けた具体的なロードマップが示されるものと考えるものの、規制あるいは誘導措置、地域の雇用等への影響を含めた配慮すべき事項など多角的に議論されておりまして、正直なところ、今後の見通し、これ実に、本当に不透明な状況という認識を持っておりまして"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "国のこういった動きも注視しながら、関係機関と連携を密にして、今後の対応策、方針等も考えていく必要があるのではないかなと思っております"@ja.
+<< kg:id_21 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "新年度以降、産業界と行政が協力しながら、カーボンニュートラルの実現に向けた産業構造や社会構造の変革が今まさにこの地域で起ころうとしているということと、これを受けて、酒田市や庄内地域ではこの流れをどのように捉えて考えていくべきか、そのきっかけ、議論を深めるようなそういった取組をまずは進めていきたい"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "2050年を見据えた酒田市の取組方針等についてはしっかり議論をし、戦略、方針をまとめていきたい"@ja.
+<< kg:id_25 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "新年度から商工港湾課に港湾・エネルギー振興室を新設しまして、体制を強化して取り組んでいきたい"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "１月に、遊佐沖の協議では十六羅漢の景観と沿岸底引き網漁への配慮で想定海域を縮小したとの報道がありました"@ja.
+<< kg:id_27 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "住民や漁業関係者に相当の時間をかけて説明を重ねており、地域の合意形成が図られて一定の準備段階に進んでいる区域となっております"@ja.
+<< kg:id_27 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "次の２段階目の有望な区域への選定、さらにその３段階目の法定協議会へのステップアップに向けて活動をしております"@ja.
+<< kg:id_27 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "比子の海岸浸食や吹浦港の土砂堆積等、以前からの環境課題を抱えた中で今回の取組を進めてまいりました"@ja.
+<< kg:id_27 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "比子の海岸浸食や吹浦港の土砂堆積等、以前からの環境課題を抱えた中で今回の取組を進めてまいりました"@ja.
+<< kg:id_27 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "遊佐町沖への洋上風力発電導入について関係者間で一定の合意形成が図られたことを受けまして、令和２年２月に、山形県は国へ遊佐町沖に係る法定協議会の設置を要請したところでございます"@ja.
+<< kg:id_27 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "地区別住民説明会などでの景観に関する不安や心配する意見を踏まえて、山形県が合成写真を作成して公表する予定"@ja.
+<< kg:id_27 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "山形県知事意見として、鳥海山からの伏流水への影響について、調査や予測及び評価を実施することといった意見が盛り込まれている"@ja.
+<< kg:id_27 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "サケなどの漁業対象魚種について、事業開始前から事業終了に伴う設備撤去及びその後の一定期間を通した継続的な漁業影響調査、いわゆるモニタリングの実施を事業者に求めていく"@ja.
+<< kg:id_37 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "地域の合意形成を図るためには、景観や環境への懸念事項について、民間事業者が丁寧に環境影響評価を実施し環境負荷の低減に努めることが重要である"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "実現すれば雇用や港湾振興、地域経済への好循環が生まれるものと思います"@ja.
+<< kg:id_39 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "酒田市沖でも洋上風力発電の事業化を目指して、地域住民や漁業者らと具体的な検討が始まることになりました"@ja.
+<< kg:id_39 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "１段階ずつステップアップしていくには、丁寧な地元説明を重ね、市民の機運醸成を図っていく必要があり"@ja.
+<< kg:id_43 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "本市が事業主体となった十里塚の陸上風力発電では、コアジサシの営巣問題等の環境配慮対策を施しました"@ja.
+<< kg:id_45 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "港湾の整備あるいは発電設備などの施工、施工後の運転、保守による直接的な経済効果のほかに、建設資材や原材料の取引の増加、さらには関連産業の立地による第１次的な経済波及効果に加えて、それらの雇用者所得の増加ですとか消費需要喚起による第２次的な経済波及効果などによりまして、この地域の活性化に大きく寄与するだろうと考えております"@ja.
+<< kg:id_47 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "酒田市沖への洋上風力発電事業の導入によりまして一定の財政的なメリットとしての効果、これも生まれるものと考えております"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "本市としては、景観や環境に配慮をし、そして漁業者などの海域利用者をはじめとする地域関係者の合意形成を図ることがまずは重要だと考えているところであります"@ja.
+<< kg:id_51 prop:effect kg:id_52 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "この大幅に減額したことによりまして、再生可能エネルギー発電促進賦課金、再エネ賦課金と言われておりますけれども、これによる国民負担の軽減が見込まれております"@ja.
+<< kg:id_51 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "民間事業者における洋上風力発電事業への参入意欲、単価が下がるわけですから、参入意欲の低下"@ja.
+<< kg:id_51 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "それに伴って地域振興策に向けられる資金不足、こういったものが逆に懸念事項として考えられる"@ja.
+<< kg:id_55 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "建設時は大量の資機材の保管ですとか組立て、海上輸送、それから、運転開始後はメンテナンスに必要なアクセス船ですとか作業船の高頻度での発着などを通して、地域に大きな波及効果、これをもたらすものだろうとこのように期待をできます"@ja.
+<< kg:id_55 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "雇用や地元業界への経済波及効果もあるだろう"@ja.
+<< kg:id_58 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "県が定める酒田港の港湾計画に海洋再生可能エネルギー発電設備等の基地機能を導入する区域という形で位置づける必要があります"@ja.
+<< kg:id_58 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "まず１つは、山形県による洋上風力発電整備に係る海洋利用の有望区域としての国への手挙げ、情報提供ということになる"@ja.
+<< kg:id_58 prop:countermeasure kg:id_61 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "もう一つは、山形県による港湾計画の変更、これが必要だ"@ja.
+<< kg:id_62 prop:countermeasure kg:id_63 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "酒田市としての次なる役割としては何かということになりますが、この後の山形県、それから国の手続の速やかな進行に向けて、関係者間の調整作業が必要になってくるでしょうし、それから、地域の総意として地域の熱意をまとめながら、国に対する手続の進展を早める活動を先導すること、これが私どもの役割ではないかな"@ja.
+<< kg:id_64 prop:countermeasure kg:id_65 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "洋上風力発電の検討に当たりましては、まずは海で操業し生活している漁業者をはじめ、地域住民の方などの御理解を得ながら進めていくことがこれは大前提"@ja.
+<< kg:id_66 prop:countermeasure kg:id_67 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "国や山形県において、これまで以上に丁寧な説明や意見交換をお願いしたい"@ja.
+<< kg:id_68 prop:effect kg:id_69 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "建設工事期間中や稼働開始以降、漁業に全く、全然影響が出ないとはならないと考えております。何らかの影響は必ずある"@ja.
+<< kg:id_70 prop:countermeasure kg:id_71 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "漁業への影響が漁業者の受忍の範囲内なのか、あるいは受忍の範囲を多少超えてもそれ以上のメリットとなる漁業振興策があるか、これによるものと考えております"@ja.
+<< kg:id_72 prop:effect kg:id_73 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "風車の、海の下部分、台座の部分に魚や貝がついていわゆる魚礁としての役割を果たすことで、漁業資源の増大効果の可能性も示唆されております"@ja.
+<< kg:id_72 prop:effect kg:id_74 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "工事に伴って、いろんな場面で漁業者の皆さんの船が活用されるとそのような例もある"@ja.
+<< kg:id_75 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "発電量が減っただけでも減るわけですから、もう港の物流が連動している部分がありまして、石炭が35万トン減ると酒田港の貨物は16％減る"@ja.
+<< kg:id_75 prop:effect kg:id_77 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "１日石炭が6,000トンと日量6,000リットルの工業用水を使っておりますので、簡単になくしてもらっちゃ困るなというのが私の思いであります"@ja.
+<< kg:id_75 prop:countermeasure kg:id_78 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "なくなるとしてもちゃんと準備段階を経て、先を見通してからでなければ、そんな簡単に廃炉は受け入れられない"@ja.
+<< kg:id_79 prop:countermeasure kg:id_80 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "ぜひ火力に代わった次の新エネルギーの展開と、洋上の利用は酒田の死活問題かなと考えますので、しっかりと見守っていきながら施策を展開していただきたい"@ja.
+<< kg:id_81 prop:countermeasure kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "遊佐のほうでは今、30社集まって共同で事前のアセスとか、それをちゃんとまとめて、リスクを減らして、コストも減らしてまとめた形で、今、調査を行っているわけですけれども、それは酒田も同じにやったほうがいい"@ja.
+<< kg:id_39 prop:countermeasure kg:id_83 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "一番身近にある行政は酒田市ですから、酒田市が住民なり漁業者ときちんとした話合いをしていくという部分が真っ先になければ"@ja.
+<< kg:id_39 prop:countermeasure kg:id_84 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "遊佐の課題はあって、では酒田の課題は何かという部分を説明を尽くすことが、一番合意形成には近いと思います"@ja.
+<< kg:id_85 prop:cause kg:id_86 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "地盤の耐力としては、現状では難しいと思いますので、何かしらの工事は必要となる"@ja.
+<< kg:id_85 prop:countermeasure kg:id_87 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "地盤の耐力としては、現状では難しいと思いますので、何かしらの工事は必要となる"@ja.
+<< kg:id_66 prop:countermeasure kg:id_88 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "まずは、漁業者の理解、それから地域の皆さんの理解がしっかりあった上で、その上で振興策が出てくる"@ja.
+<< kg:id_89 prop:countermeasure kg:id_90 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "我々あくまで漁業者を主体にして、その上で酒田の漁業をしっかりと子々孫々まで発展させていけるような振興策、これが大事なんだと思っております"@ja.
+<< kg:id_91 prop:countermeasure kg:id_92 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "養殖の話につきましても、酒田の漁師がそれを望むのであれば、我々も検討をしていきたい"@ja.
+<< kg:id_39 prop:countermeasure kg:id_93 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "漁業者にも地域の合意形成にも、酒田市が真っ先に動くよう丁寧に進めるというのが一番だと思います"@ja.
+}

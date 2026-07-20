@@ -1,0 +1,509 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00191> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "ＪＲＥ加茂風力発電事業の中止申入れ"@ja.
+kg:id_1 rdf:type cls:c_4291.
+cls:c_4291 rdfs:label "中止申入れ"@ja.
+kg:id_2 rdfs:label "ラムサール条約登録湿地の近傍でクマタカなどの生息や営巣及び渡り鳥の生息への影響が強く懸念されること"@ja.
+kg:id_2 rdf:type cls:c_4282.
+cls:c_4282 rdfs:label "生態系影響懸念"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "一定の距離に複数の風力発電事業が集中した場合の累積的な影響が懸念されること"@ja.
+kg:id_3 rdf:type cls:c_4283.
+cls:c_4283 rdfs:label "累積影響懸念"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "重要な自然環境や多様な生態系が保存されている区域について予防的な観点から事前に判断することが必要と考えたこと"@ja.
+kg:id_4 rdf:type cls:c_4292.
+cls:c_4292 rdfs:label "予防的判断"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "ＪＲＥ加茂風力発電事業"@ja.
+kg:id_5 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_6 rdfs:label "加茂地区の少子高齢化や人口減少に伴う地域存続への危機感"@ja.
+kg:id_6 rdf:type cls:c_4293.
+cls:c_4293 rdfs:label "地域衰退危機"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "加茂山の管理が困難でこのままでは山が荒れ地域に住む人がいなくなるとの危機感"@ja.
+kg:id_7 rdf:type cls:c_4294.
+cls:c_4294 rdfs:label "里山管理困難"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "三瀬地区を参考に加茂地区でも同様の事業展開ができないかとの思い"@ja.
+kg:id_8 rdf:type cls:c_4295.
+cls:c_4295 rdfs:label "事業期待"@ja.
+kg:id_5 prop:cause kg:id_8.
+kg:id_9 rdfs:label "地域にもたらすプラスの効果への期待"@ja.
+kg:id_9 rdf:type cls:c_3297.
+cls:c_3297 rdfs:label "地域利益"@ja.
+kg:id_5 prop:effect kg:id_9.
+kg:id_10 rdfs:label "林道整備の促進"@ja.
+kg:id_10 rdf:type cls:c_786.
+cls:c_786 rdfs:label "インフラ整備"@ja.
+kg:id_5 prop:effect kg:id_10.
+kg:id_11 rdfs:label "地元住民の雇用"@ja.
+kg:id_11 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_5 prop:effect kg:id_11.
+kg:id_12 rdfs:label "土地所有者への賃料"@ja.
+kg:id_12 rdf:type cls:c_4296.
+cls:c_4296 rdfs:label "賃料収入"@ja.
+kg:id_5 prop:effect kg:id_12.
+kg:id_13 rdfs:label "ＪＲＥ社による地域振興事業への参加"@ja.
+kg:id_13 rdf:type cls:c_4297.
+cls:c_4297 rdfs:label "地域振興参加"@ja.
+kg:id_5 prop:effect kg:id_13.
+kg:id_14 rdfs:label "再生可能エネルギーに関する授業の実施"@ja.
+kg:id_14 rdf:type cls:c_909.
+cls:c_909 rdfs:label "環境教育"@ja.
+kg:id_5 prop:effect kg:id_14.
+kg:id_15 rdfs:label "地域住民の夢を打ち砕くこと"@ja.
+kg:id_15 rdf:type cls:c_4253.
+cls:c_4253 rdfs:label "住民失望"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "地域住民の声を反映したものとは思えないこと"@ja.
+kg:id_16 rdf:type cls:c_4298.
+cls:c_4298 rdfs:label "住民不反映"@ja.
+kg:id_1 prop:effect kg:id_16.
+kg:id_17 rdfs:label "調査もせずに事業が中止になることへの納得不能"@ja.
+kg:id_17 rdf:type cls:c_4299.
+cls:c_4299 rdfs:label "調査不足不満"@ja.
+kg:id_1 prop:effect kg:id_17.
+kg:id_18 rdfs:label "日本遺産の景観への影響の懸念"@ja.
+kg:id_18 rdf:type cls:c_3229.
+cls:c_3229 rdfs:label "景観影響懸念"@ja.
+kg:id_5 prop:effect kg:id_18.
+kg:id_19 rdfs:label "渡り鳥の経路など環境に重大な影響が懸念されること"@ja.
+kg:id_19 rdf:type cls:c_4282.
+kg:id_5 prop:effect kg:id_19.
+kg:id_20 rdfs:label "騒音や不眠症等の健康被害"@ja.
+kg:id_20 rdf:type cls:c_673.
+cls:c_673 rdfs:label "健康被害懸念"@ja.
+kg:id_5 prop:effect kg:id_20.
+kg:id_21 rdfs:label "電磁波や低周波に関する懸念"@ja.
+kg:id_21 rdf:type cls:c_673.
+kg:id_5 prop:effect kg:id_21.
+kg:id_22 rdfs:label "土砂崩れや低周波などの健康被害への懸念"@ja.
+kg:id_22 rdf:type cls:c_673.
+kg:id_5 prop:effect kg:id_22.
+kg:id_23 rdfs:label "どこに風車を建設すればラムサール条約に影響を与えないか調査をしっかり行うこと"@ja.
+kg:id_23 rdf:type cls:c_4300.
+cls:c_4300 rdfs:label "環境影響調査"@ja.
+kg:id_5 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "調査の継続を認めること"@ja.
+kg:id_24 rdf:type cls:c_2831.
+cls:c_2831 rdfs:label "調査継続"@ja.
+kg:id_5 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "令和５年２月１日に市が行った中止申入れを撤回すること"@ja.
+kg:id_25 rdf:type cls:c_4301.
+cls:c_4301 rdfs:label "撤回要求"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "環境影響評価法の調査を進め渡り鳥の経路などに関する環境省意見を明らかにすること"@ja.
+kg:id_26 rdf:type cls:c_4300.
+kg:id_5 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "懸念される健康影響についてしっかり調査して明らかにすること"@ja.
+kg:id_27 rdf:type cls:c_4302.
+cls:c_4302 rdfs:label "健康影響調査"@ja.
+kg:id_5 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "市当局が地元に丁寧な説明と対話を行うこと"@ja.
+kg:id_28 rdf:type cls:c_1150.
+cls:c_1150 rdfs:label "説明対話"@ja.
+kg:id_5 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "加茂地区の里山管理問題"@ja.
+kg:id_29 rdf:type cls:c_4303.
+cls:c_4303 rdfs:label "里山管理問題"@ja.
+kg:id_30 rdfs:label "市として今後の里山の管理と保全のための方策を一緒に考え国や県へ支援の必要性を要望すること"@ja.
+kg:id_30 rdf:type cls:c_4304.
+cls:c_4304 rdfs:label "支援要望"@ja.
+kg:id_29 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "緑環境税や活用できる補助金など支援策を一緒に模索すること"@ja.
+kg:id_31 rdf:type cls:c_4305.
+cls:c_4305 rdfs:label "支援策模索"@ja.
+kg:id_29 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "加茂地区の地域活性化"@ja.
+kg:id_32 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_33 rdfs:label "加茂水族館と北前船の町並みと渚の交番カモンマーレを活用してまちの活性化を図ること"@ja.
+kg:id_33 rdf:type cls:c_3674.
+cls:c_3674 rdfs:label "観光活用"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "ラムサール条約登録湿地の保全"@ja.
+kg:id_34 rdf:type cls:c_4306.
+cls:c_4306 rdfs:label "湿地保全"@ja.
+kg:id_35 rdfs:label "ラムサール湿地から５キロ圏内をバッファゾーンとしてガイドライン上の保護地区にすること"@ja.
+kg:id_35 rdf:type cls:c_4307.
+cls:c_4307 rdfs:label "保護区域設定"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:st_1 rdfs:label "鶴岡市当局"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "自然環境への重大な影響が懸念されるため中止申入れは必要とする"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市民の声・鶴岡 草島進一議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "ラムサール湿地と水鳥保全の観点から中止判断は妥当とする"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "複数事業の累積影響も考慮し中止申入れに至ったと説明する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "予防的観点から事前判断が必要で中止申入れは妥当とする"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "共産党市議団 長谷川剛議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_5 prop:content "自然環境を後世に残すため予防的判断として中止申入れは妥当とする"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "市議会公明党 秋葉雄議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_6 prop:content "地域存続を真剣に模索する中で事業可能性の検討が始まったと述べる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "新政クラブ 尾形昌彦議員"@ja.
+kg:st_5 rdf:type cls:st_9.
+kg:op_7 prop:content "人口減少と高齢化が進む中で地域活性化策として期待があったとする"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_5.
+kg:op_8 prop:content "山の管理困難が事業検討の直接的な背景だと説明する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "山の管理が限界に来ているという住民の思いは理解できると述べる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "三瀬地区の先行事例を参考に可能性を探っていたと述べる"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_4.
+kg:st_6 rdfs:label "請願者"@ja.
+kg:st_6 rdf:type cls:st_32.
+cls:st_32 rdfs:label "請願者"@ja.
+kg:op_11 prop:content "風力発電が地域にもたらすプラスの効果を含めて検討してきたとする"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "紹介議員"@ja.
+kg:st_7 rdf:type cls:st_9.
+kg:op_12 prop:content "鶴岡八森山風力発電事業の例では林道整備の促進が地元メリットになるとする"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_7.
+kg:op_13 prop:content "風力発電のために整備した道路が林道となり森林整備に有効と評価する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_5.
+kg:op_14 prop:content "地元住民の雇用創出がメリットになると認識している"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_7.
+kg:op_15 prop:content "土地所有者への賃料支払いが地域メリットになるとする"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_7.
+kg:op_16 prop:content "用地や道路の賃料が所有者や町内振興会の財源になり得ると述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "事業者の地域振興事業への参加も地域への利益と認識している"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_7.
+kg:op_18 prop:content "再生可能エネルギーに関する授業実施などソフト面のフォローもあるとする"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_7.
+kg:op_19 prop:content "中止申入れは地域住民の夢を壊し住民の声を反映していないと訴える"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_6.
+kg:op_20 prop:content "市の中止申入れは住民の声を反映していないと批判する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_6.
+kg:op_21 prop:content "地域住民の声を能動的に拾わず判断したことが請願につながったとする"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "調査なしの中止では諦めようにも諦めきれないと訴える"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_6.
+kg:op_23 prop:content "まず影響をしっかり調査してほしいという請願だと位置づける"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:st_8 rdfs:label "ＳＤＧｓ鶴ヶ岡 南波純議員"@ja.
+kg:st_8 rdf:type cls:st_9.
+kg:op_24 prop:content "巨大風車群と港町景観は両立せず景観保全上認められないとする"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "請願者側紹介議員"@ja.
+kg:st_9 rdf:type cls:st_9.
+kg:op_25 prop:content "山あいの風車は古くからの町並み景観には影響しないのではないかと理解する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_9.
+kg:op_26 prop:content "環境への影響は今後の調査と説明で明らかにすべきだとする"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_7.
+kg:op_27 prop:content "鳥類への重大な影響が懸念されるため認められないとする"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_3.
+kg:st_10 rdfs:label "住民"@ja.
+kg:st_10 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_28 prop:content "電磁波や低周波を含む健康影響を懸念している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_10.
+kg:op_29 prop:content "健康被害の懸念は調査して明らかにすべきと受け止める"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_7.
+kg:op_30 prop:content "不眠症や入眠妨害のリスクがあり健康被害を無視できないとする"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "電磁波や低周波への不安があるため説明と調査を求める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_10.
+kg:st_11 rdfs:label "ＪＲＥ社"@ja.
+kg:st_11 rdf:type cls:st_21.
+cls:st_21 rdfs:label "事業者"@ja.
+kg:op_32 prop:content "懸念される点はしっかり調査して明らかにすると回答する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_11.
+kg:st_12 rdfs:label "住民説明会出席者"@ja.
+kg:st_12 rdf:type cls:st_5.
+kg:op_33 prop:content "土砂崩れや低周波などの懸念について質問した"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_12.
+kg:op_34 prop:content "必要な調査を行い地域に説明するとした"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_11.
+kg:op_35 prop:content "ラムサール条約の重要性を踏まえた上で影響のない場所を調査してほしいと求める"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:op_36 prop:content "どの場所なら風車建設が可能か調査してほしいというのが地域住民の思いだと述べる"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_5.
+kg:op_37 prop:content "まず調査の継続を認めるべきと求める"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+kg:op_38 prop:content "風力発電を推進するのでなく影響調査をまず行うべきとする"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "中止申入れの撤回を求める"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_6.
+kg:op_40 prop:content "住民に納得のいく説明がないままの中止は撤回を含め見直すべきとする"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "事業中止申入れを白紙に戻すべきと求める"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_5.
+kg:op_42 prop:content "環境影響評価法の調査を進める中で環境省意見も明らかにすべきとする"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_7.
+kg:op_43 prop:content "電磁波や低周波など懸念される点はしっかり調査して明らかにするとする"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_11.
+kg:op_44 prop:content "地元との意思疎通が不十分であり今後は丁寧な説明と対話を期待するとする"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_8.
+kg:op_45 prop:content "市はなぜ駄目なのか住民に納得のいく説明をする責任があるとする"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "市長は加茂住民と対話し住民の思いを受け止めるべきと求める"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_5.
+kg:op_47 prop:content "里山管理は風力発電と切り分け市と国県の支援で考えるべきとする"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_3.
+kg:op_48 prop:content "風力事業に頼らず既存の支援策を模索すべきとする"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_3.
+kg:op_49 prop:content "風力発電ではなく既存の観光資源を生かした持続可能な活性化を図るべきとする"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_8.
+kg:op_50 prop:content "自然と環境を大切にした取組による地域活性化が大切とする"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_3.
+kg:op_51 prop:content "湿地保全のため５キロ圏を早期に保護地区化すべきと求める"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "中止を申し入れた理由は、当該事業地がラムサール条約登録湿地の近傍であり、クマタカなどの生息や営巣、渡り鳥の生息への影響が強く懸念されること"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "また一定の距離に複数の風力発電事業が集中した場合の累積的な影響が懸念されること"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "さらに重要な自然環境や多様な生態系が保存されている区域については、予防的な観点から事前に判断することが必要と考えたこと"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "加茂地区の住民の皆さんが、少子高齢化が進む中で、地域の存続を真剣に模索する中で"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "市から移管された加茂山の管理が困難となり、このままでは山は荒れ、地域に住む人がいなくなってしまうとの危機感から"@ja.
+<< kg:id_5 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "三瀬地区を参考に、加茂地区でも同様の事業展開ができないものかとの思いで検討が始まり"@ja.
+<< kg:id_5 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "風力発電が地域にもたらすプラスの効果などを含めて検討してきた"@ja.
+<< kg:id_5 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "鶴岡八森山風力発電事業を例にすれば、林道整備の促進のほか"@ja.
+<< kg:id_5 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "地元住民の雇用"@ja.
+<< kg:id_5 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "風力発電事業で使用する土地の所有者に対する賃料"@ja.
+<< kg:id_5 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "ＪＲＥ社による地域振興事業への参加"@ja.
+<< kg:id_5 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "再生可能エネルギーに関する授業の実施など、事業者によるソフト面でのフォローもある"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "この中止申入れはそうした地域住民の夢を打ち砕くものであり"@ja.
+<< kg:id_1 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_20;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "地域住民の声を反映したものとは到底思えない"@ja.
+<< kg:id_1 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_22;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "調査もせずに事業が中止になることは諦めようにも諦めることができない"@ja.
+<< kg:id_5 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_24;
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "風車の建設は日本遺産の景観に影響を与えると思っている住民はほとんどいないと思われます"@ja.
+<< kg:id_5 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_26;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "加茂への風車建設によって、そのような環境に重大な影響が懸念される"@ja.
+<< kg:id_5 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_28;
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "風力発電事業が稼働した場合の騒音や不眠症等の健康被害"@ja.
+<< kg:id_5 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_31;
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "住民からＪＲＥ社に対する電磁波や低周波に関する質問があり、ＪＲＥ社は懸念されることについてはしっかりと調査をして明らかにしていくと回答している"@ja.
+<< kg:id_5 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_12;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "土砂崩れや低周波などの健康被害に対する懸念についての質問が出されました。それに対し、ＪＲＥ社からは懸念の点については必要な調査を行い、地域に説明を行う旨の説明がありました"@ja.
+<< kg:id_5 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "どこに風車を建設すればラムサール条約に影響を与えないか調査をしっかりしてほしい"@ja.
+<< kg:id_5 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "ＪＲＥ社による調査の継続を認めることを求めるものであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_39;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "令和５年２月１日に市が行ったＪＲＥ社への風力発電事業中止の申入れを撤回するとともに"@ja.
+<< kg:id_5 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "今後、環境影響評価法の調査が進んでいく中で、渡り鳥の経路に関することなどの環境省からの意見についても明らかになり、説明があると考えている"@ja.
+<< kg:id_5 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "ＪＲＥ社は懸念されることについてはしっかりと調査をして明らかにしていくと回答している"@ja.
+<< kg:id_5 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_44;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "今後も市当局の地元への丁寧な説明と対話を期待するものであります"@ja.
+<< kg:id_29 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "市としても今後の里山の管理、保全のための方策を一緒に考え、支援の必要性を国や県へ強く要望すべきと考えます"@ja.
+<< kg:id_29 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "また、緑環境税や活用できる補助金など、支援策を一緒に模索すべきと考えます"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_49;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "今後は、加茂水族館、北前船の船主集落の町並み、そして先日オープンしたばかりの渚の交番カモンマーレというほかの自治体にはない３つの貴重な観光資源を有効に活用しながらまちの活性化を図るべきです"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "ラムサール湿地から５キロ圏内を早期にバッファゾーンとしてガイドライン上の保護地区にしていただきたい"@ja.
+}

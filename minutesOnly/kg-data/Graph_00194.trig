@@ -1,0 +1,213 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00194> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "三瀬矢引風車の問題"@ja.
+kg:id_1 rdf:type cls:c_1966.
+cls:c_1966 rdfs:label "事業計画"@ja.
+kg:id_2 rdfs:label "1キロ圏内に582軒、1.5キロ圏内に1,000軒以上の民家がある場所に4.2メガワット・高さ172メーターの巨大風車6基を建設する計画"@ja.
+kg:id_2 rdf:type cls:c_2227.
+cls:c_2227 rdfs:label "風車建設計画"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "約6,000人の入眠妨害"@ja.
+kg:id_3 rdf:type cls:c_4273.
+cls:c_4273 rdfs:label "睡眠影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "約70名の深刻な睡眠障害による不眠症リスク"@ja.
+kg:id_4 rdf:type cls:c_3382.
+cls:c_3382 rdfs:label "睡眠障害"@ja.
+kg:id_1 prop:effect kg:id_4.
+kg:id_5 rdfs:label "風車騒音による健康被害の可能性"@ja.
+kg:id_5 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "シャドーフリッカーが12軒で年間8時間超発生"@ja.
+kg:id_6 rdf:type cls:c_4334.
+cls:c_4334 rdfs:label "日照影響"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "鳥類への影響"@ja.
+kg:id_7 rdf:type cls:c_643.
+cls:c_643 rdfs:label "鳥類影響"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "土砂災害を誘発する増災の可能性"@ja.
+kg:id_8 rdf:type cls:c_53.
+cls:c_53 rdfs:label "土砂災害"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "民家と風車の離隔距離ガイドラインの見直し"@ja.
+kg:id_9 rdf:type cls:c_4274.
+cls:c_4274 rdfs:label "基準見直し"@ja.
+kg:id_1 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "風車を最低でも2キロメートル以上民家から離す"@ja.
+kg:id_10 rdf:type cls:c_4326.
+cls:c_4326 rdfs:label "離隔確保"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "影響を回避または極力低減する適切な調査・予測・評価"@ja.
+kg:id_11 rdf:type cls:c_3393.
+cls:c_3393 rdfs:label "影響評価"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "計画の中止・撤退"@ja.
+kg:id_12 rdf:type cls:c_10.
+cls:c_10 rdfs:label "計画中止"@ja.
+kg:id_1 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "準備書の内容を十分精査し意見を取りまとめる"@ja.
+kg:id_13 rdf:type cls:c_4335.
+cls:c_4335 rdfs:label "内容精査"@ja.
+kg:id_1 prop:countermeasure kg:id_13.
+kg:st_1 rdfs:label "草島進一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "国内外にほとんど例がない計画で重大な問題だと指摘"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "シミュレーションで多数の住民に睡眠影響リスクが出ると懸念"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "北海道大学田鎖助教"@ja.
+kg:st_2 rdf:type cls:st_10.
+cls:st_10 rdfs:label "研究者"@ja.
+kg:op_3 prop:content "結果はリスク評価として十分有用との見解"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "不眠症リスクが発生すると指摘"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "事業者"@ja.
+kg:st_3 rdf:type cls:st_21.
+cls:st_21 rdfs:label "事業者"@ja.
+kg:op_5 prop:content "残留騒音や遮音効果を加味していないとして結果を否定"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "残留騒音を考慮しない設計でありISOの考え方も踏まえ有用と反論"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "市が重く受け止め介入しなければ健康被害が生じる可能性があると訴える"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "民家に近すぎることを示す問題だと指摘"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "加茂の風車撤退事例と同様に鳥類影響が大きい可能性を指摘"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "住民"@ja.
+kg:st_4 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_10 prop:content "開発面積や大規模作業道による地形改変で土砂災害リスクが高まると指摘"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_4.
+kg:op_11 prop:content "巨大化した風車に現行600メートル基準では対応できず見直しを求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "市民部長 伊藤慶也"@ja.
+kg:st_5 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_12 prop:content "国の動向を注視しながら見直しの必要性を検討する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "北海道大学田鎖先生ら"@ja.
+kg:st_6 rdf:type cls:st_10.
+kg:op_13 prop:content "4メガ風車なら予防原則上最低2キロ以上離すべきとする"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "国"@ja.
+kg:st_7 rdf:type cls:st_40.
+kg:op_14 prop:content "騒音や風車の影、鳥類・植物・生態系への影響を回避または低減するよう求める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_7.
+kg:op_15 prop:content "健康被害や鳥類影響、シャドーフリッカー、土砂災害懸念から中止撤退を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "中止や撤退には重大な影響や手続上の瑕疵など明確な根拠が必要とする"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_5.
+kg:op_17 prop:content "市民や環境審議会の声を踏まえ自然環境と住民生活の観点から準備書を精査する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "今回、出力が4.2メガワット、高さ172メーターの風車を６基建設するというものであります。また、その計画区域から500メーター以内には６軒、１キロ以内には582軒、1.5キロ以内には1,027軒、２キロまでだと計1,195軒の民家が現存する"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "北海道大学、田鎖助教が開発したシミュレーションソフト、Ｈ―ＲＩＳＫにこの風車の規模かつ位置で入力すると、約6,000人が入眠妨害"@ja.
+<< kg:id_1 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "そして約70名が深刻な睡眠障害による不眠症のリスクというのが試算されます。...事業者は結果を完全に否定をしました。...この結果はリスク評価として十分有用であると見解しております"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これは、重要なこととして市として受け止めて介入していただかないと、健康被害を生じる可能性があります"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "また、シャドーフリッカー、これは12軒が年間８時間を超えるということになっています。...シャドーフリッカーが12軒も発生するということは、いかにこの風車が民家に近いところにあるかということを示しています"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "昨年、加茂の風車は、マガン、オオヒシクイ、シジュウカラガンなど月1,000羽以上計画地に飛んでいるということで、撤退に至りました。全くこれと同じ状況なんです、矢引の風車というのは"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "住民からは、今回の開発地域に3,500平米必要だということだったり、この作業道もかなり大きなものになり、この改変によって土砂災害を誘発する増災の可能性の指摘もあります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "ぜひ信頼できる有識者の方々にも相談し、民家と風車の離隔距離のガイドラインの見直しを行っていただきたいと考えます...本市ガイドラインに定めております離隔距離に関する見直しにつきましては、年々風力発電施設の大型化や出力が増大しているという状況がございますので、国の動向等を注視しながら、見直しの必要性について検討してまいりたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "田鎖先生らは、４メガ風車であれば、予防原則の安全率を取れば、最低でも２キロメートル以上離すべきと言及されております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "国からは騒音の生活環境への影響や風車の影、鳥類・植物及び生態系への影響などについて適切な調査・予測・評価を行い、それら影響を回避または極力低減するよう、意見・勧告が出されている"@ja.
+<< kg:id_1 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "以上のことから、私はこの計画というのは市からもしっかりと中止、撤退を求めていただきたいと思います...事業者へ中止や撤退を求めることについては、本市にとって生活環境や自然環境等の観点において重大な影響、あるいは手続上の瑕疵など明確な根拠が必要と考えております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "本市といたしましては、今後県からの意見照会に対しまして、市民の声や市環境審議会での委員の声などを踏まえ、国が示す指針等を確認しながら、自然環境、住民生活等の観点から準備書の内容を十分精査し、意見を取りまとめてまいりたい"@ja.
+}

@@ -1,0 +1,143 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00193> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "クマタカの飛翔例の激減"@ja.
+kg:id_1 rdf:type cls:c_4327.
+cls:c_4327 rdfs:label "野鳥の減少"@ja.
+kg:id_2 rdfs:label "鶴岡八森山風力発電所の稼働"@ja.
+kg:id_2 rdf:type cls:c_4328.
+cls:c_4328 rdfs:label "風力発電所の稼働"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "クマタカのバードストライク"@ja.
+kg:id_3 rdf:type cls:c_4329.
+cls:c_4329 rdfs:label "野鳥の衝突"@ja.
+kg:id_4 rdfs:label "クマタカの死骸の確認"@ja.
+kg:id_4 rdf:type cls:c_4330.
+cls:c_4330 rdfs:label "野鳥の死亡"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "鶴岡八森山風力発電所"@ja.
+kg:id_5 rdf:type cls:c_3827.
+cls:c_3827 rdfs:label "風力発電所"@ja.
+kg:id_6 rdfs:label "直ちに稼働を中止する"@ja.
+kg:id_6 rdf:type cls:c_4331.
+cls:c_4331 rdfs:label "稼働停止"@ja.
+kg:id_5 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "事業者"@ja.
+kg:id_7 rdf:type cls:c_3090.
+cls:c_3090 rdfs:label "事業者"@ja.
+kg:id_8 rdfs:label "市民全体に対して説明会を開催する"@ja.
+kg:id_8 rdf:type cls:c_433.
+cls:c_433 rdfs:label "説明会開催"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "クマタカのバードストライク事案"@ja.
+kg:id_9 rdf:type cls:c_4329.
+kg:id_10 rdfs:label "風力発電施設５号機のナセルと風車の上部とタワーに目玉模様を設置する"@ja.
+kg:id_10 rdf:type cls:c_4332.
+cls:c_4332 rdfs:label "環境保全措置"@ja.
+kg:id_9 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "事後調査を追加する"@ja.
+kg:id_11 rdf:type cls:c_4333.
+cls:c_4333 rdfs:label "追加調査"@ja.
+kg:id_9 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "三瀬矢引風力発電事業"@ja.
+kg:id_12 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_13 rdfs:label "騒音や野鳥等への影響"@ja.
+kg:id_13 rdf:type cls:c_190.
+cls:c_190 rdfs:label "環境影響"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "準備書の内容を確認し専門家の助言をいただき意見する"@ja.
+kg:id_14 rdf:type cls:c_1419.
+cls:c_1419 rdfs:label "意見表明"@ja.
+kg:id_12 prop:countermeasure kg:id_14.
+kg:st_1 rdfs:label "草島進一議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "クマタカへの脅威が明らかであり稼働停止を求めるべきだ"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "三山の自然を守る会"@ja.
+kg:st_2 rdf:type cls:st_66.
+cls:st_66 rdfs:label "市民団体"@ja.
+kg:op_2 prop:content "風力発電所は直ちに稼働を中止するべきだと要請している"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "市から事業者に市民全体への説明会開催を要請すべきだ"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "目玉模様の効果は確立しておらず検証が必要だ"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "市民部長 伊藤慶也"@ja.
+kg:st_3 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_5 prop:content "追加調査結果を踏まえて今後の環境保全措置を検討する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "準備書の内容を確認し専門家の助言を得て意見していく"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "市は準備書を確認し専門家の助言を受けて意見していく"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "クマタカの飛翔例が２割に激減しているという報告があります。これを踏まえれば、脅威となっていることは明らかであります。稼働停止も求めるべきではないでしょうか。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:text-txt_contents "クマタカの死骸が確認された風力発電施設５号機"@ja.
+<< kg:id_5 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "この５月28日には、鶴岡八森山風力発電所は直ちに稼働を中止するべきだと要請書が提出されております。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "市から事業者に、まずは市民全体に対して説明会の開催を要請すべきと考えます"@ja.
+<< kg:id_9 prop:countermeasure kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "クマタカのバードストライク事案に係る追加的環境保全措置として、事業者が国や専門家からの助言を踏まえ、クマタカの死骸が確認された風力発電施設５号機へのナセル、風車の上部、タワーに目玉模様を設置したこと"@ja.
+<< kg:id_9 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "事後調査の追加が示されております。追加された事後調査は、猛禽類調査と死骸探索調査でございますけれども、どちらも令和６年11月まで実施されることとなっており、この追加の調査結果を踏まえ、今後の環境保全措置の対応も検討すると伺っております。"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "これまでも配慮書、方法書において、国からも騒音や野鳥等への影響については指摘されているところです。"@ja.
+<< kg:id_12 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "市といたしましては、今後送付される準備書の内容を確認しながら、専門家の助言をいただき、意見してまいりたいというふうに考えております。"@ja.
+}

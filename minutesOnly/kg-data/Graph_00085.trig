@@ -1,0 +1,513 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00085> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電施設整備事業"@ja.
+kg:id_1 rdf:type cls:c_2319.
+cls:c_2319 rdfs:label "開発事業"@ja.
+kg:id_2 rdfs:label "県や市の対応への不信感や疑問"@ja.
+kg:id_2 rdf:type cls:c_2320.
+cls:c_2320 rdfs:label "行政不信"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "十里塚地区への風力発電施設整備事業"@ja.
+kg:id_3 rdf:type cls:c_2319.
+kg:id_4 rdfs:label "市民一丸となったオール酒田での事業推進ができない状況"@ja.
+kg:id_4 rdf:type cls:c_2321.
+cls:c_2321 rdfs:label "推進困難"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "市民との合意形成のあり方の問題"@ja.
+kg:id_5 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "景観の問題"@ja.
+kg:id_6 rdf:type cls:c_189.
+cls:c_189 rdfs:label "景観問題"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "住民が理解できていない状況"@ja.
+kg:id_7 rdf:type cls:c_394.
+cls:c_394 rdfs:label "理解不足"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "住民の納得できる答えが返ってこない"@ja.
+kg:id_8 rdf:type cls:c_663.
+cls:c_663 rdfs:label "説明不足"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "説明会だけで事業を進めること"@ja.
+kg:id_9 rdf:type cls:c_2322.
+cls:c_2322 rdfs:label "説明会進行"@ja.
+kg:id_10 rdfs:label "市民の不信感の助長"@ja.
+kg:id_10 rdf:type cls:c_2320.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "市が積極的に話し合いの場を持つ"@ja.
+kg:id_11 rdf:type cls:c_136.
+cls:c_136 rdfs:label "協議実施"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "今の計画地への風力発電施設の建設"@ja.
+kg:id_12 rdf:type cls:c_1088.
+cls:c_1088 rdfs:label "施設建設"@ja.
+kg:id_13 rdfs:label "原発事故以来価値観が変わったこと"@ja.
+kg:id_13 rdf:type cls:c_2323.
+cls:c_2323 rdfs:label "価値観変化"@ja.
+kg:id_12 prop:cause kg:id_13.
+kg:id_14 rdfs:label "過去の民間風力発電施設建設計画が認められなかったこと"@ja.
+kg:id_14 rdf:type cls:c_2324.
+cls:c_2324 rdfs:label "建設不認可"@ja.
+kg:id_15 rdfs:label "景観上の問題"@ja.
+kg:id_15 rdf:type cls:c_189.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "平成22年の建設計画が認められなかったこと"@ja.
+kg:id_16 rdf:type cls:c_2324.
+kg:id_17 rdfs:label "周囲の景観との調和に課題があること"@ja.
+kg:id_17 rdf:type cls:c_2325.
+cls:c_2325 rdfs:label "景観不調和"@ja.
+kg:id_16 prop:cause kg:id_17.
+kg:id_18 rdfs:label "景観審議会へ諮問し議論してもらい答申を受ける"@ja.
+kg:id_18 rdf:type cls:c_2326.
+cls:c_2326 rdfs:label "審議会諮問"@ja.
+kg:id_1 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "県立海浜自然公園の規制緩和"@ja.
+kg:id_19 rdf:type cls:c_2327.
+cls:c_2327 rdfs:label "規制緩和"@ja.
+kg:id_20 rdfs:label "県の環境審議会で議論されていないとの指摘"@ja.
+kg:id_20 rdf:type cls:c_2328.
+cls:c_2328 rdfs:label "審議不足"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "今回の計画地"@ja.
+kg:id_21 rdf:type cls:c_2329.
+cls:c_2329 rdfs:label "計画地"@ja.
+kg:id_22 rdfs:label "国の鳥獣保護区に指定されていること"@ja.
+kg:id_22 rdf:type cls:c_35.
+cls:c_35 rdfs:label "保護区域"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "今回の計画地への建設"@ja.
+kg:id_23 rdf:type cls:c_1088.
+kg:id_24 rdfs:label "絶滅危惧種コアジサシの県内唯一の繁殖地への影響懸念"@ja.
+kg:id_24 rdf:type cls:c_746.
+cls:c_746 rdfs:label "生態影響"@ja.
+kg:id_23 prop:effect kg:id_24.
+kg:id_25 rdfs:label "調査で課題が出た場合は建設場所を柔軟に変更する"@ja.
+kg:id_25 rdf:type cls:c_2330.
+cls:c_2330 rdfs:label "場所変更"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "鳥海山鹿ノ俣川上流の山腹大崩壊"@ja.
+kg:id_26 rdf:type cls:c_2331.
+cls:c_2331 rdfs:label "山腹崩壊"@ja.
+kg:id_27 rdfs:label "油まじりの粘土質の土砂が日向川を汚染"@ja.
+kg:id_27 rdf:type cls:c_2332.
+cls:c_2332 rdfs:label "水質汚染"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "生息する生物への被害"@ja.
+kg:id_28 rdf:type cls:c_2333.
+cls:c_2333 rdfs:label "生物被害"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "農用地に取水していた農家に大きな不安を与える"@ja.
+kg:id_29 rdf:type cls:c_1274.
+cls:c_1274 rdfs:label "生活不安"@ja.
+kg:id_26 prop:effect kg:id_29.
+kg:id_30 rdfs:label "シルト質の土砂の流出"@ja.
+kg:id_30 rdf:type cls:c_633.
+cls:c_633 rdfs:label "土砂流出"@ja.
+kg:id_31 rdfs:label "日向川の川底一面を覆う"@ja.
+kg:id_31 rdf:type cls:c_2334.
+cls:c_2334 rdfs:label "河床堆積"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "玉石に灰褐色のシルトがへばりつく"@ja.
+kg:id_32 rdf:type cls:c_2335.
+cls:c_2335 rdfs:label "付着汚染"@ja.
+kg:id_30 prop:effect kg:id_32.
+kg:id_33 rdfs:label "水生昆虫が全滅したかというくらいの無残な川の状況"@ja.
+kg:id_33 rdf:type cls:c_2333.
+kg:id_30 prop:effect kg:id_33.
+kg:id_34 rdfs:label "日向川のシルト質の土砂流入"@ja.
+kg:id_34 rdf:type cls:c_2336.
+cls:c_2336 rdfs:label "土砂流入"@ja.
+kg:id_35 rdfs:label "田んぼに油臭のする土砂が入ってくる"@ja.
+kg:id_35 rdf:type cls:c_2337.
+cls:c_2337 rdfs:label "農地汚染"@ja.
+kg:id_34 prop:effect kg:id_35.
+kg:id_36 rdfs:label "白濁した土砂で濁った川に逆戻りする繰り返し"@ja.
+kg:id_36 rdf:type cls:c_70.
+cls:c_70 rdfs:label "水質悪化"@ja.
+kg:id_34 prop:effect kg:id_36.
+kg:id_37 rdfs:label "日向川油流出白濁問題"@ja.
+kg:id_37 rdf:type cls:c_2338.
+cls:c_2338 rdfs:label "水質問題"@ja.
+kg:id_38 rdfs:label "早急に対応を考える"@ja.
+kg:id_38 rdf:type cls:c_2339.
+cls:c_2339 rdfs:label "早期対応"@ja.
+kg:id_37 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "上流に堰堤をつくる"@ja.
+kg:id_39 rdf:type cls:c_2340.
+cls:c_2340 rdfs:label "堰堤設置"@ja.
+kg:id_37 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "早くアユのすめる川に戻す"@ja.
+kg:id_40 rdf:type cls:c_2341.
+cls:c_2341 rdfs:label "環境回復"@ja.
+kg:id_37 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "大雨のときの最悪の状況を考えた対策をする"@ja.
+kg:id_41 rdf:type cls:c_2342.
+cls:c_2342 rdfs:label "防災対策"@ja.
+kg:id_37 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "情報が少ない状況"@ja.
+kg:id_42 rdf:type cls:c_2033.
+cls:c_2033 rdfs:label "情報不足"@ja.
+kg:id_43 rdfs:label "農家などが不安がっている"@ja.
+kg:id_43 rdf:type cls:c_1274.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "日向川白濁水問題"@ja.
+kg:id_44 rdf:type cls:c_2338.
+kg:id_45 rdfs:label "オイルフェンスの取りつけ工事"@ja.
+kg:id_45 rdf:type cls:c_2343.
+cls:c_2343 rdfs:label "流出防止"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "地域協議会が活発化しないこと"@ja.
+kg:id_46 rdf:type cls:c_2344.
+cls:c_2344 rdfs:label "協議会停滞"@ja.
+kg:id_47 rdfs:label "行政当局の報告や説明に費やされる時間が余りにも多いこと"@ja.
+kg:id_47 rdf:type cls:c_2345.
+cls:c_2345 rdfs:label "説明過多"@ja.
+kg:id_46 prop:cause kg:id_47.
+kg:id_48 rdfs:label "旧町全体規模での活性化事業の新しい企画が出にくいこと"@ja.
+kg:id_48 rdf:type cls:c_2346.
+cls:c_2346 rdfs:label "地域活性化停滞"@ja.
+kg:id_49 rdfs:label "旧中央公民館が担ってきた役割が薄らいだこと"@ja.
+kg:id_49 rdf:type cls:c_2347.
+cls:c_2347 rdfs:label "拠点機能低下"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "人材や組織が育たなくなったこと"@ja.
+kg:id_50 rdf:type cls:c_355.
+cls:c_355 rdfs:label "人材不足"@ja.
+kg:id_48 prop:cause kg:id_50.
+kg:id_51 rdfs:label "青年団等の広域的な地域づくり団体が育ちにくい状況"@ja.
+kg:id_51 rdf:type cls:c_2348.
+cls:c_2348 rdfs:label "団体育成難"@ja.
+kg:id_48 prop:cause kg:id_51.
+kg:id_52 rdfs:label "地域協議会"@ja.
+kg:id_52 rdf:type cls:c_2349.
+cls:c_2349 rdfs:label "地域協議会"@ja.
+kg:id_53 rdfs:label "地域づくりについての議論を多くする"@ja.
+kg:id_53 rdf:type cls:c_2350.
+cls:c_2350 rdfs:label "議論活性化"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "活発な地域協議会になるよう3支所で取り組む"@ja.
+kg:id_54 rdf:type cls:c_2351.
+cls:c_2351 rdfs:label "協議会活性化"@ja.
+kg:id_52 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "景観政策が後退していること"@ja.
+kg:id_55 rdf:type cls:c_2352.
+cls:c_2352 rdfs:label "景観政策後退"@ja.
+kg:id_56 rdfs:label "住民不在で景観問題を議論することなく風車建設に至ってしまったこと"@ja.
+kg:id_56 rdf:type cls:c_2353.
+cls:c_2353 rdfs:label "住民不在"@ja.
+kg:id_55 prop:cause kg:id_56.
+kg:id_57 rdfs:label "法にのっとったアセスをしないこと"@ja.
+kg:id_57 rdf:type cls:c_2354.
+cls:c_2354 rdfs:label "環境審査欠如"@ja.
+kg:id_58 rdfs:label "経済産業省や環境省の審査が関係なくなる"@ja.
+kg:id_58 rdf:type cls:c_2355.
+cls:c_2355 rdfs:label "国審査欠如"@ja.
+kg:id_57 prop:effect kg:id_58.
+kg:id_59 rdfs:label "監督官庁からの意見が出なくなることへの危惧"@ja.
+kg:id_59 rdf:type cls:c_2356.
+cls:c_2356 rdfs:label "監督意見欠如"@ja.
+kg:id_57 prop:effect kg:id_59.
+kg:id_60 rdfs:label "景観政策の後退"@ja.
+kg:id_60 rdf:type cls:c_2352.
+kg:id_61 rdfs:label "景観を重視した取り組みが損なわれる"@ja.
+kg:id_61 rdf:type cls:c_2357.
+cls:c_2357 rdfs:label "景観軽視"@ja.
+kg:id_60 prop:effect kg:id_61.
+kg:st_1 rdfs:label "市民"@ja.
+kg:st_1 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_1 prop:content "県や市の対応に不信感と疑問を抱く"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "後藤泉議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_2 prop:content "市民一丸での事業推進にはほど遠い状況だとみる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "本来の論点は市民との合意形成のあり方にあると認識する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "本来の論点は景観の問題にあると認識する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "市民の合意形成に向けた話し合いはまだ十分理解されていないとみる"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "説明会参加者"@ja.
+kg:st_3 rdf:type cls:st_25.
+cls:st_25 rdfs:label "参加者"@ja.
+kg:op_6 prop:content "住民の納得できる答えがなかなか返ってこなかったと感じる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "説明会実施の既成事実だけを重ねても不信感を強めるだけだと批判する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "市民団体やクロマツ関連団体と市が積極的に話し合うべきだと求める"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "前阿部市長"@ja.
+kg:st_4 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_9 prop:content "原発事故以来価値観が変わったとして計画地への建設を発表した"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "景観審議会"@ja.
+kg:st_5 rdf:type cls:st_64.
+cls:st_64 rdfs:label "審議会"@ja.
+kg:op_10 prop:content "周囲の景観との調和には課題があると答申した"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_5.
+kg:op_11 prop:content "重大な景観保全に関わるため景観審議会に諮問すべきだと求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_6 rdfs:label "県の環境審議委員の方"@ja.
+kg:st_6 rdf:type cls:st_30.
+cls:st_30 rdfs:label "委員"@ja.
+kg:op_12 prop:content "そのような区分けは県の環境審議会で議論されていないと指摘する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_6.
+kg:op_13 prop:content "コアジサシの県内唯一の繁殖地がある点を問題視する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "調査で課題が出た場合は建設場所を柔軟に変更すべきだと問う"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:st_7 rdfs:label "農家の方々"@ja.
+kg:st_7 rdf:type cls:st_65.
+cls:st_65 rdfs:label "農家"@ja.
+kg:op_15 prop:content "日向川の土砂流入と水質悪化に大きな不安を抱く"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_7.
+kg:op_16 prop:content "水生昆虫が全滅したかと思うほど川の状況がひどいとみる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:st_8 rdfs:label "田んぼの方々"@ja.
+kg:st_8 rdf:type cls:st_5.
+kg:op_17 prop:content "油臭のするシルト質土砂の流入に困っている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_8.
+kg:st_9 rdfs:label "流域住民"@ja.
+kg:st_9 rdf:type cls:st_5.
+kg:op_18 prop:content "早急な対応を求める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_9.
+kg:op_19 prop:content "上流に堰堤を設置してほしいと求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_9.
+kg:op_20 prop:content "アユのすめる川に早く戻してほしいと求める"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_9.
+kg:op_21 prop:content "大雨時の最悪の状況を想定した対策を求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_9.
+kg:op_22 prop:content "情報が少なく対策状況が見えないことに不安を抱く"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_7.
+kg:op_23 prop:content "行政の報告や説明が多すぎて委員間協議が不足していると指摘する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_2.
+kg:op_24 prop:content "旧中央公民館の役割低下が広域的な地域づくりの弱体化につながったとみる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_2.
+kg:op_25 prop:content "人材と組織が育たなくなり新しい企画が出にくくなったとみる"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "青年団等の広域的な地域づくり団体が育ちにくくなっていると指摘する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "地域づくりの議論を増やすことが支所活性化につながると考える"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "3支所で活発な地域協議会づくりに取り組んでほしいと求める"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "住民不在で景観問題の議論なく風車建設が進んだと批判する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "法アセスをしないと国の審査や意見がなくなることを危惧する"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "上位行政の意見がなくなり判断主体が不明になることを心配する"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "景観を行政運営の柱としてきた姿勢が損なわれていると批判する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "それを見た市民からは、県や市の対応への不信感や疑問が投げかけられているのも事実ではないでしょうか"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "今回の十里塚地区への風力発電施設整備事業には異論を唱える方たちも多く、市民一丸となったオール酒田での事業推進にはほど遠い状況ではないかと思います"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "私はそのときも申し上げたとおり、本来の論点は市民との合意形成のあり方と景観の問題にあると認識しています"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "私はそのときも申し上げたとおり、本来の論点は市民との合意形成のあり方と景観の問題にあると認識しています"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "市民の合意形成に向けての話し合いとしては、まだまだ理解されていないように思います"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "住民の納得できる答えはなかなか返ってこなかったと参加した方から伺いました"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "説明会をしましたという既成の事実だけを重ねるだけで事業を進めていくことは、ますます市民の不信感を助長していくだけで何の解決にもなりません"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "市が積極的に話し合いの場を持つべきと思います"@ja.
+<< kg:id_12 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "前阿部市長は、景観の考え方は時代で変化する、原発事故以来価値観は変わったとして、今の計画地への風力発電施設の建設を発表しました"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:text-txt_contents "そこは過去２度にわたり民間の風力発電施設建設が計画されましたが、景観上の問題から認めてこなかった場所であります"@ja.
+<< kg:id_16 prop:cause kg:id_17 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "周囲の景観との調和には課題があると答申され、建設が認められなかったという経緯があります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "市長は景観審議会へ諮問し、議論してもらい、答申を受けるべきだと思います"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "県の環境審議委員の方にとっても、そのようなことは県の環境審議会で議論はされていないとのことです"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "建設計画地は国の鳥獣保護区に指定されている場所です"@ja.
+<< kg:id_23 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "今回の計画地は絶滅危惧種に指定されているコアジサシの県内唯一の繁殖地があるとされています"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "調査していく上でいろいろな課題が出てきた場合に、建設場所を柔軟に変更していくお考えはおありなのか"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:text-txt_contents "鳥海山鹿ノ俣川上流の山腹大崩壊が起こり、そこから流れ出した油まじりの粘土質の土砂は下流域の日向川を汚染し"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:text-txt_contents "そこに生息する生物はもとより"@ja.
+<< kg:id_26 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "日向川の清流を水源として農用地に取水していた農家の方々にも大きな不安を与える事態となっていました"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:text-txt_contents "シルト質の土砂は日向川の川底一面を覆うように流れ"@ja.
+<< kg:id_30 prop:effect kg:id_32 >>
+    prop:text-txt_contents "きれいだった玉石は灰褐色のシルトがへばりつき"@ja.
+<< kg:id_30 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "水生昆虫も全滅したかというくらいの無残な川の状況でありました"@ja.
+<< kg:id_34 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "日向川から取水している田んぼの方々からも、少し油臭のするようなシルト質の土砂が入ってくるというので、何とかならないのかといった声が多く寄せられていました"@ja.
+<< kg:id_34 prop:effect kg:id_36 >>
+    prop:text-txt_contents "一旦雨が降り水かさがふえてくると、また白濁した土砂で濁った川に逆戻りというような繰り返しでありました"@ja.
+<< kg:id_37 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "集まった大勢の方々からは、早急に対応を考えるべき"@ja.
+<< kg:id_37 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "上流に堰堤をつくってほしい"@ja.
+<< kg:id_37 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "早くアユのすめる川に戻してほしい"@ja.
+<< kg:id_37 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "大雨のときの最悪の状況を考えた対策をすべき"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "昨年以来情報も余りない状況ですので、不安がっている方たちもいるようです"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:text-txt_contents "雪解けの水に備えオイルフェンスの取りつけ工事だったそうです"@ja.
+<< kg:id_46 prop:cause kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "行政当局の報告や説明に費やされる時間が余りにも多く、委員間での協議時間が余りないという、変わらぬ状況のようでした"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "旧中央公民館が担ってきた役割が薄らいでしまったことから"@ja.
+<< kg:id_48 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "人材、組織が育たなくなり"@ja.
+<< kg:id_48 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "かつての青年団等のまちづくりにかかわってくるような広域的な地域づくりをしていく団体が育っていくことが難しい状況になってしまったことも、原因の一つであろうかと思います"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "いかに地域づくりについての議論が多くされるかということが、そのまま支所の活性化につながっていくのではないかなと思っております"@ja.
+<< kg:id_52 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "ぜひ活発な地域協議会になるように、今後３支所のほうで頑張ってやっていっていただきたいと思っております"@ja.
+<< kg:id_55 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "市民不在で、景観問題を議論することなく風車建設に至ってしまったというふうに、何か私はそういうふうな感じを受けるんですが"@ja.
+<< kg:id_57 prop:effect kg:id_58 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "法にのっとったアセスをしないと、経済産業省や環境省の審査とか、そういったものがまるっきり関係なくなるんですよね"@ja.
+<< kg:id_57 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "山形県の上の行政のほうからの、監督官庁のほうからの意見なんかはまるっきり出なくて、どこがそういった判断をされていくのか、その辺がすごい心配なわけです"@ja.
+<< kg:id_60 prop:effect kg:id_61 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "特に景観の概念を行政運営の柱の一つに据えるとまで書かれているんですよ。そのような景観を重視した取り組みが必要なんだということを、酒田市としては考えてきてたわけです"@ja.
+}

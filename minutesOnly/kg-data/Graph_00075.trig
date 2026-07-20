@@ -1,0 +1,328 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00075> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電計画"@ja.
+kg:id_1 rdf:type cls:c_318.
+cls:c_318 rdfs:label "発電計画"@ja.
+kg:id_2 rdfs:label "大震災や原発事故による再生可能エネルギーへの期待"@ja.
+kg:id_2 rdf:type cls:c_2048.
+cls:c_2048 rdfs:label "エネルギー期待"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "県エネルギー戦略の推進"@ja.
+kg:id_3 rdf:type cls:c_1993.
+cls:c_1993 rdfs:label "エネルギー戦略"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "県立自然公園内での風力発電の取り扱いの見直し"@ja.
+kg:id_4 rdf:type cls:c_2049.
+cls:c_2049 rdfs:label "制度見直し"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "風力発電適地としての役割"@ja.
+kg:id_5 rdf:type cls:c_2050.
+cls:c_2050 rdfs:label "適地役割"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "東北電力の電気の買い取り等計画提出のタイミングの問題"@ja.
+kg:id_6 rdf:type cls:c_2051.
+cls:c_2051 rdfs:label "手続時期"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "現在の技術や採算性"@ja.
+kg:id_7 rdf:type cls:c_2052.
+cls:c_2052 rdfs:label "技術採算"@ja.
+kg:id_1 prop:cause kg:id_7.
+kg:id_8 rdfs:label "東北電力の受け付け条件"@ja.
+kg:id_8 rdf:type cls:c_2053.
+cls:c_2053 rdfs:label "受入条件"@ja.
+kg:id_1 prop:cause kg:id_8.
+kg:id_9 rdfs:label "風力発電施設建設"@ja.
+kg:id_9 rdf:type cls:c_1867.
+cls:c_1867 rdfs:label "発電施設建設"@ja.
+kg:id_10 rdfs:label "景観問題"@ja.
+kg:id_10 rdf:type cls:c_189.
+cls:c_189 rdfs:label "景観問題"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "環境問題"@ja.
+kg:id_11 rdf:type cls:c_1101.
+cls:c_1101 rdfs:label "環境問題"@ja.
+kg:id_9 prop:effect kg:id_11.
+kg:id_12 rdfs:label "低周波問題"@ja.
+kg:id_12 rdf:type cls:c_2023.
+cls:c_2023 rdfs:label "騒音問題"@ja.
+kg:id_9 prop:effect kg:id_12.
+kg:id_13 rdfs:label "騒音問題"@ja.
+kg:id_13 rdf:type cls:c_2023.
+kg:id_9 prop:effect kg:id_13.
+kg:id_14 rdfs:label "自治体風力発電施設建設"@ja.
+kg:id_14 rdf:type cls:c_1867.
+kg:id_15 rdfs:label "行政とのパートナーシップが壊れてしまう懸念"@ja.
+kg:id_15 rdf:type cls:c_2054.
+cls:c_2054 rdfs:label "信頼低下"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "巨大風車の建設"@ja.
+kg:id_16 rdf:type cls:c_1867.
+kg:id_17 rdfs:label "威圧感"@ja.
+kg:id_17 rdf:type cls:c_2055.
+cls:c_2055 rdfs:label "圧迫感"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "圧迫感"@ja.
+kg:id_18 rdf:type cls:c_2055.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "歴史的景観の損失"@ja.
+kg:id_19 rdf:type cls:c_2056.
+cls:c_2056 rdfs:label "景観損失"@ja.
+kg:id_16 prop:effect kg:id_19.
+kg:id_20 rdfs:label "環境や景観への影響調査を丁寧に行う"@ja.
+kg:id_20 rdf:type cls:c_1102.
+cls:c_1102 rdfs:label "影響調査"@ja.
+kg:id_1 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "広報やホームページなどで広く知らせる"@ja.
+kg:id_21 rdf:type cls:c_715.
+cls:c_715 rdfs:label "情報公開"@ja.
+kg:id_1 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "市民意見をいただく"@ja.
+kg:id_22 rdf:type cls:c_82.
+cls:c_82 rdfs:label "意見聴取"@ja.
+kg:id_1 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "騒音や低周波音について調査する"@ja.
+kg:id_23 rdf:type cls:c_1102.
+kg:id_1 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "環境審議会あるいは景観審議会の意見を集約し判断する"@ja.
+kg:id_24 rdf:type cls:c_817.
+cls:c_817 rdfs:label "意見集約"@ja.
+kg:id_1 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "オープンに話し合う"@ja.
+kg:id_25 rdf:type cls:c_2057.
+cls:c_2057 rdfs:label "公開協議"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "市民の多様な声をすくい上げていく議論の場を設ける"@ja.
+kg:id_26 rdf:type cls:c_2058.
+cls:c_2058 rdfs:label "協議の場"@ja.
+kg:id_1 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "必要があれば市と県との意見交換の場を持つ"@ja.
+kg:id_27 rdf:type cls:c_1192.
+cls:c_1192 rdfs:label "意見交換"@ja.
+kg:id_1 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "市でも広報あるいはホームページ等を通じて知らせる"@ja.
+kg:id_28 rdf:type cls:c_715.
+kg:id_1 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "風力発電や再生可能エネルギーを担当する部局体制を検討する"@ja.
+kg:id_29 rdf:type cls:c_211.
+cls:c_211 rdfs:label "推進体制"@ja.
+kg:id_1 prop:countermeasure kg:id_29.
+kg:st_1 rdfs:label "市長"@ja.
+kg:st_1 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_1 prop:content "再生可能エネルギー推進の観点から計画を進める判断を示す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "県のエネルギー戦略を踏まえて計画に至ったと説明する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "制度見直しも計画決定の要因と説明する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "酒田市は風力発電適地として役割を果たすべきと認識する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "総務部長"@ja.
+kg:st_2 rdf:type cls:st_40.
+kg:op_5 prop:content "提出時期の制約で判断を急ぐ必要があったと説明する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "風車の規模は技術や採算性を踏まえて判断したと説明する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "受け付け条件も計画判断の要因と説明する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "議員"@ja.
+kg:st_3 rdf:type cls:st_54.
+cls:st_54 rdfs:label "議会"@ja.
+kg:op_8 prop:content "景観面でクリアすべき課題が多いと指摘する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "環境面の懸念が大きく建設ありきは疑問とする"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "低周波音の問題を懸念する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "騒音問題を懸念する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "情報提供不足で保全活動団体との信頼関係が損なわれると危惧する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "海岸全体に巨大風車が建つと威圧感が強いと懸念する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "圧迫感により文化的景観が損なわれると懸念する"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "巨大風車が視界に入らない景観を残すべきと主張する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "環境と景観への影響を丁寧に調査して進める考えを示す"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "調査内容を広く公開して市民に周知すると説明する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "市民意見を聞きながら進めると説明する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "もっと幅広く市民の意見を聞くべきと求める"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "騒音と低周波音も調査対象に含めると説明する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "審議会の意見を集約して最終判断する方針を示す"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "さまざまな立場の人が納得できるよう公開の議論が必要と主張する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "市民の多様な声を反映する議論の場が必要と主張する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "必要に応じて保全団体と意見交換する姿勢を示す"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "適地調査や戦略を市でも周知していく考えを示す"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "今後の対応のため担当体制整備が必要と認識している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "大震災や原発事故による再生可能エネルギーへの期待、それから県エネルギー戦略の推進、県立自然公園内での風力発電の取り扱いの見直し、風力発電適地としての役割などを考慮し現在の計画に至っております"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "大震災や原発事故による再生可能エネルギーへの期待、それから県エネルギー戦略の推進、県立自然公園内での風力発電の取り扱いの見直し、風力発電適地としての役割などを考慮し現在の計画に至っております"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "大震災や原発事故による再生可能エネルギーへの期待、それから県エネルギー戦略の推進、県立自然公園内での風力発電の取り扱いの見直し、風力発電適地としての役割などを考慮し現在の計画に至っております"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "大震災や原発事故による再生可能エネルギーへの期待、それから県エネルギー戦略の推進、県立自然公園内での風力発電の取り扱いの見直し、風力発電適地としての役割などを考慮し現在の計画に至っております"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "１つは東北電力の電気の買い取り等計画提出のタイミングの問題がございました、時期の問題がございましたので、そういった意味では判断を急がなければならなかったということもございます"@ja.
+<< kg:id_1 prop:cause kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "現在の技術や採算性、東北電力の受け付け条件などを考慮して判断をさせていただいたものであります"@ja.
+<< kg:id_1 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "現在の技術や採算性、東北電力の受け付け条件などを考慮して判断をさせていただいたものであります"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "風力発電については景観や環境問題、低周波や騒音問題などクリアしなければならない問題が多くあります"@ja.
+<< kg:id_9 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "風力発電については景観や環境問題、低周波や騒音問題などクリアしなければならない問題が多くあります"@ja.
+<< kg:id_9 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "風力発電については景観や環境問題、低周波や騒音問題などクリアしなければならない問題が多くあります"@ja.
+<< kg:id_9 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "風力発電については景観や環境問題、低周波や騒音問題などクリアしなければならない問題が多くあります"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "計画段階から全く一言の情報も提供されることがなかったというのはいかにもお粗末で、せっかく築いてきた行政とのパートナーシップが壊れてしまうのではないかと大変危惧されるものであります"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "庄内海岸すべてに巨大風車が建ってしまうのは、威圧感、圧迫感で何か息が詰まりそうであります"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "庄内海岸すべてに巨大風車が建ってしまうのは、威圧感、圧迫感で何か息が詰まりそうであります"@ja.
+<< kg:id_16 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "巨大風車が視界に入らないような歴史的な景観を持った場所も残していくことが酒田市としての使命でもあるし、重要なことではないかと思います"@ja.
+<< kg:id_1 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "事業化に当たりましては環境や景観への影響調査を丁寧に行って"@ja.
+<< kg:id_1 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "その内容については広報やホームページなどで広くお知らせをし"@ja.
+<< kg:id_1 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "市民意見をいただくことになります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "その中で騒音や低周波音についても調査をいたします"@ja.
+<< kg:id_1 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "これを踏まえて環境審議会あるいは景観審議会の意見を集約し、判断することになります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "さまざまな立場の人が納得した範囲で計画が進むようオープンに話し合うこと"@ja.
+<< kg:id_1 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "市民の多様な声をすくい上げていく議論の場を設けることが必要と主張しました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "必要があれば市、県との意見交換の場を持ちたいというふうに言われておりますので、話し合う姿勢を持ちながらその推移を見守っているところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "市でも広報あるいはホームページ等を通じてお知らせをしていきたいというふうに思っております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風力発電、再生可能エネルギーの推進施策、こういったものを担当する部局、体制等につきましては今検討をしている最中でございます"@ja.
+}

@@ -1,0 +1,111 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00118> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "テレビ"@ja.
+kg:id_1 rdf:type cls:c_2846.
+cls:c_2846 rdfs:label "家電"@ja.
+kg:id_2 rdfs:label "妨害電波がかなり来て大変"@ja.
+kg:id_2 rdf:type cls:c_2839.
+cls:c_2839 rdfs:label "電波障害"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "洋上風力"@ja.
+kg:id_3 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_4 rdfs:label "リスク管理の協定書をしっかり結ぶ"@ja.
+kg:id_4 rdf:type cls:c_2847.
+cls:c_2847 rdfs:label "リスク管理協定"@ja.
+kg:id_3 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "リスクがあったときは対応していただく"@ja.
+kg:id_5 rdf:type cls:c_2848.
+cls:c_2848 rdfs:label "リスク対応"@ja.
+kg:id_3 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "町に税金が入る"@ja.
+kg:id_6 rdf:type cls:c_184.
+cls:c_184 rdfs:label "税収増加"@ja.
+kg:id_3 prop:effect kg:id_6.
+kg:id_7 rdfs:label "魚礁づくりを活用する"@ja.
+kg:id_7 rdf:type cls:c_2849.
+cls:c_2849 rdfs:label "魚礁整備"@ja.
+kg:id_3 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "漁業者の安定的な所得に資する"@ja.
+kg:id_8 rdf:type cls:c_2850.
+cls:c_2850 rdfs:label "所得安定"@ja.
+kg:id_3 prop:effect kg:id_8.
+kg:id_9 rdfs:label "漁業者の所得向上に資する"@ja.
+kg:id_9 rdf:type cls:c_402.
+cls:c_402 rdfs:label "所得向上"@ja.
+kg:id_3 prop:effect kg:id_9.
+kg:id_10 rdfs:label "人口減少"@ja.
+kg:id_10 rdf:type cls:c_2851.
+cls:c_2851 rdfs:label "人口変動"@ja.
+kg:id_11 rdfs:label "税収が滞る"@ja.
+kg:id_11 rdf:type cls:c_408.
+cls:c_408 rdfs:label "税収減少"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "税収が下がる"@ja.
+kg:id_12 rdf:type cls:c_408.
+kg:id_10 prop:effect kg:id_12.
+kg:id_13 rdfs:label "税収減少"@ja.
+kg:id_13 rdf:type cls:c_408.
+kg:id_14 rdfs:label "税収が増えるような仕組みを築き上げる"@ja.
+kg:id_14 rdf:type cls:c_184.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:st_1 rdfs:label "漁港"@ja.
+kg:st_1 rdf:type cls:st_61.
+cls:st_61 rdfs:label "漁業関係者"@ja.
+kg:op_1 prop:content "支柱周辺エリアで魚礁づくりをお願いしたい"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:text-txt_contents "秋田県の潟上市でテレビに妨害電波がかなり来て大変だ"@ja.
+<< kg:id_3 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "遊佐町ではリスク管理の協定書をしっかりと結びながら"@ja.
+<< kg:id_3 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "いろんな課題についてリスクがあったときはやっぱり対応していただく"@ja.
+<< kg:id_3 prop:effect kg:id_6 >>
+    prop:text-txt_contents "そこでやっぱり税金としては洋上でも町に入るようなシステムになる"@ja.
+<< kg:id_3 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "洋上風力の支柱を周辺としたエリアには、魚礁づくりも漁港からはお願いしたいという意見も寄せられております"@ja.
+<< kg:id_3 prop:effect kg:id_8 >>
+    prop:text-txt_contents "漁業者の安定的な所得、それから所得向上に資する形でそれらを活用していきたい"@ja.
+<< kg:id_3 prop:effect kg:id_9 >>
+    prop:text-txt_contents "漁業者の安定的な所得、それから所得向上に資する形でそれらを活用していきたい"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:text-txt_contents "人口が減っても税収が滞らない、下がらないように"@ja.
+<< kg:id_10 prop:effect kg:id_12 >>
+    prop:text-txt_contents "人口が減っても税収が滞らない、下がらないように"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "税収が、人口が減っても税収が滞らない、下がらないように、増えるような仕組みを何とか築き上げていきたい"@ja.
+}

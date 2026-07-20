@@ -1,0 +1,563 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00183> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "企業の脱炭素経営の広がり"@ja.
+kg:id_2 rdf:type cls:c_4136.
+cls:c_4136 rdfs:label "脱炭素経営"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "企業側のリスク回避"@ja.
+kg:id_3 rdf:type cls:c_91.
+cls:c_91 rdfs:label "リスク回避"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "ビジネスチャンスと捉えた世界規模での金融投資の拡大"@ja.
+kg:id_4 rdf:type cls:c_4137.
+cls:c_4137 rdfs:label "金融投資"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "環境影響評価法"@ja.
+kg:id_5 rdf:type cls:c_4138.
+cls:c_4138 rdfs:label "環境評価制度"@ja.
+kg:id_6 rdfs:label "一定以上の影響があっても事業を強制的に中止させる機能がない"@ja.
+kg:id_6 rdf:type cls:c_4139.
+cls:c_4139 rdfs:label "事業中止機能の不足"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "本市"@ja.
+kg:id_7 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_8 rdfs:label "ガイドラインの改定"@ja.
+kg:id_8 rdf:type cls:c_4078.
+cls:c_4078 rdfs:label "指針改定"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "地域への影響"@ja.
+kg:id_9 rdf:type cls:c_832.
+cls:c_832 rdfs:label "地域影響"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "大規模な風力発電"@ja.
+kg:id_10 rdf:type cls:c_218.
+kg:id_11 rdfs:label "利益が企業本社や中央や外資系資本へ流れる"@ja.
+kg:id_11 rdf:type cls:c_4140.
+cls:c_4140 rdfs:label "利益流出"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "地域型風力発電"@ja.
+kg:id_12 rdf:type cls:c_218.
+kg:id_13 rdfs:label "地元に利益を生み愛される風車の実現"@ja.
+kg:id_13 rdf:type cls:c_3297.
+cls:c_3297 rdfs:label "地域利益"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "風力発電"@ja.
+kg:id_14 rdf:type cls:c_218.
+kg:id_15 rdfs:label "地域経済が回る"@ja.
+kg:id_15 rdf:type cls:c_599.
+cls:c_599 rdfs:label "地域経済活性化"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "三瀬矢引風力発電事業計画"@ja.
+kg:id_16 rdf:type cls:c_218.
+kg:id_17 rdfs:label "騒音や低周波での健康被害"@ja.
+kg:id_17 rdf:type cls:c_79.
+cls:c_79 rdfs:label "健康被害"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "動植物や生態系への影響"@ja.
+kg:id_18 rdf:type cls:c_51.
+cls:c_51 rdfs:label "生態系影響"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "保水能力の低下と下流域への影響"@ja.
+kg:id_19 rdf:type cls:c_4141.
+cls:c_4141 rdfs:label "水害影響"@ja.
+kg:id_16 prop:effect kg:id_19.
+kg:id_20 rdfs:label "土砂災害の誘発"@ja.
+kg:id_20 rdf:type cls:c_53.
+cls:c_53 rdfs:label "土砂災害"@ja.
+kg:id_16 prop:effect kg:id_20.
+kg:id_21 rdfs:label "山間部への路網整備の進展"@ja.
+kg:id_21 rdf:type cls:c_4142.
+cls:c_4142 rdfs:label "路網整備"@ja.
+kg:id_16 prop:effect kg:id_21.
+kg:id_22 rdfs:label "伐採計画の進展"@ja.
+kg:id_22 rdf:type cls:c_4143.
+cls:c_4143 rdfs:label "伐採進展"@ja.
+kg:id_16 prop:effect kg:id_22.
+kg:id_23 rdfs:label "森林所有者の管理の進展"@ja.
+kg:id_23 rdf:type cls:c_907.
+cls:c_907 rdfs:label "森林管理"@ja.
+kg:id_16 prop:effect kg:id_23.
+kg:id_24 rdfs:label "鶴岡市"@ja.
+kg:id_24 rdf:type cls:c_117.
+kg:id_25 rdfs:label "環境審議会等への改正案提案"@ja.
+kg:id_25 rdf:type cls:c_4144.
+cls:c_4144 rdfs:label "改正案提案"@ja.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "日本遺産や国指定名勝周辺を規制対象にする"@ja.
+kg:id_26 rdf:type cls:c_4145.
+cls:c_4145 rdfs:label "景観規制"@ja.
+kg:id_24 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "市民への早期段階での事業概要公表"@ja.
+kg:id_27 rdf:type cls:c_1100.
+cls:c_1100 rdfs:label "情報公表"@ja.
+kg:id_24 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "同意を求める範囲の拡大"@ja.
+kg:id_28 rdf:type cls:c_4146.
+cls:c_4146 rdfs:label "同意範囲拡大"@ja.
+kg:id_24 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "市民への早期の情報提供"@ja.
+kg:id_29 rdf:type cls:c_213.
+cls:c_213 rdfs:label "情報提供"@ja.
+kg:id_24 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "風力発電事業者"@ja.
+kg:id_30 rdf:type cls:c_3090.
+cls:c_3090 rdfs:label "事業者"@ja.
+kg:id_31 rdfs:label "丁寧な説明の実施"@ja.
+kg:id_31 rdf:type cls:c_210.
+cls:c_210 rdfs:label "説明実施"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "関連産業の振興が期待される"@ja.
+kg:id_32 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_1 prop:effect kg:id_32.
+kg:id_33 rdfs:label "新しいごみ焼却施設における電力のネットワーク化"@ja.
+kg:id_33 rdf:type cls:c_4147.
+cls:c_4147 rdfs:label "電力融通"@ja.
+kg:id_24 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "環境アセスメント"@ja.
+kg:id_34 rdf:type cls:c_806.
+cls:c_806 rdfs:label "環境評価"@ja.
+kg:id_35 rdfs:label "リスク回避と低減の調査検討"@ja.
+kg:id_35 rdf:type cls:c_3329.
+cls:c_3329 rdfs:label "リスク低減"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "FIT制度の期間が20年であること"@ja.
+kg:id_36 rdf:type cls:c_1473.
+cls:c_1473 rdfs:label "買取制度"@ja.
+kg:id_1 prop:cause kg:id_36.
+kg:id_37 rdfs:label "営業期間終了後も継続可能"@ja.
+kg:id_37 rdf:type cls:c_4148.
+cls:c_4148 rdfs:label "継続可能性"@ja.
+kg:id_1 prop:effect kg:id_37.
+kg:id_38 rdfs:label "風力発電事業の継続"@ja.
+kg:id_38 rdf:type cls:c_3987.
+cls:c_3987 rdfs:label "事業継続"@ja.
+kg:id_39 rdfs:label "事業者と地域の合意"@ja.
+kg:id_39 rdf:type cls:c_4149.
+cls:c_4149 rdfs:label "地域合意"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "風力発電施設"@ja.
+kg:id_40 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_41 rdfs:label "廃棄費用の積立て計画と進捗報告の義務化"@ja.
+kg:id_41 rdf:type cls:c_4150.
+cls:c_4150 rdfs:label "廃棄費用積立"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "撤去後の敷地"@ja.
+kg:id_42 rdf:type cls:c_4151.
+cls:c_4151 rdfs:label "事業用地"@ja.
+kg:id_43 rdfs:label "原状回復"@ja.
+kg:id_43 rdf:type cls:c_61.
+cls:c_61 rdfs:label "原状回復"@ja.
+kg:id_42 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "大規模企業の風力発電参入"@ja.
+kg:id_44 rdf:type cls:c_1771.
+cls:c_1771 rdfs:label "企業参入"@ja.
+kg:id_45 rdfs:label "FITの買取り価格に見合う事業規模が必要なこと"@ja.
+kg:id_45 rdf:type cls:c_4152.
+cls:c_4152 rdfs:label "事業規模"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "市民型の風力発電"@ja.
+kg:id_46 rdf:type cls:c_218.
+kg:id_47 rdfs:label "なかなかできにくい"@ja.
+kg:id_47 rdf:type cls:c_2725.
+cls:c_2725 rdfs:label "事業困難"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "想定外の自然被害への心配"@ja.
+kg:id_48 rdf:type cls:c_2865.
+cls:c_2865 rdfs:label "自然災害"@ja.
+kg:id_1 prop:effect kg:id_48.
+kg:id_49 rdfs:label "天狗森周辺の風力発電事業"@ja.
+kg:id_49 rdf:type cls:c_218.
+kg:id_50 rdfs:label "事業化しないよう申入れ"@ja.
+kg:id_50 rdf:type cls:c_4153.
+cls:c_4153 rdfs:label "事業中止要請"@ja.
+kg:id_49 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "ガイドライン"@ja.
+kg:id_51 rdf:type cls:c_4154.
+cls:c_4154 rdfs:label "指針"@ja.
+kg:id_52 rdfs:label "強制力がない"@ja.
+kg:id_52 rdf:type cls:c_4155.
+cls:c_4155 rdfs:label "強制力不足"@ja.
+kg:id_51 prop:effect kg:id_52.
+kg:id_53 rdfs:label "事業抑制の効果がある"@ja.
+kg:id_53 rdf:type cls:c_4156.
+cls:c_4156 rdfs:label "事業抑制"@ja.
+kg:id_51 prop:effect kg:id_53.
+kg:id_54 rdfs:label "環境アセス"@ja.
+kg:id_54 rdf:type cls:c_4138.
+kg:id_55 rdfs:label "地域の意思が反映されにくい"@ja.
+kg:id_55 rdf:type cls:c_4157.
+cls:c_4157 rdfs:label "意思反映不足"@ja.
+kg:id_54 prop:effect kg:id_55.
+kg:id_56 rdfs:label "周辺地域に決定権がない"@ja.
+kg:id_56 rdf:type cls:c_4158.
+cls:c_4158 rdfs:label "決定権不足"@ja.
+kg:id_54 prop:effect kg:id_56.
+kg:id_57 rdfs:label "条例等による許認可制などの規制の検討"@ja.
+kg:id_57 rdf:type cls:c_4159.
+cls:c_4159 rdfs:label "規制検討"@ja.
+kg:id_24 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "条例による規制"@ja.
+kg:id_58 rdf:type cls:c_4160.
+cls:c_4160 rdfs:label "条例規制"@ja.
+kg:id_59 rdfs:label "法的に有効"@ja.
+kg:id_59 rdf:type cls:c_4161.
+cls:c_4161 rdfs:label "法的有効性"@ja.
+kg:id_58 prop:effect kg:id_59.
+kg:id_60 rdfs:label "県と連携した条例制定の検討"@ja.
+kg:id_60 rdf:type cls:c_4162.
+cls:c_4162 rdfs:label "条例検討"@ja.
+kg:id_24 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "山形県"@ja.
+kg:id_61 rdf:type cls:c_117.
+kg:id_62 rdfs:label "最終的に県知事が事業を認定する仕組みを盛り込んだ条例の制定検討"@ja.
+kg:id_62 rdf:type cls:c_4163.
+cls:c_4163 rdfs:label "条例制定"@ja.
+kg:id_61 prop:countermeasure kg:id_62.
+kg:st_1 rdfs:label "環境省東北環境事務所環境対策課長"@ja.
+kg:st_1 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_1 prop:content "脱炭素経営の広がりが事業拡大の背景にある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "企業のリスク回避意識が事業推進を後押ししている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "世界規模の投資拡大が風力発電事業を促進している"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "学習会参加者"@ja.
+kg:st_2 rdf:type cls:st_25.
+cls:st_25 rdfs:label "参加者"@ja.
+kg:op_4 prop:content "歯止めにならないのではないかと疑問を示す"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "菅井巌議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_5 prop:content "一定の歯止めをかけるための改定内容をただす"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "資金力と開発スピードに勝る企業参入は地域に影響を及ぼすとみる"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "地域外へ利益が流出する構造に懸念を示す"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "地域型風力発電事業に携わってきた著者"@ja.
+kg:st_4 rdf:type cls:st_107.
+cls:st_107 rdfs:label "事業関係者"@ja.
+kg:op_8 prop:content "地域に利益を生み愛される風車が実現できると示す"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_4.
+kg:op_9 prop:content "風車を回して地域経済を回していくべきだと考える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "健康被害の懸念があると指摘する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "自然環境や生態系への悪影響を懸念する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "保水能力低下による下流域への影響を懸念する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "土砂災害を誘発するおそれがあると指摘する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "森林整備面での期待が先行しているとみる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "伐採計画が進む点に住民の期待が向いていると指摘する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "管理が進む期待の一方で将来リスク理解が不十分とみる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "市民部長 五十嵐浩一"@ja.
+kg:st_5 rdf:type cls:st_12.
+kg:op_17 prop:content "有識者ヒアリングを終え審議会に改正案を提案する段階にある"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "重要景観周辺を規制対象に加える考えを示す"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "市民への早期情報提供を重視する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_5.
+kg:op_20 prop:content "同意取得の対象範囲を広げる方向で検討している"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "新ガイドラインに基づき早期情報提供を行う"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "市民との相互理解のため丁寧な説明を求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "風力発電は関連産業振興も期待できると説明する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_5.
+kg:op_24 prop:content "地域エネルギーのネットワーク化に取り組んでいる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_5.
+kg:op_25 prop:content "環境影響をより少なくするためリスク回避と低減を図るべきとする"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_5.
+kg:op_26 prop:content "事業期間20年はFIT制度に起因すると説明する"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_5.
+kg:op_27 prop:content "基礎部分の耐用年数に問題がなく継続可能との認識を示す"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_5.
+kg:op_28 prop:content "継続には改めて地域合意が必要とする"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_5.
+kg:op_29 prop:content "撤去廃棄に向けた費用積立てが義務化されていると説明する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:op_30 prop:content "撤去後の敷地は基本的に原状回復されるとの見解を示す"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:op_31 prop:content "FIT価格低下に対応するため大規模企業参入が進むとみる"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "FIT制度の下で小規模な市民型風力が進みにくいと指摘する"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "近年の気象被害を踏まえ想定外の自然被害を懸念する"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "出羽三山に近接するため事業化しないよう申し入れている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_5.
+kg:op_35 prop:content "ガイドライン自体に強制力はないと説明する"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_5.
+kg:op_36 prop:content "規制には至らないが抑制効果はあると認識する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "石井清則議員"@ja.
+kg:st_6 rdf:type cls:st_9.
+kg:op_37 prop:content "周辺地域に決定権がなく大きな問題だとみる"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_6.
+kg:op_38 prop:content "最も影響を受ける地域に決定権がないことを問題視する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_6.
+kg:op_39 prop:content "条例等による規制や許認可権限を急いで持つ必要があると主張する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_6.
+kg:op_40 prop:content "条例による規制は法的に有効との認識を示す"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:op_41 prop:content "県と連携し条例制定を今後検討すると述べる"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_5.
+kg:op_42 prop:content "県は住民合意の下で進めるため認定制度を含む条例を検討していると説明する"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_5.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "企業の脱炭素経営の広がりとして、企業側のリスク回避と併せてビジネスチャンスと捉えた世界規模での金融投資が拡大している"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "企業側のリスク回避と併せてビジネスチャンスと捉えた世界規模での金融投資が拡大している"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "ビジネスチャンスと捉えた世界規模での金融投資が拡大している"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "たとえ一定以上の影響があったとしても事業を強制的に中止させる機能はないとされ、参加者からは歯止めにはならないのではないかという疑問が出されました"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "一定の歯止めをかけるため本市のガイドラインの改定を行う"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "資金力と開発スピードに勝る企業の参入、その過程において地域には影響を及ぼすと考えております"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "電力供給による利益の中心の流れは、企業本社、中央、出資者である外資系資本へ流れていきます"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "こうすればできる！地域型風力発電、副題として「地元に利益を生み、愛される風車の実現」"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "結論的な私の見解としては、風車を回して地域経済を回していくと言えます"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "騒音や低周波での健康被害"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "山林開発と風車の設置での動植物や生態系への影響"@ja.
+<< kg:id_16 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "保水能力の低下と下流域への影響"@ja.
+<< kg:id_16 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "土砂災害の誘発など懸念がある"@ja.
+<< kg:id_16 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "森林整備の課題とされてきた山間部への路網整備"@ja.
+<< kg:id_16 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "伐採計画、森林所有者の管理などが進む"@ja.
+<< kg:id_16 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "森林所有者の管理などが進むとされ"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "環境審議会など３つの審議会に提案する改正案の作成を進めているところでございます"@ja.
+<< kg:id_24 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "１つ目は、日本遺産、また国指定名勝の周辺などを規制の対象とする"@ja.
+<< kg:id_24 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "２つ目としては、市民への早期の段階における事業概要の公表を行うこと"@ja.
+<< kg:id_24 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "３つ目として、事業実施に当たり同意を求める範囲、これを拡大すること"@ja.
+<< kg:id_24 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "改正を予定しております新たなガイドラインに基づき、市としても市民に対する早期の情報提供を行う"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "事業者には丁寧な説明を行っていただきながら、事業者と市民の相互理解により事業を推進していただくよう求めてまいりたい"@ja.
+<< kg:id_1 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "風力発電はエネルギー効率も高く、関連産業の振興も期待される"@ja.
+<< kg:id_24 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "新しいごみ焼却施設における電力のネットワーク化なども取り組んでいる"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "環境アセスメントにおいてはリスク回避と低減について調査検討を行いながら、環境への影響がより少ない事業計画を作成する"@ja.
+<< kg:id_1 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風力発電事業の営業期間につきましては、現行の固定価格買取り制度、いわゆるＦＩＴ制度の期間が20年であることに起因するものでございます"@ja.
+<< kg:id_1 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "タワーを含めた基礎部分の耐用年数には問題がないということで、継続も可能である"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "事業を継続する場合には改めて事業者と地域の合意が必要だと考えております"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "廃棄費用の積立て計画、進捗報告が義務化をされております"@ja.
+<< kg:id_42 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "撤去後の敷地につきましても、林地開発許可の審査基準にもございますように、基本的には原状回復されるものと考えております"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "大規模な企業が参入するのも資金力が必要になるのも、そのＦＩＴの買取り価格がやはり問題であると。年々下げられていくのに見合った事業規模でなければ間に合わない"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "いわゆる小規模な市民型の風力発電がなかなかできにくい"@ja.
+<< kg:id_1 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "風力発電事業が山間部で開発推進されていることに、近年の気象被害を見ていますと想定外の自然被害が心配される"@ja.
+<< kg:id_49 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "事業者に対しましては事業化しないように申入れを行っているところでございます"@ja.
+<< kg:id_51 prop:effect kg:id_52 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "ガイドライン自体に強制力はございません"@ja.
+<< kg:id_51 prop:effect kg:id_53 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "規制までには至らないものでございますが、事業抑制の効果はあるものと認識をしているところでございます"@ja.
+<< kg:id_54 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "環境影響評価法に基づいた環境アセスでは、地域の意思が反映されにくい"@ja.
+<< kg:id_54 prop:effect kg:id_56 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "一番影響を受けると思われる周辺地域に何の決定権もないというのが大きな問題"@ja.
+<< kg:id_24 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "条例等による規制、市での許認可の権限を急いで持つ必要がある"@ja.
+<< kg:id_58 prop:effect kg:id_59 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "条例による規制は法的にも有効なものと認識はしております"@ja.
+<< kg:id_24 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "県とも連携を図りながら条例の制定について今後検討してまいりたい"@ja.
+<< kg:id_61 prop:countermeasure kg:id_62 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "県におきましても、最終的に県知事が事業を認定する仕組みを盛り込んだ形での条例の制定を検討するとしております"@ja.
+}

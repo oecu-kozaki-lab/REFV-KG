@@ -1,0 +1,256 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00190> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "市としての中止申入れ判断"@ja.
+kg:id_1 rdf:type cls:c_4280.
+cls:c_4280 rdfs:label "行政判断"@ja.
+kg:id_2 rdfs:label "ラムサール条約登録湿地が近傍で望ましくない区域への計画"@ja.
+kg:id_2 rdf:type cls:c_4281.
+cls:c_4281 rdfs:label "保全区域計画"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "バードストライクや鳥の営巣・餌場への影響への強い懸念"@ja.
+kg:id_3 rdf:type cls:c_4282.
+cls:c_4282 rdfs:label "生態系影響懸念"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "複数の風力発電事業集中による渡り鳥ルートや餌場移動への累積的影響懸念"@ja.
+kg:id_4 rdf:type cls:c_4283.
+cls:c_4283 rdfs:label "累積影響懸念"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "方法書送付予定が示され環境影響評価手続が本格化しつつあったこと"@ja.
+kg:id_5 rdf:type cls:c_4284.
+cls:c_4284 rdfs:label "評価手続進行"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "市の説明会・記者会見の進め方"@ja.
+kg:id_6 rdf:type cls:c_4285.
+cls:c_4285 rdfs:label "説明会運営"@ja.
+kg:id_7 rdfs:label "参加者や住民に驚きと戸惑いを与えた"@ja.
+kg:id_7 rdf:type cls:c_4286.
+cls:c_4286 rdfs:label "困惑"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "住民に怒りや悔しさ、不信感を生じさせた"@ja.
+kg:id_8 rdf:type cls:c_2762.
+cls:c_2762 rdfs:label "不信感"@ja.
+kg:id_6 prop:effect kg:id_8.
+kg:id_9 rdfs:label "市の一連の進め方"@ja.
+kg:id_9 rdf:type cls:c_2364.
+cls:c_2364 rdfs:label "行政運営"@ja.
+kg:id_10 rdfs:label "市側の一方的なスケジュールとの受け止めを招いた"@ja.
+kg:id_10 rdf:type cls:c_4287.
+cls:c_4287 rdfs:label "一方的進行"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "加茂地区"@ja.
+kg:id_11 rdf:type cls:c_1927.
+cls:c_1927 rdfs:label "地域"@ja.
+kg:id_12 rdfs:label "高齢化や閉校、若い世帯の転出、山の整備の困難がある"@ja.
+kg:id_12 rdf:type cls:c_424.
+cls:c_424 rdfs:label "地域衰退"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "加茂地区の説明会設定"@ja.
+kg:id_13 rdf:type cls:c_4288.
+cls:c_4288 rdfs:label "説明会設定"@ja.
+kg:id_14 rdfs:label "上郷・加茂・大山の3自治会等に1月31日夜に市の判断を説明する場を設けた"@ja.
+kg:id_14 rdf:type cls:c_4197.
+cls:c_4197 rdfs:label "事前説明"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "市としての情報発信"@ja.
+kg:id_15 rdf:type cls:c_1056.
+cls:c_1056 rdfs:label "情報発信"@ja.
+kg:id_16 rdfs:label "事業者に伝達した上で2月1日に記者会見を開催し表明した"@ja.
+kg:id_16 rdf:type cls:c_4289.
+cls:c_4289 rdfs:label "早期表明"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "市長の対話姿勢"@ja.
+kg:id_17 rdf:type cls:c_4290.
+cls:c_4290 rdfs:label "対話姿勢"@ja.
+kg:id_18 rdfs:label "対話を望む住民や請願関係者に真摯に対応する"@ja.
+kg:id_18 rdf:type cls:c_1157.
+cls:c_1157 rdfs:label "住民対話"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "今後の市の対応"@ja.
+kg:id_19 rdf:type cls:c_2361.
+cls:c_2361 rdfs:label "行政対応"@ja.
+kg:id_20 rdfs:label "市ガイドラインの見直しを含め必要な検討を行う"@ja.
+kg:id_20 rdf:type cls:c_122.
+cls:c_122 rdfs:label "指針見直し"@ja.
+kg:id_19 prop:countermeasure kg:id_20.
+kg:st_1 rdfs:label "市民部長 伊藤慶也"@ja.
+kg:st_1 rdf:type cls:st_40.
+cls:st_40 rdfs:label "行政"@ja.
+kg:op_1 prop:content "ラムサール湿地近傍のため早期中止申入れが妥当と説明"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "市長 皆川治"@ja.
+kg:st_2 rdf:type cls:st_40.
+kg:op_2 prop:content "県も望ましくない区域としており行政として戸惑いがあった"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "重要な生態系への影響が強く懸念され慎重判断が必要と説明"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "専門的助言や情報を整理し中止申入れが妥当と判断"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "複数事業の集中による累積影響の助言を踏まえたと説明"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "難しい判断だが湿地近傍計画は中止申入れが妥当とした"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "手続本格化前に市の判断を早く明らかにすべきとした"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "16番 佐藤麻里議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_8 prop:content "日程にはまだ余裕がありなぜ急ぐ必要があったのか疑問"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "説明会参加者"@ja.
+kg:st_4 rdf:type cls:st_5.
+cls:st_5 rdfs:label "住民"@ja.
+kg:op_9 prop:content "何で今なのか分からず驚きと戸惑いが大きかった"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:op_10 prop:content "会議記録からも誰もが驚きと戸惑いを隠せない様子だった"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "やり方がフェアではなく怒りや悔しさを感じた"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_4.
+kg:op_12 prop:content "入り口でシャッターを下ろされはしごを外された思いだったと受け止めた"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "相手方への配慮を欠き誠実な対応に見えない"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "地域住民や事業者への配慮が欠けていると感じる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "地域は厳しい状況にあり風力発電事業に望みを託していた"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "事前に知らせておくべきと考え夜間に説明の場を設けた"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "何の用件か知らされないまま集められ不満が残った"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "広く市民の関心事項でありできるだけ早く表明すべきとした"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "説明会翌日の会見や事業者への直前連絡は誠実さに欠けると疑問視"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "どのような立場であれ対話を望む方には真摯に対応する"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+kg:op_21 prop:content "住民の思いを受け止める直接対話の機会を設けてほしい"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "今後ガイドライン見直しを含め必要な検討を進める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_2.
+kg:op_23 prop:content "今回の進め方を検証し改善できる点は改善してほしい"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "県が公表している再生可能エネルギー活用可能性調査報告書において、ラムサール湿地が近傍であり、望ましくないとしている区域への本計画"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "バードストライクや鳥の営巣、餌場などへの影響が強く懸念されること"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "一定の地域に複数の風力発電事業が集中する場合には、渡り鳥の飛来ルートや餌場への移動などに累積的な影響が懸念される"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "３月上旬に方法書の送付の予定が示されるなど本格化しつつあったことから、市としての判断、中止の申入れはできるだけ早く明らかにすべきと考え"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "誰もが驚きと戸惑いを隠せない様子が見てとれましたが、やはりその場にいた方々は、「何で」、「どうして」、「何で今」というのが率直な気持ちだった"@ja.
+<< kg:id_6 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_11;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "「ほかにやり方はなかったのか」、「やり方がフェアじゃない」と怒りや悔しさ、どこへぶつけてよいか分からない思いがひしひしと伝わってきました"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "市側の一方的なスケジュールで事を進めた感を否めない感じなのですが、相手、地域住民であったり事業者であったり、そちらへの配慮が欠けているともどうしても感じてしまいますし、誠実な対応だったのかというと、そう思えません"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "加茂地区は高齢化率50％、小学校も閉校し、その影響もあってか転出する若い世帯もある。そして、山の整備をする予算も人手も足りない"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "上郷、加茂、大山の３自治会等には事前にお知らせしておくべきと考えまして、１月31日の夜間に市の判断の説明の場を設けさせていただいた"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "本件につきましては、広く市民の関心事項となっていた案件であったことから、事業者に伝達した上で記者会見を開催することとしたものでございまして　市としての判断、中止の申入れはできるだけ早く明らかにすべきと考え、翌日２月１日に表明したところでございます"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "どのような立場であれ、市当局との対話を望む方がおられるのであれば、真摯に対応させていただきます"@ja.
+<< kg:id_19 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_22;
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今後、市ガイドラインの見直しを含め、さらに必要な検討を行ってまいります　市の進め方についても今回の件はこれで問題がなかったのか、ほかにやり方がなかったのか検証し、改善できるところがもしあるのであれば改善し"@ja.
+}

@@ -1,0 +1,563 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00065> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "松前北部風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "国の補助制度の廃止"@ja.
+kg:id_2 rdf:type cls:c_1793.
+cls:c_1793 rdfs:label "補助制度廃止"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "ＦＩＴ制度の導入"@ja.
+kg:id_3 rdf:type cls:c_1794.
+cls:c_1794 rdfs:label "買取制度導入"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "環境影響評価法の適用"@ja.
+kg:id_4 rdf:type cls:c_1795.
+cls:c_1795 rdfs:label "環境法適用"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "日本製風車からドイツ製風車への機種変更"@ja.
+kg:id_5 rdf:type cls:c_1796.
+cls:c_1796 rdfs:label "機種変更"@ja.
+kg:id_1 prop:cause kg:id_5.
+kg:id_6 rdfs:label "設置基数の変更"@ja.
+kg:id_6 rdf:type cls:c_1797.
+cls:c_1797 rdfs:label "設置数変更"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "当初の事業計画からの大幅な遅れ"@ja.
+kg:id_7 rdf:type cls:c_1798.
+cls:c_1798 rdfs:label "事業遅延"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "地権者や関係者への心配"@ja.
+kg:id_8 rdf:type cls:c_1799.
+cls:c_1799 rdfs:label "関係者の心配"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "設置関連工事による町民への心配"@ja.
+kg:id_9 rdf:type cls:c_1800.
+cls:c_1800 rdfs:label "住民の心配"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "地権者からの同意取得を再度開始"@ja.
+kg:id_10 rdf:type cls:c_1801.
+cls:c_1801 rdfs:label "同意取得"@ja.
+kg:id_1 prop:countermeasure kg:id_10.
+kg:id_11 rdfs:label "地権者を対象に事業説明会を開催"@ja.
+kg:id_11 rdf:type cls:c_433.
+cls:c_433 rdfs:label "説明会開催"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "道路拡幅について地権者からの同意取得を開始"@ja.
+kg:id_12 rdf:type cls:c_1801.
+kg:id_1 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "地域説明会を実施"@ja.
+kg:id_13 rdf:type cls:c_433.
+kg:id_1 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "安全な事業着手と情報共有を事業者に申し入れ"@ja.
+kg:id_14 rdf:type cls:c_1802.
+cls:c_1802 rdfs:label "安全要請"@ja.
+kg:id_1 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "小型風力発電"@ja.
+kg:id_15 rdf:type cls:c_1803.
+cls:c_1803 rdfs:label "小型風力発電"@ja.
+kg:id_16 rdfs:label "多くの個人や法人から町内設置に関わる問い合わせ"@ja.
+kg:id_16 rdf:type cls:c_1804.
+cls:c_1804 rdfs:label "設置問い合わせ"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "地権者等からの相談"@ja.
+kg:id_17 rdf:type cls:c_1805.
+cls:c_1805 rdfs:label "設置相談"@ja.
+kg:id_15 prop:cause kg:id_17.
+kg:id_18 rdfs:label "松前町小型風力発電施設設置に関わるガイドラインを制定"@ja.
+kg:id_18 rdf:type cls:c_1806.
+cls:c_1806 rdfs:label "設置指針"@ja.
+kg:id_15 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "環境保全や景観形成の観点から事業者が自主的に遵守する事項を設定"@ja.
+kg:id_19 rdf:type cls:c_1807.
+cls:c_1807 rdfs:label "遵守事項"@ja.
+kg:id_15 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "スルメ加工原料不足"@ja.
+kg:id_20 rdf:type cls:c_1808.
+cls:c_1808 rdfs:label "原料不足"@ja.
+kg:id_21 rdfs:label "昨年のイカ漁の３０年ぶりの不漁"@ja.
+kg:id_21 rdf:type cls:c_858.
+cls:c_858 rdfs:label "不漁"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "昨年の不漁等の影響の継続化"@ja.
+kg:id_22 rdf:type cls:c_1809.
+cls:c_1809 rdfs:label "不漁影響"@ja.
+kg:id_20 prop:cause kg:id_22.
+kg:id_23 rdfs:label "加工原料不足"@ja.
+kg:id_23 rdf:type cls:c_1808.
+kg:id_20 prop:effect kg:id_23.
+kg:id_24 rdfs:label "価格の高騰"@ja.
+kg:id_24 rdf:type cls:c_1433.
+cls:c_1433 rdfs:label "価格高騰"@ja.
+kg:id_20 prop:effect kg:id_24.
+kg:id_25 rdfs:label "経営が厳しい状況"@ja.
+kg:id_25 rdf:type cls:c_1810.
+cls:c_1810 rdfs:label "経営悪化"@ja.
+kg:id_20 prop:effect kg:id_25.
+kg:id_26 rdfs:label "加工原料の確保に苦慮"@ja.
+kg:id_26 rdf:type cls:c_1811.
+cls:c_1811 rdfs:label "原料確保難"@ja.
+kg:id_20 prop:effect kg:id_26.
+kg:id_27 rdfs:label "加工場稼働の目処が立たない事業所の発生"@ja.
+kg:id_27 rdf:type cls:c_1812.
+cls:c_1812 rdfs:label "操業困難"@ja.
+kg:id_20 prop:effect kg:id_27.
+kg:id_28 rdfs:label "加工場従業員の雇用不安"@ja.
+kg:id_28 rdf:type cls:c_1179.
+cls:c_1179 rdfs:label "雇用不安"@ja.
+kg:id_20 prop:effect kg:id_28.
+kg:id_29 rdfs:label "地域経済への大きく深刻な影響"@ja.
+kg:id_29 rdf:type cls:c_1813.
+cls:c_1813 rdfs:label "地域経済悪化"@ja.
+kg:id_20 prop:effect kg:id_29.
+kg:id_30 rdfs:label "国内生産のスルメ加工が消滅の危機"@ja.
+kg:id_30 rdf:type cls:c_1814.
+cls:c_1814 rdfs:label "産業消滅危機"@ja.
+kg:id_20 prop:effect kg:id_30.
+kg:id_31 rdfs:label "事業所の廃業"@ja.
+kg:id_31 rdf:type cls:c_1815.
+cls:c_1815 rdfs:label "廃業"@ja.
+kg:id_20 prop:effect kg:id_31.
+kg:id_32 rdfs:label "事業所の倒産"@ja.
+kg:id_32 rdf:type cls:c_1816.
+cls:c_1816 rdfs:label "倒産"@ja.
+kg:id_20 prop:effect kg:id_32.
+kg:id_33 rdfs:label "地域経済の疲弊"@ja.
+kg:id_33 rdf:type cls:c_1813.
+kg:id_20 prop:effect kg:id_33.
+kg:id_34 rdfs:label "松前町・福島町スルメ加工業連絡協議会を立ち上げ"@ja.
+kg:id_34 rdf:type cls:c_124.
+cls:c_124 rdfs:label "協議会設置"@ja.
+kg:id_20 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "国に要望書を提出"@ja.
+kg:id_35 rdf:type cls:c_1817.
+cls:c_1817 rdfs:label "要望書提出"@ja.
+kg:id_20 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "消化義務のない輸入枠の新設等を要望"@ja.
+kg:id_36 rdf:type cls:c_172.
+cls:c_172 rdfs:label "制度要望"@ja.
+kg:id_20 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "外国船籍漁船の違法操業対策の強化を要望"@ja.
+kg:id_37 rdf:type cls:c_1818.
+cls:c_1818 rdfs:label "取締強化要望"@ja.
+kg:id_20 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "後期高齢者医療保険料及び国民健康保険税の軽減判定誤り"@ja.
+kg:id_38 rdf:type cls:c_1819.
+cls:c_1819 rdfs:label "保険料算定誤り"@ja.
+kg:id_39 rdfs:label "厚生労働省が提供した標準システムの設定誤り"@ja.
+kg:id_39 rdf:type cls:c_1820.
+cls:c_1820 rdfs:label "システム設定誤り"@ja.
+kg:id_38 prop:cause kg:id_39.
+kg:id_40 rdfs:label "世帯主又は本人が青色申告を行っている一部の方の均等割軽減判定所得が誤算定"@ja.
+kg:id_40 rdf:type cls:c_1821.
+cls:c_1821 rdfs:label "所得誤算定"@ja.
+kg:id_38 prop:effect kg:id_40.
+kg:id_41 rdfs:label "後期高齢者医療保険料の返還金が発生"@ja.
+kg:id_41 rdf:type cls:c_1822.
+cls:c_1822 rdfs:label "返還金発生"@ja.
+kg:id_38 prop:effect kg:id_41.
+kg:id_42 rdfs:label "国民健康保険税の追加徴収が発生"@ja.
+kg:id_42 rdf:type cls:c_1823.
+cls:c_1823 rdfs:label "追加徴収"@ja.
+kg:id_38 prop:effect kg:id_42.
+kg:id_43 rdfs:label "国民健康保険税の減額更正が発生"@ja.
+kg:id_43 rdf:type cls:c_1824.
+cls:c_1824 rdfs:label "減額更正"@ja.
+kg:id_38 prop:effect kg:id_43.
+kg:id_44 rdfs:label "還付手続きを終了"@ja.
+kg:id_44 rdf:type cls:c_1825.
+cls:c_1825 rdfs:label "還付手続き"@ja.
+kg:id_38 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "個別訪問によるお詫びと内容説明を実施"@ja.
+kg:id_45 rdf:type cls:c_1826.
+cls:c_1826 rdfs:label "謝罪説明"@ja.
+kg:id_38 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "追加徴収対象者に納付手続きを依頼"@ja.
+kg:id_46 rdf:type cls:c_1827.
+cls:c_1827 rdfs:label "納付依頼"@ja.
+kg:id_38 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "減額更正で返還金が生じる方に速やかに還付手続きを実施"@ja.
+kg:id_47 rdf:type cls:c_1825.
+kg:id_38 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "北海道後期高齢者医療広域連合と連携し適正賦課に努める"@ja.
+kg:id_48 rdf:type cls:c_1828.
+cls:c_1828 rdfs:label "適正賦課"@ja.
+kg:id_38 prop:countermeasure kg:id_48.
+kg:id_49 rdfs:label "該当ケースを個別に管理し適正賦課に努める"@ja.
+kg:id_49 rdf:type cls:c_1829.
+cls:c_1829 rdfs:label "個別管理"@ja.
+kg:id_38 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "法令等の理解の徹底及びチェック体制の強化"@ja.
+kg:id_50 rdf:type cls:c_1830.
+cls:c_1830 rdfs:label "再発防止"@ja.
+kg:id_38 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "松前記念クリニックの廃止"@ja.
+kg:id_51 rdf:type cls:c_1831.
+cls:c_1831 rdfs:label "診療所廃止"@ja.
+kg:id_52 rdfs:label "町として突然の廃止を非常に残念と受け止める"@ja.
+kg:id_52 rdf:type cls:c_1832.
+cls:c_1832 rdfs:label "遺憾"@ja.
+kg:id_51 prop:effect kg:id_52.
+kg:id_53 rdfs:label "利用者に診療情報提供書及び処方箋の写しを送付"@ja.
+kg:id_53 rdf:type cls:c_1833.
+cls:c_1833 rdfs:label "診療情報提供"@ja.
+kg:id_51 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "町立松前病院等での診療に適宜対応"@ja.
+kg:id_54 rdf:type cls:c_1834.
+cls:c_1834 rdfs:label "診療対応"@ja.
+kg:id_51 prop:countermeasure kg:id_54.
+kg:id_55 rdfs:label "情報収集に努める"@ja.
+kg:id_55 rdf:type cls:c_239.
+cls:c_239 rdfs:label "情報収集"@ja.
+kg:id_51 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "大型風力発電施設建設"@ja.
+kg:id_56 rdf:type cls:c_1835.
+cls:c_1835 rdfs:label "風力発電施設建設"@ja.
+kg:id_57 rdfs:label "地域の不安"@ja.
+kg:id_57 rdf:type cls:c_1836.
+cls:c_1836 rdfs:label "地域不安"@ja.
+kg:id_56 prop:effect kg:id_57.
+kg:id_58 rdfs:label "地域住民の理解の基に事業を慎重に進めるよう事業者に要請"@ja.
+kg:id_58 rdf:type cls:c_1837.
+cls:c_1837 rdfs:label "慎重推進要請"@ja.
+kg:id_56 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "速やかな情報公開と地域に不安を与えない対応"@ja.
+kg:id_59 rdf:type cls:c_715.
+cls:c_715 rdfs:label "情報公開"@ja.
+kg:id_56 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "事業者にも同様の姿勢で事業を進めるよう要望"@ja.
+kg:id_60 rdf:type cls:c_1838.
+cls:c_1838 rdfs:label "地域配慮要望"@ja.
+kg:id_56 prop:countermeasure kg:id_60.
+kg:st_1 rdfs:label "松前ウインドファーム合同会社"@ja.
+kg:st_1 rdf:type cls:st_21.
+cls:st_21 rdfs:label "事業者"@ja.
+kg:op_1 prop:content "地権者や関係者、町民に心配をかけたことを謝罪"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "地権者や関係者、町民に心配をかけたことを謝罪"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "今後２年間の工事で町民に心配をかけることを謝罪"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "町民"@ja.
+kg:st_2 rdf:type cls:st_56.
+cls:st_56 rdfs:label "町民"@ja.
+kg:op_4 prop:content "風力発電施設建設における情報公開と地域の安心安全を要望"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "当町"@ja.
+kg:st_3 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_5 prop:content "地権者や関係者と情報共有し町民とのトラブル防止を事業者に求める"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "環境保全と景観形成の観点から事業者の自主遵守事項を定める"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "小型風車建設に伴う環境保全と景観形成を重視"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "加工原料不足で経営が厳しいと認識"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "原料価格高騰で経営が厳しいと認識"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "加工業者の経営悪化を深刻視"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "今春以降も原料確保が困難と認識"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_3.
+kg:op_12 prop:content "今後の加工場稼働の見通しが立たない事業所が多いと懸念"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "地域最大の雇用の場である加工場の雇用不安を深刻視"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_3.
+kg:op_14 prop:content "地域経済への影響が大きく深刻と認識"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "この状態が続けば国内生産のスルメ加工が消滅の危機に陥ると危機感"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_3.
+kg:op_16 prop:content "事業所の廃業や倒産による地域経済の疲弊を懸念"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "事業所の廃業や倒産による地域経済の疲弊を懸念"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "地域経済の疲弊に大きな危機感"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "松前町・福島町スルメ加工業連絡協議会"@ja.
+kg:st_4 rdf:type cls:st_57.
+cls:st_57 rdfs:label "協議会"@ja.
+kg:op_19 prop:content "原料安定確保のため連携して対応"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "松前町、福島町、松前町議会、福島町議会、松前商工会、福島町商工会及び松前町・福島町スルメ加工業連絡協議会"@ja.
+kg:st_5 rdf:type cls:st_53.
+cls:st_53 rdfs:label "関係団体"@ja.
+kg:op_20 prop:content "スルメ加工原料の安定確保を国に要望"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "国内漁獲低迷時に輸入原料を確保できる制度運用を求める"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "イカ資源確保のため違法操業対策の強化を求める"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "対象者に個別訪問で謝罪し内容説明を行う"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "同様の賦課誤りを防ぐため広域連合と連携し適正賦課に努める"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:op_25 prop:content "国民健康保険税でも個別管理により適正賦課に努める"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_3.
+kg:op_26 prop:content "再発防止のため法令理解の徹底とチェック体制強化を図る"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_3.
+kg:st_6 rdfs:label "町"@ja.
+kg:st_6 rdf:type cls:st_4.
+kg:op_27 prop:content "突然の廃止を非常に残念に思う"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "松前記念クリニック担当医"@ja.
+kg:st_7 rdf:type cls:st_58.
+cls:st_58 rdfs:label "医師"@ja.
+kg:op_28 prop:content "利用者が継続受診できるよう診療情報と処方情報を送付"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_7.
+kg:op_29 prop:content "利用者が引き続き適切な医療を受けられるよう対応する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "引き続き情報収集に努める"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_6.
+kg:op_31 prop:content "情報公開と地域の安心安全を求める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "地域住民の理解を前提に慎重に事業を進めるよう事業者に求める"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:st_8 rdfs:label "私ども"@ja.
+kg:st_8 rdf:type cls:st_4.
+kg:op_33 prop:content "速やかな情報公開と地域に不安を与えないよう最善を尽くす"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_8.
+kg:op_34 prop:content "事業者にも情報公開と地域配慮の姿勢で進めるよう求める"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_8.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "国の補助制度の廃止やＦＩＴ制度（固定価格買収制度）の導入、環境影響評価法（通称：環境アセスメント法）の適用、更には日本製風車からドイツ製風車への機種変更や設置基数の変更等が検討されておりました"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:text-txt_contents "国の補助制度の廃止やＦＩＴ制度（固定価格買収制度）の導入、環境影響評価法（通称：環境アセスメント法）の適用、更には日本製風車からドイツ製風車への機種変更や設置基数の変更等が検討されておりました"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:text-txt_contents "国の補助制度の廃止やＦＩＴ制度（固定価格買収制度）の導入、環境影響評価法（通称：環境アセスメント法）の適用、更には日本製風車からドイツ製風車への機種変更や設置基数の変更等が検討されておりました"@ja.
+<< kg:id_1 prop:cause kg:id_5 >>
+    prop:text-txt_contents "国の補助制度の廃止やＦＩＴ制度（固定価格買収制度）の導入、環境影響評価法（通称：環境アセスメント法）の適用、更には日本製風車からドイツ製風車への機種変更や設置基数の変更等が検討されておりました"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:text-txt_contents "国の補助制度の廃止やＦＩＴ制度（固定価格買収制度）の導入、環境影響評価法（通称：環境アセスメント法）の適用、更には日本製風車からドイツ製風車への機種変更や設置基数の変更等が検討されておりました"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "松前ウインドファーム合同会社では、当初の事業計画からの大幅な遅れにより、地権者はじめ関係者の方々に対し、ご心配をおかけしましたこと、更に今後２年間にわたり設置関連工事により町民の皆様に対しご心配をおかけすることとなり、大変申し訳なく思っております"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "松前ウインドファーム合同会社では、当初の事業計画からの大幅な遅れにより、地権者はじめ関係者の方々に対し、ご心配をおかけしましたこと"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "更に今後２年間にわたり設置関連工事により町民の皆様に対しご心配をおかけすることとなり、大変申し訳なく思っております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_10 >>
+    prop:text-txt_contents "平成２８年１月から風車関連用地に関わる地権者からの同意取得を再度開始し"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:text-txt_contents "本年１月には風車本機と羽下の地権者を対象に事業説明会を開催し、地上権などの権利設定について説明をしているところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_12 >>
+    prop:text-txt_contents "風車機器運搬のため道路の一部拡幅についても地権者からの同意取得、農地における各種申請を開始しているところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "本年６月８日と９日に再度事業概要の周知及び建設工事に関する地域説明会を実施しているところであります"@ja.
+<< kg:id_1 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "当町としても、松前北部風力発電事業の安全な事業着手と地権者、関係者との情報共有など、町民とのトラブルがないように事業者に申し入れしているところであります"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:text-txt_contents "昨年３月から多くの個人や法人から町内設置に関わる問い合わせがきております"@ja.
+<< kg:id_15 prop:cause kg:id_17 >>
+    prop:text-txt_contents "また、地権者等からも相談があり"@ja.
+<< kg:id_15 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "当町では本年４月に松前町小型風力発電施設設置に関わるガイドラインを制定し、本年８月１日から適用することとしております"@ja.
+<< kg:id_15 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本ガイドラインは、小型風車の建設に伴う環境保全や景観形成の観点から事業者が自主的に遵守する事項を定めております"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:text-txt_contents "昨年のイカ漁は３０年ぶりの不漁となり"@ja.
+<< kg:id_20 prop:cause kg:id_22 >>
+    prop:text-txt_contents "特に今春以降は昨年の不漁等の影響が継続化し、加工原料の確保に苦慮しております"@ja.
+<< kg:id_20 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "加工原料不足や価格の高騰により経営は厳しい状況に追い込まれており"@ja.
+<< kg:id_20 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "加工原料不足や価格の高騰により経営は厳しい状況に追い込まれており"@ja.
+<< kg:id_20 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "加工原料不足や価格の高騰により経営は厳しい状況に追い込まれており"@ja.
+<< kg:id_20 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "特に今春以降は昨年の不漁等の影響が継続化し、加工原料の確保に苦慮しております"@ja.
+<< kg:id_20 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "今後の加工場稼働の目処すら立たない事業所も多く"@ja.
+<< kg:id_20 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "地域で最大の雇用の場である加工場従業員の雇用不安など、地域経済にとっても影響が大きく深刻な状況に直面しております"@ja.
+<< kg:id_20 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "地域経済にとっても影響が大きく深刻な状況に直面しております"@ja.
+<< kg:id_20 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "このような状態が続いた場合、国内生産のスルメ加工が消滅の危機に陥る可能性があること"@ja.
+<< kg:id_20 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "事業所の廃業、倒産による地域経済の疲弊など、大きな危機感を抱かざるを得ない状況と考えております"@ja.
+<< kg:id_20 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "事業所の廃業、倒産による地域経済の疲弊など、大きな危機感を抱かざるを得ない状況と考えております"@ja.
+<< kg:id_20 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "事業所の廃業、倒産による地域経済の疲弊など、大きな危機感を抱かざるを得ない状況と考えております"@ja.
+<< kg:id_20 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "加工形態を同じくする福島町と連携し、松前町と福島町の水産加工場の全社（２５社）による「松前町・福島町スルメ加工業連絡協議会」を５月２６日に立ち上げ"@ja.
+<< kg:id_20 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "６月６日には国に対し、松前町、福島町、松前町議会、福島町議会、松前商工会、福島町商工会及び松前町・福島町スルメ加工業連絡協議会の７団体等の連名により、「スルメ加工原料の安定確保に関する要望書」を提出したところであります"@ja.
+<< kg:id_20 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "国内での漁獲が低迷した場合に、松前町、福島町のスルメ加工業者の輸入が可能となる、消化義務のない輸入枠の新設等の運用を図っていただくよう要望します"@ja.
+<< kg:id_20 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "国内イカ漁場における外国船籍漁船の違法操業対策を強化していただくよう要望します"@ja.
+<< kg:id_38 prop:cause kg:id_39 >>
+    prop:text-txt_contents "厚生労働省から後期高齢者医療保険料について、後期高齢者医療広域連合に提供した標準システムの設定に誤りがあり"@ja.
+<< kg:id_38 prop:effect kg:id_40 >>
+    prop:text-txt_contents "世帯主又は本人が青色申告を行っている一部の方に、均等割軽減の判定所得が全国的に誤って算定されていることが発表され"@ja.
+<< kg:id_38 prop:effect kg:id_41 >>
+    prop:text-txt_contents "後期高齢者医療保険料については、返還金が生じる方が７件で１４万２千１００円となり"@ja.
+<< kg:id_38 prop:effect kg:id_42 >>
+    prop:text-txt_contents "国民健康保険税については、追加徴収となる方が４件で１０万２千７００円"@ja.
+<< kg:id_38 prop:effect kg:id_43 >>
+    prop:text-txt_contents "減額更正となる方が１２件で３０万４００円となり"@ja.
+<< kg:id_38 prop:countermeasure kg:id_44 >>
+    prop:text-txt_contents "既に還付の手続きを終了しております"@ja.
+<< kg:id_38 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "個別訪問によるお詫びと内容説明を行い"@ja.
+<< kg:id_38 prop:countermeasure kg:id_46 >>
+    prop:text-txt_contents "追加徴収となる方については、納付手続きをお願いし"@ja.
+<< kg:id_38 prop:countermeasure kg:id_47 >>
+    prop:text-txt_contents "減額更正により返還金が生じる方に対しては、速やかに還付の手続きを行うこととしております"@ja.
+<< kg:id_38 prop:countermeasure kg:id_48 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "それまでの間は、同様の賦課誤りとならないよう、北海道後期高齢者医療広域連合と連携しながら適正賦課に努めてまいります"@ja.
+<< kg:id_38 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "国民健康保険税におきましても、該当するケースについては、現在のシステムでは対応できないため、個別に管理し、適正賦課に努めてまいります"@ja.
+<< kg:id_38 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "今後このような事例が発生しないよう、法令等の理解の徹底及びチェック体制の強化を図り、適切な事務処理に努めてまいります"@ja.
+<< kg:id_51 prop:effect kg:id_52 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "町としては、今回の突然の廃止については非常に残念に思っているところであります"@ja.
+<< kg:id_51 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "松前記念クリニック担当医からは、利用者に対し、診療情報提供書及び処方箋の写しが送付されております"@ja.
+<< kg:id_51 prop:countermeasure kg:id_54 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "今後は、これらの利用者が引き続き適切な医療を受けられるよう、町立松前病院等での診療について、適宜対応するとともに、引き続き情報収集に努めてまいります"@ja.
+<< kg:id_51 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "町立松前病院等での診療について、適宜対応するとともに、引き続き情報収集に努めてまいります"@ja.
+<< kg:id_56 prop:effect kg:id_57 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "町民より伊藤議長と私宛てに風力発電施設建設における情報公開及び地域の安心、安全に対する要望書が提出されたところであります"@ja.
+<< kg:id_56 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "当初から地域住民の理解の基に事業を慎重に進めていただくよう、事業者にはお話をしているところであり"@ja.
+<< kg:id_56 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "私どもとしても、速やかな情報公開と、地域の方々に不安を与えないように最善を尽くす"@ja.
+<< kg:id_56 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "事業者に対しましても同様の姿勢で事業を進められるよう、要望してまいります"@ja.
+}

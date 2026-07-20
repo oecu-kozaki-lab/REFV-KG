@@ -1,0 +1,1042 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00162> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "新型コロナウイルス感染症"@ja.
+kg:id_1 rdf:type cls:c_511.
+cls:c_511 rdfs:label "感染症"@ja.
+kg:id_2 rdfs:label "子供たちの教育機会減少"@ja.
+kg:id_2 rdf:type cls:c_1383.
+cls:c_1383 rdfs:label "学習機会減少"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "コロナ禍の学校閉鎖"@ja.
+kg:id_3 rdf:type cls:c_1379.
+cls:c_1379 rdfs:label "学校閉鎖"@ja.
+kg:id_4 rdfs:label "学力低下"@ja.
+kg:id_4 rdf:type cls:c_1378.
+cls:c_1378 rdfs:label "学力低下"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "生徒らの生涯収入の損失"@ja.
+kg:id_5 rdf:type cls:c_1380.
+cls:c_1380 rdfs:label "収入損失"@ja.
+kg:id_3 prop:effect kg:id_5.
+kg:id_6 rdfs:label "コロナ禍"@ja.
+kg:id_6 rdf:type cls:c_511.
+kg:id_7 rdfs:label "教育格差の拡大"@ja.
+kg:id_7 rdf:type cls:c_1384.
+cls:c_1384 rdfs:label "教育格差"@ja.
+kg:id_6 prop:effect kg:id_7.
+kg:id_8 rdfs:label "新型コロナウイルス感染症の影響"@ja.
+kg:id_8 rdf:type cls:c_511.
+kg:id_9 rdfs:label "休校"@ja.
+kg:id_9 rdf:type cls:c_1379.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "学年閉鎖"@ja.
+kg:id_10 rdf:type cls:c_1379.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "子供たちの行事の中止"@ja.
+kg:id_11 rdf:type cls:c_3776.
+cls:c_3776 rdfs:label "行事制限"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "子供たちの行事の縮小"@ja.
+kg:id_12 rdf:type cls:c_3776.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "子供たちの学びの機会の喪失"@ja.
+kg:id_13 rdf:type cls:c_1383.
+kg:id_6 prop:effect kg:id_13.
+kg:id_14 rdfs:label "子供たちの生活リズムの乱れ"@ja.
+kg:id_14 rdf:type cls:c_3777.
+cls:c_3777 rdfs:label "生活リズム乱れ"@ja.
+kg:id_9 prop:effect kg:id_14.
+kg:id_15 rdfs:label "友達と遊べないこと"@ja.
+kg:id_15 rdf:type cls:c_1390.
+cls:c_1390 rdfs:label "交流制限"@ja.
+kg:id_16 rdfs:label "一日中ゲームばかりすること"@ja.
+kg:id_16 rdf:type cls:c_1389.
+cls:c_1389 rdfs:label "ゲーム依存"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "新型コロナウイルス感染症の感染拡大防止"@ja.
+kg:id_17 rdf:type cls:c_2869.
+cls:c_2869 rdfs:label "感染症対策"@ja.
+kg:id_17 prop:countermeasure kg:id_9.
+kg:id_18 rdfs:label "行事の中止"@ja.
+kg:id_18 rdf:type cls:c_3776.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "行事の縮小"@ja.
+kg:id_19 rdf:type cls:c_3776.
+kg:id_17 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "子供の貧困"@ja.
+kg:id_20 rdf:type cls:c_3778.
+cls:c_3778 rdfs:label "貧困"@ja.
+kg:id_21 rdfs:label "教育格差"@ja.
+kg:id_21 rdf:type cls:c_1384.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "親の収入"@ja.
+kg:id_22 rdf:type cls:c_3779.
+cls:c_3779 rdfs:label "収入"@ja.
+kg:id_23 rdfs:label "子供の学校の成績との相関"@ja.
+kg:id_23 rdf:type cls:c_1393.
+cls:c_1393 rdfs:label "学業成績"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "新型コロナウイルス感染症拡大"@ja.
+kg:id_24 rdf:type cls:c_511.
+kg:id_25 rdfs:label "収入の少ない家庭への大きなダメージ"@ja.
+kg:id_25 rdf:type cls:c_3780.
+cls:c_3780 rdfs:label "低所得世帯被害"@ja.
+kg:id_24 prop:effect kg:id_25.
+kg:id_26 rdfs:label "ひとり親家庭への大きな影響"@ja.
+kg:id_26 rdf:type cls:c_3781.
+cls:c_3781 rdfs:label "ひとり親世帯被害"@ja.
+kg:id_24 prop:effect kg:id_26.
+kg:id_27 rdfs:label "母子家庭への大きな影響"@ja.
+kg:id_27 rdf:type cls:c_3781.
+kg:id_24 prop:effect kg:id_27.
+kg:id_28 rdfs:label "継続的な支援"@ja.
+kg:id_28 rdf:type cls:c_3782.
+cls:c_3782 rdfs:label "継続支援"@ja.
+kg:id_20 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "感染症への不安"@ja.
+kg:id_29 rdf:type cls:c_3783.
+cls:c_3783 rdfs:label "感染不安"@ja.
+kg:id_6 prop:effect kg:id_29.
+kg:id_30 rdfs:label "子供たちの心への影"@ja.
+kg:id_30 rdf:type cls:c_3784.
+cls:c_3784 rdfs:label "心理負担"@ja.
+kg:id_6 prop:effect kg:id_30.
+kg:id_31 rdfs:label "力いっぱい遊べないこと"@ja.
+kg:id_31 rdf:type cls:c_3785.
+cls:c_3785 rdfs:label "遊び制限"@ja.
+kg:id_6 prop:effect kg:id_31.
+kg:id_32 rdfs:label "友達とのおしゃべりに気を使うこと"@ja.
+kg:id_32 rdf:type cls:c_1390.
+kg:id_6 prop:effect kg:id_32.
+kg:id_33 rdfs:label "家で友達と遊べないこと"@ja.
+kg:id_33 rdf:type cls:c_1390.
+kg:id_6 prop:effect kg:id_33.
+kg:id_34 rdfs:label "一人で遊べるゲームばかりすること"@ja.
+kg:id_34 rdf:type cls:c_1389.
+kg:id_33 prop:effect kg:id_34.
+kg:id_35 rdfs:label "人と人とのつながりを保つことが難しくなること"@ja.
+kg:id_35 rdf:type cls:c_1404.
+cls:c_1404 rdfs:label "関係維持困難"@ja.
+kg:id_8 prop:effect kg:id_35.
+kg:id_36 rdfs:label "人を思いやることが難しくなること"@ja.
+kg:id_36 rdf:type cls:c_3786.
+cls:c_3786 rdfs:label "思いやり困難"@ja.
+kg:id_8 prop:effect kg:id_36.
+kg:id_37 rdfs:label "孤立の問題"@ja.
+kg:id_37 rdf:type cls:c_3787.
+cls:c_3787 rdfs:label "孤立問題"@ja.
+kg:id_8 prop:effect kg:id_37.
+kg:id_38 rdfs:label "いじめの問題"@ja.
+kg:id_38 rdf:type cls:c_3788.
+cls:c_3788 rdfs:label "いじめ問題"@ja.
+kg:id_8 prop:effect kg:id_38.
+kg:id_39 rdfs:label "学校へ行けない子供たちの増加"@ja.
+kg:id_39 rdf:type cls:c_1406.
+cls:c_1406 rdfs:label "登校困難増加"@ja.
+kg:id_29 prop:cause kg:id_39.
+kg:id_40 rdfs:label "気候変動"@ja.
+kg:id_40 rdf:type cls:c_37.
+cls:c_37 rdfs:label "気候変動"@ja.
+kg:id_41 rdfs:label "ゼロカーボンシティ宣言"@ja.
+kg:id_41 rdf:type cls:c_1246.
+cls:c_1246 rdfs:label "脱炭素宣言"@ja.
+kg:id_40 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "本市"@ja.
+kg:id_42 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_43 rdfs:label "ゼロカーボンシティ宣言を考えていない"@ja.
+kg:id_43 rdf:type cls:c_1412.
+cls:c_1412 rdfs:label "脱炭素宣言不実施"@ja.
+kg:id_42 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "エネルギー転換の過渡期"@ja.
+kg:id_44 rdf:type cls:c_3789.
+cls:c_3789 rdfs:label "移行期"@ja.
+kg:id_45 rdfs:label "化石燃料由来の火力発電が必要"@ja.
+kg:id_45 rdf:type cls:c_3790.
+cls:c_3790 rdfs:label "火力発電必要"@ja.
+kg:id_44 prop:cause kg:id_45.
+kg:id_46 rdfs:label "酒田共同火力発電の存続できなくなった場合"@ja.
+kg:id_46 rdf:type cls:c_3169.
+cls:c_3169 rdfs:label "火力発電停止"@ja.
+kg:id_47 rdfs:label "酒田市への大きな影響"@ja.
+kg:id_47 rdf:type cls:c_3791.
+cls:c_3791 rdfs:label "地域被害"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "2050年カーボンニュートラルの実現"@ja.
+kg:id_48 rdf:type cls:c_1112.
+cls:c_1112 rdfs:label "脱炭素目標"@ja.
+kg:id_49 rdfs:label "再生可能エネルギー循環都市の形成"@ja.
+kg:id_49 rdf:type cls:c_3792.
+cls:c_3792 rdfs:label "再エネ都市形成"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "酒田港のカーボンニュートラルポートや次世代エネルギー導入"@ja.
+kg:id_50 rdf:type cls:c_814.
+cls:c_814 rdfs:label "次世代エネルギー導入"@ja.
+kg:id_51 rdfs:label "国や県と連携した検討会の開催"@ja.
+kg:id_51 rdf:type cls:c_1416.
+cls:c_1416 rdfs:label "検討会開催"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "酒田港の臨海エリア"@ja.
+kg:id_52 rdf:type cls:c_3793.
+cls:c_3793 rdfs:label "臨海地域"@ja.
+kg:id_53 rdfs:label "バイオマス発電の運転開始"@ja.
+kg:id_53 rdf:type cls:c_3178.
+cls:c_3178 rdfs:label "バイオマス発電"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "山形県沖の風況がよいこと"@ja.
+kg:id_54 rdf:type cls:c_3794.
+cls:c_3794 rdfs:label "好風況"@ja.
+kg:id_55 rdfs:label "洋上風力発電の検討の具体化"@ja.
+kg:id_55 rdf:type cls:c_3795.
+cls:c_3795 rdfs:label "洋上風力検討"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "酒田港"@ja.
+kg:id_56 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "港湾"@ja.
+kg:id_57 rdfs:label "水素やアンモニアなど次世代エネルギーの利活用"@ja.
+kg:id_57 rdf:type cls:c_3796.
+cls:c_3796 rdfs:label "次世代エネルギー活用"@ja.
+kg:id_56 prop:countermeasure kg:id_57.
+kg:id_58 rdfs:label "酒田港周辺エリア"@ja.
+kg:id_58 rdf:type cls:c_1978.
+cls:c_1978 rdfs:label "港湾地域"@ja.
+kg:id_59 rdfs:label "再生可能エネルギー関連の新たな産業形成への取り組み"@ja.
+kg:id_59 rdf:type cls:c_3797.
+cls:c_3797 rdfs:label "再エネ産業形成"@ja.
+kg:id_58 prop:countermeasure kg:id_59.
+kg:id_60 rdfs:label "酒田沿岸域検討部会"@ja.
+kg:id_60 rdf:type cls:c_800.
+cls:c_800 rdfs:label "検討組織"@ja.
+kg:id_61 rdfs:label "漁業関係者など利害関係者を含めた議論"@ja.
+kg:id_61 rdf:type cls:c_3798.
+cls:c_3798 rdfs:label "利害関係者協議"@ja.
+kg:id_60 prop:countermeasure kg:id_61.
+kg:id_62 rdfs:label "洋上風力発電"@ja.
+kg:id_62 rdf:type cls:c_175.
+cls:c_175 rdfs:label "洋上風力発電"@ja.
+kg:id_63 rdfs:label "地域の環境への影響"@ja.
+kg:id_63 rdf:type cls:c_190.
+cls:c_190 rdfs:label "環境影響"@ja.
+kg:id_62 prop:effect kg:id_63.
+kg:id_64 rdfs:label "景観への影響"@ja.
+kg:id_64 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_62 prop:effect kg:id_64.
+kg:id_65 rdfs:label "漁業者への影響"@ja.
+kg:id_65 rdf:type cls:c_280.
+cls:c_280 rdfs:label "漁業影響"@ja.
+kg:id_62 prop:effect kg:id_65.
+kg:id_66 rdfs:label "漁業者への様々な支援策の検討"@ja.
+kg:id_66 rdf:type cls:c_1647.
+cls:c_1647 rdfs:label "漁業支援"@ja.
+kg:id_62 prop:countermeasure kg:id_66.
+kg:id_67 rdfs:label "北庄内地域の地域振興メリット"@ja.
+kg:id_67 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_62 prop:effect kg:id_67.
+kg:id_68 rdfs:label "議論の過程で好ましくないと判断した場合"@ja.
+kg:id_68 rdf:type cls:c_3799.
+cls:c_3799 rdfs:label "不適判断"@ja.
+kg:id_69 rdfs:label "県・国への意見表明"@ja.
+kg:id_69 rdf:type cls:c_1419.
+cls:c_1419 rdfs:label "意見表明"@ja.
+kg:id_68 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "地域マイクログリッド"@ja.
+kg:id_70 rdf:type cls:c_100.
+cls:c_100 rdfs:label "地域電力網"@ja.
+kg:id_71 rdfs:label "災害時に地域単独ネットワークへ切り替えて安定供給すること"@ja.
+kg:id_71 rdf:type cls:c_3800.
+cls:c_3800 rdfs:label "優先電力供給"@ja.
+kg:id_70 prop:countermeasure kg:id_71.
+kg:id_72 rdfs:label "防災力の強化"@ja.
+kg:id_72 rdf:type cls:c_1421.
+cls:c_1421 rdfs:label "防災強化"@ja.
+kg:id_70 prop:effect kg:id_72.
+kg:id_73 rdfs:label "地域の活性化"@ja.
+kg:id_73 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_70 prop:effect kg:id_73.
+kg:id_74 rdfs:label "地域マイクログリッド構築の技術的課題"@ja.
+kg:id_74 rdf:type cls:c_1424.
+cls:c_1424 rdfs:label "技術課題"@ja.
+kg:id_62 prop:cause kg:id_74.
+kg:id_75 rdfs:label "経済性が成立しにくいこと"@ja.
+kg:id_75 rdf:type cls:c_3801.
+cls:c_3801 rdfs:label "経済性不足"@ja.
+kg:id_70 prop:effect kg:id_75.
+kg:id_76 rdfs:label "民間事業者の参入意欲の低さ"@ja.
+kg:id_76 rdf:type cls:c_1143.
+cls:c_1143 rdfs:label "参入意欲低下"@ja.
+kg:id_70 prop:effect kg:id_76.
+kg:id_77 rdfs:label "今後の活用可能性の勉強"@ja.
+kg:id_77 rdf:type cls:c_1426.
+cls:c_1426 rdfs:label "活用検討"@ja.
+kg:id_70 prop:countermeasure kg:id_77.
+kg:id_78 rdfs:label "離島を持つこと"@ja.
+kg:id_78 rdf:type cls:c_3802.
+cls:c_3802 rdfs:label "離島"@ja.
+kg:id_79 rdfs:label "地域マイクログリッドに取り組む意味のある可能性"@ja.
+kg:id_79 rdf:type cls:c_3803.
+cls:c_3803 rdfs:label "地域電力網可能性"@ja.
+kg:id_78 prop:cause kg:id_79.
+kg:id_80 rdfs:label "子供たちの不安の増大"@ja.
+kg:id_80 rdf:type cls:c_1400.
+cls:c_1400 rdfs:label "不安増大"@ja.
+kg:id_6 prop:effect kg:id_80.
+kg:id_81 rdfs:label "コロナ禍の不安"@ja.
+kg:id_81 rdf:type cls:c_3783.
+kg:id_82 rdfs:label "心の中が苦しい状況"@ja.
+kg:id_82 rdf:type cls:c_3784.
+kg:id_81 prop:effect kg:id_82.
+kg:id_83 rdfs:label "感染への不安"@ja.
+kg:id_83 rdf:type cls:c_3783.
+kg:id_83 prop:cause kg:id_82.
+kg:id_84 rdfs:label "仲間外れにされる不安"@ja.
+kg:id_84 rdf:type cls:c_3804.
+cls:c_3804 rdfs:label "排斥不安"@ja.
+kg:id_84 prop:cause kg:id_82.
+kg:id_85 rdfs:label "不登校の要因の可能性"@ja.
+kg:id_85 rdf:type cls:c_3805.
+cls:c_3805 rdfs:label "不登校要因"@ja.
+kg:id_6 prop:cause kg:id_85.
+kg:id_86 rdfs:label "不登校の子供たちへの対応"@ja.
+kg:id_86 rdf:type cls:c_3806.
+cls:c_3806 rdfs:label "不登校対応"@ja.
+kg:id_87 rdfs:label "担任がじっくり不安を聞く体制"@ja.
+kg:id_87 rdf:type cls:c_3807.
+cls:c_3807 rdfs:label "不安傾聴体制"@ja.
+kg:id_86 prop:countermeasure kg:id_87.
+kg:id_88 rdfs:label "タブレットを活用したリモート相談"@ja.
+kg:id_88 rdf:type cls:c_3808.
+cls:c_3808 rdfs:label "遠隔相談"@ja.
+kg:id_86 prop:countermeasure kg:id_88.
+kg:id_89 rdfs:label "内科的診療を含む確認"@ja.
+kg:id_89 rdf:type cls:c_3809.
+cls:c_3809 rdfs:label "診療確認"@ja.
+kg:id_86 prop:countermeasure kg:id_89.
+kg:id_90 rdfs:label "コロナ禍の巣ごもり生活"@ja.
+kg:id_90 rdf:type cls:c_3810.
+cls:c_3810 rdfs:label "巣ごもり生活"@ja.
+kg:id_91 rdfs:label "ストレス"@ja.
+kg:id_91 rdf:type cls:c_3811.
+cls:c_3811 rdfs:label "ストレス"@ja.
+kg:id_90 prop:effect kg:id_91.
+kg:id_92 rdfs:label "不安"@ja.
+kg:id_92 rdf:type cls:c_2289.
+cls:c_2289 rdfs:label "不安"@ja.
+kg:id_90 prop:effect kg:id_92.
+kg:id_93 rdfs:label "子供たちのストレスと不安解消"@ja.
+kg:id_93 rdf:type cls:c_3812.
+cls:c_3812 rdfs:label "心理負担軽減"@ja.
+kg:id_94 rdfs:label "地域とのつながりを一緒に進めること"@ja.
+kg:id_94 rdf:type cls:c_292.
+cls:c_292 rdfs:label "地域連携"@ja.
+kg:id_93 prop:countermeasure kg:id_94.
+kg:id_95 rdfs:label "送電線や蓄電器への国の支援"@ja.
+kg:id_95 rdf:type cls:c_3813.
+cls:c_3813 rdfs:label "国の支援"@ja.
+kg:id_41 prop:effect kg:id_95.
+kg:id_96 rdfs:label "病院や避難施設への優先的な電力供給"@ja.
+kg:id_96 rdf:type cls:c_3800.
+kg:id_70 prop:countermeasure kg:id_96.
+kg:id_97 rdfs:label "災害時の停電"@ja.
+kg:id_97 rdf:type cls:c_1210.
+cls:c_1210 rdfs:label "停電"@ja.
+kg:id_98 rdfs:label "市民生活への大きな影響"@ja.
+kg:id_98 rdf:type cls:c_3814.
+cls:c_3814 rdfs:label "市民生活被害"@ja.
+kg:id_97 prop:effect kg:id_98.
+kg:id_99 rdfs:label "再生可能エネルギー"@ja.
+kg:id_99 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_100 rdfs:label "市民への還元が感じられないこと"@ja.
+kg:id_100 rdf:type cls:c_3815.
+cls:c_3815 rdfs:label "還元不足"@ja.
+kg:id_99 prop:effect kg:id_100.
+kg:id_101 rdfs:label "エネルギーの地産地消"@ja.
+kg:id_101 rdf:type cls:c_103.
+cls:c_103 rdfs:label "地産地消"@ja.
+kg:id_102 rdfs:label "市民の再生エネルギー構築への理解"@ja.
+kg:id_102 rdf:type cls:c_3816.
+cls:c_3816 rdfs:label "市民理解"@ja.
+kg:id_101 prop:effect kg:id_102.
+kg:id_103 rdfs:label "災害に強いまちづくり"@ja.
+kg:id_103 rdf:type cls:c_104.
+cls:c_104 rdfs:label "防災まちづくり"@ja.
+kg:id_104 rdfs:label "企業誘致にとっての強み"@ja.
+kg:id_104 rdf:type cls:c_3817.
+cls:c_3817 rdfs:label "企業誘致効果"@ja.
+kg:id_103 prop:effect kg:id_104.
+kg:id_105 rdfs:label "ゼロカーボンという言葉"@ja.
+kg:id_105 rdf:type cls:c_3818.
+cls:c_3818 rdfs:label "脱炭素表現"@ja.
+kg:id_106 rdfs:label "石炭火力で成り立つまちへの配慮を欠く印象"@ja.
+kg:id_106 rdf:type cls:c_3819.
+cls:c_3819 rdfs:label "配慮欠如印象"@ja.
+kg:id_105 prop:effect kg:id_106.
+kg:id_107 rdfs:label "再生可能エネルギー循環都市"@ja.
+kg:id_107 rdf:type cls:c_3820.
+cls:c_3820 rdfs:label "再エネ都市"@ja.
+kg:id_108 rdfs:label "地域の再エネ利用の推進"@ja.
+kg:id_108 rdf:type cls:c_3821.
+cls:c_3821 rdfs:label "再エネ利用推進"@ja.
+kg:id_107 prop:countermeasure kg:id_108.
+kg:id_109 rdfs:label "風力発電"@ja.
+kg:id_109 rdf:type cls:c_128.
+cls:c_128 rdfs:label "風力発電"@ja.
+kg:id_110 rdfs:label "電力の安定性に欠ける面"@ja.
+kg:id_110 rdf:type cls:c_3822.
+cls:c_3822 rdfs:label "安定性不足"@ja.
+kg:id_109 prop:effect kg:id_110.
+kg:id_111 rdfs:label "電力の安定性に欠けること"@ja.
+kg:id_111 rdf:type cls:c_3822.
+kg:id_112 rdfs:label "精密機械事業者が使用を控えること"@ja.
+kg:id_112 rdf:type cls:c_3823.
+cls:c_3823 rdfs:label "利用控え"@ja.
+kg:id_111 prop:effect kg:id_112.
+kg:id_113 rdfs:label "蓄電で安定させた電源の活用"@ja.
+kg:id_113 rdf:type cls:c_3331.
+cls:c_3331 rdfs:label "蓄電活用"@ja.
+kg:id_70 prop:countermeasure kg:id_113.
+kg:id_114 rdfs:label "安価な電力提供"@ja.
+kg:id_114 rdf:type cls:c_3824.
+cls:c_3824 rdfs:label "安価電力"@ja.
+kg:id_115 rdfs:label "事業者が酒田市に来るきっかけ"@ja.
+kg:id_115 rdf:type cls:c_3817.
+kg:id_114 prop:effect kg:id_115.
+kg:id_116 rdfs:label "十里塚の風力発電の出力規模"@ja.
+kg:id_116 rdf:type cls:c_3825.
+cls:c_3825 rdfs:label "発電規模差"@ja.
+kg:id_117 rdfs:label "その電力を使うことの難しさ"@ja.
+kg:id_117 rdf:type cls:c_3826.
+cls:c_3826 rdfs:label "電力活用困難"@ja.
+kg:id_116 prop:cause kg:id_117.
+kg:st_1 rdfs:label "市原栄子議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "本市の子供たちへの影響は無視できないと懸念する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "世界銀行の担当者"@ja.
+kg:st_2 rdf:type cls:st_98.
+cls:st_98 rdfs:label "国際機関関係者"@ja.
+kg:op_2 prop:content "オンライン授業が可能な国でも学習機会減少の損失は大きいとする"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "世界銀行"@ja.
+kg:st_3 rdf:type cls:st_48.
+cls:st_48 rdfs:label "国際機関"@ja.
+kg:op_3 prop:content "学校閉鎖による学力低下で将来収入の損失が生じると試算する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_3.
+kg:op_4 prop:content "世界全体で巨額の損失につながる可能性があると試算する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_3.
+kg:op_5 prop:content "教育格差が一層拡大していると問題視する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "本市でも休校や学年閉鎖が実施されていたと説明する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "本市でも学年閉鎖が行われていたと述べる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "子供たちが楽しみにしている行事にも影響が出ていると指摘する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "行事の縮小も子供たちに影響していると指摘する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "学びの機会が失われているのではないかと危惧する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "小学校に通っているお子さんのお母様"@ja.
+kg:st_4 rdf:type cls:st_49.
+cls:st_49 rdfs:label "保護者"@ja.
+kg:op_11 prop:content "休校になると夜遅くなり朝起きなくなると感じている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_4.
+kg:op_12 prop:content "友達と遊べず結局ゲームばかりになっていると話す"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "子供たちの命と健康を守るための措置であることは理解している"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "命と健康を守る措置として理解しているが必要な経験も確保してほしいと考える"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "単なる縮小ではなく工夫した対応を求める"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "子供の貧困による教育格差は以前から問題になっていると述べる"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "親の収入と子供の成績には相関があると指摘する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:st_5 rdfs:label "内閣府の全国調査報告"@ja.
+kg:st_5 rdf:type cls:st_99.
+cls:st_99 rdfs:label "政府報告"@ja.
+kg:op_18 prop:content "収入の少ない家庭ほど収入面のダメージが大きいとする"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "ひとり親家庭が大きな影響を受けていると報告する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_5.
+kg:op_20 prop:content "特に母子家庭の影響が大きいとする"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "三菱ＵＦＪリサーチ＆コンサルティング"@ja.
+kg:st_6 rdf:type cls:st_100.
+cls:st_100 rdfs:label "研究機関"@ja.
+kg:op_21 prop:content "影響拡大が懸念されるため継続的な支援が必要とする"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_6.
+kg:op_22 prop:content "子供たちはまず感染症への不安を抱えていると指摘する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "心にも影を落としていると懸念する"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "学校でも以前のように遊べない状況が続いていると述べる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "友達との会話にも気を使わなければならないと指摘する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "家でも友達を呼んで遊べないと述べる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:st_7 rdfs:label "保護者"@ja.
+kg:st_7 rdf:type cls:st_49.
+kg:op_27 prop:content "一人で遊べるゲームばかりしていると話している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:op_28 prop:content "人とのつながりを保つことがさらに難しくなっているのではないかと懸念する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "人を思いやることも難しくなっているのではないかと懸念する"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:st_8 rdfs:label "報道"@ja.
+kg:st_8 rdf:type cls:st_101.
+cls:st_101 rdfs:label "報道"@ja.
+kg:op_30 prop:content "孤立の問題が生じているのではないかと伝えている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_8.
+kg:op_31 prop:content "いじめの問題も懸念されていると伝えている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_8.
+kg:op_32 prop:content "感染症不安のため学校へ行けない子供が増えているのではないかと伝える"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_8.
+kg:op_33 prop:content "本市でも宣言への考えがないか質している"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_1.
+kg:st_9 rdfs:label "丸山至市長"@ja.
+kg:st_9 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_34 prop:content "地域の実情を考慮しゼロカーボンシティ宣言は考えていない"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_9.
+kg:op_35 prop:content "安定供給のため火力発電も必要と考える"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_9.
+kg:op_36 prop:content "雇用や地域経済への影響が大変大きいとする"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_9.
+kg:op_37 prop:content "地域として貢献するため再生可能エネルギー循環都市を目指す"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_9.
+kg:op_38 prop:content "市内民間企業も含め課題整理を進めている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_9.
+kg:op_39 prop:content "短期的な取り組みとして既にバイオマス発電が始まっていると説明する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_9.
+kg:op_40 prop:content "発電に適しているため検討が具体化すると考える"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_9.
+kg:op_41 prop:content "国主導の技術開発や実証に大いに期待している"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "国の動向を注視しながら取り組みたい"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_9.
+kg:op_43 prop:content "関係者を含めて皆で議論していく場だと説明する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_9.
+kg:op_44 prop:content "環境への影響や課題を注視したい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_9.
+kg:op_45 prop:content "景観への影響も注視したい"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_9.
+kg:op_46 prop:content "漁業者への影響と支援策を注視したい"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_9.
+kg:op_47 prop:content "漁業者への支援策がどういうものか注視したい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_9.
+kg:op_48 prop:content "地域振興にどのようなメリットが出るか注視したい"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_9.
+kg:op_49 prop:content "好ましくないと判断すれば積極的に県や国へ意見を述べる"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_9.
+kg:op_50 prop:content "災害時に安定的に電力供給できる仕組みと理解している"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_9.
+kg:op_51 prop:content "全国では防災力強化に取り組む事例があると紹介する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_9.
+kg:op_52 prop:content "地域活性化につながる事例があると紹介する"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_9.
+kg:op_53 prop:content "発電規模が大きく出力変動も大きいため調整が容易でないとする"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_9.
+kg:op_54 prop:content "収益化が予見できず経済的課題があると整理する"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_9.
+kg:op_55 prop:content "経済性の問題から民間参入意欲が低いとする"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_9.
+kg:op_56 prop:content "メリットとデメリットを踏まえ今後どう活用できるか勉強したい"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_9.
+kg:op_57 prop:content "飛島という離島が一つのキーワードになる可能性がある"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_9.
+kg:op_58 prop:content "子供たちの中で不安が大変大きいと述べる"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_1.
+kg:op_59 prop:content "感染や仲間外れへの不安で心が苦しい状況が生まれていると述べる"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_1.
+kg:op_60 prop:content "感染や周囲への感染を恐れることが心の苦しさにつながっていると述べる"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:op_61 prop:content "感染したら仲間外れにされるのではという不安があると指摘する"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_1.
+kg:op_62 prop:content "コロナが直接要因ではないとしても不安の中で暮らすことが要因の一つかもしれないと見る"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_1.
+kg:op_63 prop:content "担任がじっくり聞く体制をどう取っているのか確認したい"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_1.
+kg:op_64 prop:content "学校に来られない子供へのリモート相談活用を求める"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_1.
+kg:op_65 prop:content "体調面の診察で解決につながる場合もあり取り組み状況を確認したい"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_1.
+kg:op_66 prop:content "子供たちのストレス解消には地域とのつながりも必要と考える"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_1.
+kg:op_67 prop:content "不安解消に向け地域ぐるみの関わりが必要と考える"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_1.
+kg:op_68 prop:content "地域で子育てをしていくことも必要だと考える"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_1.
+kg:op_69 prop:content "宣言により送電線や蓄電器への支援が受けられる可能性があると考える"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_1.
+kg:op_70 prop:content "災害時に病院や避難所へ電気を回す仕組みが必要と考える"@ja.
+kg:op_70 rdf:type cls:opinion.
+kg:op_70 prop:speaker kg:st_1.
+kg:op_71 prop:content "東日本大震災時の停電で大変な思いをしたと振り返る"@ja.
+kg:op_71 rdf:type cls:opinion.
+kg:op_71 prop:speaker kg:st_1.
+kg:st_10 rdfs:label "市民"@ja.
+kg:st_10 rdf:type cls:st_22.
+cls:st_22 rdfs:label "市民"@ja.
+kg:op_72 prop:content "発電しても大都市へ持っていかれ自分たちへの還元が感じられない"@ja.
+kg:op_72 rdf:type cls:opinion.
+kg:op_72 prop:speaker kg:st_10.
+kg:op_73 prop:content "市民に還元されれば再生エネルギーへの理解が進むと考える"@ja.
+kg:op_73 rdf:type cls:opinion.
+kg:op_73 prop:speaker kg:st_1.
+kg:op_74 prop:content "停電しない酒田市は企業誘致の強みになると考える"@ja.
+kg:op_74 rdf:type cls:opinion.
+kg:op_74 prop:speaker kg:st_1.
+kg:op_75 prop:content "石炭火力でまちづくりが成り立つ酒田には配慮のない言葉だと感じる"@ja.
+kg:op_75 rdf:type cls:opinion.
+kg:op_75 prop:speaker kg:st_9.
+kg:st_11 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_11 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_76 prop:content "ゼロカーボンシティ宣言ではなく再生可能エネルギー循環都市を旗印に進める"@ja.
+kg:op_76 rdf:type cls:opinion.
+kg:op_76 prop:speaker kg:st_11.
+kg:op_77 prop:content "風力発電は電力の安定性に欠ける面があると説明する"@ja.
+kg:op_77 rdf:type cls:opinion.
+kg:op_77 prop:speaker kg:st_11.
+kg:op_78 prop:content "精密機械事業者は使用を控えることもあると説明する"@ja.
+kg:op_78 rdf:type cls:opinion.
+kg:op_78 prop:speaker kg:st_11.
+kg:op_79 prop:content "蓄電で安定させた電源は事業者にとって魅力的だとする"@ja.
+kg:op_79 rdf:type cls:opinion.
+kg:op_79 prop:speaker kg:st_11.
+kg:op_80 prop:content "安く提供できれば事業者誘致のきっかけになると考える"@ja.
+kg:op_80 rdf:type cls:opinion.
+kg:op_80 prop:speaker kg:st_11.
+kg:op_81 prop:content "小規模グリッドとの差が大きく今は難しいと考える"@ja.
+kg:op_81 rdf:type cls:opinion.
+kg:op_81 prop:speaker kg:st_11.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "新型コロナウイルス感染症の影響で、子供たちの教育機会減少に追い打ちがかけられていると言われています。世界銀行の担当者は、オンラインで授業を受けられる国でも学習機会の減少による損失は大きいとしています。"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "世界銀行の調査では、コロナ禍の学校閉鎖などによる学力低下で、生徒らが生涯を通じて得られたはずだった収入を失い"@ja.
+<< kg:id_3 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "生徒らが生涯を通じて得られたはずだった収入を失い、世界全体で損失額が17兆ドル、約2,000兆円に上る可能性があるとの試算"@ja.
+<< kg:id_6 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "コロナ禍による教育格差が一層拡大していると言われてもいます。"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本市でも、新型コロナウイルス感染症の影響による休校や学年閉鎖などが行われておりました。"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本市でも、新型コロナウイルス感染症の影響による休校や学年閉鎖などが行われておりました。"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "また子供たちが楽しみにしている行事なども中止や縮小などの影響が出ています。"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "また子供たちが楽しみにしている行事なども中止や縮小などの影響が出ています。"@ja.
+<< kg:id_6 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "コロナ禍の中で子供たちの学びの機会が失われているのではないか危惧するものです。"@ja.
+<< kg:id_9 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "学校が休校になると、夜遅くなるし、朝起きないしというお話を聞きました。"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "お友達とも遊べないから、結局最近は一日中ゲームばかりして"@ja.
+<< kg:id_17 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "新型コロナウイルス感染症の感染拡大防止のための休校や行事の中止・縮小は子供たちの命と健康を守ることであることも理解をしております。"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "新型コロナウイルス感染症の感染拡大防止のための休校や行事の中止・縮小は子供たちの命と健康を守ることであることも理解をしております。"@ja.
+<< kg:id_17 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "新型コロナウイルス感染症の感染拡大防止のための休校や行事の中止・縮小は子供たちの命と健康を守ることであることも理解をしております。"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "子供の貧困による教育格差は、コロナ流行前から言われておりました。"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "子供の学校の成績と親の収入に相関関係があると言われています。"@ja.
+<< kg:id_24 prop:effect kg:id_25 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "収入の変化について、収入の少ない家庭のほうがよりダメージが大きく"@ja.
+<< kg:id_24 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "またひとり親、特に母子家庭が大きな影響を受けていることが報告されています。"@ja.
+<< kg:id_24 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "またひとり親、特に母子家庭が大きな影響を受けていることが報告されています。"@ja.
+<< kg:id_20 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "こうした子供の貧困に対しては継続的な支援が必要と言われています。"@ja.
+<< kg:id_6 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "コロナ禍の中で子供たちは、まず感染症への不安、そうした影響が子供たちの心にも影を落としています。"@ja.
+<< kg:id_6 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "そうした影響が子供たちの心にも影を落としています。"@ja.
+<< kg:id_6 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "このコロナ禍の中で学校でも以前のように力いっぱい遊べない"@ja.
+<< kg:id_6 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "お友達とのおしゃべりも気を使っていかなければならない"@ja.
+<< kg:id_6 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "家でもお友達を呼んだりとかそうしたことで遊べない中で"@ja.
+<< kg:id_33 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "１人で遊べるゲームばかりをしているという保護者の声が出ています。"@ja.
+<< kg:id_8 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "新型コロナウイルス感染症の影響で、さらに人と人とのつながりを保つことや人を思いやることが難しくなってきているのではないか。"@ja.
+<< kg:id_8 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "新型コロナウイルス感染症の影響で、さらに人と人とのつながりを保つことや人を思いやることが難しくなってきているのではないか。"@ja.
+<< kg:id_8 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "こうしたことで孤立やいじめの問題、感染症の不安のために学校へ行けない子供たちが増えているのではないかという報道もありました。"@ja.
+<< kg:id_8 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "こうしたことで孤立やいじめの問題、感染症の不安のために学校へ行けない子供たちが増えているのではないかという報道もありました。"@ja.
+<< kg:id_29 prop:cause kg:id_39 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "感染症の不安のために学校へ行けない子供たちが増えているのではないかという報道もありました。"@ja.
+<< kg:id_40 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "世界的に進行している気候変動を食い止めるべく、多くの国や企業が環境問題の解決に取り組む一方で、日本ではゼロカーボンシティ宣言を行い、温暖化対策に乗り出す自治体が増えています。"@ja.
+<< kg:id_42 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "本市におきましては地域の実情を考慮した上で、このゼロカーボンシティ宣言は考えていないところでございます。"@ja.
+<< kg:id_44 prop:cause kg:id_45 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "エネルギー転換の過渡期においては、エネルギーの安定供給のために化石燃料由来の火力発電も必要であると考えております。"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "酒田共同火力発電は安定電源の供給のみならず、地域の雇用や地域経済への貢献が酒田市においては甚だ大きく、また港湾活用として重要な企業でもございまして、存続できなくなった場合の影響がこの酒田市にとっては大変大きい"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "2050年カーボンニュートラルの実現にやはりこれは地域としても貢献をしていく必要があるだろうという考え方から、再生可能エネルギーの導入により地域経済の好循環を実現する「再生可能エネルギー循環都市」という言葉、この再生可能エネルギー循環都市の形成を目指す"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "酒田港のカーボンニュートラルポートや次世代エネルギー導入に関して、本市では国や県と連携をし、検討会を今年度開催しております。"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "短期という側面から見ますと、酒田港の臨海エリアでは、平成30年度にサミット酒田パワー株式会社がバイオマス発電を運転開始しております。"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "山形県沖では風況がよく発電に適していることから、洋上風力発電の検討が具体化していくことが考えられます。"@ja.
+<< kg:id_56 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "酒田港において、次世代エネルギーと言われる水素やアンモニアなどを利活用した具体的な事業、これは今のところ具体的にはなっていないわけでありますけれども、現在、国主導で商用化に向けた技術開発や実証を進めている状況"@ja.
+<< kg:id_58 prop:countermeasure kg:id_59 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "酒田港周辺エリアにおきましても、これらの次世代エネルギーですとか、洋上風力発電など再生可能エネルギーに関連した新たな産業の形成につながるように、市としても国の動向を注視しながら取り組んでまいりたい"@ja.
+<< kg:id_60 prop:countermeasure kg:id_61 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "酒田沿岸域検討部会というものが立ち上がりまして、漁業関係者を初めとした利害関係者も含めて皆さんで議論をしていくところ"@ja.
+<< kg:id_62 prop:effect kg:id_63 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "それが地域の環境、自然環境とか景観とかそういったものに与える影響、課題というのがどういうものがあるか"@ja.
+<< kg:id_62 prop:effect kg:id_64 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "それが地域の環境、自然環境とか景観とかそういったものに与える影響、課題というのがどういうものがあるか"@ja.
+<< kg:id_62 prop:effect kg:id_65 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "海というのは漁業者のなりわいの場ですので、漁業者の皆さんへの影響、そして、そういった漁業者の皆さんに対する様々な支援策について"@ja.
+<< kg:id_62 prop:countermeasure kg:id_66 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "漁業者の皆さんへの影響、そして、そういった漁業者の皆さんに対する様々な支援策について、どういうものが考えられるか"@ja.
+<< kg:id_62 prop:effect kg:id_67 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "洋上風力がそこに整備されるようになって、この北庄内地域にどういった地域振興というメリットが出てくるか"@ja.
+<< kg:id_68 prop:countermeasure kg:id_69 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "議論の過程の中で好ましくないと判断すれば、そうした意見も積極的に県・国には述べてまいりたい"@ja.
+<< kg:id_70 prop:countermeasure kg:id_71 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "地震や台風などの災害によって停電が発生した場合には、平常時は電力会社等とつながっている送配電ネットワークを切り離して、地域単独のネットワークに切り替えることで安定的に電力の供給ができるシステム"@ja.
+<< kg:id_70 prop:effect kg:id_72 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "地域マイクログリッドを構築し、防災力の強化や地域の活性化に取り組んでいる事例も最近は見えてきております。"@ja.
+<< kg:id_70 prop:effect kg:id_73 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "地域マイクログリッドを構築し、防災力の強化や地域の活性化に取り組んでいる事例も最近は見えてきております。"@ja.
+<< kg:id_62 prop:cause kg:id_74 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "洋上風力発電の場合は、実は発電規模が非常に大きく、出力の変動も大きいために、電力供給に不可欠な需給バランスを蓄電池等で調整することは容易なことではない"@ja.
+<< kg:id_70 prop:effect kg:id_75 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "現時点では収益化が予見できないため、経済性が成立しにくくて、民間事業者の参入意欲が低いという経済的な課題もある"@ja.
+<< kg:id_70 prop:effect kg:id_76 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "現時点では収益化が予見できないため、経済性が成立しにくくて、民間事業者の参入意欲が低い"@ja.
+<< kg:id_70 prop:countermeasure kg:id_77 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "地域マイクログリッドについては、メリット・デメリットがまだまだたくさんございまして、技術的な課題も多いということで、今後本市としてどう活用できるのかは勉強していきたい"@ja.
+<< kg:id_78 prop:cause kg:id_79 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "離島というところが、一つ酒田が取り組む意味ではキーワードになる可能性があるかなという思いを持っている"@ja.
+<< kg:id_6 prop:effect kg:id_80 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "子供たちの中でコロナ禍の中での不安というのが大変大きい"@ja.
+<< kg:id_81 prop:effect kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "どうしてもうつったらどうしよう、自分がなってしまって誰かにうつしちゃったらどうしよう、そしてもし自分がなったらみんなから仲間外れにされちゃうんじゃないかなということで、結構心の中が苦しいという状況が生まれている。"@ja.
+<< kg:id_83 prop:cause kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "うつったらどうしよう、自分がなってしまって誰かにうつしちゃったらどうしよう"@ja.
+<< kg:id_84 prop:cause kg:id_82 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "もし自分がなったらみんなから仲間外れにされちゃうんじゃないかなということで、結構心の中が苦しいという状況"@ja.
+<< kg:id_6 prop:cause kg:id_85 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "ただコロナが要因ではないということなんですけれども、やはりそうした不安の中で暮らしていくということでの要因もあるのかな"@ja.
+<< kg:id_86 prop:countermeasure kg:id_87 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "今このコロナ禍の中で担任がじっくりとその不安とかそうしたものを聞いていくということを御答弁でありましたけれども"@ja.
+<< kg:id_86 prop:countermeasure kg:id_88 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "タブレットがあるのですから、逆に学校に来られない子供たちに対しては、こうしたタブレットとかでのリモートでの相談とか、そうしたことにも活用がされているのか"@ja.
+<< kg:id_86 prop:countermeasure kg:id_89 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "そうした内科的診療とか、そうしたものに関しても診ていきたいというお話をされていました"@ja.
+<< kg:id_90 prop:effect kg:id_91 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "コロナ禍の中での巣ごもり生活でストレスと不安解消"@ja.
+<< kg:id_90 prop:effect kg:id_92 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "コロナ禍の中での巣ごもり生活でストレスと不安解消"@ja.
+<< kg:id_93 prop:countermeasure kg:id_94 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "子供たちの生活でのストレスとか不安解消、やはり地域とも一緒にやっていくということも必要なんだと思う"@ja.
+<< kg:id_41 prop:effect kg:id_95 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "このゼロカーボンシティ宣言をすることによって、送電線や蓄電器、こうしたものに対して、国がいろいろな支援をしますよということも書いてあった"@ja.
+<< kg:id_70 prop:countermeasure kg:id_96 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_70;
+    prop:text-txt_contents "病院とか避難施設、こうしたものを優先できるということも書いてあったんですね。"@ja.
+<< kg:id_97 prop:effect kg:id_98 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_71;
+    prop:text-txt_contents "11年前の東日本大震災の際、本市でも大規模停電に見舞われ、市民生活に大きな影響がありました。"@ja.
+<< kg:id_99 prop:effect kg:id_100 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_72;
+    prop:text-txt_contents "市民の中には、せっかく風力発電や太陽光発電をしても、みんな大都市へと持っていかれてしまって、自分たちへの還元というものが感じられない、こうした声があります。"@ja.
+<< kg:id_101 prop:effect kg:id_102 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_73;
+    prop:text-txt_contents "こうしたことによって、市民がそうしたいろいろな再生エネルギーの構築について理解を示してくれる。"@ja.
+<< kg:id_103 prop:effect kg:id_104 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_74;
+    prop:text-txt_contents "やはりこの災害に強いまちをつくるということは、企業にとっても強いんではないかと思うんですね。つまり何かがあっても停電しない酒田市であるということで、企業がそこに誘致をしようとか"@ja.
+<< kg:id_105 prop:effect kg:id_106 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_75;
+    prop:text-txt_contents "ゼロカーボンという言葉が与えるイメージと言いましょうか、これはやはり少し石炭火力でまちづくりが成り立っているまちに対しては配慮のない言葉だな"@ja.
+<< kg:id_107 prop:countermeasure kg:id_108 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_76;
+    prop:text-txt_contents "ゼロカーボンシティという宣言ではなくて、私たちの旗印として、再生可能エネルギー循環都市というものを使いながら、地域の再エネ利用を進めていこう"@ja.
+<< kg:id_109 prop:effect kg:id_110 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_77;
+    prop:text-txt_contents "風力発電というのは少し電力の安定性に欠ける面がございます。"@ja.
+<< kg:id_111 prop:effect kg:id_112 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_78;
+    prop:text-txt_contents "そういったことで言いますと、精密機械事業者などは少しその使用を控えるということもございまして"@ja.
+<< kg:id_70 prop:countermeasure kg:id_113 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_79;
+    prop:text-txt_contents "一定程度その蓄電をして安定させた電源を使うということも事業者に取りましては魅力的"@ja.
+<< kg:id_114 prop:effect kg:id_115 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_80;
+    prop:text-txt_contents "そのほかの電力よりも安く提供できるようなことがあれば、さらにこれも事業者が酒田市に来るきっかけになるのかな"@ja.
+<< kg:id_116 prop:cause kg:id_117 >>
+    prop:stateBy kg:st_11;
+    prop:relatedOpinion kg:op_81;
+    prop:text-txt_contents "小田原市、これが50キロワットなんです。酒田市の風力、十里塚の風力は３基で6,900キロワットなんです。そうしますと、ここで130倍以上の違いの電力の差があるものですから、その十里塚の電力を使うということも少し今は難しいのかな"@ja.
+}

@@ -1,0 +1,248 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00092> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "基金管理事業費"@ja.
+kg:id_1 rdf:type cls:c_2413.
+cls:c_2413 rdfs:label "基金事業費"@ja.
+kg:id_2 rdfs:label "歳入では税収の増等、歳出においては事業の決算見込み等により生じた財源"@ja.
+kg:id_2 rdf:type cls:c_1326.
+cls:c_1326 rdfs:label "財源"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "財政調整基金及び市債管理基金等への積み立て"@ja.
+kg:id_3 rdf:type cls:c_1255.
+cls:c_1255 rdfs:label "基金積立"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "風力発電施設整備推進事業費"@ja.
+kg:id_4 rdf:type cls:c_2414.
+cls:c_2414 rdfs:label "整備事業費"@ja.
+kg:id_5 rdfs:label "事業の内容及び工程の見直し"@ja.
+kg:id_5 rdf:type cls:c_1748.
+cls:c_1748 rdfs:label "事業見直し"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "減額"@ja.
+kg:id_6 rdf:type cls:c_2169.
+cls:c_2169 rdfs:label "減額"@ja.
+kg:id_4 prop:effect kg:id_6.
+kg:id_7 rdfs:label "保育所入所扶助事業費"@ja.
+kg:id_7 rdf:type cls:c_2415.
+cls:c_2415 rdfs:label "扶助事業費"@ja.
+kg:id_8 rdfs:label "保育単価の改定"@ja.
+kg:id_8 rdf:type cls:c_2416.
+cls:c_2416 rdfs:label "単価改定"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "増額"@ja.
+kg:id_9 rdf:type cls:c_2161.
+cls:c_2161 rdfs:label "増額"@ja.
+kg:id_7 prop:effect kg:id_9.
+kg:id_10 rdfs:label "各種予防接種事業費"@ja.
+kg:id_10 rdf:type cls:c_2157.
+cls:c_2157 rdfs:label "事業費"@ja.
+kg:id_11 rdfs:label "決算見込み"@ja.
+kg:id_11 rdf:type cls:c_923.
+cls:c_923 rdfs:label "決算見込み"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_10 prop:effect kg:id_6.
+kg:id_12 rdfs:label "酒田地区広域行政組合分賦金"@ja.
+kg:id_12 rdf:type cls:c_2417.
+cls:c_2417 rdfs:label "分担金"@ja.
+kg:id_12 prop:cause kg:id_11.
+kg:id_12 prop:effect kg:id_6.
+kg:id_13 rdfs:label "旧食肉処理場施設維持管理事業費"@ja.
+kg:id_13 rdf:type cls:c_2418.
+cls:c_2418 rdfs:label "維持管理費"@ja.
+kg:id_14 rdfs:label "施設の一部解体工事に係る工事内容の変更"@ja.
+kg:id_14 rdf:type cls:c_2419.
+cls:c_2419 rdfs:label "工事変更"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_13 prop:effect kg:id_9.
+kg:id_15 rdfs:label "土地改良負担事業費"@ja.
+kg:id_15 rdf:type cls:c_2420.
+cls:c_2420 rdfs:label "負担事業費"@ja.
+kg:id_15 prop:cause kg:id_11.
+kg:id_15 prop:effect kg:id_6.
+kg:id_16 rdfs:label "中小企業融資資金貸付事業費"@ja.
+kg:id_16 rdf:type cls:c_2421.
+cls:c_2421 rdfs:label "貸付事業費"@ja.
+kg:id_16 prop:cause kg:id_11.
+kg:id_16 prop:effect kg:id_6.
+kg:id_17 rdfs:label "県施行街路整備事業費"@ja.
+kg:id_17 rdf:type cls:c_2414.
+kg:id_18 rdfs:label "豊里十里塚線に係る事業費の決算見込み"@ja.
+kg:id_18 rdf:type cls:c_923.
+kg:id_17 prop:cause kg:id_18.
+kg:id_17 prop:effect kg:id_6.
+kg:id_12 prop:cause kg:id_11.
+kg:id_12 prop:effect kg:id_6.
+kg:id_19 rdfs:label "高畑山村広場整備事業費"@ja.
+kg:id_19 rdf:type cls:c_2414.
+kg:id_20 rdfs:label "事業費の確定"@ja.
+kg:id_20 rdf:type cls:c_2422.
+cls:c_2422 rdfs:label "事業費確定"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_19 prop:effect kg:id_6.
+kg:id_21 rdfs:label "公共土木施設災害復旧事業費"@ja.
+kg:id_21 rdf:type cls:c_2423.
+cls:c_2423 rdfs:label "復旧事業費"@ja.
+kg:id_22 rdfs:label "県施行急傾斜地崩壊対策事業負担金等の決算見込み"@ja.
+kg:id_22 rdf:type cls:c_923.
+kg:id_21 prop:cause kg:id_22.
+kg:id_21 prop:effect kg:id_6.
+kg:id_23 rdfs:label "公債費元金"@ja.
+kg:id_23 rdf:type cls:c_2424.
+cls:c_2424 rdfs:label "公債費"@ja.
+kg:id_24 rdfs:label "後年度負担の軽減を目的に、市債の繰上償還を実施するため"@ja.
+kg:id_24 rdf:type cls:c_2425.
+cls:c_2425 rdfs:label "繰上償還"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "市債の繰上償還の実施"@ja.
+kg:id_25 rdf:type cls:c_2425.
+kg:id_23 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "市税"@ja.
+kg:id_26 rdf:type cls:c_399.
+cls:c_399 rdfs:label "税収"@ja.
+kg:id_27 rdfs:label "市民税及び固定資産税の増収"@ja.
+kg:id_27 rdf:type cls:c_2426.
+cls:c_2426 rdfs:label "増収"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_26 prop:effect kg:id_9.
+kg:id_28 rdfs:label "国庫支出金"@ja.
+kg:id_28 rdf:type cls:c_2427.
+cls:c_2427 rdfs:label "国庫支出金"@ja.
+kg:id_29 rdfs:label "前年度の国の経済対策に関連する"@ja.
+kg:id_29 rdf:type cls:c_2428.
+cls:c_2428 rdfs:label "経済対策"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_28 prop:effect kg:id_9.
+kg:id_30 rdfs:label "財産収入"@ja.
+kg:id_30 rdf:type cls:c_2429.
+cls:c_2429 rdfs:label "財産収入"@ja.
+kg:id_31 rdfs:label "土地の売り払い"@ja.
+kg:id_31 rdf:type cls:c_1071.
+cls:c_1071 rdfs:label "資産売却"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_30 prop:effect kg:id_9.
+kg:id_32 rdfs:label "繰越明許費"@ja.
+kg:id_32 rdf:type cls:c_2430.
+cls:c_2430 rdfs:label "繰越明許費"@ja.
+kg:id_33 rdfs:label "新庁舎整備事業など７事業について設定"@ja.
+kg:id_33 rdf:type cls:c_2431.
+cls:c_2431 rdfs:label "予算設定"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "債務負担行為"@ja.
+kg:id_34 rdf:type cls:c_2432.
+cls:c_2432 rdfs:label "債務負担行為"@ja.
+kg:id_35 rdfs:label "生産資材等高騰緊急対策資金利子補給金１件を追加"@ja.
+kg:id_35 rdf:type cls:c_2433.
+cls:c_2433 rdfs:label "追加"@ja.
+kg:id_34 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "酒田斎場改築工事設計委託料など２件を変更"@ja.
+kg:id_36 rdf:type cls:c_2434.
+cls:c_2434 rdfs:label "変更"@ja.
+kg:id_34 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "風力発電施設設計委託料１件を廃止"@ja.
+kg:id_37 rdf:type cls:c_2435.
+cls:c_2435 rdfs:label "廃止"@ja.
+kg:id_34 prop:countermeasure kg:id_37.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "歳入では税収の増等、歳出においては事業の決算見込み等により生じた財源を財政調整基金及び市債管理基金等に積み立てるため基金管理事業費を増額"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "財源を財政調整基金及び市債管理基金等に積み立てるため基金管理事業費を増額"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:text-txt_contents "事業の内容及び工程の見直しにより、風力発電施設整備推進事業費を減額"@ja.
+<< kg:id_4 prop:effect kg:id_6 >>
+    prop:text-txt_contents "風力発電施設整備推進事業費を減額しております"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "保育単価の改定に伴い、保育所入所扶助事業費を増額"@ja.
+<< kg:id_7 prop:effect kg:id_9 >>
+    prop:text-txt_contents "保育所入所扶助事業費を増額しております"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:text-txt_contents "決算見込みにより各種予防接種事業費及び酒田地区広域行政組合分賦金を減額"@ja.
+<< kg:id_10 prop:effect kg:id_6 >>
+    prop:text-txt_contents "各種予防接種事業費及び酒田地区広域行政組合分賦金を減額しております"@ja.
+<< kg:id_12 prop:cause kg:id_11 >>
+    prop:text-txt_contents "決算見込みにより各種予防接種事業費及び酒田地区広域行政組合分賦金を減額"@ja.
+<< kg:id_12 prop:effect kg:id_6 >>
+    prop:text-txt_contents "酒田地区広域行政組合分賦金を減額しております"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:text-txt_contents "施設の一部解体工事に係る工事内容の変更により旧食肉処理場施設維持管理事業費を増額"@ja.
+<< kg:id_13 prop:effect kg:id_9 >>
+    prop:text-txt_contents "旧食肉処理場施設維持管理事業費を増額し"@ja.
+<< kg:id_15 prop:cause kg:id_11 >>
+    prop:text-txt_contents "決算見込みにより土地改良負担事業費を減額"@ja.
+<< kg:id_15 prop:effect kg:id_6 >>
+    prop:text-txt_contents "土地改良負担事業費を減額しております"@ja.
+<< kg:id_16 prop:cause kg:id_11 >>
+    prop:text-txt_contents "決算見込みにより中小企業融資資金貸付事業費を減額"@ja.
+<< kg:id_16 prop:effect kg:id_6 >>
+    prop:text-txt_contents "中小企業融資資金貸付事業費を減額しております"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:text-txt_contents "豊里十里塚線に係る事業費の決算見込みにより県施行街路整備事業費を減額"@ja.
+<< kg:id_17 prop:effect kg:id_6 >>
+    prop:text-txt_contents "県施行街路整備事業費を減額しております"@ja.
+<< kg:id_12 prop:cause kg:id_11 >>
+    prop:text-txt_contents "決算見込みにより酒田地区広域行政組合分賦金を減額"@ja.
+<< kg:id_12 prop:effect kg:id_6 >>
+    prop:text-txt_contents "酒田地区広域行政組合分賦金を減額しております"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:text-txt_contents "事業費の確定に伴い、高畑山村広場整備事業費を減額"@ja.
+<< kg:id_19 prop:effect kg:id_6 >>
+    prop:text-txt_contents "高畑山村広場整備事業費を減額しております"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "県施行急傾斜地崩壊対策事業負担金等の決算見込みに伴い、公共土木施設災害復旧事業費を減額"@ja.
+<< kg:id_21 prop:effect kg:id_6 >>
+    prop:text-txt_contents "公共土木施設災害復旧事業費を減額しております"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:text-txt_contents "後年度負担の軽減を目的に、市債の繰上償還を実施するため、公債費元金を増額"@ja.
+<< kg:id_23 prop:countermeasure kg:id_25 >>
+    prop:text-txt_contents "市債の繰上償還を実施するため、公債費元金を増額しております"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:text-txt_contents "市民税及び固定資産税の増収などにより市税を増額"@ja.
+<< kg:id_26 prop:effect kg:id_9 >>
+    prop:text-txt_contents "市税を増額しております"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:text-txt_contents "前年度の国の経済対策に関連する国庫支出金をそれぞれ増額"@ja.
+<< kg:id_28 prop:effect kg:id_9 >>
+    prop:text-txt_contents "国庫支出金をそれぞれ増額しております"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:text-txt_contents "土地の売り払いに係る財産収入をそれぞれ増額"@ja.
+<< kg:id_30 prop:effect kg:id_9 >>
+    prop:text-txt_contents "財産収入をそれぞれ増額しております"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:text-txt_contents "繰越明許費については、新庁舎整備事業など７事業について設定するものです"@ja.
+<< kg:id_34 prop:countermeasure kg:id_35 >>
+    prop:text-txt_contents "債務負担行為については、生産資材等高騰緊急対策資金利子補給金１件を追加し"@ja.
+<< kg:id_34 prop:countermeasure kg:id_36 >>
+    prop:text-txt_contents "酒田斎場改築工事設計委託料など２件を変更"@ja.
+<< kg:id_34 prop:countermeasure kg:id_37 >>
+    prop:text-txt_contents "風力発電施設設計委託料１件を廃止するものであります"@ja.
+}

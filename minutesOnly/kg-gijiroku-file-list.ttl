@@ -1,0 +1,1665 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prop: <https://kozaki-lab.jp/REFV-KG/prop/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cls:  <https://kozaki-lab.jp/REFV-KG/class/> .
+@prefix kg:   <https://kozaki-lab.jp/REFV-KG/data/> .
+
+cls:Document
+    rdf:type rdfs:Class ;
+    rdfs:label "文書"@ja .
+
+cls:Prefecture
+    rdf:type rdfs:Class ;
+    rdfs:label "都道府県"@ja .
+
+cls:DocumentType
+    rdf:type rdfs:Class ;
+    rdfs:label "資料種別"@ja .
+
+prop:prefecture
+    rdf:type rdf:Property ;
+    rdfs:label "都道府県"@ja ;
+    rdfs:domain cls:Document ;
+    rdfs:range cls:Prefecture .
+
+prop:documentType
+    rdf:type rdf:Property ;
+    rdfs:label "資料種別"@ja ;
+    rdfs:domain cls:Document ;
+    rdfs:range cls:DocumentType .
+
+prop:inputFileName
+    rdf:type rdf:Property ;
+    rdfs:label "入力ファイル名"@ja ;
+    rdfs:domain cls:Document ;
+    rdfs:range rdfs:Literal .
+
+prop:sourceFolderPath
+    rdf:type rdf:Property ;
+    rdfs:label "保存されていたフォルダ名"@ja ;
+    rdfs:domain cls:Document ;
+    rdfs:range rdfs:Literal .
+
+kg:prefecture_Yamagata
+    rdf:type cls:Prefecture ;
+    rdfs:label "山形"@ja .
+
+kg:prefecture_Akita
+    rdf:type cls:Prefecture ;
+    rdfs:label "秋田"@ja .
+
+kg:prefecture_Shimane
+    rdf:type cls:Prefecture ;
+    rdfs:label "島根"@ja .
+
+kg:prefecture_Hokkaido
+    rdf:type cls:Prefecture ;
+    rdfs:label "北海道"@ja .
+
+kg:documentType_CouncilMinutes
+    rdf:type cls:DocumentType ;
+    rdfs:label "議会会議録"@ja .
+
+kg:documentType_ReviewBoardMaterial
+    rdf:type cls:DocumentType ;
+    rdfs:label "審査会資料"@ja .
+
+kg:documentType_AdministrativeMaterial
+    rdf:type cls:DocumentType ;
+    rdfs:label "行政資料"@ja .
+
+kg:documentType_NewsReport
+    rdf:type cls:DocumentType ;
+    rdfs:label "報道"@ja .
+
+kg:documentType_WebArticle
+    rdf:type cls:DocumentType ;
+    rdfs:label "Web記事"@ja .
+
+kg:documentType_EnvironmentalAssessmentMaterial
+    rdf:type cls:DocumentType ;
+    rdfs:label "環境アセス資料"@ja .
+
+kg:documentType_BusinessMaterial
+    rdf:type cls:DocumentType ;
+    rdfs:label "事業者資料"@ja .
+
+kg:documentType_CitizenGroupMaterial
+    rdf:type cls:DocumentType ;
+    rdfs:label "市民・住民団体資料"@ja .
+
+kg:documentType_Publication
+    rdf:type cls:DocumentType ;
+    rdfs:label "広報・刊行物"@ja .
+
+kg:documentType_Other
+    rdf:type cls:DocumentType ;
+    rdfs:label "その他"@ja .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00001>
+    rdf:type cls:Document ;
+    rdfs:label "20220630 （日本自然保護協会HP）関西電力が公表した５件の風力発電所開発の計画段階環境配慮書に対して意見書を提出しました.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "20220630 （日本自然保護協会HP）関西電力が公表した５件の風力発電所開発の計画段階環境配慮書に対して意見書を提出しました.txt" ;
+    prop:sourceFolderPath "北海道/その他参考資料（自治体広報、議会だより等）" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00002>
+    rdf:type cls:Document ;
+    rdfs:label "20220630 （日本自然保護協会）（仮称）古平・仁木・余市ウィンドファーム事業計画段階環境配慮書に関する意見書.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "20220630 （日本自然保護協会）（仮称）古平・仁木・余市ウィンドファーム事業計画段階環境配慮書に関する意見書.txt" ;
+    prop:sourceFolderPath "北海道/その他参考資料（自治体広報、議会だより等）" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00003>
+    rdf:type cls:Document ;
+    rdfs:label "仁木町議会　令和5年12月　第4回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "仁木町議会　令和5年12月　第4回定例会.txt" ;
+    prop:sourceFolderPath "北海道/仁木町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00004>
+    rdf:type cls:Document ;
+    rdfs:label "仁木町議会　令和5年3月　第1回定例会（3日目）.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "仁木町議会　令和5年3月　第1回定例会（3日目）.txt" ;
+    prop:sourceFolderPath "北海道/仁木町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00005>
+    rdf:type cls:Document ;
+    rdfs:label "仁木町議会　令和5年9月　第3回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "仁木町議会　令和5年9月　第3回定例会.txt" ;
+    prop:sourceFolderPath "北海道/仁木町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00006>
+    rdf:type cls:Document ;
+    rdfs:label "仁木町議会だより　令和5年8月発行.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "仁木町議会だより　令和5年8月発行.txt" ;
+    prop:sourceFolderPath "北海道/その他参考資料（自治体広報、議会だより等）" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00007>
+    rdf:type cls:Document ;
+    rdfs:label "令和2年12月　第4回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和2年12月　第4回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00008>
+    rdf:type cls:Document ;
+    rdfs:label "令和2年6月　第2回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和2年6月　第2回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00009>
+    rdf:type cls:Document ;
+    rdfs:label "令和2年9月　第3回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和2年9月　第3回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00010>
+    rdf:type cls:Document ;
+    rdfs:label "令和3年3月　第1回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和3年3月　第1回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00011>
+    rdf:type cls:Document ;
+    rdfs:label "令和3年6月　第2回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和3年6月　第2回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00012>
+    rdf:type cls:Document ;
+    rdfs:label "令和4年3月　第1回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和4年3月　第1回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00013>
+    rdf:type cls:Document ;
+    rdfs:label "令和4年6月　第2回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和4年6月　第2回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00014>
+    rdf:type cls:Document ;
+    rdfs:label "令和4年9月　第3回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和4年9月　第3回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00015>
+    rdf:type cls:Document ;
+    rdfs:label "令和5年3月　第1回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和5年3月　第1回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00016>
+    rdf:type cls:Document ;
+    rdfs:label "令和5年6月　第2回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和5年6月　第2回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00017>
+    rdf:type cls:Document ;
+    rdfs:label "令和5年9月　第3回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和5年9月　第3回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00018>
+    rdf:type cls:Document ;
+    rdfs:label "令和6年3月　第1回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和6年3月　第1回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00019>
+    rdf:type cls:Document ;
+    rdfs:label "令和6年6月　第2回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和6年6月　第2回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00020>
+    rdf:type cls:Document ;
+    rdfs:label "令和6年9月　第3回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和6年9月　第3回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00021>
+    rdf:type cls:Document ;
+    rdfs:label "令和6年9月定例会議事日程第3号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和6年9月定例会議事日程第3号.txt" ;
+    prop:sourceFolderPath "山形/米沢市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00022>
+    rdf:type cls:Document ;
+    rdfs:label "令和6年9月定例会議事日程第4号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和6年9月定例会議事日程第4号.txt" ;
+    prop:sourceFolderPath "山形/米沢市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00023>
+    rdf:type cls:Document ;
+    rdfs:label "令和6年9月定例会議事日程第6号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和6年9月定例会議事日程第6号.txt" ;
+    prop:sourceFolderPath "山形/米沢市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00024>
+    rdf:type cls:Document ;
+    rdfs:label "令和　１年　１２月　定例会（第７回）  12月18日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和　１年　１２月　定例会（第７回）  12月18日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00025>
+    rdf:type cls:Document ;
+    rdfs:label "令和　２年　　３月　定例会（第１回）  03月17日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和　２年　　３月　定例会（第１回）  03月17日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00026>
+    rdf:type cls:Document ;
+    rdfs:label "令和　３年　　３月　定例会（第２回）  03月19日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和　３年　　３月　定例会（第２回）  03月19日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00027>
+    rdf:type cls:Document ;
+    rdfs:label "令和　４年　　３月　定例会（第１回）  02月28日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和　４年　　３月　定例会（第１回）  02月28日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00028>
+    rdf:type cls:Document ;
+    rdfs:label "令和　６年　　３月　定例会（第２回）  02月27日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和　６年　　３月　定例会（第２回）  02月27日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00029>
+    rdf:type cls:Document ;
+    rdfs:label "令和元年12月　第4回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和元年12月　第4回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00030>
+    rdf:type cls:Document ;
+    rdfs:label "令和１年１２月定例会（第７回）12月18日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和１年１２月定例会（第７回）12月18日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00031>
+    rdf:type cls:Document ;
+    rdfs:label "令和１年１２月定例会（第７回）12月20日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和１年１２月定例会（第７回）12月20日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00032>
+    rdf:type cls:Document ;
+    rdfs:label "令和１年９月定例会（第５回）09月30日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和１年９月定例会（第５回）09月30日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00033>
+    rdf:type cls:Document ;
+    rdfs:label "令和２年３月定例会（第１回）02月28日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和２年３月定例会（第１回）02月28日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00034>
+    rdf:type cls:Document ;
+    rdfs:label "令和２年３月定例会（第１回）03月13日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和２年３月定例会（第１回）03月13日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00035>
+    rdf:type cls:Document ;
+    rdfs:label "令和２年６月定例会（第３回）06月05日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和２年６月定例会（第３回）06月05日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00036>
+    rdf:type cls:Document ;
+    rdfs:label "令和２年９月定例会（第５回）09月17日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和２年９月定例会（第５回）09月17日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00037>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年１２月定例会（第８回）12月21日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年１２月定例会（第８回）12月21日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00038>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年３月定例会（第２回）02月26日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年３月定例会（第２回）02月26日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00039>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年３月定例会（第２回）03月02日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年３月定例会（第２回）03月02日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00040>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年３月定例会（第２回）03月11日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年３月定例会（第２回）03月11日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00041>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年３月定例会（第２回）03月15日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年３月定例会（第２回）03月15日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00042>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年３月定例会（第２回）03月17日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年３月定例会（第２回）03月17日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00043>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年３月定例会（第２回）03月19日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年３月定例会（第２回）03月19日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00044>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年６月定例会（第４回）06月22日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年６月定例会（第４回）06月22日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00045>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年６月定例会（第４回）06月23日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年６月定例会（第４回）06月23日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00046>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年６月定例会（第４回）06月24日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年６月定例会（第４回）06月24日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00047>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年９月定例会（第６回）08月27日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年９月定例会（第６回）08月27日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00048>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年９月定例会（第６回）09月15日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年９月定例会（第６回）09月15日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00049>
+    rdf:type cls:Document ;
+    rdfs:label "令和３年９月定例会（第６回）09月16日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和３年９月定例会（第６回）09月16日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00050>
+    rdf:type cls:Document ;
+    rdfs:label "令和４年３月定例会（第１回）02月28日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和４年３月定例会（第１回）02月28日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00051>
+    rdf:type cls:Document ;
+    rdfs:label "令和４年３月定例会（第１回）03月02日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和４年３月定例会（第１回）03月02日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00052>
+    rdf:type cls:Document ;
+    rdfs:label "令和４年３月定例会（第１回）03月15日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和４年３月定例会（第１回）03月15日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00053>
+    rdf:type cls:Document ;
+    rdfs:label "令和４年３月定例会（第１回）03月17日－08号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和４年３月定例会（第１回）03月17日－08号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00054>
+    rdf:type cls:Document ;
+    rdfs:label "令和４年９月定例会（第６回）09月12日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和４年９月定例会（第６回）09月12日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00055>
+    rdf:type cls:Document ;
+    rdfs:label "令和４年９月定例会（第６回）09月28日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和４年９月定例会（第６回）09月28日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00056>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年１２月定例会（第９回）12月18日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年１２月定例会（第９回）12月18日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00057>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年１２月定例会（第９回）12月19日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年１２月定例会（第９回）12月19日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00058>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年３月定例会（第２回）02月27日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年３月定例会（第２回）02月27日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00059>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年３月定例会（第２回）03月01日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年３月定例会（第２回）03月01日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00060>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年９月定例会（第７回）09月29日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年９月定例会（第７回）09月29日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00061>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年９月定例会（第７回）10月03日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年９月定例会（第７回）10月03日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00062>
+    rdf:type cls:Document ;
+    rdfs:label "令和５年９月定例会（第７回）10月23日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和５年９月定例会（第７回）10月23日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00063>
+    rdf:type cls:Document ;
+    rdfs:label "令和６年３月定例会（第２回）02月27日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和６年３月定例会（第２回）02月27日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00064>
+    rdf:type cls:Document ;
+    rdfs:label "令和６年３月定例会（第２回）02月29日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "令和６年３月定例会（第２回）02月29日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00065>
+    rdf:type cls:Document ;
+    rdfs:label "平成29年6月　第2回定例会.txt" ;
+    prop:prefecture kg:prefecture_Hokkaido ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成29年6月　第2回定例会.txt" ;
+    prop:sourceFolderPath "北海道/松前町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00066>
+    rdf:type cls:Document ;
+    rdfs:label "平成１８年９月定例会（第４回）09月06日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成１８年９月定例会（第４回）09月06日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00067>
+    rdf:type cls:Document ;
+    rdfs:label "平成１８年９月定例会（第４回）09月21日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成１８年９月定例会（第４回）09月21日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00068>
+    rdf:type cls:Document ;
+    rdfs:label "平成２１年１２月定例会（第８回）12月18日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２１年１２月定例会（第８回）12月18日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00069>
+    rdf:type cls:Document ;
+    rdfs:label "平成２２年６月定例会（第３回）06月24日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２２年６月定例会（第３回）06月24日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00070>
+    rdf:type cls:Document ;
+    rdfs:label "平成２２年９月定例会（第４回）09月17日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２２年９月定例会（第４回）09月17日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00071>
+    rdf:type cls:Document ;
+    rdfs:label "平成２３年３月定例会（第２回）03月03日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２３年３月定例会（第２回）03月03日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00072>
+    rdf:type cls:Document ;
+    rdfs:label "平成２３年６月定例会（第４回）06月13日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２３年６月定例会（第４回）06月13日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00073>
+    rdf:type cls:Document ;
+    rdfs:label "平成２３年６月定例会（第４回）06月22日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２３年６月定例会（第４回）06月22日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00074>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年１２月定例会（第７回）11月30日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年１２月定例会（第７回）11月30日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00075>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年１２月定例会（第７回）12月13日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年１２月定例会（第７回）12月13日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00076>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年３月定例会（第１回）03月01日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年３月定例会（第１回）03月01日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00077>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年３月定例会（第１回）03月13日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年３月定例会（第１回）03月13日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00078>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年３月定例会（第１回）03月15日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年３月定例会（第１回）03月15日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00079>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年９月定例会（第４回）08月28日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年９月定例会（第４回）08月28日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00080>
+    rdf:type cls:Document ;
+    rdfs:label "平成２４年９月定例会（第４回）08月30日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２４年９月定例会（第４回）08月30日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00081>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年３月定例会（第１回）02月26日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年３月定例会（第１回）02月26日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00082>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年３月定例会（第１回）02月28日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年３月定例会（第１回）02月28日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00083>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年３月定例会（第１回）03月11日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年３月定例会（第１回）03月11日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00084>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年３月定例会（第１回）03月12日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年３月定例会（第１回）03月12日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00085>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年３月定例会（第１回）03月14日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年３月定例会（第１回）03月14日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00086>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年６月定例会（第２回）06月18日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年６月定例会（第２回）06月18日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00087>
+    rdf:type cls:Document ;
+    rdfs:label "平成２５年９月定例会（第５回）09月17日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２５年９月定例会（第５回）09月17日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00088>
+    rdf:type cls:Document ;
+    rdfs:label "平成２６年３月定例会（第１回）02月26日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２６年３月定例会（第１回）02月26日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00089>
+    rdf:type cls:Document ;
+    rdfs:label "平成２６年３月定例会（第１回）02月28日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２６年３月定例会（第１回）02月28日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00090>
+    rdf:type cls:Document ;
+    rdfs:label "平成２６年３月定例会（第１回）03月11日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２６年３月定例会（第１回）03月11日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00091>
+    rdf:type cls:Document ;
+    rdfs:label "平成２６年６月定例会（第３回）06月19日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２６年６月定例会（第３回）06月19日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00092>
+    rdf:type cls:Document ;
+    rdfs:label "平成２７年３月定例会（第１回）02月20日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２７年３月定例会（第１回）02月20日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00093>
+    rdf:type cls:Document ;
+    rdfs:label "平成２７年３月定例会（第１回）02月24日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２７年３月定例会（第１回）02月24日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00094>
+    rdf:type cls:Document ;
+    rdfs:label "平成２７年９月定例会（第６回）09月30日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２７年９月定例会（第６回）09月30日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00095>
+    rdf:type cls:Document ;
+    rdfs:label "平成２７年９月定例会（第６回）10月23日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２７年９月定例会（第６回）10月23日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00096>
+    rdf:type cls:Document ;
+    rdfs:label "平成２８年３月定例会（第１回）02月25日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２８年３月定例会（第１回）02月25日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00097>
+    rdf:type cls:Document ;
+    rdfs:label "平成２８年３月定例会（第１回）02月29日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２８年３月定例会（第１回）02月29日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00098>
+    rdf:type cls:Document ;
+    rdfs:label "平成２９年３月定例会（第１回）03月02日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２９年３月定例会（第１回）03月02日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00099>
+    rdf:type cls:Document ;
+    rdfs:label "平成２９年９月定例会（第３回）09月20日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成２９年９月定例会（第３回）09月20日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00100>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年　１２月　定例会（第５回）  12月07日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年　１２月　定例会（第５回）  12月07日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00101>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年　１２月　定例会（第５回）  12月17日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年　１２月　定例会（第５回）  12月17日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00102>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年１２月定例会（第５回）12月19日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年１２月定例会（第５回）12月19日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00103>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年３月定例会（第１回）03月01日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年３月定例会（第１回）03月01日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00104>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年３月定例会（第１回）03月05日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年３月定例会（第１回）03月05日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00105>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年３月定例会（第１回）03月20日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年３月定例会（第１回）03月20日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00106>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年６月定例会（第３回）06月05日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年６月定例会（第３回）06月05日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00107>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年６月定例会（第３回）06月07日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年６月定例会（第３回）06月07日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00108>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年６月定例会（第３回）06月13日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年６月定例会（第３回）06月13日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00109>
+    rdf:type cls:Document ;
+    rdfs:label "平成３０年９月定例会（第４回）08月30日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３０年９月定例会（第４回）08月30日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00110>
+    rdf:type cls:Document ;
+    rdfs:label "平成３１年３月定例会（第１回）02月28日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "平成３１年３月定例会（第１回）02月28日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00111>
+    rdf:type cls:Document ;
+    rdfs:label "第４８６回遊佐町議会定例会（平成２５年２月１５日開会）議事日程第２号（１）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第４８６回遊佐町議会定例会（平成２５年２月１５日開会）議事日程第２号（１）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00112>
+    rdf:type cls:Document ;
+    rdfs:label "第４９２回遊佐町議会定例会（平成２５年９月１０日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第４９２回遊佐町議会定例会（平成２５年９月１０日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00113>
+    rdf:type cls:Document ;
+    rdfs:label "第４９７回遊佐町議会定例会（平成２６年６月１７日開会）議事日程第2号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第４９７回遊佐町議会定例会（平成２６年６月１７日開会）議事日程第2号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00114>
+    rdf:type cls:Document ;
+    rdfs:label "第５5２回遊佐町議会定例会（令和３年１２月７日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５5２回遊佐町議会定例会（令和３年１２月７日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00115>
+    rdf:type cls:Document ;
+    rdfs:label "第５5２回遊佐町議会定例会（令和３年１２月７日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５5２回遊佐町議会定例会（令和３年１２月７日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00116>
+    rdf:type cls:Document ;
+    rdfs:label "第５２９回遊佐町議会定例会（平成３１年３月５日開会）議事日程第３号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５２９回遊佐町議会定例会（平成３１年３月５日開会）議事日程第３号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00117>
+    rdf:type cls:Document ;
+    rdfs:label "第５２９回遊佐町議会定例会（平成３１年３月５日開会）議事日程第４号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５２９回遊佐町議会定例会（平成３１年３月５日開会）議事日程第４号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00118>
+    rdf:type cls:Document ;
+    rdfs:label "第５３４回遊佐町議会定例会（令和２年３月３日開会）議事日程第４号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５３４回遊佐町議会定例会（令和２年３月３日開会）議事日程第４号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00119>
+    rdf:type cls:Document ;
+    rdfs:label "第５３４回遊佐町議会定例会（令和２年３月３日開会）議事日程第５号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５３４回遊佐町議会定例会（令和２年３月３日開会）議事日程第５号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00120>
+    rdf:type cls:Document ;
+    rdfs:label "第５３７回遊佐町議会定例会（令和２年６月９日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５３７回遊佐町議会定例会（令和２年６月９日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00121>
+    rdf:type cls:Document ;
+    rdfs:label "第５３９回遊佐町議会定例会（令和２年９月８日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５３９回遊佐町議会定例会（令和２年９月８日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00122>
+    rdf:type cls:Document ;
+    rdfs:label "第５３９回遊佐町議会定例会（令和２年９月８日開会）議事日程第５号（１）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５３９回遊佐町議会定例会（令和２年９月８日開会）議事日程第５号（１）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00123>
+    rdf:type cls:Document ;
+    rdfs:label "第５４9回遊佐町議会定例会（令和３年9月7日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４9回遊佐町議会定例会（令和３年9月7日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00124>
+    rdf:type cls:Document ;
+    rdfs:label "第５４9回遊佐町議会定例会（令和３年9月7日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４9回遊佐町議会定例会（令和３年9月7日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00125>
+    rdf:type cls:Document ;
+    rdfs:label "第５４２回遊佐町議会定例会（令和２年１２月８日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４２回遊佐町議会定例会（令和２年１２月８日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00126>
+    rdf:type cls:Document ;
+    rdfs:label "第５４２回遊佐町議会定例会（令和２年１２月８日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４２回遊佐町議会定例会（令和２年１２月８日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00127>
+    rdf:type cls:Document ;
+    rdfs:label "第５４２回遊佐町議会定例会（令和２年１２月８日開会）議事日程第３号（２）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４２回遊佐町議会定例会（令和２年１２月８日開会）議事日程第３号（２）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00128>
+    rdf:type cls:Document ;
+    rdfs:label "第５４４回遊佐町議会定例会（令和３年２月１５日開会）議事日程第４号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４４回遊佐町議会定例会（令和３年２月１５日開会）議事日程第４号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00129>
+    rdf:type cls:Document ;
+    rdfs:label "第５４７回遊佐町議会定例会（令和３年６月８日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４７回遊佐町議会定例会（令和３年６月８日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00130>
+    rdf:type cls:Document ;
+    rdfs:label "第５４７回遊佐町議会定例会（令和３年６月８日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５４７回遊佐町議会定例会（令和３年６月８日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00131>
+    rdf:type cls:Document ;
+    rdfs:label "第５５４回遊佐町議会定例会（令和４年３月３日開会）議事日程第３号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５５４回遊佐町議会定例会（令和４年３月３日開会）議事日程第３号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00132>
+    rdf:type cls:Document ;
+    rdfs:label "第５５４回遊佐町議会定例会（令和４年３月３日開会）議事日程第４号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５５４回遊佐町議会定例会（令和４年３月３日開会）議事日程第４号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00133>
+    rdf:type cls:Document ;
+    rdfs:label "第５５７回遊佐町議会定例会（令和４年６月７日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５５７回遊佐町議会定例会（令和４年６月７日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00134>
+    rdf:type cls:Document ;
+    rdfs:label "第５５７回遊佐町議会定例会（令和４年６月７日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５５７回遊佐町議会定例会（令和４年６月７日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00135>
+    rdf:type cls:Document ;
+    rdfs:label "第５６０回遊佐町議会定例会（令和４年９月６日開会）議事日程第２号（１）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６０回遊佐町議会定例会（令和４年９月６日開会）議事日程第２号（１）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00136>
+    rdf:type cls:Document ;
+    rdfs:label "第５６０回遊佐町議会定例会（令和４年９月６日開会）議事日程第４号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６０回遊佐町議会定例会（令和４年９月６日開会）議事日程第４号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00137>
+    rdf:type cls:Document ;
+    rdfs:label "第５６４回遊佐町議会定例会（令和５年３月６日開会）議事日程第３号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６４回遊佐町議会定例会（令和５年３月６日開会）議事日程第３号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00138>
+    rdf:type cls:Document ;
+    rdfs:label "第５６４回遊佐町議会定例会（令和５年３月６日開会）議事日程第４号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６４回遊佐町議会定例会（令和５年３月６日開会）議事日程第４号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00139>
+    rdf:type cls:Document ;
+    rdfs:label "第５６４回遊佐町議会定例会（令和５年３月６日開会）議事日程第６号（１）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６４回遊佐町議会定例会（令和５年３月６日開会）議事日程第６号（１）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00140>
+    rdf:type cls:Document ;
+    rdfs:label "第５６６回遊佐町議会定例会（令和５年５月２９日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６６回遊佐町議会定例会（令和５年５月２９日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00141>
+    rdf:type cls:Document ;
+    rdfs:label "第５６６回遊佐町議会定例会（令和５年５月２９日開会）議事日程第３号（２）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６６回遊佐町議会定例会（令和５年５月２９日開会）議事日程第３号（２）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00142>
+    rdf:type cls:Document ;
+    rdfs:label "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第5号（1）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第5号（1）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00143>
+    rdf:type cls:Document ;
+    rdfs:label "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00144>
+    rdf:type cls:Document ;
+    rdfs:label "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00145>
+    rdf:type cls:Document ;
+    rdfs:label "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第３号（１）.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６８回遊佐町議会定例会（令和５年９月５日開会）議事日程第３号（１）.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00146>
+    rdf:type cls:Document ;
+    rdfs:label "第５６９回遊佐町議会定例会（令和５年１２月５日開会）議事日程第１号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６９回遊佐町議会定例会（令和５年１２月５日開会）議事日程第１号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00147>
+    rdf:type cls:Document ;
+    rdfs:label "第５６９回遊佐町議会定例会（令和５年１２月５日開会）議事日程第２号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "第５６９回遊佐町議会定例会（令和５年１２月５日開会）議事日程第２号.txt" ;
+    prop:sourceFolderPath "山形/遊佐町議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00148>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　１年　１２月　定例会（第７回）  12月18日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　１年　１２月　定例会（第７回）  12月18日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00149>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　２年　　９月　定例会（第５回）  09月17日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　２年　　９月　定例会（第５回）  09月17日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00150>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　３月　定例会（第２回）  03月02日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　３月　定例会（第２回）  03月02日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00151>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　３月　定例会（第２回）  03月15日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　３月　定例会（第２回）  03月15日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00152>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　３月　定例会（第２回）  03月17日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　３月　定例会（第２回）  03月17日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00153>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　３月　定例会（第２回）  03月19日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　３月　定例会（第２回）  03月19日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00154>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　６月　定例会（第４回）  06月23日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　６月　定例会（第４回）  06月23日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00155>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　６月　定例会（第４回）  06月24日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　６月　定例会（第４回）  06月24日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00156>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　９月　定例会（第６回）  09月15日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　９月　定例会（第６回）  09月15日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00157>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　　９月　定例会（第６回）  09月16日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　　９月　定例会（第６回）  09月16日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00158>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　１２月　定例会（第８回）  12月21日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　１２月　定例会（第８回）  12月21日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00159>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　３年　１２月　定例会（第８回）  12月22日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　３年　１２月　定例会（第８回）  12月22日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00160>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　４年　　３月　定例会（第１回）  02月28日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　４年　　３月　定例会（第１回）  02月28日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00161>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　４年　　３月　定例会（第１回）  03月02日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　４年　　３月　定例会（第１回）  03月02日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00162>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　４年　　３月　定例会（第１回）  03月15日－07号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　４年　　３月　定例会（第１回）  03月15日－07号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00163>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　４年　　３月　定例会（第１回）  03月17日－08号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　４年　　３月　定例会（第１回）  03月17日－08号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00164>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　４年　　９月　定例会（第６回）  09月12日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　４年　　９月　定例会（第６回）  09月12日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00165>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　４年　１２月　定例会（第７回）  12月14日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　４年　１２月　定例会（第７回）  12月14日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00166>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　　３月　定例会（第２回）  02月27日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　　３月　定例会（第２回）  02月27日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00167>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　　３月　定例会（第２回）  03月01日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　　３月　定例会（第２回）  03月01日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00168>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　　９月　定例会（第７回）  09月29日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　　９月　定例会（第７回）  09月29日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00169>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　　９月　定例会（第７回）  10月03日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　　９月　定例会（第７回）  10月03日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00170>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　　９月　定例会（第７回）  10月23日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　　９月　定例会（第７回）  10月23日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00171>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　１２月　定例会（第９回）  12月18日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　１２月　定例会（第９回）  12月18日－04号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00172>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　５年　１２月　定例会（第９回）  12月19日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　５年　１２月　定例会（第９回）  12月19日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00173>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　６年　　３月　定例会（第２回）  02月27日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　６年　　３月　定例会（第２回）  02月27日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00174>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　６年　　３月　定例会（第２回）  02月29日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　６年　　３月　定例会（第２回）  02月29日－03号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00175>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　６年　　６月　定例議会（第２回）  06月17日－05号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　６年　　６月　定例議会（第２回）  06月17日－05号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00176>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　６年　　６月　定例議会（第２回）  06月18日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　６年　　６月　定例議会（第２回）  06月18日－06号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00177>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　６年　　９月　定例議会（第６回）  09月25日－01号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　６年　　９月　定例議会（第６回）  09月25日－01号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00178>
+    rdf:type cls:Document ;
+    rdfs:label "酒田市  令和　６年　　９月　定例議会（第６回）  09月30日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "酒田市  令和　６年　　９月　定例議会（第６回）  09月30日－02号.txt" ;
+    prop:sourceFolderPath "山形/酒田市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00179>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　元年　　６月　定例会  06月10日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　元年　　６月　定例会  06月10日－04号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00180>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　２年　　９月　定例会  09月03日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　２年　　９月　定例会  09月03日－02号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00181>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　２年　　９月　定例会  09月04日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　２年　　９月　定例会  09月04日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00182>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　２年　　９月　定例会  09月07日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　２年　　９月　定例会  09月07日－04号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00183>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　２年　１２月　定例会  12月03日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　２年　１２月　定例会  12月03日－02号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00184>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　３年　　９月　定例会  09月02日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　３年　　９月　定例会  09月02日－02号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00185>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　４年　　３月　定例会  03月03日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　４年　　３月　定例会  03月03日－02号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00186>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　４年　　９月　定例会  09月12日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　４年　　９月　定例会  09月12日－04号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00187>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　４年　１２月　定例会  12月02日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　４年　１２月　定例会  12月02日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00188>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　５年　　３月　定例会  03月02日－02号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　５年　　３月　定例会  03月02日－02号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00189>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　５年　　３月　定例会  03月03日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　５年　　３月　定例会  03月03日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00190>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　５年　　６月　定例会  06月16日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　５年　　６月　定例会  06月16日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00191>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　５年　　６月　定例会  06月30日－06号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　５年　　６月　定例会  06月30日－06号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00192>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　５年　　９月　定例会  09月11日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　５年　　９月　定例会  09月11日－04号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00193>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　６年　　６月　定例会  06月07日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　６年　　６月　定例会  06月07日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00194>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  令和　　６年　　９月　定例会  09月06日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  令和　　６年　　９月　定例会  09月06日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00195>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  平成　２８年　１２月　定例会  12月05日－04号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  平成　２８年　１２月　定例会  12月05日－04号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .
+
+<https://kozaki-lab.jp/REFV-KG/docs/00196>
+    rdf:type cls:Document ;
+    rdfs:label "鶴岡市  平成　３１年　　３月　定例会  03月04日－03号.txt" ;
+    prop:prefecture kg:prefecture_Yamagata ;
+    prop:documentType kg:documentType_CouncilMinutes ;
+    prop:inputFileName "鶴岡市  平成　３１年　　３月　定例会  03月04日－03号.txt" ;
+    prop:sourceFolderPath "山形/鶴岡市議会会議録" .

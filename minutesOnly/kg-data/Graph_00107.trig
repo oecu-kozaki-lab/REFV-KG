@@ -1,0 +1,173 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00107> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "当初予算で特別会計を制定しなかったこと"@ja.
+kg:id_1 rdf:type cls:c_2604.
+cls:c_2604 rdfs:label "予算未計上"@ja.
+kg:id_2 rdfs:label "県立自然公園条例に基づく工作物の新築許可がまだおりておらず風力発電本体施設の建設着工のめどが立っていなかった"@ja.
+kg:id_2 rdf:type cls:c_2605.
+cls:c_2605 rdfs:label "許可未取得"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "３月定例会で特別会計を追加提案できなかったこと"@ja.
+kg:id_3 rdf:type cls:c_2606.
+cls:c_2606 rdfs:label "追加提案不能"@ja.
+kg:id_4 rdfs:label "許可を踏まえた設計などの追加経費を精査する時間的余裕がなく物理的に不可能だった"@ja.
+kg:id_4 rdf:type cls:c_1222.
+cls:c_1222 rdfs:label "時間不足"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "４月臨時会で特別会計を提案しなかったこと"@ja.
+kg:id_5 rdf:type cls:c_2607.
+cls:c_2607 rdfs:label "提案見送り"@ja.
+kg:id_6 rdfs:label "６月定例会での提案でも風力発電事業全体のスケジュールに支障がなかった"@ja.
+kg:id_6 rdf:type cls:c_2608.
+cls:c_2608 rdfs:label "日程無支障"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "臨時会は災害対応や国の補正など直ちに市政運営や市民生活に影響する事件に限り招集している"@ja.
+kg:id_7 rdf:type cls:c_2609.
+cls:c_2609 rdfs:label "招集基準"@ja.
+kg:id_5 prop:cause kg:id_7.
+kg:id_8 rdfs:label "事業規模の拡大"@ja.
+kg:id_8 rdf:type cls:c_2610.
+cls:c_2610 rdfs:label "事業拡大"@ja.
+kg:id_9 rdfs:label "平成27年度発注の風力発電本体施設設計から時間が経過し単価を直近のものに入れかえる費用などを追加した"@ja.
+kg:id_9 rdf:type cls:c_2611.
+cls:c_2611 rdfs:label "費用増加"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "風力発電施設整備推進事業"@ja.
+kg:id_10 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_11 rdfs:label "市の景観審議会と環境審議会の答申が一本化されず意見が分かれた状況となった"@ja.
+kg:id_11 rdf:type cls:c_2612.
+cls:c_2612 rdfs:label "意見対立"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "県立自然公園条例に基づく工作物の新築許可が未取得であったこと"@ja.
+kg:id_12 rdf:type cls:c_2605.
+kg:id_13 rdfs:label "平成30年度の風力発電本体施設の建設着工のめどが立っていなかった"@ja.
+kg:id_13 rdf:type cls:c_2613.
+cls:c_2613 rdfs:label "着工不透明"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "許可未取得の状況"@ja.
+kg:id_14 rdf:type cls:c_2605.
+kg:id_15 rdfs:label "自治会館と合築をする管理施設建設の予算のみ一般会計当初予算に計上し許可がおり次第すぐに着手する手順とした"@ja.
+kg:id_15 rdf:type cls:c_2614.
+cls:c_2614 rdfs:label "暫定対応"@ja.
+kg:id_14 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "県知事からの新築許可取得"@ja.
+kg:id_16 rdf:type cls:c_2615.
+cls:c_2615 rdfs:label "許可取得"@ja.
+kg:id_17 rdfs:label "許可を踏まえた特別会計の設置と許可に伴う予算を６月定例会で提案した"@ja.
+kg:id_17 rdf:type cls:c_2616.
+cls:c_2616 rdfs:label "予算提案"@ja.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "今後の風力発電施設建設検討"@ja.
+kg:id_18 rdf:type cls:c_2617.
+cls:c_2617 rdfs:label "建設検討"@ja.
+kg:id_19 rdfs:label "現段階では十里塚地区以外で酒田市が事業主体となる風力発電施設の建設は考えていない"@ja.
+kg:id_19 rdf:type cls:c_2618.
+cls:c_2618 rdfs:label "建設非実施"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "県エネルギー戦略の推進"@ja.
+kg:id_20 rdf:type cls:c_2619.
+cls:c_2619 rdfs:label "戦略推進"@ja.
+kg:id_21 rdfs:label "賛同しともに推進していく"@ja.
+kg:id_21 rdf:type cls:c_2620.
+cls:c_2620 rdfs:label "推進賛同"@ja.
+kg:id_20 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "県から新たな風力発電施設建設を要請される場合"@ja.
+kg:id_22 rdf:type cls:c_2621.
+cls:c_2621 rdfs:label "建設要請"@ja.
+kg:id_23 rdfs:label "市が事業主体となる新たな風力発電施設の建設要請は想定していない"@ja.
+kg:id_23 rdf:type cls:c_2622.
+cls:c_2622 rdfs:label "要請非想定"@ja.
+kg:id_22 prop:countermeasure kg:id_23.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "答申が一本化されず県の意見もない中で一般会計で予算化することに疑義がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "審議会の意見が分かれ県の意見もない中での予算化に疑義がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "自然エネルギー活用には反対しないが今後も風力発電施設建設を進めるのか確認したい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "答弁者"@ja.
+kg:st_2 rdf:type cls:st_55.
+cls:st_55 rdfs:label "答弁者"@ja.
+kg:op_4 prop:content "十里塚地区以外で市が事業主体となる建設は現段階で考えていない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "県エネルギー戦略には賛同しともに推進する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "市が事業主体となる新設要請は想定していない"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "３月の定例会に当初予算を提案する段階では、県立自然公園条例に基づく工作物の新築許可、これがまだおりておりませんでした。平成30年度での風力発電本体施設の建設着工は、したがってめどが立っていない状況だった"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "平成30年２月26日付で県知事から県立自然公園条例に基づく工作物の新築許可等を受けましたので、この許可を踏まえた特別会計の設置と許可に伴う予算を３月定例会に追加することは、設計などの追加する経費を精査する時間的余裕がなくて、やはり物理的には不可能だった"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "６月定例会での提案であっても、この風力発電事業、全体のスケジュールに支障がないことから、４月臨時会での特別会計の設置及びこれに伴う予算の提案については考えてはおりませんでした"@ja.
+<< kg:id_5 prop:cause kg:id_7 >>
+    prop:text-txt_contents "臨時会を招集する事件についてでありますが、本市におきましては、災害対応、それから早急に着手しなければならない国の補正、あるいは税条例や人事異動等に伴う給与条例等の改正、あるいは市長及び市議会議員選挙後の臨時会など、直ちに市政運営や市民生活に影響する事件に限り臨時会を招集をしているところでございます"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "平成27年度に発注をいたしました風力発電本体施設の設計から、実は時間がかなり経過をしております。単価を直近のものに入れかえる費用などを追加して計上した結果、事業規模が大きくなった"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "風力発電施設整備推進事業について、当初予算におきまして市の景観審議会、環境審議会の答申が一本化されずに意見が分かれた状況であることや、県の意見も出ていない中で一般会計での予算化をすることに疑義を出させていただきました"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:text-txt_contents "県立自然公園条例に基づく工作物の新築許可、これがまだおりておりませんでした。平成30年度での風力発電本体施設の建設着工は、したがってめどが立っていない状況だった"@ja.
+<< kg:id_14 prop:countermeasure kg:id_15 >>
+    prop:text-txt_contents "そのために、市といたしましては、自治会館と合築をする管理施設建設の予算のみ平成30年度一般会計当初予算に計上をして、当該許可がおり次第、すぐに着手する手順としていたところでございます"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:text-txt_contents "平成30年２月26日付で県知事から県立自然公園条例に基づく工作物の新築許可等を受けましたので、この許可を踏まえた特別会計の設置と許可に伴う予算を３月定例会に追加することは、設計などの追加する経費を精査する時間的余裕がなくて、やはり物理的には不可能だったものでございます。６月定例会での提案であっても、この風力発電事業、全体のスケジュールに支障がない"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "私どもも自然エネルギーの活用について反対をするものではありません。今後も風力発電施設建設、これをさらに進めることとなるのでしょうか。現段階では、十里塚地区以外での酒田市が事業主体となる風力発電施設の建設は考えてはおりません"@ja.
+<< kg:id_20 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "県エネルギー戦略の推進については、賛同し、ともに推進をしていこうと、このように考えております"@ja.
+<< kg:id_22 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "市が事業主体となる新たな風力発電施設の建設を県から要請されるということは想定はしていないところでございます"@ja.
+}

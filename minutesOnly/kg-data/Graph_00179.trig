@@ -1,0 +1,470 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00179> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "東北電力への接続"@ja.
+kg:id_1 rdf:type cls:c_4021.
+cls:c_4021 rdfs:label "電力接続"@ja.
+kg:id_2 rdfs:label "売電に必要な空き容量がないこと"@ja.
+kg:id_2 rdf:type cls:c_4022.
+cls:c_4022 rdfs:label "空き容量不足"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "工事負担金が高額"@ja.
+kg:id_3 rdf:type cls:c_4023.
+cls:c_4023 rdfs:label "工事負担金"@ja.
+kg:id_4 rdfs:label "電力の需給バランスにより上位の送配電系統に連系する必要があり設備増強が必要なこと"@ja.
+kg:id_4 rdf:type cls:c_4024.
+cls:c_4024 rdfs:label "設備増強"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "工事負担金の額が変動"@ja.
+kg:id_5 rdf:type cls:c_4025.
+cls:c_4025 rdfs:label "負担金変動"@ja.
+kg:id_6 rdfs:label "新たな接続希望者や接続取りやめ事業者による容量案分"@ja.
+kg:id_6 rdf:type cls:c_4026.
+cls:c_4026 rdfs:label "容量案分"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "売電事業で行政の財政制度上対応が難しい"@ja.
+kg:id_7 rdf:type cls:c_4027.
+cls:c_4027 rdfs:label "売電事業"@ja.
+kg:id_8 rdfs:label "長期にわたり不確定要素の多い債務が生じること"@ja.
+kg:id_8 rdf:type cls:c_4028.
+cls:c_4028 rdfs:label "長期債務"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "循環型社会に逆行する懸念"@ja.
+kg:id_9 rdf:type cls:c_4029.
+cls:c_4029 rdfs:label "循環逆行懸念"@ja.
+kg:id_10 rdfs:label "廃プラや紙、繊維類、ゴム、皮革など資源化されるものが燃やされること"@ja.
+kg:id_10 rdf:type cls:c_4030.
+cls:c_4030 rdfs:label "資源物焼却"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "売電が不可能"@ja.
+kg:id_11 rdf:type cls:c_4031.
+cls:c_4031 rdfs:label "売電不能"@ja.
+kg:id_12 rdfs:label "多大な建設費やランニングコストという過大施設になること"@ja.
+kg:id_12 rdf:type cls:c_4032.
+cls:c_4032 rdfs:label "過大施設"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "発電"@ja.
+kg:id_13 rdf:type cls:c_4033.
+cls:c_4033 rdfs:label "発電"@ja.
+kg:id_14 rdfs:label "ごみ焼却施設とし尿処理施設の自家消費分で年間約１億円の削減"@ja.
+kg:id_14 rdf:type cls:c_4034.
+cls:c_4034 rdfs:label "経費削減"@ja.
+kg:id_13 prop:effect kg:id_14.
+kg:id_15 rdfs:label "余剰電力"@ja.
+kg:id_15 rdf:type cls:c_1903.
+cls:c_1903 rdfs:label "余剰電力"@ja.
+kg:id_16 rdfs:label "売電または活用可能となる見込み"@ja.
+kg:id_16 rdf:type cls:c_4035.
+cls:c_4035 rdfs:label "売電活用"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "容量を確保できなかったこと"@ja.
+kg:id_17 rdf:type cls:c_4036.
+cls:c_4036 rdfs:label "容量未確保"@ja.
+kg:id_18 rdfs:label "関係職員の売電に関する専門的理解の不足"@ja.
+kg:id_18 rdf:type cls:c_4037.
+cls:c_4037 rdfs:label "専門理解不足"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "コンサルタントに専門的情報を依存していたこと"@ja.
+kg:id_19 rdf:type cls:c_397.
+cls:c_397 rdfs:label "外部依存"@ja.
+kg:id_17 prop:cause kg:id_19.
+kg:id_20 rdfs:label "売電できなくなっていること"@ja.
+kg:id_20 rdf:type cls:c_4031.
+kg:id_21 rdfs:label "売電まで施設規模を膨らませ国のエネルギー政策とぶつかり合っていること"@ja.
+kg:id_21 rdf:type cls:c_4038.
+cls:c_4038 rdfs:label "施設肥大化"@ja.
+kg:id_20 prop:cause kg:id_21.
+kg:id_22 rdfs:label "今の状況"@ja.
+kg:id_22 rdf:type cls:c_1160.
+cls:c_1160 rdfs:label "事業停滞"@ja.
+kg:id_23 rdfs:label "交付金増加を当てにした売電事業を取り込んだこと"@ja.
+kg:id_23 rdf:type cls:c_4039.
+cls:c_4039 rdfs:label "売電事業導入"@ja.
+kg:id_22 prop:cause kg:id_23.
+kg:id_24 rdfs:label "ごみ発電の問題が解決されない"@ja.
+kg:id_24 rdf:type cls:c_4040.
+cls:c_4040 rdfs:label "問題未解決"@ja.
+kg:id_25 rdfs:label "電力大企業の横暴さと原発優先の国のエネルギー政策の貧困さ"@ja.
+kg:id_25 rdf:type cls:c_808.
+cls:c_808 rdfs:label "エネルギー政策"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "売電のために必要な容量を押さえられなかったこと"@ja.
+kg:id_26 rdf:type cls:c_4036.
+kg:id_27 rdfs:label "接続契約を申し込んで空き容量を押さえることができなかったこと"@ja.
+kg:id_27 rdf:type cls:c_4041.
+cls:c_4041 rdfs:label "接続契約不備"@ja.
+kg:id_26 prop:cause kg:id_27.
+kg:id_28 rdfs:label "八森山風力発電事業"@ja.
+kg:id_28 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_29 rdfs:label "エネルギー自給率の向上と持続可能な地域社会の発展に大きく寄与すること"@ja.
+kg:id_29 rdf:type cls:c_1371.
+cls:c_1371 rdfs:label "地域発展"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "風車の基数を７基から５基に減らすこと"@ja.
+kg:id_30 rdf:type cls:c_4042.
+cls:c_4042 rdfs:label "基数削減"@ja.
+kg:id_31 rdfs:label "クマタカへの影響回避"@ja.
+kg:id_31 rdf:type cls:c_4043.
+cls:c_4043 rdfs:label "動物保全"@ja.
+kg:id_30 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "風力発電事業"@ja.
+kg:id_32 rdf:type cls:c_1.
+kg:id_33 rdfs:label "送電線の地下埋設"@ja.
+kg:id_33 rdf:type cls:c_4044.
+cls:c_4044 rdfs:label "地下埋設"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "ブレードの塗装"@ja.
+kg:id_34 rdf:type cls:c_4045.
+cls:c_4045 rdfs:label "塗装"@ja.
+kg:id_32 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "鳥類を誘引しにくい閃光灯 フラッシュ灯の採用"@ja.
+kg:id_35 rdf:type cls:c_4046.
+cls:c_4046 rdfs:label "灯火対策"@ja.
+kg:id_32 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "クマタカの営巣期に配慮した工事時期の調整"@ja.
+kg:id_36 rdf:type cls:c_4047.
+cls:c_4047 rdfs:label "工期調整"@ja.
+kg:id_32 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "重要植物の移植"@ja.
+kg:id_37 rdf:type cls:c_4048.
+cls:c_4048 rdfs:label "植物移植"@ja.
+kg:id_32 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "環境保全協定書の締結"@ja.
+kg:id_38 rdf:type cls:c_489.
+cls:c_489 rdfs:label "協定締結"@ja.
+kg:id_32 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "意見交換会や説明会の開催"@ja.
+kg:id_39 rdf:type cls:c_395.
+cls:c_395 rdfs:label "説明機会"@ja.
+kg:id_32 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "搬入路兼管理用道路の整備"@ja.
+kg:id_40 rdf:type cls:c_2499.
+cls:c_2499 rdfs:label "道路整備"@ja.
+kg:id_41 rdfs:label "林業の活性化"@ja.
+kg:id_41 rdf:type cls:c_4049.
+cls:c_4049 rdfs:label "林業活性化"@ja.
+kg:id_40 prop:effect kg:id_41.
+kg:id_42 rdfs:label "搬入路の一部整備"@ja.
+kg:id_42 rdf:type cls:c_2499.
+kg:id_43 rdfs:label "展望スペースやトレッキング休憩場所としての利用"@ja.
+kg:id_43 rdf:type cls:c_4050.
+cls:c_4050 rdfs:label "観光利用"@ja.
+kg:id_42 prop:effect kg:id_43.
+kg:id_44 rdfs:label "搬入路整備"@ja.
+kg:id_44 rdf:type cls:c_2499.
+kg:id_45 rdfs:label "木質バイオマスの取り組みとの相乗効果による地域の活性化"@ja.
+kg:id_45 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_44 prop:effect kg:id_45.
+kg:id_46 rdfs:label "風力発電所の運転開始"@ja.
+kg:id_46 rdf:type cls:c_3827.
+cls:c_3827 rdfs:label "風力発電所"@ja.
+kg:id_47 rdfs:label "見学会や環境学習の場としての利用"@ja.
+kg:id_47 rdf:type cls:c_3160.
+cls:c_3160 rdfs:label "環境学習"@ja.
+kg:id_46 prop:effect kg:id_47.
+kg:id_48 rdfs:label "地元雇用の創出"@ja.
+kg:id_48 rdf:type cls:c_130.
+cls:c_130 rdfs:label "雇用創出"@ja.
+kg:id_32 prop:effect kg:id_48.
+kg:id_49 rdfs:label "固定資産税の増収による財政効果"@ja.
+kg:id_49 rdf:type cls:c_1140.
+cls:c_1140 rdfs:label "財政効果"@ja.
+kg:id_32 prop:effect kg:id_49.
+kg:id_50 rdfs:label "今後の風力発電開発"@ja.
+kg:id_50 rdf:type cls:c_4051.
+cls:c_4051 rdfs:label "風力発電開発"@ja.
+kg:id_51 rdfs:label "生活環境 自然環境 景観の保全に配慮し地域住民理解に努めること"@ja.
+kg:id_51 rdf:type cls:c_748.
+cls:c_748 rdfs:label "環境配慮"@ja.
+kg:id_50 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "今後の風力発電事業"@ja.
+kg:id_52 rdf:type cls:c_1.
+kg:id_53 rdfs:label "環境アセスメントで環境影響を回避または低減するよう事業者に意見すること"@ja.
+kg:id_53 rdf:type cls:c_752.
+cls:c_752 rdfs:label "環境影響低減"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "地域を豊かにする再生可能エネルギーのあり方"@ja.
+kg:id_54 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_55 rdfs:label "先進事例を参考にした調査 研究"@ja.
+kg:id_55 rdf:type cls:c_2059.
+cls:c_2059 rdfs:label "調査研究"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:st_1 rdfs:label "市民部長 渡会悟"@ja.
+kg:st_1 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_1 prop:content "接続には空き容量が必要で、ない場合は設備増強が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "需給バランス上、上位系統への連系と設備増強が高額要因"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "接続希望や取りやめで負担金が変動し確定に長期間を要する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "不確定要素の多い長期債務のため行政対応が難しい"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "加藤鑛一議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_5 prop:content "資源化可能物の焼却は循環型社会に逆行するのではないか"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "売電不能なら建設費や維持費が過大な施設になった疑いがある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "自家消費で年間約1億円の経費削減を見込む"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "余剰電力も売電または活用できるよう努めるべき"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "市長 皆川治"@ja.
+kg:st_3 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_9 prop:content "職員の専門的理解不足が容量未確保につながった"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "コンサルタント依存にも問題があった"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "施設規模拡大と国の政策との衝突が現状を招いた"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "売電事業を取り込み目的を誤ったことが現状を招いた"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "電力大企業の横暴と原発優先政策を変えなければ解決しない"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "空き容量確認にとどまり接続契約で押さえられなかったのが問題"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "大規模風力はエネルギー自給率向上と地域発展に寄与すると期待する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "草島進一議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_16 prop:content "5基に減らせば影響回避できるとの判断なのか確認を求める"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "クマタカ確認を受け北側4基を3基に南側3基を2基に減らした"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "動物への影響回避低減のため地下埋設を講じる"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "ブレード塗装で動物への影響回避低減を図る"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "鳥類誘引を抑える灯火採用で影響低減を図る"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "営巣期を避ける工事調整でクマタカ影響を低減する"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+kg:op_22 prop:content "重要植物は同様の環境へ移植して保全する"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "着実な事業実施と適正維持管理のため協定を締結した"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "地域住民の理解を深め意見を聞く機会を設けてきた"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:op_25 prop:content "道路整備で木材搬出が可能となり林業活性化が期待される"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_1.
+kg:op_26 prop:content "展望や休憩の場として観光利用が可能になる"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_1.
+kg:op_27 prop:content "風力と木質バイオマスの相乗効果で地域活性化が期待される"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_1.
+kg:op_28 prop:content "地域の子どもや住民の環境学習の場として活用を検討している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_1.
+kg:op_29 prop:content "工事や運転管理で地元雇用が見込まれる"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_1.
+kg:op_30 prop:content "固定資産税増収による財政効果を期待している"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_1.
+kg:op_31 prop:content "環境保全と住民理解を前提に導入を進める"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_1.
+kg:op_32 prop:content "調査予測評価を通じ影響回避低減を引き続き求める"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_1.
+kg:op_33 prop:content "コミュニティパワー原則を踏まえた展開を求める"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "先進事例を参考に地域を豊かにする再エネのあり方を調査研究する"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "売電に必要な空き容量がない場合には電力会社の設備増強のための工事負担金が必要とあります。本市の場合、平成30年11月22日付、第３回接続検討回答書により、空き容量がなく、設備増強が必要となる"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "工事負担金が高額となる要因としましては、電力の需給バランスにより当該地域からより上位の送配電系統に連系する必要がある場合、そのための設備増強が必要となるため"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "増強工事完了までの期間及び工事完了後３年間に新たに接続を希望する、また接続を取りやめる事業者があれば容量案分により負担金の額が変動する"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "このように売電を行うためには長期にわたり不確定要素の多い債務が生じることから、今回のごみ焼却施設整備に伴う売電事業では行政の財政制度上対応が難しいルールになっている"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "高効率発電焼却施設では、高い発電量が見込める廃プラや紙、繊維類、ゴム、皮革など資源化されるものが燃やされ、循環型社会に逆行するのではないか"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "売電が不可能となれば結果的に多大な建設費やランニングコストという過大施設になったのではないか"@ja.
+<< kg:id_13 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "発電によりごみ焼却施設とし尿処理施設における自家消費分で年間約１億円の削減を見込まれる"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "その他余剰電力につきましても売電または活用可能となりますよう努める"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "関係した職員が売電に関する専門的理解が不足をしていたということが容量を確保できなかったことにつながった"@ja.
+<< kg:id_17 prop:cause kg:id_19 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "専門的な情報につきましては委託をしていましたコンサルタントに依存をしていたというところもございます"@ja.
+<< kg:id_20 prop:cause kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "売電まで施設規模を膨らませてしまって、そして今や国のエネルギー政策とぶつかり合って売電できなくなっている"@ja.
+<< kg:id_22 prop:cause kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "交付金増加を当てにした売電事業を取り込んでしまったために、今の状況に陥っている"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "私は、問題の根本に電力大企業の横暴さと原発優先の国のエネルギー政策の貧困さがあるというふうに思うんです。これを変えないと市のごみ発電の問題は解決されない"@ja.
+<< kg:id_26 prop:cause kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "空き容量を接続契約を申し込んで押さえるということが必要だったところでございますが、それができなかったということが今の問題につながっている"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "環境負荷の小さい風力発電所の稼働によるエネルギー自給率の向上と持続可能な地域社会の発展に大きく寄与するものと期待している"@ja.
+<< kg:id_30 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "対象事業実施区域周辺に５つがいのクマタカが確認され、実施区域の北側に分布していることが判明したことから、北側に設置予定だった４基を３基に、南側に設置予定だった３基も２基に減らす"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "送電線の地下埋設やブレードの塗装のほか、鳥類を誘引しにくいとされる閃光灯、フラッシュ灯の採用、クマタカの営巣期に配慮した工事時期の調整など、動物への影響を回避、低減するためのさまざまな環境保全措置"@ja.
+<< kg:id_32 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "送電線の地下埋設やブレードの塗装のほか、鳥類を誘引しにくいとされる閃光灯、フラッシュ灯の採用、クマタカの営巣期に配慮した工事時期の調整など、動物への影響を回避、低減するためのさまざまな環境保全措置"@ja.
+<< kg:id_32 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "鳥類を誘引しにくいとされる閃光灯、フラッシュ灯の採用"@ja.
+<< kg:id_32 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "クマタカの営巣期に配慮した工事時期の調整など、動物への影響を回避、低減するためのさまざまな環境保全措置"@ja.
+<< kg:id_32 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "改変区域内に生息する重要な植物であるコシノコバイモやヤマシャクヤク、ヤマトアオダモ、リンドウ、イイヌマムカゴについては、生息地と同様の環境へ移植を行われます"@ja.
+<< kg:id_32 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "着実な事業実施と施設等の適正な維持管理に関しましては、市と事業者の間において環境保全協定書を昨年12月に締結しております"@ja.
+<< kg:id_32 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "事業者では三瀬地区自治会を初め、周辺地域を対象とした意見交換会や説明会をこれまで７回開催し、地域住民の事業に対する理解を深めるとともに、意見を伺う機会を設けてきております"@ja.
+<< kg:id_40 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "風力発電所の搬入路兼管理用道路が整備されることによりまして、現在木材の搬出が困難となっている地域での伐採等が行われることとなり、林業の活性化が期待されます"@ja.
+<< kg:id_42 prop:effect kg:id_43 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "搬入路の一部を展望スペースとして整備されることによりまして、日本海や鳥海山といったすばらしい眺望と風車を間近に鑑賞したり、トレッキングの際の休憩場所として利用することも可能となります"@ja.
+<< kg:id_44 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "このたびの搬入路整備が三瀬地区における木質バイオマスの取り組みにさらなる発展をもたらし、２つの再生エネルギーの取り組みの相乗効果による地域の活性化が期待される"@ja.
+<< kg:id_46 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "風力発電所の運転開始後には、既に酒田市の風力発電所で開催されている見学会等のイベント開催のほか、定期的に地元の小中学生や高校生、地域の方々を対象とした環境学習の場としての利用も検討されております"@ja.
+<< kg:id_32 prop:effect kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "工事期間中は地元業者による工事の実施のみならず、工事終了後の運転や管理業務についても数名の地元雇用が想定されております"@ja.
+<< kg:id_32 prop:effect kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "固定資産税の増収による一定の財政効果も期待されているところでございます"@ja.
+<< kg:id_50 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "今後の風力発電開発につきましては、まずは本市のガイドラインに基づき市全体や周辺における生活環境、自然環境、さらには景観の保全に配慮するとともに、地域住民理解に努めていただくよう事業者に求めながら"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "今後風力発電事業につきましても生活環境や自然環境などの保全の観点から、環境アセスメントにおける調査や予測、評価について実行可能な範囲内で環境影響を回避または低減するよう事業者に対して引き続き意見してまいりたい"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "市といたしましても先進事例を参考にしながら、地域を豊かにする再生可能エネルギーのあり方について今後調査、研究をしてまいりたい"@ja.
+}

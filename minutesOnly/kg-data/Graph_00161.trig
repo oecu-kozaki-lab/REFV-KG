@@ -1,0 +1,350 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00161> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "カーボンニュートラル社会の実現"@ja.
+kg:id_1 rdf:type cls:c_487.
+cls:c_487 rdfs:label "脱炭素化"@ja.
+kg:id_2 rdfs:label "酒田港をカーボンニュートラルポートとする"@ja.
+kg:id_2 rdf:type cls:c_1331.
+cls:c_1331 rdfs:label "港湾脱炭素化"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "洋上風力発電における基地港湾の指定を受ける"@ja.
+kg:id_3 rdf:type cls:c_1342.
+cls:c_1342 rdfs:label "基地港湾化"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "カーボンニュートラルポートを見据えた企業誘致"@ja.
+kg:id_4 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "誘致する企業の特性に沿った臨海部の土地利用"@ja.
+kg:id_5 rdf:type cls:c_1343.
+cls:c_1343 rdfs:label "土地利用"@ja.
+kg:id_1 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "再生可能エネルギー導入を後押しする取組"@ja.
+kg:id_6 rdf:type cls:c_1496.
+cls:c_1496 rdfs:label "導入促進"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "国や県の動向を注視し順次予算化・事業化する"@ja.
+kg:id_7 rdf:type cls:c_197.
+cls:c_197 rdfs:label "事業推進"@ja.
+kg:id_1 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "国・県・地元企業との連携を進める"@ja.
+kg:id_8 rdf:type cls:c_204.
+cls:c_204 rdfs:label "連携推進"@ja.
+kg:id_1 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "再生可能エネルギー導入目標の達成"@ja.
+kg:id_9 rdf:type cls:c_3762.
+cls:c_3762 rdfs:label "目標達成"@ja.
+kg:id_10 rdfs:label "現状は18％しかないこと"@ja.
+kg:id_10 rdf:type cls:c_1352.
+cls:c_1352 rdfs:label "導入不足"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "洋上風力発電を促進するための基地港湾の最適配置や規模等を検討する"@ja.
+kg:id_11 rdf:type cls:c_3763.
+cls:c_3763 rdfs:label "基地港湾検討"@ja.
+kg:id_9 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "洋上風力発電の促進"@ja.
+kg:id_12 rdf:type cls:c_3764.
+cls:c_3764 rdfs:label "発電促進"@ja.
+kg:id_13 rdfs:label "2030年までに北海道・東北地方で2から3の港の追加整備が必要となる"@ja.
+kg:id_13 rdf:type cls:c_125.
+cls:c_125 rdfs:label "港湾整備"@ja.
+kg:id_12 prop:effect kg:id_13.
+kg:id_14 rdfs:label "2040年までに最大8港が整備される方向性が示された"@ja.
+kg:id_14 rdf:type cls:c_125.
+kg:id_12 prop:effect kg:id_14.
+kg:id_15 rdfs:label "酒田港"@ja.
+kg:id_15 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "港湾"@ja.
+kg:id_16 rdfs:label "30ヘクタール以上の広大な土地があること"@ja.
+kg:id_16 rdf:type cls:c_3765.
+cls:c_3765 rdfs:label "広大用地"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "大型化が進む風車部材の組立てに適している"@ja.
+kg:id_17 rdf:type cls:c_3766.
+cls:c_3766 rdfs:label "組立適地"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "遊佐町沖や酒田市沖の洋上風力発電に当たって最寄りの港であること"@ja.
+kg:id_18 rdf:type cls:c_3767.
+cls:c_3767 rdfs:label "近接立地"@ja.
+kg:id_15 prop:cause kg:id_18.
+kg:id_19 rdfs:label "大きなポテンシャルを持っている"@ja.
+kg:id_19 rdf:type cls:c_3768.
+cls:c_3768 rdfs:label "成長可能性"@ja.
+kg:id_15 prop:effect kg:id_19.
+kg:id_20 rdfs:label "バイオマス発電や陸上風車があること"@ja.
+kg:id_20 rdf:type cls:c_591.
+cls:c_591 rdfs:label "発電施設"@ja.
+kg:id_15 prop:cause kg:id_20.
+kg:id_21 rdfs:label "エネルギー供給拠点としての機能を有している"@ja.
+kg:id_21 rdf:type cls:c_1908.
+cls:c_1908 rdfs:label "供給拠点"@ja.
+kg:id_15 prop:effect kg:id_21.
+kg:id_22 rdfs:label "次世代エネルギーを含む関連産業の立地"@ja.
+kg:id_22 rdf:type cls:c_1980.
+cls:c_1980 rdfs:label "産業立地"@ja.
+kg:id_23 rdfs:label "地域全体の産業振興につながる"@ja.
+kg:id_23 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_22 prop:effect kg:id_23.
+kg:id_24 rdfs:label "酒田港基地港湾等カーボンニュートラルポート連携会議"@ja.
+kg:id_24 rdf:type cls:c_1248.
+cls:c_1248 rdfs:label "連携会議"@ja.
+kg:id_25 rdfs:label "県外からの企業誘致を協議する"@ja.
+kg:id_25 rdf:type cls:c_268.
+kg:id_24 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "誘致企業の特性に沿った臨海部の土地利用を協議する"@ja.
+kg:id_26 rdf:type cls:c_1343.
+kg:id_24 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "発電事業運営期間における地域振興策を協議する"@ja.
+kg:id_27 rdf:type cls:c_111.
+cls:c_111 rdfs:label "地域振興"@ja.
+kg:id_24 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "酒田港カーボンニュートラルポート検討会"@ja.
+kg:id_28 rdf:type cls:c_1313.
+cls:c_1313 rdfs:label "検討会"@ja.
+kg:id_29 rdfs:label "水素・アンモニアの利活用等脱炭素化に配慮した港湾機能の高度化を検討する"@ja.
+kg:id_29 rdf:type cls:c_3769.
+cls:c_3769 rdfs:label "機能高度化"@ja.
+kg:id_28 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "地域企業を中心とした脱炭素社会の実現に向けた検討を進める"@ja.
+kg:id_30 rdf:type cls:c_3770.
+cls:c_3770 rdfs:label "脱炭素検討"@ja.
+kg:id_28 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "酒田港のカーボンニュートラルポート形成"@ja.
+kg:id_31 rdf:type cls:c_1331.
+kg:id_32 rdfs:label "温室効果ガス排出量を推計し短期中期長期の課題を示す"@ja.
+kg:id_32 rdf:type cls:c_1364.
+cls:c_1364 rdfs:label "課題整理"@ja.
+kg:id_31 prop:countermeasure kg:id_32.
+kg:id_33 rdfs:label "形成方針の素案が整備された"@ja.
+kg:id_33 rdf:type cls:c_3771.
+cls:c_3771 rdfs:label "方針整備"@ja.
+kg:id_31 prop:effect kg:id_33.
+kg:id_34 rdfs:label "基地港湾指定"@ja.
+kg:id_34 rdf:type cls:c_966.
+cls:c_966 rdfs:label "基地港湾指定"@ja.
+kg:id_35 rdfs:label "遊佐町沖と酒田市沖の2つの海域で事業者の利用見込みが必要なこと"@ja.
+kg:id_35 rdf:type cls:c_1367.
+cls:c_1367 rdfs:label "利用見込み"@ja.
+kg:id_34 prop:cause kg:id_35.
+kg:id_36 rdfs:label "漁業者との共存共栄など慎重な議論が求められること"@ja.
+kg:id_36 rdf:type cls:c_3772.
+cls:c_3772 rdfs:label "慎重協議"@ja.
+kg:id_34 prop:cause kg:id_36.
+kg:id_37 rdfs:label "見通しが現時点では立っていない"@ja.
+kg:id_37 rdf:type cls:c_3773.
+cls:c_3773 rdfs:label "不透明状況"@ja.
+kg:id_34 prop:effect kg:id_37.
+kg:id_38 rdfs:label "2つ以上の者の利用見込みの形成が一番大きなハードルになっている"@ja.
+kg:id_38 rdf:type cls:c_3774.
+cls:c_3774 rdfs:label "利用課題"@ja.
+kg:id_34 prop:effect kg:id_38.
+kg:id_39 rdfs:label "港が活性化しない限り酒田の大きな進捗はない"@ja.
+kg:id_39 rdf:type cls:c_3775.
+cls:c_3775 rdfs:label "地域進展"@ja.
+kg:id_15 prop:effect kg:id_39.
+kg:st_1 rdfs:label "市長"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "重点施策の一つとして実現への貢献を掲げる"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "発言者"@ja.
+kg:st_2 rdf:type cls:st_17.
+cls:st_17 rdfs:label "発言者"@ja.
+kg:op_2 prop:content "酒田港の新しい姿と新しい産業集積に期待する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "洋上風力発電事業の拠点となる基地港湾の指定に向け連携を進める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "この事業に大きな期待を持つ"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "再生可能エネルギー循環都市の形成を目指す"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "令和4年度に限らず以降も進めるべき大きな柱とする"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "酒田港カーボンニュートラルポートの形成に向け連携を進める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "国土交通省"@ja.
+kg:st_3 rdf:type cls:st_33.
+cls:st_33 rdfs:label "行政機関"@ja.
+kg:op_8 prop:content "導入目標達成を見据えて基地港湾の最適配置や規模を検討する"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "導入目標達成には北海道・東北で追加整備が必要と示す"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_3.
+kg:op_10 prop:content "2040年までに最大8港整備の方向性を示す"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_3.
+kg:op_11 prop:content "酒田港は大きなポテンシャルを持つと考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "大きなポテンシャルを持っていると考える"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "地域全体の産業振興につながると期待する"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "山形県"@ja.
+kg:st_4 rdf:type cls:st_4.
+kg:op_14 prop:content "基地港湾やカーボンニュートラルポートを見据えた企業誘致を進める"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_4.
+kg:op_15 prop:content "誘致企業の特性に応じた土地利用を協議する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "洋上風力発電施設の建設後を見据えた地域振興策を協議する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "国"@ja.
+kg:st_5 rdf:type cls:st_33.
+kg:op_17 prop:content "次世代エネルギー活用を含む港湾機能の高度化を検討する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_5.
+kg:op_18 prop:content "地域企業を中心に脱炭素社会の実現に向けた検討を進める"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "2つ以上の者の利用見込みの形成が最大の課題と理解する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_2.
+kg:op_20 prop:content "港の活性化が酒田の将来に不可欠だと考える"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_2.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "酒田港をカーボンニュートラルポートとし"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "例えば洋上風力発電における基地港湾の指定を受ける、基地港湾化ですとか"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "カーボンニュートラルポートを見据えた企業誘致"@ja.
+<< kg:id_1 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "誘致する企業の特性に沿った、港周辺の部分にあたる臨海部の土地利用"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "再生可能エネルギー導入を後押しするような取組を行うこととしている"@ja.
+<< kg:id_1 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "国や県の動向を注視しながら、令和４年度ということではなくて、それ以降も含めて順次予算化・事業化をしてまいりたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "国・県、地元企業との連携を進める"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "これは2030年度36％から38％、現状は18％しかないということでございますが"@ja.
+<< kg:id_9 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "この導入目標の達成を見据えて、洋上風力発電を促進するための拠点となる基地港湾の最適配置や規模等を検討しておりまして"@ja.
+<< kg:id_12 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "2030年までに北海道・東北地方において２から３の港の基地港湾としての追加整備"@ja.
+<< kg:id_12 prop:effect kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "トータルすると2040年までに最大８港が整備されるとの方向性が示された"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:text-txt_contents "酒田港は現在、造成中の30ヘクタール以上の広大な土地がありまして"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "大型化が進む風車部材の組立てには適しております"@ja.
+<< kg:id_15 prop:cause kg:id_18 >>
+    prop:text-txt_contents "遊佐町沖や、今後の動きになりますが、酒田市沖での洋上風力発電に当たっては最寄りの港として位置している"@ja.
+<< kg:id_15 prop:effect kg:id_19 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "そういうことから大きなポテンシャルを持っていると考えております"@ja.
+<< kg:id_15 prop:cause kg:id_20 >>
+    prop:text-txt_contents "現状、バイオマス発電だったり陸上部分にも風車がありますので"@ja.
+<< kg:id_15 prop:effect kg:id_21 >>
+    prop:text-txt_contents "エネルギー供給拠点としての機能も有している"@ja.
+<< kg:id_22 prop:effect kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "水素あるいはアンモニアなどの次世代エネルギーを含めて、関連産業の立地による地域全体の産業振興につながるものという期待がされる"@ja.
+<< kg:id_24 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "１つは基地港湾やカーボンニュートラルポートを見据えた県外からの企業誘致"@ja.
+<< kg:id_24 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "２つ目は誘致する企業の特性に沿った臨海部の土地利用"@ja.
+<< kg:id_24 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "３つ目は洋上風力発電施設の建設後、発電事業運営期間における地域振興策"@ja.
+<< kg:id_28 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "水素・アンモニアの次世代エネルギーの利活用等脱炭素化に配慮した港湾機能の高度化"@ja.
+<< kg:id_28 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "酒田港において地域企業を中心とした脱炭素社会の実現に向けた検討を進めてきている"@ja.
+<< kg:id_31 prop:countermeasure kg:id_32 >>
+    prop:text-txt_contents "現時点における温室効果ガスの排出量を推計し、短期、中期、長期に取り組むべき課題などを示して"@ja.
+<< kg:id_31 prop:effect kg:id_33 >>
+    prop:text-txt_contents "酒田港のカーボンニュートラルポート形成方針の素案などが整備された"@ja.
+<< kg:id_34 prop:cause kg:id_35 >>
+    prop:text-txt_contents "酒田港が基地港湾に指定されるためには、例えば遊佐町沖と酒田市沖といった２つの海域で事業者の利用見込みが必要"@ja.
+<< kg:id_34 prop:cause kg:id_36 >>
+    prop:text-txt_contents "海域の先行利用者となっております漁業者との共存共栄など、山形県が取り組む洋上風力の検討においては慎重な議論が求められる"@ja.
+<< kg:id_34 prop:effect kg:id_37 >>
+    prop:text-txt_contents "見通しが現時点では立っておらず"@ja.
+<< kg:id_34 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "課題として、４つ目の２つ以上の者の利用見込みの形成が基地港湾指定にとっては一番大きな、今ハードルになっている"@ja.
+<< kg:id_15 prop:effect kg:id_39 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "港が活性化しない限りは、この酒田のこれからの大きな進捗もないんだと思います"@ja.
+}

@@ -1,0 +1,172 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00025> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電事業計画"@ja.
+kg:id_1 rdf:type cls:c_318.
+cls:c_318 rdfs:label "発電計画"@ja.
+kg:id_2 rdfs:label "宮海の海水浴場の入り口と工事車両の進入が混在する共用道路になることによる交通安全面の心配"@ja.
+kg:id_2 rdf:type cls:c_787.
+cls:c_787 rdfs:label "交通安全の懸念"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "風車の関係で駐車場に入るところがバッティングすること"@ja.
+kg:id_3 rdf:type cls:c_788.
+cls:c_788 rdfs:label "動線競合"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "交通安全の確保"@ja.
+kg:id_4 rdf:type cls:c_516.
+cls:c_516 rdfs:label "安全確保"@ja.
+kg:id_5 rdfs:label "工事期間や時期をずらして実施すること"@ja.
+kg:id_5 rdf:type cls:c_789.
+cls:c_789 rdfs:label "時期調整"@ja.
+kg:id_4 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "通路がバッティングしないように夜間・早朝の作業を行うこと"@ja.
+kg:id_6 rdf:type cls:c_790.
+cls:c_790 rdfs:label "時間帯調整"@ja.
+kg:id_4 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "安全誘導員を配置すること"@ja.
+kg:id_7 rdf:type cls:c_791.
+cls:c_791 rdfs:label "安全誘導"@ja.
+kg:id_4 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "工事"@ja.
+kg:id_8 rdf:type cls:c_792.
+cls:c_792 rdfs:label "工事"@ja.
+kg:id_9 rdfs:label "コアジサシの繁殖の時期と重なること"@ja.
+kg:id_9 rdf:type cls:c_793.
+cls:c_793 rdfs:label "生物繁殖期"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "夏の期間に工事が止まること"@ja.
+kg:id_10 rdf:type cls:c_794.
+cls:c_794 rdfs:label "工事停止"@ja.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "夏の期間は工事を中止すること"@ja.
+kg:id_11 rdf:type cls:c_794.
+kg:id_4 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "事業者に交通安全の徹底を意見として申し上げること"@ja.
+kg:id_12 rdf:type cls:c_795.
+cls:c_795 rdfs:label "安全要求"@ja.
+kg:id_4 prop:countermeasure kg:id_12.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "海水浴場入口と工事車両の動線が共用になることを懸念する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "回答者"@ja.
+kg:st_2 rdf:type cls:st_35.
+cls:st_35 rdfs:label "回答者"@ja.
+kg:op_2 prop:content "交通安全の徹底を事業者に求めたい"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "駐車場出入口の動線競合を懸念する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "計画上その状況はあると認識している"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "工事時期の調整を今後相談したい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "通路の競合回避のため夜間や早朝の作業を想定している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "夜間や早朝の工事車両通行の考えに言及し安全優先の対応を求める"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "安全誘導員の配置を徹底する計画を想定している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "繁殖時期との重複時は工事停止の可能性があると説明する"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "繁殖時期と重なれば夏季は工事停止となる可能性がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "夏の期間の工事中止を含め交通安全の徹底を求める"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "繁殖時期との関係で夏季工事停止の可能性を示す"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "夏季の工事中止を含め地元の安全を優先した対応を求める"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "環境影響評価を見ながら事業者へ交通安全徹底を求めたい"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "このままでありますと、宮海の海水浴場に工事車両が進入する際に、海水浴場の入り口と混在するような共用道路になってしまうと、交通安全的な面での心配も少しあります"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "風車の関係で駐車場に入るところがバッティングするのではないかというところでございます。実際のところ、その計画を見ますと、そういう状況は確かにございます"@ja.
+<< kg:id_4 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "例えばその工事期間とか、そういったところをこの時期をずらして実施できないかとか、そういった相談もこれからちょっとさせていただければと思っております"@ja.
+<< kg:id_4 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "基本的には通路がバッティングしないように夜間・早朝の作業ですとか、安全誘導員の配置なども徹底する計画になるのではないかなと思っているところです"@ja.
+<< kg:id_4 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "基本的には通路がバッティングしないように夜間・早朝の作業ですとか、安全誘導員の配置なども徹底する計画になるのではないかなと思っているところです"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "コアジサシの繁殖の時期と重なった場合には"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "特にその夏の期間、工事が止まるということもございます"@ja.
+<< kg:id_4 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "夏の期間のほう工事を中止していただくとか、交通安全の徹底に努めていただくというような答弁もありましたので、その点についてはぜひ地元のほうの安全面を優先させていただいて、しっかりと対応していただきたい"@ja.
+<< kg:id_4 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "今後は環境影響評価の状況を見ながら、事業者のほうには交通安全の徹底を意見として申し上げたいなと思っているところです"@ja.
+}

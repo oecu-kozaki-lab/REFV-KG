@@ -1,0 +1,65 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00112> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "西遊佐風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "町の意見書を山形県へ提出"@ja.
+kg:id_2 rdf:type cls:c_2688.
+cls:c_2688 rdfs:label "意見書提出"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "県の環境影響評価審査会等の手続を経て事業者のアセス調査を実施予定"@ja.
+kg:id_3 rdf:type cls:c_2689.
+cls:c_2689 rdfs:label "アセス調査"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:st_1 rdfs:label "環境審議会"@ja.
+kg:st_1 rdf:type cls:st_64.
+cls:st_64 rdfs:label "審議会"@ja.
+kg:op_1 prop:content "町の意見書提出に向けて意見を示す"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "集落説明会"@ja.
+kg:st_2 rdf:type cls:st_71.
+cls:st_71 rdfs:label "説明会"@ja.
+kg:op_2 prop:content "町の意見書提出に向けて意見を示す"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "環境審議会や集落説明会での意見を踏まえて、山形県へ町の意見書を提出しました。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "これから県の環境影響評価審査会等の手続を経て、事業者のアセス調査が実施される予定です。"@ja.
+}

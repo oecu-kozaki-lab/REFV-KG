@@ -1,0 +1,645 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00077> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市のエネルギービジョン"@ja.
+kg:id_1 rdf:type cls:c_2071.
+cls:c_2071 rdfs:label "エネルギー計画"@ja.
+kg:id_2 rdfs:label "実効性に問題があったこと"@ja.
+kg:id_2 rdf:type cls:c_2072.
+cls:c_2072 rdfs:label "実効性の問題"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "再生エネルギーの導入"@ja.
+kg:id_3 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_4 rdfs:label "全量買い取り制度の法的整備"@ja.
+kg:id_4 rdf:type cls:c_1884.
+cls:c_1884 rdfs:label "制度整備"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "再生可能エネルギーの普及"@ja.
+kg:id_5 rdf:type cls:c_1114.
+cls:c_1114 rdfs:label "再生可能エネルギー普及"@ja.
+kg:id_6 rdfs:label "再生可能エネルギー特別措置法の施行による固定買取価格化"@ja.
+kg:id_6 rdf:type cls:c_1884.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "新エネルギービジョンの見直し"@ja.
+kg:id_7 rdf:type cls:c_2073.
+cls:c_2073 rdfs:label "エネルギー計画見直し"@ja.
+kg:id_8 rdfs:label "大震災に伴う原発事故の影響"@ja.
+kg:id_8 rdf:type cls:c_2029.
+cls:c_2029 rdfs:label "原発事故"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "再生可能エネルギーの必要性の高まり"@ja.
+kg:id_9 rdf:type cls:c_2074.
+cls:c_2074 rdfs:label "再生可能エネルギー必要性"@ja.
+kg:id_10 rdfs:label "東日本大震災での原発事故"@ja.
+kg:id_10 rdf:type cls:c_2029.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "エネルギー戦略の見直し"@ja.
+kg:id_11 rdf:type cls:c_2075.
+cls:c_2075 rdfs:label "エネルギー戦略見直し"@ja.
+kg:id_12 rdfs:label "東京電力福島第一原子力発電所の大事故"@ja.
+kg:id_12 rdf:type cls:c_2029.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "再生可能エネルギーへの注目"@ja.
+kg:id_13 rdf:type cls:c_2076.
+cls:c_2076 rdfs:label "再生可能エネルギー注目"@ja.
+kg:id_14 rdfs:label "原発の安全神話の崩壊と事故の深刻さの実感"@ja.
+kg:id_14 rdf:type cls:c_2077.
+cls:c_2077 rdfs:label "安全神話崩壊"@ja.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "地域の活性化"@ja.
+kg:id_15 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_16 rdfs:label "地域資源である風力やバイオマスの活用"@ja.
+kg:id_16 rdf:type cls:c_2078.
+cls:c_2078 rdfs:label "地域資源活用"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "石油・ガソリンの不足状態"@ja.
+kg:id_17 rdf:type cls:c_2079.
+cls:c_2079 rdfs:label "燃料不足"@ja.
+kg:id_18 rdfs:label "大震災"@ja.
+kg:id_18 rdf:type cls:c_2080.
+cls:c_2080 rdfs:label "震災"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "石油備蓄分散と相互連携の重要性の認識"@ja.
+kg:id_19 rdf:type cls:c_2081.
+cls:c_2081 rdfs:label "備蓄連携重要性認識"@ja.
+kg:id_20 rdfs:label "震災直後からの石油・ガソリン不足"@ja.
+kg:id_20 rdf:type cls:c_2079.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "酒田港の将来像としてのエネルギー基地化"@ja.
+kg:id_21 rdf:type cls:c_2082.
+cls:c_2082 rdfs:label "港湾エネルギー基地化"@ja.
+kg:id_22 rdfs:label "社会のエネルギー変化とロシア極東のエネルギー資源動向"@ja.
+kg:id_22 rdf:type cls:c_2083.
+cls:c_2083 rdfs:label "エネルギー情勢変化"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "酒田共同火力発電所増設の重要性"@ja.
+kg:id_23 rdf:type cls:c_2084.
+cls:c_2084 rdfs:label "火力発電増設重要性"@ja.
+kg:id_24 rdfs:label "太平洋側発電所の津波被害と原子力発電の位置づけの流動化"@ja.
+kg:id_24 rdf:type cls:c_2085.
+cls:c_2085 rdfs:label "発電所被害"@ja.
+kg:id_23 prop:cause kg:id_24.
+kg:id_25 rdfs:label "酒田港の重要性の増大"@ja.
+kg:id_25 rdf:type cls:c_2086.
+cls:c_2086 rdfs:label "港湾重要性増大"@ja.
+kg:id_26 rdfs:label "新エネルギー開発と供給基地としての役割拡大"@ja.
+kg:id_26 rdf:type cls:c_2087.
+cls:c_2087 rdfs:label "供給基地役割拡大"@ja.
+kg:id_25 prop:effect kg:id_26.
+kg:id_27 rdfs:label "再生可能エネルギーの導入"@ja.
+kg:id_27 rdf:type cls:c_44.
+kg:id_28 rdfs:label "地域活性化への結びつき"@ja.
+kg:id_28 rdf:type cls:c_133.
+kg:id_27 prop:effect kg:id_28.
+kg:id_29 rdfs:label "地域資源の活用"@ja.
+kg:id_29 rdf:type cls:c_2078.
+kg:id_30 rdfs:label "地域活性化と地域産業の振興"@ja.
+kg:id_30 rdf:type cls:c_133.
+kg:id_29 prop:effect kg:id_30.
+kg:id_31 rdfs:label "市民ファンドや民間開発者誘致の促進可能性"@ja.
+kg:id_31 rdf:type cls:c_2088.
+cls:c_2088 rdfs:label "民間参入促進"@ja.
+kg:id_27 prop:effect kg:id_31.
+kg:id_32 rdfs:label "被災地復興に多くの課題が山積"@ja.
+kg:id_32 rdf:type cls:c_2089.
+cls:c_2089 rdfs:label "復興課題"@ja.
+kg:id_18 prop:effect kg:id_32.
+kg:id_33 rdfs:label "被災者の生活再建の厳しさ"@ja.
+kg:id_33 rdf:type cls:c_2090.
+cls:c_2090 rdfs:label "生活再建困難"@ja.
+kg:id_18 prop:effect kg:id_33.
+kg:id_12 prop:effect kg:id_11.
+kg:id_34 rdfs:label "原発の安全神話の崩壊"@ja.
+kg:id_34 rdf:type cls:c_2077.
+kg:id_12 prop:effect kg:id_34.
+kg:id_35 rdfs:label "再生可能エネルギーへの脚光"@ja.
+kg:id_35 rdf:type cls:c_2076.
+kg:id_12 prop:effect kg:id_35.
+kg:id_36 rdfs:label "酒田港の機能充実"@ja.
+kg:id_36 rdf:type cls:c_2091.
+cls:c_2091 rdfs:label "港湾機能充実"@ja.
+kg:id_37 rdfs:label "リサイクル産業を初めとする各産業の集積"@ja.
+kg:id_37 rdf:type cls:c_873.
+cls:c_873 rdfs:label "産業集積"@ja.
+kg:id_36 prop:effect kg:id_37.
+kg:id_38 rdfs:label "酒田港の取り組み強化"@ja.
+kg:id_38 rdf:type cls:c_2092.
+cls:c_2092 rdfs:label "港湾取組強化"@ja.
+kg:id_38 prop:effect kg:id_15.
+kg:id_39 rdfs:label "日本海側拠点港としての酒田港指定"@ja.
+kg:id_39 rdf:type cls:c_815.
+cls:c_815 rdfs:label "港湾指定"@ja.
+kg:id_40 rdfs:label "重点的な投資"@ja.
+kg:id_40 rdf:type cls:c_2093.
+cls:c_2093 rdfs:label "重点投資"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "公共施設への再生可能エネルギー導入"@ja.
+kg:id_41 rdf:type cls:c_44.
+kg:id_42 rdfs:label "公共施設への導入の検討"@ja.
+kg:id_42 rdf:type cls:c_2094.
+cls:c_2094 rdfs:label "公共施設導入検討"@ja.
+kg:id_41 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "自治体"@ja.
+kg:id_43 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_44 rdfs:label "自治体風力の建設検討"@ja.
+kg:id_44 rdf:type cls:c_2095.
+cls:c_2095 rdfs:label "風力発電検討"@ja.
+kg:id_43 prop:countermeasure kg:id_44.
+kg:id_45 rdfs:label "市民への再生可能エネルギー普及促進"@ja.
+kg:id_45 rdf:type cls:c_2096.
+cls:c_2096 rdfs:label "市民普及促進"@ja.
+kg:id_46 rdfs:label "太陽光パネル設置補助の継続"@ja.
+kg:id_46 rdf:type cls:c_2097.
+cls:c_2097 rdfs:label "設備補助継続"@ja.
+kg:id_45 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "ペレットストーブ設置補助の継続"@ja.
+kg:id_47 rdf:type cls:c_2097.
+kg:id_45 prop:countermeasure kg:id_47.
+kg:id_48 rdfs:label "自治体風力の建設可能性検討"@ja.
+kg:id_48 rdf:type cls:c_2095.
+kg:id_49 rdfs:label "県の適地マップを活用した県との勉強"@ja.
+kg:id_49 rdf:type cls:c_2098.
+cls:c_2098 rdfs:label "適地調査"@ja.
+kg:id_48 prop:countermeasure kg:id_49.
+kg:id_50 rdfs:label "国県の検討状況把握とエネルギー資源データ整理と関係機関との情報交換"@ja.
+kg:id_50 rdf:type cls:c_2099.
+cls:c_2099 rdfs:label "情報収集整理"@ja.
+kg:id_7 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "庄内スマートコミュニティ策定事業の成果活用"@ja.
+kg:id_51 rdf:type cls:c_2100.
+cls:c_2100 rdfs:label "事業成果活用"@ja.
+kg:id_7 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "庄内スマートコミュニティ策定事業"@ja.
+kg:id_52 rdf:type cls:c_2101.
+cls:c_2101 rdfs:label "地域計画事業"@ja.
+kg:id_53 rdfs:label "行政機関のオブザーバー参加と必要に応じた意見表明"@ja.
+kg:id_53 rdf:type cls:c_2102.
+cls:c_2102 rdfs:label "行政参加"@ja.
+kg:id_52 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "石油不足への備え"@ja.
+kg:id_54 rdf:type cls:c_2103.
+cls:c_2103 rdfs:label "燃料不足対策"@ja.
+kg:id_55 rdfs:label "石油などの備蓄機能充実"@ja.
+kg:id_55 rdf:type cls:c_2104.
+cls:c_2104 rdfs:label "備蓄機能充実"@ja.
+kg:id_54 prop:countermeasure kg:id_55.
+kg:id_56 rdfs:label "油槽所の大型化や増設の働きかけ"@ja.
+kg:id_56 rdf:type cls:c_2105.
+cls:c_2105 rdfs:label "貯蔵施設増強"@ja.
+kg:id_54 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "東北の電力供給強化"@ja.
+kg:id_57 rdf:type cls:c_2106.
+cls:c_2106 rdfs:label "電力供給強化"@ja.
+kg:id_58 rdfs:label "酒田共同火力発電所の増設要望"@ja.
+kg:id_58 rdf:type cls:c_2107.
+cls:c_2107 rdfs:label "火力発電増設要望"@ja.
+kg:id_57 prop:countermeasure kg:id_58.
+kg:id_59 rdfs:label "新エネルギーの開発と供給基地化"@ja.
+kg:id_59 rdf:type cls:c_2108.
+cls:c_2108 rdfs:label "エネルギー供給基地化"@ja.
+kg:id_60 rdfs:label "波力発電の実証実験"@ja.
+kg:id_60 rdf:type cls:c_2109.
+cls:c_2109 rdfs:label "実証実験"@ja.
+kg:id_59 prop:countermeasure kg:id_60.
+kg:id_61 rdfs:label "バイオマスの検討"@ja.
+kg:id_61 rdf:type cls:c_2110.
+cls:c_2110 rdfs:label "バイオマス検討"@ja.
+kg:id_59 prop:countermeasure kg:id_61.
+kg:id_62 rdfs:label "風力発電施設の設置"@ja.
+kg:id_62 rdf:type cls:c_2111.
+cls:c_2111 rdfs:label "風力発電設置"@ja.
+kg:id_59 prop:countermeasure kg:id_62.
+kg:id_63 rdfs:label "酒田港の物流機能強化"@ja.
+kg:id_63 rdf:type cls:c_2112.
+cls:c_2112 rdfs:label "港湾物流強化"@ja.
+kg:id_64 rdfs:label "内陸地域や仙台圏を視野に入れたポートセールス展開"@ja.
+kg:id_64 rdf:type cls:c_2113.
+cls:c_2113 rdfs:label "販路開拓"@ja.
+kg:id_63 prop:countermeasure kg:id_64.
+kg:id_65 rdfs:label "国道47号線など物流ルートの整備"@ja.
+kg:id_65 rdf:type cls:c_2114.
+cls:c_2114 rdfs:label "物流路整備"@ja.
+kg:id_63 prop:countermeasure kg:id_65.
+kg:id_66 rdfs:label "再生可能エネルギーの推進"@ja.
+kg:id_66 rdf:type cls:c_2115.
+cls:c_2115 rdfs:label "再生可能エネルギー推進"@ja.
+kg:id_67 rdfs:label "市民的合意の形成"@ja.
+kg:id_67 rdf:type cls:c_2116.
+cls:c_2116 rdfs:label "市民合意形成"@ja.
+kg:id_66 prop:countermeasure kg:id_67.
+kg:id_68 rdfs:label "再生可能エネルギー導入方針の整理"@ja.
+kg:id_68 rdf:type cls:c_2117.
+cls:c_2117 rdfs:label "導入方針整理"@ja.
+kg:id_69 rdfs:label "市民の意見を聞きながら景観と調和した進め方をすること"@ja.
+kg:id_69 rdf:type cls:c_2118.
+cls:c_2118 rdfs:label "市民意見反映"@ja.
+kg:id_68 prop:countermeasure kg:id_69.
+kg:id_70 rdfs:label "再生可能エネルギーの導入拡大"@ja.
+kg:id_70 rdf:type cls:c_2119.
+cls:c_2119 rdfs:label "再生可能エネルギー導入拡大"@ja.
+kg:id_71 rdfs:label "公共施設での太陽光発電施設設置の充実"@ja.
+kg:id_71 rdf:type cls:c_2120.
+cls:c_2120 rdfs:label "公共施設導入"@ja.
+kg:id_70 prop:countermeasure kg:id_71.
+kg:id_72 rdfs:label "民間住宅での太陽光パネル普及促進"@ja.
+kg:id_72 rdf:type cls:c_2121.
+cls:c_2121 rdfs:label "住宅普及促進"@ja.
+kg:id_70 prop:countermeasure kg:id_72.
+kg:id_73 rdfs:label "小水力発電の導入"@ja.
+kg:id_73 rdf:type cls:c_2122.
+cls:c_2122 rdfs:label "小水力発電導入"@ja.
+kg:id_74 rdfs:label "農業用水路活用の働きかけと土地改良区への支援"@ja.
+kg:id_74 rdf:type cls:c_2123.
+cls:c_2123 rdfs:label "地域団体支援"@ja.
+kg:id_73 prop:countermeasure kg:id_74.
+kg:id_75 rdfs:label "木質バイオマス活用"@ja.
+kg:id_75 rdf:type cls:c_2124.
+cls:c_2124 rdfs:label "木質バイオマス活用"@ja.
+kg:id_76 rdfs:label "エネルギー戦略見直しの中で率先導入を検討"@ja.
+kg:id_76 rdf:type cls:c_2125.
+cls:c_2125 rdfs:label "率先導入検討"@ja.
+kg:id_75 prop:countermeasure kg:id_76.
+kg:id_77 rdfs:label "自治体風力"@ja.
+kg:id_77 rdf:type cls:c_2126.
+cls:c_2126 rdfs:label "自治体風力"@ja.
+kg:id_78 rdfs:label "東北電力の自治体風力への取り組み可能性の勉強"@ja.
+kg:id_78 rdf:type cls:c_572.
+cls:c_572 rdfs:label "可能性調査"@ja.
+kg:id_77 prop:countermeasure kg:id_78.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "ビジョンの実効性に問題があったと受け止めている"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "全量買い取り制度の法整備で導入環境が整ってきた"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "加藤裕総務部長"@ja.
+kg:st_2 rdf:type cls:st_19.
+cls:st_19 rdfs:label "自治体職員"@ja.
+kg:op_3 prop:content "固定買取価格化で普及が一層進むとみている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "原発事故を受けた国県の政策見直しを踏まえて本市も見直す考えだ"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "後藤泉議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_5 prop:content "原発事故で再生可能エネルギーの必要性が非常に高まった"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "福島第一原発事故がエネルギー戦略見直しを世界に問いかけた"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "原発事故で自然エネルギーが一躍脚光を浴びた"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "地域資源の活用は地域活性化や産業振興につながると捉えている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:st_4 rdfs:label "阿部寿一市長"@ja.
+kg:st_4 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_9 prop:content "震災で石油備蓄や相互連携の重要性を痛感した"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_4.
+kg:op_10 prop:content "石油不足により太平洋側と日本海側の分散備蓄の重要性に気づかされた"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "後藤孝也議員"@ja.
+kg:st_5 rdf:type cls:st_9.
+kg:op_11 prop:content "社会のエネルギー変化とロシア資源外交を踏まえ酒田港をエネルギー基地に位置づけるべきだ"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_5.
+kg:op_12 prop:content "太平洋側発電所被害と原発の不透明化を受け増設は大きな命題だ"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_4.
+kg:op_13 prop:content "酒田港は新エネルギー開発と供給基地として重要性を増す"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_4.
+kg:op_14 prop:content "再生可能エネルギーは地域活性化にも結びつける取り組みが必要だ"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_3.
+kg:op_15 prop:content "風力やバイオマスの活用は地域活性化や産業振興につながる"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "早期改定と情報発信で民間開発者誘致や市民ファンド支援につなげるべきだ"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_3.
+kg:op_17 prop:content "被災地の復興にはなお多くの課題が残っている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_3.
+kg:op_18 prop:content "被災者の生活再建は厳しく迅速な政治判断が必要だ"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_3.
+kg:op_19 prop:content "原発事故でエネルギー戦略見直しが強く求められた"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "原発の安全神話は崩壊した"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "再生可能エネルギーが今まで以上に注目されるようになった"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "酒田港をエネルギー基地化し産業集積を図るべきだ"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "港の優位性向上は地域活性化に結びつけなければならない"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "日本海側拠点港指定により重点投資が期待される"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "先導的取り組みとして公共施設への導入を検討する"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_2.
+kg:op_26 prop:content "自治体風力の建設も検討する考えだ"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_2.
+kg:op_27 prop:content "市民普及のため太陽光パネル補助を継続する"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_2.
+kg:op_28 prop:content "市民普及のためペレットストーブ補助を継続する"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_2.
+kg:op_29 prop:content "適地マップに合う建設可能性を県と一緒に勉強したい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_2.
+kg:op_30 prop:content "来年度策定に向け国県動向把握やデータ整理を進めている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_2.
+kg:op_31 prop:content "庄内スマートコミュニティ事業の成果を見直しに生かしたい"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_2.
+kg:op_32 prop:content "本市はオブザーバーとして毎回参加し必要に応じ意見を述べている"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_2.
+kg:op_33 prop:content "災害時に備え備蓄機能の充実が必要だ"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_4.
+kg:op_34 prop:content "油槽所の大型化や増設を関係者に働きかけるべきだ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_4.
+kg:op_35 prop:content "酒田共同火力発電所の増設を東北電力などに要望すべきだ"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_4.
+kg:op_36 prop:content "波力発電の実証実験など先進的に取り組みたい"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_4.
+kg:op_37 prop:content "バイオマスの検討を進めたい"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_4.
+kg:op_38 prop:content "風力発電施設設置などを先進的に進めたい"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_4.
+kg:op_39 prop:content "物流港としての優位性をアピールするためポートセールスを展開する"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_4.
+kg:op_40 prop:content "物流ルート整備も港湾整備同様に力を入れたい"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_4.
+kg:op_41 prop:content "再生可能エネルギー導入では市民的合意が重要だ"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_1.
+kg:op_42 prop:content "やみくもに進めず景観や環境と調和させ市民意見を踏まえるべきだ"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_2.
+kg:op_43 prop:content "公共施設への太陽光発電設置は今後も充実して進めたい"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_4.
+kg:op_44 prop:content "民間住宅での太陽光普及促進も充実して進めたい"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_4.
+kg:op_45 prop:content "土地改良区が取り組む意向なら市として応援したい"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "木質バイオマスは市が率先して取り組むことも検討したい"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_4.
+kg:op_47 prop:content "東北電力の自治体風力の可能性を県と勉強したい"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_4.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "酒田市のエネルギービジョンについては、その具体的な取り組みについて前に質問をした経過もあるわけでございますが、その実効性に問題があったと受けとめております"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "再生エネルギーの導入に向けて大きな課題であった全量買い取り制度についてはようやく法的な整備がなされ"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "これまで新エネルギーの導入の足かせとなっておりました電力会社によります買取価格、これが本年７月の再生可能エネルギー特別措置法の施行によりまして、固定買取価格となるということで、再生可能エネルギーの普及がより一層進むだろうというふうに考えているところでございます"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "大震災に伴います原発事故の影響から、国あるいは県で大幅なエネルギー政策の見直しというものを現在行っている最中でございます。こういった動きを見据えて、平成24年度に本市といたしましては新エネルギービジョンの見直しを行うという考えでおります"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "東日本大震災での原発事故以来、再生可能エネルギーの必要性が非常に高まっていることは大変よく理解できるものであり"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "この大震災での東京電力福島第一原子力発電所の大事故は、日本じゅうというより世界じゅうにエネルギー戦略の見直しを問いかけ、多くの課題が投げかけられました"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "原発の安全神話は崩壊し、一たん事故を起こしたら取り返しのつかない事態に陥るということは、日本じゅうのだれしもが実感することとなりました。そして、持続可能な自然エネルギー、つまり再生可能エネルギーが今まで以上に一躍脚光を浴びることになり"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "本市にとっては例えば風力あるいはバイオマスといったようなところが大変ポテンシャルが高いという再生可能エネルギーとしては取り上げられておりますので、地域資源をこういった形で活用するということは、大いに地域活性化あるいは地域産業の振興にもつながっていくだろうと"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "去年の３月11日の大震災以降、港があり石油タンクもある本市であるにもかかわらず、震災直後から石油、ガソリンの不足状態が長期にわたって続いたわけでありまして"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "改めて石油などの備蓄を太平洋側と日本海側と分散するとか、相互連携をするとかということの重要性に気づかされた思いでございます"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "社会のエネルギー変化を予測し、その先取りをしながら施策のあり方を考えていかなければならないと思うところであります。重点港湾、拠点港となった酒田港に最初に必要なものは、私はエネルギー生産基地だと考えております"@ja.
+<< kg:id_23 prop:cause kg:id_24 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "今回も太平洋側の発電所が多く津波でやられ、まだ再開ができていない発電所も多々あるわけでございます。それから同時に、原子力発電、このことについての位置づけが流動的な今においては、引き続き石炭やＬＮＧなどの火力発電、この重要性というのが増すばかりではないかと思われるわけであります"@ja.
+<< kg:id_25 prop:effect kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "酒田港のあるべき姿の一つとして新エネルギーの開発でありますとか供給基地ということを挙げられております"@ja.
+<< kg:id_27 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "私はやはり地域の活性化に結びつけていく取り組みが必要なんだろうと思うんです"@ja.
+<< kg:id_29 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "地域資源をこういった形で活用するということは、大いに地域活性化あるいは地域産業の振興にもつながっていくだろうと"@ja.
+<< kg:id_27 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "国や県のモデル事業に積極的に手を挙げ、民間開発者の誘致活動、市民ファンド事業への支援のために早期の改定を望むものであります"@ja.
+<< kg:id_18 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "東日本大震災から丸１年以上経過しましたが、被災地の復興にはまだまだ多くの課題が山積している状況に変わりはなく"@ja.
+<< kg:id_18 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "毎日の報道にも被災地や被災者の方々の生活再建への道のりの厳しさがひしひしと伝わってくるものがあります"@ja.
+<< kg:id_12 prop:effect kg:id_11 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "東京電力福島第一原子力発電所の大事故は、日本じゅうというより世界じゅうにエネルギー戦略の見直しを問いかけ"@ja.
+<< kg:id_12 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "原発の安全神話は崩壊し"@ja.
+<< kg:id_12 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "持続可能な自然エネルギー、つまり再生可能エネルギーが今まで以上に一躍脚光を浴びることになり"@ja.
+<< kg:id_36 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "酒田港がエネルギー基地の一つとしてその機能を充実して、リサイクル産業を初めとする各産業の集積を図っていくことが重要だと考えるところであります"@ja.
+<< kg:id_38 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "こういうふうなことを行っていけば、やはり港を持つ自治体としての、また地域としての優位性というのはきっと高まっていくはずでありまして、それが必ず地域の活性化に結びついていくと"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "日本海側の港がこれからますます重要性を増すであろうということから、日本海側拠点港の指定、そして重点的な投資というようなことが言われているわけであります"@ja.
+<< kg:id_41 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "本市といたしましては先導的な取り組みをするために、例えば公共施設への導入"@ja.
+<< kg:id_43 prop:countermeasure kg:id_44 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "あるいは自治体風力の建設というものも検討する考えでおります"@ja.
+<< kg:id_45 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "市民への普及を促進するために、これまで続けてまいりました太陽光パネルあるいはペレットストーブ設置に対する補助というものも継続してまいります"@ja.
+<< kg:id_45 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "市民への普及を促進するために、これまで続けてまいりました太陽光パネルあるいはペレットストーブ設置に対する補助というものも継続してまいります"@ja.
+<< kg:id_48 prop:countermeasure kg:id_49 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "３月下旬には県から適地マップも示されるといったような動きでございますので、こういった適地マップに適合するような建設の可能性というものを県と一緒に勉強させていただきたい"@ja.
+<< kg:id_7 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "現在、国あるいは県の検討状況の把握に努めておりまして、さらには本市のエネルギー資源賦存量などのデータの整理、それから県や関係機関との情報交換といったようなこと、こういった来年度の策定に向けた準備を行っている段階でございます"@ja.
+<< kg:id_7 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "この事業につきましては、現在報告書が取りまとめられている最中ということでございますので、その成果については市の新エネルギービジョンの見直しにも生かしてまいりたい"@ja.
+<< kg:id_52 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "本市を初めとして行政機関はオブザーバーとして毎回会議に参加させていただいております。その都度必要に応じて意見などを申し上げさせていただいているところです"@ja.
+<< kg:id_54 prop:countermeasure kg:id_55 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "まずは石油などの備蓄機能の充実"@ja.
+<< kg:id_54 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "油槽所でありますが、これを大型化するなり増設をしていただくということを私たちは関係者に働きかけていかなければならない"@ja.
+<< kg:id_57 prop:countermeasure kg:id_58 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "酒田共同火力発電所の増設というのは、地域にとっても、また県にとってもこれは大きな命題ではないかと私は思っております。ぜひこのことについても、にわかに実現すると考えているわけではありませんが、しっかりと東北電力などに要望していかなければならないテーマだと思っております"@ja.
+<< kg:id_59 prop:countermeasure kg:id_60 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "波力発電の実証実験とか"@ja.
+<< kg:id_59 prop:countermeasure kg:id_61 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "バイオマスの検討でありますとか"@ja.
+<< kg:id_59 prop:countermeasure kg:id_62 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "風力発電施設の設置などのことがあるわけでありますけれども、このようなことをいろいろ先進的に取り組むことなどもあわせ行って"@ja.
+<< kg:id_63 prop:countermeasure kg:id_64 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "内陸地域、そしてまた仙台圏まで視野に入れたポートセールスを展開して"@ja.
+<< kg:id_63 prop:countermeasure kg:id_65 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "そのためには国道47号線などの物流ルートの整備も大変重要な課題でありまして、港湾の整備同様力を入れていきたい"@ja.
+<< kg:id_66 prop:countermeasure kg:id_67 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "そこで何に取り組まれたのかといえば、私は市民的合意なんだろうと思うんです"@ja.
+<< kg:id_68 prop:countermeasure kg:id_69 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "大事なことは、やはり景観といいますか環境と調和のとれたような、そういう進め方をしなければいけないと、こんな思いに立っておりますので、ここは市民の皆さん、あるいは関係する方々のそういった意見というものも十分踏まえさせていただいて"@ja.
+<< kg:id_70 prop:countermeasure kg:id_71 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "今までも公共施設における太陽光発電施設の設置など公共施設への取り組み"@ja.
+<< kg:id_70 prop:countermeasure kg:id_72 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "補助制度などを創設しながら民間住宅での普及促進というようなことも太陽光パネル、ペレットストーブなどでは行っているわけであります。こういうようなことは今後とも当然のことながら充実しながら進めていきたい"@ja.
+<< kg:id_73 prop:countermeasure kg:id_74 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "小水力発電というようなことになりますと、主にはやはり農業用の水路の活用がイメージできるわけでありまして、土地改良区などにおいて活用を働きかけたこともございますけれども、土地改良区において取り組みたいというような御意向があれば、そこについてはしっかり私たちとしても応援をしていきたい"@ja.
+<< kg:id_75 prop:countermeasure kg:id_76 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "このエネルギー戦略の見直しの中で木質バイオマスということが一層注目され、そして、コストが多少かかろうとも、またその後の処理について多少の手数がかかろうとも取り組んでみたいという市民の皆さんが多く出てくる可能性もあるわけでありますので、そこについて率先して本市としても取り組むというようなことについてもこのエネルギー戦略の見直しの中で十分検討したい"@ja.
+<< kg:id_77 prop:countermeasure kg:id_78 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "東北電力が打ち出しておられる自治体風力への取り組みの考え方は、前者に総務部長が答えたとおりでございますが、その可能性について県と一緒に勉強していきたい"@ja.
+}

@@ -1,0 +1,161 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00014> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "洋上風力"@ja.
+kg:id_1 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_2 rdfs:label "漁業にもたらす効果"@ja.
+kg:id_2 rdf:type cls:c_369.
+cls:c_369 rdfs:label "漁業への効果"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "洋上風力事業"@ja.
+kg:id_3 rdf:type cls:c_218.
+kg:id_4 rdfs:label "稼働まで10年以上の歳月を要する"@ja.
+kg:id_4 rdf:type cls:c_370.
+cls:c_370 rdfs:label "長期化"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "養殖事業"@ja.
+kg:id_5 rdf:type cls:c_371.
+cls:c_371 rdfs:label "養殖事業"@ja.
+kg:id_6 rdfs:label "各地でいろんな試みと失敗を重ね長い時間をかけたこと"@ja.
+kg:id_6 rdf:type cls:c_372.
+cls:c_372 rdfs:label "長期的試行"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "出荷が可能になる"@ja.
+kg:id_7 rdf:type cls:c_373.
+cls:c_373 rdfs:label "出荷可能化"@ja.
+kg:id_5 prop:effect kg:id_7.
+kg:id_8 rdfs:label "松前の漁業"@ja.
+kg:id_8 rdf:type cls:c_374.
+cls:c_374 rdfs:label "漁業"@ja.
+kg:id_9 rdfs:label "生き残れる"@ja.
+kg:id_9 rdf:type cls:c_375.
+cls:c_375 rdfs:label "存続可能性"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "漁業者の取り組み"@ja.
+kg:id_10 rdf:type cls:c_376.
+cls:c_376 rdfs:label "漁業者の取組"@ja.
+kg:id_11 rdfs:label "グループでやりたいことをプレゼンする"@ja.
+kg:id_11 rdf:type cls:c_377.
+cls:c_377 rdfs:label "提案発表"@ja.
+kg:id_10 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "漁業振興"@ja.
+kg:id_12 rdf:type cls:c_132.
+cls:c_132 rdfs:label "漁業振興"@ja.
+kg:id_13 rdfs:label "漁業者が失敗を怖れずに挑戦していく"@ja.
+kg:id_13 rdf:type cls:c_378.
+cls:c_378 rdfs:label "主体的挑戦"@ja.
+kg:id_12 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "町が応援する"@ja.
+kg:id_14 rdf:type cls:c_379.
+cls:c_379 rdfs:label "行政支援"@ja.
+kg:id_12 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "しっかりと取り組んでいく"@ja.
+kg:id_15 rdf:type cls:c_380.
+cls:c_380 rdfs:label "継続的取組"@ja.
+kg:id_12 prop:countermeasure kg:id_15.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "養殖事業の成果と合わせて松前の漁業が生き残れる可能性がある"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "町長 石山英雄"@ja.
+kg:st_2 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_2 prop:content "その方向に進められればよいと考える"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "将来事業として採算可能になる可能性がある"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "長期的に取り組めば出荷可能となり将来採算事業になりうる"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "将来事業として採算可能になる可能性がある"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "洋上風力の効果と養殖事業の成果で生き残れる可能性がある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "漁業者から提案が出てくればよい方向に向かう"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "官主導ではなく漁業者主体の挑戦を応援したい"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "漁業者に気構えがあればいくらでも応援できる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "風力があっても変えられない課題として取り組む必要がある"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "洋上風力が漁業にもたらす効果と、養殖事業の成果で、松前の漁業が生き残れるのではないかというふうに考えております"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "洋上風力の稼働まで、１０年以上の歳月を要するということでございます"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "養殖事業においても、各地でいろんな試みをし、失敗をして、長い時間をかけて出荷が可能になっています"@ja.
+<< kg:id_5 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "養殖事業においても、各地でいろんな試みをし、失敗をして、長い時間をかけて出荷が可能になっています"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "洋上風力が漁業にもたらす効果と、養殖事業の成果で、松前の漁業が生き残れるのではないか"@ja.
+<< kg:id_10 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "漁業者の方がこういうふうなこと、グループでこんなことやりたいよと、町長どうですかというふうなプレゼンをもらえるような、そんな雰囲気が漁業者の方から出てくれば、いい方向に向かう"@ja.
+<< kg:id_12 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "官主導型というよりも、やっぱり漁業者が失敗を怖れずに挑戦していくと。そのために町長、こういうことやりたいという話をいただければ、応援はしていきたい"@ja.
+<< kg:id_12 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "そのために町長、こういうことやりたいという話をいただければ、応援はしていきたいなというふうに思いますし、そのような風土、風土って言いますか、気構えがあればいくらでも応援できる"@ja.
+<< kg:id_12 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "漁業振興は風力があっても変えられない課題でありますので、しっかりと取り組んでいかなければならない"@ja.
+}

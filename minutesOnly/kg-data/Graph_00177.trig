@@ -1,0 +1,191 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00177> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市沖における洋上風力発電事業の導入"@ja.
+kg:id_1 rdf:type cls:c_4005.
+cls:c_4005 rdfs:label "発電事業導入"@ja.
+kg:id_2 rdfs:label "山形県とともに取組を進める"@ja.
+kg:id_2 rdf:type cls:c_4006.
+cls:c_4006 rdfs:label "共同推進"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "国から有望な区域に整理される"@ja.
+kg:id_3 rdf:type cls:c_2758.
+cls:c_2758 rdfs:label "有望区域"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "風力発電事業特別会計の補正"@ja.
+kg:id_4 rdf:type cls:c_4007.
+cls:c_4007 rdfs:label "会計補正"@ja.
+kg:id_5 rdfs:label "風力発電事業地域未来創造基金積立金を増額"@ja.
+kg:id_5 rdf:type cls:c_4008.
+cls:c_4008 rdfs:label "基金積立増額"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "議第84号"@ja.
+kg:id_6 rdf:type cls:c_991.
+cls:c_991 rdfs:label "議案"@ja.
+kg:id_7 rdfs:label "風力発電事業特別会計予算を5,405万2,000円増額"@ja.
+kg:id_7 rdf:type cls:c_942.
+cls:c_942 rdfs:label "予算増額"@ja.
+kg:id_6 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "風力発電事業特別会計予算の補正"@ja.
+kg:id_8 rdf:type cls:c_2039.
+cls:c_2039 rdfs:label "予算補正"@ja.
+kg:id_9 rdfs:label "前年度繰越金の確定"@ja.
+kg:id_9 rdf:type cls:c_1478.
+cls:c_1478 rdfs:label "繰越金確定"@ja.
+kg:id_8 prop:cause kg:id_9.
+kg:id_10 rdfs:label "風力発電施設管理基金積立金を増額"@ja.
+kg:id_10 rdf:type cls:c_4008.
+kg:id_8 prop:effect kg:id_10.
+kg:id_11 rdfs:label "一般会計繰出金を増額"@ja.
+kg:id_11 rdf:type cls:c_1485.
+cls:c_1485 rdfs:label "繰出金増額"@ja.
+kg:id_8 prop:effect kg:id_11.
+kg:id_12 rdfs:label "繰越金を増額"@ja.
+kg:id_12 rdf:type cls:c_1486.
+cls:c_1486 rdfs:label "繰越金増額"@ja.
+kg:id_8 prop:effect kg:id_12.
+kg:id_13 rdfs:label "文書管理"@ja.
+kg:id_13 rdf:type cls:c_4009.
+cls:c_4009 rdfs:label "文書管理"@ja.
+kg:id_14 rdfs:label "文書管理システムを導入"@ja.
+kg:id_14 rdf:type cls:c_4010.
+cls:c_4010 rdfs:label "情報システム導入"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "文書管理システムの導入"@ja.
+kg:id_15 rdf:type cls:c_4010.
+kg:id_16 rdfs:label "業務の効率化"@ja.
+kg:id_16 rdf:type cls:c_1692.
+cls:c_1692 rdfs:label "業務効率化"@ja.
+kg:id_15 prop:effect kg:id_16.
+kg:id_17 rdfs:label "庁舎内スペースの有効活用"@ja.
+kg:id_17 rdf:type cls:c_4011.
+cls:c_4011 rdfs:label "空間活用"@ja.
+kg:id_15 prop:effect kg:id_17.
+kg:id_18 rdfs:label "自治体情報システムの標準化"@ja.
+kg:id_18 rdf:type cls:c_4012.
+cls:c_4012 rdfs:label "情報システム標準化"@ja.
+kg:id_19 rdfs:label "地方公共団体情報システム標準化基本方針"@ja.
+kg:id_19 rdf:type cls:c_1967.
+cls:c_1967 rdfs:label "基本方針"@ja.
+kg:id_18 prop:cause kg:id_19.
+kg:id_20 rdfs:label "標準化に向けた準備を進める"@ja.
+kg:id_20 rdf:type cls:c_4013.
+cls:c_4013 rdfs:label "標準化準備"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "歳入確保"@ja.
+kg:id_21 rdf:type cls:c_1333.
+cls:c_1333 rdfs:label "歳入確保"@ja.
+kg:id_22 rdfs:label "ふるさと納税による寄附金"@ja.
+kg:id_22 rdf:type cls:c_4014.
+cls:c_4014 rdfs:label "寄附金"@ja.
+kg:id_21 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "公共施設などのネーミングライツ"@ja.
+kg:id_23 rdf:type cls:c_4015.
+cls:c_4015 rdfs:label "命名権"@ja.
+kg:id_21 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "未利用財産の売払い"@ja.
+kg:id_24 rdf:type cls:c_1071.
+cls:c_1071 rdfs:label "資産売却"@ja.
+kg:id_21 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "風力発電事業の売電収益"@ja.
+kg:id_25 rdf:type cls:c_1336.
+cls:c_1336 rdfs:label "売電収益"@ja.
+kg:id_21 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "認第6号"@ja.
+kg:id_26 rdf:type cls:c_4016.
+cls:c_4016 rdfs:label "決算認定"@ja.
+kg:id_27 rdfs:label "差引額5,405万3,293円を令和6年度に繰り越す"@ja.
+kg:id_27 rdf:type cls:c_3869.
+cls:c_3869 rdfs:label "繰越"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "風力発電事業特別会計歳入決算"@ja.
+kg:id_28 rdf:type cls:c_4017.
+cls:c_4017 rdfs:label "歳入決算"@ja.
+kg:id_29 rdfs:label "事業収入4億8,015万8,603円が主なもの"@ja.
+kg:id_29 rdf:type cls:c_4018.
+cls:c_4018 rdfs:label "事業収入"@ja.
+kg:id_28 prop:effect kg:id_29.
+kg:id_30 rdfs:label "風力発電事業特別会計歳出決算"@ja.
+kg:id_30 rdf:type cls:c_4019.
+cls:c_4019 rdfs:label "歳出決算"@ja.
+kg:id_31 rdfs:label "風力発電事業費1億1,465万6,642円が主なもの"@ja.
+kg:id_31 rdf:type cls:c_2157.
+cls:c_2157 rdfs:label "事業費"@ja.
+kg:id_30 prop:effect kg:id_31.
+kg:id_32 rdfs:label "基金積立金1億2,629万5,000円が主なもの"@ja.
+kg:id_32 rdf:type cls:c_4020.
+cls:c_4020 rdfs:label "基金積立金"@ja.
+kg:id_30 prop:effect kg:id_32.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:text-txt_contents "山形県とともに、酒田市沖における洋上風力発電事業の導入に向けた取組を進め"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:text-txt_contents "国から海洋再生可能エネルギー発電設備整備促進区域指定ガイドラインに基づく有望な区域に整理されました"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:text-txt_contents "土木費では、風力発電事業特別会計の補正に伴い、風力発電事業地域未来創造基金積立金を増額しております"@ja.
+<< kg:id_6 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "議第84号については、風力発電事業特別会計予算を5,405万2,000円増額し、予算総額を４億8,764万9,000円とするものであります"@ja.
+<< kg:id_8 prop:cause kg:id_9 >>
+    prop:text-txt_contents "このたびの補正は、主に前年度繰越金の確定によるもので"@ja.
+<< kg:id_8 prop:effect kg:id_10 >>
+    prop:text-txt_contents "歳出では風力発電施設管理基金積立金を及び一般会計繰出金を、歳入では繰越金を増額しております"@ja.
+<< kg:id_8 prop:effect kg:id_11 >>
+    prop:text-txt_contents "歳出では風力発電施設管理基金積立金を及び一般会計繰出金を、歳入では繰越金を増額しております"@ja.
+<< kg:id_8 prop:effect kg:id_12 >>
+    prop:text-txt_contents "歳出では風力発電施設管理基金積立金を及び一般会計繰出金を、歳入では繰越金を増額しております"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "文書管理システムを導入し"@ja.
+<< kg:id_15 prop:effect kg:id_16 >>
+    prop:text-txt_contents "業務の効率化"@ja.
+<< kg:id_15 prop:effect kg:id_17 >>
+    prop:text-txt_contents "庁舎内スペースの有効活用を図った"@ja.
+<< kg:id_18 prop:cause kg:id_19 >>
+    prop:text-txt_contents "地方公共団体情報システム標準化基本方針に基づき"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:text-txt_contents "自治体情報システムの標準化に向けた準備を進めました"@ja.
+<< kg:id_21 prop:countermeasure kg:id_22 >>
+    prop:text-txt_contents "ふるさと納税による寄附金のほか"@ja.
+<< kg:id_21 prop:countermeasure kg:id_23 >>
+    prop:text-txt_contents "公共施設などのネーミングライツ"@ja.
+<< kg:id_21 prop:countermeasure kg:id_24 >>
+    prop:text-txt_contents "未利用財産の売払い"@ja.
+<< kg:id_21 prop:countermeasure kg:id_25 >>
+    prop:text-txt_contents "風力発電事業の売電収益などによる歳入確保に取り組みました"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:text-txt_contents "認第６号については、風力発電事業特別会計歳入決算額５億970万247円、歳出決算額４億5,564万6,954円で、差引額5,405万3,293円を令和６年度に繰り越すものであります"@ja.
+<< kg:id_28 prop:effect kg:id_29 >>
+    prop:text-txt_contents "歳入では、事業収入４億8,015万8,603円が主なものであります"@ja.
+<< kg:id_30 prop:effect kg:id_31 >>
+    prop:text-txt_contents "歳出では、風力発電事業費１億1,465万6,642円"@ja.
+<< kg:id_30 prop:effect kg:id_32 >>
+    prop:text-txt_contents "基金積立金１億2,629万5,000円が主なものであります"@ja.
+}

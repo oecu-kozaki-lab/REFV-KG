@@ -1,0 +1,1012 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00115> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "お試し住宅の利用減少"@ja.
+kg:id_1 rdf:type cls:c_1607.
+cls:c_1607 rdfs:label "利用減少"@ja.
+kg:id_2 rdfs:label "新型コロナウイルス感染症拡大による移動の制限"@ja.
+kg:id_2 rdf:type cls:c_2719.
+cls:c_2719 rdfs:label "移動制限"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "感染が拡大する地域に住む人への利用自粛要請"@ja.
+kg:id_3 rdf:type cls:c_2720.
+cls:c_2720 rdfs:label "利用自粛要請"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "お試し住宅の利用回復"@ja.
+kg:id_4 rdf:type cls:c_2721.
+cls:c_2721 rdfs:label "利用回復"@ja.
+kg:id_5 rdfs:label "感染拡大の落ち着き"@ja.
+kg:id_5 rdf:type cls:c_2722.
+cls:c_2722 rdfs:label "感染沈静化"@ja.
+kg:id_4 prop:cause kg:id_5.
+kg:id_6 rdfs:label "移動制限の緩和"@ja.
+kg:id_6 rdf:type cls:c_2327.
+cls:c_2327 rdfs:label "規制緩和"@ja.
+kg:id_4 prop:cause kg:id_6.
+kg:id_7 rdfs:label "布倉集落のお試し住宅の契約解除"@ja.
+kg:id_7 rdf:type cls:c_2723.
+cls:c_2723 rdfs:label "契約解除"@ja.
+kg:id_8 rdfs:label "所有者の申入れ"@ja.
+kg:id_8 rdf:type cls:c_2724.
+cls:c_2724 rdfs:label "所有者申入れ"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "遊佐ノ市の事業中止"@ja.
+kg:id_9 rdf:type cls:c_31.
+cls:c_31 rdfs:label "事業中止"@ja.
+kg:id_10 rdfs:label "コロナ禍"@ja.
+kg:id_10 rdf:type cls:c_220.
+cls:c_220 rdfs:label "感染症流行"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "遊佐ブランド推進事業の困難"@ja.
+kg:id_11 rdf:type cls:c_2725.
+cls:c_2725 rdfs:label "事業困難"@ja.
+kg:id_12 rdfs:label "遊佐を出られない状態"@ja.
+kg:id_12 rdf:type cls:c_2726.
+cls:c_2726 rdfs:label "移動不能"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "遊佐ブランド推進事業の縮小"@ja.
+kg:id_13 rdf:type cls:c_2727.
+cls:c_2727 rdfs:label "事業縮小"@ja.
+kg:id_14 rdfs:label "コロナ禍による困難な課題への直面"@ja.
+kg:id_14 rdf:type cls:c_2725.
+kg:id_13 prop:cause kg:id_14.
+kg:id_15 rdfs:label "大黒さんでハタハタを揚げられない状況"@ja.
+kg:id_15 rdf:type cls:c_2728.
+cls:c_2728 rdfs:label "提供困難"@ja.
+kg:id_16 rdfs:label "ハタハタが捕れないこと"@ja.
+kg:id_16 rdf:type cls:c_858.
+cls:c_858 rdfs:label "不漁"@ja.
+kg:id_15 prop:cause kg:id_16.
+kg:id_17 rdfs:label "ハタハタ不漁"@ja.
+kg:id_17 rdf:type cls:c_858.
+kg:id_18 rdfs:label "異常気象の可能性"@ja.
+kg:id_18 rdf:type cls:c_2729.
+cls:c_2729 rdfs:label "異常気象"@ja.
+kg:id_17 prop:cause kg:id_18.
+kg:id_19 rdfs:label "共同加工場の需要増加"@ja.
+kg:id_19 rdf:type cls:c_2730.
+cls:c_2730 rdfs:label "需要増加"@ja.
+kg:id_20 rdfs:label "加工品の試作や販売目的での開発の増加"@ja.
+kg:id_20 rdf:type cls:c_2731.
+cls:c_2731 rdfs:label "開発増加"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "学校施設の活用変更時の課題"@ja.
+kg:id_21 rdf:type cls:c_2732.
+cls:c_2732 rdfs:label "活用課題"@ja.
+kg:id_22 rdfs:label "建設時に国から補助金を受けていること"@ja.
+kg:id_22 rdf:type cls:c_2733.
+cls:c_2733 rdfs:label "補助金受給"@ja.
+kg:id_21 prop:cause kg:id_22.
+kg:id_23 rdfs:label "未償還分の起債の扱い"@ja.
+kg:id_23 rdf:type cls:c_2734.
+cls:c_2734 rdfs:label "債務残存"@ja.
+kg:id_21 prop:cause kg:id_23.
+kg:id_24 rdfs:label "補助金返還の可能性"@ja.
+kg:id_24 rdf:type cls:c_2735.
+cls:c_2735 rdfs:label "返還可能性"@ja.
+kg:id_25 rdfs:label "学校施設として建設した施設の形態変更"@ja.
+kg:id_25 rdf:type cls:c_2736.
+cls:c_2736 rdfs:label "施設変更"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "起債の繰上償還の可能性"@ja.
+kg:id_26 rdf:type cls:c_2737.
+cls:c_2737 rdfs:label "償還可能性"@ja.
+kg:id_26 prop:cause kg:id_25.
+kg:id_27 rdfs:label "プレミアム付き商品券の販売の課題"@ja.
+kg:id_27 rdf:type cls:c_2738.
+cls:c_2738 rdfs:label "販売課題"@ja.
+kg:id_28 rdfs:label "高いプレミアム率に比例して必要財源が大きくなること"@ja.
+kg:id_28 rdf:type cls:c_2739.
+cls:c_2739 rdfs:label "財源負担"@ja.
+kg:id_27 prop:cause kg:id_28.
+kg:id_29 rdfs:label "売場に人が殺到して密になりやすいこと"@ja.
+kg:id_29 rdf:type cls:c_2740.
+cls:c_2740 rdfs:label "密集発生"@ja.
+kg:id_27 prop:cause kg:id_29.
+kg:id_30 rdfs:label "町民に購入負担が生じること"@ja.
+kg:id_30 rdf:type cls:c_2741.
+cls:c_2741 rdfs:label "購入負担"@ja.
+kg:id_27 prop:cause kg:id_30.
+kg:id_31 rdfs:label "商品券事業の実施困難"@ja.
+kg:id_31 rdf:type cls:c_2742.
+cls:c_2742 rdfs:label "実施困難"@ja.
+kg:id_32 rdfs:label "商品券の印刷及び販売と換金に多くの経費と労力がかかること"@ja.
+kg:id_32 rdf:type cls:c_2743.
+cls:c_2743 rdfs:label "運営負担"@ja.
+kg:id_31 prop:cause kg:id_32.
+kg:id_33 rdfs:label "金融機関が商品券の換金業務を請け負わない事例の発生"@ja.
+kg:id_33 rdf:type cls:c_2744.
+cls:c_2744 rdfs:label "実施体制不足"@ja.
+kg:id_31 prop:cause kg:id_33.
+kg:id_34 rdfs:label "商品券の枚数増加"@ja.
+kg:id_34 rdf:type cls:c_2745.
+cls:c_2745 rdfs:label "取扱増加"@ja.
+kg:id_31 prop:cause kg:id_34.
+kg:id_35 rdfs:label "町の中小事業者への経済効果の弱まり"@ja.
+kg:id_35 rdf:type cls:c_2746.
+cls:c_2746 rdfs:label "経済効果減退"@ja.
+kg:id_36 rdfs:label "現行のプレミアム付き商品券に大手事業者が含まれること"@ja.
+kg:id_36 rdf:type cls:c_2747.
+cls:c_2747 rdfs:label "大手事業者"@ja.
+kg:id_35 prop:cause kg:id_36.
+kg:id_37 rdfs:label "ゲームによる学力低下"@ja.
+kg:id_37 rdf:type cls:c_1378.
+cls:c_1378 rdfs:label "学力低下"@ja.
+kg:id_38 rdfs:label "ゲームのやり過ぎ"@ja.
+kg:id_38 rdf:type cls:c_2748.
+cls:c_2748 rdfs:label "過剰利用"@ja.
+kg:id_37 prop:cause kg:id_38.
+kg:id_39 rdfs:label "進学率の低下"@ja.
+kg:id_39 rdf:type cls:c_2749.
+cls:c_2749 rdfs:label "進学率低下"@ja.
+kg:id_39 prop:cause kg:id_38.
+kg:id_40 rdfs:label "学力低下"@ja.
+kg:id_40 rdf:type cls:c_1378.
+kg:id_41 rdfs:label "1日3時間から4時間のゲーム"@ja.
+kg:id_41 rdf:type cls:c_2750.
+cls:c_2750 rdfs:label "長時間利用"@ja.
+kg:id_40 prop:cause kg:id_41.
+kg:id_42 rdfs:label "進学への悪影響"@ja.
+kg:id_42 rdf:type cls:c_2751.
+cls:c_2751 rdfs:label "進学悪影響"@ja.
+kg:id_42 prop:cause kg:id_41.
+kg:id_43 rdfs:label "学校に行けなくなった事例"@ja.
+kg:id_43 rdf:type cls:c_2752.
+cls:c_2752 rdfs:label "不登校"@ja.
+kg:id_44 rdfs:label "ゲームへの没頭"@ja.
+kg:id_44 rdf:type cls:c_2753.
+cls:c_2753 rdfs:label "依存"@ja.
+kg:id_43 prop:cause kg:id_44.
+kg:id_45 rdfs:label "母親への暴力"@ja.
+kg:id_45 rdf:type cls:c_2754.
+cls:c_2754 rdfs:label "家庭内暴力"@ja.
+kg:id_46 rdfs:label "ゲームを取り上げられたこと"@ja.
+kg:id_46 rdf:type cls:c_2755.
+cls:c_2755 rdfs:label "利用制限"@ja.
+kg:id_45 prop:cause kg:id_46.
+kg:id_47 rdfs:label "昼夜逆転"@ja.
+kg:id_47 rdf:type cls:c_2756.
+cls:c_2756 rdfs:label "生活障害"@ja.
+kg:id_48 rdfs:label "ゲーム依存"@ja.
+kg:id_48 rdf:type cls:c_2753.
+kg:id_47 prop:cause kg:id_48.
+kg:id_49 rdfs:label "洋上風力発電導入推進"@ja.
+kg:id_49 rdf:type cls:c_1459.
+cls:c_1459 rdfs:label "導入推進"@ja.
+kg:id_50 rdfs:label "再生可能エネルギーの主力電源化による地球温暖化対策"@ja.
+kg:id_50 rdf:type cls:c_987.
+cls:c_987 rdfs:label "温暖化対策"@ja.
+kg:id_49 prop:cause kg:id_50.
+kg:id_51 rdfs:label "エネルギー自給率の向上"@ja.
+kg:id_51 rdf:type cls:c_2757.
+cls:c_2757 rdfs:label "自給率向上"@ja.
+kg:id_49 prop:cause kg:id_51.
+kg:id_52 rdfs:label "県内産業の振興"@ja.
+kg:id_52 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_49 prop:cause kg:id_52.
+kg:id_53 rdfs:label "地域活性化を図る県のエネルギー戦略"@ja.
+kg:id_53 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_49 prop:cause kg:id_53.
+kg:id_54 rdfs:label "庄内沖が洋上風力の有望区域となったこと"@ja.
+kg:id_54 rdf:type cls:c_2758.
+cls:c_2758 rdfs:label "有望区域"@ja.
+kg:id_55 rdfs:label "恵まれた風況"@ja.
+kg:id_55 rdf:type cls:c_2759.
+cls:c_2759 rdfs:label "風況良好"@ja.
+kg:id_54 prop:cause kg:id_55.
+kg:id_56 rdfs:label "遠浅で施工しやすい海域条件"@ja.
+kg:id_56 rdf:type cls:c_2760.
+cls:c_2760 rdfs:label "海域適性"@ja.
+kg:id_54 prop:cause kg:id_56.
+kg:id_57 rdfs:label "洋上風力発電計画への危機感"@ja.
+kg:id_57 rdf:type cls:c_2761.
+cls:c_2761 rdfs:label "危機感"@ja.
+kg:id_58 rdfs:label "町民に事業内容の情報がうまく伝わっていないこと"@ja.
+kg:id_58 rdf:type cls:c_2033.
+cls:c_2033 rdfs:label "情報不足"@ja.
+kg:id_57 prop:cause kg:id_58.
+kg:id_59 rdfs:label "洋上風力発電計画への不信感"@ja.
+kg:id_59 rdf:type cls:c_2762.
+cls:c_2762 rdfs:label "不信感"@ja.
+kg:id_60 rdfs:label "現実とかけ離れたフォトモンタージュ"@ja.
+kg:id_60 rdf:type cls:c_2763.
+cls:c_2763 rdfs:label "不適切画像"@ja.
+kg:id_59 prop:cause kg:id_60.
+kg:id_61 rdfs:label "法定協議会前の不安"@ja.
+kg:id_61 rdf:type cls:c_2289.
+cls:c_2289 rdfs:label "不安"@ja.
+kg:id_62 rdfs:label "町民からの疑問や不安に県がほとんど対応していないこと"@ja.
+kg:id_62 rdf:type cls:c_2764.
+cls:c_2764 rdfs:label "対応不足"@ja.
+kg:id_61 prop:cause kg:id_62.
+kg:id_63 rdfs:label "法定協議会への危惧"@ja.
+kg:id_63 rdf:type cls:c_2765.
+cls:c_2765 rdfs:label "危惧"@ja.
+kg:id_64 rdfs:label "町民が蚊帳の外で形式的に開催される可能性"@ja.
+kg:id_64 rdf:type cls:c_2766.
+cls:c_2766 rdfs:label "形式開催"@ja.
+kg:id_63 prop:cause kg:id_64.
+kg:id_65 rdfs:label "お試し住宅の利用促進"@ja.
+kg:id_65 rdf:type cls:c_1098.
+cls:c_1098 rdfs:label "利用促進"@ja.
+kg:id_66 rdfs:label "町内の風景やお試し住宅の紹介動画の配信"@ja.
+kg:id_66 rdf:type cls:c_2767.
+cls:c_2767 rdfs:label "動画配信"@ja.
+kg:id_65 prop:countermeasure kg:id_66.
+kg:id_67 rdfs:label "お試し住宅の情報発信"@ja.
+kg:id_67 rdf:type cls:c_1056.
+cls:c_1056 rdfs:label "情報発信"@ja.
+kg:id_68 rdfs:label "ＩＪＵターン促進協議会ホームページやユーチューブや遊佐町公式チャンネル等での配信"@ja.
+kg:id_68 rdf:type cls:c_2767.
+kg:id_67 prop:countermeasure kg:id_68.
+kg:id_69 rdfs:label "お試し住宅の利用促進と移住推進"@ja.
+kg:id_69 rdf:type cls:c_1098.
+kg:id_70 rdfs:label "利用者ニーズの把握と物件整備を含めた事業計画の検討"@ja.
+kg:id_70 rdf:type cls:c_307.
+cls:c_307 rdfs:label "計画検討"@ja.
+kg:id_69 prop:countermeasure kg:id_70.
+kg:id_71 rdfs:label "地場産品を使った商品創出"@ja.
+kg:id_71 rdf:type cls:c_2768.
+cls:c_2768 rdfs:label "商品創出"@ja.
+kg:id_72 rdfs:label "適切な衛生管理に努めながら支援すること"@ja.
+kg:id_72 rdf:type cls:c_2769.
+cls:c_2769 rdfs:label "事業支援"@ja.
+kg:id_71 prop:countermeasure kg:id_72.
+kg:id_73 rdfs:label "遊佐ブランド推進事業の立て直し"@ja.
+kg:id_73 rdf:type cls:c_2770.
+cls:c_2770 rdfs:label "事業再建"@ja.
+kg:id_74 rdfs:label "共同加工場を軸とした6次産業化の推進"@ja.
+kg:id_74 rdf:type cls:c_2771.
+cls:c_2771 rdfs:label "6次産業化"@ja.
+kg:id_73 prop:countermeasure kg:id_74.
+kg:id_75 rdfs:label "生活クラブ生協や庄内みどり農協との共同宣言を生かした特産品開発"@ja.
+kg:id_75 rdf:type cls:c_2772.
+cls:c_2772 rdfs:label "特産品開発"@ja.
+kg:id_73 prop:countermeasure kg:id_75.
+kg:id_76 rdfs:label "マーケティングを基にした販路開拓"@ja.
+kg:id_76 rdf:type cls:c_2113.
+cls:c_2113 rdfs:label "販路開拓"@ja.
+kg:id_73 prop:countermeasure kg:id_76.
+kg:id_77 rdfs:label "ＥＣサイトの運営"@ja.
+kg:id_77 rdf:type cls:c_2773.
+cls:c_2773 rdfs:label "販売運営"@ja.
+kg:id_73 prop:countermeasure kg:id_77.
+kg:id_78 rdfs:label "事業と組織の見直し"@ja.
+kg:id_78 rdf:type cls:c_2774.
+cls:c_2774 rdfs:label "組織見直し"@ja.
+kg:id_73 prop:countermeasure kg:id_78.
+kg:id_79 rdfs:label "遊佐ブランド推進事業の推進"@ja.
+kg:id_79 rdf:type cls:c_197.
+cls:c_197 rdfs:label "事業推進"@ja.
+kg:id_80 rdfs:label "外部から専門家を招くこと"@ja.
+kg:id_80 rdf:type cls:c_2775.
+cls:c_2775 rdfs:label "専門家活用"@ja.
+kg:id_79 prop:countermeasure kg:id_80.
+kg:id_81 rdfs:label "小学校統合後の体育館とグラウンド活用"@ja.
+kg:id_81 rdf:type cls:c_2491.
+cls:c_2491 rdfs:label "施設活用"@ja.
+kg:id_82 rdfs:label "継続実施に向けた運用体制の検討"@ja.
+kg:id_82 rdf:type cls:c_2776.
+cls:c_2776 rdfs:label "運用検討"@ja.
+kg:id_81 prop:countermeasure kg:id_82.
+kg:id_83 rdfs:label "空き校舎の利活用"@ja.
+kg:id_83 rdf:type cls:c_2491.
+kg:id_84 rdfs:label "利活用方針案の策定と検討委員会の開催"@ja.
+kg:id_84 rdf:type cls:c_1460.
+cls:c_1460 rdfs:label "方針策定"@ja.
+kg:id_83 prop:countermeasure kg:id_84.
+kg:id_85 rdfs:label "空き校舎活用への対応"@ja.
+kg:id_85 rdf:type cls:c_2491.
+kg:id_86 rdfs:label "国県に照会しながら活用へ向けた調整を進めること"@ja.
+kg:id_86 rdf:type cls:c_2777.
+cls:c_2777 rdfs:label "活用調整"@ja.
+kg:id_85 prop:countermeasure kg:id_86.
+kg:id_87 rdfs:label "空き校舎活用まで時間がかかる場合"@ja.
+kg:id_87 rdf:type cls:c_2491.
+kg:id_88 rdfs:label "可能な範囲での暫定利用の検討"@ja.
+kg:id_88 rdf:type cls:c_2778.
+cls:c_2778 rdfs:label "暫定利用"@ja.
+kg:id_87 prop:countermeasure kg:id_88.
+kg:id_89 rdfs:label "空き校舎利用への支障軽減"@ja.
+kg:id_89 rdf:type cls:c_2779.
+cls:c_2779 rdfs:label "支障軽減"@ja.
+kg:id_90 rdfs:label "スポーツ少年団や子ども教室の活動に支障が出ないよう配慮すること"@ja.
+kg:id_90 rdf:type cls:c_2780.
+cls:c_2780 rdfs:label "利用配慮"@ja.
+kg:id_89 prop:countermeasure kg:id_90.
+kg:id_91 rdfs:label "プレミアム商品券の代替経済対策"@ja.
+kg:id_91 rdf:type cls:c_2428.
+cls:c_2428 rdfs:label "経済対策"@ja.
+kg:id_92 rdfs:label "高齢者等生活応援商品券事業として1万円分の商品券を発行すること"@ja.
+kg:id_92 rdf:type cls:c_2781.
+cls:c_2781 rdfs:label "商品券配布"@ja.
+kg:id_91 prop:countermeasure kg:id_92.
+kg:id_93 rdfs:label "地域経済対策"@ja.
+kg:id_93 rdf:type cls:c_2428.
+kg:id_94 rdfs:label "ペイペイ還元キャンペーンの実施"@ja.
+kg:id_94 rdf:type cls:c_2782.
+cls:c_2782 rdfs:label "還元事業"@ja.
+kg:id_93 prop:countermeasure kg:id_94.
+kg:id_95 rdfs:label "地域経済を維持して発展するための経済対策の検討"@ja.
+kg:id_95 rdf:type cls:c_2783.
+cls:c_2783 rdfs:label "対策検討"@ja.
+kg:id_93 prop:countermeasure kg:id_95.
+kg:id_96 rdfs:label "ゲームによる学力低下防止"@ja.
+kg:id_96 rdf:type cls:c_2784.
+cls:c_2784 rdfs:label "学力低下防止"@ja.
+kg:id_97 rdfs:label "ゲーム時間管理表による時間記録"@ja.
+kg:id_97 rdf:type cls:c_2785.
+cls:c_2785 rdfs:label "時間記録"@ja.
+kg:id_96 prop:countermeasure kg:id_97.
+kg:id_98 rdfs:label "メディア時間の適正化"@ja.
+kg:id_98 rdf:type cls:c_2786.
+cls:c_2786 rdfs:label "時間適正化"@ja.
+kg:id_99 rdfs:label "家庭と協力しながらメディア時間のルールを決め記録し評価すること"@ja.
+kg:id_99 rdf:type cls:c_2787.
+cls:c_2787 rdfs:label "ルール管理"@ja.
+kg:id_98 prop:countermeasure kg:id_99.
+kg:id_100 rdfs:label "ゲーム時間を含む自己管理能力の育成"@ja.
+kg:id_100 rdf:type cls:c_2788.
+cls:c_2788 rdfs:label "自己管理育成"@ja.
+kg:id_101 rdfs:label "生徒全員がスケジュール手帳を持ち勉強時間やゲーム時間を自分で決めること"@ja.
+kg:id_101 rdf:type cls:c_2789.
+cls:c_2789 rdfs:label "計画管理"@ja.
+kg:id_100 prop:countermeasure kg:id_101.
+kg:id_102 rdfs:label "ゲーム依存への対応"@ja.
+kg:id_102 rdf:type cls:c_2790.
+cls:c_2790 rdfs:label "依存対応"@ja.
+kg:id_103 rdfs:label "児童相談所での隔離を伴う荒治療"@ja.
+kg:id_103 rdf:type cls:c_2791.
+cls:c_2791 rdfs:label "隔離対応"@ja.
+kg:id_102 prop:countermeasure kg:id_103.
+kg:id_104 rdfs:label "ゲーム依存防止"@ja.
+kg:id_104 rdf:type cls:c_2792.
+cls:c_2792 rdfs:label "依存防止"@ja.
+kg:id_105 rdfs:label "ゲームやスマホを大人になるまで持たせないこと"@ja.
+kg:id_105 rdf:type cls:c_2793.
+cls:c_2793 rdfs:label "所持制限"@ja.
+kg:id_104 prop:countermeasure kg:id_105.
+kg:id_106 rdfs:label "家庭と学校と地域の連携による子育て"@ja.
+kg:id_106 rdf:type cls:c_2794.
+cls:c_2794 rdfs:label "連携育児"@ja.
+kg:id_104 prop:countermeasure kg:id_106.
+kg:id_107 rdfs:label "洋上風力発電計画への町民理解の促進"@ja.
+kg:id_107 rdf:type cls:c_140.
+cls:c_140 rdfs:label "理解促進"@ja.
+kg:id_108 rdfs:label "説明会の開催を山形県や事業者に求めること"@ja.
+kg:id_108 rdf:type cls:c_433.
+cls:c_433 rdfs:label "説明会開催"@ja.
+kg:id_107 prop:countermeasure kg:id_108.
+kg:id_109 rdfs:label "洋上風力発電計画の周知"@ja.
+kg:id_109 rdf:type cls:c_2795.
+cls:c_2795 rdfs:label "計画周知"@ja.
+kg:id_110 rdfs:label "役場掲示板への計画図の掲示"@ja.
+kg:id_110 rdf:type cls:c_2796.
+cls:c_2796 rdfs:label "掲示公開"@ja.
+kg:id_109 prop:countermeasure kg:id_110.
+kg:id_111 rdfs:label "説明会資料の全世帯配布"@ja.
+kg:id_111 rdf:type cls:c_2797.
+cls:c_2797 rdfs:label "資料配布"@ja.
+kg:id_109 prop:countermeasure kg:id_111.
+kg:id_112 rdfs:label "洋上風力発電事業への対応"@ja.
+kg:id_112 rdf:type cls:c_1042.
+cls:c_1042 rdfs:label "事業対応"@ja.
+kg:id_113 rdfs:label "風車の設置基準ガイドラインの作成と公開を山形県に求めること"@ja.
+kg:id_113 rdf:type cls:c_2798.
+cls:c_2798 rdfs:label "基準策定"@ja.
+kg:id_112 prop:countermeasure kg:id_113.
+kg:id_114 rdfs:label "風車設置に伴う地域へのリスクを最小化するための協定締結を公募選定事業者の条件とすること"@ja.
+kg:id_114 rdf:type cls:c_489.
+cls:c_489 rdfs:label "協定締結"@ja.
+kg:id_112 prop:countermeasure kg:id_114.
+kg:id_115 rdfs:label "予防管理の徹底を公募選定事業者に求めること"@ja.
+kg:id_115 rdf:type cls:c_2799.
+cls:c_2799 rdfs:label "予防管理"@ja.
+kg:id_112 prop:countermeasure kg:id_115.
+kg:id_116 rdfs:label "国県事業者に住民への丁寧な説明を求めること"@ja.
+kg:id_116 rdf:type cls:c_2800.
+cls:c_2800 rdfs:label "説明要求"@ja.
+kg:id_112 prop:countermeasure kg:id_116.
+kg:id_117 rdfs:label "遊佐町としてカーボンニュートラル宣言を行うこと"@ja.
+kg:id_117 rdf:type cls:c_2801.
+cls:c_2801 rdfs:label "宣言実施"@ja.
+kg:id_112 prop:countermeasure kg:id_117.
+kg:id_118 rdfs:label "洋上風力発電による地域への恩恵拡大"@ja.
+kg:id_118 rdf:type cls:c_300.
+cls:c_300 rdfs:label "地域還元"@ja.
+kg:id_119 rdfs:label "県内事業者や企業が事業に参画できる条件整備"@ja.
+kg:id_119 rdf:type cls:c_2802.
+cls:c_2802 rdfs:label "参画条件"@ja.
+kg:id_118 prop:countermeasure kg:id_119.
+kg:id_120 rdfs:label "洋上風力発電による地域還元"@ja.
+kg:id_120 rdf:type cls:c_300.
+kg:id_121 rdfs:label "余剰電力を水素として蓄え活用すること"@ja.
+kg:id_121 rdf:type cls:c_2803.
+cls:c_2803 rdfs:label "水素活用"@ja.
+kg:id_120 prop:countermeasure kg:id_121.
+kg:id_122 rdfs:label "ヤングケアラーへの対応"@ja.
+kg:id_122 rdf:type cls:c_2804.
+cls:c_2804 rdfs:label "支援対応"@ja.
+kg:id_123 rdfs:label "要保護児童対策地域協議会で支援内容を協議すること"@ja.
+kg:id_123 rdf:type cls:c_136.
+cls:c_136 rdfs:label "協議実施"@ja.
+kg:id_122 prop:countermeasure kg:id_123.
+kg:id_124 rdfs:label "関係機関との情報共有による見守りと支援"@ja.
+kg:id_124 rdf:type cls:c_423.
+cls:c_423 rdfs:label "情報共有"@ja.
+kg:id_122 prop:countermeasure kg:id_124.
+kg:id_125 rdfs:label "家事援助サービスや介護サービスにつなぐこと"@ja.
+kg:id_125 rdf:type cls:c_2805.
+cls:c_2805 rdfs:label "サービス連携"@ja.
+kg:id_122 prop:countermeasure kg:id_125.
+kg:id_126 rdfs:label "看護師等の人材確保"@ja.
+kg:id_126 rdf:type cls:c_244.
+cls:c_244 rdfs:label "人材確保"@ja.
+kg:id_127 rdfs:label "看護師等奨学金貸付事業の実施"@ja.
+kg:id_127 rdf:type cls:c_2806.
+cls:c_2806 rdfs:label "奨学金事業"@ja.
+kg:id_126 prop:countermeasure kg:id_127.
+kg:id_128 rdfs:label "医師確保"@ja.
+kg:id_128 rdf:type cls:c_244.
+kg:id_129 rdfs:label "山形県医師確保計画や地域医療構想の下で関係機関と協議を重ねること"@ja.
+kg:id_129 rdf:type cls:c_2807.
+cls:c_2807 rdfs:label "関係協議"@ja.
+kg:id_128 prop:countermeasure kg:id_129.
+kg:st_1 rdfs:label "時田町長"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "動画配信など非接触の手段で利用促進すべき"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "動画配信など非接触の手段で利用促進すべき"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "ポストコロナを見据えて事業と組織を見直すべき"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "外部専門家も活用して新たな時代に対応すべき"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "事業と組織の見直しが必要"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "髙橋冠治議員"@ja.
+kg:st_2 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_6 prop:content "異常気象が当たり前になっていると懸念"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "異常気象が常態化しているとの認識"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "那須正幸議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+kg:op_8 prop:content "担当者の熱意が利用増加につながっている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+kg:op_9 prop:content "財源確保とコストバランスを慎重に判断すべき"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "感染防止の観点から慎重に判断すべき"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "購入負担の発生も考慮すべき"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "紙の商品券はコストバランスを慎重に判断すべき"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "実施体制の確保が課題"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "枚数が増えると実施困難も想定される"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "地元業者への波及効果を慎重に判断すべき"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "斎藤弥志夫議員"@ja.
+kg:st_4 rdf:type cls:st_9.
+kg:op_16 prop:content "ゲームは1時間までの意識づけが必要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "ゲームは1時間までに抑えるべき"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:op_18 prop:content "長時間ゲームは明らかに危険"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_4.
+kg:op_19 prop:content "長時間ゲームは進学にも悪影響を及ぼす"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "那須教育長"@ja.
+kg:st_5 rdf:type cls:st_74.
+cls:st_74 rdfs:label "教育機関"@ja.
+kg:op_20 prop:content "ゲームやスマホは大人が持たせない判断も必要"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_5.
+kg:op_21 prop:content "家庭の教育力で毅然と対応すべき"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_5.
+kg:op_22 prop:content "ゲームはアルコール中毒のような症状につながり得る"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_5.
+kg:op_23 prop:content "カーボンゼロ実現につながる"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_1.
+kg:op_24 prop:content "持続可能な地域づくりの役割を担う"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_1.
+kg:st_6 rdfs:label "阿部満吉議員"@ja.
+kg:st_6 rdf:type cls:st_9.
+kg:op_25 prop:content "地元に恩恵のある計画でなければ町民は納得しない"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_6.
+kg:op_26 prop:content "地元雇用や地域還元が必要"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "畠中地域生活課長"@ja.
+kg:st_7 rdf:type cls:st_19.
+cls:st_19 rdfs:label "自治体職員"@ja.
+kg:op_27 prop:content "風況が良く、7メートル以上の風速が適している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_7.
+kg:op_28 prop:content "海が遠浅で工事しやすい"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_7.
+kg:op_29 prop:content "町民への情報周知が不足している"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_6.
+kg:op_30 prop:content "現実に即したイメージ提示が必要"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_6.
+kg:st_8 rdfs:label "齋藤武議員"@ja.
+kg:st_8 rdf:type cls:st_9.
+kg:op_31 prop:content "町民の声を県や事業希望者に伝えるべき"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_8.
+kg:op_32 prop:content "議論を引き返せる時点を通り過ぎる危険がある"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_8.
+kg:op_33 prop:content "道のりや周辺風景も動画で示したほうがよい"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "非接触で有効な手段と考える"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_1.
+kg:op_35 prop:content "所有者の承諾が得られれば配信可能"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_1.
+kg:op_36 prop:content "借り上げ期間終了後も視野に入れて検討する"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_1.
+kg:op_37 prop:content "加工場から多くの商品が誕生するよう支援したい"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_1.
+kg:op_38 prop:content "ポストコロナを見据えて推進する"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_1.
+kg:op_39 prop:content "共同宣言を生かして特産品開発を進める"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_1.
+kg:op_40 prop:content "販路開拓を進める"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_1.
+kg:st_9 rdfs:label "渡会産業課長"@ja.
+kg:st_9 rdf:type cls:st_19.
+kg:op_41 prop:content "レシピや生産者情報も加えながら販路拡大につなげたい"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_9.
+kg:op_42 prop:content "ポストコロナを見据えて見直す"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_1.
+kg:op_43 prop:content "前例にとらわれず新時代に対応する"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_1.
+kg:op_44 prop:content "恒常的な予算も必要"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_3.
+kg:op_45 prop:content "無料配布商品券だけでなく高額プレミアム販売も検討すべき"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_4.
+kg:op_46 prop:content "年度内に再度ペイペイを活用した支援を行いたい"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_9.
+kg:op_47 prop:content "財源確保に努めながら今後も検討する"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "児童生徒全員に管理表を配って記入させるべき"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_4.
+kg:op_49 prop:content "自己管理能力を育てる効果的な取組の一つ"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "小学校で期間を区切って取り組んでいる"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "小中連携して自己管理能力を育成する"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "いよいよというときは親から離す対応も必要"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_5.
+kg:op_53 prop:content "持たせないことが一番の対策"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_5.
+kg:op_54 prop:content "家庭の教育力が重要"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_5.
+kg:op_55 prop:content "町民の疑問や不安が解消されるよう求めていく"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_1.
+kg:op_56 prop:content "説明会後すぐに計画図を掲示した"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_7.
+kg:op_57 prop:content "1月1日号の広報に併せて全世帯配布する"@ja.
+kg:op_57 rdf:type cls:opinion.
+kg:op_57 prop:speaker kg:st_7.
+kg:op_58 prop:content "様々な課題をクリアするために必要"@ja.
+kg:op_58 rdf:type cls:opinion.
+kg:op_58 prop:speaker kg:st_1.
+kg:op_59 prop:content "リスクはゼロではないので最小化する協定が必要"@ja.
+kg:op_59 rdf:type cls:opinion.
+kg:op_59 prop:speaker kg:st_1.
+kg:op_60 prop:content "あらかじめ防ぐ考えを重視する"@ja.
+kg:op_60 rdf:type cls:opinion.
+kg:op_60 prop:speaker kg:st_1.
+kg:op_61 prop:content "住民への丁寧な説明を求めていく"@ja.
+kg:op_61 rdf:type cls:opinion.
+kg:op_61 prop:speaker kg:st_1.
+kg:op_62 prop:content "持続可能な未来づくりと地球温暖化防止に向けて宣言したい"@ja.
+kg:op_62 rdf:type cls:opinion.
+kg:op_62 prop:speaker kg:st_1.
+kg:op_63 prop:content "中央資本だけが利益を持っていく形では駄目"@ja.
+kg:op_63 rdf:type cls:opinion.
+kg:op_63 prop:speaker kg:st_1.
+kg:op_64 prop:content "地域に働き場と最先端技術の受け皿をつくる可能性がある"@ja.
+kg:op_64 rdf:type cls:opinion.
+kg:op_64 prop:speaker kg:st_1.
+kg:op_65 prop:content "関係機関で共通認識を図り支援方法を協議する"@ja.
+kg:op_65 rdf:type cls:opinion.
+kg:op_65 prop:speaker kg:st_1.
+kg:op_66 prop:content "数名の可能性がある児童生徒について見守りと支援を行っている"@ja.
+kg:op_66 rdf:type cls:opinion.
+kg:op_66 prop:speaker kg:st_1.
+kg:op_67 prop:content "必要に応じて多様な機関と連携して支援する"@ja.
+kg:op_67 rdf:type cls:opinion.
+kg:op_67 prop:speaker kg:st_1.
+kg:st_10 rdfs:label "池田健康福祉課長"@ja.
+kg:st_10 rdf:type cls:st_19.
+kg:op_68 prop:content "必要があれば対象拡大も検討したい"@ja.
+kg:op_68 rdf:type cls:opinion.
+kg:op_68 prop:speaker kg:st_10.
+kg:op_69 prop:content "今後も医師確保に引き続き取り組む"@ja.
+kg:op_69 rdf:type cls:opinion.
+kg:op_69 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "これは、新型コロナウイルス感染症拡大による移動の制限、感染が拡大する地域にお住まいの方に利用の自粛をお願いしたためです"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "感染が拡大する地域にお住まいの方に利用の自粛をお願いしたためです"@ja.
+<< kg:id_4 prop:cause kg:id_5 >>
+    prop:text-txt_contents "10月以降は、感染拡大も落ち着いており、移動制限も緩和したことから、お試し住宅の利用に関する問合せも少し増えてきている状況であります"@ja.
+<< kg:id_4 prop:cause kg:id_6 >>
+    prop:text-txt_contents "10月以降は、感染拡大も落ち着いており、移動制限も緩和したことから、お試し住宅の利用に関する問合せも少し増えてきている状況であります"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:text-txt_contents "今年度に入り布倉集落に整備したお試し住宅につきましては、所有者の申入れから今年11月に賃貸契約を解除し"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "昨年度からコロナ禍での遊佐ノ市の事業が中止となり"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "遊佐を出られない状態で遊佐ブランドを推進するという困難な課題に直面し"@ja.
+<< kg:id_13 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "現在も事業の縮小を余儀なくされております"@ja.
+<< kg:id_15 prop:cause kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "ハタハタが捕れなくて、ハタハタを揚げれないというような、そんな状況であります"@ja.
+<< kg:id_17 prop:cause kg:id_18 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これを異常気象と言っていいのか、今は異常気象が当たり前の世の中になっております"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "令和３年度からは、加工品の試作や販売目的での開発が増え、町内外から多くの利用をいただいております"@ja.
+<< kg:id_21 prop:cause kg:id_22 >>
+    prop:text-txt_contents "建設時に国から補助金を受けていることや未償還分の起債をどうするかなどの課題も残っております"@ja.
+<< kg:id_21 prop:cause kg:id_23 >>
+    prop:text-txt_contents "未償還分の起債をどうするかなどの課題も残っております"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:text-txt_contents "学校施設として建設しているので、施設の形態が変わると補助金の返還や、起債については繰上償還が条件となる場合もあります"@ja.
+<< kg:id_26 prop:cause kg:id_25 >>
+    prop:text-txt_contents "学校施設として建設しているので、施設の形態が変わると補助金の返還や、起債については繰上償還が条件となる場合もあります"@ja.
+<< kg:id_27 prop:cause kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "高いプレミアム率は、町民の消費喚起にはなるとはいえ、必要な財源も比例して大きくなります"@ja.
+<< kg:id_27 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "販売方法の課題としては、コロナ禍であるのに売場に人が殺到して密になりやすいこと"@ja.
+<< kg:id_27 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "町民に購入負担が生じてしまうことなどが挙げられております"@ja.
+<< kg:id_31 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "商品券の印刷及び販売と換金に多くの経費と労力がかかることから"@ja.
+<< kg:id_31 prop:cause kg:id_33 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "他市町では金融機関が商品券の換金業務を請け負わない事例も出てきており"@ja.
+<< kg:id_31 prop:cause kg:id_34 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "商品券の枚数が増えると事業の実施が困難になることも今後想定されております"@ja.
+<< kg:id_35 prop:cause kg:id_36 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "現行のプレミアム付き商品券、大手事業者が含まれるため、町の中小事業者への経済効果が弱まる傾向もあると言われております"@ja.
+<< kg:id_37 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "ゲームのやり過ぎによる学力低下と進学率の低下は防がなければなりません"@ja.
+<< kg:id_39 prop:cause kg:id_38 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "ゲームのやり過ぎによる学力低下と進学率の低下は防がなければなりません"@ja.
+<< kg:id_40 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "１日に３時間、４時間となると明らかに学力低下に直結しているわけで"@ja.
+<< kg:id_42 prop:cause kg:id_41 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "進学にも悪影響を及ぼします"@ja.
+<< kg:id_43 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "そのうちに夜も昼もなく、ゲームに没頭するようになりまして、５年生になる頃にはついに学校に行けなくなりました"@ja.
+<< kg:id_45 prop:cause kg:id_46 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "ゲームを取り上げます。お母さんに暴力を振るうようになりました"@ja.
+<< kg:id_47 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "昼夜逆転、学校にも行かない。とんでもない状況でございました"@ja.
+<< kg:id_49 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "再生可能エネルギーの主力電源化による地球温暖化対策"@ja.
+<< kg:id_49 prop:cause kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "エネルギー自給率の向上"@ja.
+<< kg:id_49 prop:cause kg:id_52 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "県内産業の振興及び地域活性化を図る県のエネルギー戦略があり"@ja.
+<< kg:id_49 prop:cause kg:id_53 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "県内産業の振興及び地域活性化を図る県のエネルギー戦略があり"@ja.
+<< kg:id_54 prop:cause kg:id_55 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "庄内沖は恵まれた風況にあるなど大きな可能性があることを前提に"@ja.
+<< kg:id_54 prop:cause kg:id_56 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "海が遠浅で、事業入るときも工事がしやすいというようなことで遊佐沖、選定されたような経過がございます"@ja.
+<< kg:id_57 prop:cause kg:id_58 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "町民に対して情報がうまく伝わっておらず、計画の内容がどのようなものかの不安が大きかったと思います"@ja.
+<< kg:id_59 prop:cause kg:id_60 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "現実とかけ離れた画像に不信感を訴える方も多くおられたようです"@ja.
+<< kg:id_61 prop:cause kg:id_62 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "町民からの疑問や不安に県はほとんど対応していない状況です"@ja.
+<< kg:id_63 prop:cause kg:id_64 >>
+    prop:stateBy kg:st_8;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "町民が蚊帳の外で法定協議会が形式的に開催されれば、町民にとって議論を引き返せる時点をいつの間にか通り過ぎてしまうことが危惧されます"@ja.
+<< kg:id_65 prop:countermeasure kg:id_66 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "議員からご提案いただいた町内の風景やお試し住宅の紹介動画の配信は人の接触を最小限にし、かつ現代のソーシャルネットワークサービスを含むインターネットの普及に対応した有効な手段と考えます"@ja.
+<< kg:id_67 prop:countermeasure kg:id_68 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "紹介の承諾をいただければ、ＩＪＵターン促進協議会ホームページや動画配信サイトのユーチューブ、遊佐町公式チャンネル等を活用し、配信することも可能であります"@ja.
+<< kg:id_69 prop:countermeasure kg:id_70 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "利用者ニーズを把握し、現在のお試し住宅の10年間の借り上げ期間終了後の状況も視野に入れ、物件整備も含めた事業計画を検討しているところであります"@ja.
+<< kg:id_71 prop:countermeasure kg:id_72 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "地場産品を使った商品が加工場から多く誕生するよう、適切な衛生管理に努めながら支援していきたいと考えております"@ja.
+<< kg:id_73 prop:countermeasure kg:id_74 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "加工場を軸とした６次産業化の推進や"@ja.
+<< kg:id_73 prop:countermeasure kg:id_75 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "生活クラブ生協や庄内みどり農協との共同宣言を生かした特産品開発"@ja.
+<< kg:id_73 prop:countermeasure kg:id_76 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "マーケティングを基にした販路開拓"@ja.
+<< kg:id_73 prop:countermeasure kg:id_77 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "ＥＣサイトの運営等、ポストコロナを見据えて事業と組織の見直しを図ってまいります"@ja.
+<< kg:id_73 prop:countermeasure kg:id_78 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "ポストコロナを見据えて事業と組織の見直しを図ってまいります"@ja.
+<< kg:id_79 prop:countermeasure kg:id_80 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "外部から専門家を招き、町が築いてきたビジネスネットワークを活用しながら、前例にとらわれない新たな時代に対応し"@ja.
+<< kg:id_81 prop:countermeasure kg:id_82 >>
+    prop:text-txt_contents "これまで同様に安心して利用できるよう、運用体制について検討しているところであります"@ja.
+<< kg:id_83 prop:countermeasure kg:id_84 >>
+    prop:text-txt_contents "町としての利活用方針案を策定し、検討委員会を開催し、議論していきたいと考えております"@ja.
+<< kg:id_85 prop:countermeasure kg:id_86 >>
+    prop:text-txt_contents "国、県に照会しながら活用へ向けた調整を進める必要があると考えております"@ja.
+<< kg:id_87 prop:countermeasure kg:id_88 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "本格的な活用までに時間がかかる場合は、可能な範囲で暫定利用なども検討しながら"@ja.
+<< kg:id_89 prop:countermeasure kg:id_90 >>
+    prop:text-txt_contents "現在使用しているスポーツ少年団や子ども教室の活動になるべく支障ができないよう配慮していきたいと思います"@ja.
+<< kg:id_91 prop:countermeasure kg:id_92 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "町では10月の臨時会で高齢者等生活応援商品券事業として4,200万円を補正予算計上し、議決をいただきました。12月に高齢者がいる世帯へ１万円分の商品券を発行"@ja.
+<< kg:id_93 prop:countermeasure kg:id_94 >>
+    prop:stateBy kg:st_9;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "８月に実施したキャッシュレス決済サービス導入促進事業では、ペイペイ還元キャンペーンにより、町の中小事業者に大きな経済波及効果がありました"@ja.
+<< kg:id_93 prop:countermeasure kg:id_95 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "これからも経済対策を検討してまいりたいと、このように考えております"@ja.
+<< kg:id_96 prop:countermeasure kg:id_97 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_48;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "児童生徒の全員にゲーム時間管理表を配って、ゲームをやった時間を記入させることもゲームによる学力低下と進学率低下を防ぐ対策であると考えます"@ja.
+<< kg:id_98 prop:countermeasure kg:id_99 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "小学校では、期間を区切ってではありますが、家庭と協力しながらメディア時間のルールを決め、時間を記録し、評価する取組を行っております"@ja.
+<< kg:id_100 prop:countermeasure kg:id_101 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "中学校では、自分で計画を立てて実行することを大切にしており、生徒全員がスケジュール手帳を持ち、勉強時間やテレビゲームの時間等を自分で決めております"@ja.
+<< kg:id_102 prop:countermeasure kg:id_103 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "鶴岡にあります児童相談所に10日以上缶詰め。ゲームはもちろん、親とも地域とも遮断。そのぐらいの荒治療をやりました"@ja.
+<< kg:id_104 prop:countermeasure kg:id_105 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "うちではゲーム、スマホは大人になるまで持たせないと。こういう状況を確認しているからであります"@ja.
+<< kg:id_104 prop:countermeasure kg:id_106 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "家庭の連携プレー、地域の連携プレー、ＰＴＡ、学校を巻き込んで"@ja.
+<< kg:id_107 prop:countermeasure kg:id_108 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "今後もあらゆる機会を利用し、町民の疑問、不安が解消されるよう説明会の開催等、山形県や事業者には求めていきたいと考えております"@ja.
+<< kg:id_109 prop:countermeasure kg:id_110 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "議場の前の掲示板のところへ貼らせていただいております"@ja.
+<< kg:id_109 prop:countermeasure kg:id_111 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_57;
+    prop:text-txt_contents "１月１日号の広報に併せまして全世帯のほうへ皆様へ配布させていただきたい"@ja.
+<< kg:id_112 prop:countermeasure kg:id_113 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_58;
+    prop:text-txt_contents "風車の騒音、影の影響などから様々な課題をクリアするための風車の設置基準、ガイドラインの作成と公開を山形県に求めていこうと思っています"@ja.
+<< kg:id_112 prop:countermeasure kg:id_114 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_59;
+    prop:text-txt_contents "風車設置に伴う地域へのリスクを最小化するための協定の締結を公募選定事業者の条件とすることを法定協議会に求めていきたいと思っています"@ja.
+<< kg:id_112 prop:countermeasure kg:id_115 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_60;
+    prop:text-txt_contents "予防管理の徹底を公募選定業者に求めたいと思っております"@ja.
+<< kg:id_112 prop:countermeasure kg:id_116 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_61;
+    prop:text-txt_contents "住民への丁寧な説明を国、県、公募参加意向のある事業者へ求めていきたいと思っております"@ja.
+<< kg:id_112 prop:countermeasure kg:id_117 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_62;
+    prop:text-txt_contents "遊佐町においても持続可能な未来づくりと地球温暖化防止に向け、カーボンニュートラルの宣言をしていきたいと考えております"@ja.
+<< kg:id_118 prop:countermeasure kg:id_119 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_63;
+    prop:text-txt_contents "山形県内の事業所とか企業がそういう事業にも一緒に参画できるような条件等、県からつくってもらえないでしょうかねという話をよくしているのです"@ja.
+<< kg:id_120 prop:countermeasure kg:id_121 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_64;
+    prop:text-txt_contents "余った電力は水素にして蓄えておくと、そしてその水素を活用して発電までつなげていくというようなシステム"@ja.
+<< kg:id_122 prop:countermeasure kg:id_123 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_65;
+    prop:text-txt_contents "平成18年度から要保護児童対策地域協議会を設置し、児童虐待などの要保護児童等の支援内容について協議を行っております"@ja.
+<< kg:id_122 prop:countermeasure kg:id_124 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_66;
+    prop:text-txt_contents "関係機関と情報を共有しながら、それぞれの機関において見守りと支援を行っているところであります"@ja.
+<< kg:id_122 prop:countermeasure kg:id_125 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_67;
+    prop:text-txt_contents "必要に応じて家事援助サービスや介護サービスにつなぐなど、多様な機関と連携しながら支援してまいります"@ja.
+<< kg:id_126 prop:countermeasure kg:id_127 >>
+    prop:stateBy kg:st_10;
+    prop:relatedOpinion kg:op_68;
+    prop:text-txt_contents "平成25年度より地域医療安定化対策支援事業、看護師等奨学金貸付事業を町単独で実施いたしております"@ja.
+<< kg:id_128 prop:countermeasure kg:id_129 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_69;
+    prop:text-txt_contents "山形県医師確保計画、地域医療構想の推進の下、関係機関と協議を重ねながら、今後も医師確保に引き続き取り組んでいきたい"@ja.
+}

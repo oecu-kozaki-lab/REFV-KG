@@ -1,0 +1,392 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00056> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市の人口減少"@ja.
+kg:id_1 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "出生数が少なく死亡者数が多いこと"@ja.
+kg:id_2 rdf:type cls:c_897.
+cls:c_897 rdfs:label "自然減"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "令和10年には人口が8万人台になる推定"@ja.
+kg:id_3 rdf:type cls:c_1489.
+cls:c_1489 rdfs:label "人口減少推計"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "人口減少を抑え一人一人の幸せを創造する施策を進める"@ja.
+kg:id_4 rdf:type cls:c_1490.
+cls:c_1490 rdfs:label "人口減少対策"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "地域経済の停滞"@ja.
+kg:id_5 rdf:type cls:c_1491.
+cls:c_1491 rdfs:label "地域経済停滞"@ja.
+kg:id_6 rdfs:label "地域が成り立たなくなる"@ja.
+kg:id_6 rdf:type cls:c_1492.
+cls:c_1492 rdfs:label "地域維持困難"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "地球温暖化"@ja.
+kg:id_7 rdf:type cls:c_587.
+cls:c_587 rdfs:label "地球温暖化"@ja.
+kg:id_8 rdfs:label "洋上風力発電を実現する"@ja.
+kg:id_8 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "2050年までのカーボンニュートラル目標未達"@ja.
+kg:id_9 rdf:type cls:c_1493.
+cls:c_1493 rdfs:label "目標未達"@ja.
+kg:id_10 rdfs:label "太陽光と風力の導入量が不足すること"@ja.
+kg:id_10 rdf:type cls:c_1494.
+cls:c_1494 rdfs:label "再生可能エネルギー不足"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "国のエネルギー政策"@ja.
+kg:id_11 rdf:type cls:c_808.
+cls:c_808 rdfs:label "エネルギー政策"@ja.
+kg:id_12 rdfs:label "再生可能エネルギーに最優先で取り組み最大限導入を促す"@ja.
+kg:id_12 rdf:type cls:c_44.
+kg:id_11 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "洋上風力発電の導入拡大"@ja.
+kg:id_13 rdf:type cls:c_44.
+kg:id_14 rdfs:label "2030年に10ギガワットを目標とする"@ja.
+kg:id_14 rdf:type cls:c_1495.
+cls:c_1495 rdfs:label "導入目標"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "2040年に30から45ギガワットを目標とする"@ja.
+kg:id_15 rdf:type cls:c_1495.
+kg:id_13 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "排他的経済水域も視野に加速していく"@ja.
+kg:id_16 rdf:type cls:c_1496.
+cls:c_1496 rdfs:label "導入促進"@ja.
+kg:id_13 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "遊佐町沖洋上風力発電事業の実施"@ja.
+kg:id_17 rdf:type cls:c_781.
+cls:c_781 rdfs:label "洋上風力発電事業"@ja.
+kg:id_18 rdfs:label "風車建設等を行う拠点港湾を整備する"@ja.
+kg:id_18 rdf:type cls:c_125.
+cls:c_125 rdfs:label "港湾整備"@ja.
+kg:id_17 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "酒田港の基地港湾化"@ja.
+kg:id_19 rdf:type cls:c_1342.
+cls:c_1342 rdfs:label "基地港湾化"@ja.
+kg:id_20 rdfs:label "遊佐町沖洋上風力発電事業の海域に近く広大な土地があること"@ja.
+kg:id_20 rdf:type cls:c_1497.
+cls:c_1497 rdfs:label "立地条件"@ja.
+kg:id_19 prop:cause kg:id_20.
+kg:id_21 rdfs:label "風車部材の保管や組立等への対応が可能になる"@ja.
+kg:id_21 rdf:type cls:c_1022.
+cls:c_1022 rdfs:label "港湾機能強化"@ja.
+kg:id_19 prop:effect kg:id_21.
+kg:id_22 rdfs:label "洋上風力発電事業を契機とした新たな産業形成が期待される"@ja.
+kg:id_22 rdf:type cls:c_1417.
+cls:c_1417 rdfs:label "産業形成"@ja.
+kg:id_19 prop:effect kg:id_22.
+kg:id_23 rdfs:label "港湾計画の変更や中央要望を行う"@ja.
+kg:id_23 rdf:type cls:c_174.
+cls:c_174 rdfs:label "要望活動"@ja.
+kg:id_19 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "酒田港の拠点基地港湾整備スケジュールが示せないこと"@ja.
+kg:id_24 rdf:type cls:c_1498.
+cls:c_1498 rdfs:label "整備計画不明"@ja.
+kg:id_25 rdfs:label "公募の開始時期や基地港湾の場所と利用開始時期が公表されていないこと"@ja.
+kg:id_25 rdf:type cls:c_1499.
+cls:c_1499 rdfs:label "情報未公表"@ja.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "遊佐町沖洋上風力発電事業"@ja.
+kg:id_26 rdf:type cls:c_781.
+kg:id_27 rdfs:label "促進区域指定から8年から10年後に運転開始と想定される"@ja.
+kg:id_27 rdf:type cls:c_1500.
+cls:c_1500 rdfs:label "運転開始時期"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "2033年頃に運転開始となる見込み"@ja.
+kg:id_28 rdf:type cls:c_1500.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "酒田市沖洋上風力発電事業"@ja.
+kg:id_29 rdf:type cls:c_781.
+kg:id_30 rdfs:label "地域住民向け説明会を開催する"@ja.
+kg:id_30 rdf:type cls:c_433.
+cls:c_433 rdfs:label "説明会開催"@ja.
+kg:id_29 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "法定協議会で具体的な議論を進める"@ja.
+kg:id_31 rdf:type cls:c_1501.
+cls:c_1501 rdfs:label "協議推進"@ja.
+kg:id_29 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "洋上風力発電の経済波及効果試算が現状に合わないこと"@ja.
+kg:id_32 rdf:type cls:c_1502.
+cls:c_1502 rdfs:label "経済波及効果試算不整合"@ja.
+kg:id_33 rdfs:label "過去の想定した風車サイズや発電規模が現在と大きく異なること"@ja.
+kg:id_33 rdf:type cls:c_1503.
+cls:c_1503 rdfs:label "前提変化"@ja.
+kg:id_32 prop:cause kg:id_33.
+kg:id_34 rdfs:label "改めて試算する"@ja.
+kg:id_34 rdf:type cls:c_1504.
+cls:c_1504 rdfs:label "再試算"@ja.
+kg:id_32 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "洋上風力発電事業の推進"@ja.
+kg:id_35 rdf:type cls:c_1505.
+cls:c_1505 rdfs:label "洋上風力発電事業推進"@ja.
+kg:id_36 rdfs:label "山形県と連携して地域の理解醸成と意見の取りまとめを図る"@ja.
+kg:id_36 rdf:type cls:c_1506.
+cls:c_1506 rdfs:label "理解醸成"@ja.
+kg:id_35 prop:countermeasure kg:id_36.
+kg:id_37 rdfs:label "酒田市の洋上風力発電対応"@ja.
+kg:id_37 rdf:type cls:c_1507.
+cls:c_1507 rdfs:label "洋上風力発電対応"@ja.
+kg:id_38 rdfs:label "商工港湾課を中心に関係課が連携して取り組む"@ja.
+kg:id_38 rdf:type cls:c_1508.
+cls:c_1508 rdfs:label "庁内連携"@ja.
+kg:id_37 prop:countermeasure kg:id_38.
+kg:id_39 rdfs:label "洋上風力発電事業の開始地域"@ja.
+kg:id_39 rdf:type cls:c_1509.
+cls:c_1509 rdfs:label "事業実施地域"@ja.
+kg:id_40 rdfs:label "急激な交流人口の増加で宿泊施設が不足する"@ja.
+kg:id_40 rdf:type cls:c_1510.
+cls:c_1510 rdfs:label "宿泊施設不足"@ja.
+kg:id_39 prop:effect kg:id_40.
+kg:id_41 rdfs:label "酒田市の宿泊施設不足"@ja.
+kg:id_41 rdf:type cls:c_1510.
+kg:id_42 rdfs:label "宿が取りにくい状況にある"@ja.
+kg:id_42 rdf:type cls:c_1511.
+cls:c_1511 rdfs:label "宿泊困難"@ja.
+kg:id_41 prop:effect kg:id_42.
+kg:id_43 rdfs:label "優良なホテル建設案件があれば連携や支援を行う"@ja.
+kg:id_43 rdf:type cls:c_1512.
+cls:c_1512 rdfs:label "建設支援"@ja.
+kg:id_41 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "企業誘致の促進"@ja.
+kg:id_44 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_45 rdfs:label "再生可能エネルギーを地域で利用する仕組みを検討する"@ja.
+kg:id_45 rdf:type cls:c_1513.
+cls:c_1513 rdfs:label "再生可能エネルギー利用"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "RE100産業団地を呼び水とした企業誘致を検討する"@ja.
+kg:id_46 rdf:type cls:c_1514.
+cls:c_1514 rdfs:label "産業団地整備"@ja.
+kg:id_44 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "工業用地の確保やインフラ整備に課題があること"@ja.
+kg:id_47 rdf:type cls:c_1515.
+cls:c_1515 rdfs:label "用地整備課題"@ja.
+kg:id_44 prop:cause kg:id_47.
+kg:id_48 rdfs:label "酒田港が基地港湾に選ばれない可能性"@ja.
+kg:id_48 rdf:type cls:c_1516.
+cls:c_1516 rdfs:label "基地港湾不選定可能性"@ja.
+kg:id_49 rdfs:label "酒田市沖の進捗が遅れること"@ja.
+kg:id_49 rdf:type cls:c_1517.
+cls:c_1517 rdfs:label "事業進捗遅延"@ja.
+kg:id_48 prop:cause kg:id_49.
+kg:id_50 rdfs:label "国土交通大臣に要望活動を行う"@ja.
+kg:id_50 rdf:type cls:c_174.
+kg:id_19 prop:countermeasure kg:id_50.
+kg:id_51 rdfs:label "国土交通大臣から前向きに検討する旨のコメントを得た"@ja.
+kg:id_51 rdf:type cls:c_1518.
+cls:c_1518 rdfs:label "前向き評価"@ja.
+kg:id_19 prop:effect kg:id_51.
+kg:st_1 rdfs:label "後藤仁議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "人口減少を抑える施策をこの4年間で着実に進めるべきだ"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "人口8万人台に向かう強い危機感がある"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "市長の人口減少対策を4年間できっちり進めてほしい"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "経済活性化がなければ地域は維持できない"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "洋上風力発電は待ったなしで実現すべき事業だ"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "矢口明子市長"@ja.
+kg:st_2 rdf:type cls:st_27.
+cls:st_27 rdfs:label "市長"@ja.
+kg:op_6 prop:content "再生可能エネルギーの主力電源化を徹底し最大限の導入を進める方針だ"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "国の動きを注視しながら酒田市沖への導入議論を進めたい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "基地港湾化は新たな産業形成につながると期待している"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "酒田港の機能強化に向け県と国へ要望してきた"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "市民の理解醸成を図りながら導入議論を進めたい"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "法定協議会の中で具体的な議論が展開されると考えている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:op_12 prop:content "秋田県の事例も参考に経済波及効果の再試算を進めている"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_2.
+kg:op_13 prop:content "県と連携して地域理解と意見集約を進めたい"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_2.
+kg:op_14 prop:content "商工港湾課を中心に庁内連携で対応する体制を取っている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "建設が進む地域では宿泊施設不足が起きる事例がある"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "地方創生に資するホテル建設には連携や支援を行いたい"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "地域で再エネを利用する仕組みが企業誘致につながる"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "RE100産業団地の可能性も含め県と連携して検討したい"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_2.
+kg:op_19 prop:content "酒田市沖の遅れを理由に酒田港が外されないよう体制を整えるべきだ"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_3 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_20 prop:content "県や関係団体とともに基地港湾の要望活動を行っている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:op_21 prop:content "国から前向きな反応を得ている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "令和３年、令和４年の出生数は481人、458人、今年は、予定ではぎりぎり400人になるか、死亡者数は1,600人前後であります。実増減数は、1,400人前後の減であります。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "1,400人が４年間で減ると推定するならば、5,600人、令和10年には、人口が８万人台になるという座標軸が出てまいります。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "矢口市長のテーマ、人口減少を抑え一人一人の幸せを創造するという施策は、この４年間できっちりとやっていただく"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "まず、経済が活性化しなければ地域は成り立ちません。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "洋上風力発電は、国策というか、地球温暖化を考えれば待ったなしで実現する事業だと考えます。"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:text-txt_contents "その目標を達成するためには、太陽光は20倍、風力は11倍増加させないとその目標には達成しないという計画であります。"@ja.
+<< kg:id_11 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "2030年という早期から再生可能エネルギーの主力電源化を徹底し、再生可能エネルギーに最優先の原則で取り組み、国民負担の抑制と地域との共生を図りながら、最大限の導入を促すとされております。"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:text-txt_contents "2030年に領海内の着床式洋上風力発電と浮体式洋上風力発電を合わせた10ギガワットを目標とし"@ja.
+<< kg:id_13 prop:countermeasure kg:id_15 >>
+    prop:text-txt_contents "2040年には、領海内の着床式洋上風力発電と領海内及び排他的経済水域の浮体式洋上風力発電を合わせて30から45ギガワットという目標を達成していくためには"@ja.
+<< kg:id_13 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "世界第６位の面積を誇る我が国の排他的経済水域も視野に加速していく必要があるとされております。このような国の動きも注視しながら、酒田市沖の洋上風力発電導入を見据えた議論を進めていきたい"@ja.
+<< kg:id_17 prop:countermeasure kg:id_18 >>
+    prop:text-txt_contents "今後、風車建設等を行う拠点港湾が必要となってまいります。"@ja.
+<< kg:id_19 prop:cause kg:id_20 >>
+    prop:text-txt_contents "酒田港は、遊佐町沖洋上風力発電事業の海域に近く、また、約40ヘクタール以上の広大な土地があるため"@ja.
+<< kg:id_19 prop:effect kg:id_21 >>
+    prop:text-txt_contents "大型化が進む風車部材の保管や組立等への対応"@ja.
+<< kg:id_19 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "さらには洋上風力発電事業の導入を契機とした新たな産業形成等も期待されております。"@ja.
+<< kg:id_19 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "これまで山形県及び国に対して、基地港湾を誘致する取組、具体的には港湾計画の変更、あるいは中央要望等を行ってまいりました。"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:text-txt_contents "公募の開始時期や公募占用指針に盛り込まれる基地港湾の場所、その利用開始時期がいまだ公表されておらず"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:text-txt_contents "洋上風力発電が運転を開始する時期の目安は、当該海域が促進区域に指定された年を起点として...８年から10年後に運転開始がなされると想定されております。"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:text-txt_contents "その目安から遊佐町沖の風車建設時期までに酒田港が基地港湾として機能強化を図られたと想定した場合には、運転開始は2033年頃になるのではないかと思われます。"@ja.
+<< kg:id_29 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "2024年２月頃に開催を検討しております、地域住民向けの説明会を含め、洋上風力発電事業の導入に向けた議論がこれから始まります。"@ja.
+<< kg:id_29 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "2024年３月に開催を検討する再エネ海域利用法に基づく法定協議会の中で具体的な議論が展開されていくものと考えております"@ja.
+<< kg:id_32 prop:cause kg:id_33 >>
+    prop:text-txt_contents "当時想定した風車のサイズや発電規模等に対して、世界の潮流が大きく変化したため、現在の遊佐町沖や酒田市沖で想定されているものと大きくかけ離れておりまして"@ja.
+<< kg:id_32 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "改めて試算する必要が生じております。そのため、山形県では...秋田県の事例を参考にしながら、試算の検討を進めていると伺っております。"@ja.
+<< kg:id_35 prop:countermeasure kg:id_36 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "引き続き、地域の理解醸成と意見の取りまとめが図られるよう山形県と連携していきたいと考えております。"@ja.
+<< kg:id_37 prop:countermeasure kg:id_38 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "酒田市役所の体制としましては、商工港湾課を中心に関係する課が連携して取り組む、という体制をとっております。"@ja.
+<< kg:id_39 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "洋上風車等の建設が進む地域で、急激な交流人口の増加により、宿泊施設が不足する事例があると聞いております。"@ja.
+<< kg:id_41 prop:effect kg:id_42 >>
+    prop:text-txt_contents "本市においては、以前より宿泊施設が不足しており、宿が取りにくい状況にあります。"@ja.
+<< kg:id_41 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "優良な案件があれば、連携や支援を行っていきたいと考えております。"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "本地域で発電される再生可能エネルギーを地域で利用する仕組みを検討することにより、再生可能エネルギー利用を目的とした優良な企業の誘致につながる例があると認識しております。"@ja.
+<< kg:id_44 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "先進地では、企業の事業活動で使用する電力を洋上風力発電等で発電した再生可能エネルギー100％の電気で賄い、環境価値を魅力としたＲＥ100産業団地を呼び水とした企業誘致が検討されております。"@ja.
+<< kg:id_44 prop:cause kg:id_47 >>
+    prop:text-txt_contents "工業用地の確保やインフラ整備等の課題も整理しながら"@ja.
+<< kg:id_48 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "国から遊佐町沖はいいよと、でも、ちょっと酒田市沖は遅れているから基地港湾は酒田港じゃなくてもいいんだよね、ということを言われないような体制をきっちりと取っていただきたい"@ja.
+<< kg:id_19 prop:countermeasure kg:id_50 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "10月19日に斉藤国土交通大臣に山形県知事、山形県議会議長、酒田市議会議長、遊佐町議会議長が基地港湾の要望活動をさせていただいた"@ja.
+<< kg:id_19 prop:effect kg:id_51 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "大臣のお答えといたしましては、前向きに検討いたしますとコメントをいただいております。"@ja.
+}

@@ -1,0 +1,99 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00168> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市"@ja.
+kg:id_1 rdf:type cls:c_1927.
+cls:c_1927 rdfs:label "地域"@ja.
+kg:id_2 rdfs:label "太陽光、風力、木質バイオマスなど多様な再生可能エネルギーの電源が所在している"@ja.
+kg:id_2 rdf:type cls:c_1600.
+cls:c_1600 rdfs:label "再生可能エネルギー資源"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "企業の創業"@ja.
+kg:id_3 rdf:type cls:c_1601.
+cls:c_1601 rdfs:label "企業創業"@ja.
+kg:id_4 rdfs:label "太陽光、風力、木質チップ・ペレット、水力、バイオガスなど地域にある自然資源を大いに生かすこと"@ja.
+kg:id_4 rdf:type cls:c_1602.
+cls:c_1602 rdfs:label "自然資源活用"@ja.
+kg:id_3 prop:cause kg:id_4.
+kg:id_5 rdfs:label "再生可能エネルギー利用を目的とした優良企業の誘致"@ja.
+kg:id_5 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_6 rdfs:label "地域で発電される再生可能エネルギーを地域で利用する仕組みを検討すること"@ja.
+kg:id_6 rdf:type cls:c_3948.
+cls:c_3948 rdfs:label "地域エネルギー利用"@ja.
+kg:id_5 prop:cause kg:id_6.
+kg:id_7 rdfs:label "市民による再生可能エネルギー利用"@ja.
+kg:id_7 rdf:type cls:c_1604.
+cls:c_1604 rdfs:label "エネルギー利用"@ja.
+kg:id_7 prop:cause kg:id_6.
+kg:id_8 rdfs:label "洋上風力発電プロジェクト"@ja.
+kg:id_8 rdf:type cls:c_781.
+cls:c_781 rdfs:label "洋上風力発電事業"@ja.
+kg:id_9 rdfs:label "市民に分かりやすいメリットをもたらす地域貢献策を洋上風力発電事業者に対して求める"@ja.
+kg:id_9 rdf:type cls:c_1645.
+cls:c_1645 rdfs:label "地域貢献要求"@ja.
+kg:id_8 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "遊佐町沖及び酒田市沖での洋上風力発電プロジェクトの進捗"@ja.
+kg:id_10 rdf:type cls:c_3949.
+cls:c_3949 rdfs:label "洋上風力発電事業の進捗"@ja.
+kg:id_11 rdfs:label "酒田港の基地港湾指定に向けて山形県と連携した取組を進める"@ja.
+kg:id_11 rdf:type cls:c_3950.
+cls:c_3950 rdfs:label "連携取組"@ja.
+kg:id_10 prop:effect kg:id_11.
+kg:id_12 rdfs:label "関連する市内企業の所得向上を目指す"@ja.
+kg:id_12 rdf:type cls:c_402.
+cls:c_402 rdfs:label "所得向上"@ja.
+kg:id_10 prop:effect kg:id_12.
+kg:st_1 rdfs:label "専門家"@ja.
+kg:st_1 rdf:type cls:st_24.
+cls:st_24 rdfs:label "専門家"@ja.
+kg:op_1 prop:content "全国でも有数の地域と評価"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "酒田市は、石炭火力に加えて、太陽光、風力、木質バイオマスなど、多様な再生可能エネルギーの電源が所在している全国でも有数の地域であると専門家に評価されてきました"@ja.
+<< kg:id_3 prop:cause kg:id_4 >>
+    prop:text-txt_contents "太陽光、風力、木質チップ・ペレット、水力、バイオガスなど、地域にある自然資源を大いに生かして、企業の創業を促していきます"@ja.
+<< kg:id_5 prop:cause kg:id_6 >>
+    prop:text-txt_contents "地域で発電される再生可能エネルギーを地域で利用する仕組みを検討することにより、再生可能エネルギー利用を目的とした優良企業の誘致"@ja.
+<< kg:id_7 prop:cause kg:id_6 >>
+    prop:text-txt_contents "地域で発電される再生可能エネルギーを地域で利用する仕組みを検討することにより、再生可能エネルギー利用を目的とした優良企業の誘致、それから、市民による再生可能エネルギー利用を進めます"@ja.
+<< kg:id_8 prop:countermeasure kg:id_9 >>
+    prop:text-txt_contents "また、洋上風力発電プロジェクトについては、市民に分かりやすいメリットをもたらす地域貢献策を、洋上風力発電事業者に対して求めてまいります"@ja.
+<< kg:id_10 prop:effect kg:id_11 >>
+    prop:text-txt_contents "第２に、遊佐町沖及び酒田市沖での洋上風力発電プロジェクトの進捗を踏まえ、酒田港の基地港湾指定に向けて、山形県と連携した取組を進め"@ja.
+<< kg:id_10 prop:effect kg:id_12 >>
+    prop:text-txt_contents "第２に、遊佐町沖及び酒田市沖での洋上風力発電プロジェクトの進捗を踏まえ、酒田港の基地港湾指定に向けて、山形県と連携した取組を進め、関連する市内企業の所得向上を目指します"@ja.
+}

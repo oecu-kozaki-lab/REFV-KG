@@ -1,0 +1,476 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00117> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "風力発電の受け入れ"@ja.
+kg:id_1 rdf:type cls:c_674.
+cls:c_674 rdfs:label "風力発電導入"@ja.
+kg:id_2 rdfs:label "地球にＣＯ２を出さないで電気を得られるため"@ja.
+kg:id_2 rdf:type cls:c_2820.
+cls:c_2820 rdfs:label "脱炭素発電"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "地元の要請"@ja.
+kg:id_3 rdf:type cls:c_2821.
+cls:c_2821 rdfs:label "地域要請"@ja.
+kg:id_1 prop:cause kg:id_3.
+kg:id_4 rdfs:label "設置基準とガイドラインの整備"@ja.
+kg:id_4 rdf:type cls:c_2822.
+cls:c_2822 rdfs:label "基準整備"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "リスク管理の協定書のたたき台を地元と一緒につくる"@ja.
+kg:id_5 rdf:type cls:c_2823.
+cls:c_2823 rdfs:label "協定作成"@ja.
+kg:id_1 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "マスコミ等によるバッシング"@ja.
+kg:id_6 rdf:type cls:c_2824.
+cls:c_2824 rdfs:label "批判"@ja.
+kg:id_1 prop:effect kg:id_6.
+kg:id_7 rdfs:label "大変な脚光を浴びた"@ja.
+kg:id_7 rdf:type cls:c_2825.
+cls:c_2825 rdfs:label "注目"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "再生可能エネルギーの導入で大きな力になっている"@ja.
+kg:id_8 rdf:type cls:c_2826.
+cls:c_2826 rdfs:label "導入効果"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "洋上風力発電導入推進の取り組み"@ja.
+kg:id_9 rdf:type cls:c_2827.
+cls:c_2827 rdfs:label "洋上風力推進"@ja.
+kg:id_10 rdfs:label "再生可能エネルギーの導入による地球温暖化対策"@ja.
+kg:id_10 rdf:type cls:c_987.
+cls:c_987 rdfs:label "温暖化対策"@ja.
+kg:id_9 prop:cause kg:id_10.
+kg:id_11 rdfs:label "エネルギー自給率の向上"@ja.
+kg:id_11 rdf:type cls:c_2757.
+cls:c_2757 rdfs:label "自給率向上"@ja.
+kg:id_9 prop:cause kg:id_11.
+kg:id_12 rdfs:label "県内産業の振興"@ja.
+kg:id_12 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_9 prop:cause kg:id_12.
+kg:id_13 rdfs:label "地域活性化"@ja.
+kg:id_13 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_9 prop:cause kg:id_13.
+kg:id_14 rdfs:label "遊佐町エネルギー基本計画"@ja.
+kg:id_14 rdf:type cls:c_2071.
+cls:c_2071 rdfs:label "エネルギー計画"@ja.
+kg:id_15 rdfs:label "東日本大震災や福島第一原子力発電所事故の経過"@ja.
+kg:id_15 rdf:type cls:c_2828.
+cls:c_2828 rdfs:label "震災事故"@ja.
+kg:id_14 prop:cause kg:id_15.
+kg:id_16 rdfs:label "再生可能エネルギーの導入"@ja.
+kg:id_16 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_17 rdfs:label "エネルギーの地産地消による町づくり"@ja.
+kg:id_17 rdf:type cls:c_103.
+cls:c_103 rdfs:label "地産地消"@ja.
+kg:id_16 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "洋上風力発電"@ja.
+kg:id_18 rdf:type cls:c_175.
+cls:c_175 rdfs:label "洋上風力発電"@ja.
+kg:id_19 rdfs:label "地域の合意形成に向けた課題の抽出や対応策等の議論"@ja.
+kg:id_19 rdf:type cls:c_138.
+cls:c_138 rdfs:label "合意形成"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "山形県地域協調型洋上風力発電研究・検討会議の設置"@ja.
+kg:id_20 rdf:type cls:c_1324.
+cls:c_1324 rdfs:label "検討会設置"@ja.
+kg:id_18 prop:countermeasure kg:id_20.
+kg:id_21 rdfs:label "遊佐沿岸域検討部会の設置"@ja.
+kg:id_21 rdf:type cls:c_2829.
+cls:c_2829 rdfs:label "部会設置"@ja.
+kg:id_18 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "住民勉強会の開催"@ja.
+kg:id_22 rdf:type cls:c_2830.
+cls:c_2830 rdfs:label "住民学習"@ja.
+kg:id_18 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "住民説明会の開催"@ja.
+kg:id_23 rdf:type cls:c_54.
+cls:c_54 rdfs:label "住民説明"@ja.
+kg:id_18 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "海流調査等を実施しながら研究を継続する"@ja.
+kg:id_24 rdf:type cls:c_2831.
+cls:c_2831 rdfs:label "調査継続"@ja.
+kg:id_18 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "地域や漁業関係者に事業の周知を行い理解を図る"@ja.
+kg:id_25 rdf:type cls:c_2832.
+cls:c_2832 rdfs:label "周知促進"@ja.
+kg:id_18 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "洋上風力発電の検討会"@ja.
+kg:id_26 rdf:type cls:c_1313.
+cls:c_1313 rdfs:label "検討会"@ja.
+kg:id_27 rdfs:label "女性が一人もいない"@ja.
+kg:id_27 rdf:type cls:c_2833.
+cls:c_2833 rdfs:label "女性不在"@ja.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "平均年齢が高い"@ja.
+kg:id_28 rdf:type cls:c_2834.
+cls:c_2834 rdfs:label "高齢偏重"@ja.
+kg:id_26 prop:effect kg:id_28.
+kg:id_29 rdfs:label "農業関係者が一人もいない"@ja.
+kg:id_29 rdf:type cls:c_2835.
+cls:c_2835 rdfs:label "農業不在"@ja.
+kg:id_26 prop:effect kg:id_29.
+kg:id_30 rdfs:label "県の考え方が先行し町の考え方が置き去りみたいな感じ"@ja.
+kg:id_30 rdf:type cls:c_2836.
+cls:c_2836 rdfs:label "県主導"@ja.
+kg:id_26 prop:effect kg:id_30.
+kg:id_31 rdfs:label "漁業対象魚種への影響"@ja.
+kg:id_31 rdf:type cls:c_280.
+cls:c_280 rdfs:label "漁業影響"@ja.
+kg:id_18 prop:effect kg:id_31.
+kg:id_32 rdfs:label "風車の近くで漁業操業が可能かという不安"@ja.
+kg:id_32 rdf:type cls:c_2837.
+cls:c_2837 rdfs:label "操業不安"@ja.
+kg:id_18 prop:effect kg:id_32.
+kg:id_33 rdfs:label "騒音の発生による地域住民への影響"@ja.
+kg:id_33 rdf:type cls:c_2838.
+cls:c_2838 rdfs:label "騒音影響"@ja.
+kg:id_18 prop:effect kg:id_33.
+kg:id_34 rdfs:label "電波障害の発生への心配"@ja.
+kg:id_34 rdf:type cls:c_2839.
+cls:c_2839 rdfs:label "電波障害"@ja.
+kg:id_18 prop:effect kg:id_34.
+kg:id_35 rdfs:label "観光地の景観を損なう"@ja.
+kg:id_35 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_18 prop:effect kg:id_35.
+kg:id_36 rdfs:label "海流や海底の砂の移動への影響"@ja.
+kg:id_36 rdf:type cls:c_2840.
+cls:c_2840 rdfs:label "海域影響"@ja.
+kg:id_18 prop:effect kg:id_36.
+kg:id_37 rdfs:label "低周波の影響"@ja.
+kg:id_37 rdf:type cls:c_2841.
+cls:c_2841 rdfs:label "低周波影響"@ja.
+kg:id_18 prop:effect kg:id_37.
+kg:id_38 rdfs:label "台風などによる風車事故の発生への心配"@ja.
+kg:id_38 rdf:type cls:c_2842.
+cls:c_2842 rdfs:label "事故不安"@ja.
+kg:id_18 prop:effect kg:id_38.
+kg:id_39 rdfs:label "住民とのコンセンサスをとる"@ja.
+kg:id_39 rdf:type cls:c_138.
+kg:id_18 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "皆さんの意見を県に言い条件づけして法定協議に持っていく"@ja.
+kg:id_40 rdf:type cls:c_2843.
+cls:c_2843 rdfs:label "条件設定"@ja.
+kg:id_18 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "部会として範囲や考え方をしっかり持って上に意見を述べる"@ja.
+kg:id_41 rdf:type cls:c_1419.
+cls:c_1419 rdfs:label "意見表明"@ja.
+kg:id_18 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "固定資産税が増えても交付税が減る"@ja.
+kg:id_42 rdf:type cls:c_2844.
+cls:c_2844 rdfs:label "財政影響"@ja.
+kg:id_18 prop:effect kg:id_42.
+kg:id_43 rdfs:label "丁寧に進める"@ja.
+kg:id_43 rdf:type cls:c_2845.
+cls:c_2845 rdfs:label "慎重推進"@ja.
+kg:id_18 prop:countermeasure kg:id_43.
+kg:st_1 rdfs:label "町長"@ja.
+kg:st_1 rdf:type cls:st_2.
+cls:st_2 rdfs:label "自治体首長"@ja.
+kg:op_1 prop:content "地球に優しい町を遊佐町から発信してもよいと考える"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地元の皆さん"@ja.
+kg:st_2 rdf:type cls:st_3.
+cls:st_3 rdfs:label "地域住民"@ja.
+kg:op_2 prop:content "町が一生懸命なら一緒に受け入れる"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_2.
+kg:op_3 prop:content "町としてしっかりした設置基準とガイドラインを設けながら進めた"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "リスク管理の協定書のたたき台を地元と一緒につくった"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "受け入れにより非常なバッシングを受けた"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "酒田市がキャンセルした中で遊佐町は脚光を浴びた"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "かつての苦い経験が後によかったと言われうれしい"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "県の取り組みの背景に地球温暖化対策があると考える"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "県の取り組みの背景にエネルギー自給率の向上があると考える"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "県の取り組みの背景に県内産業の振興があると考える"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "県の取り組みの背景に地域活性化があると考える"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "震災や原発事故の経過を踏まえて基本計画を定めた"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "安全安心なエネルギー確保のため地産地消を基本理念としている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "地域の合意形成に向けて課題抽出や対応策の議論を行っている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "理解促進に資する調査研究のため検討会議が設置された"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "具体的な検討を行うため部会が設置された"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "住民理解のため勉強会が開催された"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "事業の周知を図るため各地で住民説明会を開催した"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "さらなる議論の深化と海流調査を行い研究を継続する"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "地域や漁業関係者に周知し理解を図りながら検討したい"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "髙橋冠治議員"@ja.
+kg:st_3 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_21 prop:content "女性が一人もいない構成に気づいた"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_3.
+kg:op_22 prop:content "これからの計画には若い人も入れるべきだと考える"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_3.
+kg:op_23 prop:content "農業関係者も入れて全町的な議論をすべきだ"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "県の考え方が先行しているように見える"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "地域住民"@ja.
+kg:st_4 rdf:type cls:st_3.
+kg:op_25 prop:content "漁業対象魚種への影響をきちんと調査把握する必要がある"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "風車の近くで漁業操業が可能か心配している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:op_27 prop:content "騒音による地域住民への影響を懸念している"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "大きな風車による電波障害を心配している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "鳥海山飛島ジオパークや十六羅漢などの景観を損なわないでほしい"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "西遊佐地区の皆さん"@ja.
+kg:st_5 rdf:type cls:st_3.
+kg:op_30 prop:content "侵食への影響があるため海流調査をしっかりしてほしい"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_5.
+kg:op_31 prop:content "低周波の影響が大丈夫か心配している"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_4.
+kg:op_32 prop:content "台風などで風車の羽根の事故が起きないか心配している"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_4.
+kg:op_33 prop:content "住民とのコンセンサスをしっかりとらないといけない"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "今から皆さんの意見を県に伝え条件づけすべきだ"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:st_6 rdfs:label "地域生活課長"@ja.
+kg:st_6 rdf:type cls:st_19.
+cls:st_19 rdfs:label "自治体職員"@ja.
+kg:op_35 prop:content "部会としてこの範囲でないとだめだという考え方を持って意見を述べたい"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "町民課長"@ja.
+kg:st_7 rdf:type cls:st_19.
+kg:op_36 prop:content "税収が増えれば国からの交付税は減り実質増収は留保分になる"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_7.
+kg:op_37 prop:content "まずは丁寧に進めていただきたい"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地球にＣＯ２を出さないで電気を得られるという、地球に優しい町が東北の遊佐町から発信してもいいのではないですかという形で風力発電の受け入れ"@ja.
+<< kg:id_1 prop:cause kg:id_3 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "地元の皆さんが、町がそんなに一生懸命ならば私たちも一緒に受け入れますよと。そして、私たちが協定結ぶから、立ち会いになってくれませんかという地元の要請によりまして風力発電を受け入れた"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "町としてしっかりとした設置基準、ガイドラインを設けながら"@ja.
+<< kg:id_1 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "リスク管理の協定書のたたき台をしっかり地元と一緒につくってきた"@ja.
+<< kg:id_1 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "非常なマスコミ等によるバッシングもいただきました"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "当時は酒田市がキャンセル、ノーと言いましたので、大変な脚光を浴びました"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "これが今3.11を経過した再生可能エネルギーの導入という形でいけば大きな力になっているということ、非常に私としてはかつての苦い経験が後によかったと言われたことを大変うれしく思います"@ja.
+<< kg:id_9 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "山形県が進める洋上風力発電導入推進の取り組みの背景には再生可能エネルギーの導入による地球温暖化対策"@ja.
+<< kg:id_9 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "エネルギー自給率の向上"@ja.
+<< kg:id_9 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "県内産業の振興"@ja.
+<< kg:id_9 prop:cause kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "地域活性化を図る県のエネルギー戦略"@ja.
+<< kg:id_14 prop:cause kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "東日本大震災や福島第一原子力発電所事故の経過を踏まえて、遊佐町エネルギー基本計画では"@ja.
+<< kg:id_16 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "エネルギーの地産地消による町づくりを基本理念としております"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "一般海域における洋上風力発電のあり方に係る地域の合意形成に向け、課題の抽出や対応策等の議論を行い"@ja.
+<< kg:id_18 prop:countermeasure kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "山形県地域協調型洋上風力発電研究・検討会議が設置され"@ja.
+<< kg:id_18 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "具体的な検討を行うための部会として遊佐沿岸域検討部会が設置されております"@ja.
+<< kg:id_18 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "11月には生涯学習センターで住民勉強会が開催されております"@ja.
+<< kg:id_18 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "事業の周知を図るためとして11月と12月に蕨岡、遊佐、稲川、西遊佐、高瀬、吹浦の各地において住民説明会を開催した"@ja.
+<< kg:id_18 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "海流調査等を実施しながら研究の継続をすることとしております"@ja.
+<< kg:id_18 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "今後も引き続き、地域や漁業関係者に事業の周知を行い、理解を図りながら検討を行ってまいりたい"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "あの会の中に女性が一人もいないというのを気づいた"@ja.
+<< kg:id_26 prop:effect kg:id_28 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "ぱっと見たときの平均年齢が多分65は過ぎているのかな"@ja.
+<< kg:id_26 prop:effect kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "漁業関係者はいるのですが、農業関係者が一人もいないのです"@ja.
+<< kg:id_26 prop:effect kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "県の考え方が先行、先行して、何か町の考え方がちょっと置き去りみたいなような感じがする"@ja.
+<< kg:id_18 prop:effect kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "漁業対象魚種への影響をきちんと調査、把握する必要があるのではないか"@ja.
+<< kg:id_18 prop:effect kg:id_32 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "風車の近くで漁業、操業等可能なのでしょうか"@ja.
+<< kg:id_18 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "騒音の発生により地域住民への影響が心配、懸念されます"@ja.
+<< kg:id_18 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "電波障害、風車、当然洋上ですので、かなり陸上よりも大きな風車が設置になりますので、その辺電波障害発生しないのでしょうかという心配"@ja.
+<< kg:id_18 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "鳥海山・飛島ジオパークや十六羅漢、出羽二見などの観光地の景観を損なわないでほしい"@ja.
+<< kg:id_18 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "風車の設置によりまして、海流や海底の砂の移動の影響あるのでしょうか"@ja.
+<< kg:id_18 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "低周波の影響は大丈夫でしょうか"@ja.
+<< kg:id_18 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "台風などで風車の羽根など等、事故などの発生は心配ないのでしょうか"@ja.
+<< kg:id_18 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "しっかり住民とのやはりコンセンサスとっていかないとボタンのかけ違いにならないように"@ja.
+<< kg:id_18 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "今から皆さんの意見をちゃんと県に言って、県からはそのような条件づけをしていただいて、そして法定協議に持っていかないと"@ja.
+<< kg:id_18 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "部会としてこの範囲でないとだめだいというような形でしっかりと考え方を持った形で上のほうに意見を述べていきたい"@ja.
+<< kg:id_18 prop:effect kg:id_42 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "税収がふえれば国からの交付税は減るということになります"@ja.
+<< kg:id_18 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "まずは丁寧に進めていただきたい"@ja.
+}

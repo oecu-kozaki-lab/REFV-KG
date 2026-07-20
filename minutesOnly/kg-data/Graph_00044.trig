@@ -1,0 +1,130 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00044> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "気象状況"@ja.
+kg:id_2 rdf:type cls:c_526.
+cls:c_526 rdfs:label "気象条件"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "大きく影響がある"@ja.
+kg:id_3 rdf:type cls:c_1187.
+cls:c_1187 rdfs:label "事業影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "酒田市風力発電施設建設"@ja.
+kg:id_4 rdf:type cls:c_48.
+cls:c_48 rdfs:label "風力発電施設"@ja.
+kg:id_5 rdfs:label "騒音や景観への配慮"@ja.
+kg:id_5 rdf:type cls:c_748.
+cls:c_748 rdfs:label "環境配慮"@ja.
+kg:id_4 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "地元説明会"@ja.
+kg:id_6 rdf:type cls:c_1188.
+cls:c_1188 rdfs:label "説明会"@ja.
+kg:id_4 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "十分な調査"@ja.
+kg:id_7 rdf:type cls:c_1189.
+cls:c_1189 rdfs:label "調査"@ja.
+kg:id_4 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "8,130万円の売電"@ja.
+kg:id_8 rdf:type cls:c_1068.
+cls:c_1068 rdfs:label "売電収入"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "1年間の24.8％が4月、5月で達成"@ja.
+kg:id_9 rdf:type cls:c_1190.
+cls:c_1190 rdfs:label "事業進捗"@ja.
+kg:id_1 prop:effect kg:id_9.
+kg:id_10 rdfs:label "周辺地域住民から特に不快に思う声はない"@ja.
+kg:id_10 rdf:type cls:c_1191.
+cls:c_1191 rdfs:label "住民反応"@ja.
+kg:id_1 prop:effect kg:id_10.
+kg:id_11 rdfs:label "日常点検時や清掃活動時の地域住民との意見交換"@ja.
+kg:id_11 rdf:type cls:c_1192.
+cls:c_1192 rdfs:label "意見交換"@ja.
+kg:id_1 prop:countermeasure kg:id_11.
+kg:st_1 rdfs:label "質問者"@ja.
+kg:st_1 rdf:type cls:st_16.
+cls:st_16 rdfs:label "質問者"@ja.
+kg:op_1 prop:content "自然相手のため気象状況の影響を懸念する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "気象状況による事業への大きな影響を懸念する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "売電実績は順調なスタートだと評価する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "年度当初から順調に進んでいるとみている"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "佐々木好信地域創生部長"@ja.
+kg:st_2 rdf:type cls:st_23.
+cls:st_23 rdfs:label "行政担当者"@ja.
+kg:op_5 prop:content "地域住民から苦情や不快の声は特にないと説明する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "日常点検や清掃活動の際に地域住民と意見交換している"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "自然相手ですので、気象状況によっては大きく影響があるのではないかと思います"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "気象状況によっては大きく影響があるのではないかと思います"@ja.
+<< kg:id_4 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "騒音や景観への配慮"@ja.
+<< kg:id_4 prop:countermeasure kg:id_6 >>
+    prop:text-txt_contents "地元説明会など十分な調査を踏まえ"@ja.
+<< kg:id_4 prop:countermeasure kg:id_7 >>
+    prop:text-txt_contents "地元説明会など十分な調査を踏まえ"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "風力発電では8,130万円の売電があった"@ja.
+<< kg:id_1 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "１年間の24.8％がもう４月、５月でなったと、順調なスタートができた"@ja.
+<< kg:id_1 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "特に不快に思うようなお声とかそういったものはいただいておらないところでございます"@ja.
+<< kg:id_1 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "日常点検のときとか清掃活動のときなど地域の皆さんと意見交換させていただくこともございます"@ja.
+}

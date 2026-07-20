@@ -1,0 +1,661 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00022> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "栗子山風力発電事業"@ja.
+kg:id_1 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_2 rdfs:label "周辺の自然環境への影響"@ja.
+kg:id_2 rdf:type cls:c_25.
+cls:c_25 rdfs:label "自然環境影響"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "地域生活環境への影響"@ja.
+kg:id_3 rdf:type cls:c_705.
+cls:c_705 rdfs:label "生活環境影響"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "谷筋の大規模盛土"@ja.
+kg:id_4 rdf:type cls:c_706.
+cls:c_706 rdfs:label "大規模盛土"@ja.
+kg:id_1 prop:cause kg:id_4.
+kg:id_5 rdfs:label "土砂崩壊による土石流の発生"@ja.
+kg:id_5 rdf:type cls:c_707.
+cls:c_707 rdfs:label "土石流発生"@ja.
+kg:id_1 prop:effect kg:id_5.
+kg:id_6 rdfs:label "対象事業実施区域内の地滑り地形の存在"@ja.
+kg:id_6 rdf:type cls:c_708.
+cls:c_708 rdfs:label "地滑り地形"@ja.
+kg:id_1 prop:cause kg:id_6.
+kg:id_7 rdfs:label "本工事に伴う地滑りの発生"@ja.
+kg:id_7 rdf:type cls:c_709.
+cls:c_709 rdfs:label "地滑り発生"@ja.
+kg:id_1 prop:effect kg:id_7.
+kg:id_8 rdfs:label "土砂災害"@ja.
+kg:id_8 rdf:type cls:c_53.
+cls:c_53 rdfs:label "土砂災害"@ja.
+kg:id_1 prop:effect kg:id_8.
+kg:id_9 rdfs:label "対象事業実施区域内でニホンイヌワシの飛翔が多数確認されたこと"@ja.
+kg:id_9 rdf:type cls:c_710.
+cls:c_710 rdfs:label "希少猛禽類"@ja.
+kg:id_1 prop:cause kg:id_9.
+kg:id_10 rdfs:label "対象事業実施区域内が重要な採食地・餌場であること"@ja.
+kg:id_10 rdf:type cls:c_711.
+cls:c_711 rdfs:label "採食地"@ja.
+kg:id_1 prop:cause kg:id_10.
+kg:id_11 rdfs:label "事業対象区域近傍でニホンイヌワシが営巣している蓋然性が高いこと"@ja.
+kg:id_11 rdf:type cls:c_712.
+cls:c_712 rdfs:label "営巣地"@ja.
+kg:id_1 prop:cause kg:id_11.
+kg:id_12 rdfs:label "事業の取りやめも含めた抜本的な事業の見直し"@ja.
+kg:id_12 rdf:type cls:c_271.
+cls:c_271 rdfs:label "計画見直し"@ja.
+kg:id_1 prop:countermeasure kg:id_12.
+kg:id_13 rdfs:label "全面白紙撤回"@ja.
+kg:id_13 rdf:type cls:c_81.
+cls:c_81 rdfs:label "計画撤回"@ja.
+kg:id_1 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "再生可能エネルギーの不適切な導入"@ja.
+kg:id_14 rdf:type cls:c_713.
+cls:c_713 rdfs:label "不適切導入"@ja.
+kg:id_1 prop:cause kg:id_14.
+kg:id_15 rdfs:label "生物多様性の損失"@ja.
+kg:id_15 rdf:type cls:c_714.
+cls:c_714 rdfs:label "生物多様性損失"@ja.
+kg:id_1 prop:effect kg:id_15.
+kg:id_16 rdfs:label "情報公開"@ja.
+kg:id_16 rdf:type cls:c_715.
+cls:c_715 rdfs:label "情報公開"@ja.
+kg:id_1 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "情報の見える化"@ja.
+kg:id_17 rdf:type cls:c_715.
+kg:id_1 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "内容の理解の分かる化"@ja.
+kg:id_18 rdf:type cls:c_140.
+cls:c_140 rdfs:label "理解促進"@ja.
+kg:id_1 prop:countermeasure kg:id_18.
+kg:id_19 rdfs:label "重要性の重みづけ化"@ja.
+kg:id_19 rdf:type cls:c_716.
+cls:c_716 rdfs:label "重要度整理"@ja.
+kg:id_1 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "住民への説明が誠実かつ丁寧ではなかったこと"@ja.
+kg:id_20 rdf:type cls:c_663.
+cls:c_663 rdfs:label "説明不足"@ja.
+kg:id_1 prop:cause kg:id_20.
+kg:id_21 rdfs:label "住民の理解が得られていないこと"@ja.
+kg:id_21 rdf:type cls:c_717.
+cls:c_717 rdfs:label "住民理解不足"@ja.
+kg:id_1 prop:effect kg:id_21.
+kg:id_22 rdfs:label "事業者として説明責任を果たすこと"@ja.
+kg:id_22 rdf:type cls:c_718.
+cls:c_718 rdfs:label "説明責任"@ja.
+kg:id_1 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "住民の意見を真摯に受け止め事業計画に適切に反映すること"@ja.
+kg:id_23 rdf:type cls:c_719.
+cls:c_719 rdfs:label "意見反映"@ja.
+kg:id_1 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "住民説明会で市民の理解が得られなかったこと"@ja.
+kg:id_24 rdf:type cls:c_717.
+kg:id_1 prop:effect kg:id_24.
+kg:id_25 rdfs:label "早期に追加説明会を開催すること"@ja.
+kg:id_25 rdf:type cls:c_433.
+cls:c_433 rdfs:label "説明会開催"@ja.
+kg:id_1 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "準備書の公開"@ja.
+kg:id_26 rdf:type cls:c_720.
+cls:c_720 rdfs:label "資料公開"@ja.
+kg:id_1 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "会議録の公開"@ja.
+kg:id_27 rdf:type cls:c_720.
+kg:id_1 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "本市への地域貢献の内容を具体的に提案すること"@ja.
+kg:id_28 rdf:type cls:c_721.
+cls:c_721 rdfs:label "地域貢献提案"@ja.
+kg:id_1 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "本市や住民との協力関係を構築する意欲が欠けていること"@ja.
+kg:id_29 rdf:type cls:c_722.
+cls:c_722 rdfs:label "協力意欲不足"@ja.
+kg:id_1 prop:cause kg:id_29.
+kg:id_30 rdfs:label "イヌワシの保全への懸念"@ja.
+kg:id_30 rdf:type cls:c_723.
+cls:c_723 rdfs:label "希少種保全懸念"@ja.
+kg:id_1 prop:cause kg:id_30.
+kg:id_31 rdfs:label "造成地の崩壊及び土砂流出の懸念"@ja.
+kg:id_31 rdf:type cls:c_672.
+cls:c_672 rdfs:label "土砂災害懸念"@ja.
+kg:id_1 prop:cause kg:id_31.
+kg:id_32 rdfs:label "地滑り等の懸念"@ja.
+kg:id_32 rdf:type cls:c_724.
+cls:c_724 rdfs:label "地滑り懸念"@ja.
+kg:id_1 prop:cause kg:id_32.
+kg:id_33 rdfs:label "起きてからでは後戻りできない状況に陥るおそれ"@ja.
+kg:id_33 rdf:type cls:c_725.
+cls:c_725 rdfs:label "不可逆リスク"@ja.
+kg:id_1 prop:effect kg:id_33.
+kg:id_34 rdfs:label "本市の自然への影響"@ja.
+kg:id_34 rdf:type cls:c_25.
+kg:id_1 prop:effect kg:id_34.
+kg:id_35 rdfs:label "本市の環境への影響"@ja.
+kg:id_35 rdf:type cls:c_25.
+kg:id_1 prop:effect kg:id_35.
+kg:id_36 rdfs:label "本市の景観への影響"@ja.
+kg:id_36 rdf:type cls:c_50.
+cls:c_50 rdfs:label "景観影響"@ja.
+kg:id_1 prop:effect kg:id_36.
+kg:id_37 rdfs:label "本市の安全性への影響"@ja.
+kg:id_37 rdf:type cls:c_726.
+cls:c_726 rdfs:label "安全性影響"@ja.
+kg:id_1 prop:effect kg:id_37.
+kg:id_38 rdfs:label "本市への地域裨益が乏しいこと"@ja.
+kg:id_38 rdf:type cls:c_727.
+cls:c_727 rdfs:label "地域貢献不足"@ja.
+kg:id_1 prop:effect kg:id_38.
+kg:id_39 rdfs:label "全面撤回を求める申入れ"@ja.
+kg:id_39 rdf:type cls:c_728.
+cls:c_728 rdfs:label "撤回申入れ"@ja.
+kg:id_1 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "多くの市民の不安"@ja.
+kg:id_40 rdf:type cls:c_63.
+cls:c_63 rdfs:label "住民不安"@ja.
+kg:id_1 prop:effect kg:id_40.
+kg:id_41 rdfs:label "住民説明会で誠意が感じられず住民の理解を得られなかったこと"@ja.
+kg:id_41 rdf:type cls:c_717.
+kg:id_1 prop:effect kg:id_41.
+kg:id_42 rdfs:label "仮設道の造成工事で一部に直径の大きな木の伐採跡が見受けられたこと"@ja.
+kg:id_42 rdf:type cls:c_729.
+cls:c_729 rdfs:label "樹木伐採"@ja.
+kg:id_1 prop:cause kg:id_42.
+kg:id_43 rdfs:label "小規模林地開発計画書を県へ提出すること"@ja.
+kg:id_43 rdf:type cls:c_730.
+cls:c_730 rdfs:label "計画書提出"@ja.
+kg:id_1 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "作業道の面積が届出対象基準の3000平方メートルを超える疑義"@ja.
+kg:id_44 rdf:type cls:c_731.
+cls:c_731 rdfs:label "届出超過疑義"@ja.
+kg:id_1 prop:cause kg:id_44.
+kg:id_45 rdfs:label "無届けでの行為の着手の疑い"@ja.
+kg:id_45 rdf:type cls:c_732.
+cls:c_732 rdfs:label "無届着手疑義"@ja.
+kg:id_1 prop:effect kg:id_45.
+kg:id_46 rdfs:label "自然環境が豊かな地域の美しい景観が損なわれる懸念"@ja.
+kg:id_46 rdf:type cls:c_50.
+kg:id_1 prop:effect kg:id_46.
+kg:id_47 rdfs:label "レッドリスト掲載の重要種の生息地への影響"@ja.
+kg:id_47 rdf:type cls:c_733.
+cls:c_733 rdfs:label "生息地影響"@ja.
+kg:id_1 prop:effect kg:id_47.
+kg:id_48 rdfs:label "事業者と山形県知事意見の間でイヌワシに関する大きな理解のそごがあること"@ja.
+kg:id_48 rdf:type cls:c_734.
+cls:c_734 rdfs:label "認識齟齬"@ja.
+kg:id_1 prop:cause kg:id_48.
+kg:id_49 rdfs:label "事業実施区域近傍でイヌワシが営巣している蓋然性が高いこと"@ja.
+kg:id_49 rdf:type cls:c_712.
+kg:id_1 prop:cause kg:id_49.
+kg:id_50 rdfs:label "餌資源量指数が高くイヌワシにとって貴重な採食地となっている可能性が高いこと"@ja.
+kg:id_50 rdf:type cls:c_711.
+kg:id_1 prop:cause kg:id_50.
+kg:id_51 rdfs:label "ネイチャーポジティブをしっかり受け止め研究すること"@ja.
+kg:id_51 rdf:type cls:c_735.
+cls:c_735 rdfs:label "環境基準検討"@ja.
+kg:id_1 prop:countermeasure kg:id_51.
+kg:id_52 rdfs:label "米沢市の環境の在り方について迅速に調査すること"@ja.
+kg:id_52 rdf:type cls:c_736.
+cls:c_736 rdfs:label "環境調査"@ja.
+kg:id_1 prop:countermeasure kg:id_52.
+kg:id_53 rdfs:label "ネイチャーポジティブと併せて本市としての対応を検討すること"@ja.
+kg:id_53 rdf:type cls:c_737.
+cls:c_737 rdfs:label "対応検討"@ja.
+kg:id_1 prop:countermeasure kg:id_53.
+kg:id_54 rdfs:label "スカイラインから突出する景観影響"@ja.
+kg:id_54 rdf:type cls:c_50.
+kg:id_1 prop:effect kg:id_54.
+kg:id_55 rdfs:label "景観条例が勧告までしかできず強制的に止められないこと"@ja.
+kg:id_55 rdf:type cls:c_738.
+cls:c_738 rdfs:label "規制不足"@ja.
+kg:id_1 prop:effect kg:id_55.
+kg:id_56 rdfs:label "市においてある程度強制力を持った措置を研究すること"@ja.
+kg:id_56 rdf:type cls:c_739.
+cls:c_739 rdfs:label "強制措置"@ja.
+kg:id_1 prop:countermeasure kg:id_56.
+kg:id_57 rdfs:label "事業者に入り口で情報公開させること"@ja.
+kg:id_57 rdf:type cls:c_715.
+kg:id_1 prop:countermeasure kg:id_57.
+kg:st_1 rdfs:label "佐野洋平議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "事業内容の理解不足があり情報公開と分かる化が必要"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "市民の間に情報格差があり前提事実の共有が必要"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "山形県知事"@ja.
+kg:st_2 rdf:type cls:st_26.
+cls:st_26 rdfs:label "知事"@ja.
+kg:op_3 prop:content "土砂災害の懸念から抜本的見直しを求める"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "事業の取りやめも含めた見直しが必要"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:op_5 prop:content "工事に伴う地滑り発生の懸念が大きい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "土砂災害の懸念がある"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_2.
+kg:op_7 prop:content "造成地の崩壊や土砂流出を懸念する"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_2.
+kg:op_8 prop:content "イヌワシ保全の観点から重大な懸念がある"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_2.
+kg:op_9 prop:content "重要な採食地であり計画見直しが必要"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_2.
+kg:op_10 prop:content "事業の取りやめも含めた見直しを求める"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_2.
+kg:op_11 prop:content "イヌワシ保全や土砂災害懸念から抜本的見直しが必要"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "米沢市長"@ja.
+kg:st_3 rdf:type cls:st_27.
+cls:st_27 rdfs:label "市長"@ja.
+kg:op_12 prop:content "必要性や不可逆性や自然環境や景観との調和を総合的に検討し全面白紙撤回を求める"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_3.
+kg:op_13 prop:content "気候変動対策と生物多様性保全を両立させるべき"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "一方の問題解決のために他方を犠牲にすることは望ましくない"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "市民に十分理解されていないため情報公開が必要"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "説明責任を果たすため見える化が必要"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "市民理解を進めるため分かる化が必要"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "何が重要かを明確にして説明責任を果たすべき"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "住民理解が得られたとは言い難い"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_3.
+kg:op_20 prop:content "地域との共生には住民理解が欠かせない"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_3.
+kg:st_4 rdfs:label "米沢市"@ja.
+kg:st_4 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_21 prop:content "市民の理解が必要不可欠であり説明責任を果たすよう求めた"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "反映されない場合は事業計画を是認しない可能性がある"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_4.
+kg:op_23 prop:content "説明会の回答は極めて不十分だった"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_3.
+kg:op_24 prop:content "住民理解のため追加説明会を求めた"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "資料公開を文書で求めた"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "説明内容の透明化のため公開を求めた"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_4.
+kg:op_27 prop:content "地域裨益を具体的に示すよう求めた"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "事業者の回答は市の期待と大きく異なっていた"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_3.
+kg:op_29 prop:content "事業の根幹に関わる重大な懸念として重く受け止める"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_3.
+kg:op_30 prop:content "県知事意見書は極めて厳しい内容だ"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_3.
+kg:op_31 prop:content "様々な懸念があり重く受け止める必要がある"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_3.
+kg:op_32 prop:content "不可逆性を踏まえこのまま進めるべきではない"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_3.
+kg:op_33 prop:content "自然への影響を踏まえ事業を進めるべきではない"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_3.
+kg:op_34 prop:content "環境への影響を踏まえ事業を進めるべきではない"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_3.
+kg:op_35 prop:content "景観への影響を総合的に考慮した"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_3.
+kg:op_36 prop:content "安全性の観点からも事業を進めるべきではない"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_3.
+kg:op_37 prop:content "地域裨益も含め総合判断した"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_3.
+kg:op_38 prop:content "市民や専門家の懸念を踏まえ全面撤回を申し入れた"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_3.
+kg:op_39 prop:content "計画見直しがあっても不安払拭は極めて難しい"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_3.
+kg:st_5 rdfs:label "米沢市市民環境部長"@ja.
+kg:st_5 rdf:type cls:st_28.
+cls:st_28 rdfs:label "部長"@ja.
+kg:op_40 prop:content "本市の意向に沿う説明会ではなかった"@ja.
+kg:op_40 rdf:type cls:opinion.
+kg:op_40 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "米沢市産業部長"@ja.
+kg:st_6 rdf:type cls:st_28.
+kg:op_41 prop:content "是正指導を実施し計画書提出を確認した"@ja.
+kg:op_41 rdf:type cls:opinion.
+kg:op_41 prop:speaker kg:st_6.
+kg:op_42 prop:content "市と県で協議し是正指導した"@ja.
+kg:op_42 rdf:type cls:opinion.
+kg:op_42 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "米沢市建設部長"@ja.
+kg:st_7 rdf:type cls:st_28.
+kg:op_43 prop:content "出来形計測結果の提出を求めた"@ja.
+kg:op_43 rdf:type cls:opinion.
+kg:op_43 prop:speaker kg:st_7.
+kg:op_44 prop:content "確定した場合は法律に照らして適切に指導する"@ja.
+kg:op_44 rdf:type cls:opinion.
+kg:op_44 prop:speaker kg:st_7.
+kg:op_45 prop:content "風力発電は周囲の景観に大きな影響を与える可能性がある"@ja.
+kg:op_45 rdf:type cls:opinion.
+kg:op_45 prop:speaker kg:st_7.
+kg:op_46 prop:content "生物多様性と生態系を保持してきた場所の重みを理解すべき"@ja.
+kg:op_46 rdf:type cls:opinion.
+kg:op_46 prop:speaker kg:st_1.
+kg:op_47 prop:content "このそごは事業者の信頼性を失わせている"@ja.
+kg:op_47 rdf:type cls:opinion.
+kg:op_47 prop:speaker kg:st_1.
+kg:op_48 prop:content "営巣地認識のそごは重大である"@ja.
+kg:op_48 rdf:type cls:opinion.
+kg:op_48 prop:speaker kg:st_1.
+kg:op_49 prop:content "主要な餌場ではないとする事業者見解と大きく異なる"@ja.
+kg:op_49 rdf:type cls:opinion.
+kg:op_49 prop:speaker kg:st_1.
+kg:op_50 prop:content "今後のまちづくりの環境基準の準則にしていく必要がある"@ja.
+kg:op_50 rdf:type cls:opinion.
+kg:op_50 prop:speaker kg:st_1.
+kg:op_51 prop:content "脱炭素先行地域をはじめ環境政策に迅速な調査が必要"@ja.
+kg:op_51 rdf:type cls:opinion.
+kg:op_51 prop:speaker kg:st_1.
+kg:op_52 prop:content "再エネ規制の動きも見ながら対応を検討する"@ja.
+kg:op_52 rdf:type cls:opinion.
+kg:op_52 prop:speaker kg:st_5.
+kg:op_53 prop:content "示された内容であればスカイラインから突出している"@ja.
+kg:op_53 rdf:type cls:opinion.
+kg:op_53 prop:speaker kg:st_7.
+kg:op_54 prop:content "景観計画の実効性がないものになってしまう"@ja.
+kg:op_54 rdf:type cls:opinion.
+kg:op_54 prop:speaker kg:st_1.
+kg:op_55 prop:content "情報公開に加え強制力を持つ措置は研究しなければならない"@ja.
+kg:op_55 rdf:type cls:opinion.
+kg:op_55 prop:speaker kg:st_3.
+kg:op_56 prop:content "当事者性を持つためにも情報公開が第一歩だ"@ja.
+kg:op_56 rdf:type cls:opinion.
+kg:op_56 prop:speaker kg:st_3.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "対象事業が周辺の自然環境、地域生活環境などに与える影響について"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "対象事業が周辺の自然環境、地域生活環境などに与える影響について"@ja.
+<< kg:id_1 prop:cause kg:id_4 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "谷筋の大規模盛土の土砂崩壊による土石流の発生"@ja.
+<< kg:id_1 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "谷筋の大規模盛土の土砂崩壊による土石流の発生"@ja.
+<< kg:id_1 prop:cause kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "対象事業実施区域内に地滑り地形が存在することから"@ja.
+<< kg:id_1 prop:effect kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "本工事に伴う地滑りの発生など土砂災害の懸念"@ja.
+<< kg:id_1 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "本工事に伴う地滑りの発生など土砂災害の懸念"@ja.
+<< kg:id_1 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "対象事業実施区域内は絶滅が危惧されるニホンイヌワシの飛翔が多数確認され"@ja.
+<< kg:id_1 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "重要な採食地、餌場になっており"@ja.
+<< kg:id_1 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "事業対象区域近傍では営巣している蓋然性が高いとして"@ja.
+<< kg:id_1 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "事業の取りやめも含め抜本的な事業の見直しを求められています"@ja.
+<< kg:id_1 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "米沢市長は当該事業の必要性や不可逆性、本市の自然や環境、景観、精神文化との調和、本市への地域裨益など総合的に熟慮・検討した結果として、当該事業の全面白紙撤回を求めました"@ja.
+<< kg:id_1 prop:cause kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "再生可能エネルギーの不適切な導入を指導することを含め、生物多様性の損失を阻止し"@ja.
+<< kg:id_1 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "生物多様性の損失を阻止し"@ja.
+<< kg:id_1 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "情報公開、情報の見える化はもちろん"@ja.
+<< kg:id_1 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "情報公開、情報の見える化はもちろん"@ja.
+<< kg:id_1 prop:countermeasure kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "内容の理解、分かる化"@ja.
+<< kg:id_1 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "何が大切で重要なのか重みづけ化することで、説明責任、アカウンタビリティーを果たす必要がある"@ja.
+<< kg:id_1 prop:cause kg:id_20 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "住民からの事業計画に対する様々な意見や事業への懸念に対し、誠実かつ丁寧に説明してきたとは言えず"@ja.
+<< kg:id_1 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "住民の理解が得られたとは言い難いと認識しております"@ja.
+<< kg:id_1 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "市民の理解が必要不可欠であり、事業者として説明責任を果たすよう求めてまいりました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "住民の意見を真摯に受け止め、事業計画に適切に反映されない場合は、事業計画を是認しない可能性がある"@ja.
+<< kg:id_1 prop:effect kg:id_24 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "極めて不十分な回答が多く、本市民の理解が得られたとは言い難い"@ja.
+<< kg:id_1 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "早期に追加説明会を開催すること"@ja.
+<< kg:id_1 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:text-txt_contents "準備書、会議録の公開を文書で"@ja.
+<< kg:id_1 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "準備書、会議録の公開を文書で"@ja.
+<< kg:id_1 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "本市への地域貢献の内容を具体的に提案するよう口頭で求めてまいりました"@ja.
+<< kg:id_1 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "同事業者には、本市や住民との協力関係を構築する意欲が欠けていると受け止めております"@ja.
+<< kg:id_1 prop:cause kg:id_30 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_29;
+    prop:text-txt_contents "特に、イヌワシの保全については"@ja.
+<< kg:id_1 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "造成地の崩壊及び土砂流出"@ja.
+<< kg:id_1 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "地滑り等、様々な懸念"@ja.
+<< kg:id_1 prop:effect kg:id_33 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "起きてからでは後戻りできない状況に陥るおそれがある不可逆性"@ja.
+<< kg:id_1 prop:effect kg:id_34 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "本市の自然や環境、景観、安全性"@ja.
+<< kg:id_1 prop:effect kg:id_35 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "本市の自然や環境、景観、安全性"@ja.
+<< kg:id_1 prop:effect kg:id_36 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "本市の自然や環境、景観、安全性"@ja.
+<< kg:id_1 prop:effect kg:id_37 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "本市の自然や環境、景観、安全性"@ja.
+<< kg:id_1 prop:effect kg:id_38 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "さらには本市への地域裨益など総合的に熟慮、検討した結果"@ja.
+<< kg:id_1 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "８月29日に同社本社を訪問、松本義弘社長と面談し、全面撤回を求める申入れをした"@ja.
+<< kg:id_1 prop:effect kg:id_40 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "多くの市民の不安を払拭するのは極めて難しい"@ja.
+<< kg:id_1 prop:effect kg:id_41 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_40;
+    prop:text-txt_contents "質問や意見に対する回答は誠意が感じられず、住民の理解を得られたものではなかった"@ja.
+<< kg:id_1 prop:cause kg:id_42 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_41;
+    prop:text-txt_contents "現場確認では一部に直径の大きな木の伐採跡が見受けられました"@ja.
+<< kg:id_1 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_42;
+    prop:text-txt_contents "小規模林地開発計画書を県へ提出するよう事業者に対して是正指導を実施し"@ja.
+<< kg:id_1 prop:cause kg:id_44 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_43;
+    prop:text-txt_contents "結果として届出対象基準の3,000平方メートルを超える疑義が生じた"@ja.
+<< kg:id_1 prop:effect kg:id_45 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_44;
+    prop:text-txt_contents "無届けでの行為の着手案件として確定した場合には"@ja.
+<< kg:id_1 prop:effect kg:id_46 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_45;
+    prop:text-txt_contents "特に山間部など自然環境が豊かな地域では、その美しい景観が損なわれる懸念がある"@ja.
+<< kg:id_1 prop:effect kg:id_47 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_46;
+    prop:text-txt_contents "動物の重要種、要するに今言った絶滅が危惧されるような重要種が、哺乳類17種、鳥類78種、爬虫類７種、両生類10種、昆虫類110種、魚類17種、底生動物９種、陸産貝類７種、そして植物種73科214種"@ja.
+<< kg:id_1 prop:cause kg:id_48 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_47;
+    prop:text-txt_contents "事業者と山形県知事意見では、イヌワシに関する大きな理解のそごがありました"@ja.
+<< kg:id_1 prop:cause kg:id_49 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_48;
+    prop:text-txt_contents "山形県知事意見書では、総合的に判断すると、準備書に記載している10キロメートル離れた営巣地のペアのほかに、事業実施区域近傍でイヌワシが営巣している蓋然性が高いとしています"@ja.
+<< kg:id_1 prop:cause kg:id_50 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_49;
+    prop:text-txt_contents "山形県は、餌資源量指数が高く、イヌワシにとって貴重な採食地となっている可能性が高いとしています"@ja.
+<< kg:id_1 prop:countermeasure kg:id_51 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_50;
+    prop:text-txt_contents "ネイチャーポジティブをしっかり受け止めて研究し、今後のまちづくりの環境基準の準則にしていく必要がある"@ja.
+<< kg:id_1 prop:countermeasure kg:id_52 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_51;
+    prop:text-txt_contents "米沢市の今後の環境の在り方について迅速に御調査なさってお調べいただきたい"@ja.
+<< kg:id_1 prop:countermeasure kg:id_53 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_52;
+    prop:text-txt_contents "ネイチャーポジティブと併せまして、今後検討してまいりたい"@ja.
+<< kg:id_1 prop:effect kg:id_54 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_53;
+    prop:text-txt_contents "現在見せていただいている内容であれば、スカイラインから突出しているものという捉え方をしている"@ja.
+<< kg:id_1 prop:effect kg:id_55 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_54;
+    prop:text-txt_contents "これは勧告なわけですから、強行された場合、止められないわけです"@ja.
+<< kg:id_1 prop:countermeasure kg:id_56 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_55;
+    prop:text-txt_contents "市においても、ある程度強制力を持った力を持つ何かの措置は研究しなければいけない"@ja.
+<< kg:id_1 prop:countermeasure kg:id_57 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_56;
+    prop:text-txt_contents "当事者性を持つためにも、やはりきちんと事業者に入り口で情報公開させるということが重要"@ja.
+}

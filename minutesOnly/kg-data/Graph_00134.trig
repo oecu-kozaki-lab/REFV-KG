@@ -1,0 +1,295 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00134> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "出力制御"@ja.
+kg:id_1 rdf:type cls:c_3265.
+cls:c_3265 rdfs:label "出力制御"@ja.
+kg:id_2 rdfs:label "再エネを生かし切れていない"@ja.
+kg:id_2 rdf:type cls:c_3266.
+cls:c_3266 rdfs:label "再エネ活用不足"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "発電した電力を流せない"@ja.
+kg:id_3 rdf:type cls:c_2540.
+cls:c_2540 rdfs:label "送電制約"@ja.
+kg:id_1 prop:effect kg:id_3.
+kg:id_4 rdfs:label "電力の需給逼迫"@ja.
+kg:id_4 rdf:type cls:c_1236.
+cls:c_1236 rdfs:label "需給逼迫"@ja.
+kg:id_5 rdfs:label "供給制限の可能性"@ja.
+kg:id_5 rdf:type cls:c_3267.
+cls:c_3267 rdfs:label "供給制限"@ja.
+kg:id_4 prop:effect kg:id_5.
+kg:id_6 rdfs:label "再生可能エネルギーの優先利用原則確立"@ja.
+kg:id_6 rdf:type cls:c_3268.
+cls:c_3268 rdfs:label "優先利用原則"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "太陽光や風力発電を最大限に生かせないこと"@ja.
+kg:id_7 rdf:type cls:c_3266.
+kg:id_8 rdfs:label "揚水発電や蓄電池の整備不足"@ja.
+kg:id_8 rdf:type cls:c_2184.
+cls:c_2184 rdfs:label "蓄電設備不足"@ja.
+kg:id_7 prop:cause kg:id_8.
+kg:id_9 rdfs:label "大都市へ融通するための連系線の整備不足"@ja.
+kg:id_9 rdf:type cls:c_321.
+cls:c_321 rdfs:label "送電網不足"@ja.
+kg:id_7 prop:cause kg:id_9.
+kg:id_10 rdfs:label "再エネ活用の遅れ"@ja.
+kg:id_10 rdf:type cls:c_3266.
+kg:id_11 rdfs:label "政府の対策の立ち後れ"@ja.
+kg:id_11 rdf:type cls:c_3269.
+cls:c_3269 rdfs:label "対策遅れ"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "本州と九州との連系線を強化する計画の見送り"@ja.
+kg:id_12 rdf:type cls:c_3270.
+cls:c_3270 rdfs:label "送電網整備見送り"@ja.
+kg:id_10 prop:cause kg:id_12.
+kg:id_13 rdfs:label "省エネの推進"@ja.
+kg:id_13 rdf:type cls:c_2139.
+cls:c_2139 rdfs:label "省エネ推進"@ja.
+kg:id_10 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "再エネ電力の優先利用原則の確立"@ja.
+kg:id_14 rdf:type cls:c_3268.
+kg:id_10 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "送電網供給体制の整備"@ja.
+kg:id_15 rdf:type cls:c_1928.
+cls:c_1928 rdfs:label "送電網整備"@ja.
+kg:id_10 prop:countermeasure kg:id_15.
+kg:id_16 rdfs:label "送電"@ja.
+kg:id_16 rdf:type cls:c_3271.
+cls:c_3271 rdfs:label "送電"@ja.
+kg:id_17 rdfs:label "ロスが出る"@ja.
+kg:id_17 rdf:type cls:c_3272.
+cls:c_3272 rdfs:label "送電損失"@ja.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "送電ロス"@ja.
+kg:id_18 rdf:type cls:c_3272.
+kg:id_19 rdfs:label "ロスのない地産地消できる仕組みへの転換"@ja.
+kg:id_19 rdf:type cls:c_3273.
+cls:c_3273 rdfs:label "地産地消型電力"@ja.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "地域マイクログリッド"@ja.
+kg:id_20 rdf:type cls:c_100.
+cls:c_100 rdfs:label "地域電力網"@ja.
+kg:id_21 rdfs:label "エネルギーの地産地消ができる"@ja.
+kg:id_21 rdf:type cls:c_3273.
+kg:id_20 prop:effect kg:id_21.
+kg:id_22 rdfs:label "災害時にも安定的に電力を供給できる"@ja.
+kg:id_22 rdf:type cls:c_3274.
+cls:c_3274 rdfs:label "災害時電力供給"@ja.
+kg:id_20 prop:effect kg:id_22.
+kg:id_23 rdfs:label "導入を取り入れていく"@ja.
+kg:id_23 rdf:type cls:c_1459.
+cls:c_1459 rdfs:label "導入推進"@ja.
+kg:id_20 prop:countermeasure kg:id_23.
+kg:id_24 rdfs:label "地域マイクログリッドの導入"@ja.
+kg:id_24 rdf:type cls:c_3275.
+cls:c_3275 rdfs:label "地域電力網導入"@ja.
+kg:id_25 rdfs:label "蓄電設備がなかなかできづらく現状ではない"@ja.
+kg:id_25 rdf:type cls:c_2184.
+kg:id_24 prop:cause kg:id_25.
+kg:id_26 rdfs:label "再生可能エネルギー"@ja.
+kg:id_26 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_27 rdfs:label "調整弁扱いでは生かし切れない"@ja.
+kg:id_27 rdf:type cls:c_3266.
+kg:id_26 prop:effect kg:id_27.
+kg:id_28 rdfs:label "再生可能エネルギーが生かし切れないこと"@ja.
+kg:id_28 rdf:type cls:c_3266.
+kg:id_29 rdfs:label "国の扱い方や事業者の使い方として調整弁扱いにされていること"@ja.
+kg:id_29 rdf:type cls:c_3276.
+cls:c_3276 rdfs:label "調整弁扱い"@ja.
+kg:id_28 prop:cause kg:id_29.
+kg:id_30 rdfs:label "再生可能エネルギーが無駄になること"@ja.
+kg:id_30 rdf:type cls:c_3266.
+kg:id_31 rdfs:label "電気事業者の都合で太陽光から電気を買わないこと"@ja.
+kg:id_31 rdf:type cls:c_3277.
+cls:c_3277 rdfs:label "再エネ買い控え"@ja.
+kg:id_30 prop:cause kg:id_31.
+kg:id_32 rdfs:label "原子力発電が優先されていること"@ja.
+kg:id_32 rdf:type cls:c_3278.
+cls:c_3278 rdfs:label "原発優先"@ja.
+kg:id_28 prop:cause kg:id_32.
+kg:st_1 rdfs:label "４番（佐藤光保君）"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "発電しても止めなければならず再エネが十分活用されていないと問題視"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "出力制御により発電電力を送れない実態があると指摘"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "需給逼迫による供給制限の説明は根拠が分かりにくいと指摘"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "再生可能エネルギーの優先利用原則を確立すべきと主張"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "再エネ活用には蓄電設備の整備が必要と指摘"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "余剰電力を融通する連系線整備が必要と指摘"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "政府の対策は大きく遅れていると批判"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "連系線強化計画の見送りが再エネ活用を妨げていると指摘"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "省エネ推進を再エネ活用と併せて進めるべきと主張"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "再エネ電力の優先利用原則を確立すべきと主張"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "送電網供給体制の整備が不可欠と主張"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "遠距離送電では電力ロスが避けられないと指摘"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "地産地消型の仕組みにしていくべきと主張"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "地域生活課長（太田智光君）"@ja.
+kg:st_2 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_14 prop:content "地域内で再エネを用いて電力供給を賄える仕組みと説明"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_2.
+kg:op_15 prop:content "災害時は地域単独ネットワークに切り替えて安定供給できると説明"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_2.
+kg:op_16 prop:content "カーボンニュートラル実現に向け導入を進めることが大切と考える"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_2.
+kg:op_17 prop:content "蓄電設備の未整備が課題と認識"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_2.
+kg:op_18 prop:content "再生可能エネルギーが調整弁扱いでは十分活用できないと批判"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+kg:op_19 prop:content "国と事業者が再エネを調整弁扱いしていることが問題と指摘"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_1.
+kg:op_20 prop:content "事業者都合で再エネ電力を買わず無駄にしていると批判"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_1.
+kg:op_21 prop:content "原発優先が再エネ活用を阻害していると指摘"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_1.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "この記事で再エネを生かし切れていないと、発電してもそれを止めなければならないと、流せないということが言われております。"@ja.
+<< kg:id_1 prop:effect kg:id_3 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "発電してもそれを止めなければならないと、流せないということが言われております。"@ja.
+<< kg:id_4 prop:effect kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "報道などで需給逼迫による供給制限の可能性があるとかいう話を聞くたびに思うわけですが、どうもその根拠が示されていないというか、分かりやすく説明されていない。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "やはりこの再生可能エネルギーについては、優先利用の原則確立がなされることが必要だろうというふうに考える次第です。"@ja.
+<< kg:id_7 prop:cause kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "天候や電力によって発電出力が左右される太陽光や風力発電を最大限に生かすには、揚水発電や蓄電池の整備とともに"@ja.
+<< kg:id_7 prop:cause kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "余った電力を電力の消費地である大都市へ融通するための連系線の整備も必要です"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "政府の対策は大きく立ち後れています。"@ja.
+<< kg:id_10 prop:cause kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "例えば本州と九州との連系線を強化する計画は見送りが続いております。"@ja.
+<< kg:id_10 prop:countermeasure kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "省エネの推進とともに"@ja.
+<< kg:id_10 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "再エネ電力の優先利用原則を確立し"@ja.
+<< kg:id_10 prop:countermeasure kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "送電網供給体制を整備することが不可欠です"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "どうしても遠くまで送電するということになれば、ロスが出るのはこれは確実でありまして"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "やはりそこのところをロスのない地産地消できるそういう仕組みにしていかなければならないのではないか"@ja.
+<< kg:id_20 prop:effect kg:id_21 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "地域内の電力供給を賄うことのできるエネルギーの地産地消ができるシステムを地域マイクログリッドというふうに呼ばれているようであります。"@ja.
+<< kg:id_20 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "地震や台風などの災害により、停電などが発生した場合、平常時は電力会社とつながっている送電線ネットワークを切り離して、地域単独のネットワークに切り替えることで、安定的に電力の供給ができる"@ja.
+<< kg:id_20 prop:countermeasure kg:id_23 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "今後カーボンニュートラル社会の実現に向けて、こういう地域マイクログリッド事業のようなシステムも取り入れていくということも大切なことだというふうには考えております。"@ja.
+<< kg:id_24 prop:cause kg:id_25 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "そういうもので蓄電池という、蓄電設備というのはなかなかできづらいというか、ないというのが現状であります。"@ja.
+<< kg:id_26 prop:effect kg:id_27 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "調整弁扱いでは再生可能エネルギーというのは生かし切れないのだろうというふうに考える次第です。"@ja.
+<< kg:id_28 prop:cause kg:id_29 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "どうしてもその再生可能エネルギーを現在は国の扱い方、事業者の使い方として、調整弁扱いにされているというところがあります。"@ja.
+<< kg:id_30 prop:cause kg:id_31 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "そういう太陽光から電気を買わないということで、電気事業者の都合でせっかくの再生可能エネルギーが無駄になる"@ja.
+<< kg:id_28 prop:cause kg:id_32 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_21;
+    prop:text-txt_contents "原子力、原発でのエネルギーを優先されているということになっていて"@ja.
+}

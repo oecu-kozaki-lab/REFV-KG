@@ -1,0 +1,480 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00146> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "地球の環境"@ja.
+kg:id_1 rdf:type cls:c_3442.
+cls:c_3442 rdfs:label "環境"@ja.
+kg:id_2 rdfs:label "元に戻れない状況になる"@ja.
+kg:id_2 rdf:type cls:c_3443.
+cls:c_3443 rdfs:label "不可逆な変化"@ja.
+kg:id_1 prop:effect kg:id_2.
+kg:id_3 rdfs:label "地球温暖化"@ja.
+kg:id_3 rdf:type cls:c_1233.
+cls:c_1233 rdfs:label "温暖化"@ja.
+kg:id_4 rdfs:label "グリーンランドの氷が溶ける"@ja.
+kg:id_4 rdf:type cls:c_3444.
+cls:c_3444 rdfs:label "氷の融解"@ja.
+kg:id_3 prop:effect kg:id_4.
+kg:id_5 rdfs:label "グリーンランドの氷が溶けること"@ja.
+kg:id_5 rdf:type cls:c_3444.
+kg:id_6 rdfs:label "キリバスが侵食され住めない状況が来る"@ja.
+kg:id_6 rdf:type cls:c_3445.
+cls:c_3445 rdfs:label "居住不能"@ja.
+kg:id_5 prop:effect kg:id_6.
+kg:id_7 rdfs:label "私たちが何もしなかったこと"@ja.
+kg:id_7 rdf:type cls:c_3446.
+cls:c_3446 rdfs:label "不作為"@ja.
+kg:id_8 rdfs:label "子どもたちに将来の被害を残す"@ja.
+kg:id_8 rdf:type cls:c_3447.
+cls:c_3447 rdfs:label "将来被害"@ja.
+kg:id_7 prop:effect kg:id_8.
+kg:id_9 rdfs:label "庄内沖の海水温上昇"@ja.
+kg:id_9 rdf:type cls:c_3427.
+cls:c_3427 rdfs:label "海水温上昇"@ja.
+kg:id_10 rdfs:label "魚がいなくなっている"@ja.
+kg:id_10 rdf:type cls:c_3448.
+cls:c_3448 rdfs:label "魚類減少"@ja.
+kg:id_9 prop:effect kg:id_10.
+kg:id_11 rdfs:label "高温"@ja.
+kg:id_11 rdf:type cls:c_3449.
+cls:c_3449 rdfs:label "高温"@ja.
+kg:id_12 rdfs:label "サケの遡上が非常に遅くなり小ぶりになる"@ja.
+kg:id_12 rdf:type cls:c_3450.
+cls:c_3450 rdfs:label "サケ不漁"@ja.
+kg:id_11 prop:effect kg:id_12.
+kg:id_13 rdfs:label "河川の採捕が例年の1割から4割程度になる"@ja.
+kg:id_13 rdf:type cls:c_3450.
+kg:id_11 prop:effect kg:id_13.
+kg:id_14 rdfs:label "河川の採捕の減少"@ja.
+kg:id_14 rdf:type cls:c_3451.
+cls:c_3451 rdfs:label "漁獲減少"@ja.
+kg:id_15 rdfs:label "北海道から卵を持ってこないとならない"@ja.
+kg:id_15 rdf:type cls:c_3452.
+cls:c_3452 rdfs:label "卵の調達"@ja.
+kg:id_14 prop:effect kg:id_15.
+kg:id_16 rdfs:label "海水温の上昇"@ja.
+kg:id_16 rdf:type cls:c_3427.
+kg:id_17 rdfs:label "庄内おばこサワラがなかなか取れない状況になる"@ja.
+kg:id_17 rdf:type cls:c_3451.
+kg:id_16 prop:effect kg:id_17.
+kg:id_18 rdfs:label "北海道の白糠町でブリが取れ始める"@ja.
+kg:id_18 rdf:type cls:c_3453.
+cls:c_3453 rdfs:label "魚種変化"@ja.
+kg:id_16 prop:effect kg:id_18.
+kg:id_19 rdfs:label "温暖化"@ja.
+kg:id_19 rdf:type cls:c_1233.
+kg:id_20 rdfs:label "山形県や庄内で1等米比率が低下する"@ja.
+kg:id_20 rdf:type cls:c_3454.
+cls:c_3454 rdfs:label "米品質低下"@ja.
+kg:id_19 prop:effect kg:id_20.
+kg:id_21 rdfs:label "洋上風力発電事業"@ja.
+kg:id_21 rdf:type cls:c_218.
+cls:c_218 rdfs:label "発電事業"@ja.
+kg:id_22 rdfs:label "今後様々な調整業務が発生する"@ja.
+kg:id_22 rdf:type cls:c_3455.
+cls:c_3455 rdfs:label "調整業務"@ja.
+kg:id_21 prop:effect kg:id_22.
+kg:id_23 rdfs:label "町"@ja.
+kg:id_23 rdf:type cls:c_117.
+cls:c_117 rdfs:label "自治体"@ja.
+kg:id_24 rdfs:label "令和6年度に向け組織の再編を検討する"@ja.
+kg:id_24 rdf:type cls:c_3456.
+cls:c_3456 rdfs:label "組織再編"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "エネルギー基本計画の改定作業を行う"@ja.
+kg:id_25 rdf:type cls:c_2498.
+cls:c_2498 rdfs:label "計画改定"@ja.
+kg:id_23 prop:countermeasure kg:id_25.
+kg:id_26 rdfs:label "再生可能エネルギーの導入を進める"@ja.
+kg:id_26 rdf:type cls:c_266.
+cls:c_266 rdfs:label "再エネ導入"@ja.
+kg:id_23 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "省エネの推進を進める"@ja.
+kg:id_27 rdf:type cls:c_2139.
+cls:c_2139 rdfs:label "省エネ推進"@ja.
+kg:id_23 prop:countermeasure kg:id_27.
+kg:id_28 rdfs:label "温室効果ガス吸収源対策を進める"@ja.
+kg:id_28 rdf:type cls:c_3457.
+cls:c_3457 rdfs:label "吸収源対策"@ja.
+kg:id_23 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "町有施設における省エネ化と再エネ設備導入を進める"@ja.
+kg:id_29 rdf:type cls:c_3458.
+cls:c_3458 rdfs:label "施設省エネ"@ja.
+kg:id_23 prop:countermeasure kg:id_29.
+kg:id_30 rdfs:label "環境マネジメントシステムLAS-Eを導入し光熱水費やごみ排出量削減等に取り組む"@ja.
+kg:id_30 rdf:type cls:c_2473.
+cls:c_2473 rdfs:label "環境対策"@ja.
+kg:id_23 prop:countermeasure kg:id_30.
+kg:id_31 rdfs:label "重点加速化事業や脱炭素推進事業債などの支援制度を活用する"@ja.
+kg:id_31 rdf:type cls:c_3459.
+cls:c_3459 rdfs:label "支援活用"@ja.
+kg:id_23 prop:countermeasure kg:id_31.
+kg:id_32 rdfs:label "遊佐町地産地消エネルギー協議会"@ja.
+kg:id_32 rdf:type cls:c_3460.
+cls:c_3460 rdfs:label "協議会"@ja.
+kg:id_33 rdfs:label "遊佐町に合ったエネルギー地産地消の仕組みを検討する"@ja.
+kg:id_33 rdf:type cls:c_103.
+cls:c_103 rdfs:label "地産地消"@ja.
+kg:id_32 prop:countermeasure kg:id_33.
+kg:id_34 rdfs:label "官民連携で遊佐町に合った地産地消の仕組みをつくる"@ja.
+kg:id_34 rdf:type cls:c_103.
+kg:id_23 prop:countermeasure kg:id_34.
+kg:id_35 rdfs:label "全庁挙げて取り組む"@ja.
+kg:id_35 rdf:type cls:c_3461.
+cls:c_3461 rdfs:label "全庁対応"@ja.
+kg:id_23 prop:countermeasure kg:id_35.
+kg:id_36 rdfs:label "森林整備"@ja.
+kg:id_36 rdf:type cls:c_3462.
+cls:c_3462 rdfs:label "森林整備"@ja.
+kg:id_37 rdfs:label "水源涵養や防災対策や未利用材の燃料化も含め事業化を検討する"@ja.
+kg:id_37 rdf:type cls:c_3463.
+cls:c_3463 rdfs:label "事業化検討"@ja.
+kg:id_36 prop:countermeasure kg:id_37.
+kg:id_38 rdfs:label "県の主導事業"@ja.
+kg:id_38 rdf:type cls:c_3464.
+cls:c_3464 rdfs:label "行政事業"@ja.
+kg:id_39 rdfs:label "航空レーザー測量を実施しデータ解析を行う"@ja.
+kg:id_39 rdf:type cls:c_3465.
+cls:c_3465 rdfs:label "測量調査"@ja.
+kg:id_38 prop:countermeasure kg:id_39.
+kg:id_40 rdfs:label "令和6年度以降に森林経営管理制度に向けた意向調査を行う"@ja.
+kg:id_40 rdf:type cls:c_905.
+cls:c_905 rdfs:label "意向調査"@ja.
+kg:id_23 prop:countermeasure kg:id_40.
+kg:id_41 rdfs:label "集積計画策定や路網整備を進める"@ja.
+kg:id_41 rdf:type cls:c_2379.
+cls:c_2379 rdfs:label "基盤整備"@ja.
+kg:id_23 prop:countermeasure kg:id_41.
+kg:id_42 rdfs:label "先行地域を参考に視察等の研修を行う"@ja.
+kg:id_42 rdf:type cls:c_1650.
+cls:c_1650 rdfs:label "研修実施"@ja.
+kg:id_23 prop:countermeasure kg:id_42.
+kg:id_43 rdfs:label "森林環境譲与税を森林整備や担い手確保や木材利用促進等に活用する"@ja.
+kg:id_43 rdf:type cls:c_3466.
+cls:c_3466 rdfs:label "税活用"@ja.
+kg:id_23 prop:countermeasure kg:id_43.
+kg:id_44 rdfs:label "教育委員会"@ja.
+kg:id_44 rdf:type cls:c_3467.
+cls:c_3467 rdfs:label "教育機関"@ja.
+kg:id_45 rdfs:label "小中学校で環境教育やSDGs学習を進める"@ja.
+kg:id_45 rdf:type cls:c_909.
+cls:c_909 rdfs:label "環境教育"@ja.
+kg:id_44 prop:countermeasure kg:id_45.
+kg:id_46 rdfs:label "脱炭素社会の実現の重要性について理解を深める学習や教育の場を設ける"@ja.
+kg:id_46 rdf:type cls:c_140.
+cls:c_140 rdfs:label "理解促進"@ja.
+kg:id_44 prop:countermeasure kg:id_46.
+kg:id_47 rdfs:label "洋上風力発電事業の推移を考慮しつつ対応する"@ja.
+kg:id_47 rdf:type cls:c_3468.
+cls:c_3468 rdfs:label "状況対応"@ja.
+kg:id_44 prop:countermeasure kg:id_47.
+kg:st_1 rdfs:label "菅原和幸議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "限界点を超える前に対策を進めるべきだと懸念している"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "深刻な状況であり正しい道への転換が必要だと受け止めている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "一般社団法人日本キリバス協会のケンタロ・オノさん"@ja.
+kg:st_2 rdf:type cls:st_88.
+cls:st_88 rdfs:label "団体関係者"@ja.
+kg:op_3 prop:content "キリバスは間もなく住めない状況が来ると強く訴えている"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "遠方の氷の融解が島しょ国に影響していると感じた"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "将来世代に対してなぜ行動しなかったのかと問題提起している"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_2.
+kg:op_6 prop:content "強く身につまされる訴えだったと受け止めている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:st_3 rdfs:label "遊佐町の漁協に関係している方"@ja.
+kg:st_3 rdf:type cls:st_61.
+cls:st_61 rdfs:label "漁業関係者"@ja.
+kg:op_7 prop:content "魚がいなくなっていると現場の変化を伝えている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "現実の変化であり間違いないと受け止めている"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "高温の影響でサケ事業が危機的状況にあるとみている"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "遊佐町のサケ事業は危機的状況にあると感じている"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "ふ化事業にも支障が出ており危機感を持っている"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "海の変化が漁獲の変化として現れていると納得している"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "海水温上昇の影響として魚種の変化が起きているとみている"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "日本海沿岸側の1等米比率の悪化は温暖化の影響ではないかとみている"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:st_4 rdfs:label "時田町長"@ja.
+kg:st_4 rdf:type cls:st_11.
+cls:st_11 rdfs:label "首長"@ja.
+kg:op_15 prop:content "調整業務への対応を含め組織再編を検討したいとしている"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_4.
+kg:op_16 prop:content "再生可能エネルギー導入や脱炭素に向けた事業推進のため組織再編を進めたいとしている"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_4.
+kg:op_17 prop:content "2050年カーボンニュートラルを見据えた施策の方向性を定める計画として進めている"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_4.
+kg:st_5 rdfs:label "太田地域生活課長"@ja.
+kg:st_5 rdf:type cls:st_12.
+cls:st_12 rdfs:label "行政職員"@ja.
+kg:op_18 prop:content "計画を区域施策編に位置づけ進捗管理や公表の在り方も検討している"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_5.
+kg:op_19 prop:content "2050年カーボンニュートラル実現に向けて導入を進める考えを示している"@ja.
+kg:op_19 rdf:type cls:opinion.
+kg:op_19 prop:speaker kg:st_4.
+kg:op_20 prop:content "カーボンニュートラルに向けた柱の一つとして省エネを進めるとしている"@ja.
+kg:op_20 rdf:type cls:opinion.
+kg:op_20 prop:speaker kg:st_4.
+kg:op_21 prop:content "カーボンニュートラルに向けた柱の一つとして吸収源対策を進めるとしている"@ja.
+kg:op_21 rdf:type cls:opinion.
+kg:op_21 prop:speaker kg:st_4.
+kg:op_22 prop:content "森林整備は吸収源対策として大きな比重を占めると考えている"@ja.
+kg:op_22 rdf:type cls:opinion.
+kg:op_22 prop:speaker kg:st_1.
+kg:op_23 prop:content "町有施設でのさらなる省エネ化と再エネ導入が課題だと認識している"@ja.
+kg:op_23 rdf:type cls:opinion.
+kg:op_23 prop:speaker kg:st_4.
+kg:op_24 prop:content "町の事務事業における温暖化対策として継続して取り組んでいる"@ja.
+kg:op_24 rdf:type cls:opinion.
+kg:op_24 prop:speaker kg:st_4.
+kg:op_25 prop:content "先行地域指定にこだわらず活用可能な支援制度を使いたいとしている"@ja.
+kg:op_25 rdf:type cls:opinion.
+kg:op_25 prop:speaker kg:st_4.
+kg:op_26 prop:content "先行地域指定がなくても重点加速化事業等の採択は可能と理解している"@ja.
+kg:op_26 rdf:type cls:opinion.
+kg:op_26 prop:speaker kg:st_5.
+kg:op_27 prop:content "官民連携で持続可能な遊佐町を目指したいとしている"@ja.
+kg:op_27 rdf:type cls:opinion.
+kg:op_27 prop:speaker kg:st_4.
+kg:op_28 prop:content "町や関係機関団体が議論に参加し持続可能な町を目指す考えを示している"@ja.
+kg:op_28 rdf:type cls:opinion.
+kg:op_28 prop:speaker kg:st_4.
+kg:op_29 prop:content "ゼロカーボンシティ宣言はスタートであり全庁で取組を進めるべきだとしている"@ja.
+kg:op_29 rdf:type cls:opinion.
+kg:op_29 prop:speaker kg:st_5.
+kg:op_30 prop:content "環境やエネルギーの枠を超えて町全体で取り組む必要があるとしている"@ja.
+kg:op_30 rdf:type cls:opinion.
+kg:op_30 prop:speaker kg:st_4.
+kg:op_31 prop:content "吸収源対策だけでなく地域社会や経済の持続性の観点からも必要だとしている"@ja.
+kg:op_31 rdf:type cls:opinion.
+kg:op_31 prop:speaker kg:st_5.
+kg:st_6 rdfs:label "舘内産業課長"@ja.
+kg:st_6 rdf:type cls:st_12.
+kg:op_32 prop:content "森林経営管理制度に向けた基礎データ整備を進めている"@ja.
+kg:op_32 rdf:type cls:opinion.
+kg:op_32 prop:speaker kg:st_6.
+kg:op_33 prop:content "解析結果を基に意向調査へ進む予定としている"@ja.
+kg:op_33 rdf:type cls:opinion.
+kg:op_33 prop:speaker kg:st_6.
+kg:op_34 prop:content "意向調査結果を踏まえ具体事業に入る予定としている"@ja.
+kg:op_34 rdf:type cls:opinion.
+kg:op_34 prop:speaker kg:st_6.
+kg:op_35 prop:content "真室川町などの先行事例を参考に進めたいとしている"@ja.
+kg:op_35 rdf:type cls:opinion.
+kg:op_35 prop:speaker kg:st_6.
+kg:op_36 prop:content "ゼロカーボンに向けた取組を意識しながら活用したいとしている"@ja.
+kg:op_36 rdf:type cls:opinion.
+kg:op_36 prop:speaker kg:st_6.
+kg:st_7 rdfs:label "土門教育長"@ja.
+kg:st_7 rdf:type cls:st_89.
+cls:st_89 rdfs:label "教育関係者"@ja.
+kg:op_37 prop:content "未来を生きる子どもたちの学習や教育は重要であり現在も学んでいるとしている"@ja.
+kg:op_37 rdf:type cls:opinion.
+kg:op_37 prop:speaker kg:st_7.
+kg:op_38 prop:content "遊佐町の児童生徒にはさらに理解を深める必要があり学習の場も必要だと考えている"@ja.
+kg:op_38 rdf:type cls:opinion.
+kg:op_38 prop:speaker kg:st_7.
+kg:op_39 prop:content "外部機関との連携は現状ではデリケートであり事業の推移を見ながら対応するとしている"@ja.
+kg:op_39 rdf:type cls:opinion.
+kg:op_39 prop:speaker kg:st_7.
+<< kg:id_1 prop:effect kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "これを超えてしまうと、もう地球の環境は元に戻れないということのようでありました"@ja.
+<< kg:id_3 prop:effect kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "グリーンランドのほうで氷が溶けていると"@ja.
+<< kg:id_5 prop:effect kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "そこのところがもう侵食されて、住めないような状況が間もなく来るのだと"@ja.
+<< kg:id_7 prop:effect kg:id_8 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_5;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "私たちがこうなることを知っていたのでしょうと、なぜ何もしなかったの"@ja.
+<< kg:id_9 prop:effect kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "庄内沖の温度が、海水温が上がっているということで、今年の海水温は平年より２度ほど高くなっておって、これは100年間の間で最高の気温であるというようなことでございました。...やはり魚がいなくなっていると"@ja.
+<< kg:id_11 prop:effect kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "遡上が非常に遅くなっているということでした、その当時。２週間ほど遅れて、上がってきても小ぶりというか、そんな感じで、高温が影響しているかなと"@ja.
+<< kg:id_11 prop:effect kg:id_13 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "今朝の新聞にはやはり河川の採捕は例年の１割から４割程度であると"@ja.
+<< kg:id_14 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "ふ化事業の関係も、北海道のほうから卵を持ってこないとならないというようなこともございました"@ja.
+<< kg:id_16 prop:effect kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "暖流にあるサワラの魚が取れて、それが庄内おばこサワラということで非常にセールス上売れたのだが、それもなかなか取れない状況になっている"@ja.
+<< kg:id_16 prop:effect kg:id_18 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "逆に北海道の白糠町ではブリが取れ始めて、一つのふるさと納税の返礼品に当てるほど非常に盛り上がっている"@ja.
+<< kg:id_19 prop:effect kg:id_20 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "2023年の１等米比率、県内は47.4％ということで、48％も減。...庄内は特にこの４つの区域の中で31％でしかなかったということでありました。...温暖化の影響になっているのかなと"@ja.
+<< kg:id_21 prop:effect kg:id_22 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "現在本町沖で計画が進められている洋上風力発電については、年明けぐらいに選定事業者の公募が開始されるものと見込まれております。今後様々な調整業務が発生してきております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "再生可能エネルギー導入や脱炭素に向けた事業を町として進めていくために、令和６年度に向け、組織の再編について検討をしていきたいと考えております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_25 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_17;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "現在町のエネルギー基本計画の改定作業を行っております。これは、2050年カーボンニュートラルを見据え、再生可能エネルギーの導入、省エネの推進、温室効果ガス吸収源対策を３本柱に、2030年までの町の施策の方向性を定める計画となります"@ja.
+<< kg:id_23 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_19;
+    prop:text-txt_contents "2050年カーボンニュートラルを見据え、再生可能エネルギーの導入、省エネの推進、温室効果ガス吸収源対策を３本柱に"@ja.
+<< kg:id_23 prop:countermeasure kg:id_27 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_20;
+    prop:text-txt_contents "2050年カーボンニュートラルを見据え、再生可能エネルギーの導入、省エネの推進、温室効果ガス吸収源対策を３本柱に"@ja.
+<< kg:id_23 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_21;
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_22;
+    prop:text-txt_contents "2050年カーボンニュートラルを見据え、再生可能エネルギーの導入、省エネの推進、温室効果ガス吸収源対策を３本柱に"@ja.
+<< kg:id_23 prop:countermeasure kg:id_29 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_23;
+    prop:text-txt_contents "今後町有施設におけるさらなる省エネ化、再エネ設備の導入が課題になってくるものと思われています"@ja.
+<< kg:id_23 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_24;
+    prop:text-txt_contents "町の事務事業における温暖化対策を進めるため、環境マネジメントシステムである環境自治体スタンダード、いわゆるＬＡＳ―Ｅシステムを導入し、光熱水費やごみの排出量の削減、グリーン購入、環境関連施策等の取組を行っています"@ja.
+<< kg:id_23 prop:countermeasure kg:id_31 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_25;
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_26;
+    prop:text-txt_contents "先行地域指定にこだわらず、地域脱炭素移行・再エネ推進交付金とした重点加速事業、脱炭素推進事業債などの支援制度もありますので、現時点ではそちらの活用も図っていきたいと考えております"@ja.
+<< kg:id_32 prop:countermeasure kg:id_33 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_27;
+    prop:text-txt_contents "今年７月に民間事業者が発起人となる遊佐町地産地消エネルギー協議会が設立され、今後の遊佐町におけるエネルギーの地産地消の在り方について検討しているところであります"@ja.
+<< kg:id_23 prop:countermeasure kg:id_34 >>
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_28;
+    prop:text-txt_contents "町や生活クラブ連合会、ＪＡなど関係機関、団体も議論に参加しながら、官民連携、協働の遊佐町に合った地産地消の仕組みをつくり、持続可能な遊佐町を目指してまいりたいと考えております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_35 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_29;
+    prop:stateBy kg:st_4;
+    prop:relatedOpinion kg:op_30;
+    prop:text-txt_contents "ゼロカーボンシティ宣言したから終わりということではなくて、宣言したということがスタートという認識をしておりますので、今後全庁挙げての取組を進めていくというふうに考えているところです"@ja.
+<< kg:id_36 prop:countermeasure kg:id_37 >>
+    prop:stateBy kg:st_5;
+    prop:relatedOpinion kg:op_31;
+    prop:text-txt_contents "森林整備による水源涵養、防災対策、いわゆる未利用材の燃料化など、単に吸収源対策ということだけではなくて、地域社会や経済の持続性の観点というところも含めまして、今後も事業化について検討していくことが必要である"@ja.
+<< kg:id_38 prop:countermeasure kg:id_39 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_32;
+    prop:text-txt_contents "昨年度、令和４年度は航空レーザー測量を実施し、今年度、そのデータの解析を行っております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_40 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_33;
+    prop:text-txt_contents "この結果を基にいたしまして、令和６年度以降は森林経営管理制度に向けた意向調査に入る予定としております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_41 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_34;
+    prop:text-txt_contents "その後は、意向調査の結果にもよりますけれども、集積計画策定を行いながら、路網整備等の事業に入る予定としております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_42 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_35;
+    prop:text-txt_contents "県内で真室川町など、先行してこの計画を、集積計画等を進めている先行地域もございますので、そういった地域のやり方なんかも参考にしながらと思っておりますので、次年度以降になるかと思いますけれども、視察等の研修なども行っていきたいと考えております"@ja.
+<< kg:id_23 prop:countermeasure kg:id_43 >>
+    prop:stateBy kg:st_6;
+    prop:relatedOpinion kg:op_36;
+    prop:text-txt_contents "森林環境譲与税の使途についてでございますけれども、間伐等の森林の整備に関する施策と人材育成、担い手の確保、木材利用の促進、森林の公益的機能の普及啓発等の森林の整備の促進に関する施策に要する費用に充てるというふうにされておりますので、今後活用するに当たっては、ゼロカーボンに向けた取組を意識しながら事業を進めてまいりたい"@ja.
+<< kg:id_44 prop:countermeasure kg:id_45 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_37;
+    prop:text-txt_contents "現在小中学校では、環境教育や消費者教育の中で理科、社会、技術、家庭科等を中心、窓口として、持続可能な開発目標であるＳＤＧｓのことを中心に学んでいるところでございます"@ja.
+<< kg:id_44 prop:countermeasure kg:id_46 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_38;
+    prop:text-txt_contents "遊佐町の児童生徒につきましては、遊佐町沖の洋上風力発電も含めて、脱炭素社会の実現の重要性についてはさらに理解を深める必要があると認識しているところでございます。そのための学習や教育の場も必要であると考えております"@ja.
+<< kg:id_44 prop:countermeasure kg:id_47 >>
+    prop:stateBy kg:st_7;
+    prop:relatedOpinion kg:op_39;
+    prop:text-txt_contents "今後は洋上風力発電事業の推移を考慮しつつ、教育委員会としては対応してまいりたいというふうに考えております"@ja.
+}

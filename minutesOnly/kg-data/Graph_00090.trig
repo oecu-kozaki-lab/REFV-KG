@@ -1,0 +1,269 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00090> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "酒田市の人口減少"@ja.
+kg:id_1 rdf:type cls:c_97.
+cls:c_97 rdfs:label "人口減少"@ja.
+kg:id_2 rdfs:label "2040年の本市の人口が7万1,000人という推計"@ja.
+kg:id_2 rdf:type cls:c_2373.
+cls:c_2373 rdfs:label "人口推計"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "少子化"@ja.
+kg:id_3 rdf:type cls:c_478.
+cls:c_478 rdfs:label "少子化"@ja.
+kg:id_4 rdfs:label "出会い・結婚・出産・子育て支援まで連鎖的に74事業を盛り込む"@ja.
+kg:id_4 rdf:type cls:c_1549.
+cls:c_1549 rdfs:label "子育て支援"@ja.
+kg:id_3 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "全職員からアイデアを募る"@ja.
+kg:id_5 rdf:type cls:c_2374.
+cls:c_2374 rdfs:label "職員提案"@ja.
+kg:id_3 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "県内で唯一、国の地域少子化対策強化交付金事業に取り組む"@ja.
+kg:id_6 rdf:type cls:c_2375.
+cls:c_2375 rdfs:label "交付金事業"@ja.
+kg:id_3 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "人口の社会減"@ja.
+kg:id_7 rdf:type cls:c_222.
+cls:c_222 rdfs:label "人口流出"@ja.
+kg:id_8 rdfs:label "酒田で働く若者定住を図る"@ja.
+kg:id_8 rdf:type cls:c_2376.
+cls:c_2376 rdfs:label "若者定住"@ja.
+kg:id_7 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "高校2年生と大学生を対象に、市内企業見学を行う"@ja.
+kg:id_9 rdf:type cls:c_2377.
+cls:c_2377 rdfs:label "企業見学"@ja.
+kg:id_7 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "山形新幹線庄内延伸"@ja.
+kg:id_10 rdf:type cls:c_2378.
+cls:c_2378 rdfs:label "交通基盤"@ja.
+kg:id_11 rdfs:label "社会基盤整備として重点化する"@ja.
+kg:id_11 rdf:type cls:c_2379.
+cls:c_2379 rdfs:label "基盤整備"@ja.
+kg:id_10 prop:countermeasure kg:id_11.
+kg:id_12 rdfs:label "高速交通網"@ja.
+kg:id_12 rdf:type cls:c_2378.
+kg:id_12 prop:countermeasure kg:id_11.
+kg:id_13 rdfs:label "酒田港"@ja.
+kg:id_13 rdf:type cls:c_1084.
+cls:c_1084 rdfs:label "港湾"@ja.
+kg:id_14 rdfs:label "重点港湾酒田港の活性化"@ja.
+kg:id_14 rdf:type cls:c_2380.
+cls:c_2380 rdfs:label "活性化"@ja.
+kg:id_13 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "産業振興"@ja.
+kg:id_15 rdf:type cls:c_168.
+cls:c_168 rdfs:label "産業振興"@ja.
+kg:id_16 rdfs:label "地元企業支援"@ja.
+kg:id_16 rdf:type cls:c_1288.
+cls:c_1288 rdfs:label "企業支援"@ja.
+kg:id_15 prop:countermeasure kg:id_16.
+kg:id_17 rdfs:label "企業誘致"@ja.
+kg:id_17 rdf:type cls:c_268.
+cls:c_268 rdfs:label "企業誘致"@ja.
+kg:id_15 prop:countermeasure kg:id_17.
+kg:id_18 rdfs:label "農業振興"@ja.
+kg:id_18 rdf:type cls:c_2381.
+cls:c_2381 rdfs:label "農業振興"@ja.
+kg:id_19 rdfs:label "基幹産業である農業振興"@ja.
+kg:id_19 rdf:type cls:c_2381.
+kg:id_18 prop:countermeasure kg:id_19.
+kg:id_20 rdfs:label "地域活性化"@ja.
+kg:id_20 rdf:type cls:c_133.
+cls:c_133 rdfs:label "地域活性化"@ja.
+kg:id_21 rdfs:label "山形デスティネーションキャンペーン"@ja.
+kg:id_21 rdf:type cls:c_2382.
+cls:c_2382 rdfs:label "観光促進"@ja.
+kg:id_20 prop:countermeasure kg:id_21.
+kg:id_22 rdfs:label "鳥海山・飛島ジオパーク構想"@ja.
+kg:id_22 rdf:type cls:c_384.
+cls:c_384 rdfs:label "地域構想"@ja.
+kg:id_20 prop:countermeasure kg:id_22.
+kg:id_23 rdfs:label "市民の健康づくり"@ja.
+kg:id_23 rdf:type cls:c_392.
+cls:c_392 rdfs:label "健康増進"@ja.
+kg:id_24 rdfs:label "無料クーポン券を配布するピロリ菌検査事業"@ja.
+kg:id_24 rdf:type cls:c_2383.
+cls:c_2383 rdfs:label "検診事業"@ja.
+kg:id_23 prop:countermeasure kg:id_24.
+kg:id_25 rdfs:label "スポーツ環境整備"@ja.
+kg:id_25 rdf:type cls:c_2384.
+cls:c_2384 rdfs:label "スポーツ環境"@ja.
+kg:id_26 rdfs:label "光ケ丘陸上競技場に東北最大級のサブトラック上屋設置"@ja.
+kg:id_26 rdf:type cls:c_305.
+cls:c_305 rdfs:label "施設整備"@ja.
+kg:id_25 prop:countermeasure kg:id_26.
+kg:id_27 rdfs:label "防災機能"@ja.
+kg:id_27 rdf:type cls:c_2385.
+cls:c_2385 rdfs:label "防災機能"@ja.
+kg:id_28 rdfs:label "市役所と防災拠点や避難所の機能整備"@ja.
+kg:id_28 rdf:type cls:c_2386.
+cls:c_2386 rdfs:label "機能整備"@ja.
+kg:id_27 prop:countermeasure kg:id_28.
+kg:id_29 rdfs:label "風力発電施設整備"@ja.
+kg:id_29 rdf:type cls:c_216.
+cls:c_216 rdfs:label "再生可能エネルギー"@ja.
+kg:id_30 rdfs:label "十里塚に予定している風力発電施設の環境影響評価調査"@ja.
+kg:id_30 rdf:type cls:c_736.
+cls:c_736 rdfs:label "環境調査"@ja.
+kg:id_29 prop:countermeasure kg:id_30.
+kg:st_1 rdfs:label "荒生令悦議員"@ja.
+kg:st_1 rdf:type cls:st_9.
+cls:st_9 rdfs:label "議員"@ja.
+kg:op_1 prop:content "人口減少を最重要課題に掲げるのは当然だと評価する"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "連鎖的に74事業を盛り込んだことを評価する"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:op_3 prop:content "全職員からアイデアを募った点を評価する"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_1.
+kg:op_4 prop:content "県内唯一で国の交付金事業に取り組んだことを評価する"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_1.
+kg:op_5 prop:content "若者定住を図る雇用面の取り組みを評価する"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_1.
+kg:op_6 prop:content "市内企業見学を行うなど積極的な内容だと評価する"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_1.
+kg:op_7 prop:content "社会基盤整備で重視されている施策として挙げる"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_1.
+kg:op_8 prop:content "社会基盤整備で重視されている施策として挙げる"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_1.
+kg:op_9 prop:content "社会基盤整備で重視されている施策として挙げる"@ja.
+kg:op_9 rdf:type cls:opinion.
+kg:op_9 prop:speaker kg:st_1.
+kg:op_10 prop:content "産業振興の柱として評価する"@ja.
+kg:op_10 rdf:type cls:opinion.
+kg:op_10 prop:speaker kg:st_1.
+kg:op_11 prop:content "産業振興の柱として評価する"@ja.
+kg:op_11 rdf:type cls:opinion.
+kg:op_11 prop:speaker kg:st_1.
+kg:op_12 prop:content "基幹産業として重視されている点を評価する"@ja.
+kg:op_12 rdf:type cls:opinion.
+kg:op_12 prop:speaker kg:st_1.
+kg:op_13 prop:content "地域活性化に向けた施策として挙げる"@ja.
+kg:op_13 rdf:type cls:opinion.
+kg:op_13 prop:speaker kg:st_1.
+kg:op_14 prop:content "地域活性化に向けた施策として挙げる"@ja.
+kg:op_14 rdf:type cls:opinion.
+kg:op_14 prop:speaker kg:st_1.
+kg:op_15 prop:content "県内初の実施として評価する"@ja.
+kg:op_15 rdf:type cls:opinion.
+kg:op_15 prop:speaker kg:st_1.
+kg:op_16 prop:content "市民の元気があふれるまちづくりの施策として評価する"@ja.
+kg:op_16 rdf:type cls:opinion.
+kg:op_16 prop:speaker kg:st_1.
+kg:op_17 prop:content "生活基盤整備として重視されている施策と評価する"@ja.
+kg:op_17 rdf:type cls:opinion.
+kg:op_17 prop:speaker kg:st_1.
+kg:op_18 prop:content "地域基盤強化で特に力を置く施策として評価する"@ja.
+kg:op_18 rdf:type cls:opinion.
+kg:op_18 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "2040年の本市の人口が７万1,000人という推計が出されたことからすれば、当然のことだと思います。"@ja.
+<< kg:id_3 prop:countermeasure kg:id_4 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "特に出会い・結婚・出産・子育て支援まで連鎖的に74事業を盛り込んだことであり"@ja.
+<< kg:id_3 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "全職員からアイデアを募り"@ja.
+<< kg:id_3 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "県内で唯一、国の地域少子化対策強化交付金事業に取り組んだことであります。"@ja.
+<< kg:id_7 prop:countermeasure kg:id_8 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "また、人口の社会減対策として、酒田で働く若者定住を図る雇用面でも"@ja.
+<< kg:id_7 prop:countermeasure kg:id_9 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "高校２年生と大学生を対象に、市内企業見学を行うなど、積極的に取り組む内容になっております。"@ja.
+<< kg:id_10 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "社会基盤整備では、最近、市長が挨拶するとき必ず話題にする山形新幹線庄内延伸と高速交通網"@ja.
+<< kg:id_12 prop:countermeasure kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "社会基盤整備では、最近、市長が挨拶するとき必ず話題にする山形新幹線庄内延伸と高速交通網"@ja.
+<< kg:id_13 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_9;
+    prop:text-txt_contents "そして重点港湾酒田港の活性化"@ja.
+<< kg:id_15 prop:countermeasure kg:id_16 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_10;
+    prop:text-txt_contents "次に産業振興では、地元企業支援と企業誘致"@ja.
+<< kg:id_15 prop:countermeasure kg:id_17 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_11;
+    prop:text-txt_contents "次に産業振興では、地元企業支援と企業誘致"@ja.
+<< kg:id_18 prop:countermeasure kg:id_19 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_12;
+    prop:text-txt_contents "基幹産業である農業振興"@ja.
+<< kg:id_20 prop:countermeasure kg:id_21 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_13;
+    prop:text-txt_contents "６月から９月にかけて行われる山形デスティネーションキャンペーン"@ja.
+<< kg:id_20 prop:countermeasure kg:id_22 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_14;
+    prop:text-txt_contents "鳥海山・飛島ジオパーク構想"@ja.
+<< kg:id_23 prop:countermeasure kg:id_24 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_15;
+    prop:text-txt_contents "県内で初めて実施する無料クーポン券を配布するピロリ菌検査事業"@ja.
+<< kg:id_25 prop:countermeasure kg:id_26 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_16;
+    prop:text-txt_contents "光ケ丘陸上競技場に東北最大級のサブトラック上屋設置"@ja.
+<< kg:id_27 prop:countermeasure kg:id_28 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_17;
+    prop:text-txt_contents "生活基盤整備では、平成27年８月の第１期の開庁に向けて工事をしている市役所と防災拠点や避難所の機能整備"@ja.
+<< kg:id_29 prop:countermeasure kg:id_30 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_18;
+    prop:text-txt_contents "地域基盤強化では十里塚に予定している風力発電施設の環境影響評価調査などに、特に力を置いて編成されております。"@ja.
+}

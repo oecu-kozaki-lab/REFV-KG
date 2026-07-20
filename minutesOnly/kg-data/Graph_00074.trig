@@ -1,0 +1,109 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00074> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "債務負担行為の補正"@ja.
+kg:id_1 rdf:type cls:c_2039.
+cls:c_2039 rdfs:label "予算補正"@ja.
+kg:id_2 rdfs:label "緊急雇用創出事業臨時特例基金事業費の補正"@ja.
+kg:id_2 rdf:type cls:c_2040.
+cls:c_2040 rdfs:label "基金事業費補正"@ja.
+kg:id_1 prop:cause kg:id_2.
+kg:id_3 rdfs:label "みなとオアシス道先案内業務委託料の追加"@ja.
+kg:id_3 rdf:type cls:c_2041.
+cls:c_2041 rdfs:label "業務委託料追加"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "酒田山居倉庫道先案内業務委託料の追加"@ja.
+kg:id_4 rdf:type cls:c_2041.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "底曳き網漁業経営安定緊急支援資金利子補給金の追加"@ja.
+kg:id_5 rdf:type cls:c_2042.
+cls:c_2042 rdfs:label "利子補給追加"@ja.
+kg:id_1 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "風力発電施設環境影響評価調査業務委託料"@ja.
+kg:id_6 rdf:type cls:c_2043.
+cls:c_2043 rdfs:label "調査業務委託"@ja.
+kg:id_7 rdfs:label "より丁寧な調査を行うため"@ja.
+kg:id_7 rdf:type cls:c_2044.
+cls:c_2044 rdfs:label "調査実施"@ja.
+kg:id_6 prop:cause kg:id_7.
+kg:id_8 rdfs:label "期間の変更"@ja.
+kg:id_8 rdf:type cls:c_2045.
+cls:c_2045 rdfs:label "期間変更"@ja.
+kg:id_6 prop:countermeasure kg:id_8.
+kg:id_9 rdfs:label "限度額の変更"@ja.
+kg:id_9 rdf:type cls:c_2046.
+cls:c_2046 rdfs:label "限度額変更"@ja.
+kg:id_6 prop:countermeasure kg:id_9.
+kg:id_10 rdfs:label "再生可能エネルギーの普及促進"@ja.
+kg:id_10 rdf:type cls:c_1870.
+cls:c_1870 rdfs:label "普及促進"@ja.
+kg:id_11 rdfs:label "地球環境を維持し原子力発電への依存度を少なくし自立した地域社会にするため"@ja.
+kg:id_11 rdf:type cls:c_2047.
+cls:c_2047 rdfs:label "地域自立"@ja.
+kg:id_10 prop:cause kg:id_11.
+kg:id_12 rdfs:label "県と協調して実施する風力発電事業への積極的な取り組み"@ja.
+kg:id_12 rdf:type cls:c_1.
+cls:c_1 rdfs:label "風力発電事業"@ja.
+kg:id_10 prop:countermeasure kg:id_12.
+kg:st_1 rdfs:label "市"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "県と協調して風力発電事業など再生可能エネルギーの普及促進に積極的に取り組む"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "県と協調して風力発電事業など再生可能エネルギーの普及促進に積極的に取り組む"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+<< kg:id_1 prop:cause kg:id_2 >>
+    prop:text-txt_contents "緊急雇用創出事業臨時特例基金事業費の補正に伴う"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "みなとオアシス道先案内業務委託料、酒田山居倉庫道先案内業務委託料、漁業者の経営支援のため底曳き網漁業経営安定緊急支援資金利子補給金を追加し"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "みなとオアシス道先案内業務委託料、酒田山居倉庫道先案内業務委託料、漁業者の経営支援のため底曳き網漁業経営安定緊急支援資金利子補給金を追加し"@ja.
+<< kg:id_1 prop:countermeasure kg:id_5 >>
+    prop:text-txt_contents "みなとオアシス道先案内業務委託料、酒田山居倉庫道先案内業務委託料、漁業者の経営支援のため底曳き網漁業経営安定緊急支援資金利子補給金を追加し"@ja.
+<< kg:id_6 prop:cause kg:id_7 >>
+    prop:text-txt_contents "より丁寧な調査を行うため"@ja.
+<< kg:id_6 prop:countermeasure kg:id_8 >>
+    prop:text-txt_contents "風力発電施設環境影響評価調査業務委託料の期間及び限度額を変更しております"@ja.
+<< kg:id_6 prop:countermeasure kg:id_9 >>
+    prop:text-txt_contents "風力発電施設環境影響評価調査業務委託料の期間及び限度額を変更しております"@ja.
+<< kg:id_10 prop:cause kg:id_11 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "地球環境を維持し原子力発電への依存度を少なくし自立した地域社会にするため、県と協調して実施する風力発電事業など再生可能エネルギーの普及促進に積極的に取り組んでまいります"@ja.
+<< kg:id_10 prop:countermeasure kg:id_12 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "県と協調して実施する風力発電事業など再生可能エネルギーの普及促進に積極的に取り組んでまいります"@ja.
+}

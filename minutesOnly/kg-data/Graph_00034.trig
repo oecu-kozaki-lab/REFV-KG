@@ -1,0 +1,161 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prop: <https://kozaki-lab.jp/REFV-KG/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <https://kozaki-lab.jp/REFV-KG/class/>
+PREFIX kg: <https://kozaki-lab.jp/REFV-KG/data/>
+
+<https://kozaki-lab.jp/REFV-KG/docs/00034> {
+#共通利用するクラス・関係の定義は与えておく
+cls:opinion rdfs:label "意見"@ja .
+cls:stakeholder rdfs:label "ステークホルダー"@ja .
+prop:text-txt_contents
+ a rdf:Property ;
+ rdfs:label "元テキスト"@ja .
+prop:effect
+ a rdf:Property ;
+ rdfs:label "影響"@ja .
+prop:speaker
+ a rdf:Property ;
+ rdfs:label "発言者"@ja .
+prop:countermeasure
+ a rdf:Property ;
+ rdfs:label "対策"@ja .
+prop:cause
+ a rdf:Property ;
+ rdfs:label "原因"@ja .
+prop:content
+ a rdf:Property ;
+ rdfs:label "意見内容"@ja .
+prop:opinion rdfs:label "意見"@ja .
+prop:statedBy
+  a rdf:Property ;
+  rdfs:label "発言者"@ja ;
+  rdfs:comment "当該主張・意見を述べた主体"@ja .
+kg:id_1 rdfs:label "エネルギー問題"@ja.
+kg:id_1 rdf:type cls:c_755.
+cls:c_755 rdfs:label "エネルギー問題"@ja.
+kg:id_2 rdfs:label "再生可能エネルギー設備の導入"@ja.
+kg:id_2 rdf:type cls:c_44.
+cls:c_44 rdfs:label "再生可能エネルギー導入"@ja.
+kg:id_1 prop:countermeasure kg:id_2.
+kg:id_3 rdfs:label "光ケ丘公園管理休憩施設太陽の家の整備"@ja.
+kg:id_3 rdf:type cls:c_928.
+cls:c_928 rdfs:label "再生可能エネルギー施設整備"@ja.
+kg:id_1 prop:countermeasure kg:id_3.
+kg:id_4 rdfs:label "市役所本庁舎への地中熱ヒートポンプシステムによる冷暖房設備の導入"@ja.
+kg:id_4 rdf:type cls:c_929.
+cls:c_929 rdfs:label "省エネルギー設備導入"@ja.
+kg:id_1 prop:countermeasure kg:id_4.
+kg:id_5 rdfs:label "十里塚地域内での風力発電施設の導入"@ja.
+kg:id_5 rdf:type cls:c_674.
+cls:c_674 rdfs:label "風力発電導入"@ja.
+kg:id_1 prop:countermeasure kg:id_5.
+kg:id_6 rdfs:label "市民企業行政が積極的に役割を果たして貢献すること"@ja.
+kg:id_6 rdf:type cls:c_930.
+cls:c_930 rdfs:label "協力行動"@ja.
+kg:id_1 prop:countermeasure kg:id_6.
+kg:id_7 rdfs:label "地域が連携し課題解決に取り組む意識醸成"@ja.
+kg:id_7 rdf:type cls:c_931.
+cls:c_931 rdfs:label "連携意識醸成"@ja.
+kg:id_1 prop:countermeasure kg:id_7.
+kg:id_8 rdfs:label "太陽光"@ja.
+kg:id_8 rdf:type cls:c_932.
+cls:c_932 rdfs:label "太陽光発電"@ja.
+kg:id_9 rdfs:label "そのまま即導入することが難しい状況"@ja.
+kg:id_9 rdf:type cls:c_933.
+cls:c_933 rdfs:label "導入困難"@ja.
+kg:id_8 prop:effect kg:id_9.
+kg:id_10 rdfs:label "仕組みが大分変わってしまったこと"@ja.
+kg:id_10 rdf:type cls:c_934.
+cls:c_934 rdfs:label "制度変化"@ja.
+kg:id_8 prop:cause kg:id_10.
+kg:id_11 rdfs:label "電力の自給改善"@ja.
+kg:id_11 rdf:type cls:c_935.
+cls:c_935 rdfs:label "電力自給改善"@ja.
+kg:id_12 rdfs:label "風が強いという地域特性"@ja.
+kg:id_12 rdf:type cls:c_936.
+cls:c_936 rdfs:label "地域特性"@ja.
+kg:id_11 prop:cause kg:id_12.
+kg:id_13 rdfs:label "地下水熱を利用した空調"@ja.
+kg:id_13 rdf:type cls:c_929.
+kg:id_11 prop:countermeasure kg:id_13.
+kg:id_14 rdfs:label "市自らが風力発電事業を進めること"@ja.
+kg:id_14 rdf:type cls:c_674.
+kg:id_11 prop:countermeasure kg:id_14.
+kg:id_15 rdfs:label "風車のフル稼働により8.4％の数字がかなり改善される見込み"@ja.
+kg:id_15 rdf:type cls:c_937.
+cls:c_937 rdfs:label "改善見込み"@ja.
+kg:id_11 prop:effect kg:id_15.
+kg:st_1 rdfs:label "市"@ja.
+kg:st_1 rdf:type cls:st_4.
+cls:st_4 rdfs:label "自治体"@ja.
+kg:op_1 prop:content "地域の特性を生かした再生可能エネルギー設備の導入を進めてきた"@ja.
+kg:op_1 rdf:type cls:opinion.
+kg:op_1 prop:speaker kg:st_1.
+kg:op_2 prop:content "市自らが風力発電事業を進めている"@ja.
+kg:op_2 rdf:type cls:opinion.
+kg:op_2 prop:speaker kg:st_1.
+kg:st_2 rdfs:label "答弁者"@ja.
+kg:st_2 rdf:type cls:st_17.
+cls:st_17 rdfs:label "発言者"@ja.
+kg:op_3 prop:content "市民企業行政それぞれが積極的に役割を果たして貢献していくことが不可欠"@ja.
+kg:op_3 rdf:type cls:opinion.
+kg:op_3 prop:speaker kg:st_2.
+kg:op_4 prop:content "地域が連携し課題解決に取り組む意識醸成を今後目指すべき方向と考える"@ja.
+kg:op_4 rdf:type cls:opinion.
+kg:op_4 prop:speaker kg:st_2.
+kg:st_3 rdfs:label "発言者"@ja.
+kg:st_3 rdf:type cls:st_17.
+kg:op_5 prop:content "太陽光は仕組みが大きく変わり即導入は難しい"@ja.
+kg:op_5 rdf:type cls:opinion.
+kg:op_5 prop:speaker kg:st_3.
+kg:op_6 prop:content "制度や仕組みの変化が即導入を難しくしている"@ja.
+kg:op_6 rdf:type cls:opinion.
+kg:op_6 prop:speaker kg:st_3.
+kg:op_7 prop:content "地域の風の強さを生かして市自ら風力発電事業を進めている"@ja.
+kg:op_7 rdf:type cls:opinion.
+kg:op_7 prop:speaker kg:st_3.
+kg:op_8 prop:content "来年4月の風車フル稼働で自ら使う作る面の数字はかなり改善される見込み"@ja.
+kg:op_8 rdf:type cls:opinion.
+kg:op_8 prop:speaker kg:st_3.
+<< kg:id_1 prop:countermeasure kg:id_2 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_1;
+    prop:text-txt_contents "これらの地域の特性を生かしました再生可能エネルギーの設備の導入を、市は進めてきたところでございます。"@ja.
+<< kg:id_1 prop:countermeasure kg:id_3 >>
+    prop:text-txt_contents "平成８年に整備をいたしました光ケ丘公園管理休憩施設、いわゆる太陽の家"@ja.
+<< kg:id_1 prop:countermeasure kg:id_4 >>
+    prop:text-txt_contents "近年では、市役所本庁舎に導入した地中熱ヒートポンプシステムによる冷暖房設備"@ja.
+<< kg:id_1 prop:countermeasure kg:id_5 >>
+    prop:stateBy kg:st_1;
+    prop:relatedOpinion kg:op_2;
+    prop:text-txt_contents "現在進めております十里塚地域内での風力発電施設"@ja.
+<< kg:id_1 prop:countermeasure kg:id_6 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_3;
+    prop:text-txt_contents "エネルギー問題の解消には、市民、企業、行政、それぞれが積極的に役割を果たして貢献していくことが不可欠でありまして"@ja.
+<< kg:id_1 prop:countermeasure kg:id_7 >>
+    prop:stateBy kg:st_2;
+    prop:relatedOpinion kg:op_4;
+    prop:text-txt_contents "地域が連携し課題解決に取り組む意識醸成を図ることが、本市が今後目指すべき方向と考えております。"@ja.
+<< kg:id_8 prop:effect kg:id_9 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_5;
+    prop:text-txt_contents "特に太陽光については仕組みが大分変わってしまいまして、そのまま即導入するということについては少し難しい状況になっているのが現状だと考えています。"@ja.
+<< kg:id_8 prop:cause kg:id_10 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_6;
+    prop:text-txt_contents "特に太陽光については仕組みが大分変わってしまいまして"@ja.
+<< kg:id_11 prop:cause kg:id_12 >>
+    prop:text-txt_contents "風が強いという特性を生かして、市自らが風力発電事業を進めている"@ja.
+<< kg:id_11 prop:countermeasure kg:id_13 >>
+    prop:text-txt_contents "最近では庁舎に地下水熱を利用して空調に使うですとか"@ja.
+<< kg:id_11 prop:countermeasure kg:id_14 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_7;
+    prop:text-txt_contents "風が強いという特性を生かして、市自らが風力発電事業を進めているということもありますので"@ja.
+<< kg:id_11 prop:effect kg:id_15 >>
+    prop:stateBy kg:st_3;
+    prop:relatedOpinion kg:op_8;
+    prop:text-txt_contents "この風車が来年の４月になりますとフル稼働しますが、この電力を使えば、その8.4％の数字はかなり、自ら使う、作るということでは改善されるのではないかなと思っているところです。"@ja.
+}

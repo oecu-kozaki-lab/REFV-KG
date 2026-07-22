@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  font-family: "Yu Gothic UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #17212b;
+  background: #f3f6f8;
+  --primary: #086b68;
+  --primary-dark: #055452;
+  --line: #dbe3e8;
+  --muted: #60707d;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+
+.app-header {
+  display: flex; align-items: end; justify-content: space-between; gap: 24px;
+  padding: 32px clamp(20px, 4vw, 64px); color: white;
+  background: linear-gradient(125deg, #074c5e, #087771 70%, #119580);
+}
+.eyebrow { margin: 0 0 3px; font-size: 12px; font-weight: 800; letter-spacing: .18em; opacity: .75; }
+h1 { margin: 0; font-size: clamp(26px, 3vw, 40px); }
+.subtitle { margin: 8px 0 0; opacity: .86; }
+.status { flex: none; padding: 9px 14px; border: 1px solid #ffffff50; border-radius: 999px; background: #ffffff18; font-size: 13px; }
+
+main { padding: 24px clamp(12px, 3vw, 48px) 48px; }
+.toolbar { display: flex; align-items: end; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.toolbar label:not(.file-button) { display: grid; gap: 6px; color: var(--muted); font-size: 13px; font-weight: 700; }
+.search-field { flex: 1 1 320px; }
+input, select { min-height: 42px; border: 1px solid #bbc8d0; border-radius: 8px; padding: 8px 12px; background: white; color: #17212b; }
+input:focus, select:focus { outline: 3px solid #0b77702c; border-color: var(--primary); }
+button, .file-button { min-height: 42px; border: 0; border-radius: 8px; padding: 9px 16px; color: white; background: var(--primary); font-weight: 700; cursor: pointer; }
+button:hover, .file-button:hover { background: var(--primary-dark); }
+button:disabled { cursor: default; opacity: .42; }
+button.secondary { color: #35444f; background: #e3e9ed; }
+.file-button { display: inline-flex; align-items: center; }
+.notice { margin: 12px 0 16px; padding: 14px 16px; border-left: 4px solid #c47c00; border-radius: 6px; background: #fff5da; }
+
+.table-card { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: white; box-shadow: 0 5px 22px #1c35430d; }
+.table-wrap { overflow: auto; }
+table { width: 100%; min-width: 1220px; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+th { position: sticky; top: 0; z-index: 1; padding: 12px 10px; color: #fff; background: #263f4b; text-align: left; white-space: nowrap; }
+td { max-width: 270px; padding: 12px 10px; border-bottom: 1px solid #e7ecef; vertical-align: top; line-height: 1.65; overflow-wrap: anywhere; }
+tbody tr:nth-child(even) { background: #f8fafb; }
+tbody tr:hover { background: #edf7f6; }
+td:first-child { width: 64px; color: var(--muted); text-align: right; }
+.text-button { min-height: 32px; padding: 5px 12px; white-space: nowrap; font-size: 12px; }
+.empty { padding: 50px; color: var(--muted); text-align: center; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 18px; }
+#pageInfo { min-width: 160px; color: var(--muted); text-align: center; font-size: 14px; }
+
+dialog { width: min(760px, calc(100% - 32px)); max-height: calc(100vh - 48px); padding: 0; border: 0; border-radius: 14px; box-shadow: 0 20px 60px #08171f70; }
+dialog::backdrop { background: #0c202bc0; backdrop-filter: blur(2px); }
+.dialog-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px; color: white; background: #263f4b; }
+.dialog-header h2 { margin: 0; font-size: 19px; }
+.icon-button { min-height: auto; padding: 0 6px; background: transparent; font-size: 29px; line-height: 1; }
+.dialog-meta { margin: 0; padding: 16px 22px 0; color: var(--primary-dark); font-weight: 700; }
+.dialog-text { padding: 16px 22px 22px; white-space: pre-wrap; line-height: 1.9; }
+.dialog-footer { padding: 14px 22px; border-top: 1px solid var(--line); text-align: right; }
+
+@media (max-width: 680px) {
+  .app-header { align-items: start; flex-direction: column; padding-block: 24px; }
+  .toolbar > * { width: 100%; }
+  .file-button { justify-content: center; }
+}

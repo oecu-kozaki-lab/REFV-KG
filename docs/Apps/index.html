@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REFV-KG データビューア</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">REFV-KG</p>
+      <h1>データビューア</h1>
+      <p class="subtitle">環境影響評価に関するデータを一覧で閲覧できます。</p>
+    </div>
+    <div id="status" class="status" aria-live="polite">読み込み中…</div>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="絞り込み条件">
+      <div class="filter-heading">
+        <div>
+          <h2>絞り込み条件</h2>
+          <p>複数の条件を選択すると、すべてに一致するデータを表示します。</p>
+        </div>
+        <button id="clearFiltersButton" class="secondary" type="button">条件をクリア</button>
+      </div>
+      <div class="filter-grid">
+        <label><span>都道府県</span><select id="prefectureFilter"><option value="">すべて</option></select></label>
+        <label><span>資料種別</span><select id="documentTypeFilter"><option value="">すべて</option></select></label>
+        <label><span>主語または目的語</span><select id="subjectObjectFilter"><option value="">すべて</option></select></label>
+        <label><span>関係</span><select id="relationFilter"><option value="">すべて</option></select></label>
+        <label><span>発言者分類</span><select id="speakerClassFilter"><option value="">すべて</option></select></label>
+        <label><span>発言者</span><select id="speakerFilter"><option value="">すべて</option></select></label>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="表示設定">
+      <label class="search-field">
+        <span>キーワード検索</span>
+        <input id="searchInput" type="search" placeholder="全項目から検索" autocomplete="off">
+      </label>
+      <label>
+        <span>表示件数</span>
+        <select id="pageSize">
+          <option value="25">25件</option>
+          <option value="50" selected>50件</option>
+          <option value="100">100件</option>
+        </select>
+      </label>
+      <button id="clearButton" class="secondary" type="button">検索をクリア</button>
+      <label class="file-button" for="fileInput">JSONを選択</label>
+      <input id="fileInput" type="file" accept="application/json,.json" hidden>
+    </section>
+
+    <div id="loadHelp" class="notice" hidden>
+      <strong>JSONを自動で読み込めませんでした。</strong>
+      「JSONを選択」から <code>refv-ja-2.json</code> を指定するか、ローカルWebサーバー経由で開いてください。
+    </div>
+
+    <section class="table-card" aria-label="データ一覧">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th><button class="sort-button" type="button" data-sort="7">都道府県<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="8">資料種別<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="6">本文<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="0">主語<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="1">関係<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="2">目的語<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="3">発言者分類<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="4">発言者<span class="sort-mark"></span></button></th>
+              <th><button class="sort-button" type="button" data-sort="5">意見・対応<span class="sort-mark"></span></button></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div id="emptyState" class="empty" hidden>該当するデータがありません。</div>
+    </section>
+
+    <nav class="pagination" aria-label="ページ切り替え">
+      <button id="prevButton" type="button">前へ</button>
+      <span id="pageInfo">—</span>
+      <button id="nextButton" type="button">次へ</button>
+    </nav>
+  </main>
+
+  <dialog id="textDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header">
+      <h2 id="dialogTitle">本文</h2>
+      <button id="closeDialog" class="icon-button" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="dialog-content">
+      <section class="dialog-section dialog-summary">
+        <div><span class="detail-label">都道府県</span><strong id="dialogPrefecture">—</strong></div>
+        <div><span class="detail-label">資料種別</span><strong id="dialogDocumentType">—</strong></div>
+      </section>
+      <section class="dialog-section">
+        <span class="detail-label">資料名</span>
+        <div id="dialogDocLabel" class="detail-value">—</div>
+      </section>
+      <section class="dialog-section">
+        <span class="detail-label">本文</span>
+        <div id="dialogText" class="dialog-text">—</div>
+      </section>
+      <section class="dialog-section">
+        <span class="detail-label">主語 − 関係 − 目的語</span>
+        <div id="dialogTriple" class="detail-value">—</div>
+      </section>
+      <section class="dialog-section dialog-summary">
+        <div><span class="detail-label">発言者分類</span><span id="dialogSpeakerClass">—</span></div>
+        <div><span class="detail-label">発言者</span><span id="dialogSpeaker">—</span></div>
+      </section>
+      <section class="dialog-section">
+        <span class="detail-label">意見・対応</span>
+        <div id="dialogOpinion" class="detail-value">—</div>
+      </section>
+    </div>
+    <div class="dialog-footer"><button id="closeDialogBottom" type="button">閉じる</button></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

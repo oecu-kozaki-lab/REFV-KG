@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>REFV-KG データビューア</title>
+  <title>Renewable Energy Future Vision Knowledge Graph｜再生可能エネルギー将来ビジョン知識グラフ</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="app-header">
     <div>
       <p class="eyebrow">REFV-KG</p>
-      <h1>データビューア</h1>
-      <p class="subtitle">環境影響評価に関するデータを一覧で閲覧できます。</p>
+      <h1 class="app-title">
+        <span class="app-title-en">Renewable Energy Future Vision Knowledge Graph</span>
+        <span class="app-title-ja">再生可能エネルギー将来ビジョン知識グラフ</span>
+      </h1>
     </div>
     <div class="header-meta">
       <div id="labelModeBadge" class="label-mode-badge">個別ラベル版</div>
-      <div id="status" class="status" aria-live="polite">読み込み中…</div>
       <div class="header-actions">
         <button id="settingsButton" class="header-action" type="button">表示設定</button>
         <a id="labelModeSwitch" class="header-action" href="?labels=class">クラスラベル版へ</a>
+        <a id="languageSwitch" class="header-action language-switch" href="?lang=en" lang="en">English</a>
         <label class="header-action header-file-button" for="fileInput">JSONを選択</label>
         <input id="fileInput" type="file" accept="application/json,.json" hidden>
       </div>
@@ -29,15 +31,23 @@
     <section class="annotation-panel" aria-labelledby="annotationTitle">
       <div class="annotation-heading">
         <div>
-          <h2 id="annotationTitle">入力からトリプルを探す</h2>
-          <p>文章のアノテーション、またはキーワードの部分一致から絞り込み条件を設定できます。</p>
+          <h2 id="annotationTitle">テキスト・キーワード検索</h2>
+          <p>文章のアノテーション、またはキーワードの部分一致から検索項目を設定できます。</p>
         </div>
+        <button id="annotationToggle" class="annotation-toggle" type="button" aria-expanded="false" aria-controls="annotationBody">開く</button>
       </div>
-      <div class="search-mode-tabs" role="tablist" aria-label="トリプルの探し方">
-        <button id="textModeButton" class="search-mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="textSearchPanel">テキストからトリプルを探す</button>
-        <button id="keywordModeButton" class="search-mode-tab" type="button" role="tab" aria-selected="false" aria-controls="keywordSearchPanel">キーワードによる絞り込み</button>
+      <div id="annotationBody" hidden>
+      <div class="search-mode-tabs" role="tablist" aria-label="因果構造（トリプル）の探し方">
+        <button id="textModeButton" class="search-mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="textSearchPanel">テキストから因果構造（トリプル）を探す</button>
+        <button id="keywordModeButton" class="search-mode-tab" type="button" role="tab" aria-selected="false" aria-controls="keywordSearchPanel">キーワードで検索</button>
       </div>
       <div id="textSearchPanel" class="search-mode-panel" role="tabpanel" aria-labelledby="textModeButton">
+        <div class="annotation-examples" aria-label="テキスト入力の例文">
+          <span>例文：</span>
+          <button type="button" data-example-index="0">風力発電</button>
+          <button type="button" data-example-index="1">太陽光</button>
+          <button type="button" data-example-index="2">健康被害</button>
+        </div>
         <label class="annotation-input-label" for="annotationInput">テキスト入力</label>
         <textarea id="annotationInput" rows="4" placeholder="分析したい文章を入力してください"></textarea>
         <div class="annotation-result">
@@ -53,19 +63,23 @@
           <div id="keywordResults" class="keyword-results" aria-live="polite">キーワードを入力すると候補を表示します。</div>
         </div>
       </div>
+      </div>
     </section>
 
-    <section class="filters" aria-label="絞り込み条件">
+    <section class="filters" aria-label="因果構造（トリプル）＋ステークホルダーの検索">
       <div class="filter-heading">
         <div>
-          <h2>絞り込み条件</h2>
+          <h2>因果構造（トリプル）＋ステークホルダーの検索</h2>
           <p>「主語または目的語（1）― 関係 ― 主語または目的語（2）」を同じトリプルとして検索します。見出しの色は表の項目グループに対応しています。</p>
         </div>
-        <button id="clearFiltersButton" class="secondary" type="button">条件をクリア</button>
+        <div class="filter-heading-actions">
+          <div id="status" class="filter-result-count" aria-live="polite">読み込み中…</div>
+          <button id="clearFiltersButton" class="secondary" type="button">条件をクリア</button>
+        </div>
       </div>
       <div class="filter-groups">
         <section class="filter-group" data-filter-group="triple">
-          <h3>トリプル</h3>
+          <h3>因果構造（トリプル）</h3>
           <div class="filter-grid">
             <div class="filter-field" data-filter="subjectObject"><span>主語または目的語（1）</span><select id="subjectObjectFilter" multiple hidden><option value="">すべて</option></select></div>
             <div class="filter-field" data-filter="relation"><span>関係</span><select id="relationFilter" multiple hidden><option value="">すべて</option></select></div>
@@ -109,7 +123,7 @@
 
     <div id="loadHelp" class="notice" hidden>
       <strong>JSONを自動で読み込めませんでした。</strong>
-      「JSONを選択」から <code>refv-ja-3.json</code> を指定するか、ローカルWebサーバー経由で開いてください。
+      「JSONを選択」から <code id="dataFileName">refv-ja-3.json</code> を指定するか、ローカルWebサーバー経由で開いてください。
     </div>
 
     <section class="table-card" aria-label="データ一覧">
@@ -119,7 +133,7 @@
             <tr class="group-header">
               <th rowspan="2">No.</th>
               <th data-column-group="document" colspan="3">資料情報</th>
-              <th data-column-group="triple" colspan="3">トリプル</th>
+              <th data-column-group="triple" colspan="3">因果構造（トリプル）</th>
               <th data-column-group="stakeholderOpinion" colspan="5">ステークホルダーと意見</th>
             </tr>
             <tr>
@@ -168,12 +182,8 @@
         <div id="dialogText" class="dialog-text">—</div>
       </section>
       <section class="dialog-section">
-        <span class="detail-label">トリプル：個別ラベル（sLabel / oLabel）</span>
-        <div id="dialogTripleInstance" class="detail-value dialog-triple">—</div>
-      </section>
-      <section class="dialog-section">
-        <span class="detail-label">トリプル：クラスラベル（scLabel / ocLabel）</span>
-        <div id="dialogTripleClass" class="detail-value dialog-triple">—</div>
+        <span id="dialogTripleLabel" class="detail-label">因果構造（トリプル）</span>
+        <div id="dialogTriple" class="detail-value dialog-triple">—</div>
       </section>
       <section class="dialog-section dialog-summary">
         <div><span class="detail-label">発言者カテゴリー</span><span id="dialogSpeakerCategory">—</span></div>
@@ -196,7 +206,7 @@
     </div>
     <div class="settings-content">
       <fieldset>
-        <legend>表示する絞り込み条件</legend>
+        <legend>表示する検索項目</legend>
         <div class="settings-grid">
           <label><input type="checkbox" data-setting-filter="prefecture">都道府県</label>
           <label><input type="checkbox" data-setting-filter="documentType">資料種別</label>
@@ -223,7 +233,7 @@
           <label><input type="checkbox" data-setting-column="speakerClass">発言者分類</label>
           <label><input type="checkbox" data-setting-column="speaker" checked>発言者</label>
           <label><input type="checkbox" data-setting-column="opinion" checked>意見・対応</label>
-          <label id="showInstanceLabelsSetting"><input type="checkbox" data-setting-option="showInstanceLabels">クラスラベルに個別ラベルを併記</label>
+          <label id="showInstanceLabelsSetting"><input type="checkbox" data-setting-option="showInstanceLabels" checked>クラスラベルに個別ラベルを併記</label>
         </div>
       </fieldset>
     </div>

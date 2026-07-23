@@ -13,33 +13,87 @@
       <h1>データビューア</h1>
       <p class="subtitle">環境影響評価に関するデータを一覧で閲覧できます。</p>
     </div>
-    <div id="status" class="status" aria-live="polite">読み込み中…</div>
+    <div class="header-meta">
+      <div id="labelModeBadge" class="label-mode-badge">個別ラベル版</div>
+      <div id="status" class="status" aria-live="polite">読み込み中…</div>
+      <div class="header-actions">
+        <button id="settingsButton" class="header-action" type="button">表示設定</button>
+        <a id="labelModeSwitch" class="header-action" href="?labels=class">クラスラベル版へ</a>
+        <label class="header-action header-file-button" for="fileInput">JSONを選択</label>
+        <input id="fileInput" type="file" accept="application/json,.json" hidden>
+      </div>
+    </div>
   </header>
 
   <main>
+    <section class="annotation-panel" aria-labelledby="annotationTitle">
+      <div class="annotation-heading">
+        <div>
+          <h2 id="annotationTitle">入力からトリプルを探す</h2>
+          <p>文章のアノテーション、またはキーワードの部分一致から絞り込み条件を設定できます。</p>
+        </div>
+      </div>
+      <div class="search-mode-tabs" role="tablist" aria-label="トリプルの探し方">
+        <button id="textModeButton" class="search-mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="textSearchPanel">テキストからトリプルを探す</button>
+        <button id="keywordModeButton" class="search-mode-tab" type="button" role="tab" aria-selected="false" aria-controls="keywordSearchPanel">キーワードによる絞り込み</button>
+      </div>
+      <div id="textSearchPanel" class="search-mode-panel" role="tabpanel" aria-labelledby="textModeButton">
+        <label class="annotation-input-label" for="annotationInput">テキスト入力</label>
+        <textarea id="annotationInput" rows="4" placeholder="分析したい文章を入力してください"></textarea>
+        <div class="annotation-result">
+          <span class="annotation-result-label">アノテーション結果</span>
+          <div id="annotationOutput" class="annotation-output" aria-live="polite">テキストを入力すると、該当する単語を色付きで表示します。</div>
+        </div>
+      </div>
+      <div id="keywordSearchPanel" class="search-mode-panel" role="tabpanel" aria-labelledby="keywordModeButton" hidden>
+        <label class="annotation-input-label" for="keywordInput">キーワード入力</label>
+        <input id="keywordInput" type="search" placeholder="主語・目的語・発言者を部分一致検索" autocomplete="off">
+        <div class="annotation-result">
+          <span class="annotation-result-label">絞り込み候補 <span id="keywordResultCount"></span></span>
+          <div id="keywordResults" class="keyword-results" aria-live="polite">キーワードを入力すると候補を表示します。</div>
+        </div>
+      </div>
+    </section>
+
     <section class="filters" aria-label="絞り込み条件">
       <div class="filter-heading">
         <div>
           <h2>絞り込み条件</h2>
-          <p>同じ項目内の選択はOR条件、異なる項目間はAND条件で絞り込みます。</p>
+          <p>「主語または目的語（1）― 関係 ― 主語または目的語（2）」を同じトリプルとして検索します。見出しの色は表の項目グループに対応しています。</p>
         </div>
         <button id="clearFiltersButton" class="secondary" type="button">条件をクリア</button>
       </div>
-      <div class="filter-grid">
-        <div class="filter-field" data-filter="prefecture"><span>都道府県</span><select id="prefectureFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="documentType"><span>資料種別</span><select id="documentTypeFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="subjectObject"><span>主語または目的語</span><select id="subjectObjectFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="relation"><span>関係</span><select id="relationFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="speakerCategory"><span>発言者カテゴリー</span><select id="speakerCategoryFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="speakerType"><span>発言者タイプ</span><select id="speakerTypeFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="speakerClass"><span>発言者分類</span><select id="speakerClassFilter" multiple hidden><option value="">すべて</option></select></div>
-        <div class="filter-field" data-filter="speaker"><span>発言者</span><select id="speakerFilter" multiple hidden><option value="">すべて</option></select></div>
+      <div class="filter-groups">
+        <section class="filter-group" data-filter-group="triple">
+          <h3>トリプル</h3>
+          <div class="filter-grid">
+            <div class="filter-field" data-filter="subjectObject"><span>主語または目的語（1）</span><select id="subjectObjectFilter" multiple hidden><option value="">すべて</option></select></div>
+            <div class="filter-field" data-filter="relation"><span>関係</span><select id="relationFilter" multiple hidden><option value="">すべて</option></select></div>
+            <div class="filter-field" data-filter="subjectObject2"><span>主語または目的語（2）</span><select id="subjectObjectFilter2" multiple hidden><option value="">すべて</option></select></div>
+          </div>
+        </section>
+        <section class="filter-group" data-filter-group="stakeholder">
+          <h3>ステークホルダー</h3>
+          <div class="filter-grid">
+            <div class="filter-field" data-filter="speakerCategory"><span>発言者カテゴリー</span><select id="speakerCategoryFilter" multiple hidden><option value="">すべて</option></select></div>
+            <div class="filter-field" data-filter="speakerType"><span>発言者タイプ</span><select id="speakerTypeFilter" multiple hidden><option value="">すべて</option></select></div>
+            <div class="filter-field" data-filter="speakerClass"><span>発言者分類</span><select id="speakerClassFilter" multiple hidden><option value="">すべて</option></select></div>
+            <div class="filter-field" data-filter="speaker"><span>発言者</span><select id="speakerFilter" multiple hidden><option value="">すべて</option></select></div>
+          </div>
+        </section>
+        <section class="filter-group" data-filter-group="other">
+          <h3>その他</h3>
+          <div class="filter-grid">
+            <div class="filter-field" data-filter="prefecture"><span>都道府県</span><select id="prefectureFilter" multiple hidden><option value="">すべて</option></select></div>
+            <div class="filter-field" data-filter="documentType"><span>資料種別</span><select id="documentTypeFilter" multiple hidden><option value="">すべて</option></select></div>
+          </div>
+        </section>
       </div>
     </section>
 
     <section class="toolbar" aria-label="表示設定">
       <label class="search-field">
-        <span>キーワード検索</span>
+        <span>キーワードによる絞り込み</span>
         <input id="searchInput" type="search" placeholder="全項目から検索" autocomplete="off">
       </label>
       <label>
@@ -51,9 +105,6 @@
         </select>
       </label>
       <button id="clearButton" class="secondary" type="button">検索をクリア</button>
-      <button id="settingsButton" class="secondary" type="button">表示設定</button>
-      <label class="file-button" for="fileInput">JSONを選択</label>
-      <input id="fileInput" type="file" accept="application/json,.json" hidden>
     </section>
 
     <div id="loadHelp" class="notice" hidden>
@@ -65,19 +116,24 @@
       <div class="table-wrap">
         <table>
           <thead>
+            <tr class="group-header">
+              <th rowspan="2">No.</th>
+              <th data-column-group="document" colspan="3">資料情報</th>
+              <th data-column-group="triple" colspan="3">トリプル</th>
+              <th data-column-group="stakeholderOpinion" colspan="5">ステークホルダーと意見</th>
+            </tr>
             <tr>
-              <th>No.</th>
-              <th data-column="prefecture"><button class="sort-button" type="button" data-sort="9">都道府県<span class="sort-mark"></span></button></th>
-              <th data-column="documentType"><button class="sort-button" type="button" data-sort="10">資料種別<span class="sort-mark"></span></button></th>
-              <th data-column="text"><button class="sort-button" type="button" data-sort="8">本文<span class="sort-mark"></span></button></th>
-              <th data-column="subject"><button class="sort-button" type="button" data-sort="0">主語<span class="sort-mark"></span></button></th>
-              <th data-column="relation"><button class="sort-button" type="button" data-sort="1">関係<span class="sort-mark"></span></button></th>
-              <th data-column="object"><button class="sort-button" type="button" data-sort="2">目的語<span class="sort-mark"></span></button></th>
-              <th data-column="speakerCategory"><button class="sort-button" type="button" data-sort="3">発言者カテゴリー<span class="sort-mark"></span></button></th>
-              <th data-column="speakerType"><button class="sort-button" type="button" data-sort="4">発言者タイプ<span class="sort-mark"></span></button></th>
-              <th data-column="speakerClass"><button class="sort-button" type="button" data-sort="5">発言者分類<span class="sort-mark"></span></button></th>
-              <th data-column="speaker"><button class="sort-button" type="button" data-sort="6">発言者<span class="sort-mark"></span></button></th>
-              <th data-column="opinion"><button class="sort-button" type="button" data-sort="7">意見・対応<span class="sort-mark"></span></button></th>
+              <th data-column="prefecture" data-group="document"><button class="sort-button" type="button" data-sort="9">都道府県<span class="sort-mark"></span></button></th>
+              <th data-column="documentType" data-group="document"><button class="sort-button" type="button" data-sort="10">資料種別<span class="sort-mark"></span></button></th>
+              <th data-column="text" data-group="document"><button class="sort-button" type="button" data-sort="8">本文<span class="sort-mark"></span></button></th>
+              <th data-column="subject" data-group="triple"><button class="sort-button" type="button" data-sort="0">主語<span class="sort-mark"></span></button></th>
+              <th data-column="relation" data-group="triple"><button class="sort-button" type="button" data-sort="1">関係<span class="sort-mark"></span></button></th>
+              <th data-column="object" data-group="triple"><button class="sort-button" type="button" data-sort="2">目的語<span class="sort-mark"></span></button></th>
+              <th data-column="speakerCategory" data-group="stakeholderOpinion"><button class="sort-button" type="button" data-sort="3">発言者カテゴリー<span class="sort-mark"></span></button></th>
+              <th data-column="speakerType" data-group="stakeholderOpinion"><button class="sort-button" type="button" data-sort="4">発言者タイプ<span class="sort-mark"></span></button></th>
+              <th data-column="speakerClass" data-group="stakeholderOpinion"><button class="sort-button" type="button" data-sort="5">発言者分類<span class="sort-mark"></span></button></th>
+              <th data-column="speaker" data-group="stakeholderOpinion"><button class="sort-button" type="button" data-sort="6">発言者<span class="sort-mark"></span></button></th>
+              <th data-column="opinion" data-group="stakeholderOpinion"><button class="sort-button" type="button" data-sort="7">意見・対応<span class="sort-mark"></span></button></th>
             </tr>
           </thead>
           <tbody id="tableBody"></tbody>
@@ -112,12 +168,16 @@
         <div id="dialogText" class="dialog-text">—</div>
       </section>
       <section class="dialog-section">
-        <span class="detail-label">主語 − 関係 − 目的語</span>
-        <div id="dialogTriple" class="detail-value">—</div>
+        <span class="detail-label">トリプル：個別ラベル（sLabel / oLabel）</span>
+        <div id="dialogTripleInstance" class="detail-value dialog-triple">—</div>
+      </section>
+      <section class="dialog-section">
+        <span class="detail-label">トリプル：クラスラベル（scLabel / ocLabel）</span>
+        <div id="dialogTripleClass" class="detail-value dialog-triple">—</div>
       </section>
       <section class="dialog-section dialog-summary">
         <div><span class="detail-label">発言者カテゴリー</span><span id="dialogSpeakerCategory">—</span></div>
-        <div><span class="detail-label">発言者タイプ</span><span id="dialogSpeakerType">—</span></div>
+        <div><span class="detail-label">発言者タイプ</span><span id="dialogSpeakerType" class="stakeholder-type-tag">—</span></div>
         <div><span class="detail-label">発言者分類</span><span id="dialogSpeakerClass">—</span></div>
         <div><span class="detail-label">発言者</span><span id="dialogSpeaker">—</span></div>
       </section>
@@ -138,30 +198,32 @@
       <fieldset>
         <legend>表示する絞り込み条件</legend>
         <div class="settings-grid">
-          <label><input type="checkbox" data-setting-filter="prefecture" checked>都道府県</label>
-          <label><input type="checkbox" data-setting-filter="documentType" checked>資料種別</label>
-          <label><input type="checkbox" data-setting-filter="subjectObject" checked>主語または目的語</label>
+          <label><input type="checkbox" data-setting-filter="prefecture">都道府県</label>
+          <label><input type="checkbox" data-setting-filter="documentType">資料種別</label>
+          <label><input type="checkbox" data-setting-filter="subjectObject" checked>主語または目的語（1）</label>
           <label><input type="checkbox" data-setting-filter="relation" checked>関係</label>
-          <label><input type="checkbox" data-setting-filter="speakerCategory" checked>発言者カテゴリー</label>
+          <label><input type="checkbox" data-setting-filter="subjectObject2" checked>主語または目的語（2）</label>
+          <label><input type="checkbox" data-setting-filter="speakerCategory">発言者カテゴリー</label>
           <label><input type="checkbox" data-setting-filter="speakerType" checked>発言者タイプ</label>
-          <label><input type="checkbox" data-setting-filter="speakerClass" checked>発言者分類</label>
+          <label><input type="checkbox" data-setting-filter="speakerClass">発言者分類</label>
           <label><input type="checkbox" data-setting-filter="speaker" checked>発言者</label>
         </div>
       </fieldset>
       <fieldset>
         <legend>データの表示項目</legend>
         <div class="settings-grid">
-          <label><input type="checkbox" data-setting-column="prefecture" checked>都道府県</label>
+          <label><input type="checkbox" data-setting-column="prefecture">都道府県</label>
           <label><input type="checkbox" data-setting-column="documentType" checked>資料種別</label>
           <label><input type="checkbox" data-setting-column="text" checked>本文</label>
           <label><input type="checkbox" data-setting-column="subject" checked>主語</label>
           <label><input type="checkbox" data-setting-column="relation" checked>関係</label>
           <label><input type="checkbox" data-setting-column="object" checked>目的語</label>
-          <label><input type="checkbox" data-setting-column="speakerCategory" checked>発言者カテゴリー</label>
+          <label><input type="checkbox" data-setting-column="speakerCategory">発言者カテゴリー</label>
           <label><input type="checkbox" data-setting-column="speakerType" checked>発言者タイプ</label>
-          <label><input type="checkbox" data-setting-column="speakerClass" checked>発言者分類</label>
+          <label><input type="checkbox" data-setting-column="speakerClass">発言者分類</label>
           <label><input type="checkbox" data-setting-column="speaker" checked>発言者</label>
           <label><input type="checkbox" data-setting-column="opinion" checked>意見・対応</label>
+          <label id="showInstanceLabelsSetting"><input type="checkbox" data-setting-option="showInstanceLabels">クラスラベルに個別ラベルを併記</label>
         </div>
       </fieldset>
     </div>

@@ -66,6 +66,14 @@ const ui = {
   speakerClassFilter: document.querySelector("#speakerClassFilter"),
   speakerFilter: document.querySelector("#speakerFilter"),
   clearFilters: document.querySelector("#clearFiltersButton"),
+  graphViewButton: document.querySelector("#graphViewButton"),
+  graphDialog: document.querySelector("#graphDialog"),
+  graphDialogCount: document.querySelector("#graphDialogCount"),
+  graphCanvasWrap: document.querySelector("#graphCanvasWrap"),
+  graphCanvas: document.querySelector("#graphCanvas"),
+  graphNodeDetail: document.querySelector("#graphNodeDetail"),
+  resetGraphView: document.querySelector("#resetGraphView"),
+  graphEmptyState: document.querySelector("#graphEmptyState"),
   settingsButton: document.querySelector("#settingsButton"),
   settingsDialog: document.querySelector("#settingsDialog"),
   dialog: document.querySelector("#textDialog"),
@@ -117,6 +125,7 @@ function translateEnglishInterface() {
     ".filter-heading h2": "Search Causal Structures (Triples) + Stakeholders",
     ".filter-heading p": "Search “Subject or Object (1) — Relation — Subject or Object (2)” as one triple. Header colors correspond to table column groups.",
     "#clearFiltersButton": "Clear",
+    "#graphViewButton": "Graph View",
     "[data-filter-group=\"triple\"] h3": "Causal Structure (Triple)",
     "[data-filter-group=\"stakeholder\"] h3": "Stakeholders",
     "[data-filter-group=\"other\"] h3": "Other",
@@ -191,7 +200,17 @@ function translateEnglishInterface() {
   });
   setDirectText("#showInstanceLabelsSetting", "Show instance labels with class labels");
   document.querySelector("#closeDialog").setAttribute("aria-label", "Close");
+  document.querySelector("#closeGraphDialog").setAttribute("aria-label", "Close");
   document.querySelector("#closeSettings").setAttribute("aria-label", "Close");
+  document.querySelector("#graphDialogTitle").textContent = "Causal Structure + Stakeholder Network";
+  document.querySelector("#graphEmptyState").textContent = "No matching network data.";
+  document.querySelector("#closeGraphDialogBottom").textContent = "Close";
+  document.querySelector("#resetGraphView").textContent = "Reset view";
+  document.querySelector("#graphCanvas").setAttribute("aria-label", "Causal structure and stakeholder network");
+  const legendLabels = document.querySelectorAll("#graphDialog .graph-legend span");
+  ["Subject / Object", "Speaker Type", "Causal relation", "Stakeholder"].forEach((text, index) => {
+    if (legendLabels[index]) setDirectText(`#graphDialog .graph-legend span:nth-child(${index + 1})`, text);
+  });
   ui.help.replaceChildren(
     Object.assign(document.createElement("strong"), { textContent: "The JSON file could not be loaded automatically. " }),
     document.createTextNode("Select "),
@@ -786,6 +805,297 @@ function renderTriple(container, subject, relation, object, secondarySubject = "
   container.replaceChildren(fragment);
 }
 
+const graphNetwork = {
+  nodes: [], edges: [], scale: 1, offsetX: 0, offsetY: 0,
+  hovered: null, selected: null, dragNode: null, panning: false,
+  pointerX: 0, pointerY: 0
+};
+
+function graphHash(value) {
+  let hash = 2166136261;
+  for (const character of value) {
+    hash ^= character.codePointAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function buildGraphNetwork() {
+  const nodeMap = new Map();
+  const edgeMap = new Map();
+  const getNode = (type, value, role = "") => {
+    const label = value || "—";
+    const id = `${type}:${label}`;
+    if (!nodeMap.has(id)) {
+      const seed = graphHash(id);
+      nodeMap.set(id, {
+        id, type, label, roles: new Set(),
+        count: 0,
+        x: type === "speaker" ? 300 + (seed % 180) : -260 + (seed % 420),
+        y: ((seed >>> 8) % 900) - 450,
+        vx: 0, vy: 0
+      });
+    }
+    const node = nodeMap.get(id);
+    if (role) node.roles.add(role);
+    return node;
+  };
+  const addEdge = (source, target, label, type) => {
+    const key = JSON.stringify([source.id, label, target.id, type]);
+    if (!edgeMap.has(key)) edgeMap.set(key, { source, target, label, type });
+  };
+
+  state.filtered.forEach((row) => {
+    const subject = getNode("entity", row.values[0], "subject");
+    const object = getNode("entity", row.values[2], "object");
+    const speakerType = getNode("speaker", row.values[4], "speaker");
+    new Set([subject, object, speakerType]).forEach((node) => { node.count += 1; });
+    addEdge(subject, object, row.values[1] || "—", "causal");
+    addEdge(object, speakerType, languageMode === "en" ? "Stakeholder" : "ステークホルダー", "stakeholder");
+  });
+  graphNetwork.nodes = [...nodeMap.values()];
+  graphNetwork.edges = [...edgeMap.values()];
+  graphNetwork.hovered = null;
+  graphNetwork.selected = null;
+}
+
+function layoutGraphNetwork() {
+  const nodes = graphNetwork.nodes;
+  const edges = graphNetwork.edges;
+  const iterations = Math.min(220, Math.max(80, Math.round(90000 / Math.max(400, nodes.length))));
+  for (let step = 0; step < iterations; step += 1) {
+    edges.forEach((edge) => {
+      const dx = edge.target.x - edge.source.x;
+      const dy = edge.target.y - edge.source.y;
+      const distance = Math.max(1, Math.hypot(dx, dy));
+      const desired = edge.type === "stakeholder" ? 190 : 145;
+      const force = (distance - desired) * 0.014;
+      const fx = dx / distance * force;
+      const fy = dy / distance * force;
+      edge.source.vx += fx;
+      edge.source.vy += fy;
+      edge.target.vx -= fx;
+      edge.target.vy -= fy;
+    });
+
+    const cells = new Map();
+    nodes.forEach((node) => {
+      const cellX = Math.floor(node.x / 42);
+      const cellY = Math.floor(node.y / 42);
+      const key = `${cellX}:${cellY}`;
+      if (!cells.has(key)) cells.set(key, []);
+      cells.get(key).push(node);
+    });
+    cells.forEach((cellNodes) => {
+      for (let first = 0; first < cellNodes.length; first += 1) {
+        for (let second = first + 1; second < cellNodes.length; second += 1) {
+          const a = cellNodes[first];
+          const b = cellNodes[second];
+          let dx = b.x - a.x;
+          let dy = b.y - a.y;
+          let distance = Math.hypot(dx, dy);
+          if (distance < 1) { dx = 1; dy = 0; distance = 1; }
+          if (distance < 34) {
+            const force = (34 - distance) * 0.035;
+            a.vx -= dx / distance * force;
+            a.vy -= dy / distance * force;
+            b.vx += dx / distance * force;
+            b.vy += dy / distance * force;
+          }
+        }
+      }
+    });
+    nodes.forEach((node) => {
+      const targetX = node.type === "speaker" ? 330 : -100;
+      node.vx += (targetX - node.x) * 0.0018;
+      node.vy += -node.y * 0.0005;
+      node.vx *= 0.82;
+      node.vy *= 0.82;
+      node.x += node.vx;
+      node.y += node.vy;
+    });
+  }
+}
+
+function resizeGraphCanvas() {
+  const rect = ui.graphCanvasWrap.getBoundingClientRect();
+  const ratio = window.devicePixelRatio || 1;
+  ui.graphCanvas.width = Math.max(1, Math.round(rect.width * ratio));
+  ui.graphCanvas.height = Math.max(1, Math.round(rect.height * ratio));
+  ui.graphCanvas.style.width = `${rect.width}px`;
+  ui.graphCanvas.style.height = `${rect.height}px`;
+}
+
+function fitGraphView() {
+  const nodes = graphNetwork.nodes;
+  if (!nodes.length) return;
+  const rect = ui.graphCanvas.getBoundingClientRect();
+  const minX = Math.min(...nodes.map((node) => node.x));
+  const maxX = Math.max(...nodes.map((node) => node.x));
+  const minY = Math.min(...nodes.map((node) => node.y));
+  const maxY = Math.max(...nodes.map((node) => node.y));
+  graphNetwork.scale = Math.min(1.35, Math.max(0.08, Math.min((rect.width - 100) / Math.max(100, maxX - minX), (rect.height - 100) / Math.max(100, maxY - minY))));
+  graphNetwork.offsetX = rect.width / 2 - (minX + maxX) / 2 * graphNetwork.scale;
+  graphNetwork.offsetY = rect.height / 2 - (minY + maxY) / 2 * graphNetwork.scale;
+  drawGraphNetwork();
+}
+
+function drawGraphArrow(context, sourceX, sourceY, targetX, targetY, color) {
+  const angle = Math.atan2(targetY - sourceY, targetX - sourceX);
+  const radius = 9;
+  const endX = targetX - Math.cos(angle) * radius;
+  const endY = targetY - Math.sin(angle) * radius;
+  context.fillStyle = color;
+  context.beginPath();
+  context.moveTo(endX, endY);
+  context.lineTo(endX - Math.cos(angle - Math.PI / 6) * 8, endY - Math.sin(angle - Math.PI / 6) * 8);
+  context.lineTo(endX - Math.cos(angle + Math.PI / 6) * 8, endY - Math.sin(angle + Math.PI / 6) * 8);
+  context.closePath();
+  context.fill();
+}
+
+function drawGraphNetwork() {
+  const canvas = ui.graphCanvas;
+  const context = canvas.getContext("2d");
+  const ratio = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  context.setTransform(ratio, 0, 0, ratio, 0, 0);
+  context.clearRect(0, 0, rect.width, rect.height);
+  context.save();
+  context.translate(graphNetwork.offsetX, graphNetwork.offsetY);
+  context.scale(graphNetwork.scale, graphNetwork.scale);
+
+  const causalColor = "#4d78a5";
+  const stakeholderColor = "#8a5a9d";
+  graphNetwork.edges.forEach((edge) => {
+    const color = edge.type === "stakeholder" ? stakeholderColor : causalColor;
+    context.strokeStyle = color;
+    context.globalAlpha = edge.type === "stakeholder" ? 0.62 : 0.42;
+    context.lineWidth = 1.25 / graphNetwork.scale;
+    context.beginPath();
+    context.moveTo(edge.source.x, edge.source.y);
+    context.lineTo(edge.target.x, edge.target.y);
+    context.stroke();
+    drawGraphArrow(context, edge.source.x, edge.source.y, edge.target.x, edge.target.y, color);
+    if (graphNetwork.edges.length < 180 || graphNetwork.scale > 1.5) {
+      context.globalAlpha = 0.9;
+      context.fillStyle = color;
+      context.font = `${11 / graphNetwork.scale}px "Yu Gothic UI", sans-serif`;
+      context.textAlign = "center";
+      context.fillText(edge.label, (edge.source.x + edge.target.x) / 2, (edge.source.y + edge.target.y) / 2 - 4 / graphNetwork.scale);
+    }
+  });
+
+  context.globalAlpha = 1;
+  graphNetwork.nodes.forEach((node) => {
+    const active = node === graphNetwork.hovered || node === graphNetwork.selected;
+    const countLabel = formattedNumber(node.count);
+    const radius = (active ? 12 : 9) + Math.max(0, countLabel.length - 2) * 1.7;
+    context.beginPath();
+    context.arc(node.x, node.y, radius, 0, Math.PI * 2);
+    context.fillStyle = node.type === "speaker" ? "#74458a" : "#285f9c";
+    context.fill();
+    context.lineWidth = active ? 3 / graphNetwork.scale : 1.5 / graphNetwork.scale;
+    context.strokeStyle = active ? "#f2b705" : "#ffffff";
+    context.stroke();
+    context.font = `700 ${Math.max(7, Math.min(10, 12 - countLabel.length))}px "Yu Gothic UI", sans-serif`;
+    context.fillStyle = "#ffffff";
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText(countLabel, node.x, node.y + 0.5);
+    if (active || graphNetwork.nodes.length < 120 || graphNetwork.scale > 1.35) {
+      context.font = `${active ? 13 : 11}px "Yu Gothic UI", sans-serif`;
+      context.fillStyle = "#17212b";
+      context.textAlign = "left";
+      context.textBaseline = "alphabetic";
+      context.fillText(`${node.label} (${countText(node.count)})`, node.x + radius + 5 / graphNetwork.scale, node.y + 4 / graphNetwork.scale);
+    }
+  });
+  context.restore();
+}
+
+function graphNodeAt(clientX, clientY) {
+  const rect = ui.graphCanvas.getBoundingClientRect();
+  const x = (clientX - rect.left - graphNetwork.offsetX) / graphNetwork.scale;
+  const y = (clientY - rect.top - graphNetwork.offsetY) / graphNetwork.scale;
+  const radius = 14 / graphNetwork.scale;
+  return [...graphNetwork.nodes].reverse().find((node) => Math.hypot(node.x - x, node.y - y) <= radius) || null;
+}
+
+function initializeGraphCanvas() {
+  if (ui.graphCanvas.dataset.initialized) return;
+  ui.graphCanvas.dataset.initialized = "true";
+  ui.graphCanvas.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    const rect = ui.graphCanvas.getBoundingClientRect();
+    const pointerX = event.clientX - rect.left;
+    const pointerY = event.clientY - rect.top;
+    const worldX = (pointerX - graphNetwork.offsetX) / graphNetwork.scale;
+    const worldY = (pointerY - graphNetwork.offsetY) / graphNetwork.scale;
+    const nextScale = Math.min(4, Math.max(0.05, graphNetwork.scale * Math.exp(-event.deltaY * 0.001)));
+    graphNetwork.offsetX = pointerX - worldX * nextScale;
+    graphNetwork.offsetY = pointerY - worldY * nextScale;
+    graphNetwork.scale = nextScale;
+    drawGraphNetwork();
+  }, { passive: false });
+  ui.graphCanvas.addEventListener("pointerdown", (event) => {
+    ui.graphCanvas.setPointerCapture(event.pointerId);
+    graphNetwork.pointerX = event.clientX;
+    graphNetwork.pointerY = event.clientY;
+    graphNetwork.dragNode = graphNodeAt(event.clientX, event.clientY);
+    graphNetwork.panning = !graphNetwork.dragNode;
+  });
+  ui.graphCanvas.addEventListener("pointermove", (event) => {
+    if (graphNetwork.dragNode) {
+      const rect = ui.graphCanvas.getBoundingClientRect();
+      graphNetwork.dragNode.x = (event.clientX - rect.left - graphNetwork.offsetX) / graphNetwork.scale;
+      graphNetwork.dragNode.y = (event.clientY - rect.top - graphNetwork.offsetY) / graphNetwork.scale;
+    } else if (graphNetwork.panning) {
+      graphNetwork.offsetX += event.clientX - graphNetwork.pointerX;
+      graphNetwork.offsetY += event.clientY - graphNetwork.pointerY;
+    } else {
+      graphNetwork.hovered = graphNodeAt(event.clientX, event.clientY);
+      ui.graphCanvas.style.cursor = graphNetwork.hovered ? "grab" : "default";
+    }
+    graphNetwork.pointerX = event.clientX;
+    graphNetwork.pointerY = event.clientY;
+    drawGraphNetwork();
+  });
+  const finishPointer = (event) => {
+    const clickedNode = graphNetwork.dragNode || graphNodeAt(event.clientX, event.clientY);
+    if (clickedNode) {
+      graphNetwork.selected = clickedNode;
+      ui.graphNodeDetail.hidden = false;
+      ui.graphNodeDetail.textContent = `${clickedNode.type === "speaker" ? (languageMode === "en" ? "Speaker Type" : "発言者タイプ") : (languageMode === "en" ? "Subject / Object" : "主語・目的語")}: ${clickedNode.label} · ${countText(clickedNode.count)}`;
+    }
+    graphNetwork.dragNode = null;
+    graphNetwork.panning = false;
+    drawGraphNetwork();
+  };
+  ui.graphCanvas.addEventListener("pointerup", finishPointer);
+  ui.graphCanvas.addEventListener("pointercancel", () => {
+    graphNetwork.dragNode = null;
+    graphNetwork.panning = false;
+  });
+}
+
+function showGraphDialog() {
+  buildGraphNetwork();
+  ui.graphEmptyState.hidden = graphNetwork.nodes.length !== 0;
+  ui.graphCanvasWrap.hidden = graphNetwork.nodes.length === 0;
+  ui.graphDialogCount.textContent = languageMode === "en"
+    ? `${formattedNumber(graphNetwork.nodes.length)} nodes · ${formattedNumber(graphNetwork.edges.length)} edges from ${formattedNumber(state.filtered.length)} matching records`
+    : `検索結果${formattedNumber(state.filtered.length)}件から、${formattedNumber(graphNetwork.nodes.length)}ノード・${formattedNumber(graphNetwork.edges.length)}エッジを表示`;
+  ui.graphNodeDetail.hidden = true;
+  ui.graphDialog.showModal();
+  requestAnimationFrame(() => {
+    resizeGraphCanvas();
+    layoutGraphNetwork();
+    initializeGraphCanvas();
+    fitGraphView();
+  });
+}
+
 function render() {
   state.highlightSelections = {
     subjectObject: selectedValues(ui.subjectObjectFilter),
@@ -977,6 +1287,14 @@ ui.annotationInput.addEventListener("input", () => {
   clearTimeout(annotationTimer);
   annotationTimer = setTimeout(renderAnnotations, 140);
 });
+ui.graphViewButton.addEventListener("click", showGraphDialog);
+ui.resetGraphView.addEventListener("click", fitGraphView);
+window.addEventListener("resize", () => {
+  if (ui.graphDialog.open) {
+    resizeGraphCanvas();
+    fitGraphView();
+  }
+});
 document.querySelectorAll("[data-example-index]").forEach((button) => button.addEventListener("click", () => {
   ui.annotationInput.value = annotationExamples[Number(button.dataset.exampleIndex)] ?? "";
   renderAnnotations();
@@ -1029,6 +1347,12 @@ document.querySelector("#closeDialogBottom").addEventListener("click", () => ui.
 ui.dialog.addEventListener("click", (event) => {
   const rect = ui.dialog.getBoundingClientRect();
   if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) ui.dialog.close();
+});
+document.querySelector("#closeGraphDialog").addEventListener("click", () => ui.graphDialog.close());
+document.querySelector("#closeGraphDialogBottom").addEventListener("click", () => ui.graphDialog.close());
+ui.graphDialog.addEventListener("click", (event) => {
+  const rect = ui.graphDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) ui.graphDialog.close();
 });
 
 ui.settingsButton.addEventListener("click", () => ui.settingsDialog.showModal());

@@ -74,6 +74,7 @@
         </div>
         <div class="filter-heading-actions">
           <div id="status" class="filter-result-count" aria-live="polite">読み込み中…</div>
+          <button id="graphViewButton" type="button">グラフ表示</button>
           <button id="clearFiltersButton" class="secondary" type="button">条件をクリア</button>
         </div>
       </div>
@@ -197,6 +198,31 @@
       </section>
     </div>
     <div class="dialog-footer"><button id="closeDialogBottom" type="button">閉じる</button></div>
+  </dialog>
+
+  <dialog id="graphDialog" class="graph-dialog" aria-labelledby="graphDialogTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="graphDialogTitle">因果構造とステークホルダーのネットワーク</h2>
+        <p id="graphDialogCount" class="dialog-header-meta"></p>
+      </div>
+      <button id="closeGraphDialog" class="icon-button" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="graph-controls">
+      <div class="graph-legend" aria-label="凡例">
+        <span><i class="graph-legend-node graph-legend-entity"></i>主語・目的語</span>
+        <span><i class="graph-legend-node graph-legend-speaker"></i>発言者タイプ</span>
+        <span><i class="graph-legend-line graph-legend-causal"></i>因果関係</span>
+        <span><i class="graph-legend-line graph-legend-stakeholder"></i>ステークホルダー</span>
+      </div>
+      <button id="resetGraphView" class="secondary" type="button">表示をリセット</button>
+    </div>
+    <div id="graphCanvasWrap" class="graph-canvas-wrap">
+      <canvas id="graphCanvas" aria-label="因果構造とステークホルダーのネットワーク図"></canvas>
+      <div id="graphNodeDetail" class="graph-node-detail" hidden></div>
+    </div>
+    <div id="graphEmptyState" class="empty" hidden>該当する組み合わせがありません。</div>
+    <div class="dialog-footer"><button id="closeGraphDialogBottom" type="button">閉じる</button></div>
   </dialog>
 
   <dialog id="settingsDialog" aria-labelledby="settingsTitle">

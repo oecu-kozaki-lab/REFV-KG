@@ -189,6 +189,7 @@ dialog { width: min(760px, calc(100% - 32px)); max-height: calc(100vh - 48px); p
 dialog::backdrop { background: #0c202bc0; backdrop-filter: blur(2px); }
 .dialog-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px; color: white; background: #263f4b; }
 .dialog-header h2 { margin: 0; font-size: 19px; }
+.dialog-header-meta { margin: 5px 0 0; color: #d4e3e8; font-size: 12px; }
 .icon-button { min-height: auto; padding: 0 6px; background: transparent; font-size: 29px; line-height: 1; }
 .dialog-content { padding: 6px 22px; }
 .dialog-section { padding: 14px 0; border-bottom: 1px solid var(--line); }
@@ -204,6 +205,19 @@ dialog::backdrop { background: #0c202bc0; backdrop-filter: blur(2px); }
 .dialog-text { padding: 0; white-space: pre-wrap; line-height: 1.9; overflow-wrap: anywhere; }
 .dialog-footer { padding: 14px 22px; border-top: 1px solid var(--line); text-align: right; }
 .dialog-footer { display: flex; justify-content: flex-end; gap: 10px; }
+.graph-dialog { width: min(1120px, calc(100% - 32px)); }
+.graph-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 16px; border-bottom: 1px solid var(--line); background: #f8fafb; }
+.graph-legend { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; font-weight: 700; }
+.graph-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.graph-legend-node { display: inline-block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px #8799a3; }
+.graph-legend-entity { background: #285f9c; }
+.graph-legend-speaker { background: #74458a; }
+.graph-legend-line { display: inline-block; width: 22px; height: 0; border-top: 2px solid; }
+.graph-legend-causal { border-color: #4d78a5; }
+.graph-legend-stakeholder { border-color: #8a5a9d; }
+.graph-canvas-wrap { position: relative; height: min(68vh, 680px); min-height: 420px; overflow: hidden; background-color: #f8fafb; background-image: radial-gradient(#b6c4cc 0.7px, transparent 0.7px); background-size: 18px 18px; }
+.graph-canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.graph-node-detail { position: absolute; left: 14px; bottom: 14px; max-width: calc(100% - 28px); padding: 8px 12px; border: 1px solid #a9c4e3; border-radius: 7px; color: #173f69; background: #ffffffeb; box-shadow: 0 4px 15px #1c354325; font-size: 12px; font-weight: 800; overflow-wrap: anywhere; pointer-events: none; }
 .settings-content { display: grid; gap: 22px; padding: 22px; overflow-y: auto; }
 .settings-content fieldset { margin: 0; padding: 16px; border: 1px solid var(--line); border-radius: 10px; }
 .settings-content legend { padding: 0 7px; color: var(--primary-dark); font-weight: 800; }
@@ -226,4 +240,6 @@ dialog::backdrop { background: #0c202bc0; backdrop-filter: blur(2px); }
   .filter-grid { grid-template-columns: 1fr; }
   .dialog-summary { grid-template-columns: 1fr; gap: 12px; }
   .settings-grid { grid-template-columns: 1fr; }
+  .graph-controls { align-items: stretch; flex-direction: column; }
+  .graph-canvas-wrap { min-height: 360px; height: 58vh; }
 }

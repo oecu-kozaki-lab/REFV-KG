@@ -21,17 +21,19 @@
       <div class="filter-heading">
         <div>
           <h2>絞り込み条件</h2>
-          <p>複数の条件を選択すると、すべてに一致するデータを表示します。</p>
+          <p>同じ項目内の選択はOR条件、異なる項目間はAND条件で絞り込みます。</p>
         </div>
         <button id="clearFiltersButton" class="secondary" type="button">条件をクリア</button>
       </div>
       <div class="filter-grid">
-        <label><span>都道府県</span><select id="prefectureFilter"><option value="">すべて</option></select></label>
-        <label><span>資料種別</span><select id="documentTypeFilter"><option value="">すべて</option></select></label>
-        <label><span>主語または目的語</span><select id="subjectObjectFilter"><option value="">すべて</option></select></label>
-        <label><span>関係</span><select id="relationFilter"><option value="">すべて</option></select></label>
-        <label><span>発言者分類</span><select id="speakerClassFilter"><option value="">すべて</option></select></label>
-        <label><span>発言者</span><select id="speakerFilter"><option value="">すべて</option></select></label>
+        <div class="filter-field" data-filter="prefecture"><span>都道府県</span><select id="prefectureFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="documentType"><span>資料種別</span><select id="documentTypeFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="subjectObject"><span>主語または目的語</span><select id="subjectObjectFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="relation"><span>関係</span><select id="relationFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="speakerCategory"><span>発言者カテゴリー</span><select id="speakerCategoryFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="speakerType"><span>発言者タイプ</span><select id="speakerTypeFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="speakerClass"><span>発言者分類</span><select id="speakerClassFilter" multiple hidden><option value="">すべて</option></select></div>
+        <div class="filter-field" data-filter="speaker"><span>発言者</span><select id="speakerFilter" multiple hidden><option value="">すべて</option></select></div>
       </div>
     </section>
 
@@ -49,13 +51,14 @@
         </select>
       </label>
       <button id="clearButton" class="secondary" type="button">検索をクリア</button>
+      <button id="settingsButton" class="secondary" type="button">表示設定</button>
       <label class="file-button" for="fileInput">JSONを選択</label>
       <input id="fileInput" type="file" accept="application/json,.json" hidden>
     </section>
 
     <div id="loadHelp" class="notice" hidden>
       <strong>JSONを自動で読み込めませんでした。</strong>
-      「JSONを選択」から <code>refv-ja-2.json</code> を指定するか、ローカルWebサーバー経由で開いてください。
+      「JSONを選択」から <code>refv-ja-3.json</code> を指定するか、ローカルWebサーバー経由で開いてください。
     </div>
 
     <section class="table-card" aria-label="データ一覧">
@@ -64,15 +67,17 @@
           <thead>
             <tr>
               <th>No.</th>
-              <th><button class="sort-button" type="button" data-sort="7">都道府県<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="8">資料種別<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="6">本文<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="0">主語<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="1">関係<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="2">目的語<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="3">発言者分類<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="4">発言者<span class="sort-mark"></span></button></th>
-              <th><button class="sort-button" type="button" data-sort="5">意見・対応<span class="sort-mark"></span></button></th>
+              <th data-column="prefecture"><button class="sort-button" type="button" data-sort="9">都道府県<span class="sort-mark"></span></button></th>
+              <th data-column="documentType"><button class="sort-button" type="button" data-sort="10">資料種別<span class="sort-mark"></span></button></th>
+              <th data-column="text"><button class="sort-button" type="button" data-sort="8">本文<span class="sort-mark"></span></button></th>
+              <th data-column="subject"><button class="sort-button" type="button" data-sort="0">主語<span class="sort-mark"></span></button></th>
+              <th data-column="relation"><button class="sort-button" type="button" data-sort="1">関係<span class="sort-mark"></span></button></th>
+              <th data-column="object"><button class="sort-button" type="button" data-sort="2">目的語<span class="sort-mark"></span></button></th>
+              <th data-column="speakerCategory"><button class="sort-button" type="button" data-sort="3">発言者カテゴリー<span class="sort-mark"></span></button></th>
+              <th data-column="speakerType"><button class="sort-button" type="button" data-sort="4">発言者タイプ<span class="sort-mark"></span></button></th>
+              <th data-column="speakerClass"><button class="sort-button" type="button" data-sort="5">発言者分類<span class="sort-mark"></span></button></th>
+              <th data-column="speaker"><button class="sort-button" type="button" data-sort="6">発言者<span class="sort-mark"></span></button></th>
+              <th data-column="opinion"><button class="sort-button" type="button" data-sort="7">意見・対応<span class="sort-mark"></span></button></th>
             </tr>
           </thead>
           <tbody id="tableBody"></tbody>
@@ -111,6 +116,8 @@
         <div id="dialogTriple" class="detail-value">—</div>
       </section>
       <section class="dialog-section dialog-summary">
+        <div><span class="detail-label">発言者カテゴリー</span><span id="dialogSpeakerCategory">—</span></div>
+        <div><span class="detail-label">発言者タイプ</span><span id="dialogSpeakerType">—</span></div>
         <div><span class="detail-label">発言者分類</span><span id="dialogSpeakerClass">—</span></div>
         <div><span class="detail-label">発言者</span><span id="dialogSpeaker">—</span></div>
       </section>
@@ -120,6 +127,48 @@
       </section>
     </div>
     <div class="dialog-footer"><button id="closeDialogBottom" type="button">閉じる</button></div>
+  </dialog>
+
+  <dialog id="settingsDialog" aria-labelledby="settingsTitle">
+    <div class="dialog-header">
+      <h2 id="settingsTitle">表示設定</h2>
+      <button id="closeSettings" class="icon-button" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="settings-content">
+      <fieldset>
+        <legend>表示する絞り込み条件</legend>
+        <div class="settings-grid">
+          <label><input type="checkbox" data-setting-filter="prefecture" checked>都道府県</label>
+          <label><input type="checkbox" data-setting-filter="documentType" checked>資料種別</label>
+          <label><input type="checkbox" data-setting-filter="subjectObject" checked>主語または目的語</label>
+          <label><input type="checkbox" data-setting-filter="relation" checked>関係</label>
+          <label><input type="checkbox" data-setting-filter="speakerCategory" checked>発言者カテゴリー</label>
+          <label><input type="checkbox" data-setting-filter="speakerType" checked>発言者タイプ</label>
+          <label><input type="checkbox" data-setting-filter="speakerClass" checked>発言者分類</label>
+          <label><input type="checkbox" data-setting-filter="speaker" checked>発言者</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>データの表示項目</legend>
+        <div class="settings-grid">
+          <label><input type="checkbox" data-setting-column="prefecture" checked>都道府県</label>
+          <label><input type="checkbox" data-setting-column="documentType" checked>資料種別</label>
+          <label><input type="checkbox" data-setting-column="text" checked>本文</label>
+          <label><input type="checkbox" data-setting-column="subject" checked>主語</label>
+          <label><input type="checkbox" data-setting-column="relation" checked>関係</label>
+          <label><input type="checkbox" data-setting-column="object" checked>目的語</label>
+          <label><input type="checkbox" data-setting-column="speakerCategory" checked>発言者カテゴリー</label>
+          <label><input type="checkbox" data-setting-column="speakerType" checked>発言者タイプ</label>
+          <label><input type="checkbox" data-setting-column="speakerClass" checked>発言者分類</label>
+          <label><input type="checkbox" data-setting-column="speaker" checked>発言者</label>
+          <label><input type="checkbox" data-setting-column="opinion" checked>意見・対応</label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="dialog-footer">
+      <button id="resetSettings" class="secondary" type="button">初期設定に戻す</button>
+      <button id="closeSettingsBottom" type="button">閉じる</button>
+    </div>
   </dialog>
 
   <script src="app.js"></script>

@@ -36,6 +36,17 @@ Detailed instructions are available in each directory:
 - [Topic-extraction scripts](src/topic_extraction/README.md)
 - [Knowledge-graph converter](src/KGConverter/README.md)
 
+## SPARQL endpoints
+
+Public SPARQL endpoints are available for programmatic access:
+
+| Dataset | SPARQL endpoint | Browser-based query interface |
+|---|---|---|
+| Japanese | [https://kg.kozaki-lab.jp/REFV/sparql](https://kg.kozaki-lab.jp/REFV/sparql) | [Open in YASGUI](https://yasgui.triply.cc/#endpoint=https://kg.kozaki-lab.jp/REFV/sparql) |
+| English | [https://kg.kozaki-lab.jp/REFVen/sparql](https://kg.kozaki-lab.jp/REFVen/sparql) | [Open in YASGUI](https://yasgui.triply.cc/#endpoint=https://kg.kozaki-lab.jp/REFVen/sparql) |
+
+The endpoint URLs are intended for access from SPARQL clients and application programs. To compose and run queries interactively in a Web browser, use the corresponding YASGUI link above.
+
 ## Released datasets
 
 ### All documents
